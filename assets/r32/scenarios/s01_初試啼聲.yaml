@@ -1,0 +1,12 @@
+title: 初試啼聲
+level: 1
+turn_limit: 3
+objective: 找到車站控制室鑰匙並逃離
+npcs:
+  - name: 老張
+    role: 倖存者
+    hint: 鑰匙在售票亭抽屜
+threats:
+  - name: 管理者
+    location: 走廊盡頭
+    perception: 2

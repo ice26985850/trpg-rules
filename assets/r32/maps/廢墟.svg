@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+<rect width="400" height="300" fill="#faf6ee"/>
+<rect x="40" y="40" width="120" height="80" fill="#e9e2d2" stroke="#b9b09a" stroke-width="2"/>
+<text x="100" y="85" text-anchor="middle" font-size="14" fill="#5b5345">售票亭</text>
+<rect x="240" y="40" width="120" height="80" fill="#e9e2d2" stroke="#b9b09a" stroke-width="2"/>
+<text x="300" y="85" text-anchor="middle" font-size="14" fill="#5b5345">控制室</text>
+<rect x="140" y="180" width="120" height="60" fill="#d9cfc0" stroke="#b9b09a" stroke-width="2"/>
+<text x="200" y="215" text-anchor="middle" font-size="14" fill="#5b5345">走廊</text>
+<line x1="160" y1="120" x2="200" y2="180" stroke="#7a7060" stroke-width="2"/>
+<line x1="300" y1="120" x2="260" y2="180" stroke="#7a7060" stroke-width="2"/>
+<circle cx="100" cy="160" r="6" fill="#a32d2d"/>
+<text x="100" y="178" text-anchor="middle" font-size="11" fill="#a32d2d">玩家</text>
+</svg>

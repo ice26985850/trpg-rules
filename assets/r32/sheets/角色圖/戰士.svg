@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+<rect width="200" height="200" fill="#2a2a2e"/>
+<circle cx="100" cy="78" r="38" fill="#c9a98c"/>
+<rect x="62" y="118" width="76" height="64" fill="#4a5a78"/>
+<rect x="78" y="118" width="44" height="14" fill="#caa15a"/>
+<text x="100" y="190" text-anchor="middle" fill="#eeeeee" font-size="14">戰士</text>
+</svg>
