@@ -13,6 +13,9 @@ h2{font-size:20px;border-left:4px solid var(--accent);padding-left:10px;margin:3
 .meta{color:var(--mut);margin:0 0 14px}
 .nav{font-size:14px;background:#f0eee7;padding:10px 14px;border-radius:8px}
 .nav a{color:var(--accent);text-decoration:none;margin-right:6px}
+.back-top{margin:0 0 12px}
+.back-top a{display:inline-block;background:#f0eee7;color:var(--accent);text-decoration:none;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line)}
+.back-top a:hover{border-color:var(--accent)}
 .block{margin:22px 0}
 .cat{margin:34px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
