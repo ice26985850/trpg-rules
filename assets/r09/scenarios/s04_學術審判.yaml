@@ -1,0 +1,19 @@
+title: 學術審判
+type: multiplayer
+quality: ★★★–★★★★ 專家級至大師級
+players: 2–5 名法師（可有非玩家法師 NPC 填補）
+sessions: 3–4 次
+core_output: 大量學術聲望、學派進階能力、政治影響力
+main_threat: 學術政治、聲譽攻擊、可能的排擠
+prerequisite: 至少一名玩家學術聲望 ≥30
+summary: 阿卡迪亞皇家魔法學院即將舉行五年一度的**大評議會**——這是最重要的學術會議，將決定未來五年的研究方向、經費分配、以及——最重要的——**守望者議會的三個席位**。
+acts:
+- name: 第一幕：會前謀劃
+  scenes:
+  - 場景：會議前一週
+- name: 第二幕：大評議會（三日）
+  scenes: []
+- name: 第三幕：後果
+  scenes: []
+npcs: []
+research_checks: []

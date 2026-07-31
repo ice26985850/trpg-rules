@@ -1,0 +1,28 @@
+# 孵化者級生物艦（孵化者級生物艦）——S3 巢穴
+# 基斯拉克蟲巢生物艦，10 核心節點，3 有機層
+# 對應劇本：S3_巢穴
+nodes:
+  - { id: N1, label: "外殼切入點", type: entry, x: 100, y: 300, deck: 1, gravity: "低重力（0.8G—生物重力場）", environment: "外殼——真空（需要裝甲）", hazard: "外殼痙攣：每 1d6 回合震動", explored: true }
+  - { id: N2, label: "肌層入口——括約肌通道", type: corridor, x: 250, y: 300, deck: 1, gravity: "低重力（0.8G）", environment: "溫暖潮濕。孢子空氣", hazard: "括約肌收縮——MOB DC 10 通過", explored: false }
+  - { id: N3, label: "肌層通道", type: corridor, x: 400, y: 300, deck: 1, gravity: "低重力（0.8G）", hazard: "4 隻蟲族幼體。蠕動走廊", explored: false }
+  - { id: N4, label: "孵化囊室", type: room, x: 550, y: 300, deck: 1, gravity: "低重力（0.8G）", hazard: "孵化囊——每回合出現幼體", explored: false }
+  - { id: N5, label: "淋巴通道（循環層入口）", type: corridor, x: 400, y: 200, deck: 2, gravity: "低重力（0.8G）", environment: "淋巴液淹沒——移動減半。弱酸性", hazard: "2 名蟲族戰士", explored: false }
+  - { id: N6, label: "循環通道", type: corridor, x: 550, y: 200, deck: 2, gravity: "低重力（0.8G）", hazard: "免疫反應——抗體生物", explored: false }
+  - { id: N7, label: "營養儲存室", type: room, x: 700, y: 200, deck: 2, gravity: "低重力（0.8G）", hazard: "豐富有機物（回收可獲得聲望+1）", explored: false }
+  - { id: N8, label: "心核入口——瓣膜通道", type: corridor, x: 550, y: 100, deck: 3, gravity: "標準重力（1G——接近心臟）", hazard: "瓣膜每回合開合——時機抓對才能通過", explored: false }
+  - { id: N9, label: "心核通道", type: corridor, x: 400, y: 100, deck: 3, gravity: "標準重力（1G）", hazard: "艦體心跳——每回合震動", explored: false }
+  - { id: N10, label: "巢母室（心臟）⭐", type: objective, x: 250, y: 100, deck: 3, gravity: "標準重力（1G）", hazard: "2 名蟲族守衛 + 蟲族腦蟲（首領）", explored: false }
+edges:
+  - { from: N1, to: N2, type: "切開外殼進入" }
+  - { from: N2, to: N3, type: "括約肌通道" }
+  - { from: N3, to: N4, type: "肌層通道" }
+  - { from: N3, to: N5, type: "垂直通道（攀爬）" }
+  - { from: N5, to: N6, type: "淋巴通道" }
+  - { from: N6, to: N7, type: "循環通道" }
+  - { from: N6, to: N8, type: "垂直通道" }
+  - { from: N8, to: N9, type: "瓣膜通道" }
+  - { from: N9, to: N10, type: "心核通道" }
+regions:
+  - { name: "肌層（肌層）", color: "#CC9999", nodes: [N1, N2, N3, N4] }
+  - { name: "循環層（循環層）", color: "#99CC99", nodes: [N5, N6, N7] }
+  - { name: "心核層（心核層）", color: "#9999CC", nodes: [N8, N9, N10] }

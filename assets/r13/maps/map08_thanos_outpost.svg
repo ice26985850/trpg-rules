@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g8" width="30" height="30"><rect width="30" height="30" fill="none"/><rect x="30" y="0" width="1" height="30" fill="#ddd8d0"/><rect x="0" y="30" width="30" height="1" fill="#ddd8d0"/></pattern>
+<rect width="820" height="620" fill="url(#g8)"/>
+<!-- Surface ruins (collapsed main building) -->
+<rect x="40" y="30" width="740" height="100" fill="#888" stroke="#333" stroke-width="2" rx="3"/>
+<text x="410" y="85" text-anchor="middle" font-size="13pt" font-weight="bold" fill="#111">地表：被轟炸的廢墟（主建築倒塌）</text>
+<!-- Lock door - tech check needed -->
+<rect x="380" y="110" width="60" height="40" fill="#555" stroke="#a00" stroke-width="2" rx="2"/>
+<text x="410" y="135" text-anchor="middle" font-size="9pt" fill="#a00">⚠ 鎖死入口</text>
+<text x="410" y="148" text-anchor="middle" font-size="8pt" fill="#666">技術檢定破解</text>
+<!-- Tunnel down to underground -->
+<line x1="410" y1="150" x2="410" y2="200" stroke="#333" stroke-width="3"/>
+<polygon points="405,195 415,195 410,205" fill="#333"/>
+<text x="430" y="180" font-size="9pt" fill="#333">下降通道</text>
+<!-- Underground complex -->
+<rect x="40" y="210" width="740" height="380" fill="#5a5248" stroke="#222" stroke-width="2" rx="4"/>
+<text x="410" y="245" text-anchor="middle" font-size="13pt" font-weight="bold" fill="#ddd">地下設施 — 機械教實驗室</text>
+<!-- Sector A: Defense Systems -->
+<rect x="60" y="270" width="200" height="130" fill="#7a7060" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="160" y="305" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">入口防禦系統</text>
+<text x="160" y="325" text-anchor="middle" font-size="9pt" fill="#333">防禦砲塔×2 + 伺服顱骨×3</text>
+<text x="160" y="342" text-anchor="middle" font-size="9pt" fill="#333">CR 1×5 | 固定位置，可繞過</text>
+<text x="160" y="358" text-anchor="middle" font-size="8pt" fill="#a00">扭曲機魂 → 可技術安撫</text>
+<!-- Tech pacify arrow -->
+<path d="M260,335 Q300,310 340,320" fill="none" stroke="#080" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="300" y="310" font-size="8pt" fill="#060">技術安撫</text>
+<!-- Sector B: Underground Lab (Eldar Crystal) -->
+<rect x="300" y="270" width="220" height="130" fill="#8a7a68" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="410" y="305" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">地下實驗室</text>
+<text x="410" y="325" text-anchor="middle" font-size="9pt" fill="#333">靈族通訊水晶 ✦</text>
+<text x="410" y="342" text-anchor="middle" font-size="9pt" fill="#555">仍在運作 — 一直在發送信號</text>
+<!-- Crystal symbol -->
+<circle cx="410" cy="360" r="10" fill="none" stroke="#0af" stroke-width="2"/>
+<text x="410" y="364" text-anchor="middle" font-size="10pt" fill="#0af">◇</text>
+<!-- Sector C: Spirit Way Encounter -->
+<rect x="560" y="270" width="200" height="130" fill="#6a6050" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="660" y="305" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">靈族抵達區</text>
+<text x="660" y="325" text-anchor="middle" font-size="9pt" fill="#333">靈族遊俠×3</text>
+<text x="660" y="342" text-anchor="middle" font-size="9pt" fill="#333">艾蘭迪爾 (領袖)</text>
+<text x="660" y="358" text-anchor="middle" font-size="8pt" fill="#060">交易：水晶←→幫忙修運輸船</text>
+<text x="660" y="374" text-anchor="middle" font-size="8pt" fill="#a00">若攻擊→會撤退不會死戰</text>
+<!-- Sector D: Subterranean Corridor -->
+<rect x="60" y="430" width="700" height="130" fill="#7a7060" stroke="#444" stroke-width="1" rx="2"/>
+<text x="410" y="465" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">地下通道</text>
+<text x="410" y="485" text-anchor="middle" font-size="9pt" fill="#333">連接實驗室↔防禦系統↔運輸船修理區</text>
+<text x="410" y="505" text-anchor="middle" font-size="9pt" fill="#c00">亞空間之影×1（被水晶吸引）| CR 2</text>
+<!-- Shadow symbol -->
+<ellipse cx="200" cy="495" rx="14" ry="8" fill="none" stroke="#a00" stroke-width="1.5"/>
+<text x="200" y="499" text-anchor="middle" font-size="10pt" fill="#a00">?</text>
+<text x="200" y="518" text-anchor="middle" font-size="8pt" fill="#666">水晶周圍</text>
+<!-- Compass -->
+<g transform="translate(740,570)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">北</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">南</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">東</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">西</text>
+</g>
+<line x1="60" y1="590" x2="200" y2="590" stroke="#333" stroke-width="2"/>
+<text x="130" y="606" text-anchor="middle" font-size="10pt">25 公尺</text>
+</svg>

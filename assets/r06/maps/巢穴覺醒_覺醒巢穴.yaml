@@ -1,0 +1,65 @@
+# 巢穴覺醒 — 覺醒巢穴地圖
+# 對應劇本：S1 場景一（覺醒）
+
+nodes:
+  - id: "A"
+    label: "覺醒之廳"
+    x: 200
+    y: 300
+    type: "start"
+    explored: false
+    description: "中央大廳，散落 12 具屍體。在這裡醒來。"
+
+  - id: "B"
+    label: "水源地"
+    x: 350
+    y: 250
+    type: "rest"
+    explored: false
+    description: "地下泉水匯集處。清澈水源。休息可恢復 1d4 HP（一次性）。"
+
+  - id: "C"
+    label: "巢穴通道"
+    x: 200
+    y: 100
+    type: "transition"
+    explored: false
+    description: "通往地面的狹窄通道。發光真菌提供微弱照明。連接至場景二。"
+
+  - id: "D"
+    label: "屍體堆"
+    x: 100
+    y: 350
+    type: "loot"
+    explored: false
+    description: "集中的屍體堆。可搜尋資源——治療藥劑 ×1、生鏽匕首 ×1。"
+
+  - id: "E"
+    label: "裂縫"
+    x: 300
+    y: 380
+    type: "hazard"
+    explored: false
+    description: "地面裂縫，約 2 公尺寬。敏捷（MJ）DC 10 跳過。失敗則受 1d4 墜落傷害。"
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "passage"
+  - from: "A"
+    to: "C"
+    type: "passage"
+  - from: "A"
+    to: "D"
+    type: "passage"
+  - from: "A"
+    to: "E"
+    type: "passage"
+
+regions:
+  - name: "巢穴內區"
+    color: "#4B0082"
+    nodes: ["A", "B", "D", "E"]
+  - name: "出口方向"
+    color: "#2E8B57"
+    nodes: ["C"]

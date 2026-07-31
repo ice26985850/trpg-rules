@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 490" font-family='Microsoft JhengHei','Noto Sans CJK TC','PingFang TC',sans-serif>
+  <rect width="360" height="490" fill="#fbf7ef"/>
+
+  <text x="180" y="26" text-anchor="middle" font-size="18" fill="#3b2f7a" font-weight="bold">暮星塔（劇本一）</text>
+  <text x="180" y="44" text-anchor="middle" font-size="10" fill="#777">引用：場景1-1 / 1-2 / 3-1</text>
+  <polygon points="120,58 240,58 215,86 145,86" fill="#e8e0ff" stroke="#6b5bd2" stroke-width="1.5"/>
+  <rect x="145" y="86" width="70" height="38" fill="#e8e0ff" stroke="#6b5bd2"/>
+  <text x="180" y="110" text-anchor="middle" font-size="12">觀測台（頂層）· A</text>
+  <line x1="220" y1="90" x2="255" y2="68" stroke="#8a7bc8" stroke-width="3"/>
+  <rect x="108" y="128" width="144" height="70" fill="#ffffff" stroke="#6b5bd2"/>
+  <text x="180" y="148" text-anchor="middle" font-size="12">實驗室（高層）· B</text>
+  <rect x="122" y="158" width="54" height="30" fill="#f0ecff" stroke="#999"/>
+  <text x="149" y="177" text-anchor="middle" font-size="10">元素室A</text>
+  <rect x="194" y="158" width="54" height="30" fill="#f0ecff" stroke="#999"/>
+  <text x="221" y="177" text-anchor="middle" font-size="10">元素室B</text>
+  <rect x="108" y="203" width="144" height="58" fill="#ffffff" stroke="#6b5bd2"/>
+  <text x="180" y="223" text-anchor="middle" font-size="12">圖書館（中層）· C</text>
+  <text x="180" y="242" text-anchor="middle" font-size="10">中央大廳 + 書架</text>
+  <rect x="108" y="266" width="70" height="52" fill="#ffffff" stroke="#6b5bd2"/>
+  <text x="143" y="286" text-anchor="middle" font-size="10">收容室</text>
+  <text x="143" y="301" text-anchor="middle" font-size="9">（底層左）</text>
+  <rect x="182" y="266" width="70" height="52" fill="#ffffff" stroke="#6b5bd2"/>
+  <text x="217" y="286" text-anchor="middle" font-size="10">學徒宿舍</text>
+  <text x="217" y="301" text-anchor="middle" font-size="9">· F（右）</text>
+  <rect x="128" y="323" width="104" height="44" fill="#ffffff" stroke="#6b5bd2"/>
+  <text x="180" y="349" text-anchor="middle" font-size="11">大門（防禦系統 E）</text>
+  <circle cx="288" cy="345" r="11" fill="#ffe0a3" stroke="#c98a2b"/>
+  <text x="288" y="349" text-anchor="middle" font-size="11" fill="#7a4b00">D</text>
+  <text x="288" y="368" text-anchor="middle" font-size="9">訪客鈴</text>
+  <rect x="0" y="372" width="360" height="16" fill="#d8e8c0"/>
+  <text x="180" y="430" text-anchor="middle" font-size="11" fill="#3b2f7a" font-weight="bold">互動點</text>
+  <text x="180" y="450" text-anchor="middle" font-size="10">A 觀測穹頂（感知DC10）  B 實驗室台  C 筆記本（感知DC12）</text>
+  <text x="180" y="466" text-anchor="middle" font-size="10">D 訪客鈴  E 防禦核心（技藝DC12）  F 學徒空房</text>
+
+</svg>

@@ -1,0 +1,109 @@
+name: "Level 7 — 深海恐懼症"
+description: "被海水淹沒的科研基地——水下缺氧，利維坦在深處遊弋"
+scenario_ref: "S4_熄燈"
+usage: "S4 劇本後半：穿戴潛水裝備穿越水域，避開利維坦，從排水管道前往 Level 8"
+regions:
+  - name: "淹沒區"
+    color: "#E3F2FD"
+    nodes: ["N01"]
+    description: "區域"
+  - name: "實驗室"
+    color: "#E8F5E9"
+    nodes: ["N02", "N03"]
+    description: ""
+  - name: "深水威脅（危險）"
+    color: "#F3E5F5"
+    nodes: ["N04", "N06"]
+    description: ""
+  - name: "出口區域"
+    color: "#E3F2FD"
+    nodes: ["N05", "N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "淹沒走廊入口"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "從上方塌陷落入及腰深水——氧氣開始倒數"
+  - id: "N02"
+    label: "實驗室"
+    x: 330
+    y: 210
+    type: "resource"
+    explored: false
+    description: "封存杏仁水與科研物資"
+    resources: "密封杏仁水 ×2、科研物資"
+  - id: "N03"
+    label: "潛水裝備庫"
+    x: 330
+    y: 410
+    type: "resource"
+    explored: false
+    description: "可用的潛水裝備——30 分鐘氧氣"
+    resources: "潛水裝備 ×1"
+  - id: "N04"
+    label: "深水區（利維坦）"
+    x: 530
+    y: 300
+    type: "danger"
+    explored: false
+    description: "巨大黑影遊弋——不可直視"
+    threats: "利維坦（直視 SP -3）"
+  - id: "N05"
+    label: "排水管道入口"
+    x: 690
+    y: 210
+    type: "navigation"
+    explored: false
+    description: "向上傾斜的排水通道起點"
+  - id: "N06"
+    label: "深處黑影"
+    x: 690
+    y: 410
+    type: "danger"
+    explored: false
+    description: "利維坦盤踞的最深水域"
+    threats: "利維坦"
+  - id: "N07"
+    label: "排水管道（出口）"
+    x: 830
+    y: 320
+    type: "exit"
+    explored: false
+    description: "浮出水面抵達 Level 8"
+    exit_to: "Level 8 — 岩洞系統"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N01"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "dangerous_path"
+    label: "利維坦"
+  - from: "N03"
+    to: "N04"
+    type: "dangerous_path"
+    label: "利維坦"
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: "→ 排水"
+  - from: "N04"
+    to: "N06"
+    type: "dangerous_path"
+    label: "深處"
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ 出口"
+  - from: "N06"
+    to: "N07"
+    type: "dangerous_path"
+    label: "→ 出口"

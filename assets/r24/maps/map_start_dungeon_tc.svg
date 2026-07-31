@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 900" font-family="Georgia, serif">
+  <rect width="680" height="900" fill="#2a2219"/>
+  <rect x="20" y="20" width="640" height="860" rx="8" fill="#3d3225" stroke="#6b5a45" stroke-width="2"/>
+  
+  <rect x="20" y="20" width="640" height="60" fill="#1a1510" opacity="0.8"/>
+  <text x="340" y="58" text-anchor="middle" font-size="22" font-weight="bold" fill="#d4af37" font-family="Georgia, serif">起始地城：王座廳與最初擴張</text>
+  <text x="340" y="75" text-anchor="middle" font-size="12" fill="#998877" font-family="Georgia, serif">第一幕：立足期（Lv1~3） §1.4 / §2.3 / 劇本序章</text>
+  
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#4a3f30" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <rect x="40" y="100" width="600" height="760" fill="url(#grid)" rx="4"/>
+  
+  <!-- Throne Room -->
+  <circle cx="340" cy="480" r="80" fill="#5c4a35" stroke="#8b7355" stroke-width="3"/>
+  <circle cx="340" cy="480" r="70" fill="#6b5840"/>
+  <text x="340" y="475" text-anchor="middle" font-size="32" fill="#d4af37">👑</text>
+  <text x="340" y="505" text-anchor="middle" font-size="14" fill="#e8d5b5" font-weight="bold">王座廳</text>
+  <text x="340" y="522" text-anchor="middle" font-size="10" fill="#aa9977">Level 1</text>
+  
+  <!-- Tunnel 1 -->
+  <path d="M260 480 Q180 450 120 400" stroke="#7a6a52" stroke-width="8" fill="none"/>
+  <rect x="60" y="350" width="100" height="80" rx="10" fill="#4a3f30" stroke="#8b7355" stroke-width="2"/>
+  <text x="110" y="395" text-anchor="middle" font-size="12" fill="#d4c5a9">挖掘通道</text>
+  <text x="110" y="412" text-anchor="middle" font-size="10" fill="#998877">未開發</text>
+  
+  <!-- Tunnel 2 -->
+  <path d="M420 480 Q500 450 560 400" stroke="#7a6a52" stroke-width="8" fill="none"/>
+  <rect x="520" y="350" width="100" height="80" rx="10" fill="#4a3f30" stroke="#8b7355" stroke-width="2"/>
+  <text x="570" y="395" text-anchor="middle" font-size="12" fill="#d4c5a9">挖掘通道</text>
+  <text x="570" y="412" text-anchor="middle" font-size="10" fill="#998877">未開發</text>
+  
+  <!-- Expansion -->
+  <path d="M340 560 L340 620" stroke="#8b7355" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="335,615 340,630 345,615" fill="#8b7355"/>
+  <rect x="250" y="630" width="180" height="40" rx="5" fill="#3d3225" stroke="#6b5a45" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="340" y="655" text-anchor="middle" font-size="11" fill="#aa9977">→ Lv2 解鎖：礦場 / 訓練場</text>
+  
+  <path d="M340 680 L340 710" stroke="#8b7355" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="335,705 340,720 345,705" fill="#8b7355"/>
+  <rect x="220" y="720" width="240" height="40" rx="5" fill="#3d3225" stroke="#6b5a45" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="340" y="745" text-anchor="middle" font-size="11" fill="#aa9977">→ Lv3 解鎖：囚牢 / 研究室 / 大使館</text>
+  
+  <!-- Script notes -->
+  <rect x="50" y="120" width="180" height="100" rx="5" fill="#3d3225" stroke="#6b5a45" stroke-width="1"/>
+  <text x="65" y="142" font-size="11" fill="#d4af37" font-weight="bold">📍 劇本使用標註</text>
+  <text x="65" y="160" font-size="10" fill="#ccbb99">• 序章：王座廳的餘燼</text>
+  <text x="65" y="175" font-size="10" fill="#ccbb99">• Act 1-1：初次入侵</text>
+  <text x="65" y="190" font-size="10" fill="#ccbb99">• Act 1-2：擴張之痛</text>
+  
+  <rect x="450" y="120" width="180" height="100" rx="5" fill="#3d3225" stroke="#6b5a45" stroke-width="1"/>
+  <text x="465" y="142" font-size="11" fill="#d4af37" font-weight="bold">⚔ 冒險者路線</text>
+  <text x="465" y="160" font-size="10" fill="#ccbb99">• 入口：左通道（T1）</text>
+  <text x="465" y="175" font-size="10" fill="#ccbb99">• 第二入口：右通道</text>
+  <text x="465" y="190" font-size="10" fill="#ccbb99">• 逃生路：← 米拉逃逸</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="790" width="580" height="60" rx="5" fill="#3d3225" stroke="#6b5a45" stroke-width="1"/>
+  <text x="65" y="810" font-size="11" fill="#d4af37">圖例：</text>
+  <circle cx="120" cy="807" r="5" fill="#6b5840" stroke="#8b7355" stroke-width="1"/>
+  <text x="132" y="810" font-size="10" fill="#ccbb99">王座廳（核心）</text>
+  <rect x="230" y="800" width="15" height="10" fill="#4a3f30" stroke="#8b7355" stroke-width="1"/>
+  <text x="252" y="810" font-size="10" fill="#ccbb99">已開發房間</text>
+  <line x1="340" y1="805" x2="370" y2="805" stroke="#7a6a52" stroke-width="3"/>
+  <text x="375" y="810" font-size="10" fill="#ccbb99">通道</text>
+  <line x1="460" y1="805" x2="490" y2="805" stroke="#aa9977" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="495" y="810" font-size="10" fill="#ccbb99">規劃擴建</text>
+  
+  <!-- Compass -->
+  <g transform="translate(600, 750)">
+    <circle r="30" fill="#3d3225" stroke="#6b5a45" stroke-width="1"/>
+    <line x1="0" y1="-25" x2="0" y2="-10" stroke="#d4af37" stroke-width="2"/>
+    <text y="-28" text-anchor="middle" font-size="10" fill="#d4af37">北</text>
+  </g>
+</svg>

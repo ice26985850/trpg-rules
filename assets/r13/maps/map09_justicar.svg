@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 640" xmlns="http://www.w3.org/2000/svg">
+<!-- Background - space debris -->
+<rect width="820" height="640" fill="#2a2a35" opacity="0.05"/>
+<pattern id="g9" width="40" height="40"><rect width="40" height="40" fill="none"/><rect x="40" y="0" width="1" height="40" fill="#e5e0d8"/><rect x="0" y="40" width="40" height="1" fill="#e5e0d8"/></pattern>
+<rect width="820" height="640" fill="url(#g9)" opacity="0.3"/>
+<!-- Ship outline (massive cruiser) -->
+<path d="M120,120 L180,80 L600,80 L680,120 L720,300 L700,500 L600,560 L220,560 L120,500 L100,300 Z" fill="#6a6a70" stroke="#333" stroke-width="3"/>
+<text x="410" y="100" text-anchor="middle" font-size="14pt" font-weight="bold" fill="#ddd">正 義 之 錘 號</text>
+<!-- Section A: Bridge (Starboard bow) -->
+<rect x="500" y="130" width="160" height="100" fill="#5a5a60" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="580" y="175" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#bbb">艦橋</text>
+<text x="580" y="195" text-anchor="middle" font-size="9pt" fill="#aaa">黑盒子 → 真相揭曉</text>
+<text x="580" y="212" text-anchor="middle" font-size="9pt" fill="#666">技術困難 | 獲取滅絕令真相</text>
+<!-- Section B: Crew Seal (Mid port) -->
+<rect x="140" y="300" width="160" height="100" fill="#5a5a60" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="220" y="340" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#bbb">密封艙段</text>
+<text x="220" y="360" text-anchor="middle" font-size="9pt" fill="#aaa">帝國海軍船員×30</text>
+<text x="220" y="378" text-anchor="middle" font-size="9pt" fill="#666">困 47 天 | 一半開始懷疑帝皇</text>
+<text x="220" y="395" text-anchor="middle" font-size="9pt" fill="#666">指揮標準 | 組織撤離</text>
+<!-- Section C: Chaos Space Marine (Deep hull) -->
+<rect x="420" y="300" width="160" height="100" fill="#6a4a3a" stroke="#444" stroke-width="2" rx="2"/>
+<text x="500" y="340" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#ffccaa">卡薩爾領域</text>
+<text x="500" y="360" text-anchor="middle" font-size="9pt" fill="#ccaa88">混沌星際戰士</text>
+<text x="500" y="378" text-anchor="middle" font-size="9pt" fill="#ccaa88">CR 4 | 被遺忘者</text>
+<text x="500" y="395" text-anchor="middle" font-size="9pt" fill="#a00">「你們已被帝國拋棄」</text>
+<text x="500" y="412" text-anchor="middle" font-size="8pt" fill="#a00">佈道極限 | 心智極限</text>
+<!-- Self-destruct symbol -->
+<circle cx="500" cy="428" r="6" fill="none" stroke="#c00" stroke-width="1.5"/>
+<text x="500" y="431" text-anchor="middle" font-size="7pt" fill="#c00">X</text>
+<!-- Section D: Engine Room -->
+<rect x="140" y="150" width="160" height="100" fill="#5a5a60" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="220" y="195" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#bbb">引擎室</text>
+<text x="220" y="215" text-anchor="middle" font-size="9pt" fill="#aaa">亞空間之影×2</text>
+<text x="220" y="232" text-anchor="middle" font-size="9pt" fill="#666">CR 2×2 | 亞空間能量聚集處</text>
+<!-- Section E: Crew corridors (lower) -->
+<rect x="420" y="440" width="160" height="100" fill="#555" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="500" y="480" text-anchor="middle" font-size="10pt" font-weight="bold" fill="#bbb">船員通道</text>
+<text x="500" y="500" text-anchor="middle" font-size="9pt" fill="#aaa">變異船員×4</text>
+<text x="500" y="518" text-anchor="middle" font-size="9pt" fill="#666">CR 1×4 | 狹窄近戰</text>
+<!-- Section F: Mechanicum Voice -->
+<rect x="140" y="440" width="160" height="100" fill="#5a5a60" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="220" y="480" text-anchor="middle" font-size="10pt" font-weight="bold" fill="#bbb">機魂廣播室</text>
+<text x="220" y="500" text-anchor="middle" font-size="9pt" fill="#aaa">艦長最後禱文</text>
+<text x="220" y="518" text-anchor="middle" font-size="9pt" fill="#666">敘事氛圍 | 機魂仍在</text>
+<!-- Connection corridors -->
+<rect x="300" y="340" width="120" height="20" fill="#444" stroke="#333" stroke-width="1"/>
+<rect x="300" y="180" width="120" height="20" fill="#444" stroke="#333" stroke-width="1"/>
+<rect x="300" y="480" width="120" height="20" fill="#444" stroke="#333" stroke-width="1"/>
+<text x="360" y="195" text-anchor="middle" font-size="8pt" fill="#888">通道</text>
+<!-- Compass -->
+<g transform="translate(740,560)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">北</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">南</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">東</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">西</text>
+</g>
+<line x1="60" y1="590" x2="210" y2="590" stroke="#333" stroke-width="2"/>
+<text x="135" y="606" text-anchor="middle" font-size="10pt">50 公尺 (艦船尺度)</text>
+</svg>

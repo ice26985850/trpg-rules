@@ -1,0 +1,123 @@
+title: 小鎮審判日
+difficulty: 標準
+stars: 3
+loop_length: 3天
+loop_limit: 13
+suggested_players: 3-4
+action_points: 8 + 行動（ACT）修正（3天×行動點）
+tone_tags:
+  - 集體罪惡
+  - 沉默共謀
+  - 正義的延遲
+loop_setting:
+  endpoint: 第三天午夜，全鎮居民集體消失
+  start: 第一天早晨6:00，玩家在小鎮旅館醒來
+  boundary: 整個小鎮及周邊3公里（舊礦場、森林邊緣）
+  opening: "你醒來。陽光透過舊窗簾照進來。空氣中有秋天的味道——乾燥的樹葉，遠處的炊煙。樓下傳來老闆娘準備早餐的聲音。一切都很正常。只是……你不太記得自己是怎麼來到這個小鎮的。"
+core_truth:
+  anchor_event: "15年前（1994）外來教師陳硯被鎮民私刑處死——他發現鎮長財務醜聞（侵吞政府撥款）而遭滅口；15年來全鎮在沉默中成為共犯。"
+  surface_story: 小鎮平靜，居民和睦，每三天一次集會。
+  real_story: "陳硯之死是為了滅口；全鎮集體隱瞞真相，循環是這份罪惡的具象化。"
+  healing_conditions:
+    - 至少一個鎮民公開承認陳硯被冤枉
+    - 玩家找到陳硯當年的日記（藏在舊校舍地下室）
+    - 可選：說服鎮長在集會上說出真相
+truth_fragments:
+  - name: 最後一課
+    type: 文件
+    location: 舊校舍二樓
+    difficulty: 中
+    loop: 2
+    detail: "陳硯死前一天寫給學生的信：『明天我要告訴你們一些重要的事，關於這個鎮的未來。』"
+  - name: 不在場的鎮長
+    type: 文件
+    location: 鎮公所檔案室
+    difficulty: 難
+    loop: 4
+    detail: "1994年10月的電話記錄——鎮長當晚不在私刑現場。"
+  - name: 老裁縫的夢
+    type: 對話
+    location: 林奶奶裁縫店
+    difficulty: 易
+    loop: 1
+    detail: "『我夢見那個年輕老師又回來了，站在廣場上。』"
+  - name: 廣場下的痕跡
+    type: 場景
+    location: 鎮廣場
+    difficulty: 中
+    loop: 3
+    detail: "第三天日落時，石磚縫裡的暗色痕跡。"
+  - name: 商人的帳本
+    type: 物品
+    location: 雜貨店後室
+    difficulty: 中
+    loop: 5
+    detail: "雜貨店老闆在陳硯死後收到的「特殊補償」記錄。"
+  - name: 學生的沉默
+    type: 對話
+    location: 鎮高中
+    difficulty: 難
+    loop: 6
+    detail: "陳硯當年的學生林曉保留了陳硯的日記。"
+  - name: 地下室日記
+    type: 物品
+    location: 舊校舍地下室
+    difficulty: 難
+    loop: 7
+    detail: "陳硯日記記錄發現財務醜聞的過程；最後一頁：『他們知道了。今晚可能會出事。』"
+  - name: 儀式的真相
+    type: 記憶
+    location: 鎮廣場
+    difficulty: 特殊
+    loop: 8+
+    detail: "若已獲≥4碎片，靜默儀式中觸發集體既視感——所有玩家同時看到15年前那一晚的閃回。"
+key_npcs:
+  - name: 周正義
+    role: 鎮長
+    age: 56
+    emotion_baseline: 4/10
+    sensitivity: 高
+    notes: "壓抑焦慮；知道陳硯無辜但怕說出真相毀掉小鎮；循環7-9可能說『我當年應該站出來的』。"
+  - name: 林曉
+    role: 高中教師
+    age: 30
+    emotion_baseline: 5/10
+    sensitivity: 極高
+    notes: "陳硯最喜歡的學生，每週偷偷讀一次日記；循環6首次記憶殘留，黑板無意識寫下陳硯名字。"
+  - name: 王富貴
+    role: 雜貨店老闆
+    age: 62
+    emotion_baseline: 6/10
+    sensitivity: 高
+    notes: "參與私刑並收了補償；循環8+可能崩潰大哭『我每天晚上都夢見他』。"
+degradation:
+  - phase: 循環1-2（鏡像）
+    description: 正常小鎮，讓玩家感受「美好」，第三天午夜第一次全滅。
+  - phase: 循環3（鏡像最後）
+    description: 最後一個正常循環，碎片3+4可取得。
+  - phase: 循環4-5（漣漪）
+    description: 旅館鐘慢3分鐘，鎮長午飯忘點咖啡，碎片2+5可取得。
+  - phase: 循環6（裂紋）
+    description: 林曉首次記憶殘留，碎片6可取得。
+  - phase: 循環7-9（裂紋）
+    description: 舊校舍窗戶出現15年前倒影，噴泉水靜止，碎片1+7可取得。
+  - phase: 循環10-12（斷裂）
+    description: 空間跳躍，林曉可能半覺醒，碎片8可取得。
+  - phase: 循環13（崩壞）
+    description: 最後機會，NPC可能說出真相或永遠沉默。
+endings:
+  - id: A
+    name: 遲來的正義
+    grade: 完美
+    condition: 8碎片＋鎮長公開真相＋日記公開
+    narrative: "全鎮無人消失，裂痕癒合。"
+  - id: B
+    name: 一個人的告別
+    grade: 一般
+    condition: ≥6碎片＋林曉讀出日記
+    narrative: "鎮消失但林曉留下，裂痕癒合一半。"
+  - id: C
+    name: 第十五個秋天
+    grade: 壞
+    condition: 循環耗盡
+    narrative: "居民化為雕像永遠圍繞廣場，玩家記得一切——而記得本身就是意義。"

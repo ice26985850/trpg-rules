@@ -1,0 +1,107 @@
+name: 深淵領主 — 多人模組與戰役：初次入侵與深淵帝國
+type: 多人玩家劇本
+author: 跑團規則工作室（程規瑤主理人編排）
+rules_version: '2.5'
+player_count: 1 GM + 1~4 名玩家
+dungeon_level: Lv1-15
+estimated_time:
+  module: 1-2 次團
+  campaign: 15-30 次團
+prerequisite: 需搭配《深淵領主》玩家規則書與 GM 指南
+module:
+  title: 起始模組「初次入侵」
+  level: 1
+  scenes:
+  - id: 1
+    name: 建立初始地城
+    gm_setup: 讓玩家填寫角色卡核心（原型、屬性、初始怪物）；介紹資源系統與回合結構（5 場景＝5 回合）。
+    player_needs: 熟悉屬性、分配初始怪物、規劃先挖掘哪一側。
+  - id: 2
+    name: 第一次挖掘擴張
+    check: IND + 工程學技能 vs 難度1
+    results:
+      失敗: 只刨下碎石，建材消耗、空間未解鎖；GM 給線索「岩石後面似乎有什麼在發光……」
+      1成功: 挖出小型洞穴。
+      2+成功: 發現閃爍晶體——礦脈！該空間礦場產出永久+50%。
+  - id: 3
+    name: 第一波入侵
+    recon: 已建偵察前哨則自動知情報；否則擲 CUN+諜報。
+    preset_adventurers:
+    - name: 艾倫
+      class: 戰士 T1
+      cp: 1d6+2
+      hp: 5
+      trait: 盾牌：防禦+1骰
+      bg: 爲妹妹籌藥費
+    - name: 米拉
+      class: 盜賊 T1
+      cp: 2d6+1
+      hp: 3
+      trait: 可偵察陷阱：陷阱DC-2
+      bg: 急躁冒進
+    ai_behavior_2d6:
+      2-4: 米拉先行偵察、艾倫殿後
+      5-7: 謹慎推進
+      8-10: 米拉潛行繞過、艾倫正面
+      11-12: 艾倫魯莽衝鋒
+    combat_tips: 教學戰；可讓環境觸發落石對冒險者造成1d3；米拉 HP<2 撤退可引入俘虜機制。
+  - id: 4
+    name: 首次俘虜與審訊
+    methods:
+    - 審訊(DOM)
+    - 折磨(WAR)
+    - 懷柔(DOM+消耗◆)
+    example: 艾倫弱點「提到妹妹就眼神閃爍」→ 懷柔提到家人 DOM+1骰；米拉弱點「急躁」→ 等待>2回合再審訊 WIL-1。
+    reward: 成就「第一位囚徒」+1 經驗值(EXP)。
+  - id: 5
+    name: 戰後結算與第二次擴張
+    loot: 每名被擊敗 T1 冒險者：◆1d3 + ◇1 + ●1；俘虜無戰利品。
+    exp: 擊退 T1 入侵 +3 EXP；首次俘虜 +1 EXP。
+    transition: 體驗完整「挖→建→分→防」循環；米拉逃走會帶人回來。
+campaign:
+  title: 從洞窟到深淵帝國（Lv1-15）
+  acts:
+  - act: 1
+    name: 立足期
+    level: Lv1-3
+    theme: 活下去，從王座廳+2隧道開始。
+    key_events: Lv1 初次入侵教學戰；Lv2 首處天然資源＋鄰接地城來信；Lv3 公會通緝（INF≥3）。
+    climax: 冒險者公會通緝令——地城列入通緝名單。
+  - act: 2
+    name: 成長期
+    level: Lv4-7
+    theme: 擴張與選擇，深淵使館建成須擇四大聯盟之一。
+    key_events: Lv4 聯盟邀請（巴爾澤克 vs 馬爾薩斯）；Lv5 精英怪物＋Boss戰；Lv6 地城間政治調解。
+    climax: 深淵黑市拍賣（金牙格里克斯），含社交/拍賣/暗殺環節。
+  - act: 3
+    name: 威脅期
+    level: Lv8-11
+    theme: 戰爭與背叛，光明教團連隊級遠征。
+    key_events: Lv8 教團遠征三入口多線防禦；Lv9 聯盟內部裂痕；Lv10 傳奇怪物＋莫瑞斯失控支線。
+    climax: 奈克西斯之息——原始裂隙(D-16)首次異常發聲。
+  - act: 4
+    name: 霸主期
+    level: Lv12-15
+    theme: 命運抉擇，聖戰與原始裂隙甦醒。
+    key_events: Lv12 地城盟約；Lv13 光明聖戰；Lv14 滲透地表（鏽蝕公爵科爾溫）。
+    climax: 終極大事件：奈克西斯的甦醒。
+  finale:
+    name: 奈克西斯的甦醒
+    stages:
+    - stage: 降臨
+      check: 無（敘事）
+      effect: 深淵魔力暫時×2。
+    - stage: 審判
+      check: DOM 回應質問；ARC 理解真意
+      effect: 奈克西斯審視各聯盟。
+    - stage: 抉擇
+      check: 終極多重檢定
+      options:
+      - A 成爲右手（終極力量/失自主）
+      - B 拒絕→流浪領主
+      - C 說服（DOM+外交×3 全成功，極難）
+    - stage: 後果
+      effect: A=神之右手；B=流浪傳奇；C=深淵新中心，教團停戰。
+tracking_tables:
+  growth: Lv1 DEP1/INF1/1-3房/3-5怪；Lv5 DEP7/INF5/8-12房/8-12怪/1盟友；Lv15 DEP34/INF15/50-60房/35-50怪/全深淵。
+  npc_relations: 馬爾薩斯0、巴爾澤克-3、維拉+2、扳手+5、莫瑞斯隨機、瑟拉希爾-2、艾瑟琳+3、科爾溫+2。

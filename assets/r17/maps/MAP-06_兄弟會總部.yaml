@@ -1,0 +1,56 @@
+id: "MAP-06"
+title: "兄弟會總部"
+region: "工業區"
+danger: "★★★★★"
+suitable_levels: [9]
+regions:
+  - name: "外圍"
+    color: "#ECEFF1"
+  - name: "主建築"
+    color: "#FFEBEE"
+  - name: "附屬"
+    color: "#FFF3E0"
+nodes:
+  - id: "secret"
+    name: "備用通道入口"
+    region: "外圍"
+    col: 0
+    row: 1
+    note: "老柯線人提供；廢棄工廠內暗門；叛徒接應點"
+  - id: "barrack"
+    name: "兵營層"
+    region: "主建築"
+    col: 1
+    row: 1
+    note: "6 精英護衛+2 軍官（叛徒協助→3）；潛行 TN11 可繞；寢室/訓練場/食堂"
+  - id: "armory"
+    name: "裝備庫"
+    region: "附屬"
+    col: 2
+    row: 2
+    note: "重型突擊步槍（金）、全身重甲（金）；精英護衛×1 可遭遇"
+  - id: "command"
+    name: "指揮中心"
+    region: "主建築"
+    col: 1
+    row: 2
+    note: "科薩克（階段戰）；叛徒第 3 回合投震撼彈；防彈玻璃掩護"
+  - id: "roof"
+    name: "屋頂撤離平台"
+    region: "主建築"
+    col: 1
+    row: 3
+    note: "QZAC 直升機降落點；等 3 回合、防守精英護衛×2"
+edges:
+  - from: "secret"
+    to: "barrack"
+    label: "暗門"
+  - from: "barrack"
+    to: "armory"
+    label: "通道"
+  - from: "barrack"
+    to: "command"
+    label: "樓梯"
+  - from: "command"
+    to: "roof"
+    label: "樓梯"

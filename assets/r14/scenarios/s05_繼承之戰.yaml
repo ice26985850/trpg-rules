@@ -1,0 +1,80 @@
+name: "繼承之戰"
+description: "帝國締造者走到了生命盡頭。三位繼承人爭奪王位，國家在外交和軍事壓力下從內部撕裂。"
+difficulty: 5
+level_range:
+  era_start: "帝國時代"
+  era_end: "傳奇時代"
+turns_estimated: 60
+player_count: {min: 1, max: 1}
+map_ref: "maps/S5_繼承之戰_帝國分裂.yaml"
+initial_map: "maps/S5_繼承之戰_帝國分裂.yaml"
+
+phases:
+  - id: 1
+    name: "國王崩殂"
+    turns: "1-8"
+    events:
+      - turn: 1
+        name: "健康惡化"
+        type: "narrative"
+        description: "老國王健康急轉直下"
+      - turn: 5
+        name: "指定繼承人"
+        type: "choice"
+        description: "必須選擇一位繼承人"
+        choices:
+          - option: "長子 (軍事派)"
+            effect: "軍事(MIL)+15，民心(MOR)-10"
+          - option: "次女 (改革派)"
+            effect: "經濟(ECO)+15，軍事(MIL)-10"
+          - option: "幼子 (魔法派)"
+            effect: "科技(TEC)+15，經濟(ECO)-10"
+
+  - id: 2
+    name: "三分天下"
+    turns: "9-25"
+    events:
+      - turn: 12
+        name: "自立門戶"
+        type: "internal"
+        description: "未被選中的繼承人可能自立"
+      - turn: 20
+        name: "鄰國挑撥"
+        type: "diplomacy"
+        description: "鄰國趁機挑撥離間"
+
+  - id: 3
+    name: "血脈之戰"
+    turns: "26-45"
+    events:
+      - turn: 28
+        name: "內戰爆發"
+        type: "war"
+        description: "內戰爆發或經外交避免"
+
+  - id: 4
+    name: "新秩序"
+    turns: "46-60"
+    events:
+      - turn: 55
+        name: "傳奇之門"
+        type: "climax"
+        description: "新統治者是否開啟傳奇時代？"
+      - turn: 60
+        name: "終章"
+        type: "ending"
+        description: "帝國的命運在此決定"
+
+endings:
+  - id: "bloodline"
+    condition: "單一繼承人獲勝"
+    result: "帝國延續，傳奇時代開啟"
+  - id: "triumvirate"
+    condition: "三人共治"
+    result: "全屬性+5，獨特政策解鎖"
+  - id: "reform"
+    condition: "廢除君主制"
+    result: "民心(MOR)+20，新制度類型由玩家決定"
+  - id: "collapse"
+    condition: "內戰失控"
+    result: "帝國分裂，選擇一個繼承國家繼續遊戲"

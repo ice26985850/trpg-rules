@@ -1,0 +1,68 @@
+name: 鐵肋的鮮血
+difficulty: 入門級 (CR 2-3)
+mode: 凡人 · 多人
+players: 2-4
+judge: 阿斯塔羅斯（清教徒）
+target_region: 塔爾-莫拉格巢都，中巢（第 800-900 層），廢棄的冷卻管線
+recommended_attributes: 2-3
+opening_description: '你們是新一批贖罪者，組成一支小隊被派往塔爾-莫拉格巢都的廢棄冷卻管線。審判官阿斯塔羅
+
+  斯的目光在暗處注視著你們——這是一場關於團隊協作的考驗。
+
+  '
+surface_goal: 摧毀一個在廢棄冷卻管線中活動的混沌教眾小據點，帶回教派使用的聖物。
+hidden_goal: 阿斯塔羅斯想測試這批新贖罪者是否能在壓力下保持團隊協作。聖物本身價值不高。
+known_threats:
+- 約 6-8 名低階教眾信徒
+- 可能有 1 名侍僧帶領
+hidden_threats:
+- 廢棄管線中有一處結構不穩定——戰鬥中的爆炸可能觸發塌陷
+- 教派實際上在等待從底巢來的「補給」，他們只是前哨
+resources:
+  notes: 標準配給。額外 1 個醫療包（審判官對新人比較寬容）。
+  extra_medical_pack: 1
+seduction_notes:
+- 2 人收到紙條 4（「什麼都沒有」）
+- 1 人收到紙條 1（背叛換減刑）——但審判官並不真的期待背叛，只是測試
+key_npcs:
+- name: 老兵蓋倫
+  role: 中立嚮導
+  detail: 一名被罰在此服役的前帝國衛軍中士。知道管線的路。對贖罪者既同情又輕蔑
+- name: 侍僧瓦拉克
+  role: 敵人領袖
+  detail: '年輕、狂熱、不熟練的混沌侍僧。可以選擇說服他投降（心智檢定，困難），但他會在審判官面
+
+    前被處決
+
+    '
+key_checks:
+- scene: 在管線中尋找據點
+  check: 調查（標準）
+  tn: 心智×10+調查
+  success: 找到捷徑，避開巡邏
+  failure: 遭遇額外巡邏（+2信徒）
+- scene: 發現聖物被汙染
+  check: 靈能感知（標準）
+  tn: 信仰×10+靈能感知
+  success: 察覺亞空間殘留
+  failure: (碰觸聖物者腐化+1)
+- scene: 說服瓦拉克投降
+  check: 佈道（困難）
+  tn: 信仰×10+佈道−20
+  success: 避免最終戰鬥
+  failure: 進入Boss戰
+encounters:
+- name: 管線巡邏
+  enemies: 混沌信徒×3
+  cr: 0×3
+  tactic: 基本槍戰入門
+- name: 據點入口
+  enemies: 混沌信徒×4 + 1陷阱
+  cr: 0×4
+  tactic: 教眾從掩體後射擊
+- name: Boss（若未說服）
+  enemies: 侍僧瓦拉克 + 信徒×2
+  cr: 1+0×2
+  tactic: 侍僧在後方指揮
+evacuation_condition: 任務完成後前往指定撤離點。無時間限制（阿斯塔羅斯給新人空間）。
+map_ref: "maps/map11_cooling_tunnels"

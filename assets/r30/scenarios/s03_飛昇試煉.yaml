@@ -1,0 +1,71 @@
+scenario:
+  id: s03
+  title: "飛昇試煉"
+  source: "《英雄聯盟 TRPG 戰役劇本集》· 多人劇本 · 主線第三部"
+  mode: "多人"
+  standalone: true
+  level_range: "Lv.11-16"
+  region: "恕瑞瑪沙漠"
+  estimated_time: "4-5 節"
+  summary: >
+    霜裔的覆滅揭示了「黑曜之環」的真正目的——地上收集禁魔石，地下尋找太陽圓盤的碎片。
+    傳說集齊碎片可重啟飛昇儀式，創造新一代飛昇者。黑曜之環領袖已前往恕瑞瑪深入帝王陵墓，
+    玩家必須在沙漠中尋找遠古線索，在阿祈爾與澤拉斯的遺產爭奪戰中找到自己的位置。
+  chapters:
+    - id: "3.1"
+      title: "沙漠之門"
+      level: "Lv.11"
+      type: "探索/戰鬥"
+      core_encounter: "穿越沙漠、沙蟲遭遇、尋找納瑟斯"
+    - id: "3.2"
+      title: "帝王陵墓"
+      level: "Lv.12-13"
+      type: "地城"
+      core_encounter: "六層陵墓地城：陷阱/木乃伊守衛/古代謎題"
+    - id: "3.3"
+      title: "太陽圓盤"
+      level: "Lv.14"
+      type: "Boss/社交"
+      core_encounter: "三方對峙：阿祈爾 vs 澤拉斯 vs 黑曜之環"
+    - id: "3.4"
+      title: "飛昇之戰"
+      level: "Lv.15-16"
+      type: "最終戰役"
+      core_encounter: "阻止黑曜之環領袖完成禁忌飛昇儀式"
+  key_npcs:
+    - name: "納瑟斯"
+      role: "遠古飛昇者，陵墓守護者"
+      bond: "羈絆 1-8 級"
+    - name: "阿祈爾"
+      role: "復活的恕瑞瑪皇帝"
+      bond: "盟友或對手（視玩家選擇）"
+    - name: "澤拉斯"
+      role: "背叛的飛昇者，能量體"
+      bond: "宿敵"
+    - name: "雷尼克頓"
+      role: "被澤拉斯操控的飛昇者"
+      bond: "Boss/可救贖"
+  boss:
+    name: "禁忌飛昇者"
+    level: "Lv.16"
+    stats:
+      hp: 3200
+      ad: 120
+      armor_mr: "140/140"
+      special: "飛昇光環：每回合回復 生命值（HP）3%"
+    phases:
+      - phase: "P1"
+        range: "100%-70%"
+        mechanics: "太陽射線（直線 4 格 法術強度（AP）×1.5）+ 召喚沙兵（生命值（HP）400×3, 攻擊力（AD）40）"
+      - phase: "P2"
+        range: "70%-35%"
+        mechanics: "飛昇形態——體型增大 50%，攻擊範圍 +2 格；沙兵數量翻倍"
+      - phase: "P3"
+        range: "35%-0%"
+        mechanics: "禁忌儀式——每回合吸取全場生命（生命值（HP）×3% 回復自身）；弱點露出（背部 +50% 傷害）"
+    redemption_route: "若 3.3 中拯救雷尼克頓，他會在 P3 登場協助，打破 Boss 的飛昇光環"
+  rewards:
+    exp: 8500
+    gold: "12,000-18,000"
+    equipment: "「飛昇者護符」（法術強度（AP）+60, 冷卻時間（CDR）+15%，每場戰鬥 1 次可化身飛昇形態：法術強度（AP）+30% × 3 回合）"
+    augment: "「太陽遺產」——獲得 1 個隨機傳說級增幅裝置"

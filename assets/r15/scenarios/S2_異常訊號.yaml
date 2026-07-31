@@ -1,0 +1,51 @@
+name: "S2：異常訊號"
+description: >
+  Level 3 電氣站偵測到異常能量波動。這不是隨機噪音——像是有東西在發送。
+  這是你的團隊第一次面對後室本身的故障。也是你失去第一個人的地方。
+difficulty: 困難
+real_dc: 85
+level_range: "3"
+mission_type: 偵察任務
+campaign: "戰役一：新手主任（高潮）"
+min_agents: 2
+recommended_specialty:
+  - 工程
+  - 偵察
+encounter_rate: 25
+time_limit: null
+intel_levels:
+  basic: "DC 64–106（偏差±25%）"
+  detailed: "DC 72–98（偏差±15%）"
+  precise: "DC 81–89（偏差±5%）"
+rewards:
+  success:
+    intel_gain: 3
+    special: "獲得裂縫樣本——可交研發實驗室分析"
+  great_success:
+    intel_gain: 5
+    special: "完整裂縫能量數據——解鎖戰役二關鍵線索"
+  marginal_success:
+    intel_gain: 2
+    special: "一名探險員輕傷"
+  failure:
+    intel_gain: 1
+    special: "失去關鍵數據，需再次派人"
+  disaster:
+    intel_gain: 0
+    special: "觸發第一個探險員死亡。觸發戰役一情感高潮"
+first_death_trigger: true
+scene_flow:
+  - scene: "辦公室——情報評估"
+    description: "情報官蘇明報告異常信號的發現。玩家決定情報等級和派遣隊。"
+  - scene: "Level 3入口——下潛"
+    description: "金屬門後是臭氧氣味和閃爍的琥珀色燈光。高壓環境威脅。"
+  - scene: "C區深處——信號源"
+    description: "牆上電線在顫動，像有脈搏。廢棄控制室中——發現「裂縫」。"
+    check: "d100 + 團隊加值 ≥ 實際DC 85"
+  - scene: "災難——死亡通知（如觸發）"
+    description: "通訊中的最後一句話後是沉默。只有一個人走出來。"
+    special: "GM應在此處停頓。給玩家時間處理。"
+consequence_options:
+  - "立即派遣第二隊（新任務，DC 90）"
+  - "封鎖C區（安全，但失去情報）"
+  - "報告M.E.G.（代價：可能被視為管理失誤）"

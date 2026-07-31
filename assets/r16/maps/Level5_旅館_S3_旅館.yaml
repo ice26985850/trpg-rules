@@ -1,0 +1,112 @@
+name: "Level 5 — 恐怖旅館"
+description: "無限維多利亞式旅館——紅地毯、水晶吊燈；房間佈局會變動；無面侍者引導你走向宴會廳的空椅子"
+scenario_ref: "S3_旅館"
+usage: "S3 劇本：在變動的旅館中尋找出路，躲避僕從引導，抵達宴會廳帷幕後門通往 Level 6"
+regions:
+  - name: "金色電梯（入口）"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "區域"
+  - name: "紅毯走廊"
+    color: "#ECEFF1"
+    nodes: ["N02", "N03"]
+    description: ""
+  - name: "畫像廊（危險）"
+    color: "#F3E5F5"
+    nodes: ["N04"]
+    description: ""
+  - name: "宴會廳（致命）"
+    color: "#FFEBEE"
+    nodes: ["N05"]
+    description: ""
+  - name: "補給客房"
+    color: "#E3F2FD"
+    nodes: ["N06"]
+    description: ""
+  - name: "帷幕後門（出口）"
+    color: "#E0F7FA"
+    nodes: ["N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "金色電梯（入口）"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "從 Level 4 搭乘金色電梯抵達——門在身後關上"
+  - id: "N02"
+    label: "紅毯走廊"
+    x: 320
+    y: 240
+    type: "normal"
+    explored: false
+    description: "無盡紅地毯與水晶吊燈；佈局會在視線移開後改變"
+  - id: "N03"
+    label: "客房區"
+    x: 320
+    y: 400
+    type: "normal"
+    explored: false
+    description: "每扇房門刻著一個迷失者名字——門後可能是普通房或無盡迷宮"
+  - id: "N04"
+    label: "畫像廊"
+    x: 500
+    y: 240
+    type: "danger"
+    explored: false
+    description: "畫像中的眼睛會轉動（感知 DC 14 察覺，察覺後 SP -1D3）"
+    threats: "畫像實體（精神攻擊）"
+  - id: "N05"
+    label: "宴會廳"
+    x: 500
+    y: 400
+    type: "danger"
+    explored: false
+    description: "空椅子排列整齊——坐下者被永久囚禁於此層（角色終結）；食物看似正常，食用 SP -1"
+    threats: "永久囚禁／SP -1"
+  - id: "N06"
+    label: "補給客房"
+    x: 320
+    y: 540
+    type: "resource"
+    explored: false
+    description: "部分客房內偶有物資可搜刮"
+    resources: "隨機物資"
+  - id: "N07"
+    label: "帷幕後門（出口）"
+    x: 680
+    y: 320
+    type: "exit"
+    explored: false
+    description: "宴會廳深處的厚重帷幕——拉開後通往 Level 6"
+    exit_to: "Level 6 — 熄燈"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "客房"
+  - from: "N02"
+    to: "N04"
+    type: "corridor"
+    label: "畫像廊"
+  - from: "N03"
+    to: "N06"
+    type: "corridor"
+    label: "補給"
+  - from: "N04"
+    to: "N05"
+    type: "dangerous_path"
+    label: "侍者引導"
+  - from: "N03"
+    to: "N05"
+    type: "dangerous_path"
+    label: "宴會廳"
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ 出口（帷幕）"

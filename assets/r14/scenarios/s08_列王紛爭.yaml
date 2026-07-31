@@ -1,0 +1,142 @@
+name: "列王紛爭"
+description: "舊帝國崩解後，遺跡散落四方。數位王侯在廢土上立國，爭奪帝國遺產與統治正統。誰能控制傳說中的帝國遺跡，誰就能戴上那頂虛懸的帝冠。"
+difficulty: 3
+level_range:
+  era_start: "王國時代"
+  era_end: "帝國時代"
+turns_estimated: 60
+years_in_game: 20
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S3_帝國的遺產_遺跡區域"
+initial_map: "maps/S3_帝國的遺產_遺跡區域.yaml"
+multiplayer_rules:
+  mode: "競爭（征服＋陰謀）"
+  victory: "第 60 回合結算「王權分數」＝領土數×10 ＋ 控制遺跡數×20 ＋ 附庸國數×8 ＋ 戰爭勝場×15；最高者加冕。率先控制區域內 2 處以上「帝國遺跡」者可觸發終局並 ＋30 分。"
+  interaction: "玩家間可締結附庸關係、宣戰、發動征服戰與宮廷陰謀；佔領遺跡可解鎖特殊加成。"
+starting_conditions:
+  population: 800
+  attributes:
+    base: 20
+    free_points: 30
+phases:
+  - id: 1
+    name: "王座初立"
+    turns: "1-15"
+    description: "各王侯在廢土上立國，確立領地與繼承順位"
+    events:
+      - turn: 3
+        name: "加冕典禮"
+        type: "ceremony"
+        description: "正式稱王，宣告主權"
+        effect: "民心(MOR)+8，王權分數+5"
+      - turn: 7
+        name: "遺跡探勘"
+        type: "exploration"
+        description: "派遠征隊進入帝國遺跡尋找遺物"
+        skill_check: "科技(TEC)，DC 15"
+      - turn: 11
+        name: "繼承之爭"
+        type: "intrigue"
+        description: "王室內部爆發繼承權爭議"
+        choices:
+          - option: "強硬鎮壓"
+            effect: "秩序穩定但民心(MOR)−5"
+          - option: "妥協分封"
+            effect: "失去部分領土，但避免內戰"
+      - turn: 14
+        name: "邊疆封臣"
+        type: "vassal"
+        description: "收服弱小鄰國為附庸"
+        effect: "附庸國數+1，王權分數+8"
+  - id: 2
+    name: "疆域擴張"
+    turns: "16-34"
+    description: "向外征服，控制戰略要地與遺跡"
+    events:
+      - turn: 19
+        name: "要塞爭奪"
+        type: "competition"
+        description: "一座邊境要塞成為各方目標"
+        skill_check: "軍事(MIL)，DC 16"
+      - turn: 24
+        name: "遺跡守護者"
+        type: "combat"
+        description: "遺跡中有古代守衛軍，需擊破才能佔領"
+        crisis_type: "combat"
+        skill_check: "軍事(MIL)，DC 17"
+      - turn: 29
+        name: "經濟聯盟"
+        type: "diplomacy"
+        description: "與他國建立經濟同盟，共享貿易紅利"
+        effect: "經濟(ECO)+10，王權分數+5"
+      - turn: 33
+        name: "附庸叛亂"
+        type: "betrayal"
+        description: "不滿的附庸國起兵反抗"
+        skill_check: "民心(MOR)，DC 16"
+  - id: 3
+    name: "聖戰與陰謀"
+    turns: "35-50"
+    description: "信仰動員與宮廷陰謀並行"
+    events:
+      - turn: 38
+        name: "聖戰號召"
+        type: "religious"
+        description: "教會號召對異端發動聖戰"
+        effect: "全軍士氣+15，但外交關係−10"
+      - turn: 43
+        name: "宮廷毒殺"
+        type: "assassination"
+        description: "派出刺客暗殺敵國重臣"
+        skill_check: "科技(TEC)，DC 18"
+      - turn: 47
+        name: "遺物覺醒"
+        type: "artifact"
+        description: "控制的遺跡釋放古代力量，強化王國"
+        effect: "全屬性+5，王權分數+20"
+  - id: 4
+    name: "帝冠之爭"
+    turns: "51-60"
+    description: "最後整合——加冕或殞落"
+    events:
+      - turn: 54
+        name: "雙遺跡宣言"
+        type: "milestone"
+        description: "控制 2 處以上帝國遺跡者可宣稱帝冠"
+        effect: "王權分數+30，觸發終局"
+      - turn: 58
+        name: "決戰王都"
+        type: "military"
+        description: "剩餘強權於古王都決戰"
+        skill_check: "軍事(MIL)，DC 19"
+      - turn: 60
+        name: "加冕時刻"
+        type: "ending"
+        description: "結算王權分數，最高者加冕為帝"
+endings:
+  success:
+    condition: "王權分數最高且控制 2 處以上帝國遺跡"
+    reward: "全屬性+10，解鎖「帝國繼業者」傳奇事蹟"
+  partial:
+    condition: "存活至終局但未加冕"
+    reward: "保留王國，可進入自由模式"
+  failure:
+    condition: "王都淪陷且無附庸可繼承"
+    remedy: "繼承機制——以流亡王室身份投靠勝者，保留 45% 屬性"
+key_npcs:
+  - name: "大祭司 塞琳"
+    role: "遺跡教會的當權者"
+    personality: "虔誠、強勢"
+    relationship: "可為盟友或敵人"
+  - name: "遺跡守護者 戈恩"
+    role: "古代守衛軍的甦醒指揮官"
+    personality: "沉默、忠誠"
+    relationship: "佔領遺跡前的阻礙"
+gm_notes:
+  - "王國時代強調領土與遺跡控制，遺跡是核心戰略資源"
+  - "GM 需追蹤各國領土數、控制遺跡數與附庸關係"
+  - "陰謀與刺殺是軟性解法，與正面戰爭並用"
+  - "遺物覺醒事件應慎重安排，避免單一玩家過早壟斷"
+  - "維持多方均勢，避免過早出現絕對霸主"

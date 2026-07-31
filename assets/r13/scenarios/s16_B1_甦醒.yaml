@@ -1,0 +1,58 @@
+name: 甦醒
+difficulty: 入門級
+mode: 阿斯塔特 · 多人
+players: 2-4
+planet: 安魂星
+recommended_attributes: 初始創角
+opening_description: '你們在墜落中失去意識。當你們醒來時，發現自己躺在墜毀的雷鷹砲艇殘骸中。艦隊已經走了。
+
+  滅絕令正在執行——從軌道上落下的火焰仍在遠方燃燒。你們是唯一的倖存者——還是還有其他
+
+  人？
+
+  '
+structure_phases:
+- phase: 甦醒
+  content: '每個人描述自己在殘骸中醒來的狀態。檢查裝備——動力裝甲的狀態（步驟 7）。誰在？誰不
+
+    在？
+
+    '
+- phase: 搜索
+  content: '搜索墜毀現場：找到 1-2 件戰團遺物（步驟 5）、確定當前位置、發現附近有一座廢墟
+
+    城市
+
+    '
+- phase: 首次遭遇
+  content: 低階變異體 ×2-3——這些是星球上原本的野生動物被混沌能量扭曲後的產物
+- phase: 發現信號
+  content: '殘骸中的通訊器短暫接收到一段帝國頻道的信號——來自北方的山區。信號太弱無法回應，但至
+
+    少是一個方向
+
+    '
+oath_conflict: 無——這是起始劇本，重點是建立角色關係和環境基調。
+key_checks:
+- scene: 搜索殘骸
+  check: 調查（標準）
+  tn: —
+  success: 找到有用物資
+  failure: —
+- scene: 判斷信號來源
+  check: 學識（標準）
+  tn: —
+  success: 確定信號可能是什麼
+  failure: —
+- scene: 首次戰鬥
+  check: 正常戰鬥檢定
+  tn: —
+  success: 適應戰鬥系統
+  failure: —
+encounters:
+- name: 首次遭遇
+  enemies: 低階變異體 ×2-3
+  cr: —
+  tactic: 星球野生動物被混沌扭曲的產物，適應戰鬥系統
+ending_note: 小隊集結完畢，向北方的山區出發。黑暗中隱約可見廢墟城市的輪廓。
+map_ref: "maps/map16_awakening"

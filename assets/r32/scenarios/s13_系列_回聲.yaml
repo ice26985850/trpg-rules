@@ -1,0 +1,85 @@
+name: "回聲（多人）"
+type: "迷途者"
+difficulty: "★★★"
+recommended_marks: "3-6"
+players: "3-5 人"
+play_time: "2-3 次聚會"
+core_attributes: ["TR", "NG", "RE"]
+
+opening: |
+  青年阿傑在公寓裡「失蹤」了——但他沒真的消失。室友偶爾在走廊盡頭看到他的影子，
+  凌晨兩點聽見腳步聲，冰箱食物會少。祖母說：「他不是失蹤，他在『另一邊』出不來。」
+  阿傑已「半失蹤」三週，間隙耐力耗盡，處於間隙病中期。
+
+npcs:
+  - name: "阿傑（迷途者）"
+    type: "迷途者"
+    desc: "23歲物理研究生。固執、對現實本質有執著。處於間隙病中期——GM不告知玩家他是否知道自己被困"
+    companion_eligible: false
+  - name: "小美（室友）"
+    type: "委託人"
+    desc: "阿傑室友兼好友，最想救他的人，可提供個人物品作線索"
+    companion_eligible: false
+  - name: "指導教授"
+    type: "知情者"
+    desc: "知道阿傑研究「空間摺疊」，提及此事時不安：「那個研究……不該繼續」"
+    companion_eligible: false
+  - name: "遺失物收集者"
+    type: "間隙生物"
+    desc: "曾在此公寓生活的前代間隙行者，在間隙囤積物品，知道阿傑位置但需交換"
+    companion_eligible: false
+
+lost_items:
+  - name: "阿傑的研究筆記（複本）"
+    tier: "普通遺失物"
+    dc: 8
+    location: "大學實驗室間隙層"
+    effect: "揭示阿傑研究主題與共振器"
+  - name: "共振器"
+    tier: "間隙造物"
+    dc: 18
+    location: "阿傑房間的間隙層"
+    effect: "阿傑自製的空間共振裝置——開啟間隙門檻的關鍵"
+  - name: "母親的項鍊"
+    tier: "記憶結晶"
+    dc: 15
+    location: "阿傑身上（他帶入間隙的）"
+    effect: "他的定錨物——讓他「感知」真實"
+
+gap_creatures:
+  - name: "遺失物收集者"
+    type: "囤積者"
+    negotiation_dc: 14
+    location: "公寓間隙層"
+    liberation: "用一件「新的遺失物」交換阿傑的情報"
+    reward: "提供阿傑的確切位置"
+
+scenes:
+  - name: "探索公寓間隙層"
+    desc: "從天台進入間隙（人造門檻 難度等級（DC）12）。公寓間隙與表層幾乎相同——最大恐怖是「沒有變化」。穿梭 難度等級（DC）14 確認自己是否真在間隙層。"
+    map_ref: "MAP-05（阿傑的公寓）— 間隙版八樓"
+  - name: "找到阿傑的蹤跡"
+    desc: "阿傑房門開著。拾遺 難度等級（DC）10 發現便利貼「我在這裡。找共振器」。"
+    map_ref: "MAP-05 — 阿傑房間"
+  - name: "與遺失物收集者交涉"
+    desc: "收集者（交涉 難度等級（DC）14）知道位置，要求一件新的遺失物交換情報。"
+    map_ref: "—"
+  - name: "找到阿傑"
+    desc: "他在公寓天台間隙層，坐在邊緣看虛假星空，處於間隙病中期。"
+    map_ref: "MAP-05 — 天台間隙（虛假星空）"
+  - name: "說服阿傑離開"
+    desc: "交涉 難度等級（DC）16。出示定錨物（母親項鍊，記憶結晶 難度等級（DC）15 取出）讓他感知真實。"
+    map_ref: "MAP-05 — 阿傑身上的項鍊"
+  - name: "退出間隙"
+    desc: "阿傑被帶回表層後處於間隙病初期，需表層靜養7天。歸還印記 +1。"
+    map_ref: "—"
+
+endings:
+  - "阿傑康復後成為潛在間隙行者（NPC熟人）"
+  - "未能及時救出→他在間隙病後期變成新的遺失物收集者"
+  - "共振器被回收→可能成為未來劇本關鍵物品"
+
+rewards:
+  - "歸還印記 × 1"
+
+companion_recruitment: []

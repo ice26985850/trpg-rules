@@ -1,0 +1,141 @@
+title: 回聲旅館
+difficulty: 漸進（★→★★★★★，單人專用）
+stars: 5
+loop_length: 1天（暴風雪之夜：傍晚18:00→次日午夜00:00）
+loop_limit: 15
+suggested_players: 1（單人）
+action_points: 9 + 行動（ACT）修正（6小時有效窗口）
+tone_tags:
+  - 孤獨中的執著
+  - 每一個房間都有一個故事
+  - 過去從未真正過去
+single_player_only: true
+loop_setting:
+  endpoint: 午夜00:00，旅館大廳鐘聲響起，客房門同時鎖上——然後重置
+  start: 傍晚18:00，旅館大廳壁爐旁醒來，暴風雪在外面呼嘯
+  boundary: 旅館建築＋周圍50米（超出在暴風雪中無法生存，自動重置）
+  opening: "壁爐的火噼啪作響。你睜開眼，蜷縮在大廳舊沙發上。窗外暴風雪白茫茫。吧檯後老人擦杯子：『醒了？客房在二樓——隨便選一間吧，反正也沒別的客人。』你掃過登記簿——密密麻麻十幾個名字，都被劃掉了。"
+core_truth:
+  anchor_event: "考古學家林素問為救同伴墜崖，遺憾『沒告訴女兒媽媽愛你』太重，縫隙無法消化，形成裂痕——每個來客被困六小時循環。"
+  surface_story: 偏僻山區旅館，暴風雪困住旅客，每晚午夜重置。
+  real_story: "旅館是『時間的縫隙』，死於暴風雪者的最後意識來此住一晚後消散；老闆是縫隙守護者（這座山本身）。林素問未消散，成為錨點。"
+  healing_conditions:
+    - 玩家在204號房找到林素問的遺物（給女兒未寄出的信）
+    - 玩家對林素問說出真相——她已不在人世，女兒還活著，需要這封信
+    - 可選：探訪其他客房理解客人故事（提供認知點與線索）
+truth_fragments:
+  - name: 登記簿的秘密
+    type: 場景
+    location: 大廳吧檯
+    difficulty: 易
+    loop: 1
+    detail: "被劃掉的名字旁寫『死於XXXX年X月X日』，最後一條十年前；你的名字旁只寫『還活著』。"
+  - name: 204號房間的哭聲
+    type: 場景
+    location: 二樓走廊
+    difficulty: 中
+    loop: 2
+    detail: "晚10:00路過聽到哭聲，門鎖著；11:00開5分鐘，窗邊女人說在等女兒。"
+  - name: 其他客人的故事
+    type: 對話
+    location: 各個房間
+    difficulty: 中
+    loop: 3+
+    detail: "201老獵人、203年輕登山者、205貨車司機——至少了解2個才能拼出循環本質。"
+  - name: 老闆的日記
+    type: 物品
+    location: 吧檯後面
+    difficulty: 中
+    loop: 4
+    detail: "最後一頁十年前：『今天來了一個女人……「我也是。」從那以後時間就亂了。』"
+  - name: 林素問的考古筆記
+    type: 物品
+    location: 204號房床下
+    difficulty: 難
+    loop: 5
+    detail: "十年前考古項目，報紙照片標題『山區救援隊搜尋失蹤考古學家』，背面寫女兒問何時回家。"
+  - name: 未寄出的信
+    type: 物品
+    location: 204號房枕頭下
+    difficulty: 難
+    loop: 6
+    detail: "林素問給女兒朵朵的信，全文寫明『媽媽是為救人而死的』。"
+  - name: 老闆的真名
+    type: 對話
+    location: 吧檯
+    difficulty: 特殊
+    loop: 8+
+    detail: "集≥4碎片後問『你是誰』，他給204號房鑰匙（此前只23:00-23:05開）。"
+  - name: 送信
+    type: 行動
+    location: 觸發式
+    difficulty: 特殊
+    loop: 9+
+    detail: "花3錨點錨定那封信，下輪醒來信在手中、紙是暖的——必須離開旅館找到朵朵。"
+key_npcs:
+  - name: 林素問
+    role: 等待的母親（錨點人物）
+    age: 42
+    emotion_baseline: 3/10
+    sensitivity: 極高
+    notes: "每晚204房看窗外，不主動開口；若你說話她問『見過朵朵嗎』。"
+  - name: 旅館老闆
+    role: 山（縫隙守護者）
+    age: 外表60（實際∞）
+    emotion_baseline: 5/10
+    sensitivity: N/A
+    notes: "非人類不會劣化偏移，每輪說同樣的話，是唯一不變的錨。"
+  - name: 老獵人
+    role: 201號房客人
+    age: 73
+    emotion_baseline: 4/10
+    sensitivity: N/A
+    notes: "凍死喉嚨受損不說話，只點頭指向地圖標記林素問墜崖處；理解可得1認知點。"
+  - name: 年輕登山者
+    role: 203號房客人
+    age: 24
+    emotion_baseline: 2/10
+    sensitivity: N/A
+    notes: "每晚寫信寫一半忘；幫他寫完結尾，他消失前微笑，次日房門多一把204鑰匙。"
+  - name: 貨車司機
+    role: 205號房客人
+    age: 41
+    emotion_baseline: 6/10
+    sensitivity: N/A
+    notes: "固執樂觀，告訴他路十年前廢棄，他遞紙條給林素問墜崖座標。"
+recommended_companion:
+  name: 年輕登山者
+  age: 24
+  attributes: {體能: 3, 警覺: 2, 意志: 2, 親和: 1}
+  note: "第3+循環幫他寫完信後成為夥伴；體能高適合戰鬥行動輔助；提『回家』會本輪全檢定劣勢。"
+degradation:
+  - phase: 循環1-2（鏡像）
+    description: 正常旅館，探索大廳客房熟悉NPC，碎片1+2可取得。
+  - phase: 循環3-4（鏡像→漣漪）
+    description: 203門自開，故事開始循環播放，NPC重複行為明顯。
+  - phase: 循環5-6（漣漪）
+    description: 壁爐火成無聲火焰，204哭聲更清晰後突停，碎片4+5+6可取得。
+  - phase: 循環7-8（裂紋）
+    description: 暴風雪窗口閃過十年前死者人臉，老闆首次說『今天星期幾』，碎片7可取得。
+  - phase: 循環9-10（斷裂）
+    description: 204門不再自鎖，林素問說完整句子但內容是十年前墜崖時對女兒說的話，碎片8觸發。
+  - phase: 循環11-12（斷裂→崩壞）
+    description: 牆壁透明可見十年前的山，無廢棄路無倒塌橋。
+  - phase: 循環13-15（崩壞）
+    description: 所有房門同時打開，客人站在門口等林素問做出選擇。
+endings:
+  - id: A
+    name: 信送達了
+    grade: 完美（錨定結局）
+    condition: 碎片1-7全獲＋錨定碎片8（3錨點）＋說服林素問接受真相
+    narrative: "下輪信在手裡是暖的，旅館門向外開，門外山路陽光，去山下找朵朵；旅館消失但不再需要循環。"
+  - id: B
+    name: 告訴了她
+    grade: 一般（非錨定結局）
+    condition: 碎片1-6獲＋說出真相但未錨定信
+    narrative: "林素問聽後笑說信不必寄了，走向窗推開——窗外是女兒房間，走進去，循環停止。"
+  - id: C
+    name: 留在暴風雪中
+    grade: 壞
+    condition: 循環耗盡（15次）未讓她面對真相
+    narrative: "旅館不再重置，暴風雪停客房全空，只剩枕下泛黃的信；你獨自走下山找朵朵。"

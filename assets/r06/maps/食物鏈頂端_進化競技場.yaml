@@ -1,0 +1,127 @@
+# 食物鏈頂端 — 進化競技場地圖
+# 對應劇本：S4（全場景）
+
+nodes:
+  - id: "A"
+    label: "入場點"
+    x: 300
+    y: 450
+    type: "start"
+    explored: false
+    description: "玩家被傳送進入競技場的位置。"
+
+  - id: "B"
+    label: "變異森林"
+    x: 150
+    y: 350
+    type: "exploration"
+    explored: false
+    description: "進化植物生命體的森林。樹上有眼睛，地面如皮膚。"
+
+  - id: "C"
+    label: "集會石"
+    x: 300
+    y: 280
+    type: "safe"
+    explored: false
+    description: "競技場唯一的中立區域。禁止戰鬥。多數倖存進化者在此出沒。"
+
+  - id: "D"
+    label: "挑戰石碑"
+    x: 450
+    y: 350
+    type: "challenge"
+    explored: false
+    description: "可在石碑前宣告挑戰排名更高的進化者。1v1 強制對決。"
+
+  - id: "E"
+    label: "火山高原（東部）"
+    x: 550
+    y: 200
+    type: "boss"
+    explored: false
+    description: "荒野之王扎拉克斯的領地。巢穴中有他的孩子。"
+
+  - id: "F"
+    label: "腐化沼澤（南部）"
+    x: 200
+    y: 150
+    type: "hazard"
+    explored: false
+    description: "充滿變異生物的沼澤。每回合體質 DC 14 否則中毒。"
+
+  - id: "G"
+    label: "廢墟塔（西部）"
+    x: 100
+    y: 200
+    type: "loot"
+    explored: false
+    description: "競技場古代遺跡。可能有進化資源殘留。"
+
+  - id: "H"
+    label: "中央競技場"
+    x: 350
+    y: 100
+    type: "final_boss"
+    explored: false
+    description: "決賽場地。被能量壁壘封閉。冠軍凱恩的所在地。"
+
+  - id: "I"
+    label: "封印核心"
+    x: 300
+    y: 50
+    type: "secret"
+    explored: false
+    description: "競技場封印的能量核心。打破封印的關鍵位置。"
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "open"
+  - from: "A"
+    to: "C"
+    type: "open"
+  - from: "A"
+    to: "D"
+    type: "open"
+  - from: "B"
+    to: "F"
+    type: "passage"
+  - from: "B"
+    to: "G"
+    type: "passage"
+  - from: "C"
+    to: "D"
+    type: "open"
+  - from: "C"
+    to: "H"
+    type: "open"
+  - from: "D"
+    to: "E"
+    type: "passage"
+  - from: "C"
+    to: "F"
+    type: "passage"
+  - from: "C"
+    to: "G"
+    type: "passage"
+  - from: "H"
+    to: "I"
+    type: "secret"
+  - from: "E"
+    to: "I"
+    type: "passage"
+
+regions:
+  - name: "中央區域"
+    color: "#4B0082"
+    nodes: ["A", "C", "D"]
+  - name: "荒野區域"
+    color: "#2E8B57"
+    nodes: ["B", "F", "G"]
+  - name: "BOSS 區域"
+    color: "#DC143C"
+    nodes: ["E", "H"]
+  - name: "秘密區域"
+    color: "#FFD700"
+    nodes: ["I"]

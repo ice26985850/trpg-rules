@@ -1,0 +1,136 @@
+title: 最後的學園祭
+difficulty: 進階
+stars: 4
+loop_length: 7天
+loop_limit: 15
+suggested_players: 3-5
+action_points: 8 + 行動（ACT）修正（7天，共約56-77行動點）
+tone_tags:
+  - 青春的終結
+  - 未竟之言
+  - 即使知道結局也要做的事
+loop_setting:
+  endpoint: 第七天（學園祭當天）下午3:00，學校發生毒氣事件，全校死亡
+  start: 學園祭前七天（星期一）早晨7:00，玩家在教室醒來
+  boundary: 整個學校校區（含宿舍、體育館、後山）
+  opening: "你在課桌上醒來。臉頰貼著冰涼的桌面，嘴角還有口水的痕跡。黑板上寫著『距離學園祭還有7天』。窗外的櫻花開了——你記得櫻花應該下週才開。"
+core_truth:
+  anchor_event: "學生蘇眠在毒氣中倒下的瞬間，唯一的念頭是『我還沒有告訴林同學我喜歡他』——這個遺憾撕裂了現實。"
+  surface_story: 學園祭當天實驗室氣體洩漏，意外事件，全校遇難。
+  real_story: "化學老師江雪隱瞞實驗意外致死（助教周洋），毒氣持續擴散；但裂痕是蘇眠的遺憾造成的，而非江雪。"
+  healing_conditions:
+    - 蘇眠（或在玩家幫助下）向林同學告白
+    - 揭露化學老師的事故真相
+    - 可選：在學園祭當天阻止毒氣擴散
+truth_fragments:
+  - name: 蘇眠的日記
+    type: 物品
+    location: 蘇眠的課桌
+    difficulty: 易
+    loop: 1
+    detail: "被寫了又撕、撕了又寫的日記，每頁只有一句：『今天也沒有說出口。』"
+  - name: 實驗室的鎖
+    type: 場景
+    location: 化學實驗室
+    difficulty: 中
+    loop: 3
+    detail: "學園祭前三天開始反鎖，門縫有淡淡苦杏仁味。"
+  - name: 缺席的助教
+    type: 對話
+    location: 學生
+    difficulty: 易
+    loop: 2
+    detail: "高三學長周洋在學園祭前四天突然請假，從此沒人見過；老師說他『轉學了』。"
+  - name: 江雪的加班記錄
+    type: 文件
+    location: 教職員辦公室
+    difficulty: 難
+    loop: 4
+    detail: "江雪在學園祭前三天到前一天深夜都在實驗室，簽名越來越潦草。"
+  - name: 通風系統圖
+    type: 物品
+    location: 校務處
+    difficulty: 中
+    loop: 5
+    detail: "通風管連接全校，含體育館（學園祭主場地）。"
+  - name: 林同學的筆記
+    type: 物品
+    location: 圖書館
+    difficulty: 易
+    loop: 1
+    detail: "林同學借了詩集，夾紙條：想在櫻花樹下讀給一個人聽。"
+  - name: 蘇眠的最後一刻
+    type: 記憶
+    location: 體育館
+    difficulty: 特殊
+    loop: 7+
+    detail: "毒氣擴散瞬間，若玩家在蘇眠附近，觸發閃回：她倒下看著林同學，口型是『我喜歡你』。"
+  - name: 江雪的供詞
+    type: 對話
+    location: 觸發
+    difficulty: 難
+    loop: 8+
+    detail: "帶碎片2+3+4+5質問，她崩潰承認隱瞞殺了全校。"
+key_npcs:
+  - name: 蘇眠
+    role: 未告白的少女（錨點人物）
+    age: 17
+    emotion_baseline: 5/10
+    sensitivity: 極高
+    notes: "每次循環第7天下午2:55走向林同學但走不到；若2:50前提醒她，直接觸發裂痕癒合。"
+  - name: 林同學
+    role: 被暗戀的人
+    age: 17
+    emotion_baseline: 7/10
+    sensitivity: 高
+    notes: "其實也喜歡蘇眠，紙條她從未看到；循環6+可能無意識畫蘇眠名字。"
+  - name: 江雪
+    role: 化學老師
+    age: 34
+    emotion_baseline: 3/10
+    sensitivity: 高
+    notes: "非壞人，犯錯後掩蓋；循環8+可能主動去校長室自首。"
+  - name: 周洋
+    role: 消失的助教
+    age: 18
+    emotion_baseline: N/A
+    sensitivity: N/A
+    notes: "循環開始前已死亡，殘影偶現，是裂痕的「預兆」。"
+  - name: 校長
+    role: 知情人
+    age: 58
+    emotion_baseline: 6/10
+    sensitivity: 中
+    notes: "知道江雪隱瞞，選擇相信她；女兒也在學園祭那天在學校。"
+degradation:
+  - phase: 循環1-3（鏡像）
+    description: 正常學校生活，建立與蘇眠、林同學的熟悉度。
+  - phase: 循環4-6（漣漪）
+    description: 櫻花提前凋謝，江雪開始出錯，蘇眠日記頁數每天不同。
+  - phase: 循環7-9（裂紋）
+    description: 廣播偶播陌生時代歌曲，走廊長度變化，蘇眠可能短暫「意識」循環。
+  - phase: 循環10-12（斷裂）
+    description: 化學實驗室門消失但毒氣仍擴散，周洋殘影開始與其他NPC互動。
+  - phase: 循環13-15（崩壞）
+    description: 學園祭裝飾自行變化，體育館時鐘倒走，蘇眠第7天自動走向林同學但時間減慢。
+endings:
+  - id: A
+    name: 告白
+    grade: 完美
+    condition: 揭露江雪真相＋蘇眠在擴散前告白＋阻止擴散
+    narrative: "學園祭正常舉行，蘇眠在櫻花樹下讀完詩，全校得救。"
+  - id: B
+    name: 遺憾但完整
+    grade: 進階好
+    condition: 揭露真相但未能阻止毒氣，蘇眠最後一刻告白
+    narrative: "全校死亡但循環停止，蘇眠遺憾被填滿，裂痕癒合——以所有人消散為代價。"
+  - id: C
+    name: 蘇眠的選擇
+    grade: 隱藏
+    condition: 蘇眠後期「半覺醒」後自行選擇
+    narrative: "她可選繼續循環（反覆見林同學）或告白（循環結束但會死），把選擇交給玩家。"
+  - id: D
+    name: 最後的學園祭
+    grade: 壞
+    condition: 循環耗盡
+    narrative: "學校從地圖消失，唯一留下櫻花樹上刻著的兩個字：『蘇眠』。"

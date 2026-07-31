@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" font-family="Microsoft JhengHei, PingFang TC, sans-serif">
+<rect x="0" y="0" width="1200" height="960" fill="#fff"/>
+<text x="40" y="40" font-size="20" font-weight="bold" fill="#7a1f1f">🗺 通用基金會站點 (戰役 C/D)</text>
+<rect x="40" y="80" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="102" font-size="15" font-weight="bold" fill="#2c3e50">▣ 一樓 — 運作與收容</text>
+<rect x="40" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">中央控制室</text>
+<text x="124" y="146" font-size="9.5" text-anchor="middle" fill="#666">監測</text>
+<rect x="516" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">收容翼 Alpha(Safe)</text>
+<text x="600" y="146" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">收容翼 Beta(Euclid)</text>
+<text x="1076" y="146" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">收容翼 Gamma(Keter)</text>
+<text x="124" y="236" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">D級拘留區(北)</text>
+<text x="600" y="236" font-size="9.5" text-anchor="middle" fill="#666">C-3</text>
+<rect x="992" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">醫療室(東)</text>
+<text x="1076" y="236" font-size="9.5" text-anchor="middle" fill="#666">D-3</text>
+<rect x="40" y="290" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="309" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">伺服器室</text>
+<text x="124" y="326" font-size="9.5" text-anchor="middle" fill="#666">C-6</text>
+<rect x="516" y="290" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="309" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">倉庫</text>
+<text x="600" y="326" font-size="9.5" text-anchor="middle" fill="#666">C-7</text>
+<rect x="40" y="300" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="322" font-size="15" font-weight="bold" fill="#2c3e50">▣ 二樓 — 行政區</text>
+<rect x="40" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">研究部辦公室</text>
+<text x="124" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">MTF 辦公室</text>
+<text x="600" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">醫療部辦公室</text>
+<text x="1076" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">安全部辦公室</text>
+<text x="124" y="456" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">會議室</text>
+<text x="600" y="456" font-size="9.5" text-anchor="middle" fill="#666">C-2</text>
+<rect x="992" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">首席行政官辦公室</text>
+<text x="1076" y="456" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="510" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="529" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">莫拉雷斯研究室</text>
+<text x="124" y="546" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="510" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="529" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">倫理委員會辦公室</text>
+<text x="600" y="546" font-size="9.5" text-anchor="middle" fill="#666">D-2/C-4</text>
+<rect x="992" y="510" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="529" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">食堂</text>
+<text x="1076" y="546" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="520" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="542" font-size="15" font-weight="bold" fill="#2c3e50">▣ 三樓 — 居住與支援</text>
+<rect x="40" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">人員宿舍</text>
+<text x="124" y="586" font-size="9.5" text-anchor="middle" fill="#666">847人</text>
+<rect x="516" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">休息室</text>
+<text x="600" y="586" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">心理評估中心</text>
+<text x="1076" y="586" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">儲備設施</text>
+<text x="124" y="676" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">屋頂停機坪</text>
+<text x="600" y="676" font-size="9.5" text-anchor="middle" fill="#666">疏散</text>
+<rect x="40" y="740" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="762" font-size="15" font-weight="bold" fill="#2c3e50">▣ 地下 B1 — 特殊收容</text>
+<rect x="40" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Keter 收容艙</text>
+<text x="124" y="806" font-size="9.5" text-anchor="middle" fill="#666">C-5 全爆發</text>
+<rect x="516" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Hume 發電機×4</text>
+<text x="600" y="806" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">緊急防爆門×6</text>
+<text x="1076" y="806" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Scramstone 錨×2</text>
+<text x="124" y="896" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">安全電梯→Area-14</text>
+<text x="600" y="896" font-size="9.5" text-anchor="middle" fill="#666">C-6/D-5</text>
+</svg>

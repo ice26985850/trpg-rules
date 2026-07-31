@@ -1,0 +1,375 @@
+# 獸人戰國 TRPG —— 物品圖鑑（YAML 結構化版）
+weapons:
+  刀劍類:
+  - name: 短刀
+    damage: 1d4
+    type: 斬擊／穿刺
+    attribute: 輕型
+    price: 10 兩
+    weight: 1 公斤
+    special: 可投擲（10 格）；潛行中使用獲優位
+  - name: 脇差
+    damage: 1d6
+    type: 斬擊
+    attribute: 輕型
+    price: 30 兩
+    weight: 1.5 公斤
+    special: 可雙持；作為副手武器不減值
+  - name: 打刀
+    damage: 1d8
+    type: 斬擊
+    attribute: 標準
+    price: 50 兩
+    weight: 2 公斤
+    special: 最通用的武士刀
+  - name: 太刀
+    damage: 1d10
+    type: 斬擊
+    attribute: 重型、雙手
+    price: 100 兩
+    weight: 3 公斤
+    special: 騎乘中使用獲優位
+  - name: 二刀（雙脇差）
+    damage: 1d6+1d6
+    type: 斬擊
+    attribute: 輕型雙持
+    price: 60 兩
+    weight: 3 公斤
+    special: 需二刀流技能初傳以上
+  長柄武器類:
+  - name: 長槍
+    damage: 1d8
+    type: 穿刺
+    attribute: 重型、雙手、長柄（2 格）
+    price: 40 兩
+    weight: 3 公斤
+    special: 可隔 1 格攻擊
+  - name: 薙刀
+    damage: 1d10
+    type: 斬擊
+    attribute: 重型、雙手、長柄（2 格）
+    price: 80 兩
+    weight: 4 公斤
+    special: 對騎兵傷害 +1d6
+  - name: 十文字槍
+    damage: 1d8
+    type: 穿刺／斬擊
+    attribute: 重型、雙手、長柄（2 格）
+    price: 60 兩
+    weight: 3.5 公斤
+    special: 可選擇穿刺或斬擊模式
+  遠程武器類:
+  - name: 短弓
+    damage: 1d6
+    type: 穿刺
+    attribute: 遠程、雙手
+    price: 30 兩
+    weight: 1.5 公斤
+    range: 30 格
+    special: 可於移動後射擊
+  - name: 和弓
+    damage: 1d10
+    type: 穿刺
+    attribute: 遠程、雙手
+    price: 80 兩
+    weight: 3 公斤
+    range: 50 格
+    special: 每回合只能射擊一次；騎乘中不可使用
+  - name: 手裏劍
+    damage: 1d4
+    type: 穿刺
+    attribute: 輕型、可投擲
+    price: 2 兩／枚
+    weight: 0.1 公斤
+    range: 15 格
+    special: 一次可投擲最多 3 枚（各擲命中）
+  - name: 鐵砲
+    damage: 2d6
+    type: 穿刺
+    attribute: 遠程、單發
+    price: 300 兩
+    weight: 6 公斤
+    range: 20 格
+    special: 需 1 回合裝填；無視 DR 3；雨天無法使用
+  特殊武器類:
+  - name: 金碎棒
+    damage: 1d12
+    type: 打擊
+    attribute: 重型、雙手
+    price: 150 兩
+    weight: 10 公斤
+    special: 對建築和城門傷害加倍；先攻 −2；需體魄 5+
+  - name: 鎖鐮
+    damage: 1d6
+    type: 斬擊／打擊
+    attribute: 輕型、長柄（2 格）
+    price: 35 兩
+    weight: 2 公斤
+    special: 命中後可嘗試繳械（體魄對抗）
+  - name: 數珠（僧兵用）
+    damage: 1d4
+    type: 打擊
+    attribute: 輕型、法器
+    price: 25 兩
+    weight: 0.5 公斤
+    special: 作為法器使用時治癒效果 +1d4
+  - name: 素手（破山流專用拳套）
+    damage: 1d6
+    type: 打擊
+    attribute: 輕型
+    price: 15 兩
+    weight: 1 公斤
+    special: 破山流專用；傷害隨體魄值提升（每 2 體魄 +1）
+  - name: 十手（捕吏用）
+    damage: 1d4
+    type: 打擊
+    attribute: 輕型
+    price: 20 兩
+    weight: 1 公斤
+    special: 格擋時獲優位；捕捉刀劍（繳械 DC −4）
+ammo:
+- name: 箭矢（和弓／短弓通用）
+  quantity: 20 支
+  price: 2 兩
+- name: 鐵砲彈丸
+  quantity: 10 發
+  price: 5 兩
+- name: 手裏劍補充
+  quantity: 5 枚
+  price: 8 兩
+- name: 火矢（和弓用，附火焰傷害 +1d6）
+  quantity: 5 支
+  price: 10 兩
+armor:
+- name: 素肌
+  type: 無甲
+  dv: '+0'
+  dr: '0'
+  agility_cap: 無限制
+  price: —
+  weight: —
+  special: 預設狀態
+- name: 胴丸
+  type: 輕甲
+  dv: '+1'
+  dr: '1'
+  agility_cap: 無限制
+  price: 60 兩
+  weight: 5 公斤
+  special: 可隱藏於衣物下
+- name: 腹巻
+  type: 中甲
+  dv: '+2'
+  dr: '2'
+  agility_cap: 機敏 5
+  price: 120 兩
+  weight: 10 公斤
+  special: 武士日常著裝
+- name: 大鎧
+  type: 重甲
+  dv: '+3'
+  dr: '3'
+  agility_cap: 機敏 3
+  price: 300 兩
+  weight: 20 公斤
+  special: 移動力 −2、潛行獲劣位
+- name: 籠手（護臂）
+  type: 配件
+  dv: '+0'
+  dr: +1（僅手臂）
+  agility_cap: 無限制
+  price: 20 兩
+  weight: 1 公斤
+  special: 可與胴丸疊加
+- name: 陣笠（頭盔）
+  type: 配件
+  dv: +1（僅對爆頭攻擊）
+  dr: '0'
+  agility_cap: 無限制
+  price: 15 兩
+  weight: 0.5 公斤
+  special: 暴擊對你造成的額外傷害 −1d6
+consumables:
+  藥品:
+  - name: 藥丸
+    effect: 恢復 1d8 + 2 生命值（HP）
+    price: 15 兩
+  - name: 高級藥丸
+    effect: 恢復 2d8 + 4 生命值（HP）
+    price: 50 兩
+  - name: 特級藥丸
+    effect: 恢復 4d8 + 8 生命值（HP）
+    price: 150 兩
+  - name: 解毒丸
+    effect: 解除中毒狀態；對重毒則改為降級為中毒
+    price: 30 兩
+  - name: 活力丸
+    effect: 消除疲勞狀態（視為已完成短休）
+    price: 40 兩
+  - name: 妖氣鎮靜丸
+    effect: 立即消退 10 點妖氣值
+    price: 60 兩
+  - name: 淨化丸
+    effect: 解除妖氣侵蝕狀態
+    price: 80 兩
+  戰鬥消耗品:
+  - name: 煙玉
+    effect: 創造半徑 5 格濃煙，阻擋視線（持續 2 回合）
+    price: 10 兩
+  - name: 焙烙玉
+    effect: 投擲爆炸物，範圍 3 格內 3d6 火焰傷害（機敏豁免 DC 15 減半）
+    price: 40 兩
+  - name: 毒煙玉
+    effect: 創造半徑 3 格毒霧，範圍內中毒（體魄豁免 DC 14）
+    price: 50 兩
+  - name: 閃光玉
+    effect: 半徑 5 格內目盲 1 回合（機敏豁免 DC 13）
+    price: 25 兩
+  儀式與特殊道具:
+  - name: 護符
+    effect: 抵抗妖氣侵蝕時魂魄豁免 +1（一次性消耗）
+    price: 25 兩
+  - name: 破魔符
+    effect: 對不死系目標造成 2d8 靈力傷害（遠程觸及）
+    price: 60 兩
+  - name: 刀油與砥石
+    effect: 維持刀的狀態（長休期間使用，刀緣 +1；每刀每次長休限一次）
+    price: 5 兩
+  - name: 魂鋼碎片
+    effect: 鍛造業物以上名刀的材料（無法購買，僅透過劇本獲取）
+    price: —
+  - name: 龍脈石
+    effect: 在龍脈節點充能後，可恢復 1 次已消耗的奧義使用次數
+    price: 500 兩
+travel_gear:
+- name: 旅裝
+  effect: 適合長途旅行的衣物與行囊
+  price: 20 兩
+- name: 軍馬
+  effect: 移動力 12 格，可騎乘戰鬥。需騎乘技能初傳以上
+  price: 500 兩
+- name: 名馬
+  effect: 移動力 14 格，騎乘戰鬥中攻擊獲優位（每日 1 次）
+  price: 2000 兩
+- name: 繩索（10 公尺）
+  effect: 攀爬檢定 +2
+  price: 10 兩
+- name: 鉤繩
+  effect: 可拋擲至 10 格高處，攀爬 DC −4
+  price: 25 兩
+- name: 火把（3 支）
+  effect: 照亮半徑 5 格，持續 1 小時
+  price: 1 兩
+- name: 油燈
+  effect: 照亮半徑 8 格，可調節亮度
+  price: 10 兩
+- name: 睡袋
+  effect: 長休時 HP 恢復 +5
+  price: 5 兩
+- name: 防水斗篷
+  effect: 惡劣天氣下不承受環境減值
+  price: 15 兩
+- name: 文房具（筆墨紙）
+  effect: 書信、正式文書撰寫所需
+  price: 5 兩
+- name: 面具
+  effect: 隱藏獸族身分（需欺瞞檢定搭配使用）
+  price: 3 兩
+named_blades:
+  業物級:
+  - name: 風切
+    blade_grade: 業物
+    type: 太刀
+    blade_personality: 迅雷
+    special: 騎乘中使用傷害 +1d4
+  - name: 岩戸
+    blade_grade: 業物
+    type: 打刀
+    blade_personality: 守護
+    special: 防禦架式時 DR +1
+  - name: 蛇の牙
+    blade_grade: 業物
+    type: 脇差
+    blade_personality: 妖艷
+    special: 命中時毒素 DC +2
+  - name: 暁
+    blade_grade: 業物
+    type: 和弓
+    blade_personality: 忠誠
+    special: 清晨時段傷害 +1d6
+  - name: 鉄塊
+    blade_grade: 業物
+    type: 金碎棒
+    blade_personality: 狂亂
+    special: 暴擊時追加擊退 5 格
+  良業物級:
+  - name: 虎爪
+    blade_grade: 良業物
+    type: 打刀
+    blade_personality: 霸者
+    inscription: 破軍銘
+    special: 對複數敵人時攻擊次數 +1
+  - name: 月の雫
+    blade_grade: 良業物
+    type: 脇差
+    blade_personality: 慈悲
+    inscription: 守護銘
+    special: 月光下 DV +2
+  - name: 疾風
+    blade_grade: 良業物
+    type: 長槍
+    blade_personality: 迅雷
+    inscription: 試煉銘
+    special: 每回合首次攻擊命中後可免費移動 3 格
+  - name: 不壊
+    blade_grade: 良業物
+    type: 太刀
+    blade_personality: 孤高
+    inscription: 覺悟銘
+    special: 獨自作戰時 DR +2
+  大業物級:
+  - name: 虎徹
+    blade_grade: 大業物
+    type: 打刀
+    blade_personality: 霸者
+    special: 對等級高於自己的目標傷害 +1d8
+  - name: 十六夜
+    blade_grade: 大業物
+    type: 脇差（雙持）
+    blade_personality: 妖艷
+    special: 雙持時第二擊無減值
+  - name: 義
+    blade_grade: 大業物
+    type: 打刀
+    blade_personality: 忠誠
+    special: 守護對象在場時不可被暴擊
+  - name: 金剛
+    blade_grade: 大業物
+    type: 金碎棒
+    blade_personality: 狂亂
+    special: 無視目標 DR 5 以下
+  最上大業物級:
+  - name: 覇王
+    blade_grade: 最上大業物
+    type: 太刀
+    blade_personality: 霸者
+    inherent_ultimate: 虎威流「孤虎」弱化版（劍術 +1）
+    special: 持有者每場戰鬥首次暴擊無視 DR
+  - name: 無明
+    blade_grade: 最上大業物
+    type: 脇差
+    blade_personality: 孤高
+    inherent_ultimate: 月影流「朧月」弱化版（DV +1）
+    special: 潛行中使用招式不消耗妖氣池（每日 1 次）
+  - name: 誓
+    blade_grade: 最上大業物
+    type: 打刀
+    blade_personality: 忠誠
+    inherent_ultimate: 忠義流「不滅之義」弱化版
+    special: 守護同伴時該次承受傷害減半
+  - name: 不壊金剛
+    blade_grade: 最上大業物
+    type: 金碎棒
+    blade_personality: 不動
+    inherent_ultimate: 不動流「鍛鐵之心」弱化版（HP +5）
+    special: 每次被擊中時 DR 暫時 +1（疊加上限 +3）

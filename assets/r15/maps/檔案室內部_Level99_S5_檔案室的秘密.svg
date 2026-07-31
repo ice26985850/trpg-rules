@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 570" width="1340" height="570">
+<defs>
+<filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+<marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#546E7A"/></marker>
+<marker id="arrow_main" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/></marker>
+<marker id="arrow_side" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#558B2F"/></marker>
+<marker id="arrow_descent" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#0277BD"/></marker>
+<marker id="arrow_escape" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#D84315"/></marker>
+<marker id="arrow_hazard" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#BF360C"/></marker>
+<marker id="arrow_objective" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#B71C1C"/></marker>
+<marker id="arrow_diplomatic" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#8E24AA"/></marker>
+<marker id="arrow_path" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#5D4037"/></marker>
+<marker id="arrow_nav" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#00695C"/></marker>
+<marker id="arrow_shortcut" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#00695C"/></marker>
+<marker id="arrow_npc" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#F57F17"/></marker>
+<marker id="arrow_threshold" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#512DA8"/></marker>
+</defs>
+<rect width="1340" height="570" fill="#FAFAFA" rx="8"/>
+<rect x="20" y="15" width="1100" height="55" fill="#263238" rx="6"/>
+<text x="40" y="40" fill="white" font-size="18" font-weight="bold" font-family="Arial, sans-serif">Level 99 檔案室 — 內部佈局</text>
+<text x="40" y="58" fill="#B0BEC5" font-size="12" font-family="Arial, sans-serif">對應劇本：S5_檔案室的秘密</text>
+<rect x="60" y="140" width="410" height="260" fill="#d4edda" opacity="0.4" rx="12" stroke="#d4edda" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="72" y="160" fill="#555" font-size="11" font-family="Arial, sans-serif" font-weight="bold">表面區域（Class 1）</text>
+<rect x="460" y="190" width="310" height="210" fill="#fff3cd" opacity="0.4" rx="12" stroke="#fff3cd" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="472" y="210" fill="#555" font-size="11" font-family="Arial, sans-serif" font-weight="bold">深層區域（Class 3）</text>
+<rect x="410" y="190" width="510" height="360" fill="#f8d7da" opacity="0.4" rx="12" stroke="#f8d7da" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="422" y="210" fill="#555" font-size="11" font-family="Arial, sans-serif" font-weight="bold">禁忌區域（Class 5）</text>
+<line x1="120.0" y1="300.0" x2="220.0" y2="300.0" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrow_main)" opacity="0.8"/>
+<text x="170.0" y="306.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">進入檔案室</text>
+<line x1="220.0" y1="300.0" x2="220.0" y2="200.0" stroke="#558B2F" stroke-width="2.5" marker-end="url(#arrow_side)" opacity="0.8"/>
+<text x="232.0" y="244.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">前往閱覽室（安全休整）</text>
+<line x1="220.0" y1="300.0" x2="370.0" y2="300.0" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrow_main)" opacity="0.8"/>
+<text x="295.0" y="306.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">詢問歸一者檔案位置</text>
+<line x1="370.0" y1="300.0" x2="520.0" y2="300.0" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrow_main)" opacity="0.8"/>
+<text x="445.0" y="306.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">深入限制區域</text>
+<line x1="520.0" y1="300.0" x2="670.0" y2="250.0" stroke="#512DA8" stroke-width="2.5" marker-end="url(#arrow_threshold)" opacity="0.8"/>
+<text x="598.7947331922021" y="280.3841995766062" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">進入第七區（精神壓力開始）</text>
+<line x1="520.0" y1="300.0" x2="670.0" y2="380.0" stroke="#BF360C" stroke-width="2.5" marker-end="url(#arrow_hazard)" opacity="0.8"/>
+<text x="589.3529411764706" y="344.5882352941176" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">誤入深層（極危險）</text>
+<line x1="670.0" y1="250.0" x2="820.0" y2="250.0" stroke="#B71C1C" stroke-width="2.5" marker-end="url(#arrow_objective)" opacity="0.8"/>
+<text x="745.0" y="256.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">找到第四十七排</text>
+<line x1="670.0" y1="380.0" x2="470.0" y2="450.0" stroke="#F57F17" stroke-width="2.5" marker-end="url(#arrow_npc)" opacity="0.8"/>
+<text x="566.0357949032627" y="397.6736997236078" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">尋找檔案長</text>
+<line x1="470.0" y1="450.0" x2="820.0" y2="250.0" stroke="#00695C" stroke-width="2.5" marker-end="url(#arrow_shortcut)" opacity="0.8"/>
+<text x="650.953667260282" y="354.4189177054935" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">檔案長指引的捷徑（失去一個記憶）</text>
+<rect x="55" y="278" width="130" height="44" fill="#4CAF50" stroke="#2E7D32" stroke-width="2" rx="10" ry="10" opacity="1.0" filter="url(#shadow)"/>
+<text x="65" y="298" font-size="16" text-anchor="middle">🚪</text>
+<text x="90" y="297" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">檔案室大門</text>
+<rect x="135" y="282" width="40" height="14" fill="#2E7D32" rx="3" opacity="0.7"/>
+<text x="155" y="293" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">入口</text>
+<rect x="155" y="278" width="130" height="44" fill="#A5D6A7" stroke="#388E3C" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="165" y="298" font-size="16" text-anchor="middle">🏁</text>
+<text x="190" y="297" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">接待臺</text>
+<rect x="235" y="282" width="40" height="14" fill="#388E3C" rx="3" opacity="0.7"/>
+<text x="255" y="293" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">檢查點</text>
+<rect x="155" y="178" width="130" height="44" fill="#C8E6C9" stroke="#43A047" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="165" y="198" font-size="16" text-anchor="middle">🛡️</text>
+<text x="190" y="197" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">閱覽室</text>
+<rect x="235" y="182" width="40" height="14" fill="#43A047" rx="3" opacity="0.7"/>
+<text x="255" y="193" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">安全</text>
+<rect x="305" y="278" width="130" height="44" fill="#E0E0E0" stroke="#757575" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="315" y="298" font-size="16" text-anchor="middle">📦</text>
+<text x="340" y="297" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">一般檔案區</text>
+<rect x="385" y="282" width="40" height="14" fill="#757575" rx="3" opacity="0.7"/>
+<text x="405" y="293" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">區域</text>
+<rect x="455" y="278" width="130" height="44" fill="#B39DDB" stroke="#512DA8" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="465" y="298" font-size="16" text-anchor="middle">🚧</text>
+<text x="490" y="297" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">限制檔案區</text>
+<rect x="535" y="282" width="40" height="14" fill="#512DA8" rx="3" opacity="0.7"/>
+<text x="555" y="293" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">門檻</text>
+<rect x="605" y="228" width="130" height="44" fill="#E0E0E0" stroke="#757575" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="615" y="248" font-size="16" text-anchor="middle">📦</text>
+<text x="640" y="247" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">第七區</text>
+<rect x="685" y="232" width="40" height="14" fill="#757575" rx="3" opacity="0.7"/>
+<text x="705" y="243" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">區域</text>
+<rect x="605" y="358" width="130" height="44" fill="#FF7043" stroke="#BF360C" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="615" y="378" font-size="16" text-anchor="middle">⚠️</text>
+<text x="640" y="377" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">深層檔案</text>
+<rect x="685" y="362" width="40" height="14" fill="#BF360C" rx="3" opacity="0.7"/>
+<text x="705" y="373" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">危險</text>
+<rect x="755" y="228" width="130" height="44" fill="#EF5350" stroke="#B71C1C" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="765" y="248" font-size="16" text-anchor="middle">⭐</text>
+<text x="790" y="247" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">第四十七排</text>
+<rect x="835" y="232" width="40" height="14" fill="#B71C1C" rx="3" opacity="0.7"/>
+<text x="855" y="243" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">目標</text>
+<rect x="405" y="428" width="130" height="44" fill="#FFE082" stroke="#F57F17" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="415" y="448" font-size="16" text-anchor="middle">👤</text>
+<text x="440" y="447" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">檔案長所在處</text>
+<rect x="485" y="432" width="40" height="14" fill="#F57F17" rx="3" opacity="0.7"/>
+<text x="505" y="443" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">人物</text>
+<rect x="1155" y="80" width="175" height="330" fill="white" stroke="#E0E0E0" stroke-width="1.5" rx="8"/>
+<text x="1240" y="105" fill="#37474F" font-size="13" font-weight="bold" font-family="Arial, sans-serif" text-anchor="middle">圖例</text>
+<rect x="1160" y="125" width="22" height="22" fill="#A5D6A7" stroke="#388E3C" stroke-width="1.5" rx="4"/>
+<text x="1190" y="135" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">檢查點</text>
+<text x="1190" y="135" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">checkpoint</text>
+<rect x="1160" y="153" width="22" height="22" fill="#4CAF50" stroke="#2E7D32" stroke-width="1.5" rx="4"/>
+<text x="1190" y="163" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">入口</text>
+<text x="1190" y="163" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">entrance</text>
+<rect x="1160" y="181" width="22" height="22" fill="#FF7043" stroke="#BF360C" stroke-width="1.5" rx="4"/>
+<text x="1190" y="191" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">危險區域</text>
+<text x="1190" y="191" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">hazard</text>
+<rect x="1160" y="209" width="22" height="22" fill="#FFE082" stroke="#F57F17" stroke-width="1.5" rx="4"/>
+<text x="1190" y="219" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">NPC所在</text>
+<text x="1190" y="219" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">npc</text>
+<rect x="1160" y="237" width="22" height="22" fill="#EF5350" stroke="#B71C1C" stroke-width="1.5" rx="4"/>
+<text x="1190" y="247" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">任務目標</text>
+<text x="1190" y="247" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">objective</text>
+<rect x="1160" y="265" width="22" height="22" fill="#C8E6C9" stroke="#43A047" stroke-width="1.5" rx="4"/>
+<text x="1190" y="275" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">安全區</text>
+<text x="1190" y="275" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">safe</text>
+<rect x="1160" y="293" width="22" height="22" fill="#B39DDB" stroke="#512DA8" stroke-width="1.5" rx="4"/>
+<text x="1190" y="303" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">門檻</text>
+<text x="1190" y="303" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">threshold</text>
+<rect x="1160" y="321" width="22" height="22" fill="#E0E0E0" stroke="#757575" stroke-width="1.5" rx="4"/>
+<text x="1190" y="331" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">區域</text>
+<text x="1190" y="331" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">zone</text>
+<text x="1240" y="359" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial, sans-serif" text-anchor="middle">特殊規則</text>
+<text x="1165" y="377" fill="#D32F2F" font-size="10" font-family="Arial, sans-serif">⚠ 知識的重量</text>
+<text x="1165" y="393" fill="#D32F2F" font-size="10" font-family="Arial, sans-serif">⚠ 檔案員的沉默</text>
+<text x="1165" y="409" fill="#D32F2F" font-size="10" font-family="Arial, sans-serif">⚠ 歸一者的注目</text>
+</svg>

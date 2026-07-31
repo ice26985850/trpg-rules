@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" font-family="'Microsoft JhengHei','Noto Sans TC',sans-serif">
+  <defs>
+    <linearGradient id="towerGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2F5496"/>
+      <stop offset="100%" stop-color="#1A1A4E"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="680" height="560" fill="#1A1A2E"/>
+  
+  <!-- 塔體 -->
+  <rect x="280" y="20" width="120" height="500" rx="5" fill="url(#towerGrad)" opacity="0.3"/>
+  
+  <!-- 各層 -->
+  <!-- 7F -->
+  <rect x="270" y="15" width="140" height="55" rx="8" fill="#C00000" opacity="0.9" filter="url(#glow)"/>
+  <text x="340" y="38" text-anchor="middle" fill="white" font-size="13" font-weight="bold">7F 核心共鳴室</text>
+  <text x="340" y="58" text-anchor="middle" fill="#FFC0C0" font-size="9">⚠ 爆炸裝置 ⚠</text>
+  
+  <!-- 時間鎖連線 -->
+  <line x1="340" y1="70" x2="340" y2="85" stroke="#FFC000" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="355" y="82" fill="#FFC000" font-size="8">時間鎖</text>
+  
+  <!-- 6F -->
+  <rect x="270" y="88" width="140" height="55" rx="8" fill="#7B2D8E" opacity="0.9"/>
+  <text x="340" y="111" text-anchor="middle" fill="white" font-size="13" font-weight="bold">6F 時間編織層</text>
+  <text x="340" y="131" text-anchor="middle" fill="#D9B3E6" font-size="9">艾琳·預言觀測站</text>
+  
+  <!-- 螺旋梯 -->
+  <line x1="340" y1="143" x2="340" y2="158" stroke="#999" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <!-- 5F -->
+  <rect x="270" y="160" width="140" height="55" rx="8" fill="#2F5496" opacity="0.9"/>
+  <text x="340" y="183" text-anchor="middle" fill="white" font-size="13" font-weight="bold">5F 核心圓環會議層</text>
+  <text x="340" y="203" text-anchor="middle" fill="#B3C6E6" font-size="9">五位學者私人研究室</text>
+  
+  <!-- 電梯 -->
+  <line x1="340" y1="215" x2="340" y2="230" stroke="#999" stroke-width="2"/>
+  <text x="355" y="227" fill="#999" font-size="8">電梯</text>
+  
+  <!-- 4F -->
+  <rect x="270" y="232" width="140" height="55" rx="8" fill="#8B0000" opacity="0.9"/>
+  <text x="340" y="255" text-anchor="middle" fill="white" font-size="13" font-weight="bold">4F 回歸者研究層</text>
+  <text x="340" y="275" text-anchor="middle" fill="#FFB3B3" font-size="9">🚫 不對外開放 🚫</text>
+  
+  <!-- 管制樓梯 -->
+  <line x1="340" y1="287" x2="340" y2="302" stroke="#C00000" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="355" y="299" fill="#C00000" font-size="8">管制梯</text>
+  
+  <!-- 3F -->
+  <rect x="270" y="304" width="140" height="55" rx="8" fill="#1A6B3A" opacity="0.9"/>
+  <text x="340" y="327" text-anchor="middle" fill="white" font-size="13" font-weight="bold">3F 元素研究層</text>
+  <text x="340" y="347" text-anchor="middle" fill="#B3E6C6" font-size="9">時間測量儀器·異常讀數</text>
+  
+  <!-- 樓梯 -->
+  <line x1="340" y1="359" x2="340" y2="374" stroke="#999" stroke-width="1.5"/>
+  
+  <!-- 2F -->
+  <rect x="270" y="376" width="140" height="55" rx="8" fill="#6B4E1A" opacity="0.9"/>
+  <text x="340" y="399" text-anchor="middle" fill="white" font-size="13" font-weight="bold">2F 藏書層</text>
+  <text x="340" y="419" text-anchor="middle" fill="#E6D5B3" font-size="9">圖書館·時間記錄水晶</text>
+  
+  <!-- 樓梯 -->
+  <line x1="340" y1="431" x2="340" y2="446" stroke="#999" stroke-width="1.5"/>
+  
+  <!-- 1F -->
+  <rect x="270" y="448" width="140" height="55" rx="8" fill="#4A4A4A" opacity="0.9"/>
+  <text x="340" y="471" text-anchor="middle" fill="white" font-size="13" font-weight="bold">1F 大廳與接待</text>
+  <text x="340" y="491" text-anchor="middle" fill="#CCCCCC" font-size="9">公開學術展示區</text>
+  
+  <!-- 側邊標註 -->
+  <text x="240" y="50" text-anchor="end" fill="#C00000" font-size="10" font-weight="bold">爆炸源</text>
+  <line x1="245" y1="47" x2="270" y2="42" stroke="#C00000" stroke-width="1"/>
+  
+  <text x="240" y="200" text-anchor="end" fill="#FFC000" font-size="10" font-weight="bold">核心</text>
+  <line x1="245" y1="197" x2="270" y2="187" stroke="#FFC000" stroke-width="1"/>
+  
+  <text x="240" y="310" text-anchor="end" fill="#B3E6C6" font-size="10">需權限</text>
+  <line x1="245" y1="307" x2="270" y2="297" stroke="#B3E6C6" stroke-width="1"/>
+  
+  <text x="240" y="470" text-anchor="end" fill="#CCCCCC" font-size="10">自由進入</text>
+  <line x1="245" y1="467" x2="270" y2="462" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <!-- 圖例 -->
+  <rect x="440" y="80" width="210" height="150" rx="5" fill="#2A2A4E" stroke="#555"/>
+  <text x="545" y="105" text-anchor="middle" fill="white" font-size="12" font-weight="bold">圖例</text>
+  
+  <line x1="460" y1="125" x2="510" y2="125" stroke="#999" stroke-width="1.5"/>
+  <text x="520" y="129" fill="#999" font-size="10">一般樓梯</text>
+  
+  <line x1="460" y1="145" x2="510" y2="145" stroke="#C00000" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="520" y="149" fill="#C00000" font-size="10">管制通道</text>
+  
+  <line x1="460" y1="165" x2="510" y2="165" stroke="#FFC000" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="520" y="169" fill="#FFC000" font-size="10">時間鎖</text>
+  
+  <line x1="460" y1="185" x2="510" y2="185" stroke="#999" stroke-width="2"/>
+  <text x="520" y="189" fill="#999" font-size="10">電梯</text>
+  
+  <circle cx="485" cy="208" r="5" fill="#C00000" filter="url(#glow)"/>
+  <text x="520" y="212" fill="#C00000" font-size="10">危險區域</text>
+  
+  <!-- 標題 -->
+  <text x="340" y="540" text-anchor="middle" fill="#B3C6E6" font-size="14" font-weight="bold">時之塔 —— 七層結構圖（S2：崩塌的塔）</text>
+</svg>

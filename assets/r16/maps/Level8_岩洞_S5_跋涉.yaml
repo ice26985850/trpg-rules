@@ -1,0 +1,108 @@
+name: "Level 8 — 岩洞系統"
+description: "螢光真菌洞穴——發光孢子構成星空，怕光的穴居者成群棲息"
+scenario_ref: "S5_跋涉"
+usage: "S5 劇本起點：穿越螢光洞穴，避開穴居者巢穴，進入隧道前往 Level 9"
+regions:
+  - name: "入口"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "區域"
+  - name: "螢光林"
+    color: "#FFF3E0"
+    nodes: ["N02", "N03"]
+    description: ""
+  - name: "穴居者領域（危險）"
+    color: "#F3E5F5"
+    nodes: ["N04"]
+    description: ""
+  - name: "出口區域"
+    color: "#E3F2FD"
+    nodes: ["N05", "N06", "N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "洞穴入口"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "從 Level 7 排水管道浮出——進入發光洞穴"
+  - id: "N02"
+    label: "螢光孢子林"
+    x: 330
+    y: 210
+    type: "resource"
+    explored: false
+    description: "可食用發光蘑菇生長處（知識 DC 14 分辨）"
+    resources: "發光蘑菇"
+  - id: "N03"
+    label: "真菌森林深處"
+    x: 330
+    y: 410
+    type: "normal"
+    explored: false
+    description: "孢子「星空」提供微弱照明"
+  - id: "N04"
+    label: "穴居者巢穴"
+    x: 530
+    y: 300
+    type: "danger"
+    explored: false
+    description: "穴居者成群——遇光退縮"
+    threats: "穴居者（怕光）"
+  - id: "N05"
+    label: "礦物區"
+    x: 690
+    y: 210
+    type: "resource"
+    explored: false
+    description: "可採集的礦物與共振低鳴"
+    resources: "礦物"
+  - id: "N06"
+    label: "隧道入口"
+    x: 690
+    y: 410
+    type: "navigation"
+    explored: false
+    description: "通往 Level 9 的隧道起點"
+  - id: "N07"
+    label: "隧道（出口）"
+    x: 830
+    y: 320
+    type: "exit"
+    explored: false
+    description: "深入隧道離開洞穴——通往 Level 9"
+    exit_to: "Level 9 — 郊區"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N01"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "dangerous_path"
+    label: "穴居者"
+  - from: "N03"
+    to: "N04"
+    type: "dangerous_path"
+    label: "穴居者"
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: ""
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ 出口"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "→ 出口"

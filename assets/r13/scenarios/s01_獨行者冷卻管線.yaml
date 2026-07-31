@@ -1,0 +1,79 @@
+name: "鐵肋的獨行者"
+difficulty: "入門級 (挑戰等級（CR） 1)"
+mode: "凡人 · 單人"
+judge: "阿斯塔羅斯（清教徒）"
+target_region: "塔爾-莫拉格巢都，中巢（第 850 層），廢棄冷卻管線"
+recommended_attributes: "2-3"
+
+opening_description: >
+  你是新一批贖罪者中的一員。這次任務，審判官只派了你一個人——和一個你不認識的嚮導。
+  這不是信任，這是測試。冷卻管線的蒸汽從裂縫中湧出，昏暗的燈光映照出管道壁上斑駁鏽跡。
+
+surface_goal: >
+  潛入廢棄冷卻管線中活動的混沌教眾小據點，回收他們據說持有的一件帝國聖物。
+
+hidden_goal: >
+  阿斯塔羅斯想看你是否能在沒有隊友壓力的情況下保持紀律。嚮導同時也是觀察者。
+
+known_threats:
+  - "約 4-6 名低階教眾信徒"
+  - "可能有 1 名侍僧帶領"
+
+hidden_threats:
+  - "廢棄管線中有一處結構不穩定——戰鬥中的爆炸可能觸發塌陷"
+  - "教派實際上在等待從底巢來的補給，他們只是前哨"
+
+resources:
+  medical_pack: 1
+  holy_water: 3
+  holy_oil: 3
+  flare: 2
+  food_water_days: 3
+  ammo_magazines: 2
+
+internal_seduction_trigger:
+  timing: "在據點內發現聖物時"
+  whisper: "這件聖物很值錢。審判官不會知道它真正的價值。你可以說它在戰鬥中損壞了。"
+
+companions:
+  - name: "卡茲·維爾"
+    role: "嚮導 / 前巢都勞工 / 贖罪者"
+    backstory: "沉默的中年男人，被判異端罪名——他的異端是拒絕檢舉自己的鄰居"
+    motive: "活著回去看他的女兒（他不知道她是否還在等）"
+    bottom_line: "絕不殺害平民"
+    initial_attitude: 0
+    attributes:
+      faith: 3
+      physique: 3
+      mind: 2
+      skill: 3
+      fate: 2
+    trained_skills: ["潛行", "警覺"]
+    equipment: ["自動手槍(1d6)", "厚布甲(護甲減免（AR） 1)", "巢都地圖碎片"]
+    special_ability:
+      name: "巢都之鼠"
+      desc: "在巢都環境中不會迷路。可為玩家提供一次性的潛行路線（玩家潛行檢定優勢）"
+
+key_checks:
+  - scene: "與卡茲建立信任"
+    check: "佈道（標準）"
+    tn_adjustment: 0
+    success: "卡茲態度 +1，獲得巢都捷徑"
+    failure: "卡茲保持沉默"
+  - scene: "發現據點入口"
+    check: "警覺（標準）"
+    tn_adjustment: 0
+    success: "發現哨兵位置，可潛行繞過"
+    failure: "驚動哨兵，進入戰鬥"
+
+encounters:
+  - name: "管線巡邏"
+    enemies: "混沌信徒 ×2"
+    tactic: "基本槍戰。卡茲可以提供側翼掩護"
+  - name: "據點內部"
+    enemies: "混沌信徒 ×2 + 小型陷阱"
+    tactic: "卡茲可以幫忙解除陷阱（技術檢定）"
+
+evacuation_condition: "任務完成後前往指定撤離點。無時間限制。"
+
+map_ref: "maps/map01_cooling_tunnels"

@@ -1,0 +1,107 @@
+name: "Level ! — 不想死就快跑！"
+description: "十公里醫院風格走廊——紅色警報與刺耳警笛；成群實體在身後追擊；唯一強制死亡風險關卡"
+scenario_ref: "S7_狂奔"
+usage: "S7 劇本：十公里生死時速，每公里體能檢定，抵達終點 EXIT 門通往白色空間（結局層）"
+regions:
+  - name: "起點走廊"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "區域"
+  - name: "醫院走廊"
+    color: "#ECEFF1"
+    nodes: ["N02", "N04", "N06"]
+    description: ""
+  - name: "補給間"
+    color: "#E3F2FD"
+    nodes: ["N03"]
+    description: ""
+  - name: "恐慌拐角（危險）"
+    color: "#F3E5F5"
+    nodes: ["N05"]
+    description: ""
+  - name: "EXIT 門（出口）"
+    color: "#E0F7FA"
+    nodes: ["N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "起點走廊"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "紅色警報亮起、警笛刺耳——身後的群體已開始追擊"
+  - id: "N02"
+    label: "醫院走廊 1"
+    x: 320
+    y: 240
+    type: "normal"
+    explored: false
+    description: "長直廊——每前進 1 公里需體能檢定（DC 遞增 10→20）"
+  - id: "N03"
+    label: "補給間"
+    x: 320
+    y: 420
+    type: "resource"
+    explored: false
+    description: "偶爾出現的補給間——杏仁水、繃帶"
+    resources: "杏仁水 ×1／繃帶 ×1"
+  - id: "N04"
+    label: "醫院走廊 2"
+    x: 500
+    y: 240
+    type: "normal"
+    explored: false
+    description: "碎玻璃與傾倒病床——絆倒風險（環境傷害 1D4）"
+  - id: "N05"
+    label: "恐慌拐角"
+    x: 500
+    y: 420
+    type: "danger"
+    explored: false
+    description: "第 9 公里意志 DC 18（避免恐慌）；失敗陷入恐慌 1 回合，追逐距離 -2"
+    threats: "恐慌（距離 -2）"
+  - id: "N06"
+    label: "醫院走廊 3"
+    x: 680
+    y: 240
+    type: "normal"
+    explored: false
+    description: "終點在望——紅色 EXIT 標誌閃爍"
+  - id: "N07"
+    label: "EXIT 門（出口）"
+    x: 850
+    y: 300
+    type: "exit"
+    explored: false
+    description: "白色 EXIT 門——通往白色空間（結局層）。每個角色只能進入一次；被追上＝角色死亡"
+    exit_to: "白色空間（結局層）"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "補給"
+  - from: "N02"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N05"
+    type: "dangerous_path"
+    label: "第9公里"
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: ""
+  - from: "N05"
+    to: "N06"
+    type: "dangerous_path"
+    label: "恐慌"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "→ 出口"

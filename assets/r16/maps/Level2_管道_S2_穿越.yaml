@@ -1,0 +1,158 @@
+name: "Level 2 — 管道"
+description: "陰暗管道迷宮——高溫、黑暗、獵犬巢穴。Level 2 是三維迷宮，分上中下三層。"
+scenario_ref: "S2_深處"
+usage: "角色從 Level 1 進入 Level 2 後穿越管道前往 Level 11 的路線"
+regions:
+  - name: "入口區"
+    color: "#E8F5E9"
+    nodes: ["N01", "N02"]
+    description: "從 Level 1 維修樓梯進入——相對明亮，有應急燈"
+  - name: "主要管道層（中層）"
+    color: "#FFF3E0"
+    nodes: ["N03", "N04", "N05", "N06"]
+    description: "主要通行路線——有前人標記，光線有限"
+  - name: "獵犬活躍區"
+    color: "#FFEBEE"
+    nodes: ["N07", "N08", "N09"]
+    description: "獵犬巡邏和巢穴區域——極度危險"
+  - name: "避難所"
+    color: "#E3F2FD"
+    nodes: ["N10"]
+    description: "前人搭建的隱蔽避難所——可休息和補給"
+  - name: "出口區"
+    color: "#E8EAF6"
+    nodes: ["N11"]
+    description: "通往 Level 11 的狹窄通道出口"
+nodes:
+  - id: "N01"
+    label: "維修樓梯（入口）"
+    x: 150
+    y: 100
+    type: "entrance"
+    explored: true
+    description: "從 Level 1 向下的維修樓梯。應急紅燈是唯一光源。"
+    entrance_from: "Level 1 — 倉庫"
+  - id: "N02"
+    label: "初始管道交匯"
+    x: 300
+    y: 150
+    type: "choice"
+    explored: false
+    description: "第一個路口——左：主要管道（有標記，較安全），右：分支管道（捷徑，更危險）"
+  - id: "N03"
+    label: "主要管道（中層）"
+    x: 450
+    y: 100
+    type: "normal"
+    explored: false
+    description: "較寬敞的管道（1.5-2米寬）。牆上有前人留下的方向標記。"
+  - id: "N04"
+    label: "垂直管道井"
+    x: 550
+    y: 200
+    type: "vertical"
+    explored: false
+    description: "連接上中下三層的垂直管道。需要攀爬（運動DC13）。"
+  - id: "N05"
+    label: "蒸汽洩漏區"
+    x: 350
+    y: 280
+    type: "danger"
+    explored: false
+    description: "破裂管道噴出高溫蒸汽。需機敏DC12閃避否則燙傷（1D4）。"
+  - id: "N06"
+    label: "管道標記牆"
+    x: 500
+    y: 350
+    type: "navigation"
+    explored: false
+    description: "牆上有大量前人留下的標記和箭頭。感知DC10可解讀方向。"
+  - id: "N07"
+    label: "獵犬巡邏區"
+    x: 200
+    y: 350
+    type: "danger"
+    explored: false
+    description: "金屬表面全是爪痕。可以聽到遠處的獵犬腳步聲。"
+    threats: "獵犬（1-2隻巡邏）"
+  - id: "N08"
+    label: "巢穴邊緣"
+    x: 100
+    y: 450
+    type: "danger"
+    explored: false
+    description: "管道變得更加狹窄。從深處傳來獵犬幼崽的聲音——巢穴就在附近。"
+    threats: "獵犬群（3-5隻）"
+  - id: "N09"
+    label: "紅色閥門室"
+    x: 350
+    y: 480
+    type: "discovery"
+    explored: false
+    description: "一個小型機械室，牆上有數個紅色閥門。轉動它們會改變管道流向。"
+    special: "正確組合可能觸發特殊事件（GM選擇）"
+  - id: "N10"
+    label: "前人避難所"
+    x: 600
+    y: 450
+    type: "rest_point"
+    explored: false
+    description: "隱藏在管道夾層中的小型避難所——行軍床、油燈、王靜的日記、變體杏仁水樣本。"
+    resources: "杏仁水×2、變體杏仁水×1、油燈"
+  - id: "N11"
+    label: "狹窄通道（出口）"
+    x: 700
+    y: 300
+    type: "exit"
+    explored: false
+    description: "一條極其狹窄的管道——僅容一人側身通過。盡頭有自然光滲入。通往Level 11城市下水道。"
+    exit_to: "Level 11 — 無盡城市"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: "初始通道"
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "主要管道（左——建議路線）"
+  - from: "N02"
+    to: "N05"
+    type: "dangerous_path"
+    label: "分支管道（右——捷徑但危險）"
+  - from: "N03"
+    to: "N04"
+    type: "vertical"
+    label: "垂直通道"
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: "下層管道"
+  - from: "N05"
+    to: "N06"
+    type: "corridor"
+    label: "繞過蒸汽區"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "轉角通道"
+  - from: "N07"
+    to: "N08"
+    type: "dangerous_path"
+    label: "通往巢穴（危險！）"
+  - from: "N06"
+    to: "N10"
+    type: "corridor"
+    label: "側邊通道（通往避難所）"
+  - from: "N10"
+    to: "N11"
+    type: "corridor"
+    label: "最後一段管道"
+  - from: "N06"
+    to: "N09"
+    type: "corridor"
+    label: "閥門室通道"
+  - from: "N04"
+    to: "N11"
+    type: "corridor"
+    label: "上層繞行路線"

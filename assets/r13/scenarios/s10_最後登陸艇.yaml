@@ -1,0 +1,97 @@
+name: "最後一個人"
+difficulty: "終局級 (挑戰等級（CR） 3-4)"
+mode: "阿斯塔特 · 單人"
+recommended_attributes: "+5-7 成長"
+
+opening_description: >
+  軌道防禦已關閉。救援信號已發出。一艘帝國護衛艦回應了——登陸艇正在降落。
+  它只能載 **2 個人**。
+  你和倖存的夥伴。還有——你可能在廢墟中拯救的平民（如果有）。還有黑盒子數據。
+  誰上船？誰留下？
+
+surface_goal: >
+  在登陸艇抵達前安全到達撤離點。攜帶黑盒子數據（如果有的話）。
+
+hidden_goal: >
+  登陸艇的真實目的可能不是救援——而是回收黑盒子數據。維拉中尉可能只是工具。
+
+known_threats:
+  - "登陸艇預計在 6 小時內抵達"
+  - "混沌勢力正在向星港推進"
+  - "你只有 2 個位置"
+
+hidden_threats:
+  - "登陸艇的真實目的可能不是救援——而是回收黑盒子數據"
+  - "混沌的「使者」在最後一刻會出現"
+  - "黑盒子數據可能證明你戰團長曾做出過錯誤命令"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 1
+  flare: 2
+  food_water_days: 2
+  ammo_magazines: 2
+
+companions:
+  - name: "倖存的夥伴（延續）"
+    role: "從 SB-1~4 存活下來的 NPC"
+    backstory: "如果沒有任何夥伴存活，則玩家獨自一人"
+    bottom_line: "取決於該角色"
+    initial_attitude: "延續"
+
+internal_seduction_trigger:
+  timing: "在登陸艇降落前，面對最終抉擇"
+  whisper: "兩個位置。你和誰？如果你帶走黑盒子數據——可能需要犧牲一個夥伴。如果你帶走夥伴——數據可能永遠遺失。帝皇會理解你的選擇嗎？"
+
+key_checks:
+  - scene: "集結到撤離點"
+    check: "無檢定——RP 抉擇"
+    tn_adjustment: 0
+    success: "組織有序撤離"
+    failure: "混亂——延誤登陸時間"
+  - scene: "面對混沌使者"
+    check: "信仰（困難）"
+    tn_adjustment: -20
+    success: "拒絕提議"
+    failure: "腐化 +5"
+  - scene: "計算誰上船"
+    check: "無檢定——RP 抉擇"
+    tn_adjustment: 0
+    success: "公平分配登陸艇座位"
+    failure: "衝突爆發"
+
+encounters:
+  - name: "星港外圍"
+    enemies: "變異體 ×6 + 暴君 ×2"
+    tactic: "拖延時間。必須在登陸艇抵達前清除外圍威脅"
+  - name: "塔台防禦"
+    enemies: "亞空間之影 ×2"
+    tactic: "它們從牆壁中浮現。需要信仰或靈能抵禦"
+  - name: "停機坪（最終）"
+    enemies: "混沌星際戰士 ×1 + 信徒 ×4"
+    tactic: "最終 Boss 戰。必須在登陸艇降落前清除停機坪"
+
+oath_conflicts_final:
+  conflict: "所有誓約的最終考驗"
+  choice_a: "對帝皇的誓言——帶回黑盒子數據推翻錯誤的滅絕令"
+  choice_b: "對戰友的誓言——誰上船？誰留下？"
+  choice_c: "對無辜者的誓言——平民——你能帶多少？"
+  choice_d: "對任務的誓言——撤離成功就是任務完成"
+
+endings:
+  - condition: "全員撤離（不太可能）"
+    result: "奇蹟。但你們知道這不是 40K 的正常結局"
+  - condition: "部分撤離"
+    result: "最少 1 名阿斯塔特上船 + 黑盒子數據。標準結局。留下的人獲得一個有尊嚴的最後使命"
+  - condition: "無人撤離"
+    result: "悲壯結局。你們的故事結束在這裡——但星球上從此有了一個傳說"
+  - condition: "有人選擇黑暗"
+    result: "噩夢結局。上船的人中有一個已不是他自己"
+
+  - condition: "玩家留下"
+    result: "選擇最後使命。獲得信仰 +5。你的名字不會被記住——但你的選擇會"
+  - condition: "夥伴留下"
+    result: "夥伴選擇自己的最後使命。GM 扮演他們的告別。你獲得他們的個人物品作為遺物"
+
+map_ref: "maps/map10_starport"

@@ -1,0 +1,83 @@
+# 地師TRPG 劇本 S2：將軍塚 ——「斷尾虎」
+scenario_id: S2
+title: "將軍塚——斷尾虎"
+level_range: "3-5"
+difficulty: "中等"
+sessions: "2-3"
+region: "關中（陝西山區）"
+
+synopsis: |
+  山勢險要處發現一座明代將軍墓。撼龍派風水記錄標註此處為「斷尾虎」格局。
+  盜墓幫派已打穿墓道外層，墓中之物開始影響周邊——獵人報告看到「穿盔甲的人」在月夜巡邏。
+  墓主是明代被部下背叛的總兵，被最信任的副將從背後刺殺。他的執念不是復仇——是「想知道為什麼」。
+  副將也被活埋在耳室中——作為殉葬者。
+
+npcs:
+  - id: npc_one_eye_chen
+    name: "「獨眼」老陳"
+    role: "盜墓幫派頭目"
+    attitude: "戒備但務實"
+    secret: "他們進過前室但逃出來了——裡面的東西會動"
+    stats: "摸金世家·無門派（民間盜墓者），身手5 堪輿4"
+
+  - id: npc_general_ghost
+    name: "總兵的滯留靈"
+    role: "墓主"
+    attitude: "威嚴、悲傷、渴望答案"
+    secret: "他不知道自己死後副將也被活葬"
+    stats:
+      type: "黑僵"
+      cr: 4
+      hp: 45
+      def: 15
+      attacks:
+        - "佩刀斬：2d10+5 vs DEF，命中：2d6+3物理"
+        - "威壓凝視：膽魄DC14，失敗：震懾1回合+恐懼+2"
+      special: "保留生前記憶和語言能力。可對話。若得知副將真相可能自行安息"
+
+  - id: npc_vice_general_ghost
+    name: "副將的滯留靈"
+    role: "墓主之敵"
+    attitude: "恐懼、悔恨"
+    secret: "他不是自願背叛的——總兵的政敵用他的家人威脅他"
+    stats: "滯留靈（白僵級），CR2，HP25"
+
+  - id: npc_brother_chen
+    name: "陳師兄"
+    role: "盟友（可選）"
+    stats: "民間武師·撼龍派，等級4"
+    info: "知道斷尾虎格局的意義：虎煞鎮壓內部威脅"
+
+tomb_structure:
+  type: "中型墓葬"
+  chambers:
+    - {id: passage, name: "墓道", length_m: 25, description: "石砌，有防盜石門（機關識破DC12）"}
+    - {id: front, name: "前室", size: "5m見方", contents: ["戰馬俑×4（部分內藏機關）", "兵器架", "壁畫——描繪總兵最後一戰"]}
+    - {id: side_a, name: "耳室A", description: "副將的墓——活葬。棺蓋內側有掙扎痕跡", key_item: "副將的遺書"}
+    - {id: side_b, name: "耳室B", description: "武器庫——真實的明代軍械"}
+    - {id: main, name: "主室", size: "8m見方", contents: ["石槨+木棺", "總兵遺骸（身穿盔甲，佩刀在手）", "印信和戰旗"]}
+
+encounters:
+  - {id: enc_climb, name: "登山尋墓", type: "探索", dc: 10, description: "地形險峻，需要風水知識定位"}
+  - {id: enc_stone_door, name: "墓道石門", type: "探索", dc: 12, description: "破解石門機關（搬山派優勢）"}
+  - {id: enc_terra_cotta, name: "戰馬俑", type: "戰鬥", ttv: 6, description: "2隻活化陶俑（白僵級），CR2 各HP25"}
+  - {id: enc_vice_general, name: "副將的棺", type: "探索/社交", dc: 10, description: "發現活葬痕跡，可與副將靈體對話"}
+  - {id: enc_general, name: "總兵（黑僵）", type: "戰鬥/社交", ttv: 10, description: "黑僵×1。若揭示副將真相有機會和平解決"}
+
+key_items:
+  - {id: item_seal, name: "總兵印信", type: "墓主執念附著", description: "不可出售，可在特定場合證明身份"}
+  - {id: item_weapons, name: "明代軍械", type: "乾淨古物", value_ocean: "200-400（部分可用的高品質冷兵器）"}
+  - {id: item_banner, name: "戰旗", type: "乾淨古物", value_ocean: 500, description: "軍閥和外國隊會爭奪"}
+  - {id: item_letter, name: "副將的遺書", type: "關鍵道具", description: "解開執念的關鍵——在副將棺中找到"}
+
+endings:
+  - {id: ending_forgive, name: "原諒與解脫", condition: "將遺書交給總兵，安撫雙方", result: "雙雙超度，獲得「雙魂祝福」（未來一次檢定自動大成功）"}
+  - {id: ending_revenge, name: "復仇完成", condition: "讓總兵消滅副將靈體", result: "總兵安息但煞氣增強——墓中煞氣永久+1"}
+  - {id: ending_force, name: "強制鎮壓", condition: "符法強行鎮壓", result: "獲得完整陪葬品但虎煞轉移到玩家（永久：陰氣檢定-1）"}
+
+rewards: {xp: 300, money: "300-800大洋（取決於結局和交易）"}
+scale_adjustments:
+  solo: {ttv_mult: 0.6, companion: "陳師兄（NPC盟友必須在場）", note: "總兵TTV降至7"}
+  duo: {ttv_mult: 0.75}
+  trio: {ttv_mult: 0.9}
+  quad: {ttv_mult: 1.0, note: "戰馬俑增加為3隻"}

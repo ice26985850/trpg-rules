@@ -1,0 +1,49 @@
+# 地師TRPG 劇本 S4：鬼市交易 ——「不是墓——是鬼市」
+scenario_id: S4
+title: "鬼市交易——不是墓，是鬼市"
+level_range: "5-7"
+difficulty: "特殊（社交主導）"
+sessions: "1-2"
+region: "荊楚（廢棄礦坑深處）"
+
+synopsis: |
+  這不是墓——這是鬼市。玩家收到邀請進入隱藏在廢棄礦坑深處的鬼市。
+  今晚有特別拍賣會——壓軸拍品是一具「未開封的漢代玉棺」。
+  玉棺中的不是墓主——是封印在玉中的極強怨靈（跳屍·飛屍級）。
+  有人刻意把玉棺帶到鬼市拍賣，目的是讓怨靈找到新宿主。
+
+npcs:
+  - {id: npc_gatekeeper, name: "守門人", attitude: "面無表情", secret: "他不需要呼吸", info: "檢查邀請或收取入場費：一件有故事的古物"}
+  - {id: npc_old_abacus, name: "「老算盤」", role: "資深商人", attitude: "精明、喜歡地師", secret: "知道玉棺不對勁但不敢說"}
+  - {id: npc_jade_face, name: "「玉面」", role: "買家", attitude: "對玉棺極度感興趣", secret: "她是玉棺中怨靈生前的妹妹——想釋放姐姐", stats: "實際上是飛屍級存在"}
+  - {id: npc_auctioneer, name: "拍賣師", attitude: "專業、中立", secret: "欠了市主的債，不是自願的"}
+  - {id: npc_master_envoy, name: "市主的使者", attitude: "神祕", info: "市主從不出現——使者的話就是最終裁決"}
+
+locations:
+  - {id: loc_entrance, name: "入口", description: "守門人檢查邀請"}
+  - {id: loc_market, name: "主市集", description: "數十個攤位，賣家各種各樣"}
+  - {id: loc_auction, name: "拍賣大廳", description: "核心區域——玉棺在此展示"}
+  - {id: loc_private, name: "私密交易間×3", description: "不公開的交易"}
+  - {id: loc_backstage, name: "後台", description: "玉棺存放處，重兵看守"}
+
+encounters:
+  - {id: enc_enter, name: "進入鬼市", type: "社交", dc: 10, description: "說服守門人或提供有故事的古物"}
+  - {id: enc_market_explore, name: "市集探索", type: "探索/社交", dc: "多個", description: "與不同商人互動，收集情報，交易物品"}
+  - {id: enc_auction, name: "拍賣會", type: "社交", dc: 14, description: "競標玉棺——或阻止「玉面」得標"}
+  - {id: enc_private_deal, name: "私密交易", type: "社交", dc: "12-16", description: "與特定NPC私下談判"}
+  - {id: enc_jade_coffin, name: "玉棺危機", type: "戰鬥/社交", ttv: 18, description: "若玉棺被打開，跳屍·飛屍級怨靈釋放"}
+  - {id: enc_master_judgment, name: "市主的裁決", type: "社交", dc: 16, description: "若破壞鬼市規則"}
+
+key_items:
+  - {id: item_ghost_market_pass, name: "鬼市通行證", description: "永久進入鬼市資格"}
+  - {id: item_sealing_talismans, name: "封印符紙（高級）×3", description: "市集中可購買"}
+  - {id: item_intel, name: "多個墓的情報", description: "其他地師動向、墓的位置資訊"}
+
+endings:
+  - {id: ending_sealed, name: "玉棺封印", condition: "阻止玉棺被打開/重新封印怨靈", result: "市主感謝，鬼市聲望+3"}
+  - {id: ending_released, name: "怨靈釋放", condition: "玉棺被打開，怨靈逃脫", result: "怨靈成為長期威脅——出現在未來劇本"}
+  - {id: ending_ally, name: "與玉面結盟", condition: "幫助玉面釋放姐姐但控制局面", result: "獲得強大盟友但市主可能不悅"}
+
+rewards: {xp: 400, money: "視交易而定"}
+scale_adjustments:
+  solo: {playable: true, note: "社交劇本。NPC商人更主動接觸"}

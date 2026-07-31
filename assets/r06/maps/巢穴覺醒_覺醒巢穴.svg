@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" font-family="Microsoft JhengHei, sans-serif">
+  <!-- 背景 -->
+  <rect width="680" height="480" fill="#1a1a2e"/>
+
+  <!-- 區域：巢穴內區 -->
+  <rect x="30" y="200" width="370" height="230" rx="10" fill="#2d1045" opacity="0.4"/>
+
+  <!-- 區域：出口方向 -->
+  <rect x="120" y="30" width="200" height="170" rx="10" fill="#1a3d2e" opacity="0.4"/>
+
+  <!-- 連線 A→B -->
+  <line x1="280" y1="330" x2="380" y2="280" stroke="#8B5CF6" stroke-width="2"/>
+
+  <!-- 連線 A→C -->
+  <line x1="280" y1="300" x2="220" y2="150" stroke="#8B5CF6" stroke-width="2"/>
+
+  <!-- 連線 A→D -->
+  <line x1="220" y1="350" x2="140" y2="380" stroke="#8B5CF6" stroke-width="2"/>
+
+  <!-- 連線 A→E -->
+  <line x1="280" y1="380" x2="330" y2="420" stroke="#8B5CF6" stroke-width="2"/>
+
+  <!-- A：覺醒之廳 -->
+  <rect x="200" y="280" width="100" height="60" rx="8" fill="#4B0082" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="250" y="305" text-anchor="middle" fill="white" font-size="12" font-weight="bold">覺醒之廳</text>
+  <text x="250" y="325" text-anchor="middle" fill="#ccc" font-size="9">起點</text>
+
+  <!-- B：水源地 -->
+  <rect x="340" y="240" width="80" height="50" rx="8" fill="#4169E1" stroke="#6B8CF6" stroke-width="1.5"/>
+  <text x="380" y="260" text-anchor="middle" fill="white" font-size="11">水源地</text>
+  <text x="380" y="278" text-anchor="middle" fill="#ccc" font-size="8">休息點</text>
+
+  <!-- C：巢穴通道 -->
+  <rect x="160" y="100" width="100" height="50" rx="8" fill="#2E8B57" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="210" y="120" text-anchor="middle" fill="white" font-size="11">巢穴通道</text>
+  <text x="210" y="138" text-anchor="middle" fill="#ccc" font-size="8">往出口</text>
+
+  <!-- D：屍體堆 -->
+  <rect x="60" y="350" width="90" height="50" rx="8" fill="#8B4513" stroke="#A0522D" stroke-width="1.5"/>
+  <text x="105" y="370" text-anchor="middle" fill="white" font-size="11">屍體堆</text>
+  <text x="105" y="388" text-anchor="middle" fill="#FFD700" font-size="8">搜刮點</text>
+
+  <!-- E：裂縫 -->
+  <rect x="290" y="400" width="80" height="50" rx="8" fill="#DC143C" stroke="#FF4444" stroke-width="1.5"/>
+  <text x="330" y="420" text-anchor="middle" fill="white" font-size="11">裂縫</text>
+  <text x="330" y="438" text-anchor="middle" fill="#ff9999" font-size="8">⚠ 危險</text>
+
+  <!-- 標題 -->
+  <text x="340" y="25" text-anchor="middle" fill="#8B5CF6" font-size="16" font-weight="bold">巢穴覺醒 — 覺醒巢穴</text>
+  <text x="340" y="45" text-anchor="middle" fill="#999" font-size="10">S1 場景一：覺醒</text>
+
+  <!-- 圖例 -->
+  <rect x="460" y="380" width="12" height="12" rx="2" fill="#4B0082"/>
+  <text x="478" y="391" fill="#ccc" font-size="10">起點</text>
+  <rect x="540" y="380" width="12" height="12" rx="2" fill="#2E8B57"/>
+  <text x="558" y="391" fill="#ccc" font-size="10">出口</text>
+  <rect x="460" y="400" width="12" height="12" rx="2" fill="#DC143C"/>
+  <text x="478" y="411" fill="#ccc" font-size="10">危險</text>
+  <rect x="540" y="400" width="12" height="12" rx="2" fill="#8B4513"/>
+  <text x="558" y="411" fill="#ccc" font-size="10">搜刮點</text>
+</svg>

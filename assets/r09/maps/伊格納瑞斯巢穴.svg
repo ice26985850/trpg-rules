@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 410" font-family='Microsoft JhengHei','Noto Sans CJK TC','PingFang TC',sans-serif>
+  <rect width="420" height="410" fill="#fbf7ef"/>
+
+  <text x="210" y="26" text-anchor="middle" font-size="18" fill="#3b2f7a" font-weight="bold">伊格納瑞斯巢穴（劇本四）</text>
+  <text x="210" y="44" text-anchor="middle" font-size="10" fill="#777">引用：場景2-1 / 2-2 / 2-3</text>
+  <rect x="90" y="60" width="240" height="70" fill="#ffd9c0" stroke="#c0392b"/>
+  <text x="210" y="84" text-anchor="middle" font-size="12">D3 伊格納瑞斯臥榻（最終試煉）</text>
+  <text x="210" y="102" text-anchor="middle" font-size="10">岩漿池中央 · 臨終碎片凝聚區</text>
+  <ellipse cx="210" cy="118" rx="34" ry="12" fill="#ff6a2b" opacity="0.8"/>
+  <rect x="90" y="138" width="240" height="64" fill="#f3e6c8" stroke="#9a7b3a"/>
+  <text x="210" y="162" text-anchor="middle" font-size="12">D2 記憶岩壁</text>
+  <text x="210" y="180" text-anchor="middle" font-size="10">龍族符文（博學DC14）· 觸碰播放記憶</text>
+  <rect x="90" y="208" width="240" height="64" fill="#e8e0ff" stroke="#6b5bd2"/>
+  <text x="210" y="232" text-anchor="middle" font-size="12">D1 澤菲羅斯守衛區（入口大廳）</text>
+  <text x="210" y="250" text-anchor="middle" font-size="10">展示火焰法術 · 可容納整座塔樓</text>
+  <rect x="90" y="278" width="240" height="50" fill="#e0d0c0" stroke="#7a5a3a"/>
+  <text x="210" y="306" text-anchor="middle" font-size="11">火山通道（蒸汽 · 高溫）</text>
+  <text x="210" y="370" text-anchor="middle" font-size="10" fill="#c0392b">D3 高溫：未防護每回合 1d6 火焰傷害</text>
+  <text x="210" y="388" text-anchor="middle" font-size="10">掩體 3-4 處岩石突起 · 逃跑通道可能坍塌</text>
+
+</svg>

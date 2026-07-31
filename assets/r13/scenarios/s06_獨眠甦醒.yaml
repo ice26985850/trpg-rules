@@ -1,0 +1,68 @@
+name: "唯一的甦醒者"
+difficulty: "入門級 (挑戰等級（CR） 1)"
+mode: "阿斯塔特 · 單人"
+recommended_attributes: "創角"
+
+opening_description: >
+  你在雷鷹砲艇殘骸中醒來。你的小隊——你的兄弟們——都死了。他們的屍體還在各自的座位上，安全帶仍扣著。只有你活著。
+  一個凡人士兵也活著——她是砲艇的機工。
+
+surface_goal: >
+  搜尋墜毀雷鷹砲艇的残骸，收集數據板和戰團紀錄，向北方山區撤離點前進。
+
+hidden_goal: >
+  砲艇是被友軍火力擊落的——還是混沌的力量？數據板中可能藏著令人不安的真相。
+
+known_threats:
+  - "墜毀區域可能有變異體出沒"
+  - "通訊設備損壞——需要修復或使用備用方法聯繫"
+
+hidden_threats:
+  - "砲艇墜毀可能是混沌干擾的結果"
+  - "凱拉的義肢可能不完全可靠"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 2
+  flare: 1
+  food_water_days: 2
+  ammo_magazines: 2
+
+companions:
+  - name: "技術軍士凱拉"
+    role: "帝國海軍機工"
+    backstory: "年輕的機工，在墜機中失去了一條手臂，但用殘骸零件做了一個臨時義肢"
+    motive: "活著離開這顆星球。她有一艘運輸船的日誌——船在北方的山區"
+    bottom_line: "絕不拋棄可以修復的機器"
+    initial_attitude: 1
+    attributes:
+      faith: 3
+      physique: 2
+      mind: 3
+      skill: 4
+      fate: 3
+    trained_skills: ["技術", "調查"]
+    equipment: ["雷射手槍(1d6+1)", "防彈甲(護甲減免（AR） 2)", "數據板(含運輸船坐標)"]
+    special_ability:
+      name: "機械教訓練"
+      desc: "技術檢定優勢。可以修理受損裝備（每劇本 1 次，恢復一件裝備 1 級狀態）"
+
+key_checks:
+  - scene: "搜索殘骸"
+    check: "調查（標準）"
+    tn_adjustment: 0
+    success: "找到額外資源（彈藥 +1，聖水 +1）"
+    failure: "只找到基本補給"
+  - scene: "凱拉修復通訊器"
+    check: "技術（標準）"
+    tn_adjustment: 0
+    success: "獲得精確撤離坐標"
+    failure: "只有大致方向"
+
+encounters:
+  - name: "殘骸附近"
+    enemies: "低階變異體 ×2"
+    tactic: "凱拉用雷射槍支援。注意變異體的數量可能更多"
+
+map_ref: "maps/map06_ravenhawk"

@@ -1,0 +1,50 @@
+# 地師TRPG 劇本 S5：養屍地 ——「整個墓地都醒了」
+scenario_id: S5
+title: "養屍地——整個墓地都醒了"
+level_range: "7-9"
+difficulty: "困難"
+sessions: "2-3"
+region: "荊楚（湖南古戰場遺址）"
+
+synopsis: |
+  古戰場下方的亂葬崗出現異常——整片區域的屍體都在甦醒。從新屍到白僵、黑僵，甚至有一隻跳屍帶領牠們。
+  當地村民全部撤離。符籙派發出緊急召集——需要至少三位地師聯手佈下「鎮煞大陣」。
+  亂葬崗下方有一處被封印的古代祭壇——戰國時期的人祭場。千年人祭積累了無法想像的陰煞之氣。
+  有人在最近破壞了祭壇的封印。
+
+npcs:
+  - {id: npc_elder_chen, name: "陳老道", role: "委託人/盟友", stats: "茅山弟子·符籙派，等級8", info: "年輕時來過這裡——那時封印還完好"}
+  - {id: npc_priest, name: "跳屍——戰國祭師", role: "區域首領", secret: "祭壇最後一任祭師——被活祭後化為跳屍。守護祭壇但不知自己在守護什麼", stats: {type: "跳屍", cr: 7, hp: 70, def: 18, special: "保留部分語言能力——可能對話"}}
+  - {id: npc_survivor, name: "盜墓者倖存者", role: "情報來源", attitude: "精神崩潰", info: "破壞封印的盜墓隊唯一倖存者。反覆說「祭壇下面的東西不是死的」"}
+  - {id: npc_warlord_scout, name: "軍閥偵察兵", role: "潛在威脅", info: "劉大砲的人——等屍群被處理後再來找古物"}
+
+tomb_structure:
+  type: "開放區域+地下祭壇"
+  areas:
+    - {id: surface, name: "地表層——亂葬崗", zones: [{name: "屍變區A", enemies: "新屍×10-15"}, {name: "屍變區B", enemies: "白僵×5-8"}, {name: "屍變區C", enemies: "黑僵×3-5"}, {name: "核心區", enemies: "跳屍的領地"}]}
+    - {id: underground, name: "地下祭壇（三層）", chambers: [{name: "上層：祭祀準備室", note: "已被盜墓者破壞"}, {name: "中層：祭祀大廳", note: "中央有血池——仍然在運作"}, {name: "下層：封印室", note: "祭壇核心，鎮物已被移除"}]}
+    - {id: secret_passage, name: "祕密通道", description: "通向更古老的遺跡（留給未來劇本）"}
+
+encounters:
+  - {id: enc_cross_zone, name: "穿越屍變區", type: "探索/戰鬥", dc: 14, ttv: 10, description: "避開或消滅巡邏屍群。聲音和光線吸引更多"}
+  - {id: enc_array, name: "佈置鎮煞大陣", type: "儀式", dc: 14, description: "需要三位地師協作。干擾可能導致大陣失敗"}
+  - {id: enc_priest, name: "跳屍祭師", type: "戰鬥/社交", ttv: 20, description: "跳屍×1+黑僵×2。祭師保留部分語言能力——可能對話"}
+  - {id: enc_blood_pool, name: "血池", type: "環境", dc: 14, description: "煞氣來源——需要封印或淨化"}
+  - {id: enc_altar_core, name: "祭壇核心", type: "探索/儀式", dc: 16, description: "找到並修復鎮物。需解讀古代銘文"}
+  - {id: enc_warlord, name: "軍閥干涉", type: "社交/戰鬥", dc: 14, description: "偵察兵可能在最壞時機出手"}
+
+key_items:
+  - {id: item_bronze_dagger, name: "古代祭師的青銅匕首（鎮物）", description: "封印祭壇的關鍵。可帶走但封印減弱"}
+  - {id: item_bamboo_slips, name: "人祭名單（竹簡）", description: "記錄千年人祭受害者，極高歷史價值"}
+  - {id: item_priest_mask, name: "跳屍祭師的面具", description: "若和平解決獲得。戰鬥中可威懾低級殭屍（白僵及以下恐懼DC-4）"}
+
+endings:
+  - {id: ending_perfect, name: "完美封印", condition: "修復鎮物+淨化血池+安撫祭師", result: "養屍地回復正常，獲得「淨化者的印記」（煞氣感知永久+2）"}
+  - {id: ending_clear, name: "強行清剿", condition: "消滅所有屍變但不修復祭壇", result: "暫時解決，煞氣3-5年內重新凝聚"}
+  - {id: ending_awaken, name: "祭師覺醒", condition: "幫助祭師恢復理智", result: "獲得極強盟友——祭師自願留在祭壇守護封印"}
+
+rewards: {xp: 800, money: "500-1000大洋"}
+scale_adjustments:
+  solo: {not_recommended: true, reason: "需要三人協作佈陣"}
+  duo: {note: "NPC盟友必須在場（陳老道+一位師兄弟），屍群密度減半", ttv_mult: 0.75}
+  trio: {note: "鎮煞大陣可簡化為雙人版（DC+2）", ttv_mult: 0.9}

@@ -1,0 +1,372 @@
+# 永和武典 · 單人劇本（結構化資料）
+# 對應玩家/GM 可讀版本：s02_單人劇本.md
+# 用途：供建站腳本 / AI GM 引擎以機器可讀格式引用本劇本
+# 模式說明：單人模式 = 1 玩家 + 1 GM（用戶定義，非無 GM）
+# 格式：YAML（UTF-8，全繁體中文，術語採「中文全稱（縮寫）」格式）
+
+scenario:
+  id: s02
+  title: 獨行江湖
+  slug: s02_du-xing-jiang-hu
+  type: campaign
+  player_mode: solo                # solo=單人（1玩家+1GM）
+  players:
+    min: 1
+    max: 1
+    gm: required
+    note: "單人模式 = 1 玩家 + 1 GM（用戶定義，非無 GM）"
+  recommended_realm: "第一境·初窺門徑 → 第六境·返璞歸真"
+  expected_sessions: "11-18 團"
+  based_on: "12_一條龍劇本.md（改編為單人版）"
+  source_files:
+    - "21_單人劇本（原 12_一條龍劇本改編）"
+  reference_files:
+    - "20_單人規則"
+    - "12_一條龍劇本"
+    - "14_敵人速查表"
+    - "15_隨機遭遇表"
+    - "03_武功體系"
+    - "16_叛門規則"
+  gm_pacing: >-
+    每章之間有「江湖過渡」——PC 在旅途中遇隨機遭遇（15_隨機遭遇表，單人版 難度（DC）-2）；過渡也是同伴加入/離開/換人時機。
+  chapter_overview:
+    - chapter: 一
+      realm: 第一境
+      location: 黑風寨山路
+      conflict: "剿滅山賊 / 救出人質"
+      companion: "—"
+      sessions: "1-2"
+    - chapter: 二
+      realm: 第二境
+      location: 洛陽城
+      conflict: "調查化功散原料 / 結識盟友"
+      companion: "柳生煙（藥王谷女醫）"
+      sessions: "2-3"
+    - chapter: 三
+      realm: 第三境
+      location: "藥王谷·千機閣"
+      conflict: "追查內鬼南宮晦 / 楚懷沙的抉擇"
+      companion: "柳生煙或段天涯（選一）"
+      sessions: "2-3"
+    - chapter: 四
+      realm: 第四境
+      location: "天劍盟·萬象洞天"
+      conflict: "天劍盟禪位之危 / 洞天試煉"
+      companion: "段天涯（簡版）"
+      sessions: "2-3"
+    - chapter: 五
+      realm: 第五境
+      location: "血月教總壇·北境"
+      conflict: "面對夜修羅 / 朝廷暗線浮現"
+      companion: "韓鐵衣（簡版）"
+      sessions: "2-3"
+    - chapter: 六
+      realm: 第六境
+      location: 北境戰場
+      conflict: "蠻族南侵 / 結盟或決戰"
+      companion: "以上任選一人（名望足夠）"
+      sessions: "2-3"
+
+  chapters:
+
+    # ===================== 第一章 =====================
+    - id: ch1
+      index: 1
+      title: "黑風寨·初出茅廬"
+      pc_realm: "第一境·初窺門徑"
+      based_on: "12_一條龍劇本.md §第一章"
+      hook: >-
+        師父/引薦人交付第一個獨立任務：洛陽城外黑風寨山賊猖狂，寨中關著被擄村民；「不用剿滅全寨，把人救出來就行」。
+      solo_encounter_adjustments:
+        - encounter: "遭遇1：山道伏擊"
+          original: "4-6 山賊嘍囉（14_#2）"
+          solo: "2 山賊嘍囉（一在山道，一在樹上埋伏）"
+        - encounter: "遭遇2：寨門守衛"
+          original: "山賊頭目 + 2 嘍囉"
+          solo: "山賊頭目 ×1（獨自守門，其他人去喝酒）"
+        - encounter: "遭遇3：Boss 韓豹"
+          original: "生命值（HP） 30，狂暴+3"
+          solo: "生命值（HP） 20，狂暴上限+2，受傷>15 恐懼生效（見 20_單人規則.md §2.3）"
+      noncombat_options:
+        - route: 潛行路線
+          detail: "繞過寨門守衛直取柴房救人。"
+          check: "潛行 難度（DC） 12（單人版 難度（DC） 10，守備鬆散）"
+        - route: 威嚇路線
+          detail: "假扮六扇門先遣，讓守門帶路見大當家，跳過遭遇2。"
+          check: "膂力/魅力 難度（DC） 12"
+      rewards:
+        - name: 經驗值（XP） 15
+          type: 經驗值（XP）
+          note: "含救人經驗值（XP）"
+        - name: 俠義值+8
+          type: 俠義值
+          source: "救出村民"
+        - name: 黑風寨藏寶庫
+          type: 銀兩/物品
+          source: "銀兩 1d20+10 兩、金瘡藥 ×2"
+        - name: 魔教殘篇碎片
+          type: 劇情物品
+          source: "韓豹屍上，寫「化功散」模糊配方，第二章會用"
+        - name: 洛陽客棧免費住宿 3 晚
+          type: 資源
+        - name: 聲望+1
+          type: 聲望
+
+    # ===================== 第二章 =====================
+    - id: ch2
+      index: 2
+      title: "洛陽·風雨欲來"
+      pc_realm: "第二境·登堂入室"
+      based_on: "12_一條龍劇本.md §第二章"
+      scene_reskin: >-
+        PC 作為沈萬金臨時代理人，調查化功散原料流向；原著三方周旋（沈萬金/鐵鏡心/楚懷沙）改為 PC 單線調查。
+      solo_encounter_adjustments:
+        - encounter: "沈記當鋪情報交換"
+          solo: "不變——純社交"
+        - encounter: "六扇門駱駝巷之戰（原著幫鐵鏡心）"
+          solo: "PC 到達時戰鬥近尾聲；鐵鏡心獨戰 2 西域刀客（生命值（HP） 各15）；PC 可加入(2v2)或旁觀(第三回合鐵鏡心勝但受傷)"
+        - encounter: "楚懷沙庭院（原著阻止逃跑）"
+          solo: "改對話——楚懷沙說部分真相（「為救人買龍涎草」）；察言觀色 難度（DC） 14 發現提「妹妹」時聲音變了"
+      key_npc:
+        name: 柳生煙
+        first_meet: "藥王谷濟世堂（洛陽義診點），正包紮你救出的村民"
+        join_condition: "俠義值 ≥ 8 且幫過至少一個平民 NPC"
+        companion_data:
+          hp: 20
+          uses_per_combat: 2
+          skills: "藥王針法（治療 2d6 生命值（HP），耗1次）"
+          passive: "PC 在柳生煙相鄰時瀕死檢定 難度（DC）-2"
+          items: "金瘡藥 ×3（戰鬥外可給 PC）"
+      rewards:
+        - name: 經驗值（XP） 18
+          type: 經驗值（XP）
+          note: "含調查 + 協助鐵鏡心"
+        - name: 銀兩 30
+          type: 銀兩
+          source: "沈萬金調查報酬"
+        - name: 六扇門好感+1
+          type: 好感
+        - name: 四海盟好感+1
+          type: 好感
+        - name: 化功散配方分析報告
+          type: 資訊
+          source: "柳生煙協助，確定買家不止血月教（見 §第三章變體D 西廠影子）"
+
+    # ===================== 第三章 =====================
+    - id: ch3
+      index: 3
+      title: "藥王谷·內鬼"
+      pc_realm: "第三境·融會貫通"
+      based_on: "12_一條龍劇本.md §第三章"
+      scene_reskin: >-
+        柳生煙（或同伴）陪至藥王谷入口，但谷內須 PC 獨自接受「藥王三問」（非藥宗弟子入谷規矩）。
+      solo_encounter_adjustments:
+        - encounter: "藥王谷入口·機關守門"
+          original: "悟性 難度（DC） 14"
+          solo: "難度（DC） 12（蘇青囊放水）"
+        - encounter: "幽冥堂探索"
+          solo: "墨染主動帶參觀（真清白，氣氛營造令 PC 生疑）"
+        - encounter: "南宮晦 Boss 戰"
+          original: "生命值（HP） 45"
+          solo: "生命值（HP） 30；柳生煙可留谷外，若在場每回合自動解 PC 中毒一次"
+      extra_encounter:
+        name: 墨染的測試
+        detail: >-
+          墨染依 PC 回答決定態度；真誠→給「幽冥堂外堂通行證」並暗示查南宮晦私人藥房（篡改賬目+化功散剩餘原料）。
+      chu_huai_sha_ending:
+        save: "俠義+5；告知「破封散配方」祕密 + 承諾「神祕符號」線索（第四章用）；不加入同伴"
+        abandon: "惡名+3；第五章以「被洗腦的血月教精英」出現，需打醒而非打死（反應：你記得我嗎？刀頓0.1秒）"
+      rewards:
+        - name: 經驗值（XP） 20
+          type: 經驗值（XP）
+        - name: 墨染的毒針囊 ×10
+          type: 暗器
+          condition: "通過墨染測試（淬毒）"
+        - name: 破封散配方
+          type: 劇情物品
+          condition: "救楚懷沙"
+        - name: 南宮晦的密信
+          type: 資訊
+          source: "「曹督主已批。三月內不可走漏風聲。」印證西廠暗線"
+
+    # ===================== 第四章 =====================
+    - id: ch4
+      index: 4
+      title: "天劍盟·萬象洞天"
+      pc_realm: "第四境·爐火純青"
+      based_on: "12_一條龍劇本.md §第四章"
+      scene_reskin: >-
+        PC 作為「化解碎片之謎關鍵線索」受邀（前三章獲至少兩塊萬象洞天碎片）。段天涯此時可成同伴（正道路線俠義≥20 主動同行）。
+      solo_encounter_adjustments:
+        - encounter: "天劍盟禪位辯論"
+          solo: "陸沉淵邀 PC「說一句話」；魅力 難度（DC） 16 可挽回部分裂痕"
+        - encounter: "萬象洞天四大試煉"
+          solo: "四關皆 PC 獨自完成；每關間「洞天之靈」給 1 次恢復（生命值（HP）滿，真氣+5）"
+        - encounter: "段天涯「切磋」"
+          solo: "改為段天涯受陸沉淵命測試是否夠格進洞天（非致命）；打敗後「你比我強，我跟你進去」"
+      trial_adjustments:
+        - trial: 力之試煉
+          check: "膂力 難度（DC） 16"
+          pass: "舉起守門石獅；膂力永久+1（不計上限）"
+        - trial: 慧之試煉
+          check: "悟性 難度（DC） 18"
+          pass: "破三才陣法；「破陣心得」識招 難度（DC）-2"
+        - trial: 定之試煉
+          check: "定力 難度（DC） 18"
+          pass: "幻境面對最大恐懼；「心如止水」走火入魔檢定 難度（DC）-3"
+        - trial: 明心之試煉
+          check: "自省（無難度（DC），GM 依劇情歷程裁定）"
+          pass: "面對最深遺憾；解鎖自創武功條件（境界達標即可，無劇情鎖）"
+      rewards:
+        - name: 經驗值（XP） 25
+          type: 經驗值（XP）
+        - name: 天劍訣·入門篇
+          type: 武功祕笈
+          source: "陸沉淵親傳"
+        - name: 古地圖·完整版
+          type: 劇情物品
+          source: "四塊碎片合併，顯示上古武脈在血月教總壇下方"
+        - name: 段天涯（可選同伴）
+          type: 同伴
+          condition: "俠義≥20 且通過至少兩項試煉"
+        - name: "名劍「承影」（仿製·1d8+2）"
+          type: 武器
+          source: "陸沉淵贈"
+
+    # ===================== 第五章 =====================
+    - id: ch5
+      index: 5
+      title: "血月教·魔教之巔"
+      pc_realm: "第五境·登峯造極"
+      based_on: "12_一條龍劇本.md §第五章 + 西廠暗線變體D"
+      scene_reskin: >-
+        原著大規模正面衝突改為 PC 潛入總壇，依靠前章人脈（柳生煙解毒/段天涯掩護/墨染情報）而非大軍團戰。韓鐵衣此時出現（若接觸過西廠/六扇門）。
+      solo_encounter_adjustments:
+        - encounter: "總壇外圍"
+          original: "血月教精英×3 + 嘍囉×6"
+          solo: "韓鐵衣禁軍吸引主力；PC 面對 2 精英 + 1 小頭目；韓鐵衣每日1次遠程火力掩護"
+        - encounter: "厲殘陽 Boss 戰"
+          original: "生命值（HP） 60"
+          solo: "生命值（HP） 40；狹窄走廊限制「殘陽斬」範圍模式"
+        - encounter: "夜修羅 Boss 戰"
+          original: "生命值（HP） 85"
+          solo: "生命值（HP） 55；段天涯在場可與夜修羅對拼一回合，為 PC 爭取額外主要行動"
+      dialogue:
+        name: 夜修羅
+        text: >-
+          「我從五年前就在觀察你……動手吧。讓我看看——你到底是和他們一樣會變，還是你真的不一樣。」
+      ending_branches:
+        - branch: "全力以赴正面迎戰"
+          result: "夜修羅戰敗拒俘，跳入萬象洞天下深淵（上古武脈入口），留遺言"
+        - branch: "戰鬥中放過（放棄追擊機會）"
+          result: "夜修羅存活；第六章以「不請自來援軍」出現"
+        - branch: "惡名值路線（惡名≥25）"
+          result: "夜修羅 HP 降至10%停戰，邀 PC 接任教主；第六章路線大改"
+      west_factory_settlement: >-
+        朱雀於夜修羅戰後出現：「曹督主對你很感興趣。下次見面——不是在戰場上。」為第六章伏筆。
+      rewards:
+        - name: 經驗值（XP） 30
+          type: 經驗值（XP）
+        - name: 吸星大法·殘篇
+          type: 武功祕笈
+          source: "擊敗夜修羅後書房搜得"
+        - name: 夜修羅信物（修羅面具）
+          type: 飾品
+          source: "佩戴後震懾同境敵人（定力 難度（DC） 18，失敗命中-2）"
+        - name: 韓鐵衣（可選同伴）
+          type: 同伴
+          condition: "戰鬥中與禁軍合作"
+
+    # ===================== 第六章 =====================
+    - id: ch6
+      index: 6
+      title: "北境·天下蒼生"
+      pc_realm: "第六境·返璞歸真"
+      based_on: "12_一條龍劇本.md §第六章"
+      scene_reskin: >-
+        蠻族攻破雁門關、朝廷崩潰；終局為 PC 帶小隊（同伴 + 3-5 天劍盟弟子/禁軍輕騎）滲透敵後，直取金日磾指揮所，阻止其用上古武脈啟動萬象洞天最終機關。
+      solo_encounter_adjustments:
+        - encounter: "北境戰場大亂鬥"
+          original: "PC 軍隊 vs 蠻族軍隊正面"
+          solo: "小隊滲透敵後，同行 NPC 牽制雜兵，PC 不需對每小兵擲骰"
+        - encounter: "金日磾 Boss 戰"
+          original: "生命值（HP） 100"
+          solo: "生命值（HP） 70；「狼羣召喚」從3隻降至1隻（幽靈狼 生命值（HP） 15）"
+      weakness:
+        text: >-
+          金日磾「獸王之血」依賴上古武脈能量；戰前/戰中破壞武脈與機關連接（機關術 難度（DC） 20 或 悟性 難度（DC） 22），後續每回合損失 1d6 生命值（HP）。
+      peace_route:
+        text: >-
+          單人版比原著更易觸發和平路線（江湖信譽積累）；提出具體糧草/貿易方案（魅力 難度（DC） 20）金日磾可能退兵。
+      finale_cg: >-
+        戰後 PC 獨立古戰場回顧：黑風寨之夜、柳生煙金瘡藥、段天涯「你比我強」、夜修羅深淵表情；「這條路是你一個人走過來的——但你從來不是真的一個人」。
+      rewards:
+        - name: 經驗值（XP） 40
+          type: 經驗值（XP）
+        - name: "俠義值+30 / 惡名值+30"
+          type: "俠義/惡名"
+          note: "視路線"
+        - name: 九字內功真傳
+          type: 功法
+          source: "金日磾密室；返璞歸真之上再突破隱藏小境界（生命值（HP）+10, 真氣+10）"
+        - name: 永和英雄稱號
+          type: 稱號
+          source: "聲望永久+5"
+        - name: 各派掌門謝禮（擇一）
+          type: "武器/功法/財物/機關"
+          options: "陸沉淵：承影劍（真品·1d10+膂力×2）/ 慧覺：易筋經完整版 / 沈萬金：黃金萬兩 / 公輸玄：千機匣（一次性戰場道具）"
+
+  appendices:
+    npc_quickref:       # 附錄 A：每章出場 NPC
+      - chapter: 一
+        required: "韓豹（Boss）、被擄村民"
+        optional: "—"
+        companion_join: "—"
+      - chapter: 二
+        required: "沈萬金、鐵鏡心、楚懷沙"
+        optional: "柳生煙"
+        companion_join: "柳生煙"
+      - chapter: 三
+        required: "墨染、南宮晦（Boss）"
+        optional: "楚懷沙、朱雀"
+        companion_join: "—"
+      - chapter: 四
+        required: "陸沉淵、段天涯"
+        optional: "紫陽（若劍宗 PC）"
+        companion_join: "段天涯"
+      - chapter: 五
+        required: "厲殘陽（Boss）、夜修羅（Boss）"
+        optional: "韓鐵衣、朱雀"
+        companion_join: "韓鐵衣"
+      - chapter: 六
+        required: "金日磾（Boss）"
+        optional: "慧覺、公輸玄、夜修羅（若存活）"
+        companion_join: "—"
+    reference_index:     # 附錄 B：引用索引
+      - ref: "遭遇威脅值單人算法"
+        source: "20_單人規則.md §2"
+        chapter: 全章
+      - ref: "NPC 同伴系統"
+        source: "20_單人規則.md §4"
+        chapter: 全章
+      - ref: "英雄點機制"
+        source: "20_單人規則.md §3"
+        chapter: 全章
+      - ref: "標準敵人數據"
+        source: "14_敵人速查表.md"
+        chapter: 全章
+      - ref: "原著 Boss 數據"
+        source: "12_一條龍劇本.md §1-6"
+        chapter: 全章
+      - ref: "西廠暗線"
+        source: "12_一條龍劇本.md §第三章變體D / §第五章變體D"
+        chapter: "§3, §5"
+      - ref: "隨機遭遇"
+        source: "15_隨機遭遇表.md（單人版 難度（DC）-2）"
+        chapter: "各章過渡"
+      - ref: "叛門規則"
+        source: "16_叛門規則.md"
+        chapter: "NPC 相關劇情"
+      - ref: "拜師系統"
+        source: "03_武功體系.md §3.1.5"
+        chapter: "各章可選"

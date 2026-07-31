@@ -1,0 +1,63 @@
+# 多人戰役結構檔：站點暗影 (Shadow of the Site / 戰役系列 C)
+# 來源：campaign-series-c-shadow-of-the-site_zh-Hant.md
+# 本檔為結構化摘要；完整場景描述請參閱同名 .md。
+
+meta:
+  title: "站點暗影 (Shadow of the Site)"
+  type: "多人玩家戰役"
+  player_count: "小隊（建議 3–5 人）"
+  level_range: "Lv.3–10"
+  focus: "政治博弈 / 收容失效響應 / 吹哨倫理"
+  setting: "一座運作中 Site（玩家任職的新站點）"
+  plot: "玩家在新站點建立關係後，發現內部異常監測異常、部門傾軋，最終成為吹哨人，於 O5 聽證會決定站點命運。"
+
+scenes:
+  - id: "C-1"
+    name: "新站點，舊陰影"
+    level: "Lv.3"
+    type: "入職 / 關係建立 / 站點導覽"
+    key_checks: ["偵察 TN 62", "基金會史 TN 58", "說服 TN 52"]
+    duration: "1–2 場"
+    map_ref: "generic_site（二樓行政層）"
+
+  - id: "C-2"
+    name: "裂縫"
+    level: "Lv.4–5"
+    type: "異常監測 / 初步調查"
+    key_checks: ["異常學 TN 65", "工程 TN 60", "偵察 TN 62"]
+    duration: "1–2 場"
+
+  - id: "C-3"
+    name: "部門戰爭"
+    level: "Lv.5–6"
+    type: "政治博弈 / 資源談判"
+    key_checks: ["說服 TN 60", "欺騙 TN 55", "領導 TN 58"]
+    duration: "1–2 場"
+
+  - id: "C-4"
+    name: "被釋放的東西"
+    level: "Lv.6–7"
+    type: "收容失效響應 / 危機管理"
+    key_checks: ["異常學 TN 68", "工程 TN 62", "槍械 TN 70"]
+    duration: "2 場"
+
+  - id: "C-5"
+    name: "倫理委員會"
+    level: "Lv.7–8"
+    type: "道德審查 / 證詞博弈"
+    key_checks: ["說服 TN 62", "基金會史 TN 60", "欺騙 TN 58"]
+    duration: "1–2 場"
+
+  - id: "C-6"
+    name: "吹哨人"
+    level: "Lv.8–9"
+    type: "祕密保護 / 真相傳播"
+    key_checks: ["潛行 TN 60", "計算機 TN 65", "說服 TN 65"]
+    duration: "1–2 場"
+
+  - id: "C-7"
+    name: "清算"
+    level: "Lv.9–10"
+    type: "O5 聽證 / 站點命運"
+    key_checks: ["全社交技能", "領導 TN 68", "說服 TN 65"]
+    duration: "1–2 場"

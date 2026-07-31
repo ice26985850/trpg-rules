@@ -1,0 +1,1055 @@
+# 永和武典 · 一條龍劇本（結構化資料）
+# 對應玩家/GM 可讀版本：s01_一條龍劇本.md
+# 用途：供建站腳本 / AI GM 引擎以機器可讀格式引用本劇本
+# 格式：YAML（UTF-8，全繁體中文，術語採「中文全稱（縮寫）」格式）
+
+scenario:
+  id: s01
+  title: 一條龍劇本
+  slug: s01_yi-tiao-long
+  type: campaign                # campaign=長篇連續劇本 / oneshot=單次團
+  player_mode: multiplayer      # multiplayer=多人 / solo=單人
+  players:
+    min: 4
+    max: 6
+    default: 4
+    gm: required
+  recommended_realm: "第一境·初窺門徑 → 第六境·返璞歸真"
+  expected_sessions: "第一章1-3 + 第二章3-5 + 第三章4-6 + 第四章5-7 + 第五章6-8 + 第六章3-5 團（全本約 22–34 團）"
+  design_rationale: >-
+    一條龍劇本是為 GM 提供一條「拿出來就能帶團」的完整冒險路線。它是一套「有主幹、有枝杈、有工具箱」的敘事框架，
+    而非嚴格線性劇本。設計原則：境界驅動（每章對應一個境界突破）、勢力交織（四大風雲故事線）、分支給足（每章結尾提供 GM 可選變體）、引用優先（武功/裝備/NPC 均引用既有規則具名條目）。
+  source_files:
+    - "12_一條龍劇本.md"
+  reference_files:
+    - "01_核心機制"
+    - "02_角色創建"
+    - "05_江湖世界"
+    - "06_江湖模擬"
+    - "07_主持指南"
+    - "08_裝備丹藥"
+    - "09_武功圖鑑"
+    - "11_NPC角色卡"
+    - "14_敵人速查表"
+    - "15_隨機遭遇表"
+  story_threads:                # 四大風雲故事線
+    - 盟主更替
+    - 魔教異動
+    - 祕藏傳說
+    - 北境烽煙
+  assumptions:                  # 該劇本存在的前提假設
+    - "PC 數量：4-6 人（所有遭遇的默認難度基準）"
+    - "門派分佈：不要求特定門派，建議至少含 1 名正道、1 名中立/灰色；全邪道隊伍需 GM 自行調整部分正道 NPC 初始態度"
+    - "PC 等級曲線：每章開始時 PC 位於前一章對應境界巔峰；落後則 GM 應插入額外團次或調整難度"
+    - "NPC 角色卡：核心 NPC 數據見 11_NPC角色卡.md；未出現者標註「新建NPC」"
+  chapters:
+
+    # ===================== 第一章 =====================
+    - id: ch1
+      index: 1
+      title: 初窺門徑
+      realm_milestone: "初窺門徑 → 登堂入室"
+      pc_realm: "第一境·初窺門徑（屬性上限 5）"
+      expected_sessions: 1-3
+      attribute_baseline:        # 六維能力基準（GM 參考）
+        pc_avg: "膂力/身法/根骨 3-5；悟性/定力/魅力 2-5"
+        recommended_dc_range: "難度（DC） 8-12"
+        qi_pool: "8-15 點"
+        hp_range: "15-30"
+      hooks:
+        - id: hook-a
+          name: 茶館偶遇
+          suited: 所有門派
+          scene: >-
+            洛陽城外三里「四海茶寮」，說書先生講述天劍盟五大劍派明爭暗鬥。
+          conflict_trigger: >-
+            一隊黑衣蒙面人闖入宣稱「奉血月教令」繳械正道弟子，逼 PC 出手。
+          why_pc_acts: >-
+            正道門派有義務護民；中立門派自身利益受脅；邪道偏中門派可能被誤當正道一併攻擊。
+        - id: hook-b
+          name: 師門出山任務
+          suited: "正派/機宗/藥宗"
+          scene: >-
+            PC 師門交付前往洛陽城外「龍泉渡」取物/接人之任務；到達時山賊搶了渡口，頭目是第二境巔峰的「黑風寨大當家」。
+          conflict_trigger: >-
+            山賊頭子（修習魔教殘篇，摸到了第二境邊）劫掠渡口，戰鬥爆發。
+        - id: hook-c
+          name: 飛來橫禍
+          suited: "邪道偏中/影宗/散人"
+          scene: >-
+            官道上受驚馬車橫衝直撞，車中有受傷村民。出手救人後發現車輪被人動過機關。
+          conflict_trigger: >-
+            設置機關者「新建NPC：陰九齡（千機閣叛徒，第二境巔峰）」在山坡冷眼旁觀。
+      key_scenes:
+        - id: scene-1
+          title: 混亂中的相遇
+          summary: "PC 第一次在戰鬥中相遇，各展所長（劍宗出劍、氣宗運氣、金剛宗硬撼、毒宗遠程）。"
+        - id: scene-2
+          title: 師父點評（戰後）
+          summary: "根據鉤子不同，相助的長者身分為：說書先生（機宗丐幫長老）/渡口船伕（天劍盟暗探）/面具女子（柳生煙）。"
+        - id: scene-3
+          title: 第一次選擇
+          summary: "長者給 PC 抉擇：各自走人或一起去找黑風寨。此為首次團隊抉擇。"
+        - id: scene-4
+          title: 黑風寨（戰鬥場景）
+          summary: "見下方遭遇設計。"
+        - id: scene-5
+          title: 突破（境界突破場景）
+          summary: "擊敗大當家後發現魔教殘篇（末尾寫「餘下七頁，存於洛陽城內沈記當鋪」），完成入門試煉突破至第二境。"
+      encounters:
+        - id: enc-1
+          title: 茶館/渡口/官道混戰
+          enemies:
+            - name: 黑衣人
+              count: "PC數+1（鉤子A）"
+              hp: 15
+              might: "膂力 3（調-1）"
+              agility: "身法 3（調-1）"
+              attack: "基礎命中 +1"
+              damage: "1d6+1"
+            - name: 山賊
+              count: "=PC數（鉤子B）"
+              hp: 12
+              might: "膂力 3"
+              agility: "身法 2"
+              attack: "命中 +0"
+              damage: "1d6"
+            - name: 陰九齡的機關傀儡
+              count: 2
+              hp: 20
+              might: "膂力 4（調0）"
+              traits: "免疫恐懼；受火屬傷害翻倍"
+          difficulty: 中等（對第一境 PC）
+          tactics: "劍宗/金剛宗前排接敵；氣宗以太極拳·攬雀尾防禦；毒宗遠程輸出；藥宗治療；影宗先手解決最弱敵。"
+          variant: "若全為新手可減 1 敵；若有人落單被圍，未出手的長者出手一次救急。"
+        - id: enc-2
+          title: 黑風寨外圍
+          enemies:
+            - name: 黑風寨小頭目
+              count: 1
+              hp: 20
+              might: "膂力 4（調0）"
+              agility: "身法 3"
+              attack: "命中 +2（使刀）"
+              damage: "1d8+1（短刀）；技能「當頭一刀」命中-2但傷害+1d6"
+            - name: 山賊嘍囉
+              count: "=PC數"
+              hp: 12
+              attack: "命中 +0"
+              damage: "1d6"
+          difficulty: 中等
+        - id: enc-3
+          title: "黑風寨大當家——Boss 戰"
+          enemies:
+            - name: "「獨眼龍」韓豹"
+              role: boss
+              hp: 30
+              might: "膂力 5（調+1）"
+              agility: "身法 4（調0）"
+              root: "根骨 4"
+              focus: "定力 2"
+              attack: "命中 +3（大刀）"
+              damage: "2d6+1（五虎斷門刀·劈風式）"
+              qi: 6
+              special: "每受一次傷害下回合命中+1（狂暴，疊加至多+3）；累計受 20 點以上傷害後狂暴消失並陷入恐懼。"
+          difficulty: 困難（Boss 戰）
+          variant: "若 PC 過弱，大當家因魔功反噬每回合受 1d4 內傷。"
+      noncombat_challenges:
+        - id: chal-1
+          title: 追蹤黑風寨（探索）
+          check: "追蹤 難度（DC） 12（悟性）或 江湖見識 難度（DC） 10（悟性）向村民打聽"
+          success: "找到山路、發現巡邏路線，突襲首戰獲先手+2。"
+          failure: "山中迷路一個時辰，夜戰視線-2（影宗/毒宗反而隱匿加值）。"
+        - id: chal-2
+          title: 救出被擄村民（社交/潛入）
+          check: "潛行 難度（DC） 12（身法）繞守衛；或 威嚇 難度（DC） 12（膂力）逼俘虜帶路"
+          success: "救出人質，獲情報「大當家每晚關在地窖練功」。"
+          failure: "觸發追加遭遇；村民有人受傷（不及時救治則俠義值-2）。"
+      rewards:
+        - name: 魔教殘篇（半頁）
+          type: 劇情物品
+          source: "指向第二章線索——沈記當鋪"
+        - name: 黑風寨贓物
+          type: 銀兩
+          source: "30-50 兩（PC 均分）；歸還村民則俠義值+2"
+        - name: 五虎斷門刀·劈風式
+          type: 武功祕笈
+          source: "大當家身上（見 09_武功圖鑑 §6）；僅散人或使刀 PC 可習"
+        - name: 金瘡藥
+          type: 消耗品
+          source: "×3 份（見 08_裝備丹藥 §特殊道具）"
+      breakthrough:
+        to_realm: 第二境·登堂入室
+        xp_requirement: "累計 ≥ 20 經驗值（XP）"
+        martial_requirement: "掌握至少 1 門入門心法 + 1 門基礎武功"
+        story_lock: "完成入門試煉——擊敗黑風寨大當家並做出「堅守正道/堅守自我」選擇"
+        rewards: "屬性+3（單項最多+2）；真氣境界+3；屬性上限解鎖至 6；對低境界對手獲優勢骰；「氣感初成」被動（短休息恢復+2）"
+      foreshadow:
+        - text: "魔教殘篇祕密（沈記當鋪）"
+          points_to: 第二章
+        - text: "說書人/船伕/柳生煙身分"
+          points_to: 第二章
+        - text: "陰九齡（若未抓）加入千機閣黑暗計劃"
+          points_to: 第四章
+        - text: "血月教之名（黑衣人/大當家口中）"
+          points_to: "第三-五章"
+      gm_variants:
+        - id: var-a
+          title: PC 決定不組隊
+          detail: "各 PC 遇需幫助者；仍不組隊則數日後洛陽大事再聚。"
+        - id: var-b
+          title: PC 輕鬆碾壓
+          detail: "大當家臨死放信號彈，留下懸念；追加黑風寨塌方/走水逃脫場景。"
+        - id: var-c
+          title: PC 戰敗
+          detail: "不滅團——被關柴房與村民同囚，轉越獄場景，重挑時大當家 HP 僅剩一半。"
+
+    # ===================== 第二章 =====================
+    - id: ch2
+      index: 2
+      title: 登堂入室
+      realm_milestone: "登堂入室 → 融會貫通"
+      pc_realm: "第二境·登堂入室（屬性上限 6）"
+      expected_sessions: 3-5
+      attribute_baseline:
+        pc_avg: "膂力/身法/根骨 4-6；悟性/定力/魅力 3-6"
+        recommended_dc_range: "難度（DC） 10-15"
+        qi_pool: "15-25 點"
+        hp_range: "25-40"
+      hooks:
+        - id: hook-a
+          name: 沈萬金的請帖
+          suited: "正派/中立 PC"
+          scene: "洛陽客棧收到四海盟大掌櫃沈萬金燙金請帖，席間透露有人在大量收購化功散原料（龍涎草/寒石膽/七星海棠）。"
+          conflict_trigger: "沈萬金請 PC 查出收購者身分。"
+        - id: hook-b
+          name: 柳生煙的求助
+          suited: "藥宗/中立/遊俠 PC"
+          scene: "洛陽遇地痞糾纏的年輕女子柳生煙（藥王谷濟世堂首席），追查藥王谷流出禁藥。"
+        - id: hook-c
+          name: 沈記當鋪線索
+          suited: "接第一章伏筆"
+          scene: "持魔教殘篇至沈記當鋪，掌櫃沈三認出同款殘篇，提及「黑色蠍子紋身」。"
+          conflict_trigger: "江湖見識 難度（DC） 12（悟性）可辨識為血月教下屬標記。"
+      key_scenes:
+        - id: scene-1
+          title: 洛陽城探索（開放場景）
+          locations:
+            - "揚州樓（四海盟）：接鉤子A、結識 NPC"
+            - "龍泉閣（鑄劍坊）：購/升武器，紫陽近期取劍"
+            - "藥王濟世堂：治療、購藥、柳生煙"
+            - "沈記當鋪：接鉤子C、打聽傳聞"
+            - "六扇門洛陽分堂：新建NPC 鐵鏡心（第四境）"
+            - "三教九流茶館：打聽消息 難度（DC）-2"
+        - id: scene-2
+          title: 追查藥材（調查鏈）
+          summary: "四條線索指向三方買家：西域商人（血月教）、巴蜀神祕買家（千機閣）、洛陽富商楚懷沙（破封散）。"
+        - id: scene-3
+          title: 揚州樓夜宴——信息彙集
+          summary: "沈萬金攤開洛陽地圖，點出西域/巴蜀/楚懷沙三處。"
+        - id: scene-4
+          title: 見楚懷沙（社交/潛行）
+          summary: "楚懷沙透露破封散取自公輸玄，需進萬象洞天救中毒之妹。"
+        - id: scene-5
+          title: 駱駝巷——血月教的影子（戰鬥）
+          summary: "西域商人銷毀證據被六扇門堵住，PC 可選擇幫/攔截/圍觀。"
+      encounters:
+        - id: enc-1
+          title: 駱駝巷巷戰
+          enemies:
+            - name: 西域刀客
+              count: "PC數+1"
+              hp: 20
+              might: "膂力 4（調0）"
+              agility: "身法 4"
+              attack: "命中 +3（彎刀）"
+              damage: "2d6"
+              special: "技能「沙漠之風」：先手+2，首刀命中+1"
+            - name: 西域毒師
+              count: 1
+              hp: 15
+              sense: "悟性 4"
+              attack: "命中 +3（毒針暗器）"
+              damage: "1d4+中毒（1d4/回合，持續2回合）"
+              special: "持 2 枚霹靂彈，瀕死引爆同歸"
+          difficulty: 中等
+          third_party: "第3回合神祕黑影取走貨車信件消失；身法/察覺 難度（DC） 15 可辨「黃泉步」（忘川樓輕功）。"
+        - id: enc-2
+          title: 平安客棧的巴蜀買家（可選）
+          enemies:
+            - name: 巴蜀機關師
+              count: 2
+              hp: 18
+              sense: "悟性 5"
+              special: "不擅近戰，遠程操控機關"
+            - name: 鐵甲機關獸
+              count: 1
+              hp: 35
+              might: "膂力 6（調+2）"
+              attack: "命中 +4"
+              damage: "2d8+2"
+              special: "暗器命中-4；火屬傷害翻倍；每回合自動修復 1d4 生命值（HP）"
+          difficulty: 困難
+          background: "千機閣某堂主私自行為；密信「閣老已知萬象洞天方位，速購材料，三月內不可走漏風聲」。"
+        - id: enc-3
+          title: 楚懷沙的考驗（可選社交→可能戰鬥）
+          enemies:
+            - name: 楚懷沙
+              role: "非 Boss（只想脫身）"
+              hp: 28
+              agility: "身法 7（調+3）"
+              sense: "悟性 6（調+2）"
+              qi: 20
+              attack: "追風掌 命中+4，傷害 2d6+3"
+              special: "預埋 5 機關（煙霧/毒煙/繩網）；目標為阻止逃跑而非打死"
+          difficulty: 中等（非常規戰鬥）
+      noncombat_challenges:
+        - id: chal-1
+          title: 解讀古地圖
+          check: "江湖見識 難度（DC） 15（悟性）或 書畫 難度（DC） 12（魅力）"
+          success: "辨認巴蜀峨眉後山不在圖上之區域；古文字「萬象歸元，洞天有鑰」。"
+          failure: "僅知巴蜀山區，需千機閣解讀（引向第四章）。"
+        - id: chal-2
+          title: 駱駝巷證據追蹤
+          check: "追蹤 難度（DC） 12（悟性）"
+          success: "取得血月教文書+洛陽佈防圖（北境踩點）。"
+          failure: "碎片「……北境……化功散……」引向第六章。"
+        - id: chal-3
+          title: 說服楚懷沙合作
+          check: "口才 難度（DC） 15（魅力）"
+          bonus: "有藥宗 PC → 難度（DC）-2；威嚇 → 難度（DC）+5 且失敗即遭遇3"
+          success: "獲古地圖+破封散配方+信物。"
+          failure: "楚懷沙離開洛陽，第三章巴蜀再遇。"
+      rewards:
+        - name: 柳葉刀/短劍
+          type: 武器
+          source: "二選一，沈萬金之禮（見 08_裝備丹藥）"
+        - name: 續命丹
+          type: 丹藥
+          source: "×2，柳生煙之謝"
+        - name: 小還丹+聚氣丹
+          type: 丹藥
+          source: "小還丹×3 + 聚氣丹×1，繳獲自西域貨箱"
+        - name: 破封散配方
+          type: "劇情/物品"
+          source: "需說服楚懷沙（藥宗 PC 或煉丹≥2 方可煉，煉丹 難度（DC） 14）"
+        - name: 古地圖（殘缺）
+          type: 劇情物品
+          source: "指向第四章萬象洞天入口"
+        - name: 鐵鏡心推薦信
+          type: 劇情物品
+          source: "幫六扇門後獲得"
+        - name: 聲望+2
+          type: 聲望
+      breakthrough:
+        to_realm: 第三境·融會貫通
+        xp_requirement: "累計 ≥ 70 經驗值（XP）"
+        martial_requirement: "正宗心法以上，掌握至少 5 種武功"
+        story_lock: "領悟「武道真意」——理解江湖不只是比武"
+        rewards: "屬性+3（單項最多+2）；真氣境界+6；上限至 7；同境以下關鍵檢定優勢骰（每場景2次）；「見微知著」識武+2"
+      foreshadow:
+        - text: "血月教北境計劃"
+          points_to: "第五-六章"
+        - text: "千機閣知萬象洞天（閣老符號）"
+          points_to: 第四章
+        - text: "忘川樓介入"
+          points_to: "第三-六章"
+        - text: "楚懷沙之妹中毒"
+          points_to: "第四-六章"
+        - text: "古地圖指向巴蜀"
+          points_to: "第三-四章"
+      gm_variants:
+        - id: var-a
+          title: PC 走正道路線
+          detail: "六扇門後續給支援；楚懷沙偏執化；沈萬金贈金絲軟甲/犀皮甲。"
+        - id: var-b
+          title: PC 走邪道路線
+          detail: "鐵鏡心生疑；沈萬金轉公事公辦；第四章或獲千機閣地下拍賣會好處。"
+        - id: var-c
+          title: PC 不追查藥材線
+          detail: "第三章化功散流通黑市；萬象洞天線索可繞過藥材線由楚懷沙主動找上。"
+
+    # ===================== 第三章 =====================
+    - id: ch3
+      index: 3
+      title: 融會貫通
+      realm_milestone: "融會貫通 → 爐火純青"
+      pc_realm: "第三境·融會貫通（屬性上限 7）"
+      expected_sessions: 4-6
+      attribute_baseline:
+        pc_avg: "膂力/身法/根骨 5-7；悟性/定力/魅力 4-7"
+        recommended_dc_range: "難度（DC） 12-18"
+        qi_pool: "25-40 點"
+        hp_range: "35-50"
+      hooks:
+        - id: hook-a
+          name: 段天涯的邀約
+          suited: "劍宗/正道 PC"
+          scene: "劍閣遇天劍盟烈陽劍主段天涯，邀合作探索萬象洞天。"
+        - id: hook-b
+          name: 墨染的困境
+          suited: "藥宗/毒宗/中立 PC"
+          scene: "巴蜀小鎮墨染（藥王谷幽冥堂主）被村民圍攻，求 PC 助其洗清內鬼冤屈。"
+        - id: hook-c
+          name: 巴蜀江湖傳言
+          suited: 所有門派
+          scene: "峨眉後山月圓藍光；千機閣發「千機帖」邀破解萬象洞天封印。"
+      key_scenes:
+        - id: scene-1
+          title: 劍閣關——段天涯切磋（非致命）
+          summary: "段天涯只出三招；PC 接下三招即獲信任，天劍盟線開啟。"
+          duel_data:
+            hp: 50
+            attack: "+7（收着打 ≈ +4）"
+            damage: "2d6+2 / 3d6+2 / 2d8+3（第三招 PC HP>50% 命中+2）"
+        - id: scene-2
+          title: 唐門小鎮——墨染冤屈
+          summary: "引蛇出洞或自行調查，真相：孟川偷藥材被南宮晦脅迫；南宮晦才是內鬼。"
+        - id: scene-3
+          title: 峨眉後山——月圓藍光（探索/謎題）
+          summary: "古碑「萬象歸元，心即是鑰」；需真誠說出進洞天動機或機關術 難度（DC） 18（悟性）；洞內得第一塊碎片。"
+        - id: scene-4
+          title: 千機帖——羣雄匯聚
+          summary: "段天涯/墨染/楚懷沙/柳生煙/公輸玄/血月教暗探（偽裝）齊聚。"
+        - id: scene-5
+          title: 萬象洞天外三方對峙（高潮）
+          summary: "公輸玄持第二塊碎片；第三塊在血月教暗探（蠍子紋身）身上；PC 選擇決定結局。"
+      encounters:
+        - id: enc-1
+          title: 峨眉後山——守陣獸
+          enemies:
+            - name: 石獅傀儡
+              count: 2
+              hp: 30
+              might: "膂力 6（調+2）"
+              ac: "防禦（AC） 17（石質）"
+              attack: "命中 +5"
+              damage: "2d8+2"
+              special: "不受中毒/魅惑/恐懼；火屬翻倍；被擊倒自行重組；關節識武 難度（DC） 14 弱點（防禦（AC）-3）"
+          difficulty: 中等
+        - id: enc-2
+          title: 千機閣——南宮晦 Boss 戰
+          enemies:
+            - name: 南宮晦
+              role: boss
+              hp: 45
+              sense: "悟性 7（調+3）"
+              agility: "身法 6（調+2）"
+              root: "根骨 6"
+              qi: 30
+              attack: "腐骨掌 命中+6，傷害 3d6+3+中毒2d4/回合"
+              special: "回春訣自恢復3d6；每回合自回1d6（燒草木則失效）；瀕死放毒霧"
+          difficulty: 困難（Boss 戰）
+          background: "墨染追查的內鬼，血月教/千機閣雙面間諜；擊敗後可殺/放/交墨染。"
+        - id: enc-3
+          title: 三方混戰（可選）
+          participants: "PC + 段天涯 + 2 天劍盟弟子 vs 血月教暗探×3 + 小頭目"
+          enemies:
+            - name: 段天涯（全力）
+              hp: 60
+              attack: "命中 +8"
+              damage: "3d6+4"
+            - name: 天劍盟弟子
+              count: 2
+              hp: 25
+              attack: "命中 +5"
+              damage: "2d6+2"
+            - name: 血月教暗探
+              count: 3
+              hp: 22
+              attack: "命中 +5"
+              damage: "2d6+1+中毒（根骨 難度（DC） 12，1d4/回合）"
+            - name: 血月教小頭目
+              hp: 40
+              attack: "命中 +6"
+              damage: "3d6+2"
+              special: "每回合犧牲 3 真氣換命中+2；持第三塊碎片"
+          difficulty: 困難
+          key_item: "第三塊碎片在小頭目身上；及時發現（察覺/識武 難度（DC） 16）阻止震碎。"
+      noncombat_challenges:
+        - id: chal-1
+          title: 破解萬象洞天封印（心智/合作）
+          check: "①武學理解 悟性 難度（DC） 16 ②古文字 書畫/江湖見識 難度（DC） 16 ③真氣引導 根骨+定力聯合"
+          success: "大門開啟進入外圍。"
+          failure: "封印反噬各受 1d10 內傷，冷卻至下次月圓。"
+        - id: chal-2
+          title: 千機閣集會找暗探（社交/察言觀色）
+          check: "察言觀色 難度（DC） 16（悟性）或 江湖見識 難度（DC） 14（悟性）"
+          success: "場景5獲先手。"
+          failure: "場景5暗探突襲，首回合反應-2。"
+      rewards:
+        - name: 寒梅劍法·霜寒劍氣
+          type: 武功祕笈
+          source: "段天涯傳授（接切磋並出色，見 09_武功圖鑑 §17）"
+        - name: 金絲軟甲
+          type: 護甲
+          source: "墨染之謝（見 08_裝備丹藥 §護甲）"
+        - name: 淨心蓮
+          type: 靈藥
+          source: "洞天外圍（可解特殊毒）"
+        - name: 第一塊碎片（月白石）
+          type: 劇情物品
+        - name: 破境丹
+          type: 丹藥
+          source: "×1，南宮晦身上"
+        - name: 聲望+3
+          type: 聲望
+      breakthrough:
+        to_realm: 第四境·爐火純青
+        xp_requirement: "累計 ≥ 170 經驗值（XP）"
+        martial_requirement: "上乘心法以上"
+        story_lock: "名動一方（聲望「一方豪傑」）+ 完成一條恩怨線"
+        rewards: "屬性+3（單項最多+2）；真氣境界+10；上限至 8；非戰鬥穩定骰（3d10 取中）；「罡氣護體」戰鬥開始+5 臨時生命值（HP）"
+      foreshadow:
+        - text: "萬象洞天正殿（上古武脈）"
+          points_to: 第四章
+        - text: "段天涯野心"
+          points_to: "第五-六章"
+        - text: "血月教化功散計劃"
+          points_to: 第五章
+        - text: "忘川樓影子"
+          points_to: "第四-六章"
+        - text: "北境烽煙"
+          points_to: 第六章
+      gm_variants:
+        - id: var-a
+          title: PC 支持血月教暗探
+          detail: "暗探取前朝密卷；天劍盟關係破裂；俠義值-5；第五章暗探回報。"
+        - id: var-b
+          title: PC 不與任何一方合作
+          detail: "三方視 PC 為競爭對手；洞天變多隊迷宮探索。"
+        - id: var-c
+          title: 公輸玄的測試
+          detail: "贈機關通訊器+安全路線圖，代價為被遠程觀察。"
+        - id: var-d
+          title: 西廠的影子（朝廷暗線）
+          detail: "南宮晦戰後或藥材調查後，朱雀遞「化功散買家不止血月教，第三批是朝廷」；追查 身法 難度（DC） 18（追蹤朱雀）。不改主線，第五章伏筆。"
+
+    # ===================== 第四章 =====================
+    - id: ch4
+      index: 4
+      title: 爐火純青
+      realm_milestone: "爐火純青 → 登峯造極"
+      pc_realm: "第四境·爐火純青（屬性上限 8）"
+      expected_sessions: 5-7
+      attribute_baseline:
+        pc_avg: "膂力/身法/根骨 6-8；悟性/定力/魅力 5-8"
+        recommended_dc_range: "難度（DC） 15-20"
+        qi_pool: "40-55 點"
+        hp_range: "45-60"
+      hooks:
+        - id: hook-a
+          name: 紫陽的劍
+          suited: "氣宗/劍宗/正道 PC"
+          scene: "紫陽（太虛宮）尋來，欲觀萬象洞天「天道之劍」試煉。"
+        - id: hook-b
+          name: 公輸玄的交易
+          suited: "毒宗/影宗/中立 PC"
+          scene: "公輸玄傳信：第二種進法——犧牲神兵名器打造「破陣錐」穿防護陣。"
+        - id: hook-c
+          name: 血月教的反撲
+          suited: "接第三章伏筆"
+          scene: "血月教刺客帶夜修羅口信：願供化功散解藥換一人在洞天取一段上古武脈分支。"
+      key_scenes:
+        - id: scene-1
+          title: 千機閣——公輸玄地下迷宮
+          summary: "公輸玄推演四試煉對應劍/氣/毒藥/心四境。"
+        - id: scene-2
+          title: 四個試煉（核心）
+          trials:
+            - name: 劍之極（天道之劍）
+              solve: "口才/定力 難度（DC） 18 或 精神對決（生命值（HP）40, 命中+8, 傷害3d8，模仿前三招）"
+              reward: "劍意石（一門劍術精進+1級）+ 屬性永久+1"
+            - name: 氣之源（元氣歸宗）
+              solve: "根骨+定力 難度（DC） 20 鎮壓 / 悟性 難度（DC） 18 + 真氣8 引導 / 轉化吸收（定力 難度（DC） 15 避走火）"
+              reward: "元氣石（3次恢復3d6+4真氣，或一次吸收真氣上限+10）"
+            - name: 生與死（藥毒同源）
+              solve: "醫術 難度（DC） 20 / 毒術 難度（DC） 16 / 口才定力 難度（DC） 18"
+              reward: "淨心蓮種子 + 生死石（毒抗+2，對中毒目標傷害+1d4）"
+            - name: 心之鏡（直面本心）
+              solve: "定力 難度（DC） 18 接受過去 / 角色扮演對話"
+              reward: "明心石（定力+1破上限，每日一次重投失敗定力檢定）"
+        - id: scene-3
+          title: 上古武脈——第五個試煉（隱藏）
+          summary: "四試煉過後地板開啟通往武脈；可取屬性/武功突破/自創靈感/幫夜修羅取分支/助紫陽研究。紫陽警告勿貪取。"
+        - id: scene-4
+          title: 出洞——外面的世界變了
+          summary: "出洞發現北境蠻族犯邊，天劍盟組義武軍，段天涯公開挑戰陸沉淵。"
+        - id: scene-5
+          title: 段天涯 vs 陸沉淵——天劍盟大會
+          summary: "PC 可經由段天涯/六扇門/紫陽/中立等管道參與盟主之爭。"
+      encounters:
+        - id: enc-1
+          title: 萬象洞天正殿——守殿劍靈
+          enemies:
+            - name: 劍靈
+              role: "試煉 Boss"
+              hp: 55
+              attack: "劍氣命中 +9"
+              damage: "3d8+3（內傷，無視護甲）"
+              special: "每回合 50% 看破攻擊；破解＝每回合用不同勁力/武功類型"
+          difficulty: 困難（僅暴力破解試煉時觸發）
+        - id: enc-2
+          title: 段天涯的挑戰（可選）
+          enemies:
+            - name: 段天涯（第四境巔峰）
+              hp: 65
+              might: "膂力 8（調+4）"
+              agility: "身法 7（調+3）"
+              root: "根骨 7"
+              focus: "定力 6"
+              qi: 40
+              attack: "烈陽劍法·焚天 命中+9，傷害4d6+4，真氣7；烈日護體外傷減免+3"
+              special: "連續烈陽劍命中累加+1（至多+3）"
+          difficulty: 困難（非致命；調停者柳如是出場）
+        - id: enc-3
+          title: 血月教突襲（高潮混戰）
+          enemies:
+            - name: 厲殘陽
+              role: boss
+              hp: 70
+              might: "膂力 9（調+5）"
+              agility: "身法 8（調+4）"
+              focus: "定力 3"
+              qi: 35
+              attack: "血影步（先手+6）/噬心指 命中+8 精神傷害3d6+5/天魔解體（瀕死爆發4d6）"
+              special: "每3回合因魔功反噬失1回合"
+            - name: 血月教精英
+              count: 4
+              hp: 30
+              attack: "命中 +6"
+              damage: "2d6+2+中毒1d4/回合"
+          difficulty: "Boss 戰（厲殘陽第五境初期，對第四境 PC 有境界優勢）"
+          key_plot: "擊敗後搜出夜修羅密信「B計劃」。"
+      noncombat_challenges:
+        - id: chal-1
+          title: 天劍盟大會發言
+          check: "口才 難度（DC） 18（魅力）或 威嚇 難度（DC） 20（膂力）"
+          success: "至少三派劍主認同，大會休會共禦外敵。"
+          failure: "發言被打斷，不影響大會走向。"
+        - id: chal-2
+          title: 追查 B 計劃
+          check: "情報網 難度（DC） 14（四海盟）/12（丐幫）/16（六扇門）/18（千機閣，付費）"
+          success: "發現 B 計劃＝化功散+陸沉淵。"
+          failure: "知有危險但內容不明，可提醒陸沉淵加防。"
+      rewards:
+        - name: 劍意石/元氣石/淨心蓮種子+生死石/明心石
+          type: 特殊物品
+          source: "四試煉通過"
+        - name: 上古武脈傳承
+          type: "屬性/技能"
+          source: "見場景3"
+        - name: 烈陽劍法殘篇
+          type: 武功祕笈
+          source: "段天涯挑戰中出色（可選）"
+        - name: 聲望+5
+          type: 聲望
+      breakthrough:
+        to_realm: 第五境·登峯造極
+        xp_requirement: "累計 ≥ 370 經驗值（XP）"
+        martial_requirement: "絕世神功（上古武脈傳承或自修）"
+        story_lock: "經歷天劍盟大會+血月教突襲 + 創出屬於自己的一式"
+        rewards: "屬性+3（單項最多+2）；真氣境界+15；上限至 10；每戰一次內力灌注取18；「意動身隨」先手+3"
+      foreshadow:
+        - text: "夜修羅 B 計劃"
+          points_to: 第五章
+        - text: "厲殘陽之死→夜修羅親出"
+          points_to: 第五章
+        - text: "段天涯轉變"
+          points_to: "第五-六章"
+        - text: "蠻族犯邊（二次徵調令）"
+          points_to: 第六章
+        - text: "武脈萎縮（可選）"
+          points_to: 第六章
+      gm_variants:
+        - id: var-a
+          title: PC 四試煉全失敗
+          detail: "空手而歸但發現足供後人推斷，聲望+2。"
+        - id: var-b
+          title: 全部分享洞天祕密
+          detail: "聲望+5 但引覬覦；第五章獲更多盟友。"
+        - id: var-c
+          title: 萬象洞天塌了
+          detail: "逃脫序列 身法 難度（DC） 15-18（失敗失1d6生命值（HP））；武脈毀、峨眉草木枯；NPC 怨恨。"
+
+    # ===================== 第五章 =====================
+    - id: ch5
+      index: 5
+      title: 登峯造極
+      realm_milestone: "登峯造極 → 返璞歸真"
+      pc_realm: "第五境·登峯造極（屬性上限 10）"
+      expected_sessions: 6-8
+      attribute_baseline:
+        pc_avg: "膂力/身法/根骨 7-10；悟性/定力/魅力 6-10"
+        recommended_dc_range: "難度（DC） 18-22"
+        qi_pool: "50-70 點"
+        hp_range: "55-70"
+      hooks:
+        - id: hook-a
+          name: 陸沉淵的召見
+          suited: 正道 PC
+          scene: "劍盟令召 PC 至天劍盟總部，陸沉淵示 B 計劃詳情（化功散/暗殺/全面開戰三步）。"
+        - id: hook-b
+          name: 夜修羅的使者
+          suited: "邪道/中立 PC"
+          scene: "血色彎月信赴約土地廟，夜修羅真意：B 計劃是突破血月魔功最後一重，欲與天劍盟談判。"
+        - id: hook-c
+          name: 自創武功契機
+          suited: 所有 PC
+          scene: "本章某刻自創武功「定型」，比同級強10-20%代價高10-20%，需實戰成功定型。"
+      key_scenes:
+        - id: scene-1
+          title: 天劍盟的抉擇（決策）
+          candidates:
+            - "陸沉淵（守成）"
+            - "段天涯（變革）"
+            - "柳如是（中間路線）"
+          summary: "PC 依立場支持某方或中立出手。"
+        - id: scene-2
+          title: 夜修羅 B 計劃——高潮對決
+          summary: "夜修羅親現天劍盟大院；戰鬥觸發於拒絕談判或夜修羅暴起。"
+        - id: scene-3
+          title: 正邪大對決——天劍盟之戰（三戰線）
+          summary: "戰線A前院 NPC 戰 / 戰線B中庭 PC vs 護法 / 戰線C屋頂陸沉淵 vs 夜修羅（受 PC 戰線B 表現影響）。"
+        - id: scene-4
+          title: 面對夜修羅——Boss 戰
+          summary: "擊敗護法登屋頂與夜修羅正面；結果決定陸沉淵生死。"
+        - id: scene-5
+          title: 大戰之後——新格局
+          summary: "夜修羅勝負四種結局改變江湖格局。"
+      encounters:
+        - id: enc-1
+          title: 天劍盟防禦戰——前院
+          enemies:
+            - name: 血月教血衣衛
+              count: 6
+              hp: 25
+              attack: "命中 +6"
+              damage: "2d6+2"
+            - name: 血月教分壇主
+              count: 2
+              hp: 40
+              attack: "命中 +7"
+              damage: "3d6+2"
+          allies:
+            - name: 天劍盟弟子
+              count: 4
+              hp: 20
+              attack: "命中 +5"
+              damage: "2d6+1"
+          difficulty: 中等（有友方分擔）
+        - id: enc-2
+          title: 血月教護法——中庭
+          enemies:
+            - name: "二護法 白骨"
+              hp: 60
+              sense: "悟性 8（調+4）"
+              attack: "惑心術 命中+8 精神傷害3d6 / 幻影步 閃避難度（DC）+4"
+              weakness: "根骨低(4)，近身有效"
+            - name: "三護法 蘇眉"
+              hp: 55
+              charm: "魅力 8（調+4）"
+              attack: "血月針 命中+8 傷害2d8+中毒2d4/回合 / 媚術 定力難度（DC）16 否則命中-2"
+              weakness: "膂力低(3)，近身纏鬥無力"
+          difficulty: 困難
+          note: "若厲殘陽第四章未死，改為其重傷版或其他護法替補。"
+        - id: enc-3
+          title: 夜修羅——終局 Boss 戰
+          enemies:
+            - name: 夜修羅
+              role: "終局 Boss"
+              hp: 90
+              might: "膂力 9（調+5）"
+              agility: "身法 10（調+6）"
+              root: "根骨 8（調+4）"
+              sense: "悟性 9（調+5）"
+              focus: "定力 7（調+3）"
+              charm: "魅力 8（調+4）"
+              qi: 70
+              attack: "血月魔功·血月斬 命中+10 傷害4d8+膂力×2 真氣9 / 血影步 先手+8 / 噬心指 命中+9 精神3d8 / 天魔解體（瀕死HP≤15 爆發5d6）"
+              passive: "血月之怒：每損15生命值（HP）命中和傷害各+1（疊加至多+3）"
+              weakness: "每3回合魔功反噬需定力 難度（DC） 18，失敗失1回合+2d6內傷"
+          difficulty: 終局 Boss
+          alternate_path: "曾給武脈分支→夜修羅無反噬但故意露破綻，察言觀色 難度（DC） 16 可轉談判。"
+      noncombat_challenges:
+        - id: chal-1
+          title: 化解化功散危機
+          check: "醫術 難度（DC） 16 / 丹術 難度（DC） 16 批量製解藥（<2時辰）"
+          success: "天劍盟弟子不受化功散影響，聲望+2。"
+          failure: "部分弟子戰力減半。"
+        - id: chal-2
+          title: 說服段天涯與陸沉淵和解
+          check: "口才 難度（DC） 20（魅力）"
+          success: "段天涯先共禦敵，最終戰為強力 NPC 助戰。"
+          failure: "段天涯拒絕，兩路天劍盟互踩。"
+        - id: chal-3
+          title: 阻止血月教激進分子
+          detail: "談判時激進分子燒村；救村民俠義+5聲望+2 / 留主戰場俠義-3 / 分兵最危險。"
+      rewards:
+        - name: 天劍訣
+          type: 武功祕笈
+          source: "陸沉淵親傳（上乘劍法，可選）"
+        - name: 九陽神功殘篇
+          type: 武功祕笈
+          source: "幫夜修羅後留（見 09_武功圖鑑 §22，需悟性 難度（DC） 18 習得）"
+        - name: 洗髓丹
+          type: 丹藥
+          source: "天劍盟寶庫（永久根骨+1，一生限服一次）"
+        - name: 明光鎧
+          type: 護甲
+          source: "段天涯和解後贈（可選）"
+        - name: 聲望+6
+          type: 聲望
+      breakthrough:
+        to_realm: 第六境·返璞歸真
+        xp_requirement: "累計 ≥ 870 經驗值（XP）"
+        martial_requirement: "獨門內功大成 + 自創武功定型"
+        story_lock: "完成傳奇劇情線——終結/重塑天劍盟或血月教格局"
+        rewards: "屬性+3（單項最多+2）；真氣境界+20；上限至 12（人體極限）；每戰三次內力灌注+優勢骰全檢定；「返璞歸真」真氣消耗-2、非戰鬥恢復×2"
+      foreshadow:
+        - text: "北境告急"
+          points_to: 第六章
+        - text: "夜修羅結局"
+          points_to: 第六章
+        - text: "忘川樓利息（孟婆）"
+          points_to: 第六章
+        - text: "楚懷沙之妹"
+          points_to: 第六章
+      gm_variants:
+        - id: var-a
+          title: 夜修羅談判攤牌
+          detail: "送解藥→談判成功簽停戰；未送→戰鬥。"
+        - id: var-b
+          title: 陸沉淵戰死
+          detail: "段天涯震驚接任，成長弧進入更深階段。"
+        - id: var-c
+          title: PC 全站血月教
+          detail: "極罕見路線，終局選擇影響最大。"
+        - id: var-d
+          title: 朝廷介入——曹少欽棋盤
+          detail: "韓鐵衣率禁軍紮營；西廠早知北境行動；Boss戰每50%/25%血出現西廠干預（朱雀）；第六章終局伏筆。"
+
+    # ===================== 第六章 =====================
+    - id: ch6
+      index: 6
+      title: 返璞歸真（終局）
+      realm_milestone: "返璞歸真（終局）"
+      pc_realm: "第六境·返璞歸真（屬性上限 12）"
+      expected_sessions: 3-5
+      attribute_baseline:
+        pc_avg: "膂力/身法/根骨 8-12；悟性/定力/魅力 7-12"
+        recommended_dc_range: "難度（DC） 20-26"
+        qi_pool: "60-100 點"
+        hp_range: "60-85"
+      hooks:
+        - id: hook-a
+          name: 慧覺的箴言
+          suited: 所有 PC
+          scene: "普陀島慧覺禪師授菩提珠（每回合自回1d4真氣），言「武學終點是放下力量」。"
+        - id: hook-b
+          name: 孟婆的交易
+          suited: 所有 PC
+          scene: "孟婆（忘川樓主）以蠻族兵力圖換 PC 回答「戰後如何處置武功」，決定終局走向。"
+          answers:
+            - "守護重要的人/事 → 守護者結局"
+            - "開宗立派 → 開派宗師結局"
+            - "不知道 → 問道者結局"
+        - id: hook-c
+          name: 北境的百姓
+          suited: 正道 PC
+          scene: "逃難母親求救被擄丈夫陳大柱；救→俠義+3且獲關鍵情報 / 給銀兩→無變 / 無視→俠義-2 但戰術領先。"
+      key_scenes:
+        - id: scene-1
+          title: 燕雲十六州——戰爭前線
+          summary: "真戰爭非武林大會；第六境 PC 可號令羣雄（魅力 難度（DC） 18）或斬首/將軍/盾/劍/智者路徑。"
+        - id: scene-2
+          title: 孟婆的過去（支線）
+          summary: "決戰前夜孟婆摘面具述忘川樓真相；信任後忘川樓刺客決戰日三次協助（每次俠義-2）。"
+        - id: scene-3
+          title: 決戰——雁門關
+          summary: "五路徑：斬首者/將軍/盾/劍/智者。"
+        - id: scene-4
+          title: 長城之上——終局獨白
+          summary: "戰後 PC 面對終局選擇，得對應稱號。"
+          endings:
+            - "繼續守江湖 → 江湖守護者"
+            - "開宗立派 → 開派宗師"
+            - "歸隱山林 → 歸隱仙人"
+            - "接孟婆樓 → 忘川樓主（非正統）"
+            - "西行/出海 → 雲遊散人"
+      encounters:
+        - id: enc-1
+          title: 蠻族前鋒——草原騎兵
+          enemies:
+            - name: 蠻族騎兵
+              count: "PC數×2"
+              hp: 20
+              might: "膂力 5（調+1）"
+              attack: "馬上衝擊命中+6"
+              damage: "2d8+3（首回合+1d6）"
+            - name: 蠻族百夫長
+              hp: 40
+              might: "膂力 7（調+3）"
+              attack: "騎射命中+7"
+              damage: "2d8+2遠 / 3d6+3近"
+          difficulty: "對第六境 PC：簡單至中等（宗師碾壓，設計意圖）"
+        - id: enc-2
+          title: 蠻族薩滿——上古祭壇
+          enemies:
+            - name: 大薩滿 兀突骨
+              hp: 50
+              attack: "血脈詛咒 範圍定力 難度（DC） 20 / 血祭每回合耗5生命值（HP）強化士兵"
+              special: "免疫外傷減免，不免疫內傷/真氣；三回合內殺則強化兵失增益+2d6反噬"
+            - name: 血祭強化勇士
+              count: 3
+              hp: 35
+              attack: "命中+9"
+              damage: "3d8+4"
+          difficulty: "中等至困難"
+          reward: "祭壇晶石（與上古武脈同源），公輸玄研究用。"
+        - id: enc-3
+          title: 終局 Boss——蠻族大王 金日磾
+          enemies:
+            - name: 金日磾
+              role: "終局 Boss"
+              hp: 100
+              might: "膂力 11（調+7）"
+              agility: "身法 7（調+3）"
+              root: "根骨 10（調+6）"
+              focus: "定力 8（調+4）"
+              attack: "碎山斬 命中+8 傷害4d10+膂力×2 擊退3步 / 大地咆哮 範圍根骨難度（DC）18 / 狼羣召喚3幽靈狼(HP20)"
+              passive: "獸王之血：每損1生命值（HP）得1血怒，每5血怒+1命中（至多+5）"
+              weakness: "無真氣驅動，內傷/精神攻擊 1.5 倍傷害"
+          difficulty: 終局 Boss
+          peace_path: "口才/魅力 難度（DC） 22 說服退兵（需具體糧草/貿易方案）。"
+      noncombat_challenges:
+        - id: chal-1
+          title: 戰場號令羣雄
+          check: "魅力 難度（DC） 20 凝聚潰兵 / 膂力 難度（DC） 18 擊退衝鋒振士氣"
+          success: "友方 NPC 士氣+2（命中+1）。"
+          failure: "部分士兵潰逃，PC 需親補漏。"
+        - id: chal-2
+          title: 說服忘川樓公開支持
+          check: "口才 難度（DC） 22（魅力）"
+          success: "忘川樓北境公開情報+暗殺支持。"
+          failure: "孟婆拒絕但仍私下幫助。"
+      rewards:
+        - name: 紫電劍
+          type: 神兵
+          source: "斬首路線金日磾收藏（可選）"
+        - name: 九陰真經·總綱
+          type: 絕世內功
+          source: "明心石+歸還菩提珠，或上古祭壇發現（可選）"
+        - name: 天下第一稱號+裝備
+          type: "稱號+武器"
+          source: "聲望達4級「一代宗師」"
+        - name: 萬象洞天晶石樣本
+          type: 特殊物品
+          source: "交公輸玄研究「元氣共振」"
+      breakthrough:
+        to_realm: "終局（開宗立派/歸隱，無第七境）"
+        note: "第六境為人類終點；終局選擇比突破更重要。"
+      gm_variants:
+        - id: var-a
+          title: 留下懸念
+          detail: "續集預告：千機閣解析第二座海底萬象洞天。"
+        - id: var-b
+          title: PC 終局分歧
+          detail: "各給單獨終局敘述+數年後重聚收尾。"
+        - id: var-c
+          title: Bad Ending
+          detail: "灰色基調：天劍盟元氣大傷，江湖更亂；「世界不因一人努力變好，但因有此人未更壞」。"
+
+  appendices:
+    npc_appearance:       # 附錄 A：全劇本 NPC 出場表
+      - npc: 陸沉淵
+        first: 第四章
+        peak: 第五章
+        end: "盟主/已故（取決PC）"
+      - npc: 段天涯
+        first: 第三章
+        peak: "第四-五章"
+        end: "鷹派→反思→可能與PC和解"
+      - npc: 蘇青囊
+        first: "未直接出場"
+        peak: 第六章
+        end: "藥王谷主，始終盟友"
+      - npc: 墨染
+        first: 第三章
+        peak: "第三-四章"
+        end: "洗清冤屈或仍被懷疑"
+      - npc: 厲殘陽
+        first: 第四章
+        peak: "第四-五章"
+        end: "被PC擊敗/擊殺"
+      - npc: 夜修羅
+        first: 第五章
+        peak: 第五章
+        end: "被擊敗/談判/死亡"
+      - npc: 紫陽
+        first: 第四章
+        peak: 第四章
+        end: "研究武脈本質"
+      - npc: 沈萬金
+        first: 第二章
+        peak: 第二章
+        end: "四海盟，永遠商人"
+      - npc: 慧覺
+        first: 第六章
+        peak: 第六章
+        end: "萬佛寺方丈，終極箴言"
+      - npc: 公輸玄
+        first: 第三章
+        peak: "第四-六章"
+        end: "研究古代科技"
+      - npc: 孟婆
+        first: 第六章
+        peak: 第六章
+        end: "忘川樓主，摘面具"
+      - npc: 柳生煙
+        first: "第一章(鉤子C)/第二章"
+        peak: "第二-三章"
+        end: "藥王谷濟世堂，始終盟友"
+      - npc: 楚懷沙
+        first: 第二章
+        peak: "第三-四章"
+        end: "為救妹不惜一切"
+      - npc: 陰九齡
+        first: "第一章(鉤子C)"
+        peak: "第四章(可選)"
+        end: "千機閣叛徒，支線反派"
+      - npc: 南宮晦
+        first: 第三章
+        peak: 第三章
+        end: "藥王谷叛徒，雙面間諜"
+      - npc: 鐵鏡心
+        first: 第二章
+        peak: 第二章
+        end: "六扇門，PC與朝廷橋樑"
+      - npc: 柳如是
+        first: 第五章
+        peak: "第五-六章"
+        end: "天劍盟青霜劍主，中間派"
+      - npc: 金日磾
+        first: 第六章
+        peak: 第六章
+        end: "蠻族大王，終局Boss"
+    reward_summary:        # 附錄 B：各章獎勵總表
+      - chapter: 第一章
+        rewards: "五虎斷門刀·劈風式（可選）, 金瘡藥×3, 魔教殘篇（劇情）, 30-50兩"
+      - chapter: 第二章
+        rewards: "柳葉刀/短劍（二選一）, 續命丹×2, 小還丹×3+聚氣丹×1, 破封散配方, 古地圖（殘缺）"
+      - chapter: 第三章
+        rewards: "寒梅劍法·霜寒劍氣（可選）, 金絲軟甲, 淨心蓮（可選）, 第一塊碎片, 破境丹×1"
+      - chapter: 第四章
+        rewards: "劍意石, 元氣石, 淨心蓮種子+生死石, 明心石, 上古武脈傳承, 烈陽劍法殘篇（可選）"
+      - chapter: 第五章
+        rewards: "天劍訣（可選）, 九陽神功殘篇（可選）, 洗髓丹×1, 明光鎧（可選）"
+      - chapter: 第六章
+        rewards: "紫電劍（可選）, 九陰真經·總綱（可選）, 萬象洞天晶石樣本, 終局稱號"
+    gm_checklist:         # 附錄 C：GM 快速運行檢查表
+      opening: "江湖傳聞 / 回顧上次 / 記錄 PC 境界·俠義·聲望"
+      exploration: "準備2-3 NPC / 確認關鍵線索 / 門派發光場景"
+      conflict: "核對敵人數據 / 戰鬥地形 / 難度調整方案"
+      climax: "核心事件或轉折 / 信息紅利 / 角色高光"
+      closing: "更新聲望恩怨 / 發放經驗值（XP）獎勵 / 埋下次鉤子1-2個"

@@ -1,0 +1,125 @@
+name: S1 唐樓（六層舊唐樓樓梯間）
+對應劇本: S1 樓梯間的紅雨褸
+對應場景說明: >-
+  對應 S1 劇本「樓梯間的紅雨褸」核心場景——深水埗六層無電梯舊唐樓。
+  地縛靈（Bound Spirit，三年前墮樓菲傭）每晚三點重複「落樓去寄信俾阿媽」的動作；
+  玩家需調查「信箱格」底藏信、用靈感（INS）溝通聽清遺願、備超渡法事（香燭＋紙錢＋法壇）送她走。
+  樓梯間中段設「鬼打牆（Ghost Wall）」迴圈陷阱，遇困需定力（CMP）檢定脫困。
+  基礎陰氣值（YIN）3–8，若曾發生兇案可達 11＋。
+
+nodes:
+  - id: G
+    label: 地面層（鐵閘）
+    x: 200
+    y: 470
+    type: exit
+    explored: false
+  - id: MB
+    label: 信箱格
+    x: 70
+    y: 470
+    type: room
+    explored: false
+  - id: L1
+    label: 一樓梯間
+    x: 200
+    y: 410
+    type: stair
+    explored: false
+  - id: L2
+    label: 二樓梯間
+    x: 200
+    y: 350
+    type: stair
+    explored: false
+  - id: L3
+    label: 三樓梯間
+    x: 200
+    y: 290
+    type: stair
+    explored: false
+  - id: L4
+    label: 四樓梯間
+    x: 200
+    y: 230
+    type: stair
+    explored: false
+  - id: L5
+    label: 五樓梯間
+    x: 200
+    y: 170
+    type: stair
+    explored: false
+  - id: L6
+    label: 六樓梯間
+    x: 200
+    y: 110
+    type: stair
+    explored: false
+  - id: R
+    label: 天台
+    x: 200
+    y: 50
+    type: room
+    explored: false
+  - id: A
+    label: 天井（採光井）
+    x: 440
+    y: 260
+    type: room
+    explored: false
+  - id: W
+    label: 鬼打牆陷阱
+    x: 330
+    y: 290
+    type: hazard
+    explored: false
+
+edges:
+  - from: G
+    to: L1
+    type: stair
+  - from: L1
+    to: L2
+    type: stair
+  - from: L2
+    to: L3
+    type: stair
+  - from: L3
+    to: L4
+    type: stair
+  - from: L4
+    to: L5
+    type: stair
+  - from: L5
+    to: L6
+    type: stair
+  - from: L6
+    to: R
+    type: stair
+  - from: G
+    to: MB
+    type: corridor
+  - from: A
+    to: L1
+    type: corridor
+  - from: A
+    to: L3
+    type: corridor
+  - from: A
+    to: L5
+    type: corridor
+  - from: W
+    to: L3
+    type: hazard
+  - from: W
+    to: L4
+    type: hazard
+
+regions:
+  - name: 鬼打牆迴圈區
+    color: "#E8D5C4"
+    nodes: [L2, L3, L4, L5]
+  - name: 天井採光區
+    color: "#D5E8E0"
+    nodes: [A]

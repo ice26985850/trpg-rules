@@ -1,0 +1,83 @@
+name: "鏽冠的獨白"
+difficulty: "低級 (挑戰等級（CR） 2)"
+mode: "凡人 · 單人"
+judge: "瑟琳娜（清教徒）"
+target_region: "塔爾-莫拉格巢都，上巢（第 350 層），廢棄國教小聖堂"
+recommended_attributes: "3"
+
+opening_description: >
+  上巢一座國教小聖堂已經沉默了三個月。你被派去調查——只有你一個人。
+  瑟琳娜說「信仰不需要見證者」。她還派了一個國教助祭陪同。
+
+surface_goal: >
+  調查一座國教小聖堂，回收內部聖物。
+
+hidden_goal: >
+  瑟琳娜懷疑聖堂已被混沌汙染。她想知道汙染源是什麼——以及神父是否還活著。
+
+known_threats:
+  - "不確定——聖堂內部情況未知"
+  - "可能有變異體"
+
+hidden_threats:
+  - "神父已死於自己的儀式——他在嘗試用禁術淨化混沌物品時被反噬"
+  - "混沌物品仍在地下祭壇，每回合腐化 +1"
+  - "神父屍體已變為低階變異體"
+
+resources:
+  medical_pack: 2
+  holy_water: 5
+  holy_oil: 3
+  flare: 2
+  food_water_days: 3
+  ammo_magazines: 2
+
+internal_seduction_trigger:
+  timing: "在聖堂地下祭壇面對混沌物品時"
+  whisper: "埃莉諾的信仰是脆弱的。讓她碰那件東西——看看會發生什麼。一個被汙染的助祭可以成為有用的工具。"
+
+companions:
+  - name: "修女埃莉諾"
+    role: "國教助祭"
+    backstory: "年輕的國教助祭，信仰虔誠但從未見過真正的亞空間汙染"
+    motive: "證明自己的信仰夠堅定，可以被晉升為正式修女"
+    bottom_line: "絕不質疑帝皇"
+    initial_attitude: 1
+    attributes:
+      faith: 4
+      physique: 2
+      mind: 3
+      skill: 2
+      fate: 3
+    trained_skills: ["佈道", "學識（帝國）"]
+    equipment: ["手槍(1d6)", "厚布甲(護甲減免（AR） 1)", "帝皇聖像"]
+    special_ability:
+      name: "信仰之光"
+      desc: "每劇本 1 次，為玩家恢復 2 信仰（通過共同禱告）。對低階亞空間實體可造成 2d4 神聖傷害"
+
+key_checks:
+  - scene: "搜索聖堂尋找日記"
+    check: "調查（標準）"
+    tn_adjustment: 0
+    success: "找到 3 頁日記"
+    failure: "只找到 1 頁"
+  - scene: "安撫守衛殘影"
+    check: "信仰（困難）"
+    tn_adjustment: -20
+    success: "殘影消散，獲得守衛生前最後警告"
+    failure: "殘影攻擊（精神傷害）"
+  - scene: "埃莉諾目睹亞空間現象"
+    check: "佈道（標準）安撫她"
+    tn_adjustment: 0
+    success: "她維持信仰，動搖點不增加"
+    failure: "動搖點 +2"
+
+encounters:
+  - name: "聖堂中殿"
+    enemies: "變異神父伊利昂"
+    tactic: "低階變異體模板 + 1 項特殊靈能。埃莉諾可提供信仰支援"
+  - name: "地下祭壇"
+    enemies: "環境——混沌物品"
+    tactic: "每回合腐化+1，需要破壞混沌物品（信仰檢定，困難）"
+
+map_ref: "maps/map02_church"

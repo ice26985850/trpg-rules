@@ -1,0 +1,32 @@
+# 10 物種速查表
+species:
+  - name: "人類"
+    bonuses: { 軍事力（MIL）: 0, 科研力（SCI）: 0, 經濟力（ECO）: 0, 外交力（DIP）: 0, 凝聚力（UNI）: 0, 情報力（INT）: 0 }
+    ability: "適應性：每週期一次，重投任一失敗檢定"
+  - name: "蟲族"
+    bonuses: { 軍事力（MIL）: 1, 科研力（SCI）: 0, 經濟力（ECO）: 0, 外交力（DIP）: -1, 凝聚力（UNI）: 1, 情報力（INT）: 0 }
+    ability: "蜂巢心智：免疫士氣 debuff；無獨立意志"
+  - name: "機械體"
+    bonuses: { 軍事力（MIL）: 1, 科研力（SCI）: 1, 經濟力（ECO）: 0, 外交力（DIP）: 0, 凝聚力（UNI）: -1, 情報力（INT）: 0 }
+    ability: "不朽架構：領袖不自然死亡；無需食物，消耗雙倍 能源（EC）"
+  - name: "靈能體"
+    bonuses: { 軍事力（MIL）: -1, 科研力（SCI）: 1, 經濟力（ECO）: 0, 外交力（DIP）: 0, 凝聚力（UNI）: 2, 情報力（INT）: 0 }
+    ability: "靈能共鳴：靈能檢定+1骰；每週期 GM 暗投虛空擾動"
+  - name: "植物型"
+    bonuses: { 軍事力（MIL）: 0, 科研力（SCI）: 0, 經濟力（ECO）: 1, 外交力（DIP）: 0, 凝聚力（UNI）: 1, 情報力（INT）: -1 }
+    ability: "光合滋養：低宜居度行星食物不降；生長緩慢(目標值（TN）+1)"
+  - name: "硅基生命"
+    bonuses: { 軍事力（MIL）: 1, 科研力（SCI）: -1, 經濟力（ECO）: 1, 外交力（DIP）: 0, 凝聚力（UNI）: 0, 情報力（INT）: 0 }
+    ability: "岩石身軀：陸軍 船體值（HP）+50%；消耗礦物替代食物"
+  - name: "能量體"
+    bonuses: { 軍事力（MIL）: -1, 科研力（SCI）: 2, 經濟力（ECO）: -1, 外交力（DIP）: 0, 凝聚力（UNI）: 0, 情報力（INT）: 0 }
+    ability: "能量形態：免疫物理環境危害；非恆星系 目標值（TN）+1"
+  - name: "水生智慧"
+    bonuses: { 軍事力（MIL）: -1, 科研力（SCI）: 0, 經濟力（ECO）: 1, 外交力（DIP）: 0, 凝聚力（UNI）: 1, 情報力（INT）: 0 }
+    ability: "海洋專精：海洋世界產出+20%"
+  - name: "虛空原生"
+    bonuses: { 軍事力（MIL）: 0, 科研力（SCI）: 1, 經濟力（ECO）: 0, 外交力（DIP）: 1, 凝聚力（UNI）: -1, 情報力（INT）: 0 }
+    ability: "零重力適應：居住站宜居度+10；超空間航道探測+1"
+  - name: "納米集羣"
+    bonuses: { 軍事力（MIL）: 0, 科研力（SCI）: 1, 經濟力（ECO）: 0, 外交力（DIP）: -1, 凝聚力（UNI）: -1, 情報力（INT）: 2 }
+    ability: "納米重組：每週期恢復 1 船體值/艦船；諜報行動+1骰"

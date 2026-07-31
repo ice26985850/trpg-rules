@@ -1,0 +1,85 @@
+# 地圖：S2 三方鼎立 — 區域地圖
+name: "三方鼎立區域地圖"
+description: "三個城邦爭奪的區域——貿易路線、上古遺跡和邊境爭議區"
+
+nodes:
+  - id: "player_city"
+    label: "你的城邦"
+    x: 350
+    y: 400
+    type: "settlement"
+    explored: true
+  - id: "friendly_city"
+    label: "友好鄰國"
+    x: 600
+    y: 200
+    type: "settlement"
+    explored: true
+  - id: "hostile_city"
+    label: "敵對鄰國"
+    x: 150
+    y: 150
+    type: "settlement"
+    explored: true
+  - id: "trade_route"
+    label: "主要貿易路線"
+    x: 400
+    y: 300
+    type: "resource"
+    explored: true
+  - id: "ruins"
+    label: "上古遺跡"
+    x: 500
+    y: 500
+    type: "ruins"
+    explored: false
+  - id: "border_zone"
+    label: "邊境爭議區"
+    x: 250
+    y: 280
+    type: "border"
+    explored: true
+
+edges:
+  - from: "player_city"
+    to: "friendly_city"
+    type: "path"
+    label: "貿易之路"
+  - from: "player_city"
+    to: "hostile_city"
+    type: "trail"
+    label: "緊張邊境"
+  - from: "player_city"
+    to: "trade_route"
+    type: "path"
+    label: "商路"
+  - from: "player_city"
+    to: "ruins"
+    type: "trail"
+    label: "探索路線"
+  - from: "friendly_city"
+    to: "trade_route"
+    type: "path"
+    label: ""
+  - from: "hostile_city"
+    to: "border_zone"
+    type: "trail"
+    label: "邊境滲透"
+  - from: "border_zone"
+    to: "player_city"
+    type: "trail"
+    label: ""
+
+regions:
+  - name: "你的領地"
+    color: "#4CAF50"
+    nodes: ["player_city"]
+  - name: "友好勢力"
+    color: "#2196F3"
+    nodes: ["friendly_city", "trade_route"]
+  - name: "敵對勢力"
+    color: "#F44336"
+    nodes: ["hostile_city", "border_zone"]
+  - name: "中立區域"
+    color: "#9E9E9E"
+    nodes: ["ruins"]

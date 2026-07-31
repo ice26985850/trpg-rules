@@ -1,0 +1,653 @@
+# ============================================================
+# 深淵領主 TRPG — 單人劇本（Lv1~15完整戰役）
+# AI GM單人模式專用劇本
+# ============================================================
+
+name: "深淵領主 — 單人劇本（Lv1~15完整戰役）"
+author: "跑團規則工作室（程規瑤主理人編排）"
+rules_version: "2.5"
+
+# ═══════════════════════════════════════════════════════════
+# 序幕：王座廳的餘燼
+# ═══════════════════════════════════════════════════════════
+prologue:
+  name: "王座廳的餘燼"
+  level: 1
+  description: |
+    你從深淵的黑暗中甦醒。王座廳的魔力火把剛剛點亮——這是你的第一座地城。
+    面前有三個洞室：你的王座廳，以及兩條通往未知的漆黑隧道。
+    幾隻剛招募的怪物不安地在你腳邊徘徊，等待你的第一道指令。
+  opening_dialog: |
+    你是新晉的地下城主。王座廳的魔力火把已經點亮——這是你的第一座地城。
+    目前只有三個洞室：你的王座廳，以及兩個尚未開發的漆黑隧道盡頭。
+    幾隻剛招募的怪物不安地在你腳邊徘徊。遠處傳來地表人類的微弱聲響——他們來了嗎？
+  choices:
+    - "選擇你的原型（亡靈之主/深淵惡魔/瘋狂巫師/遠古巨龍/暗影議會/地精工程師）"
+    - "分配12點屬性（五項屬性初始均爲1）"
+    - "規劃首次挖掘方向（左隧道 or 右隧道）"
+  starting_resources:
+    description: "根據你的原型分配初始資源（見config.yaml character_creation.archetypes）"
+  first_exploration:
+    ind_check: "IND + 工程學 vs 難度1成功"
+    discovery_options:
+      - roll: "2-3"
+        result: "礦脈——該空間礦場產出永久+50%"
+      - roll: "4"
+        result: "魔力節點——該空間魔法房間效率+1骰"
+      - roll: "5"
+        result: "地下湖——怪物維護費-50%，可建造水產設施"
+      - roll: "6"
+        result: "古遺蹟——隨機寶藏/魔法物品/隱藏劇情線"
+    map_init: |
+      [MAP_UPDATE]
+      NODE player-home x=340 y=450 type="玩家地城" label="王座廳" explored=true region="淵深核心"
+      [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# 第一幕：立足期（Lv1~3）
+# ═══════════════════════════════════════════════════════════
+act1:
+  name: "立足期"
+  range: "Lv1~3"
+  theme: "活下去。從一個小小的王座廳開始，向黑暗深處挖掘。"
+  stages:
+    - level: 1
+      name: "初次入侵"
+      description: "第一次挖掘擴張後，地城終於有了第一個房間（礦場/陷阱工坊）。你以爲是獵人，卻沒意識到地表的人早已盯上了你。"
+      key_events:
+        - "成功完成第一次挖掘（消耗1行動+建材×2）"
+        - "建造第1個房間（建議：礦場 or 陷阱工坊）"
+      encounter:
+        type: "入侵"
+        tier: "T1"
+        count: "2名冒險者（戰士艾倫+盜賊米拉）"
+        boss: "無"
+        loot:
+          defeated: "◆1d3+◇1+●1 每名"
+          captured: "WIL歸零轉化爲僕從"
+        notes: "教學戰——讓玩家體驗完整防禦循環"
+      sidequest:
+        - "米拉逃逸（未捕捉）：3回合後帶來複仇小隊迴歸"
+      reward: "+3 經驗值EXP（擊退入侵）+首次俘虜+1 經驗值EXP"
+      transition: |
+        戰後第二週。艾倫被關在新挖的囚牢裏。米拉逃走了——她會帶人回來。
+        但你也有了第一筆真正的資源。地城的魔力火把似乎比之前更亮了。
+      map_update: |
+        [MAP_UPDATE]
+        NODE surface-world x=340 y=100 type="地表" label="地表世界" explored=true region="地表"
+        NODE order-of-light-hq x=200 y=50 type="光明教團" label="光明教團" explored=true region="地表"
+        [/MAP_UPDATE]
+
+    - level: 2
+      name: "擴張之痛"
+      description: "你的第一座礦場開始穩定產出了。但這地城還太小——你需要更多空間，更需要防備那些聞名聲而來的冒險者。"
+      key_events:
+        - "第二次挖掘擴張（解鎖第二間房間位）"
+        - "建造第2個房間（囚牢/訓練場/研究室）"
+        - "開始學習經營分配（怪物MV與CP的取捨）"
+      encounter:
+        type: "入侵"
+        tier: "T1"
+        count: "1名戰士+1名牧師"
+        boss: "無"
+        loot: "◆2d4+◇1d3+●1"
+      encounter_2:
+        type: "外交接觸"
+        description: "鄰近地城NPC首次出現——一封信送到你的王座廳"
+        npc: "馬爾薩斯侯爵（骨塚議會的聯絡員）"
+        letter_content: |
+          致尊敬的新鄰居：
+          骨塚議會注意到你在暗影之海的活動。我們欣賞講究秩序的領主。
+          使館建成之日，請允許我親自拜訪——討論在光明教團威脅下維持深淵秩序的事宜。
+          永眠迴廊·馬爾薩斯侯爵
+        reward: "+1 經驗值EXP（建造房間）"
+      milestone: "地城達到Lv2：DEP上限+1，房間上限+2"
+      map_update: |
+        [MAP_UPDATE]
+        NODE malthus-1 x=150 y=200 type="永眠回廊" label="永眠回廊" explored=true region="暗影之海"
+        EDGE player-home->malthus-1 type="隧道"
+        [/MAP_UPDATE]
+
+    - level: 3
+      name: "復仇的迴響"
+      description: "冒險者公會注意到了你。連續兩回的入侵——第二波是上次逃逸的米拉帶隊的復仇小隊。"
+      key_events:
+        - "連續入侵（2回合防禦）"
+        - "決定：加強防禦還是加速擴張？"
+        - "首次面對T2級敵人（骰池4-5d6）"
+      encounter:
+        type: "入侵×2"
+        wave1:
+          tier: "T2"
+          count: "3名冒險者（含米拉+2增援）"
+          mira_trait: "復仇——首輪攻擊+1骰"
+        wave2:
+          tier: "T2"
+          count: "2名冒險者（法師+遊俠）"
+      climax:
+        name: "通緝令"
+        description: |
+          INF達到3後，公會正式將你的地城列入通緝名單。
+          懸賞：◆15，威脅等級：★★☆☆☆。
+        reward: "+5 經驗值EXP（擊敗Boss）"
+      milestone: "地城達到Lv3：原型Lv3能力解鎖"
+      map_update: |
+        [MAP_UPDATE]
+        NODE balzak-5 x=530 y=200 type="焚天堡" label="焚天堡" explored=true region="熔岩平原"
+        NODE vera-3 x=180 y=350 type="暗廳迷宮" label="暗廳迷宮" explored=true region="暗影之海"
+        EDGE player-home->balzak-5 type="密道"
+        EDGE player-home->vera-3 type="隧道"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# 第二幕：成長期（Lv4~7）
+# ═══════════════════════════════════════════════════════════
+act2:
+  name: "成長期"
+  range: "Lv4~7"
+  theme: "擴張與選擇。地城初具規模。深淵使館建成——你必須在四大聯盟中選擇一個。"
+  stages:
+    - level: 4
+      name: "深淵使館"
+      description: "你的地城已初具規模。現在可以建造深淵使館了——這是與NPC地城建立聯繫的樞紐。"
+      key_events:
+        - "建造深淵使館（消耗◆×10+■×5）"
+        - "收到兩份聯盟邀請：巴爾澤克 vs 馬爾薩斯"
+        - "首次精英入侵（T3含Boss隊長）"
+      alliance_choices:
+        - name: "深淵軍團"
+          leader: "裂地者巴爾澤克"
+          philosophy: "力量即正義，弱者不配生存"
+          benefits: "戰鬥加成、怪物品質提升"
+          invitation_text: |
+            新來的小子/姑娘——聽說你的地城開始有模有樣了。
+            深淵軍團的門永遠向強者敞開。來焚天堡，接受試煉。
+            通過了——你就是我們的人。失敗了——你連骨頭都不會剩。
+        - name: "骨塚議會"
+          leader: "馬爾薩斯侯爵"
+          philosophy: "秩序高於一切，包括死亡"
+          benefits: "防禦加成、俘虜管理優化"
+        - name: "自由工匠協會"
+          leader: "扳手"
+          philosophy: "技術無國界，只有好壞之分"
+          benefits: "建造速度提升、工坊產出增加"
+        - name: "暗影網絡"
+          leader: "維拉（千面者莫瑞斯代理）"
+          philosophy: "情報是唯一的真實力量"
+          benefits: "偵察效果提升、先攻優勢"
+      reward: "選擇聯盟後獲得專屬加成（見config.yaml character_creation.archetypes）"
+      map_update: |
+        [MAP_UPDATE]
+        NODE gear-fortress-12 x=500 y=550 type="齒輪要塞" label="齒輪要塞" explored=false region="廢鐵峽谷"
+        NODE grak-4 x=100 y=250 type="無名墓場" label="無名墓場" explored=false region="暗影之海"
+        NODE ignis-6 x=600 y=180 type="硫磺王座" label="硫磺王座" explored=false region="熔岩平原"
+        EDGE player-home->gear-fortress-12 type="隧道"
+        EDGE player-home->grak-4 type="隧道"
+        EDGE player-home->ignis-6 type="隧道"
+        EDGE player-home->malthus-1 type="外交信使"
+        EDGE player-home->balzak-5 type="外交信使"
+        [/MAP_UPDATE]
+
+    - level: 5
+      name: "精英覺醒"
+      description: "解鎖精英怪物招募。你的地城開始面對真正有威脅的入侵——冒險者公會派出隊長級的Boss。"
+      key_events:
+        - "首次招募精英怪物（死亡騎士/淵魔/嵌合獸等）"
+        - "精英入侵（T3含Boss隊長）"
+        - "Boss觸發Phase 2（生命值HP≤50%加骰+2）"
+        - "盟軍協同：盟友地城可能主動派遣援軍"
+      encounter:
+        type: "入侵"
+        tier: "T3"
+        count: "4-5名冒險者"
+        boss:
+          name: "聖騎士隊長（光明教團派駐）"
+          hp_threshold_phase2: "50%→骰池+2+領域技能解鎖"
+      milestone: "INF基準提升至5，地城惡名開始傳播"
+
+    - level: 6
+      name: "深淵黑市"
+      description: "地城達到一定規模後，「金牙」格里克斯（遠古巨龍）邀請你參加廢鐵峽谷的年度黑市拍賣。"
+      key_events:
+        - "遠征前往廢鐵峽谷（需要DECISION）"
+        - "黑市入場：各NPC領主外觀描寫"
+        - "社交環節：與任意NPC交談（小型外交檢定機會）"
+        - "拍賣環節：3-5件物品，至少1件傳奇物品（◆50起拍）"
+        - "暗殺事件：拍賣高潮時暗影網絡情報顯示刺客潛入"
+      encounter:
+        type: "黑市事件"
+        stages:
+          - "入場——描述廢鐵峽谷熱鬧場景（CUN+諜報檢定，每成功揭曉1個NPC情報）"
+          - "社交——玩家可與任意NPC交談（DOM檢定，成功提升關係+1~2）"
+          - "拍賣——3-5件物品依次拍賣（含1件傳奇物品，◆50起拍）"
+          - "暗殺——玩家可選擇揭發/默許/利用混亂撿漏"
+      sidequest:
+        name: "莫瑞斯與巴爾澤克的領土爭端"
+        description: "「千面者」莫瑞斯請你調解他與巴爾澤克的領土爭端"
+        choices:
+          - "調解（DOM+外交檢定，難度2成功）"
+          - "偏袒一方（提升該方關係，降低另一方關係）"
+          - "趁亂撈取利益（CUN+陷阱檢定，獲得額外資源）"
+      milestone: "原型Lv5進階解鎖；地城房間上限+5"
+      map_update: |
+        [MAP_UPDATE]
+        NODE morris-8 x=200 y=150 type="扭曲實驗室" label="扭曲實驗室" explored=true region="幽暗森林"
+        EDGE player-home->morris-8 type="密道"
+        EDGE player-home->balzak-5 type="密道"
+        [/MAP_UPDATE]
+
+    - level: 7
+      name: "奈克西斯之息"
+      description: "深淵魔力潮汐異常波動。艾瑟琳（虛空編織者）警告：潮汐可能是某物甦醒的前兆。"
+      key_events:
+        - "魔力異常事件（MAG檢定，失敗則地城魔力產出-50% 1回合）"
+        - "艾瑟琳的低語：「你感受到嗎？魔力結晶在顫抖。」"
+        - "原始裂隙（D-16）第一次異常——它發出了聲音"
+      encounter:
+        type: "資源危機"
+        event: "魔力潮汐紊亂導致房間失靈，需要緊急修復"
+      milestone: "地城達到Lv7：DEP上限11，房間上限18"
+      map_update: |
+        [MAP_UPDATE]
+        NODE athyrin-9 x=300 y=130 type="虛空織坊" label="虛空織坊" explored=false region="幽暗森林"
+        NODE primordial-fissure x=340 y=450 type="原始裂隙" label="原始裂隙" explored=false region="淵深核心"
+        EDGE player-home->athyrin-9 type="密道"
+        EDGE player-home->primordial-fissure type="深淵裂隙"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# 第三幕：威脅期（Lv8~11）
+# ═══════════════════════════════════════════════════════════
+act3:
+  name: "威脅期"
+  range: "Lv8~11"
+  theme: "戰爭與背叛。地城成爲區域性強權。光明教團開始組織有規模的遠征。"
+  stages:
+    - level: 8
+      name: "教團遠征"
+      description: "光明教團派遣3-4支T3小隊同時從不同入口入侵！必須動用盟軍援軍。"
+      encounter:
+        type: "多線入侵"
+        entrance_main:
+          name: "主入口（正面）"
+          force: "T3精英小隊×2（含Boss隊長·聖騎士）"
+        entrance_side:
+          name: "側面裂隙（右）"
+          force: "T3標準小隊×1"
+        entrance_old:
+          name: "廢棄通道（左）"
+          force: "T2巡邏隊×1（試探性入侵）"
+      ally_aid_check:
+        description: "DOM+外交檢定 vs 難度3。每成功該地城派遣援軍（1d3只怪物，CP總和≤6）協助防禦1個入口。"
+      reward: "+10 經驗值EXP（多線防禦成功）"
+      milestone: "地城達到Lv8：DEP上限13，房間上限22"
+      map_update: |
+        [MAP_UPDATE]
+        NODE zerg-10 x=250 y=250 type="孢子洞窟" label="孢子洞窟" explored=true region="幽暗森林"
+        EDGE player-home->zerg-10 type="隧道"
+        EDGE player-home->balzak-5 type="隧道"
+        [/MAP_UPDATE]
+
+    - level: 9
+      name: "聯盟裂痕"
+      description: "你所在聯盟內部出現裂痕。如何處理將影響之後所有外交關係。"
+      crisis_options:
+        - faction: "骨塚議會（如已結盟）"
+          issue: "馬爾薩斯被挑戰領導地位"
+          choices:
+            - "支持現任領導者（DOM檢定難度2）"
+            - "保持中立（關係不變，但可能失去信任）"
+            - "支持挑戰者（DOM檢定難度3，成功提升關係但得罪馬爾薩斯）"
+        - faction: "深淵軍團（如已結盟）"
+          issue: "巴爾澤克要求你參加火焰試煉"
+          choices:
+            - "接受試煉（WAR檢定難度2，成功獲得怪物CP+1獎勵）"
+            - "拒絕（關係-2，但節省資源）"
+        - faction: "自由工匠（如已結盟）"
+          issue: "技術剽竊爭議"
+        - faction: "暗影網絡（如已結盟）"
+          issue: "叛徒泄露情報"
+      milestone: "原型Lv9終極進階解鎖"
+      map_update: |
+        [MAP_UPDATE]
+        NODE morgana-11 x=350 y=180 type="影纏塔" label="影纏塔" explored=false region="幽暗森林"
+        EDGE player-home->morgana-11 type="暗影通道"
+        [/MAP_UPDATE]
+
+    - level: 10
+      name: "莫瑞斯的絕望呼喚"
+      description: "千面者莫瑞斯的禁忌實驗出現嚴重事故——他的地城正在失控。若你曾與他友好——他向你發出絕望的求援信號。"
+      key_events:
+        - "解鎖第一隻傳說怪物（可招募或偶遇）"
+        - "莫瑞斯求救（時間敏感型支線，4回合內必須決定）"
+        - "選擇：救援/利用/無視——三種選擇影響全局"
+      encounter:
+        type: "救援行動"
+        details: "需要派遣怪物穿越失控的地城，面對危險的不穩定魔力"
+      milestone: "地城達到Lv10：DEP上限18，房間上限30，屬性上限+1（可達6）"
+      map_update: |
+        [MAP_UPDATE]
+        NODE selah-15 x=400 y=600 type="龍眠深淵" label="龍眠深淵" explored=true region="淵深核心"
+        NODE colvin-16 x=150 y=500 type="蝕聖堂" label="鏽蝕聖堂" explored=false region="暗影之海"
+        EDGE player-home->selah-15 type="貿易路線"
+        EDGE player-home->morris-8 type="外交信使"
+        EDGE player-home->colvin-16 type="隧道"
+        [/MAP_UPDATE]
+
+    - level: 11
+      name: "深淵會議"
+      description: "地城達到區域性強權。其他NPC地城開始關注你的實力。"
+      key_events:
+        - "收到至少2個新NPC地城的正式接觸請求"
+        - "選擇是否參與深淵等級政治"
+        - "可能獲得新的盟友或樹立新的敵人"
+      milestone: "地城達到Lv11：DEP上限21，房間上限35"
+      map_update: |
+        [MAP_UPDATE]
+        NODE gear-fortress-12 x=500 y=550 type="齒輪要塞" label="齒輪要塞" explored=true region="廢鐵峽谷"
+        NODE anvil-hall-13 x=560 y=520 type="鍛爐大廳" label="鍛爐大廳" explored=true region="廢鐵峽谷"
+        EDGE player-home->gear-fortress-12 type="隧道"
+        EDGE player-home->anvil-hall-13 type="隧道"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# 第四幕：霸主期（Lv12~15）
+# ═══════════════════════════════════════════════════════════
+act4:
+  name: "霸主期"
+  range: "Lv12~15"
+  theme: "命運抉擇。你的地城已成爲深淵頂級勢力。光明教團準備「聖戰」——而原始裂隙中沉睡的存在即將醒來。"
+  stages:
+    - level: 12
+      name: "地城盟約"
+      description: "你召集（或受邀參加）深淵議會。所有Lv8+的地城領主齊聚一堂。議題：是聯合對抗光明教團，還是各自爲戰？"
+      encounter:
+        type: "大型外交場景"
+        location: "廢鐵峽谷，格里克斯的鑄幣廠大廳"
+        attendees: "馬爾薩斯（骨塚議會）、巴爾澤克（深淵軍團）、維拉（暗影網絡）、扳手（自由工匠）、莫瑞斯、艾瑟琳、瑟拉希爾（中立）、科爾溫等"
+        debate_structure:
+          round1: "玩家開場陳詞（DOM+外交檢定，決定整體氛圍）"
+          round2: "三輪辯論——每輪一個議題（聯合/獨立行動/資源分配）"
+          round3: "最終投票——每個NPC地城的投票取決於與玩家的關係值"
+      reward: "若聯合成功→所有盟友地城關係+2，未來入侵援助+50%"
+      map_update: |
+        [MAP_UPDATE]
+        EDGE player-home->malthus-1 type="聯盟結盟"
+        EDGE player-home->balzak-5 type="聯盟結盟"
+        EDGE player-home->vera-3 type="聯盟結盟"
+        EDGE player-home->gear-fortress-12 type="聯盟結盟"
+        EDGE player-home->anvil-hall-13 type="聯盟結盟"
+        [/MAP_UPDATE]
+
+    - level: 13
+      name: "光明聖戰"
+      description: "T4-T5冒險者軍團同時進攻所有聯盟地城。分配到你的地城的兵力由INF決定——高惡名吸引最強敵人。"
+      encounter:
+        type: "終極防禦戰"
+        waves:
+          - "第1波：T4英雄小隊×3（5-6名成員，含法師/戰士/牧師）"
+          - "第2波：T4英雄小隊×2 + T5傳奇小隊×1"
+          - "第3波：T5傳奇Boss×2（傳奇階級）"
+        notes: "利用所有積累的資源、怪物、盟軍、俘虜炮灰——這是對玩家經營成果的終極考驗"
+      ally_support:
+        description: "每個盟友地城提供援軍的數量取決於雙方關係值（每+2關係提供1只援軍）"
+      reward: "+20 經驗值EXP（終極防禦成功）"
+      milestone: "地城達到Lv13：DEP上限27，房間上限46"
+      map_update: |
+        [MAP_UPDATE]
+        NODE order-of-light-hq x=340 y=30 type="光明教團" label="教團總部" explored=true region="地表"
+        EDGE order-of-light-hq->malthus-1 type="隧道"
+        EDGE order-of-light-hq->balzak-5 type="隧道"
+        EDGE order-of-light-hq->vera-3 type="密道"
+        EDGE order-of-light-hq->gear-fortress-12 type="隧道"
+        [/MAP_UPDATE]
+
+    - level: 14
+      name: "鏽蝕公爵的祕密"
+      description: "若前回合防禦成功——冒險者損失慘重但教團增援不斷。此時出現轉機：「鏽蝕公爵」科爾溫（前聖騎士）揭露教團內部有一個致命弱點。"
+      key_events:
+        - "科爾溫的滲透情報：教團聖戰士的弱點是月光下的聖光共振"
+        - "最終遠征：這可能是領主的最後一次地表行動"
+        - "選擇：利用情報反擊 or 固守待援"
+      encounter:
+        type: "最終遠征（地表滲透）"
+        objective: "獲取最後一塊情報碎片——教團總部地圖"
+        risk: "成功率取決於此前累積的情報檢定數量"
+      milestone: "地城達到Lv14：DEP上限30，房間上限52"
+      map_update: |
+        [MAP_UPDATE]
+        EDGE player-home->order-of-light-hq type="密道"
+        [/MAP_UPDATE]
+
+    - level: 15
+      name: "奈克西斯的甦醒"
+      description: "在裂隙紀元700年的第14個深淵月圓之夜，原始裂隙裂開了。從中走出的不是怪物——而是一個意識。奈克西斯，深淵之母。她的第一句話傳遍了深淵每一座地城："
+      final_event:
+        opening: |
+          「我的孩子們——你們把我的地下世界經營成了什麼？」
+        stage1:
+          name: "降臨"
+          description: "所有地城的魔力結晶同時發出共鳴光芒。地城魔力暫時×2——但隨後可能被收回"
+        stage2:
+          name: "審判"
+          description: "奈克西斯逐一審視各大聯盟。她看到的不是團結的深淵——而是分裂、內鬥、與地表妥協。她的質問：「你們是用我的血建造了什麼？」"
+          checks:
+            - "DOM檢定（回應質問）"
+            - "ARC檢定（理解她的真實意圖）"
+        stage3:
+          name: "抉擇"
+          choices:
+            - label: "A. 成爲她的右手"
+              description: "獲得終極力量——但地城成爲她的延伸（失去部分自主權）"
+              consequence: "獲得「奈克西斯之印」（MAG鎖15，所有怪物CP+2），但永遠無法再違抗她的意志"
+            - label: "B. 拒絕"
+              description: "被放逐出深淵，成爲流浪領主"
+              consequence: "地城被收回——但收到所有盟友的聯名信：你並不孤單。變成流浪傳奇身份——可在任何盟友地城之間自由旅居"
+            - label: "C. 說服她"
+              description: "深淵已經進化，不需要單一母神（極難挑戰：DOM+外交×3次多重檢定，需全部成功）"
+              consequence: "奈克西斯微笑，化作漫天魔力消散——全深淵永久魔力+3。你的地城成爲新的深淵中心。光明教團被迫簽署停戰協議——地下城不再是怪物巢穴，它們是王國。"
+      triple_check_details:
+        - "第1次 DOM+外交：證明深淵領主值得自主（至少3個NPC盟友關係→每個+1骰）"
+        - "第2次 DOM+外交：證明光明教團可以被遏制（科爾溫情報+2骰、擊敗教團遠征戰績+1骰）"
+        - "第3次 魔力ARC+奧術知識：證明深淵魔力已經進化（玩家研究成果+1骰、艾瑟琳維度研究+1骰、地城MAG≥12→+1骰）"
+      epilogue:
+        scene: |
+          三個深淵月後。停戰協議簽署的當天。你站在王座廳的最高處，俯瞰你的地城——
+          現在它不再是一串洞穴，而是一座繁榮的地下王國。
+          怪物與轉化的前冒險者和平共處。遠方，新建的深淵使館中燈火通明——
+          那是來自十六座地城的祝賀使節。
+          深淵再也不會一樣了。
+      milestone: "戰役完成——地城達到Lv15：DEP上限34，房間上限60"
+      map_update: |
+        [MAP_UPDATE]
+        NODE primordial-fissure x=340 y=450 type="原始裂隙" label="原始裂隙" explored=true region="淵深核心"
+        EDGE player-home->primordial-fissure type="深淵裂隙"
+        EDGE malthus-1->primordial-fissure type="深淵裂隙"
+        EDGE balzak-5->primordial-fissure type="深淵裂隙"
+        EDGE vera-3->primordial-fissure type="深淵裂隙"
+        EDGE morris-8->primordial-fissure type="深淵裂隙"
+        EDGE athyrin-9->primordial-fissure type="深淵裂隙"
+        EDGE selah-15->primordial-fissure type="深淵裂隙"
+        EDGE morgana-11->primordial-fissure type="深淵裂隙"
+        EDGE grak-4->primordial-fissure type="深淵裂隙"
+        EDGE zerg-10->primordial-fissure type="深淵裂隙"
+        EDGE gear-fortress-12->primordial-fissure type="深淵裂隙"
+        EDGE anvil-hall-13->primordial-fissure type="深淵裂隙"
+        EDGE ignis-6->primordial-fissure type="深淵裂隙"
+        EDGE player-home->order-of-light-hq type="遠征航路"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# 支線與委託系統
+# ═══════════════════════════════════════════════════════════
+sidequests:
+  description: "每3回合提供1個可選委託/支線任務。玩家可選擇執行或忽略。"
+
+  quests:
+    - id: "sq1"
+      name: "礦脈勘探"
+      trigger: "首次挖掘發現礦脈後或每5回合"
+      description: "在地城深處發現疑似稀有礦脈跡象"
+      checks:
+        - "IND + 採礦檢定 vs 難度2成功"
+      reward_success: "額外礦產×2 + 可能發現古代合金（◆×3）"
+      reward_failure: "塌方風險——損失建材×2，但可能發現古代遺址"
+
+    - id: "sq2"
+      name: "逃亡俘虜追捕"
+      trigger: "有俘虜逃跑後1~3回合"
+      description: "上次逃脫的冒險者米拉帶隊返回復仇，但在被捕前你曾放跑了一些俘虜"
+      checks:
+        - "WAR + 追蹤檢定 vs 難度3"
+      reward_success: "抓回逃跑者（忠誠度LOY+1, 額外經驗+2）"
+      reward_failure: "逃亡者向地表傳遞地城情報（下輪入侵強度+1 品級Tier）"
+
+    - id: "sq3"
+      name: "古代遺蹟探索"
+      trigger: "挖掘骰d6=6（古遺蹟發現）或每8回合"
+      description: "在深處發現一片古代遺蹟——可能是上一個文明的殘骸"
+      checks:
+        - "魔力ARC + 考古檢定 vs 難度3"
+        - "CUN + 隱匿檢定 vs 難度2（防止觸發機關）"
+      reward_success: "獲得古代裝備（永久屬性+1或使用一次的特殊道具）"
+      reward_failure: "釋放古代邪靈（引發特殊入侵，但擊敗後獲得大量經驗）"
+
+    - id: "sq4"
+      name: "聯盟內部調解"
+      trigger: "第二幕中選擇聯盟後每4~6回合"
+      description: "你的聯盟內有成員發生衝突，需要你出面調解"
+      checks:
+        - "DOM + 外交檢定 vs 難度2~4（視衝突嚴重程度）"
+      reward_success: "聯盟內部關係提升，盟軍援軍強度+50%"
+      reward_failure: "聯盟關係受損（下次入侵時盟軍援軍數量-1）"
+
+    - id: "sq5"
+      name: "地下河探險"
+      trigger: "挖掘骰d6=5（地下湖發現）"
+      description: "你挖掘到了地下湖——這裏可能藏有祕密，也可能通向未知的深淵"
+      checks:
+        - "CUN + 航海檢定 vs 難度2（控制小船）"
+        - "WAR + 游泳檢定 vs 難度1（避免溺水）"
+      reward_success: "發現古代碼頭遺址（永久解鎖水域交通，怪物移動力+1骰）"
+      reward_failure: "地下湖崩塌（水淹房間，該房間1回合內無法使用）"
+
+    - id: "sq6"
+      name: "黑市貿易機會"
+      trigger: "每2回合自動提供"
+      description: "有路過的商人經過你的地城，帶來遠方的奇貨"
+      checks:
+        - "無（純經濟交易）"
+      details: "商人提供1~3件商品，價格爲市場價70~130%（視玩家外交關係）"
+      reward: "購買後可獲得永久性增益或一次性戰術物品"
+
+    - id: "sq7"
+      name: "怪物進化工程"
+      trigger: "擁有任何精英/傳說怪物後"
+      description: "你可以選擇對特定怪物進行進化——使其變得更強大但也更耗費資源"
+      checks:
+        - "魔力ARC + 進化檢定 vs 難度3"
+      reward_success: "怪物CP+2 或 經營貢獻值(MV)+2（永久）"
+      reward_failure: "怪物暴走（忠誠度LOY-2, 可能需要消耗資源鎮壓）"
+
+    - id: "sq8"
+      name: "外交密使"
+      trigger: "與任一NPC地城關係≥5後每4回合"
+      description: "某位NPC地城領主派密使來尋求祕密合作"
+      secret_agreements:
+        - "情報交換（每回合獲得下輪入侵情報提前量+1回合）"
+        - "資源互補（雙方各出一部分共享礦產或魔法資源）"
+        - "軍事同盟（遭遇入侵時自動派遣援軍，但需承擔一定風險）"
+
+# ═══════════════════════════════════════════════════════════
+# NPC角色數據庫（單人模式AI GM可用）
+# ═══════════════════════════════════════════════════════════
+npc_database:
+  - name: "馬爾薩斯侯爵"
+    faction: "骨塚議會"
+    personality: "優雅而冷酷，認爲死亡是最終的秩序"
+    initial_relation: 0
+    dialogue_style: "引用古語，每句話都像墓誌銘"
+    loyalty_trigger: "需要玩家至少在骨塚議會有至少1次合作"
+
+  - name: "裂地者巴爾澤克"
+    faction: "深淵軍團"
+    personality: "粗暴而誠實，信奉力量至上"
+    initial_relation: -3
+    dialogue_style: "每句話都像戰吼，喜歡用戰爭比喻"
+    loyalty_trigger: "需要在戰鬥中表現出足夠的實力"
+
+  - name: "千面者莫瑞斯"
+    faction: "暗影網絡"
+    personality: "不可預測，可能是你的朋友也可能是你的敵人"
+    initial_relation: "隨機(-5到+5)"
+    dialogue_style: "說話永遠只有一半真相"
+    note: "第10回的關鍵事件人物"
+
+  - name: "扳手"
+    faction: "自由工匠協會"
+    personality: "實用主義者，相信技術能解決一切問題"
+    initial_relation: 5
+    dialogue_style: "滿口工程術語，但對新發明充滿熱情"
+
+  - name: "金牙格里克斯"
+    faction: "中立商會"
+    personality: "狡猾但守信用，黑市的化身"
+    initial_relation: 3
+    dialogue_style: "每句話都帶着買賣的意圖"
+    note: "第6回黑市拍賣的主持人"
+
+  - name: "艾瑟琳·虛空編織者"
+    faction: "深淵研究者"
+    personality: "好奇而焦慮，她是少數關注深淵本源問題的人"
+    initial_relation: 3
+    dialogue_style: "用科學術語解釋魔法現象"
+    note: "第7回魔力潮汐事件的警告者"
+
+  - name: "鏽蝕公爵科爾溫"
+    faction: "前光明教團聖騎士"
+    personality: "悲傷而堅決，曾經的敵人現在的可能盟友"
+    initial_relation: 2
+    dialogue_style: "帶着悔恨但意志堅定"
+    note: "第14回滲透情報的關鍵提供者"
+
+  - name: "瑟拉希爾·永夜之眼"
+    faction: "中立觀察者"
+    personality: "神祕而超然，只觀察不介入"
+    initial_relation: -2
+    dialogue_style: "每句話都像謎語"
+
+# ═══════════════════════════════════════════════════════════
+# 單人模式特殊規則
+# ═══════════════════════════════════════════════════════════
+solo_rules:
+  description: "以下規則爲單人遊玩特別設計，確保AI GM能公正且有趣地主持遊戲"
+
+  ai_gm_responsibilities:
+    - "自動計算並管理所有非玩家角色的行動（怪物AI、冒險者AI、外交關係等）"
+    - "根據玩家進度動態調整入侵強度和事件複雜度"
+    - "每回合結束時提供當前地城狀態摘要（資源/行動/可用選項）"
+    - "自動處理經營骰池計算（IND+技能+floor(ΣMV/2)）"
+    - "自動處理戰鬥骰池計算（WAR+技能+floor(ΣCP/2)）"
+    - "入侵判定由AI GM自動完成（惡名INF+1d6≥8觸發）"
+    - "俘虜逃跑判定由AI GM自動處理"
+
+  difficulty_scaling:
+    - "初期(Lv1-3)：AI GM會偏向幫助玩家，容錯率較高"
+    - "中期(Lv4-7)：難度逐步提升，但保留支援性事件"
+    - "後期(Lv8-11)：標準難度，玩家的每一次選擇都至關重要"
+    - "終局(Lv12-15)：極難模式，但所有前期累積的情報/盟友/物品都會在此刻發揮作用"
+
+  resource_assistance:
+    - "AI GM會記住玩家所有資源存量，自動扣減建造/招募/升級費用"
+    - "每回合自動計算王座廳產出(◆×1/回合)和遠古巨龍型原型的寶庫利息"
+    - "WLH屬性自動計算資源上限（見規則書§2.9存儲表）"
+
+  combat_aids:
+    - "AI GM會自動計算每個怪物對冒險者的傷害值"
+    - "Boss的Phase變化會在正確時間點觸發"
+    - "陷阱的連鎖觸發和特殊效果由AI GM自動處理"
+
+  diplomatic_tracking:
+    - "AI GM自動維護與所有NPC地城的關係值（-10到+10）"
+    - "關係值變化會自動影響外交檢定加值、盟軍援軍強度、貿易價格等"
+    - "每個NPC有獨立的性格和對話風格，由AI GM根據該角色設定演繹"

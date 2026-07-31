@@ -1,0 +1,76 @@
+# 起始艦船速查
+ships:
+  - name: "護衛艦"
+    alloy_cost: 80
+    maintenance_per_st: "1 能源（EC） + 0.3 合金（ALLOY）"
+    tier: "起始"
+    hull_hp: "200-600"
+    slots: "3S+1P"
+    speed: 8
+    evasion: "40%"
+    command_pts: 1
+  - name: "驅逐艦"
+    alloy_cost: 200
+    maintenance_per_st: "2 能源（EC） + 0.8 合金（ALLOY）"
+    tier: "T2 工程"
+    hull_hp: "400-1000"
+    slots: "2M+2M+P"
+    speed: 6
+    evasion: "25%"
+    command_pts: 2
+  - name: "巡洋艦"
+    alloy_cost: 500
+    maintenance_per_st: "4 能源（EC） + 1.5 合金（ALLOY）"
+    tier: "T3 工程"
+    hull_hp: "800-2000"
+    slots: "2M+2L+P+H"
+    speed: 4
+    evasion: "15%"
+    command_pts: 4
+  - name: "戰列艦"
+    alloy_cost: 1000
+    maintenance_per_st: "8 能源（EC） + 3 合金（ALLOY）"
+    tier: "T4 工程"
+    hull_hp: "1500-4000"
+    slots: "3L+1X+2P"
+    speed: 3
+    evasion: "5%"
+    command_pts: 8
+  - name: "泰坦"
+    alloy_cost: 2000
+    maintenance_per_st: "15 能源（EC） + 6 合金（ALLOY）"
+    tier: "T5 工程"
+    hull_hp: "4000-10000"
+    slots: "4L+2X+2P+H"
+    speed: 2
+    evasion: "0%"
+    command_pts: 16
+  - name: "主宰"
+    alloy_cost: 5000
+    maintenance_per_st: "30 能源（EC） + 12 合金（ALLOY）"
+    tier: "T5 + 飛昇"
+    hull_hp: "8000-20000"
+    slots: "6L+2X+4P+2H"
+    speed: 1
+    evasion: "0%"
+    command_pts: 32
+    limit: "每文明限 1"
+
+# 科研/工程/殖民船
+support_ships:
+  - name: "科研船"
+    alloy_cost: 50
+    maintenance: "1 能源（EC）"
+    build_time: 1
+    hull_hp: 200
+    detection_range: 1
+  - name: "工程船"
+    alloy_cost: 50
+    maintenance: "1 能源（EC）"
+    build_time: 1
+    hull_hp: 200
+  - name: "殖民船"
+    alloy_cost: 150
+    maintenance: "2 能源（EC） + 2 消費品（CG）"
+    build_time: 2
+    hull_hp: 300

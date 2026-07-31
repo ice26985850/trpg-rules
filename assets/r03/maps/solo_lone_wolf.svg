@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" font-family="Microsoft JhengHei, PingFang TC, sans-serif">
+<rect x="0" y="0" width="1200" height="960" fill="#fff"/>
+<text x="40" y="40" font-size="20" font-weight="bold" fill="#7a1f1f">🗺 孤狼協議 — 多設施 (Site-██ / Site-███ / Area-14)</text>
+<rect x="40" y="80" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="102" font-size="15" font-weight="bold" fill="#2c3e50">▣ Site-██ 一樓</text>
+<line x1="124" y1="133" x2="600" y2="133" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="133" x2="124" y2="133" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="133" x2="1076" y2="133" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="133" x2="600" y2="133" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="133" x2="124" y2="223" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="133" x2="600" y2="223" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="133" x2="1076" y2="223" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="223" x2="1076" y2="133" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="223" x2="1076" y2="133" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="223" x2="1076" y2="133" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<rect x="40" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">正門</text>
+<text x="124" y="146" font-size="9.5" text-anchor="middle" fill="#666">半開</text>
+<rect x="516" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">接待櫃台</text>
+<text x="600" y="146" font-size="9.5" text-anchor="middle" fill="#666">咖啡溫</text>
+<rect x="992" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">走廊</text>
+<text x="1076" y="146" font-size="9.5" text-anchor="middle" fill="#666">通風管×3</text>
+<rect x="40" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">監控室</text>
+<text x="124" y="236" font-size="9.5" text-anchor="middle" fill="#666">運作中</text>
+<rect x="516" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">站長辦公室</text>
+<text x="600" y="236" font-size="9.5" text-anchor="middle" fill="#666">貨運文件</text>
+<rect x="992" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">人員宿舍</text>
+<text x="1076" y="236" font-size="9.5" text-anchor="middle" fill="#666">8 床</text>
+<rect x="40" y="300" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="322" font-size="15" font-weight="bold" fill="#2c3e50">▣ Site-██ 地下室 B1</text>
+<line x1="124" y1="353" x2="600" y2="353" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="353" x2="124" y2="353" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="353" x2="1076" y2="353" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="353" x2="124" y2="443" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="353" x2="600" y2="443" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="353" x2="1076" y2="443" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="353" x2="600" y2="353" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="443" x2="600" y2="353" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="443" x2="600" y2="353" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="443" x2="600" y2="353" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<rect x="40" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">樓梯入口</text>
+<text x="124" y="366" font-size="9.5" text-anchor="middle" fill="#666">刻字：不要聽</text>
+<rect x="516" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">中央收容室</text>
+<text x="600" y="366" font-size="9.5" text-anchor="middle" fill="#666">8 人環列</text>
+<rect x="992" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">玻璃容器</text>
+<text x="1076" y="366" font-size="9.5" text-anchor="middle" fill="#666">光影結構</text>
+<rect x="40" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">控制面板</text>
+<text x="124" y="456" font-size="9.5" text-anchor="middle" fill="#666">電腦55</text>
+<rect x="516" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">防爆門</text>
+<text x="600" y="456" font-size="9.5" text-anchor="middle" fill="#666">爆破55/力60</text>
+<rect x="992" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">通風管</text>
+<text x="1076" y="456" font-size="9.5" text-anchor="middle" fill="#666">通二樓</text>
+<rect x="40" y="520" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="542" font-size="15" font-weight="bold" fill="#2c3e50">▣ Site-███ 一~三樓</text>
+<line x1="124" y1="573" x2="600" y2="573" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="573" x2="124" y2="573" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="573" x2="1076" y2="573" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="573" x2="124" y2="663" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="573" x2="600" y2="573" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="663" x2="600" y2="573" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="663" x2="600" y2="663" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="663" x2="124" y2="753" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="753" x2="1076" y2="663" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<rect x="40" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">檢查站</text>
+<text x="124" y="586" font-size="9.5" text-anchor="middle" fill="#666">隔離封條</text>
+<rect x="516" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">接待處</text>
+<text x="600" y="586" font-size="9.5" text-anchor="middle" fill="#666">塗鴉</text>
+<rect x="992" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">實驗室東翼</text>
+<text x="1076" y="586" font-size="9.5" text-anchor="middle" fill="#666">儀錶運轉</text>
+<rect x="40" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">走廊</text>
+<text x="124" y="676" font-size="9.5" text-anchor="middle" fill="#666">緊急通風</text>
+<rect x="516" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">二樓站長室</text>
+<text x="600" y="676" font-size="9.5" text-anchor="middle" fill="#666">親筆信</text>
+<rect x="992" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">三樓倖存者宿舍</text>
+<text x="1076" y="676" font-size="9.5" text-anchor="middle" fill="#666">艾琳·福瑟爾</text>
+<rect x="40" y="730" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="749" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">儲藏室</text>
+<text x="124" y="766" font-size="9.5" text-anchor="middle" fill="#666">上鎖</text>
+<rect x="40" y="740" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="762" font-size="15" font-weight="bold" fill="#2c3e50">▣ Area-14 深層設施</text>
+<line x1="124" y1="793" x2="600" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="793" x2="1076" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="793" x2="124" y2="883" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="793" x2="600" y2="883" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="793" x2="1076" y2="883" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="793" x2="124" y2="973" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="793" x2="124" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="793" x2="124" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="793" x2="124" y2="973" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="883" x2="124" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="883" x2="124" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="883" x2="124" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="124" y1="973" x2="1076" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="973" x2="1076" y2="973" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="1076" y1="973" x2="600" y2="973" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<rect x="40" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">主走廊</text>
+<text x="124" y="806" font-size="9.5" text-anchor="middle" fill="#666">Hume扭曲</text>
+<rect x="516" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">隱藏入口</text>
+<text x="600" y="806" font-size="9.5" text-anchor="middle" fill="#666">PER55</text>
+<rect x="992" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">中央收容室</text>
+<text x="1076" y="806" font-size="9.5" text-anchor="middle" fill="#666">弗萊恩</text>
+<rect x="40" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">服務隧道</text>
+<text x="124" y="896" font-size="9.5" text-anchor="middle" fill="#666">敏50</text>
+<rect x="516" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">正門入口</text>
+<text x="600" y="896" font-size="9.5" text-anchor="middle" fill="#666">力55</text>
+<rect x="992" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">防爆門</text>
+<text x="1076" y="896" font-size="9.5" text-anchor="middle" fill="#666">電腦60</text>
+<rect x="40" y="950" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="969" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">隱藏電梯</text>
+<text x="124" y="986" font-size="9.5" text-anchor="middle" fill="#666">工程55</text>
+<rect x="516" y="950" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="969" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">研究核心</text>
+<text x="600" y="986" font-size="9.5" text-anchor="middle" fill="#666">殘留物</text>
+<rect x="992" y="950" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="969" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">說話光球 SCP-███-X</text>
+<text x="1076" y="986" font-size="9.5" text-anchor="middle" fill="#666">哈洛之悔</text>
+</svg>

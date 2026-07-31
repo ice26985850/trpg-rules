@@ -1,0 +1,251 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>獸人戰國 ／ s03_天下布武之影 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="#">規則總覽</a></header>
+<main class="container"><p class="nav"><a href="r27.html">← 回規則頁</a></p><h1>S3：天下布武之影</h1>
+<blockquote>
+<p><strong>劇本編號：S3｜對應戰役：第三幕（等級 11–14）｜建議玩家人數：1–4 人（相容單人與多人遊玩）｜預計遊玩時數：約 5–8 小時｜難度：上級｜前置劇本：S2</strong></p>
+</blockquote>
+<hr />
+<h2>一、背景設定</h2>
+<p>虎族大名虎嵐齋的「天下布武」行動進入高潮。全面戰爭爆發。</p>
+<p>玩家在選擇的勢力（義理同盟或天下布武會）中已被賦予指揮權。本劇本的核心是一場關鍵合戰——<strong>鬼哭原會戰</strong>。</p>
+<p>同時，名刀線索指向天下五劍之一「<strong>鬼切丸</strong>」——它在虎嵐齋手中，而它的妖氣正在侵蝕持有者的魂魄。</p>
+<hr />
+<h2>二、主要勢力</h2>
+<h3>玩家方（player_side）</h3>
+<ul>
+<li><strong>主君（lord）</strong>：取決於玩家在第一、二幕中的選擇</li>
+<li><strong>盟友（allies）</strong>：勢力中的其他藩國聯軍</li>
+</ul>
+<h3>敵方（enemy_side）</h3>
+<ul>
+<li><strong>主要反派（main_villain）</strong>：敵方總大將（取決於玩家的勢力選擇）</li>
+<li><strong>關鍵人物（key_figure）</strong>：敵方年輕武將（玩家在第一幕認識的宿敵）</li>
+</ul>
+<h3>中立勢力（neutral）</h3>
+<ul>
+<li>淨土寺僧兵團（可請求醫療支援）</li>
+<li>鼠族情報販子（可購買敵軍部署情報）</li>
+</ul>
+<hr />
+<h2>三、場景流程</h2>
+<h3>場景 1：軍議——戰前準備</h3>
+<ul>
+<li><strong>類型</strong>：社交／策略</li>
+</ul>
+<p>玩家參與勢力軍議。必須做出三個戰前決策：</p>
+<ol>
+<li><strong>選擇合戰中的角色</strong>：將領型（指揮部隊）或突擊隊長型（直接斬入敵陣）</li>
+<li><strong>分配有限的資源</strong>——騎兵主力／弓兵掩護／僧兵醫療三者只能選一項全力投入</li>
+<li><strong>是否使用間諜情報</strong>（使用則合戰優位，但可能暴露自己在鼠族情報網中的位置）</li>
+</ol>
+<p><strong>檢定（Checks）</strong></p>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>難度（DC）</th>
+<th>成功效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>兵法</td>
+<td>18</td>
+<td>獲得敵方部署情報，合戰第一回合我方全軍優位</td>
+</tr>
+<tr>
+<td>說服</td>
+<td>20</td>
+<td>說服中立勢力（如淨土寺）提供支援</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>場景 2：鬼哭原會戰</h3>
+<ul>
+<li><strong>類型</strong>：合戰（大規模戰鬥）</li>
+</ul>
+<p>雙方在鬼哭原展開決戰。</p>
+<p><strong>合戰規模</strong>
+- 我方：3,000–5,000 人（依玩家選擇的勢力）
+- 敵方：4,000–6,000 人
+- 合戰回合數：5–8 回合</p>
+<p><strong>玩家角色</strong>
+- 若選擇將領型：使用指揮值調度部隊
+- 若選擇突擊隊長型：親自切入敵陣</p>
+<h4>合戰規模與部隊資料（mass_battle）</h4>
+<p><strong>我方（player_side）</strong></p>
+<table>
+<thead>
+<tr>
+<th>兵種</th>
+<th>強度（strength）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>重步兵（牛族）</td>
+<td>3</td>
+</tr>
+<tr>
+<td>騎兵（馬族）</td>
+<td>2</td>
+</tr>
+<tr>
+<td>弓兵（雞族）</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>士氣（morale）：12</li>
+<li>戰力值（CP）基準（cp_base）：50</li>
+</ul>
+<p><strong>敵方（enemy_side）</strong></p>
+<table>
+<thead>
+<tr>
+<th>兵種</th>
+<th>強度（strength）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>輕步兵（犬族）</td>
+<td>4（若敵方是虎族則調整）</td>
+</tr>
+<tr>
+<td>騎兵（馬族）</td>
+<td>3</td>
+</tr>
+<tr>
+<td>忍者眾（鼠族）</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>士氣（morale）：13</li>
+<li>戰力值（CP）基準（cp_base）：60</li>
+</ul>
+<p><strong>戰場事件（battlefield_events）</strong>
+- 使用完整事件表（use_full_table：true）</p>
+<p><strong>合戰中的道德抉擇（moral_dilemma_during_battle）</strong></p>
+<blockquote>
+<p>合戰中期，敵方年輕武將（宿敵）率領突擊隊衝入我方本陣。他的目標就是你——他要一騎打。</p>
+</blockquote>
+<hr />
+<h3>場景 3：一騎打——宿命的對決</h3>
+<ul>
+<li><strong>類型</strong>：一騎打（武將單挑）</li>
+</ul>
+<p>鬼哭原中央。兩軍暫時停戰，所有人的目光聚焦於你們。</p>
+<p>敵將宣告：</p>
+<blockquote>
+<p>「[玩家的流派名]的[玩家名]！我是[敵將名]，[敵將流派]的傳人。從第一次見面起，我就知道——我們之中只有一個人能成為傳說。今天，在這裡——讓我們的刀來決定誰的義才是真實的。」</p>
+</blockquote>
+<p><strong>敵方武將資訊</strong>
+- <strong>名稱</strong>：取決於玩家在第一幕認識的宿敵（GM 設定）
+- <strong>獸族</strong>：與玩家有對稱或相剋關係
+- <strong>流派</strong>：與玩家不同但同等階層
+- <strong>等級</strong>：與玩家相同
+- <strong>佩刀</strong>：業物或良業物</p>
+<h4>一騎打規則（duel_rules）</h4>
+<ul>
+<li><strong>回合數（rounds）</strong>：3</li>
+<li><strong>特殊規則（special）</strong>：<blockquote>
+<p>第三回合，鬼哭原的怨靈被雙方的妖氣激發，戰場被妖氣風暴包圍（雙方妖氣值（YK）各 +10）。在風暴中完成最後一擊的人——將被載入戰國史冊。</p>
+</blockquote>
+</li>
+</ul>
+<h4>三選一｜戰後結果（post_duel）</h4>
+<table>
+<thead>
+<tr>
+<th>選項</th>
+<th>後果（consequence）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>斬殺</strong></td>
+<td>獲得宿敵的佩刀（業物）。敵軍士氣 −5。但義理值（GI）−5。鬼哭原上多了一把等待兩百年的刀。</td>
+</tr>
+<tr>
+<td><strong>釋放</strong></td>
+<td>義理值（GI）+5。宿敵對你欠下恩義。敵軍士氣 −2。宿敵說：「我會還你這一命——在不需要還的時候。」</td>
+</tr>
+<tr>
+<td><strong>招募</strong></td>
+<td>進行魂魄對抗（DC 18）。成功則宿敵成為你的同伴 NPC（CR 6）。這是最高貴的勝利。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>場景 4：鬼切丸之影</h3>
+<ul>
+<li><strong>類型</strong>：探索／揭露</li>
+</ul>
+<p>合戰結束後，玩家獲得一份意外情報——來自鼠族情報網。情報顯示：虎嵐齋持有的天下五劍「鬼切丸」不是表面上的聖劍。它是一把妖刀，正在以妖氣侵蝕虎嵐齋的魂魄。虎嵐齋的「天下布武」背後——是鬼切丸的意志在驅動。</p>
+<p><strong>關鍵發現</strong>
+- 鬼切丸每斬殺一名武士，吸收其魂魄以強化自身
+- 虎嵐齋正在失去對自身行為的控制
+- 黑月會與這個過程有某種關聯</p>
+<p><strong>玩家現在面臨選擇</strong>
+- 將情報告訴你的主君（可能引發針對虎嵐齋的刺殺行動）
+- 保密並自行調查（獨自行動，但資源有限）
+- 試圖將情報告訴虎嵐齋本人（極度危險，但可能拯救他）</p>
+<h4>道德抉擇：真相 vs 戰略（moral_dilemma）</h4>
+<table>
+<thead>
+<tr>
+<th>選項</th>
+<th>檢定（check）</th>
+<th>後果（consequence）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>報告主君</strong></td>
+<td>—</td>
+<td>主君策劃刺殺虎嵐齋。玩家被要求參與——但虎嵐齋是受害者而非惡人。</td>
+</tr>
+<tr>
+<td><strong>自行調查</strong></td>
+<td>—</td>
+<td>獲得義理值（GI）+3（你選擇面對真相而非利用真相）。但缺乏支援。</td>
+</tr>
+<tr>
+<td><strong>告訴虎嵐齋</strong></td>
+<td>潛入尾張國（潛行 DC 22）＋說服虎嵐齋相信你（說服 DC 25）</td>
+<td>若成功——虎嵐齋可能會自願交出鬼切丸，避免更多殺戮。這是唯一能同時拯救虎嵐齋、終結戰爭、並獲得鬼切丸的路線。但也是最困難的。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>四、獎勵與後續影響</h2>
+<h3>獎勵（reward）</h3>
+<ul>
+<li><strong>經驗值（XP）</strong>：合戰：800 × 玩家所屬部隊的表現係數。一騎打：300。情報揭露：200。</li>
+<li><strong>金幣（gold）</strong>：1000</li>
+<li><strong>物品（items）</strong>：宿敵的佩刀（若選擇斬殺）。鬼切丸的情報碎片。</li>
+</ul>
+<h3>後續影響（follow_up）</h3>
+<ul>
+<li>玩家的勢力在合戰中的勝負影響第四幕的勢力格局</li>
+<li>鬼切丸的情報直接引導至第四幕的劇情</li>
+<li>宿敵的命運（斬殺／釋放／招募）有重大後續影響</li>
+</ul>
+<hr />
+<h2>五、單人遊玩調整（solo_adjustments）</h2>
+<ul>
+<li>合戰規模縮減：雙方部隊規模 −40%</li>
+<li>一騎打敵將等級：玩家等級 −1</li>
+<li>提供 NPC 副將協助指揮（若玩家選擇將領型）</li>
+<li>合戰事件表使用次數減半</li>
+</ul><p><a href="../assets/r27/scenarios/s03_天下布武之影.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer></body></html>

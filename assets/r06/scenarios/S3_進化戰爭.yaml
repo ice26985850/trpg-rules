@@ -1,0 +1,119 @@
+name: "S3：進化戰爭"
+description: "終極進化教團和人性守護者在基因熔爐遺跡前對峙。選擇陣營——或成為攪局者。控制能加速進化的古代設施。"
+difficulty: "困難"
+level_range:
+  min_nodes: 6
+  max_nodes: 12
+  suggested: "6-12 進化節點"
+players: { min: 1, max: 4, default: 1 }
+estimated_time: "4-5 小時"
+map_ref: "進化戰爭_基因熔爐遺跡"
+initial_map: "進化戰爭_基因熔爐遺跡"
+prerequisite: "S1_巢穴覺醒（推薦）"
+
+scenes:
+  - id: "S3_SC1"
+    name: "雙方的邀請"
+    type: "social"
+    description: "在基因熔爐遺跡前，三大勢力各自提出條件。"
+    factions:
+      - id: "終極進化教團"
+        representative: "『六臂』維克多"
+        offer:
+          payment: "5 進化點數（預付 2）+ 免費形態節點（人性值 -10）"
+          requirements: ["協助打開大門", "對抗守護者", "吸收至少一個熔爐守護生物"]
+          risk: "人性值大幅下降。教團可能不兌現全部承諾"
+      - id: "人性守護者"
+        representative: "淨化元帥艾蕾娜"
+        offer:
+          payment: "稀有裝備一套 + 人性值 +5 + 淨化印記"
+          requirements: ["協助關閉熔爐", "保護工程師", "人性值維持 40%+"]
+          risk: "與教團為敵。無法利用熔爐進化"
+      - id: "共生協議"
+        representative: "奧爾登（觀察員）"
+        offer:
+          payment: "被動『平衡之心』（意志 YZ+2，人性值不再因進化減少）"
+          requirements: ["單獨潛入", "在雙方交戰時關閉核心"]
+          risk: "無支援、單獨面對熔爐防禦。被發現則雙方都變為敵對"
+
+  - id: "S3_SC2"
+    name: "熔爐大門"
+    type: "challenge"
+    description: "有機薄膜大門需要進化能量才能開啟。"
+    routes:
+      - faction: "教團"
+        method: "5 名進化者共同注入（快速但人性值各 -1）"
+      - faction: "守護者"
+        method: "能量模擬器（感知 GZ DC 16 操作）"
+        failure: "裝置爆炸，損失 1d4 回合"
+      - faction: "協議"
+        method: "單獨注入（意志 YZ DC 18）"
+        success: "大門只為你打開（先發優勢）"
+        failure: "大門全開 + 能量清空"
+
+  - id: "S3_SC3"
+    name: "熔爐爭奪戰"
+    type: "combat_dynamic"
+    description: "三方混戰。每回合發生不同事件。"
+    dynamic_events:
+      - round: 1
+        event: "教團先鋒（3 嘍囉）vs 守護者士兵（3 嘍囉）混戰"
+      - round: 2
+        event: "熔爐防禦啟動——生物機甲 ×2（精英）攻擊全場"
+      - round: 3
+        event: "進化原液池沸騰（池邊 2 格內 1d6 火焰傷害）。喝原液可免費進化（人性值 -5）"
+      - round: 4
+        event: "敵對陣營 BOSS 出現"
+      - round: 5
+        event: "熔爐核心過載倒數——5 回合後爆炸"
+    enemies:
+      - type: "生物機甲"
+        rank: "精英"
+        count: 2
+        hp: 45
+        defense: 15
+        skills: ["生物砲（遠程 2d8+3）", "觸手束縛（中距，敏捷 DC 15）", "能量吸收（從原液池每回合恢復 5 HP）"]
+    bosses:
+      - id: "千面主教"
+        faction: "終極進化教團"
+        hp: 90
+        defense: 17
+        stats: { LIL: 7, MJ: 8, TZ: 7, GZ: 9, YZ: 12 }
+        energy: 20
+        skills:
+          - { name: "形態切換", tier: "被動", effect: "每回合切換形態（人形/觸手形/飛行形），不同技能組合" }
+          - { name: "千面之觸", tier: "高級", energy: 5, effect: "觸碰目標，意志 DC 18 否則複製一個進化節點" }
+          - { name: "進化剝奪", tier: "終極", effect: "意志 DC 20 否則永久失去一個進化節點" }
+      - id: "淨化元帥艾蕾娜"
+        faction: "人性守護者"
+        hp: 80
+        defense: 18
+        stats: { LIL: 9, MJ: 7, TZ: 6, GZ: 8, YZ: 10 }
+        skills:
+          - { name: "淨化打擊", tier: "中級", effect: "近戰 2d10+4 + 目標失去所有能量" }
+          - { name: "進化壓制領域", tier: "高級", energy: 5, effect: "範圍內進化節點效果減半，3 回合" }
+          - { name: "人性審判", tier: "終極", effect: "人性值 < 40% 的目標直接失去意識 1 回合" }
+
+  - id: "S3_SC4"
+    name: "核心抉擇"
+    type: "narrative"
+    description: "在熔爐核心控制台前做出最終決定。"
+    choices:
+      - id: "最大化輸出"
+        check: { attribute: "意志（YZ）", dc: 20 }
+        success: "獲得 10 進化點數（可立即使用）"
+        failure: "擲 d6 進化失控表"
+        cost: "人性值 -15（無論成敗）"
+        consequence: "之後每個新節點的人性值減少 ×2"
+      - id: "穩定化"
+        reward: "進化容量 +5、全節點效果 +20%"
+        cost: "人性值 -5"
+        consequence: "之後吸收敵人的 DC -2"
+      - id: "關閉"
+        reward: "獲得『平衡之心』被動節點（意志 YZ+2，人性值不再因進化減少）"
+        cost: "無人性值損失"
+        consequence: "成為協議永久盟友"
+
+completion_rewards:
+  evolution_points: 5
+  extra_boss: { evolution_points: 3, absorb: "BOSS 特質樣本" }

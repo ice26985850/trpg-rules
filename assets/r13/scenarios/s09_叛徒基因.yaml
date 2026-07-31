@@ -1,0 +1,76 @@
+name: "鏡中的叛徒"
+difficulty: "高級 (挑戰等級（CR） 3)"
+mode: "阿斯塔特 · 單人"
+recommended_attributes: "+4-5 成長"
+
+opening_description: >
+  運輸船修好了，但大氣層外的軌道防禦系統會擊落它。你需要前往墜落的巡洋艦「正義之錘號」關閉防禦系統。
+  在殘骸深處，你遇到了一個人——一個混沌星際戰士。他曾是帝國之拳。300 年前，他也是一個人被困在這顆星球上。
+
+surface_goal: >
+  前往正義之錘號殘骸，關閉軌道防禦系統，確保運輸船能安全離境。
+
+hidden_goal: >
+  混沌星際戰士卡薩爾掌握著黑盒子數據的位置——那是證明滅絕令錯誤的關鍵證據。
+  但卡薩爾本身也是一個誘惑——他代表了 300 年孤獨後的終極妥協。
+
+known_threats:
+  - "正義之錘號殘骸結構不穩"
+  - "防禦系統仍在運行——需要物理訪問控制台"
+
+hidden_threats:
+  - "卡薩爾在 300 年中逐漸崩潰——他不是敵人，他是你的未來"
+  - "黑盒子數據可能包含你不願意知道的真相"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 2
+  flare: 1
+  food_water_days: 3
+  ammo_magazines: 2
+
+companions:
+  - name: "延續自 SB-1/2/3 的夥伴"
+    role: "倖存的隊友"
+    backstory: "根據前面劇本的結果。在艦船內部，夥伴被困在一個密封艙段中 1 個場景"
+    bottom_line: "取決於該角色"
+    initial_attitude: "延續"
+
+internal_seduction_trigger:
+  timing: "面對卡薩爾時"
+  whisper: "他說的是真的嗎？300 年後，你會變成他嗎？帝皇沒有回應。帝皇從不回應。看看他——一個忠誠的戰士，被遺棄了 300 年。你確定帝皇會回應你嗎？"
+
+key_checks:
+  - scene: "與卡薩爾對話"
+    check: "無檢定——RP 抉擇"
+    tn_adjustment: 0
+    success: "卡薩爾說出黑盒子位置，選擇自我毀滅"
+    failure: "卡薩爾被說服——腐化 +8。或選擇戰鬥"
+  - scene: "戰鬥卡薩爾（若選擇攻擊）"
+    check: "單人 Boss 戰"
+    tn_adjustment: 0
+    success: "卡薩爾戰死——獲得黑盒子數據"
+    failure: "重傷——夥伴在第 3 輪加入，但損失慘重"
+
+  - scene: "獲取黑盒子數據"
+    check: "調查（標準）"
+    tn_adjustment: 0
+    success: "獲得完整數據"
+    failure: "數據部分損壞——需要額外的檢定才能解讀"
+
+encounters:
+  - name: "艦船走廊"
+    enemies: "結構坍塌風險"
+    tactic: "需要技藝檢定維持平衡。夥伴被隔絕在密封艙段"
+  - name: "卡薩爾的居所（最終場景）"
+    enemies: "混沌星際戰士卡薩爾"
+    tactic: "單人 Boss 戰縮放：生命值（HP） 45，每回合僅 1 次攻擊。這是 RP 抉擇——戰鬥、對話或腐化"
+
+oath_conflicts:
+  conflict: "所有誓約的終極考驗"
+  choice_a: "對帝皇的誓言——關閉防禦系統，履行任務"
+  choice_b: "對戰友的誓言——卡薩爾曾經是帝國之拳，值得尊重"
+  choice_c: "對真相的誓言——黑盒子數據可能推翻滅絕令，但也可能證明審判官是對的"
+
+map_ref: "maps/map09_justicar"

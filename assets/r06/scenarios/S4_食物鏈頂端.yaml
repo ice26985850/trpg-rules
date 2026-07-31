@@ -1,0 +1,135 @@
+name: "S4：食物鏈頂端"
+description: "被困在進化競技場中，與 46 名其他進化者爭奪唯一的生存資格。獵殺、結盟、背叛——或在血腥的競爭中找到打破封印的方法。"
+difficulty: "極難"
+level_range: { min_nodes: 10, max_nodes: 15, suggested: "10-15 進化節點" }
+players: { min: 1, max: 4, default: 1 }
+estimated_time: "5-6 小時"
+map_ref: "食物鏈頂端_進化競技場"
+initial_map: "食物鏈頂端_進化競技場"
+
+scenes:
+  - id: "S4_SC1"
+    name: "不情願的入場者"
+    type: "introduction"
+    description: "被傳送入進化競技場。初始排名 15/47。了解規則：吞噬或死。"
+    ranking_system:
+      initial_participants: 47
+      player_rank: 15
+      rules:
+        - "擊殺或吸收其他進化者提升排名"
+        - "可在挑戰石碑宣告 1v1 挑戰"
+        - "擊敗野生變異生物小幅提升排名（但不足以成為頂端）"
+      ranks:
+        "1-5": { title: "頂端掠食者", bonus: "每消滅對手 +2 進化點數", penalty: "更容易被發現" }
+        "6-15": { title: "高位獵手", bonus: "正常" }
+        "16-35": { title: "中位生存者", bonus: "可低調生存" }
+        "36-47": { title: "底層獵物", penalty: "無法主動挑戰高排名者" }
+
+  - id: "S4_SC2"
+    name: "獵人與獵物"
+    type: "social_exploration"
+    npcs:
+      - name: "薇拉"
+        rank: 28
+        style: "潛行/毒系"
+        reliability: 4
+        hp: 25
+        condition: "提供治療和保護"
+        provides: ["競技場地圖", "已知參賽者資訊", "封印可被打破的秘密"]
+      - name: "葛瑞格（岩石）"
+        rank: 8
+        style: "防禦/力量型"
+        reliability: 5
+        condition: "幫他找到失蹤的弟弟"
+      - name: "綺（蟲語者）"
+        rank: 19
+        style: "感知/昆蟲系"
+        reliability: 3
+        condition: "分享競技場外的記憶"
+        humanity_check: "告知外面世界→影響人性值 ±2"
+      - name: "馬庫斯"
+        rank: 3
+        style: "精神控制型"
+        reliability: 1
+        note: "必定背叛——會在關鍵時刻精神控制玩家"
+
+  - id: "S4_SC3"
+    name: "結盟與背叛"
+    type: "social_dynamic"
+    events:
+      - trigger: "與馬庫斯結盟"
+        outcome: "在玩家瀕死時背叛（意志 YZ DC 18 抵抗精神控制）"
+      - trigger: "幫助葛瑞格找弟弟"
+        truth: "弟弟已被吸收"
+        tell_truth: "葛瑞格狂暴→需意志 YZ DC 16 安撫→成為最忠實盟友"
+        hide_truth: "最終戰時真相揭露→反應更激烈"
+      - trigger: "與綺交談"
+        kindness: "人性值 +2"
+        cruelty: "人性值 -2"
+
+  - id: "S4_SC4"
+    name: "區域霸主"
+    type: "boss"
+    boss:
+      name: "荒野之王扎拉克斯"
+      rank: 2
+      hp: 120
+      defense: 18
+      stats: { LIL: 14, MJ: 8, TZ: 12, GZ: 10, YZ: 8 }
+      energy: 22
+      phases:
+        - phase: 1
+          condition: "HP > 60"
+          skills:
+            - { name: "巨顎撕咬", tier: "低級", damage: "2d8+7 穿刺" }
+            - { name: "尾掃", tier: "中級", damage: "2d6+7 鈍擊 + 倒地 DC 16" }
+            - { name: "熔岩吐息", tier: "高級", damage: "3d10 火焰 + 熔岩地形" }
+            - { name: "龍鱗", tier: "被動", effect: "全傷害 -3" }
+        - phase: 2
+          condition: "HP ≤ 60"
+          behavior: "退守巢穴保護蛋"
+          damage_buff: "+1d6"
+          alternative: "意志 DC 20 溝通→揭示真相（孩子被作為人質）"
+    absorb_options:
+      - "龍鱗（被動：全傷害 -2）"
+      - "熔岩吐息（高級主動）"
+      - "巨獸之心（器官：HP +15、力量 LIL +2）"
+      - "領地感知（被動）"
+      - "父性本能（被動：保護特定目標時防禦 +2）——僅和平解決可選"
+
+  - id: "S4_SC5"
+    name: "最終對決"
+    type: "final_boss"
+    boss:
+      name: "不朽的凱恩（冠軍）"
+      rank: 1
+      hp: 150
+      defense: 20
+      stats: { LIL: 12, MJ: 14, TZ: 12, GZ: 14, YZ: 16 }
+      energy: 28
+      nodes: "30+ 節點，含 3 個形態節點"
+      form_cycle:
+        - form: "巨獸形態"
+          bonus: "力量 LIL +3、HP +20"
+          skills: ["地震重擊（高級）", "吞噬（中級——吸收 HP）"]
+        - form: "靈體形態"
+          bonus: "物理免疫、精神傷害 +3"
+          skills: ["精神風暴（高級）", "靈魂撕裂（終極）"]
+        - form: "元素形態"
+          bonus: "火焰免疫、冰霜免疫"
+          skills: ["元素風暴（終極——4d10 混合）", "元素護盾（被動—抵消首攻）"]
+    special:
+      arena_energy: "雙方每回合恢復 3 能量"
+      peace_option: "放下武器→共同打破封印（各自意志 DC 20）"
+      solo_break: "單獨打破封印（意志 DC 28）"
+
+completion_rewards:
+  evolution_points: 5
+  defeat_kane: { evolution_points: 10, absorb: "終極形態節點『冠軍之軀』" }
+  break_seal_together: { special: "被動『破界者』（意志 YZ +3）" }
+  peaceful_zarlax: { ally: "扎拉克斯在 S5 中出場" }
+
+solo_adjustments:
+  kane_hp: 100
+  arena_shrink_slower: true
+  npc_allies: ["薇拉", "葛瑞格"]

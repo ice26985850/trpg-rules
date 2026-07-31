@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 460" font-family="sans-serif">
+<rect x="0" y="0" width="620" height="460" fill="#0f1424"/>
+<rect x="0" y="0" width="620" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">卡金王國與渡航艦隊</text>
+<text x="600" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">王國·遠征艦隊 · 表層→深層</text>
+<line x1="120" y1="112" x2="120" y2="198" stroke="#3a4a72" stroke-width="2"/>
+<line x1="120" y1="112" x2="120" y2="328" stroke="#3a4a72" stroke-width="2"/>
+<line x1="120" y1="372" x2="430" y2="178" stroke="#3a4a72" stroke-width="2"/>
+<line x1="430" y1="222" x2="430" y2="308" stroke="#3a4a72" stroke-width="2"/>
+<line x1="430" y1="222" x2="430" y2="408" stroke="#3a4a72" stroke-width="2"/>
+<rect x="67" y="68" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="88" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">卡金王宮</text>
+<text x="120" y="106" fill="#9fb3e0" font-size="11" text-anchor="middle">權力中心</text>
+<rect x="77" y="198" width="87" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="218" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">王子宮</text>
+<text x="120" y="236" fill="#9fb3e0" font-size="11" text-anchor="middle">王位戰</text>
+<rect x="67" y="328" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="348" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">港口</text>
+<text x="120" y="366" fill="#9fb3e0" font-size="11" text-anchor="middle">集結補給</text>
+<rect x="377" y="178" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="430" y="198" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">渡航旗艦</text>
+<text x="430" y="216" fill="#9fb3e0" font-size="11" text-anchor="middle">CR16</text>
+<rect x="377" y="308" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="430" y="328" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">驅逐艦群</text>
+<text x="430" y="346" fill="#9fb3e0" font-size="11" text-anchor="middle">CR10</text>
+<rect x="358" y="408" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="430" y="428" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">黑暗大陸航向</text>
+<text x="430" y="446" fill="#9fb3e0" font-size="11" text-anchor="middle">未知</text>
+<text x="20" y="448" fill="#5e6f9c" font-size="11">獵人X獵人TRPG · 地圖示意（非精確比例尺）</text>
+</svg>

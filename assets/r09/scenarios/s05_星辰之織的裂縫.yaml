@@ -1,0 +1,28 @@
+title: 星辰之織的裂縫
+type: multiplayer
+quality: ★★★★★ 傳奇級
+players: 1–4 名法師
+sessions: 4–6 次（可作為戰役終章）
+core_output: 多個傳說碎片、傳奇法術完成、世界級影響
+main_threat: 虛無之神的殘留意識、守望者的終極考驗、自身的研究目標
+prerequisite: 至少一名玩家學術聲望 ≥60；至少完成了自己的研究目標的理論準備
+summary: 如果足夠多的傳說碎片聚集在一個地方——如果足夠強大的法術被創造——星辰之織本身會變得不穩定。當玩家接近完成他們的終極研究目標時，他們開始注意到一些異常：
+acts:
+- name: 第一幕：來自虛無的呼喚
+  scenes:
+  - 場景：玩家的塔樓
+- name: 第二幕：關鍵抉擇
+  scenes: []
+- name: 第三幕：匯聚力量
+  scenes: []
+- name: 第四幕：最終儀式
+  scenes:
+  - 場景：虛無裂縫——星辰之織的邊緣
+npcs: []
+research_checks:
+- attribute: 意志
+  dc: 22
+- attribute: 感知
+  dc: 24
+- attribute: 意志
+  dc: 20

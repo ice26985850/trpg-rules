@@ -1,0 +1,75 @@
+name: "兩人的廢墟"
+difficulty: "低級 (挑戰等級（CR） 2)"
+mode: "阿斯塔特 · 單人"
+recommended_attributes: "+1-2 成長"
+
+opening_description: >
+  跟隨運輸船的坐標，你抵達了廢墟城市。在這裡你發現的不是運輸船，而是一群平民倖存者。
+  其中一個人讓你停下了腳步——一名前帝國衛隊軍官，她身上有你戰團的印記。
+
+surface_goal: >
+  保護倖存者，找到可用的交通工具，向北方撤離點前進。
+
+hidden_goal: >
+  卡拉的連隊曾在一場戰役中得到你們戰團的支援。她知道那場戰役的代價——而她想知道你是否願意再次付出同樣的代價。
+
+known_threats:
+  - "廢墟中有變異體和混沌信徒游蕩"
+  - "平民數量眾多（20-30 人），需要組織撤離"
+
+hidden_threats:
+  - "混沌勢力也在追蹤這群平民——他們知道其中有倖存者"
+  - "運輸船的位置可能被敵人截獲"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 2
+  flare: 2
+  food_water_days: 3
+  ammo_magazines: 2
+
+internal_seduction_trigger:
+  timing: "當平民開始拖累你的速度時"
+  whisper: "他們只會成為負擔。如果你留下他們，你可以更快到達撤離點。你是一個戰士——不是保姆。帝皇不會責怪你。"
+
+companions:
+  - name: "卡拉·瓦爾"
+    role: "前帝國衛隊中尉"
+    backstory: "堅韌的中年女軍官。她認識你的戰團——她的連隊曾在你們的支援下守住了一座橋"
+    motive: "保護她剩下的平民。她不相信帝國會回來——但她相信你"
+    bottom_line: "絕不拋棄平民"
+    initial_attitude: 2
+    attributes:
+      faith: 3
+      physique: 3
+      mind: 3
+      skill: 3
+      fate: 3
+    trained_skills: ["指揮", "遠程射擊"]
+    equipment: ["自動槍(1d8+1)", "甲殼甲(護甲減免（AR） 3)", "破損戰團旗幟碎片"]
+    special_ability:
+      name: "老兵指揮"
+      desc: "為玩家提供一次免費優勢（每場戰鬥 1 次）。旗幟的記憶：持有破損旗幟時，玩家信仰檢定 +5 目標值（TN）"
+
+key_checks:
+  - scene: "集結平民"
+    check: "指揮（標準）"
+    tn_adjustment: 0
+    success: "卡拉組織有序隊伍"
+    failure: "混亂——平民恐慌"
+  - scene: "面對追擊者"
+    check: "無檢定——RP 抉擇"
+    tn_adjustment: 0
+    success: "選擇保護平民，延緩但安全"
+    failure: "選擇速度，丟下部分平民"
+
+encounters:
+  - name: "廢墟街道"
+    enemies: "變異體 ×3 + 混沌信徒 ×2"
+    tactic: "卡拉的平民會尖叫和逃跑——暴露位置。玩家需要選擇掩護平民還是快速通過"
+  - name: "撤離點外圍"
+    enemies: "混沌偵察兵 ×2"
+    tactic: "他們也在追蹤平民——阻止你們撤離"
+
+map_ref: "maps/map07_eldenfell"

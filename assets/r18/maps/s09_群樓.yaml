@@ -1,0 +1,119 @@
+name: S9 群樓紅雨（三棟相鄰唐樓＋同步法壇）
+對應劇本: S9 群樓紅雨·小隊
+對應場景說明: >-
+  對應 S9 多人玩家劇本「群樓紅雨·小隊」核心場景——深水埗三棟相鄰唐樓（福興樓、義成大廈、福臨樓）。
+  三棟同時出現「紅雨褸」地縛靈（Bound Spirit，墮樓菲傭 Marites 的鏡映映像），每晚三點重複「落樓寄信」。
+  玩家小隊（2-4 人）分頭進駐三棟，調查信箱格藏信、拼合出真信；於凌晨三點由一名隊員主壇、其餘護法，
+  在三棟同步執行超渡法事。若不同步，落後棟怨氣向鄰棟傳導（每回合 陰氣值（YIN）＋2 本棟、＋1 鄰棟）暴走召厲鬼。
+  福臨樓地下風水渠埋有刻「世出世」銅鈴，為三棟怨氣同源之鑰，接往 S2。
+
+nodes:
+  - id: F1
+    label: 福興樓·地面
+    x: 90
+    y: 470
+    type: exit
+    explored: false
+  - id: F2
+    label: 福興樓·樓層
+    x: 90
+    y: 350
+    type: stair
+    explored: false
+  - id: F3
+    label: 福興樓·天台
+    x: 90
+    y: 230
+    type: room
+    explored: false
+  - id: Y1
+    label: 義成·地面
+    x: 260
+    y: 470
+    type: exit
+    explored: false
+  - id: Y2
+    label: 義成·樓層
+    x: 260
+    y: 350
+    type: stair
+    explored: false
+  - id: Y3
+    label: 義成·天台
+    x: 260
+    y: 230
+    type: room
+    explored: false
+  - id: L1
+    label: 福臨樓·地面
+    x: 430
+    y: 470
+    type: exit
+    explored: false
+  - id: L2
+    label: 福臨樓·樓層
+    x: 430
+    y: 350
+    type: stair
+    explored: false
+  - id: L3
+    label: 福臨樓·天台
+    x: 430
+    y: 230
+    type: room
+    explored: false
+  - id: ALT
+    label: 同步法壇
+    x: 350
+    y: 270
+    type: room
+    explored: false
+  - id: WELL
+    label: 福臨樓風水渠（線索）
+    x: 570
+    y: 450
+    type: room
+    explored: false
+
+edges:
+  - from: F1
+    to: F2
+    type: stair
+  - from: F2
+    to: F3
+    type: stair
+  - from: Y1
+    to: Y2
+    type: stair
+  - from: Y2
+    to: Y3
+    type: stair
+  - from: L1
+    to: L2
+    type: stair
+  - from: L2
+    to: L3
+    type: stair
+  - from: F2
+    to: Y2
+    type: hazard
+  - from: Y2
+    to: L2
+    type: hazard
+  - from: ALT
+    to: F3
+    type: corridor
+  - from: ALT
+    to: Y3
+    type: corridor
+  - from: ALT
+    to: L3
+    type: corridor
+  - from: L1
+    to: WELL
+    type: corridor
+
+regions:
+  - name: 三棟鏡映區
+    color: "#E8D5C4"
+    nodes: [F1, F2, F3, Y1, Y2, Y3, L1, L2, L3]

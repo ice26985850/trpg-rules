@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/></filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0E1A"/><stop offset="100%" stop-color="#0D1B2A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="550" fill="url(#bgGrad)"/>
+
+  <text x="500" y="25" text-anchor="middle" fill="#CCDDFF" font-size="17" font-weight="bold">暴君之拳號（暴君之拳號）——S4 叛逃者</text>
+  <text x="500" y="44" text-anchor="middle" fill="#667788" font-size="11">同盟指揮艦 ｜ 20 節點 ｜ 4 層甲板 ｜ 自毀倒數 10 回合</text>
+
+  <!-- 甲板底色 -->
+  <rect x="20" y="320" width="700" height="145" rx="8" fill="#1A2A33" opacity="0.45" stroke="#4488CC" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="40" y="342" fill="#5599DD" font-size="12" font-weight="bold">第一層——生活與後勤</text>
+  <rect x="20" y="220" width="700" height="92" rx="8" fill="#33221A" opacity="0.45" stroke="#CC8844" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="40" y="242" fill="#DD9944" font-size="12" font-weight="bold">第二層——情報與通訊</text>
+  <rect x="20" y="70" width="700" height="142" rx="8" fill="#2A1A1A" opacity="0.45" stroke="#CC5555" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="40" y="92" fill="#DD6666" font-size="12" font-weight="bold">第三層——指揮甲板</text>
+  <rect x="20" y="475" width="260" height="45" rx="8" fill="#1A3322" opacity="0.5" stroke="#33AA55" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="40" y="497" fill="#44BB66" font-size="12" font-weight="bold">第四層——撤離層（機庫）</text>
+
+  <!-- 連線 -->
+  <!-- L1 -->
+  <line x1="170" y1="415" x2="290" y2="415" stroke="#6699BB" stroke-width="2"/>
+  <line x1="290" y1="415" x2="410" y2="415" stroke="#6699BB" stroke-width="2"/>
+  <line x1="290" y1="415" x2="290" y2="370" stroke="#6699BB" stroke-width="2"/>
+  <line x1="410" y1="415" x2="410" y2="370" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="425" y="395" fill="#DD4444" font-size="8">鎖定</text>
+  <line x1="410" y1="415" x2="560" y2="415" stroke="#6699BB" stroke-width="2"/>
+  <line x1="560" y1="415" x2="680" y2="415" stroke="#6699BB" stroke-width="1.5"/>
+  <line x1="410" y1="415" x2="560" y2="370" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="475" y="385" fill="#88CC88" font-size="8">維護通道</text>
+  <line x1="680" y1="415" x2="680" y2="370" stroke="#6699BB" stroke-width="1.5"/>
+  <!-- L1→L2 -->
+  <line x1="290" y1="370" x2="290" y2="305" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="305" y="340" fill="#BB9944" font-size="8">樓梯</text>
+  <line x1="680" y1="370" x2="680" y2="305" stroke="#BB9944" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="695" y="340" fill="#BB9944" font-size="8">貨梯</text>
+  <!-- L2 -->
+  <line x1="290" y1="305" x2="410" y2="305" stroke="#6699BB" stroke-width="2"/>
+  <line x1="290" y1="305" x2="170" y2="305" stroke="#6699BB" stroke-width="2"/>
+  <line x1="410" y1="305" x2="560" y2="305" stroke="#6699BB" stroke-width="2"/>
+  <line x1="680" y1="305" x2="680" y2="230" stroke="#BB9944" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <!-- L2→L3 -->
+  <line x1="410" y1="305" x2="410" y2="230" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="425" y="270" fill="#BB9944" font-size="8">樓梯</text>
+  <!-- L3 -->
+  <line x1="410" y1="230" x2="290" y2="230" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="345" y="222" fill="#DD4444" font-size="8">封鎖線</text>
+  <line x1="410" y1="230" x2="560" y2="230" stroke="#6699BB" stroke-width="1.5"/>
+  <line x1="410" y1="230" x2="410" y2="170" stroke="#6699BB" stroke-width="2"/>
+  <line x1="410" y1="170" x2="290" y2="170" stroke="#6699BB" stroke-width="1.5"/>
+  <line x1="560" y1="230" x2="680" y2="230" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <!-- L3→L4 -->
+  <line x1="410" y1="170" x2="150" y2="500" stroke="#33AA55" stroke-width="2.5"/>
+  <text x="270" y="370" fill="#33AA55" font-size="9" transform="rotate(30,270,370)">撤離路線 → 機庫</text>
+
+  <!-- 節點 — L1 -->
+  <rect x="100" y="395" width="95" height="40" rx="6" fill="#225544" stroke="#44AA66" stroke-width="2" filter="url(#shadow)"/>
+  <text x="147" y="412" text-anchor="middle" fill="#88DDAA" font-size="10" font-weight="bold">貨艙</text><text x="147" y="427" text-anchor="middle" fill="#559977" font-size="7">N1 切入點</text>
+  <rect x="240" y="395" width="90" height="40" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="285" y="412" text-anchor="middle" fill="#AABBCC" font-size="10" font-weight="bold">L1走廊</text><text x="285" y="427" text-anchor="middle" fill="#778899" font-size="7">N2</text>
+  <rect x="360" y="395" width="90" height="40" rx="6" fill="#553322" stroke="#CC8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="405" y="412" text-anchor="middle" fill="#FFAA66" font-size="10" font-weight="bold">警衛哨站</text><text x="405" y="427" text-anchor="middle" fill="#996633" font-size="7">N3 2警衛+警報</text>
+  <rect x="240" y="350" width="90" height="40" rx="6" fill="#443322" stroke="#CC8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="285" y="367" text-anchor="middle" fill="#DDAA88" font-size="10" font-weight="bold">主樓梯下</text><text x="285" y="382" text-anchor="middle" fill="#997766" font-size="7">N4</text>
+  <rect x="510" y="395" width="90" height="40" rx="6" fill="#552222" stroke="#DD4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="555" y="412" text-anchor="middle" fill="#FF8888" font-size="10" font-weight="bold">軍械庫</text><text x="555" y="427" text-anchor="middle" fill="#996666" font-size="7">N6 ENG DC15</text>
+  <rect x="360" y="350" width="90" height="40" rx="6" fill="#662222" stroke="#FF4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="405" y="367" text-anchor="middle" fill="#FF8888" font-size="10" font-weight="bold">兵營區</text><text x="405" y="382" text-anchor="middle" fill="#CC6666" font-size="7">N5 3陸戰隊員！</text>
+  <rect x="510" y="350" width="90" height="40" rx="6" fill="#334433" stroke="#66AA66" stroke-width="1.5" stroke-dasharray="3,2" filter="url(#shadow)"/>
+  <text x="555" y="367" text-anchor="middle" fill="#88CC88" font-size="10" font-weight="bold">維護通道</text><text x="555" y="382" text-anchor="middle" fill="#669966" font-size="7">N7 PER DC13</text>
+  <rect x="630" y="395" width="90" height="40" rx="6" fill="#553322" stroke="#CC8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="675" y="412" text-anchor="middle" fill="#FFAA66" font-size="10" font-weight="bold">輪機艙</text><text x="675" y="427" text-anchor="middle" fill="#996633" font-size="7">N17 2G高溫</text>
+  <rect x="630" y="350" width="90" height="40" rx="6" fill="#445522" stroke="#AAAA44" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="675" y="367" text-anchor="middle" fill="#DDDD88" font-size="10" font-weight="bold">反應爐室</text><text x="675" y="382" text-anchor="middle" fill="#999966" font-size="7">N18 可過載</text>
+
+  <!-- 節點 — L2 -->
+  <rect x="160" y="285" width="100" height="40" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="210" y="302" text-anchor="middle" fill="#AABBCC" font-size="10" font-weight="bold">軍官休息區</text><text x="210" y="317" text-anchor="middle" fill="#778899" font-size="7">N11 凱恩可能在</text>
+  <rect x="240" y="285" width="90" height="40" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="285" y="302" text-anchor="middle" fill="#AABBCC" font-size="10" font-weight="bold">L2 走廊</text><text x="285" y="317" text-anchor="middle" fill="#778899" font-size="7">N8</text>
+  <rect x="360" y="285" width="100" height="40" rx="6" fill="#224466" stroke="#4488CC" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="410" y="302" text-anchor="middle" fill="#88AADD" font-size="10" font-weight="bold">通訊中心</text><text x="410" y="317" text-anchor="middle" fill="#667799" font-size="7">N9 0.3G 凱恩操控</text>
+  <rect x="510" y="285" width="100" height="40" rx="6" fill="#664422" stroke="#FFAA44" stroke-width="2" filter="url(#shadow)"/>
+  <text x="560" y="302" text-anchor="middle" fill="#FFCC88" font-size="10" font-weight="bold">⭐戰術資料庫</text><text x="560" y="317" text-anchor="middle" fill="#CC9944" font-size="7">N10 3回合｜道德抉擇</text>
+  <rect x="630" y="285" width="90" height="40" rx="6" fill="#443322" stroke="#CC8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="675" y="302" text-anchor="middle" fill="#DDAA88" font-size="10" font-weight="bold">貨運電梯</text><text x="675" y="317" text-anchor="middle" fill="#997766" font-size="7">N19 可變重力</text>
+
+  <!-- 節點 — L3 -->
+  <rect x="240" y="210" width="100" height="40" rx="6" fill="#662222" stroke="#FF4444" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="290" y="225" text-anchor="middle" fill="#FF8888" font-size="10" font-weight="bold">⚠艦橋封鎖線</text><text x="290" y="240" text-anchor="middle" fill="#CC6666" font-size="7">N12 3菁英+副手</text>
+  <rect x="360" y="210" width="90" height="40" rx="6" fill="#553322" stroke="#CC8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="405" y="225" text-anchor="middle" fill="#DDAA88" font-size="10" font-weight="bold">艦橋</text><text x="405" y="240" text-anchor="middle" fill="#997766" font-size="7">N13 啟動自毀</text>
+  <rect x="510" y="210" width="90" height="40" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="555" y="225" text-anchor="middle" fill="#AABBCC" font-size="10" font-weight="bold">艦長室</text><text x="555" y="240" text-anchor="middle" fill="#778899" font-size="7">N14 劇情物品</text>
+  <rect x="360" y="150" width="90" height="40" rx="6" fill="#224444" stroke="#44AAAA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="405" y="167" text-anchor="middle" fill="#88DDDD" font-size="10" font-weight="bold">逃生艙區</text><text x="405" y="182" text-anchor="middle" fill="#669999" font-size="7">N15 凱恩最後位置</text>
+  <rect x="630" y="210" width="90" height="40" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="675" y="225" text-anchor="middle" fill="#AABBCC" font-size="10" font-weight="bold">後備指揮</text><text x="675" y="240" text-anchor="middle" fill="#778899" font-size="7">N20</text>
+
+  <!-- 節點 — L4 -->
+  <rect x="100" y="478" width="130" height="40" rx="8" fill="#226644" stroke="#44AA66" stroke-width="3" filter="url(#shadow)"/>
+  <text x="165" y="495" text-anchor="middle" fill="#88DDAA" font-size="11" font-weight="bold">🚀 機庫 撤離點</text><text x="165" y="510" text-anchor="middle" fill="#559977" font-size="7">N16 2機器人｜陷阱?</text>
+
+  <!-- 凱恩逃生路徑標註 -->
+  <path d="M 280 170 Q 200 200 165 470" fill="none" stroke="#FFCC00" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="130" y="340" fill="#FFCC00" font-size="9" transform="rotate(-70,130,340)">凱恩撤離路徑</text>
+
+  <!-- 圖例 -->
+  <rect x="750" y="80" width="220" height="180" rx="8" fill="#0D0D1A" opacity="0.9" stroke="#334455" stroke-width="1"/>
+  <text x="860" y="105" text-anchor="middle" fill="#8899AA" font-size="13" font-weight="bold">圖例</text>
+  <rect x="765" y="120" width="16" height="10" rx="3" fill="#225544" stroke="#44AA66" stroke-width="1"/>
+  <text x="790" y="130" fill="#88DDAA" font-size="10">切入點／撤離點</text>
+  <rect x="765" y="142" width="16" height="10" rx="3" fill="#664422" stroke="#FFAA44" stroke-width="2"/>
+  <text x="790" y="152" fill="#FFCC88" font-size="10">目標區域</text>
+  <rect x="765" y="164" width="16" height="10" rx="3" fill="#552222" stroke="#DD4444" stroke-width="2"/>
+  <text x="790" y="174" fill="#FF8888" font-size="10">危險／敵方密集</text>
+  <line x1="765" y1="192" x2="783" y2="192" stroke="#BB9944" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="790" y="197" fill="#BB9944" font-size="10">樓梯／電梯</text>
+  <line x1="765" y1="212" x2="783" y2="212" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="790" y="217" fill="#88CC88" font-size="10">維護通道（繞行）</text>
+  <line x1="765" y1="232" x2="783" y2="232" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="790" y="237" fill="#DD4444" font-size="10">鎖定／封鎖艙門</text>
+  <line x1="765" y1="250" x2="783" y2="250" stroke="#FFCC00" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="790" y="255" fill="#FFCC00" font-size="10">凱恩撤離路徑</text>
+
+  <!-- NPC 狀態卡 -->
+  <rect x="750" y="290" width="220" height="120" rx="8" fill="#1A1A0D" opacity="0.9" stroke="#CCAA44" stroke-width="1"/>
+  <text x="860" y="315" text-anchor="middle" fill="#FFCC44" font-size="13" font-weight="bold">🎯 維克多·凱恩上校</text>
+  <text x="860" y="335" text-anchor="middle" fill="#CCAA44" font-size="10">HP 12｜ARMR 4｜手槍 1d6</text>
+  <text x="860" y="352" text-anchor="middle" fill="#998844" font-size="9">能力：透露敵方部署｜操控重力×2</text>
+  <text x="860" y="370" text-anchor="middle" fill="#998844" font-size="9">護送：每回合移 6 格｜重傷需拖行</text>
+  <text x="860" y="390" text-anchor="middle" fill="#FF6644" font-size="10">⚠ 30% 機率：叛逃是陷阱</text>
+
+  <text x="500" y="540" text-anchor="middle" fill="#445566" font-size="10">地圖對應劇本 S4《叛逃者（叛逃者）》｜難度：困難｜等級 4–7｜自毀倒數 10 回合</text>
+</svg>

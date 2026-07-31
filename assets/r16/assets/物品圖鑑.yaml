@@ -1,0 +1,302 @@
+# 後室行者 TRPG —— 物品圖鑑（結構化資料）
+# 所有物品使用繁體中文。稀有度：常見 / 少見 / 罕見 / 稀有
+
+items:
+  # ===== 光源類 =====
+  - category: 光源類
+    name: 手電筒
+    weight: 0.5
+    rarity: 常見
+    effect: 照亮近距至中距範圍。黑暗樓層必需品
+    durability: 6小時電池
+  - category: 光源類
+    name: 螢光棒（3支裝）
+    weight: 0.1
+    rarity: 常見
+    effect: 照亮近距範圍。亮度低於手電筒但不會吸引實體注意
+    durability: 6小時(每支)
+  - category: 光源類
+    name: 打火機
+    weight: 0.05
+    rarity: 常見
+    effect: 照亮近距範圍。可點燃易燃物。電池不會耗盡
+    durability: 100次使用
+  - category: 光源類
+    name: 頭燈
+    weight: 0.2
+    rarity: 罕見
+    effect: 照亮近距至中距範圍。解放雙手
+    durability: 8小時電池
+  - category: 光源類
+    name: 露營燈
+    weight: 1
+    rarity: 罕見
+    effect: 照亮中距範圍。可覆蓋一個小房間。電池無法更換
+    durability: 12小時電池
+  - category: 光源類
+    name: 油燈
+    weight: 1.5
+    rarity: 稀有
+    effect: 照亮中距至遠距範圍。光線溫暖穩定。部分實體厭惡火光
+    durability: 需燃料
+
+  # ===== 武器與工具類 =====
+  - category: 武器與工具類
+    name: 鐵管
+    weight: 2
+    rarity: 常見
+    effect: 可當槓桿使用
+    damage: 1D6 鈍器
+  - category: 武器與工具類
+    name: 螺絲起子
+    weight: 0.1
+    rarity: 常見
+    effect: 可撬鎖、拆解設備
+    damage: 1D3 穿刺
+  - category: 武器與工具類
+    name: 鐵鎚
+    weight: 1.5
+    rarity: 常見
+    effect: 可破壞障礙物
+    damage: 1D6 鈍器
+  - category: 武器與工具類
+    name: 剪刀
+    weight: 0.1
+    rarity: 常見
+    effect: 可切割物品
+    damage: 1D4 穿刺
+  - category: 武器與工具類
+    name: 開山刀
+    weight: 1
+    rarity: 罕見
+    effect: 可砍斷繩索
+    damage: 1D8 利器
+  - category: 武器與工具類
+    name: 消防斧
+    weight: 3
+    rarity: 罕見
+    effect: 可破壞門和障礙物。笨重
+    damage: 1D10 利器
+  - category: 武器與工具類
+    name: 自製長矛
+    weight: 2
+    rarity: 少見
+    effect: 中距範圍。需製作技能(知識DC14)
+    damage: 1D6 穿刺
+  - category: 武器與工具類
+    name: 多功能工具刀
+    weight: 0.2
+    rarity: 常見
+    effect: 多用途——可當剪刀、螺絲起子、開罐器使用
+    damage: 1D3 利器
+
+  # ===== 食物與飲水類 =====
+  - category: 食物與飲水類
+    name: 罐頭食品
+    weight: 0.5
+    rarity: 常見
+    effect: 恢復2卡路里
+  - category: 食物與飲水類
+    name: 能量棒
+    weight: 0.1
+    rarity: 常見
+    effect: 恢復1卡路里
+  - category: 食物與飲水類
+    name: 瓶裝水（500ml）
+    weight: 0.5
+    rarity: 常見
+    effect: 維持水份1天
+  - category: 食物與飲水類
+    name: 軍用口糧
+    weight: 0.8
+    rarity: 罕見
+    effect: 恢復3卡路里，24小時不需進食
+  - category: 食物與飲水類
+    name: 保溫瓶（咖啡）
+    weight: 0.5
+    rarity: 少見
+    effect: 恢復1卡路里，6小時內抵抗一次疲勞效果
+  - category: 食物與飲水類
+    name: 保溫袋（含食物）
+    weight: 0.3
+    rarity: 少見
+    effect: 恢復2卡路里
+
+  # ===== 醫療用品類 =====
+  - category: 醫療用品類
+    name: 繃帶（5次使用）
+    weight: 0.2
+    rarity: 常見
+    effect: 恢復2D6 HP，移除流血狀態
+  - category: 醫療用品類
+    name: 急救藥品（3次使用）
+    weight: 0.1
+    rarity: 罕見
+    effect: 恢復3D6 HP，移除中毒和流血
+  - category: 醫療用品類
+    name: 消毒酒精（5次使用）
+    weight: 0.3
+    rarity: 常見
+    effect: 防止傷口感染(硬核模式)
+  - category: 醫療用品類
+    name: 鎮靜劑（2次使用）
+    weight: 0.05
+    rarity: 罕見
+    effect: 恢復1D6 SP，暫時抵抗恐慌
+  - category: 醫療用品類
+    name: 急救包（完整）
+    weight: 1
+    rarity: 稀有
+    effect: 含繃帶×5、急救藥品×3、消毒酒精×5、鎮靜劑×2
+
+  # ===== 衣物與防護類 =====
+  - category: 衣物與防護類
+    name: 工作手套
+    weight: 0.1
+    rarity: 常見
+    effect: 保護雙手——攀爬和操作危險物品時+1
+  - category: 衣物與防護類
+    name: 醫療手套（2雙）
+    weight: 0.05
+    rarity: 常見
+    effect: 處理污染物品時不需體質檢定
+  - category: 衣物與防護類
+    name: 防護背心
+    weight: 2
+    rarity: 罕見
+    effect: DEF+1，減少物理傷害1點
+  - category: 衣物與防護類
+    name: 護士服
+    weight: 0.3
+    rarity: 少見
+    effect: 多口袋——負重上限+1kg
+
+  # ===== 通訊與記錄類 =====
+  - category: 通訊與記錄類
+    name: 筆記本和筆
+    weight: 0.2
+    rarity: 常見
+    effect: 記錄日誌——每次寫日記恢復1 SP(每日限一次)
+  - category: 通訊與記錄類
+    name: 對講機（一對）
+    weight: 0.5
+    rarity: 罕見
+    effect: 中距範圍內通訊。需電池
+  - category: 通訊與記錄類
+    name: 錄音筆
+    weight: 0.1
+    rarity: 少見
+    effect: 記錄語音日誌——每次錄音恢復1 SP(每日限一次)
+  - category: 通訊與記錄類
+    name: 手機
+    weight: 0.2
+    rarity: 常見
+    effect: 無訊號但可當手電筒(2小時電池)或錄音
+
+  # ===== 特殊物品類 =====
+  - category: 特殊物品類
+    name: 杏仁水（250ml）
+    weight: 0.3
+    rarity: 常見
+    effect: 飲用：恢復1D6 HP+1D4 SP。投擲：驅逐特定實體。每次1單位
+  - category: 特殊物品類
+    name: 濃縮杏仁水
+    weight: 0.2
+    rarity: 罕見
+    effect: 效果加倍+1小時黑暗視覺。Level 2特有
+  - category: 特殊物品類
+    name: 膠帶（一捲）
+    weight: 0.3
+    rarity: 常見
+    effect: 萬能修復工具。可暫時修理任何物品
+  - category: 特殊物品類
+    name: 繩索（10米）
+    weight: 1
+    rarity: 常見
+    effect: 攀爬、綑綁、架設陷阱
+  - category: 特殊物品類
+    name: 萬能鑰匙
+    weight: 0.1
+    rarity: 罕見
+    effect: 對簡易鎖(DC12以下)自動成功。3次使用
+  - category: 特殊物品類
+    name: 後室地圖（碎片）
+    weight: 0.05
+    rarity: 少見
+    effect: 顯示特定樓層的部份區域。可能過時
+  - category: 特殊物品類
+    name: 大背包
+    weight: 0.5
+    rarity: 少見
+    effect: 負重上限+3kg
+  - category: 特殊物品類
+    name: 計算機
+    weight: 0.1
+    rarity: 少見
+    effect: 輔助知識相關檢定+1
+
+# ===== 稀有度搜刮 DC 參考 =====
+scavenge_dc:
+  常見: 8
+  少見: 12
+  罕見: 15
+  稀有: 18
+
+# ===== 保存期限（軟上限） =====
+shelf_life_note: 杏仁水無明確過期，但長期存放(超過一個月遊戲時間)有低機率(每週約5%)被污染——飲用污染杏仁水需體魄DC12，否則額外-1D4 SP。此為防止前期囤積在後期過剩的軟性節流，GM可依戰役長度調整或關閉。
+
+# ===== 交易價格參考（杏仁水為通用貨幣） =====
+trade_prices:
+  note: 實際價格由GM與樓層供需決定，稀少時可漲價2-3倍。BNTG提供信用借貸(利率高)；M.E.G.偏好以任務貢獻換取物資。
+  items:
+    - name: 杏仁水（1單位）
+      buy: 1
+      sell: 1.5
+      note: 基準貨幣
+    - name: 濃縮杏仁水
+      buy: 3
+      sell: 5
+      note: Level 2特有
+    - name: 罐頭食品
+      buy: 0.5
+      sell: 1
+    - name: 能量棒
+      buy: 0.2
+      sell: 0.5
+    - name: 繃帶（5次）
+      buy: 1
+      sell: 2
+    - name: 急救藥品（3次）
+      buy: 2
+      sell: 4
+    - name: 手電筒
+      buy: 1
+      sell: 2
+    - name: 頭燈
+      buy: 2
+      sell: 4
+    - name: 開山刀
+      buy: 2
+      sell: 4
+    - name: 消防斧
+      buy: 4
+      sell: 8
+    - name: 自製長矛
+      buy: 1
+      sell: 3
+      note: 需製作技能
+    - name: 萬能鑰匙
+      buy: 3
+      sell: 6
+    - name: 後室地圖（碎片）
+      buy: 2
+      sell: 5
+      note: 資訊價值高
+    - name: 稀有樓層情報
+      buy: "3-5"
+      sell: null
+      note: GM裁定
+    - name: 完整樓層地圖
+      buy: "5-10"
+      sell: null
+      note: GM裁定

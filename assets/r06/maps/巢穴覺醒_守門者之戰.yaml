@@ -1,0 +1,68 @@
+# 巢穴覺醒 — 守門者之戰地圖
+# 對應劇本：S1 場景四（守門者）
+
+nodes:
+  - id: "A"
+    label: "通道入口"
+    x: 100
+    y: 250
+    type: "start"
+    explored: false
+    description: "從通道進入的起點。"
+
+  - id: "B"
+    label: "守門者巢穴"
+    x: 300
+    y: 250
+    type: "boss"
+    explored: false
+    description: "巢穴守衛的據點。BOSS 戰區域。"
+
+  - id: "C"
+    label: "鋼鐵大門"
+    x: 500
+    y: 250
+    type: "exit"
+    explored: false
+    description: "通往地面的出口。刻有吞噬自身尾巴的蛇形符號。需要擊敗守門者才能通過。"
+
+  - id: "D"
+    label: "巖壁掩體"
+    x: 250
+    y: 150
+    type: "cover"
+    explored: false
+    description: "突出的巖壁，可提供半掩護（遠程攻擊對掩體後目標劣勢）。"
+
+  - id: "E"
+    label: "骨堆"
+    x: 350
+    y: 380
+    type: "hazard"
+    explored: false
+    description: "守門者堆積的獵物骨骸。穿越時需敏捷（MJ）DC 10，失敗則發出噪音——守門者下回合攻擊 +2。"
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "open"
+  - from: "B"
+    to: "C"
+    type: "blocked"  # 守門者阻擋
+  - from: "B"
+    to: "D"
+    type: "passage"
+  - from: "B"
+    to: "E"
+    type: "passage"
+
+regions:
+  - name: "戰鬥區域"
+    color: "#DC143C"
+    nodes: ["B"]
+  - name: "安全區域"
+    color: "#2E8B57"
+    nodes: ["A", "C", "D"]
+  - name: "危險地帶"
+    color: "#FF8C00"
+    nodes: ["E"]

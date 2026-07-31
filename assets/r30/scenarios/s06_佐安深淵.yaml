@@ -1,0 +1,28 @@
+scenario:
+  id: s06
+  title: "佐安深淵"
+  source: "《英雄聯盟 TRPG 戰役劇本集》· 多人劇本 · 支線 S2"
+  mode: "多人"
+  standalone: true
+  level_range: "Lv.8-12"
+  region: "佐安"
+  estimated_time: "2-3 節"
+  summary: >
+    佐安底層發生連環毒氣洩漏，受害者出現詭異的「鍊金變異」。玩家追查發現——
+    維克特正在進行光榮進化實驗，將活人與機械融合。
+  chapters:
+    - id: 1
+      title: "毒霧之源"
+      level: "Lv.8-9"
+      type: "調查 + 潛入"
+    - id: 2
+      title: "光榮進化"
+      level: "Lv.10-11"
+      type: "實驗室地城 + 變異體戰鬥"
+    - id: 3
+      title: "維克特"
+      level: "Lv.12"
+      type: "Boss + 道德抉擇"
+      note: "摧毀還是理解？"
+  rewards:
+    equipment: "「光榮進化核心」（可將 1 件裝備轉化為機械版本：屬性 +20%，但不再受治療法術影響）"

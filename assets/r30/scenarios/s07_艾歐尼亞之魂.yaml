@@ -1,0 +1,28 @@
+scenario:
+  id: s07
+  title: "艾歐尼亞之魂"
+  source: "《英雄聯盟 TRPG 戰役劇本集》· 多人劇本 · 支線 S3"
+  mode: "多人"
+  standalone: true
+  level_range: "Lv.5-8"
+  region: "艾歐尼亞"
+  estimated_time: "2-3 節"
+  summary: >
+    諾克薩斯戰爭的傷痕仍在。玩家受邀協助重建，卻發現戰爭遺留的「怨靈」開始侵蝕靈樹。
+    必須在劫與慎的對立中找到平衡之道。
+  chapters:
+    - id: 1
+      title: "靈樹之淚"
+      level: "Lv.5-6"
+      type: "探索 + 靈修"
+    - id: 2
+      title: "影流 vs 均衡"
+      level: "Lv.7"
+      type: "陣營抉擇"
+    - id: 3
+      title: "怨靈之主"
+      level: "Lv.8"
+      type: "Boss + 雙結局"
+      note: "選擇劫或慎的路線"
+  rewards:
+    equipment: "「陰陽共鳴」（可同時擁有劫的被動和慎的被動，但每次切換花費 1 回合）"

@@ -1,0 +1,66 @@
+id: "MAP-07"
+title: "艾希拉設施深層實驗室"
+region: "核心區"
+danger: "★★★★★"
+suitable_levels: [10]
+regions:
+  - name: "外圍/中層"
+    color: "#ECEFF1"
+  - name: "深層—裂隙"
+    color: "#FFEBEE"
+nodes:
+  - id: "qzac"
+    name: "QZAC 特許通道入口"
+    region: "外圍/中層"
+    col: 0
+    row: 0
+    note: "終局特開核心區入口；安全檢查站；伴侶：「四進去兩出來」"
+  - id: "ruins"
+    name: "時間扭曲廢墟"
+    region: "外圍/中層"
+    col: 1
+    row: 0
+    note: "無帷幕共鳴器→全檢定劣勢；傳送型/核心區變異體×1；能量電池（金）"
+  - id: "deep_in"
+    name: "深層入口（重力崩潰）"
+    region: "外圍/中層"
+    col: 2
+    row: 0
+    note: "備用電梯（技師 TN17）或攀電梯井（體魄 TN14）；傳送變異體×2"
+  - id: "core"
+    name: "深層實驗室—裂隙核心"
+    region: "深層—裂隙"
+    col: 2
+    row: 1
+    note: "維度裂隙；維度守護者（終極弱化）；伴侶可犧牲爭取 1 回合"
+  - id: "control"
+    name: "控制室"
+    region: "深層—裂隙"
+    col: 1
+    row: 1
+    note: "關閉裂隙：技術 TN23×3（技師協助→TN20）；每輪能量波 2d6"
+  - id: "escape"
+    name: "最終逃脫路線"
+    region: "外圍/中層"
+    col: 3
+    row: 0
+    note: "連鎖崩塌；10 回合內撤離；QZAC 直升機最後 3 回合到達"
+edges:
+  - from: "qzac"
+    to: "ruins"
+    label: "通道"
+  - from: "ruins"
+    to: "deep_in"
+    label: "通道"
+  - from: "deep_in"
+    to: "core"
+    label: "電梯井"
+  - from: "deep_in"
+    to: "control"
+    label: "通道"
+  - from: "core"
+    to: "control"
+    label: "通道"
+  - from: "control"
+    to: "escape"
+    label: "崩塌通道"

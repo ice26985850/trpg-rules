@@ -1,0 +1,157 @@
+# 奧斯特溫城市地圖
+# 對應：所有劇本
+# 用途：GM 參考城市佈局、區域連接、移動路線
+
+map_id: "ostwin_city_map"
+map_name: "奧斯特溫城市地圖"
+projection: "南北縱向橢圓形，維爾塔河東西貫穿"
+
+# ── 節點（六大城區 + 關鍵地點） ──
+nodes:
+  - id: "old_town"
+    name: "舊城區"
+    type: "城區"
+    description: "數百年歷史的石板街道、奧斯曼時期建築與東正教教堂交錯"
+    population_pre_siege: 180000
+    scavenge_rating: 3
+    danger_rating: 4
+    special_rules: "潛行檢定獲得 +1（熟悉狹窄巷道）；遭遇狙擊手機率提高"
+    landmarks:
+      - "聖米迦勒大教堂"
+      - "石橋市場"
+      - "土耳其浴場遺址"
+    connections: ["city_center", "south_suburb", "underground_old_city"]
+
+  - id: "city_center"
+    name: "市中心"
+    type: "城區"
+    description: "新古典主義政府建築、銀行、高級商場、中央廣場——砲擊重點目標"
+    population_pre_siege: 250000
+    scavenge_rating: 5
+    danger_rating: 5
+    special_rules: "每次搜刮需進行額外砲擊風險檢定（意志 DC 10）"
+    landmarks:
+      - "共和國議會大廈"
+      - "科爾瓦尼亞國家銀行"
+      - "自由廣場"
+      - "奧斯特溫大劇院"
+    connections: ["old_town", "north_suburb", "industrial_district", "university_district", "sniper_alley"]
+
+  - id: "industrial_district"
+    name: "工業區"
+    type: "城區"
+    description: "大型廠房、煙囪、倉庫群、鐵路支線、工人宿舍"
+    population_pre_siege: 80000
+    scavenge_rating: 3
+    danger_rating: 3
+    special_rules: "搜刮燃料機率加倍"
+    landmarks:
+      - "科爾瓦尼亞紡織聯合廠"
+      - "奧斯特溫發電廠（已停運）"
+      - "貨運火車站"
+    connections: ["city_center", "university_district", "south_suburb"]
+
+  - id: "university_district"
+    name: "大學城區"
+    type: "城區"
+    description: "現代建築、綠樹成蔭的校園、圖書館、實驗室"
+    population_pre_siege: 50000
+    scavenge_rating: 4
+    danger_rating: 2
+    special_rules: "搜刮藥品機率加倍；有機會找到特殊知識資源"
+    landmarks:
+      - "奧斯特溫國立大學主樓"
+      - "大學圖書館"
+      - "醫學院附屬診所"
+    connections: ["city_center", "industrial_district", "north_suburb"]
+
+  - id: "north_suburb"
+    name: "北郊"
+    type: "城區"
+    description: "高級獨棟別墅、國際學校、外交人員住宅區"
+    population_pre_siege: 60000
+    scavenge_rating: 4
+    danger_rating: 3
+    special_rules: "搜刮舒適度相關物資（奢侈品/安慰品）機率最高"
+    landmarks:
+      - "各國大使館（已撤離）"
+      - "北郊購物中心"
+      - "聖安東尼國際醫院"
+    connections: ["city_center", "university_district"]
+
+  - id: "south_suburb"
+    name: "南郊"
+    type: "城區"
+    description: "倉儲物流區、廢棄工廠、鐵路調度場、難民營"
+    population_pre_siege: 150000
+    scavenge_rating: 2
+    danger_rating: 4
+    special_rules: "黑市交易主要據點；交易檢定獲得 +1"
+    landmarks:
+      - "奧斯特溫貨運樞紐"
+      - "維爾塔河貨運碼頭"
+      - "南郊難民營"
+    connections: ["old_town", "industrial_district", "black_market_hub"]
+
+  - id: "sniper_alley"
+    name: "狙擊手巷"
+    type: "危險區域"
+    description: "共和大道的一段開闊路段——被狙擊手火力覆蓋。白晝穿越極度危險。"
+    danger_rating: 5
+    special_rules: "白晝穿越：狙擊手射擊一次（+5 射擊，至少致命傷）。黑夜穿越：風險大幅降低。"
+    connections: ["city_center_east", "city_center_west"]
+
+  - id: "underground_old_city"
+    name: "舊城區地下通道"
+    type: "祕密路徑"
+    description: "奧斯曼時期修建的古代排水系統。黑暗、潮濕、迷宮般複雜，但可以安全穿越舊城區地下。"
+    danger_rating: 2
+    special_rules: "黑暗中移動——需光源或機敏 DC 14 摸黑前進。遭遇野狗機率中等。"
+    connections: ["old_town_north", "old_town_south", "south_suburb"]
+
+  - id: "black_market_hub"
+    name: "黑市交易點"
+    type: "特殊地點"
+    description: "南郊廢棄倉庫群中的地下交易網絡中心。黑河商會的主要活動區域。"
+    danger_rating: 3
+    connections: ["south_suburb"]
+
+  - id: "river_velta"
+    name: "維爾塔河"
+    type: "自然地標"
+    description: "東西向貫穿城市。三座橋樑已在圍城初期被摧毀，僅存一座聯邦軍控制的臨時浮橋。"
+    connections: ["浮橋（聯邦軍控制）"]
+
+# ── 主幹道 ──
+main_roads:
+  - name: "共和大道"
+    direction: "南北向"
+    route: "北郊 → 市中心 → 舊城區 → 南郊"
+    condition: "多處被瓦礫阻塞；市中心段為『狙擊手巷』"
+  
+  - name: "河濱路"
+    direction: "東西向"
+    route: "大學城區 ↔ 工業區（沿維爾塔河南岸）"
+    condition: "相對完整，但部分路段暴露於對岸視線"
+  
+  - name: "環城公路"
+    direction: "環狀"
+    route: "環繞城市外圍"
+    condition: "部分路段仍在聯邦軍控制下"
+
+# ── 戰術要點 ──
+tactical_points:
+  - "三座橋樑已摧毀，僅一座聯邦軍浮橋——跨河移動極為困難"
+  - "舊城區地下排水系統——隱蔽移動的關鍵路徑"
+  - "共和大道『狙擊手巷』——白晝無法安全穿越"
+  - "大學城區——相對安全區域，適合作為避難所選址"
+  - "南郊黑市——獲取稀缺物資的唯一渠道（但有風險）"
+
+# ── GM 移動時間參考 ──
+travel_times:
+  - route: "相鄰城區之間"
+    time: "步行 30–60 分鐘（取決於潛行速度和路線安全度）"
+  - route: "舊城區 → 北郊"
+    time: "步行 2–3 小時（需穿越市中心或繞路）"
+  - route: "透過地下通道（舊城區南北）"
+    time: "步行 45 分鐘（但需黑暗中導航）"

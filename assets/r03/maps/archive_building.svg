@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" font-family="Microsoft JhengHei, PingFang TC, sans-serif">
+<rect x="0" y="0" width="1200" height="960" fill="#fff"/>
+<text x="40" y="40" font-size="20" font-weight="bold" fill="#7a1f1f">🗺 檔案大樓 (戰役 B)</text>
+<rect x="40" y="80" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="102" font-size="15" font-weight="bold" fill="#2c3e50">▣ 一樓 — 接待與處理</text>
+<rect x="40" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">主要入口</text>
+<text x="124" y="146" font-size="9.5" text-anchor="middle" fill="#666">檢查站</text>
+<rect x="516" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">文件接收櫃台</text>
+<text x="600" y="146" font-size="9.5" text-anchor="middle" fill="#666">攝影機</text>
+<rect x="992" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">檔案列區(變動)</text>
+<text x="1076" y="146" font-size="9.5" text-anchor="middle" fill="#666">B-2</text>
+<rect x="40" y="300" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="322" font-size="15" font-weight="bold" fill="#2c3e50">▣ 二樓 — 檔案列區</text>
+<rect x="40" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Safe 區</text>
+<text x="124" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Euclid 區</text>
+<text x="600" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Keter 區</text>
+<text x="1076" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">二樓 C 列(篡改)</text>
+<text x="124" y="456" font-size="9.5" text-anchor="middle" fill="#666">B-1</text>
+<rect x="516" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">塗鴉走廊</text>
+<text x="600" y="456" font-size="9.5" text-anchor="middle" fill="#666">我知道你做了什麼</text>
+<rect x="40" y="520" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="542" font-size="15" font-weight="bold" fill="#2c3e50">▣ 三樓 — 行政區</text>
+<rect x="40" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">凱爾納辦公室</text>
+<text x="124" y="586" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">沃斯辦公室</text>
+<text x="600" y="586" font-size="9.5" text-anchor="middle" fill="#666">B-3</text>
+<rect x="992" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">會議室</text>
+<text x="1076" y="586" font-size="9.5" text-anchor="middle" fill="#666">O5證據 B-4</text>
+<rect x="40" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">伺服器室</text>
+<text x="124" y="676" font-size="9.5" text-anchor="middle" fill="#666">電腦60</text>
+<rect x="516" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">上鎖抽屜</text>
+<text x="600" y="676" font-size="9.5" text-anchor="middle" fill="#666">B-8 你的文件</text>
+<rect x="40" y="740" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="762" font-size="15" font-weight="bold" fill="#2c3e50">▣ 地下室金庫 / 屋頂 / 電梯井</text>
+<line x1="124" y1="793" x2="600" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<line x1="600" y1="793" x2="124" y2="793" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<rect x="40" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">金庫入口</text>
+<text x="124" y="806" font-size="9.5" text-anchor="middle" fill="#666">CL4</text>
+<rect x="516" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">檔案金庫</text>
+<text x="600" y="806" font-size="9.5" text-anchor="middle" fill="#666">平行檔案庫 B-6</text>
+<rect x="992" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">屋頂停機坪</text>
+<text x="1076" y="806" font-size="9.5" text-anchor="middle" fill="#666">逃跑 敏55</text>
+<rect x="40" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">服務電梯井</text>
+<text x="124" y="896" font-size="9.5" text-anchor="middle" fill="#666">力50爬出</text>
+</svg>

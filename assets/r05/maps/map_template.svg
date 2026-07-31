@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="'Noto Sans CJK SC','Microsoft JhengHei',sans-serif">
+  <!-- 凍結廢土TRPG 地圖模板骨架：複製本檔後，將虛線區域替換為實際區域多邊形，並補上圖例與比例尺即可。 -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e6e0d2" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- 背景與外框 -->
+  <rect x="0" y="0" width="800" height="600" fill="#f7f5f0"/>
+  <rect x="12" y="12" width="776" height="576" fill="url(#grid)" stroke="#2b2b2b" stroke-width="2"/>
+
+  <!-- 標題（占位） -->
+  <text x="400" y="46" text-anchor="middle" font-size="22" fill="#1f3a5f" font-weight="bold">【地圖標題】</text>
+  <text x="400" y="68" text-anchor="middle" font-size="12" fill="#555">凍結廢土TRPG · 地圖模板（骨架）</text>
+
+  <!-- 占位區域（虛線＝待繪製） -->
+  <g fill="none" stroke="#3a7bd5" stroke-width="2" stroke-dasharray="6 4">
+    <rect x="120" y="120" width="200" height="140"/>
+    <rect x="360" y="120" width="200" height="140"/>
+    <rect x="120" y="300" width="200" height="140"/>
+    <rect x="360" y="300" width="200" height="140"/>
+  </g>
+  <g fill="#3a7bd5" font-size="15" text-anchor="middle">
+    <text x="220" y="195">區域 A</text>
+    <text x="460" y="195">區域 B</text>
+    <text x="220" y="375">區域 C</text>
+    <text x="460" y="375">區域 D</text>
+  </g>
+
+  <!-- 連接線（點線＝路徑／通道） -->
+  <g stroke="#888" stroke-width="1.5" stroke-dasharray="3 3">
+    <line x1="320" y1="190" x2="360" y2="190"/>
+    <line x1="220" y1="260" x2="220" y2="300"/>
+    <line x1="460" y1="260" x2="460" y2="300"/>
+    <line x1="320" y1="370" x2="360" y2="370"/>
+  </g>
+
+  <!-- 圖例 -->
+  <g>
+    <rect x="600" y="120" width="160" height="130" fill="#ffffff" stroke="#2b2b2b"/>
+    <text x="612" y="142" font-size="13" fill="#1f3a5f" font-weight="bold">圖例</text>
+    <line x1="612" y1="162" x2="640" y2="162" stroke="#888" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <text x="648" y="166" font-size="11" fill="#333">路徑／連接</text>
+    <rect x="612" y="178" width="28" height="14" fill="none" stroke="#3a7bd5" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="648" y="190" font-size="11" fill="#333">區域範圍</text>
+    <circle cx="626" cy="214" r="7" fill="#c0392b"/>
+    <text x="648" y="218" font-size="11" fill="#333">凍結核心</text>
+  </g>
+
+  <!-- 比例尺（占位） -->
+  <g>
+    <line x1="600" y1="500" x2="700" y2="500" stroke="#2b2b2b" stroke-width="2"/>
+    <line x1="600" y1="494" x2="600" y2="506" stroke="#2b2b2b" stroke-width="2"/>
+    <line x1="650" y1="494" x2="650" y2="506" stroke="#2b2b2b" stroke-width="2"/>
+    <line x1="700" y1="494" x2="700" y2="506" stroke="#2b2b2b" stroke-width="2"/>
+    <text x="600" y="522" font-size="11" fill="#333">0</text>
+    <text x="640" y="522" font-size="11" fill="#333">__</text>
+    <text x="688" y="522" font-size="11" fill="#333">呎</text>
+  </g>
+
+  <!-- 指北針 -->
+  <g transform="translate(740,500)">
+    <polygon points="0,-22 7,6 0,-2 -7,6" fill="#1f3a5f"/>
+    <text x="0" y="-28" text-anchor="middle" font-size="12" fill="#1f3a5f">N</text>
+  </g>
+
+  <text x="400" y="562" text-anchor="middle" font-size="10" fill="#999">骨架僅供占位；請以實際劇本描述替換區域名稱、範圍與連接關係。</text>
+</svg>

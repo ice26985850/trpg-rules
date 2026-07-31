@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 600" font-family="Microsoft YaHei, sans-serif">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="820" height="600" fill="#f7f7f4"/>
+
+  <!-- 標題 -->
+  <text x="410" y="38" font-size="24" font-weight="bold" fill="#2b2b2b" text-anchor="middle">Z 公司作戰地圖 — 任務舞台分區</text>
+  <text x="410" y="60" font-size="13" fill="#666" text-anchor="middle">依《Z 公司 TRPG》規則書「舞台」章節繪製之概念地圖（非比例尺實體地圖）</text>
+
+  <!-- 荒野（最外圍帶狀，左下） -->
+  <defs>
+    <linearGradient id="wild" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7d9c4"/>
+      <stop offset="50%" stop-color="#d8c3a5"/>
+      <stop offset="100%" stop-color="#b89b78"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 360 L260 360 L300 540 L60 540 Z" fill="url(#wild)" stroke="#8a6f4e" stroke-width="2"/>
+  <text x="175" y="385" font-size="15" font-weight="bold" fill="#5b4326" text-anchor="middle">荒野</text>
+  <text x="175" y="408" font-size="11" fill="#5b4326" text-anchor="middle">外圍 → 淺區 → 深處</text>
+  <text x="175" y="426" font-size="10" fill="#6b513a" text-anchor="middle">（危險無人區，層層遞進）</text>
+
+  <!-- 小鎮（右下獨立節點） -->
+  <rect x="540" y="380" width="200" height="130" rx="10" fill="#d6e3d2" stroke="#5f8a55" stroke-width="2"/>
+  <text x="640" y="412" font-size="15" font-weight="bold" fill="#2f5a2a" text-anchor="middle">小鎮</text>
+  <text x="640" y="434" font-size="11" fill="#2f5a2a" text-anchor="middle">郊區落後、治安偏差</text>
+  <text x="640" y="452" font-size="10" fill="#3a6b34" text-anchor="middle">可能有黑幫或邪教盤踞</text>
+
+  <!-- 邊緣地帶（環繞都市外圈） -->
+  <circle cx="410" cy="250" r="180" fill="#e8e2ec" stroke="#9b8fb0" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="410" y="120" font-size="13" font-weight="bold" fill="#5e5470" text-anchor="middle">邊緣地帶</text>
+  <text x="410" y="138" font-size="10" fill="#6b6180" text-anchor="middle">郊區人口稀少偏僻居住點</text>
+
+  <!-- 都市（同心圓） -->
+  <circle cx="410" cy="270" r="135" fill="#dbe7f0" stroke="#4d7aa6" stroke-width="2"/>
+  <text x="410" y="160" font-size="16" font-weight="bold" fill="#1f4e79" text-anchor="middle">都市</text>
+
+  <!-- 內環 -->
+  <circle cx="410" cy="270" r="100" fill="#c4d8ea" stroke="#4d7aa6" stroke-width="1.5"/>
+
+  <!-- 核心區 -->
+  <circle cx="410" cy="270" r="58" fill="#f2c14e" stroke="#b8860b" stroke-width="2"/>
+  <text x="410" y="266" font-size="13" font-weight="bold" fill="#5c3d00" text-anchor="middle">核心區</text>
+  <text x="410" y="284" font-size="10" fill="#5c3d00" text-anchor="middle">Z 公司總部</text>
+
+  <!-- 內環標註 -->
+  <text x="410" y="210" font-size="11" fill="#1f4e79" text-anchor="middle">內環</text>
+
+  <!-- 都市外圈三區：商業 / 工業 / 居住 -->
+  <text x="300" y="300" font-size="11" fill="#1f4e79" text-anchor="middle">居住區</text>
+  <text x="520" y="300" font-size="11" fill="#1f4e79" text-anchor="middle">商業區</text>
+  <text x="410" y="375" font-size="11" fill="#1f4e79" text-anchor="middle">工業區</text>
+
+  <!-- 連接線（舞台流動） -->
+  <line x1="290" y1="350" x2="175" y2="365" stroke="#8a6f4e" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="510" y1="350" x2="640" y2="385" stroke="#5f8a55" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="230" y="345" font-size="9" fill="#8a6f4e">撤往荒野</text>
+  <text x="575" y="372" font-size="9" fill="#5f8a55">撤往小鎮</text>
+
+  <!-- 圖例 -->
+  <rect x="600" y="120" width="190" height="150" rx="8" fill="#ffffff" stroke="#ccc" stroke-width="1"/>
+  <text x="695" y="140" font-size="12" font-weight="bold" fill="#333" text-anchor="middle">圖例</text>
+  <circle cx="620" cy="162" r="7" fill="#f2c14e" stroke="#b8860b"/><text x="635" y="166" font-size="11" fill="#444">核心區（總部）</text>
+  <circle cx="620" cy="184" r="7" fill="#c4d8ea" stroke="#4d7aa6"/><text x="635" y="188" font-size="11" fill="#444">內環／都市</text>
+  <circle cx="620" cy="206" r="7" fill="#e8e2ec" stroke="#9b8fb0"/><text x="635" y="210" font-size="11" fill="#444">邊緣地帶</text>
+  <rect x="613" y="224" width="14" height="14" rx="2" fill="#d6e3d2" stroke="#5f8a55"/><text x="635" y="236" font-size="11" fill="#444">小鎮</text>
+  <rect x="613" y="246" width="14" height="14" rx="2" fill="#d8c3a5" stroke="#8a6f4e"/><text x="635" y="258" font-size="11" fill="#444">荒野</text>
+
+  <text x="410" y="585" font-size="10" fill="#999" text-anchor="middle">檢定加減、遭遇密度與危機強度隨舞台由內向外遞增；詳見規則書「舞台」章節。</text>
+</svg>

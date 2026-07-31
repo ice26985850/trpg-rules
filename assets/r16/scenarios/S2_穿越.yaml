@@ -1,0 +1,17 @@
+name: "S2 穿越"
+description: "Level 1的M.E.G.前哨站給了你喘息——但前方是Level 2的管道地獄和Level 3的電氣迷宮。穿越它們，否則永遠困在淺層。"
+difficulty: "初級→中級"
+milestone_range: "2-3"
+play_time: "6-9 小時"
+supported_modes: ["單人（1 玩家＋1 GM）", "多人（2-5 玩家＋1 GM）"]
+primary_levels: ["Level 1 — 宜居地帶", "Level 2 — 管道噩夢", "Level 3 — 發電站"]
+themes: ["文明遺跡", "黑暗壓迫", "工業恐怖"]
+emotional_arc: "希望（前哨站）→壓迫（管道）→迷宮（發電站）→解脫（出口）"
+scenes:
+  - {id: S2_1, name: "基石前哨站", type: "準備", desc: "Level 1的M.E.G.前哨站。交易裝備、收集Level 2/3情報。可招募NPC隊友同行。M.E.G.情報官陳提供地圖。"}
+  - {id: S2_2, name: "管道噩夢", type: "危機", desc: "Level 2：35°C高溫、90%黑暗。獵犬巢穴。前人避難所和變體杏仁水。紅色閥門室之謎。"}
+  - {id: S2_3, name: "發電站", type: "迷宮", desc: "Level 3：廢棄發電設施。裸露電線、故障設備、刺耳警報。實體「電工」在機房中遊蕩。需重啟電路才能開啟出口。"}
+  - {id: S2_4, name: "光明", type: "出口", desc: "通過Level 3的檢修門進入短暫的安全空間——一條通往Level 4的明亮走廊。"}
+entities: ["獵犬（Level 2巢穴）", "笑魘（黑暗區）", "電工（Level 3特有實體——觸電攻擊）"]
+key_npc: ["M.E.G.情報官陳", "可選NPC隊友"]
+ending: "穿過檢修門進入往Level 4的通道。里程碑3達成。"

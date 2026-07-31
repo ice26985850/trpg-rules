@@ -1,0 +1,51 @@
+# 暴君之拳號（暴君之拳號）——S4 叛逃者
+# 同盟指揮艦，20 節點，4 層甲板
+# 對應劇本：S4_叛逃者
+nodes:
+  - { id: N1, label: "貨艙（切入點）", type: entry, x: 100, y: 350, deck: 1, gravity: "標準重力（1G）", hazard: null, explored: true }
+  - { id: N2, label: "第一層走廊", type: corridor, x: 250, y: 350, deck: 1, gravity: "標準重力（1G）", hazard: null, explored: false }
+  - { id: N3, label: "警衛哨站", type: room, x: 400, y: 350, deck: 1, gravity: "標準重力（1G）", hazard: "2 名警衛巡邏，警報面板", explored: false }
+  - { id: N4, label: "主樓梯（下層）", type: corridor, x: 250, y: 270, deck: 1, gravity: "標準重力（1G）", hazard: null, explored: false }
+  - { id: N5, label: "兵營區", type: room, x: 400, y: 270, deck: 1, gravity: "標準重力（1G）", hazard: "3 名陸戰隊員（追殺凱恩的忠誠衛隊）", explored: false }
+  - { id: N6, label: "軍械庫", type: room, x: 550, y: 350, deck: 1, gravity: "標準重力（1G）", hazard: "鎖定——ENG DC 15", explored: false }
+  - { id: N7, label: "維護通道入口", type: corridor, x: 550, y: 270, deck: 1, gravity: "標準重力（1G）", hazard: "隱藏——PER DC 13 發現", explored: false }
+  - { id: N8, label: "第二層主走廊", type: corridor, x: 250, y: 190, deck: 2, gravity: "標準重力（1G）", hazard: null, explored: false }
+  - { id: N9, label: "通訊中心", type: room, x: 400, y: 190, deck: 2, gravity: "低重力（0.3G）——凱恩遠端操縱", hazard: "可攔截敵方通訊", explored: false }
+  - { id: N10, label: "戰術資料庫 ⭐", type: room, x: 550, y: 190, deck: 2, gravity: "標準重力（1G）", hazard: "下載需 3 回合——道德抉擇點", explored: false }
+  - { id: N11, label: "軍官休息區", type: room, x: 100, y: 190, deck: 2, gravity: "標準重力（1G）", hazard: "凱恩可能在此", explored: false }
+  - { id: N12, label: "艦橋封鎖線", type: corridor, x: 250, y: 110, deck: 3, gravity: "標準重力（1G）", hazard: "3 名陸戰隊員 + 副手指揮官（首領）", explored: false }
+  - { id: N13, label: "艦橋", type: room, x: 400, y: 110, deck: 3, gravity: "標準重力（1G）", hazard: "艦橋守軍——若叛逃被確認則啟動自毀", explored: false }
+  - { id: N14, label: "艦長室", type: room, x: 550, y: 110, deck: 3, gravity: "標準重力（1G）", hazard: "艦長私人物品（劇情物品）", explored: false }
+  - { id: N15, label: "逃生艙區", type: corridor, x: 400, y: 30, deck: 3, gravity: "標準重力（1G）", hazard: "凱恩的最後通訊位置。可能在此或已被捕", explored: false }
+  - { id: N16, label: "機庫（撤離點）", type: objective, x: 100, y: 50, deck: 4, gravity: "標準重力（1G）", hazard: "2 台防禦機器人。若陷阱觸發——增援", explored: false }
+  - { id: N17, label: "輪機艙", type: room, x: 700, y: 350, deck: 1, gravity: "高重力（2G）", hazard: "高溫——每回合 1 點火焰傷害", explored: false }
+  - { id: N18, label: "反應爐控制室", type: room, x: 700, y: 270, deck: 1, gravity: "標準重力（1G）", hazard: "可過載反應爐——倒數加速或延遲", explored: false }
+  - { id: N19, label: "貨運電梯", type: corridor, x: 700, y: 190, deck: 2, gravity: "可變重力（故障）", hazard: "電梯纜繩不穩定——MOB DC 13", explored: false }
+  - { id: N20, label: "後備指揮中心", type: room, x: 700, y: 110, deck: 3, gravity: "標準重力（1G）", hazard: "備用艦橋——若主艦橋被佔領", explored: false }
+edges:
+  - { from: N1, to: N2, type: "走廊" }
+  - { from: N2, to: N3, type: "走廊" }
+  - { from: N2, to: N4, type: "走廊" }
+  - { from: N3, to: N5, type: "艙門" }
+  - { from: N3, to: N6, type: "艙門（鎖定）" }
+  - { from: N4, to: N8, type: "樓梯" }
+  - { from: N5, to: N7, type: "艙門" }
+  - { from: N6, to: N17, type: "走廊" }
+  - { from: N17, to: N18, type: "艙門" }
+  - { from: N7, to: N8, type: "維護通道（繞過守軍）" }
+  - { from: N8, to: N9, type: "走廊" }
+  - { from: N8, to: N11, type: "走廊" }
+  - { from: N9, to: N10, type: "艙門" }
+  - { from: N9, to: N12, type: "樓梯" }
+  - { from: N12, to: N13, type: "艙門（封鎖）" }
+  - { from: N13, to: N14, type: "艙門" }
+  - { from: N13, to: N15, type: "走廊" }
+  - { from: N15, to: N16, type: "電梯" }
+  - { from: N18, to: N19, type: "電梯井" }
+  - { from: N19, to: N20, type: "走廊" }
+  - { from: N10, to: N20, type: "維護通道" }
+regions:
+  - { name: "第一層——生活與後勤", color: "#B3D9FF", nodes: [N1, N2, N3, N4, N5, N6, N7, N17, N18] }
+  - { name: "第二層——情報與通訊", color: "#FFD9B3", nodes: [N8, N9, N10, N11, N19] }
+  - { name: "第三層——指揮甲板", color: "#FFB3B3", nodes: [N12, N13, N14, N15, N20] }
+  - { name: "第四層——撤離層", color: "#B3FFD9", nodes: [N16] }

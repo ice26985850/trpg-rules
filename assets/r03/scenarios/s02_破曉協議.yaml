@@ -1,0 +1,72 @@
+# 多人戰役結構檔：破曉協議 (Breaching Protocol / 戰役系列 A)
+# 來源：campaign-series-a-breaching-protocol_zh-Hant.md
+# 本檔為結構化摘要；完整場景描述請參閱同名 .md。
+
+meta:
+  title: "破曉協議 (Breaching Protocol)"
+  type: "多人玩家戰役"
+  player_count: "小隊（建議 3–5 人）"
+  level_range: "Lv.1–10（起點 Lv.1，終局 Lv.9–10）"
+  focus: "戰鬥 / 收容突擊 / 道德分叉"
+  setting: "Site-19 最長一夜"
+  plot: "新建 MTF 小隊「錘骨」在 Site-19 對抗混沌分裂者滲透，阻止 SCP-████-C「虛空之心」被激活為 XK 級場景。"
+  estimated_duration: "12–18 場遊戲（約 40–60 小時）"
+  key_npcs:
+    - "MTF Nu-7 上尉 艾琳娜·瓦斯奎茲（戰術導師，CI 叛逃者）"
+    - "混沌分裂者指揮官 馬庫斯·凱爾（核心反派）"
+    - "Site-19 主管 伊恩·哈洛博士"
+
+scenes:
+  - id: "A-1"
+    name: "紅色警報"
+    level: "Lv.1"
+    type: "戰鬥入門 / 應急響應"
+    key_checks: ["槍械 TN 75", "偵察 TN 60", "迴避 TN 55"]
+    duration: "1 場"
+
+  - id: "A-2"
+    name: "走廊戰爭"
+    level: "Lv.2–3"
+    type: "戰術推進 / 火力壓制"
+    key_checks: ["槍械 TN 77", "領導 TN 55", "急救 TN 60"]
+    duration: "2 場"
+    map_ref: "site19_heavy_containment（主走廊 T 字路口）"
+
+  - id: "A-3"
+    name: "分裂點"
+    level: "Lv.4–5"
+    type: "情報戰 / 道德分叉"
+    key_checks: ["審訊 TN 55", "計算機 TN 65", "欺騙 TN 60"]
+    duration: "2–3 場"
+    note: "瓦斯奎茲的 CI 出身在此揭曉，成為關鍵轉折"
+
+  - id: "A-4"
+    name: "重型收容"
+    level: "Lv.5–6"
+    type: "收容突擊 / 資源管理"
+    key_checks: ["異常學 TN 65", "工程 TN 60", "迴避 TN 60"]
+    duration: "2 場"
+    map_ref: "site19_heavy_containment（地下五層 L12–L18）"
+
+  - id: "A-5"
+    name: "虛空之心"
+    level: "Lv.7–8"
+    type: "終極戰鬥 / Keter 收容"
+    key_checks: ["意志抵抗 TN 55", "槍械 TN 82", "爆破 TN 60"]
+    duration: "2–3 場"
+    map_ref: "site19_heavy_containment（80m 球形收容艙）"
+
+  - id: "A-6"
+    name: "代價清算"
+    level: "Lv.9–10"
+    type: "結局抉擇 / 敘事收束"
+    key_checks: ["說服 TN 60", "領導 TN 65", "基金會史 TN 55"]
+    duration: "1–2 場"
+
+  - id: "A-X"
+    name: "鼠輩之路（可選）"
+    level: "Lv.3–5"
+    type: "潛行滲透 / D 級視角"
+    optional: true
+    key_checks: ["潛行 TN 65", "欺騙 TN 55", "生存 TN 50"]
+    duration: "1 場"

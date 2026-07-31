@@ -1,0 +1,77 @@
+# 天機·修真心 — 劇本結構化索引
+# 本檔與同名 .md 配套，供網站提供雙下載。
+
+scenario:
+  id: s02
+  key: 天機·修真心
+  title: 九境登仙錄
+  type: 冒險史詩
+  player_type: 多人
+  language: zh-Hant
+  summary: >
+    六幕完整冒險史詩，描寫一名修士從凡人（煉氣）到飛升（渡劫）的九境跨越。
+    玩家將經歷升仙大會、太初別府、魔淵危機、大陸戰爭，直至直面天道抉擇。
+  players:
+    min: 1
+    max: 4
+    gm: required
+  depends_on:
+    - 天機·修真心_玩家規則書.md
+    - 天機·修真心_GM規則書.md
+    - 世界擴充.md（世界觀與劇本背景，隨規則書提供）
+  level_range:
+    start: 1
+    end: 36
+    realms:
+      - 煉氣
+      - 築基
+      - 金丹
+      - 元嬰
+      - 化神
+      - 煉虛
+      - 合體
+      - 大乘
+      - 渡劫
+  estimated_sessions: "18-30"
+  estimated_hours: "40-90"
+  npc_companions: []
+  references:
+    - "→ §世界觀（卷一：九境登仙錄）"
+  acts:
+    - id: 1
+      title: 凡尘初醒
+      level_range: "Lv.1-4"
+      realms: [煉氣, 築基]
+      sessions: "3-5"
+      key_npcs: [韩枫（築基）]
+    - id: 2
+      title: 道途抉择
+      level_range: "Lv.5-8"
+      realms: [築基, 金丹]
+      sessions: "4-6"
+      key_npcs: [幽冥五行使者（金丹）]
+    - id: 3
+      title: 风起云涌
+      level_range: "Lv.9-12"
+      realms: [金丹, 元嬰]
+      sessions: "5-8"
+      key_npcs: [幽冥魔将·黑崖（元嬰）]
+    - id: 4
+      title: 天地为局
+      level_range: "Lv.13-16"
+      realms: [元嬰, 化神]
+      sessions: "6-9"
+      key_npcs: [魔君·焚狱（化神）]
+    - id: 5
+      title: 登仙之阶
+      level_range: "Lv.17-20"
+      realms: [化神, 煉虛, 合體]
+      sessions: "8-12"
+      key_npcs: [堕仙·苍无道（合體）]
+    - id: 6
+      title: 九境之巅
+      level_range: "Lv.25-28"
+      realms: [合體, 大乘, 渡劫]
+      sessions: "10-15+"
+      key_npcs: [魔祖·噬道（超越渡劫）]
+  tags: [修仙, 戰役, 冒險史詩, 成長, 飛升]

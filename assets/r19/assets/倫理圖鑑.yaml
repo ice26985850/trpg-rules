@@ -1,0 +1,49 @@
+# 倫理（道德取向）選擇
+# 4 軸總計 3 點，每軸 -1 至 +1
+
+ethics:
+  axes:
+    - name: "社會結構"
+      options:
+        - value: "1"
+          label: "軍國主義"
+          desc: "崇尚武力，艦隊維護費-10%"
+        - value: "0"
+          label: "秩序"
+          desc: "中庸之道，無加成無懲罰"
+        - value: "-1"
+          label: "自由主義"
+          desc: "追求自由，穩定性+10%"
+    - name: "外交態度"
+      options:
+        - value: "1"
+          label: "排外主義"
+          desc: "不歡迎外來者，外交關係-10%但情報防禦+20%"
+        - value: "0"
+          label: "普世主義"
+          desc: "中庸之道，無加成無懲罰"
+        - value: "-1"
+          label: "親善主義"
+          desc: "歡迎外來者，外交關係+10%但情報防禦-20%"
+    - name: "生活形態"
+      options:
+        - value: "1"
+          label: "資本主義"
+          desc: "追求利益，能源（EC）產出+20%"
+        - value: "0"
+          label: "集體主義"
+          desc: "中庸之道，無加成無懲罰"
+        - value: "-1"
+          label: "協同主義"
+          desc: "共享資源，食物產出+20%"
+    - name: "科技觀"
+      options:
+        - value: "1"
+          label: "機械智能崇拜"
+          desc: "崇拜AI，AI相關科技免費+1"
+        - value: "0"
+          label: "物質主義"
+          desc: "中庸之道，無加成無懲罰"
+        - value: "-1"
+          label: "唯心主義"
+          desc: "追求靈能，靈能能力+20%"

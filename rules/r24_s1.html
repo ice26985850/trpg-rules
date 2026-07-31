@@ -1,0 +1,580 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>深淵領主 ／ s01_初次入侵與深淵帝國戰役 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="#">規則總覽</a></header>
+<main class="container"><p class="nav"><a href="r24.html">← 回規則頁</a></p><h1>深淵領主 — 模組與戰役劇本</h1>
+<blockquote>
+<p><strong>版本</strong>: v2.1<br />
+<strong>用途</strong>: GM用獨立劇本手冊 — 包含起始模組「初次入侵」與完整Lv1-15戰役框架「從洞窟到深淵帝國」<br />
+<strong>前置</strong>: 需搭配《深淵領主》玩家規則書與GM指南使用</p>
+</blockquote>
+<hr />
+<h2>第一部分：起始模組「初次入侵」</h2>
+<blockquote>
+<p><strong>適用</strong>: 新手GM與玩家上手指引<br />
+<strong>地城等級</strong>: Lv1<br />
+<strong>預計時長</strong>: 1-2次團  </p>
+</blockquote>
+<h3>場景1：建立初始地城</h3>
+<p>GM描繪：</p>
+<blockquote>
+<p>"你是新晉的地下城主。王座廳的魔力火把已經點亮——這是你的第一座地城。目前只有三間洞室：你的王座廳，以及兩個尚未開發的漆黑隧道盡頭。幾隻剛招募的怪物不安地在你腳邊徘徊。遠處傳來地表人類的微弱聲響——他們來了嗎？"</p>
+</blockquote>
+<p><strong>玩家需要</strong>：熟悉屬性、分配初始怪物、規劃先挖掘哪一側。</p>
+<p><strong>GM準備</strong>：
+- 讓玩家填寫角色卡的核心部分（原型、屬性、初始怪物）
+- 介紹資源系統——玩家初始資源見各原型配置
+- 介紹回合結構——本模組有5個場景，每個場景=遊戲內1回合</p>
+<hr />
+<h3>場景2：第一次挖掘擴張</h3>
+<p>玩家消耗1行動+建材×2，擲IND+工程檢定進行首次挖掘。</p>
+<p><strong>檢定</strong>：IND + 工程學技能 vs 難度1成功</p>
+<table>
+<thead>
+<tr>
+<th>結果</th>
+<th>敘事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>失敗</td>
+<td>鎬子撞上了堅硬的岩層——你只刨下了幾塊碎石。建材消耗，空間未解鎖，但GM可給一個線索：「岩石後面似乎有什麼在發光……」</td>
+</tr>
+<tr>
+<td>1成功</td>
+<td>挖出了一個小型洞穴。你高舉魔力火把，照亮了粗糙的石壁</td>
+</tr>
+<tr>
+<td>2+成功</td>
+<td>你不僅挖出了空間，還在岩壁上發現了閃爍的晶體——<strong>礦脈</strong>！該空間礦場產出永久+50%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>GM引導</strong>：探索發現的敘事——可能摸到礦脈，可能發現古遺蹟裏的殘破日記。讓玩家選擇在這空間建造什麼（推薦：陷阱工坊或礦場）。</p>
+<hr />
+<h3>場景3：第一波入侵</h3>
+<p><strong>預警</strong>：若已建造偵察前哨——自動獲知情報。否則擲CUN+諜報檢定。</p>
+<blockquote>
+<p>偵察檢定揭示：「2名T1冒險者接近中。一個扛著盾牌的壯漢，一個輕盈纖細的身影在巖壁上跳躍。」</p>
+</blockquote>
+<p><strong>預設冒險者</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>職業</th>
+<th>CP骰池</th>
+<th>HP</th>
+<th>特質</th>
+<th>背景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>艾倫</strong></td>
+<td>戰士 T1</td>
+<td>1d6+2</td>
+<td>5</td>
+<td>盾牌：防禦+1骰</td>
+<td>「忠誠憨厚，爲妹妹籌藥費」</td>
+</tr>
+<tr>
+<td><strong>米拉</strong></td>
+<td>盜賊 T1</td>
+<td>2d6+1</td>
+<td>3</td>
+<td>可偵察陷阱：陷阱DC-2</td>
+<td>「急躁冒進，想證明自己」</td>
+</tr>
+</tbody>
+</table>
+<p><strong>冒險者AI行為</strong>（擲2d6）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">2d6</th>
+<th>第一層行為</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2-4</td>
+<td>米拉先行偵察陷阱，艾倫殿後</td>
+</tr>
+<tr>
+<td style="text-align: center;">5-7</td>
+<td>兩人謹慎推進，艾倫前、米拉側</td>
+</tr>
+<tr>
+<td style="text-align: center;">8-10</td>
+<td>米拉試圖潛行繞過怪物，艾倫正面吸引</td>
+</tr>
+<tr>
+<td style="text-align: center;">11-12</td>
+<td>艾倫魯莽衝鋒：「米拉，跟上！」</td>
+</tr>
+</tbody>
+</table>
+<p><strong>入侵路線</strong>：外層→中層。GM引導玩家部署怪物和陷阱。</p>
+<p><strong>戰鬥提示</strong>：
+- 這是教學戰——讓玩家犯錯。如果玩家忘記部署陷阱，讓艾倫踩到「幸運地沒有觸發」的落石
+- 如果玩家局勢不利——地城結構本身觸發「落石」，對冒險者造成1d3傷害（GM可以隨時用環境幫助新手）
+- 米拉如果HP低於2會嘗試撤退——這是引入「俘虜vs逃脫」機制的好時機</p>
+<hr />
+<h3>場景4：首次俘虜與審訊</h3>
+<p>若擊敗冒險者（HP歸零=昏迷）：可俘虜。</p>
+<p><strong>GM引入審訊機制</strong>：
+- 玩家選擇手段：<strong>審訊</strong>（DOM） / <strong>折磨</strong>（WAR） / <strong>懷柔</strong>（DOM+消耗◆）
+- 艾倫的弱點：「提到妹妹就眼神閃爍」——若玩家用懷柔提到家人，DOM+1骰
+- 米拉的弱點：「急躁」——若玩家讓她等待超過2回合再審訊，WIL-1</p>
+<p><strong>審訊範例對話</strong>：</p>
+<blockquote>
+<p><strong>GM（艾倫）</strong>：「我不會說的……你們這些怪物……」</p>
+<p>若使用懷柔：
+「你的妹妹……她還在外面等你吧？如果冒險者公會知道你被俘虜了，他們會派人救你——還是放棄你？你覺得哪個更有可能？」</p>
+<p>艾倫的WIL對抗：WIL=3，擲3d6。領主DOM+審訊 vs 3d6。</p>
+</blockquote>
+<p><strong>首次俘虜獎勵</strong>：無論審訊結果如何，玩家獲得成就「第一位囚徒」——額外+1 經驗值(EXP)。</p>
+<hr />
+<h3>場景5：戰後結算與第二次擴張</h3>
+<p><strong>戰利品結算</strong>（按被擊敗的冒險者）：
+- 每名被擊敗T1冒險者：◆1d3 + ◇1 + ●1
+- 每名俘虜：無戰利品（俘虜本身就是戰利品）</p>
+<p><strong>經驗值</strong>：擊退T1入侵 +3 EXP，首次俘虜 +1 經驗值(EXP)。</p>
+<p><strong>第二次擴張</strong>：引導玩家用獲得的建材進行第二次挖掘。此時玩家應該已體驗完整的「<strong>挖→建→分→防</strong>」循環。</p>
+<p><strong>過渡到下個回合</strong>：</p>
+<blockquote>
+<p>戰後第二週。艾倫被關在你新挖的囚牢裏。米拉逃走了——她會帶人回來。但你也有了第一筆真正的資源。地城的魔力火把似乎比之前更亮了。</p>
+</blockquote>
+<hr />
+<h2>第二部分：戰役框架——從洞窟到深淵帝國</h2>
+<blockquote>
+<p><strong>適用</strong>: Lv1-15完整長期戰役<br />
+<strong>預計總時長</strong>: 15-30次團  </p>
+</blockquote>
+<hr />
+<h3>第一幕：立足期（Lv1-3）— 2~4次團</h3>
+<p><strong>主題</strong>：活下去。剛繼位的地下城主從王座廳+2個漆黑隧道開始。外面是未知——每一個挖掘聲都可能引來第一批冒險者。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">地城Lv</th>
+<th>關鍵事件</th>
+<th>GM重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td><strong>初次入侵</strong>（見第一部分）。擊退2名T1冒險者，首次體驗防禦戰鬥</td>
+<td>教學戰。讓玩家熟悉戰鬥階段、陷阱觸發、怪物部署</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>第一次挖掘擴張成功。發現第一處天然資源（礦脈/魔力節點）。鄰接地城NPC首次出現——一封信送到你的王座廳</td>
+<td>引入擴張系統。引入外交概念（是否回覆來信？）</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td><strong>「冒險者公會注意到了你」</strong>。連續兩回合入侵——第二波是復仇小隊（上次逃脫的冒險者帶隊）。必須決定：加強防禦還是加速擴張？</td>
+<td>引入連續入侵壓力。玩家需要做戰略取捨</td>
+</tr>
+</tbody>
+</table>
+<p><strong>復仇小隊數據</strong>（Lv3第二波）：
+- 2-3名T2冒險者（骰池4-5d6），含上次逃脫的冒險者+1名增援
+- 逃脫冒險者獲得「復仇」特質——首輪攻擊+1骰</p>
+<p><strong>第一幕高潮</strong>：「冒險者公會的通緝」——INF達到3後，公會正式將你的地城列入「通緝名單」。GM引入通緝令實物（可打印道具）。</p>
+<p><strong>GM通緝令模板</strong>：</p>
+<blockquote>
+<p>╔══════════════════════════════╗
+║   冒險者公會 — 懸賞通緝令    ║
+║                             ║
+║  目標：[地城名]             ║
+║  位置：███區域 ██深處       ║
+║  威脅等級：★★☆☆☆          ║
+║  懸賞：◆15                 ║
+║                             ║
+║  已知情報：                 ║
+║  • [根據玩家地城的實際內容]  ║
+║                             ║
+╚══════════════════════════════╝</p>
+</blockquote>
+<hr />
+<h3>第二幕：成長期（Lv4-7）— 3~6次團</h3>
+<p><strong>主題</strong>：擴張與選擇。地城初具規模。深淵使館建成——你必須在四大聯盟中選擇一個加入。選擇將影響之後所有外交。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">地城Lv</th>
+<th>關鍵事件</th>
+<th>GM重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">4</td>
+<td>可建造深淵使館。兩個已知NPC地城各自邀請你加入他們的聯盟。<strong>「裂地者」巴爾澤克</strong>的火焰傳書 vs <strong>馬爾薩斯侯爵</strong>的骨鴿。必須選擇——或保持中立</td>
+<td>聯盟選擇。這會影響所有後續外交</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>解鎖精英怪物招募。首次精英入侵（T3，含Boss隊長）。若之前已結盟——盟友地城可能主動派遣援軍</td>
+<td>Boss戰機制引入（Phase2觸發）。盟軍協同首次體驗</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td>原型Lv6進階解鎖。地城達到一定規模後——首次發現其他地城之間存在衝突。<strong>「千面者」莫瑞斯</strong>請你調解他與巴爾澤克的領土爭端</td>
+<td>地城間政治。玩家的選擇影響三方關係</td>
+</tr>
+</tbody>
+</table>
+<p><strong>兩封邀請信</strong>：</p>
+<p><em>巴爾澤克的火焰傳書</em>（一張邊緣燒焦的羊皮紙，字跡彷彿在燃燒）：</p>
+<blockquote>
+<p>「新來的小子/姑娘——聽說你的地城開始有模有樣了。深淵軍團的門永遠向強者敞開。來焚天堡，接受試煉。通過了——你就是我們的人。失敗了——你連骨頭都不會剩。期待你的選擇。— 裂地者」</p>
+</blockquote>
+<p><em>馬爾薩斯的骨鴿</em>（一隻白骨構成的鳥，眼窩中燃著幽藍火焰，落在你王座廳的扶手上，爪中握著一封潔白的信）：</p>
+<blockquote>
+<p>「致尊敬的新鄰居：骨冢議會注意到你在暗影之海的活動。我們欣賞講求秩序的領主。使館建成之日，請允許我親自拜訪——討論在光明教團威脅下維持深淵秩序的事宜。— 永眠回廊·馬爾薩斯侯爵」</p>
+</blockquote>
+<p><strong>第二幕高潮</strong>：「深淵黑市」——<strong>「金牙」格里克斯</strong>（遠古巨龍）在廢鐵峽谷舉辦年度黑市拍賣。所有已知NPC地城領主皆到場。</p>
+<p><strong>黑市場景框架</strong>：
+1. <strong>入場</strong>：描述廢鐵峽谷的熱鬧場景。各NPC領主的外觀/舉止描寫（按玩家已知NPC繪聲繪色）
+2. <strong>社交</strong>：玩家可與任意NPC交談。每個對話都是一次小型外交檢定機會
+3. <strong>拍賣</strong>：3-5件物品依序拍賣（至少含1件傳奇物品，◆50起拍）
+4. <strong>暗殺</strong>：拍賣高潮時——暗影網絡的情報顯示有刺客潛入。CG：玩家可選擇揭發/默許/利用混亂撿漏</p>
+<hr />
+<h3>第三幕：威脅期（Lv8-11）— 4~8次團</h3>
+<p><strong>主題</strong>：戰爭與背叛。地城成爲區域性強權。光明教團開始組織有規模的遠征——不再是冒險小隊，而是連隊級別的進攻。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">地城Lv</th>
+<th>關鍵事件</th>
+<th>GM重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">8</td>
+<td><strong>「教團遠征」</strong>——光明教團派遣3-4支T3小隊同時從不同入口入侵！必須動用盟軍援軍。地城外交檢定決定有多少NPC地城願意出兵</td>
+<td>首次大規模多線防禦。考驗玩家的資源分配和外交成果</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td>原型Lv9終極進階解鎖。在此前後——你所屬的聯盟內部出現裂痕。骨冢議會：馬爾薩斯被挑戰？深淵軍團：巴爾澤克要求你參加火焰試煉？自由工匠：技術剽竊爭議？暗影網絡：叛徒泄露情報？</td>
+<td>聯盟內部政治。玩家的反應決定聯盟走向</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td>解鎖第一隻傳奇怪物。<strong>「千面者」莫瑞斯</strong>的禁忌實驗出現嚴重事故——他的地城正在失控。若你曾與他友好——他向你發出絕望的求援信號</td>
+<td>時間敏感型支線。救援/利用/無視三種選擇影響全局</td>
+</tr>
+</tbody>
+</table>
+<p><strong>教團遠征場景</strong>：</p>
+<p>預設3個入侵入口：
+- <strong>主入口</strong>（正面）：T3精英小隊×2，含Boss隊長（聖騎士）
+- <strong>側面裂隙</strong>（右）：T3標準小隊×1
+- <strong>廢棄通道</strong>（左）：T2巡邏隊×1（試探性入侵）</p>
+<p><strong>盟軍出兵判定</strong>（每個盟友地城）：</p>
+<blockquote>
+<p>擲DOM+外交檢定 vs 難度3。成功=該地城派遣援軍（1d3隻怪物，CP總和≤6）協助防禦1個入口。</p>
+</blockquote>
+<p><strong>第三幕高潮</strong>：「奈克西斯之息」——深淵魔力潮汐異常波動。<strong>艾瑟琳</strong>（虛空編織者）警告：魔力潮汐可能是「某物」甦醒的前兆。</p>
+<blockquote>
+<p>艾瑟琳的低語傳遍你的王座廳：「你感受到了嗎？魔力結晶在顫抖。不只是你的——全深淵的魔力都在顫抖。我去了原始裂隙……它在呼吸。」</p>
+</blockquote>
+<p>GM在Lv10後引入<strong>原始裂隙（D-16）</strong>的第一次異常——它發出了聲音。古老的地城開始甦醒。</p>
+<hr />
+<h3>第四幕：霸主期（Lv12-15）— 6+次團</h3>
+<p><strong>主題</strong>：命運抉擇。你的地城已成爲深淵頂級勢力。光明教團準備「聖戰」——全面進攻深淵。而<strong>原始裂隙</strong>中沉睡的存在即將醒來。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">地城Lv</th>
+<th>關鍵事件</th>
+<th>GM重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">12</td>
+<td><strong>「地城盟約」</strong>——你召集（或受邀參加）深淵議會。所有Lv8+的地城領主齊聚一堂。議題：是聯合對抗光明教團，還是各自爲戰？你的外交檢定決定聯合陣線的力量</td>
+<td>多NPC外交談判。這是一個完整的社交遭遇場景</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td><strong>「光明聖戰」</strong>開始。T4-T5冒險者軍團同時進攻所有聯盟地城。分配到你的地城的兵力由INF決定——高惡名吸引最強敵人</td>
+<td>終極防禦戰。利用所有積累的資源、怪物、盟軍、俘虜炮灰</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td>聖戰持續。若前回合防禦成功——冒險者損失慘重但教團增援不斷。此時出現轉機：<strong>「鏽蝕公爵」科爾溫</strong>（前聖騎士）揭露教團內部有一個致命弱點——他需要你幫忙獲取最後一塊情報碎片</td>
+<td>滲透地表任務。這可能是領主的最後一次遠征</td>
+</tr>
+</tbody>
+</table>
+<p><strong>地城盟約場景</strong>：</p>
+<p>集結地點：廢鐵峽谷，格里克斯的鑄幣廠大廳。
+出席NPC（至少以下8位，視玩家外交成果可能更多）：
+- 馬爾薩斯（骨冢議會）、巴爾澤克（深淵軍團）
+- 維拉（暗影網絡）、扳手（自由工匠）
+- 莫瑞斯、艾瑟琳、瑟拉希爾（中立出席）、科爾溫</p>
+<p><strong>辯論結構</strong>：
+1. 玩家開場陳詞（DOM+外交，決定整體氛圍）
+2. 三輪辯論——每輪一個議題（聯合/獨立行動/資源分配）
+3. 最終投票——每個NPC地城的投票傾向取決於其與玩家的關係值</p>
+<hr />
+<h3>🏁 終極大事件：「奈克西斯的甦醒」</h3>
+<blockquote>
+<p><em>在裂隙紀元700年的第14個深淵月圓之夜，原始裂隙裂開了。從中走出的不是怪物——而是一個意識。奈克西斯，深淵之母，在千萬年的沉睡後睜開了眼睛。她的第一句話傳遍了深淵每一座地城：</em></p>
+<p><em>「我的孩子們——你們把我的地下世界經營成了什麼？」</em></p>
+</blockquote>
+<p><strong>GM場景框架</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>階段</th>
+<th>內容</th>
+<th>檢定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>降臨</strong></td>
+<td>奈克西斯的聲音響徹深淵。所有地城的魔力結晶同時發出共鳴光芒。地城魔力暫時×2——但隨後可能被收回</td>
+<td>無檢定。敘事性場景</td>
+</tr>
+<tr>
+<td><strong>審判</strong></td>
+<td>奈克西斯逐一審視各大聯盟。她看到的不是團結的深淵——而是分裂、內鬥、與地表妥協。她的質問：<strong>「你們是用我的血建造了什麼？」</strong> 玩家代表自己的地城回應</td>
+<td>DOM檢定（回應質問）。ARC檢定（理解她的真實意圖）</td>
+</tr>
+<tr>
+<td><strong>抉擇</strong></td>
+<td>奈克西斯給出兩個選擇：<strong>A.</strong> 成爲她的右手——獲得終極力量，但地城成爲她的延伸（失去部分自主權）。<strong>B.</strong> 拒絕——被放逐出深淵，成爲流浪領主。<strong>C.</strong> 說服她——深淵已經進化，不需要單一母神（極難挑戰：DOM+外交×3次多重檢定，需全部成功）</td>
+<td>這是整個戰役的終極檢定。玩家可以使用所有積累的情報、盟友支持、俘虜證詞來輔助辯論</td>
+</tr>
+<tr>
+<td><strong>後果</strong></td>
+<td>A=獲得「奈克西斯之印」（地城MAG鎖15，所有怪物CP+2），但你永遠無法再違抗她的意志。B=地城被收回——但你在最後時刻收到所有盟友的聯名信：你並不孤單。變爲「流浪領主」身份——地城由盟友共同保管。C=奈克西斯微笑。「或許這個時代確實不再需要母神。」她化作滿天魔力消散——全深淵獲得永久魔力+3。你的地城成爲新的深淵中心</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>多重檢定詳解（C路線）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>檢定</th>
+<th>目標</th>
+<th>可用的輔助證據</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第1次 威儀(DOM)+外交</td>
+<td>證明深淵領主值得自主</td>
+<td>與至少3個NPC地城的盟友關係（每個盟友+1骰）</td>
+</tr>
+<tr>
+<td>第2次 威儀(DOM)+外交</td>
+<td>證明光明教團可以被遏制</td>
+<td>科爾溫的教團內部情報（+2骰）、擊敗教團遠征的戰績（+1骰）</td>
+</tr>
+<tr>
+<td>第3次 魔力(ARC)+奧術知識</td>
+<td>證明深淵魔力已經進化出新的生態</td>
+<td>玩家的魔法研究成果（+1骰）、艾瑟琳的維度研究（+1骰）、地城MAG≥12（+1骰）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>三次檢定全部成功 = C路線達成。任何一次失敗 = 奈克西斯不爲所動——回到A/B選擇。</p>
+</blockquote>
+<hr />
+<h3>第四幕餘波 — 終章事件</h3>
+<p>無論選擇如何，戰役以一場<strong>深淵新紀元</strong>的啓動儀式結束：</p>
+<ul>
+<li>
+<p><strong>若選A</strong>：你的地城成爲奈克西斯的聖殿。所有NPC前來朝拜。你的角色成爲深淵的「神之右手」——力量無雙，但永遠無法再對奈克西斯說「不」。</p>
+</li>
+<li>
+<p><strong>若選B</strong>：你失去地城，但獲得「流浪傳奇」身份——可在任何盟友地城之間自由旅居。新的冒險開始——你可以協助盟友對抗聖戰、尋找建立新地城的方法、或者——轉而滲透地表。24小時反攻地表的支線大事件可玩。</p>
+</li>
+<li>
+<p><strong>若選C</strong>：你的地城被公認「深淵的新中心」。光明教團被迫簽署停戰協議。從此——地下城不再是怪物的巢穴。<strong>它們是王國。</strong> </p>
+</li>
+</ul>
+<p><strong>終章場景</strong>：</p>
+<blockquote>
+<p>三個深淵月後。停戰協議簽署的當天。你站在王座廳的最高處，俯瞰你的地城——現在它不再是一串洞穴，而是一座繁榮的地下王國。怪物與轉化的前冒險者和平共處。遠方，新建的深淵使館中燈火通明——那是來自十六座地城的祝賀使節。深淵再也不會一樣了。</p>
+</blockquote>
+<hr />
+<h2>附錄：戰役追蹤表（GM用）</h2>
+<h3>地城成長指標</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Lv</th>
+<th style="text-align: center;">深度(DEP)</th>
+<th style="text-align: center;">惡名(INF)</th>
+<th style="text-align: center;">房間數</th>
+<th style="text-align: center;">怪物數</th>
+<th>外交關係</th>
+<th>關鍵解鎖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1-3</td>
+<td style="text-align: center;">3-5</td>
+<td>無</td>
+<td>基礎</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5-8</td>
+<td style="text-align: center;">5-8</td>
+<td>1個接觸</td>
+<td>原型Lv3</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8-12</td>
+<td style="text-align: center;">8-12</td>
+<td>1個盟友</td>
+<td>精英怪物</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">14-18</td>
+<td style="text-align: center;">12-16</td>
+<td>2-3個盟友</td>
+<td>深淵大廳</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">20-26</td>
+<td style="text-align: center;">16-22</td>
+<td>聯盟領袖</td>
+<td>原型Lv9</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">32-40</td>
+<td style="text-align: center;">24-32</td>
+<td>5+盟友</td>
+<td>深淵議會</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">50-60</td>
+<td style="text-align: center;">35-50</td>
+<td>全深淵</td>
+<td>終極</td>
+</tr>
+</tbody>
+</table>
+<h3>NPC關係追蹤</h3>
+<table>
+<thead>
+<tr>
+<th>NPC</th>
+<th style="text-align: center;">初始關係</th>
+<th style="text-align: center;">Lv5</th>
+<th style="text-align: center;">Lv8</th>
+<th style="text-align: center;">Lv12</th>
+<th style="text-align: center;">終局</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>馬爾薩斯</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>巴爾澤克</td>
+<td style="text-align: center;">-3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>維拉</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>扳手</td>
+<td style="text-align: center;">+5</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>莫瑞斯</td>
+<td style="text-align: center;">隨機</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>瑟拉希爾</td>
+<td style="text-align: center;">-2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>艾瑟琳</td>
+<td style="text-align: center;">+3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>科爾溫</td>
+<td style="text-align: center;">+2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>《深淵領主》劇本手冊 — 願你的地城永遠繁榮。</em></p><p><a href="../assets/r24/scenarios/s01_初次入侵與深淵帝國戰役.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer></body></html>

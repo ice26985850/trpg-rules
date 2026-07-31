@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1074" height="306" viewBox="0 0 1074 306" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="1074" height="306" fill="#FBFCFE"/>
+<rect x="18" y="64" width="1038" height="102" rx="14" fill="#ECEFF1" fill-opacity="0.55" stroke="#ECEFF1" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">外圍/中層</text>
+<rect x="284" y="186" width="506" height="102" rx="14" fill="#FFEBEE" fill-opacity="0.55" stroke="#FFEBEE" stroke-opacity="0.9"/>
+<text x="294" y="204" font-size="13" font-weight="bold" fill="#37474F">深層—裂隙</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">艾希拉設施深層實驗室</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">區域：核心區　危險：★★★★★　適合等級（Lv.）：10</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="115" x2="404" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="118" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="404" y1="115" x2="670" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="118" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="670" y1="115" x2="670" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="646" y="166" width="47" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="670" y="179" font-size="12" fill="#455A64" text-anchor="middle">電梯井</text>
+<line x1="670" y1="115" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="166" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="179" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="670" y1="237" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="227" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="240" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="404" y1="237" x2="936" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="640" y="166" width="60" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="670" y="179" font-size="12" fill="#455A64" text-anchor="middle">崩塌通道</text>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="112" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">QZAC</text>
+<text x="138" y="129" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 特許通道入口</text>
+<title>QZAC 特許通道入口：終局特開核心區入口；安全檢查站；伴侶：「四進去兩出來」</title>
+<rect x="306" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">時間扭曲廢墟</text>
+<title>時間扭曲廢墟：無帷幕共鳴器→全檢定劣勢；傳送型/核心區變異體×1；能量電池（金）</title>
+<rect x="572" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="112" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">深層入口</text>
+<text x="670" y="129" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">（重力崩潰）</text>
+<title>深層入口（重力崩潰）：備用電梯（技師 TN17）或攀電梯井（體魄 TN14）；傳送變異體×2</title>
+<rect x="572" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="234" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">深層實驗室</text>
+<text x="670" y="251" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">—裂隙核心</text>
+<title>深層實驗室—裂隙核心：維度裂隙；維度守護者（終極弱化）；伴侶可犧牲爭取 1 回合</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">控制室</text>
+<title>控制室：關閉裂隙：技術 TN23×3（技師協助→TN20）；每輪能量波 2d6</title>
+<rect x="838" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="936" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">最終逃脫路線</text>
+<title>最終逃脫路線：連鎖崩塌；10 回合內撤離；QZAC 直升機最後 3 回合到達</title>
+</svg>

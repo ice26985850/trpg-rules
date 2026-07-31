@@ -1,0 +1,76 @@
+id: "OVERVIEW"
+title: "封鎖區總覽（Quarantine Zone Overview）"
+region: "封鎖區全域"
+danger: "—"
+suitable_levels: []
+regions:
+  - name: "邊緣地帶（★☆☆☆☆）"
+    color: "#E8F5E9"
+  - name: "舊城區（★★☆☆☆）"
+    color: "#E3F2FD"
+  - name: "工業區（★★★☆☆）"
+    color: "#FFF3E0"
+  - name: "核心區（★★★★★）"
+    color: "#FFEBEE"
+nodes:
+  - id: "m1"
+    name: "MAP-01 灰燼商場停車場"
+    region: "邊緣地帶（★☆☆☆☆）"
+    col: 0
+    row: 0
+    note: "邊緣地帶｜危險★★☆☆☆｜適合 Lv.1-2"
+  - id: "m2"
+    name: "MAP-02 靜默社區小學"
+    region: "舊城區（★★☆☆☆）"
+    col: 0
+    row: 1
+    note: "舊城區｜危險★★☆☆☆｜適合 Lv.3"
+  - id: "m3"
+    name: "MAP-03 地下隧道系統"
+    region: "舊城區（★★☆☆☆）"
+    col: 1
+    row: 1
+    note: "舊城區｜危險★★★★☆｜適合 Lv.4"
+  - id: "m4"
+    name: "MAP-04 鏽蝕工廠大樓"
+    region: "工業區（★★★☆☆）"
+    col: 0
+    row: 2
+    note: "工業區｜危險★★★★☆｜適合 Lv.6-7"
+  - id: "m6"
+    name: "MAP-06 兄弟會總部"
+    region: "工業區（★★★☆☆）"
+    col: 1
+    row: 2
+    note: "工業區｜危險★★★★★｜適合 Lv.9"
+  - id: "m5"
+    name: "MAP-05 廢棄教堂+墓穴"
+    region: "核心區（★★★★★）"
+    col: 0
+    row: 3
+    note: "核心區邊緣｜危險★★★★☆｜適合 Lv.8"
+  - id: "m7"
+    name: "MAP-07 艾希拉深層實驗室"
+    region: "核心區（★★★★★）"
+    col: 1
+    row: 3
+    note: "核心區｜危險★★★★★｜適合 Lv.10"
+edges:
+  - from: "m1"
+    to: "m2"
+    label: ""
+  - from: "m2"
+    to: "m3"
+    label: ""
+  - from: "m4"
+    to: "m6"
+    label: ""
+  - from: "m3"
+    to: "m4"
+    label: ""
+  - from: "m4"
+    to: "m5"
+    label: ""
+  - from: "m5"
+    to: "m7"
+    label: "裂隙能量擴散"

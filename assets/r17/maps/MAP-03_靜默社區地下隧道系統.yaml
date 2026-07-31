@@ -1,0 +1,52 @@
+id: "MAP-03"
+title: "靜默社區地下隧道系統"
+region: "舊城區"
+danger: "★★★★☆"
+suitable_levels: [4]
+regions:
+  - name: "隧道系統"
+    color: "#ECEFF1"
+nodes:
+  - id: "sewer"
+    name: "下水道出口"
+    region: "隧道系統"
+    col: 0
+    row: 0
+    note: "社區北側進入；教團符號；通風口（感知 TN11→暗門）"
+  - id: "door_b"
+    name: "B 棟暗門"
+    region: "隧道系統"
+    col: 1
+    row: 0
+    note: "隱藏暗門（察覺 TN11 或技師發現氣流）；後接約 30m 隧道"
+  - id: "shrine"
+    name: "主隧道—聖物室"
+    region: "隧道系統"
+    col: 2
+    row: 0
+    note: "最寬敞區；教團聖物（藍）、日記殘頁（紫）、帷幕碎片（金）；儀式祭壇"
+  - id: "gate"
+    name: "隧道閘門"
+    region: "隧道系統"
+    col: 3
+    row: 0
+    note: "金屬閘門（DR3）；關閉（技術 TN14）隔絕守護者；控制板電子 TN11"
+  - id: "exit_c"
+    name: "社區中心後方出口"
+    region: "隧道系統"
+    col: 4
+    row: 0
+    note: "通往地表；出口被雜物遮蔽（開鎖/體力破壞，感知 TN14）"
+edges:
+  - from: "sewer"
+    to: "door_b"
+    label: "通道"
+  - from: "door_b"
+    to: "shrine"
+    label: "隧道 30m"
+  - from: "shrine"
+    to: "gate"
+    label: "通道"
+  - from: "gate"
+    to: "exit_c"
+    label: "通道"

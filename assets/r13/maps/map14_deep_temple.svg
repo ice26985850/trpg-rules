@@ -1,0 +1,69 @@
+<svg viewBox="0 0 880 680" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Microsoft JhengHei, sans-serif">
+<rect width="880" height="680" fill="#f7f4ec"/>
+<rect x="52" y="385" width="76" height="76" rx="10" fill="rgba(160,149,133,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="60" y="403" font-size="11pt" fill="#7a6f55">深巢入口</text>
+<rect x="252" y="452" width="343" height="76" rx="10" fill="rgba(138,126,108,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="260" y="470" font-size="11pt" fill="#7a6f55">深巢隧道</text>
+<rect x="385" y="252" width="76" height="76" rx="10" fill="rgba(201,184,150,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="393" y="270" font-size="11pt" fill="#7a6f55">神殿入口</text>
+<rect x="385" y="52" width="143" height="76" rx="10" fill="rgba(212,160,64,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="393" y="70" font-size="11pt" fill="#7a6f55">神殿核心</text>
+<rect x="719" y="385" width="76" height="143" rx="10" fill="rgba(191,181,160,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="727" y="403" font-size="11pt" fill="#7a6f55">深巢聚居地</text>
+<rect x="752" y="252" width="76" height="76" rx="10" fill="rgba(153,153,153,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="760" y="270" font-size="11pt" fill="#7a6f55">神殿側翼</text>
+<line x1="90" y1="423" x2="290" y2="490" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="290" y1="490" x2="557" y2="490" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="290" y1="490" x2="423" y2="290" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="557" y1="490" x2="757" y2="490" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="423" y1="290" x2="423" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="423" y1="90" x2="490" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="757" y1="490" x2="790" y2="290" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="757" y1="490" x2="757" y2="423" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<circle cx="90" cy="423" r="30" fill="#6fae6f" stroke="#333" stroke-width="2.2"/>
+<text x="90" y="421" text-anchor="middle" font-size="10.5pt" fill="#222">入口隧道</text>
+<circle cx="290" cy="490" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="290" y="488" text-anchor="middle" font-size="10.5pt" fill="#222">深巢隧道</text>
+<text x="290" y="504" text-anchor="middle" font-size="8.5pt" fill="#a33">變異潛伏者×2</text>
+<text x="290" y="532" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="557" cy="490" r="30" fill="#e08a2b" stroke="#a33" stroke-width="2.2"/>
+<text x="557" y="488" text-anchor="middle" font-size="10.5pt" fill="#222">毒氣區域</text>
+<text x="557" y="504" text-anchor="middle" font-size="8.5pt" fill="#a33">生命值（HP） -1d4/回合</text>
+<text x="557" y="532" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="423" cy="290" r="30" fill="#c04040" stroke="#a33" stroke-width="2.2"/>
+<text x="423" y="288" text-anchor="middle" font-size="10.5pt" fill="#222">神殿外圍</text>
+<text x="423" y="304" text-anchor="middle" font-size="8.5pt" fill="#a33">變異巨獸 CR3</text>
+<text x="423" y="332" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="757" cy="490" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="757" y="488" text-anchor="middle" font-size="10.5pt" fill="#222">盲先知居所</text>
+<text x="757" y="532" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="423" cy="90" r="30" fill="#c04040" stroke="#a33" stroke-width="2.2"/>
+<text x="423" y="88" text-anchor="middle" font-size="10.5pt" fill="#222">神殿內部</text>
+<text x="423" y="104" text-anchor="middle" font-size="8.5pt" fill="#a33">混沌STC終端 | 每分鐘腐化…</text>
+<text x="423" y="132" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="490" cy="90" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="490" y="88" text-anchor="middle" font-size="10.5pt" fill="#222">亞空間裂縫</text>
+<text x="490" y="104" text-anchor="middle" font-size="8.5pt" fill="#a33">休眠裂縫 | 靈能/爆炸觸發</text>
+<text x="490" y="132" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="790" cy="290" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="790" y="288" text-anchor="middle" font-size="10.5pt" fill="#222">監視小隊伏擊區</text>
+<text x="790" y="304" text-anchor="middle" font-size="8.5pt" fill="#a33">審判庭突擊兵×3</text>
+<text x="790" y="332" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="757" cy="423" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="757" y="421" text-anchor="middle" font-size="10.5pt" fill="#222">鏽童聚居地</text>
+<rect x="705" y="550" width="160" height="120" rx="6" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="715" y="570" font-size="10pt" font-weight="bold" fill="#333">圖例</text>
+<circle cx="723" cy="586" r="8" fill="#6fae6f" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="590" font-size="9.5pt" fill="#333">入口</text>
+<circle cx="723" cy="601" r="8" fill="#5b9bd5" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="605" font-size="9.5pt" fill="#333">撤離</text>
+<circle cx="723" cy="616" r="8" fill="#c04040" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="620" font-size="9.5pt" fill="#333">Boss</text>
+<circle cx="723" cy="631" r="8" fill="#e08a2b" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="635" font-size="9.5pt" fill="#333">環境危害</text>
+<circle cx="723" cy="646" r="8" fill="#9aa0a6" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="650" font-size="9.5pt" fill="#333">集結區</text>
+<circle cx="723" cy="661" r="8" fill="#cdbf9a" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="665" font-size="9.5pt" fill="#333">區域</text>
+<g transform="translate(825,55)"><circle r="26" fill="#f5f0e0" stroke="#333" stroke-width="2"/><text x="0" y="-12" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#333">北</text><line x1="0" y1="-22" x2="0" y2="-8" stroke="#c00" stroke-width="2"/></g>
+</svg>

@@ -1,0 +1,85 @@
+name: "骨堆的回音"
+difficulty: "中級 (挑戰等級（CR） 2-3)"
+mode: "凡人 · 單人"
+judge: "伊利亞·科爾（激進）"
+target_region: "廢巢「骨堆」第 2000 層，混沌教派據點"
+recommended_attributes: "3-4"
+
+opening_description: >
+  伊利亞給了你一個不可能完成的任務——獨自潛入廢巢深處的混沌教派據點，在他們的儀式完成前阻止。
+  他還給了你一個助手——一個他不信任的靈能者。
+
+surface_goal: >
+  潛入廢巢骨堆，找到混沌教派據點，殲滅教眾並銷毀所有混沌物品。
+
+hidden_goal: >
+  教派領袖是一個 Psi 2 靈能者，正在進行召喚儀式。如果完成——你就是祭品。
+  伊利亞故意少給了照明彈。
+
+known_threats:
+  - "約 10-15 名教眾"
+  - "至少 1-2 名侍僧"
+  - "底巢環境危險（黑暗、結構不穩）"
+
+hidden_threats:
+  - "教派領袖 Psi 2 靈能者——召喚亞空間實體儀式"
+  - "儀式已進行到第 5 天（共需 9 天）。2 次遊戲內未能阻止則召喚完成"
+  - "伊利亞故意少給照明彈配給"
+
+resources:
+  medical_pack: 2
+  holy_water: 3
+  holy_oil: 3
+  flare: 2
+  food_water_days: 3
+  ammo_magazines: 2
+
+internal_seduction_trigger:
+  timing: "在儀式大廳外，聽到混沌靈能者的召喚聲時"
+  whisper: "澤維爾跟那個靈能者是一樣的。他們都是未登記的。你能信任他嗎？也許你應該在他背叛之前……先下手。"
+
+companions:
+  - name: "澤維爾"
+    role: "未登記靈能者，Psi 2"
+    backstory: "瘦弱的青年，能聽到亞空間的聲音。他害怕自己——也害怕你"
+    motive: "證明自己不是怪物。審判官說如果他完成 5 次服務就釋放他——這是他第 3 次"
+    bottom_line: "絕不讓靈能傷害無辜者"
+    initial_attitude: -1
+    attributes:
+      faith: 2
+      physique: 2
+      mind: 4
+      skill: 2
+      fate: 3
+    trained_skills: ["靈能感知", "調查"]
+    equipment: ["無武器", "無護甲", "亞空間共鳴石"]
+    special_ability:
+      name: "靈能感知"
+      desc: "自動感知 30m 內混沌汙染和亞空間異常。靈能衝擊：每場戰鬥 1 次，對 20m 內目標造成 2d6 精神傷害（使用後自動觸發亞空間現象）"
+
+key_checks:
+  - scene: "取得澤維爾的信任"
+    check: "佈道（標準）"
+    tn_adjustment: 0
+    success: "態度升至 0"
+    failure: "保持 -1"
+  - scene: "澤維爾感知儀式進度"
+    check: "靈能感知（標準）"
+    tn_adjustment: 0
+    success: "得知儀式剩餘時間"
+    failure: "不確定"
+  - scene: "打斷儀式"
+    check: "攻擊靈能者或破壞儀式圈"
+    tn_adjustment: 0
+    success: "阻止召喚"
+    failure: "亞空間之影出現"
+
+encounters:
+  - name: "外圍哨站"
+    enemies: "信徒 ×4 + 侍僧 ×1"
+    tactic: "利用掩體防守。澤維爾可以提供遠程靈能支援"
+  - name: "儀式大廳"
+    enemies: "侍僧 ×1 + 信徒 ×3 + 耳語者(Psi2)"
+    tactic: "耳語者不斷施放靈能。必須優先解決靈能者"
+
+map_ref: "maps/map03_bonestack"

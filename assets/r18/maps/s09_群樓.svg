@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" font-family="serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="0" y="0" width="680" height="560" fill="#F7F3EC"/>
+
+  <!-- 標題 -->
+  <text x="20" y="26" font-size="20" fill="#2B2B2B" font-weight="bold">S9 群樓紅雨 · 三棟相鄰唐樓（小隊分頭）</text>
+
+  <!-- 區域底色 -->
+  <rect x="40" y="90" width="500" height="420" rx="12" fill="#E8D5C4" fill-opacity="0.18" stroke="#C9A98C" stroke-dasharray="6 4" stroke-width="1.2"/>
+  <text x="50" y="108" font-size="12" fill="#8A6B4F">三棟鏡映區（怨氣可互相傳導）</text>
+  <rect x="500" y="430" width="150" height="60" rx="10" fill="#D5E8E0" fill-opacity="0.3" stroke="#7FB0A0" stroke-dasharray="6 4" stroke-width="1.2"/>
+  <text x="510" y="448" font-size="12" fill="#3E7A66">福臨樓</text>
+  <text x="510" y="466" font-size="11" fill="#3E7A66">風水渠（同源）</text>
+
+  <!-- 連線：三棟樓梯間垂直 + 怨氣傳導 + 同步法壇 -->
+  <g stroke="#777" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <!-- 福興樓 vertical -->
+    <line x1="90" y1="448" x2="90" y2="432"/>
+    <line x1="90" y1="328" x2="90" y2="312"/>
+    <line x1="90" y1="208" x2="90" y2="192"/>
+    <!-- 義成大廈 vertical -->
+    <line x1="260" y1="448" x2="260" y2="432"/>
+    <line x1="260" y1="328" x2="260" y2="312"/>
+    <line x1="260" y1="208" x2="260" y2="192"/>
+    <!-- 福臨樓 vertical -->
+    <line x1="430" y1="448" x2="430" y2="432"/>
+    <line x1="430" y1="328" x2="430" y2="312"/>
+    <line x1="430" y1="208" x2="430" y2="192"/>
+    <!-- 怨氣傳導（三棟互連） -->
+    <line x1="110" y1="380" x2="250" y2="380"/>
+    <line x1="280" y1="380" x2="410" y2="380"/>
+    <!-- 同步法壇 連三棟高層 -->
+    <line x1="200" y1="260" x2="270" y2="260"/>
+    <line x1="340" y1="290" x2="340" y2="270"/>
+    <line x1="370" y1="260" x2="430" y2="260"/>
+  </g>
+
+  <!-- 節點 -->
+  <g font-size="13" text-anchor="middle" fill="#2B2B2B">
+    <!-- 福興樓 -->
+    <rect x="30" y="448" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="90" y="473">福興樓·地面</text>
+    <rect x="30" y="328" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="90" y="353">福興樓·樓層</text>
+    <rect x="30" y="208" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="90" y="233">福興樓·天台</text>
+
+    <!-- 義成大廈 -->
+    <rect x="200" y="448" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="260" y="473">義成·地面</text>
+    <rect x="200" y="328" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="260" y="353">義成·樓層</text>
+    <rect x="200" y="208" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="260" y="233">義成·天台</text>
+
+    <!-- 福臨樓 -->
+    <rect x="370" y="448" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="430" y="473">福臨樓·地面</text>
+    <rect x="370" y="328" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="430" y="353">福臨樓·樓層</text>
+    <rect x="370" y="208" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="430" y="233">福臨樓·天台</text>
+
+    <!-- 同步法壇（中心） -->
+    <rect x="290" y="240" width="120" height="44" rx="8" fill="#F0E2C0" stroke="#C9A23C" stroke-width="2"/>
+    <text x="350" y="267">同步法壇</text>
+
+    <!-- 風水渠 -->
+    <rect x="510" y="430" width="120" height="40" rx="8" fill="#E8E1D0" stroke="#BBAE92" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="570" y="455">風水渠（線索）</text>
+  </g>
+
+  <!-- 圖例 -->
+  <g font-size="11" fill="#555">
+    <rect x="520" y="350" width="14" height="14" rx="3" fill="#E1E8F0"/><text x="540" y="362">唐樓節點</text>
+    <rect x="520" y="370" width="14" height="14" rx="3" fill="#F0E2C0"/><text x="540" y="382">同步法壇</text>
+    <rect x="520" y="390" width="14" height="14" rx="3" fill="#E8E1D0"/><text x="540" y="402">線索點</text>
+  </g>
+
+  <!-- 底部註解 -->
+  <text x="20" y="540" font-size="12" fill="#666">對應劇本：S9 群樓紅雨·小隊（多人玩家）｜ 關鍵：三棟信箱格藏信、凌晨三點同步超渡、風水渠同源指向「世出世」</text>
+</svg>

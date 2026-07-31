@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid -->
+<pattern id="g2" width="30" height="30"><rect width="30" height="30" fill="none"/><rect x="30" y="0" width="1" height="30" fill="#eee"/><rect x="0" y="30" width="30" height="1" fill="#eee"/></pattern>
+<rect width="820" height="620" fill="url(#g2)"/>
+<!-- Church exterior wall -->
+<rect x="60" y="60" width="700" height="480" rx="6" fill="#5a4e40" stroke="#222" stroke-width="3"/>
+<!-- Nave (main hall) -->
+<rect x="100" y="100" width="620" height="220" fill="#f5e6c8" stroke="#444" stroke-width="1.5"/>
+<text x="410" y="210" text-anchor="middle" font-size="14pt" font-weight="bold" fill="#333">聖堂中殿</text>
+<text x="410" y="232" text-anchor="middle" font-size="10pt" fill="#666">入口 ← | 殘影守衛(中) | 日記碎片 ×3 分布四周</text>
+<!-- Altar (east end) -->
+<rect x="580" y="100" width="140" height="220" fill="#e8d4a8" stroke="#444" stroke-width="1.5"/>
+<text x="650" y="200" text-anchor="middle" font-size="12pt" fill="#333">祭壇</text>
+<text x="650" y="220" text-anchor="middle" font-size="9pt" fill="#666">守衛殘影</text>
+<text x="650" y="236" text-anchor="middle" font-size="9pt" fill="#666">信仰檢定(困難)</text>
+<!-- Side rooms -->
+<rect x="100" y="360" width="200" height="160" fill="#ddd5c0" stroke="#444" stroke-width="1.5"/>
+<text x="200" y="440" text-anchor="middle" font-size="11pt" fill="#333">側室 A</text>
+<text x="200" y="460" text-anchor="middle" font-size="9pt" fill="#666">日記頁 1、2</text>
+<rect x="540" y="360" width="180" height="160" fill="#ddd5c0" stroke="#444" stroke-width="1.5"/>
+<text x="630" y="440" text-anchor="middle" font-size="11pt" fill="#333">側室 B</text>
+<text x="630" y="460" text-anchor="middle" font-size="9pt" fill="#666">日記頁 3、雜物架</text>
+<!-- Underground entrance -->
+<rect x="300" y="360" width="230" height="160" fill="#c9b896" stroke="#444" stroke-width="1.5"/>
+<text x="415" y="430" text-anchor="middle" font-size="11pt" fill="#333">↓ 通地下祭壇</text>
+<text x="415" y="450" text-anchor="middle" font-size="9pt" fill="#666">變異神父伊利昂</text>
+<!-- Underground chamber -->
+<rect x="60" y="540" width="700" height="80" fill="#b8956a" stroke="#444" stroke-width="2"/>
+<text x="410" y="585" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#222">地下祭壇 — 混沌物品 | 腐化+1/回合 | 破壞需信仰檢定(困難)</text>
+<rect x="60" y="540" width="700" height="80" fill="#c00" opacity="0.1"/>
+<!-- Stairs to underground -->
+<line x1="415" y1="520" x2="415" y2="540" stroke="#333" stroke-width="2" stroke-dasharray="4,3"/>
+<text x="425" y="533" font-size="9pt" fill="#666">樓梯</text>
+<!-- Compass -->
+<g transform="translate(740,540)">
+<circle cx="30" cy="30" r="22" fill="#f5f0e0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">北</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">南</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">東</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">西</text>
+</g>
+<!-- Scale -->
+<line x1="60" y1="610" x2="210" y2="610" stroke="#333" stroke-width="2"/>
+<text x="135" y="618" text-anchor="middle" font-size="10pt">15 公尺</text>
+</svg>

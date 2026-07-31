@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 380 730" font-family="'Microsoft JhengHei','PingFang TC','Heiti TC','Noto Sans CJK TC',sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#555"/></marker></defs>
+<text x="140" y="24" font-size="18" font-weight="bold" fill="#222">MAP-10 第一封印——密封空間位置與入口</text>
+<rect x="140" y="50" width="300" height="640" rx="14" fill="#efe6ff" fill-opacity="0.4" stroke="#9b6dd6" stroke-dasharray="6 4"/>
+<text x="152" y="72" font-size="14" font-weight="bold" fill="#9b6dd6">敘事終點（非探索型）</text>
+<line x1="300.0" y1="140.0" x2="300.0" y2="190.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="300.0" y1="250.0" x2="300.0" y2="300.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="300.0" y1="360.0" x2="300.0" y2="410.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="300.0" y1="470.0" x2="300.0" y2="520.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="300.0" y1="580.0" x2="300.0" y2="630.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="200" y="80" width="200" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="300.0" y="105.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">場景1：召集</text>
+<text x="300.0" y="122.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">NPC 後勤與安全網</text>
+<rect x="200" y="190" width="200" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="300.0" y="215.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">場景2：抵達封印</text>
+<text x="300.0" y="232.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">覺察DC10 確認擴大</text>
+<rect x="200" y="300" width="200" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="300.0" y="325.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">場景3：第一看守者</text>
+<text x="300.0" y="342.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">交涉DC18 取得封印之鑰</text>
+<rect x="200" y="410" width="200" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="300.0" y="435.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">場景4：進入密封空間</text>
+<text x="300.0" y="452.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">定錨DC16（玩家）</text>
+<rect x="200" y="520" width="200" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="300.0" y="545.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">場景5：面對被否認者</text>
+<text x="300.0" y="562.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">終極交涉DC20</text>
+<rect x="200" y="630" width="200" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="300.0" y="655.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">場景6：最終決定</text>
+<text x="300.0" y="672.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">承認/重封/拒絕</text>
+</svg>

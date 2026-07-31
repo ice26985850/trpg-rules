@@ -1,0 +1,45 @@
+# 起始科技（T1 級）
+# 每科 3 選 1，分別為物理 / 社會 / 工程
+
+techs:
+  physics:
+    - id: "P-T1-01"
+      name: "基礎聚變能源"
+      desc: "解锁 能源（EC） 基礎產出 +2"
+      effect: "能源（EC） 初始產出 +2"
+    - id: "P-T1-02"
+      name: "量子通訊"
+      desc: "解锁 情報力 +1"
+      effect: "情報力（INT） 初始 +1"
+    - id: "P-T1-03"
+      name: "反重力技術"
+      desc: "解锁 艦隊速度 +10%"
+      effect: "艦隊移動距離 +20%"
+
+  society:
+    - id: "S-T1-01"
+      name: "基礎外交所學"
+      desc: "解锁 外交力 +1"
+      effect: "外交力（DIP） 初始 +1"
+    - id: "S-T1-02"
+      name: "社會契約論"
+      desc: "解锁 穩定度 +10%"
+      effect: "凝聚力（UNI） 初始 +1"
+    - id: "S-T1-03"
+      name: "跨物種研究"
+      desc: "解锁 NPC 夥伴忠誠度 +1"
+      effect: "夥伴初始忠誠度 +1"
+
+  engineering:
+    - id: "E-T1-01"
+      name: "基礎太空航行"
+      desc: "解锁 護衛艦建造"
+      effect: "艦隊 +1 護衛艦"
+    - id: "E-T1-02"
+      name: "標準造船框架"
+      desc: "解锁 驅逐艦建造"
+      effect: "艦隊 +1 驅逐艦"
+    - id: "E-T1-03"
+      name: "自動化殖民技術"
+      desc: "解锁 殖民成本 -20%"
+      effect: "經濟力（ECO） 殖民檢定 +1 骰"

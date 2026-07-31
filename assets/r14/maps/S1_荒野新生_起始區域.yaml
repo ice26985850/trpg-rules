@@ -1,0 +1,112 @@
+# 地圖：S1 荒野新生 — 起始區域
+# 對應劇本：S1_荒野新生，階段一「登陸」
+
+nodes:
+  - id: "camp"
+    label: "玩家的營地"
+    x: 400
+    y: 350
+    type: "settlement"
+    explored: true
+    description: "你的第一個定居點——簡陋但充滿希望"
+
+  - id: "river"
+    label: "翡翠河"
+    x: 350
+    y: 420
+    type: "resource"
+    explored: true
+    description: "清澈的河流，提供水源和魚獲"
+
+  - id: "forest_east"
+    label: "東部森林"
+    x: 600
+    y: 300
+    type: "wilderness"
+    explored: false
+    description: "茂密的森林，傳聞中有藥草和野獸"
+
+  - id: "hills_north"
+    label: "北部丘陵"
+    x: 400
+    y: 150
+    type: "wilderness"
+    explored: false
+    description: "起伏的丘陵——可能有礦脈"
+
+  - id: "ruins_west"
+    label: "廢棄神殿"
+    x: 150
+    y: 300
+    type: "ruins"
+    explored: false
+    description: "一座被藤蔓覆蓋的古老神殿"
+
+  - id: "neighbor_border"
+    label: "鄰國邊境"
+    x: 650
+    y: 500
+    type: "border"
+    explored: false
+    description: "越過這條無形的線就是鄰國的領土"
+
+  - id: "hunters_cabin"
+    label: "獵人小屋"
+    x: 500
+    y: 250
+    type: "landmark"
+    explored: true
+    description: "廢棄的獵人小屋——似乎被匆忙遺棄"
+
+  - id: "trading_post"
+    label: "交易站遺址"
+    x: 250
+    y: 500
+    type: "landmark"
+    explored: false
+    description: "曾經的交易站——只剩殘垣斷壁"
+
+edges:
+  - from: "camp"
+    to: "river"
+    type: "path"
+    label: "汲水路徑"
+  - from: "camp"
+    to: "forest_east"
+    type: "trail"
+    label: "狩獵小徑"
+  - from: "camp"
+    to: "hills_north"
+    type: "trail"
+    label: "探索路線"
+  - from: "camp"
+    to: "hunters_cabin"
+    type: "path"
+    label: "舊獵徑"
+  - from: "camp"
+    to: "ruins_west"
+    type: "trail"
+    label: "古道"
+  - from: "camp"
+    to: "trading_post"
+    type: "path"
+    label: "舊商路"
+  - from: "forest_east"
+    to: "neighbor_border"
+    type: "trail"
+    label: "邊境通道"
+  - from: "ruins_west"
+    to: "trading_post"
+    type: "trail"
+    label: "古道"
+
+regions:
+  - name: "玩家領地"
+    color: "#4CAF50"
+    nodes: ["camp", "river", "hunters_cabin"]
+  - name: "未探索區域"
+    color: "#9E9E9E"
+    nodes: ["forest_east", "hills_north", "ruins_west", "trading_post"]
+  - name: "鄰國領土"
+    color: "#FF9800"
+    nodes: ["neighbor_border"]

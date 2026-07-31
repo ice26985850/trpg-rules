@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g3" width="35" height="35"><rect width="35" height="35" fill="none"/><rect x="35" y="0" width="1" height="35" fill="#e5e0d8"/><rect x="0" y="35" width="35" height="1" fill="#e5e0d8"/></pattern>
+<rect width="820" height="620" fill="url(#g3)"/>
+<!-- Outer walls - dark/decayed -->
+<rect x="40" y="40" width="740" height="520" rx="4" fill="#3a3530" stroke="#222" stroke-width="3" opacity="0.5"/>
+<!-- Sector A: Outer Sentry Post (NW corner) -->
+<rect x="70" y="70" width="250" height="200" fill="#8c7e6a" stroke="#444" stroke-width="1.5"/>
+<text x="195" y="160" text-anchor="middle" font-size="13pt" font-weight="bold" fill="#111">外圍哨站</text>
+<text x="195" y="180" text-anchor="middle" font-size="10pt" fill="#333">信徒×6 + 侍僧×1</text>
+<text x="195" y="196" text-anchor="middle" font-size="9pt" fill="#555">CR 1</text>
+<!-- Arrows - patrol sweep -->
+<polyline points="100,260 195,260 195,100" fill="none" stroke="#a00" stroke-width="1.5" stroke-dasharray="5,3"/>
+<polyline points="290,100 290,260 195,260" fill="none" stroke="#a00" stroke-width="1.5" stroke-dasharray="5,3"/>
+<!-- Sector B: Hidden Path (Sloped - stealth path) -->
+<path d="M350,270 Q400,200 500,200 L620,200" fill="none" stroke="#080" stroke-width="3" stroke-dasharray="8,4"/>
+<text x="485" y="190" text-anchor="middle" font-size="10pt" fill="#060">★ 隱蔽路線 (警覺困難)</text>
+<text x="485" y="206" text-anchor="middle" font-size="9pt" fill="#060">被發現 → 警報！</text>
+<!-- Sector C: Ritual Hall (East - boss area) -->
+<rect x="520" y="70" width="230" height="260" fill="#b85a3a" stroke="#444" stroke-width="2"/>
+<text x="635" y="175" text-anchor="middle" font-size="14pt" font-weight="bold" fill="#111">儀式大廳</text>
+<text x="635" y="197" text-anchor="middle" font-size="10pt" fill="#333">侍僧×2 + 信徒×4</text>
+<text x="635" y="213" text-anchor="middle" font-size="10pt" fill="#333">+ 耳語者 (Psi 3) = CR 2</text>
+<text x="635" y="235" text-anchor="middle" font-size="9pt" fill="#800" font-weight="bold">🔥 儀式圈(中央)</text>
+<!-- Ritual circle symbol -->
+<circle cx="635" cy="265" r="18" fill="none" stroke="#c00" stroke-width="2"/>
+<text x="635" y="269" text-anchor="middle" font-size="14pt" fill="#c00">✦</text>
+<text x="635" y="300" text-anchor="middle" font-size="9pt" fill="#800">打斷=戰鬥 | 失敗=亞空間之影</text>
+<!-- Sector D: Back Alley / Contact Area (SW) -->
+<rect x="70" y="310" width="250" height="230" fill="#7a6e5c" stroke="#444" stroke-width="1.5"/>
+<text x="195" y="390" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">後巷聯絡點</text>
+<text x="195" y="410" text-anchor="middle" font-size="10pt" fill="#333">「無光者」幫派聯絡人</text>
+<text x="195" y="428" text-anchor="middle" font-size="9pt" fill="#555">談判：欺瞞標準 | 換取情報+捷徑</text>
+<!-- Sector E: Dark Tunnel (Bottom center) -->
+<rect x="350" y="350" width="400" height="190" fill="#968a78" stroke="#444" stroke-width="1.5"/>
+<text x="550" y="420" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">黑暗隧道</text>
+<text x="550" y="440" text-anchor="middle" font-size="10pt" fill="#333">← 通往儀式大廳 | → 通往外圍哨站</text>
+<text x="550" y="458" text-anchor="middle" font-size="9pt" fill="#666">黑暗環境 (警覺困難)</text>
+<!-- Connection corridors -->
+<rect x="320" y="350" width="35" height="100" fill="#666" stroke="#444" stroke-width="1"/>
+<text x="337" y="410" text-anchor="middle" font-size="8pt" fill="#333">通道</text>
+<rect x="520" y="420" width="35" height="120" fill="#666" stroke="#444" stroke-width="1"/>
+<!-- Compass -->
+<g transform="translate(740,560)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">北</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">南</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">東</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">西</text>
+</g>
+<!-- Scale -->
+<line x1="40" y1="580" x2="200" y2="580" stroke="#333" stroke-width="2"/>
+<text x="120" y="595" text-anchor="middle" font-size="10pt">25 公尺</text>
+</svg>

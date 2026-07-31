@@ -1,0 +1,111 @@
+# 星艦突擊登艦隊——劇本 S1：處女航（處女航）
+# 格式：YAML 結構化劇本
+
+scenario_id: S1_處女航
+title: "處女航（處女航）——邊境之眼號"
+subtitle: "新兵的第一場任務。學習基本機制。沒有自毀系統——壓力最小。"
+difficulty: 教學
+recommended_level: 1
+player_count:
+  min: 1
+  max: 6
+estimated_duration: "2–3 小時"
+
+mission_type: 數據掠奪（數據掠奪）
+enemy_vessel:
+  name: "邊境之眼號（邊境之眼號）"
+  type: 人類巡邏艇（人類巡邏艇）
+  faction: 自由星系同盟（自由星系同盟，FSA）
+  size: 小型（長度 85 公尺）
+  decks: 2
+  gravity: 標準重力（1G）——全艦
+  self_destruct: false  # 無自毀系統
+
+story_summary: >
+  協約聯合艦隊（協約聯合艦隊，CUF）情報部在邊境星系攔截到一艘同盟巡邏艇「邊境之眼號」的異常通訊。
+  該艦似乎在執行某種偵察任務，攜帶了關於同盟艦隊部署的最新數據。
+  母艦仲裁者號（仲裁者號）派出新兵小隊進行首次實戰登艦——目標是登艦、提取戰術數據、安全撤離。
+  這是一場被設計為「可控難度」的任務。邊境之眼號沒有自毀系統，守軍多為艦員而非陸戰隊員。
+
+turning_points:
+  - id: TP1
+    name: "切入點選擇"
+    description: "玩家可選擇從貨艙（安全但距離資料中心最遠）或艦橋附近外殼（快速但風險高）切入。"
+    options:
+      - choice: 貨艙切入
+        consequence: "起點遠離目標但守軍少。適合潛行路線。"
+      - choice: 艦橋附近切入
+        consequence: "距離目標近但首輪遭遇 2 名警衛。"
+
+  - id: TP2
+    name: "甲板間的守衛"
+    description: "通往第二層甲板的主樓梯有 2 名警衛巡邏。玩家可選擇交戰或通過維護通道繞行。"
+    options:
+      - choice: 正面交戰
+        consequence: "EL 3 遭遇（2 名警衛）。獲勝後可繼續推進。"
+      - choice: 維護通道繞行
+        consequence: "無戰鬥。但需工程（ENG）DC 10 打開維護通道入口。"
+
+  - id: TP3
+    name: "資料中心的最後防線"
+    description: "資料中心門外有 1 座自動砲台和 1 名陸戰隊員（小隊唯一的菁英敵方）。"
+    options:
+      - choice: 戰術突破
+        consequence: "EL 5 遭遇。可直接破解砲台（ENG DC 15）轉為己用。"
+      - choice: 佯攻誘敵
+        consequence: "用閃光彈或煙霧彈分散砲台注意。機動（MOB）DC 13 繞到後方死角。"
+
+key_encounters:
+  - id: E1
+    location: 貨艙（節點 2）
+    enemies:
+      - type: 艦員（雜兵）
+        count: 2
+        cr: 0.5
+    total_el: 1
+    notes: "守軍缺乏訓練。傾向逃跑或投降而非死戰。"
+
+  - id: E2
+    location: 主走廊樓梯（節點 4）
+    enemies:
+      - type: 警衛（標準）
+        count: 2
+        cr: 2
+    total_el: 4
+    notes: "可選遭遇——可通過維護通道繞過。"
+
+  - id: E3
+    location: 資料中心入口（節點 7）
+    enemies:
+      - type: 自動砲台（標準）
+        count: 1
+        cr: 2
+      - type: 陸戰隊員（菁英）
+        count: 1
+        cr: 3
+    total_el: 5
+    notes: "最後防線。指揮官隊員可能喊話——試圖恐嚇玩家撤退。"
+
+rewards:
+  xp_primary: 8          # 主要目標
+  xp_secondary: 3        # 次要目標合計：1 個 +3
+  xp_full_survival: 3    # 全員生還
+  xp_gm_bonus: 6         # GM 通用包
+  reputation: 1
+  bonus_reputation:
+    - condition: 不觸發警報完成任務
+      reputation: 1
+  special_loot:
+    - name: "同盟巡邏艇戰術圖"
+      description: "一份標記了同盟在該星區所有巡邏路線的戰術地圖。"
+      effect: "聲望 +1。未來面對同盟艦艇時先攻（INIT）+1。"
+
+special_rules:
+  - rule: "教學節奏"
+    description: "遊戲主持人（GM）應在每個新機制出現時暫停遊戲進行解釋。第一次射擊檢定、第一次破解檢定、第一次重力變化（如有）都應詳細說明。"
+  - rule: "無自毀"
+    description: "邊境之眼號沒有自毀系統。目標完成後玩家可以從容撤離——但警報觸發後敵方增援會逐漸增多。"
+  - rule: "失敗緩衝"
+    description: "即使目標失敗（未能提取數據），母艦仍會回收小隊。這是一場訓練任務。但失敗會給母艦指揮官留下壞印象（無 XP 獎勵，無聲望）。"
+
+map_file: "../maps/邊境之眼號_S1.yaml"

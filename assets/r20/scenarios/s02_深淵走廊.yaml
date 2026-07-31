@@ -1,0 +1,73 @@
+# 星艦突擊登艦隊——劇本 S2：深淵走廊（深淵走廊）
+scenario_id: S2_深淵走廊
+title: "深淵走廊（深淵走廊）——永恆守望號"
+subtitle: "一艘被遺棄的巨型航母飄浮在小行星帶。沒有守軍——但艦內到處是故障的自動防禦系統和未引爆的魚雷。"
+difficulty: 困難
+recommended_level: "2–4"
+player_count: { min: 1, max: 6 }
+estimated_duration: "3–5 小時"
+
+mission_type: 數據掠奪（數據掠奪）
+enemy_vessel:
+  name: "永恆守望號（永恆守望號）"
+  type: 廢棄航母（廢棄航母）——原人類星際協約（TSC）
+  size: 巨型（長度 1,200 公尺）
+  decks: 5（僅探索主要甲板）
+  gravity: 標準重力（1G）——部分區域重力板故障（可變重力）
+  self_destruct: false  # 廢棄狀態——但反應爐不穩定，可能爆炸
+
+story_summary: >
+  一艘協約航母「永恆守望號」在裂隙戰爭初期被擊傷後漂流至小行星帶。
+  艦上船員全數撤離，但艦載 AI 從未完全關閉。50 年來，AI 在孤獨中逐漸失常。
+  最近一艘同盟巡邏艇接近該艦後神秘消失。情報顯示永恆守望號上可能存有關鍵的早期戰爭數據庫。
+  仲裁者號派出突擊隊登艦——目標是找到艦橋的戰術資料庫並回收。
+
+turning_points:
+  - id: TP1
+    name: "艦橋的選擇"
+    description: "通往艦橋有兩條路：主電梯（快速但可能驚動 AI）或維修通道（漫長但安全）。偵察兵的路線規劃能力在此至關重要。"
+  - id: TP2
+    name: "AI 的覺醒"
+    description: "數據下載進行到 50% 時，艦載 AI「守望者」覺醒。它不具敵意——但它認為玩家是 50 年前來救援的船員。AI 開始重新配置艦內系統以「協助」——但它的協助方式極度危險（打開真空艙門以「滅火」、啟動防禦砲台以「保護」玩家）。"
+  - id: TP3
+    name: "反應爐危機"
+    description: "AI 試圖重啟主反應爐。若不阻止——反應爐將在 10 回合後過載爆炸。"
+
+key_encounters:
+  - id: E1
+    location: 機庫甲板
+    enemies:
+      - type: 防禦機器人（菁英）
+        count: 2
+        cr: 3
+        notes: "生鏽且遲鈍——每回合有 50% 機率故障跳過行動"
+    total_el: 6
+  - id: E2
+    location: 艦橋前走廊
+    enemies:
+      - type: 自動砲台（標準）
+        count: 3
+        notes: "可被破解（ENG DC 15）或從維修通道繞過"
+    total_el: 6
+  - id: E3
+    location: 反應爐室
+    environment: "輻射區域——無防護者每回合承受 1d4 輻射傷害"
+    challenge: "破解AI控制台（ENG DC 18）以取消反應爐重啟"
+
+rewards:
+  xp_primary: 10         # 主要目標
+  xp_secondary: 4        # 次要目標合計：1 個 +4
+  xp_full_survival: 3    # 全員生還
+  xp_gm_bonus: 6         # GM 通用包
+  reputation: 2
+  special_loot:
+    - name: "守望者 AI 碎片"
+      description: "一個存有早期戰爭AI代碼的數據核心——對破解AI艦艇的工程（ENG）檢定永久 +1。"
+
+special_rules:
+  - rule: "心理壓力"
+    description: "遊戲主持人（GM）應強調環境的恐怖氛圍。黑暗走廊中的腳步回聲、損壞的廣播系統播放 50 年前的撤離指令、艙壁上乾涸的血跡。"
+  - rule: "AI 異常"
+    description: "守望者 AI 的行為不可預測。遊戲主持人（GM）每 3 回合擲 1d6 決定 AI 的「協助」行動：1-2=開啟/關閉周圍艙門、3-4=廣播無意義訊息、5-6=啟動附近的自動防禦系統。"
+
+map_file: "../maps/永恆守望號_S2.yaml"

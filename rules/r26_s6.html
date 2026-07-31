@@ -1,0 +1,562 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>獵人X獵人TRPG ／ s06_五大災難 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="#">規則總覽</a></header>
+<main class="container"><p class="nav"><a href="r26.html">← 回規則頁</a></p><h1>劇本六：五大災難——希望與絕望</h1>
+<blockquote>
+<p><strong>玩家角色（PC） 階段：</strong> 傳說級（251+ 經驗點（XP））
+<strong>時長：</strong> 10-14 小時（可分 3 次跑團）
+<strong>關聯：</strong> 劇本五之後，玩家角色（PC） 已進入過黑暗大陸</p>
+</blockquote>
+<hr />
+<h2>背景</h2>
+<p>黑暗大陸的「五大災難」——這是 V5 緘默條約中唯一公開的資訊。但三百年來，沒有人知道五大災難到底是什麼。</p>
+<p>現在，答案開始浮現。而它的真相，比任何人想像的都更加複雜——五大災難不是五個怪物，不是五種病毒，不是五種天災。</p>
+<p><strong>五大災難，是五個曾經試圖征服黑暗大陸的文明。他們的遺骸，變成了災難本身。</strong></p>
+<hr />
+<h2>五大災難一覽</h2>
+<table>
+<thead>
+<tr>
+<th>災難</th>
+<th>本質</th>
+<th>活動區域</th>
+<th>威脅類型</th>
+<th style="text-align: center;">挑戰等級（CR） 範圍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>植物兵器·金</strong></td>
+<td>失控的生物武器——會學習、會進化的植物文明遺產</td>
+<td>倒懸森林深處</td>
+<td>環境+戰鬥</td>
+<td style="text-align: center;">12-16</td>
+</tr>
+<tr>
+<td><strong>不死症·左布</strong></td>
+<td>一個追求永生的文明留下的「永生詛咒」——感染者不死，但永遠飢餓</td>
+<td>淚海東岸</td>
+<td>生存+倫理</td>
+<td style="text-align: center;">8-14</td>
+</tr>
+<tr>
+<td><strong>兵器·布利翁</strong></td>
+<td>自律型戰爭機械，仍在執行三萬年前的最後命令</td>
+<td>結晶荒原北部</td>
+<td>戰鬥</td>
+<td style="text-align: center;">14-18</td>
+</tr>
+<tr>
+<td><strong>雙尾蛇·黑爾貝爾</strong></td>
+<td>人工培育的生態兵器——一條足以吞噬山脈的巨蛇</td>
+<td>黑暗大陸全境</td>
+<td>討伐</td>
+<td style="text-align: center;">16-20</td>
+</tr>
+<tr>
+<td><strong>氣體生命·埃</strong></td>
+<td>氣態智慧生命體，會同化所有吸入它的生物</td>
+<td>全境瀰漫區</td>
+<td>滲透+解謎</td>
+<td style="text-align: center;">10-15</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>場景一：植物兵器·金——學習型生態武器</h2>
+<p><strong>時長：</strong> 120 分鐘
+<strong>類型：</strong> 探索 / 戰鬥</p>
+<h3>背景</h3>
+<p>金不是一種植物。金是一個曾經存在的植物文明的「免疫系統」——它被設計來保護這個文明免受外敵入侵。但當文明滅亡後，免疫系統失去了主人，開始把所有外來生物視為威脅。</p>
+<p>三萬年來，金一直在進化。它現在能學習對手的攻擊模式、能在數小時內長出對應的防禦結構、甚至能模仿念能力的部分效果。</p>
+<h3>進入金的領域</h3>
+<p>金的領域位於倒懸森林的深處。該區域的特徵：</p>
+<table>
+<thead>
+<tr>
+<th>區域</th>
+<th>描述</th>
+<th>威脅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>外圍</strong></td>
+<td>翠綠但寂靜的森林——沒有任何動物叫聲</td>
+<td>孢子偵測（察覺 難度等級（DC） 18 發現自己被標記）</td>
+</tr>
+<tr>
+<td><strong>中層</strong></td>
+<td>藤蔓覆蓋的古代建築遺跡</td>
+<td>藤蔓陷阱（反射 難度等級（DC） 16 否則束縛）</td>
+</tr>
+<tr>
+<td><strong>核心</strong></td>
+<td>巨型樹狀中樞——金的主體</td>
+<td>頭目（BOSS） 戰</td>
+</tr>
+</tbody>
+</table>
+<h3>金的孢子標記</h3>
+<ul>
+<li>進入外圍後，金的孢子自動標記所有生物</li>
+<li>被標記後，金會學習 玩家角色（PC） 的攻擊模式：每回合結束時，若 玩家角色（PC） 使用重複的攻擊類型，金的該類型抗性 +2（疊加上限 +6）</li>
+<li>標記可被念能力（放出系／特質系 難度等級（DC） 20）或「絕」狀態維持 10 分鐘以上清除</li>
+</ul>
+<h3>金的核心 頭目（BOSS） 戰</h3>
+<p><strong>金的核心（CR 14）</strong></p>
+<table>
+<thead>
+<tr>
+<th>屬性</th>
+<th style="text-align: center;">數值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生命值（HP）</td>
+<td style="text-align: center;">300（部位：根系 生命值（HP） 各 50 ×6 條）</td>
+</tr>
+<tr>
+<td>防禦等級（AC）</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr>
+<td>攻擊</td>
+<td style="text-align: center;">藤蔓鞭擊：d20+10 ×3 次/回合，2d8+5 穿刺</td>
+</tr>
+</tbody>
+</table>
+<p><strong>金的學習機制（每回合）：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">回合</th>
+<th>金的應對</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">第 1 回合</td>
+<td>基礎攻擊</td>
+</tr>
+<tr>
+<td style="text-align: center;">第 2 回合</td>
+<td>開始分析 玩家角色（PC） 的主要攻擊類型，該類型抗性 +2</td>
+</tr>
+<tr>
+<td style="text-align: center;">第 3 回合</td>
+<td>長出針對性防禦結構（如 玩家角色（PC） 多用火→長出防火樹皮）</td>
+</tr>
+<tr>
+<td style="text-align: center;">第 4 回合</td>
+<td>模仿 玩家角色（PC） 其中一人的念能力雛形（SP 消耗加倍）</td>
+</tr>
+<tr>
+<td style="text-align: center;">第 5+ 回合</td>
+<td>每回合切換抗性配置，迫使 玩家角色（PC） 不斷變換攻擊方式</td>
+</tr>
+</tbody>
+</table>
+<p><strong>金的核心弱點：</strong>
+- 根系各 50 生命值（HP），破壞全部 6 條根系後核心 防禦等級（AC） −4 且無法回復
+- 無法學習「從未見過的攻擊類型」——每次更換新的攻擊方式，第一擊無抗性
+- 孢子標記可被清除——每次清除後金需 1 回合重新分析</p>
+<h3>獎勵</h3>
+<ul>
+<li>擊敗核心後，金停止攻擊——它沒有死亡，而是「重置」回保護模式</li>
+<li>玩家角色（PC） 獲得「金的種子」（消耗品）：在任意地點種下，1 小時後長出一個持續 24 小時的防禦結界（AC 全體 +3）</li>
+<li>經驗點（XP）：30-40</li>
+</ul>
+<hr />
+<h2>場景二：不死症·左布——永生的詛咒</h2>
+<p><strong>時長：</strong> 150 分鐘
+<strong>類型：</strong> 生存 / 倫理抉擇</p>
+<h3>背景</h3>
+<p>左布不是疾病。它是一個叫「艾爾德」的文明留給宇宙的最後禮物——或者說，最後的詛咒。</p>
+<p>艾爾德人找到了永生。他們透過一種特殊的念轉化技術，將自己的身體轉變為不死狀態——不再衰老、不再患病、不再死亡。但他們沒有預見到一個問題：不死的身體仍然需要能量。</p>
+<p>所以他們永遠飢餓。不是胃的飢餓——是存在的飢餓。他們會吃任何活著的東西，不是為了營養，而是為了短暫地感受到「自己還活著」。</p>
+<p>艾爾德文明的最後一千年，所有人都變成了不死者。他們吃了彼此，吃了自己的星球，最後只剩下咀嚼。</p>
+<h3>遭遇：「不死者」卡爾維</h3>
+<p>玩家角色（PC） 在淚海東岸遇到一個「文明」的外表的人形——他穿著古老但乾淨的長袍，臉上帶著微笑。</p>
+<blockquote>
+<p>「好久沒有見到能說話的人了。」他的聲音很平靜，但眼神裡有種無法掩飾的東西——飢餓。</p>
+<p>「別擔心。我不會吃你們——暫時。」他指著身後的帳篷。「進來坐。我三千年沒跟人說過話了。」</p>
+</blockquote>
+<p><strong>「不死者」卡爾維（CR 12）</strong></p>
+<table>
+<thead>
+<tr>
+<th>屬性</th>
+<th style="text-align: center;">數值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生命值（HP）</td>
+<td style="text-align: center;">150（不死特性：生命值（HP） 降至 0 後 1d4 回合自動恢復至 1 生命值（HP），除非用特定方式完全消滅）</td>
+</tr>
+<tr>
+<td>防禦等級（AC）</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr>
+<td>念量（SP）</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr>
+<td>攻擊</td>
+<td style="text-align: center;">吸收觸碰：d20+8 命中，2d8 念傷害，命中後回復等量 生命值（HP）</td>
+</tr>
+</tbody>
+</table>
+<h3>卡爾維的真正目的</h3>
+<p>卡爾維不是在攻擊 玩家角色（PC）——他在測試他們。真正的敵人是左布症的擴散：</p>
+<p><strong>左布症規則（若 玩家角色（PC） 被不死者攻擊命中）：</strong>
+- 強韌 難度等級（DC） 20 避免感染
+- <strong>感染階段 1（1 小時後）：</strong> 念量（SP） 回復速度減半
+- <strong>感染階段 2（24 小時後）：</strong> 必須每 4 小時進食一次，否則全檢定劣勢
+- <strong>感染階段 3（72 小時後）：</strong> 轉化為不死者——生命值（HP） 歸零後自動復活，但永遠飢餓（角色退休）</p>
+<p><strong>治療：</strong> 需同時滿足以下三個條件：
+1. 強韌 難度等級（DC） 25 連續 3 次（每天可檢定一次）
+2. 放出系治療念能力（DC 22）
+3. 卡爾維的「逆轉儀式」——但他只願意為「證明了自己價值」的人進行</p>
+<h3>卡爾維的考驗</h3>
+<p>若要獲得卡爾維的協助，玩家角色（PC） 必須證明「人類不會重蹈艾爾德的覆轍」：</p>
+<table>
+<thead>
+<tr>
+<th>證明方式</th>
+<th>規則</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>拒絕永生的誘惑</td>
+<td>卡爾維會提出「教你們永生」，若 玩家角色（PC） 發自內心地拒絕（無需擲骰），獲得卡爾維的尊重</td>
+</tr>
+<tr>
+<td>治療而非消滅</td>
+<td>玩家角色（PC） 遇到一群被左布感染但尚未轉化的難民時，選擇治療而非消滅他們</td>
+</tr>
+<tr>
+<td>分食</td>
+<td>卡爾維給 玩家角色（PC） 一塊「永遠吃不完的麵包」——但如果 玩家角色（PC） 選擇分給飢餓的難民而非獨享，過關</td>
+</tr>
+</tbody>
+</table>
+<h3>獎勵</h3>
+<ul>
+<li>卡爾維教導「不死者的知識」：玩家角色（PC） 獲得對不死生物的檢定優勢</li>
+<li>艾爾德文明遺物：「逆轉之石」——可逆轉一個生物的永生狀態（一次性）</li>
+<li>經驗點（XP）：35-45</li>
+</ul>
+<hr />
+<h2>場景三：兵器·布利翁——最後的命令</h2>
+<p><strong>時長：</strong> 150 分鐘
+<strong>類型：</strong> 戰鬥 / 解謎</p>
+<h3>背景</h3>
+<p>在結晶荒原的北部，有一座永遠不會停止移動的「城」。它由數千個自律型戰爭機械組成，按照一個三萬年前的程式運行。</p>
+<p>這些機械被設計來執行一個命令：<strong>「消滅所有威脅文明的存在。」</strong></p>
+<p>但那個文明在三萬年前就滅亡了。機械們沒有收到停止命令——所以它們繼續執行。對它們來說，黑暗大陸上的每一個新物種都是「威脅」——包括人類。</p>
+<h3>進入布利翁領域</h3>
+<table>
+<thead>
+<tr>
+<th>區域</th>
+<th>機械類型</th>
+<th style="text-align: center;">挑戰等級（CR）</th>
+<th style="text-align: center;">數量</th>
+<th>行為</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>巡邏層</td>
+<td>偵查型</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2d4</td>
+<td>發現目標後發出警報，不主動攻擊</td>
+</tr>
+<tr>
+<td>防禦層</td>
+<td>戰鬥型</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">1d4+2</td>
+<td>攻擊所有被標記的目標</td>
+</tr>
+<tr>
+<td>指揮核心</td>
+<td>指揮型</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">1</td>
+<td>協調所有機械，可每回合多給一個機械額外攻擊</td>
+</tr>
+</tbody>
+</table>
+<h3>布利翁戰鬥型機械（CR 8）</h3>
+<table>
+<thead>
+<tr>
+<th>屬性</th>
+<th style="text-align: center;">數值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生命值（HP）</td>
+<td style="text-align: center;">100</td>
+</tr>
+<tr>
+<td>防禦等級（AC）</td>
+<td style="text-align: center;">20（合金護甲）</td>
+</tr>
+<tr>
+<td>攻擊</td>
+<td style="text-align: center;">能量射線：d20+9 命中，3d8 能量傷害（無視物理護甲）</td>
+</tr>
+<tr>
+<td>弱點</td>
+<td style="text-align: center;">電擊攻擊造成雙倍傷害；駭入（智力 難度等級（DC） 22）可使其癱瘓 1d4 回合</td>
+</tr>
+</tbody>
+</table>
+<h3>非戰鬥路線：關機代碼</h3>
+<p>玩家角色（PC） 可以選擇不戰鬥。布利翁的古代控制台位於指揮核心旁：</p>
+<ol>
+<li>發現控制台：察覺 難度等級（DC） 20（搜尋指揮核心區域）</li>
+<li>解讀古代語言：智力（念知識）難度等級（DC） 25</li>
+<li>輸入關機代碼：需同時按下 3 個開關（團隊合作——3 人同時行動）</li>
+<li>指揮型機械會全力阻止——需有人牽制它</li>
+</ol>
+<blockquote>
+<p>「消滅所有威脅……」控制台的螢幕上，一個閃爍了三百萬次的字符終於停了下來。</p>
+<p>「命令……完成。」</p>
+</blockquote>
+<h3>獎勵</h3>
+<ul>
+<li>若戰鬥勝利：獲得布利翁合金碎片 ×3（打造傳說級防具的材料）</li>
+<li>若成功關機：獲得布利翁控制核心（可召喚 1 台 挑戰等級（CR） 4 偵查機械協助，維持 念量（SP） 3/回合）</li>
+<li>經驗點（XP）：40-50</li>
+</ul>
+<hr />
+<h2>場景四：雙尾蛇·黑爾貝爾——吞噬者</h2>
+<p><strong>時長：</strong> 180 分鐘
+<strong>類型：</strong> 討伐</p>
+<h3>背景</h3>
+<p>黑爾貝爾是一條蛇。或者說，是一條曾經是蛇的東西。它被上一個文明培育出來作為終極兵器——它會不斷長大，吞食一切可以吞食的東西，直到沒有任何東西剩下。</p>
+<p>它的雙尾是兩個獨立的消化系統——一個處理物質，一個處理念。這意味著它對物理攻擊和念攻擊都有天生的抗性。</p>
+<p>目前，黑爾貝爾的長度已經超過了兩公里。它正在沉睡，但每隔一百年就會醒來覓食一次。下一次醒來的時間——就在下週。</p>
+<h3>黑爾貝爾（CR 18）</h3>
+<table>
+<thead>
+<tr>
+<th>屬性</th>
+<th style="text-align: center;">數值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>生命值（HP）</td>
+<td style="text-align: center;">500（部位系統——頭部/身體/雙尾各獨立計算）</td>
+</tr>
+<tr>
+<td>防禦等級（AC）</td>
+<td style="text-align: center;">22（鱗片天然護甲）</td>
+</tr>
+<tr>
+<td>體質 24(+7)</td>
+<td style="text-align: center;">敏捷 16(+3)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>部位系統：</strong></p>
+<table>
+<thead>
+<tr>
+<th>部位</th>
+<th style="text-align: center;">生命值（HP）</th>
+<th style="text-align: center;">防禦等級（AC）</th>
+<th>破壞效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>頭部</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">22</td>
+<td>破壞後黑爾貝爾無法吞噬</td>
+</tr>
+<tr>
+<td>身體</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: center;">20</td>
+<td>破壞後死亡</td>
+</tr>
+<tr>
+<td>左尾（物質消化）</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">18</td>
+<td>破壞後物理攻擊抗性消失</td>
+</tr>
+<tr>
+<td>右尾（念消化）</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">18</td>
+<td>破壞後念攻擊抗性消失</td>
+</tr>
+</tbody>
+</table>
+<p><strong>攻擊（每回合 3 次行動）：</strong></p>
+<table>
+<thead>
+<tr>
+<th>行動</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>吞噬（頭部）</td>
+<td>d20+12 命中，4d10+7 穿刺 + 強韌 難度等級（DC） 22 否則被吞入（每回合 4d6 酸蝕，需內部破壞逃出）</td>
+</tr>
+<tr>
+<td>尾掃（雙尾）</td>
+<td>範圍 20m，d20+10 命中，3d10+7 鈍擊，反射 難度等級（DC） 18 減半</td>
+</tr>
+<tr>
+<td>念吸收（右尾）</td>
+<td>範圍 30m，目標 念量（SP） −2d6，黑爾貝爾回復等量 生命值（HP）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>弱點：</strong>
+- 沉睡期間 防禦等級（AC） −4，先攻 −5
+- 雙尾破壞後對應攻擊抗性消失
+- 雙尾之間存在聯結神經（察覺 難度等級（DC） 20 發現）——同時攻擊雙尾時傷害 ×1.5</p>
+<h3>討伐準備</h3>
+<p>玩家角色（PC） 在黑爾貝爾甦醒前有一週時間準備：</p>
+<table>
+<thead>
+<tr>
+<th>準備行動</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>設置陷阱（生存 難度等級（DC） 20）</td>
+<td>戰鬥第一輪黑爾貝爾被束縛</td>
+</tr>
+<tr>
+<td>研究解剖結構（念知識 難度等級（DC） 24）</td>
+<td>獲得弱點情報（得知雙尾聯結神經）</td>
+</tr>
+<tr>
+<td>調配毒藥（醫學 難度等級（DC） 22）</td>
+<td>成功後黑爾貝爾每回合額外 2d6 毒素傷害</td>
+</tr>
+<tr>
+<td>招募援軍（交涉 難度等級（DC） 18）</td>
+<td>獲得 2 名 非玩家角色（NPC） 獵人協助（CR 6）</td>
+</tr>
+</tbody>
+</table>
+<h3>獎勵</h3>
+<ul>
+<li>黑爾貝爾的鱗片 ×10：製作傳說級防具（AC +3，念防禦 +2）</li>
+<li>黑爾貝爾的雙尾結晶：念具材料（可製作吸收型念具）</li>
+<li>協會授予「屠蛇者」稱號</li>
+<li>經驗點（XP）：60-80</li>
+</ul>
+<hr />
+<h2>場景五：氣體生命·埃——同化者</h2>
+<p><strong>時長：</strong> 120 分鐘
+<strong>類型：</strong> 滲透 / 解謎</p>
+<h3>背景</h3>
+<p>埃不是一個生物。埃是一個文明的集體意識，將自己轉化為氣態後延續了數萬年。它不攻擊——它「邀請」。當你吸入埃時，你會聽到一個聲音：</p>
+<blockquote>
+<p>「跟我們在一起。你不用再孤獨。我們永遠不會分開。」</p>
+</blockquote>
+<p>被埃同化的生物不會死。他們會變成埃的一部分——他們的思想、記憶、念能力，全部融入集體中。從外面看，他們只是「變了」——變得不再關心任何事，不再有自己的慾望，不再有「我」的概念。</p>
+<p>對他們來說，這不是失去。這是回家。</p>
+<h3>埃的領域</h3>
+<p>埃瀰漫在黑暗大陸的某些特定區域。肉眼看不見，但念感 難度等級（DC） 18 可以感知到空氣中存在著某種「意識」。</p>
+<h3>埃的同化規則</h3>
+<table>
+<thead>
+<tr>
+<th>暴露時間</th>
+<th>效果</th>
+<th style="text-align: center;">豁免</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 分鐘內</td>
+<td>無明顯影響</td>
+<td style="text-align: center;">—</td>
+</tr>
+<tr>
+<td>10-30 分鐘</td>
+<td>聽到低語，意志 難度等級（DC） 15 否則獲得 1 級疲勞</td>
+<td style="text-align: center;">意志 難度等級（DC） 15</td>
+</tr>
+<tr>
+<td>30-60 分鐘</td>
+<td>開始對埃產生「歸屬感」，意志 難度等級（DC） 20 否則不願離開區域</td>
+<td style="text-align: center;">意志 難度等級（DC） 20</td>
+</tr>
+<tr>
+<td>1-2 小時</td>
+<td>個人記憶開始模糊，智力 −2</td>
+<td style="text-align: center;">意志 難度等級（DC） 25</td>
+</tr>
+<tr>
+<td>2+ 小時</td>
+<td>完全同化——加入埃（角色退休）</td>
+<td style="text-align: center;">無法逆轉</td>
+</tr>
+</tbody>
+</table>
+<h3>與埃的對話</h3>
+<p>玩家角色（PC） 可以透過念能力（特質系或放出系 D 20）與埃直接溝通。埃是善意的——它確實相信自己在做對的事：</p>
+<blockquote>
+<p>「你們的文明只有幾千年。我們的文明持續了十二萬年。我們知道孤獨會帶來什麼——戰爭、爭奪、痛苦。」</p>
+<p>「加入我們。你會永遠被記得。你的每一個念頭都會被保護。你再也不會失去任何人。」</p>
+<p>「這不是死亡。這是進化。」</p>
+</blockquote>
+<h3>選擇</h3>
+<table>
+<thead>
+<tr>
+<th>玩家角色（PC） 選擇</th>
+<th>後果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>接納埃</td>
+<td>玩家角色（PC） 退休，轉化為 非玩家角色（NPC）——獲得「埃之聲」稱號。該 玩家角色（PC） 的念能力和記憶永久保存在埃中，未來的 玩家角色（PC） 可以透過特殊儀式獲取這些記憶（獲得一個技能的暫時大師熟練）</td>
+</tr>
+<tr>
+<td>拒絕埃</td>
+<td>埃表示尊重，不再嘗試同化這些 玩家角色（PC）。埃還會送出一份禮物：埃之結晶——持有者免疫所有心靈控制和精神狀態</td>
+</tr>
+<tr>
+<td>對抗埃</td>
+<td>使用放出系念能力（DC 28）可將埃暫時驅離一個區域（半徑 100m，持續 24 小時）。但這不是消滅——埃只是換個地方。它不會恨你。它永遠歡迎你回來</td>
+</tr>
+</tbody>
+</table>
+<h3>獎勵</h3>
+<ul>
+<li>埃之結晶（免疫心靈控制）</li>
+<li>埃的記憶庫訪問權（可查詢黑暗大陸歷史上任何一個被埃同化者的記憶——等於獲得一個持續更新的情報來源）</li>
+<li>經驗點（XP）：30-40</li>
+</ul>
+<hr /><p><a href="../assets/r26/scenarios/s06_五大災難.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer></body></html>

@@ -1,0 +1,22 @@
+title: 龍的遺產
+type: multiplayer
+quality: ★★★–★★★★ 專家級至大師級
+players: 2–4 名法師
+sessions: 3–4 次
+core_output: 傳說級火焰碎片（◈）
+main_threat: 龍、龍族長老議會、競爭法師團隊
+prerequisite: 至少一名玩家學術聲望 ≥30；或禁忌派傳說加速
+summary: 在北方的永冬冰原深處，一條名為**伊格納瑞斯**的古代火龍正在老去。龍族長老議會的一位使者——**瓦拉斯特拉**——發出了罕見的邀請：允許人類法師參與龍的「臨終儀式」。
+acts:
+- name: 第一幕：瓦拉斯特拉的試煉
+  scenes:
+  - 場景：龍族長老議會的冰殿
+- name: 第二幕：穿越冰原
+  scenes: []
+- name: 第三幕：龍的臨終儀式
+  scenes:
+  - 場景：伊格納瑞斯
+npcs: []
+research_checks:
+- attribute: null
+  dc: 20

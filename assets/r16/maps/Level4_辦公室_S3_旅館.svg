@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 620" font-family="'Microsoft JhengHei','PingFang TC',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#666"/></marker>
+    <marker id="arrowDanger" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C62828"/></marker>
+  </defs>
+
+  <rect width="700" height="620" fill="#ECEFF1" rx="10"/>
+
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#2F5496">Level 4 — 辦公大樓（對應劇本 S3：派對邀請）</text>
+
+  <!-- Floor labels -->
+  <text x="30" y="80" font-size="9" fill="#C62828" font-weight="bold">F8</text>
+  <line x1="55" y1="75" x2="680" y2="75" stroke="#C62828" stroke-width="1" stroke-dasharray="2,4"/>
+  <text x="30" y="140" font-size="9" fill="#C62828" font-weight="bold">F6</text>
+  <line x1="55" y1="135" x2="680" y2="135" stroke="#C62828" stroke-width="1" stroke-dasharray="2,4"/>
+  <text x="30" y="200" font-size="9" fill="#FF9800" font-weight="bold">F5</text>
+  <line x1="55" y1="195" x2="680" y2="195" stroke="#FF9800" stroke-width="2"/>
+  <text x="30" y="260" font-size="9" fill="#4CAF50" font-weight="bold">F4</text>
+  <line x1="55" y1="255" x2="680" y2="255" stroke="#4CAF50" stroke-width="1" stroke-dasharray="2,4"/>
+  <text x="30" y="360" font-size="9" fill="#4CAF50" font-weight="bold">F3</text>
+  <line x1="55" y1="355" x2="680" y2="355" stroke="#4CAF50" stroke-width="1" stroke-dasharray="2,4"/>
+  <text x="30" y="460" font-size="9" fill="#4CAF50" font-weight="bold">F1</text>
+  <line x1="55" y1="455" x2="680" y2="455" stroke="#4CAF50" stroke-width="1" stroke-dasharray="2,4"/>
+  <text x="30" y="560" font-size="9" fill="#607D8B" font-weight="bold">B2</text>
+  <line x1="55" y1="555" x2="680" y2="555" stroke="#607D8B" stroke-width="1" stroke-dasharray="2,4"/>
+
+  <!-- Regions -->
+  <rect x="55" y="40" width="625" height="215" rx="8" fill="#FFEBEE" opacity="0.3" stroke="#C62828" stroke-width="1"/>
+  <text x="370" y="58" text-anchor="middle" font-size="11" fill="#C62828" font-weight="bold">⚠ 派對客領域（F5以上——極度危險）</text>
+
+  <rect x="55" y="240" width="625" height="230" rx="8" fill="#E8F5E9" opacity="0.3" stroke="#4CAF50" stroke-width="1"/>
+  <text x="370" y="258" text-anchor="middle" font-size="11" fill="#4CAF50" font-weight="bold">安全樓層（F1-F4——派對客較少，正常辦公空間）</text>
+
+  <rect x="55" y="540" width="625" height="55" rx="8" fill="#ECEFF1" opacity="0.4" stroke="#607D8B" stroke-width="1"/>
+  <text x="370" y="558" text-anchor="middle" font-size="11" fill="#607D8B" font-weight="bold">地下層（B2——停車場、積水區→L37）</text>
+
+  <!-- Legend -->
+  <rect x="480" y="560" width="185" height="45" rx="6" fill="white" stroke="#ccc" stroke-width="1"/>
+  <rect x="488" y="568" width="16" height="10" rx="3" fill="#4CAF50"/><text x="510" y="577" font-size="8" fill="#555">安全</text>
+  <rect x="560" y="568" width="16" height="10" rx="3" fill="#C62828"/><text x="582" y="577" font-size="8" fill="#555">危險</text>
+  <rect x="488" y="586" width="16" height="10" rx="3" fill="#2196F3"/><text x="510" y="595" font-size="8" fill="#555">特殊</text>
+  <rect x="560" y="586" width="16" height="10" rx="3" fill="#FF9800"/><text x="582" y="595" font-size="8" fill="#555">資源</text>
+
+  <!-- Edges - vertical stairs -->
+  <line x1="350" y1="470" x2="350" y2="380" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="365" y="430" font-size="8" fill="#4CAF50">樓梯 F1→F3</text>
+  <line x1="380" y1="380" x2="380" y2="290" stroke="#4CAF50" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="395" y="340" font-size="8" fill="#4CAF50">F3→F4</text>
+  <line x1="400" y1="290" x2="400" y2="200" stroke="#C62828" stroke-width="2.5" stroke-dasharray="4,3" marker-end="url(#arrowDanger)"/>
+  <text x="415" y="250" font-size="9" fill="#C62828" font-weight="bold">⚠ F5界線</text>
+  <line x1="380" y1="200" x2="380" y2="110" stroke="#C62828" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrowDanger)"/>
+  <text x="395" y="160" font-size="8" fill="#C62828">F5→F6+</text>
+
+  <line x1="250" y1="470" x2="250" y2="570" stroke="#607D8B" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="210" y="525" font-size="8" fill="#607D8B">F1→B2</text>
+
+  <!-- F7 special path -->
+  <line x1="500" y1="380" x2="500" y2="270" stroke="#2196F3" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="515" y="330" font-size="8" fill="#2196F3">F7 鏡子房</text>
+
+  <!-- Nodes -->
+  <!-- F6-F8 -->
+  <rect x="200" y="55" width="100" height="28" rx="12" fill="#C62828"/><text x="250" y="74" text-anchor="middle" font-size="9" fill="white">F6-F8 深層領地⚠</text>
+
+  <!-- F5 -->
+  <rect x="150" y="105" width="100" height="28" rx="12" fill="#C62828"/><text x="200" y="124" text-anchor="middle" font-size="9" fill="white">F5 派對會場⚠</text>
+  <text x="200" y="148" text-anchor="middle" font-size="8" fill="#C62828">15-30派對客</text>
+
+  <rect x="400" y="105" width="100" height="28" rx="12" fill="#FF9800"/><text x="450" y="124" text-anchor="middle" font-size="9" fill="white">F5 伺服器機房</text>
+  <text x="450" y="148" text-anchor="middle" font-size="8" fill="#FF9800">派對客起源記錄</text>
+
+  <!-- F4 -->
+  <rect x="420" y="270" width="90" height="28" rx="12" fill="#FF9800"/><text x="465" y="289" text-anchor="middle" font-size="9" fill="white">F4 茶水間</text>
+  <text x="465" y="310" text-anchor="middle" font-size="8" fill="#FF9800">杏仁水×1-2</text>
+
+  <!-- F3 -->
+  <rect x="280" y="365" width="100" height="28" rx="12" fill="#4CAF50"/><text x="330" y="384" text-anchor="middle" font-size="9" fill="white">F3 辦公區</text>
+  <text x="330" y="405" text-anchor="middle" font-size="8" fill="#4CAF50">IT部門/開放辦公</text>
+
+  <rect x="130" y="365" width="100" height="28" rx="12" fill="#2196F3"/><text x="180" y="384" text-anchor="middle" font-size="9" fill="white">文員辦公室</text>
+  <text x="180" y="405" text-anchor="middle" font-size="8" fill="#2196F3">特殊文員實體</text>
+
+  <!-- F7 -->
+  <rect x="440" y="240" width="100" height="28" rx="12" fill="#2196F3"/><text x="490" y="259" text-anchor="middle" font-size="9" fill="white">F7 鏡子房間</text>
+  <text x="490" y="280" text-anchor="middle" font-size="8" fill="#2196F3">派對客不進入</text>
+
+  <!-- F1 -->
+  <rect x="280" y="460" width="100" height="28" rx="14" fill="#4CAF50"/><text x="330" y="479" text-anchor="middle" font-size="10" fill="white">F1 大廳入口</text>
+  <rect x="140" y="460" width="80" height="28" rx="14" fill="#FF9800"/><text x="180" y="479" text-anchor="middle" font-size="9" fill="white">F1 醫務室</text>
+
+  <!-- B2 -->
+  <rect x="450" y="555" width="100" height="28" rx="12" fill="#607D8B"/><text x="500" y="574" text-anchor="middle" font-size="9" fill="white">B2 停車場</text>
+  <text x="500" y="598" text-anchor="middle" font-size="8" fill="#607D8B">積水→L37 / 獵犬</text>
+
+  <!-- Horizontal edges -->
+  <line x1="380" y1="380" x2="280" y2="380" stroke="#78909C" stroke-width="1.5"/>
+  <line x1="230" y1="380" x2="180" y2="380" stroke="#78909C" stroke-width="1.5"/>
+  <line x1="330" y1="475" x2="260" y2="475" stroke="#78909C" stroke-width="1.5"/>
+  <line x1="300" y1="120" x2="400" y2="120" stroke="#78909C" stroke-width="1.5"/>
+
+  <!-- Danger zone indicator -->
+  <text x="350" y="628" text-anchor="middle" font-size="11" fill="#C62828" font-weight="bold">F5以上＝派對客領地 | F7鏡子房＝安全區 | F1旋轉門＝逃生出口→L0 | B2積水＝→L37</text>
+</svg>

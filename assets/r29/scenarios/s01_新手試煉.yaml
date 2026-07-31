@@ -1,0 +1,128 @@
+# 絕地戰場 TRPG — 劇本 S1：新手試煉
+# 類型：多人小隊
+# 建議等級：1-2
+# 難度：★☆☆☆☆
+
+scenario:
+  id: S1
+  name: 新手試煉
+  type: multiplayer_squad
+  tier: 1
+  difficulty: 1
+  estimated_duration: 2-3小時
+
+  description: >
+    你的第一次降落。Erangel 新手島——廢棄的蘇聯軍事島嶼。
+    海風帶著鹽味和鐵鏽味。二十個參賽者，四支小隊——包括你的。
+    沒有人期待你能贏。但你也沒打算讓他們如願。
+
+map:
+  name: Erangel 新手島
+  size: 4公里 × 4公里（濃縮版）
+  terrain:
+    - 海岸平原 (40%)
+    - 丘陵地帶 (30%)
+    - 廢棄軍事設施 (20%)
+    - 小型城鎮 (10%)
+  landmarks:
+    - id: L1
+      name: 廢棄雷達站
+      type: military
+      loot_level: 豐富（藍）
+      description: 山丘頂上的廢棄雷達站——視野極佳，但容易被狙擊
+    - id: L2
+      name: 波多諾漁村
+      type: residential
+      loot_level: 普通（綠）
+      description: 海岸邊的漁村，十幾棟木屋，巷弄狹窄
+    - id: L3
+      name: 佐倉農場
+      type: rural
+      loot_level: 貧瘠（灰）
+      description: 開闊的農田和穀倉——適合載具，不適合躲藏
+    - id: L4
+      name: 軍事哨站
+      type: military
+      loot_level: 軍用（紫）
+      description: 東北角的小型軍事哨站——全圖最好的物資，但地處偏遠
+
+enemy_configuration:
+  total_squads: 4  # 含玩家共5隊20人
+  squads:
+    - id: E1
+      type: 菜鳥隊
+      difficulty: ★
+      count: 3
+      members_per_squad: 4
+      drop_location: 隨機
+    - id: E2
+      type: 穩健隊
+      difficulty: ★★
+      count: 1
+      members_per_squad: 4
+      drop_location: 軍事哨站
+
+circle:
+  type: 中央收束
+  description: 可預測的標準圈型——適合新手
+
+airdrop:
+  count: 1
+  timing: 第二圈縮圈時
+  content: M24狙擊槍 + 4倍鏡 + .300子彈×30
+
+red_zone: false
+vehicles: [吉普車, 摩托車]
+weather: 晴天
+time_of_day: 白天（中午）
+
+phases:
+  - phase: 降落
+    turns: 1
+    gm_notes: >
+      描述跳傘場景：「運輸機的後艙門打開——海風灌進來，引擎轟鳴。二十個參賽者站在艙門口，
+      看著下面的島嶼。有人已經在禱告了。」
+      讓玩家選擇降落點。
+
+  - phase: 搜刮期
+    turns: 5
+    gm_notes: >
+      第一圈——給玩家充足的搜刮時間。描述環境氛圍。
+      遠處偶爾傳來一兩聲槍響（NPC之間的遭遇）。
+      提示：「搜刮時注意聽——腳步聲是最早的警告。」
+
+  - phase: 首戰
+    turns: 3-4
+    gm_notes: >
+      安排玩家遭遇一支菜鳥隊。這是玩家的第一場戰鬥——
+      讓菜鳥隊犯一些明顯的錯誤（換彈時機不當、瞄準不穩），
+      讓玩家體驗「命中→傷害→擊倒」的完整流程。
+
+  - phase: 縮圈壓力
+    turns: 4
+    gm_notes: >
+      第二圈收縮——安全區中心正是玩家目前所在位置附近。
+      這意味著其他小隊正在向玩家移動。
+      引入穩健隊——比菜鳥隊更難對付，會使用煙霧彈。
+
+  - phase: 最終戰
+    turns: 3-5
+    gm_notes: >
+      剩下 2-3 隊（含玩家）。圈縮小至 200m。
+      確保最終戰有足夠的掩體和戰術選擇。
+      勝利條件：消滅所有敵方或成為最後存活的小隊。
+
+victory_condition: 成為最後存活的小隊
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  survival_top10: 150
+  survival_top5: 250
+  chicken_dinner: 500
+  per_elimination: 80
+  squad_wipe: 150

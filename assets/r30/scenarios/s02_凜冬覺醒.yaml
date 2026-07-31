@@ -1,0 +1,70 @@
+scenario:
+  id: s02
+  title: "凜冬覺醒"
+  source: "《英雄聯盟 TRPG 戰役劇本集》· 多人劇本 · 主線第二部"
+  mode: "多人"
+  standalone: true
+  level_range: "Lv.6-10"
+  region: "弗雷爾卓德冰原"
+  estimated_time: "4-5 節"
+  summary: >
+    摧毀黑曜工坊後，玩家發現「黑曜之環」的幕後金主來自弗雷爾卓德——古代血脈「霜裔」。
+    他們試圖利用禁魔石喚醒被封印在嚎哭深淵下的遠古冰裔。玩家必須穿越冰原，在三大部落之間
+    斡旋結盟，阻止霜裔的最終儀式。
+  chapters:
+    - id: "2.1"
+      title: "冰原之旅"
+      level: "Lv.6"
+      type: "生存"
+      core_encounter: "極寒環境考驗、冰原巨獸遭遇、尋找艾希部落"
+    - id: "2.2"
+      title: "部落試煉"
+      level: "Lv.7"
+      type: "戰鬥/試煉"
+      core_encounter: "為贏得艾希信任完成三項試煉：狩獵/角力/追蹤"
+    - id: "2.3"
+      title: "三族會盟"
+      level: "Lv.8"
+      type: "社交"
+      core_encounter: "說服史瓦妮的凜冬之爪與麗珊卓的霜衛加入聯盟（難度等級（DC）18-22 交涉）"
+    - id: "2.4"
+      title: "嚎哭深淵"
+      level: "Lv.9-10"
+      type: "史詩地城/Boss"
+      core_encounter: "深入深淵、五層地城、最終 Boss「遠古冰裔·凜冬之父」"
+  key_npcs:
+    - name: "艾希"
+      role: "阿瓦蘿莎之主，主要盟友"
+      bond: "羈絆 1-6 級"
+    - name: "史瓦妮"
+      role: "凜冬之爪首領，可爭取的搖擺勢力"
+      bond: "羈絆 1-3 級（需證明實力）"
+    - name: "布朗姆"
+      role: "傳奇英雄，提供支援與引導"
+      bond: "羈絆 1-6 級"
+    - name: "麗珊卓"
+      role: "霜衛首領——亦敵亦友"
+      bond: "可能成為宿敵或被迫盟友"
+  boss:
+    name: "遠古冰裔·凜冬之父"
+    level: "Lv.10"
+    stats:
+      hp: 1800
+      ad: 85
+      armor_mr: "120/90"
+      immunity: "冰霜、減速"
+    phases:
+      - phase: "P1"
+        range: "100%-70%"
+        mechanics: "冰霜吐息（前方 3 格錐形，攻擊力（AD）×1.5 + 冰凍 1 回合）+ 召喚冰元素（生命值（HP）150×2）"
+      - phase: "P2"
+        range: "70%-35%"
+        mechanics: "新增「凜冬風暴」（全場每回合 攻擊力（AD）×0.3 冰傷 + 移速 -2）；冰元素升級為冰霜巨人（生命值（HP）300）"
+      - phase: "P3"
+        range: "35%-0%"
+        mechanics: "深淵崩裂——地面每回合隨機生成 2 格裂隙（踏入者受 攻擊力（AD）×1.0 真實傷害 + 跌落 1 回合）；Boss 狂暴（傷害 +40%）"
+  rewards:
+    exp: 5200
+    gold: "6,000-9,000"
+    equipment: "「凜冬之心」（護甲（AR）+50，冰霜免疫，每回合開始 2 格內敵方移速 -1）"
+    augment: "「冰裔祝福」——獲得艾希或史瓦妮的被動能力"

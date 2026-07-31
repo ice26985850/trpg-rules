@@ -1,0 +1,78 @@
+# 絕地戰場 TRPG — 劇本 S4：雪地生存競賽
+scenario:
+  id: S4
+  name: 雪地生存競賽
+  type: multiplayer_squad
+  tier: 4
+  difficulty: 4
+  estimated_duration: 5-7小時
+  suggested_level: 7-8
+  description: >
+    Vikendi——冰雪覆蓋的廢棄滑雪勝地。每一步都在雪地上留下無法抹去的痕跡。
+    冠軍級小隊在這張地圖上——他們不是在找你，他們是在獵你。
+    入夜後，沒有夜視鏡的人就是盲人。
+
+map:
+  name: Vikendi 雪地
+  size: 6公里 × 6公里
+  terrain: [雪原(45%), 廢棄城鎮(25%), 森林(15%), 結冰湖泊(15%)]
+  landmarks:
+    - { id: L1, name: 雪堡, type: urban, loot_level: 豐富（藍）, description: 廢棄的中世紀風格城堡改建的度假村 }
+    - { id: L2, name: 宇宙基地, type: military, loot_level: 軍用（紫）, description: 廢棄的太空研究設施——地下有實驗室 }
+    - { id: L3, name: 冰湖村, type: residential, loot_level: 普通（綠）, description: 結冰湖邊的小村莊——冰層上移動有風險 }
+    - { id: L4, name: 水泥廠, type: industrial, loot_level: 豐富（藍）, description: 大型工業建築——重型掩體豐富 }
+
+enemy_configuration:
+  total_squads: 10
+  squads:
+    - { type: 穩健隊, difficulty: ★★, count: 2 }
+    - { type: 突擊隊, difficulty: ★★★, count: 3 }
+    - { type: 伏擊隊, difficulty: ★★★, count: 2 }
+    - { type: 職業隊, difficulty: ★★★★, count: 2 }
+    - { type: 冠軍級, difficulty: ★★★★★, count: 1 }
+
+circle:
+  type: 跳躍翻轉
+  description: 中間突然大幅偏移——打破所有人的計畫
+
+airdrop: { count: 4, special: 含夜視鏡和熱成像儀 }
+red_zone: { enabled: true }
+vehicles: [雪地摩托車, 吉普車, 裝甲車（空投）]
+weather: 小雪→暴風雪（夜間）
+time_of_day: 白天→夜間（第四圈後入夜）
+
+new_mechanics:
+  - 雪地腳印（追蹤檢定優勢，暴露移動路線）
+  - 冠軍級小隊（全場最強對手）
+  - 夜間模式（視野受限，需夜視鏡）
+  - 暴風雪天氣
+
+phases:
+  - phase: 雪的寂靜
+    turns: 3
+    gm_notes: >
+      雪地異常安靜——腳步聲被雪吸收。這種寂靜令人不安。
+      利用腳印系統給玩家線索：「雪地上有兩組腳印——一組很新。」
+
+  - phase: 冠軍級的影子
+    turns: 3-4
+    gm_notes: >
+      讓玩家「感受」冠軍級的存在——不用直接接觸。
+      「遠處山坡上有一個人影——他站著不動。你的狙擊鏡裡能看到他，
+      他也正透過狙擊鏡看你。然後他轉身消失了——不是逃跑，是約定。」
+
+  - phase: 暴風雪來襲
+    turns: 3
+    gm_notes: >
+      天氣驟變——暴風雪讓視野降到 50m。聽覺失靈。
+      這是冠軍級狩獵的最佳時機。
+      也給玩家反制機會——在暴風雪中設陷阱，或者利用暴風雪隱匿移動。
+
+  - phase: 夜間終戰
+    turns: 4-6
+    gm_notes: >
+      夜間——沒有夜視鏡的隊伍幾乎無法作戰。
+      讓最終圈在有照明的地點（如雪堡內部燈光），
+      或者強制所有人在黑暗中摸索——這是最令人絕望也最刺激的場景。
+
+victory_condition: 成為最後存活的小隊（或擊敗冠軍級）

@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 820" font-family="'Microsoft JhengHei','Noto Sans TC','PingFang TC',sans-serif">
+  <defs>
+    <!-- 箭頭標記 -->
+    <marker id="arrowMain" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#888"/>
+    </marker>
+    <marker id="arrowDanger" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowSecret" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#8e44ad"/>
+    </marker>
+    <!-- 陰影濾鏡 -->
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+    <filter id="shadowLight" x="-3%" y="-3%" width="108%" height="115%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- ====== 背景 ====== -->
+  <rect width="960" height="820" fill="#f5f0e8" rx="8"/>
+
+  <!-- ====== 標題 ====== -->
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#2c3e50">奧斯特溫（Ostwin）城市地圖</text>
+  <text x="480" y="56" text-anchor="middle" font-size="12" fill="#7f8c8d">圍城狀態 — GM 參考用</text>
+
+  <!-- ====== 區域底色 ====== -->
+  <!-- 北郊區域 -->
+  <rect x="350" y="68" width="220" height="60" rx="6" fill="#d5f5e3" opacity="0.4"/>
+  <!-- 市中心區域 -->
+  <rect x="310" y="190" width="300" height="150" rx="8" fill="#fadbd8" opacity="0.25"/>
+  <!-- 大學城區區域 -->
+  <rect x="100" y="200" width="190" height="80" rx="6" fill="#d6eaf8" opacity="0.35"/>
+  <!-- 工業區區域 -->
+  <rect x="620" y="200" width="190" height="80" rx="6" fill="#fdebd0" opacity="0.35"/>
+  <!-- 舊城區區域 -->
+  <rect x="310" y="400" width="300" height="100" rx="8" fill="#e8daef" opacity="0.3"/>
+  <!-- 南郊區域 -->
+  <rect x="300" y="560" width="320" height="120" rx="8" fill="#f9e79f" opacity="0.2"/>
+
+  <!-- ====== 區域標籤 ====== -->
+  <text x="360" y="84" font-size="11" fill="#1e8449" font-weight="bold">北郊地區</text>
+  <text x="320" y="206" font-size="11" fill="#922b21" font-weight="bold">市中心地區</text>
+  <text x="110" y="216" font-size="11" fill="#2471a3" font-weight="bold">大學城區</text>
+  <text x="630" y="216" font-size="11" fill="#b9770e" font-weight="bold">工業區</text>
+  <text x="320" y="416" font-size="11" fill="#7d3c98" font-weight="bold">舊城區</text>
+  <text x="310" y="576" font-size="11" fill="#b7950b" font-weight="bold">南郊地區</text>
+
+  <!-- ====== 維爾塔河 ====== -->
+  <rect x="80" y="365" width="800" height="26" rx="13" fill="#aed6f1" opacity="0.5"/>
+  <text x="100" y="382" font-size="12" fill="#2471a3" font-weight="bold">維爾塔河（River Velta）——三座橋樑已摧毀，僅存一座聯邦軍浮橋</text>
+  <!-- 浮橋標記 -->
+  <rect x="430" y="362" width="40" height="32" rx="3" fill="#e74c3c" opacity="0.6"/>
+  <text x="450" y="382" text-anchor="middle" font-size="7" fill="#fff" font-weight="bold">浮橋</text>
+  <text x="450" y="410" text-anchor="middle" font-size="9" fill="#e74c3c">聯邦軍控制</text>
+
+  <!-- ====== 主幹道 ====== -->
+  <!-- 共和大道（南北向） -->
+  <line x1="460" y1="130" x2="460" y2="345" stroke="#bdc3c7" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <line x1="460" y1="395" x2="460" y2="450" stroke="#bdc3c7" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <line x1="460" y1="480" x2="460" y2="600" stroke="#bdc3c7" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <text x="476" y="280" font-size="9" fill="#7f8c8d" transform="rotate(90,476,280)">共和大道（南北主幹道）</text>
+
+  <!-- 河濱路（東西向） -->
+  <line x1="290" y1="355" x2="620" y2="355" stroke="#bdc3c7" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <text x="455" y="350" text-anchor="middle" font-size="9" fill="#7f8c8d">河濱路</text>
+
+  <!-- ====== 連線 ====== -->
+  <!-- old_town -- city_center -->
+  <line x1="450" y1="450" x2="450" y2="340" stroke="#888" stroke-width="2.5" marker-end="url(#arrowMain)"/>
+  <!-- old_town -- south_suburb -->
+  <line x1="450" y1="500" x2="450" y2="570" stroke="#888" stroke-width="2.5" marker-end="url(#arrowMain)"/>
+  <!-- city_center -- north_suburb -->
+  <line x1="450" y1="210" x2="450" y2="130" stroke="#888" stroke-width="2.5" marker-end="url(#arrowMain)"/>
+  <!-- city_center -- industrial_district -->
+  <line x1="590" y1="250" x2="670" y2="250" stroke="#888" stroke-width="2" marker-end="url(#arrowMain)"/>
+  <!-- city_center -- university_district -->
+  <line x1="310" y1="250" x2="290" y2="250" stroke="#888" stroke-width="2" marker-end="url(#arrowMain)"/>
+  <!-- industrial_district -- university_district -->
+  <line x1="620" y1="220" x2="290" y2="220" stroke="#aaa" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arrowMain)"/>
+  <text x="455" y="215" text-anchor="middle" font-size="8" fill="#999">間接連接</text>
+  <!-- industrial_district -- south_suburb -->
+  <line x1="670" y1="280" x2="620" y2="590" stroke="#888" stroke-width="2" marker-end="url(#arrowMain)"/>
+  <!-- university_district -- north_suburb -->
+  <line x1="220" y1="200" x2="380" y2="110" stroke="#888" stroke-width="2" marker-end="url(#arrowMain)"/>
+  <!-- south_suburb -- black_market_hub -->
+  <line x1="530" y1="600" x2="670" y2="640" stroke="#e67e22" stroke-width="2.5" marker-end="url(#arrowDanger)"/>
+  <text x="620" y="610" font-size="8" fill="#e67e22">黑市通道</text>
+
+  <!-- 地下通道（虛線） -->
+  <path d="M450,510 Q350,530 250,560 Q200,580 300,620" stroke="#8e44ad" stroke-width="2" stroke-dasharray="8,4" fill="none" marker-end="url(#arrowSecret)"/>
+  <text x="320" y="545" font-size="9" fill="#8e44ad">地下通道（祕密路徑）</text>
+
+  <!-- 狙擊手巷標記 -->
+  <line x1="360" y1="315" x2="540" y2="315" stroke="#c0392b" stroke-width="3" stroke-dasharray="10,4"/>
+  <text x="450" y="310" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="bold">⚠ 狙擊手巷（白晝禁止穿越）</text>
+
+  <!-- ====== 節點 ====== -->
+
+  <!-- 北郊 -->
+  <rect x="360" y="88" width="180" height="48" rx="10" fill="#2ecc71" opacity="0.85" filter="url(#shadow)"/>
+  <text x="450" y="110" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">北郊</text>
+  <text x="450" y="126" text-anchor="middle" font-size="9" fill="#e8f8f5">高級住宅區．使館區</text>
+  <text x="450" y="148" text-anchor="middle" font-size="8" fill="#d5f5e3">危險 ★★★ | 搜刮 ★★★★</text>
+
+  <!-- 大學城區 -->
+  <rect x="120" y="222" width="165" height="52" rx="10" fill="#3498db" opacity="0.85" filter="url(#shadow)"/>
+  <text x="202" y="244" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">大學城區</text>
+  <text x="202" y="260" text-anchor="middle" font-size="8" fill="#d6eaf8">校園．圖書館．醫學院</text>
+
+  <!-- 市中心 -->
+  <rect x="340" y="222" width="210" height="52" rx="10" fill="#e74c3c" opacity="0.85" filter="url(#shadow)"/>
+  <text x="445" y="244" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">市中心</text>
+  <text x="445" y="260" text-anchor="middle" font-size="8" fill="#fadbd8">政府建築．銀行．廣場</text>
+  <text x="445" y="148" text-anchor="middle" font-size="8" fill="#d5f5e3">危險 ★★★ | 搜刮 ★★★★</text>
+
+  <!-- 工業區 -->
+  <rect x="620" y="222" width="175" height="52" rx="10" fill="#f39c12" opacity="0.85" filter="url(#shadow)"/>
+  <text x="707" y="244" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">工業區</text>
+  <text x="707" y="260" text-anchor="middle" font-size="8" fill="#fdebd0">廠房．倉庫．發電廠</text>
+
+  <!-- 舊城區 -->
+  <rect x="350" y="422" width="195" height="52" rx="10" fill="#9b59b6" opacity="0.85" filter="url(#shadow)"/>
+  <text x="447" y="444" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">舊城區</text>
+  <text x="447" y="460" text-anchor="middle" font-size="8" fill="#e8daef">石板街．教堂．市集</text>
+
+  <!-- 舊城區地下通道 -->
+  <rect x="175" y="528" width="175" height="40" rx="8" fill="#8e44ad" opacity="0.75" filter="url(#shadowLight)" stroke="#6c3483" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="262" y="546" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">舊城區地下通道</text>
+  <text x="262" y="560" text-anchor="middle" font-size="8" fill="#d7bde2">奧斯曼排水系統（祕密路徑）</text>
+
+  <!-- 南郊 -->
+  <rect x="340" y="575" width="210" height="52" rx="10" fill="#d4ac0d" opacity="0.85" filter="url(#shadow)"/>
+  <text x="445" y="597" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">南郊</text>
+  <text x="445" y="613" text-anchor="middle" font-size="8" fill="#fef9e7">倉儲．鐵路．難民營</text>
+
+  <!-- 黑市交易點 -->
+  <rect x="650" y="628" width="150" height="42" rx="8" fill="#e67e22" opacity="0.85" filter="url(#shadowLight)"/>
+  <text x="725" y="648" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">黑市交易點</text>
+  <text x="725" y="662" text-anchor="middle" font-size="8" fill="#fdebd0">黑河商會（BRS）據點</text>
+
+  <!-- ====== 圖例 ====== -->
+  <rect x="30" y="690" width="900" height="115" rx="8" fill="#fff" opacity="0.85" filter="url(#shadowLight)"/>
+  <text x="50" y="712" font-size="13" font-weight="bold" fill="#2c3e50">圖例</text>
+
+  <!-- 節點類型 -->
+  <rect x="50" y="722" width="14" height="14" rx="3" fill="#9b59b6" opacity="0.85"/>
+  <text x="70" y="734" font-size="10" fill="#555">城區</text>
+  <rect x="120" y="722" width="14" height="14" rx="3" fill="#e67e22" opacity="0.85"/>
+  <text x="140" y="734" font-size="10" fill="#555">特殊地點</text>
+  <rect x="210" y="722" width="14" height="14" rx="3" fill="#8e44ad" opacity="0.75" stroke="#6c3483" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="230" y="734" font-size="10" fill="#555">祕密路徑</text>
+  <rect x="310" y="722" width="14" height="14" rx="7" fill="#e74c3c" opacity="0.6"/>
+  <text x="330" y="734" font-size="10" fill="#555">危險區域</text>
+
+  <!-- 連線類型 -->
+  <line x1="420" y1="729" x2="470" y2="729" stroke="#888" stroke-width="2.5"/>
+  <text x="478" y="734" font-size="10" fill="#555">主要道路</text>
+  <line x1="550" y1="729" x2="600" y2="729" stroke="#8e44ad" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="608" y="734" font-size="10" fill="#555">祕密通道</text>
+  <line x1="700" y1="729" x2="750" y2="729" stroke="#c0392b" stroke-width="3" stroke-dasharray="10,4"/>
+  <text x="758" y="734" font-size="10" fill="#555">危險區域標記</text>
+
+  <!-- 第二行 -->
+  <rect x="50" y="744" width="14" height="14" fill="#aed6f1" opacity="0.5" rx="3"/>
+  <text x="70" y="756" font-size="10" fill="#555">河流</text>
+  <rect x="120" y="744" width="14" height="14" rx="3" fill="#f5f0e8"/>
+  <text x="140" y="756" font-size="10" fill="#555">區域底色範圍</text>
+  <line x1="250" y1="751" x2="290" y2="751" stroke="#bdc3c7" stroke-width="6" opacity="0.6"/>
+  <text x="298" y="756" font-size="10" fill="#555">主幹道</text>
+
+  <!-- 危險度星級 -->
+  <text x="420" y="756" font-size="10" fill="#555">★ = 危險度（1–5）| 搜刮潛力（1–5）</text>
+
+  <!-- 北向箭頭 -->
+  <polygon points="900,70 890,82 895,78 895,95 905,95 905,78 910,82" fill="#2c3e50"/>
+  <text x="900" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#2c3e50">北</text>
+
+  <!-- 底部署名 -->
+  <text x="480" y="808" text-anchor="middle" font-size="9" fill="#bbb">《市井倖存者》TRPG — 跑團規則工作室</text>
+</svg>

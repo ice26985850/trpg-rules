@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/></filter>
+    <filter id="pulse"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0606"/><stop offset="50%" stop-color="#0D0A0A"/><stop offset="100%" stop-color="#06060A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="650" fill="url(#bgGrad)"/>
+
+  <!-- 標題 -->
+  <text x="500" y="25" text-anchor="middle" fill="#FFCC88" font-size="18" font-weight="bold">雙子末日（雙子末日）——S5 最後的代價</text>
+  <text x="500" y="44" text-anchor="middle" fill="#665544" font-size="11">無情號（同盟旗艦）+ 虛無號（AI 附屬艦）｜ 27 節點 ｜ 8 層甲板 ｜ 自毀倒數 15 回合</text>
+
+  <!-- 母艦撤離提示 -->
+  <rect x="250" y="55" width="500" height="22" rx="4" fill="#662222" opacity="0.8" stroke="#FF4444" stroke-width="1"/>
+  <text x="500" y="71" text-anchor="middle" fill="#FF8888" font-size="11">⚠ 第 8 回合：仲裁者號重創撤離——母艦支援全部失效！必須搶奪敵方逃生艙！</text>
+
+  <!-- ====== 無情號（左側大區塊） ====== -->
+  <rect x="15" y="85" width="580" height="555" rx="12" fill="#1A1313" opacity="0.6" stroke="#884444" stroke-width="2.5"/>
+  <text x="305" y="110" text-anchor="middle" fill="#CC6666" font-size="15" font-weight="bold">無情號（無情號）——同盟旗艦</text>
+  <text x="305" y="128" text-anchor="middle" fill="#885555" font-size="10">1,500 公尺 ｜ 6 層甲板 ｜ 人類守軍 + 指揮官艦長</text>
+
+  <!-- 甲板分層 -->
+  <rect x="30" y="140" width="550" height="75" rx="6" fill="#1A2222" opacity="0.4" stroke="#336666" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="160" fill="#558888" font-size="11" font-weight="bold">L1 機庫與輪機層</text>
+  <rect x="30" y="222" width="550" height="65" rx="6" fill="#222211" opacity="0.4" stroke="#666633" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="242" fill="#888855" font-size="11" font-weight="bold">L2 兵營層</text>
+  <rect x="30" y="294" width="550" height="75" rx="6" fill="#221122" opacity="0.4" stroke="#663366" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="314" fill="#885588" font-size="11" font-weight="bold">L3 通訊與自毀層（可變重力）</text>
+  <rect x="30" y="376" width="550" height="55" rx="6" fill="#222222" opacity="0.4" stroke="#666666" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="396" fill="#888888" font-size="11" font-weight="bold">L4 資料中心層</text>
+  <rect x="30" y="438" width="550" height="95" rx="6" fill="#221111" opacity="0.5" stroke="#CC4444" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="45" y="458" fill="#DD5555" font-size="11" font-weight="bold">L5 指揮甲板（艦橋）——低重力 0.3G</text>
+
+  <!-- 無情號連線 -->
+  <!-- L1 -->
+  <line x1="110" y1="192" x2="230" y2="192" stroke="#8899AA" stroke-width="2"/>
+  <line x1="230" y1="192" x2="350" y2="192" stroke="#8899AA" stroke-width="2"/>
+  <line x1="230" y1="192" x2="230" y2="165" stroke="#8899AA" stroke-width="1.5"/>
+  <line x1="350" y1="192" x2="470" y2="192" stroke="#8899AA" stroke-width="2"/>
+  <line x1="470" y1="192" x2="590" y2="192" stroke="#CC8844" stroke-width="2"/>
+  <text x="525" y="185" fill="#CC8844" font-size="8">高重力</text>
+  <line x1="590" y1="192" x2="670" y2="192" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="625" y="185" fill="#DD4444" font-size="7">輻射</text>
+  <!-- L1→L2 -->
+  <line x1="230" y1="165" x2="230" y2="255" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="212" fill="#BB9944" font-size="8">電梯</text>
+  <!-- L2 -->
+  <line x1="230" y1="255" x2="350" y2="255" stroke="#8899AA" stroke-width="2"/>
+  <line x1="230" y1="255" x2="470" y2="255" stroke="#DD4444" stroke-width="2"/>
+  <text x="345" y="248" fill="#DD4444" font-size="7">鎖定</text>
+  <!-- L2→L3 -->
+  <line x1="230" y1="255" x2="230" y2="335" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="297" fill="#BB9944" font-size="8">樓梯</text>
+  <!-- L3 -->
+  <line x1="230" y1="335" x2="350" y2="335" stroke="#8899AA" stroke-width="2"/>
+  <line x1="350" y1="335" x2="470" y2="335" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="405" y="327" fill="#DD4444" font-size="7">鎖定</text>
+  <!-- L3→L4 -->
+  <line x1="230" y1="335" x2="230" y2="400" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="370" fill="#BB9944" font-size="8">樓梯</text>
+  <!-- L4 -->
+  <line x1="230" y1="400" x2="350" y2="400" stroke="#8899AA" stroke-width="2"/>
+  <!-- L4→L5 -->
+  <line x1="230" y1="400" x2="230" y2="470" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="438" fill="#BB9944" font-size="8">樓梯</text>
+  <!-- L5 -->
+  <line x1="230" y1="470" x2="350" y2="470" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="285" y="462" fill="#DD4444" font-size="7">封鎖線</text>
+  <line x1="350" y1="470" x2="470" y2="470" stroke="#8899AA" stroke-width="2"/>
+  <line x1="350" y1="470" x2="350" y2="510" stroke="#33AA55" stroke-width="2.5"/>
+  <text x="365" y="492" fill="#33AA55" font-size="8">撤離</text>
+  <!-- 短路線 -->
+  <line x1="350" y1="192" x2="570" y2="335" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="445" y="258" fill="#88CC88" font-size="7" transform="rotate(40,445,258)">維護通道 PER DC18</text>
+
+  <!-- 無情號節點 -->
+  <rect x="50" y="172" width="80" height="35" rx="6" fill="#225544" stroke="#44AA66" stroke-width="2" filter="url(#shadow)"/>
+  <text x="90" y="192" text-anchor="middle" fill="#88DDAA" font-size="9" font-weight="bold">機庫 N1</text>
+  <rect x="180" y="172" width="80" height="35" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1" filter="url(#shadow)"/>
+  <text x="220" y="192" text-anchor="middle" fill="#AABBCC" font-size="9">L1走廊 N2</text>
+  <rect x="300" y="172" width="80" height="35" rx="6" fill="#552222" stroke="#DD4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="340" y="192" text-anchor="middle" fill="#FF8888" font-size="9">守軍集結 N3</text>
+  <rect x="420" y="172" width="80" height="35" rx="6" fill="#553322" stroke="#CC8844" stroke-width="1" filter="url(#shadow)"/>
+  <text x="460" y="192" text-anchor="middle" fill="#FFAA66" font-size="9">輪機入口 N5</text>
+  <rect x="590" y="172" width="70" height="35" rx="6" fill="#662222" stroke="#FF4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="625" y="192" text-anchor="middle" fill="#FF8888" font-size="9">☢反應爐 N27</text>
+  <rect x="360" y="405" width="70" height="35" rx="6" fill="#221122" stroke="#663366" stroke-width="1" filter="url(#shadow)"/>
+  <text x="395" y="425" text-anchor="middle" fill="#885588" font-size="9">L3走廊 N9</text>
+
+  <rect x="50" y="235" width="120" height="35" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1" filter="url(#shadow)"/>
+  <text x="110" y="255" text-anchor="middle" fill="#AABBCC" font-size="9">L2走廊 N6</text>
+  <rect x="300" y="235" width="80" height="35" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1" filter="url(#shadow)"/>
+  <text x="340" y="255" text-anchor="middle" fill="#AABBCC" font-size="9">兵營 L2 N7</text>
+  <rect x="420" y="235" width="80" height="35" rx="6" fill="#664422" stroke="#FFAA44" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="255" text-anchor="middle" fill="#FFCC88" font-size="9">軍械庫 N8</text>
+
+  <!-- ====== 靠泊連接處 ====== -->
+  <rect x="585" y="300" width="60" height="60" rx="30" fill="#222222" stroke="#AAAAAA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="615" y="325" text-anchor="middle" fill="#CCCCCC" font-size="8" font-weight="bold">靠泊連接</text>
+  <text x="615" y="340" text-anchor="middle" fill="#888888" font-size="7">N18 0G</text>
+  <text x="615" y="353" text-anchor="middle" fill="#888888" font-size="7">僅容單人</text>
+
+  <!-- ====== 虛無號（右側區塊） ====== -->
+  <rect x="635" y="85" width="350" height="555" rx="12" fill="#111122" opacity="0.6" stroke="#6644AA" stroke-width="2.5"/>
+  <text x="810" y="110" text-anchor="middle" fill="#9966DD" font-size="15" font-weight="bold">虛無號（虛無號）——AI 無人艦</text>
+  <text x="810" y="128" text-anchor="middle" fill="#664488" font-size="10">600 公尺 ｜ 2 層 ｜ 殘遺 AI ｜ 全區域零重力（0G）</text>
+
+  <!-- 虛無號甲板 -->
+  <rect x="650" y="142" width="320" height="80" rx="6" fill="#111122" opacity="0.5" stroke="#4444AA" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="665" y="162" fill="#6666BB" font-size="11" font-weight="bold">第一層——零重力（0G）｜牆壁每 2 回合重組</text>
+  <rect x="650" y="230" width="320" height="120" rx="6" fill="#11111A" opacity="0.5" stroke="#5533AA" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="665" y="250" fill="#7755CC" font-size="11" font-weight="bold">第二層——AI 核心層｜零重力（0G）</text>
+
+  <!-- 虛無號連線 -->
+  <line x1="680" y1="195" x2="780" y2="195" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="195" x2="880" y2="195" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="195" x2="780" y2="280" stroke="#AA66DD" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="795" y="240" fill="#AA66DD" font-size="8">垂直</text>
+  <line x1="780" y1="280" x2="880" y2="280" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="280" x2="780" y2="330" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="330" x2="880" y2="330" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="825" y="322" fill="#DD4444" font-size="7">量子鎖定 DC22</text>
+
+  <!-- 虛無號節點 -->
+  <rect x="660" y="175" width="85" height="35" rx="6" fill="#221144" stroke="#6644AA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="702" y="195" text-anchor="middle" fill="#9988DD" font-size="9">接入點 N19</text>
+  <rect x="740" y="175" width="85" height="35" rx="6" fill="#221133" stroke="#5533AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="782" y="195" text-anchor="middle" fill="#8866CC" font-size="9">走廊 N20</text>
+  <rect x="840" y="175" width="85" height="35" rx="6" fill="#331144" stroke="#AA44DD" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="882" y="195" text-anchor="middle" fill="#CC88EE" font-size="9">防禦A N21</text>
+  <rect x="740" y="260" width="85" height="35" rx="6" fill="#221133" stroke="#5533AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="782" y="280" text-anchor="middle" fill="#8866CC" font-size="9">上層走廊 N22</text>
+  <rect x="840" y="260" width="85" height="35" rx="6" fill="#331144" stroke="#AA44DD" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="882" y="280" text-anchor="middle" fill="#CC88EE" font-size="9">防禦B N23</text>
+  <rect x="740" y="310" width="85" height="35" rx="6" fill="#441122" stroke="#DD4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="782" y="325" text-anchor="middle" fill="#FF6666" font-size="8">⚠AI核心前 N24</text>
+  <text x="782" y="338" text-anchor="middle" fill="#CC4444" font-size="7">砲台矩陣 CR6</text>
+  <rect x="840" y="310" width="85" height="35" rx="6" fill="#442266" stroke="#AA44FF" stroke-width="3" filter="url(#shadow)"/>
+  <text x="882" y="325" text-anchor="middle" fill="#CC88FF" font-size="9" font-weight="bold">⭐AI核心 N25</text>
+  <text x="882" y="338" text-anchor="middle" fill="#9966CC" font-size="7">破解DC22</text>
+
+  <!-- 目標標記 -->
+  <rect x="300" y="450" width="100" height="35" rx="6" fill="#442222" stroke="#FF4444" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="350" y="465" text-anchor="middle" fill="#FF8888" font-size="9" font-weight="bold">封鎖線 N14</text>
+  <text x="350" y="478" text-anchor="middle" fill="#CC6666" font-size="7">4菁英+艦長CR6</text>
+  <rect x="420" y="450" width="80" height="35" rx="6" fill="#662222" stroke="#FFAA44" stroke-width="3" filter="url(#shadow)"/>
+  <text x="460" y="465" text-anchor="middle" fill="#FFCC88" font-size="9" font-weight="bold">⭐艦橋 N15</text>
+  <text x="460" y="478" text-anchor="middle" fill="#CC9944" font-size="7">癱瘓指揮</text>
+  <rect x="300" y="500" width="80" height="35" rx="6" fill="#226644" stroke="#44AA66" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="340" y="515" text-anchor="middle" fill="#88DDAA" font-size="9" font-weight="bold">🚀逃生艙 N17</text>
+  <text x="340" y="528" text-anchor="middle" fill="#559977" font-size="7">每艙限2人</text>
+  <rect x="420" y="315" width="80" height="35" rx="6" fill="#552222" stroke="#DD4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="330" text-anchor="middle" fill="#FF8888" font-size="8" font-weight="bold">通訊 N10</text>
+  <text x="460" y="343" text-anchor="middle" fill="#996666" font-size="7">可攔截通訊</text>
+  <rect x="420" y="400" width="80" height="35" rx="6" fill="#445522" stroke="#AAAA44" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="460" y="415" text-anchor="middle" fill="#DDDD88" font-size="8">資料中心 N12</text>
+  <text x="460" y="428" text-anchor="middle" fill="#999966" font-size="7">戰術數據</text>
+  <rect x="300" y="405" width="70" height="35" rx="6" fill="#445522" stroke="#AAAA44" stroke-width="1" filter="url(#shadow)"/>
+  <text x="335" y="420" text-anchor="middle" fill="#DDDD88" font-size="8">L4走廊 N11</text>
+  <text x="335" y="433" text-anchor="middle" fill="#999966" font-size="7">2砲台</text>
+  <rect x="300" y="335" width="70" height="35" rx="6" fill="#553322" stroke="#CC8844" stroke-width="2" filter="url(#shadow)"/>
+  <text x="335" y="350" text-anchor="middle" fill="#FFAA66" font-size="8">⚠自毀室 N16</text>
+  <text x="335" y="363" text-anchor="middle" fill="#996633" font-size="7">3G DC20+</text>
+
+  <!-- 雙目標指示 -->
+  <rect x="40" y="560" width="450" height="50" rx="6" fill="#220A0A" opacity="0.8" stroke="#FF4444" stroke-width="1.5"/>
+  <text x="260" y="578" text-anchor="middle" fill="#FF8888" font-size="12" font-weight="bold">⚠ 必須同時癱瘓無情號艦橋（N15）和虛無號 AI 核心（N25）！</text>
+  <text x="260" y="598" text-anchor="middle" fill="#996666" font-size="10">否則敵方將在 15 回合自毀倒數後爆炸——而你必須搶在倒數歸零前完成 + 撤離</text>
+
+  <!-- 圖例 -->
+  <rect x="740" y="400" width="230" height="140" rx="8" fill="#0D0D0D" opacity="0.85" stroke="#553333" stroke-width="1"/>
+  <text x="855" y="422" text-anchor="middle" fill="#998888" font-size="12" font-weight="bold">圖例</text>
+  <rect x="755" y="435" width="14" height="9" rx="3" fill="#225544" stroke="#44AA66" stroke-width="1"/>
+  <text x="778" y="444" fill="#88DDAA" font-size="9">切入點／撤離點</text>
+  <rect x="755" y="452" width="14" height="9" rx="3" fill="#442266" stroke="#AA44FF" stroke-width="2"/>
+  <text x="778" y="461" fill="#CC88FF" font-size="9">目標區域</text>
+  <rect x="755" y="469" width="14" height="9" rx="3" fill="#552222" stroke="#DD4444" stroke-width="2"/>
+  <text x="778" y="478" fill="#FF8888" font-size="9">危險／首領</text>
+  <line x1="755" y1="492" x2="771" y2="492" stroke="#BB9944" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="778" y="497" fill="#BB9944" font-size="9">電梯／樓梯</text>
+  <line x1="755" y1="509" x2="771" y2="509" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="778" y="514" fill="#88CC88" font-size="9">維護通道</text>
+  <line x1="890" y1="435" x2="906" y2="435" stroke="#DD4444" stroke-width="2"/>
+  <text x="913" y="440" fill="#FF8888" font-size="9">封鎖艙門</text>
+  <line x1="890" y1="454" x2="906" y2="454" stroke="#33AA55" stroke-width="2.5"/>
+  <text x="913" y="459" fill="#44BB66" font-size="9">撤離路線</text>
+
+  <text x="500" y="638" text-anchor="middle" fill="#554444" font-size="10">地圖對應劇本 S5《最後的代價（最後的代價）》｜難度：傳奇｜等級 7–10｜雙艦終局 15 回合</text>
+</svg>

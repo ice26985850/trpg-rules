@@ -1,0 +1,79 @@
+# 雙子末日（雙子末日）——S5 最後的代價
+# 旗艦「無情號」+ AI 附屬艦「虛無號」，兩艦靠泊連接
+# 35 節點，8 層甲板（無情號 6 層 + 虛無號 2 層）
+# 對應劇本：S5_最後的代價
+nodes:
+  # === 無情號（旗艦） ===
+  - { id: N1, label: "機庫（切入點）", type: entry, x: 80, y: 380, deck: 1, vessel: "無情號", gravity: "標準重力（1G）", hazard: null, explored: true }
+  - { id: N2, label: "無情號主走廊 L1", type: corridor, x: 200, y: 380, deck: 1, vessel: "無情號", gravity: "標準重力（1G）", hazard: null, explored: false }
+  - { id: N3, label: "守軍集結點", type: room, x: 320, y: 380, deck: 1, vessel: "無情號", gravity: "標準重力（1G）", hazard: "4 名陸戰隊員巡邏", explored: false }
+  - { id: N4, label: "主電梯 L1", type: corridor, x: 200, y: 310, deck: 1, vessel: "無情號", gravity: "標準重力（1G）", hazard: null, explored: false }
+  - { id: N5, label: "輪機艙入口", type: room, x: 440, y: 380, deck: 1, vessel: "無情號", gravity: "高溫——標準重力", hazard: "引擎噪音——PER 檢定劣勢", explored: false }
+  - { id: N6, label: "L2 走廊", type: corridor, x: 200, y: 240, deck: 2, vessel: "無情號", gravity: "標準重力（1G）", hazard: null, explored: false }
+  - { id: N7, label: "兵營區 L2", type: room, x: 320, y: 240, deck: 2, vessel: "無情號", gravity: "標準重力（1G）", hazard: "2 名警衛", explored: false }
+  - { id: N8, label: "軍械庫", type: room, x: 440, y: 240, deck: 2, vessel: "無情號", gravity: "標準重力（1G）", hazard: "鎖定——ENG DC 18。內有高級武器", explored: false }
+  - { id: N9, label: "L3 走廊", type: corridor, x: 200, y: 170, deck: 3, vessel: "無情號", gravity: "可變重力（敵方操縱）", hazard: null, explored: false }
+  - { id: N10, label: "通訊陣列", type: room, x: 320, y: 170, deck: 3, vessel: "無情號", gravity: "標準重力（1G）", hazard: "可攔截或干擾敵方通訊", explored: false }
+  - { id: N11, label: "L4 走廊", type: corridor, x: 200, y: 100, deck: 4, vessel: "無情號", gravity: "標準重力（1G）", hazard: "2 座自動砲台", explored: false }
+  - { id: N12, label: "資料中心", type: room, x: 320, y: 100, deck: 4, vessel: "無情號", gravity: "標準重力（1G）", hazard: "次要目標——可下載戰術資料", explored: false }
+  - { id: N13, label: "L5 走廊", type: corridor, x: 200, y: 50, deck: 5, vessel: "無情號", gravity: "低重力（0.3G）", hazard: null, explored: false }
+  - { id: N14, label: "指揮甲板封鎖線", type: corridor, x: 320, y: 50, deck: 5, vessel: "無情號", gravity: "標準重力（1G）", hazard: "4 名陸戰隊員 + 旗艦艦長（首領 CR 6）", explored: false }
+  - { id: N15, label: "艦橋 ⭐", type: objective, x: 440, y: 50, deck: 5, vessel: "無情號", gravity: "標準重力（1G）", hazard: "旗艦艦長最終戰。癱瘓後無情號指揮系統失效", explored: false }
+  - { id: N16, label: "自毀控制室", type: room, x: 440, y: 170, deck: 3, vessel: "無情號", gravity: "高重力（3G）——防止入侵", hazard: "破解自毀 DC 20+。成功→倒數 +2d4 回合", explored: false }
+  - { id: N17, label: "逃生艙區（撤離）", type: objective, x: 80, y: 80, deck: 5, vessel: "無情號", gravity: "標準重力（1G）", hazard: "部分被破壞——真空暴露。每艙限 2 人", explored: false }
+
+  # === 靠泊連接處 ===
+  - { id: N18, label: "靠泊連接通道", type: corridor, x: 500, y: 250, deck: 3, vessel: "連接處", gravity: "零重力（0G）", hazard: "狹窄通道——僅容單人。兩側均可能有敵方", explored: false }
+
+  # === 虛無號（AI 艦） ===
+  - { id: N19, label: "虛無號接入點", type: entry, x: 580, y: 250, deck: 1, vessel: "虛無號", gravity: "零重力（0G）", hazard: null, explored: false }
+  - { id: N20, label: "虛無號走廊", type: corridor, x: 660, y: 250, deck: 1, vessel: "虛無號", gravity: "零重力（0G）", hazard: "牆壁每 2 回合重組——改變掩體", explored: false }
+  - { id: N21, label: "防禦節點 A", type: room, x: 740, y: 250, deck: 1, vessel: "虛無號", gravity: "零重力（0G）", hazard: "2 台防禦機器人", explored: false }
+  - { id: N22, label: "虛無號上層走廊", type: corridor, x: 660, y: 180, deck: 2, vessel: "虛無號", gravity: "零重力（0G）", hazard: null, explored: false }
+  - { id: N23, label: "防禦節點 B", type: room, x: 740, y: 180, deck: 2, vessel: "虛無號", gravity: "零重力（0G）", hazard: "1 台防禦機器人 + 雷射柵欄", explored: false }
+  - { id: N24, label: "AI 核心前室", type: corridor, x: 660, y: 110, deck: 2, vessel: "虛無號", gravity: "零重力（0G）", hazard: "封鎖砲台矩陣（首領 CR 6）", explored: false }
+  - { id: N25, label: "AI 核心 ⭐", type: objective, x: 740, y: 110, deck: 2, vessel: "虛無號", gravity: "零重力（0G）", hazard: "破解中央 AI（ENG DC 22）。牆壁每回合重組", explored: false }
+
+  # === 無情號反應爐路線 ===
+  - { id: N26, label: "反應爐外層", type: room, x: 560, y: 380, deck: 1, vessel: "無情號", gravity: "高溫高重力（3G）", hazard: "輻射——每回合 RES DC 13 否則 1d4", explored: false }
+  - { id: N27, label: "反應爐核心", type: room, x: 680, y: 380, deck: 1, vessel: "無情號", gravity: "極高重力（4G）", hazard: "若過載——倒數減半。可手動引爆作為巨型炸彈", explored: false }
+
+edges:
+  # 無情號內
+  - { from: N1, to: N2, type: "走廊" }
+  - { from: N2, to: N3, type: "走廊" }
+  - { from: N2, to: N4, type: "走廊" }
+  - { from: N3, to: N5, type: "走廊" }
+  - { from: N4, to: N6, type: "電梯" }
+  - { from: N6, to: N7, type: "走廊" }
+  - { from: N6, to: N8, type: "艙門（鎖定）" }
+  - { from: N6, to: N9, type: "樓梯" }
+  - { from: N9, to: N10, type: "走廊" }
+  - { from: N9, to: N16, type: "艙門（鎖定）" }
+  - { from: N9, to: N11, type: "樓梯" }
+  - { from: N11, to: N12, type: "艙門" }
+  - { from: N11, to: N13, type: "樓梯" }
+  - { from: N13, to: N14, type: "走廊" }
+  - { from: N14, to: N15, type: "艙門（封鎖）" }
+  - { from: N14, to: N17, type: "走廊" }
+  - { from: N5, to: N26, type: "艙門" }
+  - { from: N26, to: N27, type: "艙門（輻射封鎖）" }
+  # 連接
+  - { from: N10, to: N18, type: "靠泊通道" }
+  - { from: N18, to: N19, type: "靠泊通道——進入虛無號" }
+  # 虛無號內
+  - { from: N19, to: N20, type: "走廊（動態重組）" }
+  - { from: N20, to: N21, type: "走廊" }
+  - { from: N20, to: N22, type: "垂直通道" }
+  - { from: N22, to: N23, type: "走廊" }
+  - { from: N22, to: N24, type: "走廊" }
+  - { from: N24, to: N25, type: "艙門（量子鎖定——DC 22）" }
+  # 短路線
+  - { from: N3, to: N18, type: "維護通道（隱藏——PER DC 18）" }
+
+regions:
+  - { name: "無情號下層（L1-L2）", color: "#B3C6FF", nodes: [N1, N2, N3, N4, N5, N6, N7, N8, N26, N27] }
+  - { name: "無情號中層（L3-L4）", color: "#FFC6B3", nodes: [N9, N10, N11, N12, N16] }
+  - { name: "無情號上層（L5）", color: "#FFB3B3", nodes: [N13, N14, N15, N17] }
+  - { name: "靠泊連接處", color: "#D9D9D9", nodes: [N18] }
+  - { name: "虛無號（AI 艦）", color: "#C6B3FF", nodes: [N19, N20, N21, N22, N23, N24, N25] }

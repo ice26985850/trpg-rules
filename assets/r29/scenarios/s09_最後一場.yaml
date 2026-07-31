@@ -1,0 +1,135 @@
+# 絕地戰場 TRPG — 劇本 S9（單人）：最後一場
+scenario:
+  id: S9
+  name: 最後一場
+  type: solo
+  tier: 3
+  difficulty: 5
+  estimated_duration: 5-7小時
+  suggested_level: 7-8
+
+  description: >
+    這是你最後一場比賽。贏了就退休——輸了就永遠留在這裡。
+    廢棄的都市在暴風雨中顫抖。二十個精英孤狼空降在這座死城。
+    而你的宿敵——你的前搭檔——也報名了。
+    他活下來了。而且他有一筆帳要跟你算。
+
+map:
+  name: 湮沒之都
+  size: 6公里 × 6公里
+  terrain: [廢棄都市(70%), 地下管道(20%), 水域(10%)]
+  landmarks:
+    - { id: L1, name: 天際大廈, type: urban, loot_level: 豐富（藍）, description: 60層廢棄摩天大樓——全景視野但極度暴露 }
+    - { id: L2, name: 地下鐵系統, type: urban, loot_level: 普通（綠）, description: 廢棄的地鐵隧道——連接全城的暗黑通道 }
+    - { id: L3, name: 廣播塔, type: special, loot_level: -, description: 城市最高點的三座無線電塔之一 }
+    - { id: L4, name: 市立醫院, type: urban, loot_level: 豐富（藍）, description: 廢棄醫院——大量醫療物資，但非常適合伏擊 }
+    - { id: L5, name: 港務局大樓, type: urban, loot_level: 軍用（紫）, description: 港口旁的行政大樓——曾是軍方指揮中心 }
+
+enemy_configuration:
+  total_lone_wolves: 19  # 全精英陣容
+  distribution:
+    - { type: 穩健, difficulty: ★★, count: 4 }
+    - { type: 突擊, difficulty: ★★★, count: 5 }
+    - { type: 伏擊, difficulty: ★★★, count: 5 }
+    - { type: 職業, difficulty: ★★★★, count: 4 }
+    - { type: GM自訂, difficulty: ★★★★★, count: 1, note: 「收藏家」——一位從未失敗過的傳奇參賽者 }
+
+nemesis:
+  name: 凱·莫里森
+  codename: 「灰燼」
+  style: 鏡像宿敵（跟玩家使用相同的武器和戰術）
+  strength: 10/10
+  weapon: 與玩家相同的主武器
+  backstory: >
+    你的前搭檔。你們曾一起參加過七場比賽，一起從死人堆裡爬出來。
+    直到那場比賽——你讓他倒地了，而你沒有回去救他。
+    你以為他死了。但他沒死。
+    他花了一年康復，又花了一年訓練，只為了今天。
+    在遊戲過程中你會找到他故意留下的東西：
+    - 一張你們以前的合照（在某個被擊殺的孤狼身上）
+    - 一顆空彈殼——你們以前約好的暗號
+    - 一罐你們以前常喝的啤酒（放在一個安全的房間桌上，還是冰的）
+    他在告訴你：「嘿。我在這。」
+
+circle:
+  type: GM祕密決定——連GM都不確定自己會不會在中途改圈
+  description: 暴風雨中圈型難以預測——增加不確定性
+
+airdrop: { enabled: false, note: 沒有空投——物資只來自擊殺的敵人 }
+red_zone: { enabled: true, special: 轟炸集中在建築密集區——強制樓層轉移 }
+vehicles: [摩托車, 吉普車（稀少）]
+weather: 全程暴風雨——視野減半，腳步聲被雨聲掩蓋（聽覺距離×0.5）
+time_of_day: 下午→黃昏→夜間
+
+special_rules:
+  - 3座無線電塔
+  - 聽覺補償×0.5（暴風雨干擾）
+  - 孤狼直覺生效但效果減弱（暴風雨干擾感知）
+  - 沒有初始物資——擊殺敵人是唯一的補給來源
+  - 地鐵系統提供快速移動路線（但隧道內可能有人）
+  - 宿敵的線索散落在全城各處
+
+phases:
+  - phase: 回到起點
+    turns: 1
+    gm_notes: >
+      「暴風雨中，運輸機的艙門打開——
+      下面是一座你認識的城市。你跟凱在這裡打過三場比賽。
+      但這次不一樣——這次你是來結束一切的。」
+
+  - phase: 城市的記憶
+    turns: 4-5
+    gm_notes: >
+      引導玩家探索城市——每個地標都是你們曾經並肩作戰過的地方。
+      天際大廈——你們在那裡守過橋。
+      市立醫院——你在那裡第一次救了他的命。
+      讓回憶與現實交織——讓玩家感受到「這座城市認識我們」。
+
+  - phase: 宿敵的遊戲
+    turns: 4-5
+    gm_notes: >
+      宿敵不會直接出現。他會留下線索——
+      每個線索都是你們過往的片段。
+      玩家會開始猶豫、開始回想、開始質疑。
+      這是心理戰——宿敵在讓玩家「準備好」面對他。
+
+      同時，其他精英孤狼不斷施壓。
+      讓玩家在「追蹤宿敵的線索」和「應對眼前威脅」之間掙扎。
+
+  - phase: 暴風雨中的獵殺
+    turns: 4-5
+    gm_notes: >
+      暴風雨是最佳舞台——視野模糊、聽覺失靈。
+      每一個轉角都可能是決鬥。
+      讓環境本身成為對手——積水的街道減速、
+      倒塌的建築阻斷路線、閃電照亮瞬間的目標。
+
+  - phase: 最終圈：我們
+    turns: 2-3
+    gm_notes: >
+      天際大廈的頂層——你們第一次合作的地方。
+      圈縮到只有這層樓了。你和凱。
+      「雨水從破碎的窗戶打進來。閃電照亮了他的臉——
+      他老了不少，但眼神沒變。他手裡拿著那把槍——
+      你送他的那把。」
+
+      給玩家一個真正的選擇：
+      - 開槍——結束這一切，拿走獎金，退休
+      - 放下槍——說「對不起」
+
+      無論選擇什麼，結果由擲骰決定——
+      但選擇本身，由玩家做。
+
+victory_condition: 成為最後倖存的孤狼——或找到比勝利更重要的事
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  chicken_dinner: 500
+  per_elimination: 80
+  nemesis_defeated: 500
+  nemesis_reconciled: 800  # 選擇放下槍並達成和解

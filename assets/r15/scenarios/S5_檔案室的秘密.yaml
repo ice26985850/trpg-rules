@@ -1,0 +1,35 @@
+name: "S5：檔案室的秘密"
+description: >
+  Level 99「檔案室」藏著關於「歸一者」的真相。
+  這不是對抗怪物的任務——這是對抗知識本身的任務。有些真相，一旦知道就無法回頭。
+difficulty: 極難
+real_dc: 100
+level_range: "13–14"
+mission_type: ["偵察任務", "情報獲取"]
+campaign: "戰役四：深處的呼喚（核心）"
+min_agents: 2
+recommended_specialty:
+  - 交涉
+  - 醫療
+encounter_rate: {表面區域: 0, 歸一者注目時: 35}
+time_limit: null
+intel_restriction: "Level 99 的情報始終為 ±20%（即使精確情報），此樓層抗拒被「預知」"
+environment_rules:
+  - "表面區域（Class 1）：安全，無遭遇"
+  - "深入區域（Class 5）：每30分鐘強制意志對抗（d100≥50），失敗→壓力+1"
+  - "閱讀某些文件：自動觸發精神對抗"
+special_reward:
+  name: "歸一者的知識"
+  effect: "所有實體遭遇DC −10（永久）"
+  cost: "每次使用時20%觸發「歸一者的注目」——24小時內遭遇率×2"
+campaign_progression: "解鎖戰役四核心選擇——打開/封印/研究歸一者通道"
+scene_flow:
+  - scene: "進入檔案室"
+    description: "無盡的木製書架、舊書的香味、灰色長袍的檔案員。後室中最接近「家」的地方——也是最危險的圖書館。"
+  - scene: "第七區——知識的重壓"
+    description: "書架內容變得古老而無法辨認——但又可以被理解。空氣變重了。腦中浮現不屬於自己的記憶。"
+  - scene: "第四十七排——歸一者檔案"
+    description: "孤立的書架。一本無名的黑書。觸摸時微微發熱。"
+    check: "d100 + 團隊加值 ≥ 實際DC 100"
+  - scene: "真相的重量"
+    description: "書合上了。檔案員出現在書架盡頭。「你讀了。現在……你知道的太多了。」"

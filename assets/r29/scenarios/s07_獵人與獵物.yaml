@@ -1,0 +1,102 @@
+# 絕地戰場 TRPG — 劇本 S7（單人）：獵人與獵物
+scenario:
+  id: S7
+  name: 獵人與獵物
+  type: solo
+  tier: 2
+  difficulty: 3
+  estimated_duration: 3-4小時
+  suggested_level: 3-4
+
+  description: >
+    你是為了錢來的——你需要這筆錢做一件很重要的事。
+    中型荒漠地圖——地圖中央有一座廢棄軍事基地，藏著最好的物資。
+    但十五個孤狼都知道這件事。其中一個——退役特種兵——他參賽的理由跟你一樣。
+    為了錢。為了家人。他需要這筆錢比你需要。你會讓他嗎？
+
+map:
+  name: 鹽漠
+  size: 4公里 × 4公里
+  terrain: [荒漠(50%), 廢棄軍事基地(20%), 乾涸河床(15%), 採礦場(15%)]
+  landmarks:
+    - { id: L1, name: 廢棄軍事基地, type: military, loot_level: 軍用（紫）, description: 地圖中心——全圖最好的物資，但所有人都知道 }
+    - { id: L2, name: 無線電中繼站, type: special, loot_level: -, description: 山丘頂上的通訊設施 }
+    - { id: L3, name: 礦井入口, type: industrial, loot_level: 普通（綠）, description: 地下礦井——完美的隱匿路線 }
+    - { id: L4, name: 鹽湖, type: natural, loot_level: 貧瘠（灰）, description: 乾涸的鹽湖——開闊地帶，穿越等於自殺 }
+
+enemy_configuration:
+  total_lone_wolves: 14
+  distribution:
+    - { type: 菜鳥, difficulty: ★, count: 4 }
+    - { type: 穩健, difficulty: ★★, count: 3 }
+    - { type: 突擊, difficulty: ★★★, count: 3 }
+    - { type: 伏擊, difficulty: ★★★, count: 3 }
+
+nemesis:
+  name: 艾力克斯·陳
+  codename: 「幽靈」
+  style: 突擊型
+  strength: 8/10
+  weapon: M416 + 消音器 + 4倍鏡
+  backstory: >
+    退役特種兵。兩年前退役，為了支付女兒的醫療費開始參加比賽。
+    他參賽的理由跟你一樣——為了錢。
+    他的女兒需要手術。你的家人需要那筆錢。
+    你們之中只有一個人能帶著錢離開。
+    他在被你擊殺的敵方孤狼身上故意留下了線索——一封給你的信。
+    「我知道你為什麼在這裡。我也是。」
+
+circle:
+  type: 跳躍翻轉
+  description: 中間突然改方向——逼玩家穿越開闊的鹽湖地帶
+
+airdrop: { count: 2, timing: [第二圈, 第四圈] }
+red_zone: { enabled: true, frequency: 每7回合 }
+vehicles: [越野車, 摩托車, 吉普車]
+weather: 晴天（高溫）+ 沙塵暴（後半段）
+time_of_day: 白天
+
+special_rules:
+  - 2座無線電塔
+  - 聽覺補償生效
+  - 孤狼直覺生效
+  - 物資掠奪——被擊殺的敵方孤狼會掉落他們的裝備和故事
+
+phases:
+  - phase: 鹽漠降落
+    turns: 1
+    gm_notes: >
+      「沙漠的風是熱的——才早上九點，地面的熱氣已經扭曲了地平線。
+      你看到下方那個灰色的軍事基地輪廓。所有人都在往那飛。」
+
+  - phase: 基地爭奪
+    turns: 4-5
+    gm_notes: >
+      軍事基地內的爭奪是本幕核心。多名孤狼同時進入基地搜刮——
+      製造多層次的遭遇（A在二樓搜刮時聽到一樓的腳步聲，
+      同時看到窗外另一個人正在靠近）。
+
+  - phase: 宿敵的訊息
+    turns: 3-4
+    gm_notes: >
+      玩家在擊殺的敵人身上找到宿敵留下的線索。
+      這不是單純的戰鬥——是兩個有相同動機的人之間的無聲對話。
+      每一封信、每一個線索，都讓玩家猶豫：
+      「我應該繼續嗎？他還有一個女兒在等他。」
+
+  - phase: 鹽湖穿越
+    turns: 3
+    gm_notes: >
+      圈突然翻轉——安全區跳到鹽湖對面。
+      玩家被迫穿越開闊地帶——這時的伏擊隊是最危險的。
+      給玩家使用煙霧彈、載具、或繞路通過礦井的選項。
+
+  - phase: 最終圈：選擇
+    turns: 2-3
+    gm_notes: >
+      你和幽靈——在一片廢墟中面對面。
+      給玩家一個「放下槍的選項」——他們可以選擇不開槍。
+      （但幽靈會開槍——他有不能輸的理由。）
+      讓這個選擇有意義——即使結果一樣，玩家做出了選擇。
+
+victory_condition: 成為最後倖存的孤狼（或做出你的選擇）

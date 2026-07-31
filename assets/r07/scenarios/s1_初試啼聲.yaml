@@ -1,0 +1,178 @@
+# 地師TRPG 劇本 S1：初試啼聲 ——「小地主的墓」
+# 格式：YAML（可轉換為 briefing_package）
+
+scenario_id: S1
+title: "初試啼聲——小地主的墓"
+subtitle: "第一個墓。最後的安息。"
+level_range: "1-3"
+difficulty: "簡單"
+sessions: "1-2"
+region: "中原（河南鄉間）"
+setting_year: 1925
+
+# 劇情摘要
+synopsis: |
+  一個小地主的三姨太最近下葬。本應是普通喪事，但村子開始出現怪事——
+  雞不叫、井水發苦、嬰兒夜夜啼哭。村長請來玩家調查。
+  這是一個小墓，不應該有任何超自然威脅——但墳頭的草一夜之間全部枯黃了。
+  三姨太不是自然死亡——她是被大太太毒死的。她的怨氣在墓中發酵，
+  正處於「新屍」階段——這是新地師最佳的實戰訓練對象。
+
+# 劇情目標
+objectives:
+  - 調查村中怪事來源
+  - 進入三姨太的墓
+  - 應對墓中的超自然威脅
+  - 揭露真相
+
+# 關鍵NPC
+npcs:
+  - id: npc_village_chief
+    name: "村長老周"
+    role: "委託人"
+    attitude: "焦慮、對地師半信半疑"
+    secret: "他知道大太太和三姨太之間有矛盾，但不敢說"
+    stats: "無（普通人）"
+
+  - id: npc_first_wife
+    name: "大太太"
+    role: "阻礙者"
+    attitude: "表面哀傷，實則心虛"
+    secret: "她下毒的事有丫鬟看見了"
+    stats: "無（普通人）"
+
+  - id: npc_concubine_ghost
+    name: "三姨太的滯留靈"
+    role: "墓主"
+    attitude: "悲傷、渴望公道"
+    secret: "願意被超度，但想讓真相曝光"
+    stats:
+      type: "滯留靈（新屍階段）"
+      cr: 0.5
+      hp: 12
+      def: 5
+      attacks:
+        - "本能揮舞：2d10+1 vs DEF，命中：1d4"
+      weakness: "陽光、驅邪符即死、揭露真相可和平超度"
+
+  - id: npc_maid
+    name: "小丫鬟"
+    role: "證人"
+    attitude: "恐懼——怕大太太滅口"
+    secret: "看到大太太在湯裡放了東西"
+
+# 墓室結構
+tomb_structure:
+  type: "小型墓葬"
+  chambers:
+    - id: passage
+      name: "墓道"
+      length_m: 8
+      description: "狹窄土洞，有輕微塌方風險"
+      threats: ["塌方風險（身手 DC 10 避免）"]
+
+    - id: main_chamber
+      name: "單一墓室"
+      size: "3m見方"
+      contents:
+        - "木棺（材質一般）"
+        - "少量陪葬（銀簪、玉鐲、胭脂盒）"
+        - "角落的陶罐（大太太放的——裡面是毒藥殘渣）"
+
+# 主要遭遇
+encounters:
+  - id: enc_village_investigation
+    name: "調查村莊"
+    type: "探索/社交"
+    dc: 8
+    description: "收集線索、盤問村民。成功獲得毒藥陶罐資訊"
+
+  - id: enc_find_tomb
+    name: "開墓"
+    type: "探索"
+    dc: 10
+    description: "找到正確墓道位置。失敗可能挖錯或觸發塌方"
+
+  - id: enc_tomb_collapse
+    name: "墓中塌方"
+    type: "探索"
+    dc: 8
+    description: "墓道有塌方風險。被動感知——GM 暗投感知"
+
+  - id: enc_new_corpse
+    name: "三姨太（新屍）"
+    type: "戰鬥/社交"
+    ttv: 2
+    description: |
+      開棺 d6=3。新屍×1。戰鬥力弱。
+      若玩家表現尊重或提及大太太下毒，三姨太的滯留靈會停止攻擊並試圖溝通。
+      可透過對話安撫——不需要戰鬥。
+
+  - id: enc_truth_reveal
+    name: "真相揭露"
+    type: "社交"
+    dc: 10
+    description: "讓大太太認罪或讓村民知道真相"
+
+# 關鍵道具
+key_items:
+  - id: item_rouge_box
+    name: "胭脂盒"
+    type: "執念容器"
+    description: "三姨太的執念容器。若歸還給家人，獲得村莊聲望"
+    value: "聲望+2"
+
+  - id: item_silver_hairpin
+    name: "銀簪"
+    type: "乾淨古物"
+    value_ocean: 30
+    description: "可正常出售"
+
+  - id: item_poison_jar
+    name: "毒藥陶罐"
+    type: "關鍵證據"
+    description: "用來對抗大太太的證據"
+
+# 多重結局
+endings:
+  - id: ending_peaceful
+    name: "圓滿超度"
+    condition: "讓真相曝光 + 安撫三姨太"
+    result: "村莊聲望+3，三姨太安息，大太太被捕"
+
+  - id: ending_forced
+    name: "強制鎮壓"
+    condition: "直接消滅三姨太，不解執念"
+    result: "聲望+1，但三姨太怨氣轉移到胭脂盒——未來可能回來"
+
+  - id: ending_bribe
+    name: "妥協"
+    condition: "接受大太太的賄賂，隱瞞真相"
+    result: "獲得200大洋，但聲望-2，三姨太怨氣增強"
+
+  - id: ending_failure
+    name: "失敗"
+    condition: "被三姨太擊敗/逃跑"
+    result: "村莊陷入恐慌，需更高級地師處理"
+
+# 獎勵
+rewards:
+  xp: 100
+  money: "0-200 大洋（取決於結局）"
+  reputation: "−2 至 +3（取決於結局）"
+
+# 規模調整
+scale_adjustments:
+  solo:
+    adjustments:
+      - "新屍 HP 減半（12→6）"
+      - "村長派一個膽大的村民跟隨（NPC 同伴）"
+      - "陰氣相關檢定 DC +2"
+    npc_companion:
+      name: "大牛"
+      role: "村民義工"
+      stats: "身手3，膽魄4，HP19。無戰鬥訓練，可幫忙搬東西和照明"
+
+  duo: "標準難度"
+  trio: "標準難度"
+  quad: "增加一隻額外新屍（共2隻）或讓大太太派打手干擾"

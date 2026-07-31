@@ -1,0 +1,70 @@
+# 多人戰役結構檔：代價 (The Price / 戰役系列 D)
+# 來源：campaign-series-d-the-price_zh-Hant.md
+# 本檔為結構化摘要；完整場景描述請參閱同名 .md。
+
+meta:
+  title: "代價 (The Price)"
+  type: "多人玩家戰役"
+  player_count: "小隊（建議 3–5 人）"
+  level_range: "Lv.1–10"
+  focus: "D 級敘事 / 道德覺醒 / 不可逆選擇"
+  setting: "Area-14 地面入口與基金會收容生態"
+  plot: "玩家從 D 級視角出發，隨任務深入發現基金會收容體系的代價，最終面對不可逆的抉擇與其後果。"
+
+scenes:
+  - id: "D-1"
+    name: "深淵座"
+    level: "Lv.1–2"
+    type: "抵達 / 建立關係 / 首次接觸"
+    key_checks: ["基金會史 TN 55", "偵察 TN 58", "意志抵抗 TN 52"]
+    duration: "1–2 場"
+    map_ref: "generic_site（Area-14 地面入口）"
+
+  - id: "D-2"
+    name: "獄長的聲音"
+    level: "Lv.2–3"
+    type: "對話 / 同理心 / 道德覺醒"
+    key_checks: ["說服 TN 52", "異常學 TN 58", "意志抵抗 TN 55"]
+    duration: "2 場"
+
+  - id: "D-3"
+    name: "它所收容的"
+    level: "Lv.4–5"
+    type: "調查 / 真相揭示"
+    key_checks: ["異常學 TN 65", "計算機 TN 60", "偵察 TN 62"]
+    duration: "2 場"
+
+  - id: "D-4"
+    name: "裂痕"
+    level: "Lv.5–6"
+    type: "團隊分裂 / 立場選擇"
+    key_checks: ["領導 TN 58", "說服 TN 60", "欺騙 TN 55"]
+    duration: "1–2 場"
+
+  - id: "D-5"
+    name: "D 級的聲音"
+    level: "Lv.6–7"
+    type: "D 級敘事核心 / 團結"
+    key_checks: ["領導 TN 55", "說服 TN 58", "意志抵抗 TN 60"]
+    duration: "2 場"
+
+  - id: "D-6"
+    name: "代價清單"
+    level: "Lv.7–8"
+    type: "計算 / 協商 / 準備"
+    key_checks: ["全部技能——多路徑"]
+    duration: "1–2 場"
+
+  - id: "D-7"
+    name: "抉擇"
+    level: "Lv.8–9"
+    type: "實際行動 / 不可逆選擇"
+    key_checks: ["多種——取決於方案"]
+    duration: "2–3 場"
+
+  - id: "D-8"
+    name: "後果"
+    level: "Lv.9–10"
+    type: "結局 / 清算 / 遺留"
+    key_checks: ["敘事——少數檢定"]
+    duration: "1–2 場"

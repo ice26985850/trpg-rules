@@ -1,0 +1,96 @@
+# 最後的進化 — 深淵裂谷地圖
+# 對應劇本：S5（全場景）
+
+nodes:
+  - id: "A"
+    label: "裂谷邊緣"
+    x: 300
+    y: 450
+    type: "start"
+    explored: false
+    description: "深淵裂谷的邊緣。全體盟友在此集結。選擇攜帶同伴。"
+
+  - id: "B"
+    label: "下降點"
+    x: 300
+    y: 380
+    type: "transition"
+    explored: false
+    description: "開始下降的起點。"
+
+  - id: "C"
+    label: "100m — 七首蛇巢"
+    x: 300
+    y: 300
+    type: "encounter"
+    explored: false
+    description: "第一層遭遇——七首蛇（精英級）。"
+
+  - id: "D"
+    label: "300m — 虛空流域"
+    x: 250
+    y: 220
+    type: "encounter"
+    explored: false
+    description: "第二層遭遇——虛空流體 ×3（精英級）。物理攻擊劣勢。"
+
+  - id: "E"
+    label: "500m — 守門者巢穴"
+    x: 300
+    y: 140
+    type: "boss"
+    explored: false
+    description: "第三層遭遇——深淵守門者（首領級）。虛淵蠕蟲的『看門狗』。"
+
+  - id: "F"
+    label: "碎片殿堂"
+    x: 300
+    y: 60
+    type: "final"
+    explored: false
+    description: "裂谷最深處。虛淵蠕蟲的記憶碎片在此漂浮。虛淵殘響的所在地。"
+
+  - id: "G"
+    label: "核心碎片"
+    x: 350
+    y: 60
+    type: "decision"
+    explored: false
+    description: "蠕蟲的核心碎片。最終的三個選擇在此：吸收 / 摧毀 / 融合。"
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "passage"
+  - from: "B"
+    to: "C"
+    type: "vertical"
+  - from: "C"
+    to: "D"
+    type: "vertical"
+  - from: "D"
+    to: "E"
+    type: "vertical"
+  - from: "E"
+    to: "F"
+    type: "vertical"
+  - from: "F"
+    to: "G"
+    type: "passage"
+
+regions:
+  - name: "地面區域"
+    color: "#2E8B57"
+    nodes: ["A", "B"]
+  - name: "上層裂谷"
+    color: "#4169E1"
+    nodes: ["C"]
+  - name: "中層裂谷"
+    color: "#8B5CF6"
+    nodes: ["D"]
+  - name: "深層裂谷"
+    color: "#DC143C"
+    nodes: ["E"]
+  - name: "核心"
+    color: "#FFD700"
+    nodes: ["F", "G"]

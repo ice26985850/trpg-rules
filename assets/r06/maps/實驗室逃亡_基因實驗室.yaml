@@ -1,0 +1,110 @@
+# 實驗室逃亡 — 基因實驗室地圖
+# 對應劇本：S2（全場景）
+
+nodes:
+  - id: "A"
+    label: "入口大廳"
+    x: 150
+    y: 400
+    type: "start"
+    explored: false
+    description: "廢墟入口。監控系統仍在運作。停留超過 3 回合觸發警報。"
+
+  - id: "B"
+    label: "檔案室"
+    x: 300
+    y: 350
+    type: "loot"
+    explored: false
+    description: "存放實驗記錄。感知（GZ）DC 14 可找到實驗體名冊。"
+
+  - id: "C"
+    label: "收容區 A"
+    x: 300
+    y: 200
+    type: "social"
+    explored: false
+    description: "莉娜的牢房——普通人類女性。"
+
+  - id: "D"
+    label: "收容區 B"
+    x: 400
+    y: 200
+    type: "social"
+    explored: false
+    description: "葛羅斯的牢房——進化實驗體（蟹鉗）。"
+
+  - id: "E"
+    label: "收容區 C"
+    x: 500
+    y: 200
+    type: "social"
+    explored: false
+    description: "零號的牢房——原始實驗體（外觀為孩童）。"
+
+  - id: "F"
+    label: "核心實驗室"
+    x: 400
+    y: 100
+    type: "boss"
+    explored: false
+    description: "AI「守護者」所在。全息投影、掃描台、最終遭遇。"
+
+  - id: "G"
+    label: "逃生通道"
+    x: 550
+    y: 50
+    type: "exit"
+    explored: false
+    description: "通往地面的最後通道。自毀程序啟動時 3 回合限時。"
+
+  - id: "H"
+    label: "廢棄培養室"
+    x: 200
+    y: 250
+    type: "loot"
+    explored: false
+    description: "廢棄的實驗體培養槽。可能找到治療藥劑和能量藥水。"
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "corridor"
+  - from: "B"
+    to: "C"
+    type: "corridor"
+  - from: "B"
+    to: "H"
+    type: "corridor"
+  - from: "C"
+    to: "D"
+    type: "corridor"
+  - from: "D"
+    to: "E"
+    type: "corridor"
+  - from: "C"
+    to: "F"
+    type: "corridor"
+  - from: "D"
+    to: "F"
+    type: "corridor"
+  - from: "F"
+    to: "G"
+    type: "corridor"
+
+regions:
+  - name: "入口區域"
+    color: "#4B0082"
+    nodes: ["A"]
+  - name: "研究區域"
+    color: "#4169E1"
+    nodes: ["B", "H"]
+  - name: "收容區域"
+    color: "#FF8C00"
+    nodes: ["C", "D", "E"]
+  - name: "核心區域"
+    color: "#DC143C"
+    nodes: ["F"]
+  - name: "出口區域"
+    color: "#2E8B57"
+    nodes: ["G"]

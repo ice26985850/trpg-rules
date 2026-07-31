@@ -1,0 +1,148 @@
+# s02_孤星_單人戰役.yaml
+# 宇宙船團經營TRPG 單人模式戰役
+
+scenario:
+  id: s02
+  title: "孤星"
+  subtitle: "單人模式完整戰役——從唯一倖存者到星域傳奇"
+  level_range: "1-10"
+  sessions: "15-20"
+  hours: "60-80"
+  players: "1 玩家 + 1 主持人（GM）"
+  mode: "單人"
+  gm_required: true
+
+hook:
+  summary: "你的船團在一次灰燼帶探索中被出賣。你是唯一逃出來的人。現在你獨自漂浮在未知星域，燃料只夠一次跳躍，食物撐不過兩週。你的四個船員看著你，等待你的決定。"
+  key_info:
+    - "船團被內部通訊官維克多·鐸恩出賣給海盜"
+    - "唯一的線索是一個代號：'幽靈'"
+    - "從失去一切開始，逐步建立自己的傳奇"
+
+acts:
+  - act: 1
+    title: "漂流"
+    level_range: "1-3"
+    sessions: "3-4"
+    theme: "在失去一切後找到繼續前進的理由"
+    chapters:
+      - chapter: 1
+        title: "殘骸之中"
+        level: 1
+        description: "逃離船團殘骸，面對首次船員議會決策"
+      - chapter: 2
+        title: "三條路線"
+        level: "1-2"
+        branches:
+          - "2A: 返回深淵門"
+          - "2B: 前往C-7廢棄前哨站"
+          - "2C: 追蹤加密訊息中的背叛者線索"
+      - chapter: 3
+        title: "第一個盟友"
+        level: "2-3"
+        description: "起始盟友登場，首次獨自作戰"
+    milestone: "Lv3，首次專長，起始盟友聲望+2"
+
+  - act: 2
+    title: "連結"
+    level_range: "4-6"
+    sessions: "4-5"
+    theme: "建立非玩家角色（NPC）盟友網絡、揭露背叛真相"
+    chapters:
+      - chapter: 4
+        title: "天才與逃亡者"
+        level: 4
+        description: "招募天才工程師馬庫斯·陳，結識情報聯絡員莉亞·星語"
+      - chapter: 5
+        title: "獵人與獵物"
+        level: 5
+        description: "揭露背叛者維克多·鐸恩的真實身份與動機"
+      - chapter: 6
+        title: "抉擇的漣漪"
+        level: "5-6"
+        branches:
+          - "A: 處決維克多"
+          - "B: 營救維克多的家人"
+          - "C: ���維克多交給漂泊者同盟"
+    milestone: "Lv6，聲望事件觸發"
+
+  - act: 3
+    title: "崛起"
+    level_range: "7-8"
+    sessions: "3-4"
+    theme: "從生存者到傳奇——面對真正的敵人"
+    chapters:
+      - chapter: 7
+        title: "星墜的祕密"
+        level: 7
+        description: "前往星墜扇區，遇見傳奇航行員卡洛·維加"
+      - chapter: 8
+        title: "海盜旗艦"
+        level: "7-8"
+        description: "單挑海盜旗艦（TL3），獲得外星能量核心"
+    milestone: "Lv8，星域名聲開始流傳"
+
+  - act: 4
+    title: "遺產"
+    level_range: "9-10"
+    sessions: "2-3"
+    theme: "你的故事如何結束？"
+    chapters:
+      - chapter: 9
+        title: "星海的回音"
+        level: 9
+        branches:
+          - "A: 守望者的道路（核心交給遺物守望者）"
+          - "B: 新能源時代（核心交給漂泊者同盟）"
+          - "C: 孤獨的守護者（核心留著自用）"
+      - chapter: 10
+        title: "終章——你的遺產"
+        level: 10
+        endings:
+          - "A: 重建船團"
+          - "B: 加入勢力"
+          - "C: 繼續航行"
+          - "D: 成為傳說"
+    milestone: "Lv10，聲望5（活著的傳說）"
+
+npcs:
+  key:
+    - name: "起始盟友（8種，依背景）"
+      role: "老關係"
+      first_appearance: "第一幕第三章"
+    - name: "馬庫斯·陳"
+      role: "可招募天才工程師"
+      attributes: {CMD: 4, ENG: 10, NAV: 4, DIP: 3, INT: 5}
+      first_appearance: "第二幕第四章"
+    - name: "莉亞·星語"
+      role: "漂泊者同盟情報聯絡員"
+      attributes: {CMD: 4, ENG: 5, NAV: 6, DIP: 7, INT: 5}
+      first_appearance: "第二幕第四章"
+    - name: "維克多·鐸恩"
+      role: "前船團通訊官／背叛者"
+      attributes: {CMD: 6, ENG: 5, NAV: 5, DIP: 4, INT: 7}
+      first_appearance: "第二幕第五章"
+    - name: "卡洛·維加"
+      role: "傳奇航行員／知識來源"
+      attributes: {CMD: 7, ENG: 4, NAV: 6, DIP: 5, INT: 8}
+      first_appearance: "第三幕第七章"
+    - name: "「幽靈」"
+      role: "海盜指揮官／主要反派"
+      attributes: {CMD: 8, ENG: 3, NAV: 5, DIP: 6, INT: 4}
+      first_appearance: "第三幕第八章"
+
+combat_highlights:
+  - level: 3
+    encounter: "1d2 輕型掠奪艇（TL1）——首次獨自作戰"
+  - level: 5
+    encounter: "1 中型劫掠艦（TL2）——維克多相關戰鬥"
+  - level: "7-8"
+    encounter: "重型海盜旗艦（TL3）+護航艦——最終BOSS戰"
+
+gm_notes:
+  - "船員議會替代船團投票（見單人模式規則補充第二章）"
+  - "僚機系統替代船團協同（見單人模式規則補充第三章）"
+  - "NPC船員比多人模式更為重要——他們是玩家的主要互動對象"
+  - "起始盟友應在第一章結束前安排實質互動"
+  - "維克多的道德抉擇是戰役的敘事核心——不要輕描淡寫"
+  - "四種結局均可成立，讓玩家的選擇真正影響戰役收束"

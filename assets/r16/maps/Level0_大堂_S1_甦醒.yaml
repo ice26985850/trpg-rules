@@ -1,0 +1,167 @@
+name: "Level 0 — 大堂"
+description: "後室行者TRPG預設起始樓層——無限延伸的黃色辦公隔間迷宮"
+scenario_ref: "S1_甦醒"
+usage: "角色卡穿後的初始位置，也是S1劇本的主要場景"
+regions:
+  - name: "起始區域"
+    color: "#E8F5E9"
+    nodes: ["N01", "N02", "N03", "N04"]
+    description: "角色醒來的區域——相對安全，有初始禮物（杏仁水）"
+  - name: "標記走廊"
+    color: "#FFF3E0"
+    nodes: ["N05", "N06", "N07", "N08"]
+    description: "有前人留下的粉筆箭頭和壁紙標記——跟隨可通往出口"
+  - name: "黑暗區域"
+    color: "#ECEFF1"
+    nodes: ["N09", "N10", "N11"]
+    description: "螢光燈熄滅的區域——獵犬和笑魘可能出現"
+  - name: "出口區域"
+    color: "#E3F2FD"
+    nodes: ["N12"]
+    description: "通往 Level 1 的防火門所在位置"
+nodes:
+  - id: "N01"
+    label: "起始隔間"
+    x: 150
+    y: 250
+    type: "start"
+    explored: true
+    description: "角色睜開眼睛的地方——標準辦公隔間，牆上有前人的留言"
+    resources: "剪刀（抽屜中）"
+  - id: "N02"
+    label: "杏仁水角落"
+    x: 300
+    y: 200
+    type: "resource"
+    explored: false
+    description: "牆角潮濕處有一瓶未開封的杏仁水（初始禮物機制）"
+    resources: "杏仁水 ×1"
+  - id: "N03"
+    label: "開機電腦"
+    x: 450
+    y: 250
+    type: "discovery"
+    explored: false
+    description: "一台未連接電源的電腦仍在運轉——螢幕顯示老趙的留言"
+    resources: "資訊（前人留言）"
+  - id: "N04"
+    label: "隔間群"
+    x: 250
+    y: 350
+    type: "normal"
+    explored: false
+    description: "數個空隔間——桌椅翻倒，文件散落一地"
+  - id: "N05"
+    label: "標記起點"
+    x: 400
+    y: 400
+    type: "navigation"
+    explored: false
+    description: "地板上有明顯的粉筆箭頭，指向走廊深處"
+  - id: "N06"
+    label: "長走廊"
+    x: 550
+    y: 350
+    type: "normal"
+    explored: false
+    description: "一條較寬敞的走廊，螢光燈較亮——相對安全"
+  - id: "N07"
+    label: "前人避難所"
+    x: 650
+    y: 250
+    type: "rest_point"
+    explored: false
+    description: "由翻倒辦公桌搭建的簡易避難所——可在此短暫休息"
+    resources: "可能有一瓶杏仁水"
+  - id: "N08"
+    label: "分岔路口"
+    x: 700
+    y: 400
+    type: "choice"
+    explored: false
+    description: "三條走廊的交匯處——左側通往黑暗區域，右側繼續明亮"
+  - id: "N09"
+    label: "黑暗走廊入口"
+    x: 800
+    y: 300
+    type: "danger"
+    explored: false
+    description: "螢光燈已熄滅——前方完全黑暗。可以聽到爪子刮擦聲。"
+    threats: "獵犬（可能遭遇）"
+  - id: "N10"
+    label: "黑暗深處"
+    x: 900
+    y: 200
+    type: "danger"
+    explored: false
+    description: "完全黑暗的走廊深處——笑魘可能在此潛伏"
+    threats: "笑魘（黑暗中）"
+  - id: "N11"
+    label: "死路"
+    x: 850
+    y: 450
+    type: "dead_end"
+    explored: false
+    description: "走廊的盡頭——一堵牆。但牆的質感不對——可能是不穩定的切出點。"
+    special: "強制切出點（理智DC18）"
+  - id: "N12"
+    label: "防火門（出口）"
+    x: 600
+    y: 500
+    type: "exit"
+    explored: false
+    description: "一扇無標記的防火門——顏色比周圍壁紙略淺。通往 Level 1。"
+    exit_to: "Level 1 — 倉庫"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: "短走廊"
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "隔間通道"
+  - from: "N01"
+    to: "N04"
+    type: "corridor"
+    label: "側邊通道"
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: "有標記的走廊"
+  - from: "N03"
+    to: "N05"
+    type: "corridor"
+    label: "轉角"
+  - from: "N05"
+    to: "N06"
+    type: "corridor"
+    label: "明亮走廊"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "側通道"
+  - from: "N06"
+    to: "N08"
+    type: "corridor"
+    label: "走廊延伸"
+  - from: "N08"
+    to: "N09"
+    type: "dangerous_path"
+    label: "黑暗走廊（左）"
+  - from: "N08"
+    to: "N12"
+    type: "corridor"
+    label: "明亮走廊（右→通往出口）"
+  - from: "N09"
+    to: "N10"
+    type: "dangerous_path"
+    label: "黑暗深處"
+  - from: "N08"
+    to: "N11"
+    type: "corridor"
+    label: "死路方向"
+  - from: "N07"
+    to: "N08"
+    type: "corridor"
+    label: "返回主路"

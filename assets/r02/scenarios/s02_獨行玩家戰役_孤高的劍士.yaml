@@ -1,0 +1,71 @@
+# SAO TRPG 單人戰役劇本（結構化版）
+# 對應正文：scenarios/s02_獨行玩家戦役_孤高的剣士.md
+# ⚠️ 本檔為劇本索引／結構；完整事件、台詞、GM 提示請見同名 .md。
+
+rule: "SAO_TRPG"
+scenario_type: "solo"               # 單人（1 玩家 + 1 GM）
+title: "孤高的剣士 — 獨行玩家戦役"
+source_md: "s02_獨行玩家戦役_孤高的剣士.md"
+requires: "需搭配 單人模式規則補充（assets/單人模式規則補充.md）使用"
+based_on: "《刀剣神域》艾恩葛朗特篇（原著：川原礫）"
+total_levels: "Lv.1 → Lv.100"
+estimated_sessions: "約 44-72 次聚會"
+
+volumes:
+  - id: "卷壹"
+    title: "起始之鎮"
+    levels: "Lv.1-10"
+    floors: "第 1-10 層"
+    theme: "覺醒、生存、第一場 Boss"
+    companions: ["克萊因", "阿爾戈"]
+  - id: "卷貳"
+    title: "前線獨行"
+    levels: "Lv.10-30"
+    floors: "第 11-30 層"
+    theme: "月夜黑貓團、攻略組"
+    companions: ["啟太／月夜黑貓", "亞絲娜"]
+  - id: "卷參"
+    title: "二刀流"
+    levels: "Lv.30-55"
+    floors: "第 31-55 層"
+    theme: "唯一技能解鎖、公會成立"
+    companions: ["亞絲娜", "莉茲貝特"]
+  - id: "卷肆"
+    title: "血盟の騎士"
+    levels: "Lv.55-75"
+    floors: "第 56-75 層"
+    theme: "KoB、茅場真相"
+    companions: ["亞絲娜", "克萊因"]
+  - id: "卷伍"
+    title: "終結"
+    levels: "Lv.75-96"
+    floors: "第 76-100 層"
+    theme: "最終決戰"
+    companions: ["全員集結"]
+
+key_companions:
+  - name: "克萊因 (Klein)"
+    role: "風林火山會長／首位夥伴"
+    unlock: "卷壹"
+  - name: "阿爾戈 (Argo)"
+    role: "情報商"
+    unlock: "卷壹"
+  - name: "啟太 (Keita)"
+    role: "月夜黑貓團"
+    unlock: "卷貳"
+    fate: "卷貳末死亡（可改變）"
+  - name: "亞絲娜 (Asuna)"
+    role: "KoB 副會長／核心夥伴"
+    unlock: "卷貳"
+  - name: "莉茲貝特 (Lisbeth)"
+    role: "鐵匠／武器鍛造"
+    unlock: "卷參"
+
+final_boss:
+  name: "茅場晶彥 (Heathcliff)"
+  floor: "第 100 層 紅玉宮"
+  level: "Lv.96"
+
+notes:
+  - "單人模式含 NPC 夥伴系統（見 單人模式規則補充 §S3）。"
+  - "永久死亡在單人模式下等同戰役結束，建議善用角色繼承機制。"

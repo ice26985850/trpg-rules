@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g4" width="30" height="30"><rect width="30" height="30" fill="none"/><rect x="30" y="0" width="1" height="30" fill="#e0dbd4"/><rect x="0" y="30" width="30" height="1" fill="#e0dbd4"/></pattern>
+<rect width="820" height="620" fill="url(#g4)"/>
+<!-- Main tunnel entrance corridor -->
+<rect x="30" y="100" width="160" height="50" fill="#a09585" stroke="#444" stroke-width="2"/>
+<text x="110" y="130" text-anchor="middle" font-size="10pt" fill="#222">入口隧道</text>
+<!-- Sector A: Deep Tunnel (varian ambush zone) -->
+<rect x="220" y="70" width="260" height="110" fill="#8a7e6c" stroke="#444" stroke-width="1.5"/>
+<text x="350" y="120" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">深巢隧道</text>
+<text x="350" y="140" text-anchor="middle" font-size="10pt" fill="#333">變異潛伏者×2</text>
+<text x="350" y="156" text-anchor="middle" font-size="9pt" fill="#666">CR 1 — 從暗處伏擊</text>
+<!-- Sector B: Poison Gas Zone -->
+<rect x="510" y="70" width="240" height="110" fill="#7aaa6a" stroke="#444" stroke-width="1.5" opacity="0.7"/>
+<text x="630" y="120" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">毒氣區域</text>
+<text x="630" y="140" text-anchor="middle" font-size="10pt" fill="#333">HP -1d4/回合 (堅韌困難)</text>
+<text x="630" y="156" text-anchor="middle" font-size="9pt" fill="#555">通過需體魄×10+堅韌−20</text>
+<!-- Corridors connecting -->
+<rect x="220" y="155" width="30" height="60" fill="#666" stroke="#444" stroke-width="1"/>
+<text x="235" y="190" text-anchor="middle" font-size="8pt" fill="#333">通道</text>
+<!-- Sector C: Temple Outer Gate (Beast zone) -->
+<rect x="250" y="240" width="300" height="120" fill="#c9b896" stroke="#444" stroke-width="1.5"/>
+<text x="400" y="290" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">神殿外圍</text>
+<text x="400" y="312" text-anchor="middle" font-size="10pt" fill="#333">變異巨獸 CR 3 (Boss級)</text>
+<text x="400" y="330" text-anchor="middle" font-size="9pt" fill="#666">守護神殿入口</text>
+<!-- Sector D: Temple Interior (STC Terminal + Rift) -->
+<rect x="250" y="400" width="300" height="140" fill="#d4a040" stroke="#444" stroke-width="2"/>
+<text x="400" y="445" text-anchor="middle" font-size="13pt" font-weight="bold" fill="#111">神殿內部</text>
+<text x="400" y="465" text-anchor="middle" font-size="10pt" fill="#333">混沌汙染 STC 終端</text>
+<text x="400" y="482" text-anchor="middle" font-size="10pt" fill="#c00">⚠ 每分鐘腐化+1 | 抵抗=信仰極限(TN−40)</text>
+<text x="400" y="508" text-anchor="middle" font-size="9pt" fill="#555">休眠亞空間裂縫(靈能/爆炸會觸發)</text>
+<!-- Rift symbol -->
+<ellipse cx="340" cy="485" rx="14" ry="10" fill="none" stroke="#c00" stroke-width="2"/>
+<text x="340" y="489" text-anchor="middle" font-size="11pt" fill="#c00">⊗</text>
+<!-- Sector E: Blind Prophet / Rusted Children area -->
+<rect x="570" y="70" width="180" height="110" fill="#bfb5a0" stroke="#444" stroke-width="1.5"/>
+<text x="660" y="120" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">盲先知居所</text>
+<text x="660" y="140" text-anchor="middle" font-size="10pt" fill="#333">「鏽童」長老</text>
+<text x="660" y="156" text-anchor="middle" font-size="9pt" fill="#666">佈道標準→獲得警告+捷徑</text>
+<!-- Connection paths -->
+<rect x="550" y="145" width="25" height="60" fill="#666" stroke="#444" stroke-width="1"/>
+<text x="562" y="180" text-anchor="middle" font-size="7pt" fill="#333">路</text>
+<rect x="220" y="180" width="30" height="60" fill="#666" stroke="#444" stroke-width="1"/>
+<!-- Surveillance Squad ambush zone -->
+<rect x="570" y="240" width="180" height="80" fill="#999" stroke="#444" stroke-width="1.5" stroke-dasharray="5,3"/>
+<text x="660" y="280" text-anchor="middle" font-size="10pt" fill="#111">監視小隊伏擊區</text>
+<text x="660" y="298" text-anchor="middle" font-size="9pt" fill="#666">審判庭突擊兵×3</text>
+<text x="660" y="314" text-anchor="middle" font-size="8pt" fill="#800">若背叛→突襲</text>
+<!-- Compass -->
+<g transform="translate(740,560)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">北</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">南</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">東</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">西</text>
+</g>
+<!-- Scale -->
+<line x1="60" y1="580" x2="220" y2="580" stroke="#333" stroke-width="2"/>
+<text x="140" y="596" text-anchor="middle" font-size="10pt">30 公尺</text>
+</svg>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g7" width="30" height="30"><rect width="30" height="30" fill="none"/><rect x="30" y="0" width="1" height="30" fill="#e0dbd4"/><rect x="0" y="30" width="30" height="1" fill="#e0dbd4"/></pattern>
+<rect width="820" height="620" fill="url(#g7)"/>
+<!-- City perimeter wall (ruined) -->
+<rect x="40" y="40" width="740" height="520" rx="4" fill="#4a4540" stroke="#222" stroke-width="3" opacity="0.3" stroke-dasharray="12,6"/>
+<text x="410" y="70" text-anchor="middle" font-size="10pt" fill="#666">城市廢墟 (外圍牆)</text>
+<!-- SECTOR A: City Edge / Sewer Entrance -->
+<rect x="50" y="90" width="200" height="180" fill="#8a8070" stroke="#444" stroke-width="1.5" rx="3"/>
+<text x="150" y="140" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">城市邊緣</text>
+<text x="150" y="160" text-anchor="middle" font-size="10pt" fill="#333">平民集合地</text>
+<text x="150" y="178" text-anchor="middle" font-size="9pt" fill="#666">40-50 名平民</text>
+<text x="150" y="194" text-anchor="middle" font-size="9pt" fill="#666">領袖：卡拉 (前執法官)</text>
+<!-- Sewer tunnels -->
+<rect x="50" y="280" width="200" height="90" fill="#7a7060" stroke="#444" stroke-width="1"/>
+<text x="150" y="315" text-anchor="middle" font-size="10pt" font-weight="bold" fill="#111">下水道網絡</text>
+<text x="150" y="333" text-anchor="middle" font-size="9pt" fill="#666">平民藏身處</text>
+<text x="150" y="349" text-anchor="middle" font-size="9pt" fill="#666">潛行檢定/穿越</text>
+<!-- SECTOR B: Main Street (Mutant nest) -->
+<rect x="280" y="90" width="280" height="180" fill="#a89a80" stroke="#444" stroke-width="1.5" rx="3"/>
+<text x="420" y="145" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">主街道</text>
+<text x="420" y="165" text-anchor="middle" font-size="10pt" fill="#333">低階變異體×5 + 暴君×1</text>
+<text x="420" y="183" text-anchor="middle" font-size="9pt" fill="#666">CR 1×5+2 | 穿過或繞過</text>
+<!-- Stealth path (green dashed) -->
+<path d="M280,270 Q350,200 420,200 Q490,200 560,270" fill="none" stroke="#080" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="420" y="195" text-anchor="middle" font-size="9pt" fill="#060">★ 潛行路線</text>
+<!-- SECTOR C: Admin Building (Chaos cultists) -->
+<rect x="590" y="90" width="180" height="180" fill="#b89a78" stroke="#444" stroke-width="1.5" rx="3"/>
+<text x="680" y="145" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">行政大樓</text>
+<text x="680" y="165" text-anchor="middle" font-size="10pt" fill="#333">多層建築</text>
+<text x="680" y="182" text-anchor="middle" font-size="9pt" fill="#333">頂層：通訊裝置</text>
+<text x="680" y="200" text-anchor="middle" font-size="9pt" fill="#333">底層：混沌信徒×8+侍僧×1</text>
+<text x="680" y="218" text-anchor="middle" font-size="9pt" fill="#666">CR 1 | 逐層清剿</text>
+<!-- Tower symbol -->
+<rect x="660" y="240" width="40" height="20" fill="#555" stroke="#333" stroke-width="1"/>
+<text x="680" y="254" text-anchor="middle" font-size="8pt" fill="#fff">信號</text>
+<!-- SECTOR D: Data Board (clue) -->
+<rect x="280" y="310" width="280" height="70" fill="#c9b896" stroke="#444" stroke-width="1" rx="2"/>
+<text x="420" y="345" text-anchor="middle" font-size="11pt" fill="#333">滅絕令資料板 → 原因:可疑但未證實的混沌汙染報告</text>
+<text x="420" y="362" text-anchor="middle" font-size="9pt" fill="#666">→ 後續劇本關鍵線索</text>
+<!-- SECTOR E: Ruins/Rubble field -->
+<rect x="50" y="400" width="720" height="140" fill="#9a9080" stroke="#444" stroke-width="1" rx="3"/>
+<text x="410" y="440" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">廢墟曠野</text>
+<text x="410" y="462" text-anchor="middle" font-size="9pt" fill="#333">從城市到北方山區的途經區域</text>
+<text x="410" d="480" text-anchor="middle" font-size="9pt" fill="#555">隨機遭遇：低階變異體×2-3 | 環境危險：碎屑坍塌</text>
+<!-- Arrows: route options -->
+<polyline points="250,270 280,350" fill="none" stroke="#080" stroke-width="2"/>
+<text x="260" y="320" font-size="9pt" fill="#060">往北→山區</text>
+<!-- Compass -->
+<g transform="translate(740,560)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">北</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">南</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">東</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">西</text>
+</g>
+<line x1="60" y1="580" x2="210" y2="580" stroke="#333" stroke-width="2"/>
+<text x="135" y="596" text-anchor="middle" font-size="10pt">30 公尺</text>
+</svg>

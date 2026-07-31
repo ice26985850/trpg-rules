@@ -1,0 +1,35 @@
+name: "遺忘的存檔點"
+description: "玩家發現一個自己創建但完全不記得的存檔點。存取會觸發記憶碎片超載，揭示過去玩家試圖隱藏的驚人真相。"
+difficulty: "高階"
+level_range:
+  min_memory: 7
+  max_memory: 10
+  suggested_cycles: "7-12"
+time_range:
+  days: 10
+core_skills:
+  primary: ["記憶", "意志", "洞察"]
+  secondary: ["社交"]
+core_mechanic: "記憶碎片超載——存取存檔點獲得記憶但需意志檢定，連續存取可能永久失憶"
+hidden_truth: "過去的玩家發現某NPC曾是同伴，而玩家親手將他們推向現在命運。無法承受真相所以封存記憶。"
+overload_mechanic:
+  gain: "3-5條過去循環記憶碎片"
+  will_dc: 16
+  success: "記憶清晰，獲得關鍵情報"
+  failure: "記憶混亂，真偽難辨"
+  three_times: "永久失去部分記憶"
+endings:
+  - id: "reconciliation"
+    name: "和解"
+    reward: "意志永久+1"
+  - id: "burden"
+    name: "承擔"
+    reward: "意志強化，獨自承受"
+  - id: "forget_again"
+    name: "再次遺忘"
+    consequence: "存檔點永久摧毀，未來更猛烈回歸"
+  - id: "collapse"
+    name: "崩潰"
+    consequence: "碎片化狀態，接近時噬者化"
+multiplayer_gm_tips: |
+  預設單人，可依 14-3 以 2–3 位玩家開局：各玩家自管裂痕與記憶碎片；記憶超載意志檢定（DC16）可改團隊檢定，部分成功者向他人轉述減輕懲罰。S4 戰鬥極少，敵人縮放幾乎不觸發；建議分頭推進十天（一人追碎片、一人對話 NPC），第6–7天集結存取存檔點。多結局由小隊共識。

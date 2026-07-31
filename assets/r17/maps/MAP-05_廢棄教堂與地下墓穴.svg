@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="306" viewBox="0 0 808 306" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="808" height="306" fill="#FBFCFE"/>
+<rect x="18" y="64" width="772" height="102" rx="14" fill="#FFF3E0" fill-opacity="0.55" stroke="#FFF3E0" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">地上—教堂</text>
+<rect x="18" y="186" width="772" height="102" rx="14" fill="#ECEFF1" fill-opacity="0.55" stroke="#ECEFF1" stroke-opacity="0.9"/>
+<text x="28" y="204" font-size="13" font-weight="bold" fill="#37474F">地下—墓穴</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">廢棄教堂 + 地下墓穴</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">區域：核心區邊緣　危險：★★★★☆　適合等級（Lv.）：8</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="115" x2="404" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="118" font-size="12" fill="#455A64" text-anchor="middle">大門</text>
+<line x1="404" y1="115" x2="670" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="118" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="670" y1="115" x2="670" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="653" y="166" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="670" y="179" font-size="12" fill="#455A64" text-anchor="middle">石階</text>
+<line x1="670" y1="237" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="227" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="240" font-size="12" fill="#455A64" text-anchor="middle">墓穴</text>
+<line x1="404" y1="237" x2="138" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="227" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="240" font-size="12" fill="#455A64" text-anchor="middle">隧道</text>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">教堂外圍</text>
+<title>教堂外圍：圍牆倒塌隱蔽入場；教團符號；教團巡邏×2</title>
+<rect x="306" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">教堂中殿</text>
+<title>教堂中殿：重力異常最明顯；守護者×1、成員×2；技師穩定重力 TN17</title>
+<rect x="572" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">祭壇區</text>
+<title>祭壇區：教團領袖（單人弱化）；3 能量水晶（HP10/DR2）毀之斷召喚；帷幕共鳴器（金）</title>
+<rect x="572" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">地下墓穴入口</text>
+<title>地下墓穴入口：教堂後石階；時間泡陷阱（偵察兵察覺 TN14 標安全路線）</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">時間泡區域</text>
+<title>時間泡區域：內 1 回合=外 5 回合；深潛者×1（弱化）</title>
+<rect x="40" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">儀式地下通道</text>
+<title>儀式地下通道：通舊城區邊緣；感知 TN17 發現隱藏通道</title>
+</svg>

@@ -1,0 +1,96 @@
+# 絕地戰場 TRPG — 劇本 S2：叢林城巷戰
+scenario:
+  id: S2
+  name: 叢林城巷戰
+  type: multiplayer_squad
+  tier: 2
+  difficulty: 2
+  estimated_duration: 3-5小時
+  suggested_level: 3-4
+
+  description: >
+    Sanhok——熱帶叢林中的廢棄度假城。潮濕的空氣、藤蔓覆蓋的建築、
+    和每一扇窗戶後可能藏著的槍口。紅區轟炸讓這座死城更加危險。
+
+map:
+  name: Sanhok 叢林城
+  size: 4公里 × 4公里（叢林＋城區混合）
+  terrain: [熱帶叢林(50%), 廢棄城區(30%), 河道(20%)]
+  landmarks:
+    - id: L1
+      name: 天堂度假村
+      type: urban
+      loot_level: 豐富（藍）
+      description: 市中心的多層建築群——適合樓層作戰
+    - id: L2
+      name: 訓練營
+      type: military
+      loot_level: 軍用（紫）
+      description: 島嶼北部的軍事訓練設施，多棟建築相連
+    - id: L3
+      name: 洞穴
+      type: natural
+      loot_level: 普通（綠）
+      description: 地下洞穴系統——完美的伏擊點
+    - id: L4
+      name: 河畔碼頭
+      type: urban
+      loot_level: 普通（綠）
+      description: 水邊的倉庫和船塢
+
+enemy_configuration:
+  total_squads: 6
+  squads:
+    - { type: 菜鳥隊, difficulty: ★, count: 3 }
+    - { type: 穩健隊, difficulty: ★★, count: 2 }
+    - { type: 突擊隊, difficulty: ★★★, count: 1 }
+
+circle:
+  type: 建築鎖定
+  description: 最終圈在建築群中——強制近距離巷戰
+
+airdrop:
+  count: 3
+  timing: [第二圈縮圈, 第三圈縮圈, 第四圈開始]
+
+red_zone:
+  enabled: true
+  frequency: 每5回合觸發一次轟炸
+  special: 無
+
+vehicles: [越野車, 吉普車, 摩托車]
+weather: 陰天（可能有陣雨）
+time_of_day: 白天
+
+new_mechanics: [多層建築作戰, 紅區轟炸, 消音器首次出現]
+
+phases:
+  - phase: 降落與選點
+    turns: 1
+    gm_notes: 叢林覆蓋提供了更多的降落掩護——但也意味著你不知道誰跟你降在同一區。
+
+  - phase: 叢林搜刮
+    turns: 4
+    gm_notes: 叢林中的物資點較為分散。利用聽音來判斷附近是否有敵人。
+
+  - phase: 城區交戰
+    turns: 5-6
+    gm_notes: >
+      建築物內的多層作戰是本劇本核心。教玩家利用樓層優勢——
+      高處有更好的視野，但窗戶會暴露位置。
+      引入紅區轟炸——強制玩家從掩體中移動。
+
+  - phase: 最終巷戰
+    turns: 3-5
+    gm_notes: 圈縮小至一棟建築內——最高潮的近距離交火。
+
+victory_condition: 成為最後存活的小隊
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  chicken_dinner: 500

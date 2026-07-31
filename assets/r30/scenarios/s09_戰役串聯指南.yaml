@@ -1,0 +1,33 @@
+scenario:
+  id: s09
+  title: "戰役串聯指南"
+  source: "《英雄聯盟 TRPG 戰役劇本集》· 多人劇本 · 串聯與使用指南"
+  type: "串聯與使用指南"
+  mode: "多人"
+  standalone: true
+  main_campaign_flow:
+    - "白牆裂痕 (Lv.1-3) → 暗影擴散 (Lv.1-5) → 凜冬覺醒 (Lv.6-10) → 飛昇試煉 (Lv.11-16) → 亡者歸來 (Lv.17-20)"
+    - "若從白牆裂痕開始，暗影擴散可跳過 Lv.1-3，直接從 Lv.3 諾克薩斯前哨開始"
+  side_insert:
+    - level: "Lv.3-6"
+      side: "海妖之怒"
+    - level: "Lv.5-8"
+      side: "艾歐尼亞之魂"
+    - level: "Lv.8-12"
+      side: "佐安深淵"
+    - level: "Lv.10-15"
+      side: "競技場之王"
+  level_calibration:
+    - "若支線完成後玩家等級超過主線建議值，GM 可：提高主線遭遇難度（生命值（HP）與 攻擊力（AD）各 +10-20%）"
+    - "讓玩家更快通關主線（保留挑戰感）"
+    - "或使用 GM 難度調整速查表（規則書 §4.11）"
+  jump_in:
+    - level: "Lv.1-5"
+      start: "暗影擴散 或 白牆裂痕"
+    - level: "Lv.6-10"
+      start: "凜冬覺醒"
+    - level: "Lv.11-16"
+      start: "飛昇試煉"
+    - level: "Lv.17-20"
+      start: "亡者歸來"
+  license: "所有劇本為開放授權——GM 可自由修改內容、替換 NPC、調整難度；鼓勵分享改編版本（附原始出處即可）。"

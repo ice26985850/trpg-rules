@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#000005"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="star-glow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="4" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#aaa"/>
+    </marker>
+  </defs>
+
+  <!-- 星空背景 -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g fill="#fff" opacity="0.3">
+    <circle cx="50" cy="80" r="1"/><circle cx="150" cy="40" r="0.8"/><circle cx="300" cy="120" r="1.2"/>
+    <circle cx="500" cy="60" r="0.7"/><circle cx="650" cy="100" r="1"/><circle cx="750" cy="50" r="0.9"/>
+    <circle cx="100" cy="350" r="1.1"/><circle cx="250" cy="500" r="0.8"/><circle cx="400" cy="550" r="1"/>
+    <circle cx="600" cy="480" r="0.7"/><circle cx="700" cy="520" r="1.2"/><circle cx="80" cy="200" r="0.6"/>
+    <circle cx="720" cy="250" r="0.9"/><circle cx="350" cy="300" r="1.3"/>
+  </g>
+
+  <!-- 標題 -->
+  <text x="400" y="35" text-anchor="middle" fill="#e94560" font-size="22" font-weight="bold">玻璃海星域 四大扇區地圖</text>
+  <text x="400" y="55" text-anchor="middle" fill="#aaa" font-size="11">The Glass Sea — 衰退紀元</text>
+
+  <!-- 扇區邊界（虛線圓弧） -->
+  <g stroke="#333" stroke-width="1" stroke-dasharray="6,4" fill="none" opacity="0.5">
+    <ellipse cx="400" cy="320" rx="350" ry="250"/>
+    <line x1="400" y1="70" x2="400" y2="570"/>
+    <line x1="50" y1="320" x2="750" y2="320"/>
+  </g>
+
+  <!-- ====== 深淵門扇區（左上）====== -->
+  <g opacity="0.85">
+    <rect x="60" y="80" width="320" height="220" rx="8" fill="none" stroke="#4488cc" stroke-width="0.5" opacity="0.3"/>
+    <text x="220" y="105" text-anchor="middle" fill="#66aadd" font-size="14" font-weight="bold">深淵門扇區</text>
+    <text x="220" y="120" text-anchor="middle" fill="#557799" font-size="9">Abyssal Gate Sector</text>
+
+    <!-- 深淵門 A級港口 -->
+    <circle cx="200" cy="200" r="12" fill="#ff6666" filter="url(#glow)"/>
+    <text x="200" y="204" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">A</text>
+    <text x="200" y="225" text-anchor="middle" fill="#ff9999" font-size="10">深淵門</text>
+    <text x="200" y="237" text-anchor="middle" fill="#777" font-size="8">Abyssal Gate</text>
+
+    <!-- B級港口 -->
+    <circle cx="130" cy="160" r="7" fill="#ffaa33"/>
+    <text x="130" y="163" text-anchor="middle" fill="#000" font-size="7" font-weight="bold">B</text>
+    <text x="130" y="175" text-anchor="middle" fill="#cc8833" font-size="8">十字路口</text>
+
+    <!-- C級港口 -->
+    <circle cx="300" cy="150" r="5" fill="#66cc66"/>
+    <text x="300" y="153" text-anchor="middle" fill="#000" font-size="6" font-weight="bold">C</text>
+  </g>
+
+  <!-- ====== 灰燼帶扇區（右上）====== -->
+  <g opacity="0.85">
+    <rect x="420" y="80" width="320" height="220" rx="8" fill="none" stroke="#cc8844" stroke-width="0.5" opacity="0.3"/>
+    <text x="580" y="105" text-anchor="middle" fill="#cc9944" font-size="14" font-weight="bold">灰燼帶扇區</text>
+    <text x="580" y="120" text-anchor="middle" fill="#997744" font-size="9">Ash Belt Sector</text>
+
+    <!-- 奈菲斯-4（劇情地點） -->
+    <circle cx="550" cy="180" r="8" fill="#cc66cc" filter="url(#glow)"/>
+    <text x="550" y="195" text-anchor="middle" fill="#cc88cc" font-size="9">奈菲斯-4</text>
+    <text x="550" y="205" text-anchor="middle" fill="#777" font-size="7">研究站</text>
+
+    <!-- 廢棄前哨 -->
+    <circle cx="480" cy="160" r="5" fill="#888"/>
+    <text x="480" y="172" text-anchor="middle" fill="#999" font-size="8">C-7</text>
+
+    <!-- C級港口 -->
+    <circle cx="650" cy="150" r="5" fill="#66cc66"/>
+    <text x="650" y="163" text-anchor="middle" fill="#66cc66" font-size="8">灰燼邊哨</text>
+  </g>
+
+  <!-- ====== 星墜扇區（左下）====== -->
+  <g opacity="0.85">
+    <rect x="60" y="320" width="320" height="220" rx="8" fill="none" stroke="#9966cc" stroke-width="0.5" opacity="0.3"/>
+    <text x="220" y="345" text-anchor="middle" fill="#aa77dd" font-size="14" font-weight="bold">星墜扇區</text>
+    <text x="220" y="360" text-anchor="middle" fill="#775599" font-size="9">Starfall Sector</text>
+
+    <!-- 外星遺跡 -->
+    <circle cx="180" cy="430" r="9" fill="#cc66cc" filter="url(#glow)"/>
+    <text x="180" y="445" text-anchor="middle" fill="#cc88cc" font-size="9">先驅者遺跡</text>
+
+    <!-- 遺物守望者哨站 -->
+    <circle cx="280" cy="400" r="6" fill="#9966cc"/>
+    <text x="280" y="412" text-anchor="middle" fill="#9966cc" font-size="8">守望者哨站</text>
+
+    <!-- D級 -->
+    <circle cx="150" cy="380" r="4" fill="#555"/>
+    <text x="150" y="392" text-anchor="middle" fill="#777" font-size="7">廢棄監聽站</text>
+  </g>
+
+  <!-- ====== 靜海扇區（右下）====== -->
+  <g opacity="0.85">
+    <rect x="420" y="320" width="320" height="220" rx="8" fill="none" stroke="#448844" stroke-width="0.5" opacity="0.3"/>
+    <text x="580" y="345" text-anchor="middle" fill="#55aa55" font-size="14" font-weight="bold">靜海扇區</text>
+    <text x="580" y="360" text-anchor="middle" fill="#447744" font-size="9">Still Sea Sector</text>
+
+    <!-- 未知區域標記 -->
+    <text x="580" y="430" text-anchor="middle" fill="#448844" font-size="11" opacity="0.7">❓ 星圖空白</text>
+    <text x="580" y="450" text-anchor="middle" fill="#336633" font-size="9">未探索區域</text>
+
+    <!-- 傳說跳躍門 -->
+    <circle cx="650" cy="470" r="8" fill="none" stroke="#55aa55" stroke-width="1" stroke-dasharray="3,3"/>
+    <text x="650" y="485" text-anchor="middle" fill="#55aa55" font-size="8">備用跳躍門</text>
+    <text x="650" y="495" text-anchor="middle" fill="#447744" font-size="7">（傳說）</text>
+
+    <!-- C級 -->
+    <circle cx="500" cy="400" r="5" fill="#66cc66"/>
+    <text x="500" y="412" text-anchor="middle" fill="#66cc66" font-size="8">C-12前哨</text>
+  </g>
+
+  <!-- 跳躍路線（箭頭） -->
+  <g stroke="#aaa" stroke-width="0.8" opacity="0.4" fill="none" marker-end="url(#arrow)">
+    <line x1="220" y1="210" x2="480" y2="170"/>
+    <line x1="340" y1="280" x2="460" y2="280"/>
+    <line x1="520" y1="290" x2="350" y2="410"/>
+  </g>
+
+  <!-- 圖例 -->
+  <g transform="translate(30, 550)">
+    <rect x="0" y="0" width="740" height="35" rx="4" fill="#111" stroke="#333" stroke-width="0.5"/>
+    <circle cx="30" cy="17" r="7" fill="#ff6666"/><text x="42" y="21" fill="#999" font-size="9">A級港口</text>
+    <circle cx="120" cy="17" r="6" fill="#ffaa33"/><text x="130" y="21" fill="#999" font-size="9">B級港口</text>
+    <circle cx="205" cy="17" r="4" fill="#66cc66"/><text x="213" y="21" fill="#999" font-size="9">C級港口</text>
+    <circle cx="292" cy="17" r="3" fill="#555"/><text x="299" y="21" fill="#999" font-size="9">D級</text>
+    <circle cx="370" cy="17" r="6" fill="#cc66cc"/><text x="380" y="21" fill="#999" font-size="9">劇情地點</text>
+    <circle cx="470" cy="17" r="6" fill="none" stroke="#55aa55" stroke-dasharray="2,2"/><text x="480" y="21" fill="#999" font-size="9">傳說</text>
+    <text x="570" y="21" fill="#555" font-size="9">←→ 跳躍航線</text>
+  </g>
+</svg>

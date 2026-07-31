@@ -1,0 +1,106 @@
+# 崩壞：星穹鐵道 TRPG — 單人戰役：孤星紀行（單人玩家）
+# 對應 .md：單人戰役.md（五弧單人戰役，1 GM + 1 玩家 + 1 NPC 夥伴）
+# 結構化摘要：場景 / NPC / 夥伴 / 事件 / 難度 / 流程 / 分支
+
+campaign:
+  title: 孤星紀行
+  type: 單人玩家戰役
+  players: "1 GM + 1 玩家 + 1 NPC 夥伴"
+  level_range: "Lv 1-20"
+  sessions_total: "20-25 次（每弧 4-5 次）"
+  premise: >
+    你是一名獨行的開拓者，沒有隊伍、沒有後援——只有一名與你命運交織的旅伴，
+    與星穹列車上永遠在泡紅茶的領航員。旅程從貝洛伯格冰原的求救信號開始，
+    途經鏽冠蒸汽迷城、仙舟星神戰場，最終指向虛空深處的「湮滅之音」最後碎片。
+    你，是唯一擋在它和宇宙之間的人。
+ 贯穿NPC:
+    - name: 姬子
+      role: 遠程導師 / 通訊任務佈置者
+    - name: 銀狼
+      role: 神秘情報源 / 亦敵亦友
+    - name: NPC夥伴
+      role: 戰鬥同伴 / RP 互動對象（玩家選擇）
+    - name: 虛數回聲
+      role: 終極反派
+
+  companion_choice:
+    note: 第一弧開始前 PC 從下列夥伴選一位同行（後續弧可更換）；詳見 NPC 卡「單人夥伴」工作表
+    options:
+      - name: 艾琳（Aelin）
+        path: 存護
+        element: 物理
+        role: 坦克/護盾
+        personality: 沉默寡言的前雲騎軍逃兵，信任需時間
+      - name: 賽諾（Ceno）
+        path: 豐饒
+        element: 風
+        role: 治療/淨化
+        personality: 樂觀流浪醫者，相信每人都有被拯救價值
+      - name: 凜（Rin）
+        path: 巡獵
+        element: 雷
+        role: 遠程輸出
+        personality: 冷靜賞金獵人，話少但精準
+      - name: 米拉（Mira）
+        path: 同諧
+        element: 虛數
+        role: 增益/控制
+        personality: 活潑星軌導航員實習生，話多但善良
+
+arcs:
+  - id: 1
+    name: 冰封信號
+    level: "1-4"
+    sessions: "4-5"
+    scenes: 貝洛伯格
+    theme: 孤身啟程
+    suggested_paths: "任意，但建議非存護/豐饒（夥伴可補位）"
+    opening: >
+      姬子在觀景車廂找到你：「貝洛伯格發來加密信號，私人頻道、用開拓者舊編碼。
+      發信人認識列車，但不希望大守護者知道。」她停頓：「我只派你一個人。」
+    chapters:
+      - act: 第一幕
+        title: 冰封之城的裂痕
+        note: 孤身穿越礦坑、首次實戰，夥伴初次協同
+      - act: 第二幕
+        title: 銀狼的試煉
+        branch: 發現反物質軍團提及「湮滅之音」，是否回報列車
+      - act: 第三幕
+        title: 星光下的誓言
+        note: 姬子確認星核共鳴威脅，指派前往鏽冠
+    branch: 孤身決策無隊友分攤，選擇代價更沉重
+
+  - id: 2
+    name: 蒸汽迷城
+    level: "5-8"
+    sessions: "4-5"
+    scenes: 鏽冠
+    theme: 信任與背叛
+    branch: 與鏽蝕先知／夥伴信任線發展
+
+  - id: 3
+    name: 星神戰場
+    level: "9-12"
+    sessions: "4-5"
+    scenes: 仙舟羅浮
+    theme: 過去的回聲
+    antagonist: 虛數回聲（第一形態）
+
+  - id: 4
+    name: 深淵低語
+    level: "13-16"
+    sessions: "4-5"
+    scenes: 蔚藍淵歌
+    theme: 犧牲的代價
+    branch: 夥伴可能面臨犧牲抉擇
+
+  - id: 5
+    name: 孤星終章
+    level: "17-20"
+    sessions: "4-5"
+    scenes: 虛空裂界
+    theme: 一個人的終結
+    finale_boss: 湮滅之音·扭曲形態（CR 25，四階段）
+    branch: >
+      中和儀式或融合路線（耗全部資源＋10 永久生命值（HP） 接管跳過階段四）；
+      終局由獨行開拓者一人定奪。

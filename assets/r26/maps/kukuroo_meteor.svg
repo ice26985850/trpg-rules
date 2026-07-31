@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" font-family="sans-serif">
+<rect x="0" y="0" width="640" height="420" fill="#0f1424"/>
+<rect x="0" y="0" width="640" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">枯枯戮山與流星街</text>
+<text x="620" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">殺手本邸·廢棄場 · 表層世界</text>
+<line x1="120" y1="112" x2="120" y2="198" stroke="#3a4a72" stroke-width="2"/>
+<line x1="120" y1="242" x2="120" y2="318" stroke="#3a4a72" stroke-width="2"/>
+<line x1="120" y1="112" x2="470" y2="68" stroke="#3a4a72" stroke-width="2"/>
+<line x1="470" y1="112" x2="470" y2="198" stroke="#3a4a72" stroke-width="2"/>
+<line x1="470" y1="242" x2="470" y2="318" stroke="#3a4a72" stroke-width="2"/>
+<rect x="67" y="68" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="88" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">殺手大門</text>
+<text x="120" y="106" fill="#9fb3e0" font-size="11" text-anchor="middle">測試門</text>
+<rect x="77" y="198" width="87" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="218" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">測試門</text>
+<text x="120" y="236" fill="#9fb3e0" font-size="11" text-anchor="middle">機關</text>
+<rect x="58" y="318" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="338" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">揍敵客宅邸</text>
+<text x="120" y="356" fill="#9fb3e0" font-size="11" text-anchor="middle">家族本邸</text>
+<rect x="408" y="68" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="470" y="88" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">流星街外環</text>
+<text x="470" y="106" fill="#9fb3e0" font-size="11" text-anchor="middle">廢棄場</text>
+<rect x="408" y="198" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="470" y="218" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">流星街黑市</text>
+<text x="470" y="236" fill="#9fb3e0" font-size="11" text-anchor="middle">改裝交易</text>
+<rect x="417" y="318" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="470" y="338" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">幫派地盤</text>
+<text x="470" y="356" fill="#9fb3e0" font-size="11" text-anchor="middle">割據</text>
+<text x="20" y="408" fill="#5e6f9c" font-size="11">獵人X獵人TRPG · 地圖示意（非精確比例尺）</text>
+</svg>

@@ -1,0 +1,66 @@
+# 物品圖鑑.yaml
+
+ship_weapons:
+  - {name: "輕型激光炮", cost: 1000, damage: "2d6", traits: "精準+1"}
+  - {name: "中型等離子炮", cost: 2500, damage: "2d8", traits: "均衡"}
+  - {name: "重型磁軌炮", cost: 4000, damage: "3d8", traits: "貫穿2"}
+  - {name: "導彈艙", cost: 3000, damage: "2d10", traits: "追蹤（無視距離修正）", ammo_consumed: true}
+  - {name: "魚雷管", cost: 5000, damage: "4d8", traits: "貫穿4，僅遠距/超遠距", ammo_consumed: true}
+  - {name: "點防禦系統", cost: 1500, damage: "1d8", traits: "反應攔截導彈/魚雷"}
+  - {name: "離子干擾炮", cost: 2000, damage: "1d6", traits: "命中後敵方下回合攻擊-2"}
+  - {name: "採礦激光", cost: 800, damage: "2d4", traits: "貫穿3，攻擊檢定-2"}
+
+ship_modules:
+  generic:
+    - {name: "護盾Mk.I", cost: 2000, effect: "+1護盾值"}
+    - {name: "護盾Mk.II", cost: 5000, effect: "+2護盾值，每回合回復1"}
+    - {name: "額外燃料罐", cost: 1500, effect: "燃料容量+10單位"}
+    - {name: "水培艙", cost: 1000, effect: "每10日生產d6食物"}
+    - {name: "醫療實驗室", cost: 1500, effect: "醫療檢定+2，可合成藥物"}
+    - {name: "船員艙房升級", cost: 800, effect: "船員士氣維持"}
+    - {name: "艦載AI輔助", cost: 3000, effect: "單項船體屬性+1"}
+    - {name: "強化結構框架", cost: 2500, effect: "HP+5"}
+    - {name: "ECM電子對抗", cost: 2000, effect: "敵方鎖定檢定劣勢"}
+    - {name: "牽引光束", cost: 1500, effect: "可拖曳殘骸/小型船"}
+  ship_specific:
+    explorer:
+      - {name: "長程掃描器", effect: "感測器範圍×3"}
+      - {name: "躍遷探針發射器", effect: "庫存3枚，遠程偵察"}
+      - {name: "高級導航計算機", effect: "躍遷檢定優勢"}
+    freighter:
+      - {name: "超規格貨倉", effect: "貨倉容量×1.5"}
+      - {name: "燃料儲存罐", effect: "燃料攜帶×2"}
+      - {name: "貿易貨棧模組", effect: "DIP檢定優勢"}
+    warship:
+      - {name: "多武器槽陣列", effect: "可安裝3武器"}
+      - {name: "護盾增幅器", effect: "+2護盾，每回合回復1"}
+      - {name: "戰鬥艦橋", effect: "CMD檢定+2"}
+    miner:
+      - {name: "礦物提取器", effect: "d6+ENG礦石/日"}
+      - {name: "精煉爐", effect: "3礦石→1零件/合金"}
+      - {name: "資源掃描陣列", effect: "礦物探測範圍×2"}
+    engineer:
+      - {name: "移動船塢設施", effect: "太空維修速度×2，可升級船體"}
+      - {name: "製造模組", effect: "消耗零件製造彈藥/藥物"}
+      - {name: "打撈機械臂", effect: "回收效率+50%"}
+      - {name: "納米修復雲", effect: "戰鬥中每3回合自動修復"}
+
+personal_weapons:
+  - {name: "等離子手槍", cost: 500, damage: "2d4", traits: "標準"}
+  - {name: "霰彈槍", cost: 800, damage: "3d4", traits: "近距優勢"}
+  - {name: "高斯步槍", cost: 1500, damage: "2d6", traits: "遠距，貫穿1"}
+  - {name: "震盪手雷", cost: 300, damage: "3d6", traits: "範圍，一次性"}
+  - {name: "電擊棒", cost: 200, damage: "1d6", traits: "非致命"}
+
+consumables:
+  - {name: "燃料", cost: 200, unit: "1單位=航行1日或1次躍遷"}
+  - {name: "食物", cost: 100, unit: "1單位=1人10日份"}
+  - {name: "零件", cost: 500, unit: "1單位=維修5HP"}
+  - {name: "彈藥", cost: 400, unit: "1單位=1場標準戰鬥"}
+  - {name: "藥物", cost: 600, unit: "1單位=5次醫療消耗"}
+
+ship_upgrades:
+  - {from: 1, to: 2, cost_cr: 500, parts: 2, alloys: 0, facility: "任意"}
+  - {from: 2, to: 3, cost_cr: 1500, parts: 5, alloys: 0, facility: "工程艦或空間站"}
+  - {from: 3, to: 4, cost_cr: 4000, parts: 10, alloys: 1, facility: "工程艦或空間站"}
+  - {from: 4, to: 5, cost_cr: 10000, parts: 20, alloys: 3, facility: "工程艦船塢或大型空間站"}

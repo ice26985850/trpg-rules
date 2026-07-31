@@ -1,0 +1,31 @@
+scenario:
+  id: s08
+  title: "競技場之王"
+  source: "《英雄聯盟 TRPG 戰役劇本集》· 多人劇本 · 支線 S4"
+  mode: "多人"
+  standalone: true
+  level_range: "Lv.10-15"
+  region: "諾克薩斯競技場"
+  estimated_time: "1-2 節"
+  summary: >
+    最純粹的競技場死鬥。玩家以 2v2 或 3v3 形式參加諾克薩斯地下競技場聯賽，
+    挑戰越來越強的對手組合，最終面對現任冠軍。
+  rounds:
+    - round: "預選賽"
+      level: "Lv.10"
+      opponent: "諾克薩斯士兵 ×4"
+    - round: "八強"
+      level: "Lv.11"
+      opponent: "刺客雙人組（2 個刺客型 NPC）"
+    - round: "四強"
+      level: "Lv.12"
+      opponent: "野獸馴獸師 + 2 頭戰熊"
+    - round: "決賽"
+      level: "Lv.13-14"
+      opponent: "前任冠軍「鋼鐵之拳」+ 搭檔"
+    - round: "冠軍挑戰"
+      level: "Lv.15"
+      opponent: "德萊厄斯（可選——擊敗後可邀請加入羈絆）"
+  rewards:
+    equipment: "「冠軍腰帶」（攻擊力（AD）+20, 生命值（HP）+200, 競技場中傷害 +10%）"
+    bond: "德萊厄斯羈絆"

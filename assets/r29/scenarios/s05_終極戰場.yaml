@@ -1,0 +1,100 @@
+# 絕地戰場 TRPG — 劇本 S5：終極戰場
+scenario:
+  id: S5
+  name: 終極戰場
+  type: multiplayer_squad
+  tier: 5
+  difficulty: 5
+  estimated_duration: 6-8小時
+  suggested_level: 9-10
+  description: >
+    「眾神黃昏」——四種地形交匯的終極實驗場。52個參賽者，
+    12支全世界最強的小隊。資源極度稀缺——80%的裝備只能從敵人身上掠奪。
+    沙塵暴和暴風雪交替肆虐。最終圈沒有安全區——誰先扛不住誰輸。
+
+map:
+  name: 眾神黃昏（混合終極地圖）
+  size: 8公里 × 8公里
+  terrain:
+    - 城區 (25%)：廢棄摩天大樓群
+    - 叢林 (25%)：熱帶植被密集
+    - 沙漠 (25%)：開闊沙地
+    - 雪地 (25%)：冰雪覆蓋區
+  landmarks:
+    - { id: L1, name: 中央大橋, type: tactical, loot_level: 軍用（紫）, description: 連接四區的巨大橋樑——最終圈水域決戰的核心 }
+    - { id: L2, name: 摩天大樓, type: urban, loot_level: 豐富（藍）, description: 30層廢棄商業大樓——電梯已停，只能爬樓梯 }
+    - { id: L3, name: 地下碉堡, type: military, loot_level: 軍用（紫）, description: 地下的軍事指揮中心——全圖唯一的避難所 }
+    - { id: L4, name: 能源中心, type: industrial, loot_level: 豐富（藍）, description: 廢棄的核能設施——充滿輻射警告標誌 }
+
+enemy_configuration:
+  total_squads: 12
+  squads:
+    - { type: 突擊隊, difficulty: ★★★, count: 2 }
+    - { type: 伏擊隊, difficulty: ★★★, count: 2 }
+    - { type: 職業隊, difficulty: ★★★★, count: 4 }
+    - { type: 冠軍級, difficulty: ★★★★★, count: 2 }
+    - { type: GM自訂Boss級, difficulty: ★★★★★, count: 2, note: 由GM自由設計，建議一人為「幽靈」反抗組織的傳奇戰士，一人為潘多拉的冠軍獵人 }
+
+circle:
+  type: 水域終結
+  description: 最終圈在大橋附近水域——強制橋上決戰或水中對峙
+
+airdrop: { count: 2, content: 僅產出特殊裝備（熱成像儀、自救注射器等） }
+red_zone: { enabled: true, special: 全程覆蓋——轟炸前1回合顯示紅區預警 }
+vehicles: [全載具池]
+weather: 災難天氣（沙塵暴/暴風雪每10回合交替切換）
+time_of_day: 全天（從正午到黎明）
+
+new_mechanics:
+  - 災難天氣交替（沙塵暴↔暴風雪）
+  - 掠奪經濟（80%物資來自擊殺敵人）
+  - 最終圈無安全區（6d4/回合——比誰先死）
+  - GM自訂Boss級敵人
+  - 資源稀缺（只有20%區域有初始物資）
+
+special_rules:
+  loot: 僅20%區域（中央大橋、地下碉堡）有初始物資，其餘區域需從擊殺的敵人身上掠奪
+  weather_cycle: 每10回合，天氣在沙塵暴和暴風雪之間強制切換（無過渡）
+  final_circle: 最終圈無安全區。所有存活者同時承受6d4/回合傷害——治療和冷靜對抗成為關鍵
+
+phases:
+  - phase: 絕望的開端
+    turns: 2
+    gm_notes: >
+      52人同時跳傘。天空被降落傘遮蔽。
+      玩家必須立刻決定策略：去20%的物資區搶奪（面對激烈競爭），
+      還是去無人區從零開始（然後掠奪第一個遇到的敵人）。
+
+  - phase: 天氣戰爭
+    turns: 6-8
+    gm_notes: >
+      沙塵暴和暴風雪交替——每次天氣切換都是逃命和狩獵的信號。
+      適應天氣的人活下來，不適應的人被天氣淘汰。
+      利用天氣變化創造戰術機會。
+
+  - phase: 物資掠奪
+    turns: 4-6
+    gm_notes: >
+      每一個被你擊殺的敵人都是行走的補給箱。
+      但有時候打開箱子——發現裡面也是空的。
+      資源稀缺的壓力應該體現在每一回合。
+
+  - phase: 大橋終局
+    turns: 3-5
+    gm_notes: >
+      最終圈——大橋上。圈外傷害無情地侵蝕所有人的HP。
+      不是槍法的對決——是誰的意志先崩潰。
+      醫療包、腎上腺素、冷靜檢定——在6d4/回合的死亡倒數中，
+      誰能撐到最後？
+
+victory_condition: 成為最後存活的小隊（活下來就是勝利）
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  chicken_dinner: 500
+  survival: 200

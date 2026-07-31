@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="184" viewBox="0 0 1340 184" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="1340" height="184" fill="#FBFCFE"/>
+<rect x="18" y="64" width="1304" height="102" rx="14" fill="#ECEFF1" fill-opacity="0.55" stroke="#ECEFF1" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">隧道系統</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">靜默社區地下隧道系統</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">區域：舊城區　危險：★★★★☆　適合等級（Lv.）：4</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="115" x2="404" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="118" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="404" y1="115" x2="670" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="494" y="105" width="86" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="118" font-size="12" fill="#455A64" text-anchor="middle">隧道 30m</text>
+<line x1="670" y1="115" x2="936" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="786" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="803" y="118" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="936" y1="115" x2="1202" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="1052" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="1069" y="118" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">下水道出口</text>
+<title>下水道出口：社區北側進入；教團符號；通風口（感知 TN11→暗門）</title>
+<rect x="306" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">B 棟暗門</text>
+<title>B 棟暗門：隱藏暗門（察覺 TN11 或技師發現氣流）；後接約 30m 隧道</title>
+<rect x="572" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">主隧道—聖物室</text>
+<title>主隧道—聖物室：最寬敞區；教團聖物（藍）、日記殘頁（紫）、帷幕碎片（金）；儀式祭壇</title>
+<rect x="838" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="936" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">隧道閘門</text>
+<title>隧道閘門：金屬閘門（DR3）；關閉（技術 TN14）隔絕守護者；控制板電子 TN11</title>
+<rect x="1104" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="1202" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">社區中心後方出口</text>
+<title>社區中心後方出口：通往地表；出口被雜物遮蔽（開鎖/體力破壞，感知 TN14）</title>
+</svg>

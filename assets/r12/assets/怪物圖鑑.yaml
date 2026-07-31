@@ -1,0 +1,219 @@
+# 市井倖存者 怪物／敵軍圖鑑（結構化資料）
+# 6 種敵軍單位，使用 v1.2 3d6 系統。與 怪物圖鑑.md 互為對照。
+
+catalog: "怪物圖鑑"
+system: "3d6（貝爾曲線）"
+total_enemies: 6
+
+# ── 威脅等級體系 ──
+threat_levels:
+  - level: 1
+    meaning: "輕微威脅——可透過潛行輕鬆避開"
+    civilian_survival_rate: "~95%"
+  - level: 2
+    meaning: "中等威脅——需要謹慎應對"
+    civilian_survival_rate: "~70%"
+  - level: 3
+    meaning: "高度威脅——被發現後極難逃脫"
+    civilian_survival_rate: "~30%"
+  - level: 4
+    meaning: "致命威脅——一旦遭遇幾乎必死"
+    civilian_survival_rate: "~10%"
+  - level: 5
+    meaning: "毀滅性威脅——個人無法抗衡"
+    civilian_survival_rate: "~1%"
+
+# ── 敵軍單位 ──
+enemies:
+  - name: "巡邏兵（巡邏）"
+    threat: 2
+    attributes:
+      body: 4
+      agility: 3
+      will: 2
+    awareness: "+2（常規巡邏時 +0）"
+    move_speed: "1 距離帶／回合（步行巡邏）"
+    attacks:
+      - name: "突擊步槍"
+        bonus: "+3 射擊"
+        range: "100 公尺"
+        damage: "至少重傷"
+      - name: "槍托毆打"
+        bonus: "+2 近戰"
+        damage: "輕傷"
+      - name: "刺刀"
+        bonus: "+3 近戰"
+        damage: "重傷"
+    special:
+      - "無線電呼叫：1 回合後，2d4 回合內 1–2 名增援到達"
+      - "手電筒：黑夜中可照亮 30 公尺範圍"
+    weaknesses:
+      - "固定巡邏路線——可預測"
+      - "疲憊——長時間執勤後察覺值 −2"
+      - "對平民可能猶豫——若角色求饒（社交 DC 14），有 30% 機率放水"
+    behavior: "按路線巡邏，每 3 回合（約 18 秒）停頓觀察。發現異常先報告再調查。除非被攻擊，否則不一定立即開火——可能先喊『站住！』"
+    survival_tip: "觀察路線，在停頓時移動。若被發現——跑。不要試圖戰鬥。"
+
+  - name: "狙擊手（狙擊）"
+    threat: 4
+    attributes:
+      body: 3
+      agility: 5
+      will: 4
+    awareness: "+5（視覺）／+1（聽覺）"
+    move_speed: "0（固定在狙擊位置）"
+    attacks:
+      - name: "狙擊步槍"
+        bonus: "+5 射擊"
+        range: "500 公尺"
+        damage: "至少致命傷，超過防禦值 → 直接死亡"
+      - name: "手槍"
+        bonus: "+2 射擊"
+        range: "30 公尺"
+        damage: "重傷"
+    special:
+      - "瞄準射擊：花費 1 回合瞄準，下回合射擊 +3"
+      - "光學瞄準鏡：白晝忽視 100 公尺內的掩體加成"
+      - "偽裝位置：被動察覺 DC 18 才能發現位置"
+    weaknesses:
+      - "視野狹窄——僅覆蓋特定區域（通常一條街道或廣場）"
+      - "白天最活躍——黑夜效率大幅降低（無夜視鏡則視野 50 公尺，無瞄準加成）"
+      - "開槍後暴露位置"
+    behavior: "白天佔據高點掃視。優先射擊武裝目標。對單個平民不一定開槍。開槍後 2d4 回合轉移位置。"
+    survival_tip: "永遠不要在白晝穿越已知狙擊區域。等到黑夜。使用鏡子或反光物確認位置。"
+
+  - name: "軍官（軍官）"
+    threat: 3
+    attributes:
+      body: 3
+      agility: 3
+      will: 5
+    awareness: "+4"
+    move_speed: "1 距離帶／回合"
+    attacks:
+      - name: "手槍"
+        bonus: "+3 射擊"
+        range: "30 公尺"
+        damage: "重傷"
+      - name: "軍刀"
+        bonus: "+3 近戰"
+        damage: "重傷"
+    special:
+      - "指揮：附近巡邏兵察覺值 +2，不會猶豫開火"
+      - "審問：社交對抗 DC 16——可能從俘虜口中獲得情報"
+      - "戰術思維：不會被聲東擊西輕易迷惑"
+    weaknesses:
+      - "傲慢——可能低估平民威脅"
+      - "保護自身——受傷後優先撤退"
+      - "有無線電——但可能不願呼叫支援（怕被視為無能）"
+    behavior: "帶領 2–4 名巡邏兵。下命令而非親自搜查。遇到平民先審問。若角色提供有用情報（社交 DC 16），可能換取安全通行。"
+    survival_tip: "軍官是可以談判的對象——如果你有他需要的東西。但不要低估他的警覺性。"
+
+  - name: "逃兵（逃兵）"
+    threat: 2
+    attributes:
+      body: 4
+      agility: 4
+      will: 2
+    awareness: "+3（對威脅特別敏感）"
+    move_speed: "1 距離帶／回合（謹慎移動）"
+    attacks:
+      - name: "突擊步槍"
+        bonus: "+2 射擊"
+        range: "100 公尺"
+        damage: "重傷——但彈藥有限，只有 d6 發"
+      - name: "匕首"
+        bonus: "+3 近戰"
+        damage: "重傷"
+    special:
+      - "絕望：被包圍或走投無路時攻擊獲得優勢"
+      - "野外生存：搜刮物資檢定 +3"
+      - "知道巡邏路線：可幫助角色避開敵軍（若願意合作）"
+    weaknesses:
+      - "彈藥有限——開槍是最後手段"
+      - "多疑——難以信任任何人（社交 DC 16 建立初步信任）"
+      - "正被自己軍隊追捕——若被發現和逃兵在一起，角色也會被視為敵人"
+    behavior: "躲藏、搜刮、避開所有人。遇平民先判斷威脅。可能交易——需要食物和庇護。若提供避難所，可能成為強力同伴——但也可能出賣角色。"
+    survival_tip: "逃兵是潛在的強力盟友，也是定時炸彈。信任需要時間建立。"
+
+  - name: "暴徒（暴徒）"
+    threat: "2（單獨）／3（結夥 3 人以上）"
+    attributes:
+      body: 3
+      agility: 3
+      will: 2
+    awareness: "+2"
+    move_speed: "1 距離帶／回合"
+    attacks:
+      - name: "棍棒／鐵管"
+        bonus: "+2 近戰"
+        damage: "輕傷 → 重傷"
+      - name: "小刀"
+        bonus: "+3 近戰"
+        damage: "重傷"
+      - name: "手槍"
+        bonus: "+1 射擊"
+        range: "20 公尺"
+        damage: "重傷——僅 30% 機率有槍"
+    special:
+      - "人多勢眾：3 人以上時，攻擊檢定 +1（夾擊）"
+      - "掠奪：知道哪些地點可能還有物資"
+    weaknesses:
+      - "無組織——可能內鬨"
+      - "欺軟怕硬——若遇堅決抵抗（角色反擊造成任何傷勢），意志 DC 12 否則撤退"
+      - "噪音大——暴徒自己也會引來敵軍"
+    behavior: "搜刮空屋、搶劫其他倖存者。遇單獨平民可能要求『交出所有物資』。不一定立即暴力——先恐嚇。若順從，可能只拿走部分。若抵抗或逃跑，追擊 2d4 回合後放棄。"
+    survival_tip: "暴徒是欺軟怕硬的機會主義者。有時交出部分物資比戰鬥更安全。"
+
+  - name: "野狗（野狗）"
+    threat: "1（單隻）／2（群 3 隻以上）"
+    attributes:
+      body: 2
+      agility: 4
+      will: 1
+    awareness: "+4（嗅覺）／+2（聽覺）"
+    move_speed: "2 距離帶／回合"
+    attacks:
+      - name: "撕咬"
+        bonus: "+3 近戰"
+        damage: "輕傷 + 感染風險（體魄 DC 10）"
+      - name: "群體圍攻"
+        bonus: "3 隻以上同時攻擊同一目標 → 攻擊獲得優勢"
+        damage: "輕傷"
+    special:
+      - "追蹤氣味：可追蹤 24 小時內的氣味軌跡"
+      - "夜視：黑暗中視野不受影響"
+    weaknesses:
+      - "怕火——火焰或大聲響可驅散（意志 DC 8 否則逃跑）"
+      - "飢餓——可用食物引開（投擲食物，自動成功轉移注意）"
+      - "受傷後撤退——單隻野狗受任何傷勢即逃跑"
+    behavior: "飢餓驅動，尋找可吃的東西。可能攻擊受傷／虛弱倖存者。群體包圍獵物。先吠叫警告，不撤退則攻擊。不會追擊進入建築物的目標。"
+    survival_tip: "野狗怕火，可用食物引開。但被咬傷後務必處理傷口——感染風險是真實的。"
+
+# ── GM 遭遇設計建議：威脅組合參考 ──
+encounter_combinations:
+  - encounter: "1 隊巡邏兵（2 名）"
+    total_threat: 4
+    suitable_for: "S1 初期"
+  - encounter: "野狗群（3 隻）"
+    total_threat: 6
+    suitable_for: "S1–S2"
+  - encounter: "巡邏兵（2 名）+ 軍官（1 名）"
+    total_threat: 7
+    suitable_for: "S2"
+  - encounter: "暴徒（3 名）"
+    total_threat: 9
+    suitable_for: "S2"
+  - encounter: "狙擊手（1 名）+ 巡邏兵（2 名）"
+    total_threat: 8
+    suitable_for: "S2–S3"
+  - encounter: "軍官（1 名）+ 巡邏兵（4 名）"
+    total_threat: 11
+    suitable_for: "S3"
+
+# ── 單人玩家提示 ──
+single_player_tips:
+  - "永遠提供潛行繞過的選項"
+  - "遭遇不應是『必須解決的障礙』，而是『需要評估的風險』"
+  - "讓玩家看到巡邏路線、聽到腳步聲——給他們準備的時間"
+  - "即使被發現，逃跑永遠是有效選項"

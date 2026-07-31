@@ -1,0 +1,142 @@
+name: "Level 4 — 辦公室"
+description: "廢棄現代辦公大樓——B2至F8。F5以上為派對客領地。"
+scenario_ref: "S3_派對邀請"
+usage: "角色在Level 4遭遇派對客，從F1/F3探索到F5會場，最後逃離"
+regions:
+  - name: "安全樓層（F1-F4）"
+    color: "#E8F5E9"
+    nodes: ["N01", "N02", "N03", "N04", "N05"]
+    description: "派對客較少——正常辦公空間，有資源但需警惕"
+  - name: "派對客領域（F5以上）"
+    color: "#FFEBEE"
+    nodes: ["N06", "N07", "N08"]
+    description: "派對客的主要領地——極度危險，社交陷阱"
+  - name: "地下層（B1-B2）"
+    color: "#ECEFF1"
+    nodes: ["N09"]
+    description: "停車場和檔案庫——偶有獵犬，有通往Level 37的積水區"
+  - name: "特殊區域"
+    color: "#E3F2FD"
+    nodes: ["N10"]
+    description: "F7鏡子房間——派對客不進入的安全區"
+nodes:
+  - id: "N01"
+    label: "F1 大廳"
+    x: 400
+    y: 450
+    type: "entrance"
+    explored: true
+    description: "辦公大樓入口——旋轉門通往Level 0。有醫務室（急救用品已大量被取走）。"
+    entrance_from: "Level 0 電梯"
+  - id: "N02"
+    label: "F1 醫務室"
+    x: 250
+    y: 480
+    type: "resource"
+    explored: false
+    description: "小型醫務室——殘留繃帶和消毒酒精。一次性資源（已被前人大量取走）。"
+    resources: "繃帶×2、消毒酒精"
+  - id: "N03"
+    label: "F3 辦公區"
+    x: 350
+    y: 320
+    type: "normal"
+    explored: false
+    description: "開放式辦公區——隔間、電腦。角落辦公室有「最後的員工」文員實體。IT部門在此層。"
+  - id: "N04"
+    label: "F3 文員辦公室"
+    x: 220
+    y: 300
+    type: "discovery"
+    explored: false
+    description: "角落辦公室——特殊「文員」實體偶爾打出有意義文字：「請幫我離開這裡。我已經打字打了37年。」"
+    special: "GM可藉此提供線索"
+  - id: "N05"
+    label: "F4 茶水間"
+    x: 500
+    y: 350
+    type: "resource"
+    explored: false
+    description: "有飲水機——剩餘少量杏仁水。此層為安全區上限——F5以上即派對客領域。"
+    resources: "杏仁水×1-2"
+  - id: "N06"
+    label: "F5 派對會場"
+    x: 350
+    y: 120
+    type: "danger"
+    explored: false
+    description: "大型會議室改造的派對會場——15-30派對客。彩帶、氣球、轉化儀式舞台。"
+    threats: "派對客群體（15-30隻）"
+  - id: "N07"
+    label: "F5 伺服器機房"
+    x: 500
+    y: 150
+    type: "discovery"
+    explored: false
+    description: "存有派對客起源的數位記錄——牠們曾經是人類。伺服器仍在運轉。"
+    special: "揭露派對客起源的關鍵地點"
+  - id: "N08"
+    label: "F6-F8 深層領地"
+    x: 250
+    y: 70
+    type: "danger"
+    explored: false
+    description: "派對客的核心領地——更多派對客、更多轉化儀式會場。越往上越危險。"
+    threats: "派對客密度極高"
+  - id: "N09"
+    label: "B2 停車場"
+    x: 550
+    y: 520
+    type: "normal"
+    explored: false
+    description: "地下停車場——偶有獵犬從Level 2管道系統遊蕩至此。有積水區域——可通往Level 37。"
+    exit_to: "Level 37 — 溫水泳池（通過積水區）"
+  - id: "N10"
+    label: "F7 鏡子房間"
+    x: 450
+    y: 240
+    type: "rest_point"
+    explored: false
+    description: "牆壁全是鏡子的房間。派對客不會進入——牠們的倒影沒有臉。停留超過10分鐘鏡中倒影開始微笑。"
+    special: "安全休息點——但本身也令人不安"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: "F1走廊"
+  - from: "N01"
+    to: "N03"
+    type: "stairs"
+    label: "樓梯/電梯→F3"
+  - from: "N03"
+    to: "N04"
+    type: "corridor"
+    label: "角落辦公室"
+  - from: "N03"
+    to: "N05"
+    type: "stairs"
+    label: "樓梯→F4"
+  - from: "N05"
+    to: "N06"
+    type: "stairs"
+    label: "⚠ F5——派對客領域！"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "伺服器機房"
+  - from: "N06"
+    to: "N08"
+    type: "stairs"
+    label: "⚠ 更深層領地"
+  - from: "N01"
+    to: "N09"
+    type: "stairs"
+    label: "樓梯→B2"
+  - from: "N03"
+    to: "N10"
+    type: "stairs"
+    label: "F7 鏡子房間"
+  - from: "N10"
+    to: "N01"
+    type: "stairs"
+    label: "返回F1安全區"

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 900" font-family="Georgia, serif">
+  <rect width="680" height="900" fill="#1a1010"/>
+  <rect x="20" y="20" width="640" height="860" rx="8" fill="#2a1515" stroke="#8b3a3a" stroke-width="2"/>
+  
+  <rect x="20" y="20" width="640" height="60" fill="#150a0a" opacity="0.8"/>
+  <text x="340" y="58" text-anchor="middle" font-size="22" font-weight="bold" fill="#ff6644" font-family="Georgia, serif">焚天堡 — 深淵惡魔之堡</text>
+  <text x="340" y="75" text-anchor="middle" font-size="12" fill="#aa6644" font-family="Georgia, serif">§5.6.3 NPC地城 #2 · 深淵軍團創始者 · Lv10</text>
+  
+  <defs>
+    <pattern id="lavaGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#3a2520" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <rect x="40" y="100" width="600" height="760" fill="url(#lavaGrid)" rx="4"/>
+  
+  <!-- Lava rivers -->
+  <path d="M80 150 Q200 200 250 300 Q300 400 340 480" stroke="#ff4422" stroke-width="4" fill="none" opacity="0.6"/>
+  <path d="M600 150 Q480 200 430 300 Q380 400 340 480" stroke="#ff4422" stroke-width="4" fill="none" opacity="0.6"/>
+  
+  <!-- Obsidian castle -->
+  <polygon points="340,380 260,480 420,480" fill="#2a1515" stroke="#ff6644" stroke-width="3"/>
+  <polygon points="340,380 290,440 390,440" fill="#3a2020" stroke="#ff6644" stroke-width="2"/>
+  <text x="340" y="425" text-anchor="middle" font-size="28">🔥</text>
+  <text x="340" y="465" text-anchor="middle" font-size="12" fill="#ffaa88" font-weight="bold">黑曜石主堡</text>
+  
+  <!-- Chambers -->
+  <rect x="80" y="320" width="120" height="80" rx="8" fill="#2a1515" stroke="#8b3a3a" stroke-width="2"/>
+  <text x="140" y="355" text-anchor="middle" font-size="11" fill="#ffaa88">地獄犬獸欄</text>
+  <text x="140" y="375" text-anchor="middle" font-size="10" fill="#cc8866">CP3/MV1 火焰追蹤</text>
+  
+  <rect x="480" y="320" width="120" height="80" rx="8" fill="#2a1515" stroke="#8b3a3a" stroke-width="2"/>
+  <text x="540" y="355" text-anchor="middle" font-size="11" fill="#ffaa88">烈焰鍛造廠</text>
+  <text x="540" y="375" text-anchor="middle" font-size="10" fill="#cc8866">火焰符文石產線</text>
+  
+  <rect x="100" y="520" width="130" height="80" rx="8" fill="#2a1515" stroke="#8b3a3a" stroke-width="2"/>
+  <text x="165" y="555" text-anchor="middle" font-size="11" fill="#ffaa88">戰技演練場</text>
+  <text x="165" y="575" text-anchor="middle" font-size="10" fill="#cc8866">怪物CP+1來源</text>
+  
+  <rect x="450" y="520" width="130" height="80" rx="8" fill="#2a1515" stroke="#8b3a3a" stroke-width="2"/>
+  <text x="515" y="555" text-anchor="middle" font-size="11" fill="#ffaa88">深淵圖書館</text>
+  <text x="515" y="575" text-anchor="middle" font-size="10" fill="#cc8866">WAR技能提升</text>
+  
+  <rect x="300" y="520" width="80" height="80" rx="8" fill="#2a1515" stroke="#ff6644" stroke-width="3"/>
+  <text x="340" y="555" text-anchor="middle" font-size="11" fill="#ffaa88">裂地者</text>
+  <text x="340" y="575" text-anchor="middle" font-size="11" fill="#ffaa88">王座</text>
+  
+  <!-- Annotations -->
+  <rect x="50" y="650" width="260" height="110" rx="5" fill="#2a1515" stroke="#5a3030" stroke-width="1"/>
+  <text x="65" y="670" font-size="11" fill="#ff6644" font-weight="bold">📍 劇本使用標註</text>
+  <text x="65" y="688" font-size="10" fill="#cc8866">• Act 3-1 深淵軍團邀請</text>
+  <text x="65" y="705" font-size="10" fill="#cc8866">• Act 4 火焰試煉</text>
+  
+  <rect x="370" y="650" width="260" height="110" rx="5" fill="#2a1515" stroke="#5a3030" stroke-width="1"/>
+  <text x="385" y="670" font-size="11" fill="#ff6644" font-weight="bold">⚙ 特性標註</text>
+  <text x="385" y="688" font-size="10" fill="#cc8866">• 熔岩河天然防禦</text>
+  <text x="385" y="705" font-size="10" fill="#cc8866">• 外交態度：冷淡(-3)</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="790" width="580" height="60" rx="5" fill="#2a1515" stroke="#5a3030" stroke-width="1"/>
+  <text x="65" y="810" font-size="11" fill="#ff6644">圖例：</text>
+  <path d="M150 807 Q160 802 170 807" stroke="#ff4422" stroke-width="2" fill="none"/>
+  <text x="175" y="812" font-size="10" fill="#cc8866">熔岩河</text>
+  
+  <!-- Compass -->
+  <g transform="translate(600, 770)">
+    <circle r="30" fill="#2a1515" stroke="#5a3030" stroke-width="1"/>
+    <line x1="0" y1="-25" x2="0" y2="-10" stroke="#ff6644" stroke-width="2"/>
+    <text y="-28" text-anchor="middle" font-size="10" fill="#ff6644">北</text>
+  </g>
+</svg>

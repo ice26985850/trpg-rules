@@ -1,0 +1,80 @@
+name: "帝國的遺產"
+description: "發現上古文明遺跡，裡面有超前科技——以及不該被打開的東西。"
+difficulty: 3
+level_range:
+  era_start: "王國時代"
+  era_end: "王國時代"
+turns_estimated: 50
+player_count: {min: 1, max: 1}
+map_ref: "maps/S3_帝國的遺產_遺跡區域.yaml"
+initial_map: "maps/S3_帝國的遺產_遺跡區域.yaml"
+
+phases:
+  - id: 1
+    name: "遺跡發掘"
+    turns: "1-12"
+    events:
+      - turn: 1
+        name: "發現遺跡"
+        type: "exploration"
+        description: "邊境發現上古文明城市遺跡"
+      - turn: 6
+        name: "第一批文物"
+        type: "discovery"
+        description: "發現能量核心和古代文獻"
+      - turn: 10
+        name: "不明信號"
+        type: "mystery"
+        description: "遺跡深處傳來不明信號"
+
+  - id: 2
+    name: "各方覬覦"
+    turns: "13-28"
+    events:
+      - turn: 15
+        name: "消息走漏"
+        type: "diplomacy"
+        description: "多個勢力派遣考察隊前來"
+      - turn: 20
+        name: "內部對立"
+        type: "internal"
+        description: "學者派 vs 軍事派之爭"
+
+  - id: 3
+    name: "封印之門"
+    turns: "29-42"
+    events:
+      - turn: 35
+        name: "發現封印"
+        type: "mystery"
+        description: "發現最深處的封印之門"
+        choices:
+          - option: "打開封印"
+            outcome: "隨機: 守護者/瘟疫/虛空生物/神明"
+          - option: "研究封印"
+            outcome: "科技大幅提升但風險延後"
+          - option: "摧毀遺跡"
+            outcome: "國際不滿但消除威脅"
+
+  - id: 4
+    name: "後果"
+    turns: "43-50"
+    events:
+      - turn: 50
+        name: "遺產結算"
+        type: "ending"
+        description: "根據選擇展開不同結局"
+
+endings:
+  - id: "research_shared"
+    condition: "研究並分享"
+    result: "科技+20，國際聲望+30"
+  - id: "research_monopoly"
+    condition: "壟斷研究"
+    result: "科技+30，所有關係-20"
+  - id: "seal_opened"
+    condition: "打開封印"
+    result: "隨機結果（盟友或災難）"
+  - id: "destroyed"
+    condition: "摧毀遺跡"
+    result: "所有關係-10，消除威脅"

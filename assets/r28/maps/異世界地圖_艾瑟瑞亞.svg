@@ -1,0 +1,383 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" font-family="'Microsoft JhengHei', 'PingFang TC', 'Noto Sans TC', sans-serif">
+  <defs>
+    <!-- Ocean gradient -->
+    <radialGradient id="oceanGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0d1f33"/>
+    </radialGradient>
+    <!-- Inner Sea gradient -->
+    <radialGradient id="innerSeaGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a5a8c"/>
+      <stop offset="100%" stop-color="#1a3a5c"/>
+    </radialGradient>
+    <!-- Lake gradient -->
+    <radialGradient id="lakeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a7abf"/>
+      <stop offset="100%" stop-color="#1a4a7c"/>
+    </radialGradient>
+    <!-- Parchment texture filter -->
+    <filter id="parchment">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="textured"/>
+    </filter>
+    <!-- Drop shadow for labels -->
+    <filter id="labelShadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <!-- Region glow -->
+    <filter id="regionGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Territory fill patterns -->
+    <pattern id="forestPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1.5" fill="#1a3a10" opacity="0.3"/>
+    </pattern>
+    <pattern id="desertPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="0.8" fill="#8a6a2a" opacity="0.3"/>
+      <circle cx="12" cy="12" r="0.8" fill="#8a6a2a" opacity="0.3"/>
+    </pattern>
+    <!-- Arrow marker for compass -->
+    <marker id="arrowN" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <polygon points="0,8 4,0 8,8" fill="#c44"/>
+    </marker>
+  </defs>
+
+  <!-- ============ OCEAN BACKGROUND ============ -->
+  <rect width="100%" height="100%" fill="url(#oceanGrad)" preserveAspectRatio="none"/>
+  
+  <!-- Ocean wave lines (decorative) -->
+  <g opacity="0.08" stroke="#6ab" fill="none" stroke-width="1">
+    <path d="M0,150 Q100,140 200,150 Q300,160 400,150 Q500,140 600,150 Q700,160 800,150 Q900,140 1000,150 Q1100,160 1200,150 Q1300,140 1400,150"/>
+    <path d="M0,850 Q100,840 200,850 Q300,860 400,850 Q500,840 600,850 Q700,860 800,850 Q900,840 1000,850 Q1100,860 1200,850 Q1300,840 1400,850"/>
+    <path d="M150,0 Q140,100 150,200 Q160,300 150,400 Q140,500 150,600 Q160,700 150,800 Q140,900 150,1000"/>
+    <path d="M1250,0 Q1240,100 1250,200 Q1260,300 1250,400 Q1240,500 1250,600 Q1260,700 1250,800 Q1240,900 1250,1000"/>
+  </g>
+
+  <!-- ============ MAIN CONTINENT ============ -->
+  <!-- Continent base shape - wraps around Inner Sea -->
+  <path id="continent" 
+    d="M 120,180 
+       Q 180,100 350,80 
+       Q 550,60 700,90 
+       Q 850,75 980,95 
+       Q 1100,80 1180,120 
+       Q 1250,170 1280,250 
+       Q 1320,380 1260,480
+       Q 1200,560 1100,600
+       Q 1000,640 950,700
+       Q 900,780 880,850
+       Q 850,920 750,940
+       Q 600,960 450,930
+       Q 300,910 200,860
+       Q 130,800 100,720
+       Q 60,600 70,480
+       Q 80,350 120,250
+       Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="3" filter="url(#parchment)"/>
+
+  <!-- ============ INNER SEA ============ -->
+  <!-- Inner Sea - central body of water dividing the continent -->
+  <path id="innerSea"
+    d="M 420,320
+       Q 480,280 580,290
+       Q 700,270 820,300
+       Q 900,340 940,400
+       Q 980,480 960,540
+       Q 920,600 840,620
+       Q 720,640 620,630
+       Q 500,620 440,580
+       Q 380,520 390,440
+       Q 400,380 420,320
+       Z"
+    fill="url(#innerSeaGrad)" stroke="#2a5a8c" stroke-width="3"/>
+
+  <!-- Inner Sea strait connecting to Outer Sea (east side) -->
+  <path d="M 940,380 Q 1000,370 1060,390 Q 1000,430 940,430 Z" fill="url(#innerSeaGrad)" stroke="#2a5a8c" stroke-width="2"/>
+
+  <!-- ============ REGIONAL OVERLAYS ============ -->
+
+  <!-- NW: Nature Realm (Green) -->
+  <path id="natureRealm" 
+    d="M 120,180 Q 180,100 350,80 Q 500,70 620,120 Q 680,160 700,220 Q 680,300 600,340 Q 480,400 420,320 Q 380,320 350,340 Q 250,420 180,450 Q 100,440 80,350 Q 60,260 120,180 Z"
+    fill="#3a6b2a" opacity="0.35"/>
+
+  <!-- NE: Human Territory + White Snake + Dwarves (Golden/Tan) -->
+  <path id="humanTerritory"
+    d="M 620,120 Q 680,100 750,95 Q 850,90 980,95 Q 1100,80 1180,120 Q 1250,170 1280,250 Q 1320,380 1260,480 Q 1200,560 1100,600 Q 1000,580 940,500 Q 900,400 940,340 Q 900,270 820,250 Q 700,240 700,220 Q 680,160 620,120 Z"
+    fill="#c4a45a" opacity="0.35"/>
+
+  <!-- SE: Beast Forest (Dark Green) -->
+  <path id="beastForest"
+    d="M 620,660 Q 720,670 840,660 Q 920,650 980,600 Q 1000,640 960,740 Q 880,820 820,890 Q 720,940 600,930 Q 480,900 400,850 Q 380,760 400,690 Q 450,670 500,660 Q 560,660 620,660 Z"
+    fill="#2d5a1e" opacity="0.4"/>
+
+  <!-- SW connector region (between Inner Sea and southern coast) -->
+  <path id="swConnector"
+    d="M 350,340 Q 250,420 180,450 Q 200,550 250,650 Q 300,720 380,720 Q 350,620 380,520 Q 420,440 500,420 Q 520,390 480,370 Q 420,350 350,340 Z"
+    fill="#4a7a35" opacity="0.3"/>
+
+  <!-- ============ SUB-REGIONS ============ -->
+
+  <!-- World Tree area (far NW) -->
+  <ellipse cx="180" cy="220" rx="60" ry="60" fill="#2d8a1e" opacity="0.4"/>
+  
+  <!-- Elves territory (NW, east of World Tree) -->
+  <ellipse cx="340" cy="180" rx="70" ry="50" fill="#5a9a3a" opacity="0.45"/>
+
+  <!-- Dark Elves (NW, south of Elves) -->
+  <ellipse cx="320" cy="280" rx="55" ry="40" fill="#3a1a4a" opacity="0.4"/>
+
+  <!-- Treants (below Dark Elves) -->
+  <ellipse cx="300" cy="380" rx="50" ry="40" fill="#2a6a1a" opacity="0.45"/>
+
+  <!-- Centaurs (NW, between Treants and Inner Sea) -->
+  <ellipse cx="420" cy="330" rx="45" ry="35" fill="#6a8a2a" opacity="0.4"/>
+
+  <!-- Ancient Battlefield Desert (far NE) -->
+  <ellipse cx="1150" cy="180" rx="100" ry="70" fill="#c4a45a" opacity="0.6"/>
+  <ellipse cx="1150" cy="180" rx="100" ry="70" fill="url(#desertPattern)"/>
+
+  <!-- White Snake Tribe (right of Humans) -->
+  <ellipse cx="1050" cy="300" rx="55" ry="45" fill="#c4c4c4" opacity="0.5"/>
+
+  <!-- Dwarves (southeast of Humans) -->
+  <ellipse cx="1020" cy="460" rx="50" ry="40" fill="#8a6a3a" opacity="0.5"/>
+
+  <!-- ============ BEAST FOREST LAKE ============ -->
+  <ellipse cx="820" cy="740" rx="55" ry="35" fill="url(#lakeGrad)" stroke="#3a7abf" stroke-width="2"/>
+  <!-- Lake waves -->
+  <path d="M 780,735 Q 795,730 810,735 Q 825,740 840,735 Q 855,730 870,735" stroke="#5a9adf" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- ============ DRAGON ISLAND (South) ============ -->
+  <path id="dragonIsland"
+    d="M 1020,820 Q 1060,790 1120,800 Q 1180,810 1220,840 Q 1250,880 1230,920 Q 1200,960 1140,970 Q 1080,975 1030,950 Q 990,920 990,880 Q 985,850 1020,820 Z"
+    fill="#8c6c4c" stroke="#6c4c2c" stroke-width="2" filter="url(#parchment)"/>
+  <!-- Volcano on Dragon Island -->
+  <polygon points="1100,835 1085,890 1115,890" fill="#c44" opacity="0.8"/>
+  <polygon points="1105,845 1095,885 1115,885" fill="#e66" opacity="0.6"/>
+  <!-- Smoke -->
+  <g opacity="0.3" fill="none" stroke="#888" stroke-width="1.5">
+    <path d="M 1100,835 Q 1090,820 1095,805 Q 1100,790 1092,775"/>
+    <path d="M 1105,832 Q 1115,815 1110,800"/>
+  </g>
+
+  <!-- ============ WORLD HEART (NE mountains) ============ -->
+  <g transform="translate(960,140)">
+    <polygon points="0,40 -30,0 -15,-30 5,-35 25,-25 35,0" fill="#7c6c5c" stroke="#5c4c3c" stroke-width="1.5"/>
+    <polygon points="-5,15 -25,-10 -10,-35 5,-38" fill="#8c7c6c" stroke="#5c4c3c" stroke-width="1"/>
+    <polygon points="10,-10 25,-30 40,-5 25,15" fill="#9c8c7c" stroke="#5c4c3c" stroke-width="1"/>
+    <!-- Glow -->
+    <circle cx="5" cy="0" r="8" fill="#f44" opacity="0.4"/>
+    <circle cx="5" cy="0" r="4" fill="#f88" opacity="0.6"/>
+  </g>
+
+  <!-- ============ WORLD TREE (far NW) ============ -->
+  <g transform="translate(170,200)">
+    <!-- Trunk -->
+    <rect x="-4" y="-10" width="8" height="50" fill="#5c3c1c" rx="2"/>
+    <!-- Roots -->
+    <path d="M -4,40 Q -15,45 -20,50 M 4,40 Q 15,45 20,50 M -2,40 Q -5,48 -8,52" stroke="#5c3c1c" stroke-width="2" fill="none"/>
+    <!-- Canopy -->
+    <ellipse cx="0" cy="-15" rx="25" ry="20" fill="#2d7a1e" opacity="0.7"/>
+    <ellipse cx="-10" cy="-5" rx="18" ry="15" fill="#3a8a2a" opacity="0.6"/>
+    <ellipse cx="12" cy="-5" rx="16" ry="13" fill="#4a9a3a" opacity="0.5"/>
+    <!-- Glow -->
+    <circle cx="0" cy="-10" r="5" fill="#afa" opacity="0.4"/>
+  </g>
+
+  <!-- ============ COASTLINE DETAILS ============ -->
+  <g stroke="#9c8c6c" stroke-width="1" fill="none" opacity="0.5">
+    <!-- Small coastal inlets/peninsulas -->
+    <path d="M 700,90 Q 720,75 740,85"/>
+    <path d="M 1280,250 Q 1300,240 1310,260"/>
+    <path d="M 850,920 Q 860,940 840,950"/>
+    <path d="M 450,930 Q 440,950 460,955"/>
+    <path d="M 100,720 Q 80,730 90,750"/>
+    <path d="M 120,250 Q 100,260 110,280"/>
+  </g>
+
+  <!-- ============ MOUNTAIN SYMBOLS ============ -->
+  <!-- Mountains around World Heart -->
+  <g fill="#8c7c6c" stroke="#6c5c4c" stroke-width="1">
+    <polygon points="940,160 935,130 945,130"/>
+    <polygon points="955,155 948,125 962,125"/>
+    <polygon points="975,165 968,135 982,135"/>
+    <polygon points="990,150 985,120 995,120"/>
+  </g>
+
+  <!-- Mountains SE of Human territory (border with Beast Forest) -->
+  <g fill="#7c7c6c" stroke="#5c5c4c" stroke-width="1" opacity="0.6">
+    <polygon points="880,640 870,610 890,610"/>
+    <polygon points="910,650 900,615 920,615"/>
+    <polygon points="930,660 920,630 940,630"/>
+    <polygon points="950,650 940,620 960,620"/>
+  </g>
+
+  <!-- Mountains in Nature Realm border -->
+  <g fill="#7a7a6a" stroke="#5a5a4a" stroke-width="1" opacity="0.5">
+    <polygon points="500,200 490,170 510,170"/>
+    <polygon points="530,210 520,180 540,180"/>
+    <polygon points="560,230 550,200 570,200"/>
+  </g>
+
+  <!-- ============ OUTER SEA CREATURES ============ -->
+  <!-- Fishmen symbols (small clusters in outer sea) -->
+  <g opacity="0.5">
+    <!-- Northern outer sea -->
+    
+    
+    <!-- Eastern outer sea -->
+    
+    
+    <!-- Southern outer sea -->
+    
+    
+    <!-- Western outer sea -->
+    
+    
+  </g>
+
+  <!-- Merfolk symbols (in Inner Sea) -->
+  <g opacity="0.6">
+    
+    
+    
+  </g>
+
+  <!-- ============ BEAST CLAN TERRITORIES ============ -->
+  <!-- Six clans around the central lake -->
+  
+  <!-- Wolfmen (狼人) - north of lake -->
+  
+  <!-- Bearmen (熊人) - northeast of lake -->
+  
+  <!-- Catmen (貓人) - east of lake -->
+  
+  <!-- Black Snake (黑蛇) - southeast of lake -->
+  
+  <!-- Hawkmen (鷹人) - southwest of lake -->
+  
+  <!-- Foxmen (狐人) - northwest of lake -->
+  
+
+  <!-- ============ TERRITORY LABELS ============ -->
+  
+  <g font-size="15" font-weight="bold" fill="#1a0a00" filter="url(#labelShadow)" text-anchor="middle">
+    
+    <!-- NW Region Labels -->
+    
+    
+    
+    
+    
+
+    <!-- NE Region Labels -->
+    
+    
+    
+    
+    
+    <!-- Ancient Battlefield -->
+    
+    
+
+    <!-- World Heart -->
+    
+
+    <!-- SE Region Labels -->
+    
+    
+
+    <!-- Beast Clan Labels -->
+    
+    
+    
+    
+    
+    
+
+    <!-- Inner/Outer Sea -->
+    
+    
+
+    <!-- Dragon Island -->
+    
+    
+    
+  </g>
+
+  <!-- Outer Sea labels -->
+  <g font-size="14" fill="#4a8aca" opacity="0.8" text-anchor="middle">
+    
+    
+    
+  </g>
+
+  <g transform="translate(30,880)">
+    <rect x="0" y="0" width="240" height="118" fill="#0d1f2a" stroke="#3a6a9a" stroke-width="1.5" rx="5" opacity="0.85"/>
+    
+    
+    <!-- Territory colors -->
+    <rect x="15" y="32" width="20" height="12" fill="#3a6b2a" rx="2"/>
+    
+    
+    <rect x="15" y="50" width="20" height="12" fill="#c4a45a" rx="2"/>
+    
+    
+    <rect x="15" y="68" width="20" height="12" fill="#2d5a1e" rx="2"/>
+    
+    
+    <rect x="15" y="86" width="20" height="12" fill="#1a3a5c" rx="2"/>
+    
+  </g>
+
+  <!-- ============ COMPASS ROSE ============ -->
+  <g transform="translate(1320,80)">
+    <circle cx="0" cy="0" r="40" fill="#0d1f2a" stroke="#3a6a9a" stroke-width="1.5" opacity="0.85"/>
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#3a6a9a" stroke-width="0.5" opacity="0.5"/>
+    
+    <!-- N arrow -->
+    <polygon points="0,-32 -8,-4 0,-12 8,-4" fill="#c44"/>
+    <!-- S arrow -->
+    <polygon points="0,32 -8,4 0,12 8,4" fill="#68a"/>
+    <!-- E arrow -->
+    <polygon points="32,0 4,-8 12,0 4,8" fill="#68a"/>
+    <!-- W arrow -->
+    <polygon points="-32,0 -4,-8 -12,0 -4,8" fill="#68a"/>
+    
+    <!-- Labels -->
+    
+    
+    
+    
+  </g>
+
+  <!-- ============ TITLE ============ -->
+  <g transform="translate(700,930)">
+    <rect x="-220" y="-18" width="440" height="36" fill="#0d1f2a" stroke="#3a6a9a" stroke-width="1.5" rx="4" opacity="0.85"/>
+    
+  </g>
+
+  <!-- ============ REGION BOUNDARY LINES ============ -->
+  <g stroke="#8c7c5c" stroke-width="1.5" stroke-dasharray="6,4" fill="none" opacity="0.6">
+    <!-- Boundary between Nature Realm and Human Territory -->
+    <path d="M 620,120 Q 650,180 700,220"/>
+    <!-- Boundary between Human Territory and Beast Forest -->
+    <path d="M 700,660 Q 800,670 900,650 Q 950,640 980,600"/>
+    <!-- Boundary between Nature Realm and Beast Forest (SW) -->
+    <path d="M 380,520 Q 420,580 500,660"/>
+  </g>
+
+  <!-- ============ MAJOR RIVERS ============ -->
+  <g stroke="#3a7abf" stroke-width="1.5" fill="none" opacity="0.5">
+    <!-- River from mountains to Inner Sea (through Human territory) -->
+    <path d="M 880,250 Q 860,300 820,320"/>
+    <!-- River from World Tree area to Inner Sea -->
+    <path d="M 250,250 Q 300,300 380,340"/>
+    <!-- River from lake to south coast -->
+    <path d="M 820,750 Q 820,800 800,860"/>
+  </g>
+
+</svg>

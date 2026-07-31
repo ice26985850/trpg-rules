@@ -1,0 +1,89 @@
+name: "三方鼎立"
+description: "三個城邦在同一區域崛起，爭奪資源與影響力。外交、戰爭與謀略——誰先進入王國時代，誰就主導這片區域。"
+difficulty: 2
+level_range:
+  era_start: "城邦時代"
+  era_end: "王國時代"
+turns_estimated: 60
+player_count:
+  min: 1
+  max: 1
+map_ref: "maps/S2_三方鼎立_區域地圖.yaml"
+initial_map: "maps/S2_三方鼎立_區域地圖.yaml"
+
+phases:
+  - id: 1
+    name: "三角態勢"
+    turns: "1-15"
+    description: "三個城邦形成三角對峙格局"
+    events:
+      - turn: 1
+        name: "鄰國登場"
+        type: "introduction"
+        description: "兩個鄰國正式亮相——一個友好，一個敵對"
+      - turn: 8
+        name: "貿易路線之爭"
+        type: "competition"
+        description: "三方爭奪關鍵貿易路線控制權"
+      - turn: 12
+        name: "上古遺跡"
+        type: "exploration"
+        description: "中立區域發現遺跡，誰取得研究權？"
+
+  - id: 2
+    name: "合縱連橫"
+    turns: "16-35"
+    description: "外交博弈與內部壓力"
+    events:
+      - turn: 18
+        name: "同盟提議"
+        type: "diplomacy"
+        description: "友好鄰國提議軍事同盟——但需共享科技"
+      - turn: 25
+        name: "內部對立"
+        type: "internal"
+        description: "和平派與主戰派之爭"
+
+  - id: 3
+    name: "決戰前夕"
+    turns: "36-50"
+    description: "區域危機與戰爭陰影"
+    events:
+      - turn: 40
+        name: "區域危機"
+        type: "crisis"
+        description: "三方共同面對一場災難"
+      - turn: 45
+        name: "戰爭威脅"
+        type: "military"
+        description: "敵對鄰國可能發動突襲"
+
+  - id: 4
+    name: "王國之冕"
+    turns: "51-60"
+    description: "衝刺王國時代"
+    events:
+      - turn: 55
+        name: "城堡奠基"
+        type: "construction"
+        description: "開始建造城堡——時代升級的必要條件"
+      - turn: 60
+        name: "加冕典禮"
+        type: "ending"
+        description: "正式成為王國"
+
+key_npcs:
+  - name: "友好鄰國統治者"
+    role: "潛在盟友"
+  - name: "敵對鄰國統治者"
+    role: "競爭對手"
+  - name: "主和派領袖"
+    role: "內部反對聲音"
+
+endings:
+  success:
+    condition: "第一個進入王國時代"
+    reward: "區域霸權，外交關係 +20"
+  partial:
+    condition: "進入王國時代但不是第一個"
+    reward: "基本獎勵，區域影響力次等"

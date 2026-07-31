@@ -1,0 +1,664 @@
+# 絕地戰場 TRPG — 物品圖鑑
+# 完整武器、防具、配件、消耗品、載具數據
+
+# =============================================================================
+# 武器
+# =============================================================================
+weapons:
+  手槍:
+    - name: P92
+      damage: 1d8
+      range_effective: 25m
+      range_max: 50m
+      magazine: 15
+      weight_kg: 1.0
+      rarity: 常見
+      price_cr: 200
+      proficiency: AIM 10
+      special: 標準制式手槍。切換為自由動作（不消耗戰術動作）。後座力低。
+
+    - name: P1911
+      damage: 1d10
+      range_effective: 20m
+      range_max: 40m
+      magazine: 7
+      weight_kg: 1.1
+      rarity: 常見
+      price_cr: 250
+      proficiency: AIM 10
+      special: 大口徑手槍。近距離（15m內）傷害+2。彈匣較小。
+
+    - name: 沙漠之鷹
+      damage: 2d8
+      range_effective: 30m
+      range_max: 60m
+      magazine: 7
+      weight_kg: 2.0
+      rarity: 稀有
+      price_cr: 800
+      proficiency: AIM 14, PHY 13
+      special: 手槍中的狙擊槍。可穿透Lv.1護甲（無視2點減傷）。連射DC+3（後座力巨大）。
+
+    - name: 蠍式（Skorpion）
+      damage: 1d6
+      range_effective: 30m
+      range_max: 60m
+      magazine: 20
+      weight_kg: 1.5
+      rarity: 少見
+      price_cr: 400
+      proficiency: AIM 10
+      special: 全自動手槍。可連發2發/回合。連發DC+1/發。
+
+  衝鋒槍:
+    - name: UMP45
+      damage: 1d8
+      range_effective: 40m
+      range_max: 80m
+      magazine: 25
+      weight_kg: 2.5
+      rarity: 常見
+      price_cr: 400
+      proficiency: AIM 10
+      special: .45口徑傷害型SMG。近距離壓制力強（火力壓制可選項）。
+
+    - name: Vector
+      damage: 1d6
+      range_effective: 30m
+      range_max: 60m
+      magazine: 19
+      weight_kg: 2.3
+      rarity: 少見
+      price_cr: 600
+      proficiency: AIM 10
+      special: 射速最快的SMG。可連發4發/回合（DC+1/發）。彈匣小但爆發力驚人。
+
+    - name: MP5K
+      damage: 1d6
+      range_effective: 50m
+      range_max: 100m
+      magazine: 30
+      weight_kg: 2.0
+      rarity: 常見
+      price_cr: 500
+      proficiency: AIM 10
+      special: 最均衡的SMG。連發後座力DC懲罰-1（前三發不加DC）。
+
+    - name: 湯普森（Tommy Gun）
+      damage: 1d8
+      range_effective: 35m
+      range_max: 70m
+      magazine: 50
+      weight_kg: 4.5
+      rarity: 稀有
+      price_cr: 700
+      proficiency: AIM 10
+      special: 彈鼓供彈。連發4發/回合。火力持續性最強。重量較大。
+
+  突擊步槍:
+    - name: M16A4
+      damage: 1d10
+      range_effective: 200m
+      range_max: 400m
+      magazine: 30
+      weight_kg: 3.5
+      rarity: 常見
+      price_cr: 800
+      proficiency: AIM 12
+      special: 三連發模式限定（3發/回合，DC+1/發）。單發精度高。後座力可控。
+
+    - name: SCAR-L
+      damage: 1d10
+      range_effective: 180m
+      range_max: 360m
+      magazine: 30
+      weight_kg: 3.3
+      rarity: 少見
+      price_cr: 1200
+      proficiency: AIM 12
+      special: 後座力控制最佳。連發DC懲罰-1。移動中射擊DC-1。
+
+    - name: AKM
+      damage: 1d12
+      range_effective: 200m
+      range_max: 400m
+      magazine: 30
+      weight_kg: 4.0
+      rarity: 少見
+      price_cr: 1000
+      proficiency: AIM 12
+      special: 最大口徑AR。可穿透Lv.1護甲（無視2點減傷）。連發DC+2/發（後座力大）。
+
+    - name: M416
+      damage: 1d10
+      range_effective: 200m
+      range_max: 400m
+      magazine: 30
+      weight_kg: 3.5
+      rarity: 稀有
+      price_cr: 1800
+      proficiency: AIM 12
+      special: 配件之王（5配件槽）。滿配後連發DC無懲罰。全能型終極步槍。
+
+    - name: AUG
+      damage: 1d10
+      range_effective: 220m
+      range_max: 440m
+      magazine: 30
+      weight_kg: 3.6
+      rarity: 空投
+      price_cr: "-"  # 空投專屬，無販售價格
+      proficiency: AIM 12
+      special: 空投專屬。自帶2倍鏡效果。連發DC-1。移動射擊DC-1。
+
+  狙擊槍:
+    - name: Kar98k
+      damage: 2d10
+      range_effective: 500m
+      range_max: 700m
+      magazine: 5
+      weight_kg: 4.5
+      rarity: 少見
+      price_cr: 1500
+      proficiency: AIM 14
+      special: 經典栓動狙擊。瞄準後射擊無視Lv.2以下頭盔減傷。需瞄準1回合。
+
+    - name: M24
+      damage: 2d10+2
+      range_effective: 550m
+      range_max: 750m
+      magazine: 5
+      weight_kg: 5.0
+      rarity: 稀有
+      price_cr: 2500
+      proficiency: AIM 14
+      special: 自帶腳架——臥姿瞄準只需半回合。傷害略高於Kar98k。
+
+    - name: AWM
+      damage: 2d12
+      range_effective: 600m
+      range_max: 800m
+      magazine: 5
+      weight_kg: 6.0
+      rarity: 空投
+      price_cr: "-"  # 空投專屬，無販售價格
+      proficiency: AIM 16, PHY 14
+      special: 終極狙擊槍。無視Lv.3頭盔減傷。要害命中（d20=19-20）直接擊殺——無視HP。傳說級武器。
+
+    - name: SKS
+      damage: 2d8
+      range_effective: 300m
+      range_max: 500m
+      magazine: 10
+      weight_kg: 4.0
+      rarity: 少見
+      price_cr: 1200
+      proficiency: AIM 14
+      special: 半自動狙擊——不需瞄準回合，每回合可射擊1次。適合中距離支援。
+
+    - name: Mini-14
+      damage: 1d10
+      range_effective: 250m
+      range_max: 400m
+      magazine: 20
+      weight_kg: 3.5
+      rarity: 少見
+      price_cr: 1000
+      proficiency: AIM 12
+      special: 精確射手步槍。不需瞄準，可連發2發（DC+1/發）。彈匣大、後座力小。
+
+  霰彈槍:
+    - name: S686
+      damage_near: 4d6
+      damage_mid: 2d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 2
+      weight_kg: 3.5
+      rarity: 常見
+      price_cr: 500
+      proficiency: PHY 12
+      special: 雙管霰彈槍。一回合內可連射2發（不疊加DC懲罰）。之後需裝填。
+
+    - name: S1897
+      damage_near: 3d6
+      damage_mid: 1d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 5
+      weight_kg: 3.8
+      rarity: 常見
+      price_cr: 500
+      proficiency: PHY 12
+      special: 泵動式。近距離命中附帶擊退效果（目標後退5m，PHY DC12抵抗）。
+
+    - name: S12K
+      damage_near: 3d6
+      damage_mid: 1d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 5
+      weight_kg: 4.0
+      rarity: 少見
+      price_cr: 800
+      proficiency: PHY 12
+      special: 半自動。可連發2發/回合（DC+1/發）。可使用步槍配件（消音器、擴容）。
+
+    - name: DBS
+      damage_near: 4d6
+      damage_mid: 2d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 14
+      weight_kg: 5.5
+      rarity: 空投
+      price_cr: "-"  # 空投專屬，無販售價格
+      proficiency: PHY 12
+      special: 空投專屬雙管半自動。一回合可射擊2次（每次2發）。換彈需整回合。
+
+  輕機槍:
+    - name: DP-28
+      damage: 1d10
+      range_effective: 300m
+      range_max: 500m
+      magazine: 47
+      weight_kg: 9.0
+      rarity: 少見
+      price_cr: 1500
+      proficiency: AIM 8, PHY 8
+      special: 圓盤彈匣。臥姿射擊後座力DC懲罰減半。換彈需整回合。
+
+    - name: M249
+      damage: 1d10
+      range_effective: 300m
+      range_max: 500m
+      magazine: 75
+      weight_kg: 7.5
+      rarity: 稀有
+      price_cr: 2500
+      proficiency: AIM 8, PHY 8
+      special: 火力壓制之王。連發4發/回合。可進行壓制射擊（指定5m×5m區域）。
+
+    - name: MG3
+      damage: 1d12
+      range_effective: 350m
+      range_max: 550m
+      magazine: 75
+      weight_kg: 11.0
+      rarity: 空投
+      price_cr: "-"  # 空投專屬，無販售價格
+      proficiency: AIM 8, PHY 10
+      special: 空投專屬。可選超高射速模式：6發/回合（DC+2/發）。子彈消耗極快。
+
+  十字弩:
+    - name: 戰術十字弩
+      damage: 2d8
+      range_effective: 50m
+      range_max: 80m
+      magazine: 1
+      weight_kg: 2.5
+      rarity: 少見
+      price_cr: 400
+      proficiency: AIM 6
+      special: 完全無聲——不暴露位置（無槍聲、無火光、無彈道煙霧）。每次射擊後需裝填（消耗戰術動作）。
+
+  近戰武器:
+    - name: 平底鍋
+      damage: 1d6+PHYmod
+      weight_kg: 1.0
+      rarity: 常見
+      special: 傳奇武器。20%機率格擋背後子彈（擲d100，01-20=擋下，傷害歸零）。
+
+    - name: 撬棍
+      damage: 1d8+PHYmod
+      weight_kg: 1.5
+      rarity: 常見
+      special: 可撬開上鎖的門或補給箱（無需鑰匙）。消耗1回合。
+
+    - name: 戰術匕首
+      damage: 1d4+PHYmod
+      weight_kg: 0.3
+      rarity: 常見
+      special: 擊中要害時（d20=20）傷害×3而非×2.5。
+
+    - name: 大砍刀
+      damage: 1d10+PHYmod
+      weight_kg: 2.0
+      rarity: 少見
+      special: 可砍灌木開路。近戰範圍+1m。
+
+# =============================================================================
+# 防具
+# =============================================================================
+armor:
+  頭盔:
+    - level: 1
+      name: 一級頭盔
+      dr: 1
+      durability: 3
+      weight_kg: 0.5
+      price_cr: 200
+      special: 無
+
+    - level: 2
+      name: 二級頭盔
+      dr: 2
+      durability: 4
+      weight_kg: 1.0
+      price_cr: 400
+      special: 無
+
+    - level: 3
+      name: 三級頭盔
+      dr: 3
+      durability: 5
+      weight_kg: 1.5
+      price_cr: 800
+      special: 免疫頭部一擊必殺。即使AWM爆頭也只能造成×1.5傷害而不會即死。
+
+  軀幹防具:
+    - level: 0
+      name: 運動護具
+      dr: 1
+      durability: 2
+      weight_kg: 1.0
+      price_cr: 100
+      special: 輕型運動護具。耐久低但重量極輕
+
+    - level: 0
+      name: 戰術背心
+      dr: 1
+      durability: 3
+      weight_kg: 2.0
+      price_cr: 150
+      special: 輕型戰術裝備。提供額外+2kg負重上限（多個口袋）
+
+    - level: 1
+      name: 一級護甲
+      dr: 2
+      durability: 4
+      weight_kg: 3.0
+      price_cr: 300
+      special: 無
+
+    - level: 2
+      name: 二級護甲
+      dr: 3
+      durability: 5
+      weight_kg: 5.0
+      price_cr: 600
+      special: 無
+
+    - level: 3
+      name: 三級護甲
+      dr: 4
+      durability: 6
+      weight_kg: 7.0
+      price_cr: 1200
+      special: 重甲——穿戴時移動速度-5m（可被專長抵銷）。
+
+# =============================================================================
+# 武器配件
+# =============================================================================
+attachments:
+  瞄具:
+    - name: 紅點瞄準
+      compatible: [手槍, SMG, AR]
+      effect: 50m內DC-1
+      weight_kg: 0.2
+    - name: 全息瞄準
+      compatible: [手槍, SMG, AR]
+      effect: 50m內DC-1（視野略廣於紅點）
+      weight_kg: 0.2
+    - name: 2倍鏡
+      compatible: [SMG, AR, LMG]
+      effect: 100m內DC-1
+      weight_kg: 0.3
+    - name: 4倍鏡
+      compatible: [AR, SR, LMG]
+      effect: 150m內DC-2
+      weight_kg: 0.4
+    - name: 8倍鏡
+      compatible: [SR]
+      effect: 300m內DC-3
+      weight_kg: 0.5
+    - name: 熱成像儀
+      compatible: [SR]
+      effect: 可透過煙霧看到目標輪廓，夜間視野200m
+      weight_kg: 0.8
+      rarity: 空投
+
+  槍口:
+    - name: 消音器
+      compatible: [手槍, SMG, AR, SR]
+      effect: 槍聲被聽到距離減半
+      weight_kg: 0.3
+    - name: 補償器
+      compatible: [AR, SR, LMG]
+      effect: 連發後座力DC懲罰-1
+      weight_kg: 0.3
+    - name: 消焰器
+      compatible: [AR, SR]
+      effect: 射擊無槍口火光（夜間不暴露位置）
+      weight_kg: 0.2
+
+  彈匣:
+    - name: 擴容彈匣
+      compatible: [大部分槍械]
+      effect: 彈匣容量+50%（向下取整）
+      weight_increase: +20%
+    - name: 快速彈匣
+      compatible: [大部分槍械]
+      effect: 換彈時間減半（LMG除外——從整回合減為1戰術動作）
+      weight_increase: +15%
+    - name: 雙彈匣
+      compatible: [AR, SMG]
+      effect: 第一次換彈為自由動作（之後正常）
+      weight_increase: +30%
+
+  握把:
+    - name: 垂直握把
+      compatible: [AR, SMG, LMG]
+      effect: 連發後座力DC懲罰-1
+      weight_kg: 0.3
+    - name: 直角握把
+      compatible: [AR, SMG]
+      effect: 開鏡速度加快（瞄準只需半回合）
+      weight_kg: 0.2
+    - name: 輕型握把
+      compatible: [AR, SMG]
+      effect: 移動中射擊DC-1
+      weight_kg: 0.2
+
+  槍托:
+    - name: 戰術槍托
+      compatible: [AR, SMG, SR]
+      effect: 移動中射擊DC-1，後座力恢復+1回合
+      weight_kg: 0.4
+    - name: 摺疊槍托
+      compatible: [SMG]
+      effect: 移動中射擊無DC懲罰
+      weight_kg: 0.2
+    - name: 重型槍托
+      compatible: [SR, LMG]
+      effect: 臥姿DC-2
+      weight_kg: 0.6
+
+  其他:
+    - name: 雷射瞄準器
+      compatible: [手槍, SMG]
+      effect: 15m內DC-2
+      weight_kg: 0.1
+    - name: 戰術手電筒
+      compatible: [手槍, SMG, AR]
+      effect: 夜間20m內視野正常
+      weight_kg: 0.2
+    - name: 腳架
+      compatible: [LMG, SR]
+      effect: 臥姿射擊DC-2。不佔配件槽（自由安裝）。
+      weight_kg: 0.5
+
+# =============================================================================
+# 消耗品
+# =============================================================================
+consumables:
+  - name: 繃帶
+    weight_kg: 0.2
+    use_time: 1回合
+    effect: 恢復1d4 HP（最多恢復至75%HP）
+    price_cr: 20
+
+  - name: 止血帶
+    weight_kg: 0.1
+    use_time: 1回合
+    effect: 停止出血狀態；穩定倒地隊友（重置倒地計時至3回合）；不恢復HP
+    price_cr: 15
+
+  - name: 急救包
+    weight_kg: 1.0
+    use_time: 2回合
+    effect: 恢復至75% HP（無法超過75%）
+    price_cr: 100
+
+  - name: 醫療箱
+    weight_kg: 2.0
+    use_time: 4回合
+    effect: 恢復至100% HP。清除所有負面狀態。
+    price_cr: 300
+
+  - name: 能量飲料
+    weight_kg: 0.3
+    use_time: 1回合
+    effect: 體能+1（5回合）。緩慢恢復1HP/回合（5回合）。
+    price_cr: 50
+
+  - name: 止痛藥
+    weight_kg: 0.2
+    use_time: 1回合
+    effect: 免疫疼痛減速效果（5回合）。
+    price_cr: 40
+
+  - name: 腎上腺素
+    weight_kg: 0.5
+    use_time: 1回合
+    effect: 體能+2、移動速度×1.5（3回合）。結束後疲勞劣勢2回合。
+    price_cr: 200
+
+  - name: 自救注射器
+    weight_kg: 0.3
+    use_time: 自動
+    effect: HP歸零時自動觸發，恢復至1HP。觸發後虛弱狀態。單人模式專屬，每場限1次。
+    price_cr: 300
+
+  - name: 鎮靜劑
+    weight_kg: 0.2
+    use_time: 1回合
+    effect: 壓力值-5。
+    price_cr: 100
+
+  - name: 煙霧彈
+    weight_kg: 0.5
+    use_time: 即時
+    effect: 5m半徑濃煙。持續2回合。完全遮蔽視線。
+    price_cr: 80
+
+  - name: 手榴彈
+    weight_kg: 0.5
+    use_time: 即時
+    effect: 3d8範圍傷害。5m半徑。TAC DC12減半。
+    price_cr: 150
+
+  - name: 燃燒彈
+    weight_kg: 0.5
+    use_time: 即時
+    effect: 2d6/回合燃燒傷害。3m半徑。持續3回合。
+    price_cr: 120
+
+  - name: 閃光彈
+    weight_kg: 0.3
+    use_time: 即時
+    effect: 5m半徑致盲1回合（攻擊劣勢）+耳鳴2回合（聽音減半）。CLM DC14抵抗。
+    price_cr: 100
+
+  - name: C4炸藥
+    weight_kg: 1.0
+    use_time: 3回合設置
+    effect: 4d8範圍傷害。10m半徑。需遙控引爆。
+    price_cr: 300
+
+  - name: 反載具地雷
+    weight_kg: 2.0
+    use_time: 2回合設置
+    effect: 對載具6d10傷害。觸發式。對行人1d10。
+    price_cr: 500
+
+# =============================================================================
+# 載具
+# =============================================================================
+vehicles:
+  - name: 摩托車
+    crew: 2
+    speed: 極快（80m/回合）
+    hp: 30
+    armor: 無
+    noise: 中
+    terrain: 全地形（但崎嶇地形駕駛檢定DC+2）
+    special: 最快但最脆弱。駕駛者無任何防護。翻覆時駕駛員受3d6傷害。
+
+  - name: 雪地摩托車
+    crew: 2
+    speed: 快（60m/回合）
+    hp: 25
+    armor: 無
+    noise: 中
+    terrain: 雪地不減速，其他地形優於普通摩托
+    special: 雪地專用版摩托車。非雪地地形等同普通摩托。
+
+  - name: 越野車
+    crew: 4
+    speed: 快（60m/回合）
+    hp: 60
+    armor: 輕型（乘員軀幹DR+1）
+    noise: 中
+    terrain: 全地形無減速
+    special: 越野專精——崎嶇地形不減速。適合沙漠和山地。
+
+  - name: 吉普車
+    crew: 4
+    speed: 中（50m/回合）
+    hp: 80
+    armor: 中型（乘員軀幹DR+2）
+    noise: 大
+    terrain: 公路最佳，越野減速至30m
+    special: 全能型載具。最常見。提供良好的乘員保護。
+
+  - name: 轎車
+    crew: 4
+    speed: 中（55m/回合）
+    hp: 60
+    armor: 輕型（乘員軀幹DR+1）
+    noise: 中
+    terrain: 公路最快（65m），越野減速至20m
+    special: 公路速度加成。越野性能差。
+
+  - name: 船
+    crew: 4
+    speed: 慢（30m/回合）
+    hp: 60
+    armor: 無
+    noise: 小
+    terrain: 僅限水域
+    special: 唯一的水上交通。無法上岸。
+
+  - name: 裝甲車
+    crew: 4
+    speed: 慢（35m/回合）
+    hp: 150
+    armor: 重型（乘員等同三級護甲保護，軀幹DR+4）
+    noise: 極大（全圖可聞）
+    terrain: 全地形但速度慢
+    special: 空投專屬。移動堡壘。輪胎被射中時移動減半。耐久歸零時爆炸（10m半徑4d10傷害）。

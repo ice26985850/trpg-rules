@@ -1,0 +1,82 @@
+name: "異形的交換"
+difficulty: "中級 (挑戰等級（CR） 2-3)"
+mode: "阿斯塔特 · 單人"
+recommended_attributes: "+3-4 成長"
+
+opening_description: >
+  運輸船的修復需要一個關鍵零件——它就在廢棄的機械教設施中。但當你抵達時，你發現已經有人在這裡了——
+  一個靈族遊俠。他也在找東西。他提出了一個交易。
+
+surface_goal: >
+  在廢棄機械教設施中找到運輸船所需的關鍵零件。
+
+hidden_goal: >
+  靈族知道零件在哪裡——但也知道設施中沉睡的東西。交易的本質不是零件，是雙方都意識到的更大威脅。
+
+known_threats:
+  - "機械教設施已荒廢多年，可能有防禦系統仍在運行"
+  - "靈族的存在——他不值得信任，但也非敵對"
+
+hidden_threats:
+  - "設施中沉睡著一個被封印的靈能實體——靈族也在試圖阻止它甦醒"
+  - "歐米克隆-7 可能已經被混沌影響了 6 個月"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 2
+  flare: 1
+  food_water_days: 3
+  ammo_magazines: 2
+
+companions:
+  - name: "凱拉（延續自 SB-1）或卡拉（延續自 SB-2）"
+    role: "前一個劇本的倖存夥伴"
+    backstory: "根據前一劇本的結果選擇。如果兩人都已死亡，則使用歐米克隆-7"
+    bottom_line: "取決於該角色"
+    initial_attitude: "延續自前一劇本"
+    attributes: "沿用前一劇本夥伴屬性"
+
+  - name: "機械教士歐米克隆-7（備用夥伴）"
+    role: "殘存的機械教技術僧侶"
+    backstory: "半機械化的技術僧侶，被困在這個設施中已經 6 個月"
+    motive: "回收設施中的 STC 碎片——這是他畢生的使命"
+    bottom_line: "絕不損壞古代科技"
+    initial_attitude: 0
+    attributes:
+      faith: 2
+      physique: 3
+      mind: 5
+      skill: 5
+      fate: 1
+    trained_skills: ["技術（專家 +20）", "學識（帝國）"]
+    equipment: ["電擊棒(1d4+3 能量)", "重型甲殼甲(護甲減免（AR） 4)", "機械教診斷器"]
+    special_ability:
+      name: "機魂溝通"
+      desc: "可與機械設施互動而不觸發防禦系統。科技祝福：每劇本 1 次，為一件武器提供 +10 命中直到戰鬥結束"
+
+internal_seduction_trigger:
+  timing: "當靈族提出交易——水晶換幫助修船時"
+  whisper: "帝皇的聲音：異形不可信。拒絕他。你可以自己找到零件——即使要多花幾週。良知/生存的 voices：你被困在這顆星球上。你需要那艘船。接受他的幫助——為了你自己，為了你的戰友。"
+
+key_checks:
+  - scene: "與靈族談判"
+    check: "無檢定——RP 抉擇"
+    tn_adjustment: 0
+    success: "達成交易——獲得零件和捷徑"
+    failure: "靈族只給了一半資訊——你需要自己探索其餘部分"
+  - scene: "穿越防禦系統"
+    check: "技術（標準）或歐米克隆協助"
+    tn_adjustment: 0
+    success: "安全通過或禁用防禦"
+    failure: "觸發防禦——戰鬥中劣勢"
+
+encounters:
+  - name: "設施入口"
+    enemies: "自動化防禦系統 ×2（機傀）"
+    tactic: "歐米克隆可以嘗試繞過。如果不成功，需要戰鬥"
+  - name: "核心 chamber"
+    enemies: "被封鎖的變異體 ×1 + 靈族守護者（盟友或中立）"
+    tactic: "靈族守護者可能選擇協助——或趁亂奪走零件"
+
+map_ref: "maps/map08_thanos_outpost"

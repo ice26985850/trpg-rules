@@ -1,0 +1,147 @@
+# 崩壞：星穹鐵道 TRPG — 戰役劇本集（多人玩家）
+# 對應 .md：戰役.md（五弧戰役，1 GM + 3-5 玩家）
+# 結構化摘要：場景 / NPC / 事件 / 難度 / 流程 / 分支
+
+campaign:
+  title: 星核共鳴
+  type: 多人玩家戰役
+  players: "1 GM + 3-5 玩家"
+  level_range: "Lv 1-20"
+  sessions_total: "25-30 次（每弧 4-6 次）"
+  premise: >
+    一道異常的星核波動橫掃銀河，所有已知星核同時進入「共鳴狀態」。
+    星穹列車收到來自「鏽冠」的求救信號，星核共鳴的真相指向被遺忘的星神
+    「湮滅之音」，其最後碎片正從虛無中甦醒。玩家從列車新乘客起步，
+    穿越鏽冠、潛入深淵、在陣營夾縫中做出選擇，最終面對湮滅之音的降臨。
+ 贯穿NPC:
+    - name: 姬子
+      role: 導師 / 任務佈置者
+      first_arc: 第一弧
+    - name: 瓦爾特
+      role: 知識來源 / 危機支援
+      first_arc: 第一弧
+    - name: 銀狼
+      role: 亦敵亦友 / 情報掮客
+      first_arc: 第一弧
+    - name: 鏽蝕先知
+      role: 關鍵抉擇對象
+      first_arc: 第二弧
+    - name: 虛數回聲
+      role: 終極反派（多形態）
+      first_arc: 第三弧
+
+arcs:
+  - id: 1
+    name: 星軌初啼
+    level: "1-4"
+    sessions: "4-5"
+    scenes: 貝洛伯格
+    theme: 集結與信任
+    suggested_paths: "至少 1 存護/豐饒，其餘任意"
+    chapters:
+      - act: 第一幕
+        title: 列車上的陌生人
+        level: 1
+        scene: 星穹列車觀景車廂
+        npcs: [姬子, 銀狼]
+        checks:
+          - dc: 12
+            skill: 察覺
+            detail: 注意到銀狼通訊背景的量子雜訊（暗示被追蹤）
+          - dc: 13
+            skill: 洞察
+            detail: 判斷銀狼提案真偽（部分真——交易是對玩家的測試）
+        reward: 列車補給（基礎生存套件 ×1）
+      - act: 第二幕
+        title: 冰封之城的裂痕
+        level: "1-2"
+        scene: 貝洛伯格下層區廢棄礦坑
+        encounters:
+          - name: 礦坑入口
+            enemies: "裂界虛影 ×3"
+            cr: "1/2"
+            difficulty: 簡單
+          - name: 礦道中段
+            enemies: "冰結守衛 ×2"
+            cr: "1"
+            difficulty: 普通
+          - name: 裂界裂隙前
+            enemies: "霜脈守護者（菁英）"
+            cr: "2"
+            difficulty: 困難
+        noncombat:
+          - dc: 13
+            skill: 工程
+            detail: 修復礦坑升降機
+          - dc: 12
+            skill: 生存
+            detail: 追蹤裂界生物路徑找捷徑
+        reward: "150 經驗值（XP）/人；銀狼提供鏽冠初始情報"
+      - act: 第三幕
+        title: 銀狼的試煉
+        level: "2-3"
+        scene: 貝洛伯格上層區廢棄天文台
+        encounters:
+          - name: 前哨外圍
+            enemies: "掠奪者 ×2"
+            cr: "3"
+          - name: 天文台內部
+            enemies: "掠奪者 + 虛卒哨兵 ×2"
+            cr: "3+1×2"
+          - name: 觀測室
+            enemies: "掠奪者隊長（菁英）"
+            cr: "4"
+        branch: >
+          發現反物質軍團通訊提及「湮滅之音」。是否告訴銀狼？是否告訴列車？
+          影響後續情報走向。
+        reward: "300 經驗值（XP）；星核共鳴數據晶片；Lv 3"
+      - act: 第四幕
+        title: 星光下的誓言
+        level: "3-4"
+        scene: 星穹列車觀景車廂
+        npcs: [姬子, 瓦爾特, 銀狼]
+        branch: 出發前短休角色互動時機
+        reward: "里程碑 Lv 4；3 星光錐任選 ×1；200 信用點"
+    reward_summary:
+      Lv1: 身份初始裝備 / 200+1d4×50 信用點
+      Lv2: +100 信用點
+      Lv3: 星核共鳴數據晶片
+      Lv4: 3 星光錐任選 ×1 / +200 信用點
+
+  - id: 2
+    name: 鏽冠之心
+    level: "5-8"
+    sessions: "5-6"
+    scenes: 鏽冠（原創星球）
+    theme: 犧牲與選擇
+    keyNPC: 鏽蝕先知
+    branch: 與鏽蝕先知關鍵抉擇，影響鏽冠命運與後續陣營關係
+
+  - id: 3
+    name: 深淵回聲
+    level: "9-12"
+    sessions: "5-6"
+    scenes: 深淵資料墳場 / 仙舟
+    theme: 真相與代價
+    antagonist: 虛數回聲（第一形態）
+    branch: 第三弧玩家選擇影響第四弧故事背景
+
+  - id: 4
+    name: 命途交錯
+    level: "13-16"
+    sessions: "5-6"
+    scenes: 多星球穿梭
+    theme: 陣營與背叛
+    branch: 陣營選邊（IPC / 仙舟 / 愚者等）影響支援與敵對
+    key_mechanic: 模組選單（依玩家陣營選擇分支）
+
+  - id: 5
+    name: 終焉降臨
+    level: "17-20"
+    sessions: "5-6"
+    scenes: 虛空裂界
+    theme: 終結與新生
+    finale_boss: 湮滅之音·扭曲形態（CR 25，四階段）
+    branch: >
+      中和儀式（酒館挑戰 DC 18+階段）或融合路線（耗全部資源＋10 永久生命值（HP） 接管跳過階段四）；
+      決定湮滅之音的命運。

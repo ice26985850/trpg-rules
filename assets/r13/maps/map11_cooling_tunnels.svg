@@ -1,0 +1,50 @@
+<svg viewBox="0 0 880 680" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Microsoft JhengHei, sans-serif">
+<rect width="880" height="680" fill="#f7f4ec"/>
+<rect x="52" y="52" width="344" height="540" rx="10" fill="rgba(180,160,120,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="60" y="70" font-size="11pt" fill="#7a6f55">中巢管線區</text>
+<rect x="588" y="266" width="112" height="362" rx="10" fill="rgba(180,100,60,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="596" y="284" font-size="11pt" fill="#7a6f55">教眾前哨站</text>
+<line x1="358" y1="447" x2="126" y2="554" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="358" y1="447" x2="626" y2="590" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="126" y1="554" x2="90" y2="269" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="626" y1="590" x2="661" y2="304" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="90" y1="269" x2="90" y2="90" stroke="#3a7" stroke-width="2" stroke-dasharray="6,4"/>
+<polygon points="90,173 84,183 96,183" fill="#3a7"/>
+<line x1="358" y1="447" x2="358" y2="554" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<circle cx="358" cy="447" r="30" fill="#6fae6f" stroke="#333" stroke-width="2.2"/>
+<text x="358" y="445" text-anchor="middle" font-size="10.5pt" fill="#222">入口通道</text>
+<circle cx="126" cy="554" r="30" fill="#cdbg9a" stroke="#333" stroke-width="2.2"/>
+<text x="126" y="552" text-anchor="middle" font-size="10.5pt" fill="#222">巡邏路線區</text>
+<text x="126" y="568" text-anchor="middle" font-size="8.5pt" fill="#a33">混沌信徒×3 巡邏中</text>
+<circle cx="626" cy="590" r="30" fill="#cdbg9a" stroke="#a33" stroke-width="2.2"/>
+<text x="626" y="588" text-anchor="middle" font-size="10.5pt" fill="#222">據點入口</text>
+<text x="626" y="604" text-anchor="middle" font-size="8.5pt" fill="#a33">陷阱</text>
+<text x="626" y="632" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="661" cy="304" r="30" fill="#c04040" stroke="#a33" stroke-width="2.2"/>
+<text x="661" y="302" text-anchor="middle" font-size="10.5pt" fill="#222">Boss 區域</text>
+<text x="661" y="318" text-anchor="middle" font-size="8.5pt" fill="#a33">侍僧瓦拉克 + 信徒×2</text>
+<text x="661" y="346" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="90" cy="269" r="30" fill="#9aa0a6" stroke="#333" stroke-width="2.2"/>
+<text x="90" y="267" text-anchor="middle" font-size="10.5pt" fill="#222">集結區</text>
+<circle cx="90" cy="90" r="30" fill="#5b9bd5" stroke="#a33" stroke-width="2.2"/>
+<text x="90" y="88" text-anchor="middle" font-size="10.5pt" fill="#222">撤離點</text>
+<text x="90" y="132" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="358" cy="554" r="30" fill="#e08a2b" stroke="#333" stroke-width="2.2"/>
+<text x="358" y="552" text-anchor="middle" font-size="10.5pt" fill="#222">結構不穩</text>
+<text x="358" y="568" text-anchor="middle" font-size="8.5pt" fill="#a33">爆炸可能觸發塌陷</text>
+<rect x="705" y="550" width="160" height="120" rx="6" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="715" y="570" font-size="10pt" font-weight="bold" fill="#333">圖例</text>
+<circle cx="723" cy="586" r="8" fill="#6fae6f" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="590" font-size="9.5pt" fill="#333">入口</text>
+<circle cx="723" cy="601" r="8" fill="#5b9bd5" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="605" font-size="9.5pt" fill="#333">撤離</text>
+<circle cx="723" cy="616" r="8" fill="#c04040" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="620" font-size="9.5pt" fill="#333">Boss</text>
+<circle cx="723" cy="631" r="8" fill="#e08a2b" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="635" font-size="9.5pt" fill="#333">環境危害</text>
+<circle cx="723" cy="646" r="8" fill="#9aa0a6" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="650" font-size="9.5pt" fill="#333">集結區</text>
+<circle cx="723" cy="661" r="8" fill="#cdbf9a" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="665" font-size="9.5pt" fill="#333">區域</text>
+<g transform="translate(825,55)"><circle r="26" fill="#f5f0e0" stroke="#333" stroke-width="2"/><text x="0" y="-12" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#333">北</text><line x1="0" y1="-22" x2="0" y2="-8" stroke="#c00" stroke-width="2"/></g>
+</svg>

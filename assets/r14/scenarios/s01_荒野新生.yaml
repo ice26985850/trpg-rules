@@ -1,0 +1,233 @@
+name: "荒野新生"
+description: "一支不足百人的隊伍抵達埃爾登大陸邊緣，在荒野中建立第一個定居點。從零開始，經歷第一個冬天、第一次外交、第一場衝突——最終從部落成長為城邦。"
+difficulty: 1
+level_range:
+  era_start: "部落時代"
+  era_end: "城邦時代"
+turns_estimated: 40
+years_in_game: 10
+player_count:
+  min: 1
+  max: 1
+map_ref: "maps/S1_荒野新生_起始區域"
+initial_map: "maps/S1_荒野新生_起始區域.yaml"
+
+starting_conditions:
+  population: 50
+  attributes:
+    base: 10
+    free_points: 30
+
+phases:
+  - id: 1
+    name: "登陸"
+    turns: "1-5"
+    description: "抵達新大陸，選擇營地位置，建立第一個棲身之所"
+    events:
+      - turn: 1
+        name: "選擇營地"
+        type: "exploration"
+        description: "在河邊（資源豐富但洪水風險）或高地（易守難攻但資源少）之間選擇營地位置"
+        choices:
+          - option: "河邊"
+            effect: "資源(RES)+5，每年春季有20%機率發生洪水"
+          - option: "高地"
+            effect: "軍事(MIL)+5，資源(RES)-3"
+      - turn: 2
+        name: "廢棄獵人小屋"
+        type: "exploration"
+        description: "發現一座廢棄的獵人小屋，內有少量補給物資"
+        reward: "獲得 30 糧食 + 5 木材"
+      - turn: 3
+        name: "第一次接觸"
+        type: "diplomacy"
+        description: "原住民獵人觀察營地，是否主動接觸？"
+        skill_check: "民心(MOR)，DC 10"
+      - turn: 4
+        name: "森林怪聲"
+        type: "threat"
+        description: "夜間聽到大型生物的吼叫聲——可能是熊或更危險的生物"
+        skill_check: "軍事(MIL)，DC 12"
+      - turn: 5
+        name: "第一座建築落成"
+        type: "milestone"
+        description: "第一座永久建築建成，營地正式誕生"
+        effect: "民心(MOR)+5"
+
+  - id: 2
+    name: "第一個冬天"
+    turns: "6-10"
+    description: "度過第一個嚴冬的生存考驗"
+    events:
+      - turn: 6
+        name: "秋收不足"
+        type: "resource_pressure"
+        description: "秋天的收穫低於預期，糧食儲備緊張"
+      - turn: 7
+        name: "難民求援"
+        type: "moral_choice"
+        description: "一群難民請求加入營地（+10人口，糧食壓力增大）"
+        choices:
+          - option: "接納"
+            effect: "人口(POP)+10，民心(MOR)+5，糧食消耗增加"
+          - option: "拒絕"
+            effect: "民心(MOR)-5，但糧食消耗不變"
+      - turn: 8
+        name: "暴風雪"
+        type: "crisis"
+        description: "暴風雪來襲，建設完全停擺"
+        crisis_type: "NAT-06"
+        effect: "建設效率歸零，糧食消耗x1.5"
+      - turn: 9
+        name: "種子儲備"
+        type: "moral_choice"
+        description: "糧食見底，是否吃掉明年播種用的種子？"
+        choices:
+          - option: "吃掉種子"
+            effect: "存活但明年糧食產量減半"
+          - option: "忍飢挨餓"
+            effect: "民心(MOR)-10，但明年產量正常"
+      - turn: 10
+        name: "春天降臨"
+        type: "milestone"
+        description: "冬天結束，清點傷亡"
+        effect: "若有死亡則民心(MOR)-10"
+
+  - id: 3
+    name: "擴張期"
+    turns: "11-25"
+    description: "營地穩定成長，開始與外界接觸"
+    events:
+      - turn: 11
+        name: "發現資源點"
+        type: "resource_discovery"
+        description: "附近發現豐富的資源點（依地形決定類型）"
+      - turn: 13
+        name: "神秘商人"
+        type: "diplomacy"
+        description: "自稱商人的陌生人帶著貨物出現"
+      - turn: 15
+        name: "新生兒"
+        type: "milestone"
+        description: "營地誕生第一批新生兒——人口自然增長開始"
+        effect: "人口(POP)+3，民心(MOR)+5"
+      - turn: 17
+        name: "古老神殿"
+        type: "exploration"
+        description: "發現上古神殿遺跡——獻祭可獲祝福"
+        choices:
+          - option: "獻上祭品"
+            effect: "獲得隨機祝福（1d6: 1-2: 資源+5, 3-4: 科技+5, 5: 軍事+5, 6: 全屬性+2）"
+          - option: "研究遺跡"
+            effect: "科技(TEC)+5，研究點數(RP)+20"
+      - turn: 20
+        name: "邊境衝突"
+        type: "diplomatic_crisis"
+        description: "鄰國巡邏隊越界"
+        crisis_type: "DIP-01"
+      - turn: 23
+        name: "內部矛盾"
+        type: "internal_event"
+        description: "兩個派系因資源分配產生矛盾"
+        skill_check: "民心(MOR)，DC 14"
+      - turn: 25
+        name: "領導權挑戰"
+        type: "internal_crisis"
+        description: "一位有魅力的年輕人挑戰你的領導地位"
+        crisis_type: "INT-04"
+
+  - id: 4
+    name: "鄰居的陰影"
+    turns: "26-35"
+    description: "鄰國從旁觀者變為積極參與者"
+    events:
+      - turn: 26
+        name: "鄰國大使"
+        type: "diplomacy"
+        description: "鄰國正式派遣大使建立關係"
+      - turn: 28
+        name: "邊界標記"
+        type: "territorial_dispute"
+        description: "鄰國在你的領土附近設立邊界標記"
+        choices:
+          - option: "默認"
+            effect: "關係不變，失去部分領土"
+          - option: "抗議"
+            effect: "關係-10，但保住領土"
+      - turn: 30
+        name: "叛逃者"
+        type: "moral_choice"
+        description: "鄰國的叛逃者請求庇護"
+        choices:
+          - option: "收留"
+            effect: "關係-30，獲得情報"
+          - option: "拒絕並遣返"
+            effect: "關係+10"
+      - turn: 32
+        name: "疫情"
+        type: "crisis"
+        description: "全營地疫情爆發"
+        crisis_type: "NAT-04"
+      - turn: 35
+        name: "外交峰會"
+        type: "diplomacy"
+        description: "第一次正式外交峰會，鄰國提出條件"
+
+  - id: 5
+    name: "成為城邦"
+    turns: "36-40"
+    description: "最後衝刺——人口突破500，建立城邦"
+    events:
+      - turn: 36
+        name: "人口里程碑"
+        type: "milestone"
+        description: "人口突破400——營地已變成真正的聚落"
+      - turn: 37
+        name: "雙重商隊"
+        type: "diplomacy"
+        description: "兩個不同方向的商隊同時抵達——只能優先招待一個"
+      - turn: 38
+        name: "強盜威脅"
+        type: "military"
+        description: "附近出現強盜團夥，襲擊商隊"
+        crisis_type: "combat"
+      - turn: 39
+        name: "最後準備"
+        type: "construction"
+        description: "滿足城邦時代最後條件"
+      - turn: 40
+        name: "城邦成立"
+        type: "ending"
+        description: "聚落正式成為城邦——周圍勢力都派來使者"
+
+endings:
+  success:
+    condition: "人口(POP) > 250 且進入城邦時代"
+    reward: "全屬性+5，解鎖傳奇事蹟「第一塊基石」"
+  partial:
+    condition: "人口(POP) > 100 但未達城邦時代"
+    reward: "人口(POP)+10，可繼續自由模式"
+  failure:
+    condition: "人口(POP) = 0 或 民心(MOR) = 0"
+    remedy: "使用繼承機制——扮演倖存者重建（保留50%屬性）"
+
+key_npcs:
+  - name: "老卡爾"
+    role: "營地最年長者/農業顧問"
+    personality: "睿智、沉穩"
+    relationship: "忠誠導師"
+  - name: "瑪莎"
+    role: "年輕獵人"
+    personality: "勇敢、衝動"
+    relationship: "忠誠但需要引導"
+  - name: "商人維克多"
+    role: "神秘旅行商人"
+    personality: "精明、神秘"
+    relationship: "實用主義盟友"
+
+gm_notes:
+  - "前5回合為教學關卡，降低DC 2"
+  - "第一個冬天應讓玩家感受到真實壓力"
+  - "讓NPC有名字和故事，增強情感連結"
+  - "每個重大抉擇都應有明確後果"
+  - "S1引入的角色將在後續劇本回歸"

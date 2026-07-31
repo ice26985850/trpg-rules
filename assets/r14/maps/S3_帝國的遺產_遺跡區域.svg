@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#F5F0E1"/>
+<text x="400.0" y="30" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="20" font-weight="bold" fill="#2F5496">上古遺跡——虛空之塔</text>
+<text x="400.0" y="52" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="12" fill="#666">上一個文明留下的城市遺跡，最底層封印著不該被打開的東西</text>
+<circle cx="400.0" cy="400.0" r="228.11388300841898" fill="#795548" opacity="0.12"/>
+<text x="400.0" y="186.88611699158102" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#795548" opacity="0.5">遺跡上層</text>
+<circle cx="400.0" cy="200.0" r="120.0" fill="#F44336" opacity="0.12"/>
+<text x="400.0" y="95.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#F44336" opacity="0.5">遺跡深層（危險）</text>
+<circle cx="400.0" cy="490.0" r="320.1999200639361" fill="#FF9800" opacity="0.12"/>
+<text x="400.0" y="184.80007993606392" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#FF9800" opacity="0.5">外部營地</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#888"/></marker></defs>
+<line x1="400" y1="500" x2="400" y2="400" stroke="#888" stroke-width="2" stroke-dasharray="none" marker-end="url(#arrow)"/>
+<text x="400.0" y="442.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">主廊道</text>
+<line x1="400" y1="400" x2="250" y2="350" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="325.0" y="367.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">西翼通道</text>
+<line x1="400" y1="400" x2="550" y2="350" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="475.0" y="367.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">東翼通道</text>
+<line x1="400" y1="400" x2="400" y2="250" stroke="#888" stroke-width="2" stroke-dasharray="none" marker-end="url(#arrow)"/>
+<text x="400.0" y="317.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">下層階梯</text>
+<line x1="400" y1="250" x2="400" y2="150" stroke="#888" stroke-width="2" stroke-dasharray="none" marker-end="url(#arrow)"/>
+<text x="400.0" y="192.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">最終通道（需擊敗守護者）</text>
+<line x1="400" y1="500" x2="150" y2="500" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<line x1="400" y1="500" x2="650" y2="480" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<rect x="372" y="484" width="56" height="32" rx="6" fill="#795548" stroke="#333" stroke-width="1.5"/>
+<text x="400" y="504" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">遺跡入口</text>
+<polygon points="400,378 428,416 372,416" fill="#9E9E9E" stroke="#999" stroke-dasharray="3,2" stroke-width="2"/>
+<text x="400" y="404" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">記錄大廳</text>
+<text x="438" y="390" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<rect x="220" y="332" width="60" height="36" rx="18" fill="#9E9E9E" stroke="#999" stroke-dasharray="3,2" stroke-width="2"/>
+<text x="250" y="354" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">能量核心室</text>
+<text x="288" y="340" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<polygon points="550,328 578,366 522,366" fill="#9E9E9E" stroke="#999" stroke-dasharray="3,2" stroke-width="2"/>
+<text x="550" y="354" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">武器研究室</text>
+<text x="588" y="340" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<rect x="370" y="135" width="60" height="30" rx="3" fill="#9E9E9E" stroke="#F44336" stroke-width="2" stroke-dasharray="4,2"/>
+<text x="400" y="154" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">封印之門</text>
+<text x="438" y="140" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<polygon points="400,228 428,266 372,266" fill="#9E9E9E" stroke="#999" stroke-dasharray="3,2" stroke-width="2"/>
+<text x="400" y="254" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">守護者密室</text>
+<text x="438" y="240" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<rect x="115" y="482" width="70" height="36" rx="8" fill="#FF9800" stroke="#333" stroke-width="2"/>
+<text x="150" y="504" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">鐵王冠考察隊</text>
+<rect x="615" y="462" width="70" height="36" rx="8" fill="#FF9800" stroke="#333" stroke-width="2"/>
+<text x="650" y="484" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">侏儒研究隊</text>
+<rect x="20" y="500" width="160" height="90" rx="5" fill="white" stroke="#CCC" opacity="0.9"/>
+<rect x="30" y="511" width="16" height="8" rx="2" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+<text x="52" y="517" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">已探索</text>
+<rect x="30" y="529" width="16" height="8" rx="2" fill="#9E9E9E" stroke="#333" stroke-width="1"/>
+<text x="52" y="535" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">未探索</text>
+<rect x="30" y="547" width="16" height="8" rx="2" fill="#607D8B" stroke="#333" stroke-width="1"/>
+<text x="52" y="553" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">遺跡</text>
+<rect x="30" y="565" width="16" height="8" rx="2" fill="#F44336" stroke="#333" stroke-width="1"/>
+<text x="52" y="571" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">邊境/危險</text>
+</svg>

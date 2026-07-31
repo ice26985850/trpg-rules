@@ -1,0 +1,52 @@
+# 特質（Traits）選擇
+# 總計 3 Trait Points (特質點數（TP）)，每個特質有對應 特質點數（TP） 成本
+
+traits:
+  - name: "適應性強"
+    tp_cost: 1
+    desc: "殖民成功率高 +10%"
+    attribute: "經濟力（ECO） +1"
+  - name: "工業化"
+    tp_cost: 1
+    desc: "建造成本 -10%"
+    attribute: "經濟力（ECO） +1"
+  - name: "藝術家"
+    tp_cost: 1
+    desc: "穩定度 +5%"
+    attribute: "凝聚力（UNI） +1"
+  - name: "生物改造"
+    tp_cost: 2
+    desc: "醫療進步，壽命延長"
+    attributes: "科研力（SCI） +1, 凝聚力（UNI） +1"
+  - name: "生態主義者"
+    tp_cost: 1
+    desc: "宜居星球產出 +15%"
+    attribute: "經濟力（ECO） +1"
+  - name: "強壯的"
+    tp_cost: 1
+    desc: "初始艦隊 船體值（HP） +10%"
+    attribute: "軍事力（MIL） +1"
+  - name: "好奇的"
+    tp_cost: 1
+    desc: "探測範圍 +1 星系"
+    attribute: "科研力（SCI） +1"
+  - name: "哲學家國王"
+    tp_cost: 2
+    desc: "傳統解鎖 難度等級（DC） -1"
+    attributes: "凝聚力（UNI） +1, 外交力（DIP） +1"
+  - name: "戰士文化"
+    tp_cost: 1
+    desc: "戰鬥傷害 +10%"
+    attribute: "軍事力（MIL） +1"
+  - name: "貿易傳統"
+    tp_cost: 1
+    desc: "能源（EC） 產出 +15%"
+    attribute: "經濟力（ECO） +1"
+  - name: "精神領袖"
+    tp_cost: 2
+    desc: "凝聚力（UNI） 檢定永遠視為大成功"
+    attributes: "凝聚力（UNI） +2"
+  - name: "太空天生"
+    tp_cost: 1
+    desc: "無重力適應，艦隊速度 +10%"
+    attribute: "軍事力（MIL） +1"

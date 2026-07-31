@@ -1,0 +1,102 @@
+name: "黑色碼頭的單人禱告"
+difficulty: "終局級 (挑戰等級（CR） 3-4)"
+mode: "凡人 · 單人"
+judge: "維克多·黑（墮落）"
+target_region: "卡爾卡松，沉默之塔底層 → 黑色碼頭"
+recommended_attributes: "5"
+
+opening_description: >
+  最後一個任務。維克多·黑親自選擇了這個「終極考驗」：前往沉默之塔底層的廢棄監獄區域，
+  清除一個長期被遺忘的混沌汙染。他給了你一个助手——一個被困在底層的囚犯，已經在那裡活了 47 年。
+  沉默之塔的底層——永久等待層——已被廢棄 200 年。沒有補給，沒有支援。
+  如果你們活下來，證明你們值得被救贖。
+  如果你們死了——帝國不會注意到。
+
+surface_goal: >
+  清除沉默之塔底層的混沌汙染。
+
+hidden_goal: >
+  維克多已被混沌汙染。這個任務是最終測試——在任務中存活並完成的人，有資格成為他的追隨者。
+  底層有個被封印 200 年的亞空間裂縫。封印正在失效。
+
+known_threats:
+  - "沉默之塔底層——永久等待層——已被廢棄 200 年"
+  - "可能仍有東西在下面"
+  - "沒有任何補給或支援"
+
+hidden_threats:
+  - "維克多是墮落的審判官，他在測試誰有潛力和混沌合作"
+  - "有其他被困在底層的贖罪者——有些保持理智，有些已被混沌汙染"
+  - "零補給——只能用你身上剩下的東西"
+
+resources:
+  medical_pack: 0
+  holy_water: 0
+  holy_oil: 0
+  flare: 0
+  food_water_days: 0
+  ammo_magazines: 0
+
+internal_seduction_trigger:
+  timing: "在黑色碼頭，維克多·黑私下對你說——而艾琳正在旁邊等待"
+  whisper: "你完成了任務。你證明了自己的價值。現在——接受我的禮物。你不再需要為帝國服務。你可以自由了。至於艾琳？她等了 47 年。再等 47 年也沒關係。"
+
+companions:
+  - name: "艾琳"
+    role: "被遺忘者，被困 47 年的前贖罪者"
+    backstory: "她在沉默之塔底層活了 47 年，靠信仰和對自由的渴望支撐下去"
+    motive: "離開這裡——回到外面的世界"
+    bottom_line: "絕不讓任何人經歷她所經歷的"
+    initial_attitude: 2
+    attributes:
+      faith: 5
+      physique: 2
+      mind: 4
+      skill: 2
+      fate: 3
+    trained_skills: ["佈道", "警覺", "調查"]
+    equipment: ["簡陋武器", "無護甲", "多年保存的地圖碎片"]
+    special_ability:
+      name: " survived 200 年的沉默"
+      desc: "信仰 5——在絕望中反而更加堅定。提供地圖和情報。戰鬥中可為玩家提供信仰加持（一次性的佈道優勢）"
+
+key_checks:
+  - scene: "在廢墟中尋找艾琳"
+    check: "調查（困難）"
+    tn_adjustment: -20
+    success: "找到並獲得幫助"
+    failure: "錯過她"
+  - scene: "面對底層的瘋狂倖存者"
+    check: "佈道（極限）"
+    tn_adjustment: -40
+    success: "喚醒他殘存的人性"
+    failure: "只能戰鬥"
+  - scene: "封印亞空間裂縫"
+    check: "信仰（極限）"
+    tn_adjustment: -40
+    success: "裂縫被淨化，腐化 -5"
+    failure: "裂縫擴大，亞空間之影 ×2 出現"
+
+encounters:
+  - name: "底層廢墟"
+    enemies: "變異潛伏者 ×2 + 亞空間之影 ×1"
+    tactic: "黑暗中的多重威脅"
+  - name: "瘋狂倖存者"
+    enemies: "被混沌侵蝕的前贖罪者（變異體模板）"
+    tactic: "若被說服→自毀。若戰鬥→嘗試說服玩家"
+  - name: "裂縫封印（若失敗）"
+    enemies: "亞空間之影 ×2"
+    tactic: "裂縫中不斷湧出"
+  - name: "黑色碼頭（終局）"
+    enemies: "審判庭突擊兵 ×2 + 侍僧級混沌信徒 ×2"
+    tactic: "維克多安排的滅口。艾琳會並肩作戰"
+
+endings:
+  - condition: "拒絕維克多 + 存活"
+    result: "如果艾琳成功離開→她的證詞可以讓其他審判官發現維克多的背叛。角色獲得真正的自由"
+  - condition: "拒絕維克多 + 戰死"
+    result: "光榮結局。你們的名字不會被記住——但你們的選擇證明了帝皇的信仰是真實的"
+  - condition: "接受維克多的禮物"
+    result: "角色變為混沌追隨者。GM 接管角色"
+
+map_ref: "maps/map05_dark_tower"

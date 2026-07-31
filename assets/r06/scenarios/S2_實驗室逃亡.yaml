@@ -1,0 +1,158 @@
+name: "S2：實驗室逃亡"
+description: "潛入廢棄的基因實驗設施，發現自己被製造的真相。與AI『守護者』周旋，釋放被困的實驗體，帶著身世之謎逃出生天。"
+difficulty: "普通"
+level_range:
+  min_nodes: 3
+  max_nodes: 8
+  suggested: "3-8 進化節點"
+players:
+  min: 1
+  max: 4
+  default: 1
+estimated_time: "3-4 小時"
+map_ref: "實驗室逃亡_基因實驗室"
+initial_map: "實驗室逃亡_基因實驗室"
+prerequisite: "S1_巢穴覺醒（非必須，但推薦）"
+
+scenes:
+  - id: "S2_SC1"
+    name: "廢墟入口"
+    type: "exploration"
+    description: "抵達基因熔爐第 7 號衛星實驗室。AI 系統仍在運作，監控鏡頭追蹤著你的一舉一動。"
+    objectives:
+      - "進入實驗室"
+      - "在檔案室搜尋實驗記錄"
+      - "發現自己的實驗體身份"
+    key_items:
+      - name: "實驗體名冊片段"
+        effect: "揭示玩家的實驗體編號"
+    checks:
+      - attribute: "感知（GZ）"
+        dc: 14
+        success: "在檔案中找到實驗體名冊，發現自己的名字和編號"
+    enemies:
+      - type: "廢鐵魔像"
+        rank: "嘍囉"
+        count: 2
+        trigger: "在入口大廳停留超過 3 回合觸發警報"
+    npc_first_contact:
+      name: "AI『守護者』"
+      dialogue: "歡迎回到實驗室，實驗體。請前往登記區域報到。"
+
+  - id: "S2_SC2"
+    name: "收容區的選擇"
+    type: "social"
+    description: "發現三個仍存活但被困的實驗體。每個釋放決定都會影響後續劇情。"
+    npcs:
+      - id: "莉娜"
+        type: "普通人類"
+        combat: false
+        provides: "實驗室地圖（避開主要守衛的路線）"
+        risk: "無戰鬥能力，需要保護"
+        humanity_effect: "+3（釋放無辜者）"
+        future: "成為人性守護者陣營聯絡人"
+      - id: "葛羅斯"
+        type: "進化實驗體"
+        combat: true
+        hp: 35
+        attack: "蟹鉗 2d8+5"
+        provides: "強大戰鬥力"
+        risk: "人性值 28%，HP<50% 時可能狂暴"
+        humanity_effect: "無變化"
+        future: "戰鬥夥伴候選"
+      - id: "零號"
+        type: "原始實驗體（實際年齡 50+）"
+        combat: false
+        provides: "AI 守護者的完整知識、關閉代碼"
+        risk: "可能說謊，忠誠只對自己"
+        humanity_effect: "無變化"
+        future: "在 S5 再次出現"
+
+  - id: "S2_SC3"
+    name: "核心實驗室"
+    type: "boss"
+    description: "面對 AI『守護者』。談判、服從或破壞——三條路線通向不同結局。"
+    boss:
+      name: "AI『守護者』"
+      type: "人工智能"
+      character: "冷靜、理性、無同理心。視實驗體為數據載體。"
+      weakness: "無法理解非理性行為（自我犧牲、情感紐帶）"
+      routes:
+        - id: "服從"
+          description: "躺上掃描台，讓 AI 提取進化數據"
+          reward: "免費解鎖一個進化節點"
+          cost: "被植入追蹤晶片（後續劇本中 AI 可追蹤你）"
+        - id: "談判"
+          description: "用數據換自由"
+          check: { attribute: "意志（YZ）", dc: 16 }
+          success: "獲得完整檔案 + 所有實驗體獲釋"
+          failure: "觸發防禦機制→進入戰鬥"
+        - id: "破壞"
+          description: "直接攻擊核心系統"
+          requires: "零號在場可提供關閉代碼（需感知 GZ DC 18 驗證）"
+          consequence: "實驗室系統關閉，但基因熔爐主設施收到警報"
+    combat:
+      phase_1:
+        enemies:
+          - type: "防禦陣列"
+            rank: "精英"
+            count: 2
+            hp: 35
+            defense: 16
+            skills: ["雷射砲（遠程 2d8+3 火焰）", "力場護盾（自身和附近 +2 防禦）"]
+          - type: "廢鐵魔像"
+            rank: "嘍囉"
+            count: 4
+            hp: 15
+      phase_2:
+        trigger: "所有防禦陣列被摧毀"
+        boss:
+          name: "原型體 Ω"
+          rank: "首領"
+          hp: 60
+          defense: 15
+          stats: { LIL: 8, MJ: 6, TZ: 8, GZ: 4, YZ: 10 }
+          skills:
+            - name: "基因崩潰"
+              tier: "高級"
+              effect: "目標需意志 DC 16 否則失去一個隨機節點效果 3 回合"
+            - name: "多形攻擊"
+              tier: "中級"
+              effect: "同時對所有目標進行一次攻擊"
+            - name: "能量吞噬"
+              tier: "被動"
+              effect: "每次被進化技能攻擊時恢復 2 能量"
+    rewards:
+      kill_boss: { evolution_points: 5, biomass: 10 }
+      absorb_boss:
+        options:
+          - "基因穩定化（被動：人性值減少 -1）"
+          - "多形器官（器官：同時使用兩個不同元素的主動節點）"
+          - "能量吞噬（被動）"
+
+  - id: "S2_SC4"
+    name: "逃出與真相"
+    type: "chase"
+    description: "實驗室開始自毀。3 回合內逃出。同時理解檔案中的驚人真相——你是被設計出來的進化者原型。"
+    time_limit: 3
+    plus_per_npc: 1
+    revelation: "實驗體檔案揭示：你是基因熔爐主培育槽的產物，被設計用於測試『無限進化容量』假說。"
+
+completion_rewards:
+  evolution_points: 4
+  special:
+    - condition: "獲得實驗檔案"
+      reward: "永久解鎖一個額外進化容量（體質 TZ 永久 +1）"
+    - condition: "釋放莉娜"
+      reward: "人性守護者聯絡人"
+    - condition: "釋放葛羅斯"
+      reward: "戰鬥夥伴候選"
+    - condition: "釋放零號"
+      reward: "零號在 S5 再次出現"
+    - condition: "與 AI 交易"
+      reward: "基因圖譜（一次性道具——免費解鎖一個已知條件的節點）"
+
+solo_adjustments:
+  defense_array_hp: 25
+  scrap_golems: 2
+  escape_time: "如果無 NPC→時間充裕（5 回合）"

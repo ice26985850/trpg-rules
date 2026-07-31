@@ -1,0 +1,72 @@
+# 天機·修真心 — 劇本結構化索引
+# 本檔與同名 .md 配套，供網站提供雙下載。
+
+scenario:
+  id: s01
+  key: 天機·修真心
+  title: 孤劍問天
+  type: 戰役
+  player_type: 單人
+  language: zh-Hant
+  summary: >
+    一名獨行修仙者從凡人到飛升的完整傳奇。玩家以孤身之姿闖入鴻蒙大陸，
+    結識摯友、拜入名師、對抗魔道，最終直面天道。
+  players:
+    min: 1
+    max: 1
+    gm: required
+  depends_on:
+    - 天機·修真心_玩家規則書.md
+    - 天機·修真心_GM規則書.md
+    - 單人規則.md（單人規則補充，隨規則書提供）
+  level_range:
+    start: 1
+    end: 36
+    realms:
+      - 煉氣
+      - 築基
+      - 金丹
+      - 元嬰
+      - 化神
+      - 煉虛
+      - 合體
+      - 大乘
+      - 渡劫
+  estimated_sessions: "18-30"
+  estimated_hours: "40-80"
+  npc_companions:
+    - 白靈
+    - 青玄
+    - 鐵岩
+  references:
+    - "→ §4.5（青石鎮）"
+    - "→ solo §（單人規則）"
+  acts:
+    - id: 1
+      title: 凡人入道·初識江湖
+      level_range: "Lv.1-3"
+      realms: [煉氣]
+      sessions: "2-3"
+      locations: [青石鎮, 黑松嶺]
+      key_npcs: [陳伯年, 藥不然, 白靈]
+    - id: 2
+      title: 拜師學藝·鋒芒初試
+      level_range: "Lv.4-6"
+      realms: [築基]
+      sessions: "3-4"
+    - id: 3
+      title: 金丹大成·魔蹤初現
+      level_range: "Lv.7-9"
+      realms: [金丹]
+      sessions: "3-5"
+    - id: 4
+      title: 元嬰問道·正邪交鋒
+      level_range: "Lv.10-18"
+      realms: [元嬰, 化神]
+      sessions: "5-8"
+    - id: 5
+      title: 飛升之路·天道抉擇
+      level_range: "Lv.19-36"
+      realms: [煉虛, 合體, 大乘, 渡劫]
+      sessions: "5-10"
+  tags: [修仙, 單人, 戰役, 成長, 正邪對抗]

@@ -1,0 +1,59 @@
+id: "MAP-02"
+title: "靜默社區小學（擴充）"
+region: "舊城區"
+danger: "★★☆☆☆"
+suitable_levels: [3]
+regions:
+  - name: "室外"
+    color: "#E8F5E9"
+  - name: "一樓"
+    color: "#E3F2FD"
+  - name: "二樓"
+    color: "#F3E5F5"
+nodes:
+  - id: "wall"
+    name: "北側圍牆入口"
+    region: "室外"
+    col: 0
+    row: 1
+    note: "圍牆倒塌段可攀爬；北側街道拾荒幫派 3 人"
+  - id: "yard"
+    name: "操場"
+    region: "室外"
+    col: 1
+    row: 1
+    note: "升旗台高處觀測點；足球門輕掩體"
+  - id: "clinic"
+    name: "保健室"
+    region: "一樓"
+    col: 1
+    row: 0
+    note: "藥櫃遺漏物資；急救包×2、腎上腺素×1（TN14）"
+  - id: "class"
+    name: "教室×2"
+    region: "一樓"
+    col: 2
+    row: 0
+    note: "教室殘留體×2（原教師）；門可外鎖（TN8）避戰；天花板鬆動"
+  - id: "f2"
+    name: "教學樓二樓"
+    region: "二樓"
+    col: 2
+    row: 1
+    note: "走廊連兩教室；窗可俯瞰操場（感知 TN11）"
+edges:
+  - from: "wall"
+    to: "yard"
+    label: "通道"
+  - from: "yard"
+    to: "clinic"
+    label: "東側門"
+  - from: "yard"
+    to: "class"
+    label: "西側門"
+  - from: "clinic"
+    to: "f2"
+    label: "樓梯"
+  - from: "class"
+    to: "f2"
+    label: "樓梯"

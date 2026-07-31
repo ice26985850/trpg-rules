@@ -1,0 +1,109 @@
+# 地圖：S3 帝國的遺產 — 上古遺跡區域
+name: "上古遺跡——虛空之塔"
+description: "上一個文明留下的城市遺跡，最底層封印著不該被打開的東西"
+
+nodes:
+  - id: "entrance"
+    label: "遺跡入口"
+    x: 400
+    y: 500
+    type: "landmark"
+    explored: true
+    description: "被藤蔓覆蓋的巨大石門，上面刻著不明文字"
+
+  - id: "hall_records"
+    label: "記錄大廳"
+    x: 400
+    y: 400
+    type: "ruins"
+    explored: false
+    description: "牆上刻滿了上古歷史，學者們夢寐以求的寶庫"
+
+  - id: "energy_core"
+    label: "能量核心室"
+    x: 250
+    y: 350
+    type: "resource"
+    explored: false
+    description: "仍然運轉中的上古能量核心——無盡能源的誘惑"
+
+  - id: "weapon_lab"
+    label: "武器研究室"
+    x: 550
+    y: 350
+    type: "ruins"
+    explored: false
+    description: "上古兵器設計圖和原型武器"
+
+  - id: "seal_gate"
+    label: "封印之門"
+    x: 400
+    y: 150
+    type: "border"
+    explored: false
+    description: "最深處的封印——門上銘文警告著開啟的後果"
+
+  - id: "guardian_chamber"
+    label: "守護者密室"
+    x: 400
+    y: 250
+    type: "ruins"
+    explored: false
+    description: "上古守護者仍在執行最後的指令——守衛封印之門"
+
+  - id: "rival_camp_a"
+    label: "鐵王冠考察隊"
+    x: 150
+    y: 500
+    type: "settlement"
+    explored: true
+    description: "鐵王冠王國派出的考察隊——他們想獨佔遺跡"
+
+  - id: "rival_camp_b"
+    label: "侏儒研究隊"
+    x: 650
+    y: 480
+    type: "settlement"
+    explored: true
+    description: "南方侏儒共和國的科學考察隊——主張共享研究成果"
+
+edges:
+  - from: "entrance"
+    to: "hall_records"
+    type: "path"
+    label: "主廊道"
+  - from: "hall_records"
+    to: "energy_core"
+    type: "trail"
+    label: "西翼通道"
+  - from: "hall_records"
+    to: "weapon_lab"
+    type: "trail"
+    label: "東翼通道"
+  - from: "hall_records"
+    to: "guardian_chamber"
+    type: "path"
+    label: "下層階梯"
+  - from: "guardian_chamber"
+    to: "seal_gate"
+    type: "path"
+    label: "最終通道（需擊敗守護者）"
+  - from: "entrance"
+    to: "rival_camp_a"
+    type: "trail"
+    label: ""
+  - from: "entrance"
+    to: "rival_camp_b"
+    type: "trail"
+    label: ""
+
+regions:
+  - name: "遺跡上層"
+    color: "#795548"
+    nodes: ["entrance", "hall_records", "energy_core", "weapon_lab"]
+  - name: "遺跡深層（危險）"
+    color: "#F44336"
+    nodes: ["guardian_chamber", "seal_gate"]
+  - name: "外部營地"
+    color: "#FF9800"
+    nodes: ["rival_camp_a", "rival_camp_b"]

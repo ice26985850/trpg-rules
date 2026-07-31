@@ -1,0 +1,66 @@
+# 絕地戰場 TRPG — 劇本 S3：沙漠軍事基地
+scenario:
+  id: S3
+  name: 沙漠軍事基地
+  type: multiplayer_squad
+  tier: 3
+  difficulty: 3
+  estimated_duration: 4-6小時
+  suggested_level: 5-6
+  description: >
+    Miramar——一望無際的沙漠。熱浪扭曲了地平線。廢棄的軍事基地裡
+    藏著全島最好的裝備——但八支小隊都知道這件事。你來這裡不是搜刮的，
+    你是來搶的。
+
+map:
+  name: Miramar 沙漠
+  size: 6公里 × 6公里
+  terrain: [沙漠(60%), 廢棄工業區(20%), 軍事基地(15%), 高速公路(5%)]
+  landmarks:
+    - { id: L1, name: 軍事基地, type: military, loot_level: 軍用（紫）, description: 全圖最好的物資——也是全圖最危險的地方 }
+    - { id: L2, name: 橋樑檢查站, type: tactical, loot_level: 普通（綠）, description: 連接東西兩區的唯一橋樑——伏擊隊鍾愛的地點 }
+    - { id: L3, name: 廢棄工廠, type: industrial, loot_level: 豐富（藍）, description: 多層工業建築，重型掩體 }
+    - { id: L4, name: 加油站小鎮, type: urban, loot_level: 普通（綠）, description: 沙漠公路旁的小鎮 }
+
+enemy_configuration:
+  total_squads: 8
+  squads:
+    - { type: 穩健隊, difficulty: ★★, count: 3 }
+    - { type: 突擊隊, difficulty: ★★★, count: 2 }
+    - { type: 伏擊隊, difficulty: ★★★, count: 2 }
+    - { type: 職業隊, difficulty: ★★★★, count: 1 }
+
+circle:
+  type: 邊緣漂移（偏南）
+  description: 每圈向南偏移——最終圈在軍事基地內部
+
+airdrop: { count: 4, special: 含1個裝甲車空投 }
+red_zone: { enabled: true, special: 軍事基地內紅區機率加倍 }
+vehicles: [越野車（沙漠專精）, 吉普車, 摩托車, 裝甲車（空投）]
+weather: 晴天（高溫）
+time_of_day: 白天
+
+new_mechanics: [伏擊戰術, 空投爭奪, 橋頭對峙, 裝甲車]
+
+phases:
+  - phase: 降落選點
+    turns: 1
+    gm_notes: 沙漠能見度極高——降落時你就能看到其他小隊的降落傘。選擇：直衝軍事基地賭一把，還是去外圍穩健發育？
+
+  - phase: 空投爭奪
+    turns: 5-6
+    gm_notes: >
+      空投的紅色煙霧在沙漠中格外醒目。多支小隊同時向空投移動——
+      你面臨選擇：去搶（高風險高回報），還是在遠處狙擊搶空投的人？
+
+  - phase: 橋頭伏擊
+    turns: 3-4
+    gm_notes: >
+      伏擊隊會在橋頭等你。讓玩家體驗「被伏擊」的壓力——
+      也給他們「反伏擊」的機會（用煙霧彈掩護、從橋下游泳繞後）。
+
+  - phase: 軍事基地決戰
+    turns: 4-6
+    gm_notes: 圈縮至軍事基地內部。多層建築、重型掩體——職業隊會在這裡展現真正的實力。
+
+victory_condition: 成為最後存活的小隊

@@ -1,0 +1,63 @@
+id: "MAP-05"
+title: "廢棄教堂 + 地下墓穴"
+region: "核心區邊緣"
+danger: "★★★★☆"
+suitable_levels: [8]
+regions:
+  - name: "地上—教堂"
+    color: "#FFF3E0"
+  - name: "地下—墓穴"
+    color: "#ECEFF1"
+nodes:
+  - id: "out"
+    name: "教堂外圍"
+    region: "地上—教堂"
+    col: 0
+    row: 0
+    note: "圍牆倒塌隱蔽入場；教團符號；教團巡邏×2"
+  - id: "nave"
+    name: "教堂中殿"
+    region: "地上—教堂"
+    col: 1
+    row: 0
+    note: "重力異常最明顯；守護者×1、成員×2；技師穩定重力 TN17"
+  - id: "altar"
+    name: "祭壇區"
+    region: "地上—教堂"
+    col: 2
+    row: 0
+    note: "教團領袖（單人弱化）；3 能量水晶（HP10/DR2）毀之斷召喚；帷幕共鳴器（金）"
+  - id: "crypt_in"
+    name: "地下墓穴入口"
+    region: "地下—墓穴"
+    col: 2
+    row: 1
+    note: "教堂後石階；時間泡陷阱（偵察兵察覺 TN14 標安全路線）"
+  - id: "bubble"
+    name: "時間泡區域"
+    region: "地下—墓穴"
+    col: 1
+    row: 1
+    note: "內 1 回合=外 5 回合；深潛者×1（弱化）"
+  - id: "ritual"
+    name: "儀式地下通道"
+    region: "地下—墓穴"
+    col: 0
+    row: 1
+    note: "通舊城區邊緣；感知 TN17 發現隱藏通道"
+edges:
+  - from: "out"
+    to: "nave"
+    label: "大門"
+  - from: "nave"
+    to: "altar"
+    label: "通道"
+  - from: "altar"
+    to: "crypt_in"
+    label: "石階"
+  - from: "crypt_in"
+    to: "bubble"
+    label: "墓穴"
+  - from: "bubble"
+    to: "ritual"
+    label: "隧道"

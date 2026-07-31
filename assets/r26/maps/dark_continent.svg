@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" font-family="sans-serif">
+<rect x="0" y="0" width="600" height="760" fill="#0f1424"/>
+<rect x="0" y="0" width="600" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">黑暗大陸</text>
+<text x="580" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">未知大陸 · 深層</text>
+<line x1="300" y1="82" x2="300" y2="138" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="182" x2="130" y2="268" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="182" x2="300" y2="268" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="182" x2="470" y2="268" stroke="#3a4a72" stroke-width="2"/>
+<line x1="470" y1="312" x2="300" y2="408" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="452" x2="300" y2="588" stroke="#3a4a72" stroke-width="2"/>
+<rect x="238" y="38" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="58" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">莫比烏斯湖</text>
+<text x="300" y="76" fill="#9fb3e0" font-size="11" text-anchor="middle">渡航起點</text>
+<rect x="247" y="138" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="158" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">門扉</text>
+<text x="300" y="176" fill="#9fb3e0" font-size="11" text-anchor="middle">入口考驗</text>
+<rect x="58" y="268" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="130" y="288" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">記憶結晶之丘</text>
+<text x="130" y="306" fill="#9fb3e0" font-size="11" text-anchor="middle">CR10</text>
+<rect x="228" y="268" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="288" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">古代文明遺址</text>
+<text x="300" y="306" fill="#9fb3e0" font-size="11" text-anchor="middle">CR11核心</text>
+<rect x="408" y="268" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="470" y="288" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">逆結晶之泉</text>
+<text x="470" y="306" fill="#9fb3e0" font-size="11" text-anchor="middle">CR13龍</text>
+<rect x="238" y="408" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="428" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">淚海</text>
+<text x="300" y="446" fill="#9fb3e0" font-size="11" text-anchor="middle">情緒物理化</text>
+<rect x="247" y="588" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="608" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">五大災難</text>
+<text x="300" y="626" fill="#9fb3e0" font-size="11" text-anchor="middle">終極威脅</text>
+<text x="20" y="748" fill="#5e6f9c" font-size="11">獵人X獵人TRPG · 地圖示意（非精確比例尺）</text>
+</svg>

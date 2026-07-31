@@ -1,0 +1,166 @@
+name: "拓荒競賽"
+description: "數支先驅隊伍在同一片海岸登陸。誰能搶先扎根、壯大，並在他人之前晉升為城邦？一場關於速度、外交與掠奪的競賽。"
+difficulty: 1
+level_range:
+  era_start: "部落時代"
+  era_end: "城邦時代"
+turns_estimated: 40
+years_in_game: 10
+player_count:
+  min: 2
+  max: 4
+map_ref: "maps/S1_荒野新生_起始區域"
+initial_map: "maps/S1_荒野新生_起始區域.yaml"
+multiplayer_rules:
+  mode: "競爭（允許臨時同盟）"
+  victory: "第 40 回合結算「霸權分數」＝人口(POP)×1 ＋ 建築數×5 ＋ 戰爭勝場×10 ＋ 有效外交盟約×3；最高者獲勝。率先達成「人口＞250 且進入城邦時代」可立即觸發終局並 ＋20 分。"
+  interaction: "玩家間可締結／破棄盟約、宣戰、貿易。成功掠奪他國村莊可奪取資源(RES)與糧食，但自身民心(MOR)−5。"
+starting_conditions:
+  population: 50
+  attributes:
+    base: 10
+    free_points: 30
+phases:
+  - id: 1
+    name: "登陸競速"
+    turns: "1-8"
+    description: "各隊伍在海岸不同地點登陸，搶佔最有利的營地"
+    events:
+      - turn: 1
+        name: "選擇營地"
+        type: "exploration"
+        description: "河邊（資源豐富但春季有洪水風險）或高地（易守難攻但資源較少）"
+        choices:
+          - option: "河邊"
+            effect: "資源(RES)+5，每年春季 20% 機率洪水"
+          - option: "高地"
+            effect: "軍事(MIL)+5，資源(RES)-3"
+      - turn: 3
+        name: "鄰近登陸"
+        type: "diplomacy"
+        description: "發現另一支隊伍在數里外登陸——派人接觸或保持距離？"
+        choices:
+          - option: "接觸"
+            effect: "建立初步關係，可締結臨時貿易"
+          - option: "保持距離"
+            effect: "保留行動自由，但失去早期情報"
+      - turn: 5
+        name: "資源點爭奪"
+        type: "competition"
+        description: "一座豐富礦點同時被兩隊發現，先到先得"
+        skill_check: "軍事(MIL)，DC 12"
+      - turn: 8
+        name: "第一座建築"
+        type: "milestone"
+        description: "率先建成永久建築者獲得聲望"
+        effect: "民心(MOR)+5，霸權分數+5"
+  - id: 2
+    name: "領地爭奪"
+    turns: "9-20"
+    description: "村莊成長，邊界開始重疊，磨擦升溫"
+    events:
+      - turn: 10
+        name: "邊界摩擦"
+        type: "territorial_dispute"
+        description: "兩隊在獵場發生衝突，可談判或動武"
+        choices:
+          - option: "談判劃界"
+            effect: "關係不變，各得一塊獵場"
+          - option: "動武驅離"
+            effect: "軍事(MIL) 檢定 DC 12；勝則奪獵場，敗則民心(MOR)−5"
+      - turn: 13
+        name: "難民潮"
+        type: "moral_choice"
+        description: "一波難民同時流向所有村莊，誰收留誰就獲得人口與負擔"
+        choices:
+          - option: "大舉收留"
+            effect: "人口(POP)+15，糧食消耗上升"
+          - option: "謹慎篩選"
+            effect: "人口(POP)+5，民心(MOR)+3"
+      - turn: 16
+        name: "貿易網絡"
+        type: "diplomacy"
+        description: "與鄰國（或他隊）建立貿易路線"
+        effect: "經濟(ECO)+5，可指定一名貿易夥伴"
+      - turn: 19
+        name: "掠奪機會"
+        type: "military"
+        description: "一支鄰隊因疫情而虛弱，是否趁虛而入？"
+        choices:
+          - option: "發動掠奪"
+            effect: "奪取資源(RES)+10，但民心(MOR)−5、關係破裂"
+          - option: "按兵不動"
+            effect: "維持聲望，失去資源"
+  - id: 3
+    name: "聯盟與戰爭"
+    turns: "21-32"
+    description: "弱小者結盟自保，強者試圖各個擊破"
+    events:
+      - turn: 22
+        name: "締結同盟"
+        type: "diplomacy"
+        description: "兩名玩家可締結攻守同盟，共享情報"
+        effect: "盟約生效，雙方霸權分數各+3"
+      - turn: 25
+        name: "背叛時刻"
+        type: "betrayal"
+        description: "同盟一方可在戰鬥中臨陣倒戈"
+        skill_check: "民心(MOR)，DC 14"
+      - turn: 28
+        name: "圍城"
+        type: "military"
+        description: "強國對弱國發動圍城戰"
+        crisis_type: "combat"
+        skill_check: "軍事(MIL)，DC 15"
+      - turn: 31
+        name: "英雄對決"
+        type: "hero_duel"
+        description: "雙方英雄在戰場單挑，影響士氣"
+        effect: "勝方全軍士氣+10"
+  - id: 4
+    name: "城邦之爭"
+    turns: "33-40"
+    description: "最後衝刺——誰先晉升城邦，誰就主導這片海岸"
+    events:
+      - turn: 34
+        name: "人口里程碑"
+        type: "milestone"
+        description: "人口突破 200 的玩家取得領先"
+        effect: "霸權分數+10"
+      - turn: 37
+        name: "最後貿易"
+        type: "diplomacy"
+        description: "終局前的資源調度窗口"
+      - turn: 39
+        name: "時代升級準備"
+        type: "construction"
+        description: "滿足城邦時代最後條件（人口＞250）"
+      - turn: 40
+        name: "海岸霸主"
+        type: "ending"
+        description: "結算霸權分數，最高者成為海岸霸主"
+endings:
+  success:
+    condition: "霸權分數最高且人口＞250 進入城邦時代"
+    reward: "全屬性+5，解鎖「海岸奠基者」傳奇事蹟；其餘玩家依分數獲得對應聲望"
+  partial:
+    condition: "存活至終局但未居首"
+    reward: "保留進度，可進入自由模式繼續經營"
+  failure:
+    condition: "人口降至 0 或民心降至 0（被滅國）"
+    remedy: "可使用「繼承機制」——扮演倖存者於他處重建（保留 50% 屬性）"
+key_npcs:
+  - name: "老卡爾"
+    role: "各隊共用的農業顧問（敘事載體）"
+    personality: "睿智、沉穩"
+    relationship: "中立導師"
+  - name: "掠奪者首領 葛雷"
+    role: "盤據內陸的強盜頭目"
+    personality: "殘酷、貪婪"
+    relationship: "外部威脅"
+gm_notes:
+  - "前 5 回合降低 DC 2，讓玩家熟悉多人機制"
+  - "強調玩家間互動：每回合至少一次跨國行動（外交／貿易／戰爭）"
+  - "霸權分數由 GM 在白板記錄，每階段更新"
+  - "允許臨時同盟，但背叛應有戲劇性後果"
+  - "避免 GM 直接懲罰，讓玩家間的互動驅動劇情"

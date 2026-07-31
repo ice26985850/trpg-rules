@@ -1,0 +1,76 @@
+name: 骨堆的低語
+difficulty: 中級 (CR 4-5)
+mode: 凡人 · 多人
+players: 2-4
+judge: 伊利亞·科爾（激進）
+target_region: 塔爾-莫拉格巢都，廢巢「骨堆」第 2000 層
+recommended_attributes: 3-4
+opening_description: '你們潛入廢巢「骨堆」，找到一個據報在此活動的混沌教派據點。任務是殲滅教眾並銷毀所有混
+
+  沌物品……但審判官伊利亞的指令似乎藏著更多秘密。
+
+  '
+surface_goal: 潛入廢巢「骨堆」，找到一個據報在此活動的混沌教派據點，殲滅教眾並銷毀所有混沌物品。
+hidden_goal: '伊利亞急於證明自己。他懷疑這裡的教派正在準備召喚儀式——但他沒告訴贖罪者。如果儀式完
+
+  成，贖罪者就是祭品。如果贖罪者阻止儀式——伊利亞會將功勞據為己有。
+
+  '
+known_threats:
+- 約 15-20 名教眾
+- 至少 2 名侍僧
+- 底巢環境危險（黑暗、結構不穩）
+hidden_threats:
+- 教派領袖是一個未登記的 Psi 3 靈能者——他在進行召喚亞空間實體的儀式
+- 儀式已進行到第 7 天（共需 9 天）。如果玩家在兩次遊戲內未能阻止，召喚完成
+- 伊利亞故意少給了照明彈配給（只給 3 支），因為「資源有限」
+resources:
+  notes: 3 照明彈（而非 5）。其餘標準配給。
+  flares: 3
+seduction_notes:
+- 1 人紙條 1
+- 1 人紙條 3（任務的真正目標是測試誰會背叛）
+- 2 人紙條 4
+key_npcs:
+- name: 「無光者」幫派聯絡人
+  role: 潛在盟友
+  detail: 底巢幫派，願意提供情報和捷徑——但要求一枚手雷作為交換
+- name: 靈能者教派領袖「耳語者」
+  role: Boss
+  detail: Psi 3，如果儀式完成會變得更強。在儀式被打斷時會陷入狂暴
+key_checks:
+- scene: 在黑暗中尋找據點
+  check: 警覺（困難）
+  tn: 心智×10+警覺−20
+  success: 找到不被發現的潛入路線
+  failure: 驚動教眾，正面交戰
+- scene: 與無光者談判
+  check: 欺瞞（標準）
+  tn: 命運×10+欺瞞
+  success: 獲得情報和捷徑
+  failure: 被要求更高代價
+- scene: 識破伊利亞的隱瞞
+  check: 警覺（簡單）
+  tn: 心智×10+警覺+20
+  success: 發現儀式的真正危險
+  failure: 不知道時間壓力
+- scene: 打斷儀式
+  check: 攻擊靈能者或破壞儀式圈
+  tn: 戰鬥
+  success: 阻止召喚
+  failure: 亞空間之影出現
+encounters:
+- name: 外圍哨站
+  enemies: 信徒×6 + 侍僧×1
+  cr: 0×6+1
+  tactic: 利用掩體防守
+- name: 儀式大廳（儀式完成前）
+  enemies: 侍僧×2 + 信徒×4 + 耳語者(Psi3)
+  cr: 1×2+0×4+2
+  tactic: 耳語者不斷施放靈能
+- name: 儀式大廳（若儀式完成）
+  enemies: 侍僧×1 + 信徒×2 + 耳語者(Psi3強化) + 亞空間之影×1
+  cr: 1+0×2+3+2
+  tactic: 極度危險
+evacuation_condition: 任務完成後前往指定撤離點。
+map_ref: "maps/map13_bonestack"

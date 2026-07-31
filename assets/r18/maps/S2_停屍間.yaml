@@ -1,0 +1,72 @@
+name: S2 停屍間（殯儀館停屍間）
+對應劇本: S2 停屍間的第七抽屜
+對應場景說明: >-
+  對應 S2 劇本「停屍間的第七抽屜」核心場景——「世出世」殯儀館停屍間。
+  第七抽屜的新亡者死不瞑目→屍變（新屍 Fresh Corpse→白僵 White Zombie，挑戰等級 CR 2）；
+  其妻怨靈（Resentful Ghost，挑戰等級 CR 3）因喪夫之痛盤踞走廊報復。兩者疊加。
+  正確處理：桃木劍／鎮屍符物理壓制屍變，靈媒以靈感（INS）溝通安撫怨靈、查明蓄意誤診真相；
+  館方要求「天光前解決」的時間壓力，屍變失敗則擴散至其他抽屜（範圍效果 AOE 危機）。
+  基礎陰氣值（YIN）5–10。
+
+nodes:
+  - id: E
+    label: 出口（太平門）
+    x: 90
+    y: 240
+    type: exit
+    explored: false
+  - id: C
+    label: 停屍走廊
+    x: 250
+    y: 240
+    type: corridor
+    explored: false
+  - id: O
+    label: 殮房辦公室（九叔）
+    x: 560
+    y: 140
+    type: room
+    explored: false
+  - id: DW
+    label: 抽屜牆（蜂巢格）
+    x: 400
+    y: 190
+    type: room
+    explored: false
+  - id: D7
+    label: 第七抽屜（新屍·白僵）
+    x: 400
+    y: 350
+    type: boss
+    explored: false
+  - id: V
+    label: 怨靈盤踞區（亡妻）
+    x: 250
+    y: 380
+    type: hazard
+    explored: false
+
+edges:
+  - from: E
+    to: C
+    type: corridor
+  - from: C
+    to: DW
+    type: corridor
+  - from: C
+    to: O
+    type: corridor
+  - from: C
+    to: V
+    type: corridor
+  - from: DW
+    to: D7
+    type: stair
+
+regions:
+  - name: 抽屜牆陰冷區
+    color: "#D5D5E8"
+    nodes: [DW, D7]
+  - name: 走廊禁地區
+    color: "#E8D5C4"
+    nodes: [C, V]

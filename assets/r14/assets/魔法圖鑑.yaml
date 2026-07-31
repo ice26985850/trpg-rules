@@ -1,0 +1,91 @@
+# 建國模擬 TRPG —— 魔法圖鑑
+
+spells:
+  - name: "奧術飛彈"
+    type: "奧術"
+    attribute: "學識（KNW）"
+    dc: 12
+    mp: 3
+    cooldown: "無"
+    effect: "造成 2d6+學識 傷害"
+  - name: "魔法護盾"
+    type: "奧術"
+    attribute: "學識（KNW）"
+    dc: 14
+    mp: 4
+    cooldown: "無"
+    effect: "目標防禦（DEF）+5，3 回合"
+  - name: "隕星術"
+    type: "奧術"
+    attribute: "學識（KNW）"
+    dc: 18
+    mp: 8
+    cooldown: "3 回合"
+    effect: "對區域造成 6d6 + 學識（KNW）×2 火焰傷害，可同時打擊多個目標"
+  - name: "治療術"
+    type: "神聖"
+    attribute: "魅力（CHA）"
+    dc: 12
+    mp: 3
+    cooldown: "無"
+    effect: "恢復 2d6+魅力 生命值（HP）"
+  - name: "驅邪"
+    type: "神聖"
+    attribute: "魅力（CHA）"
+    dc: 14
+    mp: 4
+    cooldown: "無"
+    effect: "對不死／邪異額外 ×2 傷害"
+  - name: "草木纏繞"
+    type: "自然"
+    attribute: "學識（KNW）"
+    dc: 12
+    mp: 3
+    cooldown: "無"
+    effect: "束縛（BIND）目標，DC 12 掙脫"
+  - name: "動物溝通"
+    type: "自然"
+    attribute: "學識（KNW）"
+    dc: 10
+    mp: 2
+    cooldown: "無"
+    effect: "詢問野獸資訊"
+  - name: "附魔"
+    type: "符文"
+    attribute: "手藝（CRF）"
+    dc: 14
+    mp: 5
+    cooldown: "無"
+    effect: "裝備 +1（永久）"
+  - name: "守護符文"
+    type: "符文"
+    attribute: "手藝（CRF）"
+    dc: 13
+    mp: 3
+    cooldown: "無"
+    effect: "區域內友軍 +2 防禦（DEF）"
+  - name: "炸藥"
+    type: "煉金"
+    attribute: "手藝（CRF）"
+    dc: 12
+    mp: 2
+    cooldown: "無"
+    effect: "範圍 2d6 火焰傷害"
+  - name: "治療藥劑"
+    type: "煉金"
+    attribute: "手藝（CRF）"
+    dc: 10
+    mp: 1
+    cooldown: "無"
+    effect: "製作回復藥水（即時 +1d6+2 生命值（HP））"
+  - name: "時間停止"
+    type: "時空"
+    attribute: "學識（KNW）"
+    dc: 20
+    mp: 10
+    cooldown: "5 回合"
+    effect: "全場敵方單位跳過 1 回合行動（含怪物／軍隊），史詩級控場法術"
+notes:
+  - "大成功（自然 20）法術效果 ×1.5 且不耗額外法力值（MP）。"
+  - "大失敗（自然 1）法力值（MP）反噬 1d6 自傷。"
+  - "標註 CD 的法術在施放後需等待該回合數才能再次施放；未標註者每回合皆可施放（受法力值（MP）上限限制）。高階法術（隕星術、時間停止）受 CD 限制，避免單一英雄無限清場。"

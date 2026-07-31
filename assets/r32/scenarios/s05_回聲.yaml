@@ -1,0 +1,85 @@
+name: "回聲"
+type: "迷途者救援"
+difficulty: "★★★"
+recommended_marks: "3-5"
+play_time: "2 次聚會"
+core_attributes: ["TR", "NG", "AN"]
+
+opening: |
+  物理研究生阿傑半失蹤三週了。
+  室友偶爾在走廊盡頭看到他的影子，冰箱裡食物會少，凌晨兩點聽見腳步聲。
+  室友說：「他不是失蹤。他是被困在另一邊。」
+  阿傑處於間隙病中期——不知道自己在哪一層了。
+
+npcs:
+  - name: "阿傑"
+    type: "迷途者（被困在間隙）"
+    desc: "23歲，間隙病中期。試圖用物理理論推導自己所在維度"
+    companion_eligible: true
+    companion_template:
+      type: "實習行者"
+      stats: { RE: 5, AW: 3 }
+      special: "理論分析——遭遇新間隙現象時提供線索"
+      loyalty: 2
+      available_from: "劇本 5"
+  - name: "小美"
+    type: "室友兼好友"
+    desc: "最想救阿傑的人。可提供阿傑的個人物品作為線索"
+    companion_eligible: false
+  - name: "指導教授"
+    type: "知情者"
+    desc: "知道阿傑研究空間摺疊——實驗出錯把他送進間隙"
+    companion_eligible: false
+
+lost_items:
+  - name: "阿傑的研究筆記"
+    tier: "普通遺失物"
+    solo_dc: 6
+    location: "大學實驗室間隙層"
+    effect: "相關交涉 +1"
+  - name: "共振器"
+    tier: "間隙造物"
+    solo_dc: 16
+    location: "阿傑房間的間隙層"
+    effect: "揭示未知門檻位置或打開密封空間"
+  - name: "母親項鍊"
+    tier: "記憶結晶"
+    solo_dc: 13
+    location: "阿傑身上（需交涉或拾遺取得）"
+    effect: "啟動看到母親送項鍊的那一刻——關鍵定錨物"
+
+scenes:
+  - name: "表層調查"
+    desc: "覺察 難度等級（DC）10 找到阿傑房間的異常——便利貼：『找共振器』"
+    map_ref: "MAP-05（阿傑公寓平面圖）— 八樓房間"
+  - name: "進入公寓間隙"
+    desc: "天然門檻 難度等級（DC）6。間隙中的公寓幾乎與表層一樣——最大的恐懼：沒有變化。"
+    map_ref: "MAP-05 — 天然門檻（八樓→間隙版）"
+  - name: "追蹤阿傑"
+    desc: "覺察 難度等級（DC）8 發現活動痕跡——便利貼每24h換一張。"
+    map_ref: "MAP-05 — 七樓冰箱區域"
+  - name: "找到阿傑"
+    desc: |
+      他在公寓天台的間隙層。坐在邊緣看虛假星空。
+      交涉 難度等級（DC）14 說服他離開。需出示定錨物或母親項鍊（記憶結晶 難度等級（DC）13）。
+    map_ref: "MAP-05 — 天臺間隙版（阿傑位置）"
+  - name: "退出間隙"
+    desc: "兩人一起退出（穿梭 難度等級（DC）8 各擲一次）。"
+    map_ref: "MAP-05 — 天臺邊緣退出點"
+  - name: "善後"
+    desc: "阿傑回到表層，處於間隙病初期——需要 7 天靜養。"
+    map_ref: "—"
+
+key_choice: |
+  阿傑獲救後可能成為實習行者夥伴（物理專家）。
+  若失敗：阿傑在間隙病後期變成新的遺失物收集者。
+
+endings:
+  - "成功救出→歸還印記+1，阿傑可成為夥伴"
+  - "失敗→阿傑轉化，共振器可能在未來劇本中出現"
+
+rewards:
+  - "歸還印記 × 1"
+
+companion_recruitment:
+  - "阿傑（若成功救出）→ 實習行者夥伴，忠誠度初始3"

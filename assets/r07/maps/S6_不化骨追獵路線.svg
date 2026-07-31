@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 820" width="920" height="820">
+  <rect width="920" height="820" fill="#1a1410" rx="4"/>
+  <text x="460" y="32" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#f5e6d3">S6 不化骨——跨區域追獵路線</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c4a882"/>
+    </marker>
+  </defs>
+  <rect x="65" y="100" width="200" height="260" rx="12" fill="rgba(100,140,80,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="77" y="120" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">西安——第一幕——發現蹤跡</text>
+  <rect x="120" y="120" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="200.0" y="147.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">西安古玩街</text>
+  <text x="120" y="184" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="9" fill="#c4a882">🔍 DC14</text>
+  <rect x="120" y="230" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="200.0" y="257.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">西安火車站 🚂</text>
+  <rect x="345" y="100" width="200" height="260" rx="12" fill="rgba(140,100,60,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="357" y="120" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">洛陽——第二幕——犯罪現場</text>
+  <rect x="400" y="120" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="480.0" y="147.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">洛陽圖書館</text>
+  <text x="400" y="184" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="9" fill="#c4a882">🔍 DC14</text>
+  <rect x="400" y="230" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="480.0" y="257.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">洛陽火車站 🚂</text>
+  <rect x="625" y="100" width="200" height="590" rx="12" fill="rgba(80,100,140,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="637" y="120" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">北平——第三幕——最終對決</text>
+  <rect x="680" y="120" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="760.0" y="147.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">北平郊外</text>
+  <rect x="680" y="230" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="760.0" y="257.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">術士墓入口</text>
+  <rect x="680" y="340" width="160" height="50" rx="8" fill="#6A2A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="760.0" y="367.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">實驗室外圍</text>
+  <rect x="680" y="450" width="160" height="50" rx="8" fill="#6A2A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="760.0" y="477.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">術士實驗室核心</text>
+  <rect x="680" y="560" width="160" height="50" rx="8" fill="#6A2A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="760.0" y="587.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">復活祭壇 ⭐</text>
+  <line x1="200" y1="174" x2="200" y2="218" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="200" y1="226" x2="200" y2="182" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="174" x2="480" y2="218" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="480" y1="226" x2="480" y2="182" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="174" x2="760" y2="218" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="284" x2="760" y2="328" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="394" x2="760" y2="438" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="504" x2="760" y2="548" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="174" x2="760" y2="218" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="284" x2="760" y2="328" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="394" x2="760" y2="438" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="760" y1="504" x2="760" y2="548" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="20" y="700" width="180" height="116" rx="6" fill="rgba(0,0,0,0.5)" stroke="#8b7355" stroke-width="1"/>
+  <text x="30" y="718" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3" font-weight="bold">圖例</text>
+  <text x="35" y="738" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">🔍 調查點</text>
+  <text x="35" y="760" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">🚂 火車追蹤</text>
+  <text x="35" y="782" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">💀 戰鬥遭遇</text>
+  <text x="35" y="804" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">⭐ 最終選擇</text>
+</svg>

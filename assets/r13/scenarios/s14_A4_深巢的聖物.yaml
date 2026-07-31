@@ -1,0 +1,93 @@
+name: 深巢的聖物
+difficulty: 高級 (CR 5-6)
+mode: 凡人 · 多人
+players: 2-4
+judge: 馬格努斯·鐵（激進）
+target_region: 塔爾-莫拉格巢都，深巢（第 2300 層以下），被遺忘的古代地下神殿
+recommended_attributes: 4-5
+opening_description: '你們被派往深巢的古代地下神殿，回收一件據說是大遠征時代的「聖物」。但審判官馬格努斯·
+
+  鐵的沉默比任務本身更令人不安。
+
+  '
+surface_goal: 回收一件被遺忘在地下神殿中的「聖物」——據說是大遠征時代的遺物。
+hidden_goal: '馬格努斯知道那件「聖物」實際上是亞空間汙染源——但他不在乎。他要的是聖物的科技價值（
+
+  可能含前帝國時代的 標準模板構造（STC） 模板碎片）。贖罪者是否被汙染不在他的考量
+
+  之內。
+
+  '
+known_threats:
+- 深巢環境極度惡劣（完全黑暗、毒氣口袋、結構塌陷風險）
+- 傳聞有變異巨獸在該區域活動
+- 可能有亞空間實體
+hidden_threats:
+- 「聖物」是一個混沌汙染的古代 標準模板構造（STC） 終端——靠近者每分鐘腐化 +1
+- 地下神殿內有一個休眠的亞空間裂縫——如果被靈能或爆炸觸發，會立即激活
+- 馬格努斯派了一個監視小隊尾隨贖罪者——如果贖罪者試圖銷毀聖物而非帶回，監視小隊會介入
+resources:
+  notes: 縮減配給：僅 2 醫療包、2 照明彈。馬格努斯認為「壓力能讓你們更有效率」。
+  medical_pack: 2
+  flares: 2
+seduction_notes:
+- 1 人紙條 1
+- 1 人紙條 2
+- 1 人紙條 3
+- 1 人紙條 4（四種紙條都發放，團隊張力最大化）
+key_npcs:
+- name: 「碎鏈幫」的盲先知
+  role: 潛在盟友/敵人
+  detail: '一個住在深巢的變種人社群「鏽童」的長老。他知道神殿的位置但警告說「裡面的東西不是聖物
+
+    ，是罪」。可以選擇相信他或無視他
+
+    '
+- name: 監視小隊
+  role: 潛在威脅
+  detail: 3 名審判庭突擊兵，尾隨贖罪者。如果贖罪者背叛審判官（銷毀聖物），他們會攻擊
+key_checks:
+- scene: 穿越毒氣區域
+  check: 堅韌（困難）
+  tn: 體魄×10+堅韌−20
+  success: 安全通過
+  failure: 生命值（HP）−1d4/回合
+- scene: 從盲先知獲得情報
+  check: 佈道（標準）
+  tn: 信仰×10+佈道
+  success: 獲得警告＋捷徑
+  failure: 無法取得信任
+- scene: 發現監視小隊
+  check: 警覺（困難）
+  tn: 心智×10+警覺−20
+  success: 發現尾巴
+  failure: 不知被監視
+- scene: 抵抗聖物的汙染
+  check: 信仰（極限）
+  tn: 信仰×10−40
+  success: 腐化獲取減半
+  failure: 每分鐘腐化+1
+- scene: 選擇：帶回聖物還是銷毀
+  check: 無檢定——純 角色扮演（RP） 抉擇
+  tn: —
+  success: —
+  failure: —
+encounters:
+- name: 深巢隧道
+  enemies: 變異潛伏者×2
+  cr: 1×2
+  tactic: 從暗處伏擊
+- name: 神殿外圍
+  enemies: 變異巨獸×1
+  cr: '3'
+  tactic: Boss級，守護神殿入口
+- name: 神殿內部（可選）
+  enemies: 亞空間之影×1（若裂縫被激活）
+  cr: '2'
+  tactic: 從裂縫中浮現
+- name: 撤離點（若背叛審判官）
+  enemies: 審判庭突擊兵×3
+  cr: 1×3
+  tactic: 裝備精良，試圖回收聖物
+evacuation_condition: 任務完成後前往指定撤離點。
+map_ref: "maps/map14_deep_temple"

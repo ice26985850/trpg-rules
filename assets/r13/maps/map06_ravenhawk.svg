@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g6" width="35" height="35"><rect width="35" height="35" fill="none"/><rect x="35" y="0" width="1" height="35" fill="#e5e0d8"/><rect x="0" y="35" width="35" height="1" fill="#e5e0d8"/></pattern>
+<rect width="820" height="620" fill="url(#g6)"/>
+<!-- Scorched ground -->
+<rect x="30" y="30" width="760" height="560" rx="6" fill="#4a4540" opacity="0.15"/>
+<!-- Fire zone (distant) -->
+<rect x="600" y="30" width="190" height="140" fill="#d44a20" opacity="0.2" rx="4"/>
+<text x="695" y="105" text-anchor="middle" font-size="11pt" fill="#a00" font-weight="bold">遠方滅絕令火焰</text>
+<text x="695" y="122" text-anchor="middle" font-size="9pt" fill="#800">→ 不在此區域</text>
+<!-- Ravenhawk wreckage - main hull -->
+<rect x="200" y="160" width="420" height="240" rx="30" fill="#666" stroke="#333" stroke-width="3"/>
+<text x="410" y="275" text-anchor="middle" font-size="14pt" font-weight="bold" fill="#ddd">雷鷹砲艇殘骸</text>
+<text x="410" y="298" text-anchor="middle" font-size="10pt" fill="#aaa">主船體 (可搜索)</text>
+<!-- Cockpit/brows -->
+<ellipse cx="560" cy="280" rx="45" ry="30" fill="#555" stroke="#333" stroke-width="2"/>
+<text x="560" y="284" text-anchor="middle" font-size="9pt" fill="#bbb">駕駛艙</text>
+<!-- Wreckage debris zones -->
+<rect x="200" y="160" width="100" height="80" fill="#5a5a5a" stroke="#444" stroke-width="1" rx="3"/>
+<text x="250" y="200" text-anchor="middle" font-size="9pt" fill="#bbb">引擎艙</text>
+<text x="250" y="214" text-anchor="middle" font-size="8pt" fill="#888">(戰友遺物+)</text>
+<rect x="280" y="160" width="120" height="80" fill="#5a5a5a" stroke="#444" stroke-width="1" rx="3"/>
+<text x="340" y="200" text-anchor="middle" font-size="9pt" fill="#bbb">貨艙</text>
+<!-- Wake-up spots for each marine -->
+<circle cx="300" cy="350" r="18" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="300" y="354" text-anchor="middle" font-size="7pt" fill="#888">A1</text>
+<circle cx="370" cy="360" r="18" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="370" y="364" text-anchor="middle" font-size="7pt" fill="#888">A2</text>
+<circle cx="440" cy="365" r="18" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="440" y="369" text-anchor="middle" font-size="7pt" fill="#888">A3</text>
+<circle cx="510" cy="360" r="18" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="510" y="364" text-anchor="middle" font-size="7pt" fill="#888">A4</text>
+<text x="405" y="400" text-anchor="middle" font-size="9pt" fill="#666">甦醒位置 (A1-A4: 阿斯塔特)</text>
+<!-- Searchable loot markers -->
+<rect x="310" y="430" width="200" height="30" fill="#c9b896" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="410" y="450" text-anchor="middle" font-size="10pt" fill="#333">搜索: 戰團遺物 (1-2件) + 裝備狀態檢定</text>
+<!-- Signal tower/north direction -->
+<line x1="620" y1="200" x2="700" y2="120" stroke="#080" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="700" y="115" text-anchor="middle" font-size="10pt" fill="#060">↑ 北方信號源方向</text>
+<text x="700" y="130" text-anchor="middle" font-size="8pt" fill="#060">(廢墟城市)</text>
+<!-- Ruined city silhouette -->
+<rect x="650" y="60" width="100" height="30" fill="#4a4540" opacity="0.4" rx="2"/>
+<text x="700" y="80" text-anchor="middle" font-size="9pt" fill="#666">廢墟城市輪廓</text>
+<!-- Environmental hazards -->
+<text x="100" y="160" font-size="10pt" fill="#a00">⚠ 墜毀現場殘餘危險:</text>
+<text x="100" y="178" font-size="9pt" fill="#888">• 高溫金屬</text>
+<text x="100" y="194" font-size="9pt" fill="#888">• 未爆彈藥</text>
+<text x="100" y="210" font-size="9pt" fill="#888">• 動力裝甲損毀狀態 (d6)</text>
+<!-- Compass -->
+<g transform="translate(740,560)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">北</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">南</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">東</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">西</text>
+</g>
+<line x1="60" y1="590" x2="210" y2="590" stroke="#333" stroke-width="2"/>
+<text x="135" y="608" text-anchor="middle" font-size="10pt">20 公尺</text>
+</svg>

@@ -1,0 +1,47 @@
+# 地師TRPG 劇本 S3：水銀迷宮 ——「帝王陵外圍」
+scenario_id: S3
+title: "水銀迷宮——帝王陵外圍"
+level_range: "5-7"
+difficulty: "中等"
+sessions: "2-3"
+region: "關中"
+
+synopsis: |
+  帝王陵的外圍防禦系統被發現——以水銀河道環繞的迷宮。設計者模仿「以水銀為百川江河大海」的秦代工法。
+  迷宮中困著修築過程中喪生的工匠怨靈。玩家需要穿越迷宮找到真正出口——這只是帝陵的外郭。
+
+npcs:
+  - {id: npc_old_zhou, name: "「地圖師」老周", role: "情報來源", stats: "摸金世家·搬山派（已殘疾退休）", info: "提供迷宮部分地圖——只到過第二控制室。在迷宮中失去了一條腿和三個同伴"}
+  - {id: npc_master_craftsman, name: "工匠頭領的怨靈", role: "核心靈體", attitude: "憤怒——他們被活埋在迷宮中", secret: "知道所有機關佈局，但需要玩家完成遺願才肯透露（遺願：將他們的死訊帶給後人）"}
+  - {id: npc_japanese, name: "日本東亞考古學會聯絡人", role: "競爭者", attitude: "禮貌但危險", secret: "他們也發現了迷宮入口——正在另一個方向挖掘"}
+
+tomb_structure:
+  type: "大型附屬建築"
+  chambers:
+    - {id: entrance, name: "入口大廳", description: "石門+碑文（記載迷宮建造目的）"}
+    - {id: maze, name: "迷宮主體", features: ["水銀河道網絡（流動水銀，有毒蒸氣）", "機關控制室×3", "工匠遺骸聚集區", "假出口×2"]}
+    - {id: island, name: "水銀河中島", description: "中繼安全點——唯一沒有毒氣的地方"}
+    - {id: exit, name: "真正出口", description: "通向帝陵方向（本劇本不到達）"}
+
+encounters:
+  - {id: enc_mercury, name: "水銀毒氣", type: "環境", dc: 12, description: "長期暴露累積毒性。每30分鐘體質DC12檢定，失敗中毒"}
+  - {id: enc_sluice, name: "水閘機關", type: "探索", dc: 14, description: "操作錯誤→水銀淹沒區域。三個控制室各控制不同區域"}
+  - {id: enc_craftsmen, name: "工匠怨靈", type: "社交/戰鬥", ttv: 8, description: "3-5個怨靈。可透過完成遺願安撫"}
+  - {id: enc_trap_corridor, name: "陷阱廊道", type: "探索", dc: "12-14", description: "連環翻板+弩箭+流沙"}
+  - {id: enc_fake_exit, name: "假出口陷阱", type: "探索", dc: 14, description: "辨別真假出口——假出口後是更危險區域"}
+  - {id: enc_japanese, name: "日本隊競爭", type: "社交", dc: 12, description: "可能合作（分享地圖）或衝突"}
+
+key_items:
+  - {id: item_control_map, name: "迷宮控制圖", description: "在第三控制室。可安全導航迷宮。未來帝陵劇本關鍵物品"}
+  - {id: item_mercury_sample, name: "水銀樣本", description: "稀有煉丹/符法材料"}
+  - {id: item_jade_token, name: "工匠頭領的玉牌", description: "完成遺願後獲得。可召喚一次工匠的幫助（任何墓中）"}
+  - {id: item_qin_fragment, name: "秦代工程圖殘片", description: "揭示帝陵的部分結構"}
+
+endings:
+  - {id: ending_perfect, name: "完美通關", condition: "安撫工匠+完整控制圖+真出口", result: "所有獎勵，解鎖帝陵劇本"}
+  - {id: ending_violent, name: "暴力通關", condition: "強行突破", result: "工匠詛咒附身——未來所有秦代墓檢定劣勢"}
+
+rewards: {xp: 500, money: "200-600大洋"}
+scale_adjustments:
+  solo: {not_recommended: true, reason: "需要操作多個水閘，單人難以同時進行"}
+  duo: {note: "減少工匠怨靈數量至1-2個"}

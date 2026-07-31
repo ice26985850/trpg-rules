@@ -1,0 +1,170 @@
+name: "S1：巢穴覺醒"
+description: "在地底巢穴中甦醒，失去所有記憶。吞噬眼前的敵人，向上爬出黑暗。你的第一次進化，從這裡開始。"
+difficulty: "簡單"
+level_range:
+  min_nodes: 0
+  max_nodes: 5
+  suggested: "0-5 進化節點"
+players:
+  min: 1
+  max: 4
+  default: 1
+estimated_time: "2-3 小時"
+map_ref: "巢穴覺醒_覺醒巢穴"
+initial_map: "巢穴覺醒_覺醒巢穴"
+
+scenes:
+  - id: "S1_SC1"
+    name: "覺醒"
+    type: "exploration"
+    description: "在滿是屍體的巢穴中醒來。探索環境，建立角色身份，感受失憶的空白。"
+    objectives:
+      - "創建角色（選擇基礎形態、背景、根節點）"
+      - "探索巢穴環境"
+      - "在屍體上搜尋資源"
+    key_items:
+      - name: "治療藥劑"
+        quantity: 1
+        effect: "恢復 2d6 HP"
+      - name: "生鏽的匕首"
+        quantity: 1
+        effect: "1d4 傷害，可投擲（3 格）"
+    checks:
+      - attribute: "感知（GZ）"
+        dc: 12
+        success: "發現屍體上有被啃食的痕跡——不是動物，是有意識的存在"
+      - attribute: "感知（GZ）"
+        dc: 10
+        success: "發現自己身上的舊傷已經超乎尋常地癒合"
+
+  - id: "S1_SC2"
+    name: "第一餐"
+    type: "combat"
+    description: "遭遇變異鼠群。第一次戰鬥，也是第一次面對『擊殺還是吸收』的選擇。"
+    encounters:
+      - id: "變異鼠群"
+        difficulty: "簡單"
+        enemies:
+          - type: "變異鼠"
+            rank: "嘍囉"
+            count: 2
+            hp: 8
+            defense: 9
+            stats: { LIL: 2, MJ: 5, TZ: 2, GZ: 3, YZ: 1 }
+            attacks: [{ name: "噬咬", type: "近戰", damage: "1d4+2", effect: "疾病（體質 DC 10 否則中毒）" }]
+          - type: "強化變異鼠"
+            rank: "嘍囉"
+            count: 1
+            hp: 10
+            defense: 10
+            stats: { LIL: 2, MJ: 5, TZ: 4, GZ: 3, YZ: 1 }
+            attacks: [{ name: "強化噬咬", type: "近戰", damage: "1d6+2" }]
+    rewards:
+      kill: { evolution_points: 3, biomass: 3 }
+      absorb:
+        description: "特質樣本（三選一）"
+        options:
+          - name: "夜視"
+            type: "被動節點"
+            effect: "黑暗中無劣勢"
+          - name: "挖地潛行"
+            type: "低級主動節點"
+            effect: "鑽入地下，下回合從任意位置破土而出 + 1d6 傷害"
+          - name: "疾病抗性"
+            type: "被動節點"
+            effect: "中毒持續時間減半"
+    choices:
+      - id: "擊殺"
+        description: "獲得進化點數 + 生物質（短期收益）"
+      - id: "吸收"
+        description: "獲得特質樣本，解鎖獨特進化方向（長期收益）"
+
+  - id: "S1_SC3"
+    name: "黑暗中的聲音"
+    type: "social"
+    description: "遇到另一位進化倖存者——雷恩。他的身體已開始變異，但還保持著人類的心智。"
+    npc:
+      name: "雷恩"
+      base_form: "人類"
+      hp: 20
+      defense: 12
+      nodes: ["硬化皮膚", "利爪"]
+      humanity: 55
+      attitude: "謹慎——渴望同伴，但害怕被背叛"
+    branches:
+      - choice: "治療並結盟"
+        outcome: "雷恩加入成為 NPC 夥伴"
+      - choice: "拒絕幫助"
+        outcome: "雷恩獨自離開，可能在 S2 再次出現"
+      - choice: "吸收他（需人性值 < 40%）"
+        outcome: "獲得特質樣本（硬化皮膚/利爪/人類的意志），人性值 -10"
+
+  - id: "S1_SC4"
+    name: "守門者"
+    type: "boss"
+    description: "在巢穴出口遭遇守門精英——一個半蜥蜴半昆蟲的進化守衛，確保無人能活著離開。"
+    encounters:
+      - id: "巢穴守衛"
+        difficulty: "困難"
+        enemies:
+          - type: "巢穴守衛"
+            rank: "精英"
+            count: 1
+            hp: 40
+            defense: 14
+            stats: { LIL: 7, MJ: 5, TZ: 6, GZ: 7, YZ: 3 }
+            energy: 12
+            skills:
+              - name: "尾刺"
+                tier: "低級"
+                ap: 1
+                energy: 1
+                range: "近戰"
+                effect: "1d8+3 穿刺 + 中毒（體質 DC 13）"
+              - name: "骨板衝撞"
+                tier: "低級"
+                ap: 1
+                energy: 0
+                range: "近戰"
+                effect: "1d6+3 鈍擊 + 目標後退 2 格（力量 DC 14）"
+              - name: "複眼鎖定"
+                tier: "被動"
+                effect: "感知（GZ）檢定優勢，對潛行目標無劣勢"
+    rewards:
+      kill: { evolution_points: 3, biomass: 5 }
+      absorb:
+        description: "特質樣本（五選一）"
+        options:
+          - "複眼雛形（器官節點）"
+          - "硬化皮膚（被動節點）"
+          - "尾刺（低級主動節點）"
+          - "骨板防禦（被動節點：物理傷害 -1）"
+          - "昆蟲親和（被動節點）"
+    map_ref: "巢穴覺醒_守門者之戰"
+
+  - id: "S1_SC5"
+    name: "地面"
+    type: "narrative"
+    description: "逃出巢穴，站在陽光下。三個方向通往三個不同的命運。"
+    branches:
+      - choice: "前往北方（白塔城）"
+        next_scenario: "S3_進化戰爭"
+      - choice: "前往東方（廢墟）"
+        next_scenario: "S2_實驗室逃亡"
+      - choice: "前往南方（荒野）"
+        next_scenario: "S4_食物鏈頂端"
+
+completion_rewards:
+  evolution_points: 3
+  special:
+    - condition: "吸收過至少 1 個敵人"
+      reward: "額外 +1 進化點數"
+    - condition: "治療並未背叛雷恩"
+      reward: "獲得被動『羈絆記憶』——意志（YZ）檢定 +1（涉及保護他人時）"
+
+solo_adjustments:
+  enemies_reduced: true
+  mutant_rats: 2
+  guardian_hp: 30
+  extra_items: ["治療藥劑 ×1"]
+  npc_friendly: "雷恩的起始態度更加友善"

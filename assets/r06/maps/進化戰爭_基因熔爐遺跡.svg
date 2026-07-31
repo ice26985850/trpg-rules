@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" font-family="Microsoft JhengHei, sans-serif">
+  <rect width="680" height="520" fill="#0d0d1a"/>
+
+  <!-- 熔爐本體（中央建築） -->
+  <rect x="180" y="80" width="320" height="300" rx="15" fill="#1a1025" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+
+  <!-- 入口前營地區域 -->
+  <rect x="30" y="380" width="620" height="120" rx="8" fill="#1a1a2e" opacity="0.5"/>
+
+  <!-- === 遺跡外 === -->
+
+  <!-- 教團營地（左） -->
+  <rect x="50" y="420" width="150" height="65" rx="8" fill="#8B0000" stroke="#DC143C" stroke-width="2"/>
+  <text x="125" y="445" text-anchor="middle" fill="white" font-size="13" font-weight="bold">終極進化教團</text>
+  <text x="125" y="465" text-anchor="middle" fill="#ff8888" font-size="9">猩紅帳篷 · 展示進化成果</text>
+  <text x="125" y="478" text-anchor="middle" fill="#ffcccc" font-size="8">使者：六臂維克多</text>
+
+  <!-- 守護者營地（右） -->
+  <rect x="480" y="420" width="150" height="65" rx="8" fill="#1a3a5c" stroke="#4169E1" stroke-width="2"/>
+  <text x="555" y="445" text-anchor="middle" fill="white" font-size="13" font-weight="bold">人性守護者</text>
+  <text x="555" y="465" text-anchor="middle" fill="#8888ff" font-size="9">白色營地 · 檢查站</text>
+  <text x="555" y="478" text-anchor="middle" fill="#ccccff" font-size="8">指揮官：艾蕾娜</text>
+
+  <!-- 協議觀察員（中央下方） -->
+  <rect x="275" y="440" width="130" height="40" rx="6" fill="#2d2d2d" stroke="#999" stroke-width="1.5"/>
+  <text x="340" y="458" text-anchor="middle" fill="#ccc" font-size="11">共生協議觀察員</text>
+  <text x="340" y="472" text-anchor="middle" fill="#999" font-size="8">奧爾登 — 中立</text>
+
+  <!-- 熔爐大門 -->
+  <rect x="250" y="360" width="180" height="40" rx="20" fill="#4B0082" stroke="#8B5CF6" stroke-width="3"/>
+  <text x="340" y="385" text-anchor="middle" fill="white" font-size="14" font-weight="bold">⚡ 熔爐大門（有機薄膜）</text>
+
+  <!-- 進度箭頭：門→內部 -->
+  <line x1="340" y1="360" x2="340" y2="330" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- === 熔爐內部 === -->
+
+  <!-- 原液池 -->
+  <ellipse cx="340" cy="220" rx="120" ry="55" fill="#2d1045" stroke="#8B5CF6" stroke-width="2"/>
+  <ellipse cx="340" cy="220" rx="90" ry="35" fill="#4B0082" opacity="0.6"/>
+  <text x="340" y="215" text-anchor="middle" fill="#ffddff" font-size="13" font-weight="bold">進化原液池</text>
+  <text x="340" y="233" text-anchor="middle" fill="#ffaaff" font-size="9">⚠ 喝下→免費進化 · 人性值-5</text>
+  <text x="340" y="248" text-anchor="middle" fill="#ff8888" font-size="8">旁邊→每回 1d6 火焰傷害</text>
+
+  <!-- 生物機甲（兩側） -->
+  <rect x="170" y="150" width="75" height="40" rx="6" fill="#DC143C" stroke="#FF4444" stroke-width="2"/>
+  <text x="207" y="167" text-anchor="middle" fill="white" font-size="10">生物機甲 A</text>
+  <text x="207" y="181" text-anchor="middle" fill="#ffaaaa" font-size="7">HP 45 · 精英</text>
+
+  <rect x="435" y="150" width="75" height="40" rx="6" fill="#DC143C" stroke="#FF4444" stroke-width="2"/>
+  <text x="472" y="167" text-anchor="middle" fill="white" font-size="10">生物機甲 B</text>
+  <text x="472" y="181" text-anchor="middle" fill="#ffaaaa" font-size="7">HP 45 · 精英</text>
+
+  <!-- 核心控制台 -->
+  <rect x="270" y="90" width="140" height="50" rx="8" fill="#FFD700" stroke="#FFA500" stroke-width="2.5"/>
+  <text x="340" y="110" text-anchor="middle" fill="#1a1a2e" font-size="13" font-weight="bold">核心控制台</text>
+  <text x="340" y="128" text-anchor="middle" fill="#333" font-size="9">最終抉擇：吸收/穩定/關閉</text>
+
+  <!-- BOSS 標記 -->
+  <circle cx="340" cy="175" r="5" fill="#DC143C"/>
+  <text x="355" y="179" fill="#ff4444" font-size="9">BOSS：千面主教 / 艾蕾娜</text>
+
+  <!-- 標題 -->
+  <text x="340" y="25" text-anchor="middle" fill="#8B5CF6" font-size="16" font-weight="bold">進化戰爭 —— 基因熔爐遺跡</text>
+  <text x="340" y="45" text-anchor="middle" fill="#888" font-size="10">S3 · 三方對峙 → 熔爐爭奪 → 核心抉擇</text>
+
+  <!-- 箭頭定義 -->
+  <defs>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto">
+      <path d="M0,0 L4,8 L8,0" fill="#8B5CF6"/>
+    </marker>
+  </defs>
+</svg>

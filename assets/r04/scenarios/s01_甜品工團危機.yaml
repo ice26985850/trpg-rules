@@ -1,0 +1,44 @@
+id: s01
+title: 甜品工團危機
+mode: single          # 單人玩家：1 GM + 1 名主管
+source: Z公司 TRPG 第二章主線危機合約
+duration: 4-8h
+difficulty: 3
+required:
+  - Z公司_玩家規則書.md
+  - Z公司_GM規則書.md
+prep:
+  gm: 詳讀 GM 規則書第二章；準備冰淇淋魔女、天先生資料卡
+  player: 至少 3 名咒術師員工；滿意度≥60；資金≥100
+initial_state:
+  positive: 0/10      # 削弱天先生勢力
+  negative: 2/10      # 緊張局勢升級
+phases:
+  - name: 危機通報
+    description: 方方通報危機，天先生來訊提出合作
+    choice: [接受合作, 拒絕合作]
+    check: none
+  - name: 實力評估
+    branch_by: 隊伍實力 vs 威脅
+    branches:
+      strong:          # 實力 > 威脅
+        options:
+          與情報部門合作扶持天先生: {result: 無法招募冰淇淋魔女}
+          搞垮天先生: {result: 可招募冰淇淋魔女}
+        scenes:
+          - 潛入倉庫: {check: d100 智力}
+          - 破壞生產線: {check: d100 體力, success: 正面+2}
+          - BOSS戰冰淇淋魔女: {check: d100 咒力/體力, win: 正面+3}
+      weak:            # 實力 < 威脅
+        options:
+          與進修部聯手消滅: {result: 清除威脅, 失去招募機會}
+          維持現狀和解: {result: 四向並行談判}
+endings:
+  win: 正面達 10/10 → 進入第三章
+  escalate: 負面達 10/10 → 危機加劇
+  tiebreak: 第四章調遣結束比拼正面/負面大小
+recruit:
+  target: 冰淇淋魔女
+  condition: 搞垮天先生且危機成功
+  bonus: {佔用格子-1, 屬性視為+1}
+note: 失敗懲罰基準 銀級委託 滿意度-20；放棄為兩倍

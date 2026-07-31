@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="'Microsoft YaHei', 'Microsoft JhengHei', 'PingFang TC', 'Noto Sans TC', 'Heiti SC', 'SimHei', 'WenQuanYi Micro Hei', sans-serif">
+  <defs>
+    <!-- Ocean gradient (same as otherworld map) -->
+    <radialGradient id="oceanGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1a3a5c"/>
+      <stop offset="100%" stop-color="#0d1f33"/>
+    </radialGradient>
+    <!-- Rift glow -->
+    <radialGradient id="riftGlow">
+      <stop offset="0%" stop-color="#c44" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#c44" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#c44" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="riftGlowHigh">
+      <stop offset="0%" stop-color="#e84" stop-opacity="0.5"/>
+      <stop offset="40%" stop-color="#e84" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#e84" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Drop shadow for text -->
+    <filter id="labelShadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+    <!-- Card glow -->
+    <filter id="cardGlow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="cardGlowRed">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#c44" flood-opacity="0.4"/>
+    </filter>
+    <!-- HQ marker pulse animation hint (static glow) -->
+    <radialGradient id="hqPulse">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#8cf" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#48a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ============ OCEAN BACKGROUND ============ -->
+  <rect width="100%" height="100%" fill="url(#oceanGrad)" preserveAspectRatio="none"/>
+
+  <!-- Ocean wave lines (decorative) -->
+  <g opacity="0.06" stroke="#6ab" fill="none" stroke-width="1">
+    <path d="M0,120 Q100,112 200,120 Q300,128 400,120 Q500,112 600,120 Q700,128 800,120 Q900,112 1000,120 Q1100,128 1200,120"/>
+    <path d="M0,700 Q100,692 200,700 Q300,708 400,700 Q500,692 600,700 Q700,708 800,700 Q900,692 1000,700 Q1100,708 1200,700"/>
+  </g>
+
+  <!-- ============ CONTINENT SHAPES (parchment) ============ -->
+  
+  <!-- North America -->
+  <path d="M 120,120 Q 200,80 320,100 Q 380,110 400,160 Q 420,240 380,320 Q 340,380 280,400 Q 200,420 160,380 Q 100,320 120,240 Q 130,180 120,120 Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="2"/>
+  
+  <!-- South America -->
+  <path d="M 160,440 Q 200,420 240,430 Q 280,440 260,500 Q 240,560 220,620 Q 190,680 160,650 Q 140,600 160,540 Q 140,480 160,440 Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="2"/>
+
+  <!-- Europe -->
+  <path d="M 380,80 Q 450,60 520,80 Q 560,100 540,150 Q 520,200 480,230 Q 440,240 400,220 Q 360,190 370,140 Q 380,100 380,80 Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="2"/>
+
+  <!-- Africa -->
+  <path d="M 400,240 Q 440,230 480,250 Q 520,300 500,400 Q 480,480 460,520 Q 440,560 420,520 Q 400,460 400,380 Q 380,300 400,240 Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="2"/>
+
+  <!-- Asia (large mass) -->
+  <path d="M 520,60 Q 620,40 750,50 Q 850,60 900,100 Q 960,120 980,180 Q 1000,240 960,300 Q 920,340 850,360 Q 780,380 720,350 Q 660,320 620,260 Q 580,200 540,160 Q 520,100 520,60 Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="2"/>
+
+  <!-- Southeast Asia + Australia -->
+  <path d="M 780,380 Q 820,360 860,380 Q 900,400 880,440 Q 860,480 820,500 Q 780,480 780,440 Q 760,400 780,380 Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="2"/>
+
+  <!-- Australia proper -->
+  <path d="M 880,500 Q 940,480 1000,510 Q 1040,540 1020,580 Q 980,620 920,610 Q 880,580 880,540 Q 860,510 880,500 Z"
+    fill="#d4c5a0" stroke="#8c7c5c" stroke-width="2"/>
+
+  <!-- Japan (small islands) -->
+  <ellipse cx="960" cy="120" rx="20" ry="35" fill="#d4c5a0" stroke="#8c7c5c" stroke-width="1.5" transform="rotate(-15,960,120)"/>
+  <ellipse cx="990" cy="90" rx="12" ry="20" fill="#d4c5a0" stroke="#8c7c5c" stroke-width="1.5" transform="rotate(-10,990,90)"/>
+
+  <!-- ============ RIFT DENSITY OVERLAYS ============ -->
+  
+  <!-- Tokyo / D-Day origin point - extreme density -->
+  <circle cx="970" cy="140" r="90" fill="url(#riftGlow)"/>
+  <circle cx="970" cy="140" r="45" fill="#c44" opacity="0.15"/>
+
+  <!-- High density regions -->
+  <circle cx="210" cy="200" r="60" fill="url(#riftGlowHigh)"/>  <!-- New York area -->
+  <circle cx="760" cy="240" r="55" fill="url(#riftGlowHigh)"/>  <!-- Shanghai area -->
+
+  <!-- Medium density regions -->
+  <circle cx="470" cy="170" r="40" fill="url(#riftGlowHigh)" opacity="0.6"/>  <!-- London area -->
+  <circle cx="200" cy="530" r="40" fill="url(#riftGlowHigh)" opacity="0.6"/>  <!-- São Paulo area -->
+
+  <!-- ============ CONTINENT LABELS ============ -->
+  <g font-size="12" fill="#8c7c5c" opacity="0.7" text-anchor="middle">
+    <text x="300" y="320">北美洲</text>
+    <text x="190" y="640">南美洲</text>
+    <text x="450" y="240">歐洲</text>
+    <text x="460" y="400">非洲</text>
+    <text x="700" y="120">亞洲</text>
+    <text x="820" y="440">東南亞</text>
+    <text x="960" y="560">澳洲</text>
+  </g>
+
+  <!-- ============ CONNECTION LINES (GAGA network) ============ -->
+  <g stroke="#3a6a9a" stroke-width="1.2" stroke-dasharray="8,5" fill="none" opacity="0.6">
+    <!-- Tokyo to New York -->
+    <path d="M 960,170 Q 700,100 240,180"/>
+    <!-- Tokyo to London -->
+    <path d="M 960,170 Q 750,120 500,160"/>
+    <!-- Tokyo to Shanghai -->
+    <path d="M 960,170 Q 880,200 740,240"/>
+    <!-- New York to London -->
+    <path d="M 240,180 Q 370,150 500,160"/>
+    <!-- New York to São Paulo -->
+    <path d="M 240,180 Q 300,360 200,500"/>
+    <!-- London to Shanghai -->
+    <path d="M 500,160 Q 600,180 740,240"/>
+    <!-- All five to Geneva -->
+    <path d="M 240,180 Q 380,210 460,190"/>
+    <path d="M 500,160 Q 480,180 460,190"/>
+    <path d="M 740,240 Q 600,220 460,190"/>
+    <path d="M 200,500 Q 320,350 460,190"/>
+    <path d="M 960,170 Q 700,180 460,190"/>
+  </g>
+
+  <!-- ============ GENEVA HQ ============ -->
+  <g transform="translate(460,190)">
+    <circle cx="0" cy="0" r="6" fill="#fff" opacity="0.8"/>
+    <circle cx="0" cy="0" r="12" fill="#fff" opacity="0.15"/>
+    <rect x="-40" y="12" width="80" height="22" rx="5" fill="#0d1f2a" stroke="#8ac" stroke-width="0.8"/>
+    <text x="0" y="27" font-size="9" fill="#8ac" text-anchor="middle" font-weight="bold">GAGA總部 · 日內瓦</text>
+  </g>
+
+  <!-- ============ D-DAY ORIGIN MARKER ============ -->
+  <g transform="translate(970,140)">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#c44" stroke-width="2" stroke-dasharray="4,3"/>
+    <circle cx="0" cy="0" r="4" fill="#c44"/>
+    <text x="20" y="-6" font-size="10" fill="#f66" filter="url(#labelShadow)">D-Day</text>
+    <text x="20" y="6" font-size="9" fill="#f88" filter="url(#labelShadow)">原爆點</text>
+  </g>
+
+  <!-- ============ LEGEND ============ -->
+  <g transform="translate(30,650)">
+    <rect x="0" y="0" width="270" height="155" fill="#0d1f2a" stroke="#3a6a9a" stroke-width="1.5" rx="6" opacity="0.9"/>
+    <text x="135" y="22" font-size="13" fill="#8ac" text-anchor="middle" font-weight="bold">—— 圖例 ——</text>
+
+    <!-- Extreme density -->
+    <circle cx="20" cy="42" r="8" fill="#c44" opacity="0.3"/>
+    <circle cx="20" cy="42" r="4" fill="#c44"/>
+    <text x="38" y="46" font-size="11" fill="#adc">極高裂縫密度（D-Day原爆點）</text>
+
+    <!-- High density -->
+    <circle cx="20" cy="64" r="8" fill="#e84" opacity="0.2"/>
+    <circle cx="20" cy="64" r="3" fill="#e84"/>
+    <text x="38" y="68" font-size="11" fill="#adc">高裂縫密度</text>
+
+    <!-- Medium density -->
+    <circle cx="20" cy="86" r="6" fill="#e84" opacity="0.15"/>
+    <circle cx="20" cy="86" r="2" fill="#e84"/>
+    <text x="38" y="90" font-size="11" fill="#adc">中裂縫密度</text>
+
+    <!-- GAGA network -->
+    <line x1="8" y1="110" x2="32" y2="110" stroke="#3a6a9a" stroke-width="1.2" stroke-dasharray="6,4"/>
+    <text x="38" y="114" font-size="11" fill="#adc">公會聯絡網路</text>
+
+    <!-- HQ card style -->
+    <rect x="8" y="124" width="24" height="14" rx="3" fill="#0d1f2a" stroke="#3a7abf" stroke-width="1"/>
+    <text x="38" y="136" font-size="11" fill="#adc">五大公會據點</text>
+  </g>
+
+  <!-- ============ COMPASS ROSE ============ -->
+  <g transform="translate(1120,80)">
+    <circle cx="0" cy="0" r="35" fill="#0d1f2a" stroke="#3a6a9a" stroke-width="1.5" opacity="0.85"/>
+    <circle cx="0" cy="0" r="31" fill="none" stroke="#3a6a9a" stroke-width="0.5" opacity="0.5"/>
+    
+    <!-- N arrow -->
+    <polygon points="0,-28 -7,-4 0,-10 7,-4" fill="#c44"/>
+    <!-- S arrow -->
+    <polygon points="0,28 -7,4 0,10 7,4" fill="#68a"/>
+    <!-- E arrow -->
+    <polygon points="28,0 4,-7 10,0 4,7" fill="#68a"/>
+    <!-- W arrow -->
+    <polygon points="-28,0 -4,-7 -10,0 -4,7" fill="#68a"/>
+    
+    <text x="0" y="-34" font-size="12" fill="#c44" text-anchor="middle" font-weight="bold">北</text>
+    <text x="0" y="40" font-size="10" fill="#68a" text-anchor="middle">南</text>
+    <text x="38" y="4" font-size="10" fill="#68a" text-anchor="middle">東</text>
+    <text x="-38" y="4" font-size="10" fill="#68a" text-anchor="middle">西</text>
+  </g>
+
+  <!-- ============ TITLE ============ -->
+  <g transform="translate(600,780)">
+    <rect x="-280" y="-18" width="560" height="36" rx="5" fill="#0d1f2a" stroke="#3a6a9a" stroke-width="1.5" opacity="0.9"/>
+    <text x="0" y="6" font-size="17" fill="#8ac" text-anchor="middle" font-weight="bold" letter-spacing="3">地球 —— GAGA 全球覺醒者公會聯盟據點</text>
+  </g>
+
+  <!-- ============ FOOTNOTE ============ -->
+  <text x="600" y="760" font-size="10" fill="#5a7a9a" text-anchor="middle" opacity="0.7">五大公會每季舉行聯合會議 · 緊急時可全球調度覺醒者 · 裂縫密度隨時間動態變化</text>
+
+</svg>

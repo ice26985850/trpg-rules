@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="306" viewBox="0 0 808 306" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="808" height="306" fill="#FBFCFE"/>
+<rect x="18" y="186" width="506" height="102" rx="14" fill="#E8F5E9" fill-opacity="0.55" stroke="#E8F5E9" stroke-opacity="0.9"/>
+<text x="28" y="204" font-size="13" font-weight="bold" fill="#37474F">室外</text>
+<rect x="284" y="64" width="506" height="102" rx="14" fill="#E3F2FD" fill-opacity="0.55" stroke="#E3F2FD" stroke-opacity="0.9"/>
+<text x="294" y="82" font-size="13" font-weight="bold" fill="#37474F">一樓</text>
+<rect x="550" y="186" width="240" height="102" rx="14" fill="#F3E5F5" fill-opacity="0.55" stroke="#F3E5F5" stroke-opacity="0.9"/>
+<text x="560" y="204" font-size="13" font-weight="bold" fill="#37474F">二樓</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">靜默社區小學（擴充）</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">區域：舊城區　危險：★★☆☆☆　適合等級（Lv.）：3</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="237" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="227" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="240" font-size="12" fill="#455A64" text-anchor="middle">通道</text>
+<line x1="404" y1="237" x2="404" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="380" y="166" width="47" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="179" font-size="12" fill="#455A64" text-anchor="middle">東側門</text>
+<line x1="404" y1="237" x2="670" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="514" y="166" width="47" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="179" font-size="12" fill="#455A64" text-anchor="middle">西側門</text>
+<line x1="404" y1="115" x2="670" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="166" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="179" font-size="12" fill="#455A64" text-anchor="middle">樓梯</text>
+<line x1="670" y1="115" x2="670" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="653" y="166" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="670" y="179" font-size="12" fill="#455A64" text-anchor="middle">樓梯</text>
+<rect x="40" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">北側圍牆入口</text>
+<title>北側圍牆入口：圍牆倒塌段可攀爬；北側街道拾荒幫派 3 人</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">操場</text>
+<title>操場：升旗台高處觀測點；足球門輕掩體</title>
+<rect x="306" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">保健室</text>
+<title>保健室：藥櫃遺漏物資；急救包×2、腎上腺素×1（TN14）</title>
+<rect x="572" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">教室×2</text>
+<title>教室×2：教室殘留體×2（原教師）；門可外鎖（TN8）避戰；天花板鬆動</title>
+<rect x="572" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">教學樓二樓</text>
+<title>教學樓二樓：走廊連兩教室；窗可俯瞰操場（感知 TN11）</title>
+</svg>

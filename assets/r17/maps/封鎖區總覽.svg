@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="542" height="550" viewBox="0 0 542 550" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="542" height="550" fill="#FBFCFE"/>
+<rect x="18" y="64" width="240" height="102" rx="14" fill="#E8F5E9" fill-opacity="0.55" stroke="#E8F5E9" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">邊緣地帶（★☆☆☆☆）</text>
+<rect x="18" y="186" width="506" height="102" rx="14" fill="#E3F2FD" fill-opacity="0.55" stroke="#E3F2FD" stroke-opacity="0.9"/>
+<text x="28" y="204" font-size="13" font-weight="bold" fill="#37474F">舊城區（★★☆☆☆）</text>
+<rect x="18" y="308" width="506" height="102" rx="14" fill="#FFF3E0" fill-opacity="0.55" stroke="#FFF3E0" stroke-opacity="0.9"/>
+<text x="28" y="326" font-size="13" font-weight="bold" fill="#37474F">工業區（★★★☆☆）</text>
+<rect x="18" y="430" width="506" height="102" rx="14" fill="#FFEBEE" fill-opacity="0.55" stroke="#FFEBEE" stroke-opacity="0.9"/>
+<text x="28" y="448" font-size="13" font-weight="bold" fill="#37474F">核心區（★★★★★）</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">封鎖區總覽（Quarantine Zone Overview）</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">區域：封鎖區全域　危險：—</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="115" x2="138" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="237" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="359" x2="404" y2="359" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="404" y1="237" x2="138" y2="359" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="359" x2="138" y2="481" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="481" x2="404" y2="481" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="228" y="471" width="86" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="484" font-size="12" fill="#455A64" text-anchor="middle">裂隙能量擴散</text>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="112" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-01</text>
+<text x="138" y="129" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 灰燼商場停車場</text>
+<title>MAP-01 灰燼商場停車場：邊緣地帶｜危險★★☆☆☆｜適合 Lv.1-2</title>
+<rect x="40" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="234" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-02</text>
+<text x="138" y="251" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 靜默社區小學</text>
+<title>MAP-02 靜默社區小學：舊城區｜危險★★☆☆☆｜適合 Lv.3</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="234" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-03</text>
+<text x="404" y="251" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 地下隧道系統</text>
+<title>MAP-03 地下隧道系統：舊城區｜危險★★★★☆｜適合 Lv.4</title>
+<rect x="40" y="330" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="356" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-04</text>
+<text x="138" y="373" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 鏽蝕工廠大樓</text>
+<title>MAP-04 鏽蝕工廠大樓：工業區｜危險★★★★☆｜適合 Lv.6-7</title>
+<rect x="306" y="330" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="356" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-06</text>
+<text x="404" y="373" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 兄弟會總部</text>
+<title>MAP-06 兄弟會總部：工業區｜危險★★★★★｜適合 Lv.9</title>
+<rect x="40" y="452" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="478" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-05</text>
+<text x="138" y="495" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 廢棄教堂+墓穴</text>
+<title>MAP-05 廢棄教堂+墓穴：核心區邊緣｜危險★★★★☆｜適合 Lv.8</title>
+<rect x="306" y="452" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="478" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-07</text>
+<text x="404" y="495" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle"> 艾希拉深層實驗室</text>
+<title>MAP-07 艾希拉深層實驗室：核心區｜危險★★★★★｜適合 Lv.10</title>
+</svg>

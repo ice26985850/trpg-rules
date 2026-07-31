@@ -1,0 +1,101 @@
+# 武器速查
+weapons:
+  # 能量武器
+  - name: "紅色激光"
+    slot: "S"
+    damage: "15-25"
+    range: "中"
+    accuracy: 85
+    shield_penetration: "50%"
+    armor_penetration: "0%"
+  - name: "伽馬激光"
+    slot: "L"
+    damage: "80-130"
+    range: "遠"
+    accuracy: 70
+    shield_penetration: "70%"
+    armor_penetration: "0%"
+  - name: "粒子矛"
+    slot: "L"
+    damage: "120-200"
+    range: "遠"
+    accuracy: 65
+    shield_penetration: "100%"
+    armor_penetration: "0%"
+    special: "可貫穿一排"
+  - name: "電弧發射器"
+    slot: "X"
+    damage: "150-300"
+    range: "中"
+    accuracy: 50
+    shield_penetration: "100%"
+    armor_penetration: "100%"
+    special: "無視所有防禦"
+
+  # 動能武器
+  - name: "質量加速器"
+    slot: "S"
+    damage: "12-22"
+    range: "中"
+    accuracy: 80
+    shield_bonus: "對護盾+30%"
+  - name: "高斯炮"
+    slot: "L"
+    damage: "80-140"
+    range: "遠"
+    accuracy: 75
+    armor_penetration: "20%"
+  - name: "自動炮"
+    slot: "S"
+    damage: "8-15(x3)"
+    range: "近"
+    accuracy: 70
+    shield_bonus: "對護盾+50%"
+
+  # 爆炸武器
+  - name: "核導彈"
+    slot: "M"
+    damage: "80-120"
+    range: "遠"
+    accuracy: "制導"
+    special: "範圍傷害"
+  - name: "等離子魚雷"
+    slot: "G"
+    damage: "150-250"
+    range: "中"
+    accuracy: "制導"
+    armor_bonus: "對裝甲+50%"
+  - name: "蜂羣導彈"
+    slot: "M"
+    damage: "20-35(x5)"
+    range: "遠"
+    accuracy: "制導"
+    special: "壓制點防"
+
+  # 打擊機
+  - name: "攔截機"
+    slot: "H"
+    damage: "15-20(x4)"
+    range: "極遠"
+    accuracy: "制導"
+    special: "優先攻擊打擊機/導彈"
+  - name: "轟炸機"
+    slot: "H"
+    damage: "60-100(x2)"
+    range: "極遠"
+    accuracy: "制導"
+    special: "對巡洋及以上+30%"
+
+  # 點防禦
+  - name: "點防激光"
+    slot: "P"
+    damage: "5-8(x4)"
+    range: "近"
+    accuracy: 90
+    special: "攔截導彈/打擊機"
+  - name: "高射炮"
+    slot: "P"
+    damage: "8-12(x3)"
+    range: "近"
+    accuracy: 75
+    special: "攔截導彈/打擊機"

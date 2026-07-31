@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/></filter>
+    <filter id="pulse"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="heartGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FF4444" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FF4444" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0606"/><stop offset="50%" stop-color="#120808"/><stop offset="100%" stop-color="#0A0606"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="900" height="520" fill="url(#bgGrad)"/>
+
+  <!-- 心臟脈動光暈 (巢母室) -->
+  <circle cx="260" cy="140" r="80" fill="url(#heartGrad)" filter="url(#pulse)"/>
+
+  <!-- 標題 -->
+  <text x="450" y="25" text-anchor="middle" fill="#CCAAAA" font-size="17" font-weight="bold">孵化者級生物艦（孵化者級生物艦）——S3 巢穴</text>
+  <text x="450" y="44" text-anchor="middle" fill="#665555" font-size="11">基斯拉克蟲巢 ｜ 10 節點 ｜ 3 有機層 ｜ 孵化倒數中</text>
+
+  <!-- ====== 有機層區域底色 ====== -->
+  <!-- 肌層 (最外層) -->
+  <path d="M 30 310 Q 30 200 150 200 L 650 200 Q 800 200 860 310 L 860 430 Q 700 470 450 470 Q 200 470 30 430 Z" fill="#331111" opacity="0.4" stroke="#884444" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="55" y="335" fill="#994444" font-size="13" font-weight="bold" transform="rotate(-90,55,335)">肌層（外層）</text>
+
+  <!-- 循環層 (中層) -->
+  <path d="M 150 250 Q 150 180 250 180 L 550 180 Q 680 180 750 250 L 750 350 Q 550 400 400 390 Q 250 380 150 350 Z" fill="#112211" opacity="0.4" stroke="#338833" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="165" y="280" fill="#338833" font-size="13" font-weight="bold" transform="rotate(-90,165,280)">循環層（中層）</text>
+
+  <!-- 心核層 (最內層) -->
+  <ellipse cx="380" cy="260" rx="80" ry="60" fill="#111122" opacity="0.5" stroke="#3333AA" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="355" y="265" fill="#4444AA" font-size="12" font-weight="bold">心核層</text>
+
+  <!-- ====== 連線 ====== -->
+  <!-- N1→N2 -->
+  <line x1="740" y1="350" x2="640" y2="350" stroke="#AA6644" stroke-width="2.5"/>
+  <text x="695" y="343" fill="#AA6644" font-size="9">切開外殼</text>
+
+  <!-- N2→N3 -->
+  <line x1="590" y1="350" x2="500" y2="350" stroke="#AA6644" stroke-width="2"/>
+
+  <!-- N3→N4 -->
+  <line x1="450" y1="340" x2="350" y2="340" stroke="#AA6644" stroke-width="2"/>
+
+  <!-- N3→N5 (垂直通道) -->
+  <line x1="480" y1="340" x2="480" y2="270" stroke="#88AA44" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="495" y="308" fill="#88AA44" font-size="8">攀爬</text>
+
+  <!-- N5→N6 -->
+  <line x1="530" y1="260" x2="610" y2="240" stroke="#66AA66" stroke-width="2"/>
+
+  <!-- N6→N7 -->
+  <line x1="660" y1="230" x2="740" y2="220" stroke="#66AA66" stroke-width="1.5"/>
+
+  <!-- N6→N8 (垂直通道) -->
+  <line x1="640" y1="240" x2="580" y2="180" stroke="#88AA44" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="595" y="215" fill="#88AA44" font-size="8">爬升</text>
+
+  <!-- N8→N9 -->
+  <line x1="530" y1="170" x2="440" y2="160" stroke="#6666AA" stroke-width="2"/>
+
+  <!-- N9→N10 -->
+  <line x1="390" y1="155" x2="310" y2="140" stroke="#6666AA" stroke-width="2.5"/>
+
+  <!-- ====== 節點 ====== -->
+  <!-- N1 外殼切入點 -->
+  <rect x="740" y="325" width="110" height="50" rx="10" fill="#225544" stroke="#44AA66" stroke-width="2" filter="url(#shadow)"/>
+  <text x="795" y="347" text-anchor="middle" fill="#88DDAA" font-size="11" font-weight="bold">外殼切入點</text>
+  <text x="795" y="365" text-anchor="middle" fill="#559977" font-size="8">N1｜真空｜0.8G</text>
+
+  <!-- N2 括約肌通道 -->
+  <rect x="580" y="325" width="110" height="50" rx="18" fill="#553322" stroke="#CC8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="635" y="347" text-anchor="middle" fill="#DDAA88" font-size="11" font-weight="bold">括約肌通道</text>
+  <text x="635" y="365" text-anchor="middle" fill="#997766" font-size="8">N2｜MOB DC 10</text>
+
+  <!-- N3 肌層通道 -->
+  <rect x="440" y="315" width="110" height="50" rx="8" fill="#442222" stroke="#CC5544" stroke-width="2" filter="url(#shadow)"/>
+  <text x="495" y="337" text-anchor="middle" fill="#FF8888" font-size="11" font-weight="bold">肌層通道</text>
+  <text x="495" y="355" text-anchor="middle" fill="#996666" font-size="8">N3｜4 幼體｜蠕動</text>
+
+  <!-- N4 孵化囊室 -->
+  <rect x="290" y="315" width="120" height="50" rx="25" fill="#664422" stroke="#FF8844" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="337" text-anchor="middle" fill="#FFAA66" font-size="11" font-weight="bold">孵化囊室</text>
+  <text x="350" y="355" text-anchor="middle" fill="#CC7744" font-size="8">N4｜每回合出幼體</text>
+
+  <!-- N5 淋巴通道 -->
+  <rect x="480" y="240" width="120" height="50" rx="8" fill="#224422" stroke="#66AA44" stroke-width="2" filter="url(#shadow)"/>
+  <text x="540" y="260" text-anchor="middle" fill="#88DD88" font-size="11" font-weight="bold">淋巴通道</text>
+  <text x="540" y="278" text-anchor="middle" fill="#669966" font-size="8">N5｜2 戰士｜酸性液</text>
+
+  <!-- N6 循環通道 -->
+  <rect x="600" y="215" width="120" height="50" rx="8" fill="#335522" stroke="#88BB44" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="660" y="235" text-anchor="middle" fill="#AADD88" font-size="11" font-weight="bold">循環通道</text>
+  <text x="660" y="253" text-anchor="middle" fill="#778866" font-size="8">N6｜免疫反應</text>
+
+  <!-- N7 營養儲存室 -->
+  <rect x="740" y="195" width="110" height="50" rx="8" fill="#445522" stroke="#AAAA44" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="795" y="215" text-anchor="middle" fill="#DDDD88" font-size="11" font-weight="bold">營養儲存室</text>
+  <text x="795" y="233" text-anchor="middle" fill="#999966" font-size="8">N7｜可回收｜+1 聲望</text>
+
+  <!-- N8 瓣膜通道 -->
+  <rect x="520" y="155" width="120" height="50" rx="18" fill="#332244" stroke="#8866CC" stroke-width="2" filter="url(#shadow)"/>
+  <text x="580" y="175" text-anchor="middle" fill="#BB99EE" font-size="11" font-weight="bold">瓣膜通道</text>
+  <text x="580" y="193" text-anchor="middle" fill="#7766AA" font-size="8">N8｜每回合開合</text>
+
+  <!-- N9 心核通道 -->
+  <rect x="380" y="135" width="120" height="50" rx="8" fill="#222244" stroke="#5555AA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="155" text-anchor="middle" fill="#8888DD" font-size="11" font-weight="bold">心核通道</text>
+  <text x="440" y="173" text-anchor="middle" fill="#666699" font-size="8">N9｜艦體心跳震動</text>
+
+  <!-- N10 巢母室 ⭐ -->
+  <rect x="200" y="110" width="160" height="60" rx="30" fill="#882222" stroke="#FF3333" stroke-width="3" filter="url(#shadow)"/>
+  <text x="280" y="132" text-anchor="middle" fill="#FF8888" font-size="13" font-weight="bold">⭐ 巢母室（心臟）</text>
+  <text x="280" y="150" text-anchor="middle" fill="#CC6666" font-size="9">N10｜2 守衛 + 腦蟲</text>
+  <text x="280" y="164" text-anchor="middle" fill="#FF3333" font-size="8">CR 14｜安放炸藥</text>
+
+  <!-- ====== 孵化進度條 ====== -->
+  <rect x="200" y="390" width="500" height="30" rx="5" fill="#1A0A0A" stroke="#884444" stroke-width="1.5"/>
+  <rect x="200" y="390" width="300" height="30" rx="5" fill="#AA3333" opacity="0.6"/>
+  <text x="450" y="410" text-anchor="middle" fill="#FFAAAA" font-size="13" font-weight="bold">孵化進度：▓▓▓▓▓▓▓░░░ 60%（倒數中）</text>
+
+  <!-- 環境特性標註 -->
+  <rect x="110" y="440" width="680" height="30" rx="5" fill="#0A0A0A" opacity="0.6" stroke="#554444" stroke-width="1"/>
+  <text x="450" y="460" text-anchor="middle" fill="#887777" font-size="10">⚠ 生物艦環境：孢子空氣（每小時 RES DC 10）｜蠕動走廊（每 1d6 回合擠壓 DC 12）｜火焰弱點（×2 傷害）｜全艦集體意識</text>
+
+  <!-- ====== 圖例 ====== -->
+  <rect x="710" y="400" width="170" height="100" rx="8" fill="#0D0D0D" opacity="0.85" stroke="#553333" stroke-width="1"/>
+  <text x="795" y="420" text-anchor="middle" fill="#998888" font-size="12" font-weight="bold">圖例</text>
+  <rect x="720" y="432" width="16" height="10" rx="3" fill="#225544" stroke="#44AA66" stroke-width="1"/>
+  <text x="745" y="442" fill="#88DDAA" font-size="9">切入點</text>
+  <rect x="720" y="450" width="16" height="10" rx="8" fill="#553322" stroke="#CC8844" stroke-width="1"/>
+  <text x="745" y="460" fill="#DDAA88" font-size="9">括約肌通道</text>
+  <rect x="720" y="468" width="16" height="10" rx="15" fill="#882222" stroke="#FF3333" stroke-width="2"/>
+  <text x="745" y="478" fill="#FF8888" font-size="9">目標／首領</text>
+  <rect x="820" y="432" width="16" height="10" rx="3" fill="#664422" stroke="#FF8844" stroke-width="1"/>
+  <text x="845" y="442" fill="#FFAA66" font-size="9">孵化囊</text>
+  <rect x="820" y="450" width="16" height="10" rx="3" fill="#224422" stroke="#66AA44" stroke-width="1"/>
+  <text x="845" y="460" fill="#88DD88" font-size="9">淋巴/循環層</text>
+  <rect x="820" y="468" width="16" height="10" rx="3" fill="#332244" stroke="#8866CC" stroke-width="1"/>
+  <text x="845" y="478" fill="#BB99EE" font-size="9">心核層</text>
+
+  <!-- 底部備註 -->
+  <text x="450" y="508" text-anchor="middle" fill="#554444" font-size="10">地圖對應劇本 S3《巢穴（巢穴）》｜難度：困難｜等級 3–6｜孵化倒數 8 回合</text>
+</svg>

@@ -1,0 +1,28 @@
+scenario:
+  id: s05
+  title: "海妖之怒"
+  source: "《英雄聯盟 TRPG 戰役劇本集》· 多人劇本 · 支線 S1"
+  mode: "多人"
+  standalone: true
+  level_range: "Lv.3-6"
+  region: "比爾吉沃特"
+  estimated_time: "2-3 節"
+  summary: >
+    賞金獵人發現在比爾吉沃特港外海有巨型海妖出沒，正威脅航線。玩家被僱傭追獵——
+    但發現海妖是被海盜王剛普朗克的非法鍊金廢料激怒的。
+  chapters:
+    - id: 1
+      title: "獵殺準備"
+      level: "Lv.3"
+      type: "調查 + 船艦改裝"
+    - id: 2
+      title: "外海追獵"
+      level: "Lv.4-5"
+      type: "艦隊戰 + 海妖追蹤"
+    - id: 3
+      title: "海淵對決"
+      level: "Lv.6"
+      type: "Boss 戰"
+      boss: "深淵海妖（生命值（HP）1,200，三階段：水面/淺海/深淵）"
+  rewards:
+    equipment: "「海妖鱗甲」（護甲（AR）+30, 魔抗（MR）+20, 水下呼吸）"

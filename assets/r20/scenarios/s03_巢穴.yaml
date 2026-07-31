@@ -1,0 +1,94 @@
+# 星艦突擊登艦隊——劇本 S3：巢穴（巢穴）
+scenario_id: S3_巢穴
+title: "巢穴（巢穴）——孵化者級生物艦"
+subtitle: "基斯拉克蟲巢（基斯拉克蟲巢）的生物艦正在孵化新一代戰鬥生物。必須在孵化完成前安放炸藥並撤離。"
+difficulty: 困難
+recommended_level: "3–6"
+player_count: { min: 1, max: 6 }
+estimated_duration: "4–6 小時"
+
+mission_type: 破壞任務（破壞任務）
+enemy_vessel:
+  name: "孵化者級生物艦（孵化者級生物艦）"
+  type: 昆蟲族生物艦（昆蟲族生物艦）
+  faction: 基斯拉克蟲巢（基斯拉克蟲巢）
+  size: 中型（長度約 400 公尺——有機體）
+  decks: 3（有機層——肌層、循環層、心核層）
+  gravity: 標準重力（0.8G——艦體內部自帶微弱的生物重力場）
+  self_destruct: false  # 生物艦不會自毀——但會發動免疫反應
+
+story_summary: >
+  協約偵察衛星在邊境星系發現了一艘基斯拉克蟲巢（基斯拉克蟲巢）生物艦，
+  正在小行星帶中「孵化」——艦體附著在小行星上，吸收礦物質以產生新一代戰鬥生物。
+  情報分析顯示孵化週期將在 12 小時內完成，屆時將釋放數千隻蟲族戰士進入該星區。
+  仲裁者號（仲裁者號）派出登艦突擊隊——目標是在孵化完成前在生物艦的中央心臟（巢母室）安放炸藥，徹底摧毀孵化場。
+
+turning_points:
+  - id: TP1
+    name: "切入方式的極限"
+    description: "生物艦外殼是活的——等離子切割器切開時會引起艦體的痛苦痙攣（重力波動），但這是唯一的方式。駭入不適用（沒有電子系統）。"
+  - id: TP2
+    name: "孵化進度條"
+    description: "遊戲主持人（GM）從 8 開始倒數孵化進度。每回合 −1。倒數歸零 → 所有剩餘孵化囊破裂，釋放 2d6 隻蟲族幼體。"
+  - id: TP3
+    name: "免疫反應"
+    description: "當玩家深入肌層時，生物艦開始發動免疫反應——釋放抗體生物（小型蟲族）和消化酶噴灑（生化傷害）。"
+
+key_encounters:
+  - id: E1
+    location: 肌層入口（括約肌通道）
+    enemies:
+      - type: 蟲族幼體
+        count: 4
+        cr: 1
+    total_el: 4
+    notes: "群體攻擊——每多一隻在場的幼體，全體攻擊 +1。"
+
+  - id: E2
+    location: 循環層（淋巴通道）
+    enemies:
+      - type: 蟲族戰士
+        count: 2
+        cr: 2
+    total_el: 4
+    environment: "淋巴液淹沒——移動速度減半。液體具有弱酸性——每回合 1 點酸性傷害（無視護甲）。"
+
+  - id: E3
+    location: 心核層——巢母室
+    enemies:
+      - type: 蟲族守衛
+        count: 2
+        cr: 4
+      - type: 蟲族腦蟲（首領）
+        count: 1
+        cr: 6
+    total_el: 14
+    summon_frequency: "每 2 回合 1d4（腦蟲召喚頻率）"
+    notes: "巢母室是最終戰場。腦蟲的心靈控制（意志 DC 18）可以讓一名玩家攻擊隊友 1 回合。"
+
+hatching_progress:
+  initial: 8
+  decrement_per_round: 1
+  on_zero: "所有剩餘孵化囊破裂——每回合出現 1d6 隻蟲族幼體直到玩家撤離或死亡。"
+  engineer_delay: "工程師可使用系統破解（系統破解）在孵化囊上安裝抑制器——每次成功 +2 進度（每囊一次）。"
+
+rewards:
+  xp_primary: 12         # 主要目標
+  xp_secondary: 6        # 次要目標合計：2 個 ×+3
+  xp_full_survival: 3    # 全員生還
+  xp_gm_bonus: 6         # GM 通用包
+  reputation: 3
+  special_loot:
+    - name: "蟲巢費洛蒙萃取物"
+      description: "從腦蟲屍體中提取的費洛蒙化合物。"
+      effect: "佩戴後——蟲族幼體對該角色攻擊劣勢。聲望 +1。"
+
+special_rules:
+  - rule: "生物艦環境"
+    description: "沒有門——只有括約肌通道（通過需機動（MOB）DC 10）。地板溫暖且潮濕。艦體有心跳聲（低頻震動）。空氣中充滿孢子（非蟲族每小時韌性（RES）DC 10 否則噁心）。"
+  - rule: "火焰優勢"
+    description: "火焰攻擊對生物艦結構造成雙倍傷害（蟲族弱點）。火焰噴射器在此任務中極其有效。"
+  - rule: "蠕動走廊"
+    description: "每 1d6 回合，當前走廊會蠕動收縮——所有角色需機動（MOB）DC 12 否則被擠壓（1d6 傷害）和限制移動 1 回合。"
+
+map_file: "../maps/孵化者級生物艦_S3.yaml"

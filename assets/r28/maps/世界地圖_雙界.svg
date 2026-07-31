@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+  <defs>
+    <radialGradient id="oceanGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#16324f"/><stop offset="100%" stop-color="#0a1726"/>
+    </radialGradient>
+    <radialGradient id="riftGlow">
+      <stop offset="0%" stop-color="#e44" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#e44" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#oceanGrad)"/>
+  <text x="700" y="46" text-anchor="middle" fill="#fff" font-size="26" font-weight="bold">雙界世界地圖 — 地球 × 艾瑟瑞亞</text>
+  <text x="700" y="70" text-anchor="middle" fill="#9fb3c8" font-size="14">異界入侵 TRPG · 全劇本通用 · 主裂縫連結兩界</text>
+  <text x="360" y="110" text-anchor="middle" fill="#7fd1ff" font-size="18" font-weight="bold">地球（現代世界）</text>
+  <text x="1040" y="110" text-anchor="middle" fill="#ffb37f" font-size="18" font-weight="bold">艾瑟瑞亞（異世界）</text>
+  <rect x="40" y="125" width="640" height="740" fill="none" stroke="#2a4a66" stroke-width="1.5" rx="8"/>
+  <rect x="720" y="125" width="640" height="740" fill="none" stroke="#5a3a26" stroke-width="1.5" rx="8"/>
+  <path d="M120,200 Q260,160 360,210 Q420,250 380,330 Q300,380 200,360 Q120,320 120,200 Z" fill="#d4c5a0" opacity="0.25" stroke="#6c7c5c" stroke-width="1"/>
+  <path d="M150,430 Q230,410 300,450 Q330,520 280,600 Q210,640 170,580 Q140,500 150,430 Z" fill="#d4c5a0" opacity="0.2" stroke="#6c7c5c" stroke-width="1"/>
+  <path d="M380,170 Q460,150 500,190 Q480,240 430,250 Q390,220 380,170 Z" fill="#d4c5a0" opacity="0.2" stroke="#6c7c5c" stroke-width="1"/>
+  <path d="M780,150 Q900,120 1100,180 Q1180,260 1140,420 Q1080,560 980,660 Q860,700 800,560 Q760,360 780,150 Z" fill="#caa882" opacity="0.18" stroke="#7a5a3c" stroke-width="1"/>
+<g>
+  <circle cx="200" cy="250" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="212" y="246" fill="#e8f0ff" font-size="17" font-weight="bold">東京</text>
+  <text x="212" y="264" fill="#9fb3c8" font-size="12">黎明之塔 · 裂縫密度：極高</text>
+</g>
+<g>
+  <circle cx="330" cy="300" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="342" y="296" fill="#e8f0ff" font-size="17" font-weight="bold">上海</text>
+  <text x="342" y="314" fill="#9fb3c8" font-size="12">龍門站 · 裂縫密度：高</text>
+</g>
+<g>
+  <circle cx="180" cy="430" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="192" y="426" fill="#e8f0ff" font-size="17" font-weight="bold">紐約</text>
+  <text x="192" y="444" fill="#9fb3c8" font-size="12">鐵壁要塞 · 裂縫密度：高</text>
+</g>
+<g>
+  <circle cx="440" cy="200" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="452" y="196" fill="#e8f0ff" font-size="17" font-weight="bold">倫敦</text>
+  <text x="452" y="214" fill="#9fb3c8" font-size="12">圓桌堡 · 裂縫密度：中</text>
+</g>
+<g>
+  <circle cx="300" cy="570" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="312" y="566" fill="#e8f0ff" font-size="17" font-weight="bold">聖保羅</text>
+  <text x="312" y="584" fill="#9fb3c8" font-size="12">翡翠聖所 · 裂縫密度：中</text>
+</g>
+<g>
+  <circle cx="980" cy="640" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="992" y="636" fill="#e8f0ff" font-size="17" font-weight="bold">獸人之森</text>
+  <text x="992" y="654" fill="#9fb3c8" font-size="12">六大氏族領地</text>
+</g>
+<g>
+  <circle cx="1070" cy="575" r="7" fill="#ff6b5e" stroke="#fff" stroke-width="1.5"/>
+  <text x="1082" y="571" fill="#e8f0ff" font-size="17" font-weight="bold">世界之心</text>
+  <text x="1082" y="589" fill="#9fb3c8" font-size="12">主裂縫源頭 · S20 終戰</text>
+</g>
+<g>
+  <circle cx="900" cy="250" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="912" y="246" fill="#e8f0ff" font-size="17" font-weight="bold">人類領地</text>
+  <text x="912" y="264" fill="#9fb3c8" font-size="12">奧賽庫斯王國</text>
+</g>
+<g>
+  <circle cx="945" cy="305" r="7" fill="#9affc0" stroke="#fff" stroke-width="1.5"/>
+  <text x="957" y="301" fill="#e8f0ff" font-size="17" font-weight="bold">王都·奧賽庫斯城</text>
+  <text x="957" y="319" fill="#9fb3c8" font-size="12">光明之神神殿</text>
+</g>
+<g>
+  <circle cx="810" cy="175" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="822" y="171" fill="#e8f0ff" font-size="17" font-weight="bold">自然領域</text>
+  <text x="822" y="189" fill="#9fb3c8" font-size="12">世界樹故鄉</text>
+</g>
+<g>
+  <circle cx="790" cy="135" r="7" fill="#9affc0" stroke="#fff" stroke-width="1.5"/>
+  <text x="802" y="131" fill="#e8f0ff" font-size="17" font-weight="bold">世界樹</text>
+  <text x="802" y="149" fill="#9fb3c8" font-size="12">法則核心</text>
+</g>
+<g>
+  <circle cx="1100" cy="430" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="1112" y="426" fill="#e8f0ff" font-size="17" font-weight="bold">內海與外海</text>
+  <text x="1112" y="444" fill="#9fb3c8" font-size="12">鮫人／魚人領地</text>
+</g>
+<g>
+  <circle cx="1090" cy="310" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="1102" y="306" fill="#e8f0ff" font-size="17" font-weight="bold">上古戰場沙漠</text>
+  <text x="1102" y="324" fill="#9fb3c8" font-size="12">前文明遺跡</text>
+</g>
+<g>
+  <circle cx="1185" cy="730" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="1197" y="726" fill="#e8f0ff" font-size="17" font-weight="bold">龍島</text>
+  <text x="1197" y="744" fill="#9fb3c8" font-size="12">龍神守護之地</text>
+</g>
+  <line x1="1070" y1="575" x2="200" y2="250" stroke="#ff5544" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.8"/>
+  <circle cx="1070" cy="575" r="40" fill="url(#riftGlow)"/>
+  <text x="700" y="878" text-anchor="middle" fill="#9fb3c8" font-size="12">紅色虛線＝主裂縫（世界之心 → 東京原爆點）｜ 實線圓點為主要據點與關鍵地點</text>
+</svg>

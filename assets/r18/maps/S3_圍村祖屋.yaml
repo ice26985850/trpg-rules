@@ -1,0 +1,104 @@
+name: S3 圍村祖屋（祖屋與地底養屍窖）
+對應劇本: S3 圍村下的養屍窖
+對應場景說明: >-
+  對應 S3 劇本「圍村下的養屍窖」核心場景——新界圍村整棟祖屋（凶宅）與地底養屍窖。
+  九幽堂香港站「七叔公」在祖屋地底佈養屍窖，煉製養屍（Cultivated Zombie，挑戰等級 CR 3）、
+  並以村中亡者怨氣養出厲鬼（Fierce Ghost，挑戰等級 CR 5）作「守門」；凶宅本身是活體巢穴（死域 16＋）。
+  正確處理：學者以知識（KNW）破風水佈局找「穴眼」；武師身手（PHS）壓制養屍；主法師開壇＋封魔陣囚禁厲鬼；
+  關鍵是找到並消滅七叔公——養屍失去控制源才崩解。凶宅空間扭曲（鬼打牆＋死域）以「凶宅扭曲區」標註。
+
+nodes:
+  - id: EN
+    label: 祖屋大門（入口）
+    x: 80
+    y: 130
+    type: exit
+    explored: false
+  - id: H
+    label: 廳堂（正廳）
+    x: 220
+    y: 130
+    type: room
+    explored: false
+  - id: R1
+    label: 偏房（廂房）
+    x: 220
+    y: 50
+    type: room
+    explored: false
+  - id: AH
+    label: 祠堂（祖祠）
+    x: 380
+    y: 130
+    type: room
+    explored: false
+  - id: CE
+    label: 地窖入口（暗門）
+    x: 540
+    y: 130
+    type: secret
+    explored: false
+  - id: C1
+    label: 養屍窖主室
+    x: 220
+    y: 370
+    type: room
+    explored: false
+  - id: Z1
+    label: 養屍格（陳屍陣）
+    x: 400
+    y: 370
+    type: room
+    explored: false
+  - id: Q7
+    label: 七叔公密室（煉屍者）
+    x: 540
+    y: 300
+    type: boss
+    explored: false
+  - id: EY
+    label: 穴眼（地脈之眼）
+    x: 540
+    y: 470
+    type: hazard
+    explored: false
+
+edges:
+  - from: EN
+    to: H
+    type: corridor
+  - from: H
+    to: AH
+    type: corridor
+  - from: H
+    to: R1
+    type: stair
+  - from: AH
+    to: CE
+    type: corridor
+  - from: CE
+    to: C1
+    type: secret
+  - from: C1
+    to: Z1
+    type: corridor
+  - from: C1
+    to: Q7
+    type: corridor
+  - from: Z1
+    to: Q7
+    type: corridor
+  - from: Q7
+    to: EY
+    type: stair
+  - from: Z1
+    to: EY
+    type: corridor
+
+regions:
+  - name: 凶宅扭曲區（空間扭曲·死域）
+    color: "#E8D5C4"
+    nodes: [EN, H, R1, AH]
+  - name: 養屍窖區（九幽堂煉屍場）
+    color: "#D5D5E8"
+    nodes: [C1, Z1, Q7, EY]

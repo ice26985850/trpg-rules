@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" font-family="serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="0" y="0" width="680" height="480" fill="#F7F3EC"/>
+
+  <!-- 標題 -->
+  <text x="20" y="26" font-size="20" fill="#2B2B2B" font-weight="bold">S2 停屍間 · 殯儀館停屍間</text>
+
+  <!-- 區域底色 -->
+  <rect x="325" y="168" width="150" height="210" rx="10" fill="#D5D5E8" fill-opacity="0.28" stroke="#9A9AC0" stroke-dasharray="6 4" stroke-width="1.2"/>
+  <text x="335" y="186" font-size="12" fill="#5A5A8A">抽屜牆陰冷區（多屍疊加 陰氣值（YIN））</text>
+  <rect x="175" y="218" width="150" height="180" rx="10" fill="#E8D5C4" fill-opacity="0.25" stroke="#C9A98C" stroke-dasharray="6 4" stroke-width="1.2"/>
+  <text x="185" y="236" font-size="12" fill="#8A6B4F">走廊禁地區（怨靈盤踞）</text>
+
+  <!-- 連線 -->
+  <g stroke="#777" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="165" y1="240" x2="175" y2="240"/>
+    <line x1="325" y1="240" x2="325" y2="212"/>
+    <line x1="307" y1="222" x2="503" y2="158"/>
+    <line x1="250" y1="262" x2="250" y2="358"/>
+    <line x1="400" y1="212" x2="400" y2="328"/>
+  </g>
+
+  <!-- 節點 -->
+  <g font-size="13" text-anchor="middle" fill="#2B2B2B">
+    <rect x="15" y="218" width="150" height="44" rx="8" fill="#D6EAD6" stroke="#7A9A7A" stroke-width="1.5"/>
+    <text x="90" y="245">出口（太平門）</text>
+
+    <rect x="175" y="218" width="150" height="44" rx="8" fill="#E8E4DC" stroke="#BBAE92" stroke-width="1.5"/>
+    <text x="250" y="245">停屍走廊</text>
+
+    <rect x="485" y="118" width="150" height="44" rx="8" fill="#E8E1D0" stroke="#BBAE92" stroke-width="1.5"/>
+    <text x="560" y="145">殮房辦公室（九叔）</text>
+
+    <rect x="325" y="168" width="150" height="44" rx="8" fill="#E8E1D0" stroke="#BBAE92" stroke-width="1.5"/>
+    <text x="400" y="195">抽屜牆（蜂巢格）</text>
+
+    <rect x="325" y="328" width="150" height="44" rx="8" fill="#EAD6EA" stroke="#A07AA0" stroke-width="1.8"/>
+    <text x="400" y="355">第七抽屜（新屍）</text>
+
+    <rect x="175" y="358" width="150" height="44" rx="8" fill="#F0D6D6" stroke="#C77A7A" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="250" y="385">怨靈盤踞區</text>
+  </g>
+
+  <!-- 圖例 -->
+  <g font-size="11" fill="#555">
+    <rect x="520" y="400" width="14" height="14" rx="3" fill="#D6EAD6"/><text x="540" y="412">出口</text>
+    <rect x="520" y="420" width="14" height="14" rx="3" fill="#E8E1D0"/><text x="540" y="432">房間</text>
+    <rect x="520" y="440" width="14" height="14" rx="3" fill="#EAD6EA"/><text x="540" y="452">首腦節點</text>
+    <rect x="520" y="460" width="14" height="14" rx="3" fill="#F0D6D6"/><text x="540" y="472">陷阱</text>
+  </g>
+
+  <!-- 底部註解 -->
+  <text x="20" y="460" font-size="12" fill="#666">對應劇本：S2 停屍間的第七抽屜（場景：殯儀館停屍間）｜ 關鍵：第七抽屜屍變（白僵）、走廊怨靈；天光前解決</text>
+</svg>

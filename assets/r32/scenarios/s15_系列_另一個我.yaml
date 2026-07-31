@@ -1,0 +1,95 @@
+name: "另一個我（多人）"
+type: "鏡像追逐"
+difficulty: "★★★★★"
+recommended_marks: "7-10+"
+players: "2-4 人"
+play_time: "3-4 次聚會"
+core_attributes: ["AN", "NG", "AW"]
+
+opening: |
+  這不是委託——是個人的。其中一名玩家的鏡像開始做出「不該有的動作」，
+  起初只是微小偏差，但情況惡化：鏡像用玩家自己的聲音說出玩家不知道的事。
+  牠說：「你還記得那年的夏天嗎？在橋下——你拋下的是什麼？」
+
+core_design: |
+  GM 需在開始前與目標玩家秘密前置溝通，確定：玩家童年遺忘的一段記憶、
+  鏡像「知道」的祕密、鏡像的目的（取代你？還是警告你？）。
+
+npcs:
+  - name: "玩家的鏡像"
+    type: "鏡像"
+    desc: "交涉 難度等級（DC）16，使用玩家相同屬性值。不是敵人——是「被壓抑的那部分」"
+    companion_eligible: false
+  - name: "童年熟人"
+    type: "線人"
+    desc: "仍可能在表層的兒時朋友、鄰居或家人，提供「那段夏天」的線索"
+    companion_eligible: false
+  - name: "遺失物收集者"
+    type: "間隙生物"
+    desc: "曾目擊鏡像離開玩家獨立行動，可交換情報"
+    companion_eligible: false
+  - name: "記憶守衛"
+    type: "通道守衛"
+    desc: "守在核心記憶所在地——橋下的通道守衛，需「一個名字」或「一段真實回憶」通過"
+    companion_eligible: false
+
+lost_items:
+  - name: "童年的日記"
+    tier: "記憶結晶"
+    dc: 15
+    location: "童年家園的間隙層"
+    effect: "寫到兒時好友某年夏天在橋下溺水"
+  - name: "撕碎的照片（半張）"
+    tier: "普通遺失物"
+    dc: 8
+    location: "老學校的間隙層"
+    effect: "拼湊真相的碎片"
+  - name: "橋下的小鐵盒"
+    tier: "間隙造物"
+    dc: 18
+    location: "橋下的間隙層"
+    effect: "封存著被壓抑記憶的關鍵物"
+
+gap_creatures:
+  - name: "鏡像"
+    type: "鏡像"
+    negotiation_dc: 16
+    location: "玩家個人歷史場景"
+    liberation: "三階段：暗示→對話→對決；終點在記憶核心"
+    reward: "融合/拒絕/犧牲三種結局"
+  - name: "記憶守衛"
+    type: "通道守衛"
+    negotiation_dc: 12
+    location: "橋下的通道"
+    liberation: "提供一段真實回憶或一個名字"
+    reward: "讓出通往橋的路徑"
+
+scenes:
+  - name: "第一次異常"
+    desc: "例行穿越時看到鏡像。定錨 難度等級（DC）14 確認「這是真的還是幻覺」。"
+    map_ref: "—"
+  - name: "追蹤鏡像"
+    desc: "鏡像留下殘響路徑。覺察 難度等級（DC）12 追蹤，路徑引導穿越玩家的個人歷史。"
+    map_ref: "MAP-08（鏡像追蹤路徑）— 場景A"
+  - name: "與鏡像對話"
+    desc: "童年家間隙層中，鏡像揭示：「你忘記的不是一個夏天，是一個人。」交涉 難度等級（DC）16。"
+    map_ref: "MAP-08 — 場景B"
+  - name: "挖掘記憶"
+    desc: "透過遺失物與NPC拼湊：兒時好友某年夏天在橋下溺水，玩家在場因恐懼未求助。"
+    map_ref: "MAP-08 — 場景B"
+  - name: "橋下的對決"
+    desc: "抵達橋的間隙層。鏡像站在橋下——選擇：接受記憶（融合）、拒絕（鏡像獨立）、鏡像的犧牲。"
+    map_ref: "MAP-08 — 場景D"
+  - name: "收尾"
+    desc: "無論選擇如何，玩家都被永久改變。接受記憶：歸還印記 +1（歸還一段記憶給自己）。"
+    map_ref: "—"
+
+endings:
+  - "融合：玩家更完整，未來所有定錨檢定永久優勢"
+  - "拒絕：鏡像留在間隙，未來可能再現"
+  - "犧牲：玩家康復，鏡像永遠消失——每次照鏡都想起牠"
+
+rewards:
+  - "歸還印記 × 1（接受記憶時）"
+
+companion_recruitment: []

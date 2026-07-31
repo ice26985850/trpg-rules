@@ -1,0 +1,71 @@
+name: "至暗時代"
+description: "全球災難降臨——隕石墜落帶來枯萎症。你不只要建設國家，你要確保文明本身能活下來。"
+difficulty: 4
+level_range:
+  era_start: "王國時代"
+  era_end: "帝國時代"
+turns_estimated: 70
+player_count: {min: 1, max: 1}
+map_ref: "maps/S4_至暗時代_災難區域.yaml"
+initial_map: "maps/S4_至暗時代_災難區域.yaml"
+
+phases:
+  - id: 1
+    name: "災難降臨"
+    turns: "1-10"
+    events:
+      - turn: 1
+        name: "隕石墜落"
+        type: "disaster"
+        description: "綠色隕石劃過天際，帶來枯萎症"
+      - turn: 5
+        name: "封鎖或援助"
+        type: "moral_choice"
+        description: "選擇封閉邊境還是開放援助"
+
+  - id: 2
+    name: "黑暗中摸索"
+    turns: "11-30"
+    events:
+      - turn: 15
+        name: "尋找隕石"
+        type: "exploration"
+        description: "尋找隕石墜落地點進行研究"
+      - turn: 25
+        name: "互相掠奪"
+        type: "diplomacy"
+        description: "各勢力開始互相指責和掠奪"
+
+  - id: 3
+    name: "希望之光"
+    turns: "31-55"
+    events:
+      - turn: 35
+        name: "聯合遠征"
+        type: "expedition"
+        description: "組織多國聯合遠征隊"
+      - turn: 45
+        name: "解藥的代價"
+        type: "moral_choice"
+        description: "解藥需要犧牲——以壽命為代價"
+
+  - id: 4
+    name: "新黎明"
+    turns: "56-70"
+    events:
+      - turn: 60
+        name: "犧牲的選擇"
+        type: "climax"
+        description: "決定由誰來承擔犧牲"
+      - turn: 70
+        name: "文明重建"
+        type: "ending"
+        description: "災難後的新世界秩序"
+
+endings:
+  - id: "savior"
+    condition: "找到解藥並拯救他人"
+    result: "國際聲望+50，全屬性+10"
+  - id: "fortress"
+    condition: "封閉自保"
+    result: "全屬性+5，但國際孤立"

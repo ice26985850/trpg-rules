@@ -1,0 +1,52 @@
+# 地師TRPG 劇本 S7：帝陵 ——「墓主等了千年」
+scenario_id: S7
+title: "帝陵——墓主等了千年"
+level_range: "12-15"
+difficulty: "史詩"
+sessions: "4-6"
+region: "關中（帝陵核心）"
+
+synopsis: |
+  一切的終點。所有線索——水銀迷宮控制圖、養屍地祭壇銘文、不化骨的研究筆記——都指向同一座帝陵。
+  墓主是一個尋求永生的上古帝王。他成功了但也失敗了——身體不滅但魂魄被困在永恆孤獨中。
+  千年來他一直清醒地躺在棺中，無法死亡，無法離開。他等待的不是盜墓者——是能終結他永恆孤獨的人。
+  帝陵中存在兩股力量：墓主（渴望終結）和「永生之力」（抗拒終結）。這不是傳統Boss戰——是幫助墓主對抗自身。
+
+npcs:
+  - {id: npc_emperor_human, name: "墓主——人性面", role: "引導者", attitude: "悲傷、感激有人來", info: "以前朝殿中的靈體形態出現，提供幫助和指引"}
+  - {id: npc_emperor_divine, name: "墓主——神性面（永生之力）", role: "終極對手", attitude: "冷漠、純粹的生存本能", info: "不帶惡意——只是不允許自己被消滅。真正的最終Boss", stats: {type: "概念存在（永生之力具現化）", cr: 14, hp: 150, def: 26, special: "操控墓室結構——牆壁移動、地板塌陷、煞氣風暴"}}
+  - {id: npc_designer, name: "帝陵設計師的殘留意識", role: "資訊提供者", info: "在星辰圖室中以影像形式出現，解釋帝陵設計意圖"}
+
+tomb_structure:
+  type: "超大型墓葬"
+  layers:
+    - {id: outer, name: "外層防禦環", chambers: [{name: "水銀河道", note: "使用S3控制圖可安全通過"}, {name: "兵馬俑陣", note: "數百陶俑——部分會動"}, {name: "連弩陣", note: "大規模弩箭機關"}]}
+    - {id: middle, name: "中層——迷宮與考驗", chambers: [{name: "五行殿×5", note: "金木水火土，各對應不同考驗"}, {name: "星辰圖室", note: "天文圖+曆法謎題"}, {name: "長生殿", note: "墓主生前實驗記錄——揭示永生儀式真相"}]}
+    - {id: inner, name: "內層——核心", chambers: [{name: "前朝殿", note: "墓主生前宮殿複製品——人性面靈體在此"}, {name: "寢殿", note: "真正的棺槨所在"}, {name: "地脈核心", note: "永生之力源頭——連接地下龍脈"}]}
+
+encounters:
+  - {id: enc_outer, name: "突破外層防禦", type: "探索/戰鬥", dc: 16, ttv: 20, description: "兵馬俑+連弩陣。需S3控制圖降低難度"}
+  - {id: enc_elements, name: "五行殿考驗", type: "探索/儀式", dc: "14-18", description: "五個獨立考驗對應五行原理。全部通過才能開啟內層"}
+  - {id: enc_stars, name: "星辰圖室", type: "探索", dc: 18, description: "破解天文曆法謎題，獲得通往寢殿路徑"}
+  - {id: enc_dialogue, name: "前朝殿——與墓主對話", type: "社交", dc: 18, description: "墓主人性面現身。這是最重要對話——決定最終結局方向"}
+  - {id: enc_bedchamber, name: "寢殿——第一階段", type: "戰鬥", ttv: 30, description: "神性面操控墓室——牆壁移動、地板塌陷、煞氣風暴"}
+  - {id: enc_core, name: "地脈核心——第二階段", type: "戰鬥", ttv: 35, description: "永生之力具現化——純粹陰煞構成的存在"}
+  - {id: enc_final, name: "最終選擇", type: "綜合", description: "外部勢力逼近（軍閥/外國隊/叛徒地師）——玩家需在多方壓力下完成最終決定"}
+
+key_items:
+  - {id: item_immortality_record, name: "永生儀式的完整記錄", description: "禁忌知識的頂峰。不可輕易使用"}
+  - {id: item_imperial_seal, name: "帝王印璽", description: "傳說級古物。價值無法用金錢衡量"}
+  - {id: item_core_crystal, name: "地脈核心碎片", description: "若破壞永生之力獲得——最強法器核心"}
+  - {id: item_emperor_legacy, name: "墓主的遺贈", description: "若幫助墓主安息——畢生知識最精華部分傳給玩家"}
+
+endings:
+  - {id: ending_rest, name: "安息", condition: "幫助人性面戰勝神性面", result: "墓主終於死去。帝陵崩塌但知識被保存。玩家成為傳奇"}
+  - {id: ending_seal, name: "封印", condition: "不摧毀永生之力，永久封印", result: "帝陵保持完整但永遠封閉。獲得守護者稱號"}
+  - {id: ending_inherit, name: "傳承", condition: "接受永生之力（極高意志檢定DC22）", result: "玩家成為新不滅者——代價是永恆的孤獨"}
+  - {id: ending_destruction, name: "毀滅", condition: "被神性面擊敗/外部勢力入侵", result: "帝陵崩塌，永生之力洩出——世界設定級別重大事件"}
+
+rewards: {xp: 2000, money: "3000-10000+大洋（傳說級獎勵）"}
+scale_adjustments:
+  solo: {not_recommended: true, reason: "史詩級。需要至少3人"}
+  duo: {not_recommended: true, reason: "史詩級。需要至少3人"}
+  trio: {note: "五行殿考驗簡化為三選二", ttv_mult: 0.85}

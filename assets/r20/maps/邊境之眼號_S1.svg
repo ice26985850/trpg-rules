@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/></filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="900" height="500" fill="#0D1B2A"/>
+
+  <!-- 標題 -->
+  <text x="450" y="30" text-anchor="middle" fill="#E0E0E0" font-size="18" font-weight="bold">邊境之眼號（邊境之眼號）——S1 處女航</text>
+  <text x="450" y="50" text-anchor="middle" fill="#8899AA" font-size="12">同盟巡邏艇 ｜ 8 節點 ｜ 2 層甲板 ｜ 標準重力（1G）</text>
+
+  <!-- 區域底色 -->
+  <!-- 第一層甲板 -->
+  <rect x="50" y="70" width="550" height="320" rx="10" fill="#1B3A5C" opacity="0.4" stroke="#336699" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="70" y="95" fill="#6699CC" font-size="14" font-weight="bold">第一層甲板（第一層甲板）</text>
+
+  <!-- 第二層甲板 -->
+  <rect x="50" y="70" width="550" height="160" rx="10" fill="#5C3A1B" opacity="0.3" stroke="#996633" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="70" y="95" fill="#CC9966" font-size="14" font-weight="bold">第二層甲板（第二層甲板）</text>
+
+  <!-- 連線 -->
+  <!-- N1→N2 走廊 -->
+  <line x1="140" y1="230" x2="260" y2="230" stroke="#66AADD" stroke-width="2"/>
+  <!-- N2→N3 走廊 -->
+  <line x1="310" y1="230" x2="420" y2="230" stroke="#66AADD" stroke-width="2"/>
+  <!-- N3→N4 樓梯 -->
+  <line x1="440" y1="230" x2="440" y2="150" stroke="#CCAA66" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="455" y="195" fill="#CCAA66" font-size="10">樓梯</text>
+  <!-- N3→N5 維護通道 -->
+  <line x1="450" y1="220" x2="540" y2="270" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="490" y="238" fill="#88CC88" font-size="10">維護通道</text>
+  <!-- N4→N6 樓梯 -->
+  <line x1="440" y1="130" x2="440" y2="115" stroke="#CCAA66" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- N5→N6 維護通道 -->
+  <line x1="560" y1="250" x2="460" y2="130" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <!-- N6→N7 走廊 -->
+  <line x1="470" y1="110" x2="550" y2="110" stroke="#66AADD" stroke-width="2"/>
+  <!-- N7→N8 艙門鎖定 -->
+  <line x1="610" y1="110" x2="680" y2="110" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="635" y="100" fill="#DD4444" font-size="9">鎖定</text>
+
+  <!-- 節點 -->
+  <!-- N1 氣閘 -->
+  <rect x="80" y="200" width="120" height="60" rx="8" fill="#226644" stroke="#44AA66" stroke-width="2" filter="url(#shadow)"/>
+  <text x="140" y="225" text-anchor="middle" fill="#88DDAA" font-size="12" font-weight="bold">氣閘／切入點</text>
+  <text x="140" y="245" text-anchor="middle" fill="#669988" font-size="9">N1 ｜ 第一層</text>
+
+  <!-- N2 貨艙 -->
+  <rect x="270" y="200" width="100" height="60" rx="8" fill="#445522" stroke="#AAAA44" stroke-width="2" filter="url(#shadow)"/>
+  <text x="320" y="225" text-anchor="middle" fill="#DDDD88" font-size="12" font-weight="bold">貨艙</text>
+  <text x="320" y="245" text-anchor="middle" fill="#999966" font-size="9">N2 ｜ 2 名艦員</text>
+
+  <!-- N3 走廊交叉口 -->
+  <rect x="410" y="200" width="100" height="60" rx="8" fill="#334455" stroke="#6688AA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="225" text-anchor="middle" fill="#AABBCC" font-size="12" font-weight="bold">走廊交叉口</text>
+  <text x="460" y="245" text-anchor="middle" fill="#778899" font-size="9">N3 ｜ 地圖面板</text>
+
+  <!-- N4 主樓梯 -->
+  <rect x="390" y="120" width="100" height="50" rx="8" fill="#554422" stroke="#CCAA44" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="140" text-anchor="middle" fill="#DDCC88" font-size="12" font-weight="bold">主樓梯</text>
+  <text x="440" y="158" text-anchor="middle" fill="#998866" font-size="9">N4 ｜ 2 名警衛</text>
+
+  <!-- N5 維護通道入口 -->
+  <rect x="540" y="240" width="100" height="50" rx="8" fill="#334433" stroke="#66AA66" stroke-width="2" filter="url(#shadow)"/>
+  <text x="590" y="260" text-anchor="middle" fill="#88CC88" font-size="12" font-weight="bold">維護通道入口</text>
+  <text x="590" y="278" text-anchor="middle" fill="#669966" font-size="9">N5 ｜ ENG DC 10</text>
+
+  <!-- N6 第二層走廊 -->
+  <rect x="390" y="80" width="100" height="50" rx="8" fill="#553322" stroke="#CC8844" stroke-width="2" filter="url(#shadow)"/>
+  <text x="440" y="100" text-anchor="middle" fill="#DDAA88" font-size="12" font-weight="bold">第二層走廊</text>
+  <text x="440" y="118" text-anchor="middle" fill="#997766" font-size="9">N6 ｜ 燈光昏暗</text>
+
+  <!-- N7 資料中心入口 -->
+  <rect x="540" y="80" width="110" height="60" rx="8" fill="#552222" stroke="#DD4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="595" y="103" text-anchor="middle" fill="#FF8888" font-size="12" font-weight="bold">資料中心入口</text>
+  <text x="595" y="123" text-anchor="middle" fill="#996666" font-size="9">N7 ｜ 砲台 + 陸戰隊員</text>
+
+  <!-- N8 資料中心 ⭐ -->
+  <rect x="680" y="80" width="110" height="60" rx="8" fill="#664422" stroke="#FFAA44" stroke-width="3" filter="url(#shadow)"/>
+  <text x="735" y="100" text-anchor="middle" fill="#FFCC88" font-size="12" font-weight="bold">⭐ 資料中心</text>
+  <text x="735" y="120" text-anchor="middle" fill="#CC9944" font-size="9">N8 ｜ 目標區域</text>
+  <text x="735" y="135" text-anchor="middle" fill="#FFAA44" font-size="8">下載 3 回合</text>
+
+  <!-- 圖例 -->
+  <rect x="620" y="300" width="250" height="180" rx="8" fill="#1A1A2E" opacity="0.8" stroke="#334455" stroke-width="1"/>
+  <text x="745" y="325" text-anchor="middle" fill="#8899AA" font-size="13" font-weight="bold">圖例</text>
+  <rect x="635" y="340" width="20" height="12" rx="3" fill="#226644" stroke="#44AA66" stroke-width="1"/>
+  <text x="665" y="352" fill="#88DDAA" font-size="11">切入點／氣閘</text>
+  <rect x="635" y="362" width="20" height="12" rx="3" fill="#445522" stroke="#AAAA44" stroke-width="1"/>
+  <text x="665" y="374" fill="#DDDD88" font-size="11">普通房間</text>
+  <rect x="635" y="384" width="20" height="12" rx="3" fill="#664422" stroke="#FFAA44" stroke-width="2"/>
+  <text x="665" y="396" fill="#FFCC88" font-size="11">目標區域</text>
+  <rect x="635" y="406" width="20" height="12" rx="3" fill="#552222" stroke="#DD4444" stroke-width="2"/>
+  <text x="665" y="418" fill="#FF8888" font-size="11">危險區域／敵方</text>
+  <line x1="635" y1="435" x2="655" y2="435" stroke="#66AADD" stroke-width="2"/>
+  <text x="665" y="440" fill="#66AADD" font-size="11">走廊</text>
+  <line x1="635" y1="455" x2="655" y2="455" stroke="#CCAA66" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="665" y="460" fill="#CCAA66" font-size="11">樓梯／垂直通道</text>
+  <line x1="635" y1="472" x2="655" y2="472" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="665" y="477" fill="#88CC88" font-size="11">維護通道（繞行）</text>
+
+  <!-- 標註 -->
+  <text x="450" y="470" text-anchor="middle" fill="#556677" font-size="10">地圖對應劇本 S1《處女航（處女航）》｜ 難度：教學 ｜ 等級 1</text>
+</svg>

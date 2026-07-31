@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="'Microsoft JhengHei','PingFang TC',sans-serif">
+  <!-- 背景：羊皮紙 -->
+  <rect x="0" y="0" width="800" height="560" fill="#FCF8F0"/>
+  <!-- 東海（東岸，汐風城所在） -->
+  <path d="M660 0 L800 0 L800 560 L660 560 C630 460 640 360 660 290 C645 230 650 130 670 0 Z" fill="#D6EAF8" stroke="#9CC3E0" stroke-width="1.5"/>
+  <text x="735" y="285" fill="#4A7BA6" font-size="15" text-anchor="middle" transform="rotate(90 735 285)">東 海</text>
+
+  <!-- 地形：鐵砧鎮（西）山脈 -->
+  <g fill="#C9BBA8" stroke="#9C8B73" stroke-width="1">
+    <polygon points="175,330 200,280 225,330"/>
+    <polygon points="205,338 232,285 259,338"/>
+    <polygon points="150,340 173,298 196,340"/>
+  </g>
+  <!-- 地形：翠葉谷（北）森林 -->
+  <g fill="#BFE3B0" stroke="#7FB069" stroke-width="1">
+    <circle cx="318" cy="128" r="16"/>
+    <circle cx="352" cy="118" r="13"/>
+    <circle cx="378" cy="135" r="15"/>
+    <circle cx="335" cy="150" r="12"/>
+  </g>
+
+  <!-- 貿易路線 -->
+  <g stroke="#8B6F47" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+    <line x1="440" y1="320" x2="690" y2="290"/>   <!-- 王都-汐風城 東海大道 -->
+    <line x1="440" y1="320" x2="345" y2="150"/>   <!-- 王都-翠葉谷 翡翠商路 -->
+    <line x1="440" y1="320" x2="215" y2="300"/>   <!-- 王都-鐵砧鎮 山麓商道 -->
+    <line x1="345" y1="150" x2="215" y2="300"/>   <!-- 翠葉谷-鐵砧鎮 -->
+    <line x1="215" y1="300" x2="120" y2="165"/>   <!-- 鐵砧鎮-守望堡 礦石之路 -->
+    <line x1="345" y1="150" x2="120" y2="165"/>   <!-- 翠葉谷-守望堡 -->
+    <line x1="120" y1="165" x2="440" y2="320" stroke-dasharray="7 5"/> <!-- 守望堡-王都 邊境驛道 -->
+  </g>
+  <!-- 路線名稱 -->
+  <g fill="#5A4632" font-size="12" text-anchor="middle">
+    <text x="566" y="298">東海大道</text>
+    <text x="398" y="232">翡翠商路</text>
+    <text x="320" y="312">山麓商道</text>
+    <text x="262" y="212">鄰近（1週）</text>
+    <text x="160" y="240">礦石之路</text>
+    <text x="222" y="150">鄰近（1週）</text>
+    <text x="300" y="268">邊境驛道</text>
+  </g>
+
+  <!-- 城市節點 -->
+  <!-- 王都（中心，金） -->
+  <circle cx="440" cy="320" r="13" fill="#E8B923" stroke="#9A7411" stroke-width="2"/>
+  <text x="440" y="350" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">王都 艾德溫納</text>
+  <!-- 汐風城（東港，藍） -->
+  <circle cx="690" cy="290" r="11" fill="#4A90C2" stroke="#2C5E82" stroke-width="2"/>
+  <text x="690" y="270" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">港都 汐風城</text>
+  <!-- 翠葉谷（北森，綠） -->
+  <circle cx="345" cy="150" r="11" fill="#6FB069" stroke="#3E7A38" stroke-width="2"/>
+  <text x="345" y="112" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">森都 翠葉谷</text>
+  <!-- 鐵砧鎮（西山，灰） -->
+  <circle cx="215" cy="300" r="11" fill="#9AA0A6" stroke="#5C6066" stroke-width="2"/>
+  <text x="215" y="270" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">礦山城 鐵砧鎮</text>
+  <!-- 守望堡（邊境，赭紅） -->
+  <circle cx="120" cy="165" r="11" fill="#C0654B" stroke="#7E3B27" stroke-width="2"/>
+  <text x="120" y="135" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">邊境鎮 守望堡</text>
+
+  <!-- 指北針 -->
+  <g transform="translate(60,500)">
+    <circle r="22" fill="#FFFFFF" stroke="#9C8B73" stroke-width="1.5"/>
+    <polygon points="0,-15 5,2 0,-2 -5,2" fill="#C0654B"/>
+    <text x="0" y="-26" fill="#5A4632" font-size="12" text-anchor="middle">北</text>
+  </g>
+
+  <!-- 標題與圖例 -->
+  <text x="400" y="36" fill="#3A2E1E" font-size="22" font-weight="bold" text-anchor="middle">尹瑟嘉德 區域地圖</text>
+  <text x="400" y="58" fill="#6B5B45" font-size="12" text-anchor="middle">後英雄時代 · 五大城與貿易路線（線上數字為旅行週數參考）</text>
+  <g transform="translate(560,470)" font-size="12" fill="#5A4632">
+    <rect x="-10" y="-18" width="240" height="64" fill="#FFFFFF" opacity="0.7" stroke="#9C8B73" stroke-width="1"/>
+    <text x="0" y="0">王都→汐風城 1週 ／ 翠葉谷 1週</text>
+    <text x="0" y="16">王都→鐵砧鎮 2週 ／ 守望堡 3週</text>
+    <text x="0" y="32">鐵砧鎮↔守望堡 鄰近 1週</text>
+  </g>
+</svg>

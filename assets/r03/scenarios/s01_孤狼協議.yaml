@@ -1,0 +1,100 @@
+# 單人劇本結構檔：孤狼協議 (Lone Wolf Protocol)
+# 來源：solo-adventure-lone-wolf_zh-Hant.md（玩家/GM 劇本正文）
+# 本檔為結構化摘要，供快速查閱場景流程；完整描述請參閱同名 .md。
+
+meta:
+  title: "孤狼協議 (Lone Wolf Protocol)"
+  type: "單人玩家劇本"
+  player_count: "1 PC + 1–2 NPC 夥伴"
+  level_range: "Lv.1–10（起點 Lv.1）"
+  scene_count: 8
+  focus: "調查恐怖 × 生存抉擇 × 夥伴信任 × 道德代價"
+  sites: "Site-██ / Area-14 / Site-19"
+  estimated_duration: "完整戰役 12–18 場遊戲（約 30–50 小時）"
+  companion:
+    name: "科爾 (Kohl)"
+    role: "MTF 特遣隊員 Lv.1"
+    relationship_start: -3
+    note: "起始不信任；PC 保護或坦誠 → +1；−5 拒絕指令；+3 成為忠誠盟友"
+
+scenes:
+  - id: "L-1"
+    name: "沉默的前哨站"
+    type: "調查 / 氣氛建立"
+    summary: "探索三層前哨站（地上 2F + 地下室 B1），發現通訊中斷真相，建立緊張氛圍。"
+    key_checks:
+      - "偵察（搜尋線索）"
+      - "生存（站點環境適應）"
+    map_ref: "solo_lone_wolf_maps 第 1–2 頁"
+
+  - id: "L-2"
+    name: "低語之室"
+    type: "認知危害暴露 / 夥伴危機"
+    summary: "遭遇虛空之心次級殘留物（認知危害），科爾陷入危機，PC 面臨救援與理智抉擇。"
+    key_checks:
+      - "異常學 TN 60（辨識裡層真相）"
+      - "d100 ≤ SAN−10（CH 強度中度，失敗 2d6 SAN）"
+    map_ref: "solo_lone_wolf_maps 第 3–4 頁"
+
+  - id: "L-3"
+    name: "哈洛的選擇"
+    type: "道德抉擇 / 尾聲"
+    summary: "面對站點主管哈洛的命運，PC 決定嚴懲或赦免，直接影響 L-7 分支走向。"
+    key_checks:
+      - "說服 / 意志抵抗（自我信念確認）"
+    branches:
+      - "嚴懲 → L-7A 贖罪遠徵"
+      - "有條件赦免 → L-7B 並肩作戰"
+
+  - id: "L-4"
+    name: "追蹤源頭"
+    type: "外勤調查 / 滲透"
+    summary: "外勤滲透調查，與艾琳互動，追查虛空之心提取來源與哈洛的未授權實驗。"
+    key_checks:
+      - "偵察 TN 62"
+      - "潛行（滲透）"
+    map_ref: "solo_lone_wolf_maps 第 5–6 頁"
+
+  - id: "L-5"
+    name: "虛空迴音"
+    type: "認知危害對抗 / 時間壓力 / Boss 戰"
+    summary: "對抗虛空之心次級殘留的 Boss 戰，伴隨時間壓力與持續認知危害。"
+    key_checks:
+      - "槍械 / 近戰（Boss 戰）"
+      - "意志抵抗（抵抗迴音）"
+    map_ref: "solo_lone_wolf_maps 第 7–8 頁"
+
+  - id: "L-6"
+    name: "內部審判"
+    type: "政治博弈 / 道德審判"
+    summary: "基金會內部審判，PC 的過往決定被審視，關係與許可等級受影響。"
+    key_checks:
+      - "說服 TN 60"
+      - "基金會史 TN 55"
+
+  - id: "L-7A"
+    name: "贖罪遠徵"
+    type: "高風險收容任務"
+    condition: "若 PC 要求嚴懲哈洛"
+    summary: "高風險收容突擊，在嚴苛環境下完成最後的收容證明。"
+    key_checks:
+      - "異常學 TN 65"
+      - "工程 TN 60"
+
+  - id: "L-7B"
+    name: "並肩作戰"
+    type: "雙人任務 / 信任重建"
+    condition: "若 PC 要求有條件赦免"
+    summary: "與科爾並肩執行任務，重建信任，關係走向忠誠盟友。"
+    key_checks:
+      - "領導 TN 55"
+      - "協同作戰（夥伴指令）"
+
+  - id: "L-8"
+    name: "虛空之影（終章）"
+    type: "戰役高潮 / 終極收容"
+    summary: "終章，面對虛空之影本體，完成終極收容並收束夥伴與站點命運。"
+    key_checks:
+      - "意志抵抗 TN 65"
+      - "槍械 TN 82（終極戰）"
+    map_ref: "solo_lone_wolf_maps 第 9 頁"

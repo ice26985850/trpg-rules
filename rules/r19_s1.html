@@ -1,0 +1,574 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>星海文明 ／ s01_銀河孤舟 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="#">規則總覽</a></header>
+<main class="container"><p class="nav"><a href="r19.html">← 回規則頁</a></p><h1>星海文明 — 單人戰役：銀河孤舟</h1>
+<blockquote>
+<p><strong>適用</strong>：1 名玩家 + 1 名 GM，等級 1-20（五時代全覆蓋）
+<strong>配套</strong>：《星海文明 單人規則補充》
+<strong>參照</strong>：本戰役所有章節引用均指向《星海文明玩家規則書》及《GM 規則書》</p>
+<p>你是一個孤獨的星際文明。銀河廣袤而危險——你沒有其他玩家可以依靠。但你不會永遠孤獨。在這場跨越百年的史詩中，你將找到盟友、面對背叛、抵禦天災，並在銀河的終局中做出最終的選擇。</p>
+</blockquote>
+<hr />
+<h2>戰役總覽</h2>
+<pre><code>┌──────────────────────────────────────────────────────────────┐
+│                   銀河孤舟 — 五幕史詩                          │
+├──────────┬─────────┬──────────┬──────────┬──────────────────┤
+│   章節   │ 時代    │ 玩家等級 │ 週期數   │ 核心主題         │
+├──────────┼─────────┼──────────┼──────────┼──────────────────┤
+│ 第一幕   │ 星際黎明│ 等級（LV） 1-4   │ ~20 星曆週期（ST）   │ 生存與首次接觸   │
+│ 第二幕   │ 星際擴張│ 等級（LV） 5-8   │ ~20 星曆週期（ST）   │ 建立勢力與選擇   │
+│ 第三幕   │ 銀河整合│ 等級（LV） 9-12  │ ~20 星曆週期（ST）   │ 政治博弈與陰影   │
+│ 第四幕   │ 銀河霸權│ 等級（LV） 13-16 │ ~15 星曆週期（ST）   │ 危機降臨         │
+│ 第五幕   │ 終局時代│ 等級（LV） 17-20 │ ~15 星曆週期（ST）   │ 最終抉擇         │
+└──────────┴─────────┴──────────┴──────────┴──────────────────┘
+</code></pre>
+<hr />
+<h2>關鍵 NPC 夥伴</h2>
+<p>本戰役包含三個可招募的 NPC 夥伴文明。GM 應在所有幕中讓這些夥伴的關鍵人物與玩家互動。</p>
+<h3>夥伴 A：翠綠護衛星（Verdant Protectorate）</h3>
+<table>
+<thead>
+<tr>
+<th>資訊</th>
+<th>內容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>首次出現</strong></td>
+<td>第一幕，第 6-8 週期</td>
+</tr>
+<tr>
+<td><strong>性格原型</strong></td>
+<td>忠誠守護者</td>
+</tr>
+<tr>
+<td><strong>領袖</strong></td>
+<td>大德魯伊瑟蘭（Seran），植物型族，沉穩而理想主義</td>
+</tr>
+<tr>
+<td><strong>目標</strong></td>
+<td>在銀河中證明小型文明也能有尊嚴地存在</td>
+</tr>
+<tr>
+<td><strong>與玩家的羈絆</strong></td>
+<td>玩家在翠綠護衛星遭遇掠奪者襲擊時提供了援軍（第一幕關鍵事件）</td>
+</tr>
+</tbody>
+</table>
+<h3>夥伴 B：鋼顱汗國（Steel Skull Khanate）</h3>
+<table>
+<thead>
+<tr>
+<th>資訊</th>
+<th>內容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>首次出現</strong></td>
+<td>第二幕，第 22-25 週期</td>
+</tr>
+<tr>
+<td><strong>性格原型</strong></td>
+<td>復仇者</td>
+</tr>
+<tr>
+<td><strong>領袖</strong></td>
+<td>大汗戈拉克（Gorak the Great Khan），蟲族，暴烈但重義</td>
+</tr>
+<tr>
+<td><strong>目標</strong></td>
+<td>向摧毀其母巢的星際帝國復仇</td>
+</tr>
+<tr>
+<td><strong>與玩家的羈絆</strong></td>
+<td>玩家在鋼顱汗國被星際帝國圍攻時選擇了介入（第二幕高潮）</td>
+</tr>
+</tbody>
+</table>
+<h3>夥伴 C：靜默觀察者（Silent Watchers）</h3>
+<table>
+<thead>
+<tr>
+<th>資訊</th>
+<th>內容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>首次出現</strong></td>
+<td>第三幕，第 42-45 週期</td>
+</tr>
+<tr>
+<td><strong>性格原型</strong></td>
+<td>導師型文明</td>
+</tr>
+<tr>
+<td><strong>領袖</strong></td>
+<td>主控程序奧米伽（Omega），機械智能，冷靜到令人不安</td>
+</tr>
+<tr>
+<td><strong>目標</strong></td>
+<td>阻止一個比銀河本身更古老的威脅甦醒</td>
+</tr>
+<tr>
+<td><strong>與玩家的羈絆</strong></td>
+<td>靜默觀察者掌握著終局危機的關鍵資訊，但只在玩家證明自己值得信任後才會分享</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>第一幕：星際黎明（等級（LV） 1-4，~20 星曆週期（ST））</h1>
+<blockquote>
+<p><strong>時代 I</strong>。你的文明剛剛邁入星空。銀河是黑暗的、未知的、充滿可能性的。你只有幾艘船，一顆母星，和一個充滿問題的未來。</p>
+</blockquote>
+<h2>第1章：第一次跳躍（星曆週期（ST） 1-5）</h2>
+<p><strong>核心機制</strong>：文明創建、基礎探索、資源管理</p>
+<h3>星曆週期（ST） 1：啟程</h3>
+<p>玩家完成文明創建（使用主規則第二章）。GM 描述玩家的母星系——它的恆星、行星、歷史和文化。強調此時此刻的脆弱與希望。</p>
+<p><strong>檢定</strong>：無（純敘事）</p>
+<h3>星曆週期（ST） 2-3：周邊探測</h3>
+<p>玩家的科研船開始探測周邊星系。</p>
+<p><strong>檢定</strong>：科研力（SCI） 探測檢定（參照《玩家規則書》4.5.1 探測行動流程）</p>
+<p><strong>GM 要點</strong>：
+- 第一個探測的星系設定為一個「有希望的發現」——含有宜居行星（海洋世界，宜居度 80%）
+- 第二個星系設定為「有潛在危險」——含有一個異常（地質異常 難度等級（DC）6）
+- 在 星曆週期（ST） 3 末尾，科研船接收到一個微弱的求救信號，來自未被探測的第三個星系</p>
+<h3>星曆週期（ST） 4-5：求救信號</h3>
+<p>玩家派遣科研船追蹤信號。</p>
+<p><strong>檢定</strong>：科研力（SCI） 探測檢定 難度等級（DC）=7（信號微弱，需精確定位）</p>
+<p><strong>發現</strong>：信號來自一個小型植物型族殖民地——翠綠殖民地，正遭受<strong>掠奪者傭兵</strong>的威脅（使用《玩家規則書》第三章 NPC 數據模板：小型掠奪者艦隊，軍事力量（MP） ~500）。</p>
+<p><strong>關鍵抉擇</strong>：玩家可以——
+- A）立刻派遣艦隊保護殖民地（消耗 2行動點數（AP） 軍事打擊，軍事力（MIL） 檢定）
+- B）嘗試外交解決（消耗 1行動點數（AP） 外交提案，外交力（DIP） 檢定）
+- C）觀望（翠綠殖民地將在 星曆週期（ST） 8 被摧毀，失去招募夥伴 A 的機會）</p>
+<p><strong>選擇 A 或 B 的結果</strong>：翠綠護衛星文明正式誕生，瑟蘭成為玩家的第一個 NPC 夥伴（初始忠誠度 8）。</p>
+<p><strong>文明經驗值（CXP）</strong>：完成首次接觸 +5 / 解決事件 +10</p>
+<h2>第2章：鄰居與邊界（星曆週期（ST） 6-12）</h2>
+<h3>星曆週期（ST） 6-8：擴張衝動</h3>
+<p>翠綠護衛星與玩家分享鄰近星域的星圖。玩家發現一個<strong>資源豐富的星系</strong>（使用《GM 規則書》星圖生成，確保含有一顆宜居度 ≥60% 的行星和一個礦脈）。</p>
+<p><strong>檢定</strong>：經濟力（ECO） 殖民檢定（玩家規則書 2.14 殖民流程）</p>
+<p><strong>文明經驗值（CXP）</strong>：殖民新行星 +15</p>
+<h3>星曆週期（ST） 9-12：競爭者出現</h3>
+<p>一個名為<strong>克羅諾斯集團（Kronos Syndicate）</strong>的人類軍國主義文明在玩家的邊境附近擴張。他們宣稱對玩家視為殖民目標的星系擁有主權。</p>
+<p><strong>GM 要點</strong>：克羅諾斯集團（使用《GM 規則書》NPC 文明生成器：人類/軍國主義/寡頭/排外+1）</p>
+<p><strong>關鍵抉擇</strong>：
+- A）武力對抗（軍事力（MIL） 檢定，小型艦隊戰，軍事力量（MP） 對比約 1:1）
+- B）外交協商（外交力（DIP） 對抗檢定，可提出劃分邊界或共同開發）
+- C）讓步退縮（失去該星系，克羅諾斯集團態度變為「輕蔑」）</p>
+<p><strong>文明經驗值（CXP）</strong>：贏得艦隊戰 +25 / 成功外交協議 +10</p>
+<h2>第3章：蒼穹之下的秘密（星曆週期（ST） 13-20）</h2>
+<h3>星曆週期（ST） 13-16：異常信號</h3>
+<p>翠綠護衛星的科學家在一個廢棄星系中發現了一個<strong>古代結構體</strong>（考古遺址 Lv2）。</p>
+<p><strong>檢定</strong>：科研力（SCI） 考古發掘（參照《玩家規則書》4.5.4 考古遺址發掘）</p>
+<p><strong>GM 要點</strong>：這是貫穿整個戰役的<strong>主線伏筆</strong>。遺址中發現的銘文指向一個名為「虛空之主」的遠古存在，以及銀河核心深處的某個秘密。</p>
+<p><strong>文明經驗值（CXP）</strong>：完成考古遺址 +20</p>
+<h3>星曆週期（ST） 17-20：遠方的回聲</h3>
+<p>在發掘即將完成時，玩家的科學家接收到一個來自銀河深處的<strong>心靈回聲</strong>——一個古老而強大的存在似乎在「注視」著他們。與此同時，銀河的另一端，一個墮落帝國（使用《GM 規則書》墮落帝國模板）的首都星系中，古老的信標開始閃爍。</p>
+<p><strong>檢定</strong>：凝聚力（UNI） 檢定 難度等級（DC）=7（抵抗心靈回聲的影響）</p>
+<p><strong>GM 要點</strong>：無論檢定成功與否，都給玩家一種「有什麼東西在深空中甦醒了」的感覺——這是第四幕危機的前奏。成功時玩家獲得一個模糊的預言；失敗時玩家的一位科學家陷入短期精神混亂。</p>
+<p><strong>第一幕結束。玩家應達到 等級（LV） 3-4。</strong></p>
+<hr />
+<h1>第二幕：星際擴張（等級（LV） 5-8，~20 星曆週期（ST））</h1>
+<blockquote>
+<p><strong>時代 II</strong>。你不再是一個渺小的新生文明。你已經有了一個忠誠的夥伴、幾個殖民地和一個清晰的威脅。現在是建立真正勢力的時候。</p>
+</blockquote>
+<h2>第4章：鋼顱的怒火（星曆週期（ST） 21-30）</h2>
+<h3>星曆週期（ST） 21-25：邊境之戰</h3>
+<p>一個名為<strong>鋼顱汗國</strong>的蟲族文明對玩家東側邊境發起突襲。起初是敵對關係，但深入調查後發現：鋼顱汗國的母巢被一個強大的<strong>星際帝國</strong>（使用《GM 規則書》NPC 模板：軍國+威權+排外，Scale 3~4）摧毀了，他們不是無差別攻擊——他們是在逃難。</p>
+<p><strong>檢定</strong>：情報力（INT） 情報搜集 難度等級（DC）=7（發現真相）</p>
+<p><strong>關鍵抉擇</strong>：
+- A）武力驅逐（軍事力（MIL） 檢定，中型艦隊戰，軍事力量（MP） 對比約 1.5:1 玩家優勢）
+- B）提供庇護並結盟（外交力（DIP） 檢定 難度等級（DC）=8，需克服蟲族對異族的天然不信任）
+- C）將他們趕向星際帝國的方向（置之不顧，但後續失去招募夥伴機會）</p>
+<p><strong>選擇 B 並成功</strong>：鋼顱汗國成為第二個 NPC 夥伴（初始忠誠度 6，戈拉克大汗對玩家的信任來之不易）。</p>
+<p><strong>文明經驗值（CXP）</strong>：發現真相 +10 / 結盟 +15</p>
+<h3>星曆週期（ST） 26-30：反擊</h3>
+<p>玩家與鋼顱汗國聯手，對星際帝國發起反擊。</p>
+<p><strong>檢定</strong>：連續的 軍事力（MIL） 作戰和 外交力（DIP） 談判（參照《玩家規則書》第三章戰爭框架）</p>
+<p><strong>GM 要點</strong>：這是一場中型的戰爭序列（3-5 週期）。使用《玩家規則書》3.1 的厭戰度系統。勝利的條件不是完全消滅星際帝國，而是迫使他們簽署和平協議並承認玩家對邊境的主權。</p>
+<p><strong>文明經驗值（CXP）</strong>：贏得戰爭 +25</p>
+<h2>第5章：權力走廊（星曆週期（ST） 31-40）</h2>
+<h3>星曆週期（ST） 31-35：銀河共同體</h3>
+<p>玩家的影響力已經大到無法被忽視。銀河共同體（《GM 規則書》4.3 節）向玩家發出邀請——但這個邀請附帶條件。</p>
+<p><strong>GM 要點</strong>：設計一場銀河共同體的入會典禮。玩家需要在議會中發表演說（外交力（DIP） 檢定 難度等級（DC）=7），以獲得常任理事席位。克羅諾斯集團的代表（第一幕的競爭者）試圖阻撓。</p>
+<p><strong>檢定</strong>：外交力（DIP） 檢定（演說）+ 可選擇 情報力（INT） 檢定（搜集克羅諾斯集團的把柄作為反擊）</p>
+<p><strong>文明經驗值（CXP）</strong>：成功入會 +10</p>
+<h3>星曆週期（ST） 36-40：權力遊戲</h3>
+<p>銀河共同體內部出現了分裂。一個反玩家聯盟正在形成，由克羅諾斯集團和一個名為<strong>虛無教團</strong>的宗教文明主導。玩家必須在政治上合縱連橫。</p>
+<p><strong>檢定</strong>：多輪 外交力（DIP） 對抗檢定，每輪代表一次外交遊說或政治交易</p>
+<p><strong>GM 要點</strong>：引入靜默觀察者的初步接觸——他們以匿名方式向玩家提供了一則關鍵情報，幫助玩家瓦解了反玩家聯盟。但他們的身份保持神秘，直到第三幕才揭示。</p>
+<p><strong>文明經驗值（CXP）</strong>：瓦解反玩家聯盟 +15</p>
+<p><strong>第二幕結束。玩家應達到 等級（LV） 7-8。</strong></p>
+<hr />
+<h1>第三幕：銀河整合（等級（LV） 9-12，~20 星曆週期（ST））</h1>
+<blockquote>
+<p><strong>時代 III</strong>。你已經是銀河的重要力量。但權力越大，敵人也越強。而銀河深處，某個古老的威脅正在甦醒。</p>
+</blockquote>
+<h2>第6章：甦醒的守護者（星曆週期（ST） 41-50）</h2>
+<h3>星曆週期（ST） 41-45：靜默觀察者現身</h3>
+<p>靜默觀察者（機械文明，早期導師型夥伴）正式與玩家接觸。他們揭露了一個驚人的事實：</p>
+<blockquote>
+<p>「我們已經觀察你的文明超過兩百個週期。你不是隨機誕生的——你的物種基因中含有一個遠古文明的印記。那個文明在數萬年前預見了某個威脅的到來，並在銀河的多個種族中埋下了『應對方案』。你是其中一個。」</p>
+</blockquote>
+<p><strong>檢定</strong>：凝聚力（UNI） 檢定 難度等級（DC）=8（接受這個真相的心理衝擊）</p>
+<p><strong>GM 要點</strong>：靜默觀察者加入為第三個 NPC 夥伴（初始忠誠度 5——他們還沒有完全信任玩家，需要玩家用行動證明）。主控程序奧米伽分享了一個古老的星圖，標記了銀河核心中一個名為「封印之地」的位置。</p>
+<p><strong>文明經驗值（CXP）</strong>：接觸靜默觀察者 +15</p>
+<h3>星曆週期（ST） 46-50：前往核心的旅程</h3>
+<p>為了到達封印之地，玩家必須穿越一個被墮落帝國——<strong>神聖守衛</strong>——宣稱為聖域的星區。</p>
+<p><strong>檢定</strong>：
+- 嘗試潛行通過：情報力（INT） 檢定 難度等級（DC）=9
+- 嘗試外交交涉：外交力（DIP） 檢定 難度等級（DC）=10（與墮落帝國交涉極其困難）</p>
+<p><strong>GM 要點</strong>：無論選擇哪條路，這都是第三幕最具挑戰性的部分。潛行失敗會觸發一次與墮落帝國邊境艦隊的遭遇戰。外交成功則可能需要付出代價（一項高級科技、一個殖民地、或承諾保護其聖地）。</p>
+<p><strong>文明經驗值（CXP）</strong>：成功穿越 +20</p>
+<h2>第7章：封印之地（星曆週期（ST） 51-60）</h2>
+<h3>星曆週期（ST） 51-55：深入遺跡</h3>
+<p>封印之地是一個巨大的遠古結構——一個環繞著休眠黑洞的環形世界碎片。這裡沒有活著的守衛，但古代的自動防禦系統仍然在運作。</p>
+<p><strong>檢定</strong>：科研力（SCI） 考古發掘（連續的發掘進度累積，難度等級（DC）=9~11）</p>
+<p><strong>遺跡發現表（d6）</strong>：
+1. 古代數據庫——解鎖一項隨機 T3 科技
+2. 被封印的樣本——一個被封存了數萬年的有機生命體（可能友善，也可能危險）
+3. 虛空裂縫——一個不穩定的次元裂口，透過它可以看到「虛空之主」的領域
+4. 星圖室——一張完整的銀河星圖，標記了所有墮落帝國和危機觸發點
+5. 武器庫——解鎖「遠古能量武器」科技（一種特殊的武器升級）
+6. 先驅者遺言——一個全息記錄，揭示虛空之主的本質及其被封印的原因</p>
+<p><strong>文明經驗值（CXP）</strong>：每次重要發現 +10~15</p>
+<h3>星曆週期（ST） 56-60：試煉開始甦醒</h3>
+<p>玩家在封印之地的活動驚動了「虛空之主」——一個被上古文明封印的高維度實體。它從沉睡中甦醒的跡象開始出現在銀河各處：維度裂縫、異常的靈能波動、失蹤的飛船。</p>
+<p>靜默觀察者奧米伽發出警告：「時間不多了。虛空之主還有約 30 個週期就會完全甦醒。你必須做出準備——或者找到永久封印它的方法。」</p>
+<p><strong>第三幕結束。玩家應達到 等級（LV） 11-12。</strong></p>
+<hr />
+<h1>第四幕：銀河霸權（等級（LV） 13-16，~15 星曆週期（ST））</h1>
+<blockquote>
+<p><strong>時代 IV</strong>。虛空之主的甦醒不再是一個秘密。整個銀河都能感受到它的影響。墮落帝國開始行動。天災的前兆已經降臨。</p>
+</blockquote>
+<h2>第8章：裂縫（星曆週期（ST） 61-70）</h2>
+<h3>星曆週期（ST） 61-65：全面動員</h3>
+<p>虛空之主的先遣力量——<strong>虛空吞噬者</strong>——開始從銀河核心的維度裂縫湧入。</p>
+<p><strong>GM 要點</strong>：使用《GM 規則書》4.6 節危機系統中的「高維入侵者」模板，但按《單人規則補充》1.2 節調整規模（玩家有 3 個 NPC 夥伴，按 4 人折算 → 使用原始 100% 規模）。</p>
+<p><strong>檢定</strong>：
+- 銀河共同體緊急會議：外交力（DIP） 檢定 難度等級（DC）=7 發起共同防禦提案
+- 艦隊戰：使用《玩家規則書》第三章艦隊戰規則</p>
+<p><strong>NPC 夥伴反應</strong>：
+- 翠綠護衛星（忠誠度 8）：全力參戰，提供艦隊支援
+- 鋼顱汗國（忠誠度 6）：參戰但要求玩家承諾戰後幫助他們重建母巢
+- 靜默觀察者（忠誠度 5）：提供關鍵情報和科技支援，但他們的艦隊主要用於保護古代設施</p>
+<p><strong>文明經驗值（CXP）</strong>：每次擊退虛空艦隊 +15 / 守住關鍵星系 +20</p>
+<h3>星曆週期（ST） 66-70：犧牲</h3>
+<p>在一次大規模的虛空入侵中，玩家面臨一個痛苦的抉擇：</p>
+<p><strong>關鍵抉擇</strong>：虛空吞噬者同時攻擊兩個目標——
+- A）玩家的母星系
+- B）翠綠護衛星的母星</p>
+<p>玩家的艦隊只能來得及救援其中一個。</p>
+<p><strong>選擇保衛母星</strong>：翠綠護衛星的母星被摧毀，瑟蘭存活但忠誠度降至 2（「你選擇了你自己」），翠綠護衛星在剩餘戰役中只能提供有限的支援。</p>
+<p><strong>選擇保衛翠綠護衛星</strong>：玩家的母星遭受重創（人口減半、首都建築損毀需重建），但瑟蘭的忠誠度升至 10，翠綠護衛星此後獻出全部資源支援玩家。</p>
+<blockquote>
+<p>這個選擇沒有「正確答案」——它是對玩家價值觀的終極考驗，也將定義後續故事的情感基調。</p>
+</blockquote>
+<p><strong>文明經驗值（CXP）</strong>：度過犧牲事件 +30</p>
+<h2>第9章：覺醒的古老者（星曆週期（ST） 71-75）</h2>
+<h3>星曆週期（ST） 71-75：墮落帝國的抉擇</h3>
+<p>虛空之主的威脅已經大到無法忽視。銀河中沉睡的墮落帝國開始甦醒——但不是所有甦醒的都會幫助你。</p>
+<p><strong>GM 要點</strong>：
+- <strong>遠古看護者</strong>：選擇加入玩家陣營（他們的天職是保護有機生命）
+- <strong>神聖守衛</strong>：宣布保持中立——但他們的聖地正好位於虛空之主甦醒的路徑上
+- <strong>軍事孤立者</strong>：認為這一切都是「低等文明的麻煩」，拒絕參與</p>
+<p><strong>檢定</strong>：外交力（DIP） 檢定 難度等級（DC）=9（說服神聖守衛至少允許玩家艦隊通過其領土）</p>
+<p><strong>文明經驗值（CXP）</strong>：獲得遠古看護者支援 +25</p>
+<p><strong>第四幕結束。玩家應達到 等級（LV） 15-16。</strong></p>
+<hr />
+<h1>第五幕：終局時代（等級（LV） 17-20，~15 星曆週期（ST））</h1>
+<blockquote>
+<p><strong>時代 V</strong>。虛空之主即將完全甦醒。銀河的命運取決於你和你的盟友。這是最後的戰役。</p>
+</blockquote>
+<h2>第10章：最終封印（星曆週期（ST） 76-85）</h2>
+<h3>星曆週期（ST） 76-80：終極準備</h3>
+<p>玩家需要在虛空之主完全甦醒前完成最後的準備：</p>
+<ol>
+<li>集結所有盟友的艦隊（總 軍事力量（MP） 應達到 20000+）</li>
+<li>在銀河核心部署「維度抑制器」（需要完成一個 經濟力（ECO） 巨構建造檢定）</li>
+<li>決定最終戰略：永久封印 / 徹底消滅 / 嘗試溝通（直接影響終局 Boss 戰的規則）</li>
+</ol>
+<p><strong>檢定</strong>：多線並行（經濟力（ECO） 建造 / 外交力（DIP） 召集 / 科研力（SCI） 研究抑制器技術）</p>
+<h3>星曆週期（ST） 81-85：終局決戰</h3>
+<p><strong>最終 Boss：虛空之主（Void Lord）</strong></p>
+<p>使用《GM 規則書》高維入侵者 Boss 數據模板（100% 規模，因玩家有 3 個 NPC 夥伴）：</p>
+<pre><code>虛空之主 (Void Lord) — 終局級 Boss
+船體值（HP）: 25000 | 維度屏障: 8000 | 航速: 1
+攻擊：現實崩解 500-800（50% 雙倍傷害）
+特性：
+  • 維度吞噬：每 3 回合釋放虛空脈衝，範圍內所有艦隊 船體值（HP）-20%
+  • 召喚先鋒：每回合召喚 3-5 個虛空吞噬者單位
+  • 終末倒數：第 10 回合起，每回合銀河隨機一個星系被虛空吞噬
+弱點：
+  • 維度抑制器啟動後，無法召喚增援且屏障減半
+  • 靈能攻擊傷害 +100%
+  • 超過 3 個文明同時攻擊 → 每多 1 個，Boss 防禦 -10%
+</code></pre>
+<p><strong>GM 要點</strong>：這是整場戰役的最高潮。具體的戰術部署使用《玩家規則書》第三章的完整艦隊戰規則。GM 應讓每個 NPC 夥伴在戰鬥中都有屬於自己的「英雄時刻」。</p>
+<p><strong>文明經驗值（CXP）</strong>：擊敗虛空之主 +50</p>
+<h2>終章：餘暉（星曆週期（ST） 86-90）</h2>
+<p>虛空之主被擊敗了。銀河迎來了和平——至少暫時如此。</p>
+<h3>結局路徑</h3>
+<p>根據玩家在整場戰役中的選擇，結局有以下可能：</p>
+<p><strong>A）銀河守護者</strong>（玩家始終保持忠誠夥伴關係，翠綠護衛星存活）
+→ 玩家文明、翠綠護衛星和鋼顱汗國共同建立了新的銀河秩序。瑟蘭發表了一段感人的演說，回顧了從第一次相遇至今的旅程。</p>
+<p><strong>B）孤獨的勝利者</strong>（玩家選擇了力量高於友誼，或許犧牲了某些夥伴）
+→ 玩家文明成為銀河的唯一超級勢力，但勝利是苦澀的。戈拉克的靈魂似乎在虛空深處低語：「你得到了你想要的——但失去了你需要的。」</p>
+<p><strong>C）虛空的回聲</strong>（玩家選擇了與虛空之主溝通/交易）
+→ 虛空之主被重新封印，但玩家文明發生了一些變化——部分人口開始展現靈能力量，銀河的其他人用懷疑的目光看著你。一個全新的故事正在醞釀。</p>
+<h3>最後的擲骰</h3>
+<p>無論哪種結局，GM 在最後讓玩家投一個 凝聚力（UNI） 檢定——不是為了判定成功或失敗，而是為了決定銀河的未來基調。這個擲骰的結果應該被記錄在玩家的文明角色卡上，作為這場戰役的永久印記。</p>
+<hr />
+<h2>GM 附錄：快速運行指南</h2>
+<h3>每幕檢查清單</h3>
+<table>
+<thead>
+<tr>
+<th>幕</th>
+<th>開始前確認</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一幕</td>
+<td>玩家文明已創建；翠綠護衛星 NPC 資料備妥；第一輪探測星系準備好</td>
+</tr>
+<tr>
+<td>第二幕</td>
+<td>克羅諾斯集團 NPC 資料備妥；鋼顱汗國 NPC 資料備妥；星際帝國 NPC 資料備妥</td>
+</tr>
+<tr>
+<td>第三幕</td>
+<td>銀河共同體運作細節準備好；靜默觀察者加入時機確認；封印之地考古內容備妥</td>
+</tr>
+<tr>
+<td>第四幕</td>
+<td>虛空先遣力量艦隊模板備妥；犧牲事件兩條劇情線都已準備；墮落帝國態度確定</td>
+</tr>
+<tr>
+<td>第五幕</td>
+<td>終局 Boss 數據卡備妥；所有 NPC 夥伴的忠誠度和艦隊狀態更新；結局分支準備好</td>
+</tr>
+</tbody>
+</table>
+<h3>NPC 夥伴忠誠度追蹤</h3>
+<table>
+<thead>
+<tr>
+<th>週期</th>
+<th style="text-align: center;">翠綠護衛星</th>
+<th style="text-align: center;">鋼顱汗國</th>
+<th style="text-align: center;">靜默觀察者</th>
+<th>事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>星曆週期（ST） 8</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td>首次相遇</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 25</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">—</td>
+<td>鋼顱加入</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 30</td>
+<td style="text-align: center;">9(+1)</td>
+<td style="text-align: center;">7(+1)</td>
+<td style="text-align: center;">—</td>
+<td>共同擊敗星際帝國</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 45</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+<td>靜默觀察者加入</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 50</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6(+1)</td>
+<td>穿越墮落帝國聖域</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 60</td>
+<td style="text-align: center;">8(-1)</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">7(+1)</td>
+<td>封印之地發現（翠綠擔心過度）</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 65</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">8(+1)</td>
+<td style="text-align: center;">8(+1)</td>
+<td>全面動員開始</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 70</td>
+<td style="text-align: center;"><strong>2 或 10</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">8</td>
+<td>犧牲事件（結局轉折點）</td>
+</tr>
+<tr>
+<td>星曆週期（ST） 85</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td>終局決戰後</td>
+</tr>
+</tbody>
+</table>
+<h3>快速檢定參考</h3>
+<table>
+<thead>
+<tr>
+<th>幕</th>
+<th>章節</th>
+<th>主要檢定</th>
+<th style="text-align: center;">難度等級（DC）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一</td>
+<td>求救信號</td>
+<td>科研力（SCI） 探測</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>一</td>
+<td>掠奪者衝突</td>
+<td>軍事力（MIL） / 外交力（DIP）</td>
+<td style="text-align: center;">6-7</td>
+</tr>
+<tr>
+<td>一</td>
+<td>考古發掘</td>
+<td>科研力（SCI）</td>
+<td style="text-align: center;">7-9</td>
+</tr>
+<tr>
+<td>一</td>
+<td>心靈回聲</td>
+<td>凝聚力（UNI）</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>二</td>
+<td>發現真相</td>
+<td>情報力（INT）</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>二</td>
+<td>結盟蟲族</td>
+<td>外交力（DIP）</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td>二</td>
+<td>演說</td>
+<td>外交力（DIP）</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>三</td>
+<td>承受真相</td>
+<td>凝聚力（UNI）</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td>三</td>
+<td>穿越聖域</td>
+<td>情報力（INT） 或 外交力（DIP）</td>
+<td style="text-align: center;">9-10</td>
+</tr>
+<tr>
+<td>三</td>
+<td>遺跡發掘</td>
+<td>科研力（SCI）</td>
+<td style="text-align: center;">9-11</td>
+</tr>
+<tr>
+<td>四</td>
+<td>共同防禦</td>
+<td>外交力（DIP）</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>四</td>
+<td>說服墮落帝國</td>
+<td>外交力（DIP）</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td>五</td>
+<td>抑制器建造</td>
+<td>經濟力（ECO）</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td>五</td>
+<td>終局 Boss</td>
+<td>完整艦隊戰</td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table>
+<h3>每章結束 文明經驗值（CXP） 發放建議</h3>
+<table>
+<thead>
+<tr>
+<th>幕</th>
+<th style="text-align: center;">預期 文明經驗值（CXP） 累積</th>
+<th style="text-align: center;">預期等級</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一幕</td>
+<td style="text-align: center;">~130-180</td>
+<td style="text-align: center;">等級（LV） 3-4</td>
+</tr>
+<tr>
+<td>第二幕</td>
+<td style="text-align: center;">~300-400（含第一幕）</td>
+<td style="text-align: center;">等級（LV） 7-8</td>
+</tr>
+<tr>
+<td>第三幕</td>
+<td style="text-align: center;">~550-700</td>
+<td style="text-align: center;">等級（LV） 11-12</td>
+</tr>
+<tr>
+<td>第四幕</td>
+<td style="text-align: center;">~950-1100</td>
+<td style="text-align: center;">等級（LV） 15-16</td>
+</tr>
+<tr>
+<td>第五幕</td>
+<td style="text-align: center;">~1550-1800</td>
+<td style="text-align: center;">等級（LV） 19-20</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><strong>戰役設計者筆記</strong>：這份戰役的核心不是「打贏所有戰鬥」，而是「在文明經營與人際關係之間找到平衡」。鼓勵 GM 在每一幕都留出空間讓玩家與 NPC 夥伴的關鍵人物進行對話和互動——這些時刻往往比艦隊戰本身更具記憶點。</p>
+</blockquote><p><a href="../assets/r19/scenarios/s01_銀河孤舟.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer></body></html>

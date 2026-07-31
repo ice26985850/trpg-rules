@@ -1,0 +1,43 @@
+name: "S3：深淵探測"
+description: >
+  裂縫在蔓延。從最初Level 3的異常信號開始，現在多個樓層都報告物理規則崩潰。
+  所有裂縫指向同一方向——Level 7「深海恐懼」的深處。你需要派人進入那片無盡的黑色水域。
+  沒有人自願。
+difficulty: 困難
+real_dc: 90
+level_range: "5–6"
+mission_type: ["偵察任務", "資源回收任務"]
+campaign: "戰役二：裂縫（核心）"
+min_agents: 3
+recommended_specialty:
+  - 工程
+  - 偵察
+  - 戰鬥
+required_equipment:
+  - "聲納探測器（必須——水下能見度為零）"
+  - "高容量杏仁水罐（必須——無淡水來源）"
+recommended_equipment:
+  - "全息地圖投影器"
+  - "潛水防護服"
+encounter_rate: 35
+time_limit: "8小時（氧氣和杏仁水限制）"
+intel_levels:
+  basic: "DC 68–113（偏差±25%）"
+  detailed: "DC 77–104（偏差±15%）"
+  precise: "DC 81–99（Level 7 限制偏差最低±10%）"
+special_environment_rules:
+  - "水中移動消耗加倍"
+  - "照明範圍減半"
+  - "每水下1小時消耗1單位杏仁水"
+  - "通訊範圍僅50米"
+  - "每2小時強制體力檢定（d100≥50），失敗→疲勞"
+optional_special_action:
+  name: "樣本採集"
+  dc: 100
+  success: "獲得裂縫核心樣本——解鎖維度理論科技樹"
+  failure: "能量反噬，採集者重傷"
+rewards:
+  great_success: "完整數據+樣本，解鎖三條裂縫處理路線詳細資訊"
+  success: "確定源頭位置和性質，可選擇一條路線"
+  marginal_success: "記錄不完整，需再次派遣"
+consequence: "成功完成後解鎖戰役二路線選擇（摧毀/穩定/研究）"

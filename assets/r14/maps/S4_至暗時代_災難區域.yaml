@@ -1,0 +1,124 @@
+# 地圖：S4 至暗時代 — 災難區域
+name: "隕石災難——枯萎之地"
+description: "隕石墜落地點周邊區域，枯萎症從這裡向外擴散"
+
+nodes:
+  - id: "crater"
+    label: "隕石坑（災難中心）"
+    x: 400
+    y: 300
+    type: "border"
+    explored: false
+    description: "巨型隕石坑——綠色光芒從坑底滲出，所有生命在此枯萎"
+
+  - id: "your_capital"
+    label: "你的首都"
+    x: 250
+    y: 480
+    type: "settlement"
+    explored: true
+    description: "你的國家首都——目前尚未被枯萎症波及"
+
+  - id: "quarantine_zone"
+    label: "隔離區防線"
+    x: 350
+    y: 400
+    type: "landmark"
+    explored: true
+    description: "軍隊設立的隔離線——阻止枯萎症擴散"
+
+  - id: "refugee_camp"
+    label: "難民營"
+    x: 550
+    y: 450
+    type: "settlement"
+    explored: true
+    description: "來自災區的難民聚集地——資源緊張，秩序脆弱"
+
+  - id: "collapsed_city"
+    label: "索多爾（已陷落）"
+    x: 550
+    y: 200
+    type: "ruins"
+    explored: true
+    description: "曾經的鄰國首都——現在是死城，只有怪物在遊蕩"
+
+  - id: "ancient_shrine"
+    label: "上古神殿"
+    x: 200
+    y: 200
+    type: "ruins"
+    explored: false
+    description: "傳說中藏有對抗枯萎的古代知識"
+
+  - id: "allied_camp"
+    label: "盟國聯合營地"
+    x: 100
+    y: 400
+    type: "settlement"
+    explored: true
+    description: "各國聯合抵抗災難的前線基地"
+
+  - id: "leyline_node"
+    label: "魔力流節點"
+    x: 300
+    y: 150
+    type: "resource"
+    explored: false
+    description: "大地的魔力在此匯聚——可能是治癒土地的關鍵"
+
+edges:
+  - from: "crater"
+    to: "quarantine_zone"
+    type: "trail"
+    label: "枯萎蔓延方向（每回合擴散）"
+  - from: "quarantine_zone"
+    to: "your_capital"
+    type: "path"
+    label: "補給路線"
+  - from: "crater"
+    to: "collapsed_city"
+    type: "trail"
+    label: "已淪陷區域"
+  - from: "collapsed_city"
+    to: "refugee_camp"
+    type: "trail"
+    label: "逃亡路線"
+  - from: "refugee_camp"
+    to: "your_capital"
+    type: "path"
+    label: ""
+  - from: "crater"
+    to: "ancient_shrine"
+    type: "trail"
+    label: "危險捷徑"
+  - from: "ancient_shrine"
+    to: "leyline_node"
+    type: "trail"
+    label: "能量連通"
+  - from: "leyline_node"
+    to: "crater"
+    type: "trail"
+    label: ""
+  - from: "your_capital"
+    to: "allied_camp"
+    type: "path"
+    label: "盟軍通道"
+  - from: "allied_camp"
+    to: "ancient_shrine"
+    type: "trail"
+    label: "聯合探索路線"
+
+regions:
+  - name: "枯萎之地（危險）"
+    color: "#4CAF50"
+    nodes: ["crater", "collapsed_city"]
+  - name: "安全區"
+    color: "#2196F3"
+    nodes: ["your_capital", "allied_camp"]
+  - name: "緩衝地帶"
+    color: "#FFC107"
+    nodes: ["quarantine_zone", "refugee_camp"]
+  - name: "未知區域"
+    color: "#9E9E9E"
+    nodes: ["ancient_shrine", "leyline_node"]

@@ -1,0 +1,260 @@
+# 絕地戰場 TRPG — 怪物圖鑑（敵方參賽者）
+# 所有敵方類型的完整數據、AI行為和GM操作指南
+
+enemies:
+  - id: rookie
+    name: 菜鳥級參賽者
+    difficulty: ★☆☆☆☆
+    difficulty_level: 1
+    challenge_rating: 0.5
+    xp_reward: 50
+    description: >
+      第一次參賽的菜鳥。他們的手在抖、子彈總是打偏、
+      換彈時機會不對。他們不是威脅——他們是背景氛圍。
+      但永遠不要小看一個緊張到極點的菜鳥——他們是最不可預測的。
+    attributes:
+      槍法（AIM）: 10
+      體能（PHY）: 10
+      戰術（TAC）: 8
+      駕駛（DRV）: 8
+      冷靜（CLM）: 8
+    derived:
+      hp: 23
+      initiative_mod: -1
+      hearing_range_m: 80
+      stress_threshold: 21
+    equipment:
+      primary_weapon: "UMP45衝鋒槍 或 P92手槍（50%）"
+      secondary_weapon: P92手槍
+      helmet: "一級頭盔（50%機率）"
+      armor: "一級護甲（50%機率）"
+      consumables: ["繃帶×2（50%）"]
+    ai_behavior:
+      pattern: |
+        每回合擲d6：
+        1-2：躲在掩體後，不射擊
+        3-4：單發射擊最近的目標（無瞄準）
+        5：嘗試逃跑（向安全區移動）
+        6：慌亂開槍（連發但DC+3）
+      notes:
+        - 不主動更換掩體
+        - 換彈時機不當（還有10發以上就換彈）
+        - 不會救援倒地隊友
+        - 看到比自己強的敵方小隊會逃跑
+    gm_narrative: "他的瞄準鏡根本沒校準——子彈打在離你三公尺遠的牆上。"
+
+  - id: steady
+    name: 穩健級參賽者
+    difficulty: ★★☆☆☆
+    difficulty_level: 2
+    challenge_rating: 1
+    xp_reward: 100
+    description: >
+      參加過幾場比賽的熟手。不會犯低級錯誤——
+      會用煙霧彈掩護、會救援隊友、會選擇好的掩體位置。
+      對新手來說是第一個真正的考驗。
+    attributes:
+      槍法（AIM）: 13
+      體能（PHY）: 12
+      戰術（TAC）: 12
+      駕駛（DRV）: 10
+      冷靜（CLM）: 11
+    derived:
+      hp: 33
+      initiative_mod: +1
+      hearing_range_m: 120
+      stress_threshold: 27
+    equipment:
+      primary_weapon: M16A4突擊步槍
+      secondary_weapon: P92手槍
+      helmet: 二級頭盔
+      armor: 一級護甲
+      consumables: ["急救包×1", "繃帶×3", "煙霧彈×2"]
+    ai_behavior:
+      pattern: |
+        每回合依序判斷：
+        1. 有隊友倒地？→ 一人火力掩護，一人救援
+        2. 處於不利位置？→ 煙霧彈掩護，集體轉移
+        3. 正常交火 → 掩體後輪流射擊，保持火力持續
+      notes:
+        - 合理分配掩體
+        - 使用煙霧彈進行戰術轉移
+        - 會標記目標
+        - 在圈外時果斷移動
+    gm_narrative: "你看得出來他們受過訓練——不是亂打一通的菜鳥。每次探頭的位置都不一樣。"
+
+  - id: assault
+    name: 突擊級參賽者
+    difficulty: ★★★☆☆
+    difficulty_level: 3
+    challenge_rating: 2
+    xp_reward: 150
+    description: >
+      專門追殺的獵手。他們不等人——他們找人。
+      聽到槍聲就衝過去，看到空投紅煙就衝過去。
+      他們的戰術很簡單：壓上去、壓上去、再壓上去。
+    attributes:
+      槍法（AIM）: 15
+      體能（PHY）: 14
+      戰術（TAC）: 12
+      駕駛（DRV）: 12
+      冷靜（CLM）: 11
+    derived:
+      hp: 52
+      initiative_mod: +2
+      hearing_range_m: 120
+      stress_threshold: 27
+    equipment:
+      primary_weapon: AKM突擊步槍
+      secondary_weapon: Vector衝鋒槍
+      helmet: 二級頭盔
+      armor: 二級護甲
+      consumables: ["急救包×2", "能量飲料×1", "手榴彈×2"]
+    ai_behavior:
+      pattern: |
+        每回合依序判斷：
+        1. 敵方血量低？→ 全隊壓上，連發壓制
+        2. 空投在附近？→ 優先搶空投
+        3. 正常交火 → 一人壓制，兩人包抄
+      notes:
+        - 使用載具快速接近
+        - 擅長側翼包抄
+        - 連發射擊偏好
+        - 不會輕易撤退
+    gm_narrative: "引擎聲從你側面傳來——該死，他們不是在逃跑，是在繞你！"
+
+  - id: ambush
+    name: 伏擊級參賽者
+    difficulty: ★★★☆☆
+    difficulty_level: 3
+    challenge_rating: 2.5
+    xp_reward: 175
+    description: >
+      他們不追你——他們等你來。
+      橋頭、門口、必經之路——你永遠不知道他們在哪，
+      直到第一顆子彈飛過來。伏擊隊是地圖上最危險的沉默者。
+    attributes:
+      槍法（AIM）: 14
+      體能（PHY）: 12
+      戰術（TAC）: 16
+      駕駛（DRV）: 10
+      冷靜（CLM）: 13
+    derived:
+      hp: 40
+      initiative_mod: +3
+      hearing_range_m: 160
+      stress_threshold: 31
+    equipment:
+      primary_weapon: Kar98k狙擊槍
+      secondary_weapon: MP5K衝鋒槍
+      helmet: 二級頭盔
+      armor: 一級護甲
+      consumables: ["手榴彈×3", "煙霧彈×1", "急救包×1", "燃燒彈×1"]
+    ai_behavior:
+      pattern: |
+        遭遇前：選擇必經之路設伏。至少一人持狙擊槍在高處。
+        遭遇後：
+        1. 第一輪：所有成員同時開火集火同一目標
+        2. 使用手榴彈逼迫目標離開掩體
+        3. 若伏擊失敗（目標未進入陷阱範圍）→ 繼續等待
+      notes:
+        - 優先攻擊載具
+        - 使用燃燒彈封鎖撤退路線
+        - 目標進入掩體後用投擲物
+        - 不輕易暴露位置
+    gm_narrative: "橋上一個人都沒有——但你的第六感在尖叫。太安靜了。太安靜了。"
+
+  - id: professional
+    name: 職業級參賽者
+    difficulty: ★★★★☆
+    difficulty_level: 4
+    challenge_rating: 4
+    xp_reward: 250
+    description: >
+      這不是參賽者——這是軍隊。前排坦克、後排狙擊、
+      支援後勤——分工明確、配合默契。
+      他們會跟你搶空投、會在你換彈的瞬間衝出來、
+      會在縮圈前三回合就已經在新的安全區等你了。
+    attributes:
+      槍法（AIM）: 16
+      體能（PHY）: 14
+      戰術（TAC）: 15
+      駕駛（DRV）: 13
+      冷靜（CLM）: 14
+    derived:
+      hp: 75
+      initiative_mod: +3
+      hearing_range_m: 150
+      stress_threshold: 33
+    equipment:
+      primary_weapon: "前排：M416滿配；後排：M24+消音器+8倍鏡"
+      secondary_weapon: "前排：P1911；後排：MP5K"
+      helmet: 三級頭盔
+      armor: 三級護甲
+      consumables: ["急救包×3", "醫療箱×1", "腎上腺素×1", "煙霧彈×3", "手榴彈×3", "燃燒彈×2"]
+    ai_behavior:
+      pattern: |
+        全局策略：
+        - 前排（PHY最高）：三級護甲+AR/LMG，吸引火力
+        - 後排（AIM最高）：三級頭盔+消音SR，遠程輸出
+        - 支援（CLM最高）：煙霧彈+急救包+手榴彈，後勤
+
+        每回合協調：
+        1. 前排標記目標→後排集火同一目標
+        2. 前排受傷→支援上前，前排後退包紮
+        3. 圈型不利→集體載具轉移（前排掩護撤離）
+      notes:
+        - 資源最優分配
+        - 精確計算縮圈時間
+        - 會在你換彈的瞬間衝出來
+        - 不會跟菜鳥隊浪費子彈（繞過或驅逐）
+    gm_narrative: "四個人的腳步完全同步——像一個人一樣移動。這不是參賽者——這是訓練有素的小隊。"
+
+  - id: champion
+    name: 冠軍級參賽者
+    difficulty: ★★★★★
+    difficulty_level: 5
+    challenge_rating: 6
+    xp_reward: 500
+    description: >
+      傳奇。活著的傳奇。
+      他不需要偷襲你——他在你必經之路上等你。
+      他沒有超能力——他只是知道你要去哪裡、要開幾槍、
+      什麼時候換彈、什麼時候害怕。
+      擊敗他需要的不是槍法——是比他更冷靜。
+    attributes:
+      槍法（AIM）: 18
+      體能（PHY）: 16
+      戰術（TAC）: 17
+      駕駛（DRV）: 14
+      冷靜（CLM）: 18
+    derived:
+      hp: 110
+      initiative_mod: +5
+      hearing_range_m: 170
+      stress_threshold: 41
+    equipment:
+      primary_weapon: AWM+8倍鏡+消音器
+      secondary_weapon: AUG突擊步槍
+      tertiary_weapon: 沙漠之鷹
+      helmet: 三級頭盔
+      armor: 三級護甲
+      consumables: ["醫療箱×2", "腎上腺素×2", "自救注射器×1", "各類投擲物各×2"]
+    ai_behavior:
+      pattern: >
+        冠軍級不是用數值碾壓你——是用「預判」碾壓你。
+        GM操作冠軍級時，視為「知道玩家意圖」。
+        - 玩家搜刮建築？冠軍級可能在對面建築等你
+        - 玩家在橋頭設伏？冠軍級可能從橋下游泳過來
+        - 玩家準備扔手榴彈？冠軍級剛好在你拉環的時刻衝鋒
+
+        弱點（GM必須給冠軍級一個弱點）：
+        - 過於自信：會做出高風險行動（如近距離跟你對槍）
+        - 固定習慣：偏好某種攻擊模式（可被玩家識破並反制）
+        - 情感羈絆：對某件事或某個人有情感連結（可能猶豫）
+      notes:
+        - 「預知」你的每一步
+        - 不會被同樣的戰術騙兩次
+        - 壓力閾值極高——幾乎不會崩潰
+        - 會利用環境中的一切
+    gm_narrative: "你透過八倍鏡看到他的臉——他正在微笑。不是輕蔑，是尊敬。『不錯——你走到這裡，不簡單。』然後他從瞄準鏡後消失了。不是逃跑——是約定。在下一圈見。"

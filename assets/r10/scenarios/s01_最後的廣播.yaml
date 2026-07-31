@@ -1,0 +1,130 @@
+# s01_最後的廣播.yaml
+# 宇宙船團經營TRPG 起始模組
+
+scenario:
+  id: s01
+  title: "最後的廣播"
+  subtitle: "船團離開深淵門後的第一個冒險"
+  level_range: "1-2"
+  sessions: "2-3"
+  hours: "8-12"
+  players: "2-5"
+  gm_required: true
+
+hook:
+  summary: "深淵門的公共頻道收到傳奇航行員卡洛·維加的加密廣播——他聲稱有一份完整的灰燼帶航行圖，但他的船擱淺在奈菲斯-4。"
+  key_info:
+    - "卡洛·維加是傳奇航行員，三年前被認為已死"
+    - "奈菲斯-4需要一次中距離跳躍（引擎Lv.2+，燃料10單位）"
+    - "天鉤集團的追蹤者也在監聽這個頻道"
+
+acts:
+  - act: 1
+    title: "鉤子——你在深空中有個朋友"
+    scenes:
+      - description: "船團收到卡洛·維加的廣播，面臨第一個重大決定。"
+  - act: 2
+    title: "第一次投票——去還是不去？"
+    vote_type: "簡單多數"
+    secret_motives:
+      - id: 1
+        text: "你的引擎需要稀有零件��卡洛據說曾找到一艘軍用維修船"
+      - id: 2
+        text: "你欠深淵門情報販子的債——不去可以拖一陣，去了債期就到"
+      - id: 3
+        text: "你的一個船員曾是卡洛的導航學徒，懇求你去救援"
+      - id: 4
+        text: "天鉤集團��在追蹤這個信號，他們想要航行圖"
+  - act: 3
+    title: "航行——灰燼中的道路"
+    jump_required: true
+    jump_distance: "中距離"
+    fuel_cost: 10
+    events:
+      - range: "1-8"
+        name: "跳躍順利"
+        effect: "抵達但燃料額外+5單位"
+      - range: "9-12"
+        name: "廢棄艦隊"
+        effect: "可搜刮但有自動防禦風險"
+      - range: "13-16"
+        name: "求救信號"
+        effect: "小型船團引擎故障，可能知道奈菲斯-4情況"
+      - range: "17-20"
+        name: "異常干擾"
+        effect: "通訊被電磁干擾，訊號來自星球表面"
+  - act: 4
+    title: "抵達——奈菲斯-4：被遺忘的研究站"
+    scenes:
+      - id: "A"
+        name: "軌道殘骸"
+        check: "SEN DC 12"
+        reward: "��行數據碎片+加密日誌"
+        clue: "他不在船上，研究站裡有他們需要知道的事"
+      - id: "B"
+        name: "研究站·地面層"
+        findings:
+          - "廢棄實驗室，研究主題為超空間跳躍替代能源"
+          - "卡洛的臨時營地"
+          - "日誌最後一條揭示超空間生物的存在"
+      - id: "C"
+        name: "研究站·深層"
+        npc_found: "卡洛·維加（精神不穩定）"
+        threat: "超空間異常體正在逼近（2小時）"
+        dilemma: "關閉裝置+救人 vs 拿走數據撤離"
+  - act: 5
+    title: "第二次投票——帶他走？還是拿圖走？"
+    vote_type: "三分之二多數"
+    threat: "超空間異常體（TL4），2小時後抵達"
+    options:
+      - id: "A"
+        name: "帶卡洛去核心區關閉裝置後撤離"
+        risk: "時間緊迫，可能遭遇超空間生物"
+        reward: "完整航行圖+卡洛的知識+超空間生物情報"
+      - id: "B"
+        name: "強行拿走數據板，立刻撤離"
+        risk: "超空間生物可能��蹤跳躍軌跡"
+        reward: "航行圖但缺少安全航道標記"
+      - id: "C"
+        name: "帶卡洛走但不去核心區"
+        risk: "裝置未關閉，威脅可能擴散"
+        reward: "航行圖+卡洛"
+      - id: "D"
+        name: "殺了卡洛，拿走數據板"
+        risk: "道德代價，船團關係緊張"
+        reward: "完整航行圖"
+  - act: 6
+    title: "結局與後果"
+    outcomes:
+      - option: "A"
+        result: "可能觸發TL2超空間生物遭遇戰，成功後獲得完整獎勵"
+        sequel: "追蹤超空間生物的起源"
+      - option: "B"
+        result: "d20≥12擺脫追蹤，失敗則下次跳躍遭遇超空間生物"
+      - option: "C"
+        result: "GM暗中記錄超空間異常擴散，後續影響其他扇區"
+      - option: "D"
+        result: "船員忠誠下降，遺物守望者可能標記船團"
+
+npcs:
+  - name: "卡洛·維加"
+    role: "傳奇航行員/求救信號源"
+    attributes: {CMD: 7, ENG: 4, NAV: 6, DIP: 5, INT: 8}
+    description: "50多歲，精神受損但知識淵博"
+    function: "資訊來源、道德困��核心"
+  - name: "艾琳·柯爾特"
+    role: "天鉤集團追蹤者"
+    attributes: {CMD: 5, ENG: 4, NAV: 5, DIP: 7, INT: 6}
+    description: "專業冷靜，代表集團利益"
+    function: "第三方壓力、反覆出現的角色"
+  - name: "「門底」線人"
+    role: "流浪情報販子"
+    attributes: {CMD: 3, ENG: 4, NAV: 5, DIP: 6, INT: 7}
+    function: "情報來源、模組間連接點"
+
+gm_notes:
+  - "確保兩次投票都有戲劇張力"
+  - "第二次投票是劇本高潮，給每位船長發言時間"
+  - "卡洛可成為長期NPC"
+  - "超空間生物為後續模組鋪路"
+  - "艾琳的立場可根據船團行動變化"

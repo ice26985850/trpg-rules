@@ -1,0 +1,64 @@
+<svg viewBox="0 0 880 680" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Microsoft JhengHei, sans-serif">
+<rect width="880" height="680" fill="#f7f4ec"/>
+<rect x="52" y="52" width="776" height="351" rx="10" fill="rgba(90,90,96,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="60" y="70" font-size="11pt" fill="#7a6f55">正義之錘號</text>
+<line x1="433" y1="337" x2="488" y2="365" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="90" y1="255" x2="90" y2="200" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="90" y1="255" x2="433" y2="145" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="433" y1="145" x2="159" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="159" y1="90" x2="680" y2="255" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="680" y1="255" x2="735" y2="282" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="735" y1="282" x2="790" y2="255" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="680" y1="145" x2="680" y2="255" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<circle cx="433" cy="337" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="433" y="335" text-anchor="middle" font-size="10.5pt" fill="#222">艦橋</text>
+<text x="433" y="379" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="488" cy="365" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="488" y="363" text-anchor="middle" font-size="10.5pt" fill="#222">黑盒子數據</text>
+<text x="488" y="379" text-anchor="middle" font-size="8.5pt" fill="#a33">滅絕令真相: 可能為誤判或審判…</text>
+<text x="488" y="407" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="90" cy="255" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="90" y="253" text-anchor="middle" font-size="10.5pt" fill="#222">密封艙段</text>
+<text x="90" y="297" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="90" cy="200" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="90" y="198" text-anchor="middle" font-size="10.5pt" fill="#222">懷疑者船員</text>
+<text x="90" y="214" text-anchor="middle" font-size="8.5pt" fill="#a33">一半已開始懷疑帝皇</text>
+<text x="90" y="242" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="433" cy="145" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="433" y="143" text-anchor="middle" font-size="10.5pt" fill="#222">引擎室</text>
+<text x="433" y="159" text-anchor="middle" font-size="8.5pt" fill="#a33">亞空間之影×2</text>
+<text x="433" y="187" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="680" cy="255" r="30" fill="#c04040" stroke="#a33" stroke-width="2.2"/>
+<text x="680" y="253" text-anchor="middle" font-size="10.5pt" fill="#222">卡薩爾領域</text>
+<text x="680" y="269" text-anchor="middle" font-size="8.5pt" fill="#a33">混沌星際戰士 | CR4 | …</text>
+<text x="680" y="297" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="735" cy="282" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="735" y="280" text-anchor="middle" font-size="10.5pt" fill="#222">卡薩爾對話</text>
+<text x="735" y="324" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="790" cy="255" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="790" y="253" text-anchor="middle" font-size="10.5pt" fill="#222">自我毀滅</text>
+<text x="790" y="269" text-anchor="middle" font-size="8.5pt" fill="#a33">最後一句話: 告訴我帝皇…我沒…</text>
+<text x="790" y="297" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="159" cy="90" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="159" y="88" text-anchor="middle" font-size="10.5pt" fill="#222">船員通道</text>
+<text x="159" y="104" text-anchor="middle" font-size="8.5pt" fill="#a33">變異船員×4 | 狹窄空間近戰</text>
+<text x="159" y="132" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<circle cx="680" cy="145" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="680" y="143" text-anchor="middle" font-size="10.5pt" fill="#222">機魂廣播室</text>
+<text x="680" y="187" text-anchor="middle" font-size="8pt" fill="#a33">未探索</text>
+<rect x="705" y="550" width="160" height="120" rx="6" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="715" y="570" font-size="10pt" font-weight="bold" fill="#333">圖例</text>
+<circle cx="723" cy="586" r="8" fill="#6fae6f" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="590" font-size="9.5pt" fill="#333">入口</text>
+<circle cx="723" cy="601" r="8" fill="#5b9bd5" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="605" font-size="9.5pt" fill="#333">撤離</text>
+<circle cx="723" cy="616" r="8" fill="#c04040" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="620" font-size="9.5pt" fill="#333">Boss</text>
+<circle cx="723" cy="631" r="8" fill="#e08a2b" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="635" font-size="9.5pt" fill="#333">環境危害</text>
+<circle cx="723" cy="646" r="8" fill="#9aa0a6" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="650" font-size="9.5pt" fill="#333">集結區</text>
+<circle cx="723" cy="661" r="8" fill="#cdbf9a" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="665" font-size="9.5pt" fill="#333">區域</text>
+<g transform="translate(825,55)"><circle r="26" fill="#f5f0e0" stroke="#333" stroke-width="2"/><text x="0" y="-12" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#333">北</text><line x1="0" y1="-22" x2="0" y2="-8" stroke="#c00" stroke-width="2"/></g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" font-family="sans-serif">
+<rect x="0" y="0" width="560" height="560" fill="#0f1424"/>
+<rect x="0" y="0" width="560" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">貪婪之島</text>
+<text x="540" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">念能力遊戲空間 · 獨立空間</text>
+<line x1="280" y1="92" x2="280" y2="188" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="232" x2="280" y2="328" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="372" x2="120" y2="408" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="372" x2="440" y2="408" stroke="#3a4a72" stroke-width="2"/>
+<rect x="227" y="48" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="68" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">多列士鎮</text>
+<text x="280" y="86" fill="#9fb3e0" font-size="11" text-anchor="middle">起始</text>
+<rect x="227" y="188" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="208" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">南方領地</text>
+<text x="280" y="226" fill="#9fb3e0" font-size="11" text-anchor="middle">高難度</text>
+<rect x="218" y="328" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="348" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">指定卡收集</text>
+<text x="280" y="366" fill="#9fb3e0" font-size="11" text-anchor="middle">100 張</text>
+<rect x="48" y="408" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="428" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">製作/修練所</text>
+<text x="120" y="446" fill="#9fb3e0" font-size="11" text-anchor="middle">合成</text>
+<rect x="387" y="408" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="440" y="428" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">離島條件</text>
+<text x="440" y="446" fill="#9fb3e0" font-size="11" text-anchor="middle">最終</text>
+<text x="20" y="548" fill="#5e6f9c" font-size="11">獵人X獵人TRPG · 地圖示意（非精確比例尺）</text>
+</svg>

@@ -1,0 +1,83 @@
+id: "MAP-04"
+title: "鏽蝕工廠行政大樓（擴充）"
+region: "工業區"
+danger: "★★★★☆"
+suitable_levels: [6, 7]
+regions:
+  - name: "附屬/外圍"
+    color: "#ECEFF1"
+  - name: "一樓"
+    color: "#E3F2FD"
+  - name: "二樓"
+    color: "#E8F5E9"
+  - name: "三樓"
+    color: "#FFF3E0"
+  - name: "四樓"
+    color: "#F3E5F5"
+  - name: "五樓"
+    color: "#FFEBEE"
+nodes:
+  - id: "yard"
+    name: "東側廢料場"
+    region: "附屬/外圍"
+    col: 0
+    row: 1
+    note: "堆高機攀爬平台；QZAC 棄置監視設備（電子 TN14 修復→監控畫面）"
+  - id: "vent"
+    name: "通風管道系統"
+    region: "附屬/外圍"
+    col: 0
+    row: 0
+    note: "連廢料場與三樓；僅容一人；潛行 TN14；伴侶無法通過"
+  - id: "f1"
+    name: "一樓—鍋爐房"
+    region: "一樓"
+    col: 1
+    row: 1
+    note: "鍋爐高溫；地下管線通西側廢料場；兄弟會士兵×1（可偷襲）"
+  - id: "f2"
+    name: "二樓—辦公區"
+    region: "二樓"
+    col: 1
+    row: 2
+    note: "監控室（全走廊即時畫面）；巡邏交叉點"
+  - id: "f3"
+    name: "三樓—通訊室+軍械庫"
+    region: "三樓"
+    col: 1
+    row: 3
+    note: "哨兵×1 巡邏；竊聽器安裝（TN11）；軍械庫（技術 TN14）；通風口（TN11）"
+  - id: "f4"
+    name: "四樓—休息區"
+    region: "四樓"
+    col: 1
+    row: 4
+    note: "寢室偷襲窗口；廚房煙霧彈/易燃物"
+  - id: "f5"
+    name: "五樓—指揮中心"
+    region: "五樓"
+    col: 1
+    row: 5
+    note: "維克托+護衛×2；戰術地圖牆；屋頂天線撤離呼叫點"
+edges:
+  - from: "yard"
+    to: "vent"
+    label: "堆高機"
+  - from: "vent"
+    to: "f3"
+    label: "通風口（TN11）"
+  - from: "f1"
+    to: "f2"
+    label: "樓梯"
+  - from: "f2"
+    to: "f3"
+    label: "樓梯"
+  - from: "f3"
+    to: "f4"
+    label: "樓梯"
+  - from: "f4"
+    to: "f5"
+    label: "樓梯"
+  - from: "f1"
+    to: "yard"
+    label: "地下管線"

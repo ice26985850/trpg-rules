@@ -1,0 +1,147 @@
+name: "帝國餘暉"
+description: "世界步入至暗，災難頻仍。碩果僅存的幾個帝國在餘暉中彼此廝殺，爭奪最後的資源與正統。誰能在巨災之中統合天下，誰就能將國號刻入永恆。"
+difficulty: 4
+level_range:
+  era_start: "帝國時代"
+  era_end: "傳奇時代"
+turns_estimated: 70
+years_in_game: 25
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S4_至暗時代_災難區域"
+initial_map: "maps/S4_至暗時代_災難區域.yaml"
+multiplayer_rules:
+  mode: "競爭（生存＋征伐）"
+  victory: "第 70 回合結算「帝威分數」＝穩定行省數×12 ＋ 戰爭勝場×18 ＋ 奇蹟建造數×25 ＋ 倖存人口×0.5；最高者登基。率先完成「永恆紀念碑」者觸發終局並 ＋35 分。"
+  interaction: "玩家間可締結臨時停戰、宣戰、發動滅國戰；災難期間可共享避難資源或趁火打劫。"
+starting_conditions:
+  population: 2000
+  attributes:
+    base: 22
+    free_points: 35
+phases:
+  - id: 1
+    name: "烽煙四起"
+    turns: "1-18"
+    description: "帝國在餘暉中各自整合殘餘領土"
+    events:
+      - turn: 4
+        name: "行省歸附"
+        type: "diplomacy"
+        description: "動盪中的行省歸附強大帝國"
+        effect: "穩定行省數+1，帝威分數+12"
+      - turn: 9
+        name: "饑荒警報"
+        type: "crisis"
+        description: "一場大饑荒襲擊全域，糧食驟減"
+        effect: "全員糧食−20%，民心(MOR)−5"
+      - turn: 13
+        name: "邊界血戰"
+        type: "military"
+        description: "與鄰國在邊境爆發會戰"
+        skill_check: "軍事(MIL)，DC 18"
+      - turn: 17
+        name: "難民屏障"
+        type: "moral_choice"
+        description: "湧入的難民潮，收留或驅離？"
+        choices:
+          - option: "全面收留"
+            effect: "人口+200，糧食壓力上升"
+          - option: "設立屏障"
+            effect: "民心(MOR)+5，但聲望−5"
+  - id: 2
+    name: "巨災降臨"
+    turns: "19-38"
+    description: "至暗時代的本質顯現，天災接踵"
+    events:
+      - turn: 22
+        name: "赤紅之冬"
+        type: "disaster"
+        description: "異常寒冬凍結農作，全員經濟(ECO)−8"
+        effect: "經濟(ECO)−8"
+      - turn: 27
+        name: "避難同盟"
+        type: "diplomacy"
+        description: "數國締結避難同盟共享資源"
+        effect: "同盟各 帝威分數+10"
+      - turn: 32
+        name: "趁火打劫"
+        type: "military"
+        description: "趁他國受災虛弱發動突襲"
+        skill_check: "軍事(MIL)，DC 19"
+      - turn: 36
+        name: "先知預言"
+        type: "religious"
+        description: "先知預言救世奇蹟之地"
+        effect: "指引奇蹟建造地點，科技(TEC)+5"
+  - id: 3
+    name: "鐵血統合"
+    turns: "39-55"
+    description: "以戰爭強行統合殘破天下"
+    events:
+      - turn: 42
+        name: "滅國之戰"
+        type: "military"
+        description: "對弱國發動滅國級攻勢"
+        crisis_type: "combat"
+        skill_check: "軍事(MIL)，DC 20"
+      - turn: 47
+        name: "奇蹟奠基"
+        type: "construction"
+        description: "開始建造象徵統一的奇蹟建築"
+        effect: "奇蹟建造數+1，帝威分數+25"
+      - turn: 51
+        name: "將領叛變"
+        type: "betrayal"
+        description: "功高震主的將領起兵自立"
+        skill_check: "民心(MOR)，DC 18"
+      - turn: 54
+        name: "疫病蔓延"
+        type: "disaster"
+        description: "一場瘟疫席捲軍隊"
+        effect: "軍事(MIL)−6，人口−150"
+  - id: 4
+    name: "永恆帝座"
+    turns: "56-70"
+    description: "最後的統合——登基或湮滅"
+    events:
+      - turn: 60
+        name: "紀念碑落成"
+        type: "milestone"
+        description: "完成「永恆紀念碑」者宣告正統"
+        effect: "帝威分數+35，觸發終局"
+      - turn: 65
+        name: "最終圍攻"
+        type: "military"
+        description: "剩餘強權對帝都的最後圍攻"
+        skill_check: "軍事(MIL)，DC 21"
+      - turn: 70
+        name: "帝座永恆"
+        type: "ending"
+        description: "結算帝威分數，最高者登基為永恆之帝"
+endings:
+  success:
+    condition: "帝威分數最高且完成永恆紀念碑"
+    reward: "全屬性+12，解鎖「永恆之帝」傳奇事蹟"
+  partial:
+    condition: "存活至終局但未登基"
+    reward: "保留帝國，可進入自由模式"
+  failure:
+    condition: "帝都陷落且人口歸零"
+    remedy: "繼承機制——以遺臣身份擁立幼主，保留 50% 屬性"
+key_npcs:
+  - name: "先知 伊嵐"
+    role: "預言災難與救贖的流浪先知"
+    personality: "神秘、悲憫"
+    relationship: "可被各方爭取"
+  - name: "焚天將軍 卡爾"
+    role: "功高震主的帝國名將"
+    personality: "傲岸、忠疑莫辨"
+    relationship: "雙面刃"
+gm_notes:
+  - "帝國時代災難頻仍，GM 應善用災難事件製造張力"
+  - "追蹤穩定行省數、奇蹟建造數與倖存人口"
+  - "災難期間鼓勵玩家互助或趁火打劫，兩者皆合法"
+  - "奇蹟建造是關鍵分數來源，避免單一玩家壟斷"
+  - "維持存亡壓力，讓每個決定都關乎國運"

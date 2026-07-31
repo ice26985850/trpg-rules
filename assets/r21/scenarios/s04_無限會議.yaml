@@ -1,0 +1,136 @@
+title: 無限會議
+difficulty: 專家
+stars: 5
+loop_length: 1天（8小時會議）
+loop_limit: 10
+suggested_players: 3-4
+action_points: 4（高度壓縮，每行動點≈2小時）
+tone_tags:
+  - 資本的罪惡
+  - 沉默的代價
+  - 權力結構中的個人責任
+loop_setting:
+  endpoint: 下午4:00，CEO陳鴻遠心臟病發死亡，會議強制結束
+  start: 早上8:00，玩家在會議室坐下，會議剛開始
+  boundary: 整個辦公樓30層（會議室在28層）
+  opening: "會議室的門在你身後關上了。長桌兩側坐著八個穿西裝的人。CEO陳鴻遠敲桌：『開始吧，今天的議程是輝達併購案的最終表決。』你不知道那裡面有什麼。但你知道——下午四點，他會死。"
+core_truth:
+  anchor_event: "CEO陳鴻遠心臟病發不是偶然——會議前被董事趙永昌下慢性毒。裂痕在他死亡瞬間形成，因為真相隨他一起死了。"
+  surface_story: 例行董事會議，CEO在會議中猝死。
+  real_story: "三年前陳鴻遠與趙永昌聯手做假賬惡意收購輝達，創始人跳樓；趙永昌下毒滅口，讓真相隨陳鴻遠埋葬。"
+  healing_conditions:
+    - 有人（任何董事）在陳鴻遠死前公開指出併購案造假
+    - 揭露趙永昌下毒的事實
+    - 可選：陳鴻遠本人承認並悔過
+truth_fragments:
+  - name: 輝達案的原始文件
+    type: 文件
+    location: 28樓檔案室
+    difficulty: 中
+    loop: 2
+    detail: "真實財務數據與公開差8000萬，有陳鴻遠與趙永昌簽名。"
+  - name: 趙永昌的藥瓶
+    type: 物品
+    location: 趙永昌辦公室
+    difficulty: 難
+    loop: 4
+    detail: "無法常規屍檢檢測的慢性毒素，會議前三天從國外進口，藏著發貨單。"
+  - name: 陳鴻遠的診斷書
+    type: 文件
+    location: 陳鴻遠辦公室
+    difficulty: 中
+    loop: 3
+    detail: "三個月前體檢心臟完全健康，本不應心臟病發。"
+  - name: 輝達創始人的遺書
+    type: 物品
+    location: 輝達舊辦公室（30樓）
+    difficulty: 特殊
+    loop: 5+
+    detail: "跳樓前寫的信，列出一切真相。"
+  - name: 董事們的秘密
+    type: 對話
+    location: 各個董事
+    difficulty: 難
+    loop: 6
+    detail: "財務總監知假賬、法務總監知程序違規、人事總監知非法解僱，需分別說服。"
+  - name: 趙永昌的日程記錄
+    type: 文件
+    location: 前臺電腦
+    difficulty: 易
+    loop: 1
+    detail: "會議前一天23:00還在辦公室，監控顯示去茶水間，有撕掉標籤的瓶子。"
+  - name: 陳鴻遠的悔過信
+    type: 物品
+    location: 陳鴻遠公文包
+    difficulty: 難
+    loop: 7+
+    detail: "寫了一半的悔過信：『我知道我做錯了……這次會議後——』未寫完。"
+  - name: 會議室的時鐘
+    type: 場景
+    location: 會議室
+    difficulty: 特殊
+    loop: 8+
+    detail: "下午3:58時鐘停了，GM讓時間暫停5分鐘，玩家可對任何NPC說任何話。"
+key_npcs:
+  - name: 陳鴻遠
+    role: CEO（錨點人物）
+    age: 62
+    emotion_baseline: 7/10
+    sensitivity: 極高
+    notes: "充滿罪惡感但在董事前維持形象；循環5+發言時突然停頓盯著自己的手。"
+  - name: 趙永昌
+    role: 董事
+    age: 55
+    emotion_baseline: 8/10
+    sensitivity: 高
+    notes: "唯一不希望循環結束的人，每次重置需再殺一次；循環4+開始焦慮。"
+  - name: 林美玲
+    role: 財務總監
+    age: 45
+    emotion_baseline: 5/10
+    sensitivity: 中
+    notes: "知假賬不敢說，偷偷保存原始數據副本。"
+  - name: 王建國
+    role: 法務總監
+    age: 50
+    emotion_baseline: 6/10
+    sensitivity: 低
+    notes: "知程序違規但自我說服合法；循環6+開始翻輝達案資料。"
+  - name: 周明
+    role: 輝達創始人（已故）
+    age: N/A
+    emotion_baseline: N/A
+    sensitivity: N/A
+    notes: "不存在於會議室，30樓窗前偶現人影，留下遺書。"
+degradation:
+  - phase: 循環1-2（鏡像）
+    description: 正常會議，陳鴻遠4:00準時心臟病發。
+  - phase: 循環3-4（漣漪）
+    description: 對話出現細微變化，趙永昌3:50開始坐立不安。
+  - phase: 循環5-6（裂紋）
+    description: 光線偶變暖色，陳鴻遠發言停頓10秒表情是恐懼。
+  - phase: 循環7-8（斷裂）
+    description: 30樓滲入28樓，趙永昌辦公室門自開，桌上出現輝達創始人照片。
+  - phase: 循環9-10（崩壞）
+    description: 時鐘停在3:58，碎片8觸發，最後機會。
+endings:
+  - id: A
+    name: 真相大白
+    grade: 完美
+    condition: 揭露下毒＋全董事公開造假＋陳鴻遠悔過
+    narrative: "陳鴻遠未發病或被搶救，趙永昌被捕，遺書公之於眾，裂痕癒合。"
+  - id: B
+    name: 遲來的正義
+    grade: 一般
+    condition: 揭露假賬但未能阻止死亡
+    narrative: "陳鴻遠死前說『對不起』，趙永昌罪行揭露，裂痕癒合一半。"
+  - id: C
+    name: 同歸於盡
+    grade: 隱藏
+    condition: 玩家讓兩人當面對質
+    narrative: "兩人互相揭露罪行，陳鴻遠病發、趙永昌跳窗，都死但真相揭開，裂痕癒合。"
+  - id: D
+    name: 一切照舊
+    grade: 壞
+    condition: 循環耗盡
+    narrative: "會議照常、陳鴻遠照常死、趙永昌照常逃脫，玩家只記得一切。"

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" font-family="'Microsoft JhengHei','Noto Sans TC',sans-serif">
+  <defs>
+    <filter id="rift"><feGaussianBlur stdDeviation="2"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="680" height="520" fill="#1A2E1A"/>
+  
+  <text x="340" y="25" text-anchor="middle" fill="#90C090" font-size="16" font-weight="bold">哭嚎森林與蛇血遺跡</text>
+  <text x="340" y="42" text-anchor="middle" fill="#6A8A6A" font-size="10">S5：最後一天 —— 路線一「修復蛇鱗」</text>
+  
+  <!-- 灰燼城東門 -->
+  <rect x="30" y="440" width="110" height="40" rx="6" fill="#2F5496" stroke="#6A9AC0"/>
+  <text x="85" y="460" text-anchor="middle" fill="#B3C6E6" font-size="11" font-weight="bold">🏰 灰燼城東門</text>
+  <text x="85" y="474" text-anchor="middle" fill="#88A0C0" font-size="8">出發點</text>
+  
+  <!-- 森林邊緣 -->
+  <rect x="160" y="400" width="100" height="35" rx="5" fill="#2E4A2E" stroke="#4A8A4A"/>
+  <text x="210" y="422" text-anchor="middle" fill="#90C090" font-size="10">🌲 森林邊緣</text>
+  
+  <line x1="140" y1="455" x2="160" y2="420" stroke="#4A8A4A" stroke-width="1.5"/>
+  
+  <!-- 低語林地 -->
+  <rect x="260" y="360" width="120" height="45" rx="6" fill="#2A4A2A" stroke="#4A8A4A"/>
+  <text x="320" y="380" text-anchor="middle" fill="#B0D0B0" font-size="10">低語林地</text>
+  <text x="320" y="396" text-anchor="middle" fill="#709070" font-size="7">聽見死者遺言</text>
+  
+  <line x1="250" y1="415" x2="280" y2="395" stroke="#4A8A4A" stroke-width="1.5"/>
+  
+  <!-- 時池 -->
+  <ellipse cx="180" cy="310" rx="55" ry="25" fill="#1A3050" stroke="#4080C0" stroke-width="1.5"/>
+  <text x="180" y="315" text-anchor="middle" fill="#80B0E0" font-size="10">時池</text>
+  
+  <line x1="210" y1="400" x2="195" y2="335" stroke="#4A8A4A" stroke-width="1" stroke-dasharray="4,2"/>
+  
+  <!-- 扭曲小徑 -->
+  <rect x="340" y="270" width="120" height="45" rx="6" fill="#4A2020" stroke="#C04040" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="400" y="290" text-anchor="middle" fill="#FF8888" font-size="10">⚠ 扭曲小徑</text>
+  <text x="400" y="306" text-anchor="middle" fill="#CC6666" font-size="7">時間不穩定 DC16</text>
+  
+  <line x1="350" y1="380" x2="380" y2="315" stroke="#C04040" stroke-width="1.5" stroke-dasharray="3,2"/>
+  
+  <!-- 隱者小屋 -->
+  <rect x="100" y="210" width="100" height="45" rx="6" fill="#4A3A20" stroke="#8A6A30"/>
+  <text x="150" y="230" text-anchor="middle" fill="#D0B080" font-size="10">🏚 隱者小屋</text>
+  <text x="150" y="246" text-anchor="middle" fill="#A08060" font-size="7">安全路線指引</text>
+  
+  <line x1="170" y1="300" x2="150" y2="255" stroke="#8A6A30" stroke-width="1.5"/>
+  
+  <!-- 鏡湖 -->
+  <ellipse cx="500" cy="200" rx="65" ry="30" fill="#1A2A40" stroke="#4080A0" stroke-width="2"/>
+  <text x="500" y="205" text-anchor="middle" fill="#80B0D0" font-size="11" font-weight="bold">鏡湖</text>
+  
+  <line x1="420" y1="285" x2="470" y2="225" stroke="#4080A0" stroke-width="1.5"/>
+  
+  <!-- 觀測站 -->
+  <rect x="540" y="145" width="110" height="50" rx="6" fill="#3A4A6A" stroke="#6A8AC0"/>
+  <text x="595" y="165" text-anchor="middle" fill="#B0C0E0" font-size="10">🔭 時之塔</text>
+  <text x="595" y="180" text-anchor="middle" fill="#B0C0E0" font-size="10">觀測站</text>
+  
+  <line x1="540" y1="195" x2="540" y2="150" stroke="#6A8AC0" stroke-width="1.5"/>
+  
+  <!-- 蛇傷之地 -->
+  <rect x="280" y="140" width="160" height="55" rx="8" fill="#5A1010" stroke="#C00000" stroke-width="2"/>
+  <text x="360" y="162" text-anchor="middle" fill="#FF6666" font-size="11" font-weight="bold">🐍 蛇傷之地</text>
+  <text x="360" y="182" text-anchor="middle" fill="#CC4444" font-size="8">土壤暗紅·蛇血浸透</text>
+  
+  <!-- 連線到蛇傷 -->
+  <line x1="200" y1="235" x2="300" y2="175" stroke="#8A6A30" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="250" y="210" fill="#D0B080" font-size="7">安全路線</text>
+  
+  <line x1="440" y1="275" x2="400" y2="190" stroke="#C04040" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="435" y="235" fill="#CC6666" font-size="7">危險捷徑</text>
+  
+  <line x1="570" y1="175" x2="420" y2="170" stroke="#6A8AC0" stroke-width="1.5"/>
+  
+  <!-- 蛇血祭壇 -->
+  <circle cx="360" cy="75" r="35" fill="#8B0000" stroke="#FF0000" stroke-width="3" filter="url(#rift)"/>
+  <text x="360" y="72" text-anchor="middle" fill="#FF8888" font-size="12" font-weight="bold">🔴 蛇血祭壇</text>
+  <text x="360" y="90" text-anchor="middle" fill="#FF6666" font-size="8">觀時者石環</text>
+  
+  <line x1="360" y1="140" x2="360" y2="110" stroke="#FF0000" stroke-width="2"/>
+  
+  <!-- 終焉之門 -->
+  <rect x="320" y="5" width="80" height="25" rx="5" fill="#000" stroke="#FF0000" stroke-width="2" filter="url(#rift)"/>
+  <text x="360" y="22" text-anchor="middle" fill="#FF4444" font-size="9" font-weight="bold">終焉之門</text>
+  
+  <line x1="360" y1="75" x2="360" y2="30" stroke="#FF4444" stroke-width="1.5" stroke-dasharray="2,2"/>
+  
+  <!-- 圖例 -->
+  <rect x="30" y="490" width="620" height="24" rx="4" fill="#1A2E1A" stroke="#3A5A3A"/>
+  <rect x="45" y="497" width="12" height="12" rx="2" fill="#2E4A2E" stroke="#4A8A4A"/>
+  <text x="63" y="507" fill="#90C090" font-size="8">森林</text>
+  <rect x="110" y="497" width="12" height="12" rx="2" fill="#1A3050" stroke="#4080C0"/>
+  <text x="128" y="507" fill="#80B0E0" font-size="8">水域</text>
+  <rect x="175" y="497" width="12" height="12" rx="2" fill="#5A1010" stroke="#C00000"/>
+  <text x="193" y="507" fill="#FF6666" font-size="8">蛇傷地</text>
+  <line x1="260" y1="503" x2="295" y2="503" stroke="#8A6A30" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="300" y="507" fill="#D0B080" font-size="8">安全路線</text>
+  <line x1="370" y1="503" x2="405" y2="503" stroke="#C04040" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="410" y="507" fill="#CC6666" font-size="8">危險路線</text>
+  <rect x="480" y="497" width="12" height="12" rx="2" fill="#000" stroke="#FF0000"/>
+  <text x="498" y="507" fill="#FF4444" font-size="8">時間裂隙</text>
+</svg>

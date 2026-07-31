@@ -1,0 +1,125 @@
+title: 電梯間
+difficulty: 新手
+stars: 1
+loop_length: 24分鐘（嚴格）
+loop_limit: 10
+suggested_players: 2-3
+action_points: 2（極度壓縮，每行動點≈12分鐘）
+tone_tags:
+  - 否認
+  - 瀕死時間的拉長
+  - 五個人的一生濃縮在24分鐘裡
+loop_setting:
+  endpoint: 電梯從30樓墜落至地面（第24分鐘）
+  start: 早上8:00，電梯門關閉的瞬間
+  boundary: 電梯轎廂內部（約2m×2m）
+  opening: "電梯門在你身後關上了。五個人擠在這個狹小的空間裡。數字面板上的數字開始跳動——30。你聞到淡淡的古龍水和昨夜的酒味。一切都很正常。只是……有一個人不應該在這裡。"
+core_truth:
+  anchor_event: "五人走進電梯的那一刻——其中一人（張明德）在進電梯前已心臟病猝死，現實無法處理「一個死人走進了電梯」這個矛盾，裂痕於此形成。"
+  surface_story: 電梯故障，五人被困，最終墜毀。
+  real_story: "張明德凌晨5點獨自加班時心臟病發，死在辦公桌前；早上7:55他的「身體」站起走進電梯——那已不是他，是裂痕的第一個異常表現。"
+  healing_conditions:
+    - 活著的人發現電梯裡有一個人已經「不在」了
+    - 活著的人對張明德「告別」——承認他的死亡
+    - 可選：找到張明德口袋裡給女兒的遺書
+truth_fragments:
+  - name: 手錶停了
+    type: 場景
+    location: 張明德身上
+    difficulty: 易
+    loop: 1
+    detail: "張明德的手錶停在凌晨4:58，但他看起來不像戴了停走的錶，在電梯裡還看了兩次時間。"
+  - name: 沒有呼吸聲
+    type: 場景
+    location: 全體
+    difficulty: 中
+    loop: 2
+    detail: "電梯安靜下來的瞬間，你數了數呼吸聲——只有四個人的。但你看到了五個人的胸口起伏。"
+  - name: 遺書
+    type: 物品
+    location: 張明德外套內袋
+    difficulty: 中
+    loop: 3
+    detail: "張明德凌晨3點寫給女兒的信：書桌第三個抽屜裡有學費。但他沒有寄出去。"
+  - name: 藥瓶
+    type: 物品
+    location: 張明德公文包
+    difficulty: 易
+    loop: 1
+    detail: "速效救心丸，瓶蓋開著少了幾顆，時間是今天凌晨。"
+  - name: 同事的記憶
+    type: 對話
+    location: 乘客B-李娜
+    difficulty: 中
+    loop: 4
+    detail: "李娜說他今天很安靜，平常會抱怨電梯慢；頓一下後說：『他今天……進電梯了嗎？我不記得他走進來了。』"
+  - name: 監控死角
+    type: 場景
+    location: 電梯天花板
+    difficulty: 難
+    loop: 5
+    detail: "張明德站位恰好是監控死角；現實視角裡這部電梯只有四個人。"
+  - name: 冷
+    type: 場景
+    location: 靠近張明德
+    difficulty: 易
+    loop: 2
+    detail: "靠近張明德會覺得從骨頭滲出的寒意，只有靠近的人感覺得到。"
+  - name: 告別
+    type: 對話
+    location: 觸發式
+    difficulty: 特殊
+    loop: 6+
+    detail: "當活著的人全部承認他不在了並有人對他說告別，他微笑化為光，電梯停止墜落。"
+key_npcs:
+  - name: 張明德
+    role: 死者
+    age: 52
+    emotion_baseline: N/A
+    sensitivity: 極高
+    notes: "本質上已不在，殘影重複看錶、整理領帶、微笑；不說話但會聽。"
+  - name: 李娜
+    role: 同事
+    age: 34
+    emotion_baseline: 4/10
+    sensitivity: 中
+    notes: "熬夜加班後的疲憊；知道張明德最近身體不好，今早把殘影誤認為本人。"
+  - name: 王建國
+    role: 陌生人
+    age: 45
+    emotion_baseline: 6/10
+    sensitivity: 低
+    notes: "普通上班族，在電梯裡偷看手機股市，全然不知異常。"
+  - name: 陳小雨
+    role: 實習生
+    age: 23
+    emotion_baseline: 7/10
+    sensitivity: 高
+    notes: "第一天上班緊張；是張明德女兒的同班同學。"
+degradation:
+  - phase: 循環1-2
+    description: 正常，電梯運行平穩，玩家先體驗正常環境，墜落後重置。
+  - phase: 循環3-4
+    description: 樓層顯示偶爾跳過數字，張明德看錶頻率增加。
+  - phase: 循環5-6
+    description: 電梯偶爾短暫停電1秒，重亮後張明德位置變了一次。
+  - phase: 循環7-8
+    description: 張明德開始「失焦」，其他人偶爾看不到他。
+  - phase: 循環9-10
+    description: 燈光變淡藍色（他辦公室燈光），最後一次機會。
+endings:
+  - id: A
+    name: 電梯門開了
+    grade: 完美
+    condition: 獲得全部碎片＋對張明德告別
+    narrative: "電梯停在1樓門開，門外是醫院白光，他微笑轉身走出，剩下四人看著彼此。"
+  - id: B
+    name: 一個人記住了
+    grade: 一般
+    condition: 至少一人告別但其他人沉默
+    narrative: "電梯懸浮，殘影消散，燈熄滅後重亮，四人走出，其中一人回頭看空蕩角落。"
+  - id: C
+    name: 循環耗盡
+    grade: 壞
+    condition: 沒人告別，循環用盡
+    narrative: "最後一次墜落穿過地面繼續下墜，燈光徹底熄滅，面板數字不再亮起。"

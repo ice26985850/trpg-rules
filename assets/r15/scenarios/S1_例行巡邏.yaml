@@ -1,0 +1,39 @@
+name: "S1：例行巡邏"
+description: >
+  上任後第二週。M.E.G. 區域調度中心發來今天的任務——Level 1 B 區走廊例行巡邏。
+  標準路線，無預期異常。這是你的第一個簽名。
+difficulty: 極易
+real_dc: 40
+estimated_dc_range: "30–50（基礎情報偏差 ±25%）"
+level_range: "1"
+mission_type: 偵察任務
+campaign: "戰役一：新手主任"
+min_agents: 1
+recommended_specialty:
+  - 偵察
+encounter_rate: 5
+time_limit: null
+intel_levels:
+  none: "DC 24–56（偏差±40%）"
+  basic: "DC 30–50（偏差±25%）"
+  detailed: null
+  precise: null
+  perfect: null
+rewards:
+  success:
+    intel_gain: 1
+  great_success:
+    intel_gain: 2
+  marginal_success:
+    intel_gain: 1
+scene_flow:
+  - scene: "辦公室——簽署任務指令"
+    description: "玩家在辦公室簽署第一個任務指令。選擇派遣人選（1–2人），決定是否購買情報。"
+    key_npc: "林曉（見習探險員）——她的第一次獨立任務"
+  - scene: "任務執行——巡邏開始"
+    description: "Level 1走廊在日光燈嗡嗡聲中延伸。一切正常——太正常了。"
+    check: "d100 + 探險員經驗值 + 裝備加值 + 方針加值，對抗DC 40"
+  - scene: "辦公室——任務報告"
+    description: "巡邏隊歸來。林曉報告一切正常——但請求下次去更遠的地方。"
+hidden_bonus: "玩家若主動不使用情報（節省50預算），GM暗示：「你對Level 1 B區已經很熟了。」"
+design_notes: "教學任務。最低配置成功率66%。僅自然1–5觸發災難。目的：學習基本流程。"

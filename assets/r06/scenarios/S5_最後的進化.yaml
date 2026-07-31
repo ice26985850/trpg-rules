@@ -1,0 +1,119 @@
+name: "S5：最後的進化"
+description: "進入深淵裂谷最深處，面對虛淵蠕蟲的殘餘意識。吸收、摧毀或融合——三個選擇決定進化時代的命運與你自身的存在。"
+difficulty: "致命"
+level_range: { min_nodes: 13, max_nodes: 20, suggested: "13-20 進化節點" }
+players: { min: 1, max: 4, default: 1 }
+estimated_time: "6-8 小時"
+map_ref: "最後的進化_深淵裂谷"
+initial_map: "最後的進化_深淵裂谷"
+prerequisite: "S1 + S2/S3/S4 中至少兩個"
+
+scenes:
+  - id: "S5_SC1"
+    name: "裂谷入口"
+    type: "narrative"
+    description: "與一路上的盟友告別（或召集同行）。只有進化到一定程度者能承受深淵壓迫。"
+    companions:
+      - { name: "雷恩", source: "S1", assist: "人性值危機時意志 +1", risk: "每回合需意志 DC 14" }
+      - { name: "扎拉克斯", source: "S4", assist: "分擔最終 BOSS 傷害", risk: "反對犧牲性選擇" }
+      - { name: "零號", source: "S2", assist: "揭示額外真相", risk: "可能在最後背叛" }
+      - { name: "奧爾登", source: "S3", assist: "每回合恢復 1 人性值", risk: "HP 僅 30" }
+
+  - id: "S5_SC2"
+    name: "裂谷下降"
+    type: "combat_gauntlet"
+    description: "三層下降，每層一個遭遇。越深越扭曲。"
+    encounters:
+      - depth: "100m"
+        enemy: { name: "七首蛇", rank: "精英", hp: 60, defense: 13, mechanic: "7 個頭各獨立攻擊 1d6+3。每摧毀一個頭-1 攻擊次數" }
+      - depth: "300m"
+        enemy: { name: "虛空流體", rank: "精英", count: 3, hp: 25, defense: 8, mechanic: "物理攻擊劣勢。吞噬→意志 DC 15 否則人性值 -1d4。HP<10 時分裂" }
+      - depth: "500m"
+        boss: { name: "深淵守門者", rank: "首領", hp: 100, defense: 16, stats: { LIL: 10, MJ: 8, TZ: 12, GZ: 10, YZ: 14 }, energy: 18 }
+        skills:
+          - { name: "虛空觸手", tier: "中級", energy: 3, effect: "2d8+5 精神 + 人性值 -1" }
+          - { name: "蠕蟲之吼", tier: "高級", energy: 5, effect: "全場意志 DC 18 否則失去行動" }
+          - { name: "深淵凝視", tier: "終極", effect: "意志 DC 22 否則人性值減半" }
+        absorb: ["虛空抗性（被動）", "深淵感知（被動）", "深淵凝視（高級——但人性值 -2/次）"]
+
+  - id: "S5_SC3"
+    name: "碎片殿堂"
+    type: "exploration_narrative"
+    description: "虛淵蠕蟲的記憶碎片漂浮在無盡黑暗中。獲取完整真相。與虛淵殘響對話。"
+    truths:
+      - "進化是蠕蟲碎片的副作用"
+      - "人性值代表『碎片之外的部分』"
+      - "裂谷擴張是因蠕蟲正在甦醒"
+      - "三種方法停止擴張——各有代價"
+    npc:
+      name: "虛淵殘響"
+      form: "以玩家最信任者的形象出現"
+      nature: "無善惡概念——只是等待被釋放的記憶"
+
+  - id: "S5_SC4"
+    name: "最終選擇"
+    type: "final_decision"
+    choices:
+      - id: "吸收"
+        description: "將核心碎片完全吸收，成為新的虛淵蠕蟲"
+        effects:
+          stats: "力量 LIL+10、體質 TZ+10、意志 YZ+10"
+          capacity: "無限進化容量"
+          humanity: "歸零——永久"
+          consequence: "角色變為 NPC/反派。世界命運取決於新身份的選擇"
+        suitable: "追求終極力量、不介意失去自我的玩家"
+      - id: "摧毀"
+        description: "以自身進化能量引爆核心碎片"
+        effects:
+          global: "全世界進化潛力消失。裂谷完全閉合。進化時代結束"
+          personal: "所有進化節點永久失效、屬性恢復至基礎形態初始值"
+          humanity: "恢復至 100"
+        consequence: "成為平凡英雄。和平以犧牲奇蹟為代價"
+        suitable: "重視人性、願意犧牲力量的玩家"
+      - id: "融合"
+        description: "將碎片融入但以意志將其與人性值綁定"
+        check: { attribute: "意志（YZ）", dc: 30 }
+        success:
+          reward: "『究極形態』（自由切換所有形態 + 人性值不再下降）+ 全屬性 +5 + 『碎片共鳴』技能"
+          meaning: "成為進化與人性平衡的活證明"
+        failure:
+          table:
+            - { roll: "1-3", outcome: "碎片摧毀你——角色死亡" }
+            - { roll: "4-5", outcome: "碎片部分控制——角色變為 NPC" }
+            - { roll: "6", outcome: "碎片拒絕融合但被削弱——裂谷縮小 50%" }
+        suitable: "追求第三條路、相信平衡的玩家"
+
+    companion_influence:
+      - { companion: "雷恩", absorb: "悲傷離開", destroy: "鬆一口氣", merge: "意志檢定 +3" }
+      - { companion: "扎拉克斯", absorb: "攻擊你", destroy: "理解", merge: "檢定 DC -3" }
+      - { companion: "零號", absorb: "試圖搶奪碎片（意志對抗）", merge: "在融合前暴露意圖" }
+      - { companion: "奧爾登", merge: "進化冥想協助（檢定 DC -5）" }
+
+  - id: "S5_SC5"
+    name: "餘波"
+    type: "epilogue"
+    endings:
+      - type: "吸收"
+        title: "新神降臨"
+        description: "你成為新的吞噬者。偶爾——非常偶爾——會想起曾經的名字。"
+      - type: "摧毀"
+        title: "平凡英雄"
+        description: "失去所有進化能力，但朋友們仍認得你。進化時代結束。"
+      - type: "融合成功"
+        title: "平衡守護者"
+        description: "你成為共生協議的精神領袖——活的證明，進化和人性不是對立的。"
+      - type: "融合失敗但存活"
+        title: "殘響行者"
+        description: "獲得被動『殘響』。裂谷部分縮小。你的旅程尚未結束。"
+
+completion_rewards:
+  evolution_points: 5
+  absorb: "終極進化——角色退休（傳奇 NPC/BOSS）"
+  destroy: "『英雄印記』——全新平凡的冒險起點"
+  merge_success: "『究極形態』+ 意志 YZ 永久 +5"
+  merge_partial: "被動『殘響』——意志 YZ +2"
+
+solo_adjustments:
+  abyss_guardian_hp: 80
+  fusion_dc_reduction: "-2（單人遊戲降低門檻）"
+  extra_companions: "可攜帶所有可用的 NPC 同伴（不限制數量）"

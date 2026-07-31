@@ -1,0 +1,142 @@
+# 邊境之眼號（邊境之眼號）——S1 處女航
+# 同盟巡邏艇，8 節點，2 層甲板
+# 對應劇本：S1_處女航
+
+nodes:
+  - id: N1
+    label: "氣閘／切入點"
+    type: entry
+    x: 100
+    y: 350
+    deck: 1
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: null
+    explored: true
+    description: "小隊切開外殼進入的位置。小型氣閘室，僅容 2 人同時站立。"
+
+  - id: N2
+    label: "貨艙"
+    type: room
+    x: 250
+    y: 350
+    deck: 1
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: null
+    explored: false
+    description: "堆滿補給箱和設備的貨艙。提供掩體（+2 DEF）。2 名艦員在此巡邏。"
+
+  - id: N3
+    label: "走廊交叉口"
+    type: corridor
+    x: 400
+    y: 350
+    deck: 1
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: null
+    explored: false
+    description: "主走廊與維護通道的交匯處。牆上有艦內地圖面板（感知 DC 10 可獲得甲板佈局）。"
+
+  - id: N4
+    label: "主樓梯"
+    type: corridor
+    x: 400
+    y: 200
+    deck: 1
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: null
+    explored: false
+    description: "連接第一層和第二層甲板的樓梯。2 名警衛在此巡邏。"
+
+  - id: N5
+    label: "維護通道入口"
+    type: corridor
+    x: 550
+    y: 350
+    deck: 1
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: "狹窄通道——僅容單人通過"
+    explored: false
+    description: "隱藏在牆板後的維護通道。需要工程（ENG）DC 10 找到並打開。直接通往第二層甲板。"
+
+  - id: N6
+    label: "第二層走廊"
+    type: corridor
+    x: 400
+    y: 80
+    deck: 2
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: null
+    explored: false
+    description: "第二層甲板的主走廊。比第一層更狹窄，燈光昏暗。"
+
+  - id: N7
+    label: "資料中心入口"
+    type: room
+    x: 550
+    y: 80
+    deck: 2
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: "自動砲台（CR 2）"
+    explored: false
+    description: "資料中心的入口。1 座自動砲台和 1 名陸戰隊員把守。砲台可被破解（ENG DC 15）。"
+
+  - id: N8
+    label: "資料中心"
+    type: objective
+    x: 700
+    y: 80
+    deck: 2
+    gravity: "標準重力（1G）"
+    environment: "加壓區域"
+    hazard: null
+    explored: false
+    description: "目標區域。伺服器機架排列整齊。需要 3 回合下載數據（感知 DC 13）。"
+
+edges:
+  - from: N1
+    to: N2
+    type: "艙門"
+    description: "標準艙門——未鎖"
+  - from: N2
+    to: N3
+    type: "走廊"
+    description: "短走廊"
+  - from: N3
+    to: N4
+    type: "樓梯"
+    description: "主樓梯——通往第二層"
+  - from: N3
+    to: N5
+    type: "維護通道"
+    description: "隱藏面板——ENG DC 10"
+  - from: N4
+    to: N6
+    type: "樓梯"
+    description: "到達第二層甲板"
+  - from: N5
+    to: N6
+    type: "維護通道"
+    description: "繞過守軍——直達第二層"
+  - from: N6
+    to: N7
+    type: "走廊"
+    description: "通往資料中心"
+  - from: N7
+    to: N8
+    type: "艙門（鎖定）"
+    description: "軍規門禁——ENG DC 13 或爆破"
+
+regions:
+  - name: "第一層甲板"
+    color: "#B3D9FF"
+    nodes: [N1, N2, N3, N4, N5]
+  - name: "第二層甲板"
+    color: "#FFD9B3"
+    nodes: [N6, N7, N8]

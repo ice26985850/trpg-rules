@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 620" font-family="sans-serif">
+<rect x="0" y="0" width="560" height="620" fill="#0f1424"/>
+<rect x="0" y="0" width="560" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">第一文明遺跡</text>
+<text x="540" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">超古代遺跡 · 深層·黑暗大陸</text>
+<line x1="280" y1="92" x2="280" y2="178" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="222" x2="120" y2="298" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="222" x2="440" y2="298" stroke="#3a4a72" stroke-width="2"/>
+<line x1="440" y1="342" x2="280" y2="458" stroke="#3a4a72" stroke-width="2"/>
+<rect x="227" y="48" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="68" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">遺跡入口</text>
+<text x="280" y="86" fill="#9fb3e0" font-size="11" text-anchor="middle">機關</text>
+<rect x="199" y="178" width="163" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="198" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">奧德里奇研究所</text>
+<text x="280" y="216" fill="#9fb3e0" font-size="11" text-anchor="middle">墮落研究者</text>
+<rect x="48" y="298" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="318" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">玻璃槽實驗體</text>
+<text x="120" y="336" fill="#9fb3e0" font-size="11" text-anchor="middle">禁忌知識</text>
+<rect x="378" y="298" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="440" y="318" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">金字塔核心</text>
+<text x="440" y="336" fill="#9fb3e0" font-size="11" text-anchor="middle">CR11</text>
+<rect x="218" y="458" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="478" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">感情圖書館</text>
+<text x="280" y="496" fill="#9fb3e0" font-size="11" text-anchor="middle">古代星圖</text>
+<text x="20" y="608" fill="#5e6f9c" font-size="11">獵人X獵人TRPG · 地圖示意（非精確比例尺）</text>
+</svg>

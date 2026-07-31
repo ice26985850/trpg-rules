@@ -1,0 +1,113 @@
+name: "Level 9 — 郊區"
+description: "永夜雨中的無盡郊區——一模一樣的房屋，窗後之物在每扇窗後窺視"
+scenario_ref: "S5_跋涉"
+usage: "S5 劇本中段：跟隨路燈閃爍序列導航，絕對不要進入任何房子"
+regions:
+  - name: "街道"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "區域"
+  - name: "房屋區（危險）"
+    color: "#F3E5F5"
+    nodes: ["N02", "N04", "N06"]
+    description: ""
+  - name: "路燈序列"
+    color: "#FFF3E0"
+    nodes: ["N03", "N05"]
+    description: ""
+  - name: "出口區域"
+    color: "#E3F2FD"
+    nodes: ["N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "街道起點"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "永夜細雨中的無盡街道——每棟房屋都一樣"
+  - id: "N02"
+    label: "相同房屋 A"
+    x: 330
+    y: 200
+    type: "danger"
+    explored: false
+    description: "窗後有東西在動——切勿進入"
+    threats: "窗後之物（進入被困）"
+  - id: "N03"
+    label: "路燈序列 1"
+    x: 330
+    y: 410
+    type: "navigation"
+    explored: false
+    description: "路燈閃爍序列——判斷方向（感知 DC 15）"
+  - id: "N04"
+    label: "相同房屋 B"
+    x: 510
+    y: 200
+    type: "danger"
+    explored: false
+    description: "又是一棟相同的房屋——窗後之物窺視"
+    threats: "窗後之物"
+  - id: "N05"
+    label: "路燈序列 2"
+    x: 510
+    y: 410
+    type: "navigation"
+    explored: false
+    description: "序列延續——繼續跟隨"
+  - id: "N06"
+    label: "房屋內物資（陷阱）"
+    x: 670
+    y: 200
+    type: "danger"
+    explored: false
+    description: "門虛掩，裡面有物資——但進入即被困"
+    resources: "物資（陷阱）"
+    threats: "窗後之物"
+  - id: "N07"
+    label: "路燈盡頭（出口）"
+    x: 690
+    y: 410
+    type: "exit"
+    explored: false
+    description: "序列終點連向麥田——通往 Level 10"
+    exit_to: "Level 10 — 麥田"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "dangerous_path"
+    label: "房屋"
+  - from: "N01"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "dangerous_path"
+    label: "房屋"
+  - from: "N03"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N03"
+    to: "N05"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N06"
+    type: "dangerous_path"
+    label: "陷阱"
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ 出口"
+  - from: "N06"
+    to: "N07"
+    type: "dangerous_path"
+    label: "→ 出口"

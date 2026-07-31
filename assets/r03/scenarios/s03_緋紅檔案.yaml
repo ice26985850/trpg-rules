@@ -1,0 +1,61 @@
+# 多人戰役結構檔：緋紅檔案 (Crimson Dossier / 戰役系列 B)
+# 來源：campaign-series-b-crimson-dossier_zh-Hant.md
+# 本檔為結構化摘要；完整場景描述請參閱同名 .md。
+
+meta:
+  title: "緋紅檔案 (Crimson Dossier)"
+  type: "多人玩家戰役"
+  player_count: "小隊（建議 3–5 人）"
+  level_range: "Lv.1–8"
+  focus: "調查 / 模因識別 / 認知危害 / 信息倫理"
+  setting: "Site-██（自我隔離 40 年的廢棄站點）"
+  plot: "玩家受 O5-9「檔案管理員」引導，追查 1978 年 Site-██ 事件被掩蓋的真相，面對「真相是否該被釋放」的信息責任終局。"
+  key_npcs:
+    - "「檔案管理員」/ O5-9（遠程嚮導，末期病患）"
+    - "Site-██ 主管 奧德里克·沃斯博士（自我隔離 40 年）"
+
+scenes:
+  - id: "B-1"
+    name: "不存在之站"
+    level: "Lv.1"
+    type: "環境調查 / 氛圍建立"
+    key_checks: ["偵察 TN 60", "基金會史 TN 55", "生存 TN 50"]
+    duration: "1–2 場"
+    map_ref: "archive_building（檔案大樓整體）"
+
+  - id: "B-2"
+    name: "遺忘證詞"
+    level: "Lv.2–3"
+    type: "文檔分析 / 模因識別"
+    key_checks: ["異常學 TN 62", "語言學 TN 58", "意志抵抗 TN 55"]
+    duration: "2 場"
+
+  - id: "B-3"
+    name: "鏡中圖書館"
+    level: "Lv.3–4"
+    type: "認知危害管理 / 知識交易"
+    key_checks: ["意志抵抗 TN 58", "科學 TN 60", "密碼學 TN 55"]
+    duration: "2 場"
+
+  - id: "B-4"
+    name: "紅色編輯者"
+    level: "Lv.4–5"
+    type: "實時對抗 / 真相追逐"
+    key_checks: ["計算機 TN 65", "偵察 TN 62", "異常學 TN 60"]
+    duration: "2 場"
+
+  - id: "B-5"
+    name: "低語鏈"
+    level: "Lv.5–7"
+    type: "拼圖完成 / 終極揭示"
+    key_checks: ["意志抵抗 TN 60", "異常學 TN 68", "說服 TN 55"]
+    duration: "2–3 場"
+    map_ref: "archive_building（檔案列區 + 廢棄電梯井）"
+
+  - id: "B-6"
+    name: "檔案管理員的抉擇"
+    level: "Lv.7–8"
+    type: "道德終局 / 信息責任"
+    key_checks: ["全部社交技能", "意志抵抗 TN 65"]
+    duration: "1–2 場"
+    note: "O5-9 身份揭曉，玩家決定是否釋放真相"

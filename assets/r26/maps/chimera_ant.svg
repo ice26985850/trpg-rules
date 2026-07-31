@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" font-family="sans-serif">
+<rect x="0" y="0" width="560" height="480" fill="#0f1424"/>
+<rect x="0" y="0" width="560" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">嵌合蟻領地</text>
+<text x="540" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">生態巢穴 · 表層世界·NGL 周邊</text>
+<line x1="280" y1="92" x2="280" y2="178" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="222" x2="280" y2="308" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="352" x2="280" y2="418" stroke="#3a4a72" stroke-width="2"/>
+<rect x="189" y="48" width="182" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="68" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">巢穴核心（女王）</text>
+<text x="280" y="86" fill="#9fb3e0" font-size="11" text-anchor="middle">防衛最嚴</text>
+<rect x="227" y="178" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="198" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">師團長區</text>
+<text x="280" y="216" fill="#9fb3e0" font-size="11" text-anchor="middle">精銳指揮</text>
+<rect x="227" y="308" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="328" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">兵隊外圍</text>
+<text x="280" y="346" fill="#9fb3e0" font-size="11" text-anchor="middle">巡邏狩獵</text>
+<rect x="189" y="418" width="182" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="438" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">人類聚落（獵物）</text>
+<text x="280" y="456" fill="#9fb3e0" font-size="11" text-anchor="middle">抵抗組織</text>
+<text x="20" y="468" fill="#5e6f9c" font-size="11">獵人X獵人TRPG · 地圖示意（非精確比例尺）</text>
+</svg>

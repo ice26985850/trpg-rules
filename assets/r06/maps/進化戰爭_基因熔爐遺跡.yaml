@@ -1,0 +1,140 @@
+# 進化戰爭 — 基因熔爐遺跡地圖
+# 對應劇本：S3（全場景）
+
+nodes:
+  - id: "A"
+    label: "焦土平原"
+    x: 100
+    y: 300
+    type: "start"
+    explored: false
+    description: "熔爐遺跡外的荒原。教團（左側）和守護者（右側）在此紮營。"
+
+  - id: "B"
+    label: "教團營地"
+    x: 50
+    y: 200
+    type: "social"
+    explored: false
+    description: "終極進化教團的猩紅帳篷。使者維克多在此。"
+
+  - id: "C"
+    label: "守護者營地"
+    x: 150
+    y: 400
+    type: "social"
+    explored: false
+    description: "人性守護者的白色營地。淨化元帥艾蕾娜在此。"
+
+  - id: "D"
+    label: "協議觀察站"
+    x: 250
+    y: 300
+    type: "social"
+    explored: false
+    description: "共生協議的灰色帳篷。奧爾登在此觀察。"
+
+  - id: "E"
+    label: "有機大門"
+    x: 350
+    y: 300
+    type: "gate"
+    explored: false
+    description: "活體薄膜大門。需要注入進化能量才能開啟。"
+
+  - id: "F"
+    label: "熔爐外環"
+    x: 450
+    y: 300
+    type: "transition"
+    explored: false
+    description: "進入熔爐後的初始區域。三方部隊的交戰區。"
+
+  - id: "G"
+    label: "進化原液池"
+    x: 450
+    y: 200
+    type: "hazard"
+    explored: false
+    description: "發光的進化原液。喝下可免費進化（人性值 -5）。池邊 2 格內每回合 1d6 火焰傷害。"
+
+  - id: "H"
+    label: "熔爐核心"
+    x: 550
+    y: 200
+    type: "boss"
+    explored: false
+    description: "熔爐控制台。三個選項：最大化輸出 / 穩定化 / 關閉。"
+
+  - id: "I"
+    label: "生物機甲停機坪"
+    x: 450
+    y: 400
+    type: "hazard"
+    explored: false
+    description: "生物機甲的停泊處。回合 2 時從牆上剝落。"
+
+  - id: "J"
+    label: "教團突入點"
+    x: 550
+    y: 350
+    type: "transition"
+    explored: false
+    description: "教團部隊的進入路線。"
+
+  - id: "K"
+    label: "守護者突入點"
+    x: 550
+    y: 100
+    type: "transition"
+    explored: false
+    description: "守護者部隊的進入路線。"
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "open"
+  - from: "A"
+    to: "C"
+    type: "open"
+  - from: "A"
+    to: "D"
+    type: "open"
+  - from: "A"
+    to: "E"
+    type: "open"
+  - from: "E"
+    to: "F"
+    type: "gate"
+  - from: "F"
+    to: "G"
+    type: "corridor"
+  - from: "F"
+    to: "I"
+    type: "corridor"
+  - from: "G"
+    to: "H"
+    type: "corridor"
+  - from: "I"
+    to: "H"
+    type: "corridor"
+  - from: "J"
+    to: "F"
+    type: "corridor"
+  - from: "K"
+    to: "F"
+    type: "corridor"
+
+regions:
+  - name: "營地區域"
+    color: "#4B0082"
+    nodes: ["A", "B", "C", "D"]
+  - name: "熔爐內部"
+    color: "#DC143C"
+    nodes: ["F", "G", "H", "I"]
+  - name: "閘門"
+    color: "#FF8C00"
+    nodes: ["E"]
+  - name: "突入路線"
+    color: "#4169E1"
+    nodes: ["J", "K"]

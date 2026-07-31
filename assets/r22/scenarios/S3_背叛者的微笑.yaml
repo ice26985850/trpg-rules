@@ -1,0 +1,58 @@
+name: "背叛者的微笑"
+description: "同伴中有一人會在關鍵時刻背叛。玩家需找出叛徒——但每次循環，叛徒身份可能不同。核心體驗是理解而非懲罰。"
+difficulty: "中階"
+level_range:
+  min_memory: 5
+  max_memory: 8
+  suggested_cycles: "5-9"
+time_range:
+  days: 5
+core_skills:
+  primary: ["社交", "記憶", "洞察"]
+  secondary: ["執行"]
+core_mechanic: "可變叛徒系統——每次循環叛徒身份可能不同，由外部勢力策反"
+companion_pool:
+  - name: "修女莉茲"
+    faction: "死亡教會"
+    turn_reason: "教會以家人威脅"
+    value: "醫療能力、教會內部情報"
+  - name: "學徒凱"
+    faction: "時之塔"
+    turn_reason: "以治癒回歸者覺醒為條件"
+    value: "時之塔情報、魔法知識"
+  - name: "情報販子蕾娜"
+    faction: "暗影公會"
+    turn_reason: "公會威脅揭露弟弟下落"
+    value: "地下網絡、開鎖技能"
+  - name: "清道夫格里戈"
+    faction: "暗影公會"
+    turn_reason: "被承諾恢復帝國"
+    value: "戰鬥能力、戰術知識"
+  - name: "沉默者奧爾丁"
+    faction: "回歸者互助會"
+    turn_reason: "筆記本被偷，被脅迫"
+    value: "循環經驗、書面情報"
+  - name: "侍衛長卡倫"
+    faction: "無"
+    turn_reason: "被誣陷為共犯"
+    value: "戰鬥能力、貴族圈情報"
+routes:
+  - id: "trust"
+    name: "信任與觀察"
+    primary: ["社交", "洞察"]
+  - id: "verify"
+    name: "資訊交叉驗證"
+    primary: ["記憶", "洞察"]
+  - id: "trap"
+    name: "預先設局"
+    primary: ["記憶", "執行"]
+signature_clue: "所有叛徒留下相同的微笑標記"
+endings:
+  - id: "perfect"
+    name: "完美結局"
+    condition: "理解叛徒動機，拯救而非懲罰"
+  - id: "minimum"
+    name: "最低通關"
+    condition: "成功指認叛徒並阻止關鍵背叛行動"
+multiplayer_gm_tips: |
+  預設單人，可依 14-3 以 2–3 位玩家開局：玩家組成回歸者小隊，同伴 NPC 池仍為 NPC，叛徒由 GM 每輪策反一人，可讓不同玩家各信任不同同伴使背叛更分散。14-3 規範 S3 招募戰鬥型同伴時敵人強度上調一檔。資訊交叉驗證在多人下更強；對質與結局用小隊共識／團隊檢定。

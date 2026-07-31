@@ -1,0 +1,141 @@
+name: "諸侯爭霸"
+description: "數個城邦在同一區域崛起，為資源、信仰與主導權明爭暗鬥。誰能統合諸侯、建立區域霸權，誰就是下一代傳奇君主。"
+difficulty: 2
+level_range:
+  era_start: "城邦時代"
+  era_end: "王國時代"
+turns_estimated: 50
+years_in_game: 15
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S2_三方鼎立_區域地圖"
+initial_map: "maps/S2_三方鼎立_區域地圖.yaml"
+multiplayer_rules:
+  mode: "競爭（外交＋戰爭並重）"
+  victory: "第 50 回合結算「霸業分數」＝人口(POP)×1 ＋ 控制城邦數×15 ＋ 同盟國數×5 ＋ 戰爭勝場×12；最高者獲勝。率先控制區域內 3 座以上主要城邦者可立即觸發終局並 ＋25 分。"
+  interaction: "玩家間可締結防衛/進攻同盟、宣戰、發動圍城與經濟封鎖；佔領中立城邦可擴張勢力範圍。"
+starting_conditions:
+  population: 300
+  attributes:
+    base: 18
+    free_points: 25
+phases:
+  - id: 1
+    name: "三足鼎立"
+    turns: "1-12"
+    description: "各城邦在區域內確立地位，爭奪戰略資源與信仰中心"
+    events:
+      - turn: 2
+        name: "聖城巡禮"
+        type: "diplomacy"
+        description: "區域中心聖城開放巡禮，前往者可提升民心"
+        effect: "民心(MOR)+5，但需付出資源(RES)"
+      - turn: 5
+        name: "鹽鐵之爭"
+        type: "competition"
+        description: "一座鹽鐵礦山引發多方覬覦"
+        skill_check: "經濟(ECO)，DC 13"
+      - turn: 8
+        name: "聯姻提議"
+        type: "diplomacy"
+        description: "他國提出王室聯姻以締結同盟"
+        choices:
+          - option: "同意聯姻"
+            effect: "締結同盟，霸業分數+5"
+          - option: "婉拒"
+            effect: "保留自主，但關係−10"
+      - turn: 11
+        name: "邊境哨站"
+        type: "construction"
+        description: "建立哨站擴張勢力範圍"
+        effect: "控制範圍+1，軍事(MIL)+3"
+  - id: 2
+    name: "合縱連橫"
+    turns: "13-28"
+    description: "外交博弈白熱化，陣營不斷重組"
+    events:
+      - turn: 15
+        name: "區域會盟"
+        type: "diplomacy"
+        description: "可由多名玩家組成正式會盟，共享防禦"
+        effect: "會盟成員各 霸業分數+5"
+      - turn: 19
+        name: "經濟封鎖"
+        type: "economic_war"
+        description: "對敵對城邦實施貿易封鎖"
+        effect: "目標經濟(ECO)−5，自身聲望±依正當性"
+      - turn: 23
+        name: "叛臣策反"
+        type: "espionage"
+        description: "派出間諜策反他國邊境守將"
+        skill_check: "民心(MOR)，DC 15"
+      - turn: 27
+        name: "神諭之爭"
+        type: "religious"
+        description: "兩大信仰爭奪聖城主導權"
+        effect: "勝方民心(MOR)+10，敗方−5"
+  - id: 3
+    name: "烽火連年"
+    turns: "29-42"
+    description: "外交破裂，戰爭成為主旋律"
+    events:
+      - turn: 31
+        name: "宣戰"
+        type: "military"
+        description: "向敵對城邦正式宣戰"
+        crisis_type: "combat"
+      - turn: 35
+        name: "野戰決勝"
+        type: "military"
+        description: "兩軍於開闊地決戰"
+        skill_check: "軍事(MIL)，DC 16"
+      - turn: 39
+        name: "圍城陷落"
+        type: "military"
+        description: "攻陷他國主城，納入控制"
+        effect: "控制城邦數+1，霸業分數+15"
+  - id: 4
+    name: "霸業終章"
+    turns: "43-50"
+    description: "最後整合——統合諸侯或飲恨沙場"
+    events:
+      - turn: 45
+        name: "稱霸宣言"
+        type: "milestone"
+        description: "控制 3 座以上主要城邦者可宣告霸業"
+        effect: "霸業分數+25，觸發終局"
+      - turn: 48
+        name: "最後會戰"
+        type: "military"
+        description: "剩餘勢力的最後攤牌"
+        skill_check: "軍事(MIL)，DC 18"
+      - turn: 50
+        name: "諸侯之主"
+        type: "ending"
+        description: "結算霸業分數，最高者成為區域霸主"
+endings:
+  success:
+    condition: "霸業分數最高且控制 3 座以上主要城邦"
+    reward: "全屬性+8，解鎖「諸侯之主」傳奇事蹟"
+  partial:
+    condition: "存活至終局但未統合區域"
+    reward: "保留勢力，可進入自由模式"
+  failure:
+    condition: "主城淪陷且無可繼承勢力"
+    remedy: "繼承機制——以附庸身份依附勝者，保留 40% 屬性"
+key_npcs:
+  - name: "聖女 莉雅"
+    role: "聖城守護者，信仰核心"
+    personality: "慈悲、堅定"
+    relationship: "中立，可被爭取"
+  - name: "老宰相 維倫"
+    role: "某城邦的謀國重臣"
+    personality: "深沉、多謀"
+    relationship: "各方勢力的拉攏對象"
+gm_notes:
+  - "城邦時代重心從生存轉為權力博弈，鼓勵外交與戰爭並用"
+  - "GM 需追蹤各國控制城邦數與同盟關係圖"
+  - "經濟封鎖與間諜行動是軟實力，別讓戰爭是唯一選項"
+  - "神諭之爭可影響全域民心，慎重安排"
+  - "保持陣營流動性，避免早期就固化強弱"

@@ -1,0 +1,87 @@
+# SAO TRPG 多人戰役劇本（結構化版）
+# 對應正文：scenarios/s01_浮遊城英雄譚_完整戰役.md
+# ⚠️ 本檔為劇本索引／結構；完整事件、台詞、GM 提示請見同名 .md。
+
+rule: "SAO_TRPG"
+scenario_type: "multiplayer"        # 多人（4-6 名玩家 + 1 GM）
+title: "浮遊城英雄譚 — 完整戰役"
+source_md: "s01_浮遊城英雄譚_完整戰役.md"
+based_on: "《刀劍神域》艾恩葛朗特篇（原著：川原礫）"
+total_levels: "Lv.1 → Lv.100"
+total_floors: "第 1 層 → 第 100 層"
+estimated_sessions: "約 44-72 次聚會"
+
+volumes:
+  - id: "卷壹"
+    title: "起始之日"
+    levels: "Lv.1-10"
+    floors: "第 1-10 層"
+    sessions: "6-10 次"
+    theme: "死亡遊戲的覺醒、學習生存"
+    key_npcs: ["克萊因", "艾基爾", "阿爾戈", "亞絲娜", "啟太"]
+  - id: "卷貳"
+    title: "前線之影"
+    levels: "Lv.10-25"
+    floors: "第 11-25 層"
+    sessions: "8-14 次"
+    theme: "公會政治、前線壓力、PK 威脅"
+    key_npcs: ["西莉卡", "莉茲貝特"]
+  - id: "卷參"
+    title: "攻略組"
+    levels: "Lv.25-50"
+    floors: "第 26-50 層"
+    sessions: "12-20 次"
+    theme: "攻略組的榮耀與犧牲、公會興衰"
+    key_npcs: ["希茲克利夫（KoB 會長）"]
+  - id: "卷肆"
+    title: "死亡迷宮"
+    levels: "Lv.50-75"
+    floors: "第 51-75 層"
+    sessions: "10-16 次"
+    theme: "死亡迷宮、最終 Boss 前夕"
+    key_npcs: ["茅場晶彥（身份揭露）"]
+  - id: "卷伍"
+    title: "終焉之紅玉"
+    levels: "Lv.75-100"
+    floors: "第 76-100 層"
+    sessions: "8-12 次"
+    theme: "紅玉宮、最終對決"
+    key_npcs: ["全員集結"]
+
+key_npcs:
+  - name: "希茲克利夫 (Heathcliff)"
+    role: "KoB 會長 / 最終 Boss"
+    first_appear: "卷貳"
+    fate: "卷肆 Boss 戰揭露身份"
+  - name: "亞絲娜 (Asuna)"
+    role: "KoB 副會長"
+    first_appear: "卷壹"
+  - name: "克萊因 (Klein)"
+    role: "風林火山會長"
+    first_appear: "卷壹"
+  - name: "艾基爾 (Agil)"
+    role: "商人 / 斧使者"
+    first_appear: "卷壹"
+  - name: "阿爾戈 (Argo)"
+    role: "情報商"
+    first_appear: "卷壹"
+  - name: "啟太 (Keita)"
+    role: "月夜黑貓團"
+    first_appear: "卷壹"
+    fate: "卷壹末死亡（可改變）"
+  - name: "西莉卡 (Silica)"
+    role: "馴獸師"
+    first_appear: "卷貳"
+  - name: "莉茲貝特 (Lisbeth)"
+    role: "鐵匠"
+    first_appear: "卷貳"
+
+final_boss:
+  name: "茅場晶彥 (Heathcliff)"
+  floor: "第 100 層 紅玉宮"
+  level: "Lv.96"
+
+interlude_scenarios:
+  - "節日事件"
+  - "PK 公會事件"
+  - "結婚事件"

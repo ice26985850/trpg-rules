@@ -1,0 +1,61 @@
+name: 鏽冠的沉默
+difficulty: 低級 (CR 3-4)
+mode: 凡人 · 多人
+players: 2-4
+judge: 瑟琳娜（清教徒）
+target_region: 塔爾-莫拉格巢都，上巢（第 300-400 層），被廢棄的國教小聖堂
+recommended_attributes: '3'
+opening_description: '你們受命調查上巢一座國教小聖堂——近三個月沒有人從裡面出來過。回收內部聖物，並弄清楚
+
+  究竟發生了什麼。
+
+  '
+surface_goal: 調查上巢一座國教小聖堂——近三個月沒有人從裡面出來過。回收內部聖物。
+hidden_goal: 瑟琳娜懷疑聖堂已被混沌汙染。她想知道汙染源是什麼——以及聖堂內的國教神父是否還活著。
+known_threats:
+- 不確定——聖堂內部情況未知
+- 可能有變異體
+hidden_threats:
+- 神父已死於自己的儀式——他在嘗試用禁術淨化一件混沌物品時被反噬
+- 混沌物品仍在聖堂地下祭壇，持續釋放亞空間能量——靠近者每回合腐化 +1（輕度汙染）
+- 神父的屍體已變為一個低階變異體
+resources:
+  notes: 標準配給。瑟琳娜特別提供 2 份額外聖水。
+  extra_holy_water: 2
+seduction_notes:
+- 1 人收到紙條 2（「觀察並回報誰已被汙染」）
+- 3 人收到紙條 4
+key_npcs:
+- name: 神父伊利昂的日記
+  role: 線索
+  detail: 分散在聖堂各處的日記頁。記錄了他發現混沌物品→嘗試淨化→逐漸絕望的過程
+- name: 聖堂守衛的鬼魂
+  role: 亞空間現象
+  detail: 不是真正的鬼魂——是亞空間能量投射的記憶殘影。可以被信仰檢定安撫
+key_checks:
+- scene: 搜索聖堂尋找日記
+  check: 調查（標準）
+  tn: 心智×10+調查
+  success: 找到 3 頁日記
+  failure: 只找到 1 頁
+- scene: 安撫守衛殘影
+  check: 信仰（困難）
+  tn: 信仰×10−20
+  success: 殘影消散，獲得守衛生前最後的警告
+  failure: 殘影攻擊（精神傷害）
+- scene: 面對地下祭壇
+  check: 信仰（標準）+靈能感知
+  tn: 信仰×10
+  success: 發現混沌物品
+  failure: 被混沌物品影響
+encounters:
+- name: 聖堂中殿
+  enemies: 變異神父伊利昂
+  cr: '1'
+  tactic: 低階變異體模板 + 1 項特殊靈能
+- name: 地下祭壇
+  enemies: 亞空間能量釋放
+  cr: 環境
+  tactic: 每回合腐化+1，需要破壞混沌物品（信仰檢定，困難）
+evacuation_condition: 任務完成後前往指定撤離點。
+map_ref: "maps/map12_chapel"

@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0E1A"/><stop offset="100%" stop-color="#0D1B2A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="680" fill="url(#bgGrad)"/>
+
+  <!-- 標題 -->
+  <text x="500" y="28" text-anchor="middle" fill="#CCDDFF" font-size="18" font-weight="bold">永恆守望號（永恆守望號）——S2 深淵走廊</text>
+  <text x="500" y="48" text-anchor="middle" fill="#667788" font-size="12">廢棄協約航母 ｜ 18 節點 ｜ 5 層甲板 ｜ 守望者 AI 異常</text>
+
+  <!-- ====== 各層甲板底色區域 ====== -->
+  <!-- Deck 5: 指揮甲板 (最上方) -->
+  <rect x="30" y="65" width="940" height="100" rx="8" fill="#1A3322" opacity="0.5" stroke="#33AA55" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="50" y="88" fill="#44BB66" font-size="13" font-weight="bold">第五層甲板——指揮甲板（艦橋層）</text>
+
+  <!-- Deck 4: 核心系統 -->
+  <rect x="30" y="172" width="940" height="95" rx="8" fill="#2A1A33" opacity="0.5" stroke="#AA55CC" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="50" y="195" fill="#BB66DD" font-size="13" font-weight="bold">第四層甲板——核心系統（反應爐 + AI 核心）</text>
+
+  <!-- Deck 3: 動力與維修 -->
+  <rect x="30" y="274" width="940" height="95" rx="8" fill="#331A1A" opacity="0.5" stroke="#CC5555" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="50" y="297" fill="#DD6666" font-size="13" font-weight="bold">第三層甲板——動力與維修（引擎控制）</text>
+
+  <!-- Deck 2: 研究與資料 -->
+  <rect x="30" y="376" width="940" height="95" rx="8" fill="#33221A" opacity="0.5" stroke="#CC8844" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="50" y="399" fill="#DD9944" font-size="13" font-weight="bold">第二層甲板——研究與資料（實驗室 + 資料中心）</text>
+
+  <!-- Deck 1: 機庫與生活區 -->
+  <rect x="30" y="478" width="940" height="100" rx="8" fill="#1A2A33" opacity="0.5" stroke="#4488CC" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="50" y="501" fill="#5599DD" font-size="13" font-weight="bold">第一層甲板——機庫與生活區（切入層）</text>
+
+  <!-- ====== 連線 ====== -->
+  <!-- Deck 1 connections -->
+  <line x1="170" y1="555" x2="170" y2="510" stroke="#6699BB" stroke-width="1.5"/>
+  <line x1="170" y1="555" x2="310" y2="555" stroke="#6699BB" stroke-width="2"/>
+  <line x1="310" y1="555" x2="310" y2="510" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="260" y="565" fill="#6699BB" font-size="9">走廊</text>
+
+  <line x1="310" y1="510" x2="460" y2="510" stroke="#6699BB" stroke-width="2"/>
+  <line x1="460" y1="510" x2="610" y2="510" stroke="#6699BB" stroke-width="2"/>
+
+  <!-- Deck 1→2 stair -->
+  <line x1="460" y1="510" x2="460" y2="440" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="475" y="478" fill="#BB9944" font-size="9">樓梯</text>
+
+  <!-- Deck 2 connections -->
+  <line x1="460" y1="440" x2="610" y2="440" stroke="#6699BB" stroke-width="2"/>
+  <line x1="460" y1="440" x2="460" y2="390" stroke="#6699BB" stroke-width="2"/>
+
+  <!-- Deck 2→3 stair -->
+  <line x1="460" y1="390" x2="460" y2="345" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="475" y="370" fill="#BB9944" font-size="9">樓梯</text>
+
+  <!-- Deck 3 connections -->
+  <line x1="460" y1="345" x2="610" y2="345" stroke="#6699BB" stroke-width="2"/>
+  <line x1="610" y1="345" x2="760" y2="345" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="680" y="335" fill="#DD4444" font-size="8">封鎖</text>
+
+  <!-- Deck 1→4 maintenance -->
+  <line x1="310" y1="555" x2="760" y2="230" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="520" y="395" fill="#88CC88" font-size="9" transform="rotate(-35,520,395)">維修通道（繞行）</text>
+
+  <!-- Deck 2→5 elevator -->
+  <line x1="610" y1="440" x2="610" y2="120" stroke="#BB9944" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="625" y="300" fill="#BB9944" font-size="9">電梯（故障）</text>
+
+  <!-- Deck 5 connections -->
+  <line x1="610" y1="120" x2="760" y2="120" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="680" y="110" fill="#DD4444" font-size="8">鎖定</text>
+  <line x1="760" y1="120" x2="760" y2="155" stroke="#6699BB" stroke-width="2"/>
+  <line x1="760" y1="155" x2="760" y2="85" stroke="#6699BB" stroke-width="1.5"/>
+
+  <!-- ====== 節點 ====== -->
+  <!-- N1 機庫甲板切入點 -->
+  <rect x="110" y="530" width="120" height="50" rx="8" fill="#225544" stroke="#44AA66" stroke-width="2" filter="url(#shadow)"/>
+  <text x="170" y="552" text-anchor="middle" fill="#88DDAA" font-size="11" font-weight="bold">機庫甲板</text>
+  <text x="170" y="568" text-anchor="middle" fill="#559977" font-size="8">N1｜切入點</text>
+
+  <!-- N2 機庫控制室 -->
+  <rect x="110" y="478" width="120" height="45" rx="8" fill="#554422" stroke="#AA8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="170" y="498" text-anchor="middle" fill="#DDCC88" font-size="11" font-weight="bold">機庫控制室</text>
+  <text x="170" y="514" text-anchor="middle" fill="#998866" font-size="8">N2｜2 台機器人</text>
+
+  <!-- N3 主電梯井 -->
+  <rect x="250" y="530" width="120" height="50" rx="8" fill="#443322" stroke="#CC8844" stroke-width="2" filter="url(#shadow)"/>
+  <text x="310" y="552" text-anchor="middle" fill="#DDAA88" font-size="11" font-weight="bold">主電梯井</text>
+  <text x="310" y="568" text-anchor="middle" fill="#997766" font-size="8">N3｜可變重力｜DC 13</text>
+
+  <!-- N4 第1層主走廊 -->
+  <rect x="400" y="488" width="120" height="45" rx="8" fill="#334455" stroke="#6688AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="460" y="508" text-anchor="middle" fill="#AABBCC" font-size="11" font-weight="bold">第一層主走廊</text>
+  <text x="460" y="524" text-anchor="middle" fill="#778899" font-size="8">N4</text>
+
+  <!-- N5 兵營區 -->
+  <rect x="550" y="488" width="120" height="45" rx="8" fill="#443355" stroke="#8866AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="610" y="508" text-anchor="middle" fill="#CCAADD" font-size="11" font-weight="bold">兵營區</text>
+  <text x="610" y="524" text-anchor="middle" fill="#9988AA" font-size="8">N5｜廢棄 50 年</text>
+
+  <!-- N6 餐廳/集會所 -->
+  <text x="610" y="478" text-anchor="middle" fill="#667788" font-size="8">⬅ N6 餐廳（未顯示）</text>
+
+  <!-- N7 醫療艙 -->
+  <rect x="400" y="418" width="120" height="45" rx="8" fill="#224444" stroke="#44AAAA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="460" y="438" text-anchor="middle" fill="#88DDDD" font-size="11" font-weight="bold">醫療艙</text>
+  <text x="460" y="454" text-anchor="middle" fill="#669999" font-size="8">N7｜廢棄藥品</text>
+
+  <!-- N8 實驗室 -->
+  <rect x="550" y="418" width="120" height="45" rx="8" fill="#442244" stroke="#AA44AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="610" y="438" text-anchor="middle" fill="#DD88DD" font-size="11" font-weight="bold">實驗室</text>
+  <text x="610" y="454" text-anchor="middle" fill="#996699" font-size="8">N8｜生化危害｜0.3G</text>
+
+  <!-- N9 第2層主走廊 -->
+  <rect x="400" y="370" width="120" height="45" rx="8" fill="#552222" stroke="#DD4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="390" text-anchor="middle" fill="#FF8888" font-size="11" font-weight="bold">第二層主走廊</text>
+  <text x="460" y="406" text-anchor="middle" fill="#996666" font-size="8">N9｜3 座砲台！</text>
+
+  <!-- N10 資料中心(舊) -->
+  <rect x="550" y="370" width="120" height="45" rx="8" fill="#334422" stroke="#88AA44" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="610" y="390" text-anchor="middle" fill="#AADD88" font-size="11" font-weight="bold">舊資料中心</text>
+  <text x="610" y="406" text-anchor="middle" fill="#778866" font-size="8">N10｜部分運作中</text>
+
+  <!-- N11 維修通道 -->
+  <rect x="250" y="322" width="110" height="45" rx="8" fill="#222244" stroke="#4444AA" stroke-width="1.5" stroke-dasharray="3,2" filter="url(#shadow)"/>
+  <text x="305" y="342" text-anchor="middle" fill="#8888DD" font-size="11" font-weight="bold">維修通道</text>
+  <text x="305" y="358" text-anchor="middle" fill="#666699" font-size="8">N11｜0G 零重力｜單人</text>
+
+  <!-- N12 第3層甲板 -->
+  <rect x="400" y="322" width="120" height="45" rx="8" fill="#443333" stroke="#AA6666" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="460" y="342" text-anchor="middle" fill="#DD9999" font-size="11" font-weight="bold">第三層甲板</text>
+  <text x="460" y="358" text-anchor="middle" fill="#997777" font-size="8">N12｜可變重力</text>
+
+  <!-- N13 引擎控制室 -->
+  <rect x="550" y="322" width="120" height="45" rx="8" fill="#553322" stroke="#CC8844" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="610" y="342" text-anchor="middle" fill="#FFAA66" font-size="11" font-weight="bold">引擎控制室</text>
+  <text x="610" y="358" text-anchor="middle" fill="#996633" font-size="8">N13｜2G 高重力</text>
+
+  <!-- N14 反應爐室 -->
+  <rect x="700" y="322" width="130" height="55" rx="8" fill="#662222" stroke="#FF4444" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="765" y="342" text-anchor="middle" fill="#FF8888" font-size="11" font-weight="bold">⚠ 反應爐室</text>
+  <text x="765" y="358" text-anchor="middle" fill="#CC6666" font-size="8">N14｜輻射 1d4/回合</text>
+  <text x="765" y="372" text-anchor="middle" fill="#FF4444" font-size="8">AI 嘗試重啟！</text>
+
+  <!-- N15 AI 核心室 -->
+  <rect x="700" y="210" width="130" height="55" rx="8" fill="#442266" stroke="#AA44FF" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="765" y="230" text-anchor="middle" fill="#CC88FF" font-size="11" font-weight="bold">⚠ AI 核心室</text>
+  <text x="765" y="246" text-anchor="middle" fill="#9966CC" font-size="8">N15｜零重力 0G</text>
+  <text x="765" y="260" text-anchor="middle" fill="#AA44FF" font-size="8">守望者 AI 異常</text>
+
+  <!-- N16 艦橋前走廊 -->
+  <rect x="550" y="100" width="130" height="55" rx="8" fill="#552222" stroke="#DD4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="615" y="122" text-anchor="middle" fill="#FF8888" font-size="11" font-weight="bold">艦橋前走廊</text>
+  <text x="615" y="138" text-anchor="middle" fill="#996666" font-size="8">N16｜3 座砲台！</text>
+
+  <!-- N17 艦橋 ⭐ -->
+  <rect x="700" y="70" width="130" height="55" rx="10" fill="#664422" stroke="#FFAA44" stroke-width="3" filter="url(#shadow)"/>
+  <text x="765" y="88" text-anchor="middle" fill="#FFCC88" font-size="12" font-weight="bold">⭐ 艦橋</text>
+  <text x="765" y="104" text-anchor="middle" fill="#CC9944" font-size="9">N17｜目標區域</text>
+  <text x="765" y="118" text-anchor="middle" fill="#FFAA44" font-size="8">回收戰術資料庫</text>
+
+  <!-- N18 艦長室 -->
+  <rect x="700" y="140" width="130" height="45" rx="8" fill="#334455" stroke="#6688AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="765" y="160" text-anchor="middle" fill="#AABBCC" font-size="11" font-weight="bold">艦長室</text>
+  <text x="765" y="176" text-anchor="middle" fill="#778899" font-size="8">N18｜艦長日誌</text>
+
+  <!-- ====== 圖例 ====== -->
+  <rect x="820" y="490" width="155" height="170" rx="8" fill="#0D0D1A" opacity="0.9" stroke="#334455" stroke-width="1"/>
+  <text x="897" y="515" text-anchor="middle" fill="#8899AA" font-size="13" font-weight="bold">圖例</text>
+  <rect x="835" y="530" width="18" height="10" rx="3" fill="#225544" stroke="#44AA66" stroke-width="1"/>
+  <text x="862" y="540" fill="#88DDAA" font-size="10">切入點／氣閘</text>
+  <rect x="835" y="550" width="18" height="10" rx="3" fill="#334455" stroke="#6688AA" stroke-width="1"/>
+  <text x="862" y="560" fill="#AABBCC" font-size="10">普通房間</text>
+  <rect x="835" y="570" width="18" height="10" rx="3" fill="#664422" stroke="#FFAA44" stroke-width="2"/>
+  <text x="862" y="580" fill="#FFCC88" font-size="10">目標區域</text>
+  <rect x="835" y="590" width="18" height="10" rx="3" fill="#552222" stroke="#DD4444" stroke-width="2"/>
+  <text x="862" y="600" fill="#FF8888" font-size="10">危險／敵方</text>
+  <line x1="835" y1="615" x2="855" y2="615" stroke="#BB9944" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="862" y="620" fill="#BB9944" font-size="10">樓梯／垂直通道</text>
+  <line x1="835" y1="635" x2="855" y2="635" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="862" y="640" fill="#88CC88" font-size="10">維修通道（繞行）</text>
+  <line x1="835" y1="652" x2="855" y2="652" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="862" y="657" fill="#DD4444" font-size="10">封鎖／鎖定艙門</text>
+
+  <!-- 底部備註 -->
+  <text x="500" y="668" text-anchor="middle" fill="#445566" font-size="10">地圖對應劇本 S2《深淵走廊（深淵走廊）》｜難度：中等｜等級 2–4｜5 層廢棄航母</text>
+</svg>

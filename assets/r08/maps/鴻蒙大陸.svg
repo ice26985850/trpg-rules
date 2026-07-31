@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 640" font-family="'PingFang TC','Microsoft JhengHei','Noto Sans CJK TC',sans-serif">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfeaf2"/>
+      <stop offset="1" stop-color="#c9dcec"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f1e3"/>
+      <stop offset="1" stop-color="#ece3cf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 海域背景 -->
+  <rect x="0" y="0" width="820" height="640" fill="url(#sea)"/>
+  <text x="410" y="34" text-anchor="middle" font-size="26" font-weight="700" fill="#3a2f25">鴻蒙大陸 · 地理版圖</text>
+  <text x="410" y="56" text-anchor="middle" font-size="13" fill="#6b5d4f">五域分立 · 中央中州靈脈最盛</text>
+
+  <!-- 大陸輪廓 -->
+  <path d="M120 110 Q90 160 110 230 Q80 300 130 360 Q110 440 170 500 Q260 560 410 540 Q560 560 650 500 Q710 440 690 360 Q740 300 710 230 Q730 160 700 110 Q560 70 410 80 Q260 70 120 110 Z"
+        fill="url(#land)" stroke="#b89b6e" stroke-width="3"/>
+
+  <!-- 區域：北冥（北） -->
+  <g>
+    <rect x="320" y="120" width="180" height="92" rx="10" fill="#e8f2f6" stroke="#7fa8c9" stroke-width="2"/>
+    <text x="410" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#2f5b78">北冥</text>
+    <text x="410" y="176" text-anchor="middle" font-size="12" fill="#4a6678">極北冰原 · 萬古冰川</text>
+    <text x="410" y="196" text-anchor="middle" font-size="11" fill="#6b7f8c">苦修者與隱世高人聚居</text>
+  </g>
+
+  <!-- 區域：中州（中央） -->
+  <g>
+    <rect x="330" y="250" width="160" height="118" rx="10" fill="#fdf3d6" stroke="#c9a23a" stroke-width="2.5"/>
+    <text x="410" y="284" text-anchor="middle" font-size="19" font-weight="700" fill="#8a6312">中州</text>
+    <text x="410" y="308" text-anchor="middle" font-size="12" fill="#7a5a1e">修仙文明核心</text>
+    <text x="410" y="328" text-anchor="middle" font-size="11" fill="#8a6e34">龍脈主根 · 宗門林立</text>
+    <text x="410" y="348" text-anchor="middle" font-size="11" fill="#8a6e34">最大坊市所在地</text>
+  </g>
+
+  <!-- 區域：西域（西） -->
+  <g>
+    <rect x="140" y="250" width="160" height="120" rx="10" fill="#f3ead9" stroke="#b08a52" stroke-width="2"/>
+    <text x="220" y="284" text-anchor="middle" font-size="18" font-weight="700" fill="#7a5a26">西域</text>
+    <text x="220" y="308" text-anchor="middle" font-size="12" fill="#6b5226">魔淵邊境</text>
+    <text x="220" y="328" text-anchor="middle" font-size="11" fill="#7a6438">荒漠戈壁 · 古國遺蹟</text>
+    <text x="220" y="348" text-anchor="middle" font-size="11" fill="#7a6438">魔修與散修活躍</text>
+  </g>
+
+  <!-- 區域：東土（東） -->
+  <g>
+    <rect x="520" y="250" width="160" height="120" rx="10" fill="#e6f3ea" stroke="#5fa07a" stroke-width="2"/>
+    <text x="600" y="284" text-anchor="middle" font-size="18" font-weight="700" fill="#2f6b48">東土</text>
+    <text x="600" y="308" text-anchor="middle" font-size="12" fill="#356b4e">煉丹聖地</text>
+    <text x="600" y="328" text-anchor="middle" font-size="11" fill="#3f6b54">海域羣島 · 海外仙山</text>
+    <text x="600" y="348" text-anchor="middle" font-size="11" fill="#3f6b54">丹霞谷所在</text>
+  </g>
+
+  <!-- 區域：南荒（南） -->
+  <g>
+    <rect x="330" y="410" width="160" height="100" rx="10" fill="#f0e6ef" stroke="#9a6fa0" stroke-width="2"/>
+    <text x="410" y="442" text-anchor="middle" font-size="18" font-weight="700" fill="#6b3f70">南荒</text>
+    <text x="410" y="466" text-anchor="middle" font-size="12" fill="#6b4570">妖獸之國</text>
+    <text x="410" y="486" text-anchor="middle" font-size="11" fill="#7a557e">十萬大山 · 蠻荒祕境</text>
+  </g>
+
+  <!-- 祕境標記 -->
+  <g fill="#b3432f">
+    <circle cx="410" cy="232" r="5"/><text x="420" y="236" font-size="11" fill="#7a2f22">太虛山（劍冢）</text>
+    <circle cx="300" cy="364" r="5"/><text x="200" y="368" font-size="11" fill="#7a2f22">觀星台</text>
+    <circle cx="520" cy="364" r="5"/><text x="528" y="368" font-size="11" fill="#7a2f22">鑄天城</text>
+  </g>
+
+  <!-- 圖例 -->
+  <g transform="translate(600,500)">
+    <rect x="0" y="0" width="190" height="96" rx="8" fill="#ffffffcc" stroke="#b89b6e" stroke-width="1.5"/>
+    <text x="12" y="22" font-size="12" font-weight="700" fill="#3a2f25">圖例</text>
+    <text x="12" y="42" font-size="11" fill="#4a3a2a">■ 五大區域（按方位佈局）</text>
+    <text x="12" y="60" font-size="11" fill="#4a3a2a">● 著名祕境／宗門聖地</text>
+    <text x="12" y="78" font-size="11" fill="#4a3a2a">中州居中，靈氣最盛</text>
+  </g>
+
+  <text x="410" y="624" text-anchor="middle" font-size="10" fill="#8a7c6a">本圖為示意性地理版圖，詳細地理、宗門與祕境見《世界觀設定》（GM規則書）卷三。</text>
+</svg>

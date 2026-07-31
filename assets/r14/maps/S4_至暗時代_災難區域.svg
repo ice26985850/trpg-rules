@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+<rect width="800" height="600" fill="#F5F0E1"/>
+<text x="400.0" y="30" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="20" font-weight="bold" fill="#2F5496">隕石災難——枯萎之地</text>
+<text x="400.0" y="52" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="12" fill="#666">隕石墜落地點周邊區域，枯萎症從這裡向外擴散</text>
+<circle cx="475.0" cy="250.0" r="160.13878188659973" fill="#4CAF50" opacity="0.12"/>
+<text x="475.0" y="104.86121811340027" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#4CAF50" opacity="0.5">枯萎之地（危險）</text>
+<circle cx="175.0" cy="440.0" r="155.0" fill="#2196F3" opacity="0.12"/>
+<text x="175.0" y="300.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#2196F3" opacity="0.5">安全區</text>
+<circle cx="450.0" cy="425.0" r="173.07764064044153" fill="#FFC107" opacity="0.12"/>
+<text x="450.0" y="266.92235935955847" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#FFC107" opacity="0.5">緩衝地帶</text>
+<circle cx="250.0" cy="175.0" r="125.90169943749474" fill="#9E9E9E" opacity="0.12"/>
+<text x="250.0" y="64.09830056250526" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#9E9E9E" opacity="0.5">未知區域</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#888"/></marker></defs>
+<line x1="400" y1="300" x2="350" y2="400" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="375.0" y="342.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">枯萎蔓延方向（每回合擴散）</text>
+<line x1="350" y1="400" x2="250" y2="480" stroke="#888" stroke-width="2" stroke-dasharray="none" marker-end="url(#arrow)"/>
+<text x="300.0" y="432.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">補給路線</text>
+<line x1="400" y1="300" x2="550" y2="200" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="475.0" y="242.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">已淪陷區域</text>
+<line x1="550" y1="200" x2="550" y2="450" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="550.0" y="317.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">逃亡路線</text>
+<line x1="550" y1="450" x2="250" y2="480" stroke="#888" stroke-width="2" stroke-dasharray="none" marker-end="url(#arrow)"/>
+<line x1="400" y1="300" x2="200" y2="200" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="300.0" y="242.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">危險捷徑</text>
+<line x1="200" y1="200" x2="300" y2="150" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="250.0" y="167.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">能量連通</text>
+<line x1="300" y1="150" x2="400" y2="300" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<line x1="250" y1="480" x2="100" y2="400" stroke="#888" stroke-width="2" stroke-dasharray="none" marker-end="url(#arrow)"/>
+<text x="175.0" y="432.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">盟軍通道</text>
+<line x1="100" y1="400" x2="200" y2="200" stroke="#BBB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+<text x="150.0" y="292.0" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="9" fill="#999">聯合探索路線</text>
+<rect x="370" y="285" width="60" height="30" rx="3" fill="#9E9E9E" stroke="#F44336" stroke-width="2" stroke-dasharray="4,2"/>
+<text x="400" y="304" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">隕石坑（災難中心）</text>
+<text x="438" y="290" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<rect x="215" y="462" width="70" height="36" rx="8" fill="#2196F3" stroke="#333" stroke-width="2"/>
+<text x="250" y="484" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">你的首都</text>
+<rect x="322" y="384" width="56" height="32" rx="6" fill="#FFC107" stroke="#333" stroke-width="1.5"/>
+<text x="350" y="404" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">隔離區防線</text>
+<rect x="515" y="432" width="70" height="36" rx="8" fill="#FFC107" stroke="#333" stroke-width="2"/>
+<text x="550" y="454" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">難民營</text>
+<polygon points="550,178 578,216 522,216" fill="#4CAF50" stroke="#333" stroke-width="2"/>
+<text x="550" y="204" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">索多爾（已陷落）</text>
+<polygon points="200,178 228,216 172,216" fill="#9E9E9E" stroke="#999" stroke-dasharray="3,2" stroke-width="2"/>
+<text x="200" y="204" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">上古神殿</text>
+<text x="238" y="190" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<rect x="65" y="382" width="70" height="36" rx="8" fill="#2196F3" stroke="#333" stroke-width="2"/>
+<text x="100" y="404" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#FFF" font-weight="bold">盟國聯合營地</text>
+<rect x="270" y="132" width="60" height="36" rx="18" fill="#9E9E9E" stroke="#999" stroke-dasharray="3,2" stroke-width="2"/>
+<text x="300" y="154" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="11" fill="#666" font-weight="bold">魔力流節點</text>
+<text x="338" y="140" text-anchor="middle" font-family="Microsoft JhengHei,sans-serif" font-size="16" fill="#F44336">?</text>
+<rect x="20" y="500" width="160" height="90" rx="5" fill="white" stroke="#CCC" opacity="0.9"/>
+<rect x="30" y="511" width="16" height="8" rx="2" fill="#4CAF50" stroke="#333" stroke-width="1"/>
+<text x="52" y="517" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">已探索</text>
+<rect x="30" y="529" width="16" height="8" rx="2" fill="#9E9E9E" stroke="#333" stroke-width="1"/>
+<text x="52" y="535" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">未探索</text>
+<rect x="30" y="547" width="16" height="8" rx="2" fill="#607D8B" stroke="#333" stroke-width="1"/>
+<text x="52" y="553" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">遺跡</text>
+<rect x="30" y="565" width="16" height="8" rx="2" fill="#F44336" stroke="#333" stroke-width="1"/>
+<text x="52" y="571" font-family="Microsoft JhengHei,sans-serif" font-size="10" fill="#333">邊境/危險</text>
+</svg>

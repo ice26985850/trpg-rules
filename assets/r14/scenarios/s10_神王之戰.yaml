@@ -1,0 +1,142 @@
+name: "神王之戰"
+description: "傳奇的門檻已在眼前。最強的統治者不再滿足於人間王座，他們追逐神性，以奇蹟與征伐證明自己配得登神。當傳說彼此為敵，世界將在神王之戰中迎來終章。"
+difficulty: 5
+level_range:
+  era_start: "傳奇時代"
+  era_end: "傳奇時代"
+turns_estimated: 75
+years_in_game: 30
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S5_繼承之戰_帝國分裂"
+initial_map: "maps/S5_繼承之戰_帝國分裂.yaml"
+multiplayer_rules:
+  mode: "競爭（神性＋征伐）"
+  victory: "第 75 回合結算「傳奇分數」＝神性等級×30 ＋ 聖域數×20 ＋ 傳奇戰勝場×20 ＋ 信仰人口×0.5；最高者封神。率先達成「神格化」者觸發終局並 ＋40 分。"
+  interaction: "玩家間可締結神盟、宣戰、發動傳奇級對決；佔領聖域可汲取神力。"
+starting_conditions:
+  population: 5000
+  attributes:
+    base: 25
+    free_points: 40
+phases:
+  - id: 1
+    name: "傳奇崛起"
+    turns: "1-20"
+    description: "傳奇統治者們覺醒神性，建立聖域"
+    events:
+      - turn: 4
+        name: "神性覺醒"
+        type: "awakening"
+        description: "統治者首次感知體內神性"
+        effect: "神性等級+1，傳奇分數+30"
+      - turn: 9
+        name: "聖域奠基"
+        type: "construction"
+        description: "建立第一座信仰聖域"
+        effect: "聖域數+1，傳奇分數+20"
+      - turn: 14
+        name: "神諭之爭"
+        type: "religious"
+        description: "各方解讀同一道神諭，互相指為僭越"
+        skill_check: "民心(MOR)，DC 20"
+      - turn: 18
+        name: "盟約與背叛"
+        type: "diplomacy"
+        description: "締結神盟，或暗中佈局背叛"
+        choices:
+          - option: "締結神盟"
+            effect: "神盟生效，傳奇分數各+10"
+          - option: "暗中佈局"
+            effect: "保留實力，但關係−15"
+  - id: 2
+    name: "神蹟競逐"
+    turns: "21-42"
+    description: "以神蹟證明神性，爭奪聖域與信仰"
+    events:
+      - turn: 25
+        name: "降下神蹟"
+        type: "miracle"
+        description: "於領地降下神蹟，吸納信仰"
+        effect: "信仰人口+500，神性等級+1"
+      - turn: 30
+        name: "聖域爭奪"
+        type: "competition"
+        description: "一座無主聖域引發多方神戰"
+        skill_check: "軍事(MIL)，DC 21"
+      - turn: 36
+        name: "弒神者現身"
+        type: "threat"
+        description: "傳說中的弒神者現身，威脅所有神王"
+        effect: "全員神性等級−1（首現）"
+      - turn: 40
+        name: "信仰之戰"
+        type: "religious_war"
+        description: "為信仰主導權發動聖戰"
+        crisis_type: "combat"
+        skill_check: "軍事(MIL)，DC 22"
+  - id: 3
+    name: "弒神之路"
+    turns: "43-60"
+    description: "傳奇對決白熱化，神王彼此攻伐"
+    events:
+      - turn: 46
+        name: "神王對決"
+        type: "legendary_duel"
+        description: "兩位神王於戰場正面交鋒"
+        skill_check: "全屬性綜合，DC 23"
+      - turn: 51
+        name: "奪神計畫"
+        type: "artifact"
+        description: "奪取他者神性碎片以增強自身"
+        effect: "神性等級+2，傳奇分數+20"
+      - turn: 56
+        name: "天譴"
+        type: "divine_wrath"
+        description: "神性過載引發天譴，考驗意志"
+        skill_check: "民心(MOR)，DC 22"
+  - id: 4
+    name: "永恆王座"
+    turns: "61-75"
+    description: "最後的封神——登神或湮滅"
+    events:
+      - turn: 66
+        name: "神格化"
+        type: "milestone"
+        description: "神性等級達巔峰者可宣告神格化"
+        effect: "傳奇分數+40，觸發終局"
+      - turn: 70
+        name: "終末之戰"
+        type: "military"
+        description: "剩餘神王的最後攤牌"
+        skill_check: "軍事(MIL)，DC 24"
+      - turn: 75
+        name: "封神之刻"
+        type: "ending"
+        description: "結算傳奇分數，最高者封神"
+endings:
+  success:
+    condition: "傳奇分數最高且達成神格化"
+    reward: "全屬性+15，解鎖「永恆神王」傳奇事蹟"
+  partial:
+    condition: "存活至終局但未封神"
+    reward: "保留傳說地位，可進入自由模式"
+  failure:
+    condition: "神性潰散且勢力崩解"
+    remedy: "繼承機制——以轉世之姿重生，保留 50% 屬性"
+key_npcs:
+  - name: "弒神者 維斯"
+    role: "獵殺神王的傳說存在"
+    personality: "冷峻、無情"
+    relationship: "全體威脅"
+  - name: "應許之靈 奧拉"
+    role: "引導神王登神的至高意志"
+    personality: "空靈、莫測"
+    relationship: "裁判者"
+gm_notes:
+  - "傳奇時代是系統巔峰，GM 應放手讓玩家施展傳奇能力"
+  - "追蹤神性等級、聖域數與信仰人口"
+  - "神盟與背叛是核心戲劇張力來源"
+  - "弒神者作為全域威脅，平衡過強玩家"
+  - "封神是最終目標，給予足夠儀式感"
