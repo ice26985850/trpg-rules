@@ -1,0 +1,45 @@
+# S1 探索圖 · 麥克米蘭莊園（MacMillan Estate, R1）
+meta:
+  id: S1
+  name: S1 探索圖·麥克米蘭莊園
+  realm: 麥克米蘭莊園（MacMillan Estate, R1）
+  regions: [外圍林地（outer_woods）, 中央廠區（central_works）, 礦坑區（pit_area）]
+  coord_range: 0-1000
+nodes:
+  - { id: mm_start, name: 起始霧口, region: 外圍林地（outer_woods）, type: 入口, x: 500, y: 900, connections: [mm_shelter, mm_storehouse] }
+  - { id: mm_shelter, name: 蔽蔭林, region: 外圍林地（outer_woods）, type: 開闊區, x: 300, y: 780, connections: [mm_start, mm_bigtree, mm_exit_s, mm_opt_locker] }
+  - { id: mm_bigtree, name: 那棵粗樹, region: 外圍林地（outer_woods）, type: 地標, x: 200, y: 690, connections: [mm_shelter] }
+  - { id: mm_storehouse, name: 呻吟倉庫, region: 中央廠區（central_works）, type: 主建物, x: 500, y: 560, connections: [mm_start, mm_store_2f, mm_ironworks, mm_coaltower, mm_chest_a] }
+  - { id: mm_store_2f, name: 倉庫二樓, region: 中央廠區（central_works）, type: 建物層, x: 560, y: 470, connections: [mm_storehouse, mm_coaltower] }
+  - { id: mm_ironworks, name: 悲鳴鐵工廠, region: 中央廠區（central_works）, type: 主建物, x: 730, y: 620, connections: [mm_storehouse, mm_furnace, mm_pit, mm_opt_shack] }
+  - { id: mm_furnace, name: 熔爐排, region: 中央廠區（central_works）, type: 掩體區, x: 830, y: 560, connections: [mm_ironworks, mm_chest_b] }
+  - { id: mm_coaltower, name: 煤塔, region: 中央廠區（central_works）, type: 制高點, x: 300, y: 420, connections: [mm_storehouse, mm_store_2f, mm_tower_top, mm_pit_edge] }
+  - { id: mm_tower_top, name: 煤塔頂層, region: 中央廠區（central_works）, type: 建物層, x: 240, y: 330, connections: [mm_coaltower, mm_exit_n] }
+  - { id: mm_pit, name: 窒息坑, region: 礦坑區（pit_area）, type: 特殊, x: 660, y: 300, connections: [mm_ironworks, mm_pit_edge] }
+  - { id: mm_pit_edge, name: 坑緣棧道, region: 礦坑區（pit_area）, type: 通道, x: 580, y: 250, connections: [mm_coaltower, mm_pit, mm_exit_n] }
+  - { id: mm_chest_a, name: 鏽箱 A, region: 中央廠區（central_works）, type: 寶箱（Chest）, x: 400, y: 660, connections: [mm_storehouse] }
+  - { id: mm_chest_b, name: 鏽箱 B, region: 中央廠區（central_works）, type: 寶箱（Chest）, x: 780, y: 420, connections: [mm_furnace] }
+  - { id: mm_exit_n, name: 北逃生門, region: 礦坑區（pit_area）, type: 出口, x: 500, y: 120, connections: [mm_tower_top, mm_pit_edge] }
+  - { id: mm_exit_s, name: 南逃生門, region: 外圍林地（outer_woods）, type: 出口, x: 130, y: 860, connections: [mm_shelter] }
+  - { id: mm_opt_shack, name: 破工寮, region: 外圍林地（outer_woods）, type: 可選, x: 880, y: 780, connections: [mm_ironworks] }
+  - { id: mm_opt_locker, name: 更衣間, region: 中央廠區（central_works）, type: 可選, x: 160, y: 540, connections: [mm_shelter] }
+edges:
+  - { from: mm_start, to: mm_shelter, channel: 開闊, name: 林道 }
+  - { from: mm_start, to: mm_storehouse, channel: 開闊, name: 主路 }
+  - { from: mm_shelter, to: mm_bigtree, channel: 開闊, name: 樹下 }
+  - { from: mm_shelter, to: mm_exit_s, channel: 開闊, name: 南坡 }
+  - { from: mm_shelter, to: mm_opt_locker, channel: 窄門, name: 側門 }
+  - { from: mm_storehouse, to: mm_store_2f, channel: 樓梯, name: 鏽梯 }
+  - { from: mm_storehouse, to: mm_ironworks, channel: 開闊, name: 廠間道 }
+  - { from: mm_storehouse, to: mm_coaltower, channel: 開闊, name: 煤渣路 }
+  - { from: mm_storehouse, to: mm_chest_a, channel: 開闊, name: 堆料區 }
+  - { from: mm_store_2f, to: mm_coaltower, channel: 窗戶（Window）, name: 二樓破窗 }
+  - { from: mm_ironworks, to: mm_furnace, channel: 室內, name: 爐廊 }
+  - { from: mm_ironworks, to: mm_pit, channel: 開闊, name: 運煤道 }
+  - { from: mm_ironworks, to: mm_opt_shack, channel: 開闊, name: 廢料道 }
+  - { from: mm_furnace, to: mm_chest_b, channel: 室內, name: 工具間 }
+  - { from: mm_coaltower, to: mm_tower_top, channel: 樓梯, name: 塔梯 }
+  - { from: mm_coaltower, to: mm_pit_edge, channel: 開闊, name: 高架棧道 }
+  - { from: mm_pit, to: mm_pit_edge, channel: 攀爬, name: 坑壁 }
+  - { from: mm_pit_edge, to: mm_exit_n, channel: 開闊, name: 北出口道 }
+  - { from: mm_tower_top, to: mm_exit_n, channel: 視線, name: 僅視線不可通行 }

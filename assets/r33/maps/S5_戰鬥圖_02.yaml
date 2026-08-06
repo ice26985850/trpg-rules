@@ -1,0 +1,24 @@
+# S5 戰鬥圖 02 · 深水區（E2，浮腫者拖慢）
+meta:
+  id: S5_戰鬥圖_02
+  name: S5 戰鬥圖·深水區
+  scenario: S5
+  scene: E2（環境／領域造物）
+  note: 三段深水區，每段敏捷（AGI）或意志（WIL）檢定（DC 困難）；水中浮腫者＝泥手（RC-06）抓住涉水者拖慢移動。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 12
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 深水（危險，移動減速，每段檢定）, rect: { x: 1, y: 1, w: 10, h: 3 } }
+  - { id: t2, type: 深水（危險）, rect: { x: 1, y: 4, w: 4, h: 3 } }
+  - { id: t3, type: 深水（危險）, rect: { x: 6, y: 7, w: 5, h: 2 } }
+  - { id: t4, type: 木棧（安全地面）, rect: { x: 5, y: 1, w: 2, h: 1 } }
+objects:
+  - { id: o1, type: 浮腫者（RC-06）巡邏點, x: 4, y: 2 }
+  - { id: o2, type: 浮腫者（RC-06）巡邏點, x: 8, y: 8 }
+  - { id: o3, type: 板子（Pallet）, x: 5, y: 6 }
+  - { id: o4, type: 沉沒階（下層入口）, x: 6, y: 0 }
+  - { id: o5, type: 寶箱（Chest）, x: 11, y: 9 }
+spawn_survivor: { x: 6, y: 9 }
+spawn_killer: { x: 6, y: 0, note: 巫婆在深水上方俯瞰，玩家須涉水通過 }
+construct_spawns: [o1, o2]

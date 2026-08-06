@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1058" width="1050" height="1058" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+<defs>
+<marker id="ah-path" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8D9BA8"/></marker>
+<marker id="ah-door" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1E88E5"/></marker>
+<marker id="ah-window" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#00897B"/></marker>
+<marker id="ah-pallet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F9A825"/></marker>
+<marker id="ah-secret" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8E24AA"/></marker>
+<marker id="ah-oneway" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker>
+<marker id="ah-breach" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker>
+<marker id="ah-default" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8D9BA8"/></marker>
+<filter id="sh" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.4" flood-color="#1b2733" flood-opacity="0.20"/></filter>
+</defs>
+<rect width="1050" height="1058" fill="#FBFAF7"/>
+<line x1="478.3" y1="825.1" x2="365.2" y2="762.9" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="538.1" y1="823.8" x2="619.5" y2="715.4" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="290.6" y1="714.5" x2="252.5" y2="684.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="337.6" y1="713.8" x2="380.0" y2="655.5" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="347.8" y1="714.4" x2="489.2" y2="594.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="616.2" y1="664.2" x2="546.7" y2="594.7" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="703.8" y1="706.6" x2="800.3" y2="734.8" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="520.0" y1="543.0" x2="520.0" y2="457.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="621.5" y1="555.3" x2="567.1" y2="562.1" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="621.5" y1="568.0" x2="642.0" y2="568.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="520.0" y1="403.0" x2="520.0" y2="317.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="621.5" y1="428.0" x2="637.0" y2="428.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="418.5" y1="415.3" x2="442.9" y2="418.4" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="418.5" y1="433.8" x2="290.5" y2="441.1" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="739.3" y1="403.9" x2="778.2" y2="355.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="698.5" y1="313.5" x2="625.4" y2="303.1" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="352.9" y1="383.2" x2="328.2" y2="296.7" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="418.5" y1="277.9" x2="433.0" y2="279.3" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="432.1" y1="310.0" x2="531.8" y2="285.1" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="301.9" y1="243.8" x2="220.6" y2="135.4" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="562.0" y1="265.1" x2="804.5" y2="132.8" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<g filter="url(#sh)" opacity="1">
+<rect x="445.0" y="827.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="520.0" y="853.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_start</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="215.0" y="717.0" width="210" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="320.0" y="743.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_gasheaven</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="152.5" y="637.0" width="135" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="220.0" y="663.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_tank</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="580.0" y="667.0" width="120" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="640.0" y="693.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_bus</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="422.5" y="547.0" width="195" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="520.0" y="573.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_canyon_s</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="422.5" y="407.0" width="195" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="520.0" y="433.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_canyon_m</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="422.5" y="267.0" width="195" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="520.0" y="293.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_canyon_n</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="645.0" y="407.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="720.0" y="433.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_crane</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="702.5" y="307.0" width="195" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="800.0" y="333.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_stacktop</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="285.0" y="387.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="360.0" y="413.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_truck</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="215.0" y="247.0" width="210" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="320.0" y="273.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_compactor</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="575.0" y="527.0" width="210" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="680.0" y="553.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_deadend_a</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="295.0" y="607.0" width="210" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="400.0" y="633.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_deadend_b</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="350.0" y="287.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="440.0" y="313.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_chest_a</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="650.0" y="547.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="740.0" y="573.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_chest_b</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="760.0" y="87.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="850.0" y="113.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_exit_ne</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="110.0" y="87.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="200.0" y="113.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_exit_nw</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="57.5" y="427.0" width="225" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="170.0" y="453.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_opt_locker</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="767.5" y="737.0" width="225" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="880.0" y="763.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ah_opt_office</text>
+<text x="40" y="48" font-size="26" font-weight="800" fill="#1F2933">地圖</text>
+<text x="40" y="982" font-size="12.5" font-weight="700" fill="#5A6570">圖例</text>
+<rect x="40" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="66" y="1004" font-size="12" fill="#3A4650">主建物</text>
+<rect x="113" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="139" y="1004" font-size="12" fill="#3A4650">入口</text>
+<rect x="173" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="199" y="1004" font-size="12" fill="#3A4650">出口</text>
+<rect x="233" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="259" y="1004" font-size="12" fill="#3A4650">制高點／刻痕5</text>
+<rect x="358" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="384" y="1004" font-size="12" fill="#3A4650">可選</text>
+<rect x="418" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="444" y="1004" font-size="12" fill="#3A4650">可選／刻痕8</text>
+<rect x="530" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="556" y="1004" font-size="12" fill="#3A4650">地標／刻痕1</text>
+<rect x="642" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="668" y="1004" font-size="12" fill="#3A4650">地標／刻痕2</text>
+<rect x="754" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="780" y="1004" font-size="12" fill="#3A4650">地標／刻痕4</text>
+<rect x="866" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="892" y="1004" font-size="12" fill="#3A4650">寶箱（Chest）</text>
+<rect x="1017" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="1043" y="1004" font-size="12" fill="#3A4650">死路</text>
+<rect x="1077" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="1103" y="1004" font-size="12" fill="#3A4650">特殊／刻痕6</text>
+<rect x="1189" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="1215" y="1004" font-size="12" fill="#3A4650">通道</text>
+<rect x="1249" y="992" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="1275" y="1004" font-size="12" fill="#3A4650">通道／刻痕3</text>
+</svg>

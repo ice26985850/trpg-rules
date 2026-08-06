@@ -1,0 +1,25 @@
+# S4 戰鬥圖 01 · 閃現追逐（E1，護士穿牆）
+meta:
+  id: S4_戰鬥圖_01
+  name: S4 戰鬥圖·閃現追逐
+  scenario: S4
+  scene: E1（追逐）
+  note: 幽咽護士（NRS）閃現（Blink）可穿越樓層與牆體；全封閉、視線極短。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 14
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 病房隔牆（可閃現穿越）, rect: { x: 4, y: 1, w: 1, h: 6 } }
+  - { id: t2, type: 病房隔牆（可閃現穿越）, rect: { x: 9, y: 7, w: 1, h: 6 } }
+  - { id: t3, type: 病床（掩體）, rect: { x: 2, y: 8, w: 2, h: 2 } }
+  - { id: t4, type: 病床（掩體）, rect: { x: 11, y: 2, w: 2, h: 2 } }
+  - { id: t5, type: 牆體（不可通行）, rect: { x: 0, y: 0, w: 14, h: 1 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 6, y: 6 }
+  - { id: o2, type: 窗戶（Window）, x: 13, y: 5 }
+  - { id: o3, type: 窗戶（Window）, x: 1, y: 5 }
+  - { id: o4, type: 掛鉤（Hook）, x: 7, y: 11 }
+  - { id: o5, type: 置物櫃（Locker）, x: 6, y: 2 }
+  - { id: o6, type: 寶箱（Chest）, x: 12, y: 12 }
+spawn_survivor: { x: 1, y: 12 }
+spawn_killer: { x: 12, y: 1 }

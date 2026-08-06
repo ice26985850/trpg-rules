@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1098" width="1120" height="1098" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+<defs>
+<marker id="ah-path" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8D9BA8"/></marker>
+<marker id="ah-door" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1E88E5"/></marker>
+<marker id="ah-window" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#00897B"/></marker>
+<marker id="ah-pallet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F9A825"/></marker>
+<marker id="ah-secret" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8E24AA"/></marker>
+<marker id="ah-oneway" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker>
+<marker id="ah-breach" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker>
+<marker id="ah-default" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8D9BA8"/></marker>
+<filter id="sh" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.4" flood-color="#1b2733" flood-opacity="0.20"/></filter>
+</defs>
+<rect width="1120" height="1098" fill="#FBFAF7"/>
+<line x1="560.0" y1="863.0" x2="560.0" y2="817.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="518.7" y1="765.1" x2="424.8" y2="712.9" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="601.3" y1="765.1" x2="695.2" y2="712.9" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="560.0" y1="763.0" x2="560.0" y2="547.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="354.1" y1="664.3" x2="288.8" y2="604.4" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="330.2" y1="710.7" x2="323.5" y2="713.7" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="348.8" y1="711.4" x2="214.4" y2="812.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="305.6" y1="555.2" x2="330.8" y2="542.6" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="247.7" y1="553.4" x2="204.1" y2="466.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="474.0" y1="518.0" x2="462.0" y2="518.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="188.5" y1="413.0" x2="171.8" y2="137.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="765.9" y1="664.3" x2="831.2" y2="604.4" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="789.8" y1="710.7" x2="796.5" y2="713.7" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="814.4" y1="555.2" x2="789.2" y2="542.6" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="872.3" y1="553.4" x2="915.9" y2="466.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="866.9" y1="553.1" x2="932.1" y2="316.7" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="646.0" y1="518.0" x2="658.0" y2="518.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="931.5" y1="413.0" x2="948.2" y2="137.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="560.0" y1="493.0" x2="560.0" y2="437.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="560.0" y1="383.0" x2="560.0" y2="337.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="560.0" y1="283.0" x2="560.0" y2="207.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="473.6" y1="293.6" x2="342.9" y2="271.8" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<g filter="url(#sh)" opacity="1">
+<rect x="485.0" y="867.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="893.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_start</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="455.0" y="767.0" width="210" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="793.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_reception</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="290.0" y="667.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="380.0" y="693.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_hall_a1</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="170.0" y="557.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="260.0" y="583.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_hall_a2</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="290.0" y="497.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="380.0" y="523.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_room_a1</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="100.0" y="417.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="190.0" y="443.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_room_a2</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="180.0" y="717.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="270.0" y="743.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_chest_a</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="650.0" y="667.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="740.0" y="693.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_hall_b1</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="770.0" y="557.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="860.0" y="583.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_hall_b2</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="650.0" y="497.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="740.0" y="523.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_room_b1</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="840.0" y="417.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="930.0" y="443.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_room_b2</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="760.0" y="717.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="850.0" y="743.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_chest_b</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="470.0" y="497.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="523.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_theatre</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="470.0" y="387.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="413.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_gallery</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="477.5" y="287.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="313.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_hall_n</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="477.5" y="157.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="183.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_room13</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="185.0" y="237.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="260.0" y="263.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_drain</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="80.0" y="87.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="170.0" y="113.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_exit_nw</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="860.0" y="87.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="950.0" y="113.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_exit_ne</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="827.5" y="267.0" width="225" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="940.0" y="293.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_opt_office</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="82.5" y="817.0" width="195" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="180.0" y="843.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">ly_opt_ward</text>
+<text x="40" y="48" font-size="26" font-weight="800" fill="#1F2933">地圖</text>
+<text x="40" y="1022" font-size="12.5" font-weight="700" fill="#5A6570">圖例</text>
+<rect x="40" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="66" y="1044" font-size="12" fill="#3A4650">主場</text>
+<rect x="100" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="126" y="1044" font-size="12" fill="#3A4650">入口</text>
+<rect x="160" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="186" y="1044" font-size="12" fill="#3A4650">出口</text>
+<rect x="220" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="246" y="1044" font-size="12" fill="#3A4650">可選</text>
+<rect x="280" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="306" y="1044" font-size="12" fill="#3A4650">寶箱（Chest）</text>
+<rect x="431" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="457" y="1044" font-size="12" fill="#3A4650">建物層</text>
+<rect x="504" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="530" y="1044" font-size="12" fill="#3A4650">房間</text>
+<rect x="564" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="590" y="1044" font-size="12" fill="#3A4650">樞紐</text>
+<rect x="624" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="650" y="1044" font-size="12" fill="#3A4650">特殊</text>
+<rect x="684" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="710" y="1044" font-size="12" fill="#3A4650">通道</text>
+<rect x="744" y="1032" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="770" y="1044" font-size="12" fill="#3A4650">關鍵</text>
+</svg>

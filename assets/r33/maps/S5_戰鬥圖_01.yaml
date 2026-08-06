@@ -1,0 +1,24 @@
+# S5 戰鬥圖 01 · 巫婆陷阱網（E1，空間不可信）
+meta:
+  id: S5_戰鬥圖_01
+  name: S5 戰鬥圖·泥沼巫婆陷阱網
+  scenario: S5
+  scene: E1（追逐）
+  note: 泥沼巫婆（HAG）泥符（Mud Glyph）佈局＋幻影瞬移（Phantasm Teleport），可在淺水佈泥像陷阱（雷區）；空間不可信。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 16
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 淺水（可佈泥像陷阱）, rect: { x: 1, y: 1, w: 6, h: 5 } }
+  - { id: t2, type: 淺水（可佈泥像陷阱）, rect: { x: 9, y: 6, w: 6, h: 6 } }
+  - { id: t3, type: 木棧（安全地面）, rect: { x: 7, y: 7, w: 2, h: 2 } }
+  - { id: t4, type: 蘆葦（視線遮蔽）, rect: { x: 2, y: 9, w: 4, h: 4 } }
+objects:
+  - { id: o1, type: 泥像陷阱（Mud Glyph）埋伏點, x: 3, y: 3 }
+  - { id: o2, type: 泥像陷阱（Mud Glyph）埋伏點, x: 12, y: 9 }
+  - { id: o3, type: 板子（Pallet）, x: 8, y: 8 }
+  - { id: o4, type: 窗戶（Window）, x: 15, y: 2 }
+  - { id: o5, type: 寶箱（Chest）, x: 1, y: 13 }
+spawn_survivor: { x: 1, y: 13 }
+spawn_killer: { x: 15, y: 1 }
+trap_spawns: [o1, o2]

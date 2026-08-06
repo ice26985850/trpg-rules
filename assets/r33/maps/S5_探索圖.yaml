@@ -1,0 +1,59 @@
+# S5 探索圖 · 死水沼澤（Backwater Swamp, R5） → 虛空（The Void） → 隱室（Hidden Workshop）
+meta:
+  id: S5
+  name: S5 探索圖·死水沼澤、虛空與隱室
+  realm: 死水沼澤（Backwater Swamp, R5） → 虛空（The Void） → 隱室（Hidden Workshop）
+  regions: [沼澤（swamp）, 虛空（void）, 隱室（workshop）]
+  coord_range: 0-1000
+nodes:
+  - { id: bw_start, name: 起始霧口, region: 沼澤（swamp）, type: 入口, x: 500, y: 940, connections: [bw_pier] }
+  - { id: bw_pier, name: 碼頭, region: 沼澤（swamp）, type: 主地標, x: 500, y: 830, connections: [bw_start, bw_boat, bw_walk_w, bw_exit_se] }
+  - { id: bw_boat, name: 蒼白玫瑰號, region: 沼澤（swamp）, type: 主建物, x: 660, y: 780, connections: [bw_pier, bw_boat_2f, bw_chest_a, bw_walk_e] }
+  - { id: bw_boat_2f, name: 汽船上層, region: 沼澤（swamp）, type: 建物層, x: 740, y: 700, connections: [bw_boat, bw_walk_e] }
+  - { id: bw_walk_e, name: 東木棧道, region: 沼澤（swamp）, type: 通道, x: 700, y: 600, connections: [bw_boat, bw_boat_2f, bw_cages, bw_opt_shrine] }
+  - { id: bw_walk_w, name: 西木棧道, region: 沼澤（swamp）, type: 通道, x: 300, y: 600, connections: [bw_pier, bw_pantry, bw_chest_b, bw_opt_raft] }
+  - { id: bw_pantry, name: 陰森食品間, region: 沼澤（swamp）, type: 主建物, x: 250, y: 470, connections: [bw_walk_w, bw_pantry_2f, bw_exit_nw, ws_hidden] }
+  - { id: bw_pantry_2f, name: 食品間二樓, region: 沼澤（swamp）, type: 建物層, x: 180, y: 380, connections: [bw_pantry, bw_deep_a] }
+  - { id: bw_cages, name: 籠屋群, region: 沼澤（swamp）, type: 掩體區, x: 620, y: 450, connections: [bw_walk_e, bw_deep_a] }
+  - { id: bw_deep_a, name: 深水區 A, region: 沼澤（swamp）, type: 危險, x: 430, y: 480, connections: [bw_pantry_2f, bw_cages, bw_deep_b] }
+  - { id: bw_deep_b, name: 深水區 B, region: 沼澤（swamp）, type: 危險, x: 470, y: 380, connections: [bw_deep_a, bw_deep_c] }
+  - { id: bw_deep_c, name: 深水區 C, region: 沼澤（swamp）, type: 危險, x: 500, y: 290, connections: [bw_deep_b, bw_steps] }
+  - { id: bw_steps, name: 沉沒階, region: 沼澤（swamp）, type: 關鍵, x: 500, y: 210, connections: [bw_deep_c, vd_verge] }
+  - { id: bw_chest_a, name: 船艙寶箱, region: 沼澤（swamp）, type: 寶箱（Chest）, x: 780, y: 830, connections: [bw_boat] }
+  - { id: bw_chest_b, name: 棚下寶箱, region: 沼澤（swamp）, type: 寶箱（Chest）, x: 200, y: 620, connections: [bw_walk_w] }
+  - { id: bw_exit_nw, name: 西北逃生門, region: 沼澤（swamp）, type: 出口, x: 130, y: 180, connections: [bw_pantry] }
+  - { id: bw_exit_se, name: 東南逃生門, region: 沼澤（swamp）, type: 出口, x: 880, y: 900, connections: [bw_pier] }
+  - { id: bw_opt_shrine, name: 沉沒神龕, region: 沼澤（swamp）, type: 可選, x: 830, y: 320, connections: [bw_walk_e] }
+  - { id: bw_opt_raft, name: 擱淺木筏, region: 沼澤（swamp）, type: 可選, x: 160, y: 830, connections: [bw_walk_w] }
+  - { id: vd_verge, name: 虛空·沉沒帶, region: 虛空（void）, type: 第三幕, x: 500, y: 120, connections: [bw_steps, vd_haunts, vd_midden] }
+  - { id: vd_haunts, name: 虛空·殘影原, region: 虛空（void）, type: 第三幕, x: 690, y: 90, connections: [vd_verge, vd_gilmar] }
+  - { id: vd_midden, name: 虛空·棄物淵, region: 虛空（void）, type: 第三幕, x: 310, y: 90, connections: [vd_verge, ws_hidden] }
+  - { id: vd_gilmar, name: 他在的地方, region: 虛空（void）, type: 第三幕, x: 690, y: 40, connections: [vd_haunts] }
+  - { id: ws_hidden, name: 隱室, region: 隱室（workshop）, type: 第三幕, x: 310, y: 40, connections: [vd_midden, bw_pantry] }
+edges:
+  - { from: bw_start, to: bw_pier, channel: 木棧, name: 入口棧道 }
+  - { from: bw_pier, to: bw_boat, channel: 木棧, name: 登船板 }
+  - { from: bw_pier, to: bw_walk_w, channel: 木棧, name: 西棧道 }
+  - { from: bw_pier, to: bw_exit_se, channel: 木棧, name: 東南棧道 }
+  - { from: bw_boat, to: bw_boat_2f, channel: 樓梯, name: 船梯 }
+  - { from: bw_boat, to: bw_chest_a, channel: 室內, name: 船艙 }
+  - { from: bw_boat, to: bw_walk_e, channel: 木棧, name: 東棧道 }
+  - { from: bw_boat_2f, to: bw_walk_e, channel: 窗戶（Window）／跳下, name: 舷窗 }
+  - { from: bw_walk_e, to: bw_cages, channel: 木棧, name: 籠道 }
+  - { from: bw_walk_e, to: bw_opt_shrine, channel: 涉水, name: 淺灘 }
+  - { from: bw_walk_w, to: bw_pantry, channel: 木棧, name: 食品間棧道 }
+  - { from: bw_walk_w, to: bw_chest_b, channel: 木棧, name: 棚下 }
+  - { from: bw_walk_w, to: bw_opt_raft, channel: 涉水, name: 淺灘 }
+  - { from: bw_pantry, to: bw_pantry_2f, channel: 樓梯, name: 木梯 }
+  - { from: bw_pantry_2f, to: bw_deep_a, channel: 跳下（單向）, name: 二樓窗跳入水中 }
+  - { from: bw_pantry, to: bw_exit_nw, channel: 木棧, name: 西北棧道 }
+  - { from: bw_cages, to: bw_deep_a, channel: 涉水, name: 籠後水路 }
+  - { from: bw_deep_a, to: bw_deep_b, channel: 深水, name: 第一段 }
+  - { from: bw_deep_b, to: bw_deep_c, channel: 深水, name: 第二段 }
+  - { from: bw_deep_c, to: bw_steps, channel: 深水, name: 第三段 }
+  - { from: bw_steps, to: vd_verge, channel: 下沉（單向）, name: 沉沒階 }
+  - { from: vd_verge, to: vd_haunts, channel: 虛空漂移, name: 殘影漂 }
+  - { from: vd_verge, to: vd_midden, channel: 虛空漂移, name: 棄物漂 }
+  - { from: vd_haunts, to: vd_gilmar, channel: 虛空漂移, name: 更深處 }
+  - { from: vd_midden, to: ws_hidden, channel: 分類誤判（單向）, name: 棄物迴流 }
+  - { from: ws_hidden, to: bw_pantry, channel: 暗渠, name: 排水暗渠（完成後開通，永久） }

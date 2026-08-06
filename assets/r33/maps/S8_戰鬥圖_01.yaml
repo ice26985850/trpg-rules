@@ -1,0 +1,24 @@
+# S8 戰鬥圖 01 · 狂徒軍團連續突進（E2，深傷）
+meta:
+  id: S8_戰鬥圖_01
+  name: S8 戰鬥圖·遺棄骨場狂徒軍團突進
+  scenario: S8
+  scene: E2（追逐）
+  note: 狂徒軍團（LGN）狂暴（Frenzy）連續突進，擊中施加深傷（Deep Wound），非移動時持續流失——「停下來就是死」。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 16
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 東石雕群（掩體）, rect: { x: 11, y: 3, w: 3, h: 3 } }
+  - { id: t2, type: 西石雕群（掩體）, rect: { x: 2, y: 8, w: 3, h: 3 } }
+  - { id: t3, type: 石像圈（關鍵，可致辭）, rect: { x: 6, y: 6, w: 4, h: 2 } }
+  - { id: t4, type: 沙丘（半掩體）, rect: { x: 1, y: 1, w: 4, h: 3 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 8, y: 4 }
+  - { id: o2, type: 板子（Pallet）, x: 7, y: 10 }
+  - { id: o3, type: 窗戶（Window）, x: 15, y: 6 }
+  - { id: o4, type: 掛鉤（Hook）, x: 8, y: 7 }
+  - { id: o5, type: 寶箱（Chest）, x: 14, y: 13 }
+  - { id: o6, type: 塔門（需第一顆餘燼）, x: 8, y: 5 }
+spawn_survivor: { x: 1, y: 13 }
+spawn_killer: { x: 15, y: 1 }

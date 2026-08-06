@@ -1,0 +1,25 @@
+# S6 戰鬥圖 01 · 無心跳追逐（E1，緘默者）
+meta:
+  id: S6_戰鬥圖_01
+  name: S6 戰鬥圖·無心跳追逐
+  scenario: S6
+  scene: E1（追逐）
+  note: 緘默者（SIL）無恐怖半徑（TR）（無心跳，最大恐怖來源）；GM 完全不敲桌。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 14
+grid_h: 12
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 走廊隔牆（不可通行）, rect: { x: 4, y: 1, w: 1, h: 5 } }
+  - { id: t2, type: 走廊隔牆（不可通行）, rect: { x: 9, y: 6, w: 1, h: 5 } }
+  - { id: t3, type: 觀察窗（可翻越）, rect: { x: 6, y: 7, w: 2, h: 1 } }
+  - { id: t4, type: 牆體（不可通行）, rect: { x: 0, y: 0, w: 14, h: 1 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 6, y: 5 }
+  - { id: o2, type: 窗戶（Window）, x: 13, y: 3 }
+  - { id: o3, type: 窗戶（Window）, x: 1, y: 9 }
+  - { id: o4, type: 掛鉤（Hook）, x: 7, y: 10 }
+  - { id: o5, type: 置物櫃（Locker）, x: 6, y: 2 }
+  - { id: o6, type: 寶箱（Chest）, x: 12, y: 11 }
+spawn_survivor: { x: 1, y: 11 }
+spawn_killer: { x: 12, y: 1 }
+no_heartbeat: true

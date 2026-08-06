@@ -1,0 +1,24 @@
+# S3 戰鬥圖 01 · 玉米田開闊追逐（E1，鏈鋸屠夫主場）
+meta:
+  id: S3_戰鬥圖_01
+  name: S3 戰鬥圖·玉米田開闊追逐
+  scenario: S3
+  scene: E1（追逐）
+  note: 開闊地是鏈鋸屠夫（HBY）主場，全戰役到目前最痛的一場；只有 1 面板子（Pallet），靠玉米田遮蔽玩心理戰。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 18
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 玉米田（視線遮蔽，留撥動痕跡 2 輪）, rect: { x: 1, y: 1, w: 8, h: 5 } }
+  - { id: t2, type: 玉米田（視線遮蔽）, rect: { x: 9, y: 1, w: 8, h: 4 } }
+  - { id: t3, type: 玉米田（視線遮蔽）, rect: { x: 1, y: 8, w: 9, h: 5 } }
+  - { id: t4, type: 玉米田（視線遮蔽）, rect: { x: 11, y: 7, w: 6, h: 6 } }
+  - { id: t5, type: 收割機（掩體）, rect: { x: 8, y: 6, w: 2, h: 2 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 9, y: 7 }
+  - { id: o2, type: 窗戶（Window）, x: 17, y: 2 }
+  - { id: o3, type: 窗戶（Window）, x: 1, y: 13 }
+  - { id: o4, type: 掛鉤（Hook）, x: 13, y: 11 }
+  - { id: o5, type: 寶箱（Chest）, x: 16, y: 13 }
+spawn_survivor: { x: 1, y: 13 }
+spawn_killer: { x: 17, y: 1 }

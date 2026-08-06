@@ -1,0 +1,23 @@
+# S8 戰鬥圖 02 · 塔頂最終追逐（E5，純速度）
+meta:
+  id: S8_戰鬥圖_02
+  name: S8 戰鬥圖·孤塔塔頂最終追逐
+  scenario: S8
+  scene: E5（追逐／首領前）
+  note: 塔頂最終追逐，純速度／行動點（AP）；通過天穹裂口（hr_rift）進入無名之心。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 10
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 烏鴉巢（掩體）, rect: { x: 2, y: 2, w: 2, h: 2 } }
+  - { id: t2, type: 塔緣矮牆（不可通行外緣）, rect: { x: 0, y: 0, w: 10, h: 1 } }
+  - { id: t3, type: 塔緣矮牆（不可通行外緣）, rect: { x: 0, y: 9, w: 10, h: 1 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 5, y: 5 }
+  - { id: o2, type: 窗戶（Window）, x: 9, y: 4 }
+  - { id: o3, type: 掛鉤（Hook）, x: 5, y: 2 }
+  - { id: o4, type: 天穹裂口（hr_rift 入口）, x: 5, y: 0 }
+  - { id: o5, type: 寶箱（Chest）, x: 1, y: 8 }
+spawn_survivor: { x: 1, y: 8 }
+spawn_killer: { x: 9, y: 8 }
+final_chase: true

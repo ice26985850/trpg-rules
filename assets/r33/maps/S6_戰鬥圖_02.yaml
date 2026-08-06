@@ -1,0 +1,23 @@
+# S6 戰鬥圖 02 · 治療劇場暴露（E5，無掩體）
+meta:
+  id: S6_戰鬥圖_02
+  name: S6 戰鬥圖·治療劇場暴露遭遇
+  scenario: S6
+  scene: E5（追逐）
+  note: 治療劇場無掩體，極高壓；緘默者（SIL）暴露突襲。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 12
+grid_h: 12
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 手術台（低掩體）, rect: { x: 5, y: 5, w: 2, h: 2 } }
+  - { id: t2, type: 觀眾席階梯（不可通行外緣）, rect: { x: 0, y: 0, w: 12, h: 1 } }
+  - { id: t3, type: 觀眾席階梯（不可通行外緣）, rect: { x: 0, y: 11, w: 12, h: 1 } }
+objects:
+  - { id: o1, type: 窗戶（Window）, x: 11, y: 5 }
+  - { id: o2, type: 窗戶（Window）, x: 1, y: 6 }
+  - { id: o3, type: 掛鉤（Hook）, x: 6, y: 3 }
+  - { id: o4, type: 掛鉤（Hook）, x: 6, y: 9 }
+  - { id: o5, type: 寶箱（Chest）, x: 10, y: 1 }
+spawn_survivor: { x: 1, y: 10 }
+spawn_killer: { x: 11, y: 10 }
+open_arena: true

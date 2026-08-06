@@ -1,0 +1,23 @@
+# S4 戰鬥圖 03 · 病歷室封閉（E5，死亡陷阱）
+meta:
+  id: S4_戰鬥圖_03
+  name: S4 戰鬥圖·病歷室封閉遭遇
+  scenario: S4
+  scene: E5（追逐／死亡陷阱）
+  note: 唯一單出口戰鬥地圖；護士在玩家進入後才出現在門口，不追進來，只是站著，緩慢敲桌。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 8
+grid_h: 8
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 病歷架（掩體）, rect: { x: 2, y: 2, w: 2, h: 2 } }
+  - { id: t2, type: 牆體（不可通行）, rect: { x: 0, y: 0, w: 8, h: 1 } }
+  - { id: t3, type: 牆體（不可通行）, rect: { x: 0, y: 7, w: 8, h: 1 } }
+objects:
+  - { id: o1, type: 唯一門（單向，護士堵門）, x: 4, y: 0 }
+  - { id: o2, type: 掛鉤（Hook）, x: 3, y: 5 }
+  - { id: o3, type: 掛鉤（Hook）, x: 6, y: 5 }
+  - { id: o4, type: 外牆裂縫（第三幕後逃出點）, x: 7, y: 4 }
+  - { id: o5, type: 寶箱（Chest）, x: 1, y: 1 }
+spawn_survivor: { x: 3, y: 6 }
+spawn_killer: { x: 4, y: 1, note: 護士在門口（o1），不主動追入，緩慢敲桌 }
+death_trap: true

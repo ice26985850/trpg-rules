@@ -1,0 +1,23 @@
+# S2 戰鬥圖 02 · 車堆坍塌（E3，通道封閉）
+meta:
+  id: S2_戰鬥圖_02
+  name: S2 戰鬥圖·車堆坍塌
+  scenario: S2
+  scene: E3（環境）
+  note: 觸發後通道封閉，敏捷（AGI）閃避。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 14
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 廢車牆（掩體）, rect: { x: 3, y: 1, w: 2, h: 5 } }
+  - { id: t2, type: 廢車牆（掩體）, rect: { x: 9, y: 4, w: 2, h: 5 } }
+  - { id: t3, type: 不穩車堆（觸發坍塌）, rect: { x: 6, y: 4, w: 2, h: 2 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 5, y: 8 }
+  - { id: o2, type: 窗戶（Window）, x: 2, y: 7 }
+  - { id: o3, type: 窗戶（Window）, x: 12, y: 2 }
+  - { id: o4, type: 逃生門（Exit Gate）, x: 13, y: 9 }
+  - { id: o5, type: 寶箱（Chest）, x: 1, y: 1 }
+spawn_survivor: { x: 1, y: 9 }
+spawn_killer: { x: 13, y: 1 }
+collapse_trigger: 玩家進入 t3 範圍或受到攻擊時，t3 格位變為不可通行（封閉通道）

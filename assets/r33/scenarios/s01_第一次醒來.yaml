@@ -1,0 +1,367 @@
+# S1 · 第一次醒來（結構化資料，供 AI GM 引擎讀取）
+id: S1
+title: 第一次醒來
+realm: 麥克米蘭莊園（MacMillan Estate, R1）
+recommended_prs: "1-3"
+duration_min: 150
+summary: >-
+  序章。玩家在營火旁失去記憶地醒來，由營火記錄者艾洛薇·芬奇給出兩條規則——修好五台發電機（Generator）門就會開、被掛鉤（Hook）三次就沒了——並在第一幕看似矛盾地說「別去救人活得比較久」，卻在試煉中親自去救人。本劇本建立恐懼基準線、教會核心規則，並埋下四根貫穿全戰役的伏筆：利他之望（Altruistic Hope）與自望（Self-Hope）對實體飢餓度（EH）的相反效果、餘燼（Ember）的本質、艾洛薇口中「上一個坐你位置的人」、以及刻痕與隨身物的錨點。S1 不放任何領域造物（Realm Construct），保持純追逃體驗；第一次追逐必須讓玩家逃掉。
+
+nodes:
+  - id: mm_start
+    label: 起始霧口
+    type: 入口
+    x: 500
+    y: 900
+    region: 外圍林地（outer_woods）
+    explored: true
+  - id: mm_shelter
+    label: 蔽蔭林
+    type: 開闊區
+    x: 300
+    y: 780
+    region: 外圍林地（outer_woods）
+    explored: true
+  - id: mm_bigtree
+    label: 那棵粗樹
+    type: 地標
+    x: 200
+    y: 690
+    region: 外圍林地（outer_woods）
+    explored: false
+  - id: mm_storehouse
+    label: 呻吟倉庫
+    type: 主建物
+    x: 500
+    y: 560
+    region: 中央廠區（central_works）
+    explored: true
+  - id: mm_store_2f
+    label: 倉庫二樓
+    type: 建物層
+    x: 560
+    y: 470
+    region: 中央廠區（central_works）
+    explored: false
+  - id: mm_ironworks
+    label: 悲鳴鐵工廠
+    type: 主建物
+    x: 730
+    y: 620
+    region: 中央廠區（central_works）
+    explored: false
+  - id: mm_furnace
+    label: 熔爐排
+    type: 掩體區
+    x: 830
+    y: 560
+    region: 中央廠區（central_works）
+    explored: false
+  - id: mm_coaltower
+    label: 煤塔
+    type: 制高點
+    x: 300
+    y: 420
+    region: 中央廠區（central_works）
+    explored: false
+  - id: mm_tower_top
+    label: 煤塔頂層
+    type: 建物層
+    x: 240
+    y: 330
+    region: 中央廠區（central_works）
+    explored: false
+  - id: mm_pit
+    label: 窒息坑
+    type: 特殊
+    x: 660
+    y: 300
+    region: 礦坑區（pit_area）
+    explored: false
+  - id: mm_pit_edge
+    label: 坑緣棧道
+    type: 通道
+    x: 580
+    y: 250
+    region: 礦坑區（pit_area）
+    explored: false
+  - id: mm_chest_a
+    label: 鏽箱 A
+    type: 寶箱（Chest）
+    x: 400
+    y: 660
+    region: 中央廠區（central_works）
+    explored: false
+  - id: mm_chest_b
+    label: 鏽箱 B
+    type: 寶箱（Chest）
+    x: 780
+    y: 420
+    region: 中央廠區（central_works）
+    explored: false
+  - id: mm_exit_n
+    label: 北逃生門
+    type: 出口
+    x: 500
+    y: 120
+    region: 礦坑區（pit_area）
+    explored: false
+  - id: mm_exit_s
+    label: 南逃生門
+    type: 出口
+    x: 130
+    y: 860
+    region: 外圍林地（outer_woods）
+    explored: false
+  - id: mm_opt_shack
+    label: 破工寮
+    type: 可選
+    x: 880
+    y: 780
+    region: 外圍林地（outer_woods）
+    explored: false
+  - id: mm_opt_locker
+    label: 更衣間
+    type: 可選
+    x: 160
+    y: 540
+    region: 中央廠區（central_works）
+    explored: false
+
+edges:
+  - from: mm_start
+    to: mm_shelter
+    channel_type: 開闊
+    name: 林道
+  - from: mm_start
+    to: mm_storehouse
+    channel_type: 開闊
+    name: 主路
+  - from: mm_shelter
+    to: mm_bigtree
+    channel_type: 開闊
+    name: 樹下
+  - from: mm_shelter
+    to: mm_exit_s
+    channel_type: 開闊
+    name: 南坡
+  - from: mm_shelter
+    to: mm_opt_locker
+    channel_type: 窄門
+    name: 側門
+  - from: mm_storehouse
+    to: mm_store_2f
+    channel_type: 樓梯
+    name: 鏽梯
+  - from: mm_storehouse
+    to: mm_ironworks
+    channel_type: 開闊
+    name: 廠間道
+  - from: mm_storehouse
+    to: mm_coaltower
+    channel_type: 開闊
+    name: 煤渣路
+  - from: mm_storehouse
+    to: mm_chest_a
+    channel_type: 開闊
+    name: 堆料區
+  - from: mm_store_2f
+    to: mm_coaltower
+    channel_type: 窗戶（Window）
+    name: 二樓破窗
+  - from: mm_ironworks
+    to: mm_furnace
+    channel_type: 室內
+    name: 爐廊
+  - from: mm_ironworks
+    to: mm_pit
+    channel_type: 開闊
+    name: 運煤道
+  - from: mm_ironworks
+    to: mm_opt_shack
+    channel_type: 開闊
+    name: 廢料道
+  - from: mm_furnace
+    to: mm_chest_b
+    channel_type: 室內
+    name: 工具間
+  - from: mm_coaltower
+    to: mm_tower_top
+    channel_type: 樓梯
+    name: 塔梯
+  - from: mm_coaltower
+    to: mm_pit_edge
+    channel_type: 開闊
+    name: 高架棧道
+  - from: mm_pit
+    to: mm_pit_edge
+    channel_type: 攀爬
+    name: 坑壁
+  - from: mm_pit_edge
+    to: mm_exit_n
+    channel_type: 開闊
+    name: 北出口道
+  - from: mm_tower_top
+    to: mm_exit_n
+    channel_type: 視線
+    name: 僅視線不可通行
+
+encounters:
+  - id: E1
+    type: 環境
+    content: 蔽蔭林中的烏鴉群（驚起會暴露位置）
+    cr: 無檢定
+    note: 選用 RC-01 鏽鴉群（Rust Crows）作為警報 flavor，不列入正式預算
+  - id: E2
+    type: 追逐（Chase）
+    content: 第一次遭遇殺手（GM 必須讓玩家逃掉）
+    cr: 低
+    note: 教學：心跳與恐怖半徑（TR）
+  - id: E3
+    type: 陷阱
+    content: 捕獸夾（Bear Trap）×3（陷阱者（TRP）佈置），可用工具箱拆除
+    cr: 容易
+    note: 拆除＝技巧（TEC）檢定
+  - id: E4
+    type: 追逐（Chase）
+    content: 第二次遭遇（掛鉤（Hook），教救援）
+    cr: 中
+    note: 教學：掛鉤（Hook）與救援
+  - id: E5
+    type: 領域造物（Realm Construct）
+    content: 無
+    cr: "-"
+    note: S1 不放造物
+  - id: E6
+    type: 終局
+    content: 逃生門（Exit Gate）或地窖（Hatch）
+    cr: 中
+    note: "-"
+
+npcs:
+  - name: 艾洛薇·芬奇（Eloise Finch）
+    role: 營火記錄者（§8-A）
+    lines:
+      - "修好五台發電機（Generator），門就會開。"
+      - "被鉤三次就沒了。"
+      - "別去救人的話，你會活得比較久。"
+      - "上一個坐你那個位置的人不見了。三個禮拜後，我在試煉裡看見一個東西，它走路的樣子跟他一模一樣。"
+      - "你有沒有覺得，這火比你剛來的時候大了一點？"
+  - name: 回聲同伴（Echo Companion）· 四七
+    role: 單人配置節拍器（§8-B）
+    lines:
+      - "……九十七、九十八、九十九、一百。你看，我還在數。"
+  - name: 低語者（Whisperer）· 井裡的合唱（RC-02）
+    role: 情報型造物（EBC 0）
+    lines:
+      - "下來。下來看。我們都忘了，但你還記得。"
+
+choices:
+  - id: C1
+    question: 是否救人（核心教學）
+    options:
+      - desc: 選擇救人
+        effect: 觸發利他之望（Altruistic Hope），實體飢餓度（EH）−1，獲得 1 希望點（HOP），解鎖餘燼時刻（Ember Moment）
+      - desc: 選擇不救
+        effect: 角色安全，本場不觸發餘燼時刻（Ember Moment），營火餘燼（Campfire Ember）累積較少
+  - id: C2
+    question: 探索段可選節點（單人／雙人）
+    options:
+      - desc: 探索破工寮（mm_opt_shack）
+        effect: 獲得指向 S3「根不吃土」的記憶卡線索（一張寫著「樹」的字條）
+      - desc: 探索更衣間（mm_opt_locker）
+        effect: 獲得一件常見物品，與刻在鐵櫃內側的字（指向 S2「鐵谷裡的刻痕」）
+
+endings:
+  - type: 線性序章（單一結局）
+    condition: 完成試煉（修機達標或逃生）
+    ember_moment: 只要玩家在試煉中救下至少一名同伴（含回聲同伴），回營火後必定觸發餘燼時刻（Ember Moment）
+
+rewards:
+  bp: 標準（依 character-builder 公式）
+  prs_gain: 完成後升至 3 級
+  hop: "+2（劇本完成）＋ 過程累積"
+  campfire_ember: 過程累積（預估 3-6）
+  memory_card: 0
+  item: 每人 1 件常見物品
+  narrative: 餘燼（Ember）的第一次目擊（不解釋）
+
+player_count_scaling:
+  n1:
+    generators_total: 4
+    generators_required: 3
+    killer_pressure: 1
+    echo_companions: 1
+    bear_traps: 2
+    hooks: 4
+    chests: 2
+    lockers: 5
+    hook_phase_limit: 5
+    hatch_condition: 剩 1 名角色存活
+    endgame_collapse: 6
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 1
+    echo_companions: 1
+    bear_traps: 3
+    hooks: 5
+    chests: 2
+    lockers: 6
+    hook_phase_limit: 5
+    hatch_condition: 剩 1 名角色存活
+    endgame_collapse: 6
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 2
+    echo_companions: 0
+    bear_traps: 3
+    hooks: 6
+    chests: 3
+    lockers: 7
+    hook_phase_limit: 4
+    hatch_condition: 剩 1 名角色存活
+    endgame_collapse: 5
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 2
+    echo_companions: 0
+    bear_traps: 4
+    hooks: 8
+    chests: 3
+    lockers: 8
+    hook_phase_limit: 4
+    hatch_condition: 剩 1 名角色存活
+    endgame_collapse: 5
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.0
+  prs_mid: 2
+  eb:
+    n1: 4
+    n2: 8
+    n3: 12
+    n4: 16
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: 陷阱者（TRP）
+  killer_avm: 0
+  killer_cr: "PRS + 0（CR 1-3）"

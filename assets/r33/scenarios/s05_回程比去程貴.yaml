@@ -1,0 +1,474 @@
+# S5 · 回程比去程貴（結構化資料，供 AI GM 引擎讀取）
+id: S5
+title: 回程比去程貴
+realm: 死水沼澤（Backwater Swamp, R5） → 虛空（The Void） → 隱室（Hidden Workshop）
+recommended_prs: "10-13"
+duration_min: 270
+summary: >-
+  玩法質變的第二站：玩家第一次主動利用系統漏洞——故意墜入虛空（The Void），然後爬出來。從被動求生變成主動操作規則。本劇本是全戰役最安靜、最心理向的一場：虛空無殺手、無目標、希望點（HOP）持續流失，唯一出口是「重新產生一次真實的情緒」。泥沼巫婆（HAG）陷阱可瞬移，「空間不可信」。揭露：虛空中的餘燼（Ember）到不了營火，實體（The Entity）對餘燼有本能免疫反應——為 S7/S8 的緊張感提供根據。
+
+nodes:
+  - id: bw_start
+    label: 起始霧口
+    type: 入口
+    x: 500
+    y: 940
+    region: 沼澤（swamp）
+    explored: true
+  - id: bw_pier
+    label: 碼頭
+    type: 主地標
+    x: 500
+    y: 830
+    region: 沼澤（swamp）
+    explored: true
+  - id: bw_boat
+    label: 蒼白玫瑰號
+    type: 主建物
+    x: 660
+    y: 780
+    region: 沼澤（swamp）
+    explored: true
+  - id: bw_boat_2f
+    label: 汽船上層
+    type: 建物層
+    x: 740
+    y: 700
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_walk_e
+    label: 東木棧道
+    type: 通道
+    x: 700
+    y: 600
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_walk_w
+    label: 西木棧道
+    type: 通道
+    x: 300
+    y: 600
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_pantry
+    label: 陰森食品間
+    type: 主建物
+    x: 250
+    y: 470
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_pantry_2f
+    label: 食品間二樓
+    type: 建物層
+    x: 180
+    y: 380
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_cages
+    label: 籠屋群
+    type: 掩體區
+    x: 620
+    y: 450
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_deep_a
+    label: 深水區 A
+    type: 危險
+    x: 430
+    y: 480
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_deep_b
+    label: 深水區 B
+    type: 危險
+    x: 470
+    y: 380
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_deep_c
+    label: 深水區 C
+    type: 危險
+    x: 500
+    y: 290
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_steps
+    label: 沉沒階
+    type: 關鍵
+    x: 500
+    y: 210
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_chest_a
+    label: 船艙寶箱
+    type: 寶箱（Chest）
+    x: 780
+    y: 830
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_chest_b
+    label: 棚下寶箱
+    type: 寶箱（Chest）
+    x: 200
+    y: 620
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_exit_nw
+    label: 西北逃生門
+    type: 出口
+    x: 130
+    y: 180
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_exit_se
+    label: 東南逃生門
+    type: 出口
+    x: 880
+    y: 900
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_opt_shrine
+    label: 沉沒神龕
+    type: 可選
+    x: 830
+    y: 320
+    region: 沼澤（swamp）
+    explored: false
+  - id: bw_opt_raft
+    label: 擱淺木筏
+    type: 可選
+    x: 160
+    y: 830
+    region: 沼澤（swamp）
+    explored: false
+  - id: vd_verge
+    label: 虛空·沉沒帶
+    type: 第三幕
+    x: 500
+    y: 120
+    region: 虛空（void）
+    explored: false
+  - id: vd_haunts
+    label: 虛空·殘影原
+    type: 第三幕
+    x: 690
+    y: 90
+    region: 虛空（void）
+    explored: false
+  - id: vd_midden
+    label: 虛空·棄物淵
+    type: 第三幕
+    x: 310
+    y: 90
+    region: 虛空（void）
+    explored: false
+  - id: vd_gilmar
+    label: 他在的地方
+    type: 第三幕
+    x: 690
+    y: 40
+    region: 虛空（void）
+    explored: false
+  - id: ws_hidden
+    label: 隱室
+    type: 第三幕
+    x: 310
+    y: 40
+    region: 隱室（workshop）
+    explored: false
+
+edges:
+  - from: bw_start
+    to: bw_pier
+    channel_type: 木棧
+    name: 入口棧道
+  - from: bw_pier
+    to: bw_boat
+    channel_type: 木棧
+    name: 登船板
+  - from: bw_pier
+    to: bw_walk_w
+    channel_type: 木棧
+    name: 西棧道
+  - from: bw_pier
+    to: bw_exit_se
+    channel_type: 木棧
+    name: 東南棧道
+  - from: bw_boat
+    to: bw_boat_2f
+    channel_type: 樓梯
+    name: 船梯
+  - from: bw_boat
+    to: bw_chest_a
+    channel_type: 室內
+    name: 船艙
+  - from: bw_boat
+    to: bw_walk_e
+    channel_type: 木棧
+    name: 東棧道
+  - from: bw_boat_2f
+    to: bw_walk_e
+    channel_type: 窗戶（Window）／跳下
+    name: 舷窗
+  - from: bw_walk_e
+    to: bw_cages
+    channel_type: 木棧
+    name: 籠道
+  - from: bw_walk_e
+    to: bw_opt_shrine
+    channel_type: 涉水
+    name: 淺灘
+  - from: bw_walk_w
+    to: bw_pantry
+    channel_type: 木棧
+    name: 食品間棧道
+  - from: bw_walk_w
+    to: bw_chest_b
+    channel_type: 木棧
+    name: 棚下
+  - from: bw_walk_w
+    to: bw_opt_raft
+    channel_type: 涉水
+    name: 淺灘
+  - from: bw_pantry
+    to: bw_pantry_2f
+    channel_type: 樓梯
+    name: 木梯
+  - from: bw_pantry_2f
+    to: bw_deep_a
+    channel_type: 跳下（單向）
+    name: 二樓窗跳入水中
+  - from: bw_pantry
+    to: bw_exit_nw
+    channel_type: 木棧
+    name: 西北棧道
+  - from: bw_cages
+    to: bw_deep_a
+    channel_type: 涉水
+    name: 籠後水路
+  - from: bw_deep_a
+    to: bw_deep_b
+    channel_type: 深水
+    name: 第一段
+  - from: bw_deep_b
+    to: bw_deep_c
+    channel_type: 深水
+    name: 第二段
+  - from: bw_deep_c
+    to: bw_steps
+    channel_type: 深水
+    name: 第三段
+  - from: bw_steps
+    to: vd_verge
+    channel_type: 下沉（單向）
+    name: 沉沒階
+  - from: vd_verge
+    to: vd_haunts
+    channel_type: 虛空漂移
+    name: 殘影漂
+  - from: vd_verge
+    to: vd_midden
+    channel_type: 虛空漂移
+    name: 棄物漂
+  - from: vd_haunts
+    to: vd_gilmar
+    channel_type: 虛空漂移
+    name: 更深處
+  - from: vd_midden
+    to: ws_hidden
+    channel_type: 分類誤判（單向）
+    name: 棄物迴流
+  - from: ws_hidden
+    to: bw_pantry
+    channel_type: 暗渠
+    name: 排水暗渠（完成後開通，永久）
+
+encounters:
+  - id: E1
+    type: 追逐（Chase）
+    content: 泥沼巫婆（HAG）陷阱網
+    cr: 高（CR 11-14）
+    note: 教學：空間不可信
+  - id: E2
+    type: 環境
+    content: 三段深水區
+    cr: 困難（DC 困難）
+    note: 每段敏捷（AGI）或意志（WIL）
+  - id: E3
+    type: 領域造物（Realm Construct）
+    content: 浮腫者＝泥手（RC-06）× N
+    cr: 中-高（CR 3）
+    note: EBC 6／隻，區域拒止型
+  - id: E4
+    type: 探索
+    content: 沉沒階
+    cr: 中
+    note: "-"
+  - id: E5
+    type: 特殊
+    content: 虛空（The Void）（無戰鬥，希望點（HOP）流失）
+    cr: 極高（心理）
+    note: 見人數表
+  - id: E6
+    type: 扮演
+    content: 重新產生情緒
+    cr: 無檢定
+    note: 觸發物見人數表
+  - id: E7
+    type: 探索
+    content: 隱室（Hidden Workshop）
+    cr: 低
+    note: 安全空間
+
+npcs:
+  - name: 吉爾馬·薩托（Gilmar Sato）
+    role: 已墜虛空的營火同伴（§8-A）
+    lines:
+      - "……名字？我好像有過一個。但那是很久以前的事了。你……認識我？"
+  - name: 拾遺者·法恩（Fane）
+    role: 隱室主人（§8-D）
+    lines:
+      - "它不是不會被騙。它是不會發現自己被騙了。"
+  - name: 低語者（Whisperer）· 水下的聲音（RC-02 變體）
+    role: 情報型造物（EBC 0）
+    lines:
+      - "回程比去程貴。去程：一點希望。回程：你得在下面找到一件你想要的東西。"
+  - name: 回聲同伴（Echo Companion）· 擦手的人
+    role: 若 S3 替它摘囊，虛空中的殘影
+    lines:
+      - "它認出玩家（＋5 營火餘燼（Campfire Ember））"
+
+choices:
+  - id: C1
+    question: 是否走下沉沒階（主動利用漏洞）
+    options:
+      - desc: 不走去程
+        effect: 純逃脫完成試煉，錯過主線（拿不到法恩筆記、救不回吉爾馬）
+      - desc: 走去程
+        effect: 進入虛空（第三幕），主動操作規則
+  - id: C2
+    question: 虛空觸發物選擇
+    options:
+      - desc: 對吉爾馬做無回報之事
+        effect: 救回（S8 他會記得玩家名字）
+      - desc: 對犧牲過的回聲承認／彌補
+        effect: 情感閉合
+      - desc: 對隨身物想起它是什麼
+        effect: 記憶閉合
+  - id: C3
+    question: 是否救回吉爾馬
+    options:
+      - desc: 救回
+        effect: 他回營火（空的，每劇本恢復一點，S8 記得玩家名字）
+      - desc: 不救
+        effect: 情感空缺，但玩家保留更多希望點（HOP）
+
+endings:
+  - type: 分支（是否救回吉爾馬）
+    condition: 取決於抉擇三
+    ember_moment: 虛空中產生真實情緒時觸發（餘燼不會滾向營火）
+
+rewards:
+  bp: 標準 ×（依人數表）
+  prs_gain: 完成後升至 13 級
+  hop: "+4"
+  campfire_ember: 過程累積（預估 6-12）
+  memory_card: 1-2 張
+  item: 每人 1 件非常罕見物品
+  npc_rescue: 吉爾馬·薩托可被帶回營火（若對他做無回報之事），到 S8 記得玩家名字
+  narrative: 虛空中的餘燼到不了營火；實體有本能免疫反應
+  new_ability: 認出漏洞——每劇本可宣告一次「這裡有規則的縫隙」，GM 必須給出可利用的機制破綻
+  map_unlock: 隱室 ↔ 雷利紀念研究所暗渠、隱室 ↔ 血紅森林隱門（開啟 S6、S7）
+
+player_count_scaling:
+  n1:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 5
+    echo_companions: 2
+    bloated_RC06: 2
+    deep_sections: 2
+    hooks: 5
+    chests: 3
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    void_turn_limit: 8
+    void_hop_loss_per_scene: -1
+    void_triggers: 3
+    bp_multiplier: 1.15
+    hop_reward: 4
+    memory_cards: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 4
+    killer_pressure: 5
+    echo_companions: 1
+    bloated_RC06: 3
+    deep_sections: 3
+    hooks: 6
+    chests: 3
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    void_turn_limit: 7
+    void_hop_loss_per_scene: -1
+    void_triggers: 3
+    bp_multiplier: 1.1
+    hop_reward: 4
+    memory_cards: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 5
+    echo_companions: 0
+    bloated_RC06: 3
+    deep_sections: 3
+    hooks: 7
+    chests: 4
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    void_turn_limit: 6
+    void_hop_loss_per_scene: -1
+    void_triggers: 2
+    bp_multiplier: 1.0
+    hop_reward: 4
+    memory_cards: 1
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 6
+    echo_companions: 0
+    bloated_RC06: 4
+    deep_sections: 3
+    hooks: 9
+    chests: 4
+    lockers: 8
+    hook_phase_limit: 3
+    endgame_collapse: 4
+    void_turn_limit: 6
+    void_hop_loss_per_scene: -1
+    void_triggers: 2
+    bp_multiplier: 1.0
+    hop_reward: 4
+    memory_cards: 1
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.15
+  prs_mid: 11
+  eb:
+    n1: 15
+    n2: 30
+    n3: 45
+    n4: 60
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: 泥沼巫婆（HAG）
+  killer_avm: "+1（第8輪前）／+2（第8輪後），取 +1"
+  killer_cr: "PRS + 1（CR 11-14）"
+  construct_RC06: 泥手（RC-06）CR3／HP22／攻擊+3／DC11／EBC6

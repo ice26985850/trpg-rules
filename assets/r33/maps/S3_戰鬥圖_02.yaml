@@ -1,0 +1,24 @@
+# S3 戰鬥圖 02 · 穗行者玉米田（E4，稻草殘影偽裝）
+meta:
+  id: S3_戰鬥圖_02
+  name: S3 戰鬥圖·穗行者玉米田
+  scenario: S3
+  scene: E4（領域造物）
+  note: 穗行者＝稻草殘影（RC-04），藏在玉米田中模仿撥開玉米的聲音誤導玩家（實傷✓）。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 16
+grid_h: 12
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 玉米田（視線遮蔽）, rect: { x: 1, y: 1, w: 7, h: 6 } }
+  - { id: t2, type: 玉米田（視線遮蔽）, rect: { x: 8, y: 5, w: 7, h: 6 } }
+  - { id: t3, type: 玉米田（視線遮蔽）, rect: { x: 2, y: 8, w: 6, h: 3 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 8, y: 4 }
+  - { id: o2, type: 窗戶（Window）, x: 15, y: 2 }
+  - { id: o3, type: 窗戶（Window）, x: 1, y: 1 }
+  - { id: o4, type: 穗行者（RC-04）埋伏點, x: 4, y: 3 }
+  - { id: o5, type: 穗行者（RC-04）埋伏點, x: 11, y: 9 }
+  - { id: o6, type: 寶箱（Chest）, x: 14, y: 11 }
+spawn_survivor: { x: 1, y: 11 }
+spawn_killer: { x: 15, y: 1 }
+construct_spawns: [o4, o5]

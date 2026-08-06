@@ -1,0 +1,390 @@
+# S2 · 鐵谷裡的刻痕（結構化資料，供 AI GM 引擎讀取）
+id: S2
+title: 鐵谷裡的刻痕
+realm: 廢車場（Autohaven Wreckers, R2）
+recommended_prs: "3-5"
+duration_min: 180
+summary: >-
+  玩家發現廢車場車體上有人刻了字，且刻痕在不同次試煉中內容不同——有人在用它們留言，而留言的人已經不在了。本劇本深化「記憶流失是系統性的」與「有人在對抗它」兩條主線。核心設計：刻痕是可蒐集的資訊，但蒐集需要付出行動點（AP），且每則刻痕都在挑戰玩家的認知。幽靈（WRT）作為「無心跳的殺手」教學——它沒有恐怖半徑（TR），玩家必須靠聽覺線索判斷方位。收尾餘燼時刻（Ember Moment）揭露：那些字是艾洛薇自己刻的。
+
+nodes:
+  - id: ah_start
+    label: 起始霧口
+    type: 入口
+    x: 500
+    y: 920
+    region: 南場（yard_south）
+    explored: true
+  - id: ah_gasheaven
+    label: 加油站遺址
+    type: 主建物
+    x: 300
+    y: 810
+    region: 南場（yard_south）
+    explored: true
+  - id: ah_tank
+    label: 油槽
+    type: 地標／刻痕4
+    x: 200
+    y: 730
+    region: 南場（yard_south）
+    explored: false
+  - id: ah_bus
+    label: 校車
+    type: 地標／刻痕1,7
+    x: 620
+    y: 760
+    region: 南場（yard_south）
+    explored: true
+  - id: ah_canyon_s
+    label: 鐵谷·南段
+    type: 通道
+    x: 500
+    y: 640
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_canyon_m
+    label: 鐵谷·中段
+    type: 通道
+    x: 500
+    y: 500
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_canyon_n
+    label: 鐵谷·北段
+    type: 通道
+    x: 500
+    y: 360
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_crane
+    label: 吊車
+    type: 地標／刻痕2
+    x: 700
+    y: 500
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_stacktop
+    label: 車堆頂
+    type: 制高點／刻痕5
+    x: 780
+    y: 400
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_truck
+    label: 翻覆貨卡
+    type: 通道／刻痕3
+    x: 340
+    y: 480
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_compactor
+    label: 壓縮機
+    type: 特殊／刻痕6
+    x: 300
+    y: 340
+    region: 北場（yard_north）
+    explored: false
+  - id: ah_deadend_a
+    label: 死路·車牆
+    type: 死路
+    x: 660
+    y: 620
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_deadend_b
+    label: 死路·油桶區
+    type: 死路
+    x: 380
+    y: 700
+    region: 南場（yard_south）
+    explored: false
+  - id: ah_chest_a
+    label: 工具箱堆
+    type: 寶箱（Chest）
+    x: 420
+    y: 380
+    region: 北場（yard_north）
+    explored: false
+  - id: ah_chest_b
+    label: 車廂寶箱
+    type: 寶箱（Chest）
+    x: 720
+    y: 640
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_exit_ne
+    label: 東北逃生門
+    type: 出口
+    x: 830
+    y: 180
+    region: 北場（yard_north）
+    explored: false
+  - id: ah_exit_nw
+    label: 西北逃生門
+    type: 出口
+    x: 180
+    y: 180
+    region: 北場（yard_north）
+    explored: false
+  - id: ah_opt_locker
+    label: 鐵櫃區
+    type: 可選／刻痕8
+    x: 150
+    y: 520
+    region: 鐵谷（canyon）
+    explored: false
+  - id: ah_opt_office
+    label: 場長辦公室
+    type: 可選
+    x: 860
+    y: 830
+    region: 南場（yard_south）
+    explored: false
+
+edges:
+  - from: ah_start
+    to: ah_gasheaven
+    channel_type: 開闊
+    name: 進場道
+  - from: ah_start
+    to: ah_bus
+    channel_type: 開闊
+    name: 車列間
+  - from: ah_gasheaven
+    to: ah_tank
+    channel_type: 室內
+    name: 泵房
+  - from: ah_gasheaven
+    to: ah_deadend_b
+    channel_type: 窄道
+    name: 油桶巷
+  - from: ah_gasheaven
+    to: ah_canyon_s
+    channel_type: 開闊
+    name: 北向道
+  - from: ah_bus
+    to: ah_canyon_s
+    channel_type: 窗戶（Window）
+    name: 校車前後窗
+  - from: ah_bus
+    to: ah_opt_office
+    channel_type: 開闊
+    name: 場邊道
+  - from: ah_canyon_s
+    to: ah_canyon_m
+    channel_type: 窄道
+    name: 谷底
+  - from: ah_canyon_s
+    to: ah_deadend_a
+    channel_type: 窄道
+    name: 車牆巷
+  - from: ah_canyon_s
+    to: ah_chest_b
+    channel_type: 窄道
+    name: 車廂縫
+  - from: ah_canyon_m
+    to: ah_canyon_n
+    channel_type: 窄道
+    name: 谷底
+  - from: ah_canyon_m
+    to: ah_crane
+    channel_type: 開闊
+    name: 吊車基座
+  - from: ah_canyon_m
+    to: ah_truck
+    channel_type: 穿越
+    name: 貨卡車斗
+  - from: ah_canyon_m
+    to: ah_opt_locker
+    channel_type: 窄門
+    name: 鐵櫃間
+  - from: ah_crane
+    to: ah_stacktop
+    channel_type: 攀爬
+    name: 車堆側面
+  - from: ah_stacktop
+    to: ah_canyon_n
+    channel_type: 跳下（單向）
+    name: 縱身
+  - from: ah_truck
+    to: ah_compactor
+    channel_type: 開闊
+    name: 北場道
+  - from: ah_canyon_n
+    to: ah_compactor
+    channel_type: 開闊
+    name: 谷口
+  - from: ah_canyon_n
+    to: ah_chest_a
+    channel_type: 開闊
+    name: 零件堆
+  - from: ah_compactor
+    to: ah_exit_nw
+    channel_type: 開闊
+    name: 西北道
+  - from: ah_canyon_n
+    to: ah_exit_ne
+    channel_type: 開闊
+    name: 東北道
+
+encounters:
+  - id: E1
+    type: 探索
+    content: 刻痕蒐集（6-8 則）
+    cr: 容易-中
+    note: 每則耗 1 行動點（AP）
+  - id: E2
+    type: 追逐（Chase）
+    content: 幽靈（WRT）的隱形突襲（無心跳）
+    cr: 中
+    note: 教學：聽覺線索取代心跳
+  - id: E3
+    type: 環境
+    content: 車堆坍塌（觸發後通道封閉）
+    cr: 中
+    note: 敏捷（AGI）閃避
+  - id: E4
+    type: 領域造物（Realm Construct）
+    content: 鏽噬＝鐵皮傀儡（RC-03）× N
+    cr: 低（CR 3）
+    note: EBC 6／隻，阻擋型
+  - id: E5
+    type: 追逐（Chase）
+    content: 中盤掛鉤（Hook）與救援
+    cr: 中
+    note: "-"
+  - id: E6
+    type: 終局
+    content: 第五台發電機（Generator）的陷阱（刻痕 #1）
+    cr: 中-高
+    note: 修好第五台時殺手獲免費位置揭露
+
+npcs:
+  - name: 艾洛薇·芬奇（Eloise Finch）
+    role: 營火記錄者（§8-A）
+    lines:
+      - "這是我的字。……我每次回來都會忘記。所以我在外面刻，也在自己身上刻。但我從來沒有刻完過那一句。"
+  - name: 吉爾馬·薩托（Gilmar Sato）
+    role: 拾荒型倖存者（§8-A）
+    lines:
+      - "下次你看到類似的，記得停下來看。也許那是誰留給你的。"
+  - name: 回聲同伴（Echo Companion）· 抱空者
+    role: 單人配置（§8-B）
+    lines:
+      - "若玩家治療它，它會把「懷裡的東西」遞給玩家——那是空的，但玩家獲得 1 希望點（HOP）。"
+  - name: 低語者（Whisperer）· 鐵鏽合唱（RC-02）
+    role: 情報型造物（EBC 0）
+    lines:
+      - "金屬記得聲音。你敲，它就回。多敲幾下，我就告訴你哪塊鐵皮上有字。"
+
+choices:
+  - id: C1
+    question: 是否耗費行動點（AP）讀刻痕
+    options:
+      - desc: 為讀刻痕放棄對自己有利的行動
+        effect: 滿足餘燼時刻（Ember Moment）觸發條件，獲得主線資訊與規則提示
+  - id: C2
+    question: 第五台發電機（Generator）
+    options:
+      - desc: 主動修第五台
+        effect: 觸發 E6 陷阱（殺手免費位置揭露）
+      - desc: 聽從刻痕、用四台達標
+        effect: 規避陷阱，仍完成逃脫
+  - id: C3
+    question: 對回聲·抱空者的對待（單人）
+    options:
+      - desc: 治療回聲同伴（Echo Companion）
+        effect: 獲 1 希望點（HOP），solo 局重要來源
+
+endings:
+  - type: 線性（單一結局）
+    condition: 完成試煉
+    ember_moment: 若玩家為讀刻痕而放棄有利行動則觸發
+
+rewards:
+  bp: 標準 ×（依人數表）
+  prs_gain: 完成後升至 5 級
+  hop: "+2"
+  campfire_ember: 過程累積（預估 4-7）
+  memory_card: 0
+  item: 每人 1 件常見-罕見物品
+  narrative: 記憶流失是系統性的；有人在對抗它
+  special: 玩家可保留一塊鐵皮與一根釘子——從此每個劇本可刻一句話留給下一次的自己
+
+player_count_scaling:
+  n1:
+    generators_total: 4
+    generators_required: 3
+    killer_pressure: 2
+    echo_companions: 1
+    carvings: 8
+    rust_devourers_RC03: 1
+    hooks: 4
+    chests: 2
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    bp_multiplier: 1.1
+    hop_reward: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 4
+    killer_pressure: 2
+    echo_companions: 1
+    carvings: 7
+    rust_devourers_RC03: 2
+    hooks: 5
+    chests: 2
+    lockers: 6
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    bp_multiplier: 1.05
+    hop_reward: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 2
+    echo_companions: 0
+    carvings: 6
+    rust_devourers_RC03: 2
+    hooks: 6
+    chests: 3
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 3
+    echo_companions: 0
+    carvings: 6
+    rust_devourers_RC03: 3
+    hooks: 8
+    chests: 3
+    lockers: 8
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.0
+  prs_mid: 4
+  eb:
+    n1: 6
+    n2: 12
+    n3: 18
+    n4: 24
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: 幽靈（WRT）
+  killer_avm: 1
+  killer_cr: "PRS + 1（CR 4-6）"
+  construct_RC03: 鐵皮傀儡（RC-03）CR3／HP22／攻擊+3／DC11／EBC6

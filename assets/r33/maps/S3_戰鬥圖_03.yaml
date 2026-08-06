@@ -1,0 +1,23 @@
+# S3 戰鬥圖 03 · 屠宰場內近身追逐（E5，唯一封閉空間）
+meta:
+  id: S3_戰鬥圖_03
+  name: S3 戰鬥圖·屠宰場內近身追逐
+  scenario: S3
+  scene: E5（追逐）
+  note: 全戰役唯一封閉空間，近身追逐極致命。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 10
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 吊肉鉤架（掩體）, rect: { x: 2, y: 2, w: 2, h: 2 } }
+  - { id: t2, type: 屠宰台（掩體）, rect: { x: 6, y: 5, w: 2, h: 2 } }
+  - { id: t3, type: 牆體（不可通行）, rect: { x: 0, y: 0, w: 10, h: 1 } }
+  - { id: t4, type: 牆體（不可通行）, rect: { x: 0, y: 9, w: 10, h: 1 } }
+objects:
+  - { id: o1, type: 窗戶（Window）, x: 9, y: 4 }
+  - { id: o2, type: 窗戶（Window）, x: 1, y: 4 }
+  - { id: o3, type: 掛鉤（Hook）, x: 5, y: 2 }
+  - { id: o4, type: 掛鉤（Hook）, x: 5, y: 7 }
+  - { id: o5, type: 寶箱（Chest）, x: 8, y: 1 }
+spawn_survivor: { x: 1, y: 8 }
+spawn_killer: { x: 8, y: 8 }

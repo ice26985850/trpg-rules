@@ -1,0 +1,23 @@
+# S7 戰鬥圖 01 · 獵斧女遠程投擲（E1，距離不再安全）
+meta:
+  id: S7_戰鬥圖_01
+  name: S7 戰鬥圖·血紅森林獵斧女遠程
+  scenario: S7
+  scene: E1（追逐）
+  note: 獵斧女（HTR）手斧（Hand Axe）遠程投擲，距離帶（Distance Band）3 以內目標皆可攻擊，巨樹是唯一防護；開闊林地無安全距離。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 18
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 紅葉海（瀕死爬行完全隱蔽）, rect: { x: 1, y: 1, w: 7, h: 5 } }
+  - { id: t2, type: 紅葉海（瀕死爬行完全隱蔽）, rect: { x: 10, y: 6, w: 7, h: 6 } }
+  - { id: t3, type: 巨樹（唯一防護，阻擋投擲）, rect: { x: 8, y: 6, w: 2, h: 2 } }
+  - { id: t4, type: 母之居（掩體）, rect: { x: 2, y: 9, w: 3, h: 3 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 9, y: 4 }
+  - { id: o2, type: 窗戶（Window）, x: 17, y: 2 }
+  - { id: o3, type: 窗戶（Window）, x: 1, y: 13 }
+  - { id: o4, type: 掛鉤（Hook）, x: 13, y: 11 }
+  - { id: o5, type: 寶箱（Chest）, x: 16, y: 13 }
+spawn_survivor: { x: 1, y: 13 }
+spawn_killer: { x: 17, y: 1 }

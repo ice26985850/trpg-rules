@@ -1,0 +1,59 @@
+# S8 探索圖 · 遺棄骨場（Forsaken Boneyard, R8） → 孤塔（Lone Tower） → 無名之心（The Nameless Heart）
+meta:
+  id: S8
+  name: S8 探索圖·遺棄骨場、孤塔與無名之心
+  realm: 遺棄骨場（Forsaken Boneyard, R8） → 孤塔（Lone Tower） → 無名之心（The Nameless Heart）
+  regions: [骨場地表（boneyard）, 孤塔（tower）, 無名之心（heart）]
+  coord_range: 0-1000
+nodes:
+  - { id: fb_start, name: 起始霧口, region: 骨場地表（boneyard）, type: 入口, x: 500, y: 950, connections: [fb_arch_s] }
+  - { id: fb_arch_s, name: 南拱門, region: 骨場地表（boneyard）, type: 地標, x: 500, y: 850, connections: [fb_start, fb_dune_e, fb_dune_w] }
+  - { id: fb_dune_e, name: 東沙丘, region: 骨場地表（boneyard）, type: 開闊, x: 760, y: 760, connections: [fb_arch_s, fb_carve_e, fb_chest_a, fb_exit_e, fb_opt_wind] }
+  - { id: fb_dune_w, name: 西沙丘, region: 骨場地表（boneyard）, type: 開闊, x: 240, y: 760, connections: [fb_arch_s, fb_carve_w, fb_hatch_rig, fb_exit_w, fb_opt_bones] }
+  - { id: fb_carve_e, name: 東石雕群, region: 骨場地表（boneyard）, type: 掩體區, x: 830, y: 570, connections: [fb_dune_e, fb_arch_n] }
+  - { id: fb_carve_w, name: 西石雕群, region: 骨場地表（boneyard）, type: 掩體區, x: 170, y: 570, connections: [fb_dune_w, fb_arch_n, fb_chest_b] }
+  - { id: fb_arch_n, name: 北拱門, region: 骨場地表（boneyard）, type: 地標, x: 500, y: 700, connections: [fb_carve_e, fb_carve_w, fb_ring] }
+  - { id: fb_ring, name: 石像圈, region: 骨場地表（boneyard）, type: 關鍵, x: 500, y: 570, connections: [fb_arch_n, fb_hatch_rig, tw_base] }
+  - { id: fb_chest_a, name: 沙下寶箱, region: 骨場地表（boneyard）, type: 寶箱（Chest）, x: 700, y: 660, connections: [fb_dune_e] }
+  - { id: fb_chest_b, name: 雕座寶箱, region: 骨場地表（boneyard）, type: 寶箱（Chest）, x: 300, y: 480, connections: [fb_carve_w] }
+  - { id: fb_hatch_rig, name: 法恩的裝置, region: 骨場地表（boneyard）, type: 特殊, x: 350, y: 660, connections: [fb_dune_w, fb_ring] }
+  - { id: fb_exit_e, name: 東逃生門, region: 骨場地表（boneyard）, type: 出口, x: 930, y: 830, connections: [fb_dune_e] }
+  - { id: fb_exit_w, name: 西逃生門, region: 骨場地表（boneyard）, type: 出口, x: 70, y: 830, connections: [fb_dune_w] }
+  - { id: fb_opt_wind, name: 風蝕洞, region: 骨場地表（boneyard）, type: 可選, x: 890, y: 700, connections: [fb_dune_e] }
+  - { id: fb_opt_bones, name: 骨堆, region: 骨場地表（boneyard）, type: 可選, x: 110, y: 700, connections: [fb_dune_w] }
+  - { id: tw_base, name: 塔基, region: 孤塔（tower）, type: 孤塔, x: 500, y: 470, connections: [fb_ring, tw_eyrie] }
+  - { id: tw_eyrie, name: 烏鴉巢環, region: 孤塔（tower）, type: 孤塔, x: 500, y: 370, connections: [tw_base, tw_stair] }
+  - { id: tw_stair, name: 無盡階, region: 孤塔（tower）, type: 孤塔, x: 500, y: 270, connections: [tw_eyrie, tw_top] }
+  - { id: tw_top, name: 塔頂, region: 孤塔（tower）, type: 孤塔, x: 500, y: 180, connections: [tw_stair, hr_rift] }
+  - { id: hr_rift, name: 天穹裂口, region: 無名之心（heart）, type: 無名之心, x: 500, y: 120, connections: [tw_top, hr_maw, hr_nameless] }
+  - { id: hr_maw, name: 開口原, region: 無名之心（heart）, type: 無名之心, x: 400, y: 70, connections: [hr_rift, hr_hollow] }
+  - { id: hr_hollow, name: 那個洞, region: 無名之心（heart）, type: 終局, x: 500, y: 40, connections: [hr_maw, hr_nameless, ember_vein] }
+  - { id: hr_nameless, name: 無名所在, region: 無名之心（heart）, type: 無名之心, x: 600, y: 70, connections: [hr_rift, hr_hollow] }
+  - { id: ember_vein, name: 餘燼脈, region: 無名之心（heart）, type: 臍帶（Umbilical）, x: 500, y: 596, connections: [hr_hollow], note: 不可通行，可傳火（S8 燎原路線） }
+edges:
+  - { from: fb_start, to: fb_arch_s, channel: 沙地, name: 南道 }
+  - { from: fb_arch_s, to: fb_dune_e, channel: 沙地, name: 東丘道 }
+  - { from: fb_arch_s, to: fb_dune_w, channel: 沙地, name: 西丘道 }
+  - { from: fb_dune_e, to: fb_carve_e, channel: 沙地, name: 東雕道 }
+  - { from: fb_dune_e, to: fb_chest_a, channel: 沙地, name: 沙坑 }
+  - { from: fb_dune_e, to: fb_exit_e, channel: 沙地, name: 東出口道 }
+  - { from: fb_dune_e, to: fb_opt_wind, channel: 沙地, name: 風蝕徑 }
+  - { from: fb_dune_w, to: fb_carve_w, channel: 沙地, name: 西雕道 }
+  - { from: fb_dune_w, to: fb_hatch_rig, channel: 沙地, name: 裝置道 }
+  - { from: fb_dune_w, to: fb_exit_w, channel: 沙地, name: 西出口道 }
+  - { from: fb_dune_w, to: fb_opt_bones, channel: 沙地, name: 骨堆徑 }
+  - { from: fb_carve_e, to: fb_arch_n, channel: 沙地, name: 北弧道 }
+  - { from: fb_carve_w, to: fb_arch_n, channel: 沙地, name: 北弧道 }
+  - { from: fb_carve_w, to: fb_chest_b, channel: 沙地, name: 雕座下 }
+  - { from: fb_arch_n, to: fb_ring, channel: 沙地, name: 石像道 }
+  - { from: fb_hatch_rig, to: fb_ring, channel: 沙地, name: 內圈道 }
+  - { from: fb_ring, to: tw_base, channel: 塔門, name: 塔門（需第一顆餘燼） }
+  - { from: tw_base, to: tw_eyrie, channel: 螺旋梯, name: 下段梯 }
+  - { from: tw_eyrie, to: tw_stair, channel: 螺旋梯, name: 中段梯 }
+  - { from: tw_stair, to: tw_top, channel: 無盡階, name: 上段梯（無餘燼者向上會回到 tw_eyrie） }
+  - { from: tw_top, to: hr_rift, channel: 裂隙, name: 天穹裂口 }
+  - { from: hr_rift, to: hr_maw, channel: 無方向, name: 開口原 }
+  - { from: hr_rift, to: hr_nameless, channel: 無方向, name: 側 }
+  - { from: hr_maw, to: hr_hollow, channel: 無方向, name: 中央 }
+  - { from: hr_nameless, to: hr_hollow, channel: 無方向, name: 中央 }
+  - { from: ember_vein, to: hr_hollow, channel: 臍帶（Umbilical）, name: 不可通行，可傳火 }

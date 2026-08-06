@@ -1,0 +1,455 @@
+# S3 · 根不吃土（結構化資料，供 AI GM 引擎讀取）
+id: S3
+title: 根不吃土
+realm: 寒風農場（Coldwind Farm, R3） → 霧窖（Fog Cellar）
+recommended_prs: "5-7"
+duration_min: 210
+summary: >-
+  玩法質變的第一站：玩家從「逃生」進入「逃生＋潛入」。第二幕是標準試煉，但第三幕是在試煉進行中偏離主線、潛入霧窖（Fog Cellar）取回第一張記憶卡（Memory Card）。樹根通道三步驟的第二步要求產生一次利他之望（Altruistic Hope）作為鑰匙，使「救人」從道德選擇變成通關必要條件。鏈鋸屠夫（HBY）主場開闊地，是全戰役到目前最痛的一場；霧窖無殺手、無目標，壓力來自收縮倒數與「認出自己」的認知挑戰。
+
+nodes:
+  - id: cw_start
+    label: 起始霧口
+    type: 入口
+    x: 500
+    y: 930
+    region: 田區（fields）
+    explored: true
+  - id: cw_corn_s
+    label: 玉米田·南
+    type: 遮蔽區
+    x: 380
+    y: 810
+    region: 田區（fields）
+    explored: true
+  - id: cw_corn_e
+    label: 玉米田·東
+    type: 遮蔽區
+    x: 720
+    y: 660
+    region: 田區（fields）
+    explored: false
+  - id: cw_corn_w
+    label: 玉米田·西
+    type: 遮蔽區
+    x: 260
+    y: 590
+    region: 田區（fields）
+    explored: false
+  - id: cw_tree
+    label: 獻祭之樹
+    type: 關鍵地標
+    x: 500
+    y: 500
+    region: 田區（fields）
+    explored: true
+  - id: cw_harvester
+    label: 收割機
+    type: 掩體地標
+    x: 640
+    y: 800
+    region: 田區（fields）
+    explored: false
+  - id: cw_abattoir
+    label: 腐臭屠宰場
+    type: 主建物
+    x: 760
+    y: 380
+    region: 建物區（buildings）
+    explored: false
+  - id: cw_abattoir_in
+    label: 屠宰場內部
+    type: 建物內
+    x: 840
+    y: 300
+    region: 建物區（buildings）
+    explored: false
+  - id: cw_house
+    label: 湯普森宅
+    type: 主建物
+    x: 250
+    y: 330
+    region: 建物區（buildings）
+    explored: false
+  - id: cw_house_2f
+    label: 湯普森宅二樓
+    type: 建物層
+    x: 180
+    y: 250
+    region: 建物區（buildings）
+    explored: false
+  - id: cw_silo
+    label: 穀倉筒
+    type: 掩體地標
+    x: 420
+    y: 300
+    region: 建物區（buildings）
+    explored: false
+  - id: cw_chest_a
+    label: 農具棚
+    type: 寶箱（Chest）
+    x: 600
+    y: 260
+    region: 建物區（buildings）
+    explored: false
+  - id: cw_chest_b
+    label: 車庫
+    type: 寶箱（Chest）
+    x: 330
+    y: 700
+    region: 田區（fields）
+    explored: false
+  - id: cw_exit_n
+    label: 北逃生門
+    type: 出口
+    x: 500
+    y: 110
+    region: 建物區（buildings）
+    explored: false
+  - id: cw_exit_se
+    label: 東南逃生門
+    type: 出口
+    x: 880
+    y: 880
+    region: 田區（fields）
+    explored: false
+  - id: cw_opt_well
+    label: 老井
+    type: 可選
+    x: 150
+    y: 780
+    region: 田區（fields）
+    explored: false
+  - id: cw_opt_coop
+    label: 雞舍
+    type: 可選
+    x: 880
+    y: 560
+    region: 田區（fields）
+    explored: false
+  - id: fc_entry
+    label: 霧窖·入口
+    type: 第三幕
+    x: 500
+    y: 500
+    region: 霧窖（cellar）
+    explored: false
+  - id: fc_root_a
+    label: 根系·近層
+    type: 第三幕
+    x: 400
+    y: 430
+    region: 霧窖（cellar）
+    explored: false
+  - id: fc_root_b
+    label: 根系·中層
+    type: 第三幕
+    x: 500
+    y: 380
+    region: 霧窖（cellar）
+    explored: false
+  - id: fc_root_c
+    label: 根系·深層
+    type: 第三幕
+    x: 600
+    y: 430
+    region: 霧窖（cellar）
+    explored: false
+  - id: fc_yours
+    label: 你的那一條
+    type: 第三幕
+    x: 500
+    y: 300
+    region: 霧窖（cellar）
+    explored: false
+
+edges:
+  - from: cw_start
+    to: cw_corn_s
+    channel_type: 開闊
+    name: 田埂
+  - from: cw_start
+    to: cw_harvester
+    channel_type: 開闊
+    name: 農道
+  - from: cw_corn_s
+    to: cw_tree
+    channel_type: 遮蔽
+    name: 穗間
+  - from: cw_corn_s
+    to: cw_chest_b
+    channel_type: 開闊
+    name: 側道
+  - from: cw_corn_s
+    to: cw_opt_well
+    channel_type: 開闊
+    name: 西田埂
+  - from: cw_harvester
+    to: cw_corn_e
+    channel_type: 開闊
+    name: 東田埂
+  - from: cw_harvester
+    to: cw_exit_se
+    channel_type: 開闊
+    name: 東南道
+  - from: cw_corn_e
+    to: cw_tree
+    channel_type: 遮蔽
+    name: 穗間
+  - from: cw_corn_e
+    to: cw_abattoir
+    channel_type: 開闊
+    name: 屠宰道
+  - from: cw_corn_e
+    to: cw_opt_coop
+    channel_type: 開闊
+    name: 雞舍徑
+  - from: cw_corn_w
+    to: cw_tree
+    channel_type: 遮蔽
+    name: 穗間
+  - from: cw_corn_w
+    to: cw_house
+    channel_type: 開闊
+    name: 宅前道
+  - from: cw_corn_w
+    to: cw_chest_b
+    channel_type: 開闊
+    name: 車庫道
+  - from: cw_tree
+    to: cw_silo
+    channel_type: 開闊
+    name: 中央道
+  - from: cw_tree
+    to: fc_entry
+    channel_type: 根道（第三幕）
+    name: 樹下的根道
+  - from: cw_abattoir
+    to: cw_abattoir_in
+    channel_type: 室內門
+    name: 屠宰場大門
+  - from: cw_abattoir
+    to: cw_chest_a
+    channel_type: 開闊
+    name: 農具道
+  - from: cw_abattoir_in
+    to: cw_exit_n
+    channel_type: 窗戶（Window）
+    name: 高窗
+  - from: cw_house
+    to: cw_house_2f
+    channel_type: 樓梯
+    name: 木梯
+  - from: cw_house
+    to: cw_silo
+    channel_type: 開闊
+    name: 穀道
+  - from: cw_house_2f
+    to: cw_corn_w
+    channel_type: 跳下（單向）
+    name: 二樓窗
+  - from: cw_silo
+    to: cw_exit_n
+    channel_type: 開闊
+    name: 北道
+  - from: cw_silo
+    to: cw_chest_a
+    channel_type: 開闊
+    name: 場院
+  - from: fc_entry
+    to: fc_root_a
+    channel_type: 懸垂根
+    name: 攀根
+  - from: fc_entry
+    to: fc_root_c
+    channel_type: 懸垂根
+    name: 攀根
+  - from: fc_root_a
+    to: fc_root_b
+    channel_type: 懸垂根
+    name: 攀根
+  - from: fc_root_c
+    to: fc_root_b
+    channel_type: 懸垂根
+    name: 攀根
+  - from: fc_root_b
+    to: fc_yours
+    channel_type: 懸垂根
+    name: 那一條特別細
+  - from: fc_entry
+    to: cw_tree
+    channel_type: 上升
+    name: 回到地表（時限內）
+
+encounters:
+  - id: E1
+    type: 追逐（Chase）
+    content: 鏈鋸屠夫（HBY）直線衝刺
+    cr: 高（CR 7-9）
+    note: 教學：開闊地致命性
+  - id: E2
+    type: 環境
+    content: 玉米田（視線遮蔽，留下撥動痕跡 2 輪）
+    cr: 中
+    note: 心理戰
+  - id: E3
+    type: 解謎
+    content: 樹皮凹痕規律
+    cr: 中（DC 中等）
+    note: 專注（FOC）
+  - id: E4
+    type: 領域造物（Realm Construct）
+    content: 穗行者＝稻草殘影（RC-04）× N
+    cr: 低-中（CR 2）
+    note: EBC 4／隻，偽裝型，實傷✓
+  - id: E5
+    type: 追逐（Chase）
+    content: 屠宰場內近身追逐（唯一封閉空間）
+    cr: 高
+    note: "-"
+  - id: E6
+    type: 探索
+    content: 霧窖（Fog Cellar）（無殺手，收縮時限壓力）
+    cr: 中
+    note: 第三幕
+  - id: E7
+    type: 抉擇
+    content: 摘哪一顆囊
+    cr: 無檢定
+    note: "-"
+
+npcs:
+  - name: 莎莉·恩科西（Sally Nkosi）
+    role: 植物學者型倖存者（§8-A）
+    lines:
+      - "根不吃土。它吃別的東西。"
+  - name: 低語者（Whisperer）· 根下的女聲（RC-02）
+    role: 情報型造物（EBC 0）
+    lines:
+      - "認得出來嗎？認不出來，就別摘。摘錯了，那個人會看見你。"
+  - name: 回聲同伴（Echo Companion）· 擦手的人
+    role: 單人配置（§8-B）
+    lines:
+      - "它的囊也在霧窖裡，玩家可替它摘（＋3 營火餘燼（Campfire Ember））"
+  - name: 艾洛薇·芬奇（Eloise Finch）
+    role: 營火記錄者（§8-A）
+    lines:
+      - "火會記得——推論，引導潛入"
+
+choices:
+  - id: C1
+    question: 是否產生利他之望（Altruistic Hope）開鎖（核心）
+    options:
+      - desc: 全程獨善其身
+        effect: 無法產生鑰匙，進不去霧窖，只能純逃脫，拿不到記憶卡
+      - desc: 產生利他之望
+        effect: 樹根鬆開，進入霧窖（取記憶卡＋觸發餘燼時刻（Ember Moment））
+  - id: C2
+    question: 霧窖摘囊
+    options:
+      - desc: 摘到自己的囊
+        effect: 1 張記憶卡（用 S1 隨身物連結）
+      - desc: 摘到別人的囊
+        effect: 1 張他人記憶卡（＋1 希望點（HOP）上限，無法歸還；GM 應安排至少一名玩家摘錯，摘到殺手記憶＝S6 伏筆）
+      - desc: 收縮倒數內未離開
+        effect: 失去 3 希望點（HOP），被實體「歸檔」強制回營火
+
+endings:
+  - type: 分支（是否進入霧窖／摘對摘錯）
+    condition: 取決於抉擇一、二
+    ember_moment: 產生利他之望開鎖時觸發
+
+rewards:
+  bp: 標準 ×（依人數表）
+  prs_gain: 完成後升至 7 級
+  hop: "+3"
+  campfire_ember: 過程累積（預估 5-9）
+  memory_card: 1-2 張（依人數表）
+  item: 每人 1 件罕見物品
+  narrative: 記憶被歸檔而非銷毀；餘燼可作為鑰匙
+  new_ability: 可花 1 希望點（HOP）「向記憶卡求助」，重擲一次與該記憶主題相關的檢定
+
+player_count_scaling:
+  n1:
+    generators_total: 4
+    generators_required: 3
+    killer_pressure: 3
+    echo_companions: 2
+    straw_wraiths_RC04: 2
+    hooks: 4
+    chests: 2
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    cellar_pods_per_player: 2
+    cellar_collapse_limit: 6
+    bp_multiplier: 1.1
+    hop_reward: 3
+    memory_cards: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 4
+    killer_pressure: 3
+    echo_companions: 1
+    straw_wraiths_RC04: 2
+    hooks: 5
+    chests: 3
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    cellar_pods_per_player: 1
+    cellar_collapse_limit: 5
+    bp_multiplier: 1.05
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 3
+    echo_companions: 0
+    straw_wraiths_RC04: 3
+    hooks: 6
+    chests: 3
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    cellar_pods_per_player: 1
+    cellar_collapse_limit: 5
+    bp_multiplier: 1.0
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 4
+    echo_companions: 0
+    straw_wraiths_RC04: 3
+    hooks: 8
+    chests: 4
+    lockers: 8
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    cellar_pods_per_player: 1
+    cellar_collapse_limit: 4
+    bp_multiplier: 1.0
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.05
+  prs_mid: 6
+  eb:
+    n1: 8
+    n2: 17
+    n3: 25
+    n4: 34
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: 鏈鋸屠夫（HBY）
+  killer_avm: 2
+  killer_cr: "PRS + 2（CR 7-9）"
+  construct_RC04: 稻草殘影（RC-04）CR2／HP18／攻擊+3／DC11／EBC4／實傷✓

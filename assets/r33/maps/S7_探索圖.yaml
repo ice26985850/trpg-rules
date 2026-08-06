@@ -1,0 +1,57 @@
+# S7 探索圖 · 血紅森林（Red Forest, R7）
+meta:
+  id: S7
+  name: S7 探索圖·血紅森林與淨罪神殿
+  realm: 血紅森林（Red Forest, R7）
+  regions: [林地（forest）, 神殿一層（temple_1）, 神殿二層（temple_2）, 神殿三層（temple_3）]
+  coord_range: 0-1000
+nodes:
+  - { id: rf_start, name: 起始霧口, region: 林地（forest）, type: 入口, x: 500, y: 940, connections: [rf_clearing] }
+  - { id: rf_clearing, name: 落葉空地, region: 林地（forest）, type: 開闊, x: 500, y: 830, connections: [rf_start, rf_dwelling, rf_deep_e, rf_opt_cabin, rf_opt_grave] }
+  - { id: rf_dwelling, name: 母之居, region: 林地（forest）, type: 主建物, x: 260, y: 740, connections: [rf_clearing, rf_hearth, rf_deep_w, rf_exit_sw] }
+  - { id: rf_hearth, name: 母之居火塘, region: 林地（forest）, type: 特殊, x: 170, y: 660, connections: [rf_dwelling] }
+  - { id: rf_deep_e, name: 深林·東, region: 林地（forest）, type: 開闊, x: 740, y: 700, connections: [rf_clearing, rf_stones, rf_chest_a, rf_hiddendoor] }
+  - { id: rf_deep_w, name: 深林·西, region: 林地（forest）, type: 開闊, x: 260, y: 540, connections: [rf_dwelling, rf_leafsea, rf_chest_b] }
+  - { id: rf_stones, name: 立石圈, region: 林地（forest）, type: 地標, x: 620, y: 560, connections: [rf_deep_e, rf_leafsea, rf_opt_altar] }
+  - { id: rf_leafsea, name: 紅葉海, region: 林地（forest）, type: 特殊, x: 430, y: 620, connections: [rf_deep_w, rf_stones, rf_temple_ent] }
+  - { id: rf_temple_ent, name: 淨罪神殿·入口, region: 林地（forest）, type: 主地標, x: 500, y: 450, connections: [rf_leafsea, rf_stones, rf_exit_n, tp1_hall] }
+  - { id: rf_chest_a, name: 樹洞寶箱, region: 林地（forest）, type: 寶箱（Chest）, x: 800, y: 560, connections: [rf_deep_e] }
+  - { id: rf_chest_b, name: 石下寶箱, region: 林地（forest）, type: 寶箱（Chest）, x: 180, y: 440, connections: [rf_deep_w] }
+  - { id: rf_exit_n, name: 北逃生門, region: 林地（forest）, type: 出口, x: 660, y: 200, connections: [rf_temple_ent] }
+  - { id: rf_exit_sw, name: 西南逃生門, region: 林地（forest）, type: 出口, x: 120, y: 880, connections: [rf_dwelling] }
+  - { id: rf_hiddendoor, name: 拾遺者的隱門, region: 林地（forest）, type: 特殊, x: 860, y: 840, connections: [rf_deep_e] }
+  - { id: rf_opt_altar, name: 血祭壇, region: 林地（forest）, type: 可選, x: 830, y: 400, connections: [rf_stones] }
+  - { id: rf_opt_cabin, name: 獵人小屋, region: 林地（forest）, type: 可選, x: 350, y: 890, connections: [rf_clearing] }
+  - { id: rf_opt_grave, name: 無名墓, region: 林地（forest）, type: 可選, x: 640, y: 890, connections: [rf_clearing] }
+  - { id: tp1_hall, name: 神殿一層·柱廳, region: 神殿一層（temple_1）, type: 神殿, x: 500, y: 370, connections: [rf_temple_ent, tp1_side, tp2_spiral] }
+  - { id: tp1_side, name: 一層·側室, region: 神殿一層（temple_1）, type: 神殿, x: 380, y: 330, connections: [tp1_hall] }
+  - { id: tp2_spiral, name: 二層·錯階, region: 神殿二層（temple_2）, type: 神殿, x: 500, y: 290, connections: [tp1_hall, tp2_mirror, tp3_niche] }
+  - { id: tp2_mirror, name: 二層·鏡廊, region: 神殿二層（temple_2）, type: 神殿, x: 620, y: 250, connections: [tp2_spiral, tp3_observer] }
+  - { id: tp3_niche, name: 餘燼龕, region: 神殿三層（temple_3）, type: 關鍵, x: 500, y: 180, connections: [tp2_spiral, tp3_observer] }
+  - { id: tp3_observer, name: 持鏡人所在, region: 神殿三層（temple_3）, type: 特殊, x: 400, y: 140, connections: [tp2_mirror, tp3_niche] }
+edges:
+  - { from: rf_start, to: rf_clearing, channel: 落葉地, name: 林徑 }
+  - { from: rf_clearing, to: rf_dwelling, channel: 落葉地, name: 屋前徑 }
+  - { from: rf_clearing, to: rf_deep_e, channel: 落葉地, name: 東林徑 }
+  - { from: rf_clearing, to: rf_opt_cabin, channel: 落葉地, name: 獵徑 }
+  - { from: rf_clearing, to: rf_opt_grave, channel: 落葉地, name: 舊墳道 }
+  - { from: rf_dwelling, to: rf_hearth, channel: 室內, name: 屋內 }
+  - { from: rf_dwelling, to: rf_deep_w, channel: 落葉地, name: 西林徑 }
+  - { from: rf_dwelling, to: rf_exit_sw, channel: 落葉地, name: 西南徑 }
+  - { from: rf_deep_e, to: rf_stones, channel: 落葉地, name: 石徑 }
+  - { from: rf_deep_e, to: rf_chest_a, channel: 落葉地, name: 樹洞 }
+  - { from: rf_deep_e, to: rf_hiddendoor, channel: 落葉地, name: 東南徑 }
+  - { from: rf_deep_w, to: rf_leafsea, channel: 落葉地, name: 葉緣 }
+  - { from: rf_deep_w, to: rf_chest_b, channel: 落葉地, name: 石下 }
+  - { from: rf_stones, to: rf_leafsea, channel: 落葉地, name: 石環外 }
+  - { from: rf_stones, to: rf_opt_altar, channel: 落葉地, name: 祭道 }
+  - { from: rf_leafsea, to: rf_temple_ent, channel: 紅葉海, name: 葉下（瀕死爬行完全隱蔽） }
+  - { from: rf_stones, to: rf_temple_ent, channel: 落葉地, name: 神殿道 }
+  - { from: rf_temple_ent, to: rf_exit_n, channel: 落葉地, name: 北徑 }
+  - { from: rf_temple_ent, to: tp1_hall, channel: 下行階, name: 第一階（高度不一致） }
+  - { from: tp1_hall, to: tp1_side, channel: 石門, name: 側室門（門框太窄） }
+  - { from: tp1_hall, to: tp2_spiral, channel: 下行階, name: 錯階（回頭走會多一階） }
+  - { from: tp2_spiral, to: tp2_mirror, channel: 石廊, name: 鏡廊（兩端看起來一樣） }
+  - { from: tp2_spiral, to: tp3_niche, channel: 下行階, name: 最後一階 }
+  - { from: tp2_mirror, to: tp3_observer, channel: 石廊, name: 深處 }
+  - { from: tp3_niche, to: tp3_observer, channel: 石廊, name: 龕側 }

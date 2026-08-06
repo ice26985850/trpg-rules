@@ -1,0 +1,222 @@
+# 世界地圖（領域關係圖，拓撲關係，非地理圖）
+# 座標範圍 0-1000，y 上小下大。共 20 節點、32 連線。
+# 註：指令預期 33 連線，但 40 檔 §3-3 實際錄為 32 條，此處忠實轉錄 32 條。
+meta:
+  name: 世界地圖（World Map）
+  type: 領域關係圖（拓撲）
+  coord_range: 0-1000
+  note: 實體的領域以非歐幾里得拼接，距離無意義，連線關係才有意義。營火正中、八領域環內環、虛空在下緣、孤塔左上、無名之心正上方最遠。
+  regions:
+    - { id: core, 中文名: 核心層, 說明: 營火與其正下方的結構, 底色: 暖橙 }
+    - { id: realm_belt, 中文名: 內環·領域帶, 說明: 八個試煉領域, 底色: 冷灰 }
+    - { id: rift_belt, 中文名: 外緣·裂界帶, 說明: 實體控制不完全的異常空間, 底色: 靛藍 }
+    - { id: void, 中文名: 外緣·虛空, 說明: 棄置地, 底色: 近黑紫 }
+    - { id: mortal, 中文名: 現實側, 說明: 滲點所在，不屬於實體領域, 底色: 濁綠 }
+
+nodes:
+  - id: campfire
+    name: 營火
+    realm: core
+    type: 營火
+    x: 500
+    y: 500
+    visible: true
+    connections: [macmillan, autohaven, coldwind, crotus, swamp, lery, redforest, boneyard, ember_vein]
+  - id: macmillan
+    name: 麥克米蘭莊園
+    realm: realm_belt
+    type: 領域
+    x: 500
+    y: 270
+    visible: true
+    connections: [campfire, autohaven, boneyard]
+  - id: autohaven
+    name: 廢車場
+    realm: realm_belt
+    type: 領域
+    x: 663
+    y: 337
+    visible: true
+    connections: [campfire, macmillan, coldwind]
+  - id: coldwind
+    name: 寒風農場
+    realm: realm_belt
+    type: 領域
+    x: 730
+    y: 500
+    visible: true
+    connections: [campfire, autohaven, crotus, fog_cellar]
+  - id: crotus
+    name: 克羅特斯精神病院
+    realm: realm_belt
+    type: 領域
+    x: 663
+    y: 663
+    visible: true
+    connections: [campfire, coldwind, swamp, fog_cellar]
+  - id: swamp
+    name: 死水沼澤
+    realm: realm_belt
+    type: 領域
+    x: 500
+    y: 730
+    visible: true
+    connections: [campfire, crotus, void_verge, bleed_unknown]
+  - id: lery
+    name: 雷利紀念研究所
+    realm: realm_belt
+    type: 領域
+    x: 337
+    y: 663
+    visible: true
+    connections: [campfire, redforest, hidden_workshop]
+  - id: redforest
+    name: 血紅森林
+    realm: realm_belt
+    type: 領域
+    x: 270
+    y: 500
+    visible: true
+    connections: [campfire, lery, hidden_workshop, boneyard, nameless_heart]
+  - id: boneyard
+    name: 遺棄骨場
+    realm: realm_belt
+    type: 領域
+    x: 337
+    y: 337
+    visible: true
+    connections: [campfire, redforest, lone_tower]
+  - id: hatch_drift
+    name: 地窖漂流點
+    realm: core
+    type: 特殊
+    x: 612
+    y: 428
+    visible: true
+    note: 位置每場變動；地窖（Hatch）不固定於任一領域
+    connections: [campfire]
+  - id: fog_cellar
+    name: 霧窖
+    realm: rift_belt
+    type: 特殊
+    x: 838
+    y: 618
+    visible: false
+    unlock: S3
+    connections: [coldwind, crotus]
+  - id: hidden_workshop
+    name: 隱室
+    realm: rift_belt
+    type: 特殊
+    x: 162
+    y: 618
+    visible: false
+    unlock: S5
+    connections: [void_midden, lery, redforest]
+  - id: lone_tower
+    name: 孤塔
+    realm: rift_belt
+    type: 特殊
+    x: 210
+    y: 178
+    visible: false
+    unlock: S7
+    connections: [boneyard, nameless_heart]
+  - id: void_verge
+    name: 虛空·沉沒帶
+    realm: void
+    type: 虛空
+    x: 500
+    y: 900
+    visible: false
+    unlock: S5
+    connections: [swamp, void_haunts, void_midden]
+  - id: void_haunts
+    name: 虛空·殘影原
+    realm: void
+    type: 虛空
+    x: 762
+    y: 852
+    visible: false
+    unlock: S5
+    connections: [void_verge]
+  - id: void_midden
+    name: 虛空·棄物淵
+    realm: void
+    type: 虛空
+    x: 238
+    y: 852
+    visible: false
+    unlock: S5
+    connections: [void_verge, hidden_workshop]
+  - id: ember_vein
+    name: 餘燼脈
+    realm: core
+    type: 特殊
+    x: 500
+    y: 596
+    visible: false
+    unlock: S7
+    connections: [campfire, nameless_heart]
+  - id: nameless_heart
+    name: 無名之心
+    realm: core
+    type: 特殊
+    x: 500
+    y: 62
+    visible: false
+    unlock: S8
+    note: 全圖視覺伏筆；玩家首次看圖即注意到紅線（臍帶），S7 才知是什麼
+    connections: [lone_tower, ember_vein, redforest]
+  - id: bleed_weeks
+    name: 滲點·威克斯鎮
+    realm: mortal
+    type: 特殊
+    x: 890
+    y: 200
+    visible: false
+    unlock: S2
+    connections: [macmillan]
+  - id: bleed_unknown
+    name: 滲點·未名
+    realm: mortal
+    type: 特殊
+    x: 110
+    y: 862
+    visible: false
+    unlock: S8
+    connections: [swamp]
+
+edges:
+  - { from: campfire, to: macmillan, type: 迷霧通道, name: 霧路·鏽鐵, condition: 實體指派 }
+  - { from: campfire, to: autohaven, type: 迷霧通道, name: 霧路·鐵谷, condition: 實體指派 }
+  - { from: campfire, to: coldwind, type: 迷霧通道, name: 霧路·穗浪, condition: 實體指派 }
+  - { from: campfire, to: crotus, type: 迷霧通道, name: 霧路·焦灰, condition: 實體指派 }
+  - { from: campfire, to: swamp, type: 迷霧通道, name: 霧路·濁水, condition: 實體指派 }
+  - { from: campfire, to: lery, type: 迷霧通道, name: 霧路·白瓷, condition: 實體指派 }
+  - { from: campfire, to: redforest, type: 迷霧通道, name: 霧路·紅頂, condition: 實體指派 }
+  - { from: campfire, to: boneyard, type: 迷霧通道, name: 霧路·風沙, condition: 實體指派 }
+  - { from: macmillan, to: autohaven, type: 霧縫, name: 銹縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: autohaven, to: coldwind, type: 霧縫, name: 穀鐵縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: coldwind, to: crotus, type: 霧縫, name: 病田縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: crotus, to: swamp, type: 霧縫, name: 灰水縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: swamp, to: lery, type: 霧縫, name: 排污縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: lery, to: redforest, type: 霧縫, name: 根管縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: redforest, to: boneyard, type: 霧縫, name: 落葉縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: boneyard, to: macmillan, type: 霧縫, name: 塵鏽縫, condition: 僅在供品（Offering）燃燒時開啟 }
+  - { from: coldwind, to: fog_cellar, type: 根道, name: 樹下的根道, condition: S3 完成後永久 }
+  - { from: crotus, to: fog_cellar, type: 檔案通道, name: 病歷長廊, condition: S4 完成後永久 }
+  - { from: swamp, to: void_verge, type: 下沉通道, name: 沉沒階, condition: S5 期間單向向下；完成後雙向 }
+  - { from: void_verge, to: void_haunts, type: 虛空漂移, name: 殘影漂, condition: 虛空內自由 }
+  - { from: void_verge, to: void_midden, type: 虛空漂移, name: 棄物漂, condition: 虛空內自由 }
+  - { from: void_midden, to: hidden_workshop, type: 分類誤判, name: 棄物迴流, condition: 單向（虛空→隱室），需在虛空中重新產生情緒 }
+  - { from: hidden_workshop, to: lery, type: 暗渠, name: 排水暗渠, condition: S5 完成後永久 }
+  - { from: hidden_workshop, to: redforest, type: 隱門, name: 拾遺者的隱門, condition: S5 完成後永久 }
+  - { from: boneyard, to: lone_tower, type: 攀升, name: 無盡階, condition: 需持有餘燼（Ember）方能真正向上 }
+  - { from: lone_tower, to: nameless_heart, type: 裂隙, name: 天穹裂口, condition: 僅 S8 第三幕 }
+  - { from: campfire, to: ember_vein, type: 下探, name: 燼下, condition: S7 完成後 }
+  - { from: ember_vein, to: nameless_heart, type: 同源臍帶, name: 臍帶, condition: 不可通行，但可傳火（S8 燎原路線） }
+  - { from: redforest, to: nameless_heart, type: 最初的根, name: 最初的根, condition: 不可通行；僅供光環／視覺提示 }
+  - { from: bleed_weeks, to: macmillan, type: 滲透, name: 滲入, condition: 單向（現實→領域） }
+  - { from: bleed_unknown, to: swamp, type: 滲透, name: 滲入, condition: 單向（現實→領域） }
+  - { from: hatch_drift, to: campfire, type: 逃脫, name: 地窖（Hatch）, condition: 僅在人數條件達成時開啟 }

@@ -1,0 +1,24 @@
+# S7 戰鬥圖 02 · 神殿內存活（E6，追加試煉）
+meta:
+  id: S7_戰鬥圖_02
+  name: S7 戰鬥圖·淨罪神殿內存活
+  scenario: S7
+  scene: E6（追加試煉）
+  note: 若營火餘燼（Campfire Ember）< 門檻，須在神殿內存活指定輪數後帶餘燼離開（傳奇難度）。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 12
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 石柱（掩體）, rect: { x: 3, y: 2, w: 1, h: 3 } }
+  - { id: t2, type: 石柱（掩體）, rect: { x: 8, y: 5, w: 1, h: 3 } }
+  - { id: t3, type: 錯階（回頭走會多一階，錯誤比例）, rect: { x: 5, y: 7, w: 2, h: 2 } }
+  - { id: t4, type: 牆體（不可通行）, rect: { x: 0, y: 0, w: 12, h: 1 } }
+objects:
+  - { id: o1, type: 餘燼龕（The Ember Niche）出口, x: 6, y: 9 }
+  - { id: o2, type: 窗戶（Window）, x: 11, y: 4 }
+  - { id: o3, type: 掛鉤（Hook）, x: 6, y: 2 }
+  - { id: o4, type: 寶箱（Chest）, x: 1, y: 1 }
+  - { id: o5, type: 持鏡人所在, x: 2, y: 8 }
+spawn_survivor: { x: 6, y: 9 }
+spawn_killer: { x: 11, y: 1, note: 獵斧女（HTR）或緘默者（SIL）依 S6 選擇；存活輪數見 S7 人數表 }
+survival_trial: true

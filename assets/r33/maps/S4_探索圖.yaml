@@ -1,0 +1,52 @@
+# S4 探索圖 · 克羅特斯精神病院（Crotus Prenn Asylum, R4）
+meta:
+  id: S4
+  name: S4 探索圖·克羅特斯精神病院
+  realm: 克羅特斯精神病院（Crotus Prenn Asylum, R4）
+  regions: [病房區（ward）, 禮拜堂區（chapel）, 病歷區（records）]
+  coord_range: 0-1000
+nodes:
+  - { id: cp_start, name: 起始霧口, region: 病房區（ward）, type: 入口, x: 500, y: 930, connections: [cp_lobby] }
+  - { id: cp_lobby, name: 焦黑門廳, region: 病房區（ward）, type: 樞紐, x: 500, y: 820, connections: [cp_start, cp_ward_1f, cp_corridor_e, cp_opt_morgue] }
+  - { id: cp_ward_1f, name: 擾動病房·一樓, region: 病房區（ward）, type: 主區, x: 340, y: 700, connections: [cp_lobby, cp_ward_2f, cp_ect, cp_atrium] }
+  - { id: cp_ward_2f, name: 擾動病房·二樓, region: 病房區（ward）, type: 主區, x: 280, y: 570, connections: [cp_ward_1f, cp_atrium, cp_corridor_n] }
+  - { id: cp_ward_3f, name: 擾動病房·三樓, region: 病房區（ward）, type: 主區, x: 220, y: 440, connections: [cp_ward_2f, cp_exit_w, cp_atrium] }
+  - { id: cp_atrium, name: 天井, region: 病房區（ward）, type: 特殊, x: 400, y: 570, connections: [cp_ward_1f, cp_ward_2f, cp_ward_3f] }
+  - { id: cp_ect, name: 電療室, region: 病房區（ward）, type: 房間／殘影, x: 180, y: 700, connections: [cp_ward_1f] }
+  - { id: cp_corridor_e, name: 東長廊, region: 禮拜堂區（chapel）, type: 通道, x: 660, y: 700, connections: [cp_lobby, cp_chapel, cp_exit_e] }
+  - { id: cp_chapel, name: 坎貝爾神父的禮拜堂, region: 禮拜堂區（chapel）, type: 主區, x: 780, y: 570, connections: [cp_corridor_e, cp_pulpit, cp_chest_b, cp_opt_bell] }
+  - { id: cp_pulpit, name: 講壇暗門, region: 禮拜堂區（chapel）, type: 特殊, x: 860, y: 470, connections: [cp_chapel, cp_corridor_n] }
+  - { id: cp_corridor_n, name: 北長廊, region: 病歷區（records）, type: 通道, x: 500, y: 470, connections: [cp_ward_2f, cp_pulpit, cp_door17, cp_chest_a] }
+  - { id: cp_records, name: 病歷室, region: 病歷區（records）, type: 關鍵, x: 500, y: 330, connections: [cp_door17, cp_crack] }
+  - { id: cp_door17, name: 十七號站的地方, region: 病歷區（records）, type: 殘影, x: 500, y: 410, connections: [cp_corridor_n, cp_records] }
+  - { id: cp_chest_a, name: 藥品櫃, region: 病歷區（records）, type: 寶箱（Chest）, x: 340, y: 400, connections: [cp_corridor_n] }
+  - { id: cp_chest_b, name: 神父的箱子, region: 禮拜堂區（chapel）, type: 寶箱（Chest）, x: 830, y: 660, connections: [cp_chapel] }
+  - { id: cp_crack, name: 外牆裂縫, region: 病歷區（records）, type: 特殊, x: 620, y: 250, connections: [cp_records, cp_exit_e] }
+  - { id: cp_exit_w, name: 西逃生門, region: 病房區（ward）, type: 出口, x: 110, y: 300, connections: [cp_ward_3f] }
+  - { id: cp_exit_e, name: 東逃生門, region: 禮拜堂區（chapel）, type: 出口, x: 900, y: 830, connections: [cp_corridor_e, cp_crack] }
+  - { id: cp_opt_morgue, name: 停屍間, region: 病房區（ward）, type: 可選, x: 640, y: 880, connections: [cp_lobby] }
+  - { id: cp_opt_bell, name: 鐘樓, region: 禮拜堂區（chapel）, type: 可選, x: 890, y: 380, connections: [cp_chapel] }
+edges:
+  - { from: cp_start, to: cp_lobby, channel: 室內, name: 焦黑玄關 }
+  - { from: cp_lobby, to: cp_ward_1f, channel: 室內門, name: 病房門 }
+  - { from: cp_lobby, to: cp_corridor_e, channel: 室內, name: 東廊口 }
+  - { from: cp_lobby, to: cp_opt_morgue, channel: 下行梯, name: 地下梯 }
+  - { from: cp_ward_1f, to: cp_ward_2f, channel: 樓梯, name: 病房梯 }
+  - { from: cp_ward_1f, to: cp_ect, channel: 室內門, name: 電療室門 }
+  - { from: cp_ward_1f, to: cp_atrium, channel: 開口, name: 天井底 }
+  - { from: cp_ward_2f, to: cp_ward_3f, channel: 樓梯, name: 病房梯 }
+  - { from: cp_ward_2f, to: cp_atrium, channel: 窗戶（Window）, name: 天井欄杆（跳下至一樓，受傷） }
+  - { from: cp_ward_2f, to: cp_corridor_n, channel: 室內, name: 北廊口 }
+  - { from: cp_ward_3f, to: cp_exit_w, channel: 室內, name: 西側逃生梯 }
+  - { from: cp_ward_3f, to: cp_atrium, channel: 跳下（單向）, name: 三樓欄杆（瀕死） }
+  - { from: cp_corridor_e, to: cp_chapel, channel: 室內門, name: 禮拜堂門 }
+  - { from: cp_corridor_e, to: cp_exit_e, channel: 室內, name: 東出口 }
+  - { from: cp_chapel, to: cp_pulpit, channel: 暗門, name: 講壇後 }
+  - { from: cp_chapel, to: cp_chest_b, channel: 室內, name: 聖器室 }
+  - { from: cp_chapel, to: cp_opt_bell, channel: 樓梯, name: 鐘樓梯 }
+  - { from: cp_pulpit, to: cp_corridor_n, channel: 密道, name: 神父的路 }
+  - { from: cp_corridor_n, to: cp_door17, channel: 室內, name: 病歷室前廳 }
+  - { from: cp_corridor_n, to: cp_chest_a, channel: 室內, name: 藥品間 }
+  - { from: cp_door17, to: cp_records, channel: 單門, name: 病歷室門（唯一出入口） }
+  - { from: cp_records, to: cp_crack, channel: 破口, name: 外牆裂縫（第三幕後可通行） }
+  - { from: cp_crack, to: cp_exit_e, channel: 室外, name: 外牆邊 }

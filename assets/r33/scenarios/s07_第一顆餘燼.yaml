@@ -1,0 +1,446 @@
+# S7 · 第一顆餘燼（結構化資料，供 AI GM 引擎讀取）
+id: S7
+title: 第一顆餘燼
+realm: 血紅森林（Red Forest, R7）
+recommended_prs: "15-18"
+duration_min: 300
+summary: >-
+  主線的武裝劇本：玩家取得第一顆餘燼（The First Ember），並理解營火是什麼、餘燼脈（Ember Vein）與臍帶（Umbilical）是什麼。厚落葉層讓「瀕死爬行反而安全」——全戰役最反直覺的設計。獵斧女（HTR）遠程投擲，「距離不再安全」。第三幕下淨罪神殿三層，抵達餘燼龕（Ember Niche）取走第一顆餘燼。揭示臍帶：餘燼從實體（The Entity）身上出來，與它同一種東西，火是會傳的。
+
+nodes:
+  - id: rf_start
+    label: 起始霧口
+    type: 入口
+    x: 500
+    y: 940
+    region: 林地（forest）
+    explored: true
+  - id: rf_clearing
+    label: 落葉空地
+    type: 開闊
+    x: 500
+    y: 830
+    region: 林地（forest）
+    explored: true
+  - id: rf_dwelling
+    label: 母之居
+    type: 主建物
+    x: 260
+    y: 740
+    region: 林地（forest）
+    explored: true
+  - id: rf_hearth
+    label: 母之居火塘
+    type: 特殊
+    x: 170
+    y: 660
+    region: 林地（forest）
+    explored: false
+  - id: rf_deep_e
+    label: 深林·東
+    type: 開闊
+    x: 740
+    y: 700
+    region: 林地（forest）
+    explored: false
+  - id: rf_deep_w
+    label: 深林·西
+    type: 開闊
+    x: 260
+    y: 540
+    region: 林地（forest）
+    explored: false
+  - id: rf_stones
+    label: 立石圈
+    type: 地標
+    x: 620
+    y: 560
+    region: 林地（forest）
+    explored: false
+  - id: rf_leafsea
+    label: 紅葉海
+    type: 特殊
+    x: 430
+    y: 620
+    region: 林地（forest）
+    explored: false
+  - id: rf_temple_ent
+    label: 淨罪神殿·入口
+    type: 主地標
+    x: 500
+    y: 450
+    region: 林地（forest）
+    explored: false
+  - id: rf_chest_a
+    label: 樹洞寶箱
+    type: 寶箱（Chest）
+    x: 800
+    y: 560
+    region: 林地（forest）
+    explored: false
+  - id: rf_chest_b
+    label: 石下寶箱
+    type: 寶箱（Chest）
+    x: 180
+    y: 440
+    region: 林地（forest）
+    explored: false
+  - id: rf_exit_n
+    label: 北逃生門
+    type: 出口
+    x: 660
+    y: 200
+    region: 林地（forest）
+    explored: false
+  - id: rf_exit_sw
+    label: 西南逃生門
+    type: 出口
+    x: 120
+    y: 880
+    region: 林地（forest）
+    explored: false
+  - id: rf_hiddendoor
+    label: 拾遺者的隱門
+    type: 特殊
+    x: 860
+    y: 840
+    region: 林地（forest）
+    explored: true（S5 完成者）
+  - id: rf_opt_altar
+    label: 血祭壇
+    type: 可選
+    x: 830
+    y: 400
+    region: 林地（forest）
+    explored: false
+  - id: rf_opt_cabin
+    label: 獵人小屋
+    type: 可選
+    x: 350
+    y: 890
+    region: 林地（forest）
+    explored: false
+  - id: rf_opt_grave
+    label: 無名墓
+    type: 可選
+    x: 640
+    y: 890
+    region: 林地（forest）
+    explored: false
+  - id: tp1_hall
+    label: 神殿一層·柱廳
+    type: 神殿
+    x: 500
+    y: 370
+    region: 神殿一層（temple_1）
+    explored: false
+  - id: tp1_side
+    label: 一層·側室
+    type: 神殿
+    x: 380
+    y: 330
+    region: 神殿一層（temple_1）
+    explored: false
+  - id: tp2_spiral
+    label: 二層·錯階
+    type: 神殿
+    x: 500
+    y: 290
+    region: 神殿二層（temple_2）
+    explored: false
+  - id: tp2_mirror
+    label: 二層·鏡廊
+    type: 神殿
+    x: 620
+    y: 250
+    region: 神殿二層（temple_2）
+    explored: false
+  - id: tp3_niche
+    label: 餘燼龕
+    type: 關鍵
+    x: 500
+    y: 180
+    region: 神殿三層（temple_3）
+    explored: false
+  - id: tp3_observer
+    label: 持鏡人所在
+    type: 特殊
+    x: 400
+    y: 140
+    region: 神殿三層（temple_3）
+    explored: false
+
+edges:
+  - from: rf_start
+    to: rf_clearing
+    channel_type: 落葉地
+    name: 林徑
+  - from: rf_clearing
+    to: rf_dwelling
+    channel_type: 落葉地
+    name: 屋前徑
+  - from: rf_clearing
+    to: rf_deep_e
+    channel_type: 落葉地
+    name: 東林徑
+  - from: rf_clearing
+    to: rf_opt_cabin
+    channel_type: 落葉地
+    name: 獵徑
+  - from: rf_clearing
+    to: rf_opt_grave
+    channel_type: 落葉地
+    name: 舊墳道
+  - from: rf_dwelling
+    to: rf_hearth
+    channel_type: 室內
+    name: 屋內
+  - from: rf_dwelling
+    to: rf_deep_w
+    channel_type: 落葉地
+    name: 西林徑
+  - from: rf_dwelling
+    to: rf_exit_sw
+    channel_type: 落葉地
+    name: 西南徑
+  - from: rf_deep_e
+    to: rf_stones
+    channel_type: 落葉地
+    name: 石徑
+  - from: rf_deep_e
+    to: rf_chest_a
+    channel_type: 落葉地
+    name: 樹洞
+  - from: rf_deep_e
+    to: rf_hiddendoor
+    channel_type: 落葉地
+    name: 東南徑
+  - from: rf_deep_w
+    to: rf_leafsea
+    channel_type: 落葉地
+    name: 葉緣
+  - from: rf_deep_w
+    to: rf_chest_b
+    channel_type: 落葉地
+    name: 石下
+  - from: rf_stones
+    to: rf_leafsea
+    channel_type: 落葉地
+    name: 石環外
+  - from: rf_stones
+    to: rf_opt_altar
+    channel_type: 落葉地
+    name: 祭道
+  - from: rf_leafsea
+    to: rf_temple_ent
+    channel_type: 紅葉海
+    name: 葉下（瀕死爬行完全隱蔽）
+  - from: rf_stones
+    to: rf_temple_ent
+    channel_type: 落葉地
+    name: 神殿道
+  - from: rf_temple_ent
+    to: rf_exit_n
+    channel_type: 落葉地
+    name: 北徑
+  - from: rf_temple_ent
+    to: tp1_hall
+    channel_type: 下行階
+    name: 第一階（高度不一致）
+  - from: tp1_hall
+    to: tp1_side
+    channel_type: 石門
+    name: 側室門（門框太窄）
+  - from: tp1_hall
+    to: tp2_spiral
+    channel_type: 下行階
+    name: 錯階（回頭走會多一階）
+  - from: tp2_spiral
+    to: tp2_mirror
+    channel_type: 石廊
+    name: 鏡廊（兩端看起來一樣）
+  - from: tp2_spiral
+    to: tp3_niche
+    channel_type: 下行階
+    name: 最後一階
+  - from: tp2_mirror
+    to: tp3_observer
+    channel_type: 石廊
+    name: 深處
+  - from: tp3_niche
+    to: tp3_observer
+    channel_type: 石廊
+    name: 龕側
+
+encounters:
+  - id: E1
+    type: 追逐（Chase）
+    content: 獵斧女（HTR）遠程投擲
+    cr: 極高（CR 16-19）
+    note: 教學：開闊林地無安全距離
+  - id: E2
+    type: 環境
+    content: 厚落葉層（雙面刃）
+    cr: 中
+    note: 瀕死爬行隱蔽
+  - id: E3
+    type: 領域造物（Realm Construct）
+    content: 葉下者＝血葉群（RC-08）× N
+    cr: 中-高（CR 4）
+    note: EBC 8／隻，追蹤標記型
+  - id: E4
+    type: 探索
+    content: 淨罪神殿三層下降
+    cr: 困難（DC 困難）
+    note: 錯誤比例
+  - id: E5
+    type: 解謎
+    content: 神殿錯誤比例（回頭走會不一樣）
+    cr: 極難
+    note: "-"
+  - id: E6
+    type: 追加試煉
+    content: 若營火餘燼（Campfire Ember）< 門檻：神殿內存活
+    cr: 傳奇
+    note: 見人數表
+
+npcs:
+  - name: 無名（Nameless）
+    role: 骸骨／第一位倖存者（§8-D）
+    lines:
+      - "我本來已經出去了。門開著。我一隻腳已經在外面。然後我聽見後面有人在叫。我不認識他。我回頭的時候沒有想什麼。只是覺得，一個人出去，好像不太對。……我把它放在這裡。如果你讀到這裡——那你大概也回過頭。把它拿走。"
+  - name: 艾洛薇·芬奇（Eloise Finch）
+    role: 營火記錄者（§8-A）
+    lines:
+      - "「我們讓它吐更多呢？」（軸心台詞）"
+  - name: 持鏡人·阿黎（Ari）
+    role: 首次現身（§8-D）
+    lines:
+      - "提供 S8 路徑：孤塔（Lone Tower）"
+  - name: 希爾妲／緘默者（SIL）
+    role: 依 S6 選擇（§8-A）
+    lines:
+      - "若已重鑄，作為第二名殺手登場；若已救回，協助玩家"
+
+choices:
+  - id: C1
+    question: 是否主動趴下（厚落葉層）
+    options:
+      - desc: 站立逃跑
+        effect: 留 3 輪痕跡、有腳步聲
+      - desc: 瀕死爬行
+        effect: 完全隱蔽但慢；全戰役最安全的移動方式，也是 S8「主動放棄逃脫」的心理準備
+  - id: C2
+    question: 營火餘燼（Campfire Ember）是否達門檻
+    options:
+      - desc: 達門檻
+        effect: 直接取得第一顆餘燼（The First Ember）
+      - desc: 未達
+        effect: 觸發追加試煉（神殿內存活輪數後取得）
+
+endings:
+  - type: 分支（取餘燼是否觸發追加試煉）
+    condition: 取決於抉擇二
+    ember_moment: 取得第一顆餘燼時觸發
+
+rewards:
+  bp: 標準 ×（依人數表）
+  prs_gain: 完成後升至 18 級
+  hop: "+5"
+  campfire_ember: 過程累積（預估 10-18）
+  memory_card: 2-3 張
+  item: 每人 1 件非常罕見物品 ＋ 2 個加裝 ＋ 1 個供品
+  key_item: 第一顆餘燼（The First Ember）——① 可在孤塔無盡階真正向上；② 每場試煉可花 1 次「無視一次實體的封窗」；③ S8 的引燃物
+  narrative: 無名的故事；臍帶（Umbilical）與餘燼脈（Ember Vein）；燎原的可能性
+  map_unlock: 餘燼脈（ember_vein）、孤塔（lone_tower）
+  new_ability: 順著燼走——每領域花 1 行動點（AP）判斷營火方向（S8 關鍵導航）
+
+player_count_scaling:
+  n1:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 7
+    echo_companions: 2
+    leaf_dwellers_RC08: 3
+    hooks: 5
+    chests: 3
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    temple_floors: 2
+    ember_threshold: 15
+    bonus_trial_survive: 6
+    bp_multiplier: 1.2
+    hop_reward: 5
+    memory_cards: 3
+    optional_nodes: 3
+  n2:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 7
+    echo_companions: 2
+    leaf_dwellers_RC08: 4
+    hooks: 6
+    chests: 4
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    temple_floors: 3
+    ember_threshold: 18
+    bonus_trial_survive: 7
+    bp_multiplier: 1.1
+    hop_reward: 5
+    memory_cards: 2
+    optional_nodes: 2
+  n3:
+    generators_total: 6
+    generators_required: 5
+    killer_pressure: 7
+    echo_companions: 1
+    leaf_dwellers_RC08: 4
+    hooks: 7
+    chests: 4
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    temple_floors: 3
+    ember_threshold: 20
+    bonus_trial_survive: 8
+    bp_multiplier: 1.0
+    hop_reward: 5
+    memory_cards: 2
+    optional_nodes: 1
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 8
+    echo_companions: 0
+    leaf_dwellers_RC08: 5
+    hooks: 9
+    chests: 5
+    lockers: 8
+    hook_phase_limit: 3
+    endgame_collapse: 4
+    temple_floors: 3
+    ember_threshold: 22
+    bonus_trial_survive: 8
+    bp_multiplier: 1.0
+    hop_reward: 5
+    memory_cards: 2
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.25
+  prs_mid: 16
+  eb:
+    n1: 23
+    n2: 45
+    n3: 68
+    n4: 90
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: 獵斧女（HTR）
+  killer_avm: 1
+  killer_cr: "PRS + 1（CR 16-19）"
+  second_killer: 若 S6 選「不打斷」，緘默者（SIL）作為第二名殺手登場（佔額外預算，詳見 combat-designer 簡化塊）
+  construct_RC08: 血葉群（RC-08）CR4／HP26／攻擊+4／DC12／EBC8

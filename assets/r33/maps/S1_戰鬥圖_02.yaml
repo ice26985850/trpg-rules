@@ -1,0 +1,24 @@
+# S1 戰鬥圖 02 · 倉庫二樓掛鉤救援（E4，教救援）
+meta:
+  id: S1_戰鬥圖_02
+  name: S1 戰鬥圖·倉庫二樓掛鉤救援
+  scenario: S1
+  scene: E4（追逐／掛鉤救援）
+  note: 室內二樓，含窗戶通往煤塔頂；教學：掛鉤（Hook）與救援。座標格位（1 格 = 2 公尺），原點左上。
+grid_w: 12
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: 貨架（掩體）, rect: { x: 2, y: 1, w: 2, h: 4 } }
+  - { id: t2, type: 貨架（掩體）, rect: { x: 8, y: 1, w: 2, h: 4 } }
+  - { id: t3, type: 牆體（不可通行）, rect: { x: 0, y: 0, w: 12, h: 1 } }
+terrain_holes:
+  - { id: h1, type: 破洞地板（墜落風險）, rect: { x: 5, y: 5, w: 2, h: 2 } }
+objects:
+  - { id: o1, type: 掛鉤（Hook）, x: 6, y: 2 }
+  - { id: o2, type: 掛鉤（Hook）, x: 9, y: 7 }
+  - { id: o3, type: 窗戶（Window）, x: 11, y: 3 }
+  - { id: o4, type: 板子（Pallet）, x: 5, y: 7 }
+  - { id: o5, type: 寶箱（Chest）, x: 1, y: 8 }
+spawn_survivor: { x: 1, y: 8 }
+spawn_killer: { x: 10, y: 8 }

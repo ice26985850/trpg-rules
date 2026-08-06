@@ -1,0 +1,26 @@
+# S6 戰鬥圖 03 · 鏡像交換（E3，地圖記憶失效）
+meta:
+  id: S6_戰鬥圖_03
+  name: S6 戰鬥圖·鏡像交換
+  scenario: S6
+  scene: E3（環境）
+  note: 鏡像交換發生時，A/B 兩翼對稱節點 label 互換、id 不變，地圖記憶失效一次。座標格位（1 格 = 2 公尺），原點左上；左右完全對稱。
+grid_w: 14
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: A 翼隔牆（不可通行）, rect: { x: 6, y: 1, w: 1, h: 8 } }
+  - { id: t2, type: A 翼房間（掩體）, rect: { x: 2, y: 2, w: 2, h: 2 } }
+  - { id: t3, type: B 翼房間（掩體）, rect: { x: 10, y: 2, w: 2, h: 2 } }
+  - { id: t4, type: 牆體（不可通行）, rect: { x: 0, y: 0, w: 14, h: 1 } }
+objects:
+  - { id: o1, type: 板子（Pallet）, x: 3, y: 6 }
+  - { id: o2, type: 板子（Pallet）, x: 11, y: 6 }
+  - { id: o3, type: 窗戶（Window）, x: 1, y: 8 }
+  - { id: o4, type: 窗戶（Window）, x: 13, y: 8 }
+  - { id: o5, type: 掛鉤（Hook）, x: 3, y: 4 }
+  - { id: o6, type: 掛鉤（Hook）, x: 11, y: 4 }
+  - { id: o7, type: 寶箱（Chest）, x: 7, y: 9 }
+spawn_survivor: { x: 7, y: 9 }
+spawn_killer: { x: 7, y: 1 }
+mirror_swap: true

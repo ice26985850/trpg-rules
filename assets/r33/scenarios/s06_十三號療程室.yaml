@@ -1,0 +1,420 @@
+# S6 · 十三號療程室（結構化資料，供 AI GM 引擎讀取）
+id: S6
+title: 十三號療程室
+realm: 雷利紀念研究所（Léry's Memorial Institute, R6）
+recommended_prs: "13-15"
+duration_min: 270
+summary: >-
+  揭穿戰役最殘酷的真相：殺手不全是從外面抓來的，有些是從營火走過去的。玩家認識的那個人——希爾妲·蘭恩（§8-A）——正在被重鑄（Reforge）成緘默者（SIL）。緘默者（SIL）是劇情專屬化身（第 9 名，僅 S6–S8 登場，不進 8 名標準化身池；數據塊由 combat-designer 另補簡化版）。它無恐怖半徑（TR）、會發出倖存者聲音誘導、中途「鏡像交換」讓地圖記憶失效。玩家有三種打斷重鑄的方式，全部有代價；第三種「不打斷」不是壞結局，是有代價的知識獲取。
+
+nodes:
+  - id: ly_start
+    label: 起始霧口
+    type: 入口
+    x: 500
+    y: 930
+    region: 核心區（core）
+    explored: true
+  - id: ly_reception
+    label: 接待廳
+    type: 樞紐
+    x: 500
+    y: 830
+    region: 核心區（core）
+    explored: true
+  - id: ly_hall_a1
+    label: A 翼·第一長廊
+    type: 通道
+    x: 320
+    y: 730
+    region: A 翼（wing_a）
+    explored: true
+  - id: ly_hall_a2
+    label: A 翼·第二長廊
+    type: 通道
+    x: 200
+    y: 620
+    region: A 翼（wing_a）
+    explored: false
+  - id: ly_room_a1
+    label: A 翼·觀察室
+    type: 房間
+    x: 320
+    y: 560
+    region: A 翼（wing_a）
+    explored: false
+  - id: ly_room_a2
+    label: A 翼·保存室
+    type: 房間
+    x: 130
+    y: 480
+    region: A 翼（wing_a）
+    explored: false
+  - id: ly_chest_a
+    label: A 翼·藥櫃
+    type: 寶箱（Chest）
+    x: 210
+    y: 780
+    region: A 翼（wing_a）
+    explored: false
+  - id: ly_hall_b1
+    label: B 翼·第一長廊
+    type: 通道
+    x: 680
+    y: 730
+    region: B 翼（wing_b）
+    explored: true
+  - id: ly_hall_b2
+    label: B 翼·第二長廊
+    type: 通道
+    x: 800
+    y: 620
+    region: B 翼（wing_b）
+    explored: false
+  - id: ly_room_b1
+    label: B 翼·觀察室
+    type: 房間
+    x: 680
+    y: 560
+    region: B 翼（wing_b）
+    explored: false
+  - id: ly_room_b2
+    label: B 翼·保存室
+    type: 房間
+    x: 870
+    y: 480
+    region: B 翼（wing_b）
+    explored: false
+  - id: ly_chest_b
+    label: B 翼·藥櫃
+    type: 寶箱（Chest）
+    x: 790
+    y: 780
+    region: B 翼（wing_b）
+    explored: false
+  - id: ly_theatre
+    label: 治療劇場
+    type: 主場
+    x: 500
+    y: 560
+    region: 核心區（core）
+    explored: false
+  - id: ly_gallery
+    label: 觀眾席環廊
+    type: 建物層
+    x: 500
+    y: 450
+    region: 核心區（core）
+    explored: false
+  - id: ly_hall_n
+    label: 北長廊
+    type: 通道
+    x: 500
+    y: 350
+    region: 核心區（core）
+    explored: false
+  - id: ly_room13
+    label: 十三號療程室
+    type: 關鍵
+    x: 500
+    y: 220
+    region: 核心區（core）
+    explored: false
+  - id: ly_drain
+    label: 排水暗渠口
+    type: 特殊
+    x: 200
+    y: 300
+    region: 核心區（core）
+    explored: true（S5 完成者）
+  - id: ly_exit_nw
+    label: 西北逃生門
+    type: 出口
+    x: 110
+    y: 150
+    region: A 翼（wing_a）
+    explored: false
+  - id: ly_exit_ne
+    label: 東北逃生門
+    type: 出口
+    x: 890
+    y: 150
+    region: B 翼（wing_b）
+    explored: false
+  - id: ly_opt_office
+    label: 主任辦公室
+    type: 可選
+    x: 880
+    y: 330
+    region: B 翼（wing_b）
+    explored: false
+  - id: ly_opt_ward
+    label: 廢棄病房
+    type: 可選
+    x: 120
+    y: 880
+    region: A 翼（wing_a）
+    explored: false
+
+edges:
+  - from: ly_start
+    to: ly_reception
+    channel_type: 室內
+    name: 玄關
+  - from: ly_reception
+    to: ly_hall_a1
+    channel_type: 室內門
+    name: A 翼門
+  - from: ly_reception
+    to: ly_hall_b1
+    channel_type: 室內門
+    name: B 翼門
+  - from: ly_reception
+    to: ly_theatre
+    channel_type: 室內門
+    name: 劇場正門
+  - from: ly_hall_a1
+    to: ly_hall_a2
+    channel_type: 室內
+    name: 長廊
+  - from: ly_hall_a1
+    to: ly_chest_a
+    channel_type: 室內門
+    name: 藥櫃間
+  - from: ly_hall_a1
+    to: ly_opt_ward
+    channel_type: 室內門
+    name: 廢棄病房門
+  - from: ly_hall_a2
+    to: ly_room_a1
+    channel_type: 室內門
+    name: 觀察室門
+  - from: ly_hall_a2
+    to: ly_room_a2
+    channel_type: 室內門
+    name: 保存室門
+  - from: ly_room_a1
+    to: ly_theatre
+    channel_type: 單面鏡窗
+    name: 觀察窗（可看，可翻越）
+  - from: ly_room_a2
+    to: ly_exit_nw
+    channel_type: 室內
+    name: 西北通道
+  - from: ly_hall_b1
+    to: ly_hall_b2
+    channel_type: 室內
+    name: 長廊
+  - from: ly_hall_b1
+    to: ly_chest_b
+    channel_type: 室內門
+    name: 藥櫃間
+  - from: ly_hall_b2
+    to: ly_room_b1
+    channel_type: 室內門
+    name: 觀察室門
+  - from: ly_hall_b2
+    to: ly_room_b2
+    channel_type: 室內門
+    name: 保存室門
+  - from: ly_hall_b2
+    to: ly_opt_office
+    channel_type: 室內門
+    name: 辦公室門
+  - from: ly_room_b1
+    to: ly_theatre
+    channel_type: 單面鏡窗
+    name: 觀察窗（可看，可翻越）
+  - from: ly_room_b2
+    to: ly_exit_ne
+    channel_type: 室內
+    name: 東北通道
+  - from: ly_theatre
+    to: ly_gallery
+    channel_type: 樓梯
+    name: 觀眾席梯 ×2
+  - from: ly_gallery
+    to: ly_hall_n
+    channel_type: 室內門
+    name: 北廊門
+  - from: ly_hall_n
+    to: ly_room13
+    channel_type: 單門
+    name: 十三號房門
+  - from: ly_hall_n
+    to: ly_drain
+    channel_type: 地板格柵
+    name: 排水口
+  - from: ly_drain
+    to: ws_hidden
+    channel_type: 暗渠
+    name: 通往隱室（S5 解鎖，雙向）
+
+encounters:
+  - id: E1
+    type: 追逐（Chase）
+    content: 緘默者（SIL）無心跳
+    cr: 極高（心理）
+    note: 教學：無節奏
+  - id: E2
+    type: 欺騙
+    content: 假聲誘導（見人數表次數）
+    cr: 高
+    note: GM 模仿隊友
+  - id: E3
+    type: 環境
+    content: 鏡像交換（地圖記憶失效）
+    cr: 中
+    note: 見人數表
+  - id: E4
+    type: 領域造物（Realm Construct）
+    content: 觀察者＝觀察窗之眼（RC-07）× N
+    cr: 中（CR 5）
+    note: EBC 10／隻，監視型
+  - id: E5
+    type: 追逐（Chase）
+    content: 治療劇場暴露遭遇（無掩體）
+    cr: 極高
+    note: "-"
+  - id: E6
+    type: 抉擇
+    content: 十三號療程室（三種打斷方式）
+    cr: 無檢定
+    note: "-"
+
+npcs:
+  - name: 希爾妲·蘭恩（Hilda Lane） → 緘默者（SIL）
+    role: 前營火同伴／劇情專屬化身（第9名，§8-A）
+    lines:
+      - "……幫我修一下這台。快好了。（倖存者聲音）"
+      - "（轉身後，無聲，只是看著你）"
+  - name: 莎莉·恩科西（Sally Nkosi）
+    role: 植物學者型倖存者（§8-A）
+    lines:
+      - "若 S3 摘錯囊，她在此說出重鑄的問答內容（摘到某殺手記憶）"
+  - name: 艾洛薇·芬奇（Eloise Finch）
+    role: 營火記錄者（§8-A）
+    lines:
+      - "揭露自己也曾被帶進十三號房，但「沒有成功」——她的恨不夠"
+  - name: 回聲同伴（Echo Companion）· 希爾妲
+    role: 單人配置，第三幕後（§8-B）
+    lines:
+      - "若重鑄被打斷且她進虛空，S7 起以回聲形式出現"
+
+choices:
+  - id: C1
+    question: 十三號療程室如何打斷（三選一，全部有代價）
+    options:
+      - desc: 喊她的名字（喊真名＋一件只有她會記得的事）
+        effect: 她停下，重鑄失敗，被送虛空（後續可救回）；無代價但需回憶前五劇本細節
+      - desc: 給她一段記憶（消耗一張自己的記憶卡）
+        effect: 重鑄逆轉，保住自我回營火（最佳結局）；永久失去一張記憶卡
+      - desc: 不打斷（讓它完成）
+        effect: "＋5 實體飢餓度（EH）；希爾妲成殺手在 S7/S8 登場；獲完整重鑄流程知識（S8 接手終局需要）"
+
+endings:
+  - type: 分支（依核心抉擇）
+    condition: 喊名字／給記憶／不打斷
+    ember_moment: 喊名字或給記憶時觸發
+
+rewards:
+  bp: 標準 ×（依人數表）
+  prs_gain: 完成後升至 15 級
+  hop: "+4"
+  campfire_ember: 過程累積（預估 8-15）
+  memory_card: 1-2 張
+  item: 每人 1 件非常罕見物品 ＋ 2 個加裝
+  narrative: 實體是龐大但笨拙的系統；能偵測異常，無法定位原因
+  new_ability: 叫出名字——每劇本花 3 希望點（HOP）對任何殺手宣告「我知道你是誰」，GM 揭露該殺手一段人類記憶且當輪受阻
+
+player_count_scaling:
+  n1:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 6
+    echo_companions: 2
+    observers_RC07: 3
+    fake_voice_count: 4
+    hooks: 5
+    chests: 3
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    mirror_swap_count: 1
+    sil_hesitation: 較高
+    bp_multiplier: 1.15
+    hop_reward: 4
+    memory_cards: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 6
+    echo_companions: 1
+    observers_RC07: 4
+    fake_voice_count: 3
+    hooks: 6
+    chests: 3
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    mirror_swap_count: 1
+    sil_hesitation: 較高
+    bp_multiplier: 1.1
+    hop_reward: 4
+    memory_cards: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 5
+    killer_pressure: 6
+    echo_companions: 0
+    observers_RC07: 4
+    fake_voice_count: 3
+    hooks: 7
+    chests: 4
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    mirror_swap_count: 2
+    sil_hesitation: 標準
+    bp_multiplier: 1.0
+    hop_reward: 4
+    memory_cards: 1
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 7
+    echo_companions: 0
+    observers_RC07: 5
+    fake_voice_count: 3
+    hooks: 9
+    chests: 4
+    lockers: 8
+    hook_phase_limit: 3
+    endgame_collapse: 4
+    mirror_swap_count: 2
+    sil_hesitation: 標準
+    bp_multiplier: 1.0
+    hop_reward: 4
+    memory_cards: 1
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.2
+  prs_mid: 14
+  eb:
+    n1: 19
+    n2: 38
+    n3: 58
+    n4: 77
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: 緘默者（SIL）
+  killer_note: 劇情專屬化身（第9名），不進 8 名標準池；數據塊由 combat-designer 另補簡化版；AVM 未定（簡化塊補）
+  special_rules:
+    - 無心跳（GM 完全不敲桌）
+    - 假聲（GM 模仿隊友聲音／回聲動作，玩家自判真假）
+    - 鏡像交換（四個對稱節點互換 id，地圖記憶失效一次）
+  construct_RC07: 觀察窗之眼（RC-07）CR5／HP30／攻擊+4／DC12／EBC10

@@ -1,0 +1,61 @@
+# S3 探索圖 · 寒風農場（Coldwind Farm, R3） → 霧窖（Fog Cellar）
+meta:
+  id: S3
+  name: S3 探索圖·寒風農場與霧窖
+  realm: 寒風農場（Coldwind Farm, R3） → 霧窖（Fog Cellar）
+  regions: [田區（fields）, 建物區（buildings）, 霧窖（cellar）]
+  coord_range: 0-1000
+  note: 霧窖節點與地表座標重疊是刻意的——霧窖在空間上就在農場底下，是同一位置的另一層。
+nodes:
+  - { id: cw_start, name: 起始霧口, region: 田區（fields）, type: 入口, x: 500, y: 930, connections: [cw_corn_s, cw_harvester] }
+  - { id: cw_corn_s, name: 玉米田·南, region: 田區（fields）, type: 遮蔽區, x: 380, y: 810, connections: [cw_start, cw_tree, cw_chest_b, cw_opt_well] }
+  - { id: cw_corn_e, name: 玉米田·東, region: 田區（fields）, type: 遮蔽區, x: 720, y: 660, connections: [cw_harvester, cw_tree, cw_abattoir, cw_opt_coop] }
+  - { id: cw_corn_w, name: 玉米田·西, region: 田區（fields）, type: 遮蔽區, x: 260, y: 590, connections: [cw_tree, cw_house, cw_chest_b] }
+  - { id: cw_tree, name: 獻祭之樹, region: 田區（fields）, type: 關鍵地標, x: 500, y: 500, connections: [cw_corn_s, cw_corn_e, cw_corn_w, cw_silo, fc_entry] }
+  - { id: cw_harvester, name: 收割機, region: 田區（fields）, type: 掩體地標, x: 640, y: 800, connections: [cw_start, cw_corn_e, cw_exit_se] }
+  - { id: cw_abattoir, name: 腐臭屠宰場, region: 建物區（buildings）, type: 主建物, x: 760, y: 380, connections: [cw_corn_e, cw_abattoir_in, cw_chest_a] }
+  - { id: cw_abattoir_in, name: 屠宰場內部, region: 建物區（buildings）, type: 建物內, x: 840, y: 300, connections: [cw_abattoir, cw_exit_n] }
+  - { id: cw_house, name: 湯普森宅, region: 建物區（buildings）, type: 主建物, x: 250, y: 330, connections: [cw_corn_w, cw_house_2f, cw_silo] }
+  - { id: cw_house_2f, name: 湯普森宅二樓, region: 建物區（buildings）, type: 建物層, x: 180, y: 250, connections: [cw_house, cw_corn_w] }
+  - { id: cw_silo, name: 穀倉筒, region: 建物區（buildings）, type: 掩體地標, x: 420, y: 300, connections: [cw_tree, cw_house, cw_exit_n, cw_chest_a] }
+  - { id: cw_chest_a, name: 農具棚, region: 建物區（buildings）, type: 寶箱（Chest）, x: 600, y: 260, connections: [cw_abattoir, cw_silo] }
+  - { id: cw_chest_b, name: 車庫, region: 田區（fields）, type: 寶箱（Chest）, x: 330, y: 700, connections: [cw_corn_s, cw_corn_w] }
+  - { id: cw_exit_n, name: 北逃生門, region: 建物區（buildings）, type: 出口, x: 500, y: 110, connections: [cw_abattoir_in, cw_silo] }
+  - { id: cw_exit_se, name: 東南逃生門, region: 田區（fields）, type: 出口, x: 880, y: 880, connections: [cw_harvester] }
+  - { id: cw_opt_well, name: 老井, region: 田區（fields）, type: 可選, x: 150, y: 780, connections: [cw_corn_s] }
+  - { id: cw_opt_coop, name: 雞舍, region: 田區（fields）, type: 可選, x: 880, y: 560, connections: [cw_corn_e] }
+  - { id: fc_entry, name: 霧窖·入口, region: 霧窖（cellar）, type: 第三幕, x: 500, y: 500, connections: [cw_tree, fc_root_a, fc_root_c] }
+  - { id: fc_root_a, name: 根系·近層, region: 霧窖（cellar）, type: 第三幕, x: 400, y: 430, connections: [fc_entry, fc_root_b] }
+  - { id: fc_root_b, name: 根系·中層, region: 霧窖（cellar）, type: 第三幕, x: 500, y: 380, connections: [fc_root_a, fc_root_c, fc_yours] }
+  - { id: fc_root_c, name: 根系·深層, region: 霧窖（cellar）, type: 第三幕, x: 600, y: 430, connections: [fc_entry, fc_root_b] }
+  - { id: fc_yours, name: 你的那一條, region: 霧窖（cellar）, type: 第三幕, x: 500, y: 300, connections: [fc_root_b] }
+edges:
+  - { from: cw_start, to: cw_corn_s, channel: 開闊, name: 田埂 }
+  - { from: cw_start, to: cw_harvester, channel: 開闊, name: 農道 }
+  - { from: cw_corn_s, to: cw_tree, channel: 遮蔽, name: 穗間 }
+  - { from: cw_corn_s, to: cw_chest_b, channel: 開闊, name: 側道 }
+  - { from: cw_corn_s, to: cw_opt_well, channel: 開闊, name: 西田埂 }
+  - { from: cw_harvester, to: cw_corn_e, channel: 開闊, name: 東田埂 }
+  - { from: cw_harvester, to: cw_exit_se, channel: 開闊, name: 東南道 }
+  - { from: cw_corn_e, to: cw_tree, channel: 遮蔽, name: 穗間 }
+  - { from: cw_corn_e, to: cw_abattoir, channel: 開闊, name: 屠宰道 }
+  - { from: cw_corn_e, to: cw_opt_coop, channel: 開闊, name: 雞舍徑 }
+  - { from: cw_corn_w, to: cw_tree, channel: 遮蔽, name: 穗間 }
+  - { from: cw_corn_w, to: cw_house, channel: 開闊, name: 宅前道 }
+  - { from: cw_corn_w, to: cw_chest_b, channel: 開闊, name: 車庫道 }
+  - { from: cw_tree, to: cw_silo, channel: 開闊, name: 中央道 }
+  - { from: cw_tree, to: fc_entry, channel: 根道（第三幕）, name: 樹下的根道 }
+  - { from: cw_abattoir, to: cw_abattoir_in, channel: 室內門, name: 屠宰場大門 }
+  - { from: cw_abattoir, to: cw_chest_a, channel: 開闊, name: 農具道 }
+  - { from: cw_abattoir_in, to: cw_exit_n, channel: 窗戶（Window）, name: 高窗 }
+  - { from: cw_house, to: cw_house_2f, channel: 樓梯, name: 木梯 }
+  - { from: cw_house, to: cw_silo, channel: 開闊, name: 穀道 }
+  - { from: cw_house_2f, to: cw_corn_w, channel: 跳下（單向）, name: 二樓窗 }
+  - { from: cw_silo, to: cw_exit_n, channel: 開闊, name: 北道 }
+  - { from: cw_silo, to: cw_chest_a, channel: 開闊, name: 場院 }
+  - { from: fc_entry, to: fc_root_a, channel: 懸垂根, name: 攀根 }
+  - { from: fc_entry, to: fc_root_c, channel: 懸垂根, name: 攀根 }
+  - { from: fc_root_a, to: fc_root_b, channel: 懸垂根, name: 攀根 }
+  - { from: fc_root_c, to: fc_root_b, channel: 懸垂根, name: 攀根 }
+  - { from: fc_root_b, to: fc_yours, channel: 懸垂根, name: 那一條特別細 }
+  - { from: fc_entry, to: cw_tree, channel: 上升, name: 回到地表（時限內） }
