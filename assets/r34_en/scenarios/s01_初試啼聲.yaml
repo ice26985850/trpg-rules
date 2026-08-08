@@ -1,0 +1,12 @@
+title: First Cry
+level: 1
+turn_limit: 3
+objective: Find the station control-room key and escape
+npcs:
+  - name: Old Zhang
+    role: Survivor
+    hint: The key is in the ticket booth drawer
+threats:
+  - name: The Manager
+    location: End of corridor
+    perception: 2
