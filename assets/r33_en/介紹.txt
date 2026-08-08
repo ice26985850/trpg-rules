@@ -2,7 +2,7 @@
 
 > In the Fog, your only resource is whatever hasn't been taken from you yet.
 
-**【Source Work Notice】** This is a tabletop role-playing game (TRPG) adaptation of the survival-horror video game *Dead by Daylight*, originally published by Behaviour Interactive. It is not an officially licensed product; it is an independently created ruleset built on that setting.
+**[Source Work Notice]** This is a tabletop role-playing game (TRPG) adaptation of the survival-horror video game *Dead by Daylight*, originally published by Behaviour Interactive. It is not an officially licensed product; it is an independently created ruleset built on that setting.
 
 ## What kind of world is this?
 
