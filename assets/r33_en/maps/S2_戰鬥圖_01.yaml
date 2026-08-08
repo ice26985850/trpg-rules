@@ -1,0 +1,25 @@
+# S2 Battle Map 01 · Stealth Ambush in Canyon (E2, heartbeat-less tutorial)
+meta:
+  id: S2_戰鬥圖_01
+  name: S2 Battle Map · Stealth Ambush in Canyon
+  scenario: S2
+  scene: E2 (Chase)
+  note: The Wraith (WRT) has no Terror Radius (TR); players cannot hear a heartbeat, relying on audio cues to judge direction. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 16
+grid_h: 12
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Wreck Pile (Cover), rect: { x: 3, y: 2, w: 3, h: 2 } }
+  - { id: t2, type: Wreck Pile (Cover), rect: { x: 10, y: 3, w: 3, h: 2 } }
+  - { id: t3, type: Wreck Pile (Cover), rect: { x: 2, y: 7, w: 2, h: 3 } }
+  - { id: t4, type: Wreck Pile (Cover), rect: { x: 11, y: 7, w: 3, h: 3 } }
+  - { id: t5, type: Canyon Cliff (Impassable), rect: { x: 0, y: 0, w: 16, h: 1 } }
+objects:
+  - { id: o1, type: Pallet, x: 6, y: 5 }
+  - { id: o2, type: Pallet, x: 9, y: 8 }
+  - { id: o3, type: Window, x: 8, y: 1 }
+  - { id: o4, type: Window, x: 13, y: 9 }
+  - { id: o5, type: Locker, x: 1, y: 5 }
+  - { id: o6, type: Chest, x: 14, y: 1 }
+spawn_survivor: { x: 1, y: 10 }
+spawn_killer: { x: 14, y: 10 }

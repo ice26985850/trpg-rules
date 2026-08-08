@@ -1,0 +1,24 @@
+# S3 Battle Map 01 · Open Chase in Cornfield (E1, Hillbilly's home turf)
+meta:
+  id: S3_戰鬥圖_01
+  name: S3 Battle Map · Open Chase in Cornfield
+  scenario: S3
+  scene: E1 (Chase)
+  note: Open ground is the Hillbilly's (HBY) home turf, the most painful fight so far this campaign; only 1 flat pallet (Pallet), using cornfield concealment for mind games. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 18
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Cornfield (Line-of-sight concealment; leaves sway marks 2 rounds), rect: { x: 1, y: 1, w: 8, h: 5 } }
+  - { id: t2, type: Cornfield (Line-of-sight concealment), rect: { x: 9, y: 1, w: 8, h: 4 } }
+  - { id: t3, type: Cornfield (Line-of-sight concealment), rect: { x: 1, y: 8, w: 9, h: 5 } }
+  - { id: t4, type: Cornfield (Line-of-sight concealment), rect: { x: 11, y: 7, w: 6, h: 6 } }
+  - { id: t5, type: Harvester (Cover), rect: { x: 8, y: 6, w: 2, h: 2 } }
+objects:
+  - { id: o1, type: Pallet, x: 9, y: 7 }
+  - { id: o2, type: Window, x: 17, y: 2 }
+  - { id: o3, type: Window, x: 1, y: 13 }
+  - { id: o4, type: Hook, x: 13, y: 11 }
+  - { id: o5, type: Chest, x: 16, y: 13 }
+spawn_survivor: { x: 1, y: 13 }
+spawn_killer: { x: 17, y: 1 }

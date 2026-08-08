@@ -1,0 +1,35 @@
+name: 劇本4 遺跡終階
+description: CL35–40 練級期最終章，以 D8 古代遺跡為主軸，從機關外廊刷等到深核打倒遺跡守護者（練級期最強非魔將敵人），是從「刷等」跨入「魔將清算」的橋梁。通關後承接劇本5 龍將討伐令。採做法 A：一套劇本＋人數調整。
+difficulty: 困難~極難
+level_range: [35, 40]
+chapter: 4
+map_ref: 地圖/D8_戰鬥_遺跡守護者.yaml
+initial_map: 地圖/D8_古代遺跡.yaml
+encounters:
+  - id: d8_outer_hall
+    name: D8 外廊機關守靈（CL35–37）
+    enemies:
+      - {name: 石像鬼, cr: 35, count: 2}
+      - {name: 守墓衛, cr: 37, count: 2}
+      - {name: 魔像, cr: 38, count: 2}
+    budget: 困難×1.2
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: d8_guardian
+    name: D8 遺跡守護者（CL38–40）
+    enemies:
+      - {name: 遺跡守衛, cr: 39, count: 2}
+      - {name: 遺跡守護者, cr: 40, count: 1}
+    boss: true
+    budget: 極難×1.0
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+rewards:
+  exp: 18000
+  gold: 12000
+  items: [古代核心, 守護者信物, 遺跡之心]
+ip_events:
+  - event: 解讀古代銘文（知識檢定）
+    ip: 3
+  - event: 遺跡之心兌換
+    ip: 5
+  - event: 守護而非毀壞遺跡
+    ip: 4

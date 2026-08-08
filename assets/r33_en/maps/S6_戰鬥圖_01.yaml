@@ -1,0 +1,25 @@
+# S6 Battle Map 01 · Heartbeat-less Chase (E1, The Silent One)
+meta:
+  id: S6_戰鬥圖_01
+  name: S6 Battle Map · Heartbeat-less Chase
+  scenario: S6
+  scene: E1 (Chase)
+  note: The Silent One (SIL) has no Terror Radius (TR) (no heartbeat, the greatest source of dread); the GM never taps the table. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 14
+grid_h: 12
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Corridor Partition (Impassable), rect: { x: 4, y: 1, w: 1, h: 5 } }
+  - { id: t2, type: Corridor Partition (Impassable), rect: { x: 9, y: 6, w: 1, h: 5 } }
+  - { id: t3, type: Observation Window (Climbable), rect: { x: 6, y: 7, w: 2, h: 1 } }
+  - { id: t4, type: Wall (Impassable), rect: { x: 0, y: 0, w: 14, h: 1 } }
+objects:
+  - { id: o1, type: Pallet, x: 6, y: 5 }
+  - { id: o2, type: Window, x: 13, y: 3 }
+  - { id: o3, type: Window, x: 1, y: 9 }
+  - { id: o4, type: Hook, x: 7, y: 10 }
+  - { id: o5, type: Locker, x: 6, y: 2 }
+  - { id: o6, type: Chest, x: 12, y: 11 }
+spawn_survivor: { x: 1, y: 11 }
+spawn_killer: { x: 12, y: 1 }
+no_heartbeat: true

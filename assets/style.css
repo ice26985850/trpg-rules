@@ -5,6 +5,11 @@ body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,
 .topbar{display:flex;align-items:center;gap:16px;padding:14px 22px;background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
 .brand{font-weight:700;font-size:16px}
 .topbar a{color:var(--mut);text-decoration:none;font-size:14px}
+.spacer{flex:1}
+.lang{margin-left:auto;font-size:13px;font-weight:700;color:#fff;background:var(--accent);border:1px solid var(--accent);padding:5px 14px;border-radius:20px;text-decoration:none;cursor:pointer}
+.lang:hover{border-color:#2c520c}
+.lang.cur{box-shadow:0 0 0 2px #cfe0b6 inset}
+.lang.off{background:#e9e6df;color:#9a978f;border-color:#d8d4ca;cursor:default}
 .container{max-width:1040px;margin:0 auto;padding:28px 22px 60px}
 .home .container{max-width:1100px}
 .lead{color:var(--mut);margin:0 0 26px}
@@ -16,6 +21,7 @@ h2{font-size:20px;border-left:4px solid var(--accent);padding-left:10px;margin:3
 .back-top{margin:0 0 12px}
 .back-top a{display:inline-block;background:#f0eee7;color:var(--accent);text-decoration:none;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line)}
 .back-top a:hover{border-color:var(--accent)}
+.notice{background:#fff7ed;border:1px solid #fdba74;color:#9a3412;padding:10px 14px;border-radius:8px;margin:10px 0;font-size:14px}
 .block{margin:22px 0}
 .cat{margin:34px 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
@@ -27,6 +33,7 @@ h2{font-size:20px;border-left:4px solid var(--accent);padding-left:10px;margin:3
 .cbadge{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
 .badge{font-size:11px;background:#eaf3de;color:#3b6d11;border:1px solid #cfe0b6;padding:2px 8px;border-radius:20px}
 .badge.demo{background:#fff3e0;color:#b45309;border-color:#fcd9a5}
+.badge.en{background:#e0ecf3;color:#0b5b8a;border-color:#b6d6e6}
 .demo-banner{background:#fff7ed;border:1px solid #fdba74;color:#9a3412;padding:12px 16px;border-radius:10px;margin:14px 0;font-size:14px;line-height:1.6}
 .content{max-width:780px}
 table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px}

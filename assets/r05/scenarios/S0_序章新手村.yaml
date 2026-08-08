@@ -1,0 +1,40 @@
+name: S0 序章·新手村
+description: 自稱勇者赴神殿取得職業的敘事儀式、新手村探索、哥布林夜襲、冒險者公會入會考核（F→E 晉級閘門）。採做法 A：一套劇本＋人數調整。
+difficulty: 輕鬆~普通
+level_range: [1, 4]
+chapter: 0
+map_ref: 地圖/S0_探索_新手村.yaml
+initial_map: 地圖/S0_探索_新手村.yaml
+encounters:
+  - id: night_thief
+    name: 夜盜（支線小戰）
+    enemies:
+      - {name: 山鼠, cr: 1, count: 2}
+    budget: 輕鬆×0.5
+    adjust: "1名→CR−3(→CR0.25)/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: goblin_raid
+    name: 哥布林夜襲
+    enemies:
+      - {name: 哥布林戰士, cr: 2, count: 2}
+      - {name: 哥布林弓手, cr: 1, count: 2}
+    budget: 標準×1.0
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: guild_exam
+    name: 入會考核·訓練幻影
+    enemies:
+      - {name: 訓練幻影, cr: 3, count: 3}
+    budget: 標準×1.0
+    adjust: "1名→CR0/敵數×1/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR5/敵數×5"
+rewards:
+  exp: 620
+  gold: 80
+  items: [木製練習劍, 治療藥水x3, 見習公會徽章]
+ip_events:
+  - event: 神殿儀式選擇「為保護村民」對白
+    ip: 2
+  - event: 支線「迷途羔羊」完成（協尋孩童）
+    ip: 3
+  - event: 饒恕敗北哥布林（不殺）
+    ip: 3
+  - event: 與傑諾善意互動（第五人伏筆）
+    ip: 3

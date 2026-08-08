@@ -1,0 +1,72 @@
+scenario: S1
+section: 第一魔將·龍脊峰（CL 5–12）
+map_type: explore
+title: S1_探索_龍巢
+# 座標為示意（非精確距離），單位為 SVG 畫布像素；由外圍向深處推進
+
+nodes:
+  - id: trail
+    label: 龍脊峰山道（入口）
+    x: 340
+    y: 560
+    type: 入口
+    explored: true
+  - id: outer
+    label: 龍巢外圍
+    x: 340
+    y: 440
+    type: 野外
+    explored: false
+  - id: forge
+    label: 鐵爐城前哨（杜林）
+    x: 520
+    y: 480
+    type: 設施
+    explored: true
+  - id: lava
+    label: 熔岩洞
+    x: 340
+    y: 320
+    type: 危險區
+    explored: false
+  - id: hatch
+    label: 孵卵室
+    x: 220
+    y: 240
+    type: 敵巢
+    explored: false
+  - id: throne
+    label: 龍將王座
+    x: 340
+    y: 140
+    type: 首領點
+    explored: false
+
+edges:
+  - from: trail
+    to: outer
+    type: 通道
+  - from: outer
+    to: forge
+    type: 通道
+    label: "裝備補給"
+  - from: outer
+    to: lava
+    type: 通道
+  - from: lava
+    to: hatch
+    type: 通道
+  - from: hatch
+    to: throne
+    type: 通道
+  - from: lava
+    to: throne
+    type: 通道
+
+regions:
+  - name: 龍脊峰外圍
+    color: "#FFD0C0"
+    nodes: [trail, outer, forge]
+  - name: 龍巢深處
+    color: "#FFB3B3"
+    nodes: [lava, hatch, throne]

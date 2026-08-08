@@ -1,0 +1,45 @@
+# S1 Exploration Map · Macmillan Estate (MacMillan Estate, R1)
+meta:
+  id: S1
+  name: S1 Exploration Map · Macmillan Estate
+  realm: Macmillan Estate (R1)
+  regions: [Outer Woods (outer_woods), Central Works (central_works), Pit Area (pit_area)]
+  coord_range: 0-1000
+nodes:
+  - { id: mm_start, name: Starting Fog Mouth, region: Outer Woods (outer_woods), type: Entrance, x: 500, y: 900, connections: [mm_shelter, mm_storehouse] }
+  - { id: mm_shelter, name: Shelter Woods, region: Outer Woods (outer_woods), type: Open Area, x: 300, y: 780, connections: [mm_start, mm_bigtree, mm_exit_s, mm_opt_locker] }
+  - { id: mm_bigtree, name: The Big Tree, region: Outer Woods (outer_woods), type: Landmark, x: 200, y: 690, connections: [mm_shelter] }
+  - { id: mm_storehouse, name: Groaning Warehouse, region: Central Works (central_works), type: Main Building, x: 500, y: 560, connections: [mm_start, mm_store_2f, mm_ironworks, mm_coaltower, mm_chest_a] }
+  - { id: mm_store_2f, name: Warehouse 2F, region: Central Works (central_works), type: Building Level, x: 560, y: 470, connections: [mm_storehouse, mm_coaltower] }
+  - { id: mm_ironworks, name: Wailing Ironworks, region: Central Works (central_works), type: Main Building, x: 730, y: 620, connections: [mm_storehouse, mm_furnace, mm_pit, mm_opt_shack] }
+  - { id: mm_furnace, name: Furnace Row, region: Central Works (central_works), type: Cover Zone, x: 830, y: 560, connections: [mm_ironworks, mm_chest_b] }
+  - { id: mm_coaltower, name: Coal Tower, region: Central Works (central_works), type: Vantage Point, x: 300, y: 420, connections: [mm_storehouse, mm_store_2f, mm_tower_top, mm_pit_edge] }
+  - { id: mm_tower_top, name: Coal Tower Top Floor, region: Central Works (central_works), type: Building Level, x: 240, y: 330, connections: [mm_coaltower, mm_exit_n] }
+  - { id: mm_pit, name: Suffocation Pit, region: Pit Area (pit_area), type: Special, x: 660, y: 300, connections: [mm_ironworks, mm_pit_edge] }
+  - { id: mm_pit_edge, name: Pit-edge Catwalk, region: Pit Area (pit_area), type: Passage, x: 580, y: 250, connections: [mm_coaltower, mm_pit, mm_exit_n] }
+  - { id: mm_chest_a, name: Rusty Chest A, region: Central Works (central_works), type: Chest, x: 400, y: 660, connections: [mm_storehouse] }
+  - { id: mm_chest_b, name: Rusty Chest B, region: Central Works (central_works), type: Chest, x: 780, y: 420, connections: [mm_furnace] }
+  - { id: mm_exit_n, name: North Exit Gate, region: Pit Area (pit_area), type: Exit, x: 500, y: 120, connections: [mm_tower_top, mm_pit_edge] }
+  - { id: mm_exit_s, name: South Exit Gate, region: Outer Woods (outer_woods), type: Exit, x: 130, y: 860, connections: [mm_shelter] }
+  - { id: mm_opt_shack, name: Broken Shack, region: Outer Woods (outer_woods), type: Optional, x: 880, y: 780, connections: [mm_ironworks] }
+  - { id: mm_opt_locker, name: Locker Room, region: Central Works (central_works), type: Optional, x: 160, y: 540, connections: [mm_shelter] }
+edges:
+  - { from: mm_start, to: mm_shelter, channel: Open, name: Woods Path}
+  - { from: mm_start, to: mm_storehouse, channel: Open, name: Main Road}
+  - { from: mm_shelter, to: mm_bigtree, channel: Open, name: Under the Tree}
+  - { from: mm_shelter, to: mm_exit_s, channel: Open, name: South Slope}
+  - { from: mm_shelter, to: mm_opt_locker, channel: Side Door, name: SideDoor}
+  - { from: mm_storehouse, to: mm_store_2f, channel: Stairs, name: Rusty Ladder}
+  - { from: mm_storehouse, to: mm_ironworks, channel: Open, name: Between-works Path}
+  - { from: mm_storehouse, to: mm_coaltower, channel: Open, name: Cinder Road}
+  - { from: mm_storehouse, to: mm_chest_a, channel: Open, name: Material Pile Area}
+  - { from: mm_store_2f, to: mm_coaltower, channel: Window, name: 2F Broken Window}
+  - { from: mm_ironworks, to: mm_furnace, channel: Interior, name: Furnace Hall}
+  - { from: mm_ironworks, to: mm_pit, channel: Open, name: Coal-haul Path}
+  - { from: mm_ironworks, to: mm_opt_shack, channel: Open, name: Scrap Path}
+  - { from: mm_furnace, to: mm_chest_b, channel: Interior, name: Tool Room}
+  - { from: mm_coaltower, to: mm_tower_top, channel: Stairs, name: Tower Ladder}
+  - { from: mm_coaltower, to: mm_pit_edge, channel: Open, name: Elevated Catwalk}
+  - { from: mm_pit, to: mm_pit_edge, channel: Climb, name: Pit Wall}
+  - { from: mm_pit_edge, to: mm_exit_n, channel: Open, name: North ExitPath}
+  - { from: mm_tower_top, to: mm_exit_n, channel: Line of Sight, name: Line-of-sight only; impassable}

@@ -1,0 +1,178 @@
+id: D8
+name: 古代遺跡
+recommended_rank: "A/S（CR 35-40）"
+theme: 失落的文明遺跡
+grid: { cols: 6, rows: 5 }
+rooms:
+  - id: R1
+    name: 遺跡石門
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 石像鬼迴廊
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R8]
+    cr: 35
+    enemies: [石像鬼 x2]
+    desc: 石像鬼 x2 守門。
+  - id: R3
+    name: 崩塌階梯
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R9]
+    trap: 弱（崩石，DC12 / 1d6 鈍擊）
+    desc: 弱機關，階梯崩塌。
+  - id: R4
+    name: 守墓衛墓道
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 37
+    enemies: [守墓衛 x2]
+    desc: 守墓衛 x2 巡衛。
+  - id: R5
+    name: 祭司陪葬庫
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R6, R11]
+    treasure: 古幣 x2、Glint 碎片、G 300~480
+    desc: 祭司陪葬寶庫。
+  - id: R6
+    name: 魔像前廳
+    type: combat
+    gx: 5
+    gy: 0
+    links: [R5, R12]
+    cr: 38
+    enemies: [魔像 x2]
+    desc: 魔像 x2 鎮前廳。
+  - id: R7
+    name: 靜默祈堂
+    type: rest
+    gx: 0
+    gy: 1
+    links: [R1, R8, R13]
+    desc: 安全休息點（回復 HP／狀態）。
+  - id: R8
+    name: 機關中庭
+    type: trap
+    gx: 1
+    gy: 1
+    links: [R7, R9, R2, R14]
+    trap: 強（連弩牆，DC18 / 3d6 穿刺）
+    desc: 強機關，連弩牆。
+  - id: R9
+    name: 黃金寶龕
+    type: treasure
+    gx: 2
+    gy: 1
+    links: [R8, R10, R3, R15]
+    treasure: 黃金飾品 x2、精良素材、G 320~500
+    desc: 黃金寶龕。
+  - id: R10
+    name: 遺跡守衛室
+    type: combat
+    gx: 3
+    gy: 1
+    links: [R9, R11, R4, R16]
+    cr: 39
+    enemies: [遺跡守衛 x2]
+    desc: 遺跡守衛 x2 鎮守。
+  - id: R11
+    name: 望星休所
+    type: rest
+    gx: 4
+    gy: 1
+    links: [R10, R12, R5, R17]
+    desc: 安全休息點。
+  - id: R12
+    name: 王室窖藏
+    type: treasure
+    gx: 5
+    gy: 1
+    links: [R11, R6, R18]
+    treasure: 王室璽印、G 340~520
+    desc: 王室窖藏。
+  - id: R13
+    name: 石像鬼夾道
+    type: combat
+    gx: 0
+    gy: 2
+    links: [R7, R14]
+    cr: 37
+    enemies: [石像鬼 x2]
+    desc: 石像鬼 x2 夾擊。
+  - id: R14
+    name: 符文陷阱廳
+    type: trap
+    gx: 1
+    gy: 2
+    links: [R13, R15, R8]
+    trap: 強（符文爆裂，DC20 / 3d6 奥術）
+    desc: 強機關，符文爆裂。
+  - id: R15
+    name: 星象寶室
+    type: treasure
+    gx: 2
+    gy: 2
+    links: [R14, R16, R9, R19]
+    treasure: 星象盤、G 360~540
+    desc: 星象寶室。
+  - id: R16
+    name: 魔像戰場
+    type: combat
+    gx: 3
+    gy: 2
+    links: [R15, R17, R10, R20]
+    cr: 39
+    enemies: [魔像 x2]
+    desc: 魔像 x2 列陣。
+  - id: R17
+    name: 回廊休整
+    type: rest
+    gx: 4
+    gy: 2
+    links: [R16, R18, R11, R21]
+    desc: 安全休息點。
+  - id: R18
+    name: 落石尾廳
+    type: trap
+    gx: 5
+    gy: 2
+    links: [R17, R12]
+    trap: 強（落頂石，DC20 / 3d6 鈍擊）
+    desc: 強機關，落頂石。
+  - id: R19
+    name: 守墓衛密室
+    type: combat
+    gx: 2
+    gy: 3
+    links: [R15, R20]
+    cr: 39
+    enemies: [守墓衛 x2]
+    desc: 守墓衛 x2 密室。
+  - id: R20
+    name: 守護者聖殿
+    type: elite
+    gx: 3
+    gy: 3
+    links: [R16, R19, R21]
+    cr: 40
+    enemies: [遺跡守護者（首領）]
+    combat_map: 地圖/D8_戰鬥_遺跡守護者.yaml
+    desc: 小首領 遺跡守護者（CR40）。
+  - id: R21
+    name: 出口門道
+    type: exit
+    gx: 4
+    gy: 3
+    links: [R20, R17]
+    desc: 出口；通關後領取獎勵離開。

@@ -1,0 +1,23 @@
+# S4 Battle Map 03 · Sealed Records Room (E5, death trap)
+meta:
+  id: S4_戰鬥圖_03
+  name: S4 Battle Map · Sealed Records Room Encounter
+  scenario: S4
+  scene: E5 (Chase / Death Trap)
+  note: The only single-exit battle map; the Nurse appears at the door only after the player enters, does not chase in, just stands and slowly taps the table. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 8
+grid_h: 8
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Records Rack (Cover), rect: { x: 2, y: 2, w: 2, h: 2 } }
+  - { id: t2, type: Wall (Impassable), rect: { x: 0, y: 0, w: 8, h: 1 } }
+  - { id: t3, type: Wall (Impassable), rect: { x: 0, y: 7, w: 8, h: 1 } }
+objects:
+  - { id: o1, type: Only Door (One-way; Nurse blocks it), x: 4, y: 0 }
+  - { id: o2, type: Hook, x: 3, y: 5 }
+  - { id: o3, type: Hook, x: 6, y: 5 }
+  - { id: o4, type: Outer Wall Crack (Escape point after Act 3), x: 7, y: 4 }
+  - { id: o5, type: Chest, x: 1, y: 1 }
+spawn_survivor: { x: 3, y: 6 }
+spawn_killer: { x: 4, y: 1, note: "The Nurse is at the door (o1), does not actively chase in, slowly taps the table"}
+death_trap: true

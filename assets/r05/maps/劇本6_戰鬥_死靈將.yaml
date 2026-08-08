@@ -1,0 +1,126 @@
+scenario: S2
+section: 第二魔將·死靈將戰（CL 13–22）
+map_type: battle
+grid_scale: "1格=2公尺"
+title: S2_戰鬥_死靈將
+# 座標為精確格子座標（col, row，0–9），供距離與射程計算
+# 前後排間隔 2 格；敵方在上方、我方在下方
+# 關鍵機制：護命棺材（可破物件）—擊破後解除首領（Boss）暴擊免疫（階段三「巫妖化」）
+# 地形：寂葬濕地（R2）毒霧沼澤＋古墳場；階段二【死亡領域（全場範圍效果（AOE） DoT）】
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: 敵, role: 前排, color: "#FF8A8A"}
+    - {row: 1, side: 敵, role: 後排, color: "#FFC8C8"}
+    - {row: 6, side: 我, role: 前排, color: "#8AAEFF"}
+    - {row: 8, side: 我, role: 後排, color: "#C8D8FF"}
+  aoe:
+    - {cx: 5, cy: 3, r: 2, lp: below, label: 死亡領域（全場範圍效果（AOE） DoT·階段二）}
+
+nodes:
+  - id: boss
+    label: 靈將（莫爾凡娜）
+    x: 5
+    y: 1
+    type: boss
+    explored: true
+  - id: coffin
+    label: 護命棺材（可破物件）
+    x: 0
+    y: 1
+    type: 物件
+    explored: true
+  - id: e_ghost_a
+    label: 幽靈甲
+    x: 2
+    y: 1
+    type: 敵遠程
+    explored: true
+  - id: e_ghost_b
+    label: 幽靈乙
+    x: 8
+    y: 1
+    type: 敵遠程
+    explored: true
+  - id: e_zombie_a
+    label: 殭屍甲
+    x: 3
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_skel_a
+    label: 骷髏戰士甲
+    x: 4
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_skel_b
+    label: 骷髏戰士乙
+    x: 5
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_zombie_b
+    label: 殭屍乙
+    x: 6
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: p_front_war
+    label: 我方前排戰士
+    x: 3
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_front_monk
+    label: 我方前排格鬥
+    x: 6
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_back_mage
+    label: 我方後排法師
+    x: 4
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_cleric
+    label: 我方後排牧師
+    x: 5
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_hunter
+    label: 我方後排獵人
+    x: 7
+    y: 8
+    type: 我後排
+    explored: true
+
+edges:
+  - from: boss
+    to: e_ghost_a
+    type: 指揮
+  - from: boss
+    to: e_ghost_b
+    type: 指揮
+  - from: coffin
+    to: boss
+    type: 核心連結
+    style: dashed
+    label: "無敵核心"
+  - from: e_zombie_a
+    to: p_front_war
+    type: 近戰
+    style: dashed
+  - from: e_skel_a
+    to: p_front_monk
+    type: 近戰
+    style: dashed
+  - from: e_ghost_a
+    to: p_back_cleric
+    type: 射程
+    style: dashed
+    label: "神聖弱點威脅"

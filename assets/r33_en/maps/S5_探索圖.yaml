@@ -1,0 +1,59 @@
+# S5 Exploration Map · Backwater Swamp (Backwater Swamp, R5) → The Void → Hidden Workshop
+meta:
+  id: S5
+  name: S5 Exploration Map · Backwater Swamp, The Void & Hidden Workshop
+  realm: Backwater Swamp (R5) → The Void → Hidden Workshop
+  regions: [Swamp (swamp), The Void (void), Hidden Workshop (workshop)]
+  coord_range: 0-1000
+nodes:
+  - { id: bw_start, name: Starting Fog Mouth, region: Swamp (swamp), type: Entrance, x: 500, y: 940, connections: [bw_pier] }
+  - { id: bw_pier, name: Dock, region: Swamp (swamp), type: Main Landmark, x: 500, y: 830, connections: [bw_start, bw_boat, bw_walk_w, bw_exit_se] }
+  - { id: bw_boat, name: Pale Rose, region: Swamp (swamp), type: Main Building, x: 660, y: 780, connections: [bw_pier, bw_boat_2f, bw_chest_a, bw_walk_e] }
+  - { id: bw_boat_2f, name: Steamer Upper Deck, region: Swamp (swamp), type: Building Level, x: 740, y: 700, connections: [bw_boat, bw_walk_e] }
+  - { id: bw_walk_e, name: East Wooden PierPath, region: Swamp (swamp), type: Passage, x: 700, y: 600, connections: [bw_boat, bw_boat_2f, bw_cages, bw_opt_shrine] }
+  - { id: bw_walk_w, name: West Wooden PierPath, region: Swamp (swamp), type: Passage, x: 300, y: 600, connections: [bw_pier, bw_pantry, bw_chest_b, bw_opt_raft] }
+  - { id: bw_pantry, name: Eerie Pantry, region: Swamp (swamp), type: Main Building, x: 250, y: 470, connections: [bw_walk_w, bw_pantry_2f, bw_exit_nw, ws_hidden] }
+  - { id: bw_pantry_2f, name: Pantry 2F, region: Swamp (swamp), type: Building Level, x: 180, y: 380, connections: [bw_pantry, bw_deep_a] }
+  - { id: bw_cages, name: Cage Hut Cluster, region: Swamp (swamp), type: Cover Zone, x: 620, y: 450, connections: [bw_walk_e, bw_deep_a] }
+  - { id: bw_deep_a, name: Deep Water Zone A, region: Swamp (swamp), type: Hazard, x: 430, y: 480, connections: [bw_pantry_2f, bw_cages, bw_deep_b] }
+  - { id: bw_deep_b, name: Deep Water Zone B, region: Swamp (swamp), type: Hazard, x: 470, y: 380, connections: [bw_deep_a, bw_deep_c] }
+  - { id: bw_deep_c, name: Deep Water Zone C, region: Swamp (swamp), type: Hazard, x: 500, y: 290, connections: [bw_deep_b, bw_steps] }
+  - { id: bw_steps, name: Sunken Stair, region: Swamp (swamp), type: Key, x: 500, y: 210, connections: [bw_deep_c, vd_verge] }
+  - { id: bw_chest_a, name: Ship-cabin Chest, region: Swamp (swamp), type: Chest, x: 780, y: 830, connections: [bw_boat] }
+  - { id: bw_chest_b, name: Under-shed Chest, region: Swamp (swamp), type: Chest, x: 200, y: 620, connections: [bw_walk_w] }
+  - { id: bw_exit_nw, name: Northwest Exit Gate, region: Swamp (swamp), type: Exit, x: 130, y: 180, connections: [bw_pantry] }
+  - { id: bw_exit_se, name: Southeast Exit Gate, region: Swamp (swamp), type: Exit, x: 880, y: 900, connections: [bw_pier] }
+  - { id: bw_opt_shrine, name: Sunken Shrine, region: Swamp (swamp), type: Optional, x: 830, y: 320, connections: [bw_walk_e] }
+  - { id: bw_opt_raft, name: Stranded Raft, region: Swamp (swamp), type: Optional, x: 160, y: 830, connections: [bw_walk_w] }
+  - { id: vd_verge, name: The Void · Sunken Belt, region: The Void (void), type: Act 3, x: 500, y: 120, connections: [bw_steps, vd_haunts, vd_midden] }
+  - { id: vd_haunts, name: The Void · Afterimage Plain, region: The Void (void), type: Act 3, x: 690, y: 90, connections: [vd_verge, vd_gilmar] }
+  - { id: vd_midden, name: The Void · Midden Abyss, region: The Void (void), type: Act 3, x: 310, y: 90, connections: [vd_verge, ws_hidden] }
+  - { id: vd_gilmar, name: Where He Is, region: The Void (void), type: Act 3, x: 690, y: 40, connections: [vd_haunts] }
+  - { id: ws_hidden, name: Hidden Workshop, region: Hidden Workshop (workshop), type: Act 3, x: 310, y: 40, connections: [vd_midden, bw_pantry] }
+edges:
+  - { from: bw_start, to: bw_pier, channel: Wooden Pier, name: EntranceCatwalk}
+  - { from: bw_pier, to: bw_boat, channel: Wooden Pier, name: Gangplank}
+  - { from: bw_pier, to: bw_walk_w, channel: Wooden Pier, name: West Catwalk}
+  - { from: bw_pier, to: bw_exit_se, channel: Wooden Pier, name: Southeast Catwalk}
+  - { from: bw_boat, to: bw_boat_2f, channel: Stairs, name: Ship Ladder}
+  - { from: bw_boat, to: bw_chest_a, channel: Interior, name: Ship Cabin}
+  - { from: bw_boat, to: bw_walk_e, channel: Wooden Pier, name: East Catwalk}
+  - { from: bw_boat_2f, to: bw_walk_e, channel: Window / Drop, name: Porthole}
+  - { from: bw_walk_e, to: bw_cages, channel: Wooden Pier, name: Cage Path}
+  - { from: bw_walk_e, to: bw_opt_shrine, channel: Wade, name: Shoal}
+  - { from: bw_walk_w, to: bw_pantry, channel: Wooden Pier, name: Pantry Catwalk}
+  - { from: bw_walk_w, to: bw_chest_b, channel: Wooden Pier, name: Under the Shed}
+  - { from: bw_walk_w, to: bw_opt_raft, channel: Wade, name: Shoal}
+  - { from: bw_pantry, to: bw_pantry_2f, channel: Stairs, name: Wooden Ladder}
+  - { from: bw_pantry_2f, to: bw_deep_a, channel: Drop (One-way), name: 2F Window (jump into water)}
+  - { from: bw_pantry, to: bw_exit_nw, channel: Wooden Pier, name: Northwest Catwalk}
+  - { from: bw_cages, to: bw_deep_a, channel: Wade, name: Cage-back Waterway}
+  - { from: bw_deep_a, to: bw_deep_b, channel: Deep Water, name: Segment 1}
+  - { from: bw_deep_b, to: bw_deep_c, channel: Deep Water, name: Segment 2}
+  - { from: bw_deep_c, to: bw_steps, channel: Deep Water, name: Segment 3}
+  - { from: bw_steps, to: vd_verge, channel: Sink (One-way), name: Sunken Stair}
+  - { from: vd_verge, to: vd_haunts, channel: Void Drift, name: Afterimage Drift}
+  - { from: vd_verge, to: vd_midden, channel: Void Drift, name: Midden Drift}
+  - { from: vd_haunts, to: vd_gilmar, channel: Void Drift, name: Deeper}
+  - { from: vd_midden, to: ws_hidden, channel: Misclassification (One-way), name: Midden Backflow}
+  - { from: ws_hidden, to: bw_pantry, channel: Drainage Channel, name: Drainage Channel (Opens after completion; permanent)}

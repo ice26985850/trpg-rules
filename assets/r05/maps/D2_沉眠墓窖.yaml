@@ -1,0 +1,82 @@
+id: D2
+name: 沉眠墓窖
+recommended_rank: "C/D（CR 13-18）"
+theme: 不死墓窖
+grid: { cols: 4, rows: 4 }
+rooms:
+  - id: R1
+    name: 崩落入口
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 前室
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R4]
+    cr: 13
+    enemies: [骷髏戰士 x3]
+    combat_map: 地圖/D2_戰鬥_前室.yaml
+    desc: 骷髏戰士 x3 守門。
+  - id: R3
+    name: 陪葬廊
+    type: treasure
+    gx: 2
+    gy: 0
+    links: [R2, R5]
+    treasure: 骨製護符 x2、腐朽金器 x3、G 200~400
+    desc: 陪葬金器堆。
+  - id: R4
+    name: 尖刺陷阱室
+    type: trap
+    gx: 1
+    gy: 1
+    links: [R2, R6]
+    trap: 中（地刺，DC16 / 2d6）
+    desc: 中機關尖刺室。
+  - id: R5
+    name: 停靈堂
+    type: combat
+    gx: 2
+    gy: 1
+    links: [R3, R6]
+    cr: 15
+    enemies: [殭屍 x4]
+    combat_map: 地圖/D2_戰鬥_停靈堂.yaml
+    desc: 殭屍 x4 停靈處。
+  - id: R6
+    name: 幻影迴廊
+    type: trap
+    gx: 1
+    gy: 2
+    links: [R4, R5, R7]
+    trap: 強（幻影誤導＋落石，DC20 / 3d6 + 暈眩）
+    desc: 強機關幻影迴廊。
+  - id: R7
+    name: 巫妖密室
+    type: elite
+    gx: 2
+    gy: 2
+    links: [R6, R8]
+    cr: 18
+    enemies: [墓地巫妖（首領）]
+    combat_map: 地圖/D2_戰鬥_巫妖密室.yaml
+    desc: 小首領 墓地巫妖（CR18）。
+  - id: R8
+    name: 墓主棺室
+    type: treasure
+    gx: 3
+    gy: 2
+    links: [R7, R9]
+    treasure: 墓窖鑰（劇情物）、史詩配方機率 20%
+    desc: 墓主棺；通關鑰所在。
+  - id: R9
+    name: 裂縫出口
+    type: exit
+    gx: 3
+    gy: 3
+    links: [R8]
+    desc: 出口；經裂縫撤離。

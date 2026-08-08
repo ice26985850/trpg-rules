@@ -1,0 +1,222 @@
+# World Map (Realm relation map; topological, not geographic)
+# Coordinate range 0-1000, smaller y at top. 20 nodes, 32 connections.
+# Note: the directive expected 33 connections, but file 40 §3-3 actually records 32; faithfully transcribed as 32 here.
+meta:
+  name: World Map
+  type: Realm Relation Map (Topology)
+  coord_range: 0-1000
+  note: The Entity's realms are stitched non-Euclidiean; distance is meaningless, only connection relations matter. The Campfire at center, eight realms in the inner ring, The Void at the lower edge, Lone Tower top-left, The Nameless Heart farthest directly above.
+  regions: 
+    - { id: core, 中文名: Core Layer, 說明: The Campfire and the structure directly beneath it, 底色: Warm Orange}
+    - { id: realm_belt, 中文名: Inner Ring · Realm Belt, 說明: The eight Trial realms, 底色: Cool Gray}
+    - { id: rift_belt, 中文名: Outer Edge · Rift Belt, 說明: Anomalous space under incomplete Entity control, 底色: Indigo}
+    - { id: void, 中文名: Outer Edge · The Void, 說明: Abandoned place, 底色: Near-black Purple}
+    - { id: mortal, 中文名: Mortal Side, 說明: Where the Seeps are; not part of the Entity's realms, 底色: Murky Green}
+
+nodes:
+  - id: campfire
+    name: Campfire
+    realm: core
+    type: Campfire
+    x: 500
+    y: 500
+    visible: true
+    connections: [macmillan, autohaven, coldwind, crotus, swamp, lery, redforest, boneyard, ember_vein]
+  - id: macmillan
+    name: Macmillan Estate
+    realm: realm_belt
+    type: Realm
+    x: 500
+    y: 270
+    visible: true
+    connections: [campfire, autohaven, boneyard]
+  - id: autohaven
+    name: Autohaven Wreckers
+    realm: realm_belt
+    type: Realm
+    x: 663
+    y: 337
+    visible: true
+    connections: [campfire, macmillan, coldwind]
+  - id: coldwind
+    name: Coldwind Farm
+    realm: realm_belt
+    type: Realm
+    x: 730
+    y: 500
+    visible: true
+    connections: [campfire, autohaven, crotus, fog_cellar]
+  - id: crotus
+    name: Crotus Prenn Asylum
+    realm: realm_belt
+    type: Realm
+    x: 663
+    y: 663
+    visible: true
+    connections: [campfire, coldwind, swamp, fog_cellar]
+  - id: swamp
+    name: Backwater Swamp
+    realm: realm_belt
+    type: Realm
+    x: 500
+    y: 730
+    visible: true
+    connections: [campfire, crotus, void_verge, bleed_unknown]
+  - id: lery
+    name: Léry's Memorial Institute
+    realm: realm_belt
+    type: Realm
+    x: 337
+    y: 663
+    visible: true
+    connections: [campfire, redforest, hidden_workshop]
+  - id: redforest
+    name: Red Forest
+    realm: realm_belt
+    type: Realm
+    x: 270
+    y: 500
+    visible: true
+    connections: [campfire, lery, hidden_workshop, boneyard, nameless_heart]
+  - id: boneyard
+    name: Forsaken Boneyard
+    realm: realm_belt
+    type: Realm
+    x: 337
+    y: 337
+    visible: true
+    connections: [campfire, redforest, lone_tower]
+  - id: hatch_drift
+    name: Hatch Drift Point
+    realm: core
+    type: Special
+    x: 612
+    y: 428
+    visible: true
+    note: Positions vary per match; the Hatch is not fixed to any realm.
+    connections: [campfire]
+  - id: fog_cellar
+    name: Fog Cellar
+    realm: rift_belt
+    type: Special
+    x: 838
+    y: 618
+    visible: false
+    unlock: S3
+    connections: [coldwind, crotus]
+  - id: hidden_workshop
+    name: Hidden Workshop
+    realm: rift_belt
+    type: Special
+    x: 162
+    y: 618
+    visible: false
+    unlock: S5
+    connections: [void_midden, lery, redforest]
+  - id: lone_tower
+    name: Lone Tower
+    realm: rift_belt
+    type: Special
+    x: 210
+    y: 178
+    visible: false
+    unlock: S7
+    connections: [boneyard, nameless_heart]
+  - id: void_verge
+    name: The Void · Sunken Belt
+    realm: void
+    type: The Void
+    x: 500
+    y: 900
+    visible: false
+    unlock: S5
+    connections: [swamp, void_haunts, void_midden]
+  - id: void_haunts
+    name: The Void · Afterimage Plain
+    realm: void
+    type: The Void
+    x: 762
+    y: 852
+    visible: false
+    unlock: S5
+    connections: [void_verge]
+  - id: void_midden
+    name: The Void · Midden Abyss
+    realm: void
+    type: The Void
+    x: 238
+    y: 852
+    visible: false
+    unlock: S5
+    connections: [void_verge, hidden_workshop]
+  - id: ember_vein
+    name: Ember Vein
+    realm: core
+    type: Special
+    x: 500
+    y: 596
+    visible: false
+    unlock: S7
+    connections: [campfire, nameless_heart]
+  - id: nameless_heart
+    name: The Nameless Heart
+    realm: core
+    type: Special
+    x: 500
+    y: 62
+    visible: false
+    unlock: S8
+    note: Full-map visual foreshadowing; players notice the red line (Umbilical) on first sight, only learn what it is in S7
+    connections: [lone_tower, ember_vein, redforest]
+  - id: bleed_weeks
+    name: Seep · Wick's Town
+    realm: mortal
+    type: Special
+    x: 890
+    y: 200
+    visible: false
+    unlock: S2
+    connections: [macmillan]
+  - id: bleed_unknown
+    name: Seep · Unnamed
+    realm: mortal
+    type: Special
+    x: 110
+    y: 862
+    visible: false
+    unlock: S8
+    connections: [swamp]
+
+edges:
+  - { from: campfire, to: macmillan, type: Mist Corridor, name: Mist Road · Rust Iron, condition: Entity-assigned}
+  - { from: campfire, to: autohaven, type: Mist Corridor, name: Mist Road · Canyon, condition: Entity-assigned}
+  - { from: campfire, to: coldwind, type: Mist Corridor, name: Mist Road · Grain Wave, condition: Entity-assigned}
+  - { from: campfire, to: crotus, type: Mist Corridor, name: Mist Road · Scorched Ash, condition: Entity-assigned}
+  - { from: campfire, to: swamp, type: Mist Corridor, name: Mist Road · Turbid Water, condition: Entity-assigned}
+  - { from: campfire, to: lery, type: Mist Corridor, name: Mist Road · White Porcelain, condition: Entity-assigned}
+  - { from: campfire, to: redforest, type: Mist Corridor, name: Mist Road · Red Roof, condition: Entity-assigned}
+  - { from: campfire, to: boneyard, type: Mist Corridor, name: Mist Road · Wind Sand, condition: Entity-assigned}
+  - { from: macmillan, to: autohaven, type: Mist Rift, name: Rust Rift, condition: Opens only when an Offering is burning}
+  - { from: autohaven, to: coldwind, type: Mist Rift, name: Grain-iron Rift, condition: Opens only when an Offering is burning}
+  - { from: coldwind, to: crotus, type: Mist Rift, name: Sick-field Rift, condition: Opens only when an Offering is burning}
+  - { from: crotus, to: swamp, type: Mist Rift, name: Ash-water Rift, condition: Opens only when an Offering is burning}
+  - { from: swamp, to: lery, type: Mist Rift, name: Drainage Rift, condition: Opens only when an Offering is burning}
+  - { from: lery, to: redforest, type: Mist Rift, name: Root-canal Rift, condition: Opens only when an Offering is burning}
+  - { from: redforest, to: boneyard, type: Mist Rift, name: Fallen-leaves Rift, condition: Opens only when an Offering is burning}
+  - { from: boneyard, to: macmillan, type: Mist Rift, name: Dust-rust Rift, condition: Opens only when an Offering is burning}
+  - { from: coldwind, to: fog_cellar, type: Root Passage, name: Root Passage beneath the Tree, condition: Permanent after S3}
+  - { from: crotus, to: fog_cellar, type: Archive Passage, name: Records Long Corridor, condition: Permanent after S4}
+  - { from: swamp, to: void_verge, type: Sink Passage, name: Sunken Stair, condition: One-way down during S5; two-way after}
+  - { from: void_verge, to: void_haunts, type: Void Drift, name: Afterimage Drift, condition: Free within the Void}
+  - { from: void_verge, to: void_midden, type: Void Drift, name: Midden Drift, condition: Free within the Void}
+  - { from: void_midden, to: hidden_workshop, type: Misclassification, name: Midden Backflow, condition: One-way (Void→Hidden Workshop); must regenerate emotion in the Void}
+  - { from: hidden_workshop, to: lery, type: Drainage Channel, name: Drainage Channel, condition: Permanent after S5}
+  - { from: hidden_workshop, to: redforest, type: Hidden Door, name: Scavenger's Hidden Door, condition: Permanent after S5}
+  - { from: boneyard, to: lone_tower, type: Ascent, name: Endless Stair, condition: Requires holding an Ember to truly ascend}
+  - { from: lone_tower, to: nameless_heart, type: Rift, name: Sky-roof Rift, condition: Act 3 of S8 only}
+  - { from: campfire, to: ember_vein, type: Descent, name: Ember-below, condition: After S7}
+  - { from: ember_vein, to: nameless_heart, type: Shared Umbilical, name: Umbilical, condition: "Impassable, but Ember can be passed (S8 Conflagration route)"}
+  - { from: redforest, to: nameless_heart, type: First Root, name: First Root, condition: Impassable; aura / visual cue only}
+  - { from: bleed_weeks, to: macmillan, type: Seep, name: Seep In, condition: One-way (Reality→Realm)}
+  - { from: bleed_unknown, to: swamp, type: Seep, name: Seep In, condition: One-way (Reality→Realm)}
+  - { from: hatch_drift, to: campfire, type: Escape, name: Hatch, condition: Opens only when the player-count condition is met}

@@ -1,0 +1,49 @@
+# S2 Exploration Map · Autohaven Wreckers (Autohaven Wreckers, R2)
+meta:
+  id: S2
+  name: S2 Exploration Map · Autohaven Wreckers
+  realm: Autohaven Wreckers (R2)
+  regions: [South Yard (yard_south), Canyon (canyon), North Yard (yard_north)]
+  coord_range: 0-1000
+nodes:
+  - { id: ah_start, name: Starting Fog Mouth, region: South Yard (yard_south), type: Entrance, x: 500, y: 920, connections: [ah_gasheaven, ah_bus] }
+  - { id: ah_gasheaven, name: Gas Station Ruins, region: South Yard (yard_south), type: Main Building, x: 300, y: 810, connections: [ah_start, ah_tank, ah_deadend_b, ah_canyon_s] }
+  - { id: ah_tank, name: Oil Tank, region: South Yard (yard_south), type: Landmark / Notch 4, x: 200, y: 730, connections: [ah_gasheaven] }
+  - { id: ah_bus, name: School Bus, region: South Yard (yard_south), type: Landmark / Notch 1,7, x: 620, y: 760, connections: [ah_start, ah_canyon_s, ah_opt_office] }
+  - { id: ah_canyon_s, name: Canyon · South Section, region: Canyon (canyon), type: Passage, x: 500, y: 640, connections: [ah_gasheaven, ah_bus, ah_canyon_m, ah_deadend_a, ah_chest_b] }
+  - { id: ah_canyon_m, name: Canyon · Mid Section, region: Canyon (canyon), type: Passage, x: 500, y: 500, connections: [ah_canyon_s, ah_canyon_n, ah_crane, ah_truck, ah_opt_locker] }
+  - { id: ah_canyon_n, name: Canyon · North Section, region: Canyon (canyon), type: Passage, x: 500, y: 360, connections: [ah_canyon_m, ah_compactor, ah_chest_a, ah_exit_nw, ah_exit_ne] }
+  - { id: ah_crane, name: Crane, region: Canyon (canyon), type: Landmark / Notch 2, x: 700, y: 500, connections: [ah_canyon_m, ah_stacktop] }
+  - { id: ah_stacktop, name: Car-pile Top, region: Canyon (canyon), type: Vantage Point / Notch 5, x: 780, y: 400, connections: [ah_crane, ah_canyon_n] }
+  - { id: ah_truck, name: Overturned Truck, region: Canyon (canyon), type: Passage / Notch 3, x: 340, y: 480, connections: [ah_canyon_m, ah_compactor] }
+  - { id: ah_compactor, name: Compressor, region: North Yard (yard_north), type: Special / Notch 6, x: 300, y: 340, connections: [ah_truck, ah_canyon_n, ah_exit_nw] }
+  - { id: ah_deadend_a, name: Dead End · Car Wall, region: Canyon (canyon), type: Dead End, x: 660, y: 620, connections: [ah_canyon_s] }
+  - { id: ah_deadend_b, name: Dead End·Oil DrumZone, region: South Yard (yard_south), type: Dead End, x: 380, y: 700, connections: [ah_gasheaven] }
+  - { id: ah_chest_a, name: Toolbox Pile, region: North Yard (yard_north), type: Chest, x: 420, y: 380, connections: [ah_canyon_n] }
+  - { id: ah_chest_b, name: Railcar Chest, region: Canyon (canyon), type: Chest, x: 720, y: 640, connections: [ah_canyon_s] }
+  - { id: ah_exit_ne, name: Northeast Exit Gate, region: North Yard (yard_north), type: Exit, x: 830, y: 180, connections: [ah_canyon_n] }
+  - { id: ah_exit_nw, name: Northwest Exit Gate, region: North Yard (yard_north), type: Exit, x: 180, y: 180, connections: [ah_compactor] }
+  - { id: ah_opt_locker, name: Steel-locker Zone, region: Canyon (canyon), type: Optional / Notch 8, x: 150, y: 520, connections: [ah_canyon_m] }
+  - { id: ah_opt_office, name: Yard Manager's Office, region: South Yard (yard_south), type: Optional, x: 860, y: 830, connections: [ah_bus] }
+edges:
+  - { from: ah_start, to: ah_gasheaven, channel: Open, name: Entry Path}
+  - { from: ah_start, to: ah_bus, channel: Open, name: Between Car Rows}
+  - { from: ah_gasheaven, to: ah_tank, channel: Interior, name: Pump Room}
+  - { from: ah_gasheaven, to: ah_deadend_b, channel: Narrow Path, name: Oil-drum Alley}
+  - { from: ah_gasheaven, to: ah_canyon_s, channel: Open, name: Northbound Path}
+  - { from: ah_bus, to: ah_canyon_s, channel: Window, name: School Bus Front/Rear Window}
+  - { from: ah_bus, to: ah_opt_office, channel: Open, name: Yard-side Path}
+  - { from: ah_canyon_s, to: ah_canyon_m, channel: Narrow Path, name: Valley Bottom}
+  - { from: ah_canyon_s, to: ah_deadend_a, channel: Narrow Path, name: Car-wall Alley}
+  - { from: ah_canyon_s, to: ah_chest_b, channel: Narrow Path, name: Railcar Gap}
+  - { from: ah_canyon_m, to: ah_canyon_n, channel: Narrow Path, name: Valley Bottom}
+  - { from: ah_canyon_m, to: ah_crane, channel: Open, name: Crane Base}
+  - { from: ah_canyon_m, to: ah_truck, channel: Cross, name: Truck Bed}
+  - { from: ah_canyon_m, to: ah_opt_locker, channel: Side Door, name: Steel-locker Room}
+  - { from: ah_crane, to: ah_stacktop, channel: Climb, name: Car-pile Side}
+  - { from: ah_stacktop, to: ah_canyon_n, channel: Drop (One-way), name: Leap}
+  - { from: ah_truck, to: ah_compactor, channel: Open, name: North YardPath}
+  - { from: ah_canyon_n, to: ah_compactor, channel: Open, name: Valley Mouth}
+  - { from: ah_canyon_n, to: ah_chest_a, channel: Open, name: Parts Pile}
+  - { from: ah_compactor, to: ah_exit_nw, channel: Open, name: Northwest Path}
+  - { from: ah_canyon_n, to: ah_exit_ne, channel: Open, name: Northeast Path}

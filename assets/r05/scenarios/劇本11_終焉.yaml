@@ -1,0 +1,45 @@
+name: 劇本11 終焉
+description: CL76–99 終局章最終幕，承接劇本10 界蝕主宰倒下、終焉之徑顯現後的決戰。先於虛無核心前廳打倒終焉預言者（CR85 終局BOSS貼身護衛），再直面世界之外·奇點（CR99 終局BOSS）的連戰。依總影響力點（IP）決定結局分支（IP≥60 真和平）。採做法 A：一套劇本＋人數調整。
+difficulty: 傳說~神話
+level_range: [76, 99]
+chapter: 11
+map_ref: 地圖/劇本11_戰鬥_奇點.yaml
+initial_map: 地圖/劇本11_戰鬥_終焉預言者.yaml
+encounters:
+  - id: remnant_skirmish
+    name: 終焉之徑殘部（CL76–84）
+    enemies:
+      - {name: 虛無使徒, cr: 70, count: 2}
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR67; 5–6名→CR72"
+  - id: end_herald
+    name: 終焉預言者（CL85，終局BOSS貼身護衛）
+    enemies:
+      - {name: 終焉預言者, cr: 85, count: 1}
+    boss: true
+    phases:
+      - {name: 預言迴響, hp_threshold: "100%~66%", trait: 現實扭曲/心靈考驗}
+      - {name: 預言審判, hp_threshold: "66%", trait: AOE即死威脅倒數}
+      - {name: 裂隙同調, hp_threshold: "33%", trait: 每回合回10%生命值（HP）/倒下顯露奇點本體}
+    budget: 終局BOSS貼身護衛 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR82; 5–6名→CR87"
+  - id: singularity
+    name: 世界之外·奇點（CL99，終局BOSS）
+    enemies:
+      - {name: 世界之外·奇點, cr: 99, count: 1}
+    boss: true
+    phases:
+      - {name: 終焉之徑, hp_threshold: "100%~66%", trait: 持續翻轉站位圖}
+      - {name: 世界崩壞, hp_threshold: "66%", trait: 全場AOE法則崩壞}
+      - {name: 裂隙同調, hp_threshold: "33%", trait: 每回合+1層減傷（DR，上限30%）/即死倒數}
+    budget: 終局BOSS Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR96; 5–6名→CR101"
+rewards:
+  exp: 79144
+  gold: 50000
+  items: [真·勇者之證, 奇點核心]
+ip_events:
+  - event: 預言審判倒數中拯救同伴
+    ip: 10
+  - event: 達成真和平線（IP≥60）理解異界結局
+    ip: 10

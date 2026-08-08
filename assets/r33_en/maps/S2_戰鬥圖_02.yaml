@@ -1,0 +1,23 @@
+# S2 Battle Map 02 · Car-pile Collapse (E3, passage sealed)
+meta:
+  id: S2_戰鬥圖_02
+  name: S2 Battle Map · Car-pile Collapse
+  scenario: S2
+  scene: E3 (Environment)
+  note: After triggering, the passage seals; Agility (AGI) to dodge. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 14
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Wreck Wall (Cover), rect: { x: 3, y: 1, w: 2, h: 5 } }
+  - { id: t2, type: Wreck Wall (Cover), rect: { x: 9, y: 4, w: 2, h: 5 } }
+  - { id: t3, type: Unstable Car Pile (Triggers collapse), rect: { x: 6, y: 4, w: 2, h: 2 } }
+objects:
+  - { id: o1, type: Pallet, x: 5, y: 8 }
+  - { id: o2, type: Window, x: 2, y: 7 }
+  - { id: o3, type: Window, x: 12, y: 2 }
+  - { id: o4, type: Exit Gate, x: 13, y: 9 }
+  - { id: o5, type: Chest, x: 1, y: 1 }
+spawn_survivor: { x: 1, y: 9 }
+spawn_killer: { x: 13, y: 1 }
+collapse_trigger: When the player enters t3's area or is attacked, t3's cell becomes impassable (sealed passage)

@@ -1,0 +1,66 @@
+scenario: D1
+section: "D1 哥布林巢穴·前廳（CR2）"
+map_type: battle
+grid_scale: "1格=2公尺"
+title: D1_戰鬥_前廳
+# 座標為精確格子座標（col, row，0–9），供距離與射程計算
+# 前後排間隔 2 格（4m），敵方在上方、我方在下方
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: 敵, role: 前排, color: "#FF8A8A"}
+    - {row: 1, side: 敵, role: 後排, color: "#FFC8C8"}
+    - {row: 6, side: 我, role: 前排, color: "#8AAEFF"}
+    - {row: 8, side: 我, role: 後排, color: "#C8D8FF"}
+
+nodes:
+  - id: e_gob1
+    label: 哥布林戰士甲
+    x: 4
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_gob2
+    label: 哥布林戰士乙
+    x: 6
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: p_front_war
+    label: 我方前排戰士
+    x: 3
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_front_monk
+    label: 我方前排格鬥
+    x: 6
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_back_mage
+    label: 我方後排法師
+    x: 4
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_cleric
+    label: 我方後排牧師
+    x: 5
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_hunter
+    label: 我方後排獵人
+    x: 7
+    y: 8
+    type: 我後排
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: e_gob1
+    type: 近戰
+    style: dashed

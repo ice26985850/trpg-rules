@@ -1,0 +1,59 @@
+# S8 Exploration Map · Forsaken Boneyard (Forsaken Boneyard, R8) → Lone Tower → The Nameless Heart
+meta:
+  id: S8
+  name: S8 Exploration Map · Forsaken Boneyard, Lone Tower & The Nameless Heart
+  realm: Forsaken Boneyard (R8) → Lone Tower → The Nameless Heart
+  regions: [Boneyard Surface (boneyard), Lone Tower (tower), The Nameless Heart (heart)]
+  coord_range: 0-1000
+nodes:
+  - { id: fb_start, name: Starting Fog Mouth, region: Boneyard Surface (boneyard), type: Entrance, x: 500, y: 950, connections: [fb_arch_s] }
+  - { id: fb_arch_s, name: South Arch, region: Boneyard Surface (boneyard), type: Landmark, x: 500, y: 850, connections: [fb_start, fb_dune_e, fb_dune_w] }
+  - { id: fb_dune_e, name: East Sand Dune, region: Boneyard Surface (boneyard), type: Open, x: 760, y: 760, connections: [fb_arch_s, fb_carve_e, fb_chest_a, fb_exit_e, fb_opt_wind] }
+  - { id: fb_dune_w, name: West Sand Dune, region: Boneyard Surface (boneyard), type: Open, x: 240, y: 760, connections: [fb_arch_s, fb_carve_w, fb_hatch_rig, fb_exit_w, fb_opt_bones] }
+  - { id: fb_carve_e, name: East Statue Cluster, region: Boneyard Surface (boneyard), type: Cover Zone, x: 830, y: 570, connections: [fb_dune_e, fb_arch_n] }
+  - { id: fb_carve_w, name: West Statue Cluster, region: Boneyard Surface (boneyard), type: Cover Zone, x: 170, y: 570, connections: [fb_dune_w, fb_arch_n, fb_chest_b] }
+  - { id: fb_arch_n, name: North Arch, region: Boneyard Surface (boneyard), type: Landmark, x: 500, y: 700, connections: [fb_carve_e, fb_carve_w, fb_ring] }
+  - { id: fb_ring, name: Stone Statue Circle, region: Boneyard Surface (boneyard), type: Key, x: 500, y: 570, connections: [fb_arch_n, fb_hatch_rig, tw_base] }
+  - { id: fb_chest_a, name: Sand-buried Chest, region: Boneyard Surface (boneyard), type: Chest, x: 700, y: 660, connections: [fb_dune_e] }
+  - { id: fb_chest_b, name: Statue-pedestal Chest, region: Boneyard Surface (boneyard), type: Chest, x: 300, y: 480, connections: [fb_carve_w] }
+  - { id: fb_hatch_rig, name: Fane's Device, region: Boneyard Surface (boneyard), type: Special, x: 350, y: 660, connections: [fb_dune_w, fb_ring] }
+  - { id: fb_exit_e, name: East Exit Gate, region: Boneyard Surface (boneyard), type: Exit, x: 930, y: 830, connections: [fb_dune_e] }
+  - { id: fb_exit_w, name: West Exit Gate, region: Boneyard Surface (boneyard), type: Exit, x: 70, y: 830, connections: [fb_dune_w] }
+  - { id: fb_opt_wind, name: Wind-eroded Cave, region: Boneyard Surface (boneyard), type: Optional, x: 890, y: 700, connections: [fb_dune_e] }
+  - { id: fb_opt_bones, name: Bone Pile, region: Boneyard Surface (boneyard), type: Optional, x: 110, y: 700, connections: [fb_dune_w] }
+  - { id: tw_base, name: Tower Base, region: Lone Tower (tower), type: Lone Tower, x: 500, y: 470, connections: [fb_ring, tw_eyrie] }
+  - { id: tw_eyrie, name: Crow's Nest Ring, region: Lone Tower (tower), type: Lone Tower, x: 500, y: 370, connections: [tw_base, tw_stair] }
+  - { id: tw_stair, name: Endless Stair, region: Lone Tower (tower), type: Lone Tower, x: 500, y: 270, connections: [tw_eyrie, tw_top] }
+  - { id: tw_top, name: Tower Top, region: Lone Tower (tower), type: Lone Tower, x: 500, y: 180, connections: [tw_stair, hr_rift] }
+  - { id: hr_rift, name: Sky-roof Rift, region: The Nameless Heart (heart), type: The Nameless Heart, x: 500, y: 120, connections: [tw_top, hr_maw, hr_nameless] }
+  - { id: hr_maw, name: Opening Plain, region: The Nameless Heart (heart), type: The Nameless Heart, x: 400, y: 70, connections: [hr_rift, hr_hollow] }
+  - { id: hr_hollow, name: That Hole, region: The Nameless Heart (heart), type: Endgame, x: 500, y: 40, connections: [hr_maw, hr_nameless, ember_vein] }
+  - { id: hr_nameless, name: The Nameless Place, region: The Nameless Heart (heart), type: The Nameless Heart, x: 600, y: 70, connections: [hr_rift, hr_hollow] }
+  - { id: ember_vein, name: Ember Vein, region: The Nameless Heart (heart), type: Umbilical, x: 500, y: 596, connections: [hr_hollow], note: "Impassable, but Ember can be passed (S8 Conflagration route)"}
+edges:
+  - { from: fb_start, to: fb_arch_s, channel: Sand, name: South Path}
+  - { from: fb_arch_s, to: fb_dune_e, channel: Sand, name: East Hill Path}
+  - { from: fb_arch_s, to: fb_dune_w, channel: Sand, name: West Hill Path}
+  - { from: fb_dune_e, to: fb_carve_e, channel: Sand, name: East Statue Path}
+  - { from: fb_dune_e, to: fb_chest_a, channel: Sand, name: Sand Pit}
+  - { from: fb_dune_e, to: fb_exit_e, channel: Sand, name: East ExitPath}
+  - { from: fb_dune_e, to: fb_opt_wind, channel: Sand, name: Wind-eroded Trail}
+  - { from: fb_dune_w, to: fb_carve_w, channel: Sand, name: West Statue Path}
+  - { from: fb_dune_w, to: fb_hatch_rig, channel: Sand, name: Device Path}
+  - { from: fb_dune_w, to: fb_exit_w, channel: Sand, name: West ExitPath}
+  - { from: fb_dune_w, to: fb_opt_bones, channel: Sand, name: Bone PileTrail}
+  - { from: fb_carve_e, to: fb_arch_n, channel: Sand, name: North Arc Path}
+  - { from: fb_carve_w, to: fb_arch_n, channel: Sand, name: North Arc Path}
+  - { from: fb_carve_w, to: fb_chest_b, channel: Sand, name: Beneath the Pedestal}
+  - { from: fb_arch_n, to: fb_ring, channel: Sand, name: Statue Path}
+  - { from: fb_hatch_rig, to: fb_ring, channel: Sand, name: Inner-ring Path}
+  - { from: fb_ring, to: tw_base, channel: Tower Door, name: Tower Door (Requires first Ember)}
+  - { from: tw_base, to: tw_eyrie, channel: Spiral Stair, name: Lower Ladder}
+  - { from: tw_eyrie, to: tw_stair, channel: Spiral Stair, name: Mid Ladder}
+  - { from: tw_stair, to: tw_top, channel: Endless Stair, name: Upper Ladder (Non-ember-bearers going up return to tw_eyrie)}
+  - { from: tw_top, to: hr_rift, channel: Rift, name: Sky-roof Rift}
+  - { from: hr_rift, to: hr_maw, channel: No Direction, name: Opening Plain}
+  - { from: hr_rift, to: hr_nameless, channel: No Direction, name: Side}
+  - { from: hr_maw, to: hr_hollow, channel: No Direction, name: Center}
+  - { from: hr_nameless, to: hr_hollow, channel: No Direction, name: Center}
+  - { from: ember_vein, to: hr_hollow, channel: Umbilical, name: "Impassable, but Ember can be passed"}

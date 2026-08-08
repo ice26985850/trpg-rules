@@ -1,0 +1,40 @@
+# Dead by Daylight TRPG — Player Introduction
+
+> In the Fog, your only resource is whatever hasn't been taken from you yet.
+
+**【Source Work Notice】** This is a tabletop role-playing game (TRPG) adaptation of the survival-horror video game *Dead by Daylight*, originally published by Behaviour Interactive. It is not an officially licensed product; it is an independently created ruleset built on that setting.
+
+## What kind of world is this?
+
+You wake beside a campfire that never goes out. Beyond the fire is endless Fog, and beyond the Fog there is nothing. A being called "It" feeds on emotion — and above all on the *hope of escape*. So It does not kill you. Instead, It throws you into a Realm filled with broken Generators, locked Exit Gates, and a Killer's avatar hunting for you. Fix the machines and open the gates, and you return to the Campfire. Those who are Sacrificed come back too — just one layer of memory lighter. There is no redemption here, only meal after meal called a "Trial."
+
+## Who do you play? What do you do?
+
+You play a Survivor dragged into the Trials by the Fog. The core loop is **survival and escape**: repair the required number of Generators, open the Exit Gates, and walk out alive while the Killer's avatar chases you. You can play alone — the Solo Trial (Configuration One) gives you two Echo Companions, echoes of dead Survivors. Saving them grants you more "hope."
+
+## System Highlights
+
+- **Hope Point (HOP): a resource that gets eaten.** It is the only thing that lets you rewrite a die result already rolled — and it is brutally scarce. The counter-intuitive part: altruistic hope (rescuing someone, doubling back, body-blocking) yields far more than hoarding for yourself, forcing you to choose between selfishness and turning back.
+- **A survival frame without Hit Points (HP).** You have no health bar — only a three-tier Health State (HS), a Hook Sacrifice countdown, and Entity Hunger (EH). You are not losing HP; you are being *eaten of hope*.
+- **Campfire Ember writes the ending.** Embers accumulated across scenarios decide one of three endings (Guttering Blaze / Full Blaze / Raging Blaze). A Memory Card lets you reclaim yourself, at the cost of double Hope lost whenever you witness a companion's Sacrifice.
+
+## Who is it for?
+
+Anyone who loves horror atmosphere, survival pressure, resource management, and moral dilemmas will be hooked instantly. Players who crave narrative immersion and hard choices at the brink will feel right at home. No TRPG experience needed — the rules are clear and easy to learn. If you only want mindless slaughter or a lighthearted party game, this place may be too cold for you.
+
+## Play Style
+- Combat weight: Supportive
+- Strategic depth: Highly strategic
+- Narrative drive: Narrative-supported
+- Resource management: Heavy management
+- Character customization: Highly customizable
+- Character creation complexity: Moderate
+- Rules density: Mid-weight
+- GM required: Yes
+
+## Basic Info
+
+- **Players**: 1–4 Players + 1 Game Master (GM); default is the "Solo Trial" of 1 Player + 1 GM.
+- **Core dice**: two ten-sided dice (2d10) + modifier, contested against a Difficulty Class (DC); results fall into four tiers — Critical Success / Success / Failure / Critical Failure.
+- **Single scenario**: about 2–4 hours (solo 2–3, group 3–4).
+- **Full campaign (S1–S8, eight scenarios)**: about 30–45 hours, usually 10–14 sessions.

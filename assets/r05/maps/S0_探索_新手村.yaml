@@ -1,0 +1,82 @@
+scenario: S0
+section: 序章·新手村（CL 1–4）
+map_type: explore
+title: S0_探索_新手村
+# 座標為示意（非精確距離），單位為 SVG 畫布像素
+
+nodes:
+  - id: village
+    label: 新手村
+    x: 340
+    y: 360
+    type: 村莊
+    explored: true
+  - id: guild
+    label: 冒險者公會
+    x: 340
+    y: 235
+    type: 設施
+    explored: true
+  - id: temple
+    label: 七神殿（慈光大聖堂）
+    x: 200
+    y: 300
+    type: 設施
+    explored: true
+  - id: forest
+    label: 村外森林
+    x: 450
+    y: 300
+    type: 野外
+    explored: true
+  - id: goblin
+    label: 哥布林營地
+    x: 540
+    y: 190
+    type: 敵巢
+    explored: false
+  - id: exam
+    label: 考核場（F→E）
+    x: 200
+    y: 470
+    type: 劇情點
+    explored: true
+  - id: farm
+    label: 農田與周邊
+    x: 450
+    y: 470
+    type: 村莊
+    explored: true
+
+edges:
+  - from: village
+    to: guild
+    type: 道路
+  - from: village
+    to: temple
+    type: 道路
+  - from: village
+    to: forest
+    type: 小徑
+  - from: forest
+    to: goblin
+    type: 小徑
+    label: "魔物出沒"
+  - from: village
+    to: exam
+    type: 道路
+    label: "晉級考核"
+  - from: village
+    to: farm
+    type: 道路
+  - from: guild
+    to: exam
+    type: 道路
+
+regions:
+  - name: 村莊生活圈
+    color: "#FFE6A0"
+    nodes: [village, guild, temple, farm, exam]
+  - name: 野外危險區
+    color: "#C8E6C8"
+    nodes: [forest, goblin]

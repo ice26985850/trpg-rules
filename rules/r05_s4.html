@@ -1,0 +1,201 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>勇者之證 ／ D4_沙漠 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../index.html">規則總覽</a><span class="spacer"></span><span class="lang off" title="英文版準備中">EN</span></header>
+<main class="container"><p class="nav"><a href="r05.html">← 回規則頁</a> ｜ <a href="../index.html">⟵ 總頁</a></p><h1>地城模組 D4 — 沙漠（Desert）</h1>
+<blockquote>
+<p><strong>推薦 Rank</strong>：E／D（挑戰等級（CR） 7–12）｜<strong>主題</strong>：黃沙遺境、中階刷資源
+<strong>承接</strong>：公會委託「E-沙1／D-沙1」（對應 Rank E→D，CL 7–12）；或由 GM 指定為練級場。
+<strong>地圖</strong>：<code>地圖/D4_沙漠.yaml</code> ＋ <code>地圖/D4_沙漠.svg</code>
+本作<strong>沒有兼職</strong>；單人進入依人數調整規則（GM 書 13.1：挑戰等級（CR）−3、敵數 ×0.5，無助戰）。</p>
+</blockquote>
+<h3>如何進入（起手節拍）</h3>
+<ul>
+<li><strong>接公會委託</strong>：於冒險者公會佈告板承接 E 階「沙漠討伐」（E-沙1），晉升後接 D-沙1（對應 Rank E→D，CL 7–12）。</li>
+<li><strong>主動探險</strong>：玩家於 S0 入會後，可自商道旁沙漠遺境主動探索（GM 書 17.1）。</li>
+<li><strong>練級定位</strong>：CL 7–12 的刷資源首選；與 E/D 委託並行，把 Rank 從 E 熬到 D。</li>
+<li><strong>單人模式</strong>：以 挑戰等級（CR）−3、敵數×0.5 支撐，無助戰；小首領房附 10×10 站位圖（地圖/D4_戰鬥_沙王.yaml），進房切標準戰鬥（第七章），清場回探索輪。</li>
+</ul>
+<h2>一、背景</h2>
+<p>橫貫商道的黃沙遺境中，一支沙盜部族佔據了古祭壇，其首領「沙王」能以流沙囚人、操弄日炙。過往商隊多葬身沙海，公會遂列為 E→D 階討伐目標；祭壇深處的沙王，正是這片遺境的小首領。</p>
+<h2>二、房間總覽（含迷霧揭示）</h2>
+<table>
+<thead>
+<tr>
+<th>房號</th>
+<th>名稱</th>
+<th>類型</th>
+<th>連通</th>
+<th>內容摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>沙丘入口</td>
+<td>入口</td>
+<td>→R2</td>
+<td>唯一進出；撤退回此即安全。</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>盜匪營地</td>
+<td>戰鬥</td>
+<td>R1／R3／R6</td>
+<td>沙盜 ×2（CR7）。</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>流沙淺灘</td>
+<td>陷阱</td>
+<td>R2／R4／R7</td>
+<td>弱機關（流沙）。</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>巨蠍洞穴</td>
+<td>戰鬥</td>
+<td>R3／R8</td>
+<td>沙漠巨蠍 ×2（CR9）。</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>商旅遺骸</td>
+<td>寶箱</td>
+<td>R6／R9</td>
+<td>水囊、Glint 碎片、G 50~90。</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>禿鷹岩台</td>
+<td>戰鬥</td>
+<td>R5／R7／R2／R10</td>
+<td>禿鷹 ×2（CR10）。</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>休憩綠洲</td>
+<td>休息</td>
+<td>R6／R8／R3／R11</td>
+<td>安全休息點。</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>日曬灼道</td>
+<td>陷阱</td>
+<td>R7／R4／R12</td>
+<td>強機關（日炙反射）。</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>陶罐窖藏</td>
+<td>寶箱</td>
+<td>R5／R10</td>
+<td>香料、精良素材、G 60~110。</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>蜥穴通道</td>
+<td>戰鬥</td>
+<td>R9／R11／R6</td>
+<td>沙漠蜥 ×2（CR11）。</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>風蝕石亭</td>
+<td>休息</td>
+<td>R10／R12／R7</td>
+<td>避風休息點。</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>沙王祭壇</td>
+<td>小首領</td>
+<td>R8／R11／R13</td>
+<td><strong>沙王（CR12）</strong>（見下）。</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>出口沙徑</td>
+<td>出口</td>
+<td>R12</td>
+<td>通關點；領取獎勵離開。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>探索輪規則、陷阱（17.4）、寶箱（17.5）、休息（17.6）、撤退（17.3）詳見 GM 書第十七章。</p>
+</blockquote>
+<h2>二之一、戰鬥房站位戰鬥圖</h2>
+<p>本模組小首領房附 10×10 站位戰鬥圖（與 S1–S4 魔將戰同格式），供 GM 直接以格子距離與射程判定：</p>
+<table>
+<thead>
+<tr>
+<th>房號</th>
+<th>戰鬥房</th>
+<th>站位戰鬥圖</th>
+<th>備註</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R12</td>
+<td>沙王祭壇（沙王 CR12）</td>
+<td><code>地圖/D4_戰鬥_沙王.yaml</code>＋<code>.svg</code></td>
+<td>首領；範圍效果標註「流沙囚籠（後排禁錮）」</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>站位圖敵方在上、我方在下，前後排間隔 2 格（4m）；單人進入依 GM 書 13.1 調整（挑戰等級（CR）−3、敵數 ×0.5，無助戰）。</p>
+</blockquote>
+<h2>三、關鍵房間細節</h2>
+<ul>
+<li><strong>R3 流沙淺灘（弱）</strong>：察覺 DC12（敏捷（M_DEX）／幸運（M_LUK））；觸發 1d6 遲緩。解除 DC14。</li>
+<li><strong>R8 日曬灼道（強）</strong>：察覺 DC18；觸發 2d6 灼傷。鏡面反射可遮斷 R4↔R12 通道（GM 裁定）。</li>
+<li><strong>R5 商旅遺骸</strong>：開箱 DC12；詭雷 30%（中等，2d6）。內含水囊 ×2、Glint 碎片、金幣（G）50~90。</li>
+<li><strong>R9 陶罐窖藏</strong>：開箱 DC14；內含香料 ×2、精良素材、金幣（G）60~110。</li>
+<li><strong>R13 出口沙徑</strong>：通關後返回公會結算獎勵離開。</li>
+</ul>
+<h2>四、小首領 — 沙王（CR12）</h2>
+<p>依 GM 書 10.4 CR 公式與 10.7 首領框架（精簡版）：</p>
+<ul>
+<li><strong>生命值（HP）</strong> 79（CR12 公式）｜<strong>攻擊加值（ATK）</strong> ＋4（floor(1+0.25×12)）｜<strong>迴避值（EVA）</strong> 11（10+floor(0.15×12)）｜<strong>傷害/擊</strong> 20（floor(6+1.2×12)）</li>
+<li><strong>特性（1 階段）</strong>：<code>流沙囚籠</code>——每 3 回合一次，選定我方後排禁錮 1 回合並造成 2d6 鈍擊。</li>
+<li><strong>弱點</strong>：水／冰 ×1.5（見怪物圖鑑註記）。</li>
+<li><strong>掉落</strong>：<code>沙王王冠</code>（劇情物，可於公會兌換 影響力點（IP）+3）；精良素材＋低機率精良配方。</li>
+</ul>
+<h2>五、通關獎勵（全清）</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>數值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>經驗值（EXP）</td>
+<td>約 3108（R2 308 ＋ R4 432 ＋ R6 500 ＋ R10 572 ＋ R12 1296，EXP 累計至 角色等級（CL） 進度（職業等級 ClassLv 另計獨立職業經驗（CEXP）池，不共用 EXP））</td>
+</tr>
+<tr>
+<td>金幣（G）</td>
+<td>350~550</td>
+</tr>
+<tr>
+<td>影響力點（IP）</td>
+<td>+3（通關）／+3（王冠兌換）</td>
+</tr>
+<tr>
+<td>掉落</td>
+<td>水囊／香料／低機率精良配方</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>設計提示：D4 是 CL 7–12「刷 EXP＋G＋素材」的穩定場，可每日重刷（見《委託目錄》〇、重置規則）。</p>
+</blockquote><p><a href="../assets/r05/scenarios/D4_沙漠.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

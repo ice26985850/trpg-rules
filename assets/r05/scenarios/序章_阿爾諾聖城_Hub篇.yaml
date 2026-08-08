@@ -1,0 +1,18 @@
+name: 序章·阿爾諾聖城 Hub 篇（城鎮基地篇）
+description: 城鎮基地（Hub）篇：說明整個 campaign 從阿爾諾聖城開始的起手流程與各場景接續（神殿授職、公會入會、城外地城、委託系統），並澄清「無兼職」與「單人模式無助戰」兩條最高規則。本篇為 GM 開場手冊，不替換 S0–S4、D1–D2 或《委託目錄》內容。
+type: campaign_hub
+chapter: 0
+player_mode: 單人/多人通用
+references:
+  - S0_序章新手村.yaml
+  - D1_哥布林巢穴.yaml
+  - D2_沉眠墓窖.yaml
+  - 委託目錄（assets/委託目錄.md）
+encounters:
+  []
+rewards:
+  exp: None
+  gold: None
+  ip: 0
+  items:
+    []

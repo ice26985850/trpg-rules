@@ -1,0 +1,390 @@
+# S2 · Scars in the Iron Valley (structured data for the AI GM engine)
+id: S2
+title: Scars in the Iron Valley
+realm: Autohaven Wreckers (R2)
+recommended_prs: "3-5"
+duration_min: 180
+summary: >-
+  The player discovers words carved into the wrecks of the Autohaven Wreckers, and the scars differ from Trial to Trial — someone is using them to leave messages, and the one who left them is gone. This scenario deepens two threads: "memory loss is systematic" and "someone is fighting it." Core design: scars are collectible information, but collecting them costs Action Point (AP), and each scar challenges the player's perception. Wraith (WRT) serves as the "heartbeat-less Killer" tutorial — it has no Terror Radius (TR), and the player must read position from audio cues. The closing Ember Moment reveals the words were carved by Eloise herself.
+
+nodes:
+  - id: ah_start
+    label: Starting Mist Mouth
+    type: Entrance
+    x: 500
+    y: 920
+    region: yard_south
+    explored: true
+  - id: ah_gasheaven
+    label: Gas Station Ruins
+    type: Main Building
+    x: 300
+    y: 810
+    region: yard_south
+    explored: true
+  - id: ah_tank
+    label: Fuel Tank
+    type: Landmark / Scar 4
+    x: 200
+    y: 730
+    region: yard_south
+    explored: false
+  - id: ah_bus
+    label: School Bus
+    type: Landmark / Scar 1,7
+    x: 620
+    y: 760
+    region: yard_south
+    explored: true
+  - id: ah_canyon_s
+    label: Iron Valley · South
+    type: Passage
+    x: 500
+    y: 640
+    region: canyon
+    explored: false
+  - id: ah_canyon_m
+    label: Iron Valley · Middle
+    type: Passage
+    x: 500
+    y: 500
+    region: canyon
+    explored: false
+  - id: ah_canyon_n
+    label: Iron Valley · North
+    type: Passage
+    x: 500
+    y: 360
+    region: canyon
+    explored: false
+  - id: ah_crane
+    label: Crane
+    type: Landmark / Scar 2
+    x: 700
+    y: 500
+    region: canyon
+    explored: false
+  - id: ah_stacktop
+    label: Car-Stack Top
+    type: Vantage Point / Scar 5
+    x: 780
+    y: 400
+    region: canyon
+    explored: false
+  - id: ah_truck
+    label: Overturned Hauler
+    type: Passage / Scar 3
+    x: 340
+    y: 480
+    region: canyon
+    explored: false
+  - id: ah_compactor
+    label: Compactor
+    type: Special / Scar 6
+    x: 300
+    y: 340
+    region: yard_north
+    explored: false
+  - id: ah_deadend_a
+    label: Dead End · Car Wall
+    type: Dead End
+    x: 660
+    y: 620
+    region: canyon
+    explored: false
+  - id: ah_deadend_b
+    label: Dead End · Drum Yard
+    type: Dead End
+    x: 380
+    y: 700
+    region: yard_south
+    explored: false
+  - id: ah_chest_a
+    label: Toolbox Pile
+    type: Chest
+    x: 420
+    y: 380
+    region: yard_north
+    explored: false
+  - id: ah_chest_b
+    label: Carriage Chest
+    type: Chest
+    x: 720
+    y: 640
+    region: canyon
+    explored: false
+  - id: ah_exit_ne
+    label: Northeast Exit Gate
+    type: Exit
+    x: 830
+    y: 180
+    region: yard_north
+    explored: false
+  - id: ah_exit_nw
+    label: Northwest Exit Gate
+    type: Exit
+    x: 180
+    y: 180
+    region: yard_north
+    explored: false
+  - id: ah_opt_locker
+    label: Locker Bank
+    type: Optional / Scar 8
+    x: 150
+    y: 520
+    region: canyon
+    explored: false
+  - id: ah_opt_office
+    label: Foreman's Office
+    type: Optional
+    x: 860
+    y: 830
+    region: yard_south
+    explored: false
+
+edges:
+  - from: ah_start
+    to: ah_gasheaven
+    channel_type: Open
+    name: Entry Road
+  - from: ah_start
+    to: ah_bus
+    channel_type: Open
+    name: Between the Cars
+  - from: ah_gasheaven
+    to: ah_tank
+    channel_type: Interior
+    name: Pump Room
+  - from: ah_gasheaven
+    to: ah_deadend_b
+    channel_type: Narrow Path
+    name: Drum Alley
+  - from: ah_gasheaven
+    to: ah_canyon_s
+    channel_type: Open
+    name: Northbound Road
+  - from: ah_bus
+    to: ah_canyon_s
+    channel_type: Window
+    name: Bus Front and Rear Windows
+  - from: ah_bus
+    to: ah_opt_office
+    channel_type: Open
+    name: Yard-Side Road
+  - from: ah_canyon_s
+    to: ah_canyon_m
+    channel_type: Narrow Path
+    name: Valley Floor
+  - from: ah_canyon_s
+    to: ah_deadend_a
+    channel_type: Narrow Path
+    name: Car-Wall Alley
+  - from: ah_canyon_s
+    to: ah_chest_b
+    channel_type: Narrow Path
+    name: Carriage Seam
+  - from: ah_canyon_m
+    to: ah_canyon_n
+    channel_type: Narrow Path
+    name: Valley Floor
+  - from: ah_canyon_m
+    to: ah_crane
+    channel_type: Open
+    name: Crane Base
+  - from: ah_canyon_m
+    to: ah_truck
+    channel_type: Traverse
+    name: Hauler Bed
+  - from: ah_canyon_m
+    to: ah_opt_locker
+    channel_type: Narrow Door
+    name: Locker Row
+  - from: ah_crane
+    to: ah_stacktop
+    channel_type: Climb
+    name: Car-Stack Side
+  - from: ah_stacktop
+    to: ah_canyon_n
+    channel_type: Jump Down (one-way)
+    name: Leap
+  - from: ah_truck
+    to: ah_compactor
+    channel_type: Open
+    name: North-Yard Road
+  - from: ah_canyon_n
+    to: ah_compactor
+    channel_type: Open
+    name: Valley Mouth
+  - from: ah_canyon_n
+    to: ah_chest_a
+    channel_type: Open
+    name: Parts Pile
+  - from: ah_compactor
+    to: ah_exit_nw
+    channel_type: Open
+    name: Northwest Road
+  - from: ah_canyon_n
+    to: ah_exit_ne
+    channel_type: Open
+    name: Northeast Road
+
+encounters:
+  - id: E1
+    type: Exploration
+    content: Scar collection (6-8)
+    cr: Easy-Medium
+    note: Each costs 1 Action Point (AP)
+  - id: E2
+    type: Chase
+    content: Wraith's (WRT) invisible ambush (no heartbeat)
+    cr: Medium
+    note: Tutorial: audio cues replace heartbeat
+  - id: E3
+    type: Environment
+    content: Car pile collapse (closes passage when triggered)
+    cr: Medium
+    note: Agility (AGI) evade
+  - id: E4
+    type: Realm Construct
+    content: Rust-Devourer = Tin Golem (RC-03) × N
+    cr: Low (CR 3)
+    note: EBC 6 each, blocking type
+  - id: E5
+    type: Chase
+    content: Mid-game Hook and rescue
+    cr: Medium
+    note: "-"
+  - id: E6
+    type: Endgame
+    content: Trap on the fifth Generator (Scar #1)
+    cr: Medium-High
+    note: Free position reveal for the Killer when the fifth is repaired
+
+npcs:
+  - name: Eloise Finch
+    role: Campfire Chronicler (§8-A)
+    lines:
+      - "These are my words. …I forget every time I come back. So I carve outside, and on my own body. But I never finished that one sentence."
+  - name: Gilmar Sato
+    role: Scavenger-type Survivor (§8-A)
+    lines:
+      - "Next time you see one like it, stop and look. Maybe it was left for you."
+  - name: Echo Companion · the Hollow Hugger
+    role: Solo configuration (§8-B)
+    lines:
+      - "If the player heals it, it passes the 'thing in its arms' to the player — it is empty, but the player gains 1 Hope Point (HOP)."
+  - name: Whisperer · Iron-Rust Chorus (RC-02)
+    role: Intelligence-type construct (EBC 0)
+    lines:
+      - "Metal remembers sound. You knock, it answers. Knock a few more times and I'll tell you which sheet of iron carries words."
+
+choices:
+  - id: C1
+    question: Spend Action Point (AP) to read the scars?
+    options:
+      - desc: Give up a self-favorable action to read a scar
+        effect: Satisfies the Ember Moment trigger condition; gains main-story info and rules hints
+  - id: C2
+    question: The fifth Generator
+    options:
+      - desc: Actively repair the fifth
+        effect: Triggers the E6 trap (free position reveal for the Killer)
+      - desc: Heed the scar, meet quota with four
+        effect: Avoids the trap; escape still completed
+  - id: C3
+    question: Treatment of Echo · Hollow Hugger (solo)
+    options:
+      - desc: Heal the Echo Companion
+        effect: Gain 1 Hope Point (HOP); key source in the solo game
+
+endings:
+  - type: Linear (single ending)
+    condition: Complete the Trial
+    ember_moment: Triggers if the player gives up a favorable action to read a scar
+
+rewards:
+  bp: Standard × (per player-count table)
+  prs_gain: Rises to level 5 upon completion
+  hop: "+2"
+  campfire_ember: Accrued during play (est. 4-7)
+  memory_card: 0
+  item: 1 common-uncommon item per person
+  narrative: Memory loss is systematic; someone is fighting it
+  special: The player may keep a sheet of iron and a nail — from now on, in every scenario, the player can carve one sentence to leave for the next self
+
+player_count_scaling:
+  n1:
+    generators_total: 4
+    generators_required: 3
+    killer_pressure: 2
+    echo_companions: 1
+    carvings: 8
+    rust_devourers_RC03: 1
+    hooks: 4
+    chests: 2
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    bp_multiplier: 1.1
+    hop_reward: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 4
+    killer_pressure: 2
+    echo_companions: 1
+    carvings: 7
+    rust_devourers_RC03: 2
+    hooks: 5
+    chests: 2
+    lockers: 6
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    bp_multiplier: 1.05
+    hop_reward: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 2
+    echo_companions: 0
+    carvings: 6
+    rust_devourers_RC03: 2
+    hooks: 6
+    chests: 3
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 3
+    echo_companions: 0
+    carvings: 6
+    rust_devourers_RC03: 3
+    hooks: 8
+    chests: 3
+    lockers: 8
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.0
+  prs_mid: 4
+  eb:
+    n1: 6
+    n2: 12
+    n3: 18
+    n4: 24
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: Wraith (WRT)
+  killer_avm: 1
+  killer_cr: "PRS + 1 (CR 4-6)"
+  construct_RC03: Tin Golem (RC-03) CR3 / HP22 / attack +3 / DC11 / EBC6

@@ -1,0 +1,40 @@
+name: 劇本5 龍將戰
+description: 北上龍脊峰調查龍將伊格妮絲·炎鱗蹤跡、探索龍巢、龍將三階段 Boss 戰（幼龍態/完全體/狂暴態，HP 66%/33% 轉換）。CL40 門檻，後段精銳。採做法 A：一套劇本＋人數調整。
+difficulty: 困難
+level_range: [40, 42]
+chapter: 5
+map_ref: 地圖/劇本5_戰鬥_龍將.yaml
+initial_map: 地圖/劇本5_探索_龍巢.yaml
+encounters:
+  - id: dragon_vanguard
+    name: 龍巢前哨
+    enemies:
+      - {name: 龍族兵, cr: 8, count: 3}
+      - {name: 幼龍幼體, cr: 6, count: 2}
+    budget: 困難×1.5
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: dragon_general_boss
+    name: 龍將 伊格妮絲·炎鱗（三階段）
+    enemies:
+      - {name: 伊格妮絲·炎鱗, cr: 40, count: 1}
+      - {name: 龍族兵(階段二召喚), cr: 8, count: 2}
+    boss: true
+    phases:
+      - {name: 幼龍態, hp_threshold: "100%~66%", trait: 鱗甲減傷30%}
+      - {name: 完全體, hp_threshold: "66%", trait: 龍息AOE火焰/飛行突襲}
+      - {name: 狂暴態, hp_threshold: "33%", trait: 鱗甲破碎/滅世吐息/易暴擊窗口}
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6（配小兵×1.2）
+    adjust: "1名→CR37/無助戰; 5–6名→CR42"
+rewards:
+  exp: 9934
+  gold: 1200
+  items: [炎鱗碎片, 龍將信標, 火焰抗性護符]
+ip_events:
+  - event: 保護遭龍息波及的難民村
+    ip: 4
+  - event: 與龍將選擇和平對話選項
+    ip: 5
+  - event: 饒恕敗北龍族兵（不殺）
+    ip: 3
+  - event: 揭露龍將「尋找強者」動機
+    ip: 2

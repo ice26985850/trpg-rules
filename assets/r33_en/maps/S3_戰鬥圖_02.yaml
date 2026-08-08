@@ -1,0 +1,24 @@
+# S3 Battle Map 02 · Stalk-row Walker in Cornfield (E4, Straw Afterimage disguise)
+meta:
+  id: S3_戰鬥圖_02
+  name: S3 Battle Map · Stalk-row Walker in Cornfield
+  scenario: S3
+  scene: E4 (Realm Creation)
+  note: The Stalk-row Walker = Straw Afterimage (RC-04), hides in the cornfield mimicking the sound of parting corn to mislead players (real damage ✓). Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 16
+grid_h: 12
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Cornfield (Line-of-sight concealment), rect: { x: 1, y: 1, w: 7, h: 6 } }
+  - { id: t2, type: Cornfield (Line-of-sight concealment), rect: { x: 8, y: 5, w: 7, h: 6 } }
+  - { id: t3, type: Cornfield (Line-of-sight concealment), rect: { x: 2, y: 8, w: 6, h: 3 } }
+objects:
+  - { id: o1, type: Pallet, x: 8, y: 4 }
+  - { id: o2, type: Window, x: 15, y: 2 }
+  - { id: o3, type: Window, x: 1, y: 1 }
+  - { id: o4, type: The Stalk-row Walker (RC-04) Ambush Point, x: 4, y: 3 }
+  - { id: o5, type: The Stalk-row Walker (RC-04) Ambush Point, x: 11, y: 9 }
+  - { id: o6, type: Chest, x: 14, y: 11 }
+spawn_survivor: { x: 1, y: 11 }
+spawn_killer: { x: 15, y: 1 }
+construct_spawns: [o4, o5]

@@ -1,0 +1,38 @@
+name: 劇本6 死靈將戰
+description: 西進寂葬濕地討伐死靈將莫爾凡娜·寂葬，揭露教會黑幕與第五人身世伏筆。CL42 門檻，後段精銳。三階段 Boss 戰（召喚/屍潮/巫妖化），關鍵在擊破護命棺材破除無敵。
+difficulty: 困難～極難
+level_range: [42, 44]
+chapter: 6
+map_ref: 地圖/劇本6_戰鬥_死靈將.yaml
+encounters:
+  - id: necro_patrol
+    name: 濕地巡邏
+    enemies:
+      - {name: 殭屍, cr: 13, count: 3}
+      - {name: 骷髏戰士, cr: 14, count: 2}
+      - {name: 幽靈, cr: 16, count: 2}
+    budget: 困難×1.5
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: necro_general_boss
+    name: 靈將 莫爾凡娜·寂葬（三階段）
+    enemies:
+      - {name: 莫爾凡娜·寂葬, cr: 42, count: 1}
+      - {name: 護命棺材(無敵核心), cr: 0, count: 1}
+    boss: true
+    phases:
+      - {name: 召喚, hp_threshold: "100%~66%", trait: 亡靈召喚補小兵}
+      - {name: 屍潮, hp_threshold: "66%", trait: 生命虹吸/死亡領域DoT}
+      - {name: 巫妖化, hp_threshold: "33%", trait: 暴擊免疫(擊破棺材解除)/終焉亡歌倒數}
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR39/無助戰; 5–6名→CR44"
+rewards:
+  exp: 13976
+  gold: 3500
+  items: [寂葬符印, 淨魂聖水x2, 亡者安息勳章]
+ip_events:
+  - event: 超渡受詛咒亡魂
+    ip: 4
+  - event: 揭露教會黑幕隱瞞真相
+    ip: 2
+  - event: 暗中暗示第五人身世
+    ip: 3

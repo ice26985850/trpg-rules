@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1130 998" width="1130" height="998" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+<defs>
+<marker id="ah-path" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8D9BA8"/></marker>
+<marker id="ah-door" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1E88E5"/></marker>
+<marker id="ah-window" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#00897B"/></marker>
+<marker id="ah-pallet" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F9A825"/></marker>
+<marker id="ah-secret" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8E24AA"/></marker>
+<marker id="ah-oneway" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker>
+<marker id="ah-breach" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker>
+<marker id="ah-default" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8D9BA8"/></marker>
+<filter id="sh" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="2" stdDeviation="2.4" flood-color="#1b2733" flood-opacity="0.20"/></filter>
+</defs>
+<rect width="1130" height="998" fill="#FBFAF7"/>
+<line x1="560.0" y1="763.0" x2="560.0" y2="707.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="528.8" y1="654.6" x2="434.4" y2="583.8" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="591.2" y1="654.6" x2="685.6" y2="583.8" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="612.7" y1="700.6" x2="643.6" y2="713.8" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="388.6" y1="533.4" x2="353.0" y2="456.3" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="306.0" y1="558.0" x2="308.0" y2="558.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="411.4" y1="533.4" x2="447.0" y2="456.3" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="328.6" y1="403.4" x2="293.0" y2="326.3" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="434.0" y1="428.0" x2="369.5" y2="428.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="389.8" y1="405.3" x2="506.5" y2="352.3" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="261.0" y1="273.9" x2="191.4" y2="185.3" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="312.3" y1="321.3" x2="424.4" y2="402.3" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="742.1" y1="534.1" x2="815.2" y2="454.9" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="762.3" y1="580.9" x2="914.2" y2="663.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="859.3" y1="403.9" x2="898.2" y2="355.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="853.6" y1="452.5" x2="874.4" y2="490.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="854.2" y1="403.5" x2="933.8" y2="265.9" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="833.5" y1="328.0" x2="680.5" y2="328.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="560.0" y1="303.0" x2="560.0" y2="297.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="508.3" y1="305.4" x2="455.3" y2="282.2" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="560.0" y1="243.0" x2="560.0" y2="217.0" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="594.8" y1="164.8" x2="641.8" y2="133.4" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<line x1="691.9" y1="132.6" x2="946.4" y2="659.8" stroke="#8D9BA8" stroke-width="2.2" stroke-dasharray="4 0" stroke-linecap="round" marker-end="url(#ah-default)" marker-start="url(#ah-default)"/>
+<g filter="url(#sh)" opacity="1">
+<rect x="485.0" y="767.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="793.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_start</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="485.0" y="657.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="683.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_lobby</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="310.0" y="537.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="400.0" y="563.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_ward_1f</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="250.0" y="407.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="340.0" y="433.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_ward_2f</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="190.0" y="277.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="280.0" y="303.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_ward_3f</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="377.5" y="407.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="460.0" y="433.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_atrium</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="180.0" y="537.0" width="120" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="240.0" y="563.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_ect</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="607.5" y="537.0" width="225" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="720.0" y="563.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_corridor_e</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="757.5" y="407.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="840.0" y="433.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_chapel</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="837.5" y="307.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="920.0" y="333.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_pulpit</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="447.5" y="307.0" width="225" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="333.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_corridor_n</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="470.0" y="167.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="193.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_records</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="477.5" y="247.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="560.0" y="273.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_door17</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="310.0" y="237.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="400.0" y="263.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_chest_a</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="800.0" y="497.0" width="180" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="890.0" y="523.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_chest_b</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="605.0" y="87.0" width="150" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="680.0" y="113.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_crack</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="87.5" y="137.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="170.0" y="163.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_exit_w</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="877.5" y="667.0" width="165" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="960.0" y="693.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_exit_e</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="587.5" y="717.0" width="225" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="700.0" y="743.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_opt_morgue</text>
+<g filter="url(#sh)" opacity="1">
+<rect x="852.5" y="217.0" width="195" height="42" rx="11" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="2.2"/>
+</g>
+<text x="950.0" y="243.5" font-size="15" font-weight="600" text-anchor="middle" fill="#33404A">cp_opt_bell</text>
+<text x="40" y="48" font-size="26" font-weight="800" fill="#1F2933">Map</text>
+<text x="40" y="922" font-size="12.5" font-weight="700" fill="#5A6570">Legend</text>
+<rect x="40" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="66" y="944" font-size="12" fill="#3A4650">Main Zone</text>
+<rect x="100" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="126" y="944" font-size="12" fill="#3A4650">Entrance</text>
+<rect x="160" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="186" y="944" font-size="12" fill="#3A4650">Exit</text>
+<rect x="220" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="246" y="944" font-size="12" fill="#3A4650">Optional</text>
+<rect x="280" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="306" y="944" font-size="12" fill="#3A4650">Chest</text>
+<rect x="431" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="457" y="944" font-size="12" fill="#3A4650">Room / Afterimage</text>
+<rect x="530" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="556" y="944" font-size="12" fill="#3A4650">Hub</text>
+<rect x="590" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="616" y="944" font-size="12" fill="#3A4650">Afterimage</text>
+<rect x="650" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="676" y="944" font-size="12" fill="#3A4650">Special</text>
+<rect x="710" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="736" y="944" font-size="12" fill="#3A4650">Passage</text>
+<rect x="770" y="932" width="20" height="15" rx="4" fill="#F5F5F5" stroke="#8D9BA8" stroke-width="1.8"/>
+<text x="796" y="944" font-size="12" fill="#3A4650">Key</text>
+</svg>

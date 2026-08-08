@@ -1,0 +1,24 @@
+# S5 Battle Map 02 · Deep Water Zone (E2, The Bloated slows you)
+meta:
+  id: S5_戰鬥圖_02
+  name: S5 Battle Map · Deep Water Zone
+  scenario: S5
+  scene: E2 (Environment / Realm Creation)
+  note: Three segments of deep water; each requires an Agility (AGI) or Will (WIL) check (DC Difficult). In the water, The Bloated = Mud Hands (RC-06) grabs waders and slows their movement. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 12
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Deep Water (Hazard; movement slowed; check per segment), rect: { x: 1, y: 1, w: 10, h: 3 } }
+  - { id: t2, type: Deep Water (Hazard), rect: { x: 1, y: 4, w: 4, h: 3 } }
+  - { id: t3, type: Deep Water (Hazard), rect: { x: 6, y: 7, w: 5, h: 2 } }
+  - { id: t4, type: Wooden Pier (Safe ground), rect: { x: 5, y: 1, w: 2, h: 1 } }
+objects:
+  - { id: o1, type: The Bloated (RC-06) Patrol Point, x: 4, y: 2 }
+  - { id: o2, type: The Bloated (RC-06) Patrol Point, x: 8, y: 8 }
+  - { id: o3, type: Pallet, x: 5, y: 6 }
+  - { id: o4, type: Sunken Stair (Lower entrance), x: 6, y: 0 }
+  - { id: o5, type: Chest, x: 11, y: 9 }
+spawn_survivor: { x: 6, y: 9 }
+spawn_killer: { x: 6, y: 0, note: The Hag overlooks from above the deep water; players must wade across.}
+construct_spawns: [o1, o2]

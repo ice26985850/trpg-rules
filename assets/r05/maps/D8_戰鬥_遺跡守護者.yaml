@@ -1,0 +1,72 @@
+scenario: D8
+section: "D8 古代遺跡·守護者聖殿（CR40）"
+map_type: battle
+grid_scale: "1格=2公尺"
+title: D8_戰鬥_遺跡守護者
+# 座標為精確格子座標（col, row，0–9），供距離與射程計算
+# 前後排間隔 2 格（4m），敵方在上方、我方在下方
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: 敵, role: 前排, color: "#FF8A8A"}
+    - {row: 1, side: 敵, role: 後排, color: "#FFC8C8"}
+    - {row: 6, side: 我, role: 前排, color: "#8AAEFF"}
+    - {row: 8, side: 我, role: 後排, color: "#C8D8FF"}
+
+nodes:
+  - id: e_boss
+    label: 遺跡守護者
+    x: 5
+    y: 2
+    type: boss
+    explored: true
+  - id: e_min1
+    label: 遺跡守衛甲
+    x: 3
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_min2
+    label: 遺跡守衛乙
+    x: 7
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_min3
+    label: 魔像
+    x: 5
+    y: 1
+    type: 敵遠程
+    explored: true
+  - id: p_front_war
+    label: 我方前排戰士
+    x: 4
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_front_monk
+    label: 我方前排格鬥
+    x: 6
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_back_mage
+    label: 我方後排法師
+    x: 4
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_cleric
+    label: 我方後排牧師
+    x: 6
+    y: 8
+    type: 我後排
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: e_boss
+    type: 近戰
+    style: dashed

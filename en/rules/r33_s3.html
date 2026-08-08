@@ -1,0 +1,856 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黎明殺機 TRPG ／ s03_根不吃土 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../../index.html">規則總覽</a><span class="spacer"></span><a class="lang" href="../rules/r33.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r33.html">← 回規則頁</a> ｜ <a href="../../index.html">⟵ 總頁</a></p><h1>S3 · Roots That Eat No Soil</h1>
+<blockquote>
+<p>This scenario is the first station of a playstyle shift: the player moves from "escape" into "escape + infiltration." Act Two is a standard Trial, but Act Three is <strong>breaking away from the main line mid-Trial and infiltrating a place that should not exist</strong> — the Fog Cellar. There the player retrieves the first Memory Card, and learns that Ember can serve as "something that unlocks."</p>
+</blockquote>
+<hr />
+<h2>1. Scenario Information</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number</td>
+<td>S3</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Roots That Eat No Soil</td>
+</tr>
+<tr>
+<td>Recommended Prestige (PRS)</td>
+<td>5–7</td>
+</tr>
+<tr>
+<td>Estimated Length</td>
+<td>Solo 3.5 hrs / Group 4 hrs</td>
+</tr>
+<tr>
+<td>Realm</td>
+<td>Coldwind Farm (R3) → Fog Cellar</td>
+</tr>
+<tr>
+<td>Main Killer</td>
+<td>Hillbilly (HBY)</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>Medium (Killer Pressure Level: 3; main Difficulty Class (DC): Medium–Hard)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. GM Summary</h2>
+<p><strong>Storyline</strong>: The player carries the S2 Scar #5 "The fire remembers" clue. Botanist Survivor Sally Nkosi (§8-A) says the Sacrifice Tree at the center of Coldwind Farm "grows its roots upward… it eats something else." In Act Two, the player must complete, while fleeing across the open farm, the three-step process of "opening the root passage" — and step two demands generating an Altruistic Hope as a key, making "rescue" go from a moral choice to a required condition for clearing. In Act Three the player descends into the Fog Cellar and plucks a memory pod from the inverted root system.</p>
+<p><strong>Truth (GM-Exclusive)</strong>: The Fog Cellar is The Entity's memory archive — memories are not destroyed, only "filed." Before plucking a pod you must "recognize" that it is yours; the GM does not tell right from wrong. Plucking someone else's pod (including a Killer's) is an S6 hook. The Ember Moment reveals: the tree recognizes only one thing — the Altruistic Hope that The Entity itself cannot spit out.</p>
+<p><strong>How to Run</strong>: The open ground is Hillbilly's (HBY) home turf, the most painful round so far — only 1 Pallet, the player must use the cornfield for concealment and psychological play rather than looping. The Fog Cellar has no Killer and no objective; pressure comes from the shrinking countdown and the cognitive challenge of "recognizing yourself." The GM should arrange for at least one player to pluck the wrong pod (a Killer's memory).</p>
+<hr />
+<h2>3. Opening Text (read aloud)</h2>
+<blockquote>
+<p>In the firelight, Sally presses a finger to the dirt and draws an imaginary arc.</p>
+<p>"The tree in the middle of Coldwind Farm," she says, "its roots grow upward. I've seen it, before the soil covered it."</p>
+<p>She looks up at you, very serious.</p>
+<p>"Roots don't eat soil. They eat something else."</p>
+<p>Eloise reads the scar "The fire remembers" aloud, as if chewing on a word.</p>
+<p>"If memory was taken," she says, "then it must have been put somewhere. And that place… isn't outside the Trial."</p>
+<p>"So it's inside," you say.</p>
+<p>"Inside," she nods. "But you have to slip in while the Trial hasn't ended yet."</p>
+<p>She brightens the fire a little.</p>
+<p>"This time, don't only think about escaping."</p>
+</blockquote>
+<hr />
+<h2>4. Scenes and Nodes</h2>
+<p><strong>Realm</strong>: Coldwind Farm (R3) → Fog Cellar. Zone divisions: <code>fields</code> (fields) / <code>buildings</code> (buildings) / <code>cellar</code> (Fog Cellar, unlocked in Act Three).</p>
+<p><strong>Exploration map node list</strong></p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>label</th>
+<th>type</th>
+<th>x</th>
+<th>y</th>
+<th>region</th>
+<th>initially explored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cw_start</code></td>
+<td>Starting Mist Mouth</td>
+<td>Entrance</td>
+<td>500</td>
+<td>930</td>
+<td>fields</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>cw_corn_s</code></td>
+<td>Cornfield · South</td>
+<td>Concealment Zone</td>
+<td>380</td>
+<td>810</td>
+<td>fields</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>cw_corn_e</code></td>
+<td>Cornfield · East</td>
+<td>Concealment Zone</td>
+<td>720</td>
+<td>660</td>
+<td>fields</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_corn_w</code></td>
+<td>Cornfield · West</td>
+<td>Concealment Zone</td>
+<td>260</td>
+<td>590</td>
+<td>fields</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_tree</code></td>
+<td>Sacrifice Tree</td>
+<td>Key Landmark</td>
+<td>500</td>
+<td>500</td>
+<td>fields</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>cw_harvester</code></td>
+<td>Harvester</td>
+<td>Cover Landmark</td>
+<td>640</td>
+<td>800</td>
+<td>fields</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_abattoir</code></td>
+<td>Reeking Abattoir</td>
+<td>Main Building</td>
+<td>760</td>
+<td>380</td>
+<td>buildings</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_abattoir_in</code></td>
+<td>Abattoir Interior</td>
+<td>Building Interior</td>
+<td>840</td>
+<td>300</td>
+<td>buildings</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_house</code></td>
+<td>Thompson House</td>
+<td>Main Building</td>
+<td>250</td>
+<td>330</td>
+<td>buildings</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_house_2f</code></td>
+<td>Thompson House Second Floor</td>
+<td>Building Level</td>
+<td>180</td>
+<td>250</td>
+<td>buildings</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_silo</code></td>
+<td>Silo</td>
+<td>Cover Landmark</td>
+<td>420</td>
+<td>300</td>
+<td>buildings</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_chest_a</code></td>
+<td>Farm-Tool Shed</td>
+<td>Chest</td>
+<td>600</td>
+<td>260</td>
+<td>buildings</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_chest_b</code></td>
+<td>Garage</td>
+<td>Chest</td>
+<td>330</td>
+<td>700</td>
+<td>fields</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_exit_n</code></td>
+<td>North Exit Gate</td>
+<td>Exit</td>
+<td>500</td>
+<td>110</td>
+<td>buildings</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_exit_se</code></td>
+<td>Southeast Exit Gate</td>
+<td>Exit</td>
+<td>880</td>
+<td>880</td>
+<td>fields</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_opt_well</code>※</td>
+<td>Old Well</td>
+<td>Optional</td>
+<td>150</td>
+<td>780</td>
+<td>fields</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cw_opt_coop</code>※</td>
+<td>Chicken Coop</td>
+<td>Optional</td>
+<td>880</td>
+<td>560</td>
+<td>fields</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fc_entry</code></td>
+<td>Fog Cellar · Entrance</td>
+<td>Act Three</td>
+<td>500</td>
+<td>500</td>
+<td>cellar</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fc_root_a</code></td>
+<td>Root System · Near Layer</td>
+<td>Act Three</td>
+<td>400</td>
+<td>430</td>
+<td>cellar</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fc_root_b</code></td>
+<td>Root System · Middle Layer</td>
+<td>Act Three</td>
+<td>500</td>
+<td>380</td>
+<td>cellar</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fc_root_c</code></td>
+<td>Root System · Deep Layer</td>
+<td>Act Three</td>
+<td>600</td>
+<td>430</td>
+<td>cellar</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fc_yours</code></td>
+<td>The One That Is Yours</td>
+<td>Act Three</td>
+<td>500</td>
+<td>300</td>
+<td>cellar</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The overlap of Fog Cellar node coordinates with the surface is deliberate — the Fog Cellar sits spatially beneath the farm, another layer at the same location. For SVG, suggest layer switching or semi-transparent overlay.</p>
+</blockquote>
+<p><strong>Connection List (surface)</strong></p>
+<table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>channel type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cw_start</code></td>
+<td><code>cw_corn_s</code></td>
+<td>Open</td>
+<td>Field Ridge</td>
+</tr>
+<tr>
+<td><code>cw_start</code></td>
+<td><code>cw_harvester</code></td>
+<td>Open</td>
+<td>Farm Road</td>
+</tr>
+<tr>
+<td><code>cw_corn_s</code></td>
+<td><code>cw_tree</code></td>
+<td>Concealment</td>
+<td>Between the Ears</td>
+</tr>
+<tr>
+<td><code>cw_corn_s</code></td>
+<td><code>cw_chest_b</code></td>
+<td>Open</td>
+<td>Side Road</td>
+</tr>
+<tr>
+<td><code>cw_corn_s</code></td>
+<td><code>cw_opt_well</code></td>
+<td>Open</td>
+<td>West Field Ridge</td>
+</tr>
+<tr>
+<td><code>cw_harvester</code></td>
+<td><code>cw_corn_e</code></td>
+<td>Open</td>
+<td>East Field Ridge</td>
+</tr>
+<tr>
+<td><code>cw_harvester</code></td>
+<td><code>cw_exit_se</code></td>
+<td>Open</td>
+<td>Southeast Road</td>
+</tr>
+<tr>
+<td><code>cw_corn_e</code></td>
+<td><code>cw_tree</code></td>
+<td>Concealment</td>
+<td>Between the Ears</td>
+</tr>
+<tr>
+<td><code>cw_corn_e</code></td>
+<td><code>cw_abattoir</code></td>
+<td>Open</td>
+<td>Slaughter Road</td>
+</tr>
+<tr>
+<td><code>cw_corn_e</code></td>
+<td><code>cw_opt_coop</code></td>
+<td>Open</td>
+<td>Coop Path</td>
+</tr>
+<tr>
+<td><code>cw_corn_w</code></td>
+<td><code>cw_tree</code></td>
+<td>Concealment</td>
+<td>Between the Ears</td>
+</tr>
+<tr>
+<td><code>cw_corn_w</code></td>
+<td><code>cw_house</code></td>
+<td>Open</td>
+<td>House-Front Road</td>
+</tr>
+<tr>
+<td><code>cw_corn_w</code></td>
+<td><code>cw_chest_b</code></td>
+<td>Open</td>
+<td>Garage Road</td>
+</tr>
+<tr>
+<td><code>cw_tree</code></td>
+<td><code>cw_silo</code></td>
+<td>Open</td>
+<td>Central Road</td>
+</tr>
+<tr>
+<td><code>cw_tree</code></td>
+<td><code>fc_entry</code></td>
+<td>Root Path (Act Three)</td>
+<td>Root Path Beneath the Tree</td>
+</tr>
+<tr>
+<td><code>cw_abattoir</code></td>
+<td><code>cw_abattoir_in</code></td>
+<td>Interior Door</td>
+<td>Abattoir Gate</td>
+</tr>
+<tr>
+<td><code>cw_abattoir</code></td>
+<td><code>cw_chest_a</code></td>
+<td>Open</td>
+<td>Farm-Tool Road</td>
+</tr>
+<tr>
+<td><code>cw_abattoir_in</code></td>
+<td><code>cw_exit_n</code></td>
+<td>Window</td>
+<td>High Window</td>
+</tr>
+<tr>
+<td><code>cw_house</code></td>
+<td><code>cw_house_2f</code></td>
+<td>Stairs</td>
+<td>Wooden Ladder</td>
+</tr>
+<tr>
+<td><code>cw_house</code></td>
+<td><code>cw_silo</code></td>
+<td>Open</td>
+<td>Grain Road</td>
+</tr>
+<tr>
+<td><code>cw_house_2f</code></td>
+<td><code>cw_corn_w</code></td>
+<td>Jump Down (one-way)</td>
+<td>Second-Floor Window</td>
+</tr>
+<tr>
+<td><code>cw_silo</code></td>
+<td><code>cw_exit_n</code></td>
+<td>Open</td>
+<td>North Road</td>
+</tr>
+<tr>
+<td><code>cw_silo</code></td>
+<td><code>cw_chest_a</code></td>
+<td>Open</td>
+<td>Yard</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connection List (Fog Cellar)</strong></p>
+<table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>channel type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fc_entry</code></td>
+<td><code>fc_root_a</code></td>
+<td>Hanging Root</td>
+<td>Climb Root</td>
+</tr>
+<tr>
+<td><code>fc_entry</code></td>
+<td><code>fc_root_c</code></td>
+<td>Hanging Root</td>
+<td>Climb Root</td>
+</tr>
+<tr>
+<td><code>fc_root_a</code></td>
+<td><code>fc_root_b</code></td>
+<td>Hanging Root</td>
+<td>Climb Root</td>
+</tr>
+<tr>
+<td><code>fc_root_c</code></td>
+<td><code>fc_root_b</code></td>
+<td>Hanging Root</td>
+<td>Climb Root</td>
+</tr>
+<tr>
+<td><code>fc_root_b</code></td>
+<td><code>fc_yours</code></td>
+<td>Hanging Root</td>
+<td>That one is especially thin</td>
+</tr>
+<tr>
+<td><code>fc_entry</code></td>
+<td><code>cw_tree</code></td>
+<td>Ascend</td>
+<td>Return to surface (within time limit)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Encounter Configuration</h2>
+<p><strong>Main Killer</strong>: Hillbilly (HBY). Avatar Menace Value (AVM) +2. Challenge Rating (CR) = Prestige (PRS) + 2; this scenario's Prestige (PRS) is 5–7, so Challenge Rating (CR) 7–9. Occupies 60% of the Encounter Budget (EB). Feature: high-mobility straight-line charge, deadly in the open.</p>
+<p><strong>Encounter Budget (EB)</strong> (Difficulty Modifier (DM) = 1.05, Prestige (PRS) mid 6):</p>
+<table>
+<thead>
+<tr>
+<th>Player Count N</th>
+<th>Encounter Budget (EB)</th>
+<th>Killer Share (60%)</th>
+<th>Construct Available (40%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>4.8</td>
+<td>3.2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>17</td>
+<td>10.2</td>
+<td>6.8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>25</td>
+<td>15.0</td>
+<td>10.0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>34</td>
+<td>20.4</td>
+<td>13.6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Realm Construct</strong>: Straw-Stalk Walker = Straw Afterimage (RC-04, Challenge Rating (CR) 2, Hit Points (HP) 18, attack modifier +3, Defense Difficulty Class (DC) 11, Encounter Budget Cost (EBC) 4, disguise type, <strong>deals real damage ✓</strong>). A low-tier construct in the cornfield that mimics the sound of parting corn to mislead the player.</p>
+<p><strong>Encounter List</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Type</th>
+<th>Content</th>
+<th>Challenge Rating (CR) / Difficulty</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>Chase</td>
+<td>Hillbilly's (HBY) straight-line charge</td>
+<td>High (7–9)</td>
+<td>Tutorial: lethality in the open</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Environment</td>
+<td>Cornfield (blocks line of sight, leaves parting traces for 2 rounds)</td>
+<td>Medium</td>
+<td>Psychological play</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Puzzle</td>
+<td>Bark-indentation pattern</td>
+<td>Medium</td>
+<td>Focus (FOC)</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Realm Construct</td>
+<td>Straw-Stalk Walker (RC-04) × N</td>
+<td>Low–Medium (2)</td>
+<td>Encounter Budget Cost (EBC) 4 each</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Chase</td>
+<td>Close-quarters chase inside the abattoir (only enclosed space)</td>
+<td>High</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Exploration</td>
+<td>Fog Cellar (no Killer, shrinking-time-limit pressure)</td>
+<td>Medium</td>
+<td>Act Three</td>
+</tr>
+<tr>
+<td>E7</td>
+<td>Choice</td>
+<td>Which pod to pluck</td>
+<td>No check</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Three steps of the root passage</strong>: ① Find the pattern in the bark indentations (Focus (FOC) check, Difficulty Class (DC) Medium); ② Obtain "a segment of Altruistic Hope" as a key (triggered by rescuing / healing / body-blocking, no check); ③ Press the hand to the bark (Will (WIL) check, Difficulty Class (DC) Hard, can spend Hope Point (HOP) to lower the tier).</p>
+<hr />
+<h2>6. NPC Appearances and Lines</h2>
+<p><strong>Sally Nkosi (§8-A, Botanist-type Survivor)</strong>
+- Provides the root clue. <strong>If she accompanies, she will pluck the wrong pod in Act Three, and from then on her personality changes</strong> (S6 hook).
+- Line: "Roots don't eat soil. They eat something else."</p>
+<p><strong>Whisperer · the Woman's Voice Beneath the Roots (RC-02)</strong>
+- The Fog Cellar Whisperer, intelligence-type, Encounter Budget Cost (EBC) 0. The only being that can tell the player "whose pod you plucked," at a price of 2 Hope Point (HOP).
+- Line: "Can you tell whose it is? If you can't, don't pluck. Pluck the wrong one and that person will see you."</p>
+<p><strong>Echo Companion · the Handwiper (§8-B, solo configuration)</strong>
+- Constantly wipes his hands, never getting them clean. <strong>His pod is also in the Fog Cellar; the player may pluck it for him.</strong> (+3 Campfire Ember, and he will recognize the player in the S5 Void)</p>
+<p><strong>Eloise Finch (§8-A)</strong>: delivers the "The fire remembers" reasoning, guiding the infiltration.</p>
+<hr />
+<h2>7. Decision Points and Branch Results</h2>
+<p><strong>Decision One: Generate Altruistic Hope to unlock? (core)</strong>
+- If the player looks out only for themselves the whole time, no key can be made, the Fog Cellar cannot be entered — only a pure escape to finish the Trial, but no Memory Card.
+- Branch: generate Altruistic Hope → roots loosen → enter the Fog Cellar (take Memory Card + trigger Ember Moment).</p>
+<p><strong>Decision Two: Pluck a pod in the Fog Cellar</strong>
+- Pluck your own pod → 1 Memory Card (linked with the S1 carried item).
+- Pluck another's pod → 1 someone-else's Memory Card (+1 Hope Point (HOP) cap, cannot be returned, the original owner will later notice). <strong>The GM should arrange for at least one player to pluck the wrong one</strong> (plucking a Killer's memory = S6 hook).
+- Fail to leave within the shrinking countdown → lose 3 Hope Point (HOP), force-returned to the Campfire by The Entity's "filing."</p>
+<hr />
+<h2>8. Player-Count Scaling Rules</h2>
+<blockquote>
+<p>The solo configuration (1 Player + 1 GM) is the default. Locker count = 4 + N; Chest count = MAX(2, N+1).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>1 Player</th>
+<th>2 Players</th>
+<th>3 Players</th>
+<th>4 Players</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generator total</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Generators required</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Killer Pressure Level</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Echo Companion count</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Straw-Stalk Walker (RC-04) count</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Hook count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Chest count</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Locker count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hook phase rounds</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Endgame Collapse rounds</td>
+<td>12</td>
+<td>10</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Fog Cellar pods per person</strong></td>
+<td><strong>2</strong></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Fog Cellar shrink limit (rounds)</strong></td>
+<td><strong>6</strong></td>
+<td>5</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Completion reward · Bloodpoint (BP)</td>
+<td>×1.1</td>
+<td>×1.05</td>
+<td>×1.0</td>
+<td>×1.0</td>
+</tr>
+<tr>
+<td>Completion reward · Hope Point (HOP)</td>
+<td>+3</td>
+<td>+3</td>
+<td>+3</td>
+<td>+3</td>
+</tr>
+<tr>
+<td>Completion reward · Memory Card</td>
+<td><strong>2</strong></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Optional exploration nodes</td>
+<td><strong>+2</strong></td>
+<td><strong>+1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Effective Repair Force (ERF)</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Per-round Pressure Point (PRE) recovery</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Self-Unhook Difficulty Class (DC)</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Exit Gate opening segments</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Pallet count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Window count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hatch open condition</td>
+<td>Generators completed ≥ 1 AND all Echo Companions down</td>
+<td>Survivors alive = 1, or completed ≥ 2 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 3 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 4 AND survivors alive ≤ 2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Ending Branches and Rewards</h2>
+<p><strong>Ending branch</strong>: Whether to enter the Fog Cellar (depends on Decision One); pluck right / wrong pod in the Cellar (Decision Two). Plucking wrong is not failure — it is an S6 hook.</p>
+<p><strong>Rewards</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bloodpoint (BP)</td>
+<td>Standard × (per player-count table)</td>
+</tr>
+<tr>
+<td>Prestige (PRS)</td>
+<td>Rises to level 7 upon completion</td>
+</tr>
+<tr>
+<td>Hope Point (HOP)</td>
+<td>+3</td>
+</tr>
+<tr>
+<td>Campfire Ember</td>
+<td>Accrued during play (est. 5–9)</td>
+</tr>
+<tr>
+<td><strong>Memory Card</strong></td>
+<td><strong>1–2</strong> (per player-count table)</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>1 uncommon item per person</td>
+</tr>
+<tr>
+<td>Narrative</td>
+<td>Memory is archived, not destroyed; Ember can serve as a key</td>
+</tr>
+<tr>
+<td>New Ability</td>
+<td>The player may spend 1 Hope Point (HOP) to "ask the Memory Card for help," rerolling one check related to that memory's theme</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ember Moment trigger text</strong>:</p>
+<blockquote>
+<p>When you press your hand to the bark, the tree does not react. You try again. Still nothing.
+Then you remember — a moment ago, under the Hook, when you caught that person, the warm thing that dropped out of your chest.
+You reach into your pocket. It's there. You don't remember picking it up.
+You press it to the bark. The roots loosen like fingers.
+<strong>This tree eats no soil, and no blood. It recognizes only one thing — the thing it itself cannot spit out.</strong></p>
+</blockquote>
+<hr />
+<h2>10. Connections to Adjacent Scenarios</h2>
+<ul>
+<li><strong>Forward (S2)</strong>: Scar #5 "The fire remembers" → Eloise reasons "memory is put somewhere" → this scenario's Fog Cellar.</li>
+<li><strong>Backward (S4)</strong>: if Sally plucked the wrong pod → in S4 she will "recognize Patient Seventeen's face" but can't say why; the Memory Cards retrieved here are the material for piecing together "Patient Seventeen's Chart" in S4.</li>
+<li><strong>Hook payoff points</strong>: ① the Handwiper's plucked pod → recognizes the player in the S5 Void; ② plucking a Killer's memory → S6 Sally speaks the reforging Q&A; ③ the Fog Cellar "recognize yourself" mechanic → the error ratio in S7's Purification Sanctum.</li>
+</ul><p><a href="../../assets/r33_en/scenarios/s03_根不吃土.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

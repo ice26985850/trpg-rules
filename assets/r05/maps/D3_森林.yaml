@@ -1,0 +1,96 @@
+id: D3
+name: 森林
+recommended_rank: "F/E（CR 1-6）"
+theme: 翠綠密林
+grid: { cols: 4, rows: 3 }
+rooms:
+  - id: R1
+    name: 林緣入口
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 蕨叢戰場
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R6]
+    cr: 2
+    enemies: [哥布林斥候 x2]
+    desc: 哥布林斥候 x2 埋伏。
+  - id: R3
+    name: 狼徑
+    type: combat
+    gx: 2
+    gy: 0
+    links: [R2, R4, R7]
+    cr: 3
+    enemies: [野狼 x2]
+    desc: 野狼 x2 巡邏。
+  - id: R4
+    name: 陷坑小徑
+    type: trap
+    gx: 3
+    gy: 0
+    links: [R3, R8]
+    trap: 弱（捕獸夾，DC12 / 1d6）
+    desc: 弱機關小徑。
+  - id: R5
+    name: 苔石寶窟
+    type: treasure
+    gx: 0
+    gy: 1
+    links: [R6, R9]
+    treasure: 藥草 x3、破布 x2、G 30~60
+    desc: 苔石後藏獵人物資。
+  - id: R6
+    name: 弓手林窗
+    type: combat
+    gx: 1
+    gy: 1
+    links: [R5, R7, R2, R10]
+    cr: 4
+    enemies: [哥布林弓手 x2]
+    desc: 哥布林弓手 x2 居高放箭。
+  - id: R7
+    name: 休憩空地
+    type: rest
+    gx: 2
+    gy: 1
+    links: [R6, R8, R3, R11]
+    desc: 安全休息點（回復 HP／狀態）。
+  - id: R8
+    name: 毒蜂回廊
+    type: trap
+    gx: 3
+    gy: 1
+    links: [R7, R4]
+    trap: 強（毒蜂巢，DC18 / 2d6 中毒）
+    desc: 強機關，驚動蜂巢。
+  - id: R9
+    name: 遺物石室
+    type: treasure
+    gx: 0
+    gy: 2
+    links: [R5, R10]
+    treasure: 森林果實 x2、精良素材、G 40~80
+    desc: 古獵人遺物。
+  - id: R10
+    name: 古樹王座
+    type: elite
+    gx: 1
+    gy: 2
+    links: [R9, R11, R6]
+    cr: 5
+    enemies: [哥布林王（首領）]
+    combat_map: 地圖/D3_戰鬥_哥布林王.yaml
+    desc: 小首領 哥布林王（CR5）。
+  - id: R11
+    name: 出口小徑
+    type: exit
+    gx: 2
+    gy: 2
+    links: [R10, R7]
+    desc: 出口；通關後領取獎勵離開。

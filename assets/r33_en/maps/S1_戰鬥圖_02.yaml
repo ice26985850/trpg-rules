@@ -1,0 +1,24 @@
+# S1 Battle Map 02 · Hook Rescue on Warehouse 2F (E4, teaches rescue)
+meta:
+  id: S1_戰鬥圖_02
+  name: S1 Battle Map · Hook Rescue on Warehouse 2F
+  scenario: S1
+  scene: E4 (Chase / Hook Rescue)
+  note: Interior 2F, with a window to the Coal Tower top; teaches Hooks (Hook) and rescue. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 12
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Shelf (Cover), rect: { x: 2, y: 1, w: 2, h: 4 } }
+  - { id: t2, type: Shelf (Cover), rect: { x: 8, y: 1, w: 2, h: 4 } }
+  - { id: t3, type: Wall (Impassable), rect: { x: 0, y: 0, w: 12, h: 1 } }
+terrain_holes:
+  - { id: h1, type: Broken Floor (Fall risk), rect: { x: 5, y: 5, w: 2, h: 2 } }
+objects:
+  - { id: o1, type: Hook, x: 6, y: 2 }
+  - { id: o2, type: Hook, x: 9, y: 7 }
+  - { id: o3, type: Window, x: 11, y: 3 }
+  - { id: o4, type: Pallet, x: 5, y: 7 }
+  - { id: o5, type: Chest, x: 1, y: 8 }
+spawn_survivor: { x: 1, y: 8 }
+spawn_killer: { x: 10, y: 8 }

@@ -1,0 +1,112 @@
+id: D4
+name: 沙漠
+recommended_rank: "E/D（CR 7-12）"
+theme: 黃沙遺境
+grid: { cols: 4, rows: 4 }
+rooms:
+  - id: R1
+    name: 沙丘入口
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 盜匪營地
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R6]
+    cr: 7
+    enemies: [沙盜 x2]
+    desc: 沙盜 x2 劫掠商隊。
+  - id: R3
+    name: 流沙淺灘
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R7]
+    trap: 弱（流沙，DC12 / 1d6 遲緩）
+    desc: 弱機關，陷入流沙。
+  - id: R4
+    name: 巨蠍洞穴
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R8]
+    cr: 9
+    enemies: [沙漠巨蠍 x2]
+    desc: 沙漠巨蠍 x2 盤踞。
+  - id: R5
+    name: 商旅遺骸
+    type: treasure
+    gx: 0
+    gy: 1
+    links: [R6, R9]
+    treasure: 水囊 x2、Glint 碎片、G 50~90
+    desc: 遇難商隊殘骸。
+  - id: R6
+    name: 禿鷹岩台
+    type: combat
+    gx: 1
+    gy: 1
+    links: [R5, R7, R2, R10]
+    cr: 10
+    enemies: [禿鷹 x2]
+    desc: 禿鷹 x2 俯衝。
+  - id: R7
+    name: 休憩綠洲
+    type: rest
+    gx: 2
+    gy: 1
+    links: [R6, R8, R3, R11]
+    desc: 安全休息點（回復 HP／狀態）。
+  - id: R8
+    name: 日曬灼道
+    type: trap
+    gx: 3
+    gy: 1
+    links: [R7, R4, R12]
+    trap: 強（日炙反射，DC18 / 2d6 灼傷）
+    desc: 強機關，鏡面反射灼傷。
+  - id: R9
+    name: 陶罐窖藏
+    type: treasure
+    gx: 0
+    gy: 2
+    links: [R5, R10]
+    treasure: 香料 x2、精良素材、G 60~110
+    desc: 埋藏陶罐。
+  - id: R10
+    name: 蜥穴通道
+    type: combat
+    gx: 1
+    gy: 2
+    links: [R9, R11, R6]
+    cr: 11
+    enemies: [沙漠蜥 x2]
+    desc: 沙漠蜥 x2 伏擊。
+  - id: R11
+    name: 風蝕石亭
+    type: rest
+    gx: 2
+    gy: 2
+    links: [R10, R12, R7]
+    desc: 避風休息點。
+  - id: R12
+    name: 沙王祭壇
+    type: elite
+    gx: 3
+    gy: 2
+    links: [R8, R11, R13]
+    cr: 12
+    enemies: [沙王（首領）]
+    combat_map: 地圖/D4_戰鬥_沙王.yaml
+    desc: 小首領 沙王（CR12）。
+  - id: R13
+    name: 出口沙徑
+    type: exit
+    gx: 3
+    gy: 3
+    links: [R12]
+    desc: 出口；通關後領取獎勵離開。

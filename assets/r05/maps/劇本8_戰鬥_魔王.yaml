@@ -1,0 +1,104 @@
+scenario: S4
+section: 魔王城·深淵誓約決戰（CL 36–50）
+map_type: battle
+grid_scale: "1格=2公尺"
+title: S4_戰鬥_魔王
+# 座標為精確格子座標（col, row，0–9），供距離與射程計算
+# 含「終焉審判區」：魔王 生命值（HP） 33% 觸發，須在限內打穿核心
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: 敵, role: 前排, color: "#FF8A8A"}
+    - {row: 1, side: 敵, role: 後排, color: "#FFC8C8"}
+    - {row: 6, side: 我, role: 前排, color: "#8AAEFF"}
+    - {row: 8, side: 我, role: 後排, color: "#C8D8FF"}
+  aoe:
+    - {cx: 5, cy: 1, r: 2, label: 四元素毀滅範圍效果（AOE，半徑2格=4m）}
+
+nodes:
+  - id: queen
+    label: 女魔王（薇爾賽莉雅）
+    x: 5
+    y: 0
+    type: boss
+    explored: true
+  - id: judgment
+    label: 終焉審判區（核心）
+    x: 5
+    y: 2
+    type: 目標區
+    explored: true
+  - id: e_vang_a
+    label: 敵先鋒甲
+    x: 3
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_vang_b
+    label: 敵先鋒乙
+    x: 7
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_mag
+    label: 敵法師
+    x: 2
+    y: 1
+    type: 敵遠程
+    explored: true
+  - id: e_guard
+    label: 敵衛
+    x: 8
+    y: 1
+    type: 敵近戰
+    explored: true
+  - id: p_front_war
+    label: 我方前排戰士
+    x: 3
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_front_monk
+    label: 我方前排格鬥
+    x: 6
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_back_mage
+    label: 我方後排法師
+    x: 4
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_cleric
+    label: 我方後排牧師
+    x: 5
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_hunter
+    label: 我方後排獵人
+    x: 7
+    y: 8
+    type: 我後排
+    explored: true
+
+edges:
+  - from: queen
+    to: e_vang_a
+    type: 指揮
+  - from: queen
+    to: judgment
+    type: 領域
+    label: "終焉審判"
+  - from: e_mag
+    to: p_back_cleric
+    type: 射程
+    style: dashed
+    label: "遠程威脅"
+  - from: p_front_war
+    to: e_vang_a
+    type: 近戰
+    style: dashed

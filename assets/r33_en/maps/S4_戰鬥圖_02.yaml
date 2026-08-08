@@ -1,0 +1,24 @@
+# S4 Battle Map 02 · Ash Throat Ward (E3, Ward Afterimage)
+meta:
+  id: S4_戰鬥圖_02
+  name: S4 Battle Map · Ash Throat Ward
+  scenario: S4
+  scene: E3 (Realm Creation)
+  note: Ash Throat = Ward Afterimage (RC-05), a charred creation emitting patients' wails that disrupt audio-based positioning. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 12
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Ward Curtain (Half-Cover), rect: { x: 3, y: 2, w: 2, h: 3 } }
+  - { id: t2, type: Ward Curtain (Half-Cover), rect: { x: 7, y: 5, w: 2, h: 3 } }
+  - { id: t3, type: Wall (Impassable), rect: { x: 0, y: 0, w: 12, h: 1 } }
+objects:
+  - { id: o1, type: Pallet, x: 5, y: 5 }
+  - { id: o2, type: Window, x: 11, y: 4 }
+  - { id: o3, type: Hook, x: 6, y: 2 }
+  - { id: o4, type: Ash Throat (RC-05) Patrol Point, x: 2, y: 7 }
+  - { id: o5, type: Ash Throat (RC-05) Patrol Point, x: 9, y: 8 }
+  - { id: o6, type: Chest, x: 1, y: 1 }
+spawn_survivor: { x: 1, y: 8 }
+spawn_killer: { x: 11, y: 1 }
+construct_spawns: [o4, o5]

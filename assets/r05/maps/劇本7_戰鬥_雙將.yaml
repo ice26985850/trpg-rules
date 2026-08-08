@@ -1,0 +1,98 @@
+scenario: S3
+section: 第三／四魔將·魅將＋膠將戰（CL 23–35）
+map_type: battle
+grid_scale: "1格=2公尺"
+title: S3_戰鬥_雙將
+# 座標為精確格子座標（col, row，0–9），供距離與射程計算
+# 雙首領：魅將（左）＋膠將（右）；前後排間隔 2 格
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: 敵, role: 前排, color: "#FF8A8A"}
+    - {row: 1, side: 敵, role: 後排, color: "#FFC8C8"}
+    - {row: 6, side: 我, role: 前排, color: "#8AAEFF"}
+    - {row: 8, side: 我, role: 後排, color: "#C8D8FF"}
+  aoe:
+    - {cx: 3, cy: 2, r: 2, label: 魅惑幻術範圍效果（AOE，半徑2格=4m）}
+    - {cx: 7, cy: 2, r: 2, label: 膠液噴射範圍效果（AOE，半徑2格=4m）}
+
+nodes:
+  - id: succubus
+    label: 魅將（莉麗絲）
+    x: 3
+    y: 1
+    type: boss
+    explored: true
+  - id: slime
+    label: 膠將（普露姆）
+    x: 7
+    y: 1
+    type: boss
+    explored: true
+  - id: e_illus
+    label: 敵幻術侍
+    x: 5
+    y: 2
+    type: 敵輔助
+    explored: true
+  - id: e_front_a
+    label: 敵前排甲
+    x: 4
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_front_b
+    label: 敵前排乙
+    x: 6
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: p_front_war
+    label: 我方前排戰士
+    x: 3
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_front_monk
+    label: 我方前排格鬥
+    x: 6
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_back_mage
+    label: 我方後排法師
+    x: 4
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_cleric
+    label: 我方後排牧師
+    x: 5
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_dancer
+    label: 我方後排舞者
+    x: 7
+    y: 8
+    type: 我後排
+    explored: true
+
+edges:
+  - from: succubus
+    to: e_illus
+    type: 指揮
+  - from: slime
+    to: e_front_b
+    type: 指揮
+  - from: e_front_a
+    to: p_front_war
+    type: 近戰
+    style: dashed
+  - from: e_illus
+    to: p_back_dancer
+    type: 射程
+    style: dashed
+    label: "幻術威脅"

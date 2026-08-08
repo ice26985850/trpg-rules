@@ -1,0 +1,25 @@
+# S4 Battle Map 01 · Blink Chase (E1, Nurse phases through walls)
+meta:
+  id: S4_戰鬥圖_01
+  name: S4 Battle Map · Blink Chase
+  scenario: S4
+  scene: E1 (Chase)
+  note: The Nurse (NRS) Blink can cross floors and walls; fully enclosed, very short line of sight. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 14
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Ward Partition (Blink-passable), rect: { x: 4, y: 1, w: 1, h: 6 } }
+  - { id: t2, type: Ward Partition (Blink-passable), rect: { x: 9, y: 7, w: 1, h: 6 } }
+  - { id: t3, type: Hospital Bed (Cover), rect: { x: 2, y: 8, w: 2, h: 2 } }
+  - { id: t4, type: Hospital Bed (Cover), rect: { x: 11, y: 2, w: 2, h: 2 } }
+  - { id: t5, type: Wall (Impassable), rect: { x: 0, y: 0, w: 14, h: 1 } }
+objects:
+  - { id: o1, type: Pallet, x: 6, y: 6 }
+  - { id: o2, type: Window, x: 13, y: 5 }
+  - { id: o3, type: Window, x: 1, y: 5 }
+  - { id: o4, type: Hook, x: 7, y: 11 }
+  - { id: o5, type: Locker, x: 6, y: 2 }
+  - { id: o6, type: Chest, x: 12, y: 12 }
+spawn_survivor: { x: 1, y: 12 }
+spawn_killer: { x: 12, y: 1 }

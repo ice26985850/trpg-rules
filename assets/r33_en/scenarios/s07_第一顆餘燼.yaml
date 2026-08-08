@@ -1,0 +1,446 @@
+# S7 · The First Ember (structured data, for the AI GM engine to read)
+id: S7
+title: The First Ember
+realm: Red Forest (R7)
+recommended_prs: "15-18"
+duration_min: 300
+summary: >-
+  The campaign's arming scenario: the player obtains the first ember (The First Ember), and comes to understand what the Campfire is, and what the Ember Vein and the Umbilical are. The deep leaf litter makes "dying-crawling is actually safe" — the most counterintuitive design in the whole campaign. Huntress (HTR) throws at range, "distance is no longer safe." In the third act the player descends three levels of the Purification Sanctum, reaches the Ember Niche, and takes the first ember. It reveals the Umbilical: the embers came out of the Entity (The Entity), are the same kind of thing as it, and fire spreads.
+
+nodes:
+  - id: rf_start
+    label: Starting Mist Mouth
+    type: Entrance
+    x: 500
+    y: 940
+    region: forest
+    explored: true
+  - id: rf_clearing
+    label: Leaf-Litter Clearing
+    type: Open
+    x: 500
+    y: 830
+    region: forest
+    explored: true
+  - id: rf_dwelling
+    label: Mother's Dwelling
+    type: Main Building
+    x: 260
+    y: 740
+    region: forest
+    explored: true
+  - id: rf_hearth
+    label: Mother's Hearth
+    type: Special
+    x: 170
+    y: 660
+    region: forest
+    explored: false
+  - id: rf_deep_e
+    label: Deep Woods · East
+    type: Open
+    x: 740
+    y: 700
+    region: forest
+    explored: false
+  - id: rf_deep_w
+    label: Deep Woods · West
+    type: Open
+    x: 260
+    y: 540
+    region: forest
+    explored: false
+  - id: rf_stones
+    label: Standing Stone Circle
+    type: Landmark
+    x: 620
+    y: 560
+    region: forest
+    explored: false
+  - id: rf_leafsea
+    label: Blood-Leaf Sea
+    type: Special
+    x: 430
+    y: 620
+    region: forest
+    explored: false
+  - id: rf_temple_ent
+    label: Purification Sanctum · Entrance
+    type: Main Landmark
+    x: 500
+    y: 450
+    region: forest
+    explored: false
+  - id: rf_chest_a
+    label: Hollow-Tree Chest
+    type: Chest
+    x: 800
+    y: 560
+    region: forest
+    explored: false
+  - id: rf_chest_b
+    label: Under-Stone Chest
+    type: Chest
+    x: 180
+    y: 440
+    region: forest
+    explored: false
+  - id: rf_exit_n
+    label: North Exit Gate
+    type: Exit
+    x: 660
+    y: 200
+    region: forest
+    explored: false
+  - id: rf_exit_sw
+    label: Southwest Exit Gate
+    type: Exit
+    x: 120
+    y: 880
+    region: forest
+    explored: false
+  - id: rf_hiddendoor
+    label: The Gleaner's Hidden Door
+    type: Special
+    x: 860
+    y: 840
+    region: forest
+    explored: true # S5 completer
+  - id: rf_opt_altar
+    label: Blood Altar
+    type: Optional
+    x: 830
+    y: 400
+    region: forest
+    explored: false
+  - id: rf_opt_cabin
+    label: Hunter's Cabin
+    type: Optional
+    x: 350
+    y: 890
+    region: forest
+    explored: false
+  - id: rf_opt_grave
+    label: Nameless Grave
+    type: Optional
+    x: 640
+    y: 890
+    region: forest
+    explored: false
+  - id: tp1_hall
+    label: Sanctum L1 · Pillar Hall
+    type: Sanctum
+    x: 500
+    y: 370
+    region: temple_1
+    explored: false
+  - id: tp1_side
+    label: L1 · Side Chamber
+    type: Sanctum
+    x: 380
+    y: 330
+    region: temple_1
+    explored: false
+  - id: tp2_spiral
+    label: L2 · Crooked Stairs
+    type: Sanctum
+    x: 500
+    y: 290
+    region: temple_2
+    explored: false
+  - id: tp2_mirror
+    label: L2 · Mirror Gallery
+    type: Sanctum
+    x: 620
+    y: 250
+    region: temple_2
+    explored: false
+  - id: tp3_niche
+    label: Ember Niche
+    type: Key
+    x: 500
+    y: 180
+    region: temple_3
+    explored: false
+  - id: tp3_observer
+    label: Where the Mirror-Bearer Stands
+    type: Special
+    x: 400
+    y: 140
+    region: temple_3
+    explored: false
+
+edges:
+  - from: rf_start
+    to: rf_clearing
+    channel_type: Leaf-Litter Ground
+    name: Woods Path
+  - from: rf_clearing
+    to: rf_dwelling
+    channel_type: Leaf-Litter Ground
+    name: Front-Path
+  - from: rf_clearing
+    to: rf_deep_e
+    channel_type: Leaf-Litter Ground
+    name: East Woods Path
+  - from: rf_clearing
+    to: rf_opt_cabin
+    channel_type: Leaf-Litter Ground
+    name: Hunter's Trail
+  - from: rf_clearing
+    to: rf_opt_grave
+    channel_type: Leaf-Litter Ground
+    name: Old-Grave Road
+  - from: rf_dwelling
+    to: rf_hearth
+    channel_type: Interior
+    name: Indoors
+  - from: rf_dwelling
+    to: rf_deep_w
+    channel_type: Leaf-Litter Ground
+    name: West Woods Path
+  - from: rf_dwelling
+    to: rf_exit_sw
+    channel_type: Leaf-Litter Ground
+    name: Southwest Path
+  - from: rf_deep_e
+    to: rf_stones
+    channel_type: Leaf-Litter Ground
+    name: Stone Path
+  - from: rf_deep_e
+    to: rf_chest_a
+    channel_type: Leaf-Litter Ground
+    name: Hollow Tree
+  - from: rf_deep_e
+    to: rf_hiddendoor
+    channel_type: Leaf-Litter Ground
+    name: Southeast Path
+  - from: rf_deep_w
+    to: rf_leafsea
+    channel_type: Leaf-Litter Ground
+    name: Leaf Edge
+  - from: rf_deep_w
+    to: rf_chest_b
+    channel_type: Leaf-Litter Ground
+    name: Under Stone
+  - from: rf_stones
+    to: rf_leafsea
+    channel_type: Leaf-Litter Ground
+    name: Outside the Ring
+  - from: rf_stones
+    to: rf_opt_altar
+    channel_type: Leaf-Litter Ground
+    name: Altar Road
+  - from: rf_leafsea
+    to: rf_temple_ent
+    channel_type: Blood-Leaf Sea
+    name: Under the Leaves (dying crawl fully concealed)
+  - from: rf_stones
+    to: rf_temple_ent
+    channel_type: Leaf-Litter Ground
+    name: Sanctum Road
+  - from: rf_temple_ent
+    to: rf_exit_n
+    channel_type: Leaf-Litter Ground
+    name: North Path
+  - from: rf_temple_ent
+    to: tp1_hall
+    channel_type: Descending Stairs
+    name: First Step (inconsistent height)
+  - from: tp1_hall
+    to: tp1_side
+    channel_type: Stone Door
+    name: Side-Chamber Door (frame too narrow)
+  - from: tp1_hall
+    to: tp2_spiral
+    channel_type: Descending Stairs
+    name: Crooked Stairs (going back adds a step)
+  - from: tp2_spiral
+    to: tp2_mirror
+    channel_type: Stone Corridor
+    name: Mirror Gallery (both ends look the same)
+  - from: tp2_spiral
+    to: tp3_niche
+    channel_type: Descending Stairs
+    name: Final Step
+  - from: tp2_mirror
+    to: tp3_observer
+    channel_type: Stone Corridor
+    name: The Deep
+  - from: tp3_niche
+    to: tp3_observer
+    channel_type: Stone Corridor
+    name: Niche Side
+
+encounters:
+  - id: E1
+    type: Chase
+    content: Huntress (HTR) ranged throwing
+    cr: Extreme (CR 16-19)
+    note: Lesson — open woodland has no safe distance
+  - id: E2
+    type: Environment
+    content: Deep leaf litter (double-edged)
+    cr: Medium
+    note: Dying crawl concealed
+  - id: E3
+    type: Realm Construct
+    content: Leaf-Dweller = Blood Leaf Swarm (RC-08) × N
+    cr: Medium-High (CR 4)
+    note: EBC 8 / each, tracking-mark type
+  - id: E4
+    type: Exploration
+    content: Descend three levels of the Purification Sanctum
+    cr: Hard (DC Hard)
+    note: Wrong proportions
+  - id: E5
+    type: Puzzle
+    content: Sanctum's wrong proportions (going back changes things)
+    cr: Extreme
+    note: "-"
+  - id: E6
+    type: Bonus Trial
+    content: If Campfire Ember < threshold — survive inside the Sanctum
+    cr: Legendary
+    note: See player-count table
+
+npcs:
+  - name: Nameless
+    role: Skeleton / first survivor (§8-D)
+    lines:
+      - "I had already gotten out. The door was open. One foot of mine was already outside. Then I heard someone calling from behind. I didn't know him. When I looked back I wasn't thinking anything. I just felt that leaving alone didn't seem right. …I left it here. If you're reading this far — then you probably looked back too. Take it."
+  - name: Eloise Finch
+    role: Campfire recorder (§8-A)
+    lines:
+      - "\"What if we make it spit up more?\" (linchpin line)"
+  - name: Ari the Mirror-Bearer
+    role: First appearance (§8-D)
+    lines:
+      - "Provides the S8 path: Lone Tower"
+  - name: Hilda / The Silent One (SIL)
+    role: Depends on the S6 choice (§8-A)
+    lines:
+      - "If Reforged, appears as a second Killer; if rescued, assists the player"
+
+choices:
+  - id: C1
+    question: Whether to deliberately drop prone (deep leaf litter)
+    options:
+      - desc: Stand and flee
+        effect: Leaves a 3-round trail, footstep sounds
+      - desc: Dying crawl
+        effect: Fully concealed but slow; the safest movement method in the whole campaign, and the psychological preparation for S8's "deliberately give up escape"
+  - id: C2
+    question: Whether Campfire Ember reaches the threshold
+    options:
+      - desc: Reaches threshold
+        effect: Take the first ember (The First Ember) directly
+      - desc: Does not reach
+        effect: Triggers the bonus trial (survive inside the Sanctum for a number of rounds, then take it)
+
+endings:
+  - type: Branch (whether taking the ember triggers the bonus trial)
+    condition: Depends on Decision Two
+    ember_moment: Triggers upon obtaining the first ember
+
+rewards:
+  bp: Standard × (per player-count table)
+  prs_gain: Rises to level 18 on completion
+  hop: "+5"
+  campfire_ember: Accumulated through the scenario (est. 10-18)
+  memory_card: 2-3 cards
+  item: 1 Very Rare item + 2 Add-Ons + 1 Offering per player
+  key_item: The First Ember — ① lets you truly ascend the Lone Tower's Endless Stair; ② once per trial, spend 1 use to "ignore one of the Entity's window seals"; ③ the ignition source for S8
+  narrative: The story of the "Nameless"; the Umbilical and the Ember Vein; the possibility of a conflagration
+  map_unlock: Ember Vein (ember_vein), Lone Tower (lone_tower)
+  new_ability: Follow the Ember — spend 1 Action Point (AP) per Realm to sense the campfire's direction (key navigation for S8)
+
+player_count_scaling:
+  n1:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 7
+    echo_companions: 2
+    leaf_dwellers_RC08: 3
+    hooks: 5
+    chests: 3
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    temple_floors: 2
+    ember_threshold: 15
+    bonus_trial_survive: 6
+    bp_multiplier: 1.2
+    hop_reward: 5
+    memory_cards: 3
+    optional_nodes: 3
+  n2:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 7
+    echo_companions: 2
+    leaf_dwellers_RC08: 4
+    hooks: 6
+    chests: 4
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    temple_floors: 3
+    ember_threshold: 18
+    bonus_trial_survive: 7
+    bp_multiplier: 1.1
+    hop_reward: 5
+    memory_cards: 2
+    optional_nodes: 2
+  n3:
+    generators_total: 6
+    generators_required: 5
+    killer_pressure: 7
+    echo_companions: 1
+    leaf_dwellers_RC08: 4
+    hooks: 7
+    chests: 4
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    temple_floors: 3
+    ember_threshold: 20
+    bonus_trial_survive: 8
+    bp_multiplier: 1.0
+    hop_reward: 5
+    memory_cards: 2
+    optional_nodes: 1
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 8
+    echo_companions: 0
+    leaf_dwellers_RC08: 5
+    hooks: 9
+    chests: 5
+    lockers: 8
+    hook_phase_limit: 3
+    endgame_collapse: 4
+    temple_floors: 3
+    ember_threshold: 22
+    bonus_trial_survive: 8
+    bp_multiplier: 1.0
+    hop_reward: 5
+    memory_cards: 2
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.25
+  prs_mid: 16
+  eb:
+    n1: 23
+    n2: 45
+    n3: 68
+    n4: 90
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: Huntress (HTR)
+  killer_avm: 1
+  killer_cr: "PRS + 1 (CR 16-19)"
+  second_killer: If S6 chose "Don't interrupt," The Silent One (SIL) appears as a second Killer (occupies extra budget; see the combat-designer simplified block)
+  construct_RC08: Blood Leaf Swarm (RC-08) CR4 / HP26 / attack +4 / DC12 / EBC8

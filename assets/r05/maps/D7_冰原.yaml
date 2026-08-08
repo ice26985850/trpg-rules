@@ -1,0 +1,153 @@
+id: D7
+name: 冰原
+recommended_rank: "B/A（CR 27-34）"
+theme: 永凍荒原
+grid: { cols: 5, rows: 5 }
+rooms:
+  - id: R1
+    name: 冰壁入口
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 冰狼獵場
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R7]
+    cr: 27
+    enemies: [冰狼 x2]
+    desc: 冰狼 x2 獵食。
+  - id: R3
+    name: 薄冰裂面
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R8]
+    trap: 弱（薄冰陷落，DC12 / 1d6 冰傷）
+    desc: 弱機關，薄冰碎裂。
+  - id: R4
+    name: 雪怪巢穴
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 29
+    enemies: [雪怪 x2]
+    desc: 雪怪 x2 盤踞。
+  - id: R5
+    name: 冰封遺骸
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R10]
+    treasure: 寒鐵 x2、Glint 碎片、G 200~320
+    desc: 冰封探險者遺骸。
+  - id: R6
+    name: 霜精隧道
+    type: combat
+    gx: 0
+    gy: 1
+    links: [R1, R7, R11]
+    cr: 30
+    enemies: [寒霜精 x2]
+    desc: 寒霜精 x2 飄蕩。
+  - id: R7
+    name: 避風雪屋
+    type: rest
+    gx: 1
+    gy: 1
+    links: [R6, R8, R2, R12]
+    desc: 安全休息點（回復 HP／狀態）。
+  - id: R8
+    name: 冰錐甬道
+    type: trap
+    gx: 2
+    gy: 1
+    links: [R7, R9, R3, R13]
+    trap: 強（墜冰錐，DC18 / 3d6 穿刺）
+    desc: 強機關，冰錐墜落。
+  - id: R9
+    name: 冰晶寶窟
+    type: treasure
+    gx: 3
+    gy: 1
+    links: [R8, R10, R4, R14]
+    treasure: 冰晶 x2、精良素材、G 220~340
+    desc: 冰晶簇寶窟。
+  - id: R10
+    name: 冰霜巨人廳
+    type: combat
+    gx: 4
+    gy: 1
+    links: [R9, R5, R15]
+    cr: 32
+    enemies: [冰霜巨人 x2]
+    desc: 冰霜巨人 x2 鎮守。
+  - id: R11
+    name: 暖石營地
+    type: rest
+    gx: 0
+    gy: 2
+    links: [R6, R12, R16]
+    desc: 暖石休息點。
+  - id: R12
+    name: 雪藏窖
+    type: treasure
+    gx: 1
+    gy: 2
+    links: [R11, R13, R7]
+    treasure: 永冬之核、G 240~360
+    desc: 雪中窖藏。
+  - id: R13
+    name: 寒風戰場
+    type: combat
+    gx: 2
+    gy: 2
+    links: [R12, R14, R8, R17]
+    cr: 33
+    enemies: [冰狼 x2]
+    desc: 冰狼 x2 結群。
+  - id: R14
+    name: 暴雪陷阱區
+    type: trap
+    gx: 3
+    gy: 2
+    links: [R13, R15, R9]
+    trap: 強（暴雪迷障，DC20 / 2d6 凍傷）
+    desc: 強機關，暴雪遮蔽。
+  - id: R15
+    name: 冰泉休整
+    type: rest
+    gx: 4
+    gy: 2
+    links: [R14, R10]
+    desc: 溫泉休息點。
+  - id: R16
+    name: 雪怪深谷
+    type: combat
+    gx: 0
+    gy: 3
+    links: [R11]
+    cr: 33
+    enemies: [雪怪 x2]
+    desc: 雪怪 x2 盤踞深谷。
+  - id: R17
+    name: 冰霜女王王座
+    type: elite
+    gx: 2
+    gy: 3
+    links: [R13, R18]
+    cr: 34
+    enemies: [冰霜女王（首領）]
+    combat_map: 地圖/D7_戰鬥_冰霜女王.yaml
+    desc: 小首領 冰霜女王（CR34）。
+  - id: R18
+    name: 出口冰道
+    type: exit
+    gx: 2
+    gy: 4
+    links: [R17]
+    desc: 出口；通關後領取獎勵離開。

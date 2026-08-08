@@ -1,0 +1,804 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黎明殺機 TRPG ／ s02_鐵谷裡的刻痕 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../../index.html">規則總覽</a><span class="spacer"></span><a class="lang" href="../rules/r33.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r33.html">← 回規則頁</a> ｜ <a href="../../index.html">⟵ 總頁</a></p><h1>S2 · Scars in the Iron Valley</h1>
+<blockquote>
+<p>This scenario follows the Trials after Macmillan Estate, moving the scene to the Autohaven Wreckers. The player discovers words carved into the wrecks — and the scars differ from Trial to Trial. Someone is using them to leave messages, and the one who left them is gone. This scenario deepens two threads: "memory loss is systematic" and "someone is fighting it."</p>
+</blockquote>
+<hr />
+<h2>1. Scenario Information</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number</td>
+<td>S2</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Scars in the Iron Valley</td>
+</tr>
+<tr>
+<td>Recommended Prestige (PRS)</td>
+<td>3–5</td>
+</tr>
+<tr>
+<td>Estimated Length</td>
+<td>Solo 3 hrs / Group 3.5 hrs</td>
+</tr>
+<tr>
+<td>Realm</td>
+<td>Autohaven Wreckers (R2)</td>
+</tr>
+<tr>
+<td>Main Killer</td>
+<td>Wraith (WRT)</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>Low–Medium (Killer Pressure Level: 2; main Difficulty Class (DC): Medium)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. GM Summary</h2>
+<p><strong>Storyline</strong>: At the Campfire, Gilmar Sato (§8-A) brings back a sheet of iron pried off the last Trial, carved with "Do not trust the fifth one." The player enters the Autohaven Wreckers Trial and finds 6–8 scars scattered around, each one chipping away at the player's confidence in "escape," yet also offering rules hints and main-story clues. Core design: the scars are collectible information, but collecting them costs Action Points (AP), and each scar challenges the player's perception. After returning to the Campfire, the Ember Moment reveals: the words were carved by Eloise herself — every time she returns she forgets, so she carves outside, and on her own body.</p>
+<p><strong>Truth (GM-Exclusive)</strong>: Memory loss is systematic, not accidental. Someone is fighting it (Eloise), and leaving messages is possible. This opens S3's exploration of "memory is archived, not destroyed." Wraith (WRT) serves here as the "heartbeat-less Killer" tutorial — it has no Terror Radius (TR); the player hears no heartbeat and must read position from other cues.</p>
+<p><strong>How to Run</strong>: This scenario introduces the "exploration phase" for the first time — scar collection is an active investigation, not mere reaction. The GM should create resource tension (time / Action Point (AP)) between collecting scars and "repairing to escape." The solo configuration places 8 scars (including 2 extra) to ensure the solo player has enough information density.</p>
+<hr />
+<h2>3. Opening Text (read aloud)</h2>
+<blockquote>
+<p>You return to the Campfire. Eloise is staring at a sheet of rusted iron, like it's a face.</p>
+<p>Gilmar holds the iron up to the firelight. A line of crooked characters is cut into it with a knife:</p>
+<p><strong>"Do not trust the fifth one."</strong></p>
+<p>"What does it mean?" you ask.</p>
+<p>Eloise shakes her head. "I don't know. But I've seen this hand before. At least three times. Across several Realms."</p>
+<p>She flips the iron over. On the back is half a sentence left unfinished, its edge scored by fingernails.</p>
+<p>"Whoever wrote it," she says, "is gone. But the words stayed."</p>
+<p>Gilmar shoves the iron into your hands. "Next time you see one like it, stop and look. Maybe… it was left for you."</p>
+</blockquote>
+<hr />
+<h2>4. Scenes and Nodes</h2>
+<p><strong>Realm</strong>: Autohaven Wreckers (R2). Zone divisions: <code>yard_south</code> (south yard) / <code>canyon</code> (iron valley) / <code>yard_north</code> (north yard).</p>
+<p><strong>Exploration map node list</strong></p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>label</th>
+<th>type</th>
+<th>x</th>
+<th>y</th>
+<th>region</th>
+<th>initially explored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ah_start</code></td>
+<td>Starting Mist Mouth</td>
+<td>Entrance</td>
+<td>500</td>
+<td>920</td>
+<td>yard_south</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ah_gasheaven</code></td>
+<td>Gas Station Ruins</td>
+<td>Main Building</td>
+<td>300</td>
+<td>810</td>
+<td>yard_south</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ah_tank</code></td>
+<td>Fuel Tank</td>
+<td>Landmark / Scar 4</td>
+<td>200</td>
+<td>730</td>
+<td>yard_south</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_bus</code></td>
+<td>School Bus</td>
+<td>Landmark / Scar 1,7</td>
+<td>620</td>
+<td>760</td>
+<td>yard_south</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ah_canyon_s</code></td>
+<td>Iron Valley · South</td>
+<td>Passage</td>
+<td>500</td>
+<td>640</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_canyon_m</code></td>
+<td>Iron Valley · Middle</td>
+<td>Passage</td>
+<td>500</td>
+<td>500</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_canyon_n</code></td>
+<td>Iron Valley · North</td>
+<td>Passage</td>
+<td>500</td>
+<td>360</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_crane</code></td>
+<td>Crane</td>
+<td>Landmark / Scar 2</td>
+<td>700</td>
+<td>500</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_stacktop</code></td>
+<td>Car-Stack Top</td>
+<td>Vantage Point / Scar 5</td>
+<td>780</td>
+<td>400</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_truck</code></td>
+<td>Overturned Hauler</td>
+<td>Passage / Scar 3</td>
+<td>340</td>
+<td>480</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_compactor</code></td>
+<td>Compactor</td>
+<td>Special / Scar 6</td>
+<td>300</td>
+<td>340</td>
+<td>yard_north</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_deadend_a</code></td>
+<td>Dead End · Car Wall</td>
+<td>Dead End</td>
+<td>660</td>
+<td>620</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_deadend_b</code></td>
+<td>Dead End · Drum Yard</td>
+<td>Dead End</td>
+<td>380</td>
+<td>700</td>
+<td>yard_south</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_chest_a</code></td>
+<td>Toolbox Pile</td>
+<td>Chest</td>
+<td>420</td>
+<td>380</td>
+<td>yard_north</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_chest_b</code></td>
+<td>Carriage Chest</td>
+<td>Chest</td>
+<td>720</td>
+<td>640</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_exit_ne</code></td>
+<td>Northeast Exit Gate</td>
+<td>Exit</td>
+<td>830</td>
+<td>180</td>
+<td>yard_north</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_exit_nw</code></td>
+<td>Northwest Exit Gate</td>
+<td>Exit</td>
+<td>180</td>
+<td>180</td>
+<td>yard_north</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_opt_locker</code>※</td>
+<td>Locker Bank</td>
+<td>Optional / Scar 8</td>
+<td>150</td>
+<td>520</td>
+<td>canyon</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ah_opt_office</code>※</td>
+<td>Foreman's Office</td>
+<td>Optional</td>
+<td>860</td>
+<td>830</td>
+<td>yard_south</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>※ Extra optional nodes added for solo / duo configurations. Scar locations are in the encounter list below.</p>
+<p><strong>Connection List</strong></p>
+<table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>channel type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ah_start</code></td>
+<td><code>ah_gasheaven</code></td>
+<td>Open</td>
+<td>Entry Road</td>
+</tr>
+<tr>
+<td><code>ah_start</code></td>
+<td><code>ah_bus</code></td>
+<td>Open</td>
+<td>Between the Cars</td>
+</tr>
+<tr>
+<td><code>ah_gasheaven</code></td>
+<td><code>ah_tank</code></td>
+<td>Interior</td>
+<td>Pump Room</td>
+</tr>
+<tr>
+<td><code>ah_gasheaven</code></td>
+<td><code>ah_deadend_b</code></td>
+<td>Narrow Path</td>
+<td>Drum Alley</td>
+</tr>
+<tr>
+<td><code>ah_gasheaven</code></td>
+<td><code>ah_canyon_s</code></td>
+<td>Open</td>
+<td>Northbound Road</td>
+</tr>
+<tr>
+<td><code>ah_bus</code></td>
+<td><code>ah_canyon_s</code></td>
+<td>Window</td>
+<td>Bus Front and Rear Windows</td>
+</tr>
+<tr>
+<td><code>ah_bus</code></td>
+<td><code>ah_opt_office</code></td>
+<td>Open</td>
+<td>Yard-Side Road</td>
+</tr>
+<tr>
+<td><code>ah_canyon_s</code></td>
+<td><code>ah_canyon_m</code></td>
+<td>Narrow Path</td>
+<td>Valley Floor</td>
+</tr>
+<tr>
+<td><code>ah_canyon_s</code></td>
+<td><code>ah_deadend_a</code></td>
+<td>Narrow Path</td>
+<td>Car-Wall Alley</td>
+</tr>
+<tr>
+<td><code>ah_canyon_s</code></td>
+<td><code>ah_chest_b</code></td>
+<td>Narrow Path</td>
+<td>Carriage Seam</td>
+</tr>
+<tr>
+<td><code>ah_canyon_m</code></td>
+<td><code>ah_canyon_n</code></td>
+<td>Narrow Path</td>
+<td>Valley Floor</td>
+</tr>
+<tr>
+<td><code>ah_canyon_m</code></td>
+<td><code>ah_crane</code></td>
+<td>Open</td>
+<td>Crane Base</td>
+</tr>
+<tr>
+<td><code>ah_canyon_m</code></td>
+<td><code>ah_truck</code></td>
+<td>Traverse</td>
+<td>Hauler Bed</td>
+</tr>
+<tr>
+<td><code>ah_canyon_m</code></td>
+<td><code>ah_opt_locker</code></td>
+<td>Narrow Door</td>
+<td>Locker Row</td>
+</tr>
+<tr>
+<td><code>ah_crane</code></td>
+<td><code>ah_stacktop</code></td>
+<td>Climb</td>
+<td>Car-Stack Side</td>
+</tr>
+<tr>
+<td><code>ah_stacktop</code></td>
+<td><code>ah_canyon_n</code></td>
+<td>Jump Down (one-way)</td>
+<td>Leap</td>
+</tr>
+<tr>
+<td><code>ah_truck</code></td>
+<td><code>ah_compactor</code></td>
+<td>Open</td>
+<td>North-Yard Road</td>
+</tr>
+<tr>
+<td><code>ah_canyon_n</code></td>
+<td><code>ah_compactor</code></td>
+<td>Open</td>
+<td>Valley Mouth</td>
+</tr>
+<tr>
+<td><code>ah_canyon_n</code></td>
+<td><code>ah_chest_a</code></td>
+<td>Open</td>
+<td>Parts Pile</td>
+</tr>
+<tr>
+<td><code>ah_compactor</code></td>
+<td><code>ah_exit_nw</code></td>
+<td>Open</td>
+<td>Northwest Road</td>
+</tr>
+<tr>
+<td><code>ah_canyon_n</code></td>
+<td><code>ah_exit_ne</code></td>
+<td>Open</td>
+<td>Northeast Road</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Encounter Configuration</h2>
+<p><strong>Main Killer</strong>: Wraith (WRT). Avatar Menace Value (AVM) +1. Challenge Rating (CR) = Prestige (PRS) + 1; this scenario's Prestige (PRS) is 3–5, so Challenge Rating (CR) 4–6. Occupies 60% of the Encounter Budget (EB). Feature: no Terror Radius (TR); the player hears no heartbeat (tutorial: the fear of a missing heartbeat).</p>
+<p><strong>Encounter Budget (EB)</strong> (Difficulty Modifier (DM) = 1.0, Prestige (PRS) mid 4):</p>
+<table>
+<thead>
+<tr>
+<th>Player Count N</th>
+<th>Encounter Budget (EB)</th>
+<th>Killer Share (60%)</th>
+<th>Construct Available (40%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>6</td>
+<td>3.6</td>
+<td>2.4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>12</td>
+<td>7.2</td>
+<td>4.8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>18</td>
+<td>10.8</td>
+<td>7.2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>24</td>
+<td>14.4</td>
+<td>9.6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Realm Construct</strong>: Rust-Devourer = Tin Golem (RC-03, Challenge Rating (CR) 3, Hit Points (HP) 22, attack modifier +3, Defense Difficulty Class (DC) 11, Encounter Budget Cost (EBC) 6, blocking type). A low-tier construct attached to the wrecks; when startled it makes a loud noise that reveals position.</p>
+<p><strong>Encounter List</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Type</th>
+<th>Content</th>
+<th>Challenge Rating (CR) / Difficulty</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>Exploration</td>
+<td>Scar collection (6–8, see table below)</td>
+<td>Easy–Medium</td>
+<td>Each costs 1 Action Point (AP)</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Chase</td>
+<td>Wraith's (WRT) invisible ambush (no heartbeat)</td>
+<td>Medium</td>
+<td>Tutorial: audio cues replace heartbeat</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Environment</td>
+<td>Car pile collapse (closes passage when triggered)</td>
+<td>Medium</td>
+<td>Agility (AGI) evade</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Realm Construct</td>
+<td>Rust-Devourer (RC-03) × N (see player-count table)</td>
+<td>Low (3)</td>
+<td>Encounter Budget Cost (EBC) 6 each</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Chase</td>
+<td>Mid-game Hook and rescue</td>
+<td>Medium</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Endgame</td>
+<td>Trap on the fifth Generator (Scar #1)</td>
+<td>Medium–High</td>
+<td>Free position reveal for the Killer when the fifth is repaired</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Six base scars (solo configuration adds #7, #8)</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Scar Content</th>
+<th>Location</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>Do not trust the fifth one</code></td>
+<td>School bus roof</td>
+<td>When the fifth Generator is repaired this round, the Killer gets a free position reveal</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>I counted. The door's always on the same side</code></td>
+<td>Crane counterweight</td>
+<td>The relative bearings of the two Exit Gates can be learned ahead of time</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>Don't run alone</code></td>
+<td>Hauler bed</td>
+<td>No mechanical effect; pure advice</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>There is no third time</code></td>
+<td>Gas station fuel tank</td>
+<td>Hint: after two Hooks, the third offers no struggle chance</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>The fire remembers</code></td>
+<td>Top of the car stack</td>
+<td>Main-story clue: the Campfire is tied to memory</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>If you're reading this far, I have already—</code></td>
+<td>Inside the compactor</td>
+<td>Sentence unfinished, edge scored by nails</td>
+</tr>
+<tr>
+<td>7※</td>
+<td><code>My name is</code></td>
+<td>Under the bus seat</td>
+<td>Only two words</td>
+</tr>
+<tr>
+<td>8※</td>
+<td><code>Stop looking for me</code></td>
+<td>Inside the changing locker</td>
+<td>Echoes S1's <code>mm_opt_locker</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>6. NPC Appearances and Lines</h2>
+<p><strong>Eloise Finch (§8-A)</strong>
+- Central to this scenario. The closing reveals she is the author of the scars.
+- Closing line: "These are my words. …I forget every time I come back. So I carve outside, and on my own body. But I never finished that one sentence. Because every time I'm halfway through — I can't remember what I meant to say."</p>
+<p><strong>Gilmar Sato (§8-A, Scavenger-type Survivor)</strong>
+- Brought back the iron sheet, provides Autohaven Wreckers terrain knowledge.
+- Line: "Next time you see one like it, stop and look. Maybe it was left for you."</p>
+<p><strong>Echo Companion · the Hollow Hugger (§8-B, solo configuration)</strong>
+- Always embracing something that isn't there. <strong>If the player heals it, it passes the "thing in its arms" to the player — it's empty, but the player gains 1 Hope Point (HOP).</strong></p>
+<p><strong>Whisperer · Iron-Rust Chorus (RC-02)</strong>
+- The Autohaven Wreckers Whisperer, intelligence-type (Encounter Budget Cost (EBC) 0). Can trade Hope Point (HOP) for scar locations.
+- Line: "Metal remembers sound. You knock, it answers. Knock a few more times and I'll tell you which sheet of iron carries words."</p>
+<hr />
+<h2>7. Decision Points and Branch Results</h2>
+<p><strong>Decision One: Spend Action Point (AP) to read the scars?</strong>
+- Reading a scar = giving up time to repair / flee, but gaining main-story info and rules hints.
+- Branch: if the player gives up an action favorable to themselves in order to read a scar (e.g. skipping a repair, detouring, glancing while rescuing), it satisfies the Ember Moment trigger condition.</p>
+<p><strong>Decision Two: The fifth Generator</strong>
+- The required count usually does not need the fifth (see player-count table: required 3–5, total 4–7). But Scar #1 warns "Do not trust the fifth one."
+- Branch: if the player actively repairs the fifth, it triggers the E6 trap (free position reveal for the Killer); if the player heeds the scar and meets the quota with four, the trap is avoided and escape is still completed.</p>
+<p><strong>Decision Three: Treatment of the Hollow Hugger (solo)</strong>
+- Player heals Echo · Hollow Hugger → gains 1 Hope Point (HOP). This is a key source of Hope Point (HOP) in the solo game.</p>
+<hr />
+<h2>8. Player-Count Scaling Rules</h2>
+<blockquote>
+<p>The solo configuration (1 Player + 1 GM) is the default. Locker count = 4 + N; Chest count = MAX(2, N+1).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>1 Player</th>
+<th>2 Players</th>
+<th>3 Players</th>
+<th>4 Players</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generator total</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Generators required</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Killer Pressure Level</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Echo Companion count</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Scar count</td>
+<td><strong>8</strong></td>
+<td><strong>7</strong></td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Rust-Devourer (RC-03) count</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Hook count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Chest count</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Locker count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hook phase rounds</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Endgame Collapse rounds</td>
+<td>12</td>
+<td>10</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Completion reward · Bloodpoint (BP)</td>
+<td>×1.1</td>
+<td>×1.05</td>
+<td>×1.0</td>
+<td>×1.0</td>
+</tr>
+<tr>
+<td>Completion reward · Hope Point (HOP)</td>
+<td>+2</td>
+<td>+2</td>
+<td>+2</td>
+<td>+2</td>
+</tr>
+<tr>
+<td>Optional exploration nodes</td>
+<td><strong>+2</strong></td>
+<td><strong>+1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Effective Repair Force (ERF)</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Per-round Pressure Point (PRE) recovery</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Self-Unhook Difficulty Class (DC)</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Exit Gate opening segments</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Pallet count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Window count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hatch open condition</td>
+<td>Generators completed ≥ 1 AND all Echo Companions down</td>
+<td>Survivors alive = 1, or completed ≥ 2 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 3 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 4 AND survivors alive ≤ 2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Ending Branches and Rewards</h2>
+<p><strong>Ending branch</strong>: Linear, but whether the Ember Moment triggers depends on whether the player gave up a favorable action to read the scars (see Decision One).</p>
+<p><strong>Rewards</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bloodpoint (BP)</td>
+<td>Standard × (per player-count table)</td>
+</tr>
+<tr>
+<td>Prestige (PRS)</td>
+<td>Rises to level 5 upon completion</td>
+</tr>
+<tr>
+<td>Hope Point (HOP)</td>
+<td>+2</td>
+</tr>
+<tr>
+<td>Campfire Ember</td>
+<td>Accrued during play (est. 4–7)</td>
+</tr>
+<tr>
+<td>Memory Card</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>1 common–uncommon item per person</td>
+</tr>
+<tr>
+<td>Narrative</td>
+<td>Memory loss is systematic; someone is fighting it</td>
+</tr>
+<tr>
+<td><strong>Special</strong></td>
+<td>The player may keep a sheet of iron and a nail — <strong>from now on, in every scenario, the player can carve one sentence to leave for the next self.</strong> The GM should actually prepare pen and paper for the player to write it down, and really bring it out in later scenarios.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ember Moment trigger text</strong>:</p>
+<blockquote>
+<p>Eloise looks at those words for a long time without speaking. Then she says, "These are my words."
+She reaches out and pulls up her sleeve. Down her forearm runs a whole row of scars, cut with fingernails, scabbed and cracked open many times over.
+"But I never finished that one sentence. Because every time I'm halfway through — I can't remember what I meant to say."</p>
+</blockquote>
+<hr />
+<h2>10. Connections to Adjacent Scenarios</h2>
+<ul>
+<li><strong>Forward (S1)</strong>: <code>ah_opt_locker</code> Scar #8 "Stop looking for me" echoes S1's <code>mm_opt_locker</code>; S1's contradiction of Eloise saying "don't rescue people" is paid off here — the player learns she herself is the author of the scars.</li>
+<li><strong>Backward (S3)</strong>: Scar #5 "The fire remembers" is the lead-in to S3 "Roots That Eat No Soil" — Eloise reasons that "if memory is taken, it must be put somewhere." The iron sheet and nail the player gains in S2 become a campaign-spanning "message" mechanic.</li>
+<li><strong>Hook payoff points</strong>: ① "Do not trust the fifth one" hints that Trial rules can be interfered with by messages; ② the scars on Eloise's body → S4 afterimage "the one who writes"; ③ Gilmar (if the solo player's favorite Echo to rescue) builds an emotional bond here → rescued from the Void in S5.</li>
+</ul><p><a href="../../assets/r33_en/scenarios/s02_鐵谷裡的刻痕.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

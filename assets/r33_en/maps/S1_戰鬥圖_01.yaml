@@ -1,0 +1,24 @@
+# S1 Battle Map 01 · First Chase in Shelter Woods (E2, GM must let the player escape)
+meta:
+  id: S1_戰鬥圖_01
+  name: S1 Battle Map · First Chase in Shelter Woods
+  scenario: S1
+  scene: E2 (Chase)
+  note: Tutorial chase, no pallet pressure, no creations; the GM must let the player escape. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 16
+grid_h: 16
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Brush (Concealment), rect: { x: 2, y: 2, w: 3, h: 3 } }
+  - { id: t2, type: Brush (Concealment), rect: { x: 10, y: 3, w: 3, h: 3 } }
+  - { id: t3, type: Brush (Concealment), rect: { x: 4, y: 9, w: 2, h: 4 } }
+  - { id: t4, type: Brush (Concealment), rect: { x: 11, y: 10, w: 3, h: 4 } }
+  - { id: t5, type: Rock (Half-Cover), rect: { x: 7, y: 6, w: 2, h: 2 } }
+objects:
+  - { id: o1, type: Pallet, x: 6, y: 4 }
+  - { id: o2, type: Pallet, x: 9, y: 11 }
+  - { id: o3, type: Window, x: 13, y: 5 }
+  - { id: o4, type: Locker, x: 1, y: 8 }
+  - { id: o5, type: Chest, x: 14, y: 14 }
+spawn_survivor: { x: 1, y: 14 }
+spawn_killer: { x: 14, y: 1 }

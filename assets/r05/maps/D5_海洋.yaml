@@ -1,0 +1,120 @@
+id: D5
+name: 海洋
+recommended_rank: "D/C（CR 13-18）"
+theme: 碧濤暗礁
+grid: { cols: 5, rows: 4 }
+rooms:
+  - id: R1
+    name: 海灘登陸點
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 浅滩哨站
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R7]
+    cr: 13
+    enemies: [海盜 x2]
+    desc: 海盜 x2 警戒。
+  - id: R3
+    name: 暗流通廊
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R8]
+    trap: 弱（暗流漩渦，DC12 / 1d6 拉扯）
+    desc: 弱機關，暗流捲吸。
+  - id: R4
+    name: 鯊群水域
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 15
+    enemies: [鯊魚 x2]
+    desc: 鯊魚 x2 巡游。
+  - id: R5
+    name: 沉船貨艙
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R10]
+    treasure: 珠貝 x2、Glint 碎片、G 80~140
+    desc: 沉船寶藏。
+  - id: R6
+    name: 礁岩伏擊
+    type: combat
+    gx: 0
+    gy: 1
+    links: [R1, R7, R11]
+    cr: 16
+    enemies: [水鬼 x2]
+    desc: 水鬼 x2 自礁岩襲擊。
+  - id: R7
+    name: 浮木休憩
+    type: rest
+    gx: 1
+    gy: 1
+    links: [R6, R8, R2, R12]
+    desc: 安全休息點（回復 HP／狀態）。
+  - id: R8
+    name: 毒刺水母群
+    type: trap
+    gx: 2
+    gy: 1
+    links: [R7, R9, R3, R13]
+    trap: 強（毒水母，DC18 / 2d6 中毒）
+    desc: 強機關，毒刺水母。
+  - id: R9
+    name: 貝塚窖藏
+    type: treasure
+    gx: 3
+    gy: 1
+    links: [R8, R10, R4, R14]
+    treasure: 珊瑚 x2、精良素材、G 90~150
+    desc: 貝塚藏寶。
+  - id: R10
+    name: 章魚窩
+    type: combat
+    gx: 4
+    gy: 1
+    links: [R9, R5]
+    cr: 17
+    enemies: [章魚 x2]
+    desc: 章魚 x2 盤據。
+  - id: R11
+    name: 避浪石凹
+    type: rest
+    gx: 0
+    gy: 2
+    links: [R6, R12]
+    desc: 避浪休息點。
+  - id: R12
+    name: 潮汐寶室
+    type: treasure
+    gx: 1
+    gy: 2
+    links: [R11, R13, R7]
+    treasure: 潮汐結晶、G 100~160
+    desc: 漲潮露出的寶室。
+  - id: R13
+    name: 海妖潭
+    type: elite
+    gx: 2
+    gy: 2
+    links: [R12, R14, R8]
+    cr: 18
+    enemies: [海妖（首領）]
+    combat_map: 地圖/D5_戰鬥_海妖.yaml
+    desc: 小首領 海妖（CR18）。
+  - id: R14
+    name: 出口水道
+    type: exit
+    gx: 3
+    gy: 2
+    links: [R13, R9]
+    desc: 出口；通關後領取獎勵離開。

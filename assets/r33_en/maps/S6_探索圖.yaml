@@ -1,0 +1,54 @@
+# S6 Exploration Map · Léry's Memorial Institute (Léry's Memorial Institute, R6)
+meta:
+  id: S6
+  name: S6 Exploration Map · Léry's Memorial Institute
+  realm: Léry's Memorial Institute (R6)
+  regions: [Wing A (wing_a), Wing B (wing_b), Core (core)]
+  coord_range: 0-1000
+  note: Mirror-symmetric design — wing_a and wing_b nodes have identical structure; when 'Mirror Swap' occurs, the two wings swap their labels, id unchanged.
+nodes:
+  - { id: ly_start, name: Starting Fog Mouth, region: Core (core), type: Entrance, x: 500, y: 930, connections: [ly_reception] }
+  - { id: ly_reception, name: Reception Hall, region: Core (core), type: Hub, x: 500, y: 830, connections: [ly_start, ly_hall_a1, ly_hall_b1, ly_theatre] }
+  - { id: ly_hall_a1, name: Wing A · First Long Corridor, region: Wing A (wing_a), type: Passage, x: 320, y: 730, connections: [ly_reception, ly_hall_a2, ly_chest_a, ly_opt_ward] }
+  - { id: ly_hall_a2, name: Wing A · Second Long Corridor, region: Wing A (wing_a), type: Passage, x: 200, y: 620, connections: [ly_hall_a1, ly_room_a1, ly_room_a2] }
+  - { id: ly_room_a1, name: Wing A · Observation Room, region: Wing A (wing_a), type: Room, x: 320, y: 560, connections: [ly_hall_a2, ly_theatre] }
+  - { id: ly_room_a2, name: Wing A · Preservation Room, region: Wing A (wing_a), type: Room, x: 130, y: 480, connections: [ly_hall_a2, ly_exit_nw] }
+  - { id: ly_chest_a, name: Wing A·Medicine Cabinet, region: Wing A (wing_a), type: Chest, x: 210, y: 780, connections: [ly_hall_a1] }
+  - { id: ly_hall_b1, name: Wing B · First Long Corridor, region: Wing B (wing_b), type: Passage, x: 680, y: 730, connections: [ly_reception, ly_hall_b2, ly_chest_b] }
+  - { id: ly_hall_b2, name: Wing B · Second Long Corridor, region: Wing B (wing_b), type: Passage, x: 800, y: 620, connections: [ly_hall_b1, ly_room_b1, ly_room_b2, ly_opt_office] }
+  - { id: ly_room_b1, name: Wing B · Observation Room, region: Wing B (wing_b), type: Room, x: 680, y: 560, connections: [ly_hall_b2, ly_theatre] }
+  - { id: ly_room_b2, name: Wing B · Preservation Room, region: Wing B (wing_b), type: Room, x: 870, y: 480, connections: [ly_hall_b2, ly_exit_ne] }
+  - { id: ly_chest_b, name: Wing B·Medicine Cabinet, region: Wing B (wing_b), type: Chest, x: 790, y: 780, connections: [ly_hall_b1] }
+  - { id: ly_theatre, name: Treatment Theater, region: Core (core), type: Main Arena, x: 500, y: 560, connections: [ly_reception, ly_room_a1, ly_room_b1, ly_gallery] }
+  - { id: ly_gallery, name: Auditorium Ring Corridor, region: Core (core), type: Building Level, x: 500, y: 450, connections: [ly_theatre, ly_hall_n] }
+  - { id: ly_hall_n, name: North Long Corridor, region: Core (core), type: Passage, x: 500, y: 350, connections: [ly_gallery, ly_room13, ly_drain] }
+  - { id: ly_room13, name: Therapy Room 13, region: Core (core), type: Key, x: 500, y: 220, connections: [ly_hall_n] }
+  - { id: ly_drain, name: Drainage Outlet, region: Core (core), type: Special, x: 200, y: 300, connections: [ly_hall_n, ws_hidden] }
+  - { id: ly_exit_nw, name: Northwest Exit Gate, region: Wing A (wing_a), type: Exit, x: 110, y: 150, connections: [ly_room_a2] }
+  - { id: ly_exit_ne, name: Northeast Exit Gate, region: Wing B (wing_b), type: Exit, x: 890, y: 150, connections: [ly_room_b2] }
+  - { id: ly_opt_office, name: Head Doctor's Office, region: Wing B (wing_b), type: Optional, x: 880, y: 330, connections: [ly_hall_b2] }
+  - { id: ly_opt_ward, name: Abandoned Ward, region: Wing A (wing_a), type: Optional, x: 120, y: 880, connections: [ly_hall_a1] }
+edges:
+  - { from: ly_start, to: ly_reception, channel: Interior, name: Entrance Hall}
+  - { from: ly_reception, to: ly_hall_a1, channel: Interior Door, name: Wing ADoor}
+  - { from: ly_reception, to: ly_hall_b1, channel: Interior Door, name: Wing BDoor}
+  - { from: ly_reception, to: ly_theatre, channel: Interior Door, name: Theater Main Door}
+  - { from: ly_hall_a1, to: ly_hall_a2, channel: Interior, name: Long Corridor}
+  - { from: ly_hall_a1, to: ly_chest_a, channel: Interior Door, name: Medicine-cabinet Room}
+  - { from: ly_hall_a1, to: ly_opt_ward, channel: Interior Door, name: Abandoned Ward Door}
+  - { from: ly_hall_a2, to: ly_room_a1, channel: Interior Door, name: Observation Room Door}
+  - { from: ly_hall_a2, to: ly_room_a2, channel: Interior Door, name: Preservation Room Door}
+  - { from: ly_room_a1, to: ly_theatre, channel: One-way Mirror Window, name: Observation Window (Can see through; climbable)}
+  - { from: ly_room_a2, to: ly_exit_nw, channel: Interior, name: Northwest Passage}
+  - { from: ly_hall_b1, to: ly_hall_b2, channel: Interior, name: Long Corridor}
+  - { from: ly_hall_b1, to: ly_chest_b, channel: Interior Door, name: Medicine-cabinet Room}
+  - { from: ly_hall_b2, to: ly_room_b1, channel: Interior Door, name: Observation Room Door}
+  - { from: ly_hall_b2, to: ly_room_b2, channel: Interior Door, name: Preservation Room Door}
+  - { from: ly_hall_b2, to: ly_opt_office, channel: Interior Door, name: Office Door}
+  - { from: ly_room_b1, to: ly_theatre, channel: One-way Mirror Window, name: Observation Window (Can see through; climbable)}
+  - { from: ly_room_b2, to: ly_exit_ne, channel: Interior, name: Northeast Passage}
+  - { from: ly_theatre, to: ly_gallery, channel: Stairs, name: Auditorium Stairs ×2}
+  - { from: ly_gallery, to: ly_hall_n, channel: Interior Door, name: North Gallery Door}
+  - { from: ly_hall_n, to: ly_room13, channel: Single Door, name: Room 13 Door}
+  - { from: ly_hall_n, to: ly_drain, channel: Floor Grate, name: Drainage Outlet}
+  - { from: ly_drain, to: ws_hidden, channel: Drainage Channel, name: To Hidden Workshop (Unlocks S5; two-way)}

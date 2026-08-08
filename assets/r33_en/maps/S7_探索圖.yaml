@@ -1,0 +1,57 @@
+# S7 Exploration Map · Red Forest (Red Forest, R7)
+meta:
+  id: S7
+  name: S7 Exploration Map · Red Forest & Sin-Cleansing Temple
+  realm: Red Forest (R7)
+  regions: [Forest (forest), Temple 1F (temple_1), Temple 2F (temple_2), Temple 3F (temple_3)]
+  coord_range: 0-1000
+nodes:
+  - { id: rf_start, name: Starting Fog Mouth, region: Forest (forest), type: Entrance, x: 500, y: 940, connections: [rf_clearing] }
+  - { id: rf_clearing, name: Fallen Leaves Clearing, region: Forest (forest), type: Open, x: 500, y: 830, connections: [rf_start, rf_dwelling, rf_deep_e, rf_opt_cabin, rf_opt_grave] }
+  - { id: rf_dwelling, name: Mother's Dwelling, region: Forest (forest), type: Main Building, x: 260, y: 740, connections: [rf_clearing, rf_hearth, rf_deep_w, rf_exit_sw] }
+  - { id: rf_hearth, name: Mother's Dwelling Hearth, region: Forest (forest), type: Special, x: 170, y: 660, connections: [rf_dwelling] }
+  - { id: rf_deep_e, name: Deep Woods · East, region: Forest (forest), type: Open, x: 740, y: 700, connections: [rf_clearing, rf_stones, rf_chest_a, rf_hiddendoor] }
+  - { id: rf_deep_w, name: Deep Woods · West, region: Forest (forest), type: Open, x: 260, y: 540, connections: [rf_dwelling, rf_leafsea, rf_chest_b] }
+  - { id: rf_stones, name: Standing Stone Circle, region: Forest (forest), type: Landmark, x: 620, y: 560, connections: [rf_deep_e, rf_leafsea, rf_opt_altar] }
+  - { id: rf_leafsea, name: Red Leaf Sea, region: Forest (forest), type: Special, x: 430, y: 620, connections: [rf_deep_w, rf_stones, rf_temple_ent] }
+  - { id: rf_temple_ent, name: Sin-Cleansing Temple·Entrance, region: Forest (forest), type: Main Landmark, x: 500, y: 450, connections: [rf_leafsea, rf_stones, rf_exit_n, tp1_hall] }
+  - { id: rf_chest_a, name: Hollow-tree Chest, region: Forest (forest), type: Chest, x: 800, y: 560, connections: [rf_deep_e] }
+  - { id: rf_chest_b, name: Under-rock Chest, region: Forest (forest), type: Chest, x: 180, y: 440, connections: [rf_deep_w] }
+  - { id: rf_exit_n, name: North Exit Gate, region: Forest (forest), type: Exit, x: 660, y: 200, connections: [rf_temple_ent] }
+  - { id: rf_exit_sw, name: Southwest Exit Gate, region: Forest (forest), type: Exit, x: 120, y: 880, connections: [rf_dwelling] }
+  - { id: rf_hiddendoor, name: Scavenger's Hidden Door, region: Forest (forest), type: Special, x: 860, y: 840, connections: [rf_deep_e] }
+  - { id: rf_opt_altar, name: Blood Altar, region: Forest (forest), type: Optional, x: 830, y: 400, connections: [rf_stones] }
+  - { id: rf_opt_cabin, name: Hunter's Cabin, region: Forest (forest), type: Optional, x: 350, y: 890, connections: [rf_clearing] }
+  - { id: rf_opt_grave, name: Nameless Grave, region: Forest (forest), type: Optional, x: 640, y: 890, connections: [rf_clearing] }
+  - { id: tp1_hall, name: Temple 1F · Pillar Hall, region: Temple 1F (temple_1), type: Temple, x: 500, y: 370, connections: [rf_temple_ent, tp1_side, tp2_spiral] }
+  - { id: tp1_side, name: 1F · Side Chamber, region: Temple 1F (temple_1), type: Temple, x: 380, y: 330, connections: [tp1_hall] }
+  - { id: tp2_spiral, name: 2F · Misaligned Stairs, region: Temple 2F (temple_2), type: Temple, x: 500, y: 290, connections: [tp1_hall, tp2_mirror, tp3_niche] }
+  - { id: tp2_mirror, name: 2F · Mirror Gallery, region: Temple 2F (temple_2), type: Temple, x: 620, y: 250, connections: [tp2_spiral, tp3_observer] }
+  - { id: tp3_niche, name: Ember Niche, region: Temple 3F (temple_3), type: Key, x: 500, y: 180, connections: [tp2_spiral, tp3_observer] }
+  - { id: tp3_observer, name: Where the Mirror-Bearer Is, region: Temple 3F (temple_3), type: Special, x: 400, y: 140, connections: [tp2_mirror, tp3_niche] }
+edges:
+  - { from: rf_start, to: rf_clearing, channel: Fallen Leaves, name: WoodsTrail}
+  - { from: rf_clearing, to: rf_dwelling, channel: Fallen Leaves, name: Front-of-house Trail}
+  - { from: rf_clearing, to: rf_deep_e, channel: Fallen Leaves, name: East WoodsTrail}
+  - { from: rf_clearing, to: rf_opt_cabin, channel: Fallen Leaves, name: Hunt Trail}
+  - { from: rf_clearing, to: rf_opt_grave, channel: Fallen Leaves, name: Old-grave Path}
+  - { from: rf_dwelling, to: rf_hearth, channel: Interior, name: Indoors}
+  - { from: rf_dwelling, to: rf_deep_w, channel: Fallen Leaves, name: West WoodsTrail}
+  - { from: rf_dwelling, to: rf_exit_sw, channel: Fallen Leaves, name: Southwest Trail}
+  - { from: rf_deep_e, to: rf_stones, channel: Fallen Leaves, name: Stone Trail}
+  - { from: rf_deep_e, to: rf_chest_a, channel: Fallen Leaves, name: Hollow Tree}
+  - { from: rf_deep_e, to: rf_hiddendoor, channel: Fallen Leaves, name: Southeast Trail}
+  - { from: rf_deep_w, to: rf_leafsea, channel: Fallen Leaves, name: Leaf Edge}
+  - { from: rf_deep_w, to: rf_chest_b, channel: Fallen Leaves, name: Under the Rock}
+  - { from: rf_stones, to: rf_leafsea, channel: Fallen Leaves, name: Outside Stone Ring}
+  - { from: rf_stones, to: rf_opt_altar, channel: Fallen Leaves, name: Ritual Path}
+  - { from: rf_leafsea, to: rf_temple_ent, channel: Red Leaf Sea, name: Beneath Leaves (Dying-crawl fully concealed)}
+  - { from: rf_stones, to: rf_temple_ent, channel: Fallen Leaves, name: TemplePath}
+  - { from: rf_temple_ent, to: rf_exit_n, channel: Fallen Leaves, name: North Trail}
+  - { from: rf_temple_ent, to: tp1_hall, channel: Descending Stairs, name: First Step (Inconsistent height)}
+  - { from: tp1_hall, to: tp1_side, channel: Stone Door, name: Side-chamber Door (Frame too narrow)}
+  - { from: tp1_hall, to: tp2_spiral, channel: Descending Stairs, name: Misaligned Stairs (Backtracking adds a step)}
+  - { from: tp2_spiral, to: tp2_mirror, channel: Stone Corridor, name: Mirror Gallery (Both ends look identical)}
+  - { from: tp2_spiral, to: tp3_niche, channel: Descending Stairs, name: Final Step}
+  - { from: tp2_mirror, to: tp3_observer, channel: Stone Corridor, name: Deep Place}
+  - { from: tp3_niche, to: tp3_observer, channel: Stone Corridor, name: Niche Side}

@@ -1,0 +1,36 @@
+name: 劇本8 魔王城
+description: 集齊四魔將信標開啟深淵誓約城，與女魔王薇爾賽莉雅·諾恩海姆（CR50）三階段終戰，第五人傑諾（CR45）反轉登場。CL46–50，IP≥40 開放和解結局。
+difficulty: 傳說～神話
+level_range: [46, 50]
+chapter: 8
+map_ref: 地圖/劇本8_戰鬥_魔王.yaml
+encounters:
+  - id: castle_guard
+    name: 城門守軍
+    enemies:
+      - {name: 魔界近衛, cr: 46, count: 3}
+    budget: 傳說×1.2
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: demon_lord_boss
+    name: 女魔王 薇爾賽莉雅·諾恩海姆（三階段）
+    enemies:
+      - {name: 薇爾賽莉雅·諾恩海姆, cr: 50, count: 1}
+      - {name: 傑諾·五條(第五人反轉), cr: 45, count: 1}
+    boss: true
+    phases:
+      - {name: 統御, hp_threshold: "100%~66%", trait: 四將殘響輪轉屬性}
+      - {name: 真魔王型態, hp_threshold: "66%", trait: 統御領域/四元素毀滅AOE}
+      - {name: 終焉, hp_threshold: "33%", trait: 終焉審判即死倒數}
+    budget: 終戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR47/無助戰; 5–6名→CR52"
+rewards:
+  exp: 48000
+  gold: 30000
+  items: [勇者之證, 魔界核心碎片, 世界樹之葉]
+ip_events:
+  - event: 開城儀式結算總 IP≥40 開放和解
+    ip: 0
+  - event: 招降魔將為助戰（每名）
+    ip: 8
+  - event: 傑諾倒戈贖罪分支
+    ip: 6

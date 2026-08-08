@@ -1,0 +1,156 @@
+scenario: 世界觀
+section: 艾爾緹亞大陸全圖（供劇本 S0–S4 空間參照）
+map_type: world
+title: 世界地圖
+# 座標為示意（非精確距離），單位為 SVG 畫布像素（viewBox 680 x 740）
+# 大陸結構：中央王國 + 四方異域 + 核心魔域
+
+nodes:
+  - id: R0
+    label: 中央平原（王都圈）
+    x: 340
+    y: 400
+    type: 王國
+    explored: true
+  - id: R1
+    label: 北境冰原·龍脊峰
+    x: 340
+    y: 120
+    type: 魔將領地
+    explored: true
+  - id: R2
+    label: 西方沼澤·寂葬濕地
+    x: 140
+    y: 400
+    type: 魔將領地
+    explored: true
+  - id: R3
+    label: 南方綠洲·媚惑溫泉鄉
+    x: 340
+    y: 680
+    type: 魔將領地
+    explored: true
+  - id: R4
+    label: 東方海域·凝膠群島
+    x: 560
+    y: 400
+    type: 魔將領地
+    explored: true
+  - id: R5
+    label: 核心魔域·深淵誓約城
+    x: 560
+    y: 120
+    type: 魔王本營
+    explored: true
+  - id: E1
+    label: 鐵爐城（矮人鍊金都市）
+    x: 140
+    y: 120
+    type: 城邦
+    explored: true
+  - id: E2
+    label: 艾雯綠海（精靈森林）
+    x: 140
+    y: 680
+    type: 城邦
+    explored: true
+  - id: E3
+    label: 櫻見島（東方武士之國）
+    x: 560
+    y: 680
+    type: 城邦
+    explored: true
+  - id: E4
+    label: 砂鱗汗國（沙漠遊牧）
+    x: 450
+    y: 545
+    type: 城邦
+    explored: true
+
+edges:
+  - from: R0
+    to: R1
+    type: 通道
+  - from: R0
+    to: R2
+    type: 通道
+  - from: R0
+    to: R3
+    type: 通道
+  - from: R0
+    to: R4
+    type: 通道
+  - from: R0
+    to: R5
+    type: 通道
+    label: "S4 魔王城（需集齊四信標）"
+  - from: R0
+    to: E1
+    type: 通道
+  - from: R0
+    to: E2
+    type: 通道
+  - from: R0
+    to: E3
+    type: 通道
+  - from: R0
+    to: E4
+    type: 通道
+  - from: R1
+    to: R5
+    type: 魔域連通
+  - from: R2
+    to: R5
+    type: 魔域連通
+  - from: R3
+    to: R5
+    type: 魔域連通
+  - from: R4
+    to: R5
+    type: 魔域連通
+  - from: E1
+    to: R1
+    type: 通道
+    label: "杜林嚮導"
+
+# 區域淺色底（依據 設計稿/04 表 1.3）
+regions:
+  - name: 中央平原（王都圈）
+    color: "#FFD9A0"
+    nodes: [R0]
+  - name: 龍脊峰
+    color: "#FFB3B3"
+    nodes: [R1]
+  - name: 寂葬濕地
+    color: "#B3D9B3"
+    nodes: [R2]
+  - name: 媚惑溫泉鄉
+    color: "#FFB3E6"
+    nodes: [R3]
+  - name: 凝膠群島
+    color: "#B3E6FF"
+    nodes: [R4]
+  - name: 深淵誓約城
+    color: "#D9B3FF"
+    nodes: [R5]
+  - name: 鐵爐城
+    color: "#D9D9B3"
+    nodes: [E1]
+  - name: 艾雯綠海
+    color: "#B3FFB3"
+    nodes: [E2]
+  - name: 櫻見島
+    color: "#FFE6B3"
+    nodes: [E3]
+  - name: 砂鱗汗國
+    color: "#FFF2B3"
+    nodes: [E4]
+
+# 勢力範圍（依據 設計稿/04 §1.4）
+factions:
+  - name: 人類與城邦聯盟
+    color: "#3B6EA5"
+    nodes: [R0, E1, E2, E3, E4]
+  - name: 魔王軍
+    color: "#9B3B8F"
+    nodes: [R1, R2, R3, R4, R5]

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="940" viewBox="0 0 950 940">
+  <rect width="950" height="940" fill="#F7F5EF"/>
+  <text x="90" y="50" font-family="Microsoft JhengHei, sans-serif" font-size="22" font-weight="bold" fill="#333333">火山</text>
+  <text x="90" y="78" font-family="Microsoft JhengHei, sans-serif" font-size="14" fill="#666666">推薦 Rank C/B（CR 19-26）　｜　主題：熔岩裂谷　｜　房間數 17</text>
+  <text x="90" y="105" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#999999">虛線為連通；未探索房於遊戲中由 GM 揭示。</text>
+  <line x1="170" y1="205" x2="330" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="205" x2="490" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="205" x2="330" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="205" x2="650" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="205" x2="490" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="205" x2="810" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="205" x2="810" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="810" y1="205" x2="810" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="170" y1="335" x2="170" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="170" y1="335" x2="330" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="170" y1="335" x2="170" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="335" x2="490" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="335" x2="330" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="335" x2="650" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="335" x2="490" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="335" x2="810" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="335" x2="650" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="335" x2="650" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="810" y1="335" x2="810" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="170" y1="465" x2="330" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="465" x2="490" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="465" x2="650" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="465" x2="490" y2="595" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="465" x2="810" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="595" x2="490" y2="725" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <rect x="110" y="158" width="120" height="95" rx="8" fill="#93C47D" stroke="#333333" stroke-width="2"/>
+  <text x="170" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R1 火山口邊緣</text>
+  <text x="170" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[入口]</text>
+  <rect x="270" y="158" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R2 火蜥蜴淺灘</text>
+  <text x="330" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[戰鬥 CR19]</text>
+  <rect x="430" y="158" width="120" height="95" rx="8" fill="#BF9000" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R3 熔岩裂隙</text>
+  <text x="490" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[陷阱]</text>
+  <rect x="590" y="158" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="650" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R4 炎犬洞窟</text>
+  <text x="650" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[戰鬥 CR21]</text>
+  <rect x="750" y="158" width="120" height="95" rx="8" fill="#674EA7" stroke="#333333" stroke-width="2"/>
+  <text x="810" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R5 焦黑礦坑</text>
+  <text x="810" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[寶箱]</text>
+  <rect x="110" y="288" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="170" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R6 岩漿灘頭</text>
+  <text x="170" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[戰鬥 CR22]</text>
+  <rect x="270" y="288" width="120" height="95" rx="8" fill="#6FA8DC" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R7 火山灰營地</text>
+  <text x="330" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[休息]</text>
+  <rect x="430" y="288" width="120" height="95" rx="8" fill="#BF9000" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R8 落石甬道</text>
+  <text x="490" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[陷阱]</text>
+  <rect x="590" y="288" width="120" height="95" rx="8" fill="#674EA7" stroke="#333333" stroke-width="2"/>
+  <text x="650" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R9 硫磺寶窟</text>
+  <text x="650" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[寶箱]</text>
+  <rect x="750" y="288" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="810" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R10 熔岩巨人室</text>
+  <text x="810" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[戰鬥 CR24]</text>
+  <rect x="110" y="418" width="120" height="95" rx="8" fill="#6FA8DC" stroke="#333333" stroke-width="2"/>
+  <text x="170" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R11 避熱岩台</text>
+  <text x="170" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[休息]</text>
+  <rect x="270" y="418" width="120" height="95" rx="8" fill="#674EA7" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R12 火紋窖藏</text>
+  <text x="330" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[寶箱]</text>
+  <rect x="430" y="418" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R13 炎脈戰場</text>
+  <text x="490" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[戰鬥 CR25]</text>
+  <rect x="590" y="418" width="120" height="95" rx="8" fill="#BF9000" stroke="#333333" stroke-width="2"/>
+  <text x="650" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R14 噴泉陷阱區</text>
+  <text x="650" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[陷阱]</text>
+  <rect x="750" y="418" width="120" height="95" rx="8" fill="#6FA8DC" stroke="#333333" stroke-width="2"/>
+  <text x="810" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R15 冷泉休整</text>
+  <text x="810" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[休息]</text>
+  <rect x="430" y="548" width="120" height="95" rx="8" fill="#990000" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="577" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R16 炎魔王座</text>
+  <text x="490" y="599" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[小首領 CR26]</text>
+  <text x="490" y="619" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="11" fill="#FFE0E0">首領</text>
+  <rect x="430" y="678" width="120" height="95" rx="8" fill="#38761D" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="707" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R17 出口裂隙</text>
+  <text x="490" y="729" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[出口]</text>
+  <text x="90" y="840" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#333333">圖例（房間類型）：</text>
+  <rect x="90" y="850" width="18" height="18" rx="3" fill="#93C47D" stroke="#333" stroke-width="1"/>
+  <text x="114" y="864" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">入口</text>
+  <rect x="185" y="850" width="18" height="18" rx="3" fill="#C0504D" stroke="#333" stroke-width="1"/>
+  <text x="209" y="864" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">戰鬥</text>
+  <rect x="280" y="850" width="18" height="18" rx="3" fill="#BF9000" stroke="#333" stroke-width="1"/>
+  <text x="304" y="864" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">陷阱</text>
+  <rect x="375" y="850" width="18" height="18" rx="3" fill="#674EA7" stroke="#333" stroke-width="1"/>
+  <text x="399" y="864" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">寶箱</text>
+  <rect x="470" y="850" width="18" height="18" rx="3" fill="#6FA8DC" stroke="#333" stroke-width="1"/>
+  <text x="494" y="864" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">休息</text>
+  <rect x="565" y="850" width="18" height="18" rx="3" fill="#990000" stroke="#333" stroke-width="1"/>
+  <text x="589" y="864" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">小首領</text>
+  <rect x="660" y="850" width="18" height="18" rx="3" fill="#38761D" stroke="#333" stroke-width="1"/>
+  <text x="684" y="864" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">出口</text>
+</svg>

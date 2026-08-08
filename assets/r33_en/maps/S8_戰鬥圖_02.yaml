@@ -1,0 +1,23 @@
+# S8 Battle Map 02 · Final Chase atop Tower (E5, pure speed)
+meta:
+  id: S8_戰鬥圖_02
+  name: S8 Battle Map · Final Chase atop Lone Tower
+  scenario: S8
+  scene: E5 (Chase / Pre-Boss)
+  note: Final chase atop the tower; pure speed / Action Points (AP). Enter The Nameless Heart through the Sky-roof Rift (hr_rift). Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 10
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Crow's Nest (Cover), rect: { x: 2, y: 2, w: 2, h: 2 } }
+  - { id: t2, type: Tower-edge Low Wall (Impassable outer edge), rect: { x: 0, y: 0, w: 10, h: 1 } }
+  - { id: t3, type: Tower-edge Low Wall (Impassable outer edge), rect: { x: 0, y: 9, w: 10, h: 1 } }
+objects:
+  - { id: o1, type: Pallet, x: 5, y: 5 }
+  - { id: o2, type: Window, x: 9, y: 4 }
+  - { id: o3, type: Hook, x: 5, y: 2 }
+  - { id: o4, type: Sky-roof Rift (hr_rift entrance), x: 5, y: 0 }
+  - { id: o5, type: Chest, x: 1, y: 8 }
+spawn_survivor: { x: 1, y: 8 }
+spawn_killer: { x: 9, y: 8 }
+final_chase: true

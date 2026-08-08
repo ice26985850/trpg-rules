@@ -1,0 +1,72 @@
+scenario: S3
+section: 第三／四魔將·魅魔宮與膠池（CL 23–35）
+map_type: explore
+title: S3_探索_魅魔宮
+# 座標為示意（非精確距離），單位為 SVG 畫布像素；由大廳經幻廊通往雙將王座
+
+nodes:
+  - id: entrance
+    label: 魅魔宮入口
+    x: 340
+    y: 560
+    type: 入口
+    explored: true
+  - id: hall
+    label: 大廳
+    x: 340
+    y: 440
+    type: 室內
+    explored: false
+  - id: spa
+    label: 溫泉鄉外圍
+    x: 520
+    y: 480
+    type: 設施
+    explored: true
+  - id: corridor
+    label: 幻廊
+    x: 340
+    y: 320
+    type: 幻術區
+    explored: false
+  - id: gel
+    label: 膠池（史萊姆領）
+    x: 220
+    y: 240
+    type: 敵巢
+    explored: false
+  - id: dual
+    label: 雙將王座
+    x: 340
+    y: 140
+    type: 首領點
+    explored: false
+
+edges:
+  - from: entrance
+    to: hall
+    type: 通道
+  - from: hall
+    to: spa
+    type: 通道
+    label: "休整"
+  - from: hall
+    to: corridor
+    type: 通道
+  - from: corridor
+    to: gel
+    type: 通道
+  - from: corridor
+    to: dual
+    type: 通道
+  - from: gel
+    to: dual
+    type: 通道
+
+regions:
+  - name: 魅魔宮
+    color: "#FFC8EE"
+    nodes: [entrance, hall, spa, corridor, dual]
+  - name: 膠池領域
+    color: "#C8ECFF"
+    nodes: [gel]

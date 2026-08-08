@@ -1,0 +1,106 @@
+scenario: S3
+section: 第四魔將·膠將戰（凝膠群島·CL 23–35）
+map_type: battle
+grid_scale: "1格=2公尺"
+title: S3_戰鬥_凝膠群島
+# 座標為精確格子座標（col, row，0–9），供距離與射程計算
+# 膠將單首領戰；地形：凝膠群島（R4）水域群島
+# 關鍵機制：分裂增殖（階段一，受擊分裂，建議範圍效果（AOE）清場）
+# 晶化（階段三，暴擊免疫＋高減傷，須以【鈍擊破晶】破除晶化核心）
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: 敵, role: 前排, color: "#FF8A8A"}
+    - {row: 1, side: 敵, role: 後排, color: "#FFC8C8"}
+    - {row: 6, side: 我, role: 前排, color: "#8AAEFF"}
+    - {row: 8, side: 我, role: 後排, color: "#C8D8FF"}
+  aoe:
+    - {cx: 5, cy: 3, r: 2, lp: below, label: 分裂增殖場（階段一·建議範圍效果（AOE）清場）}
+
+nodes:
+  - id: boss
+    label: 膠將（普露姆）
+    x: 5
+    y: 1
+    type: boss
+    explored: true
+  - id: crystal
+    label: 晶化核心（鈍擊破晶）
+    x: 5
+    y: 2
+    type: 物件
+    explored: true
+  - id: e_slime_a
+    label: 史萊姆仔甲
+    x: 3
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_slime_b
+    label: 史萊姆仔乙
+    x: 4
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_slime_c
+    label: 史萊姆仔丙
+    x: 6
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: e_slime_d
+    label: 史萊姆仔丁
+    x: 7
+    y: 3
+    type: 敵近戰
+    explored: true
+  - id: p_front_war
+    label: 我方前排戰士
+    x: 3
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_front_monk
+    label: 我方前排格鬥
+    x: 6
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_back_mage
+    label: 我方後排法師
+    x: 4
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_cleric
+    label: 我方後排牧師
+    x: 5
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_hunter
+    label: 我方後排獵人
+    x: 7
+    y: 8
+    type: 我後排
+    explored: true
+
+edges:
+  - from: boss
+    to: e_slime_c
+    type: 指揮
+  - from: crystal
+    to: boss
+    type: 核心連結
+    style: dashed
+    label: "晶化連結"
+  - from: e_slime_c
+    to: p_front_war
+    type: 近戰
+    style: dashed
+  - from: e_slime_d
+    to: p_front_monk
+    type: 近戰
+    style: dashed

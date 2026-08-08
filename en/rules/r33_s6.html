@@ -1,0 +1,827 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黎明殺機 TRPG ／ s06_十三號療程室 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../../index.html">規則總覽</a><span class="spacer"></span><a class="lang" href="../rules/r33.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r33.html">← 回規則頁</a> ｜ <a href="../../index.html">⟵ 總頁</a></p><h1>S6 · Therapy Room 13</h1>
+<blockquote>
+<p>This scenario exposes the campaign's cruelest truth: <strong>not all Killers are taken from outside. Some walk over from the Campfire.</strong> The person the player knows — Hilda Lane (§8-A) — is being Reforged into The Silent One (SIL). The player must decide: interrupt it, or watch it finish.</p>
+</blockquote>
+<hr />
+<h2>1. Scenario Information</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number</td>
+<td>S6</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Therapy Room 13</td>
+</tr>
+<tr>
+<td>Recommended Prestige (PRS)</td>
+<td>13–15</td>
+</tr>
+<tr>
+<td>Estimated Length</td>
+<td>Solo 4.5 hrs / Group 5 hrs</td>
+</tr>
+<tr>
+<td>Realm</td>
+<td>Léry's Memorial Institute (R6)</td>
+</tr>
+<tr>
+<td>Main Killer</td>
+<td>The Silent One (SIL) (story-exclusive avatar, the 9th, appears only in S6–S8; data block supplied separately by the combat designer as a simplified version)</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>High (Killer Pressure Level: 6; main Difficulty Class (DC): Hard–Extreme)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. GM Summary</h2>
+<p><strong>Storyline</strong>: At the Campfire, Hilda Lane is gone — but this time everyone remembers her. Eloise calmly repeats Hilda's words from the night before: "Does hate count as a kind of hope?" Fane's notes (S5) reveal the "internal-production" line — taking "those who lost hope but still hate" from the Campfire and processing them in the white place, "Room 13." In Act Two, The Silent One (SIL) has no heartbeat, emits Survivor voices to lure, and mid-Realm performs a "Mirror Swap" that invalidates map memory. Mid-scene the player chases "a teammate's voice" into a room and sees a crouched figure repairing a machine — call her name, and she turns around. In Act Three the player finds Therapy Room 13, where the Reforge is underway (Q&amp;A, each answer removes a little). The player has three ways to interrupt.</p>
+<p><strong>Truth (GM-Exclusive)</strong>: The Entity is a <strong>vast but clumsy system</strong> — it can detect anomalies but cannot locate causes. When the Reforge fails, the voice that asks questions "asks the same question again," and the things behind the twelve observation windows "verify" — because in their records this step has never failed. This gives the S7/S8 plan feasibility. The Silent One's (SIL) weakness is "hesitation": if the player has done an altruistic act for Hilda before, she has a chance to stop.</p>
+<p><strong>How to Run</strong>: The whole scene <strong>never knocks the table</strong> — the absence of a heartbeat is the greatest source of terror. The GM may imitate a teammate's voice / an Echo's movements; the player must judge true from false alone. In the first half the player believes it is a teammate; have the player shout the teammate's name at it, then it turns around. All three interruption methods have a cost; the third, "don't interrupt," <strong>is not a bad ending</strong> — it is a knowledge gain with a cost.</p>
+<hr />
+<h2>3. Opening Text (read aloud)</h2>
+<blockquote>
+<p>An empty space by the fire. But this time it's different — this time, everyone remembers her.</p>
+<p>Hilda Lane. Here just yesterday. She said she was tired.</p>
+<p>Eloise pokes the fire, her tone flat as if reading a shopping list.</p>
+<p>"Yesterday she asked me, does hate count as a kind of hope."</p>
+<p>"I said I didn't know."</p>
+<p>"She said: 'Then I suppose I still have a little something left.'"</p>
+<p>She pulls a page from her breast — Fane's notes. On it is written:</p>
+<p><strong>"Two production lines. External sourcing: from the Seep. Internal production: from the Campfire. Raw material: those who lost hope but still hate. Processing site: that white place. Room 13."</strong></p>
+<p>Eloise sets the page down.</p>
+<p>"The white place," she says, "we've been there. Only back then, we thought only patients were inside."</p>
+</blockquote>
+<hr />
+<h2>4. Scenes and Nodes</h2>
+<p><strong>Realm</strong>: Léry's Memorial Institute (R6). Zone divisions: <code>wing_a</code> (Wing A) / <code>wing_b</code> (Wing B) / <code>core</code> (core). <strong>Mirror-symmetric design</strong>: <code>wing_a</code> and <code>wing_b</code> have identical node structures; when a "Mirror Swap" occurs, the two wings' labels interchange while ids stay the same.</p>
+<p><strong>Exploration map node list</strong></p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>label</th>
+<th>type</th>
+<th>x</th>
+<th>y</th>
+<th>region</th>
+<th>initially explored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ly_start</code></td>
+<td>Starting Mist Mouth</td>
+<td>Entrance</td>
+<td>500</td>
+<td>930</td>
+<td>core</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ly_reception</code></td>
+<td>Reception Hall</td>
+<td>Hub</td>
+<td>500</td>
+<td>830</td>
+<td>core</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ly_hall_a1</code></td>
+<td>Wing A · First Corridor</td>
+<td>Passage</td>
+<td>320</td>
+<td>730</td>
+<td>wing_a</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ly_hall_a2</code></td>
+<td>Wing A · Second Corridor</td>
+<td>Passage</td>
+<td>200</td>
+<td>620</td>
+<td>wing_a</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_room_a1</code></td>
+<td>Wing A · Observation Room</td>
+<td>Room</td>
+<td>320</td>
+<td>560</td>
+<td>wing_a</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_room_a2</code></td>
+<td>Wing A · Preservation Room</td>
+<td>Room</td>
+<td>130</td>
+<td>480</td>
+<td>wing_a</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_chest_a</code></td>
+<td>Wing A · Medicine Cabinet</td>
+<td>Chest</td>
+<td>210</td>
+<td>780</td>
+<td>wing_a</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_hall_b1</code></td>
+<td>Wing B · First Corridor</td>
+<td>Passage</td>
+<td>680</td>
+<td>730</td>
+<td>wing_b</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>ly_hall_b2</code></td>
+<td>Wing B · Second Corridor</td>
+<td>Passage</td>
+<td>800</td>
+<td>620</td>
+<td>wing_b</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_room_b1</code></td>
+<td>Wing B · Observation Room</td>
+<td>Room</td>
+<td>680</td>
+<td>560</td>
+<td>wing_b</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_room_b2</code></td>
+<td>Wing B · Preservation Room</td>
+<td>Room</td>
+<td>870</td>
+<td>480</td>
+<td>wing_b</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_chest_b</code></td>
+<td>Wing B · Medicine Cabinet</td>
+<td>Chest</td>
+<td>790</td>
+<td>780</td>
+<td>wing_b</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_theatre</code></td>
+<td>Therapy Theatre</td>
+<td><strong>Main Arena</strong></td>
+<td>500</td>
+<td>560</td>
+<td>core</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_gallery</code></td>
+<td>Gallery Ring</td>
+<td>Building Level</td>
+<td>500</td>
+<td>450</td>
+<td>core</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_hall_n</code></td>
+<td>North Corridor</td>
+<td>Passage</td>
+<td>500</td>
+<td>350</td>
+<td>core</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_room13</code></td>
+<td><strong>Therapy Room 13</strong></td>
+<td><strong>Key</strong></td>
+<td>500</td>
+<td>220</td>
+<td>core</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_drain</code></td>
+<td>Drainage Conduit Mouth</td>
+<td>Special</td>
+<td>200</td>
+<td>300</td>
+<td>core</td>
+<td>Yes (S5 completers)</td>
+</tr>
+<tr>
+<td><code>ly_exit_nw</code></td>
+<td>Northwest Exit Gate</td>
+<td>Exit</td>
+<td>110</td>
+<td>150</td>
+<td>wing_a</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_exit_ne</code></td>
+<td>Northeast Exit Gate</td>
+<td>Exit</td>
+<td>890</td>
+<td>150</td>
+<td>wing_b</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_opt_office</code>※</td>
+<td>Head Physician's Office</td>
+<td>Optional</td>
+<td>880</td>
+<td>330</td>
+<td>wing_b</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>ly_opt_ward</code>※</td>
+<td>Abandoned Ward</td>
+<td>Optional</td>
+<td>120</td>
+<td>880</td>
+<td>wing_a</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connection List</strong></p>
+<table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>channel type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ly_start</code></td>
+<td><code>ly_reception</code></td>
+<td>Interior</td>
+<td>Vestibule</td>
+</tr>
+<tr>
+<td><code>ly_reception</code></td>
+<td><code>ly_hall_a1</code></td>
+<td>Interior Door</td>
+<td>Wing A Door</td>
+</tr>
+<tr>
+<td><code>ly_reception</code></td>
+<td><code>ly_hall_b1</code></td>
+<td>Interior Door</td>
+<td>Wing B Door</td>
+</tr>
+<tr>
+<td><code>ly_reception</code></td>
+<td><code>ly_theatre</code></td>
+<td>Interior Door</td>
+<td>Theatre Main Door</td>
+</tr>
+<tr>
+<td><code>ly_hall_a1</code></td>
+<td><code>ly_hall_a2</code></td>
+<td>Interior</td>
+<td>Corridor</td>
+</tr>
+<tr>
+<td><code>ly_hall_a1</code></td>
+<td><code>ly_chest_a</code></td>
+<td>Interior Door</td>
+<td>Medicine-Cabinet Room</td>
+</tr>
+<tr>
+<td><code>ly_hall_a1</code></td>
+<td><code>ly_opt_ward</code></td>
+<td>Interior Door</td>
+<td>Abandoned Ward Door</td>
+</tr>
+<tr>
+<td><code>ly_hall_a2</code></td>
+<td><code>ly_room_a1</code></td>
+<td>Interior Door</td>
+<td>Observation Room Door</td>
+</tr>
+<tr>
+<td><code>ly_hall_a2</code></td>
+<td><code>ly_room_a2</code></td>
+<td>Interior Door</td>
+<td>Preservation Room Door</td>
+</tr>
+<tr>
+<td><code>ly_room_a1</code></td>
+<td><code>ly_theatre</code></td>
+<td>One-Way Mirror Window</td>
+<td>Observation Window (visible, can vault)</td>
+</tr>
+<tr>
+<td><code>ly_room_a2</code></td>
+<td><code>ly_exit_nw</code></td>
+<td>Interior</td>
+<td>Northwest Passage</td>
+</tr>
+<tr>
+<td><code>ly_hall_b1</code></td>
+<td><code>ly_hall_b2</code></td>
+<td>Interior</td>
+<td>Corridor</td>
+</tr>
+<tr>
+<td><code>ly_hall_b1</code></td>
+<td><code>ly_chest_b</code></td>
+<td>Interior Door</td>
+<td>Medicine-Cabinet Room</td>
+</tr>
+<tr>
+<td><code>ly_hall_b2</code></td>
+<td><code>ly_room_b1</code></td>
+<td>Interior Door</td>
+<td>Observation Room Door</td>
+</tr>
+<tr>
+<td><code>ly_hall_b2</code></td>
+<td><code>ly_room_b2</code></td>
+<td>Interior Door</td>
+<td>Preservation Room Door</td>
+</tr>
+<tr>
+<td><code>ly_hall_b2</code></td>
+<td><code>ly_opt_office</code></td>
+<td>Interior Door</td>
+<td>Office Door</td>
+</tr>
+<tr>
+<td><code>ly_room_b1</code></td>
+<td><code>ly_theatre</code></td>
+<td>One-Way Mirror Window</td>
+<td>Observation Window (visible, can vault)</td>
+</tr>
+<tr>
+<td><code>ly_room_b2</code></td>
+<td><code>ly_exit_ne</code></td>
+<td>Interior</td>
+<td>Northeast Passage</td>
+</tr>
+<tr>
+<td><code>ly_theatre</code></td>
+<td><code>ly_gallery</code></td>
+<td>Stairs</td>
+<td>Gallery Stairs ×2</td>
+</tr>
+<tr>
+<td><code>ly_gallery</code></td>
+<td><code>ly_hall_n</code></td>
+<td>Interior Door</td>
+<td>North Corridor Door</td>
+</tr>
+<tr>
+<td><code>ly_hall_n</code></td>
+<td><code>ly_room13</code></td>
+<td>Single Door</td>
+<td>Room 13 Door</td>
+</tr>
+<tr>
+<td><code>ly_hall_n</code></td>
+<td><code>ly_drain</code></td>
+<td>Floor Grate</td>
+<td>Drain Mouth</td>
+</tr>
+<tr>
+<td><code>ly_drain</code></td>
+<td><code>ws_hidden</code></td>
+<td>Hidden Conduit</td>
+<td>To Hidden Workshop (S5 unlocked, two-way)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Encounter Configuration</h2>
+<p><strong>Main Killer</strong>: The Silent One (SIL) (story-exclusive avatar, the 9th, not in the 8-avatar standard pool). A former Survivor, incomplete because the Reforge is unfinished; moves like a Survivor (crouches, vaults windows, hides); <strong>no Terror Radius (TR)</strong> (no heartbeat, the greatest terror source); power direction "Mimicry" (emits Survivor voices to lure); weakness "Hesitation" (if the player has done an altruistic act for Hilda before, it has a chance to stop before attacking). Data block supplied separately by the combat designer as a simplified version; this scenario occupies 60% of the Encounter Budget (EB).</p>
+<p><strong>Encounter Budget (EB)</strong> (Difficulty Modifier (DM) = 1.2, Prestige (PRS) mid 14):</p>
+<table>
+<thead>
+<tr>
+<th>Player Count N</th>
+<th>Encounter Budget (EB)</th>
+<th>Killer Share (60%)</th>
+<th>Construct Available (40%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>19</td>
+<td>11.4</td>
+<td>7.6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>38</td>
+<td>22.8</td>
+<td>15.2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>58</td>
+<td>34.8</td>
+<td>23.2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>77</td>
+<td>46.2</td>
+<td>30.8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Realm Construct</strong>: the Watcher = Observation Eye (RC-07, Challenge Rating (CR) 5, Hit Points (HP) 30, attack modifier +4, Defense Difficulty Class (DC) 12, Encounter Budget Cost (EBC) 10, surveillance type). A construct behind the one-way mirror that reveals the player's position when seen.</p>
+<p><strong>Encounter List</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Type</th>
+<th>Content</th>
+<th>Challenge Rating (CR) / Difficulty</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>Chase</td>
+<td>The Silent One (SIL), no heartbeat</td>
+<td>Extreme (psychological)</td>
+<td>Tutorial: no rhythm</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Deception</td>
+<td>Fake-voice lure (see player-count table for count)</td>
+<td>High</td>
+<td>GM imitates teammate</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Environment</td>
+<td>Mirror Swap (map memory invalidated)</td>
+<td>Medium</td>
+<td>See player-count table</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Realm Construct</td>
+<td>the Watcher (RC-07) × N</td>
+<td>Medium (5)</td>
+<td>Encounter Budget Cost (EBC) 10 each</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Chase</td>
+<td>Therapy Theatre exposed encounter (no cover)</td>
+<td>Extreme</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Choice</td>
+<td>Therapy Room 13</td>
+<td>No check</td>
+<td>Three interruption methods</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Three special rules</strong>: ① no heartbeat (GM never knocks the table); ② fake voice (GM imitates teammate voice / Echo movements, player judges true or false); ③ Mirror Swap (four symmetric nodes swap ids, map memory invalidated once).</p>
+<hr />
+<h2>6. NPC Appearances and Lines</h2>
+<p><strong>Hilda Lane (§8-A) → The Silent One (SIL)</strong>
+- Central to this scenario. In the first half she is "a teammate's voice"; turns around mid-scene to reveal herself.
+- Line (before turning): "…help me fix this one. Almost done." (Survivor voice)
+- Line (after turning, silent, only looking at you)</p>
+<p><strong>Sally Nkosi (§8-A)</strong>: if she plucked the wrong pod in S3, here she speaks the Reforge's Q&amp;A content (plucked a certain Killer's memory).</p>
+<p><strong>Eloise Finch (§8-A)</strong>: reveals she too was once taken into Room 13, but "it didn't take" — her hate wasn't enough.</p>
+<p><strong>Echo Companion · Hilda (§8-B, solo configuration, after Act Three)</strong>: if the Reforge is interrupted and she enters The Void, she appears as an Echo from S7 onward.</p>
+<hr />
+<h2>7. Decision Points and Branch Results</h2>
+<p><strong>Core decision: How to interrupt Therapy Room 13 (choose one of three, all with a cost)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>How</th>
+<th>Cost</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Call her name</strong></td>
+<td>Call her True Name + one thing only she would remember (requires recalling details from the first five scenarios)</td>
+<td>None</td>
+<td>She stops, Reforge fails, sent to The Void (recoverable later)</td>
+</tr>
+<tr>
+<td><strong>Give her a memory</strong></td>
+<td>Spend one of your own Memory Cards and give it to her</td>
+<td>Permanently lose one Memory Card</td>
+<td>Reforge reversed, self preserved, returns to Campfire (best ending)</td>
+</tr>
+<tr>
+<td><strong>Don't interrupt</strong></td>
+<td>Let it finish</td>
+<td>+5 Entity Hunger (EH); Hilda becomes a Killer appearing in S7/S8</td>
+<td>Gain full knowledge of the Reforge process (needed for S8 "Takeover" ending)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>GM hint: the third option is not a bad ending — it is a knowledge gain with a cost. Do not narratively punish the player who chooses it.</p>
+</blockquote>
+<hr />
+<h2>8. Player-Count Scaling Rules</h2>
+<blockquote>
+<p>The solo configuration (1 Player + 1 GM) is the default. Locker count = 4 + N; Chest count = MAX(2, N+1).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>1 Player</th>
+<th>2 Players</th>
+<th>3 Players</th>
+<th>4 Players</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generator total</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Generators required</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Killer Pressure Level</td>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Echo Companion count</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>the Watcher (RC-07) count</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Fake-voice count</td>
+<td><strong>4</strong></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Hook count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Chest count</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Locker count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hook phase rounds</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Endgame Collapse rounds</td>
+<td>12</td>
+<td>10</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Mirror Swap count</strong></td>
+<td><strong>1</strong></td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>The Silent One (SIL) "Hesitation" chance</strong></td>
+<td><strong>Higher</strong></td>
+<td>Higher</td>
+<td>Standard</td>
+<td>Standard</td>
+</tr>
+<tr>
+<td>Completion reward · Bloodpoint (BP)</td>
+<td>×1.15</td>
+<td>×1.1</td>
+<td>×1.0</td>
+<td>×1.0</td>
+</tr>
+<tr>
+<td>Completion reward · Hope Point (HOP)</td>
+<td>+4</td>
+<td>+4</td>
+<td>+4</td>
+<td>+4</td>
+</tr>
+<tr>
+<td>Completion reward · Memory Card</td>
+<td><strong>2</strong></td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Optional exploration nodes</td>
+<td><strong>+2</strong></td>
+<td><strong>+1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Effective Repair Force (ERF)</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Per-round Pressure Point (PRE) recovery</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Self-Unhook Difficulty Class (DC)</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Exit Gate opening segments</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Pallet count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Window count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hatch open condition</td>
+<td>Generators completed ≥ 1 AND all Echo Companions down</td>
+<td>Survivors alive = 1, or completed ≥ 2 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 3 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 4 AND survivors alive ≤ 2</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>"Hesitation" made concrete: each time The Silent One (SIL) is about to attack the player character, if that player did at least one altruistic act for Hilda in S1–S5, make a check; the solo / duo success threshold is one tier lower than for three / four players. On success, The Silent One (SIL) stops for one round and says one word (first time "you," second time "don't," third time "run").</p>
+</blockquote>
+<hr />
+<h2>9. Ending Branches and Rewards</h2>
+<p><strong>Ending branches (by core decision)</strong>:
+- <strong>Call her name</strong>: Reforge fails, Hilda enters The Void (recoverable from S7).
+- <strong>Give a memory</strong>: best, Hilda returns to the Campfire.
+- <strong>Don't interrupt</strong>: Hilda becomes a Killer, appears as an enemy in S7/S8; the player gains Reforge-process knowledge (precondition for S8 "Takeover" ending).</p>
+<p><strong>Rewards</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bloodpoint (BP)</td>
+<td>Standard × (per player-count table)</td>
+</tr>
+<tr>
+<td>Prestige (PRS)</td>
+<td>Rises to level 15 upon completion</td>
+</tr>
+<tr>
+<td>Hope Point (HOP)</td>
+<td>+4</td>
+</tr>
+<tr>
+<td>Campfire Ember</td>
+<td>Accrued during play (est. 8–15)</td>
+</tr>
+<tr>
+<td>Memory Card</td>
+<td>1–2</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>1 very rare item + 2 Add-ons per person</td>
+</tr>
+<tr>
+<td><strong>Narrative</strong></td>
+<td>The Entity is a vast but clumsy system; it can detect anomalies but cannot locate causes</td>
+</tr>
+<tr>
+<td><strong>New Ability</strong></td>
+<td><strong>"Call Out the Name"</strong>: once per scenario, spend 3 Hope Point (HOP) to declare "I know who you are" at any Killer; the GM reveals one piece of that Killer's human memory and it is hindered that round</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ember Moment trigger text</strong> (on calling her name / giving a memory):</p>
+<blockquote>
+<p>The voice that asked questions stopped. Stopped for a long time.
+Then you hear something that has never happened — <strong>it asks the same question again.</strong>
+Everything behind the twelve observation windows twitched. They are confirming. They are <strong>verifying.</strong>
+Because in their records, this step has never failed.
+Fane's notes burn hot in your pocket: "It isn't that it can't be deceived. It's that it can't notice it's been deceived."
+You now know the second half of that sentence: <strong>it will notice "something is wrong." It just can't find where.</strong></p>
+</blockquote>
+<hr />
+<h2>10. Connections to Adjacent Scenarios</h2>
+<ul>
+<li><strong>Forward (S5)</strong>: Hidden Workshop conduit (<code>ly_drain ↔ ws_hidden</code>) unlocked; Fane's notes "internal-production line" → this scenario's Hilda line; the "Spot the Loophole" ability → breaking the Mirror Swap.</li>
+<li><strong>Backward (S7)</strong>: calling her name / giving a memory → Hilda assists in S7 or appears as an Echo; not interrupting → Hilda appears as a second Killer in S7 (Huntress (HTR) + The Silent One (SIL)). Reforge knowledge → precondition for S8 "Takeover" ending.</li>
+<li><strong>Hook payoff points</strong>: ① The Silent One (SIL) has no heartbeat → S1 Eloise's "the one who sat where you sit"; ② the twelve observation windows → a rehearsal of S8 the Nameless Heart's "Mouth Plain"; ③ the "Call Out the Name" ability → contact with The Entity's True Form in S8.</li>
+</ul><p><a href="../../assets/r33_en/scenarios/s06_十三號療程室.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

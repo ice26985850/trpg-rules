@@ -1,0 +1,24 @@
+# S5 Battle Map 01 · Hag's Trap Net (E1, space untrustworthy)
+meta:
+  id: S5_戰鬥圖_01
+  name: S5 Battle Map · Hag's Trap Net in Mud
+  scenario: S5
+  scene: E1 (Chase)
+  note: The Hag (HAG) lays Mud Glyphs (Mud Glyph) and Phantasm Teleport (Phantasm Teleport); can place Mud Glyph Traps (minefield) in shallow water; space is untrustworthy. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 16
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Shallow Water (Mud Glyph Traps may be placed), rect: { x: 1, y: 1, w: 6, h: 5 } }
+  - { id: t2, type: Shallow Water (Mud Glyph Traps may be placed), rect: { x: 9, y: 6, w: 6, h: 6 } }
+  - { id: t3, type: Wooden Pier (Safe ground), rect: { x: 7, y: 7, w: 2, h: 2 } }
+  - { id: t4, type: Reed (Line-of-sight concealment), rect: { x: 2, y: 9, w: 4, h: 4 } }
+objects:
+  - { id: o1, type: Mud Glyph Trap (Ambush Point), x: 3, y: 3 }
+  - { id: o2, type: Mud Glyph Trap (Ambush Point), x: 12, y: 9 }
+  - { id: o3, type: Pallet, x: 8, y: 8 }
+  - { id: o4, type: Window, x: 15, y: 2 }
+  - { id: o5, type: Chest, x: 1, y: 13 }
+spawn_survivor: { x: 1, y: 13 }
+spawn_killer: { x: 15, y: 1 }
+trap_spawns: [o1, o2]

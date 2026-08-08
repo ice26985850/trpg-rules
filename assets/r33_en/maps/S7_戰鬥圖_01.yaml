@@ -1,0 +1,23 @@
+# S7 Battle Map 01 · Huntress Ranged Throw (E1, distance no longer safe)
+meta:
+  id: S7_戰鬥圖_01
+  name: S7 Battle Map · Huntress Ranged in Red Forest
+  scenario: S7
+  scene: E1 (Chase)
+  note: Huntress (HTR) throws Hand Axes (Hand Axe) at range; any target within Distance Band 3 can be hit; the Giant Tree is the only cover; open woods have no safe distance. Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 18
+grid_h: 14
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Red Leaf Sea (Dying-crawl fully concealed), rect: { x: 1, y: 1, w: 7, h: 5 } }
+  - { id: t2, type: Red Leaf Sea (Dying-crawl fully concealed), rect: { x: 10, y: 6, w: 7, h: 6 } }
+  - { id: t3, type: Giant Tree (Sole Cover; blocks thrown objects), rect: { x: 8, y: 6, w: 2, h: 2 } }
+  - { id: t4, type: Mother's Dwelling (Cover), rect: { x: 2, y: 9, w: 3, h: 3 } }
+objects:
+  - { id: o1, type: Pallet, x: 9, y: 4 }
+  - { id: o2, type: Window, x: 17, y: 2 }
+  - { id: o3, type: Window, x: 1, y: 13 }
+  - { id: o4, type: Hook, x: 13, y: 11 }
+  - { id: o5, type: Chest, x: 16, y: 13 }
+spawn_survivor: { x: 1, y: 13 }
+spawn_killer: { x: 17, y: 1 }

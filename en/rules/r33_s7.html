@@ -1,0 +1,831 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黎明殺機 TRPG ／ s07_第一顆餘燼 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../../index.html">規則總覽</a><span class="spacer"></span><a class="lang" href="../rules/r33.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r33.html">← 回規則頁</a> ｜ <a href="../../index.html">⟵ 總頁</a></p><h1>S7 · The First Ember</h1>
+<blockquote>
+<p>This scenario is the campaign's <strong>arming scenario</strong>: the player obtains the first ember (The First Ember) here, and comes to understand what the Campfire is, and what the Ember Vein and the Umbilical are. The player gains all the knowledge and tools needed to fight the Entity (The Entity).</p>
+</blockquote>
+<hr />
+<h2>1. Scenario Information</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number</td>
+<td>S7</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>The First Ember</td>
+</tr>
+<tr>
+<td>Recommended Prestige (PRS)</td>
+<td>15–18</td>
+</tr>
+<tr>
+<td>Estimated Duration</td>
+<td>Solo 5 h / Group 5.5 h</td>
+</tr>
+<tr>
+<td>Realm</td>
+<td>Red Forest (R7)</td>
+</tr>
+<tr>
+<td>Main Killer</td>
+<td>Huntress (HTR) + The Silent One (SIL) (appears as a second Killer if S6 chose "Don't interrupt")</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>Extreme (Killer Pressure level: 7; primary check Difficulty Class (DC): Extreme)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. GM Summary</h2>
+<p><strong>Storyline</strong>: At the campfire the player studies Fane's note wall (S5); five slips of paper assemble into a conclusion — the Entity builds its Realms from people's memories, and some of what it devours it spits back out, and those things roll toward the campfire. Eloise adds the linchpin line: "So what if… we make it spit up more?" In the second-act trial, the deep leaf litter of Red Forest makes "dying-crawling is actually safe" — the most counterintuitive design in the whole campaign. In the third act the player descends three levels of the Purification Sanctum, reaches the Ember Niche, reads the engraved plaque of the "Nameless," and takes the first ember.</p>
+<p><strong>Truth (GM only)</strong>: The Ember Moment reveals — the ember is pulling the player home, past the Sanctum, the forest, the fog, to see the campfire; but from beneath the campfire a thin, red, <em>living</em> thing stretches upward, threading through every Realm, connecting to the Entity itself — that is the <strong>Umbilical</strong>. The embers came out of it, so they are "the same kind of thing" as it, and between the same kind of thing, "fire spreads." The red line that has been on the world map since the very beginning finally has a name.</p>
+<p><strong>How to Run</strong>: Open woodland + Huntress (HTR) ranged throwing — "distance is no longer safe." The deep leaf litter is a double-edged sword: a dying crawl is completely concealed (the Killer cannot find you by line of sight), but standing and sprinting leaves a 3-round trail, while footstep sounds are absorbed. The GM should make every Sanctum description contain one thing that is <em>off</em> (wrong proportions). If the player's Campfire Ember reaches the threshold, they take it directly; otherwise a bonus trial triggers (survive inside the Sanctum).</p>
+<hr />
+<h2>3. Opening Text (read-aloud)</h2>
+<blockquote>
+<p>Five papers lie spread by the fire. You didn't write them — they're Fane's hand.</p>
+<p>You turn them over one by one.</p>
+<p>First: "Building a Trial costs it effort. It keeps accounts."</p>
+<p>Second: "That's why it gives a way out. Prey with no hope has no taste, and prey with no taste isn't worth the effort."</p>
+<p>Third: "But I found something it doesn't know. Some of what it eats, it spits back out."</p>
+<p>Fourth: "I followed those things for three years. They all roll the same direction."</p>
+<p>Fifth: "Every night you sit warming yourselves next to that pile of things."</p>
+<p>You lay the five in a row. They read like one sentence — but the last half is missing.</p>
+<p>Eloise brightens the fire and looks at you.</p>
+<p>"So what if," she says, "we make it spit up more?"</p>
+<p>The fire doesn't answer. But the firelight jumps once, as if listening.</p>
+</blockquote>
+<hr />
+<h2>4. Scenes and Nodes</h2>
+<p><strong>Realm</strong>: Red Forest (R7). Region divisions: <code>forest</code> (surface woodland) / <code>temple_1</code> (Sanctum Level 1) / <code>temple_2</code> (Level 2) / <code>temple_3</code> (Level 3).</p>
+<p><strong>Exploration Map — Node List</strong></p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>label</th>
+<th>type</th>
+<th>x</th>
+<th>y</th>
+<th>region</th>
+<th>initially explored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rf_start</code></td>
+<td>Starting Mist Mouth</td>
+<td>Entrance</td>
+<td>500</td>
+<td>940</td>
+<td>forest</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>rf_clearing</code></td>
+<td>Leaf-Litter Clearing</td>
+<td>Open</td>
+<td>500</td>
+<td>830</td>
+<td>forest</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>rf_dwelling</code></td>
+<td>Mother's Dwelling</td>
+<td>Main Building</td>
+<td>260</td>
+<td>740</td>
+<td>forest</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>rf_hearth</code></td>
+<td>Mother's Hearth</td>
+<td>Special</td>
+<td>170</td>
+<td>660</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_deep_e</code></td>
+<td>Deep Woods · East</td>
+<td>Open</td>
+<td>740</td>
+<td>700</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_deep_w</code></td>
+<td>Deep Woods · West</td>
+<td>Open</td>
+<td>260</td>
+<td>540</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_stones</code></td>
+<td>Standing Stone Circle</td>
+<td>Landmark</td>
+<td>620</td>
+<td>560</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_leafsea</code></td>
+<td>Blood-Leaf Sea</td>
+<td>Special</td>
+<td>430</td>
+<td>620</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_temple_ent</code></td>
+<td>Purification Sanctum · Entrance</td>
+<td>Main Landmark</td>
+<td>500</td>
+<td>450</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_chest_a</code></td>
+<td>Hollow-Tree Chest</td>
+<td>Chest</td>
+<td>800</td>
+<td>560</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_chest_b</code></td>
+<td>Under-Stone Chest</td>
+<td>Chest</td>
+<td>180</td>
+<td>440</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_exit_n</code></td>
+<td>North Exit Gate</td>
+<td>Exit</td>
+<td>660</td>
+<td>200</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_exit_sw</code></td>
+<td>Southwest Exit Gate</td>
+<td>Exit</td>
+<td>120</td>
+<td>880</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_hiddendoor</code></td>
+<td>The Gleaner's Hidden Door</td>
+<td>Special</td>
+<td>860</td>
+<td>840</td>
+<td>forest</td>
+<td>Yes (S5 completer)</td>
+</tr>
+<tr>
+<td><code>rf_opt_altar</code>※</td>
+<td>Blood Altar</td>
+<td>Optional</td>
+<td>830</td>
+<td>400</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_opt_cabin</code>※</td>
+<td>Hunter's Cabin</td>
+<td>Optional</td>
+<td>350</td>
+<td>890</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>rf_opt_grave</code>※</td>
+<td>Nameless Grave</td>
+<td>Optional</td>
+<td>640</td>
+<td>890</td>
+<td>forest</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tp1_hall</code></td>
+<td>Sanctum L1 · Pillar Hall</td>
+<td>Sanctum</td>
+<td>500</td>
+<td>370</td>
+<td>temple_1</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tp1_side</code></td>
+<td>L1 · Side Chamber</td>
+<td>Sanctum</td>
+<td>380</td>
+<td>330</td>
+<td>temple_1</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tp2_spiral</code></td>
+<td>L2 · Crooked Stairs</td>
+<td>Sanctum</td>
+<td>500</td>
+<td>290</td>
+<td>temple_2</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tp2_mirror</code></td>
+<td>L2 · Mirror Gallery</td>
+<td>Sanctum</td>
+<td>620</td>
+<td>250</td>
+<td>temple_2</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tp3_niche</code></td>
+<td><strong>Ember Niche</strong></td>
+<td><strong>Key</strong></td>
+<td>500</td>
+<td>180</td>
+<td>temple_3</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tp3_observer</code></td>
+<td>Where the Mirror-Bearer Stands</td>
+<td>Special</td>
+<td>400</td>
+<td>140</td>
+<td>temple_3</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connection List</strong></p>
+<table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>channel type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rf_start</code></td>
+<td><code>rf_clearing</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Woods Path</td>
+</tr>
+<tr>
+<td><code>rf_clearing</code></td>
+<td><code>rf_dwelling</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Front-Path</td>
+</tr>
+<tr>
+<td><code>rf_clearing</code></td>
+<td><code>rf_deep_e</code></td>
+<td>Leaf-Litter Ground</td>
+<td>East Woods Path</td>
+</tr>
+<tr>
+<td><code>rf_clearing</code></td>
+<td><code>rf_opt_cabin</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Hunter's Trail</td>
+</tr>
+<tr>
+<td><code>rf_clearing</code></td>
+<td><code>rf_opt_grave</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Old-Grave Road</td>
+</tr>
+<tr>
+<td><code>rf_dwelling</code></td>
+<td><code>rf_hearth</code></td>
+<td>Interior</td>
+<td>Indoors</td>
+</tr>
+<tr>
+<td><code>rf_dwelling</code></td>
+<td><code>rf_deep_w</code></td>
+<td>Leaf-Litter Ground</td>
+<td>West Woods Path</td>
+</tr>
+<tr>
+<td><code>rf_dwelling</code></td>
+<td><code>rf_exit_sw</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Southwest Path</td>
+</tr>
+<tr>
+<td><code>rf_deep_e</code></td>
+<td><code>rf_stones</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Stone Path</td>
+</tr>
+<tr>
+<td><code>rf_deep_e</code></td>
+<td><code>rf_chest_a</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Hollow Tree</td>
+</tr>
+<tr>
+<td><code>rf_deep_e</code></td>
+<td><code>rf_hiddendoor</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Southeast Path</td>
+</tr>
+<tr>
+<td><code>rf_deep_w</code></td>
+<td><code>rf_leafsea</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Leaf Edge</td>
+</tr>
+<tr>
+<td><code>rf_deep_w</code></td>
+<td><code>rf_chest_b</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Under Stone</td>
+</tr>
+<tr>
+<td><code>rf_stones</code></td>
+<td><code>rf_leafsea</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Outside the Ring</td>
+</tr>
+<tr>
+<td><code>rf_stones</code></td>
+<td><code>rf_opt_altar</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Altar Road</td>
+</tr>
+<tr>
+<td><code>rf_leafsea</code></td>
+<td><code>rf_temple_ent</code></td>
+<td>Blood-Leaf Sea</td>
+<td>Under the Leaves (dying crawl fully concealed)</td>
+</tr>
+<tr>
+<td><code>rf_stones</code></td>
+<td><code>rf_temple_ent</code></td>
+<td>Leaf-Litter Ground</td>
+<td>Sanctum Road</td>
+</tr>
+<tr>
+<td><code>rf_temple_ent</code></td>
+<td><code>rf_exit_n</code></td>
+<td>Leaf-Litter Ground</td>
+<td>North Path</td>
+</tr>
+<tr>
+<td><code>rf_temple_ent</code></td>
+<td><code>tp1_hall</code></td>
+<td>Descending Stairs</td>
+<td>First Step (inconsistent height)</td>
+</tr>
+<tr>
+<td><code>tp1_hall</code></td>
+<td><code>tp1_side</code></td>
+<td>Stone Door</td>
+<td>Side-Chamber Door (frame too narrow)</td>
+</tr>
+<tr>
+<td><code>tp1_hall</code></td>
+<td><code>tp2_spiral</code></td>
+<td>Descending Stairs</td>
+<td>Crooked Stairs (going back adds a step)</td>
+</tr>
+<tr>
+<td><code>tp2_spiral</code></td>
+<td><code>tp2_mirror</code></td>
+<td>Stone Corridor</td>
+<td>Mirror Gallery (both ends look the same)</td>
+</tr>
+<tr>
+<td><code>tp2_spiral</code></td>
+<td><code>tp3_niche</code></td>
+<td>Descending Stairs</td>
+<td>Final Step</td>
+</tr>
+<tr>
+<td><code>tp2_mirror</code></td>
+<td><code>tp3_observer</code></td>
+<td>Stone Corridor</td>
+<td>The Deep</td>
+</tr>
+<tr>
+<td><code>tp3_niche</code></td>
+<td><code>tp3_observer</code></td>
+<td>Stone Corridor</td>
+<td>Niche Side</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Encounter Setup</h2>
+<p><strong>Main Killer</strong>: Huntress (HTR). Avatar Menace Value (AVM) +1. Challenge Rating (CR) = Prestige (PRS) + 1; this scenario's Prestige (PRS) is 15–18, so Challenge Rating (CR) 16–19. Occupies 60% of the Encounter Budget (EB). Feature: Hand Axe ranged throwing — any target within Distance Band 3 can be attacked; the Great Tree is the only cover. If S6 chose "Don't interrupt," The Silent One (SIL) appears as a second Killer (occupies extra budget; see the combat-designer simplified block).</p>
+<p><strong>Encounter Budget (EB)</strong> (Difficulty Modifier (DM) = 1.25, Prestige (PRS) midpoint 16):</p>
+<table>
+<thead>
+<tr>
+<th>Players N</th>
+<th>Encounter Budget (EB)</th>
+<th>Killer share (60%)</th>
+<th>Construct available (40%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>23</td>
+<td>13.8</td>
+<td>9.2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>45</td>
+<td>27.0</td>
+<td>18.0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>68</td>
+<td>40.8</td>
+<td>27.2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>90</td>
+<td>54.0</td>
+<td>36.0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Realm Construct</strong>: Leaf-Dweller = Blood Leaf Swarm (RC-08, Challenge Rating (CR) 4, Hit Points (HP) 26, attack modifier +4, Defense Difficulty Class (DC) 12, Encounter Budget Cost (EBC) 8, tracking-mark type). A construct hidden in the leaf litter that grabs your ankle when stepped on.</p>
+<p><strong>Encounter List</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Type</th>
+<th>Content</th>
+<th>Challenge Rating (CR) / Difficulty</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>Chase</td>
+<td>Huntress (HTR) ranged throwing</td>
+<td>Extreme (16–19)</td>
+<td>Lesson: open woodland has no safe distance</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Environment</td>
+<td>Deep leaf litter (double-edged)</td>
+<td>Medium</td>
+<td>Dying crawl concealed</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Realm Construct</td>
+<td>Leaf-Dweller = Blood Leaf Swarm (RC-08) × N</td>
+<td>Medium–High (4)</td>
+<td>Encounter Budget Cost (EBC) 8 / each</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Exploration</td>
+<td>Descend three levels of the Purification Sanctum</td>
+<td>Hard</td>
+<td>Wrong proportions</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Puzzle</td>
+<td>Sanctum's wrong proportions (going back changes things)</td>
+<td>Extreme</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Bonus Trial</td>
+<td>If Campfire Ember &lt; threshold: survive inside the Sanctum</td>
+<td>Legendary</td>
+<td>See player-count table</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ember-acquisition condition</strong> (by total Campfire Ember, see §4–6): ≥ threshold takes it directly; &lt; threshold requires surviving the bonus trial for a number of rounds, then leaving with the ember.</p>
+<hr />
+<h2>6. NPC Appearances and Lines</h2>
+<p><strong>The "Nameless" (§8-D, skeleton / first survivor)</strong>
+- Core of this scenario; exists only through an engraved plaque.
+- Plaque text: "I had already gotten out. The door was open. One foot of mine was already outside. Then I heard someone calling from behind. I didn't know him. When I looked back I wasn't thinking anything. I just felt that leaving alone didn't seem right. Later I was hoisted up. Something fell out of me. It was warm. I picked it up. Because it was the only thing left that was still my own. I left it here. If you're reading this far — then you probably looked back too. Take it."</p>
+<p><strong>Eloise Finch (§8-A)</strong>: speaks the linchpin line "what if we make it spit up more?"</p>
+<p><strong>Ari the Mirror-Bearer (§8-D)</strong>: appears for the first time (deep in the Sanctum, through the Memory-Gleaning Mirror). Provides the S8 path: the Lone Tower.</p>
+<p><strong>Hilda / The Silent One (SIL) (§8-A)</strong>: depends on the S6 choice — if Reforged, appears as a second Killer; if rescued, assists the player.</p>
+<hr />
+<h2>7. Decision Points and Branch Outcomes</h2>
+<p><strong>Decision One: whether to deliberately drop prone (deep leaf litter)</strong>
+- Standing and fleeing leaves a 3-round trail and footstep sounds; a dying crawl is fully concealed but slow.
+- Branch: deliberately giving up standing = the safest movement method in the whole campaign, and also the psychological preparation for S8's "deliberately give up escape."</p>
+<p><strong>Decision Two: whether Campfire Ember reaches the threshold</strong>
+- Reaches threshold → take the first ember (The First Ember) directly.
+- Does not reach → triggers the bonus trial (survive inside the Sanctum for a number of rounds, see player-count table), then take it.</p>
+<hr />
+<h2>8. Player-Count Scaling Table</h2>
+<blockquote>
+<p>The solo configuration (1 Player + 1 GM) is the default. Locker count = 4 + N; Chest count = MAX(2, N+1). The solo ember threshold is lower (15 vs 22), compensation factor ≈ 0.68 (aligned with §4–6).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>1 Player</th>
+<th>2 Players</th>
+<th>3 Players</th>
+<th>4 Players</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generator total</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Generators to complete</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Killer Pressure level</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Echo Companion count</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Leaf-Dweller (RC-08) count</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Hook count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Chest count</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Locker count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hook phase round limit</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Endgame Collapse rounds</td>
+<td>12</td>
+<td>10</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Sanctum levels</strong></td>
+<td><strong>2</strong></td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Ember-acquisition threshold (Campfire Ember)</strong></td>
+<td><strong>≥ 15</strong></td>
+<td>≥ 18</td>
+<td>≥ 20</td>
+<td>≥ 22</td>
+</tr>
+<tr>
+<td><strong>Bonus-trial survival rounds</strong></td>
+<td><strong>6</strong></td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Completion reward · Blood Point (BP)</td>
+<td>×1.2</td>
+<td>×1.1</td>
+<td>×1.0</td>
+<td>×1.0</td>
+</tr>
+<tr>
+<td>Completion reward · Hope Point (HOP)</td>
+<td>+5</td>
+<td>+5</td>
+<td>+5</td>
+<td>+5</td>
+</tr>
+<tr>
+<td>Completion reward · Memory Card</td>
+<td><strong>3</strong></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Exploration-phase optional nodes</td>
+<td><strong>+3</strong></td>
+<td>+2</td>
+<td>+1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Effective Repair Force (ERF)</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Per-round Pressure (PRE) recovery</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Hook self-rescue Difficulty Class (DC)</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Exit-gate opening segments</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Pallet count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Window count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hatch opening condition</td>
+<td>Generators completed ≥ 1 and all Echo Companions down</td>
+<td>Living players = 1, or completed ≥ 2 and living players ≤ 1</td>
+<td>Living players = 1, or completed ≥ 3 and living players ≤ 1</td>
+<td>Living players = 1, or completed ≥ 4 and living players ≤ 2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Ending Branches and Rewards</h2>
+<p><strong>Ending Branch</strong>: whether taking the ember triggers the bonus trial (Decision Two). No multi-ending branch, but obtaining the first ember (The First Ember) is a campaign-tier item.</p>
+<p><strong>Rewards</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blood Point (BP)</td>
+<td>Standard × (per player-count table)</td>
+</tr>
+<tr>
+<td>Prestige (PRS)</td>
+<td>Rises to level 18 on completion</td>
+</tr>
+<tr>
+<td>Hope Point (HOP)</td>
+<td>+5</td>
+</tr>
+<tr>
+<td>Campfire Ember</td>
+<td>Accumulated through the scenario (est. 10–18)</td>
+</tr>
+<tr>
+<td>Memory Card</td>
+<td>2–3 cards</td>
+</tr>
+<tr>
+<td>Items</td>
+<td>1 Very Rare item + 2 Add-Ons + 1 Offering per player</td>
+</tr>
+<tr>
+<td><strong>Key Item</strong></td>
+<td><strong>The First Ember (The First Ember)</strong>: ① lets you truly ascend the Lone Tower's Endless Stair; ② once per trial, spend 1 use to "ignore one of the Entity's window seals"; ③ <strong>the ignition source for S8</strong></td>
+</tr>
+<tr>
+<td><strong>Narrative</strong></td>
+<td>The story of the "Nameless"; the Umbilical and the Ember Vein; the possibility of a conflagration</td>
+</tr>
+<tr>
+<td><strong>Map Unlock</strong></td>
+<td>Ember Vein (<code>ember_vein</code>), Lone Tower (<code>lone_tower</code>)</td>
+</tr>
+<tr>
+<td><strong>New Ability</strong></td>
+<td><strong>"Follow the Ember"</strong>: spend 1 Action Point (AP) per Realm to sense the campfire's direction (key navigation for S8)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ember Moment trigger text</strong>:</p>
+<blockquote>
+<p>You hold that ember in your hand. Then you hear it. Not a sound. A <strong>direction</strong>.
+This ember is pulling you. It wants to go somewhere. It wants to go home.
+You look along that direction — past the Sanctum, past the forest, past the fog — and you see the campfire.
+But you also see something else: from beneath the campfire, a thin, red, <em>living</em> thing stretches upward. It threads through every Realm, all the way to <em>that thing</em>.
+That is not a root. That is the <strong>Umbilical</strong>.
+These embers came out of it. So they, and it, are the same kind of thing. And between the same kind of thing — <strong>fire spreads.</strong></p>
+</blockquote>
+<hr />
+<h2>10. Connections to Adjacent Scenarios</h2>
+<ul>
+<li><strong>Forward (S6)</strong>: Hilda's line (rescued / hostile) is settled here; the "Call Out the Name" ability → reveals human memory to Huntress (HTR).</li>
+<li><strong>Backward (S8)</strong>: the first ember (The First Ember) = S8's ignition source and Endless-Stair pass; the Ember Vein (<code>ember_vein</code>) and the Umbilical → S8's fire-carrying path; the Lone Tower path provided by the Mirror-Bearer → S8's tower climb.</li>
+<li><strong>Foreshadowing payoff points</strong>: ① the world-map red line = the Umbilical, present since S1, named here; ② Mother's Hearth (looks like a campfire but isn't) → S8's "the fire needs someone to feed it"; ③ the Nameless Grave (<code>rf_opt_grave</code>) → S8's Nameless Heart.</li>
+</ul><p><a href="../../assets/r33_en/scenarios/s07_第一顆餘燼.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

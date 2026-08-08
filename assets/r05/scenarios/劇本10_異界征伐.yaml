@@ -1,0 +1,35 @@
+name: 劇本10 異界征伐
+description: CL66–75 終局章第二幕，承接劇本9 虛界哨戒倒下、通道暫封後的逆向異界深征。於異界本域先挫虛無使徒（CR70 首領），再於殘片核心打倒界蝕主宰（CR75 中首領）。設計挑戰等級（CR）≈隊伍總等級×0.6。採做法 A：一套劇本＋人數調整。
+difficulty: 極難
+level_range: [66, 75]
+chapter: 10
+map_ref: 地圖/劇本10_戰鬥_界蝕主宰.yaml
+initial_map: 地圖/劇本10_探索_異界領域.yaml
+encounters:
+  - id: void_apostle
+    name: 虛無使徒（CL66–72，首領）
+    enemies:
+      - {name: 虛無使徒, cr: 70, count: 1}
+    boss: true
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR67; 5–6名→CR72"
+  - id: eclipse_sovereign
+    name: 界蝕主宰（CL73–75，中首領）
+    enemies:
+      - {name: 界蝕主宰, cr: 75, count: 1}
+    boss: true
+    phases:
+      - {name: 領域深征, hp_threshold: "100%~66%", trait: 召喚虛無使徒增援}
+      - {name: 規則無效化, hp_threshold: "66%", trait: 無視多項本土減傷（DR）}
+      - {name: 裂隙同調, hp_threshold: "33%", trait: 每回合回9%生命值（HP）/速戰速決}
+    budget: 中首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR72; 5–6名→CR77"
+rewards:
+  exp: 50800
+  gold: 30000
+  items: [殘片核心碎片, 界蝕主宰核心]
+ip_events:
+  - event: 協助異界倖存學者修復世界錨點
+    ip: 8
+  - event: 理解「殘片」本質（非毀滅路線）
+    ip: 5

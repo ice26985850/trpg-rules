@@ -1,0 +1,74 @@
+id: D1
+name: 哥布林巢穴
+recommended_rank: "F/E（CR 1-8）"
+theme: 野地洞窟
+grid: { cols: 4, rows: 3 }
+rooms:
+  - id: R1
+    name: 入口洞口
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 前廳
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R4]
+    cr: 2
+    enemies: [哥布林戰士 x2]
+    combat_map: 地圖/D1_戰鬥_前廳.yaml
+    desc: 哥布林戰士 x2 駐守。
+  - id: R3
+    name: 儲藏穴
+    type: treasure
+    gx: 2
+    gy: 0
+    links: [R2, R5]
+    treasure: 哥布林耳環 x2、破布 x3、G 40~80
+    desc: 食物與破爛武器堆。
+  - id: R4
+    name: 陷阱走廊
+    type: trap
+    gx: 1
+    gy: 1
+    links: [R2, R6]
+    trap: 弱（尖木樁，DC12 / 1d6）
+    desc: 弱機關走廊。
+  - id: R5
+    name: 寢窟
+    type: combat
+    gx: 2
+    gy: 1
+    links: [R3, R6]
+    cr: 3
+    enemies: [哥布林弓手 x2]
+    combat_map: 地圖/D1_戰鬥_寢窟.yaml
+    desc: 哥布林弓手 x2 休憩處。
+  - id: R6
+    name: 祭坑
+    type: trap
+    gx: 1
+    gy: 2
+    links: [R4, R5, R7]
+    trap: 強（落石，DC20 / 3d6 + 暈眩）
+    desc: 強機關祭坑，落石可遮斷通道。
+  - id: R7
+    name: 王座窟
+    type: elite
+    gx: 2
+    gy: 2
+    links: [R6, R8]
+    cr: 5
+    enemies: [哥布林王（首領）]
+    combat_map: 地圖/D1_戰鬥_王座窟.yaml
+    desc: 小首領 哥布林王（CR5）。
+  - id: R8
+    name: 逃道
+    type: exit
+    gx: 3
+    gy: 2
+    links: [R7]
+    desc: 出口；囚有村童，救出後通關。

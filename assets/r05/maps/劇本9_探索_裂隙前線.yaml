@@ -1,0 +1,89 @@
+id: 劇本9_探索_裂隙前線
+name: 劇本9 探索·裂隙前線
+recommended_rank: "S+（CL50+）"
+theme: 異界裂隙前線
+grid:
+  cols: 4
+  rows: 3
+rooms:
+  - id: R1
+    name: 裂隙入口
+    type: entrance
+    gx: 0
+    gy: 1
+    links: [R2, R4]
+    desc: 魔王城崩塌後撕開的穩固裂隙節點，跨入即進入異界前線。
+  - id: R2
+    name: 現實扭曲區
+    type: combat
+    gx: 1
+    gy: 0
+    cr: 55
+    enemies: [裂隙先鋒]
+    links: [R1, R3]
+    desc: 地形規則失效，治療／移動力由 GM 裁定異界特性。
+  - id: R3
+    name: 法則失效陷阱
+    type: trap
+    gx: 1
+    gy: 1
+    links: [R2, R5]
+    desc: 踩中即觸發「規則無效化」區域，暫時剝奪一項減傷（DR）。
+  - id: R4
+    name: 先鋒駐防
+    type: combat
+    gx: 1
+    gy: 2
+    cr: 55
+    enemies: [裂隙先鋒]
+    links: [R1, R5]
+    desc: 異界先鋒駐防點，守衛三處世界錨點之一。
+  - id: R5
+    name: 世界錨點碎片
+    type: treasure
+    gx: 2
+    gy: 0
+    links: [R3, R6]
+    desc: 封存的錨點碎片，可修復一道世界錨點（影響力點（IP）＋6）。
+  - id: R6
+    name: 錨點防衛戰
+    type: combat
+    gx: 2
+    gy: 1
+    cr: 58
+    enemies: [裂隙先鋒]
+    links: [R3, R4, R7]
+    desc: 阻止裂縫擴張的關鍵防衛戰。
+  - id: R7
+    name: 裂隙庇護所
+    type: rest
+    gx: 2
+    gy: 2
+    links: [R4, R8]
+    desc: 相對穩定的裂隙夾層，可紮營回復。
+  - id: R8
+    name: 哨戒前哨
+    type: combat
+    gx: 3
+    gy: 0
+    cr: 60
+    enemies: [異界衛兵]
+    links: [R5, R9]
+    desc: 虛界哨戒的外圍前哨，駐有精銳衛兵。
+  - id: R9
+    name: 空間裂隙
+    type: trap
+    gx: 3
+    gy: 1
+    links: [R6, R8, R10]
+    desc: 不穩定的空間裂隙，誤觸會被傳送至隨機格。
+  - id: R10
+    name: 虛界哨戒
+    type: elite
+    gx: 3
+    gy: 2
+    cr: 65
+    enemies: [虛界哨戒]
+    combat_map: 地圖/劇本9_戰鬥_虛界哨戒.yaml
+    links: [R7, R9]
+    desc: 奇點派出的前哨指揮官（CR65 小首領），終戰對手。

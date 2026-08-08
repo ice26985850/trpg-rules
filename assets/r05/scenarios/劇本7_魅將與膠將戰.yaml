@@ -1,0 +1,48 @@
+name: 劇本7 魅將與膠將戰
+description: 南進媚惑溫泉鄉討伐魅將莉麗絲·媚影（CR44）、東渡凝膠群島討伐膠將普露姆·凝膠（CR46）雙線作戰。CL44 門檻，後段精銳。雙首領三階段。
+difficulty: 極難
+level_range: [44, 46]
+chapter: 7
+map_ref: 地圖/劇本7_戰鬥_雙將.yaml
+initial_map: 地圖/劇本7_探索_魅魔宮.yaml
+encounters:
+  - id: twin_patrol
+    name: 雙線偵查
+    enemies:
+      - {name: 魅惑小妖, cr: 20, count: 3}
+      - {name: 史萊姆仔, cr: 18, count: 4}
+    budget: 極難×1.2
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: gel_general_boss
+    name: 膠將 普露姆·凝膠（三階段）
+    enemies:
+      - {name: 普露姆·凝膠, cr: 46, count: 1}
+    boss: true
+    phases:
+      - {name: 分裂增殖, hp_threshold: "100%~66%", trait: 受擊分裂/暴擊免疫未啟}
+      - {name: 融合, hp_threshold: "66%", trait: 酸液腐蝕}
+      - {name: 晶化, hp_threshold: "33%", trait: 暴擊免疫/鈍擊破晶破解}
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR43/無助戰; 5–6名→CR48"
+  - id: charm_general_boss
+    name: 魅將 莉麗絲·媚影（三階段）
+    enemies:
+      - {name: 莉麗絲·媚影, cr: 44, count: 1}
+    boss: true
+    phases:
+      - {name: 誘惑之舞, hp_threshold: "100%~66%", trait: 幻舞魅惑}
+      - {name: 吸精, hp_threshold: "66%", trait: 吸取HP/慾念束縛定身}
+      - {name: 真身顯現, hp_threshold: "33%", trait: 心魔分裂信任危機}
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR41/無助戰; 5–6名→CR46"
+rewards:
+  exp: 28608
+  gold: 8000
+  items: [媚影心契, 凝膠核心, 心魔鏡, 溫泉療癒券]
+ip_events:
+  - event: 觸發莉麗絲好感事件
+    ip: 3
+  - event: 與膠將和平互動（不濫殺）
+    ip: 4
+  - event: 雙將和解替代討伐
+    ip: 10

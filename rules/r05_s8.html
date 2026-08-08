@@ -1,0 +1,259 @@
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>勇者之證 ／ D8_古代遺跡 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../index.html">規則總覽</a><span class="spacer"></span><span class="lang off" title="英文版準備中">EN</span></header>
+<main class="container"><p class="nav"><a href="r05.html">← 回規則頁</a> ｜ <a href="../index.html">⟵ 總頁</a></p><h1>地城模組 D8 — 古代遺跡（Ancient Ruins）</h1>
+<blockquote>
+<p><strong>推薦 Rank</strong>：A／S（挑戰等級（CR） 35–40）｜<strong>主題</strong>：失落的文明遺跡、頂階刷資源
+<strong>承接</strong>：公會委託「A-遺1／S-遺1」（對應 Rank A→S，CL 35–40）；或由 GM 指定為練級場。
+<strong>地圖</strong>：<code>地圖/D8_古代遺跡.yaml</code> ＋ <code>地圖/D8_古代遺跡.svg</code>
+本作<strong>沒有兼職</strong>；單人進入依人數調整規則（GM 書 13.1：挑戰等級（CR）−3、敵數 ×0.5，無助戰）。</p>
+</blockquote>
+<h3>如何進入（起手節拍）</h3>
+<ul>
+<li><strong>接公會委託</strong>：於冒險者公會佈告板承接 A 階「遺跡討伐」（A-遺1），晉升後接 S-遺1（對應 Rank A→S，CL 35–40）。</li>
+<li><strong>主動探險</strong>：玩家於 S0 入會後，可自考古營地深入失落遺跡探索（GM 書 17.1）。</li>
+<li><strong>練級定位</strong>：CL 35–40 的刷資源首選；與 A/S 委託並行，把 Rank 從 A 熬到 S，迎戰魔將（CL40+）。</li>
+<li><strong>單人模式</strong>：以 挑戰等級（CR）−3、敵數×0.5 支撐，無助戰；小首領房附 10×10 站位圖（地圖/D8_戰鬥_遺跡守護者.yaml），進房切標準戰鬥（第七章），清場回探索輪。</li>
+</ul>
+<h2>一、背景</h2>
+<p>失落文明遺跡深埋於黃沙之下，石像鬼與魔像仍在巡衛千年前的王室陵寢，遺跡守護者以守護立場反射一切來犯攻擊。探險隊多一去不回，公會列為 A→S 階討伐目標；聖殿之中的遺跡守護者，便是這座遺跡的小首領。</p>
+<h2>二、房間總覽（含迷霧揭示）</h2>
+<table>
+<thead>
+<tr>
+<th>房號</th>
+<th>名稱</th>
+<th>類型</th>
+<th>連通</th>
+<th>內容摘要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>遺跡石門</td>
+<td>入口</td>
+<td>→R2</td>
+<td>唯一進出；撤退回此即安全。</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>石像鬼迴廊</td>
+<td>戰鬥</td>
+<td>R1／R3／R8</td>
+<td>石像鬼 ×2（CR35）。</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>崩塌階梯</td>
+<td>陷阱</td>
+<td>R2／R4／R9</td>
+<td>弱機關（崩石）。</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>守墓衛墓道</td>
+<td>戰鬥</td>
+<td>R3／R5／R10</td>
+<td>守墓衛 ×2（CR37）。</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>祭司陪葬庫</td>
+<td>寶箱</td>
+<td>R4／R6／R11</td>
+<td>古幣、Glint 碎片、G 300~480。</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>魔像前廳</td>
+<td>戰鬥</td>
+<td>R5／R12</td>
+<td>魔像 ×2（CR38）。</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>靜默祈堂</td>
+<td>休息</td>
+<td>R1／R8／R13</td>
+<td>安全休息點。</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>機關中庭</td>
+<td>陷阱</td>
+<td>R7／R9／R2／R14</td>
+<td>強機關（連弩牆）。</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>黃金寶龕</td>
+<td>寶箱</td>
+<td>R8／R10／R3／R15</td>
+<td>黃金飾品、精良素材、G 320~500。</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>遺跡守衛室</td>
+<td>戰鬥</td>
+<td>R9／R11／R4／R16</td>
+<td>遺跡守衛 ×2（CR39）。</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>望星休所</td>
+<td>休息</td>
+<td>R10／R12／R5／R17</td>
+<td>安全休息點。</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>王室窖藏</td>
+<td>寶箱</td>
+<td>R11／R6／R18</td>
+<td>王室璽印、G 340~520。</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>石像鬼夾道</td>
+<td>戰鬥</td>
+<td>R7／R14</td>
+<td>石像鬼 ×2（CR37）。</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>符文陷阱廳</td>
+<td>陷阱</td>
+<td>R13／R15／R8</td>
+<td>強機關（符文爆裂）。</td>
+</tr>
+<tr>
+<td>R15</td>
+<td>星象寶室</td>
+<td>寶箱</td>
+<td>R14／R16／R9／R19</td>
+<td>星象盤、G 360~540。</td>
+</tr>
+<tr>
+<td>R16</td>
+<td>魔像戰場</td>
+<td>戰鬥</td>
+<td>R15／R17／R10／R20</td>
+<td>魔像 ×2（CR39）。</td>
+</tr>
+<tr>
+<td>R17</td>
+<td>回廊休整</td>
+<td>休息</td>
+<td>R16／R18／R11／R21</td>
+<td>安全休息點。</td>
+</tr>
+<tr>
+<td>R18</td>
+<td>落石尾廳</td>
+<td>陷阱</td>
+<td>R17／R12</td>
+<td>強機關（落頂石）。</td>
+</tr>
+<tr>
+<td>R19</td>
+<td>守墓衛密室</td>
+<td>戰鬥</td>
+<td>R15／R20</td>
+<td>守墓衛 ×2（CR39）。</td>
+</tr>
+<tr>
+<td>R20</td>
+<td>守護者聖殿</td>
+<td>小首領</td>
+<td>R16／R19／R21</td>
+<td><strong>遺跡守護者（CR40）</strong>（見下）。</td>
+</tr>
+<tr>
+<td>R21</td>
+<td>出口門道</td>
+<td>出口</td>
+<td>R20／R17</td>
+<td>通關點；領取獎勵離開。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>探索輪規則、陷阱（17.4）、寶箱（17.5）、休息（17.6）、撤退（17.3）詳見 GM 書第十七章。</p>
+</blockquote>
+<h2>二之一、戰鬥房站位戰鬥圖</h2>
+<p>本模組小首領房附 10×10 站位戰鬥圖（與 S1–S4 魔將戰同格式），供 GM 直接以格子距離與射程判定：</p>
+<table>
+<thead>
+<tr>
+<th>房號</th>
+<th>戰鬥房</th>
+<th>站位戰鬥圖</th>
+<th>備註</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R20</td>
+<td>守護者聖殿（遺跡守護者 CR40）</td>
+<td><code>地圖/D8_戰鬥_遺跡守護者.yaml</code>＋<code>.svg</code></td>
+<td>首領；範圍效果標註「守護立場（反傷 30%）」</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>站位圖敵方在上、我方在下，前後排間隔 2 格（4m）；單人進入依 GM 書 13.1 調整（挑戰等級（CR）−3、敵數 ×0.5，無助戰）。</p>
+</blockquote>
+<h2>三、關鍵房間細節</h2>
+<ul>
+<li><strong>R3 崩塌階梯（弱）</strong>：察覺 DC12（敏捷（M_DEX）／幸運（M_LUK））；觸發 1d6 鈍擊。解除 DC14。</li>
+<li><strong>R8 機關中庭（強）</strong>：察覺 DC18；觸發 3d6 穿刺。連弩牆可遮斷 R7↔R14 通道（GM 裁定）。</li>
+<li><strong>R14 符文陷阱廳（強）</strong>：察覺 DC20；觸發 3d6 奥術。符文可遮斷 R13↔R15 通道（GM 裁定）。</li>
+<li><strong>R18 落石尾廳（強）</strong>：察覺 DC20；觸發 3d6 鈍擊。</li>
+<li><strong>R5 祭司陪葬庫</strong>：開箱 DC12；詭雷 30%（中等，2d6）。內含古幣 ×2、Glint 碎片、金幣（G）300~480。</li>
+<li><strong>R9 黃金寶龕</strong>：開箱 DC14；內含黃金飾品 ×2、精良素材、金幣（G）320~500。</li>
+<li><strong>R21 出口門道</strong>：通關後返回公會結算獎勵離開。</li>
+</ul>
+<h2>四、小首領 — 遺跡守護者（CR40）</h2>
+<p>依 GM 書 10.4 CR 公式與 10.7 首領框架（精簡版）：</p>
+<ul>
+<li><strong>生命值（HP）</strong> 180（CR40 公式）｜<strong>攻擊加值（ATK）</strong> ＋11（floor(1+0.25×40)）｜<strong>迴避值（EVA）</strong> 16（10+floor(0.15×40)）｜<strong>傷害/擊</strong> 54（floor(6+1.2×40)）</li>
+<li><strong>特性（1 階段）</strong>：<code>守護立場</code>——每 3 回合一次，反射受到傷害的 30% 給攻擊者。</li>
+<li><strong>弱點</strong>：雷 ×1.5（見怪物圖鑑註記）。</li>
+<li><strong>掉落</strong>：<code>遺跡之心</code>（劇情物，可於公會兌換 影響力點（IP）+5）；精良素材＋低機率精良配方。</li>
+</ul>
+<h2>五、通關獎勵（全清）</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>數值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>經驗值（EXP）</td>
+<td>約 36660（R2 3500 ＋ R4 3848 ＋ R6 4028 ＋ R10 4212 ＋ R13 3848 ＋ R16 4212 ＋ R19 4212 ＋ R20 8800，EXP 累計至 角色等級（CL） 進度（職業等級 ClassLv 另計獨立職業經驗（CEXP）池，不共用 EXP））</td>
+</tr>
+<tr>
+<td>金幣（G）</td>
+<td>3000~4500</td>
+</tr>
+<tr>
+<td>影響力點（IP）</td>
+<td>+5（通關）／+5（遺跡之心兌換）</td>
+</tr>
+<tr>
+<td>掉落</td>
+<td>古幣／黃金飾品／低機率精良配方</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>設計提示：D8 是 CL 35–40「刷 EXP＋G＋素材」的頂階穩定場，直接銜接魔將戰（CL40+）；可每日重刷（見《委託目錄》〇、重置規則）。</p>
+</blockquote><p><a href="../assets/r05/scenarios/D8_古代遺跡.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

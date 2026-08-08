@@ -1,0 +1,24 @@
+# S7 Battle Map 02 · Survival inside Temple (E6, additional trial)
+meta:
+  id: S7_戰鬥圖_02
+  name: S7 Battle Map · Survival inside Sin-Cleansing Temple
+  scenario: S7
+  scene: E6 (Additional Trial)
+  note: If the Campfire Ember (Campfire Ember) < threshold, you must survive a set number of rounds inside the temple, then leave with the ember (Legendary difficulty). Coordinates in grid cells (1 cell = 2 m); origin top-left.
+grid_w: 12
+grid_h: 10
+cell_size_m: 2
+terrain:
+  - { id: t1, type: Stone Pillar (Cover), rect: { x: 3, y: 2, w: 1, h: 3 } }
+  - { id: t2, type: Stone Pillar (Cover), rect: { x: 8, y: 5, w: 1, h: 3 } }
+  - { id: t3, type: Misaligned Stairs (Backtracking adds a step; wrong ratio), rect: { x: 5, y: 7, w: 2, h: 2 } }
+  - { id: t4, type: Wall (Impassable), rect: { x: 0, y: 0, w: 12, h: 1 } }
+objects:
+  - { id: o1, type: Ember Niche(The Ember Niche)Exit, x: 6, y: 9 }
+  - { id: o2, type: Window, x: 11, y: 4 }
+  - { id: o3, type: Hook, x: 6, y: 2 }
+  - { id: o4, type: Chest, x: 1, y: 1 }
+  - { id: o5, type: Where the Mirror-Bearer Is, x: 2, y: 8 }
+spawn_survivor: { x: 6, y: 9 }
+spawn_killer: { x: 11, y: 1, note: "Huntress (HTR) or The Silent One (SIL), chosen per S6; survival rounds per the S7 player-count table"}
+survival_trial: true

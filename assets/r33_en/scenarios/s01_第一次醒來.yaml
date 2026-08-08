@@ -1,0 +1,367 @@
+# S1 · First Awakening (structured data for the AI GM engine)
+id: S1
+title: First Awakening
+realm: Macmillan Estate (R1)
+recommended_prs: "1-3"
+duration_min: 150
+summary: >-
+  Prologue. The player wakes by the Campfire with no memory. Campfire chronicler Eloise Finch gives two rules — fix five Generators and the gate opens, get Hooked three times and you're gone — and, contradiction-style, says in Act One "you live longer if you don't rescue people," yet personally goes to rescue during the Trial. This scenario establishes the baseline of fear, teaches the core rules, and plants four campaign-spanning hooks: the opposite effects of Altruistic Hope and Self-Hope on Entity Hunger (EH), the nature of Ember, "the one who sat where you sit" in Eloise's words, and the anchors of the scars and the carried item. S1 places no Realm Construct, keeping a pure chase-and-escape experience; the first Chase must let the player escape.
+
+nodes:
+  - id: mm_start
+    label: Starting Mist Mouth
+    type: Entrance
+    x: 500
+    y: 900
+    region: outer_woods
+    explored: true
+  - id: mm_shelter
+    label: Sheltering Woods
+    type: Open Area
+    x: 300
+    y: 780
+    region: outer_woods
+    explored: true
+  - id: mm_bigtree
+    label: The Big Tree
+    type: Landmark
+    x: 200
+    y: 690
+    region: outer_woods
+    explored: false
+  - id: mm_storehouse
+    label: Groaning Warehouse
+    type: Main Building
+    x: 500
+    y: 560
+    region: central_works
+    explored: true
+  - id: mm_store_2f
+    label: Warehouse Second Floor
+    type: Building Level
+    x: 560
+    y: 470
+    region: central_works
+    explored: false
+  - id: mm_ironworks
+    label: Wailing Ironworks
+    type: Main Building
+    x: 730
+    y: 620
+    region: central_works
+    explored: false
+  - id: mm_furnace
+    label: Furnace Row
+    type: Cover Zone
+    x: 830
+    y: 560
+    region: central_works
+    explored: false
+  - id: mm_coaltower
+    label: Coal Tower
+    type: Vantage Point
+    x: 300
+    y: 420
+    region: central_works
+    explored: false
+  - id: mm_tower_top
+    label: Coal Tower Top
+    type: Building Level
+    x: 240
+    y: 330
+    region: central_works
+    explored: false
+  - id: mm_pit
+    label: Suffocation Pit
+    type: Special
+    x: 660
+    y: 300
+    region: pit_area
+    explored: false
+  - id: mm_pit_edge
+    label: Pit-Rim Catwalk
+    type: Passage
+    x: 580
+    y: 250
+    region: pit_area
+    explored: false
+  - id: mm_chest_a
+    label: Rusty Chest A
+    type: Chest
+    x: 400
+    y: 660
+    region: central_works
+    explored: false
+  - id: mm_chest_b
+    label: Rusty Chest B
+    type: Chest
+    x: 780
+    y: 420
+    region: central_works
+    explored: false
+  - id: mm_exit_n
+    label: North Exit Gate
+    type: Exit
+    x: 500
+    y: 120
+    region: pit_area
+    explored: false
+  - id: mm_exit_s
+    label: South Exit Gate
+    type: Exit
+    x: 130
+    y: 860
+    region: outer_woods
+    explored: false
+  - id: mm_opt_shack
+    label: Broken Shack
+    type: Optional
+    x: 880
+    y: 780
+    region: outer_woods
+    explored: false
+  - id: mm_opt_locker
+    label: Changing Room
+    type: Optional
+    x: 160
+    y: 540
+    region: central_works
+    explored: false
+
+edges:
+  - from: mm_start
+    to: mm_shelter
+    channel_type: Open
+    name: Forest Path
+  - from: mm_start
+    to: mm_storehouse
+    channel_type: Open
+    name: Main Road
+  - from: mm_shelter
+    to: mm_bigtree
+    channel_type: Open
+    name: Under the Tree
+  - from: mm_shelter
+    to: mm_exit_s
+    channel_type: Open
+    name: South Slope
+  - from: mm_shelter
+    to: mm_opt_locker
+    channel_type: Narrow Door
+    name: Side Door
+  - from: mm_storehouse
+    to: mm_store_2f
+    channel_type: Stairs
+    name: Rusted Ladder
+  - from: mm_storehouse
+    to: mm_ironworks
+    channel_type: Open
+    name: Inter-Works Road
+  - from: mm_storehouse
+    to: mm_coaltower
+    channel_type: Open
+    name: Cinder Road
+  - from: mm_storehouse
+    to: mm_chest_a
+    channel_type: Open
+    name: Stockpile Yard
+  - from: mm_store_2f
+    to: mm_coaltower
+    channel_type: Window
+    name: Second-Floor Broken Window
+  - from: mm_ironworks
+    to: mm_furnace
+    channel_type: Interior
+    name: Furnace Hall
+  - from: mm_ironworks
+    to: mm_pit
+    channel_type: Open
+    name: Coal-Haul Road
+  - from: mm_ironworks
+    to: mm_opt_shack
+    channel_type: Open
+    name: Scrap Road
+  - from: mm_furnace
+    to: mm_chest_b
+    channel_type: Interior
+    name: Tool Room
+  - from: mm_coaltower
+    to: mm_tower_top
+    channel_type: Stairs
+    name: Tower Ladder
+  - from: mm_coaltower
+    to: mm_pit_edge
+    channel_type: Open
+    name: Elevated Catwalk
+  - from: mm_pit
+    to: mm_pit_edge
+    channel_type: Climb
+    name: Pit Wall
+  - from: mm_pit_edge
+    to: mm_exit_n
+    channel_type: Open
+    name: North Exit Road
+  - from: mm_tower_top
+    to: mm_exit_n
+    channel_type: Line of Sight
+    name: Line of sight only, impassable
+
+encounters:
+  - id: E1
+    type: Environment
+    content: Crow flock in the Sheltering Woods (flushing reveals position)
+    cr: No check
+    note: Optionally use RC-01 Rust Crows as alarm flavor; not counted in the formal budget
+  - id: E2
+    type: Chase
+    content: First Killer encounter (GM must let the player escape)
+    cr: Low
+    note: Tutorial: heartbeat and Terror Radius (TR)
+  - id: E3
+    type: Trap
+    content: Bear Trap ×3 (set by Trapper (TRP)), removable with a Toolbox
+    cr: Easy
+    note: Removal = Technique (TEC) check
+  - id: E4
+    type: Chase
+    content: Second encounter (Hook, teaches rescue)
+    cr: Medium
+    note: Tutorial: Hook and rescue
+  - id: E5
+    type: Realm Construct
+    content: None
+    cr: "-"
+    note: S1 places no construct
+  - id: E6
+    type: Endgame
+    content: Exit Gate or Hatch
+    cr: Medium
+    note: "-"
+
+npcs:
+  - name: Eloise Finch
+    role: Campfire Chronicler (§8-A)
+    lines:
+      - "Fix five Generators and the gate opens."
+      - "Hooked three times and you're gone."
+      - "You'll live longer if you don't rescue people."
+      - "The one who sat where you sit vanished. Three weeks later, in a Trial, I saw a thing — it walked exactly like him."
+      - "Haven't you noticed the fire is a little bigger than when you first came?"
+  - name: Echo Companion · 47
+    role: Solo-configuration metronome (§8-B)
+    lines:
+      - "…ninety-seven, ninety-eight, ninety-nine, a hundred. See? I'm still counting."
+  - name: Whisperer · Well Chorus (RC-02)
+    role: Intelligence-type construct (EBC 0)
+    lines:
+      - "Come down. Come see. We all forgot, but you still remember."
+
+choices:
+  - id: C1
+    question: Rescue or not (core tutorial)
+    options:
+      - desc: Choose to rescue
+        effect: Triggers Altruistic Hope, Entity Hunger (EH) −1, gain 1 Hope Point (HOP), unlock the Ember Moment
+      - desc: Choose not to rescue
+        effect: Character is safe; no Ember Moment this round; Campfire Ember accrues less
+  - id: C2
+    question: Optional exploration nodes (solo / duo)
+    options:
+      - desc: Explore Broken Shack (mm_opt_shack)
+        effect: Gain a Memory Card clue pointing to S3 "Roots That Eat No Soil" (a note reading "tree")
+      - desc: Explore Changing Room (mm_opt_locker)
+        effect: Gain a common item, and words carved into the inside of the iron cabinet (pointing to S2 "Scars in the Iron Valley")
+
+endings:
+  - type: Linear prologue (single ending)
+    condition: Complete the Trial (Generators met or escape)
+    ember_moment: As long as the player rescues at least one companion (including an Echo Companion) during the Trial, the Ember Moment is guaranteed to trigger after returning to the Campfire
+
+rewards:
+  bp: Standard (per character-builder formula)
+  prs_gain: Rises to level 3 upon completion
+  hop: "+2 (scenario complete) + accrued during play"
+  campfire_ember: Accrued during play (est. 3-6)
+  memory_card: 0
+  item: 1 common item per person
+  narrative: First sighting of Ember (unexplained)
+
+player_count_scaling:
+  n1:
+    generators_total: 4
+    generators_required: 3
+    killer_pressure: 1
+    echo_companions: 1
+    bear_traps: 2
+    hooks: 4
+    chests: 2
+    lockers: 5
+    hook_phase_limit: 5
+    hatch_condition: 1 character remaining alive
+    endgame_collapse: 6
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 1
+    echo_companions: 1
+    bear_traps: 3
+    hooks: 5
+    chests: 2
+    lockers: 6
+    hook_phase_limit: 5
+    hatch_condition: 1 character remaining alive
+    endgame_collapse: 6
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 2
+    echo_companions: 0
+    bear_traps: 3
+    hooks: 6
+    chests: 3
+    lockers: 7
+    hook_phase_limit: 4
+    hatch_condition: 1 character remaining alive
+    endgame_collapse: 5
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 2
+    echo_companions: 0
+    bear_traps: 4
+    hooks: 8
+    chests: 3
+    lockers: 8
+    hook_phase_limit: 4
+    hatch_condition: 1 character remaining alive
+    endgame_collapse: 5
+    realm_constructs: 0
+    bp_multiplier: 1.0
+    hop_reward: 2
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.0
+  prs_mid: 2
+  eb:
+    n1: 4
+    n2: 8
+    n3: 12
+    n4: 16
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: Trapper (TRP)
+  killer_avm: 0
+  killer_cr: "PRS + 0 (CR 1-3)"

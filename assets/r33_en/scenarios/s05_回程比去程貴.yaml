@@ -1,0 +1,474 @@
+# S5 · The Return Costs More Than the Going (structured data for the AI GM engine)
+id: S5
+title: The Return Costs More Than the Going
+realm: Backwater Swamp (R5) → The Void → Hidden Workshop
+recommended_prs: "10-13"
+duration_min: 270
+summary: >-
+  The second station of the playstyle shift: the player exploits a system loophole for the first time — deliberately falling into The Void and climbing back out. From passive survival to actively manipulating the rules. This is the quietest, most psychological round of the campaign: The Void has no Killer, no objective, Hope Point (HOP) continuously drains, the only exit is "regenerate one genuine emotion." Hag's (HAG) traps can teleport, "space cannot be trusted." Revelation: Ember in The Void cannot reach the Campfire, The Entity has an instinctive immune response to Ember — providing the tension for S7/S8.
+
+nodes:
+  - id: bw_start
+    label: Starting Mist Mouth
+    type: Entrance
+    x: 500
+    y: 940
+    region: swamp
+    explored: true
+  - id: bw_pier
+    label: Pier
+    type: Main Landmark
+    x: 500
+    y: 830
+    region: swamp
+    explored: true
+  - id: bw_boat
+    label: The Pale Rose
+    type: Main Building
+    x: 660
+    y: 780
+    region: swamp
+    explored: true
+  - id: bw_boat_2f
+    label: Boat Upper Deck
+    type: Building Level
+    x: 740
+    y: 700
+    region: swamp
+    explored: false
+  - id: bw_walk_e
+    label: East Boardwalk
+    type: Passage
+    x: 700
+    y: 600
+    region: swamp
+    explored: false
+  - id: bw_walk_w
+    label: West Boardwalk
+    type: Passage
+    x: 300
+    y: 600
+    region: swamp
+    explored: false
+  - id: bw_pantry
+    label: Eerie Pantry
+    type: Main Building
+    x: 250
+    y: 470
+    region: swamp
+    explored: false
+  - id: bw_pantry_2f
+    label: Pantry Second Floor
+    type: Building Level
+    x: 180
+    y: 380
+    region: swamp
+    explored: false
+  - id: bw_cages
+    label: Cage Houses
+    type: Cover Zone
+    x: 620
+    y: 450
+    region: swamp
+    explored: false
+  - id: bw_deep_a
+    label: Deep Water Zone A
+    type: Hazard
+    x: 430
+    y: 480
+    region: swamp
+    explored: false
+  - id: bw_deep_b
+    label: Deep Water Zone B
+    type: Hazard
+    x: 470
+    y: 380
+    region: swamp
+    explored: false
+  - id: bw_deep_c
+    label: Deep Water Zone C
+    type: Hazard
+    x: 500
+    y: 290
+    region: swamp
+    explored: false
+  - id: bw_steps
+    label: Sunken Stair
+    type: Key
+    x: 500
+    y: 210
+    region: swamp
+    explored: false
+  - id: bw_chest_a
+    label: Hold Chest
+    type: Chest
+    x: 780
+    y: 830
+    region: swamp
+    explored: false
+  - id: bw_chest_b
+    label: Shed Chest
+    type: Chest
+    x: 200
+    y: 620
+    region: swamp
+    explored: false
+  - id: bw_exit_nw
+    label: Northwest Exit Gate
+    type: Exit
+    x: 130
+    y: 180
+    region: swamp
+    explored: false
+  - id: bw_exit_se
+    label: Southeast Exit Gate
+    type: Exit
+    x: 880
+    y: 900
+    region: swamp
+    explored: false
+  - id: bw_opt_shrine
+    label: Sunken Shrine
+    type: Optional
+    x: 830
+    y: 320
+    region: swamp
+    explored: false
+  - id: bw_opt_raft
+    label: Stranded Raft
+    type: Optional
+    x: 160
+    y: 830
+    region: swamp
+    explored: false
+  - id: vd_verge
+    label: Void · Sunken Belt
+    type: Act Three
+    x: 500
+    y: 120
+    region: void
+    explored: false
+  - id: vd_haunts
+    label: Void · Afterimage Plain
+    type: Act Three
+    x: 690
+    y: 90
+    region: void
+    explored: false
+  - id: vd_midden
+    label: Void · Discard Abyss
+    type: Act Three
+    x: 310
+    y: 90
+    region: void
+    explored: false
+  - id: vd_gilmar
+    label: Where He Is
+    type: Act Three
+    x: 690
+    y: 40
+    region: void
+    explored: false
+  - id: ws_hidden
+    label: Hidden Workshop
+    type: Act Three
+    x: 310
+    y: 40
+    region: workshop
+    explored: false
+
+edges:
+  - from: bw_start
+    to: bw_pier
+    channel_type: Wooden Walkway
+    name: Entrance Boardwalk
+  - from: bw_pier
+    to: bw_boat
+    channel_type: Wooden Walkway
+    name: Boarding Plank
+  - from: bw_pier
+    to: bw_walk_w
+    channel_type: Wooden Walkway
+    name: West Boardwalk
+  - from: bw_pier
+    to: bw_exit_se
+    channel_type: Wooden Walkway
+    name: Southeast Boardwalk
+  - from: bw_boat
+    to: bw_boat_2f
+    channel_type: Stairs
+    name: Boat Ladder
+  - from: bw_boat
+    to: bw_chest_a
+    channel_type: Interior
+    name: Hold
+  - from: bw_boat
+    to: bw_walk_e
+    channel_type: Wooden Walkway
+    name: East Boardwalk
+  - from: bw_boat_2f
+    to: bw_walk_e
+    channel_type: Window / Jump Down
+    name: Porthole
+  - from: bw_walk_e
+    to: bw_cages
+    channel_type: Wooden Walkway
+    name: Cage Path
+  - from: bw_walk_e
+    to: bw_opt_shrine
+    channel_type: Wade
+    name: Shallow Ford
+  - from: bw_walk_w
+    to: bw_pantry
+    channel_type: Wooden Walkway
+    name: Pantry Boardwalk
+  - from: bw_walk_w
+    to: bw_chest_b
+    channel_type: Wooden Walkway
+    name: Under the Shed
+  - from: bw_walk_w
+    to: bw_opt_raft
+    channel_type: Wade
+    name: Shallow Ford
+  - from: bw_pantry
+    to: bw_pantry_2f
+    channel_type: Stairs
+    name: Wooden Ladder
+  - from: bw_pantry_2f
+    to: bw_deep_a
+    channel_type: Jump Down (one-way)
+    name: Second-Floor Window Into Water
+  - from: bw_pantry
+    to: bw_exit_nw
+    channel_type: Wooden Walkway
+    name: Northwest Boardwalk
+  - from: bw_cages
+    to: bw_deep_a
+    channel_type: Wade
+    name: Waterway Behind Cages
+  - from: bw_deep_a
+    to: bw_deep_b
+    channel_type: Deep Water
+    name: First Segment
+  - from: bw_deep_b
+    to: bw_deep_c
+    channel_type: Deep Water
+    name: Second Segment
+  - from: bw_deep_c
+    to: bw_steps
+    channel_type: Deep Water
+    name: Third Segment
+  - from: bw_steps
+    to: vd_verge
+    channel_type: Sink (one-way)
+    name: Sunken Stair
+  - from: vd_verge
+    to: vd_haunts
+    channel_type: Void Drift
+    name: Afterimage Drift
+  - from: vd_verge
+    to: vd_midden
+    channel_type: Void Drift
+    name: Discard Drift
+  - from: vd_haunts
+    to: vd_gilmar
+    channel_type: Void Drift
+    name: Deeper Still
+  - from: vd_midden
+    to: ws_hidden
+    channel_type: Misclassification (one-way)
+    name: Discard Reflux
+  - from: ws_hidden
+    to: bw_pantry
+    channel_type: Hidden Conduit
+    name: Drainage Conduit (opens after completion, permanent)
+
+encounters:
+  - id: E1
+    type: Chase
+    content: Hag's (HAG) trap web
+    cr: High (CR 11-14)
+    note: Tutorial: space cannot be trusted
+  - id: E2
+    type: Environment
+    content: Three deep-water segments
+    cr: Hard (DC Hard)
+    note: Agility (AGI) or Will (WIL) per segment
+  - id: E3
+    type: Realm Construct
+    content: the Bloated One = Mud Hands (RC-06) × N
+    cr: Medium-High (CR 3)
+    note: EBC 6 each, area-denial type
+  - id: E4
+    type: Exploration
+    content: Sunken Stair
+    cr: Medium
+    note: "-"
+  - id: E5
+    type: Special
+    content: The Void (no combat, Hope Point (HOP) drains)
+    cr: Extreme (psychological)
+    note: See player-count table
+  - id: E6
+    type: Roleplay
+    content: Regenerate an emotion
+    cr: No check
+    note: Trigger objects see player-count table
+  - id: E7
+    type: Exploration
+    content: Hidden Workshop
+    cr: Low
+    note: Safe space
+
+npcs:
+  - name: Gilmar Sato
+    role: Campfire companion who fell into The Void (§8-A)
+    lines:
+      - "…a name? I think I had one. But that was long ago. You… know me?"
+  - name: Fane the Gleaner
+    role: Hidden Workshop master (§8-D)
+    lines:
+      - "It isn't that it can't be deceived. It's that it can't notice it's been deceived."
+  - name: Whisperer · the Voice Under the Water (RC-02 variant)
+    role: Intelligence-type construct (EBC 0)
+    lines:
+      - "The return costs more than the going. The going: a little hope. The return: you must find something you want, down there."
+  - name: Echo Companion · the Handwiper
+    role: If its pod was plucked in S3, an Afterimage in The Void
+    lines:
+      - "It recognizes the player (+5 Campfire Ember)"
+
+choices:
+  - id: C1
+    question: Descend the Sunken Stair? (actively exploit the loophole)
+    options:
+      - desc: Don't go
+        effect: Pure escape completes the Trial, misses the main story (no Fane's notes, can't rescue Gilmar)
+      - desc: Go
+        effect: Enter The Void (Act Three), actively manipulate the rules
+  - id: C2
+    question: Void trigger-object choice
+    options:
+      - desc: Do something unrewarded for Gilmar
+        effect: Rescue (in S8 he will remember the player's name)
+      - desc: Acknowledge / make amends to a sacrificed Echo
+        effect: Emotional closure
+      - desc: Remember what the carried item is
+        effect: Memory closure
+  - id: C3
+    question: Rescue Gilmar?
+    options:
+      - desc: Rescue
+        effect: He returns to the Campfire (empty, recovers a little each scenario, remembers the player's name in S8)
+      - desc: Don't rescue
+        effect: Emotional vacancy, but the player keeps more Hope Point (HOP)
+
+endings:
+  - type: Branching (whether to rescue Gilmar)
+    condition: Depends on Decision Three
+    ember_moment: Triggers when a genuine emotion is regenerated in The Void (Ember does not roll toward the Campfire)
+
+rewards:
+  bp: Standard × (per player-count table)
+  prs_gain: Rises to level 13 upon completion
+  hop: "+4"
+  campfire_ember: Accrued during play (est. 6-12)
+  memory_card: 1-2
+  item: 1 very rare item per person
+  npc_rescue: Gilmar Sato can be brought back to the Campfire (if an unrewarded thing is done for him), and remembers the player's name by S8
+  narrative: Ember in The Void cannot reach the Campfire; The Entity has an instinctive immune response
+  new_ability: Spot the Loophole — once per scenario the player may declare "there is a seam in the rules here," and the GM must give an exploitable mechanical flaw
+  map_unlock: Hidden Workshop ↔ Léry's Memorial Institute drainage conduit, Hidden Workshop ↔ Red Forest hidden door (opens S6, S7)
+
+player_count_scaling:
+  n1:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 5
+    echo_companions: 2
+    bloated_RC06: 2
+    deep_sections: 2
+    hooks: 5
+    chests: 3
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    void_turn_limit: 8
+    void_hop_loss_per_scene: -1
+    void_triggers: 3
+    bp_multiplier: 1.15
+    hop_reward: 4
+    memory_cards: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 4
+    killer_pressure: 5
+    echo_companions: 1
+    bloated_RC06: 3
+    deep_sections: 3
+    hooks: 6
+    chests: 3
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    void_turn_limit: 7
+    void_hop_loss_per_scene: -1
+    void_triggers: 3
+    bp_multiplier: 1.1
+    hop_reward: 4
+    memory_cards: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 5
+    echo_companions: 0
+    bloated_RC06: 3
+    deep_sections: 3
+    hooks: 7
+    chests: 4
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    void_turn_limit: 6
+    void_hop_loss_per_scene: -1
+    void_triggers: 2
+    bp_multiplier: 1.0
+    hop_reward: 4
+    memory_cards: 1
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 6
+    echo_companions: 0
+    bloated_RC06: 4
+    deep_sections: 3
+    hooks: 9
+    chests: 4
+    lockers: 8
+    hook_phase_limit: 3
+    endgame_collapse: 4
+    void_turn_limit: 6
+    void_hop_loss_per_scene: -1
+    void_triggers: 2
+    bp_multiplier: 1.0
+    hop_reward: 4
+    memory_cards: 1
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.15
+  prs_mid: 11
+  eb:
+    n1: 15
+    n2: 30
+    n3: 45
+    n4: 60
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: Hag (HAG)
+  killer_avm: "+1 (before round 8) / +2 (after round 8), taken at +1"
+  killer_cr: "PRS + 1 (CR 11-14)"
+  construct_RC06: Mud Hands (RC-06) CR3 / HP22 / attack +3 / DC11 / EBC6

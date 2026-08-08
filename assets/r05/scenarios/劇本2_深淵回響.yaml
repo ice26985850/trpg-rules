@@ -1,0 +1,53 @@
+name: 劇本2 深淵回響
+description: CL13–26 練級期總章，串接 D2 沉眠墓窖／D5 海洋／D6 火山三座中階地城與對應委託，形成「從不死墓窖走向火山深處」的練級節奏；首觸第五人身世伏筆（D2）。採做法 A：一套劇本＋人數調整。
+difficulty: 普通~困難
+level_range: [13, 26]
+chapter: 2
+map_ref: 地圖/D6_戰鬥_炎魔領主.yaml
+initial_map: 地圖/D2_沉眠墓窖.yaml
+encounters:
+  - id: d2_catacomb
+    name: D2 沉眠墓窖（CL13–18）
+    enemies:
+      - {name: 骷髏戰士, cr: 13, count: 3}
+      - {name: 殭屍, cr: 15, count: 4}
+      - {name: 墓地巫妖, cr: 18, count: 1}
+    boss: true
+    budget: 普通×1.2
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: d5_ocean
+    name: D5 海洋（CL13–18）
+    enemies:
+      - {name: 海盜, cr: 13, count: 2}
+      - {name: 鯊魚, cr: 15, count: 2}
+      - {name: 水鬼, cr: 16, count: 2}
+      - {name: 章魚, cr: 17, count: 2}
+      - {name: 海妖, cr: 18, count: 1}
+    boss: true
+    budget: 普通×1.2
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: d6_volcano
+    name: D6 火山（CL19–26）
+    enemies:
+      - {name: 火蜥蜴, cr: 19, count: 2}
+      - {name: 炎犬, cr: 21, count: 2}
+      - {name: 岩漿元素, cr: 22, count: 2}
+      - {name: 熔岩巨人, cr: 24, count: 2}
+      - {name: 火蜘蛛, cr: 25, count: 2}
+      - {name: 炎魔領主, cr: 26, count: 1}
+    boss: true
+    budget: 困難×1.0
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+rewards:
+  exp: 17000
+  gold: 6000
+  items: [亡者安息素材, 海洋珍寶, 炎礦鍛造料, 墓窖鑰]
+ip_events:
+  - event: 安息亡者（D2 超渡）
+    ip: 3
+  - event: 協助漁村難民撤離（D5）
+    ip: 3
+  - event: 探索第五人身世伏筆（D2）
+    ip: 3
+  - event: 取得墓窖鑰解鎖死靈將支線
+    ip: 2

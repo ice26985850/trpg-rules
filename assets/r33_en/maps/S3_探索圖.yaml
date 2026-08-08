@@ -1,0 +1,61 @@
+# S3 Exploration Map · Coldwind Farm (Coldwind Farm, R3) → Fog Cellar
+meta:
+  id: S3
+  name: S3 Exploration Map · Coldwind Farm & Fog Cellar
+  realm: Coldwind Farm (R3) → Fog Cellar
+  regions: [Fields (fields), Buildings (buildings), Fog Cellar (cellar)]
+  coord_range: 0-1000
+  note: The Fog Cellar node deliberately overlaps surface coordinates — spatially the Fog Cellar sits beneath the farm, another layer of the same location.
+nodes:
+  - { id: cw_start, name: Starting Fog Mouth, region: Fields (fields), type: Entrance, x: 500, y: 930, connections: [cw_corn_s, cw_harvester] }
+  - { id: cw_corn_s, name: Cornfield·South, region: Fields (fields), type: Concealment Zone, x: 380, y: 810, connections: [cw_start, cw_tree, cw_chest_b, cw_opt_well] }
+  - { id: cw_corn_e, name: Cornfield·East, region: Fields (fields), type: Concealment Zone, x: 720, y: 660, connections: [cw_harvester, cw_tree, cw_abattoir, cw_opt_coop] }
+  - { id: cw_corn_w, name: Cornfield·West, region: Fields (fields), type: Concealment Zone, x: 260, y: 590, connections: [cw_tree, cw_house, cw_chest_b] }
+  - { id: cw_tree, name: Tree of Sacrifice, region: Fields (fields), type: Key Landmark, x: 500, y: 500, connections: [cw_corn_s, cw_corn_e, cw_corn_w, cw_silo, fc_entry] }
+  - { id: cw_harvester, name: Harvester, region: Fields (fields), type: Cover Landmark, x: 640, y: 800, connections: [cw_start, cw_corn_e, cw_exit_se] }
+  - { id: cw_abattoir, name: Foul-smelling Slaughterhouse, region: Buildings (buildings), type: Main Building, x: 760, y: 380, connections: [cw_corn_e, cw_abattoir_in, cw_chest_a] }
+  - { id: cw_abattoir_in, name: Slaughterhouse Interior, region: Buildings (buildings), type: Building Interior, x: 840, y: 300, connections: [cw_abattoir, cw_exit_n] }
+  - { id: cw_house, name: Thompson House, region: Buildings (buildings), type: Main Building, x: 250, y: 330, connections: [cw_corn_w, cw_house_2f, cw_silo] }
+  - { id: cw_house_2f, name: Thompson House 2F, region: Buildings (buildings), type: Building Level, x: 180, y: 250, connections: [cw_house, cw_corn_w] }
+  - { id: cw_silo, name: Silo, region: Buildings (buildings), type: Cover Landmark, x: 420, y: 300, connections: [cw_tree, cw_house, cw_exit_n, cw_chest_a] }
+  - { id: cw_chest_a, name: Tool Shed, region: Buildings (buildings), type: Chest, x: 600, y: 260, connections: [cw_abattoir, cw_silo] }
+  - { id: cw_chest_b, name: Garage, region: Fields (fields), type: Chest, x: 330, y: 700, connections: [cw_corn_s, cw_corn_w] }
+  - { id: cw_exit_n, name: North Exit Gate, region: Buildings (buildings), type: Exit, x: 500, y: 110, connections: [cw_abattoir_in, cw_silo] }
+  - { id: cw_exit_se, name: Southeast Exit Gate, region: Fields (fields), type: Exit, x: 880, y: 880, connections: [cw_harvester] }
+  - { id: cw_opt_well, name: Old Well, region: Fields (fields), type: Optional, x: 150, y: 780, connections: [cw_corn_s] }
+  - { id: cw_opt_coop, name: Chicken Coop, region: Fields (fields), type: Optional, x: 880, y: 560, connections: [cw_corn_e] }
+  - { id: fc_entry, name: Fog Cellar · Entrance, region: Fog Cellar (cellar), type: Act 3, x: 500, y: 500, connections: [cw_tree, fc_root_a, fc_root_c] }
+  - { id: fc_root_a, name: Root System · Near Layer, region: Fog Cellar (cellar), type: Act 3, x: 400, y: 430, connections: [fc_entry, fc_root_b] }
+  - { id: fc_root_b, name: Root System · Mid Layer, region: Fog Cellar (cellar), type: Act 3, x: 500, y: 380, connections: [fc_root_a, fc_root_c, fc_yours] }
+  - { id: fc_root_c, name: Root System · Deep Layer, region: Fog Cellar (cellar), type: Act 3, x: 600, y: 430, connections: [fc_entry, fc_root_b] }
+  - { id: fc_yours, name: Your Path, region: Fog Cellar (cellar), type: Act 3, x: 500, y: 300, connections: [fc_root_b] }
+edges:
+  - { from: cw_start, to: cw_corn_s, channel: Open, name: Field Ridge}
+  - { from: cw_start, to: cw_harvester, channel: Open, name: Farm Path}
+  - { from: cw_corn_s, to: cw_tree, channel: Concealment, name: Between Stalks}
+  - { from: cw_corn_s, to: cw_chest_b, channel: Open, name: SidePath}
+  - { from: cw_corn_s, to: cw_opt_well, channel: Open, name: West Field Ridge}
+  - { from: cw_harvester, to: cw_corn_e, channel: Open, name: East Field Ridge}
+  - { from: cw_harvester, to: cw_exit_se, channel: Open, name: Southeast Path}
+  - { from: cw_corn_e, to: cw_tree, channel: Concealment, name: Between Stalks}
+  - { from: cw_corn_e, to: cw_abattoir, channel: Open, name: Slaughter Path}
+  - { from: cw_corn_e, to: cw_opt_coop, channel: Open, name: Chicken CoopTrail}
+  - { from: cw_corn_w, to: cw_tree, channel: Concealment, name: Between Stalks}
+  - { from: cw_corn_w, to: cw_house, channel: Open, name: Front-of-house Path}
+  - { from: cw_corn_w, to: cw_chest_b, channel: Open, name: GaragePath}
+  - { from: cw_tree, to: cw_silo, channel: Open, name: CenterPath}
+  - { from: cw_tree, to: fc_entry, channel: Root Passage (Act 3), name: Root Passage beneath the Tree}
+  - { from: cw_abattoir, to: cw_abattoir_in, channel: Interior Door, name: Slaughterhouse Main Gate}
+  - { from: cw_abattoir, to: cw_chest_a, channel: Open, name: Tool-shed Path}
+  - { from: cw_abattoir_in, to: cw_exit_n, channel: Window, name: High Window}
+  - { from: cw_house, to: cw_house_2f, channel: Stairs, name: Wooden Ladder}
+  - { from: cw_house, to: cw_silo, channel: Open, name: Grain Path}
+  - { from: cw_house_2f, to: cw_corn_w, channel: Drop (One-way), name: 2F Window}
+  - { from: cw_silo, to: cw_exit_n, channel: Open, name: North Path}
+  - { from: cw_silo, to: cw_chest_a, channel: Open, name: Yard}
+  - { from: fc_entry, to: fc_root_a, channel: Hanging Root, name: Climbing Root}
+  - { from: fc_entry, to: fc_root_c, channel: Hanging Root, name: Climbing Root}
+  - { from: fc_root_a, to: fc_root_b, channel: Hanging Root, name: Climbing Root}
+  - { from: fc_root_c, to: fc_root_b, channel: Hanging Root, name: Climbing Root}
+  - { from: fc_root_b, to: fc_yours, channel: Hanging Root, name: That Particularly Thin One}
+  - { from: fc_entry, to: cw_tree, channel: Ascend, name: Return to Surface (within time limit)}

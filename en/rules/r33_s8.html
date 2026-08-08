@@ -1,0 +1,865 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黎明殺機 TRPG ／ s08_無名之心 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../../index.html">規則總覽</a><span class="spacer"></span><a class="lang" href="../rules/r33.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r33.html">← 回規則頁</a> ｜ <a href="../../index.html">⟵ 總頁</a></p><h1>S8 · The Nameless Heart</h1>
+<blockquote>
+<p>Capstone scenario. S8 is <strong>not a harder Trial</strong> — it is a <strong>rule flip</strong>: the Generator is an igniter, being Hooked is the only way to contact the Entity (The Entity) Proper, escape is surrender, and Hope Points (HOP) are ammunition. The player chooses one of three endings: Conflagration / Takeover / Ember.</p>
+</blockquote>
+<hr />
+<h2>1. Scenario Information</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number</td>
+<td>S8</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>The Nameless Heart</td>
+</tr>
+<tr>
+<td>Recommended Prestige (PRS)</td>
+<td>18–20</td>
+</tr>
+<tr>
+<td>Estimated Duration</td>
+<td>Solo 6 h / Group 7 h (<strong>recommended in two sessions</strong>)</td>
+</tr>
+<tr>
+<td>Realm</td>
+<td>Forsaken Boneyard (R8) → Lone Tower → The Nameless Heart</td>
+</tr>
+<tr>
+<td>Main Killer</td>
+<td>Legion (LGN) + the Entity Proper (Act Three)</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>Legendary (Killer Pressure level: 8–9; primary check Difficulty Class (DC): Extreme–Legendary)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. GM Summary</h2>
+<p><strong>Storyline</strong>: Act One plans at the campfire (the only time in the whole campaign the "player is in charge"). All known conditions are laid out: total Campfire Ember, the first ember (The First Ember), the Ember Vein (<code>ember_vein</code>), the Lone Tower, the Umbilical, the Mirror-Bearer's intel, Fane's device, Memory Cards. The player decides three things: which path to take, who gets Hooked, and which ending to choose. Act Two is the Forsaken Boneyard trial + tower climb (Generator = Ember Vein charge; the Endless Stair needs the first ember to ascend; the Statue Ring lets you "deliver a eulogy" to replenish Campfire Ember). Act Three passes through the Sky-Rift to reach the Nameless Heart — an organ with an empty hole at its center (the Entity Core). The Entity acts in person only when a hook is involved; the player must manufacture one hook-contact with it, then ignite (Conflagration) / enter the hole (Takeover) / not ignite (Ember).</p>
+<p><strong>Truth (GM only)</strong>: the Entity Core is empty — "it was empty all along. That is why it has been eating." The embers came out of it, are the same kind of thing as it, so fire travels back from its own body. The Ember Moment reveals the "Nameless" is the gathering of all who looked back — the first ember was not dropped by him, but by them, including the player.</p>
+<p><strong>How to Run</strong>: <strong>The GM must clearly tell the player in Act One that the rules are flipped</strong> (empowerment, not a surprise). Solo configuration: have the player state the plan once each to Eloise, Fane, and the Mirror-Bearer; each asks one question (three moments of self-examination). In Act Three, turn off all the lights, leaving only a single candle by the glass jar; clear the table, placing only the Campfire Ember glass jar at the center.</p>
+<hr />
+<h2>3. Opening Text (read-aloud)</h2>
+<blockquote>
+<p>This time, no one wakes you by the fire. You are sitting there yourself.</p>
+<p>Eloise pushes the glass jar toward you. There are more beads in it than ever — that is all of you, the residue of every look-back, every rescue, every time you handed over the last thing in your hand, across eight scenarios.</p>
+<p>"Take inventory," she says. "See if we have enough."</p>
+<p>Fane spreads out that diagram: the Lone Tower, the Umbilical, the Ember Vein, a route map to the same wound.</p>
+<p>Ari the Mirror-Bearer rarely speaks: "The Entity acts in person when a hook is involved. That is its only exposed moment."</p>
+<p>You take a deep breath. In the firelight, there is no script. No word "survive."</p>
+<p>Only you, and how you all decide to end it.</p>
+<p>Or decide not to.</p>
+</blockquote>
+<hr />
+<h2>4. Scenes and Nodes</h2>
+<p><strong>Realm</strong>: Forsaken Boneyard (R8) → Lone Tower → The Nameless Heart. Region divisions: <code>boneyard</code> (bonefield surface) / <code>tower</code> (Lone Tower) / <code>heart</code> (Nameless Heart).</p>
+<p><strong>Exploration Map — Node List</strong></p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>label</th>
+<th>type</th>
+<th>x</th>
+<th>y</th>
+<th>region</th>
+<th>initially explored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fb_start</code></td>
+<td>Starting Mist Mouth</td>
+<td>Entrance</td>
+<td>500</td>
+<td>950</td>
+<td>boneyard</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>fb_arch_s</code></td>
+<td>South Arch</td>
+<td>Landmark</td>
+<td>500</td>
+<td>850</td>
+<td>boneyard</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>fb_dune_e</code></td>
+<td>East Dune</td>
+<td>Open</td>
+<td>760</td>
+<td>760</td>
+<td>boneyard</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>fb_dune_w</code></td>
+<td>West Dune</td>
+<td>Open</td>
+<td>240</td>
+<td>760</td>
+<td>boneyard</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>fb_carve_e</code></td>
+<td>East Carvings</td>
+<td>Cover Zone</td>
+<td>830</td>
+<td>570</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_carve_w</code></td>
+<td>West Carvings</td>
+<td>Cover Zone</td>
+<td>170</td>
+<td>570</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_arch_n</code></td>
+<td>North Arch</td>
+<td>Landmark</td>
+<td>500</td>
+<td>700</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_ring</code></td>
+<td><strong>Statue Ring</strong></td>
+<td><strong>Key</strong></td>
+<td>500</td>
+<td>570</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_chest_a</code></td>
+<td>Under-Sand Chest</td>
+<td>Chest</td>
+<td>700</td>
+<td>660</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_chest_b</code></td>
+<td>Carving-Base Chest</td>
+<td>Chest</td>
+<td>300</td>
+<td>480</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_hatch_rig</code></td>
+<td>Fane's Device</td>
+<td>Special</td>
+<td>350</td>
+<td>660</td>
+<td>boneyard</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>fb_exit_e</code></td>
+<td>East Exit Gate</td>
+<td>Exit</td>
+<td>930</td>
+<td>830</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_exit_w</code></td>
+<td>West Exit Gate</td>
+<td>Exit</td>
+<td>70</td>
+<td>830</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_opt_wind</code>※</td>
+<td>Wind-Eroded Cave</td>
+<td>Optional</td>
+<td>890</td>
+<td>700</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>fb_opt_bones</code>※</td>
+<td>Bone Pile</td>
+<td>Optional</td>
+<td>110</td>
+<td>700</td>
+<td>boneyard</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tw_base</code></td>
+<td>Tower Base</td>
+<td>Lone Tower</td>
+<td>500</td>
+<td>470</td>
+<td>tower</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tw_eyrie</code></td>
+<td>Crow's Nest Ring</td>
+<td>Lone Tower</td>
+<td>500</td>
+<td>370</td>
+<td>tower</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tw_stair</code></td>
+<td>Endless Stair</td>
+<td>Lone Tower</td>
+<td>500</td>
+<td>270</td>
+<td>tower</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>tw_top</code></td>
+<td>Tower Top</td>
+<td>Lone Tower</td>
+<td>500</td>
+<td>180</td>
+<td>tower</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>hr_rift</code></td>
+<td>Sky-Rift</td>
+<td>Nameless Heart</td>
+<td>500</td>
+<td>120</td>
+<td>heart</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>hr_maw</code></td>
+<td>Mouth Plain</td>
+<td>Nameless Heart</td>
+<td>400</td>
+<td>70</td>
+<td>heart</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>hr_hollow</code></td>
+<td><strong>the Hollow</strong></td>
+<td><strong>Ending</strong></td>
+<td>500</td>
+<td>40</td>
+<td>heart</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>hr_nameless</code></td>
+<td>Nameless's Place</td>
+<td>Nameless Heart</td>
+<td>600</td>
+<td>70</td>
+<td>heart</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connection List</strong></p>
+<table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>channel type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fb_start</code></td>
+<td><code>fb_arch_s</code></td>
+<td>Sand</td>
+<td>South Road</td>
+</tr>
+<tr>
+<td><code>fb_arch_s</code></td>
+<td><code>fb_dune_e</code></td>
+<td>Sand</td>
+<td>East-Dune Road</td>
+</tr>
+<tr>
+<td><code>fb_arch_s</code></td>
+<td><code>fb_dune_w</code></td>
+<td>Sand</td>
+<td>West-Dune Road</td>
+</tr>
+<tr>
+<td><code>fb_dune_e</code></td>
+<td><code>fb_carve_e</code></td>
+<td>Sand</td>
+<td>East-Carving Road</td>
+</tr>
+<tr>
+<td><code>fb_dune_e</code></td>
+<td><code>fb_chest_a</code></td>
+<td>Sand</td>
+<td>Sand Pit</td>
+</tr>
+<tr>
+<td><code>fb_dune_e</code></td>
+<td><code>fb_exit_e</code></td>
+<td>Sand</td>
+<td>East-Exit Road</td>
+</tr>
+<tr>
+<td><code>fb_dune_e</code></td>
+<td><code>fb_opt_wind</code></td>
+<td>Sand</td>
+<td>Wind-Eroded Path</td>
+</tr>
+<tr>
+<td><code>fb_dune_w</code></td>
+<td><code>fb_carve_w</code></td>
+<td>Sand</td>
+<td>West-Carving Road</td>
+</tr>
+<tr>
+<td><code>fb_dune_w</code></td>
+<td><code>fb_hatch_rig</code></td>
+<td>Sand</td>
+<td>Device Road</td>
+</tr>
+<tr>
+<td><code>fb_dune_w</code></td>
+<td><code>fb_exit_w</code></td>
+<td>Sand</td>
+<td>West-Exit Road</td>
+</tr>
+<tr>
+<td><code>fb_dune_w</code></td>
+<td><code>fb_opt_bones</code></td>
+<td>Sand</td>
+<td>Bone-Pile Path</td>
+</tr>
+<tr>
+<td><code>fb_carve_e</code></td>
+<td><code>fb_arch_n</code></td>
+<td>Sand</td>
+<td>North-Arc Road</td>
+</tr>
+<tr>
+<td><code>fb_carve_w</code></td>
+<td><code>fb_arch_n</code></td>
+<td>Sand</td>
+<td>North-Arc Road</td>
+</tr>
+<tr>
+<td><code>fb_carve_w</code></td>
+<td><code>fb_chest_b</code></td>
+<td>Sand</td>
+<td>Under the Carving Base</td>
+</tr>
+<tr>
+<td><code>fb_arch_n</code></td>
+<td><code>fb_ring</code></td>
+<td>Sand</td>
+<td>Statue Road</td>
+</tr>
+<tr>
+<td><code>fb_hatch_rig</code></td>
+<td><code>fb_ring</code></td>
+<td>Sand</td>
+<td>Inner-Ring Road</td>
+</tr>
+<tr>
+<td><code>fb_ring</code></td>
+<td><code>tw_base</code></td>
+<td>Tower Gate</td>
+<td>Tower Gate (requires the first ember)</td>
+</tr>
+<tr>
+<td><code>tw_base</code></td>
+<td><code>tw_eyrie</code></td>
+<td>Spiral Stair</td>
+<td>Lower Stair</td>
+</tr>
+<tr>
+<td><code>tw_eyrie</code></td>
+<td><code>tw_stair</code></td>
+<td>Spiral Stair</td>
+<td>Middle Stair</td>
+</tr>
+<tr>
+<td><code>tw_stair</code></td>
+<td><code>tw_top</code></td>
+<td>Endless Stair</td>
+<td>Upper Stair (those without the ember return to <code>tw_eyrie</code> when ascending)</td>
+</tr>
+<tr>
+<td><code>tw_top</code></td>
+<td><code>hr_rift</code></td>
+<td>Rift</td>
+<td>Sky-Rift</td>
+</tr>
+<tr>
+<td><code>hr_rift</code></td>
+<td><code>hr_maw</code></td>
+<td>Directionless</td>
+<td>Mouth Plain</td>
+</tr>
+<tr>
+<td><code>hr_rift</code></td>
+<td><code>hr_nameless</code></td>
+<td>Directionless</td>
+<td>Side</td>
+</tr>
+<tr>
+<td><code>hr_maw</code></td>
+<td><code>hr_hollow</code></td>
+<td>Directionless</td>
+<td>Center</td>
+</tr>
+<tr>
+<td><code>hr_nameless</code></td>
+<td><code>hr_hollow</code></td>
+<td>Directionless</td>
+<td>Center</td>
+</tr>
+<tr>
+<td><code>ember_vein</code></td>
+<td><code>hr_hollow</code></td>
+<td>Umbilical</td>
+<td>Impassable; fire can be carried</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Encounter Setup</h2>
+<p><strong>Main Killer</strong>: Legion (LGN). Avatar Menace Value (AVM) +1 (N≥3) / −1 (N=1). Challenge Rating (CR) = Prestige (PRS) + AVM; this scenario's Prestige (PRS) is 18–20, so Challenge Rating (CR) 19–21 (17–19 at N=1). Occupies 60% of the Encounter Budget (EB). Feature: Frenzy continuous charge, inflicts Deep Wound on hit, and continuously drains while not moving — "stopping means death." In Act Three the Entity Proper is a boss-tier non-traditional fight (one check + one collective declaration).</p>
+<p><strong>Encounter Budget (EB)</strong> (Difficulty Modifier (DM) = 1.3, Prestige (PRS) midpoint 19):</p>
+<table>
+<thead>
+<tr>
+<th>Players N</th>
+<th>Encounter Budget (EB)</th>
+<th>Killer share (60%)</th>
+<th>Construct available (40%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>27</td>
+<td>16.2</td>
+<td>10.8</td>
+</tr>
+<tr>
+<td>2</td>
+<td>55</td>
+<td>33.0</td>
+<td>22.0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>82</td>
+<td>49.2</td>
+<td>32.8</td>
+</tr>
+<tr>
+<td>4</td>
+<td>109</td>
+<td>65.4</td>
+<td>43.6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Realm Construct</strong>: Tower Warden = Bonefield Statue (RC-09, Challenge Rating (CR) 6, Hit Points (HP) 34, attack modifier +5, Defense Difficulty Class (DC) 13, Encounter Budget Cost (EBC) 12, guardian type, <strong>true damage ✓</strong>). A Statue-Ring construct that only attacks those who carry no ember.</p>
+<p><strong>Encounter List</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Type</th>
+<th>Content</th>
+<th>Challenge Rating (CR) / Difficulty</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>Planning</td>
+<td>Act One plan-making</td>
+<td>No check</td>
+<td>GM lays out the conditions</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Chase</td>
+<td>Legion (LGN) continuous charge + Deep Wound</td>
+<td>Legendary (19–21)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Realm Construct</td>
+<td>Tower Warden = Bonefield Statue (RC-09) × N</td>
+<td>High (6)</td>
+<td>Encounter Budget Cost (EBC) 12 / each</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Environment</td>
+<td>Endless Stair (those without the ember cannot ascend)</td>
+<td>Extreme</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Chase</td>
+<td>Final chase at the Tower Top</td>
+<td>Legendary</td>
+<td>Pure speed / Action Point (AP)</td>
+</tr>
+<tr>
+<td>E6</td>
+<td><strong>Boss</strong></td>
+<td>Contact with the Entity Proper (one check + collective declaration)</td>
+<td>Legendary</td>
+<td>Non-traditional fight</td>
+</tr>
+<tr>
+<td>E7</td>
+<td>Choice</td>
+<td>Three endings</td>
+<td>No check</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Rule flip (the GM must state clearly in Act One)</strong>: ① Generator = igniter (Ember Vein charge +1); ② exit gates open but are a trap (= choosing "Ember"); ③ those without the ember return to the lower level when ascending the Endless Stair; ④ crows lead those who carry an ember.</p>
+<hr />
+<h2>6. NPC Appearances and Lines</h2>
+<p><strong>Ari the Mirror-Bearer (§8-D)</strong>: provides the Lone Tower path but does not participate, only records. The player may call him on this.</p>
+<p><strong>Eloise Finch (§8-A)</strong>: walks with the player to the very end. In the <strong>Ember</strong> ending she hands over iron sheet and nails: "This time, remember to carve."</p>
+<p><strong>Fane the Gleaner (§8-D)</strong>: provides the Hatch prototype modified into a "Reverse Conduit."</p>
+<p><strong>Gilmar Sato (§8-A)</strong>: if rescued in S5, in Act Three he remembers the player's name (the first time he says it right across eight scenarios).</p>
+<p><strong>Hilda / The Silent One (SIL) (§8-A)</strong>: friend or foe, per the S6 choice.</p>
+<p><strong>The "Nameless" (§8-D)</strong>: appears at the Ember Moment (the looking-back posture).</p>
+<hr />
+<h2>7. Decision Points and Branch Outcomes</h2>
+<p><strong>Core decision (Act One, made by the player)</strong>: ① which path to take (Tower / Umbilical / both); ② who gets Hooked (someone must contact the Entity at the moment it acts); ③ which ending to choose.</p>
+<p><strong>Act Three ending divergence</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Ending</th>
+<th>Trigger</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Conflagration</strong></td>
+<td>Execute ignition; fire tier reaches threshold</td>
+<td>Fire burns into the Entity; the Realms collapse (see fire tiers)</td>
+</tr>
+<tr>
+<td><strong>Takeover</strong></td>
+<td>Enter the hole (<strong>requires the S6 "Don't interrupt" choice for process knowledge</strong>)</td>
+<td>The player becomes the new Entity, writing the first rule: "no more hooks"</td>
+</tr>
+<tr>
+<td><strong>Ember</strong></td>
+<td>Open an exit gate and escape in Act Two, or do not ignite in Act Three</td>
+<td>Return to the campfire; the fire is a little bigger; the cycle continues</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ignition steps (Conflagration)</strong>: ① the hooked one takes the ember; ② press into the Entity's hand (Will (WIL) check, Difficulty Class (DC) Legendary; may spend Hope Points (HOP) to lower the tier, 2 points per tier down); ③ fire spreads automatically; ④ the remaining players contribute Hope Points (HOP) and Memory Cards (each 1 HOP = 1 fire tier, each Memory Card = 3 fire tiers); ⑤ Campfire Ember surges up from the Umbilical (= accumulated total); ⑥ compare against the Conflagration threshold table.</p>
+<hr />
+<h2>8. Player-Count Scaling Table</h2>
+<blockquote>
+<p>The solo configuration (1 Player + 1 GM) is the default. Locker count = 4 + N; Chest count = MAX(2, N+1). The Conflagration threshold uses ruling A: 1 player ×0.68 / 2 players ×0.83 / 3–4 players ×1.0.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>1 Player</th>
+<th>2 Players</th>
+<th>3 Players</th>
+<th>4 Players</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generator total (= Ember Vein charge cap)</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>Charge to complete</strong></td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Killer Pressure level</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Echo Companion count</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Tower Warden (RC-09) count</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Hook count (bonefield)</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Chest count</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Locker count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hook phase round limit</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Endgame Collapse rounds</td>
+<td>12</td>
+<td>10</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Statue count (can eulogize)</strong></td>
+<td><strong>12</strong></td>
+<td>12</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>Endless Stair challenge rounds</strong></td>
+<td><strong>5</strong></td>
+<td>6</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td><strong>Entity Contact Difficulty Class (DC)</strong></td>
+<td><strong>Extreme</strong></td>
+<td>Extreme</td>
+<td>Legendary</td>
+<td>Legendary</td>
+</tr>
+<tr>
+<td>Completion reward · Blood Point (BP)</td>
+<td>×1.25</td>
+<td>×1.15</td>
+<td>×1.05</td>
+<td>×1.0</td>
+</tr>
+<tr>
+<td>Effective Repair Force (ERF)</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Per-round Pressure (PRE) recovery</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Hook self-rescue Difficulty Class (DC)</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Exit-gate opening segments</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Pallet count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Window count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hatch opening condition</td>
+<td>Generators completed ≥ 1 and all Echo Companions down</td>
+<td>Living players = 1, or completed ≥ 2 and living players ≤ 1</td>
+<td>Living players = 1, or completed ≥ 3 and living players ≤ 1</td>
+<td>Living players = 1, or completed ≥ 4 and living players ≤ 2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>S8 Conflagration-threshold player-count adjustment (overrides the §4–6 baseline table; ruling A finalized)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Fire tier</th>
+<th>1 Player</th>
+<th>2 Players</th>
+<th>3 Players</th>
+<th>4 Players</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crippled Conflagration</td>
+<td>17</td>
+<td>21</td>
+<td>25</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Full Conflagration</td>
+<td>27</td>
+<td>33</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Blazing Conflagration</td>
+<td>41</td>
+<td>50</td>
+<td>60</td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Ending Branches and Rewards</h2>
+<p><strong>Ending branch (choose one of three)</strong>:</p>
+<ul>
+<li><strong>Conflagration</strong>: three tiers by fire level —</li>
+<li>Crippled (Campfire Ember reaches the Crippled threshold in the §9 player-count table; solo 17): the Entity is heavily wounded, most Realms collapse, half the players return to reality and half remain in the residual fog (players decide who stays), with seepage hints suggesting a return.</li>
+<li>Full (reaches the Full threshold; solo 27): all Realms collapse, all players return to reality, with incomplete memories (remember "there was something important" but cannot say what).</li>
+<li>Blazing (reaches the Blazing threshold; solo 41): in addition to the above, may specify one character who fell into the Void / was Reforged to bring back as well (Gilmar / Hilda / a sacrificed Echo / any player character), waking in some street in reality holding something warm.</li>
+<li><strong>Takeover</strong>: requires the S6 "Don't interrupt" knowledge. The player becomes the new Entity, writing "no more hooks" — opens a "you write the rules" variant campaign.</li>
+<li><strong>Ember</strong>: escape or do not ignite. Return to the campfire, the fire a little bigger, the cycle continues — a new player character wakes, the old player becomes an NPC guide.</li>
+</ul>
+<p><strong>Rewards</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blood Point (BP)</td>
+<td>Standard × (per player-count table)</td>
+</tr>
+<tr>
+<td>Prestige (PRS)</td>
+<td><strong>Level 20 (capstone)</strong></td>
+</tr>
+<tr>
+<td>Narrative</td>
+<td>One of the three endings</td>
+</tr>
+<tr>
+<td><strong>Campaign complete</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Sequel hook</strong></td>
+<td>"Ember" continues into a new campaign (old character becomes an NPC); "Takeover" opens a variant campaign; "Conflagration" opens a modern-metropolis sequel (seepage investigation)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ember Moment trigger text</strong> (always triggers, regardless of ending):</p>
+<blockquote>
+<p>In the Nameless Heart you see a human shape, very faint, standing at the edge of that hole. His back is to you. His posture is the looking-back posture. He has stood there for who knows how long.
+You recognize him. Not by his face — you recognize the <strong>posture</strong>.
+It is the posture of the twelve statues at the Forsaken Boneyard's Tower Base. It is the posture of the skeleton by the Ember Niche. It is the posture of everyone who stopped at a doorway and looked back.
+He is not one person. He is <strong>everyone</strong>.
+The first ember was not dropped by him. It was dropped by them. Every one. Including you.</p>
+</blockquote>
+<hr />
+<h2>10. Connections to Adjacent Scenarios</h2>
+<ul>
+<li><strong>Forward (S1–S7)</strong>: all foreshadowing pays off — S1 Eloise's "don't go save them" truth, S3 Fog Cellar "recognize yourself," S4 campfire built from embers, S5 Void instinct isolation, S6 the Entity's clumsy system, S7 the Umbilical and the Ember Vein. The first ember (The First Ember), "Follow the Ember," and "Call Out the Name" are all used here.</li>
+<li><strong>Campaign termination</strong>: the three endings determine the sequel direction (see rewards "Sequel hook").</li>
+<li><strong>Foreshadowing payoff points (ending feedback)</strong>: ① the 12 statues of the Statue Ring = the Nameless's posture (S7 Ember Niche skeleton, S8 Nameless); ② Mother's Hearth / campfire → "the fire needs someone to feed it" (Ember ending); ③ the Mirror-Bearer "only records, does not participate" → the player becomes the new recorder (Takeover ending).</li>
+</ul><p><a href="../../assets/r33_en/scenarios/s08_無名之心.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

@@ -1,0 +1,473 @@
+# S8 · The Nameless Heart (structured data, for the AI GM engine to read)
+id: S8
+title: The Nameless Heart
+realm: Forsaken Boneyard (R8) → Lone Tower → The Nameless Heart
+recommended_prs: "18-20"
+duration_min: 360
+summary: >-
+  Capstone scenario. S8 is not a harder Trial — it is a rule flip: the Generator is an igniter, being Hooked is the only way to contact the Entity (The Entity) Proper, escape is surrender, and Hope Points (HOP) are ammunition. Act One plans at the campfire (the only time in the whole campaign the "player is in charge"). Act Two is the Forsaken Boneyard trial + tower climb. Act Three passes through the Sky-Rift to reach the Nameless Heart — the Entity Core. The player chooses one of three endings: Conflagration / Takeover / Ember. The GM must clearly tell the player in Act One that the rules are flipped (empowerment, not a surprise).
+
+nodes:
+  - id: fb_start
+    label: Starting Mist Mouth
+    type: Entrance
+    x: 500
+    y: 950
+    region: boneyard
+    explored: true
+  - id: fb_arch_s
+    label: South Arch
+    type: Landmark
+    x: 500
+    y: 850
+    region: boneyard
+    explored: true
+  - id: fb_dune_e
+    label: East Dune
+    type: Open
+    x: 760
+    y: 760
+    region: boneyard
+    explored: true
+  - id: fb_dune_w
+    label: West Dune
+    type: Open
+    x: 240
+    y: 760
+    region: boneyard
+    explored: true
+  - id: fb_carve_e
+    label: East Carvings
+    type: Cover Zone
+    x: 830
+    y: 570
+    region: boneyard
+    explored: false
+  - id: fb_carve_w
+    label: West Carvings
+    type: Cover Zone
+    x: 170
+    y: 570
+    region: boneyard
+    explored: false
+  - id: fb_arch_n
+    label: North Arch
+    type: Landmark
+    x: 500
+    y: 700
+    region: boneyard
+    explored: false
+  - id: fb_ring
+    label: Statue Ring
+    type: Key
+    x: 500
+    y: 570
+    region: boneyard
+    explored: false
+  - id: fb_chest_a
+    label: Under-Sand Chest
+    type: Chest
+    x: 700
+    y: 660
+    region: boneyard
+    explored: false
+  - id: fb_chest_b
+    label: Carving-Base Chest
+    type: Chest
+    x: 300
+    y: 480
+    region: boneyard
+    explored: false
+  - id: fb_hatch_rig
+    label: Fane's Device
+    type: Special
+    x: 350
+    y: 660
+    region: boneyard
+    explored: true
+  - id: fb_exit_e
+    label: East Exit Gate
+    type: Exit
+    x: 930
+    y: 830
+    region: boneyard
+    explored: false
+  - id: fb_exit_w
+    label: West Exit Gate
+    type: Exit
+    x: 70
+    y: 830
+    region: boneyard
+    explored: false
+  - id: fb_opt_wind
+    label: Wind-Eroded Cave
+    type: Optional
+    x: 890
+    y: 700
+    region: boneyard
+    explored: false
+  - id: fb_opt_bones
+    label: Bone Pile
+    type: Optional
+    x: 110
+    y: 700
+    region: boneyard
+    explored: false
+  - id: tw_base
+    label: Tower Base
+    type: Lone Tower
+    x: 500
+    y: 470
+    region: tower
+    explored: false
+  - id: tw_eyrie
+    label: Crow's Nest Ring
+    type: Lone Tower
+    x: 500
+    y: 370
+    region: tower
+    explored: false
+  - id: tw_stair
+    label: Endless Stair
+    type: Lone Tower
+    x: 500
+    y: 270
+    region: tower
+    explored: false
+  - id: tw_top
+    label: Tower Top
+    type: Lone Tower
+    x: 500
+    y: 180
+    region: tower
+    explored: false
+  - id: hr_rift
+    label: Sky-Rift
+    type: Nameless Heart
+    x: 500
+    y: 120
+    region: heart
+    explored: false
+  - id: hr_maw
+    label: Mouth Plain
+    type: Nameless Heart
+    x: 400
+    y: 70
+    region: heart
+    explored: false
+  - id: hr_hollow
+    label: the Hollow
+    type: Ending
+    x: 500
+    y: 40
+    region: heart
+    explored: false
+  - id: hr_nameless
+    label: Nameless's Place
+    type: Nameless Heart
+    x: 600
+    y: 70
+    region: heart
+    explored: false
+
+edges:
+  - from: fb_start
+    to: fb_arch_s
+    channel_type: Sand
+    name: South Road
+  - from: fb_arch_s
+    to: fb_dune_e
+    channel_type: Sand
+    name: East-Dune Road
+  - from: fb_arch_s
+    to: fb_dune_w
+    channel_type: Sand
+    name: West-Dune Road
+  - from: fb_dune_e
+    to: fb_carve_e
+    channel_type: Sand
+    name: East-Carving Road
+  - from: fb_dune_e
+    to: fb_chest_a
+    channel_type: Sand
+    name: Sand Pit
+  - from: fb_dune_e
+    to: fb_exit_e
+    channel_type: Sand
+    name: East-Exit Road
+  - from: fb_dune_e
+    to: fb_opt_wind
+    channel_type: Sand
+    name: Wind-Eroded Path
+  - from: fb_dune_w
+    to: fb_carve_w
+    channel_type: Sand
+    name: West-Carving Road
+  - from: fb_dune_w
+    to: fb_hatch_rig
+    channel_type: Sand
+    name: Device Road
+  - from: fb_dune_w
+    to: fb_exit_w
+    channel_type: Sand
+    name: West-Exit Road
+  - from: fb_dune_w
+    to: fb_opt_bones
+    channel_type: Sand
+    name: Bone-Pile Path
+  - from: fb_carve_e
+    to: fb_arch_n
+    channel_type: Sand
+    name: North-Arc Road
+  - from: fb_carve_w
+    to: fb_arch_n
+    channel_type: Sand
+    name: North-Arc Road
+  - from: fb_carve_w
+    to: fb_chest_b
+    channel_type: Sand
+    name: Under the Carving Base
+  - from: fb_arch_n
+    to: fb_ring
+    channel_type: Sand
+    name: Statue Road
+  - from: fb_hatch_rig
+    to: fb_ring
+    channel_type: Sand
+    name: Inner-Ring Road
+  - from: fb_ring
+    to: tw_base
+    channel_type: Tower Gate
+    name: Tower Gate (requires the first ember)
+  - from: tw_base
+    to: tw_eyrie
+    channel_type: Spiral Stair
+    name: Lower Stair
+  - from: tw_eyrie
+    to: tw_stair
+    channel_type: Spiral Stair
+    name: Middle Stair
+  - from: tw_stair
+    to: tw_top
+    channel_type: Endless Stair
+    name: Upper Stair (those without the ember return to tw_eyrie when ascending)
+  - from: tw_top
+    to: hr_rift
+    channel_type: Rift
+    name: Sky-Rift
+  - from: hr_rift
+    to: hr_maw
+    channel_type: Directionless
+    name: Mouth Plain
+  - from: hr_rift
+    to: hr_nameless
+    channel_type: Directionless
+    name: Side
+  - from: hr_maw
+    to: hr_hollow
+    channel_type: Directionless
+    name: Center
+  - from: hr_nameless
+    to: hr_hollow
+    channel_type: Directionless
+    name: Center
+  - from: ember_vein
+    to: hr_hollow
+    channel_type: Umbilical
+    name: Impassable; fire can be carried
+
+encounters:
+  - id: E1
+    type: Planning
+    content: Act One plan-making
+    cr: No check
+    note: GM lays out the conditions
+  - id: E2
+    type: Chase
+    content: Legion (LGN) continuous charge + Deep Wound
+    cr: Legendary (CR 19-21)
+    note: "-"
+  - id: E3
+    type: Realm Construct
+    content: Tower Warden = Bonefield Statue (RC-09) × N
+    cr: High (CR 6)
+    note: EBC 12 / each, guardian type, true damage ✓
+  - id: E4
+    type: Environment
+    content: Endless Stair (those without the ember cannot ascend)
+    cr: Extreme
+    note: "-"
+  - id: E5
+    type: Chase
+    content: Final chase at the Tower Top
+    cr: Legendary
+    note: Pure speed / Action Point (AP)
+  - id: E6
+    type: Boss
+    content: Contact with the Entity Proper (one check + collective declaration)
+    cr: Legendary
+    note: Non-traditional fight
+  - id: E7
+    type: Choice
+    content: Three endings
+    cr: No check
+    note: "-"
+
+npcs:
+  - name: Ari the Mirror-Bearer
+    role: Recorder (§8-D)
+    lines:
+      - "The Entity acts in person when a hook is involved. That is its only exposed moment."
+  - name: Eloise Finch
+    role: Campfire recorder (§8-A)
+    lines:
+      - "In the Ember ending hands over iron sheet and nails: 'This time, remember to carve.'"
+  - name: Fane the Gleaner
+    role: Hidden-room master (§8-D)
+    lines:
+      - "Provides the Hatch prototype modified into a 'Reverse Conduit'"
+  - name: Gilmar Sato
+    role: Campfire companion (§8-A)
+    lines:
+      - "If rescued in S5, in Act Three remembers the player's name (first time correct across eight scenarios)"
+  - name: Hilda / The Silent One (SIL)
+    role: Friend or foe per the S6 choice (§8-A)
+    lines:
+      - "Friend or foe depends on the S6 core decision"
+  - name: Nameless
+    role: First survivor (§8-D)
+    lines:
+      - "Appears at the Ember Moment (looking-back posture)"
+
+choices:
+  - id: C1
+    question: Core decision of Act One (made by the player)
+    options:
+      - desc: Which path to take (Tower / Umbilical / both)
+        effect: Path planning
+      - desc: Who gets Hooked (someone must contact the Entity at the moment it acts)
+        effect: Contact executor
+      - desc: Which ending to choose
+        effect: Conflagration / Takeover / Ember
+  - id: C2
+    question: Act Three ending divergence
+    options:
+      - desc: Conflagration
+        effect: Execute ignition; fire tier reaches threshold → fire burns into the Entity; the Realms collapse (see fire tiers)
+      - desc: Takeover
+        effect: Enter the hole (requires the S6 "Don't interrupt" choice for process knowledge) → the player becomes the new Entity
+      - desc: Ember
+        effect: Open an exit gate and escape in Act Two, or do not ignite in Act Three → return to the campfire; the fire is a little bigger; the cycle continues
+
+endings:
+  - type: One of three endings
+    condition: Depends on the Act One choice and Act Three execution
+    ember_moment: Always triggers (regardless of ending)
+
+rewards:
+  bp: Standard × (per player-count table)
+  prs_gain: Level 20 (capstone)
+  narrative: One of the three endings
+  campaign_complete: Campaign complete
+  sequel_hook: Ember continues into a new campaign (old character becomes an NPC); Takeover opens a variant campaign; Conflagration opens a modern-metropolis sequel (seepage investigation)
+
+player_count_scaling:
+  n1:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 8
+    echo_companions: 2
+    tower_wardens_RC09: 4
+    hooks: 5
+    chests: 4
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    stone_statues: 12
+    endless_stair_challenge: 5
+    entity_contact_dc: Extreme
+    bp_multiplier: 1.25
+  n2:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 8
+    echo_companions: 2
+    tower_wardens_RC09: 4
+    hooks: 6
+    chests: 4
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    stone_statues: 12
+    endless_stair_challenge: 6
+    entity_contact_dc: Extreme
+    bp_multiplier: 1.15
+  n3:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 8
+    echo_companions: 1
+    tower_wardens_RC09: 5
+    hooks: 7
+    chests: 5
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    stone_statues: 12
+    endless_stair_challenge: 6
+    entity_contact_dc: Legendary
+    bp_multiplier: 1.05
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 9
+    echo_companions: 1
+    tower_wardens_RC09: 6
+    hooks: 9
+    chests: 5
+    lockers: 8
+    hook_phase_limit: 3
+    endgame_collapse: 4
+    stone_statues: 12
+    endless_stair_challenge: 7
+    entity_contact_dc: Legendary
+    bp_multiplier: 1.0
+
+conflagration_threshold:
+  note: S8 Conflagration-threshold player-count adjustment (overrides the §4-6 baseline table; ruling A finalized); factors 1 player ×0.68 / 2 players ×0.83 / 3-4 players ×1.0
+  残缺燎原:
+    n1: 17
+    n2: 21
+    n3: 25
+    n4: 25
+  完整燎原:
+    n1: 27
+    n2: 33
+    n3: 40
+    n4: 40
+  极燃燎原:
+    n1: 41
+    n2: 50
+    n3: 60
+    n4: 60
+
+encounter_budget:
+  dm: 1.3
+  prs_mid: 19
+  eb:
+    n1: 27
+    n2: 55
+    n3: 82
+    n4: 109
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: Legion (LGN)
+  killer_avm: "+1 (N≥3) / -1 (N=1)"
+  killer_cr: "PRS + AVM (CR 19-21; 17-19 at N=1)"
+  third_act: The Entity Proper is a boss-tier non-traditional fight (one check + one collective declaration)
+  construct_RC09: Bonefield Statue (RC-09) CR6 / HP34 / attack +5 / DC13 / EBC12 / true damage ✓
+  rule_flip:
+    - Generator = igniter (Ember Vein charge +1)
+    - Exit gates open but are a trap (= choosing "Ember")
+    - Those without the ember return to the lower level when ascending the Endless Stair
+    - Crows lead those who carry an ember

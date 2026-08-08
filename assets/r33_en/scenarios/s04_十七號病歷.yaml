@@ -1,0 +1,411 @@
+# S4 · Patient Seventeen's Chart (structured data for the AI GM engine)
+id: S4
+title: Patient Seventeen's Chart
+realm: Crotus Prenn Asylum (R4)
+recommended_prs: "7-10"
+duration_min: 240
+summary: >-
+  The main-story turning point. The player sees for the first time the trace "Altruistic Hope" leaves at the system level — helping an Afterimage finish what it left undone spits out memory, and all those memory shards roll in the same direction: the Campfire. Nurse (NRS) can Blink through walls; fully enclosed with very short line of sight, the most claustrophobic round. The records room is the only single-exit combat map (death trap). Pivotal revelation: the Campfire is made of Ember, and Ember is born of Altruistic Hope. The GM should not explain; let the player say "so the Campfire is…" themselves.
+
+nodes:
+  - id: cp_start
+    label: Starting Mist Mouth
+    type: Entrance
+    x: 500
+    y: 930
+    region: ward
+    explored: true
+  - id: cp_lobby
+    label: Charred Foyer
+    type: Hub
+    x: 500
+    y: 820
+    region: ward
+    explored: true
+  - id: cp_ward_1f
+    label: Disturbed Ward · First Floor
+    type: Main Zone
+    x: 340
+    y: 700
+    region: ward
+    explored: true
+  - id: cp_ward_2f
+    label: Disturbed Ward · Second Floor
+    type: Main Zone
+    x: 280
+    y: 570
+    region: ward
+    explored: false
+  - id: cp_ward_3f
+    label: Disturbed Ward · Third Floor
+    type: Main Zone
+    x: 220
+    y: 440
+    region: ward
+    explored: false
+  - id: cp_atrium
+    label: Atrium
+    type: Special
+    x: 400
+    y: 570
+    region: ward
+    explored: false
+  - id: cp_ect
+    label: Electrotherapy Room
+    type: Room / Afterimage
+    x: 180
+    y: 700
+    region: ward
+    explored: false
+  - id: cp_corridor_e
+    label: East Long Corridor
+    type: Passage
+    x: 660
+    y: 700
+    region: chapel
+    explored: false
+  - id: cp_chapel
+    label: Father Campbell's Chapel
+    type: Main Zone
+    x: 780
+    y: 570
+    region: chapel
+    explored: false
+  - id: cp_pulpit
+    label: Pulpit Hidden Door
+    type: Special
+    x: 860
+    y: 470
+    region: chapel
+    explored: false
+  - id: cp_corridor_n
+    label: North Long Corridor
+    type: Passage
+    x: 500
+    y: 470
+    region: records
+    explored: false
+  - id: cp_records
+    label: Records Room
+    type: Key
+    x: 500
+    y: 330
+    region: records
+    explored: false
+  - id: cp_door17
+    label: Where Seventeen Stands
+    type: Afterimage
+    x: 500
+    y: 410
+    region: records
+    explored: false
+  - id: cp_chest_a
+    label: Medicine Cabinet
+    type: Chest
+    x: 340
+    y: 400
+    region: records
+    explored: false
+  - id: cp_chest_b
+    label: Priest's Chest
+    type: Chest
+    x: 830
+    y: 660
+    region: chapel
+    explored: false
+  - id: cp_crack
+    label: Outer-Wall Crack
+    type: Special
+    x: 620
+    y: 250
+    region: records
+    explored: false
+  - id: cp_exit_w
+    label: West Exit Gate
+    type: Exit
+    x: 110
+    y: 300
+    region: ward
+    explored: false
+  - id: cp_exit_e
+    label: East Exit Gate
+    type: Exit
+    x: 900
+    y: 830
+    region: chapel
+    explored: false
+  - id: cp_opt_morgue
+    label: Morgue
+    type: Optional
+    x: 640
+    y: 880
+    region: ward
+    explored: false
+  - id: cp_opt_bell
+    label: Bell Tower
+    type: Optional
+    x: 890
+    y: 380
+    region: chapel
+    explored: false
+
+edges:
+  - from: cp_start
+    to: cp_lobby
+    channel_type: Interior
+    name: Charred Vestibule
+  - from: cp_lobby
+    to: cp_ward_1f
+    channel_type: Interior Door
+    name: Ward Door
+  - from: cp_lobby
+    to: cp_corridor_e
+    channel_type: Interior
+    name: East Corridor Mouth
+  - from: cp_lobby
+    to: cp_opt_morgue
+    channel_type: Descending Ladder
+    name: Underground Ladder
+  - from: cp_ward_1f
+    to: cp_ward_2f
+    channel_type: Stairs
+    name: Ward Stairs
+  - from: cp_ward_1f
+    to: cp_ect
+    channel_type: Interior Door
+    name: Electrotherapy Door
+  - from: cp_ward_1f
+    to: cp_atrium
+    channel_type: Opening
+    name: Atrium Floor
+  - from: cp_ward_2f
+    to: cp_ward_3f
+    channel_type: Stairs
+    name: Ward Stairs
+  - from: cp_ward_2f
+    to: cp_atrium
+    channel_type: Window
+    name: Atrium Railing (jump down to first floor, Injured)
+  - from: cp_ward_2f
+    to: cp_corridor_n
+    channel_type: Interior
+    name: North Corridor Mouth
+  - from: cp_ward_3f
+    to: cp_exit_w
+    channel_type: Interior
+    name: West Escape Stairs
+  - from: cp_ward_3f
+    to: cp_atrium
+    channel_type: Jump Down (one-way)
+    name: Third-Floor Railing (Dying)
+  - from: cp_corridor_e
+    to: cp_chapel
+    channel_type: Interior Door
+    name: Chapel Door
+  - from: cp_corridor_e
+    to: cp_exit_e
+    channel_type: Interior
+    name: East Exit
+  - from: cp_chapel
+    to: cp_pulpit
+    channel_type: Hidden Door
+    name: Behind the Pulpit
+  - from: cp_chapel
+    to: cp_chest_b
+    channel_type: Interior
+    name: Vestry
+  - from: cp_chapel
+    to: cp_opt_bell
+    channel_type: Stairs
+    name: Bell-Tower Stairs
+  - from: cp_pulpit
+    to: cp_corridor_n
+    channel_type: Secret Passage
+    name: The Priest's Path
+  - from: cp_corridor_n
+    to: cp_door17
+    channel_type: Interior
+    name: Records-Room Antechamber
+  - from: cp_corridor_n
+    to: cp_chest_a
+    channel_type: Interior
+    name: Medicine Room
+  - from: cp_door17
+    to: cp_records
+    channel_type: Single Door
+    name: Records-Room Door (only entrance/exit)
+  - from: cp_records
+    to: cp_crack
+    channel_type: Breach
+    name: Outer-Wall Crack (passable after Act Three)
+  - from: cp_crack
+    to: cp_exit_e
+    channel_type: Outdoor
+    name: By the Outer Wall
+
+encounters:
+  - id: E1
+    type: Chase
+    content: Nurse's (NRS) Blink (through walls)
+    cr: High (CR 10-13)
+    note: Tutorial: walls are no longer cover
+  - id: E2
+    type: Puzzle
+    content: Five Afterimages' unfinished business
+    cr: Medium-Hard
+    note: +2 Hope Point (HOP) per completion
+  - id: E3
+    type: Realm Construct
+    content: Ash-Throat = Ward Afterimage (RC-05) × N
+    cr: Medium (CR 4)
+    note: EBC 8 each, narrative-puzzle type
+  - id: E4
+    type: Environment
+    content: Atrium (third floor can drop / first floor can see third floor)
+    cr: Medium
+    note: "-"
+  - id: E5
+    type: Chase
+    content: Records-room enclosed encounter (single exit, Nurse at door)
+    cr: Extreme
+    note: Death trap
+  - id: E6
+    type: Endgame
+    content: Exit Gate or Hatch
+    cr: High
+    note: "-"
+
+npcs:
+  - name: Seventeen (No. 17)
+    role: Afterimage (§8-D)
+    lines:
+      - "Stands motionless at the records-room door, accepts no help; after the chart is read aloud she turns, pulls out her sister's chart, places it in the player's hands, then dissolves"
+  - name: Sally Nkosi
+    role: Botanist-type Survivor (§8-A)
+    lines:
+      - "If she plucked the wrong pod in S3, here she 'recognizes Seventeen's face' but can't say why"
+  - name: Whisperer · the Chart Number (RC-02 variant)
+    role: Intelligence-type construct (EBC 0)
+    lines:
+      - "A number is only a number. A person is not. The one you ask about was never of this place."
+  - name: Echo Companion · the Lace-Tier
+    role: Solo configuration (§8-B)
+    lines:
+      - "Two parts of the same person as the Afterimage 'the Lace-Tier'; if the player completes both, an extra +3 Campfire Ember"
+
+choices:
+  - id: C1
+    question: Help the Afterimages finish their unfinished business?
+    options:
+      - desc: Each one completed
+        effect: "+2 Hope Point (HOP), +2 Campfire Ember, spit out memory (possibly someone else's)"
+      - desc: Complete 3+ and read Seventeen's chart aloud
+        effect: Trigger the Ember Moment and the pivotal revelation
+  - id: C2
+    question: Enter the records room (death trap)?
+    options:
+      - desc: Enter
+        effect: The only exit is blocked by the Nurse at the door; must escape via the outer-wall crack (cp_crack) after Act Three; pivotal revelation + Memory Card
+      - desc: Do not enter
+        effect: Main story cannot advance; only pure escape
+
+endings:
+  - type: Linear (whether the pivotal revelation triggers)
+    condition: Depends on Decisions One / Two
+    ember_moment: Triggers when 3+ Afterimages completed and Seventeen's chart is read aloud
+
+rewards:
+  bp: Standard × (per player-count table)
+  prs_gain: Rises to level 10 upon completion
+  hop: "+3"
+  campfire_ember: Accrued during play (est. 8-14)
+  memory_card: 1-2
+  item: 1 uncommon item + 1 Add-on per person
+  narrative: Confirmed: the Campfire is made of Ember, and Ember is born of Altruistic Hope
+  new_ability: Afterimage Dialogue — from now on the player may attempt to communicate with Afterimages in any Realm (spend 1 Action Point (AP) + Stealth (STL) or Will (WIL) check)
+
+player_count_scaling:
+  n1:
+    generators_total: 5
+    generators_required: 3
+    killer_pressure: 4
+    echo_companions: 2
+    haunts: 6
+    grey_throats_RC05: 2
+    hooks: 5
+    chests: 3
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    records_blink_cooldown: 3
+    bp_multiplier: 1.15
+    hop_reward: 3
+    memory_cards: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 4
+    killer_pressure: 4
+    echo_companions: 1
+    haunts: 5
+    grey_throats_RC05: 3
+    hooks: 6
+    chests: 3
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    records_blink_cooldown: 2
+    bp_multiplier: 1.05
+    hop_reward: 3
+    memory_cards: 2
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 4
+    echo_companions: 0
+    haunts: 5
+    grey_throats_RC05: 3
+    hooks: 7
+    chests: 4
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    records_blink_cooldown: 2
+    bp_multiplier: 1.0
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 5
+    echo_companions: 0
+    haunts: 5
+    grey_throats_RC05: 4
+    hooks: 9
+    chests: 4
+    lockers: 8
+    hook_phase_limit: 3
+    endgame_collapse: 4
+    records_blink_cooldown: 2
+    bp_multiplier: 1.0
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.1
+  prs_mid: 8
+  eb:
+    n1: 11
+    n2: 22
+    n3: 33
+    n4: 44
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: Nurse (NRS)
+  killer_avm: 3
+  killer_cr: "PRS + 3 (CR 10-13)"
+  note_solo: Blink Charge cap fixed at 2, and the GM must give the player an extra 1 Hope Point (HOP) as opening compensation
+  construct_RC05: Ward Afterimage (RC-05) CR4 / HP26 / attack +4 / DC12 / EBC8

@@ -1,0 +1,37 @@
+name: 劇本9 裂隙現世
+description: CL50–65 終局章第一幕，承接劇本8 魔王城崩塌後的異界入侵。守住世界錨點阻擋裂隙擴張，再於裂隙前線深處打倒虛界哨戒（CR65 小首領）。設計挑戰等級（CR）≈隊伍總等級×0.6。採做法 A：一套劇本＋人數調整。
+difficulty: 極難
+level_range: [50, 65]
+chapter: 9
+map_ref: 地圖/劇本9_戰鬥_虛界哨戒.yaml
+initial_map: 地圖/劇本9_探索_裂隙前線.yaml
+encounters:
+  - id: rift_vanguard
+    name: 裂隙前哨（CL50–59）
+    enemies:
+      - {name: 裂隙先鋒, cr: 55, count: 1}
+    boss: true
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR52; 5–6名→CR57"
+  - id: void_sentinel
+    name: 虛界哨戒（CL60–65，小首領）
+    enemies:
+      - {name: 虛界哨戒, cr: 65, count: 1}
+    boss: true
+    phases:
+      - {name: 現實扭曲, hp_threshold: "100%~66%", trait: 翻轉站位圖/世界之外抗性}
+      - {name: 規則無效化, hp_threshold: "66%", trait: 無視某項減傷（DR）/召喚裂隙先鋒增援}
+      - {name: 裂隙同調, hp_threshold: "33%", trait: 每2回合翻轉站位/核心暴露窗口}
+    budget: 首領戰 Boss CR≈隊伍總等級×0.6
+    adjust: "1名→CR62; 5–6名→CR67"
+rewards:
+  exp: 36200
+  gold: 20000
+  items: [裂隙穩定核心, 虛界哨戒核心]
+ip_events:
+  - event: 保護難民撤離異界前線
+    ip: 6
+  - event: 濫殺驚慌平民
+    ip: -5
+  - event: 與裂隙守望者善意互動
+    ip: 3

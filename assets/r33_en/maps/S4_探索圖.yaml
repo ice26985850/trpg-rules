@@ -1,0 +1,52 @@
+# S4 Exploration Map · Crotus Prenn Asylum (Crotus Prenn Asylum, R4)
+meta:
+  id: S4
+  name: S4 Exploration Map · Crotus Prenn Asylum
+  realm: Crotus Prenn Asylum (R4)
+  regions: [Ward (ward), Chapel (chapel), Records (records)]
+  coord_range: 0-1000
+nodes:
+  - { id: cp_start, name: Starting Fog Mouth, region: Ward (ward), type: Entrance, x: 500, y: 930, connections: [cp_lobby] }
+  - { id: cp_lobby, name: Charred Foyer, region: Ward (ward), type: Hub, x: 500, y: 820, connections: [cp_start, cp_ward_1f, cp_corridor_e, cp_opt_morgue] }
+  - { id: cp_ward_1f, name: Disturbed Ward · 1F, region: Ward (ward), type: Main Zone, x: 340, y: 700, connections: [cp_lobby, cp_ward_2f, cp_ect, cp_atrium] }
+  - { id: cp_ward_2f, name: Disturbed Ward · 2F, region: Ward (ward), type: Main Zone, x: 280, y: 570, connections: [cp_ward_1f, cp_atrium, cp_corridor_n] }
+  - { id: cp_ward_3f, name: Disturbed Ward · 3F, region: Ward (ward), type: Main Zone, x: 220, y: 440, connections: [cp_ward_2f, cp_exit_w, cp_atrium] }
+  - { id: cp_atrium, name: Atrium, region: Ward (ward), type: Special, x: 400, y: 570, connections: [cp_ward_1f, cp_ward_2f, cp_ward_3f] }
+  - { id: cp_ect, name: Electrotherapy Room, region: Ward (ward), type: Room / Afterimage, x: 180, y: 700, connections: [cp_ward_1f] }
+  - { id: cp_corridor_e, name: East Long Corridor, region: Chapel (chapel), type: Passage, x: 660, y: 700, connections: [cp_lobby, cp_chapel, cp_exit_e] }
+  - { id: cp_chapel, name: Father Campbell's Chapel, region: Chapel (chapel), type: Main Zone, x: 780, y: 570, connections: [cp_corridor_e, cp_pulpit, cp_chest_b, cp_opt_bell] }
+  - { id: cp_pulpit, name: PulpitSecret Door, region: Chapel (chapel), type: Special, x: 860, y: 470, connections: [cp_chapel, cp_corridor_n] }
+  - { id: cp_corridor_n, name: North Long Corridor, region: Records (records), type: Passage, x: 500, y: 470, connections: [cp_ward_2f, cp_pulpit, cp_door17, cp_chest_a] }
+  - { id: cp_records, name: Records Room, region: Records (records), type: Key, x: 500, y: 330, connections: [cp_door17, cp_crack] }
+  - { id: cp_door17, name: Station 17's Place, region: Records (records), type: Afterimage, x: 500, y: 410, connections: [cp_corridor_n, cp_records] }
+  - { id: cp_chest_a, name: Medicine Cabinet, region: Records (records), type: Chest, x: 340, y: 400, connections: [cp_corridor_n] }
+  - { id: cp_chest_b, name: Priest's Box, region: Chapel (chapel), type: Chest, x: 830, y: 660, connections: [cp_chapel] }
+  - { id: cp_crack, name: Outer Wall Crack, region: Records (records), type: Special, x: 620, y: 250, connections: [cp_records, cp_exit_e] }
+  - { id: cp_exit_w, name: West Exit Gate, region: Ward (ward), type: Exit, x: 110, y: 300, connections: [cp_ward_3f] }
+  - { id: cp_exit_e, name: East Exit Gate, region: Chapel (chapel), type: Exit, x: 900, y: 830, connections: [cp_corridor_e, cp_crack] }
+  - { id: cp_opt_morgue, name: Morgue, region: Ward (ward), type: Optional, x: 640, y: 880, connections: [cp_lobby] }
+  - { id: cp_opt_bell, name: Bell Tower, region: Chapel (chapel), type: Optional, x: 890, y: 380, connections: [cp_chapel] }
+edges:
+  - { from: cp_start, to: cp_lobby, channel: Interior, name: Charred Entrance Hall}
+  - { from: cp_lobby, to: cp_ward_1f, channel: Interior Door, name: Ward Door}
+  - { from: cp_lobby, to: cp_corridor_e, channel: Interior, name: East Gallery Opening}
+  - { from: cp_lobby, to: cp_opt_morgue, channel: Descending Ladder, name: Underground Ladder}
+  - { from: cp_ward_1f, to: cp_ward_2f, channel: Stairs, name: Ward Stairs}
+  - { from: cp_ward_1f, to: cp_ect, channel: Interior Door, name: Electrotherapy RoomDoor}
+  - { from: cp_ward_1f, to: cp_atrium, channel: Opening, name: AtriumBottom}
+  - { from: cp_ward_2f, to: cp_ward_3f, channel: Stairs, name: Ward Stairs}
+  - { from: cp_ward_2f, to: cp_atrium, channel: Window, name: Atrium Railing (Drop to 1F; takes damage)}
+  - { from: cp_ward_2f, to: cp_corridor_n, channel: Interior, name: North Gallery Opening}
+  - { from: cp_ward_3f, to: cp_exit_w, channel: Interior, name: West-side Escape Ladder}
+  - { from: cp_ward_3f, to: cp_atrium, channel: Drop (One-way), name: 3F Railing (Dying)}
+  - { from: cp_corridor_e, to: cp_chapel, channel: Interior Door, name: ChapelDoor}
+  - { from: cp_corridor_e, to: cp_exit_e, channel: Interior, name: East Exit}
+  - { from: cp_chapel, to: cp_pulpit, channel: Secret Door, name: Behind the Pulpit}
+  - { from: cp_chapel, to: cp_chest_b, channel: Interior, name: Sacristy}
+  - { from: cp_chapel, to: cp_opt_bell, channel: Stairs, name: Bell Tower Stairs}
+  - { from: cp_pulpit, to: cp_corridor_n, channel: Secret Passage, name: The Priest's Path}
+  - { from: cp_corridor_n, to: cp_door17, channel: Interior, name: Records Room Antechamber}
+  - { from: cp_corridor_n, to: cp_chest_a, channel: Interior, name: Medicine Room}
+  - { from: cp_door17, to: cp_records, channel: Single Door, name: Records Room Door (Only entrance/exit)}
+  - { from: cp_records, to: cp_crack, channel: Breach, name: Outer Wall Crack (Passable after Act 3)}
+  - { from: cp_crack, to: cp_exit_e, channel: Exterior, name: Outer Wall Edge}

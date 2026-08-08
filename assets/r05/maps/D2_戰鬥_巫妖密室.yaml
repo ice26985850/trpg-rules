@@ -1,0 +1,64 @@
+scenario: D2
+section: "D2 沉眠墓窖·巫妖密室（墓地巫妖 CR18）"
+map_type: battle
+grid_scale: "1格=2公尺"
+title: D2_戰鬥_巫妖密室
+# 座標為精確格子座標（col, row，0–9），供距離與射程計算
+# 墓地巫妖（首領）位敵後排中央；特性「死靈洪流」覆蓋全隊（AOE）
+# 「亡者召喚」於生命值（HP）≤50% 召喚骷髏戰士×2（CR13），由主持人（GM） 依階段增補
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: 敵, role: 前排, color: "#FF8A8A"}
+    - {row: 1, side: 敵, role: 後排, color: "#FFC8C8"}
+    - {row: 6, side: 我, role: 前排, color: "#8AAEFF"}
+    - {row: 8, side: 我, role: 後排, color: "#C8D8FF"}
+  aoe:
+    - {cx: 5, cy: 7, r: 2, label: 死靈洪流（全隊 AOE）}
+
+nodes:
+  - id: boss
+    label: 墓地巫妖（CR18）
+    x: 5
+    y: 1
+    type: boss
+    explored: true
+  - id: p_front_war
+    label: 我方前排戰士
+    x: 3
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_front_monk
+    label: 我方前排格鬥
+    x: 6
+    y: 6
+    type: 我前排
+    explored: true
+  - id: p_back_mage
+    label: 我方後排法師
+    x: 4
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_cleric
+    label: 我方後排牧師
+    x: 5
+    y: 8
+    type: 我後排
+    explored: true
+  - id: p_back_hunter
+    label: 我方後排獵人
+    x: 7
+    y: 8
+    type: 我後排
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: boss
+    type: 近戰
+    style: dashed
+    label: "接戰"

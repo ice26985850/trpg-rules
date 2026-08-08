@@ -1,0 +1,455 @@
+# S3 · Roots That Eat No Soil (structured data for the AI GM engine)
+id: S3
+title: Roots That Eat No Soil
+realm: Coldwind Farm (R3) → Fog Cellar
+recommended_prs: "5-7"
+duration_min: 210
+summary: >-
+  The first station of a playstyle shift: the player moves from "escape" into "escape + infiltration." Act Two is a standard Trial, but Act Three breaks away mid-Trial to infiltrate the Fog Cellar and retrieve the first Memory Card. Step two of the three-step root passage demands generating an Altruistic Hope as a key, making "rescue" go from a moral choice to a required clearing condition. Hillbilly (HBY) owns the open ground — the most painful round so far; the Fog Cellar has no Killer and no objective, pressure coming from the shrinking countdown and the cognitive challenge of "recognizing yourself."
+
+nodes:
+  - id: cw_start
+    label: Starting Mist Mouth
+    type: Entrance
+    x: 500
+    y: 930
+    region: fields
+    explored: true
+  - id: cw_corn_s
+    label: Cornfield · South
+    type: Concealment Zone
+    x: 380
+    y: 810
+    region: fields
+    explored: true
+  - id: cw_corn_e
+    label: Cornfield · East
+    type: Concealment Zone
+    x: 720
+    y: 660
+    region: fields
+    explored: false
+  - id: cw_corn_w
+    label: Cornfield · West
+    type: Concealment Zone
+    x: 260
+    y: 590
+    region: fields
+    explored: false
+  - id: cw_tree
+    label: Sacrifice Tree
+    type: Key Landmark
+    x: 500
+    y: 500
+    region: fields
+    explored: true
+  - id: cw_harvester
+    label: Harvester
+    type: Cover Landmark
+    x: 640
+    y: 800
+    region: fields
+    explored: false
+  - id: cw_abattoir
+    label: Reeking Abattoir
+    type: Main Building
+    x: 760
+    y: 380
+    region: buildings
+    explored: false
+  - id: cw_abattoir_in
+    label: Abattoir Interior
+    type: Building Interior
+    x: 840
+    y: 300
+    region: buildings
+    explored: false
+  - id: cw_house
+    label: Thompson House
+    type: Main Building
+    x: 250
+    y: 330
+    region: buildings
+    explored: false
+  - id: cw_house_2f
+    label: Thompson House Second Floor
+    type: Building Level
+    x: 180
+    y: 250
+    region: buildings
+    explored: false
+  - id: cw_silo
+    label: Silo
+    type: Cover Landmark
+    x: 420
+    y: 300
+    region: buildings
+    explored: false
+  - id: cw_chest_a
+    label: Farm-Tool Shed
+    type: Chest
+    x: 600
+    y: 260
+    region: buildings
+    explored: false
+  - id: cw_chest_b
+    label: Garage
+    type: Chest
+    x: 330
+    y: 700
+    region: fields
+    explored: false
+  - id: cw_exit_n
+    label: North Exit Gate
+    type: Exit
+    x: 500
+    y: 110
+    region: buildings
+    explored: false
+  - id: cw_exit_se
+    label: Southeast Exit Gate
+    type: Exit
+    x: 880
+    y: 880
+    region: fields
+    explored: false
+  - id: cw_opt_well
+    label: Old Well
+    type: Optional
+    x: 150
+    y: 780
+    region: fields
+    explored: false
+  - id: cw_opt_coop
+    label: Chicken Coop
+    type: Optional
+    x: 880
+    y: 560
+    region: fields
+    explored: false
+  - id: fc_entry
+    label: Fog Cellar · Entrance
+    type: Act Three
+    x: 500
+    y: 500
+    region: cellar
+    explored: false
+  - id: fc_root_a
+    label: Root System · Near Layer
+    type: Act Three
+    x: 400
+    y: 430
+    region: cellar
+    explored: false
+  - id: fc_root_b
+    label: Root System · Middle Layer
+    type: Act Three
+    x: 500
+    y: 380
+    region: cellar
+    explored: false
+  - id: fc_root_c
+    label: Root System · Deep Layer
+    type: Act Three
+    x: 600
+    y: 430
+    region: cellar
+    explored: false
+  - id: fc_yours
+    label: The One That Is Yours
+    type: Act Three
+    x: 500
+    y: 300
+    region: cellar
+    explored: false
+
+edges:
+  - from: cw_start
+    to: cw_corn_s
+    channel_type: Open
+    name: Field Ridge
+  - from: cw_start
+    to: cw_harvester
+    channel_type: Open
+    name: Farm Road
+  - from: cw_corn_s
+    to: cw_tree
+    channel_type: Concealment
+    name: Between the Ears
+  - from: cw_corn_s
+    to: cw_chest_b
+    channel_type: Open
+    name: Side Road
+  - from: cw_corn_s
+    to: cw_opt_well
+    channel_type: Open
+    name: West Field Ridge
+  - from: cw_harvester
+    to: cw_corn_e
+    channel_type: Open
+    name: East Field Ridge
+  - from: cw_harvester
+    to: cw_exit_se
+    channel_type: Open
+    name: Southeast Road
+  - from: cw_corn_e
+    to: cw_tree
+    channel_type: Concealment
+    name: Between the Ears
+  - from: cw_corn_e
+    to: cw_abattoir
+    channel_type: Open
+    name: Slaughter Road
+  - from: cw_corn_e
+    to: cw_opt_coop
+    channel_type: Open
+    name: Coop Path
+  - from: cw_corn_w
+    to: cw_tree
+    channel_type: Concealment
+    name: Between the Ears
+  - from: cw_corn_w
+    to: cw_house
+    channel_type: Open
+    name: House-Front Road
+  - from: cw_corn_w
+    to: cw_chest_b
+    channel_type: Open
+    name: Garage Road
+  - from: cw_tree
+    to: cw_silo
+    channel_type: Open
+    name: Central Road
+  - from: cw_tree
+    to: fc_entry
+    channel_type: Root Path (Act Three)
+    name: Root Path Beneath the Tree
+  - from: cw_abattoir
+    to: cw_abattoir_in
+    channel_type: Interior Door
+    name: Abattoir Gate
+  - from: cw_abattoir
+    to: cw_chest_a
+    channel_type: Open
+    name: Farm-Tool Road
+  - from: cw_abattoir_in
+    to: cw_exit_n
+    channel_type: Window
+    name: High Window
+  - from: cw_house
+    to: cw_house_2f
+    channel_type: Stairs
+    name: Wooden Ladder
+  - from: cw_house
+    to: cw_silo
+    channel_type: Open
+    name: Grain Road
+  - from: cw_house_2f
+    to: cw_corn_w
+    channel_type: Jump Down (one-way)
+    name: Second-Floor Window
+  - from: cw_silo
+    to: cw_exit_n
+    channel_type: Open
+    name: North Road
+  - from: cw_silo
+    to: cw_chest_a
+    channel_type: Open
+    name: Yard
+  - from: fc_entry
+    to: fc_root_a
+    channel_type: Hanging Root
+    name: Climb Root
+  - from: fc_entry
+    to: fc_root_c
+    channel_type: Hanging Root
+    name: Climb Root
+  - from: fc_root_a
+    to: fc_root_b
+    channel_type: Hanging Root
+    name: Climb Root
+  - from: fc_root_c
+    to: fc_root_b
+    channel_type: Hanging Root
+    name: Climb Root
+  - from: fc_root_b
+    to: fc_yours
+    channel_type: Hanging Root
+    name: That one is especially thin
+  - from: fc_entry
+    to: cw_tree
+    channel_type: Ascend
+    name: Return to surface (within time limit)
+
+encounters:
+  - id: E1
+    type: Chase
+    content: Hillbilly's (HBY) straight-line charge
+    cr: High (CR 7-9)
+    note: Tutorial: lethality in the open
+  - id: E2
+    type: Environment
+    content: Cornfield (blocks line of sight, leaves parting traces for 2 rounds)
+    cr: Medium
+    note: Psychological play
+  - id: E3
+    type: Puzzle
+    content: Bark-indentation pattern
+    cr: Medium (DC Medium)
+    note: Focus (FOC)
+  - id: E4
+    type: Realm Construct
+    content: Straw-Stalk Walker = Straw Afterimage (RC-04) × N
+    cr: Low-Medium (CR 2)
+    note: EBC 4 each, disguise type, deals real damage ✓
+  - id: E5
+    type: Chase
+    content: Close-quarters chase inside the abattoir (only enclosed space)
+    cr: High
+    note: "-"
+  - id: E6
+    type: Exploration
+    content: Fog Cellar (no Killer, shrinking-time-limit pressure)
+    cr: Medium
+    note: Act Three
+  - id: E7
+    type: Choice
+    content: Which pod to pluck
+    cr: No check
+    note: "-"
+
+npcs:
+  - name: Sally Nkosi
+    role: Botanist-type Survivor (§8-A)
+    lines:
+      - "Roots don't eat soil. They eat something else."
+  - name: Whisperer · the Woman's Voice Beneath the Roots (RC-02)
+    role: Intelligence-type construct (EBC 0)
+    lines:
+      - "Can you tell whose it is? If you can't, don't pluck. Pluck the wrong one and that person will see you."
+  - name: Echo Companion · the Handwiper
+    role: Solo configuration (§8-B)
+    lines:
+      - "His pod is also in the Fog Cellar; the player may pluck it for him (+3 Campfire Ember)"
+  - name: Eloise Finch
+    role: Campfire Chronicler (§8-A)
+    lines:
+      - "The fire remembers — reasoning, guiding the infiltration"
+
+choices:
+  - id: C1
+    question: Generate Altruistic Hope to unlock? (core)
+    options:
+      - desc: Look out only for yourself the whole time
+        effect: No key can be made, the Fog Cellar cannot be entered, only pure escape, no Memory Card
+      - desc: Generate Altruistic Hope
+        effect: Roots loosen, enter the Fog Cellar (take Memory Card + trigger the Ember Moment)
+  - id: C2
+    question: Pluck a pod in the Fog Cellar
+    options:
+      - desc: Pluck your own pod
+        effect: 1 Memory Card (linked with the S1 carried item)
+      - desc: Pluck another's pod
+        effect: 1 someone-else's Memory Card (+1 Hope Point (HOP) cap, cannot be returned; GM should arrange at least one player to pluck wrong; plucking a Killer's memory = S6 hook)
+      - desc: Fail to leave within the shrinking countdown
+        effect: Lose 3 Hope Point (HOP); force-returned to the Campfire by The Entity's "filing"
+
+endings:
+  - type: Branching (enter Fog Cellar or not / pluck right or wrong)
+    condition: Depends on Decisions One and Two
+    ember_moment: Triggers when unlocking with Altruistic Hope
+
+rewards:
+  bp: Standard × (per player-count table)
+  prs_gain: Rises to level 7 upon completion
+  hop: "+3"
+  campfire_ember: Accrued during play (est. 5-9)
+  memory_card: 1-2 (per player-count table)
+  item: 1 uncommon item per person
+  narrative: Memory is archived, not destroyed; Ember can serve as a key
+  new_ability: Spend 1 Hope Point (HOP) to "ask the Memory Card for help," rerolling one check related to that memory's theme
+
+player_count_scaling:
+  n1:
+    generators_total: 4
+    generators_required: 3
+    killer_pressure: 3
+    echo_companions: 2
+    straw_wraiths_RC04: 2
+    hooks: 4
+    chests: 2
+    lockers: 5
+    hook_phase_limit: 5
+    endgame_collapse: 6
+    cellar_pods_per_player: 2
+    cellar_collapse_limit: 6
+    bp_multiplier: 1.1
+    hop_reward: 3
+    memory_cards: 2
+    optional_nodes: 2
+  n2:
+    generators_total: 5
+    generators_required: 4
+    killer_pressure: 3
+    echo_companions: 1
+    straw_wraiths_RC04: 2
+    hooks: 5
+    chests: 3
+    lockers: 6
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    cellar_pods_per_player: 1
+    cellar_collapse_limit: 5
+    bp_multiplier: 1.05
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 1
+  n3:
+    generators_total: 6
+    generators_required: 4
+    killer_pressure: 3
+    echo_companions: 0
+    straw_wraiths_RC04: 3
+    hooks: 6
+    chests: 3
+    lockers: 7
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    cellar_pods_per_player: 1
+    cellar_collapse_limit: 5
+    bp_multiplier: 1.0
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 0
+  n4:
+    generators_total: 7
+    generators_required: 5
+    killer_pressure: 4
+    echo_companions: 0
+    straw_wraiths_RC04: 3
+    hooks: 8
+    chests: 4
+    lockers: 8
+    hook_phase_limit: 4
+    endgame_collapse: 5
+    cellar_pods_per_player: 1
+    cellar_collapse_limit: 4
+    bp_multiplier: 1.0
+    hop_reward: 3
+    memory_cards: 1
+    optional_nodes: 0
+
+encounter_budget:
+  dm: 1.05
+  prs_mid: 6
+  eb:
+    n1: 8
+    n2: 17
+    n3: 25
+    n4: 34
+  killer_share: "60%"
+  construct_share: "40%"
+  main_killer: Hillbilly (HBY)
+  killer_avm: 2
+  killer_cr: "PRS + 2 (CR 7-9)"
+  construct_RC04: Straw Afterimage (RC-04) CR2 / HP18 / attack +3 / DC11 / EBC4 / deals real damage ✓

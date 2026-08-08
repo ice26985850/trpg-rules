@@ -1,0 +1,898 @@
+title: "勇者之證（The Hero's Proof）— 材料圖鑑（Material Catalog）"
+sections:
+  - heading: "勇者之證（The Hero's Proof）— 材料圖鑑（Material Catalog）"
+    text:
+      - > **材料屬性驅動（Material-Driven）**：本圖鑑不窮舉成品，只列 **材料** 及其 **8 統一欄位**；成品數值由材料欄位 × 物品模板（見 `圖鑑/物品圖鑑.md` §一～§二 與玩家書第四章）決定，玩家自由組合。
+      - > **8 統一欄位**：① 傷害基數（DmgBase）② 減傷基數（DRBase）③ 屬性加成（StatBonus）④ 耐久基數（DurBonus）⑤ 特效標籤（Tags）⑥ 等級門檻與稀有度檔（ReqLv／Rarity）⑦ 回復基數（HealBase）⑧ 增益類型與數值（BuffType／BuffVal）。空白「—」表示該材料不取用此欄位。
+      - > **白板原則簡述**：城鎮商店僅售基礎（白板）裝備＋初級治療／魔力藥水＋基礎食物；中高級藥水、炸彈、卷軸、增益料理須經「採集→製造」自製或冒險掉落，不列商店貨架（詳見 `圖鑑/物品圖鑑.md` 頂部白板總原則）。
+      - > **數值約束**：所有欄位值須落入 `設計稿/05_製造系統_數值框架.md` 第 3 節「稀有度→屬性上限」合法區間；成品稀有度＝max(材料稀有度)、成品等級門檻（ReqLv）＝max(材料 ReqLv)。
+      - > **關聯文件**：成品模板示例見 `圖鑑/物品圖鑑.md`；製造／採集規則見玩家書第四章與 `圖鑑/材料圖鑑.md` 附錄（採集類生活技能設計）。
+      - ---
+    tables:
+      []
+  - heading: 〇、材料分類總覽（與採集／製造技能對應）
+    text:
+      - > **野生 vs 栽培標籤**：凡「採藥／漁撈狩獵」野外節點取得者標註「野生」；凡「農園栽培」據點設施取得者標註「栽培」。兩者數值相同，僅來源與取得時程不同（栽培需 3–14 日收穫）。
+      - ---
+    tables:
+      - columns:
+          - 章節
+          - 材料類別
+          - 主要取用欄位
+          - 供製造技能（據點設施）
+          - 對應採集來源
+        rows:
+          - 章節: §1
+            材料類別: 木材類
+            主要取用欄位: 傷害基數／耐久基數
+            供製造技能（據點設施）: 鍛造（鍛冶爐）
+            對應採集來源: 伐木
+          - 章節: §2
+            材料類別: 礦石金屬類（原礦→金屬錠）
+            主要取用欄位: 傷害基數／減傷基數／耐久基數
+            供製造技能（據點設施）: 鍛造（鍛冶爐·熔煉）
+            對應採集來源: 採礦
+          - 章節: §3
+            材料類別: 草藥類
+            主要取用欄位: 回復基數／傷害基數（引信）／特效標籤
+            供製造技能（據點設施）: 鍊金（實驗室）
+            對應採集來源: 採藥／農園栽培
+          - 章節: §4
+            材料類別: 食材類
+            主要取用欄位: 增益類型／增益數值
+            供製造技能（據點設施）: 烹飪（廚房）
+            對應採集來源: 漁撈狩獵／農園栽培
+          - 章節: §5
+            材料類別: 飾品素材類
+            主要取用欄位: 屬性加成／耐久基數／特效標籤
+            供製造技能（據點設施）: 鍛造（鍛冶爐）
+            對應採集來源: 採礦／漁撈狩獵
+          - 章節: §6
+            材料類別: 其他／獵獲素材
+            主要取用欄位: 減傷基數／增益類型
+            供製造技能（據點設施）: 鍛造／烹飪
+            對應採集來源: 漁撈狩獵
+  - heading: §1　木材類（Wood）
+    text:
+      - > 取用欄位：傷害基數（DmgBase）／耐久基數（DurBonus）。主要供鍛造製作武器（長劍／弓／法杖等木柄）與輕型防具骨架。稀有度錨定：普通 1d2~1d8、精良 1d8~1d10、稀有 1d10~1d12、史詩 1d12~2d6、傳說 2d6~3d8。
+      - > 驗證：普通木 `1d2` ＜ 鐵木 `1d5` ；龍血木 `2d6` 達史詩 DmgBase 區間頂（1d12~2d6），未超模。
+      - ---
+    tables:
+      - columns:
+          - 材料
+          - 稀有度
+          - 等級門檻（ReqLv）
+          - 傷害基數（DmgBase）
+          - 減傷基數（DRBase）
+          - 屬性加成（StatBonus）
+          - 耐久基數（DurBonus）
+          - 回復基數（HealBase）
+          - 增益類型／數值（BuffType／BuffVal）
+          - 特效標籤（Tags）
+          - 取得
+        rows:
+          - 材料: 普通木
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: `1d2`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +0
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 伐木（D3森林 普通林地）
+          - 材料: 鐵木
+            稀有度: 普通
+            等級門檻（ReqLv）: 3
+            傷害基數（DmgBase）: `1d5`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +5
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 擊退
+            取得: 伐木（D3森林 稀有林地）
+          - 材料: 龍血木
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: `2d6`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +15
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 吸血（生命竊取20%）
+            取得: 伐木（D8古代遺跡／龍巢 史詩林地）
+          - 材料: 青藤木
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: `1d4`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +2
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 伐木（D3森林 普通林地）
+          - 材料: 黑檀木
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: `1d8`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +8
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 破甲
+            取得: 伐木（D4沙漠 黑檀林）
+          - 材料: 雷紋木
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: `1d12`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +12
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 雷電
+            取得: 伐木（D8古代遺跡 雷木林）
+          - 材料: 星槐木
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: `2d6`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +18
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 神聖
+            取得: 伐木（D8神殿林 史詩林地）
+          - 材料: 世界樹枝
+            稀有度: 傳說
+            等級門檻（ReqLv）: 30
+            傷害基數（DmgBase）: `3d6`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +25
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 再生
+            取得: 伐木（世界樹 傳說林地）
+  - heading: §2　礦石金屬類（Ore & Metal）
+    text:
+      - > 取用欄位：傷害基數（DmgBase）／減傷基數（DRBase）／耐久基數（DurBonus）。「原礦」為採礦節點原料，須經鍛造熔煉方成「金屬錠」後方可取用。DRBase 錨定：普通 5%~10%、精良 10%~20%、稀有 20%~30%、史詩 30%~35%、傳說 35%~45%。
+    tables:
+      []
+  - heading: 2-A　金屬錠／鱗甲（精煉後可取用）
+    text:
+      - > 龍鱗片為史詩雙欄位材料（DmgBase 2d6 武器／DRBase 35%＋火抗+ 防具）；龍王鱗 DmgBase `3d8` 達傳說區間頂（2d6~3d8），與圖鑑「傳說之劍·屠龍 3d8」一致。
+    tables:
+      - columns:
+          - 材料
+          - 稀有度
+          - 等級門檻（ReqLv）
+          - 傷害基數（DmgBase）
+          - 減傷基數（DRBase）
+          - 屬性加成（StatBonus）
+          - 耐久基數（DurBonus）
+          - 回復基數（HealBase）
+          - 增益類型／數值（BuffType／BuffVal）
+          - 特效標籤（Tags）
+          - 取得
+        rows:
+          - 材料: 精鋼錠
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: `1d10`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +10
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 破甲
+            取得: 採礦原礦→鍛造熔煉（D4沙漠／D6火山）
+          - 材料: 秘銀
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: `1d12`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +15
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D8古代遺跡／D5海洋 深海礦脈）
+          - 材料: 板甲鋼
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: `30%`
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +15
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 重甲（體質（CON）≥12）
+            取得: 採礦原礦→鍛造（D4沙漠／D6火山）
+          - 材料: 龍鱗片
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: `2d6`
+            減傷基數（DRBase）: `35%`
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +20
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 火抗+（40%）
+            取得: 龍將討伐／採礦（D6火山 龍脈）
+          - 材料: 龍王鱗
+            稀有度: 傳說
+            等級門檻（ReqLv）: 30
+            傷害基數（DmgBase）: `3d8`
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +25
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 對龍+（×1.8）
+            取得: 龍王（傳說）討伐
+  - heading: 2-B　原礦（採礦節點原料·須鍛造熔煉）
+    text:
+      - > 原礦為採集節點產物，本身不進戰鬥公式；其稀有度由可熔煉出的金屬錠檔次決定。熔煉成品稀有度受鍛冶爐設施等級影響（設施降 DC 邏輯見玩家書第四章）。
+      - ---
+    tables:
+      - columns:
+          - 原礦（採礦節點）
+          - 稀有度
+          - ReqLv
+          - → 熔煉為（金屬錠）
+          - 取得
+        rows:
+          - 原礦（採礦節點）: 鐵礦石
+            稀有度: 普通
+            ReqLv: 1
+            → 熔煉為（金屬錠）: 精鋼錠（初階·需 1 級以上鍛冶爐）
+            取得: 採礦（D3森林岩體／D4沙漠）
+          - 原礦（採礦節點）: 精鋼礦砂
+            稀有度: 精良
+            ReqLv: 5
+            → 熔煉為（金屬錠）: 精鋼錠
+            取得: 採礦（D6火山）
+          - 原礦（採礦節點）: 秘銀礦
+            稀有度: 稀有
+            ReqLv: 10
+            → 熔煉為（金屬錠）: 秘銀
+            取得: 採礦（D8古代遺跡／D5海洋 深海）
+          - 原礦（採礦節點）: 龍鱗礦
+            稀有度: 史詩
+            ReqLv: 20
+            → 熔煉為（金屬錠）: 龍鱗片
+            取得: 採礦（D6火山 龍脈）
+  - heading: §3　草藥類（Herbs／Reagents）
+    text:
+      - > 取用欄位：回復基數（HealBase）／傷害基數（DmgBase，作炸彈引信）／特效標籤（Tags）。主要供鍊金製作藥水／炸彈／卷軸。HealBase 錨定：普通 2d6~4d6、精良 4d6~8d6、稀有 8d6~12d6、史詩 12d6~16d6、傳說 16d6~20d6。
+      - > ⚠E1：火焰花（普通 DmgBase `3d6`）、寒霜露（精良 `2d6`）作炸彈／卷軸引信，依 `設計稿/05` §3.1.1「引信 DmgBase 獨立區間」（普通 2d6~4d6、精良 2d6~6d6），二者皆落區間，經主理人裁定合法（非武器 DmgBase 主表）。
+      - > ⚠E2：聖光麥（生命值（HP）上限+10）依 `設計稿/05` §3.5(乙)「上限型 Buff 獨立區間」（普通 +10~+20），落區間，合法。
+      - ---
+    tables:
+      - columns:
+          - 材料
+          - 稀有度
+          - 等級門檻（ReqLv）
+          - 傷害基數（DmgBase）
+          - 減傷基數（DRBase）
+          - 屬性加成（StatBonus）
+          - 耐久基數（DurBonus）
+          - 回復基數（HealBase）
+          - 增益類型／數值（BuffType／BuffVal）
+          - 特效標籤（Tags）
+          - 取得
+        rows:
+          - 材料: 治療草
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: `2d6`（HP）
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採藥（D3森林 野生）／農園栽培（栽培）
+          - 材料: 魔力蘑菇
+            稀有度: 普通
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: `3d6`（MP）
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採藥（D3森林 潮濕地塊 野生）／農園栽培
+          - 材料: 火焰花
+            稀有度: 普通
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: `3d6`⚠E1
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 火焰
+            取得: 採藥（D6火山 野生）
+          - 材料: 寒霜露
+            稀有度: 精良
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: `2d6`⚠E1
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 冰凍（含減速）
+            取得: 採藥（D7冰原 野生）
+          - 材料: 淨化苔
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 淨化、解除異常
+            取得: 採藥（D8古代遺跡／神殿周邊 野生）／農園栽培
+          - 材料: 聖光麥
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 生命值（HP）上限+10⚠E2
+            特效標籤（Tags）: —
+            取得: 農園栽培（神殿農園 栽培）
+          - 材料: 聖光花
+            稀有度: 精良
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: `8d6`（HP）
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 農園栽培（神殿農園 栽培）／採藥（D8遺跡）
+          - 材料: 星輝草
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: `12d6`（HP）
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採藥（D8古代遺跡 稀有草藥節點）
+          - 材料: 龍息蘭
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: `12d6`（HP）
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 再生
+            取得: 採藥（D6火山 龍息谷／D8遺跡）
+  - heading: §4　食材類（Ingredients）
+    text:
+      - > 取用欄位：增益類型與數值（BuffType／BuffVal）。主要供烹飪製作增益料理。加值型 Buff 錨定：普通 +1~+2、精良 +2~+3、稀有 +3~+4、史詩 +4~+5、傳說 +5~+6；上限型 Buff（生命值（HP）／魔力點（MP）上限+）獨立區間：普通 +10~+20、精良 +20~+40、稀有 +40~+80、史詩 +80~+150、傳說 +150+。
+      - > ⚠E2：蛋（魔力點（MP）上限+15）落入上限型 Buff 普通 +10~+20，合法。
+      - > 蜂蜜已依 06 草案 E4（v0.3）修正：原標 精良 Lv3 之 幸運（LUK）+1 低於 05 §3.5(甲) 精良加值型下限 +2，現降為 **普通 Lv1**（LUK+1 ∈ 05 §3.5(甲) 普通 +1~+2，對齊 `圖鑑/物品圖鑑.md` §三 幸運派 錨點），已合法，無平衡風險。
+      - ---
+    tables:
+      - columns:
+          - 材料
+          - 稀有度
+          - 等級門檻（ReqLv）
+          - 傷害基數（DmgBase）
+          - 減傷基數（DRBase）
+          - 屬性加成（StatBonus）
+          - 耐久基數（DurBonus）
+          - 回復基數（HealBase）
+          - 增益類型／數值（BuffType／BuffVal）
+          - 特效標籤（Tags）
+          - 取得
+        rows:
+          - 材料: 肉
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 命中加值（Hit）+2
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D3森林／D5海洋 獵場 野生）
+          - 材料: 蛋
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 魔力點（MP）上限+15⚠E2
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（養殖巢／D3森林 野生）
+          - 材料: 蜂蜜
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 幸運（LUK）+1
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（蜂巢 D3森林 野生）
+          - 材料: 星光果
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 體質（CON）+2
+            特效標籤（Tags）: —
+            取得: 農園栽培（星光林地 栽培）
+          - 材料: 龍肝
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 力量（STR）+4
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（龍類獵場 D6火山 野生）
+          - 材料: 辣椒
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 力量（STR）+1
+            特效標籤（Tags）: —
+            取得: 農園栽培（栽培）
+          - 材料: 海鹽
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 敏捷（DEX）+1
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D5海洋 野生）
+          - 材料: 靈菇
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 魔力（MAG）+2
+            特效標籤（Tags）: —
+            取得: 農園栽培（靈菇園 栽培）
+          - 材料: 巨獸心
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 體質（CON）+3
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D6火山 稀有獵場 野生）
+          - 材料: 鳳凰羽果
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 生命值（HP）上限+100⚠E2
+            特效標籤（Tags）: —
+            取得: 農園栽培（神木園 史詩 栽培）
+  - heading: §5　飾品素材類（Accessory Materials）
+    text:
+      - > 取用欄位：屬性加成（StatBonus）／耐久基數（DurBonus）／特效標籤（Tags）。主要供鍛造製作飾品（戒指／護符／寶珠／耳環／幣）。StatBonus 錨定：普通 +1、精良 +2、稀有 +3、史詩 +4（或暴擊門檻（CritTh）−2 等特化）、傳說 +5（或生命值（HP）+30／全異常抗性+）。魅力（CHA）／幸運（LUK） 均已具備 普通→傳說 完整屬性加成階梯（見下表），與其它飾品素材同級、無超模。
+      - > 註：魔力結晶之「魔力點（MP）+10」為飾品屬性加成（StatBonus）欄位之附帶小額加成，非 BuffType/BuffVal 欄位，故不觸發 05 §3.5(乙) 上限型 Buff 表（該表僅約束料理增益）。其主欄位魔力（MAG）+3 落稀有區間，合法。
+      - ---
+    tables:
+      - columns:
+          - 材料
+          - 稀有度
+          - 等級門檻（ReqLv）
+          - 傷害基數（DmgBase）
+          - 減傷基數（DRBase）
+          - 屬性加成（StatBonus）
+          - 耐久基數（DurBonus）
+          - 回復基數（HealBase）
+          - 增益類型／數值（BuffType／BuffVal）
+          - 特效標籤（Tags）
+          - 取得
+        rows:
+          - 材料: 力量水晶
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 力量（STR）+1
+            耐久基數（DurBonus）: +0
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D3森林／D4沙漠 晶簇）
+          - 材料: 媚光石
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 魅力（CHA）+1
+            耐久基數（DurBonus）: +0
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D3森林 妖精泉畔 普通礦脈）
+          - 材料: 敏捷護石
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 敏捷（DEX）+2
+            耐久基數（DurBonus）: +5
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D7冰原 石節點）
+          - 材料: 幸運幣礦
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 幸運（LUK）+2
+            耐久基數（DurBonus）: +5
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D4沙漠 礦脈）
+          - 材料: 虹響碎片
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 魅力（CHA）+2
+            耐久基數（DurBonus）: +5
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D4沙漠 彩虹神殿廢墟 精良礦脈）
+          - 材料: 魔力結晶
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 魔力（MAG）+3（附魔力點（MP）+10）
+            耐久基數（DurBonus）: +10
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D8古代遺跡 魔法礦脈）
+          - 材料: 守護之羽
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 生命值（HP）+20
+            耐久基數（DurBonus）: +10
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 全異常抗性+（+8%）
+            取得: 漁撈狩獵（神獸）／D8遺跡
+          - 材料: 幸運星砂
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 幸運（LUK）+3
+            耐久基數（DurBonus）: +10
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D5海洋 沉船寶窟 稀有礦脈）
+          - 材料: 魅語水晶
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 魅力（CHA）+3
+            耐久基數（DurBonus）: +10
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D8古代遺跡 魅惑祭壇 稀有礦脈）
+          - 材料: 暴擊之眼
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 暴擊門檻（CritTh）−2
+            耐久基數（DurBonus）: +15
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（傳說鳥類）／D8遺跡
+          - 材料: 四葉幻晶
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 幸運（LUK）+4
+            耐久基數（DurBonus）: +15
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D8古代遺跡 命運神殿遺址 史詩礦脈）
+          - 材料: 心動之瞳
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 魅力（CHA）+4
+            耐久基數（DurBonus）: +15
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（D6火山 熔心神殿 史詩礦脈）
+          - 材料: 龍瞳石
+            稀有度: 傳說
+            等級門檻（ReqLv）: 30
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 生命值（HP）+30
+            耐久基數（DurBonus）: +25
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: 全異常抗性+（+20%）
+            取得: 龍王討伐／D8古代遺跡
+          - 材料: 命運之核
+            稀有度: 傳說
+            等級門檻（ReqLv）: 30
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 幸運（LUK）+5
+            耐久基數（DurBonus）: +25
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦／漁撈狩獵（龍巢·星界裂隙 傳說礦脈｜限傳說採集點）
+          - 材料: 魅影之心
+            稀有度: 傳說
+            等級門檻（ReqLv）: 30
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: 魅力（CHA）+5
+            耐久基數（DurBonus）: +25
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 採礦（魅魔宮·深淵王座 傳說礦脈｜限傳說採集點）
+  - heading: §6　其他／獵獲素材（Hunt & Misc）
+    text:
+      - > 取用欄位：減傷基數（DRBase，供防具）／增益類型與數值（BuffType／BuffVal，供烹飪）。主要為漁撈狩獵野外節點產物。
+      - > 魚雖列於本節（獵獲素材），但具食用增益（魔力點（MP）上限+10，上限型 Buff 普通 +10~+20，合法），亦可供烹飪。獸皮／魔獸皮之 DRBase 分別落普通（5%~10%）、精良（10%~20%）區間，供鍛造防具主材料。
+      - ---
+    tables:
+      - columns:
+          - 材料
+          - 稀有度
+          - 等級門檻（ReqLv）
+          - 傷害基數（DmgBase）
+          - 減傷基數（DRBase）
+          - 屬性加成（StatBonus）
+          - 耐久基數（DurBonus）
+          - 回復基數（HealBase）
+          - 增益類型／數值（BuffType／BuffVal）
+          - 特效標籤（Tags）
+          - 取得
+        rows:
+          - 材料: 獸皮
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: `10%`
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +0
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D3森林 毛皮獸 野生）—供鍛造輕皮甲
+          - 材料: 魔獸皮
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: `15%`
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +5
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D6火山／D7冰原 魔獸 野生）—供鍛造中甲
+          - 材料: 魚
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 魔力點（MP）上限+10⚠E2
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D5海洋 野生）—可入烹飪
+          - 材料: 蛛絲
+            稀有度: 普通
+            等級門檻（ReqLv）: 1
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: `5%`
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +0
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D3森林 蛛巢 野生）—供鍛造輕甲
+          - 材料: 鱗甲皮
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: `18%`
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +5
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D5海洋 鱗獸 野生）—供鍛造中甲
+          - 材料: 冰獸毛
+            稀有度: 精良
+            等級門檻（ReqLv）: 5
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 魔力點（MP）上限+20⚠E2
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D7冰原 野生）—可入烹飪
+          - 材料: 龍蜥鱗
+            稀有度: 稀有
+            等級門檻（ReqLv）: 10
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: `25%`
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: +10
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: —
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（D6火山 龍蜥 野生）—供鍛造重甲
+          - 材料: 聖獸筋
+            稀有度: 史詩
+            等級門檻（ReqLv）: 20
+            傷害基數（DmgBase）: —
+            減傷基數（DRBase）: —
+            屬性加成（StatBonus）: —
+            耐久基數（DurBonus）: —
+            回復基數（HealBase）: —
+            增益類型／數值（BuffType／BuffVal）: 生命值（HP）上限+120⚠E2
+            特效標籤（Tags）: —
+            取得: 漁撈狩獵（神獸 史詩 野生）—可入烹飪／鍛造
+  - heading: 附錄 A：驗證錨點（須保留）
+    text:
+      - 材料稀有度嚴格決定武器量級上限，錨定關係如下（期望傷害（EvD）遞增，不得逆序）：
+      - ```
+      - 普通木 1d2（EvD 1.5）
+      - ＜ 鐵木 1d5（EvD 3.0）
+      - ＜ 白板·訓練長劍 1d8（EvD 4.5，商店基準）
+      - ＜ 精鋼錠 1d10（EvD 5.5，精良）
+      - ＜ 史詩 2d6（龍鱗片／龍血木，EvD 7.0）
+      - ＜ 傳說 3d8（龍王鱗，EvD 13.5）
+      - ```
+      - → 低階材料造物落於白板之下（早期過渡／副材料），高階材料造物拉開於白板之上（稀有度差距成立），與 `圖鑑/物品圖鑑.md` 白板原則一致。
+      - > **附錄 A 補充·屬性加成（StatBonus）階梯（CHA／LUK 系列，經 05 §3.4 錨定）**：飾品素材的屬性加成嚴格隨稀有度，不得逆序：
+      - >
+      - > ```
+      - > 普通 +1（媚光石 CHA+1／力量水晶 STR+1）
+      - >   ＜ 精良 +2（虹響碎片 CHA+2／幸運幣礦 LUK+2／敏捷護石 DEX+2）
+      - >     ＜ 稀有 +3（魅語水晶 CHA+3／幸運星砂 LUK+3／魔力結晶 MAG+3）
+      - >       ＜ 史詩 +4（心動之瞳 CHA+4／四葉幻晶 LUK+4／暴擊之眼 CritTh−2）
+      - >         ＜ 傳說 +5（魅影之心 CHA+5／命運之核 LUK+5／龍瞳石 HP+30）
+      - > ```
+      - >
+      - > → 魅力（CHA）與幸運（LUK）現均已具備 普通→傳說 完整屬性加成階梯，與其它飾品素材同級、無超模。
+      - ---
+    tables:
+      []
+  - heading: 附錄 B：E1／E2 獨立區間註腳（經 05 主理人裁定合法）
+    text:
+      - > 上述材料值經 `設計稿/05_製造系統_數值框架.md` 主理人裁定，為合法非超模例外，本圖鑑沿用。
+      - ---
+    tables:
+      - columns:
+          - 標記
+          - 材料／欄位
+          - 圖鑑既有錨點
+          - 原衝突
+          - 裁定結果（05）
+        rows:
+          - 標記: E1
+            材料／欄位: 火焰花 DmgBase `3d6`（普通）、寒霜露 `2d6`（精良）
+            圖鑑既有錨點: 火焰炸彈 3d6（普通）、冰霜炸彈 2d6（精良）
+            原衝突: 超武器 DmgBase 主表區間
+            裁定結果（05）: 補入 §3.1.1「引信 DmgBase 獨立區間」：普通 2d6~4d6、精良 2d6~6d6，二者皆落區間 ✓
+          - 標記: E2
+            材料／欄位: 聖光麥 生命值（HP）上限+10、蛋 魔力點（MP）上限+15（均普通）
+            圖鑑既有錨點: 回復麵包 HP上限+10、精力濃湯 MP上限+15
+            原衝突: 超加值型 BuffVal 普通 +1~+2
+            裁定結果（05）: 補入 §3.5(乙)「上限型 Buff 獨立區間」：普通 +10~+20，二者皆落區間 ✓
+  - heading: 附錄 C：材料→成品 速查（避免與物品圖鑑成品表重複）
+    text: "> 本速查僅標示「材料歸屬哪條製造產線」，不重複列舉成品數值；具體成品數值由物品圖鑑模板取用上表材料欄位生成。
+---
+*—— 材料圖鑑（Material Catalog）完。本圖鑑與 `設計稿/05_製造系統_數值框架.md`、`圖鑑/物品圖鑑.md`、玩家書第四章、採集類生活技能設計（見玩家書第四章附錄）配套使用。——*"
+    tables:
+      - columns:
+          - 製造技能（設施）
+          - 取用本圖鑑材料
+          - 生成成品（見物品圖鑑模板）
+        rows:
+          - 製造技能（設施）: **鍊金（實驗室）**
+            取用本圖鑑材料: 治療草／魔力蘑菇／聖光花／星輝草／龍息蘭（HealBase）
+            生成成品（見物品圖鑑模板）: 藥水（HP／MP 回復）
+          - 製造技能（設施）: ""
+            取用本圖鑑材料: 火焰花／寒霜露（DmgBase＋Tags）
+            生成成品（見物品圖鑑模板）: 炸彈／火力卷軸（AOE 元素傷害）
+          - 製造技能（設施）: ""
+            取用本圖鑑材料: 淨化苔（Tags）
+            生成成品（見物品圖鑑模板）: 淨化卷軸（解除異常）
+          - 製造技能（設施）: **烹飪（廚房）**
+            取用本圖鑑材料: 肉／蛋／蜂蜜／星光果／龍肝／聖光麥／魚／辣椒／海鹽／靈菇／巨獸心／鳳凰羽果（BuffType）
+            生成成品（見物品圖鑑模板）: 增益料理（Hit／HP上限／MP上限／LUK／CON／STR／DEX／MAG 等）
+          - 製造技能（設施）: **鍛造（鍛冶爐）**
+            取用本圖鑑材料: 普通木／鐵木／龍血木／青藤木／黑檀木／雷紋木／星槐木／世界樹枝（DmgBase）
+            生成成品（見物品圖鑑模板）: 武器（木柄近戰／遠程）
+          - 製造技能（設施）: ""
+            取用本圖鑑材料: 精鋼錠／秘銀／龍鱗片／龍王鱗（DmgBase）
+            生成成品（見物品圖鑑模板）: 金屬武器
+          - 製造技能（設施）: ""
+            取用本圖鑑材料: 板甲鋼／龍鱗片（DRBase）
+            生成成品（見物品圖鑑模板）: 金屬防具（重甲需體質（CON）≥12）
+          - 製造技能（設施）: ""
+            取用本圖鑑材料: 獸皮／魔獸皮／蛛絲／鱗甲皮／龍蜥鱗（DRBase）
+            生成成品（見物品圖鑑模板）: 皮甲／中甲／重甲片
+          - 製造技能（設施）: ""
+            取用本圖鑑材料: 力量水晶／敏捷護石／幸運幣礦（＋幸運星砂·四葉幻晶·命運之核）／媚光石·虹響碎片·魅語水晶·心動之瞳·魅影之心（魅力（CHA）系列）／魔力結晶／守護之羽／暴擊之眼／龍瞳石（StatBonus）
+            生成成品（見物品圖鑑模板）: 飾品（戒指／護符／寶珠／耳環／幣）
+          - 製造技能（設施）: **農園栽培（農園）**
+            取用本圖鑑材料: 聖光麥／淨化苔／治療草／魔力蘑菇／星光果／辣椒／靈菇／鳳凰羽果（栽培）
+            生成成品（見物品圖鑑模板）: 栽培草藥／作物 → 轉供鍊金／烹飪

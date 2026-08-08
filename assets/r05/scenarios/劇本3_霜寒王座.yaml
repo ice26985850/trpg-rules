@@ -1,0 +1,35 @@
+name: 劇本3 霜寒王座
+description: CL27–34 練級期總章，以 D7 冰原為主軸，從冰原外緣巡邏刷等到深處打倒冰霜女王。魔將清算前最後一段「純刷等」旅程，通關後 Rank 推上 S、影響力點（IP）達 40 解鎖劇本5。採做法 A：一套劇本＋人數調整。
+difficulty: 困難
+level_range: [27, 34]
+chapter: 3
+map_ref: 地圖/D7_戰鬥_冰霜女王.yaml
+initial_map: 地圖/D7_冰原.yaml
+encounters:
+  - id: d7_patrol
+    name: D7 冰原外緣巡邏（CL27–30）
+    enemies:
+      - {name: 冰狼, cr: 27, count: 2}
+      - {name: 雪怪, cr: 29, count: 2}
+      - {name: 寒霜精, cr: 30, count: 2}
+    budget: 困難×1.0
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: d7_frost_queen
+    name: D7 冰霜女王（CL31–34）
+    enemies:
+      - {name: 冰霜巨人, cr: 32, count: 2}
+      - {name: 冰霜女王, cr: 34, count: 1}
+    boss: true
+    budget: 困難×1.2
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+rewards:
+  exp: 12000
+  gold: 9000
+  items: [永凍核心, 冰晶勳章, 冰霜王冠]
+ip_events:
+  - event: 解救冰封廢棄村莊
+    ip: 4
+  - event: 冰霜王冠兌換
+    ip: 4
+  - event: 溫柔對待冰霜爪牙（不濫殺）
+    ip: 2

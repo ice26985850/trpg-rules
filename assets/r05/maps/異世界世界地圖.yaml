@@ -1,0 +1,98 @@
+scenario: 世界觀
+section: 異界全圖（供劇本9–11 空間參照）
+map_type: world
+title: 異世界世界地圖
+# 座標為示意（非精確距離），單位為 SVG 畫布像素（viewBox 680 x 740）
+# 結構：世界裂痕（連結艾爾緹亞）→ 裂隙前線（劇本9）→ 異界本域／使徒領（劇本10）→ 殘片核心→終焉之徑→虛無核心（劇本11）
+
+nodes:
+  - id: R0
+    label: 世界裂痕·入口
+    x: 340
+    y: 110
+    type: 王國
+    explored: true
+  - id: R1
+    label: 裂隙前線
+    x: 340
+    y: 260
+    type: 魔將領地
+    explored: true
+  - id: R2
+    label: 異界本域·殘片海
+    x: 150
+    y: 370
+    type: 魔將領地
+    explored: true
+  - id: R3
+    label: 虛無使徒領
+    x: 530
+    y: 370
+    type: 魔將領地
+    explored: true
+  - id: R4
+    label: 殘片核心
+    x: 530
+    y: 510
+    type: 魔王本營
+    explored: true
+  - id: R5
+    label: 終焉之徑
+    x: 150
+    y: 510
+    type: 城邦
+    explored: true
+  - id: R6
+    label: 虛無核心·奇點
+    x: 340
+    y: 630
+    type: 魔王本營
+    explored: true
+
+edges:
+  - from: R0
+    to: R1
+    type: 通道
+    label: "裂隙通道"
+  - from: R1
+    to: R2
+    type: 通道
+  - from: R1
+    to: R3
+    type: 通道
+  - from: R2
+    to: R4
+    type: 通道
+  - from: R3
+    to: R4
+    type: 通道
+  - from: R2
+    to: R5
+    type: 通道
+  - from: R5
+    to: R6
+    type: 通道
+  - from: R4
+    to: R6
+    type: 通道
+
+# 區域淺色底
+regions:
+  - name: 裂隙區
+    color: "#E8A33D"
+    nodes: [R0, R1]
+  - name: 異界本域
+    color: "#C0504D"
+    nodes: [R2, R3]
+  - name: 核心區
+    color: "#7B4B9B"
+    nodes: [R4, R5, R6]
+
+# 勢力範圍
+factions:
+  - name: 艾爾緹亞殘餘連結
+    color: "#3B6EA5"
+    nodes: [R0]
+  - name: 世界之外·異界勢力
+    color: "#9B3B8F"
+    nodes: [R1, R2, R3, R4, R5, R6]

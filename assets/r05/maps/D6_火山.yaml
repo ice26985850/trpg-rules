@@ -1,0 +1,144 @@
+id: D6
+name: 火山
+recommended_rank: "C/B（CR 19-26）"
+theme: 熔岩裂谷
+grid: { cols: 5, rows: 5 }
+rooms:
+  - id: R1
+    name: 火山口邊緣
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: 唯一進出點；撤退回此即安全脫出。
+  - id: R2
+    name: 火蜥蜴淺灘
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R7]
+    cr: 19
+    enemies: [火蜥蜴 x2]
+    desc: 火蜥蜴 x2 曬甲。
+  - id: R3
+    name: 熔岩裂隙
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R8]
+    trap: 弱（熔岩噴氣，DC12 / 1d6 灼傷）
+    desc: 弱機關，裂隙噴氣。
+  - id: R4
+    name: 炎犬洞窟
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 21
+    enemies: [炎犬 x2]
+    desc: 炎犬 x2 守洞。
+  - id: R5
+    name: 焦黑礦坑
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R10]
+    treasure: 火晶 x2、Glint 碎片、G 120~200
+    desc: 礦工遺留火晶。
+  - id: R6
+    name: 岩漿灘頭
+    type: combat
+    gx: 0
+    gy: 1
+    links: [R1, R7, R11]
+    cr: 22
+    enemies: [岩漿元素 x2]
+    desc: 岩漿元素 x2 成形。
+  - id: R7
+    name: 火山灰營地
+    type: rest
+    gx: 1
+    gy: 1
+    links: [R6, R8, R2, R12]
+    desc: 安全休息點（回復 HP／狀態）。
+  - id: R8
+    name: 落石甬道
+    type: trap
+    gx: 2
+    gy: 1
+    links: [R7, R9, R3, R13]
+    trap: 強（落石，DC18 / 3d6 鈍擊）
+    desc: 強機關，甬道落石。
+  - id: R9
+    name: 硫磺寶窟
+    type: treasure
+    gx: 3
+    gy: 1
+    links: [R8, R10, R4, R14]
+    treasure: 硫磺礦 x2、精良素材、G 140~220
+    desc: 硫磺沉積寶窟。
+  - id: R10
+    name: 熔岩巨人室
+    type: combat
+    gx: 4
+    gy: 1
+    links: [R9, R5, R15]
+    cr: 24
+    enemies: [熔岩巨人 x2]
+    desc: 熔岩巨人 x2 鎮守。
+  - id: R11
+    name: 避熱岩台
+    type: rest
+    gx: 0
+    gy: 2
+    links: [R6, R12]
+    desc: 避熱休息點。
+  - id: R12
+    name: 火紋窖藏
+    type: treasure
+    gx: 1
+    gy: 2
+    links: [R11, R13, R7]
+    treasure: 火紋石、G 150~240
+    desc: 古祭祀窖藏。
+  - id: R13
+    name: 炎脈戰場
+    type: combat
+    gx: 2
+    gy: 2
+    links: [R12, R14, R8, R16]
+    cr: 25
+    enemies: [火蜘蛛 x2]
+    desc: 火蜘蛛 x2 結網。
+  - id: R14
+    name: 噴泉陷阱區
+    type: trap
+    gx: 3
+    gy: 2
+    links: [R13, R15, R9]
+    trap: 強（岩漿噴泉，DC20 / 3d6 灼傷）
+    desc: 強機關，間歇噴泉。
+  - id: R15
+    name: 冷泉休整
+    type: rest
+    gx: 4
+    gy: 2
+    links: [R14, R10]
+    desc: 冷泉休息點。
+  - id: R16
+    name: 炎魔王座
+    type: elite
+    gx: 2
+    gy: 3
+    links: [R13, R17]
+    cr: 26
+    enemies: [炎魔領主（首領）]
+    combat_map: 地圖/D6_戰鬥_炎魔領主.yaml
+    desc: 小首領 炎魔領主（CR26）。
+  - id: R17
+    name: 出口裂隙
+    type: exit
+    gx: 2
+    gy: 4
+    links: [R16]
+    desc: 出口；通關後領取獎勵離開。

@@ -1,0 +1,776 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黎明殺機 TRPG ／ s04_十七號病歷 | TRPG 規則分享站</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG 規則分享站</span>
+<a href="../../index.html">規則總覽</a><span class="spacer"></span><a class="lang" href="../rules/r33.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r33.html">← 回規則頁</a> ｜ <a href="../../index.html">⟵ 總頁</a></p><h1>S4 · Patient Seventeen's Chart</h1>
+<blockquote>
+<p>This scenario is the turning point of the main story. For the first time, the player sees the trace that "Altruistic Hope" leaves at the system level — helping an Afterimage finish what it left undone spits out memory, and all those memory shards roll in the same direction: the Campfire. This is the campaign's pivotal revelation.</p>
+</blockquote>
+<hr />
+<h2>1. Scenario Information</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number</td>
+<td>S4</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Patient Seventeen's Chart</td>
+</tr>
+<tr>
+<td>Recommended Prestige (PRS)</td>
+<td>7–10</td>
+</tr>
+<tr>
+<td>Estimated Length</td>
+<td>Solo 4 hrs / Group 4.5 hrs</td>
+</tr>
+<tr>
+<td>Realm</td>
+<td>Crotus Prenn Asylum (R4)</td>
+</tr>
+<tr>
+<td>Main Killer</td>
+<td>Nurse (NRS)</td>
+</tr>
+<tr>
+<td>Difficulty</td>
+<td>Medium–High (Killer Pressure Level: 4; main Difficulty Class (DC): Hard)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. GM Summary</h2>
+<p><strong>Storyline</strong>: Using the Memory Cards retrieved in S3, the player pieces together clues; Gilmar brings back a roster from the records room — 40 names, 39 crossed out, the 17th not. Some player recognizes "Seventeen." In Act Two, the asylum's Afterimage density is extremely high, each stuck in a repeated action; the player completes their unfinished business (+2 Hope Point (HOP), +2 Campfire Ember, spit out memory). Seventeen stands motionless at the records-room door; the player must enter the records room to find her chart — and the records room is a death trap (single exit, no Pallet, no Window). In Act Three, reading the chart: Seventeen was never a patient — she was a family visitor, wrongly admitted and held for three years.</p>
+<p><strong>Truth (GM-Exclusive)</strong>: When the player helps an Afterimage finish what it left undone, the Altruistic Hope generated lowers Entity Hunger (EH), and the "warm amber things" an Afterimage releases on dissolving roll toward the Campfire — <strong>the Campfire is built from Ember, and Ember comes from "someone doing something for someone else."</strong> This is the campaign's pivotal revelation. The GM should not explain; let the player say "so the Campfire is…" themselves; if they can't, carry the question forward and S7 gives the answer.</p>
+<p><strong>How to Run</strong>: Fully enclosed, very short line of sight, Nurse (NRS) can Blink through walls — the most claustrophobic round. Blink crosses floors, so "running upstairs" is no longer safe. The records room is the only single-exit combat map; the GM should have the Nurse appear at the door only after the player enters, not chase in, just stand there, then slowly knock on the table.</p>
+<hr />
+<h2>3. Opening Text (read aloud)</h2>
+<blockquote>
+<p>Gilmar spreads a crumpled paper by the fire. It is a roster, forty names, the first thirty-nine struck through with thick black lines.</p>
+<p>The fortieth — the seventeenth — has nothing. Not crossed out, not finished.</p>
+<p>"This one," he says, "is still here."</p>
+<p>You look at the empty space. Something moves in your chest. You can't say why, but you know this name. Or rather — you know the feeling of "knowing it."</p>
+<p>Eloise flips the paper over. The back is blank, save for a deep crease, as if someone folded and unfolded it again and again.</p>
+<p>"In the asylum," she says, "there's a list like this every year. The crossed-out ones forgot who they were. The not-crossed-out…"</p>
+<p>She pauses.</p>
+<p>"The not-crossed-out are the ones someone is still waiting to come home."</p>
+</blockquote>
+<hr />
+<h2>4. Scenes and Nodes</h2>
+<p><strong>Realm</strong>: Crotus Prenn Asylum (R4). Zone divisions: <code>ward</code> (ward) / <code>chapel</code> (chapel) / <code>records</code> (records).</p>
+<p><strong>Exploration map node list</strong></p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>label</th>
+<th>type</th>
+<th>x</th>
+<th>y</th>
+<th>region</th>
+<th>initially explored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cp_start</code></td>
+<td>Starting Mist Mouth</td>
+<td>Entrance</td>
+<td>500</td>
+<td>930</td>
+<td>ward</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>cp_lobby</code></td>
+<td>Charred Foyer</td>
+<td>Hub</td>
+<td>500</td>
+<td>820</td>
+<td>ward</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>cp_ward_1f</code></td>
+<td>Disturbed Ward · First Floor</td>
+<td>Main Zone</td>
+<td>340</td>
+<td>700</td>
+<td>ward</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>cp_ward_2f</code></td>
+<td>Disturbed Ward · Second Floor</td>
+<td>Main Zone</td>
+<td>280</td>
+<td>570</td>
+<td>ward</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_ward_3f</code></td>
+<td>Disturbed Ward · Third Floor</td>
+<td>Main Zone</td>
+<td>220</td>
+<td>440</td>
+<td>ward</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_atrium</code></td>
+<td>Atrium</td>
+<td>Special</td>
+<td>400</td>
+<td>570</td>
+<td>ward</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_ect</code></td>
+<td>Electrotherapy Room</td>
+<td>Room / Afterimage</td>
+<td>180</td>
+<td>700</td>
+<td>ward</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_corridor_e</code></td>
+<td>East Long Corridor</td>
+<td>Passage</td>
+<td>660</td>
+<td>700</td>
+<td>chapel</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_chapel</code></td>
+<td>Father Campbell's Chapel</td>
+<td>Main Zone</td>
+<td>780</td>
+<td>570</td>
+<td>chapel</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_pulpit</code></td>
+<td>Pulpit Hidden Door</td>
+<td>Special</td>
+<td>860</td>
+<td>470</td>
+<td>chapel</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_corridor_n</code></td>
+<td>North Long Corridor</td>
+<td>Passage</td>
+<td>500</td>
+<td>470</td>
+<td>records</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_records</code></td>
+<td><strong>Records Room</strong></td>
+<td><strong>Key</strong></td>
+<td>500</td>
+<td>330</td>
+<td>records</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_door17</code></td>
+<td>Where Seventeen Stands</td>
+<td>Afterimage</td>
+<td>500</td>
+<td>410</td>
+<td>records</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_chest_a</code></td>
+<td>Medicine Cabinet</td>
+<td>Chest</td>
+<td>340</td>
+<td>400</td>
+<td>records</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_chest_b</code></td>
+<td>Priest's Chest</td>
+<td>Chest</td>
+<td>830</td>
+<td>660</td>
+<td>chapel</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_crack</code></td>
+<td>Outer-Wall Crack</td>
+<td>Special</td>
+<td>620</td>
+<td>250</td>
+<td>records</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_exit_w</code></td>
+<td>West Exit Gate</td>
+<td>Exit</td>
+<td>110</td>
+<td>300</td>
+<td>ward</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_exit_e</code></td>
+<td>East Exit Gate</td>
+<td>Exit</td>
+<td>900</td>
+<td>830</td>
+<td>chapel</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_opt_morgue</code>※</td>
+<td>Morgue</td>
+<td>Optional</td>
+<td>640</td>
+<td>880</td>
+<td>ward</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>cp_opt_bell</code>※</td>
+<td>Bell Tower</td>
+<td>Optional</td>
+<td>890</td>
+<td>380</td>
+<td>chapel</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Connection List</strong></p>
+<table>
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>channel type</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cp_start</code></td>
+<td><code>cp_lobby</code></td>
+<td>Interior</td>
+<td>Charred Vestibule</td>
+</tr>
+<tr>
+<td><code>cp_lobby</code></td>
+<td><code>cp_ward_1f</code></td>
+<td>Interior Door</td>
+<td>Ward Door</td>
+</tr>
+<tr>
+<td><code>cp_lobby</code></td>
+<td><code>cp_corridor_e</code></td>
+<td>Interior</td>
+<td>East Corridor Mouth</td>
+</tr>
+<tr>
+<td><code>cp_lobby</code></td>
+<td><code>cp_opt_morgue</code></td>
+<td>Descending Ladder</td>
+<td>Underground Ladder</td>
+</tr>
+<tr>
+<td><code>cp_ward_1f</code></td>
+<td><code>cp_ward_2f</code></td>
+<td>Stairs</td>
+<td>Ward Stairs</td>
+</tr>
+<tr>
+<td><code>cp_ward_1f</code></td>
+<td><code>cp_ect</code></td>
+<td>Interior Door</td>
+<td>Electrotherapy Door</td>
+</tr>
+<tr>
+<td><code>cp_ward_1f</code></td>
+<td><code>cp_atrium</code></td>
+<td>Opening</td>
+<td>Atrium Floor</td>
+</tr>
+<tr>
+<td><code>cp_ward_2f</code></td>
+<td><code>cp_ward_3f</code></td>
+<td>Stairs</td>
+<td>Ward Stairs</td>
+</tr>
+<tr>
+<td><code>cp_ward_2f</code></td>
+<td><code>cp_atrium</code></td>
+<td>Window</td>
+<td>Atrium Railing (jump down to first floor, Injured)</td>
+</tr>
+<tr>
+<td><code>cp_ward_2f</code></td>
+<td><code>cp_corridor_n</code></td>
+<td>Interior</td>
+<td>North Corridor Mouth</td>
+</tr>
+<tr>
+<td><code>cp_ward_3f</code></td>
+<td><code>cp_exit_w</code></td>
+<td>Interior</td>
+<td>West Escape Stairs</td>
+</tr>
+<tr>
+<td><code>cp_ward_3f</code></td>
+<td><code>cp_atrium</code></td>
+<td>Jump Down (one-way)</td>
+<td>Third-Floor Railing (Dying)</td>
+</tr>
+<tr>
+<td><code>cp_corridor_e</code></td>
+<td><code>cp_chapel</code></td>
+<td>Interior Door</td>
+<td>Chapel Door</td>
+</tr>
+<tr>
+<td><code>cp_corridor_e</code></td>
+<td><code>cp_exit_e</code></td>
+<td>Interior</td>
+<td>East Exit</td>
+</tr>
+<tr>
+<td><code>cp_chapel</code></td>
+<td><code>cp_pulpit</code></td>
+<td>Hidden Door</td>
+<td>Behind the Pulpit</td>
+</tr>
+<tr>
+<td><code>cp_chapel</code></td>
+<td><code>cp_chest_b</code></td>
+<td>Interior</td>
+<td>Vestry</td>
+</tr>
+<tr>
+<td><code>cp_chapel</code></td>
+<td><code>cp_opt_bell</code></td>
+<td>Stairs</td>
+<td>Bell-Tower Stairs</td>
+</tr>
+<tr>
+<td><code>cp_pulpit</code></td>
+<td><code>cp_corridor_n</code></td>
+<td>Secret Passage</td>
+<td>The Priest's Path</td>
+</tr>
+<tr>
+<td><code>cp_corridor_n</code></td>
+<td><code>cp_door17</code></td>
+<td>Interior</td>
+<td>Records-Room Antechamber</td>
+</tr>
+<tr>
+<td><code>cp_corridor_n</code></td>
+<td><code>cp_chest_a</code></td>
+<td>Interior</td>
+<td>Medicine Room</td>
+</tr>
+<tr>
+<td><code>cp_door17</code></td>
+<td><code>cp_records</code></td>
+<td>Single Door</td>
+<td><strong>Records-Room Door (only entrance/exit)</strong></td>
+</tr>
+<tr>
+<td><code>cp_records</code></td>
+<td><code>cp_crack</code></td>
+<td>Breach</td>
+<td>Outer-Wall Crack (passable after Act Three)</td>
+</tr>
+<tr>
+<td><code>cp_crack</code></td>
+<td><code>cp_exit_e</code></td>
+<td>Outdoor</td>
+<td>By the Outer Wall</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>5. Encounter Configuration</h2>
+<p><strong>Main Killer</strong>: Nurse (NRS). Avatar Menace Value (AVM) +3 (highest in the whole system). Challenge Rating (CR) = Prestige (PRS) + 3; this scenario's Prestige (PRS) is 7–10, so Challenge Rating (CR) 10–13. Occupies 60% of the Encounter Budget (EB). Feature: Blink can cross floors and walls; solo configuration (N=1) adjustment: Blink Charge cap fixed at 2, and the GM must give the player an extra 1 Hope Point (HOP) as opening compensation.</p>
+<p><strong>Encounter Budget (EB)</strong> (Difficulty Modifier (DM) = 1.1, Prestige (PRS) mid 8):</p>
+<table>
+<thead>
+<tr>
+<th>Player Count N</th>
+<th>Encounter Budget (EB)</th>
+<th>Killer Share (60%)</th>
+<th>Construct Available (40%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>11</td>
+<td>6.6</td>
+<td>4.4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>22</td>
+<td>13.2</td>
+<td>8.8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>33</td>
+<td>19.8</td>
+<td>13.2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>44</td>
+<td>26.4</td>
+<td>17.6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Realm Construct</strong>: Ash-Throat = Ward Afterimage (RC-05, Challenge Rating (CR) 4, Hit Points (HP) 26, attack modifier +4, Defense Difficulty Class (DC) 12, Encounter Budget Cost (EBC) 8, narrative-puzzle type). A cinder-like construct that emits patients' wails, jamming audio-based positioning.</p>
+<p><strong>Encounter List</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Type</th>
+<th>Content</th>
+<th>Challenge Rating (CR) / Difficulty</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E1</td>
+<td>Chase</td>
+<td>Nurse's (NRS) Blink (through walls)</td>
+<td>High (10–13)</td>
+<td>Tutorial: walls are no longer cover</td>
+</tr>
+<tr>
+<td>E2</td>
+<td>Puzzle</td>
+<td>Five Afterimages' unfinished business</td>
+<td>Medium–Hard</td>
+<td>+2 Hope Point (HOP) per completion</td>
+</tr>
+<tr>
+<td>E3</td>
+<td>Realm Construct</td>
+<td>Ash-Throat (RC-05) × N</td>
+<td>Medium (4)</td>
+<td>Encounter Budget Cost (EBC) 8 each</td>
+</tr>
+<tr>
+<td>E4</td>
+<td>Environment</td>
+<td>Atrium (third floor can drop / first floor can see third floor)</td>
+<td>Medium</td>
+<td>—</td>
+</tr>
+<tr>
+<td>E5</td>
+<td>Chase</td>
+<td>Records-room enclosed encounter (single exit, Nurse at door)</td>
+<td>Extreme</td>
+<td>Death trap</td>
+</tr>
+<tr>
+<td>E6</td>
+<td>Endgame</td>
+<td>Exit Gate or Hatch</td>
+<td>High</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The five Afterimages' unfinished business</strong> (solo configuration adds "the Hummer" for 6 total): the Knocker / the Counter / the Lace-Tier / the Writer (uses the S2 nail) / Seventeen (core) / the Hummer※.</p>
+<hr />
+<h2>6. NPC Appearances and Lines</h2>
+<p><strong>Seventeen (§8-D, Afterimage)</strong>
+- Central to this scenario. Stands motionless at the records-room door, accepts no help.
+- After the chart is read aloud, she turns, pulls out her sister's chart, places it in the player's hands, then dissolves.</p>
+<p><strong>Sally Nkosi (§8-A)</strong>: if she plucked the wrong pod in S3, here she "recognizes Seventeen's face" but can't say why.</p>
+<p><strong>Whisperer · the Chart Number (RC-02 variant)</strong>
+- The asylum Whisperer, intelligence-type, Encounter Budget Cost (EBC) 0. Spend 1 Hope Point (HOP) to ask "where is No. 17."
+- Line: "A number is only a number. A person is not. The one you ask about was never of this place."</p>
+<p><strong>Echo Companion · the Lace-Tier (§8-B, solo configuration)</strong>
+- Is two parts of the same person as the Afterimage "the Lace-Tier." <strong>If the player completes both, an extra +3 Campfire Ember.</strong></p>
+<hr />
+<h2>7. Decision Points and Branch Results</h2>
+<p><strong>Decision One: Help the Afterimages finish their unfinished business?</strong>
+- Each completed → +2 Hope Point (HOP), +2 Campfire Ember, spit out memory (possibly someone else's).
+- Branch: complete 3+ and read Seventeen's chart aloud → trigger the Ember Moment and the pivotal revelation.</p>
+<p><strong>Decision Two: Enter the records room (death trap)?</strong>
+- Entering = the only exit is blocked by the Nurse at the door; you must escape via the outer-wall crack (<code>cp_crack</code>) after Act Three.
+- Branch: don't enter → main story can't advance, only pure escape; enter → pivotal revelation + Memory Card.</p>
+<hr />
+<h2>8. Player-Count Scaling Rules</h2>
+<blockquote>
+<p>The solo configuration (1 Player + 1 GM) is the default. Locker count = 4 + N; Chest count = MAX(2, N+1).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>1 Player</th>
+<th>2 Players</th>
+<th>3 Players</th>
+<th>4 Players</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generator total</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Generators required</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Killer Pressure Level</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Echo Companion count</td>
+<td><strong>2</strong></td>
+<td><strong>1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Afterimage count</td>
+<td><strong>6</strong></td>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Ash-Throat (RC-05) count</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Hook count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Chest count</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Locker count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hook phase rounds</td>
+<td>7</td>
+<td>6</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Endgame Collapse rounds</td>
+<td>12</td>
+<td>10</td>
+<td>8</td>
+<td>6</td>
+</tr>
+<tr>
+<td><strong>Records-room Blink cooldown (rounds)</strong></td>
+<td><strong>3</strong></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Completion reward · Bloodpoint (BP)</td>
+<td>×1.15</td>
+<td>×1.05</td>
+<td>×1.0</td>
+<td>×1.0</td>
+</tr>
+<tr>
+<td>Completion reward · Hope Point (HOP)</td>
+<td>+3</td>
+<td>+3</td>
+<td>+3</td>
+<td>+3</td>
+</tr>
+<tr>
+<td>Completion reward · Memory Card</td>
+<td><strong>2</strong></td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Optional exploration nodes</td>
+<td><strong>+2</strong></td>
+<td><strong>+1</strong></td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Effective Repair Force (ERF)</td>
+<td>1.0</td>
+<td>1.5</td>
+<td>2.0</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Per-round Pressure Point (PRE) recovery</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Self-Unhook Difficulty Class (DC)</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Exit Gate opening segments</td>
+<td>3</td>
+<td>4</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Pallet count</td>
+<td>8</td>
+<td>10</td>
+<td>12</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Window count</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Hatch open condition</td>
+<td>Generators completed ≥ 1 AND all Echo Companions down</td>
+<td>Survivors alive = 1, or completed ≥ 2 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 3 AND survivors alive ≤ 1</td>
+<td>Survivors alive = 1, or completed ≥ 4 AND survivors alive ≤ 2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>9. Ending Branches and Rewards</h2>
+<p><strong>Ending branch</strong>: Whether the pivotal revelation triggers (depends on Decisions One / Two). No multiple-ending branch.</p>
+<p><strong>Rewards</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bloodpoint (BP)</td>
+<td>Standard × (per player-count table)</td>
+</tr>
+<tr>
+<td>Prestige (PRS)</td>
+<td>Rises to level 10 upon completion</td>
+</tr>
+<tr>
+<td>Hope Point (HOP)</td>
+<td>+3</td>
+</tr>
+<tr>
+<td>Campfire Ember</td>
+<td>Accrued during play (est. 8–14, Afterimage tasks yield high)</td>
+</tr>
+<tr>
+<td>Memory Card</td>
+<td>1–2</td>
+</tr>
+<tr>
+<td>Item</td>
+<td>1 uncommon item + 1 Add-on per person</td>
+</tr>
+<tr>
+<td><strong>Narrative</strong></td>
+<td><strong>Confirmed: the Campfire is made of Ember, and Ember is born of Altruistic Hope</strong></td>
+</tr>
+<tr>
+<td>New Ability</td>
+<td><strong>"Afterimage Dialogue"</strong>: from now on the player may attempt to communicate with Afterimages in any Realm (spend 1 Action Point (AP) + Stealth (STL) or Will (WIL) check)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ember Moment trigger text</strong>:</p>
+<blockquote>
+<p>When Seventeen dissolves, you notice something. The others, when they dissolve, turn to ash. She does not.
+She turns into <strong>a small handful of warm, amber things</strong> that fall to the ground, and then — you see it clearly — <strong>they do not stay where they landed. They roll in one direction. All in the same direction.</strong>
+You chase them out. You chase them to the crack in the asylum's outer wall. You watch those things pass through the crack, roll into the Fog, roll toward a place far off that you cannot see.
+But you know where it is. Because that direction is where you wake every time.
+<strong>They are rolling toward the Campfire.</strong></p>
+</blockquote>
+<hr />
+<h2>10. Connections to Adjacent Scenarios</h2>
+<ul>
+<li><strong>Forward (S3)</strong>: the retrieved Memory Cards are the material for piecing together "Patient Seventeen's Chart"; if Sally plucked the wrong pod → she recognizes Seventeen here.</li>
+<li><strong>Backward (S5)</strong>: at the end of Seventeen's chart "after her sister's chart number was written an address — the Swamp" → S5 Sunken Stair clue; this scenario's "Afterimage Dialogue" ability → S5 Void interaction with Afterimages.</li>
+<li><strong>Hook payoff points</strong>: ① the outer-wall crack (<code>cp_crack</code>) → hints something exists beyond the Realms; ② Afterimages spitting memory toward the Campfire → S7 Ember Vein and the Umbilical; ③ the asylum's symmetric layout → the prototype of S6 Léry's Memorial Institute's mirrored design.</li>
+</ul><p><a href="../../assets/r33_en/scenarios/s04_十七號病歷.yaml" download>下載 YAML</a></p></main>
+<footer class="foot">本站收錄各類 TRPG 規則，點開可看介紹、劇本、角色卡與地圖，並可下載 PDF / Excel / 整套 zip。</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

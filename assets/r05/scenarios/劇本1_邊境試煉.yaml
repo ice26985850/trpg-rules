@@ -1,0 +1,49 @@
+name: 劇本1 邊境試煉
+description: CL1–12 練級期總章，串接 D1 哥布林巢穴／D3 森林／D4 沙漠三座地城與對應委託，形成「出村→刷等→逼近魔將門檻」的節奏。採做法 A：一套劇本＋人數調整。
+difficulty: 簡單~普通
+level_range: [1, 12]
+chapter: 1
+map_ref: 地圖/D4_戰鬥_沙王.yaml
+initial_map: 地圖/D1_哥布林巢穴.yaml
+encounters:
+  - id: d1_goblin_warren
+    name: D1 哥布林巢穴（CL1–8）
+    enemies:
+      - {name: 哥布林戰士, cr: 2, count: 2}
+      - {name: 哥布林弓手, cr: 3, count: 2}
+      - {name: 哥布林王, cr: 5, count: 1}
+    boss: true
+    budget: 輕鬆×1.0
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: d3_forest
+    name: D3 森林（CL1–6）
+    enemies:
+      - {name: 哥布林斥候, cr: 2, count: 2}
+      - {name: 野狼, cr: 3, count: 2}
+      - {name: 哥布林弓手, cr: 4, count: 2}
+      - {name: 哥布林王, cr: 5, count: 1}
+    boss: true
+    budget: 輕鬆×1.0
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+  - id: d4_desert
+    name: D4 沙漠（CL7–12）
+    enemies:
+      - {name: 沙盜, cr: 7, count: 2}
+      - {name: 沙漠巨蠍, cr: 9, count: 2}
+      - {name: 沙王, cr: 12, count: 1}
+    boss: true
+    budget: 普通×1.0
+    adjust: "1名→CR−3/敵數×0.5(至少1)/無助戰; 2名→CR−1/敵數×0.75; 3名→基準; 4名→基準; 5–6名→CR+2/敵數×1.5/並發+1"
+rewards:
+  exp: 5700
+  gold: 1500
+  items: [基礎素材套組, 哥布林王徽記, 沙王王冠, Rank 晉升憑證]
+ip_events:
+  - event: 救出被綁孩童（D1）
+    ip: 3
+  - event: 饒恕敗北哥布林（不殺）
+    ip: 2
+  - event: 哥布林王徽記兌換（D1／D3）
+    ip: 4
+  - event: 沙王王冠兌換（D4）
+    ip: 3
