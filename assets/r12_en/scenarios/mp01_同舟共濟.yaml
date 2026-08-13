@@ -1,0 +1,226 @@
+# Urban Survivors — Multiplayer Scenario: "In the Same Boat" — Mid-Siege: Division of Labor and Trust
+# Format: YAML
+# Suggested Level: Play immediately after character creation (can follow or stand alone)
+# Difficulty: ★★★☆ (Moderate)
+# Suggested Players: 2–4
+# Player Mode: Multiplayer (each player portrays a different survivor in the same Shelter)
+# Siege Days: D+5 to D+20 (about 6–8 game sessions)
+
+scenario_id: "MP1"
+scenario_name: "In the Same Boat"
+difficulty: "★★★☆"
+suggested_players: "2–4"
+player_mode: "Multiplayer (each player portrays a different survivor in the same Shelter)"
+siege_days: "D+5–D+20"
+estimated_sessions: "6–8 sessions"
+core_theme: "Division of labor, trust, and collective cost"
+
+# ── Scenario Overview ──
+summary: |
+  The siege has entered its second week. Several strangers who never met before have been thrown together
+  by taking shelter in the basement of the same half-ruined apartment building.
+  With water and power cut off and supplies running thin, they must decide:
+  scrape by each on their own, or share a single Shelter and divide the risks.
+  This scenario is designed specifically for the multi-character mode—each player controls one survivor,
+  sharing the Shelter's resource pool, yet each carries their own secrets, Trauma, and moral bottom line.
+  Collective survival is never cheap: every ration saved comes from someone swallowing their grievances.
+
+# ── Group Setup ──
+group_setup:
+  shelter_name: "Old Town apartment basement"
+  shelter_state:
+    structure: 4
+    seal: 3
+    comfort: 2
+  shared_resources:
+    - "Canned food ×4"
+    - "Bottled water ×3"
+    - "First-aid kit ×1"
+    - "Fuel ×2"
+  starting_challenge: "On the first night, footsteps and muffled voices echo from upstairs—another survivor, or a Federal Army patrol? The group must vote on whether to investigate, and how to respond."
+  gm_note: "Let players experience 'collective decision-making' right from the start: there is no single protagonist, and every choice is a tug-of-war among multiple people."
+
+starting_scenarios:
+  - id: A
+    name: "Neighbors"
+    location: "Old Town residential apartment"
+    description: "Three households on the same floor, mere nodding acquaintances before the siege, now forced to share the corridor and storage room."
+    starting_resources: "Household total: canned food ×4, water ×3, first-aid kit ×1; personal items per character sheet"
+    starting_challenge: "Who keeps watch? Who scavenges? Who keeps the resource ledger? — the first dispute over division of labor"
+    gm_note: "Good for guiding players to establish the 'shared resource pool' and 'role assignment' mechanics"
+  - id: B
+    name: "Coworkers"
+    location: "City Center office or University District classroom"
+    description: "A group separated during evacuation reunites in the basement; some are lightly wounded, some carry vital supplies."
+    starting_resources: "Office emergency reserve: biscuits ×2, water ×1; the wounded need a first-aid kit"
+    starting_challenge: "The building was damaged in recent shelling and must be reinforced or evacuated before aftershocks"
+    gm_note: "Good for guiding players through their first 'collective action' (e.g. cooperative reinforcement)"
+  - id: C
+    name: "Street Encounter"
+    location: "Random city-district street (GM's choice)"
+    description: "Strangers caught in the shelling are forced into the same bomb shelter; trust is not yet established."
+    starting_resources: "Only what is on their persons (starting equipment from character sheets)"
+    starting_challenge: "Immediately encounter patrol soldiers—must cooperate to find cover and stay quiet within 3 turns"
+    gm_note: "The highest-tension start—tests instant coordination and stealth"
+
+# ── Special Event Table (triggered by Siege Day; all group-level) ──
+special_events:
+  - day: "D+6"
+    name: "First Ration Vote"
+    description: "Food runs out. The group must decide the rationing method: equal share, by labor, or weakest-first."
+    mechanics:
+      - "Group vote (majority rules); ties broken by the highest Willpower"
+      - "If 'weakest-first' is chosen: caregivers' Mental State +1, but the whole group's Satiety drops faster"
+      - "If 'by labor' is chosen: scavengers benefit, wounded/elderly-weak members make Willpower (WIL) check DC 10, failure means Mental State −1"
+    narrative_prompt: "Slide the last half-can of food to the center of the table. No one speaks. In the end, who reaches for it first?"
+  - day: "D+8"
+    name: "The Knocking"
+    description: "A strange woman with a child knocks at the basement door on a rainy night, begging to be let in."
+    npc_involved: "GM's choice: mother with child / wounded elderly / nervous young person"
+    mechanics:
+      - "Group vote to accept or refuse"
+      - "Accept → that NPC becomes a Shelter member, food and water consumption +1/day; may bring intel or trouble"
+      - "Refuse → all make Willpower (WIL) check DC 10, failures suffer Mental State −1 (collective guilt); Trauma +1"
+    narrative_prompt: "A knock is the most terrifying sound in a siege. It means a choice—and now, that choice no longer belongs to you alone."
+  - day: "D+11"
+    name: "Black Market Comes Calling"
+    description: "Marco (NPC #15) finds this group and offers supplies in exchange for 'a piece of intel'—and that intel is the location of another Shelter."
+    npc: "Marco (black market broker, REL 0, SEC 4)"
+    mechanics:
+      - "Crisis of group division: the trade faction vs. the refusal faction each hold their ground"
+      - "Accept → gain supplies (canned food ×3, medicine ×1), but establish a gray connection with the Black River Merchant Guild (BRS); that Shelter may suffer later, triggering collective moral Trauma"
+      - "Refuse → Marco remembers you, future trade starting attitude −1; but group internal REL +1 (holding the line together)"
+    narrative_prompt: "'I'm just a middleman,' Marco says, 'but with so many of you, someone has to make the call, right?'"
+  - day: "D+14"
+    name: "Patrol Sweep"
+    description: "Federal Army patrol teams are counting households building by building. The group must decide how to respond."
+    mechanics:
+      - "Option A disguise as a family: all make Social (SOC) check DC 12 (must stay in sync, any single failure means all fail), success means the patrol leaves"
+      - "Option B split and hide: each character individually makes Physique/Agility check DC 10 to find cover; one failure → Threat 2 patrol soldiers make contact"
+      - "Option C bribe (if medicine/fuel available): Social (SOC) check DC 14, success buys passage"
+    narrative_prompt: "Boots echo on the stairs. 'People inside, come out and register.'"
+  - day: "D+17"
+    name: "Betrayal or Loyalty"
+    description: "One player's secret (SEC) is exposed—perhaps hoarded supplies, a past with the enemy army, or having stood by and watched someone die."
+    mechanics:
+      - "After exposure, the group REL related to that player drops to zero"
+      - "GM decides NPC and other players' reactions based on the secret's content (may expel, may forgive)"
+      - "If the group chooses forgiveness: all Trauma −1, but a repeat offense later means immediate expulsion"
+    narrative_prompt: "'So all these days... you never said anything?' Something in the air has shattered."
+  - day: "D+20"
+    name: "The Final Choice"
+    description: "Receives an evacuation invitation from one faction (CDC Civilian Self-Defense Committee, or BRS Black River Merchant Guild), with limited spots."
+    npc_involved: "Yana Novak (NPC #2, CDC) or Marco (NPC #15, BRS)"
+    mechanics:
+      - "Group vote: who leaves, who stays, or all refuse"
+      - "If partially depart: those who leave gain safety, those who stay gain Trauma +2 (sense of abandonment); relations develop a permanent rift"
+      - "If all refuse: group internal REL +2, but must face the siege alone going forward"
+    narrative_prompt: "A slip of paper with a list of names. Only three names on it, and there are four of you."
+
+# ── Scavenge Locations (group sortie: 2 go out, the rest hold the fort) ──
+scavenge_locations:
+  - id: "MP1_L1"
+    name: "Nearby Ruined Tenement"
+    type: "Residence"
+    dc: 10
+    risk: "Low"
+    possible_loot:
+      - "Canned food (60%)"
+      - "Cloth/old clothing (40%)"
+      - "Candles (30%)"
+    danger_on_fail: "Floor partially collapses—those who went out take a Minor Wound; those who stayed hear the commotion, Stealth −1"
+  - id: "MP1_L2"
+    name: "Corner Grocery"
+    type: "Shop"
+    dc: 12
+    risk: "Medium"
+    possible_loot:
+      - "Canned food (70%)"
+      - "Bottled water (50%)"
+      - "Batteries (30%)"
+    danger_on_fail: "Other survivors are also scavenging—the group must decide whether to cooperate or drive them off (Social contest)"
+  - id: "MP1_L3"
+    name: "Abandoned Vehicles"
+    type: "Outdoor"
+    dc: 8
+    risk: "Medium (exposure)"
+    possible_loot:
+      - "Gasoline (40%)"
+      - "Map (30%)"
+      - "First-aid kit (20%)"
+    danger_on_fail: "Lingering too long in the open—spotted by patrol soldiers, triggering Threat 2"
+  - id: "MP1_L4"
+    name: "Underground Parking Garage"
+    type: "Indoor"
+    dc: 10
+    risk: "Low"
+    possible_loot:
+      - "Gasoline (50%)"
+      - "Tools (30%)"
+      - "Tape/rope (40%)"
+    danger_on_fail: "Trips in the dark—Minor Wound + noise (Level 3), may alert people beyond those holding the fort"
+  - id: "MP1_L5"
+    name: "Abandoned Apartment"
+    type: "Residence"
+    dc: 10
+    risk: "Medium"
+    possible_loot:
+      - "Medicine (40%)"
+      - "Clothing (50%)"
+      - "Food (30%)"
+    danger_on_fail: "The previous owner's corpse—first time seeing a corpse triggers a Trauma event (Trauma Willpower check TDC 8); risk of exposing secrets"
+  - id: "MP1_L6"
+    name: "Elementary School Classroom"
+    type: "Public Building"
+    dc: 8
+    risk: "Low"
+    possible_loot:
+      - "First-aid kit (50%)"
+      - "Paper & pen (60%)"
+      - "Toys (20%)"
+    danger_on_fail: "Ceiling already collapsed—minor, but the toys may trigger a player's loss memory (Trauma +1)"
+
+# ── Multiplayer-Exclusive Mechanics ──
+group_mechanics:
+  shared_resource_pool: "One Shelter ledger recording food/water/medicine/fuel; each member consumes 1 unit of food and water per day."
+  role_assignment: "Suggest division of labor by each character's highest attribute: Scavenger (Agility/Craft), Caregiver (Willpower/Social), Guard (Physique/Agility), Repairer (Craft/Physique)."
+  group_vote: "Decisions affecting everyone are made by majority; ties broken by the GM or the highest-Willpower member (coordinator)."
+  relationship_and_secret: "Each player has a 'Relationship value REL' toward other players; each player has 1 'secret (SEC)'. Revealing a secret → related REL drops to zero, but may buy the team's trust (GM's judgment)."
+  individual_trauma: "Same as solo rules; 'witnessing a companion make a cruel choice' also counts as a Trauma event (see Trauma table 'forced choice' +3, 'companion death' +7)."
+  conflict_resolution: "When two players' actions conflict, first attempt a group vote; if still deadlocked, a Social contest (3d6+Social) is held, the loser backs down, or holds firm with a Costly Success (bearing the cost)."
+
+# ── Key NPCs (recommended to appear in the scenario) ──
+key_npcs:
+  - name: "Granny Marta (NPC #7)"
+    role: "Provides Old Town intel and folk wisdom"
+    introduction: "When players move through the Old Town, someone calls from a second-floor window: 'Hey! Young folks!'"
+  - name: "Marco (NPC #15)"
+    role: "Black market trade introducer; source of the D+11 Black Market Comes Calling and one of the D+20 evacuation invitations"
+    introduction: "Triggered by special event"
+  - name: "Yana Novak (NPC #2)"
+    role: "Organizer of the Civilian Self-Defense Committee (CDC); source of the D+20 evacuation invitation"
+    introduction: "Players encounter a group of residents organizing a patrol in the district"
+  - name: "Father Andrei"
+    role: "Witness to moral events (optional); offers solace or trials to struggling players"
+    introduction: "The church near the Shelter still glows with a faint light"
+
+# ── Ending Conditions ──
+completion_conditions:
+  - condition: "Shelter Stable"
+    detail: "Structure + Sealing + Comfort ≥ 8"
+  - condition: "Group Survives"
+    detail: "No player character is abandoned by the group (total REL not all zeroed), and at least 3 members survive to D+20"
+  - condition: "Survival"
+    detail: "The whole group makes it through D+20"
+
+# ── Clearance Rewards ──
+rewards:
+  experience_points: 3
+  fortune_point: 1
+  special: "Unlock the 'Collective Trauma Relief' option: group support can reduce a single Trauma by −2, requires unanimous consent"
+
+# ── Transition ──
+transition: |
+  This scenario can be played standalone, or as the group chapter following S1 "The First Day":
+  If the group Shelter keeps operating, it can continue into S2 "The Long Winter", entering the fuel crisis and winter trials.
+  If the group chooses to accept evacuation at D+20—that becomes a complete short-story ending.

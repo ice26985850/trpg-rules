@@ -1,0 +1,69 @@
+<svg viewBox="0 0 880 680" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Microsoft JhengHei, sans-serif">
+<rect width="880" height="680" fill="#f7f4ec"/>
+<rect x="52" y="208" width="76" height="294" rx="10" fill="rgba(138,128,112,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="60" y="226" font-size="11pt" fill="#7a6f55">Ruin City Edge</text>
+<rect x="363" y="363" width="387" height="138" rx="10" fill="rgba(168,154,128,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="371" y="381" font-size="11pt" fill="#7a6f55">Ruin City Center</text>
+<rect x="674" y="208" width="154" height="356" rx="10" fill="rgba(184,154,120,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="682" y="226" font-size="11pt" fill="#7a6f55">Admin Building</text>
+<rect x="363" y="52" width="76" height="76" rx="10" fill="rgba(154,144,128,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="371" y="70" font-size="11pt" fill="#7a6f55">Road to the Mountains</text>
+<line x1="90" y1="463" x2="90" y2="401" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="90" y1="401" x2="90" y2="246" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="90" y1="463" x2="401" y2="463" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="401" y1="463" x2="401" y2="401" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="401" y1="401" x2="712" y2="463" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="712" y1="463" x2="790" y2="526" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="712" y1="463" x2="712" y2="401" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="712" y1="463" x2="712" y2="246" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="401" y1="463" x2="401" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<circle cx="90" cy="463" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="90" y="461" text-anchor="middle" font-size="10.5pt" fill="#222">City Edge</text>
+<circle cx="90" cy="401" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="90" y="399" text-anchor="middle" font-size="10.5pt" fill="#222">Civilian Gathering Place</text>
+<text x="90" y="443" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="90" cy="246" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="90" y="244" text-anchor="middle" font-size="10.5pt" fill="#222">Sewer Network</text>
+<text x="90" y="260" text-anchor="middle" font-size="8.5pt" fill="#a33">Civilian Hideout | Stealth Test</text>
+<text x="90" y="288" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="401" cy="463" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="401" y="461" text-anchor="middle" font-size="10.5pt" fill="#222">Main Street</text>
+<text x="401" y="477" text-anchor="middle" font-size="8.5pt" fill="#a33">Mutants ×5 + Tyrant ×1</text>
+<text x="401" y="505" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="401" cy="401" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="401" y="399" text-anchor="middle" font-size="10.5pt" fill="#222">Stealth Route</text>
+<text x="401" y="443" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="712" cy="463" r="30" fill="#c04040" stroke="#a33" stroke-width="2.2"/>
+<text x="712" y="461" text-anchor="middle" font-size="10.5pt" fill="#222">Admin Building</text>
+<text x="712" y="477" text-anchor="middle" font-size="8.5pt" fill="#a33">Multi-story building | Top floor: Comms Device</text>
+<text x="712" y="505" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="790" cy="526" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="790" y="524" text-anchor="middle" font-size="10.5pt" fill="#222">Comms Device (top floor)</text>
+<text x="790" y="568" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="712" cy="401" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="712" y="399" text-anchor="middle" font-size="10.5pt" fill="#222">Chaos Cult Garrison</text>
+<text x="712" y="415" text-anchor="middle" font-size="8.5pt" fill="#a33">Cultists ×8 + Acolyte ×1</text>
+<text x="712" y="443" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="712" cy="246" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="712" y="244" text-anchor="middle" font-size="10.5pt" fill="#222">Exterminatus Data Board</text>
+<text x="712" y="288" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="401" cy="90" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="401" y="88" text-anchor="middle" font-size="10.5pt" fill="#222">Ruins Wasteland</text>
+<text x="401" y="104" text-anchor="middle" font-size="8.5pt" fill="#a33">Debris Collapse Environmental Hazard</text>
+<text x="401" y="132" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<rect x="705" y="550" width="160" height="120" rx="6" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="715" y="570" font-size="10pt" font-weight="bold" fill="#333">Legend</text>
+<circle cx="723" cy="586" r="8" fill="#6fae6f" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="590" font-size="9.5pt" fill="#333">Entrance</text>
+<circle cx="723" cy="601" r="8" fill="#5b9bd5" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="605" font-size="9.5pt" fill="#333">Extraction</text>
+<circle cx="723" cy="616" r="8" fill="#c04040" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="620" font-size="9.5pt" fill="#333">Boss</text>
+<circle cx="723" cy="631" r="8" fill="#e08a2b" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="635" font-size="9.5pt" fill="#333">Environmental Hazard</text>
+<circle cx="723" cy="646" r="8" fill="#9aa0a6" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="650" font-size="9.5pt" fill="#333">Staging Area</text>
+<circle cx="723" cy="661" r="8" fill="#cdbf9a" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="665" font-size="9.5pt" fill="#333">Zone</text>
+<g transform="translate(825,55)"><circle r="26" fill="#f5f0e0" stroke="#333" stroke-width="2"/><text x="0" y="-12" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#333">N</text><line x1="0" y1="-22" x2="0" y2="-8" stroke="#c00" stroke-width="2"/></g>
+</svg>

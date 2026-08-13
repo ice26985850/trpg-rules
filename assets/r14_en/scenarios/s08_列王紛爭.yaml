@@ -1,0 +1,142 @@
+name: "Kings' Strife"
+description: "After the old empire collapsed, ruins scattered in all directions. Several kings founded realms upon the wastes, contesting the imperial legacy and the legitimacy to rule. Whoever can control the legendary Imperial Ruins will wear that empty crown."
+difficulty: 3
+level_range:
+  era_start: "Kingdom Age"
+  era_end: "Empire Age"
+turns_estimated: 60
+years_in_game: 20
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S3_帝國的遺產_遺跡區域"
+initial_map: "maps/S3_帝國的遺產_遺跡區域.yaml"
+multiplayer_rules:
+  mode: "Competitive (conquest + intrigue)"
+  victory: "At turn 60, tally the \"Royal Authority Score\" = Territories×10 ＋ Ruins Controlled×20 ＋ Vassal Nations×8 ＋ Wars Won×15; highest is crowned. The first to control 2 or more \"Imperial Ruins\" in the region triggers the endgame and +30 points."
+  interaction: "Players may forge vassal relations, declare war, launch conquest wars and court intrigue; capturing ruins unlocks special bonuses."
+starting_conditions:
+  population: 800
+  attributes:
+    base: 20
+    free_points: 30
+phases:
+  - id: 1
+    name: "The Throne First Established"
+    turns: "1-15"
+    description: "Each king founds a realm upon the wastes, establishing territory and the line of succession"
+    events:
+      - turn: 3
+        name: "Coronation Ceremony"
+        type: "ceremony"
+        description: "Formally crowned king, proclaim sovereignty"
+        effect: "Morale (MOR)+8, Royal Authority Score +5"
+      - turn: 7
+        name: "Ruins Expedition"
+        type: "exploration"
+        description: "Send an expedition into the Imperial Ruins to seek relics"
+        skill_check: "Technology (TEC), DC 15"
+      - turn: 11
+        name: "Succession Dispute"
+        type: "intrigue"
+        description: "Inheritance dispute erupts within the royal house"
+        choices:
+          - option: "Hardline Suppression"
+            effect: "Order stabilized but Morale (MOR)−5"
+          - option: "Compromise and Apportion"
+            effect: "Lose part of the territory, but avoid civil war"
+      - turn: 14
+        name: "Frontier Vassal"
+        type: "vassal"
+        description: "Subdue a weak neighboring nation as a vassal"
+        effect: "Vassal Nations +1, Royal Authority Score +8"
+  - id: 2
+    name: "Territorial Expansion"
+    turns: "16-34"
+    description: "Expand outward by conquest, controlling strategic strongholds and ruins"
+    events:
+      - turn: 19
+        name: "Fortress Contest"
+        type: "competition"
+        description: "A border fortress becomes the target of all sides"
+        skill_check: "Military (MIL), DC 16"
+      - turn: 24
+        name: "Ruins Guardian"
+        type: "combat"
+        description: "Ancient guardian army inside the ruins; must be defeated to occupy"
+        crisis_type: "combat"
+        skill_check: "Military (MIL), DC 17"
+      - turn: 29
+        name: "Economic Alliance"
+        type: "diplomacy"
+        description: "Establish an economic alliance with other nations, sharing trade dividends"
+        effect: "Economy (ECO)+10, Royal Authority Score +5"
+      - turn: 33
+        name: "Vassal Rebellion"
+        type: "betrayal"
+        description: "A discontented vassal rises in revolt"
+        skill_check: "Morale (MOR), DC 16"
+  - id: 3
+    name: "Holy War and Intrigue"
+    turns: "35-50"
+    description: "Faith mobilization and court intrigue proceed in parallel"
+    events:
+      - turn: 38
+        name: "Call to Holy War"
+        type: "religious"
+        description: "The church calls for a holy war against heretics"
+        effect: "Whole army Morale +15, but diplomatic relations −10"
+      - turn: 43
+        name: "Court Poisoning"
+        type: "assassination"
+        description: "Send an assassin to kill a rival's key minister"
+        skill_check: "Technology (TEC), DC 18"
+      - turn: 47
+        name: "Relic Awakening"
+        type: "artifact"
+        description: "Controlled ruins release ancient power, strengthening the kingdom"
+        effect: "All attributes +5, Royal Authority Score +20"
+  - id: 4
+    name: "The Contest for the Imperial Crown"
+    turns: "51-60"
+    description: "The final consolidation—be crowned, or fall"
+    events:
+      - turn: 54
+        name: "Twin-Ruins Declaration"
+        type: "milestone"
+        description: "Control 2 or more Imperial Ruins to claim the crown"
+        effect: "Royal Authority Score +30, triggers endgame"
+      - turn: 58
+        name: "Decisive Battle for the Royal Capital"
+        type: "military"
+        description: "Remaining powers clash at the ancient capital"
+        skill_check: "Military (MIL), DC 19"
+      - turn: 60
+        name: "The Moment of Coronation"
+        type: "ending"
+        description: "Tally Royal Authority Scores, highest is crowned emperor"
+endings:
+  success:
+    condition: "Highest Royal Authority Score and control 2 or more Imperial Ruins"
+    reward: "All attributes +10, unlock the \"Imperial Successor\" Legendary Deed"
+  partial:
+    condition: "Survive to the endgame but not crowned"
+    reward: "Keep your kingdom, may enter Free Mode"
+  failure:
+    condition: "Royal capital falls and no vassal to inherit"
+    remedy: "Inheritance Mechanism—flee as exiled royalty and attach to the victor, keeping 45% of attributes"
+key_npcs:
+  - name: "High Priestess Selene"
+    role: "The power-holder of the Ruins Church"
+    personality: "Pious, dominant"
+    relationship: "May be ally or enemy"
+  - name: "Ruins Guardian Gorn"
+    role: "The awakened commander of the ancient guardian army"
+    personality: "Silent, loyal"
+    relationship: "Obstacle before occupying the ruins"
+gm_notes:
+  - "The Kingdom Age emphasizes territory and ruin control; ruins are the core strategic resource"
+  - "The GM must track each nation's territory count, ruins controlled, and vassal relations"
+  - "Intrigue and assassination are soft solutions, used alongside frontal war"
+  - "The Relic Awakening event should be arranged with care, to avoid any single player monopolizing too early"
+  - "Maintain a multipolar balance; avoid an absolute hegemon emerging too early"

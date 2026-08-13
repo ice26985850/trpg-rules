@@ -1,0 +1,398 @@
+name: Monster Codex
+source_file: 怪物圖鑑.md
+table_count: 13
+tables:
+- section: 2.5 Monster & Minion System > Basic Monsters (8 types)
+  headers:
+  - monster
+  - combat_value_cv
+  - management_value_mv
+  - special_ability
+  - recruit_cost
+  - upkeep_per_round
+  rows:
+  - monster: Skeleton Soldier
+    combat_value_cv: '1'
+    management_value_mv: '1'
+    special_ability: Undead — needs no food upkeep
+    recruit_cost: ●×1
+    upkeep_per_round: None
+  - monster: Slime
+    combat_value_cv: '2'
+    management_value_mv: '0'
+    special_ability: Corrosive Attack — extra damage to metal equipment
+    recruit_cost: ◇×2
+    upkeep_per_round: ◆×1
+  - monster: Shadow
+    combat_value_cv: '2'
+    management_value_mv: '1'
+    special_ability: Ambush Master — Initiative +2
+    recruit_cost: ●×2
+    upkeep_per_round: ◇×1
+  - monster: Gargoyle
+    combat_value_cv: '3'
+    management_value_mv: '2'
+    special_ability: Flight — can patrol multiple rooms
+    recruit_cost: ■×2, ◇×2
+    upkeep_per_round: ■×1
+  - monster: Hellhound
+    combat_value_cv: '3'
+    management_value_mv: '1'
+    special_ability: Tracking Scent — +2 dice on pursuit of fleeing foes
+    recruit_cost: ●×3, ◆×1
+    upkeep_per_round: ◆×1
+  - monster: Elemental Construct
+    combat_value_cv: '4'
+    management_value_mv: '3'
+    special_ability: Elemental Immunity — reduced damage from corresponding element
+    recruit_cost: ■×4, ◇×3
+    upkeep_per_round: ◇×2
+  - monster: Spider Swarm
+    combat_value_cv: '2'
+    management_value_mv: '1'
+    special_ability: Web Trap — +1 die to assist trap triggers
+    recruit_cost: ■×1, ◇×1
+    upkeep_per_round: None
+  - monster: Cultist
+    combat_value_cv: '1'
+    management_value_mv: '2'
+    special_ability: Dark Ritual — assists all Arcana (ARC) checks
+    recruit_cost: ●×2, ◇×1
+    upkeep_per_round: ◆×1
+- section: 2.5 Monster & Minion System > Elite Monsters (unlock at Lv5+)
+  headers:
+  - monster
+  - combat_value_cv
+  - management_value_mv
+  - special_ability
+  - recruit_cost
+  - upkeep_per_round
+  rows:
+  - monster: Death Knight
+    combat_value_cv: '5'
+    management_value_mv: '4'
+    special_ability: Undead Commander — undead monsters on same floor get Loyalty (LOY)+1
+    recruit_cost: ●×6, ◇×4
+    upkeep_per_round: ●×2
+  - monster: Abyssal Demon
+    combat_value_cv: '6'
+    management_value_mv: '0'
+    special_ability: Pure Destruction — cannot do economy work, but CV doubles vs. same-tier monsters
+    recruit_cost: ●×8, ◇×4
+    upkeep_per_round: ●×3
+  - monster: Chimera Beast
+    combat_value_cv: '5'
+    management_value_mv: '2'
+    special_ability: Multi-Attack — can strike twice per round
+    recruit_cost: ◆×15, ◇×6
+    upkeep_per_round: ◆×3, ◇×1
+  - monster: Shadow Assassin
+    combat_value_cv: '4'
+    management_value_mv: '1'
+    special_ability: Assassination Specialist — +2 CV vs. adventurer captains
+    recruit_cost: ◆×12, ●×2
+    upkeep_per_round: ◆×2
+  - monster: Mechanical Colossus
+    combat_value_cv: '6'
+    management_value_mv: '4'
+    special_ability: Unyielding Construct — unaffected by morale
+    recruit_cost: ■×12, ◇×6, ◆×8
+    upkeep_per_round: ■×3, ◇×1
+  - monster: Dragonborn Guard
+    combat_value_cv: '5'
+    management_value_mv: '3'
+    special_ability: Dragon Breath — ranged attack (3 damage) once every 3 rounds
+    recruit_cost: ◆×20, ◇×4
+    upkeep_per_round: ◆×4
+- section: 2.5 Monster & Minion System > Legendary Monsters (unlock at Lv10+)
+  headers:
+  - monster
+  - combat_value_cv
+  - management_value_mv
+  - special_ability
+  - recruit_cost
+  - upkeep_per_round
+  rows:
+  - monster: Bone Dragon
+    combat_value_cv: '7'
+    management_value_mv: '2'
+    special_ability: Fear Aura — all enemies in sight range suffer Morale -2
+    recruit_cost: ●×16, ◇×8
+    upkeep_per_round: ●×5
+  - monster: Abyss Lord
+    combat_value_cv: '8'
+    management_value_mv: '3'
+    special_ability: Abyssal Dominion — can command up to 5 minions at once
+    recruit_cost: ●×20, ◇×12
+    upkeep_per_round: ●×6
+  - monster: Ancient Golem
+    combat_value_cv: '8'
+    management_value_mv: '5'
+    special_ability: Eternal Guardian — cannot be destroyed, only temporarily suppressed
+    recruit_cost: ■×25, ◇×15, ◆×15
+    upkeep_per_round: ■×5, ◇×2
+- section: 2.5 Monster & Minion System > Loyalty (LOY) System
+  headers:
+  - loyalty_value
+  - status
+  - effect
+  rows:
+  - loyalty_value: '5'
+    status: Absolute Loyalty
+    effect: Never betrays; auto-restores HP after battle
+  - loyalty_value: '4'
+    status: Loyal
+    effect: Functions normally; no extra checks
+  - loyalty_value: '3'
+    status: Stable
+    effect: Functions normally
+  - loyalty_value: '2'
+    status: Wavering
+    effect: Per-round Loyalty (LOY) decline check (1/6 chance -1)
+  - loyalty_value: '1'
+    status: On the Brink of Betrayal
+    effect: Per-round LOY decline check (1/3 chance -1); may flee in combat
+  - loyalty_value: '0'
+    status: Mutiny
+    effect: Monster turns to attack dungeon facilities!
+- section: 2.7 Monster Random Management Abilities ⭐ > 6 Disciplines × 36 Abilities > Mining & Resources (Row 1)
+  headers:
+  - d66
+  - ability
+  - normal_tier
+  - expert_tier
+  rows:
+  - d66: '11'
+    ability: Vein Sense
+    normal_tier: Management Value (MV)+1
+    expert_tier: MV+3, +2 dice, 10% chance to find rare vein
+  - d66: '12'
+    ability: Material Refining
+    normal_tier: Building Materials cost -10%
+    expert_tier: -30%, scrapped materials recoverable
+  - d66: '13'
+    ability: Mana Resonance
+    normal_tier: MV treated as Arcana (ARC)-related
+    expert_tier: MV+2, ◇ output +1 / round
+  - d66: '14'
+    ability: Double Output
+    normal_tier: 6 triggers extra output
+    expert_tier: 5-6 triggers, each 6 yields +2
+  - d66: '15'
+    ability: Resource Regeneration
+    normal_tier: Auto-produce 1 every 2 rounds
+    expert_tier: Produce 2 / round, chance of rare
+  - d66: '16'
+    ability: Storage Expansion
+    normal_tier: Storage cap +20%
+    expert_tier: +60%, overflow not lost
+- section: 2.7 Monster Random Management Abilities ⭐ > 6 Disciplines × 36 Abilities > Construction & Workshop (Row 2)
+  headers:
+  - d66
+  - ability
+  - normal_tier
+  - expert_tier
+  rows:
+  - d66: '21'
+    ability: Swift Builder
+    normal_tier: Build check +1 die
+    expert_tier: +3 dice, time halved
+  - d66: '22'
+    ability: Workshop Boost
+    normal_tier: Workshop output +1 / round
+    expert_tier: +3 / round, quality +1 tier
+  - d66: '23'
+    ability: Maintenance Expert
+    normal_tier: Room upkeep cost -1
+    expert_tier: Fully free, adjacent -1
+  - d66: '24'
+    ability: Quality Control
+    normal_tier: Build quality +1
+    expert_tier: Quality +3, auto-repair 50% after destruction
+  - d66: '25'
+    ability: Structural Optimization
+    normal_tier: Room holds 1 extra monster
+    expert_tier: Holds 3 extra, neighbors +1 each
+  - d66: '26'
+    ability: Workshop Chain
+    normal_tier: Same-floor workshop output +10%
+    expert_tier: +30%, synergy effect triggers extra
+- section: 2.7 Monster Random Management Abilities ⭐ > 6 Disciplines × 36 Abilities > Magic & Research (Row 3)
+  headers:
+  - d66
+  - ability
+  - normal_tier
+  - expert_tier
+  rows:
+  - d66: '31'
+    ability: Arcane Affinity
+    normal_tier: MV treated as Arcana (ARC)
+    expert_tier: MV+2, ◇ cost -1
+  - d66: '32'
+    ability: Ritual Assistant
+    normal_tier: Assist rituals +1 die
+    expert_tier: +3 dice, 50% chance to avoid negative on failure
+  - d66: '33'
+    ability: Curse Amplification
+    normal_tier: Curse / magic traps +1
+    expert_tier: +3, adds random curse
+  - d66: '34'
+    ability: Alchemy Catalysis
+    normal_tier: Alchemy check +1 die
+    expert_tier: +3 dice, product always excellent
+  - d66: '35'
+    ability: Mana Collection
+    normal_tier: Produce ◇×1 / round
+    expert_tier: ×3, can supply adjacent
+  - d66: '36'
+    ability: Forbidden Knowledge
+    normal_tier: Unlock 1 hidden research
+    expert_tier: 3 items, speed +50%
+- section: 2.7 Monster Random Management Abilities ⭐ > 6 Disciplines × 36 Abilities > Prison & Management (Row 4)
+  headers:
+  - d66
+  - ability
+  - normal_tier
+  - expert_tier
+  rows:
+  - d66: '41'
+    ability: Jailer Instinct
+    normal_tier: Escape check -1 die
+    expert_tier: -3 dice, riot chance halved
+  - d66: '42'
+    ability: Psychological Manipulation
+    normal_tier: Interrogation Dominion (DOM)+1 die
+    expert_tier: +3 dice, WIL -1 extra
+  - d66: '43'
+    ability: Labor Overseer
+    normal_tier: Captive efficiency +20%
+    expert_tier: +60%, stamina halved
+  - d66: '44'
+    ability: Order Maintenance
+    normal_tier: Same-room LOY does not drop
+    expert_tier: Whole-dungeon decline halved
+  - d66: '45'
+    ability: Captive Soothing
+    normal_tier: Conversion threshold -1
+    expert_tier: -3, retains all profession skills
+  - d66: '46'
+    ability: Intel Filtering
+    normal_tier: 1 intel per 2 rounds
+    expert_tier: 2 / round, always useful
+- section: 2.7 Monster Random Management Abilities ⭐ > 6 Disciplines × 36 Abilities > Recon & Defense (Row 5)
+  headers:
+  - d66
+  - ability
+  - normal_tier
+  - expert_tier
+  rows:
+  - d66: '51'
+    ability: Shadow Recon
+    normal_tier: Early warning +1 round
+    expert_tier: +2 rounds and identifies profession & weakness
+  - d66: '52'
+    ability: Trap Swift-Reset
+    normal_tier: Trap reset time halved
+    expert_tier: Free + instant + retains 50% effect
+  - d66: '53'
+    ability: Sentry Alertness
+    normal_tier: Own room cannot be ambushed
+    expert_tier: Whole dungeon cannot be ambushed
+  - d66: '54'
+    ability: Terrain Modification
+    normal_tier: Room defense +1 die
+    expert_tier: +3 dice, intruders need extra check
+  - d66: '55'
+    ability: Patrol Enhancement
+    normal_tier: Covers adjacent 2 rooms
+    expert_tier: Covers 5 rooms, intruder move -1
+  - d66: '56'
+    ability: Early-Warning Network
+    normal_tier: Same-floor sentries network +1 round
+    expert_tier: +3 rounds and reveals scale & main force
+- section: 2.7 Monster Random Management Abilities ⭐ > 6 Disciplines × 36 Abilities > Special Powers (Row 6)
+  headers:
+  - d66
+  - ability
+  - normal_tier
+  - expert_tier
+  rows:
+  - d66: '61'
+    ability: Lucky Star
+    normal_tier: May reroll 1 die / round
+    expert_tier: 3 dice or reroll whole pool
+  - d66: '62'
+    ability: Adaptive Evolution
+    normal_tier: Immune to 1 environmental penalty
+    expert_tier: Immune to all, environmental bonus doubled
+  - d66: '63'
+    ability: Synergy Resonance
+    normal_tier: Same-type adjacent MV/CV each +1
+    expert_tier: Each +2 and skills shared
+  - d66: '64'
+    ability: Lesser Avatar
+    normal_tier: Split 1 temporary minion every 2 rounds
+    expert_tier: MV3/CV3 lasting 3 rounds
+  - d66: '65'
+    ability: Elemental Infusion
+    normal_tier: Choose to infuse MV or CV +1
+    expert_tier: Dual infusion MV+2 and CV+2
+  - d66: '66'
+    ability: Abyssal Blessing
+    normal_tier: Reroll twice, take the better
+    expert_tier: Gain two, plus choose a third
+- section: 2.7 Monster Random Management Abilities ⭐ > Archetype & Ability Synergy
+  headers:
+  - archetype
+  - recommended_abilities
+  rows:
+  - archetype: Necromancer Lord
+    recommended_abilities: Vein Sense, Resource Regeneration, Jailer Instinct
+  - archetype: Abyssal Overlord
+    recommended_abilities: Psychological Manipulation, Early-Warning Network, Elemental Infusion
+  - archetype: Mad Sorcerer
+    recommended_abilities: Arcane Affinity, Alchemy Catalysis, Forbidden Knowledge
+  - archetype: Ancient Wyrm
+    recommended_abilities: Material Refining, Storage Expansion, Lucky Star
+  - archetype: Shadow Council
+    recommended_abilities: Intel Filtering, Shadow Recon, Early-Warning Network
+  - archetype: Goblin Tinkerer
+    recommended_abilities: Swift Builder, Workshop Boost, Trap Swift-Reset
+- section: 2.7 Monster Random Management Abilities ⭐ > Ability Upgrade Mechanism > Upgrade Paths (Four Routes)
+  headers:
+  - route
+  - condition
+  - cost
+  - effect
+  rows:
+  - route: '**🟢 Training Ground Polish**'
+    condition: Monster completes training at the training ground (base = 4 rounds / enhanced = 8 rounds / expert = 16 rounds)
+    cost: Training ground Lv2+ (enhanced), Lv3 (expert); each training costs ◆×(3/6/12)
+    effect: Ability upgraded 1 tier
+  - route: '**🟡 Combat Evolution**'
+    condition: Monster participates in ≥3 battles total (normal→enhanced) or ≥10 battles + kills a Boss (enhanced→expert)
+    cost: Auto-triggered. Monster must survive
+    effect: Ability upgraded 1 tier + gains "Veteran" trait (Loyalty (LOY)+1)
+  - route: '**🟠 Archetype-Specific Catalysis**'
+    condition: Specific archetypes can catalyze corresponding monster upgrades — Necromancer Lord→undead monsters / Demon→demon monsters / Wizard→mutant creatures / Dragon→dragon-kind / Shadow→shadow monsters / Goblin→constructs
+    cost: Cost ◇×3 + ●×1 (normal→enhanced) or ◇×5 + ●×3 (enhanced→expert)
+    effect: Ability upgraded 1 tier, and reroll once on d66 (may keep original ability or pick new)
+  - route: '**🔴 Abyssal Blessing**'
+    condition: Triggered by special GM event. E.g. Abyssal mana tide / Nexis whisper / ancient artifact activation
+    cost: GM adjudication
+    effect: Ability directly upgraded to Expert Tier (skips Enhanced), may carry extra positive mutation
+- section: 2.7 Monster Random Management Abilities ⭐ > Ability Upgrade Mechanism > Legendary / Elite Monster Exclusive
+  headers:
+  - monster_tier
+  - ability_slots
+  - upgrade_method
+  rows:
+  - monster_tier: Normal (ML1-2)
+    ability_slots: 1 slot, Normal Tier
+    upgrade_method: Can be tiered up via the four routes
+  - monster_tier: Elite (ML3-4)
+    ability_slots: 2 slots (2nd slot needs extra unlock)
+    upgrade_method: Starts with 1 Enhanced-Tier slot. 2nd slot unlockable via training (cost ◆×15)
+  - monster_tier: Legendary (ML5+)
+    ability_slots: 2 slots, Expert Tier
+    upgrade_method: Starts with 1 Expert-Tier slot. 3rd slot unlockable via Abyssal Blessing

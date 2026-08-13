@@ -1,0 +1,112 @@
+id: D4
+name: Desert
+recommended_rank: "E/D (CR 7-12)"
+theme: Golden Sands Relic Land
+grid: { cols: 4, rows: 4 }
+rooms:
+  - id: R1
+    name: Dune Entrance
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: Sole entry/exit point; retreating here means a safe escape.
+  - id: R2
+    name: Bandit Camp
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R6]
+    cr: 7
+    enemies: [Sand Bandits x2]
+    desc: Sand Bandits x2 raid the caravan.
+  - id: R3
+    name: Quicksand Shoal
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R7]
+    trap: Weak (Quicksand, DC12 / 1d6 Slow)
+    desc: Weak trap; sinks into quicksand.
+  - id: R4
+    name: Giant Scorpion Cave
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R8]
+    cr: 9
+    enemies: [Desert Giant Scorpions x2]
+    desc: Desert Giant Scorpions x2 lurk.
+  - id: R5
+    name: Merchant Remains
+    type: treasure
+    gx: 0
+    gy: 1
+    links: [R6, R9]
+    treasure: Waterskin x2, Glint Fragment, G 50~90
+    desc: Wreckage of a stranded caravan.
+  - id: R6
+    name: Vulture Rock Platform
+    type: combat
+    gx: 1
+    gy: 1
+    links: [R5, R7, R2, R10]
+    cr: 10
+    enemies: [Vultures x2]
+    desc: Vultures x2 dive down.
+  - id: R7
+    name: Rest Oasis
+    type: rest
+    gx: 2
+    gy: 1
+    links: [R6, R8, R3, R11]
+    desc: Safe rest point (restores HP/status).
+  - id: R8
+    name: Sun-scorched Path
+    type: trap
+    gx: 3
+    gy: 1
+    links: [R7, R4, R12]
+    trap: Strong (Sun-glare Reflection, DC18 / 2d6 Burn)
+    desc: Strong trap; mirror reflection causes burns.
+  - id: R9
+    name: Pottery Cache
+    type: treasure
+    gx: 0
+    gy: 2
+    links: [R5, R10]
+    treasure: Spices x2, Fine Materials, G 60~110
+    desc: Buried pottery jars.
+  - id: R10
+    name: Lizard Den Passage
+    type: combat
+    gx: 1
+    gy: 2
+    links: [R9, R11, R6]
+    cr: 11
+    enemies: [Desert Lizards x2]
+    desc: Desert Lizards x2 ambush.
+  - id: R11
+    name: Wind-eroded Stone Pavilion
+    type: rest
+    gx: 2
+    gy: 2
+    links: [R10, R12, R7]
+    desc: Wind-sheltered rest point.
+  - id: R12
+    name: Sand King Altar
+    type: elite
+    gx: 3
+    gy: 2
+    links: [R8, R11, R13]
+    cr: 12
+    enemies: [Sand King (Boss)]
+    combat_map: maps/D4_戰鬥_沙王.yaml
+    desc: Mini-boss Sand King (CR12).
+  - id: R13
+    name: Exit Sand Path
+    type: exit
+    gx: 3
+    gy: 3
+    links: [R12]
+    desc: Exit; collect reward and leave after clearing.

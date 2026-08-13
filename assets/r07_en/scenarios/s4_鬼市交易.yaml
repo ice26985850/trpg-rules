@@ -1,0 +1,49 @@
+# Earth Master TRPG Scenario S4: Ghost Market Deal — "Not a Tomb, but a Ghost Market"
+scenario_id: S4
+title: "Ghost Market Deal — Not a Tomb, but a Ghost Market"
+level_range: "5-7"
+difficulty: "Special (Social-Dominated)"
+sessions: "1-2"
+region: "Jing-Chu (deep within an abandoned mine)"
+
+synopsis: |
+  This is not a tomb — this is a Ghost Market. The players receive an invitation to enter a Ghost Market hidden deep within an abandoned mine.
+  Tonight there is a special auction — the headline lot is a "sealed Han Dynasty jade coffin."
+  What lies inside the jade coffin is not the tomb lord — it is an extremely powerful resentful spirit sealed within the jade (Leaping Jiangshi · Flying Jiangshi tier).
+  Someone deliberately brought the jade coffin to the Ghost Market to auction, intending to let the resentful spirit find a new host.
+
+npcs:
+  - {id: npc_gatekeeper, name: "Gatekeeper", attitude: "Expressionless", secret: "He does not need to breathe", info: "Checks the invitation or collects an entry fee: an antique with a story."}
+  - {id: npc_old_abacus, name: "“Old Abacus”", role: "Senior Merchant", attitude: "Shrewd, fond of Earth Masters", secret: "Knows the jade coffin is wrong but dares not speak of it."}
+  - {id: npc_jade_face, name: "“Jade Face”", role: "Buyer", attitude: "Extremely interested in the jade coffin", secret: "She is the younger sister of the resentful spirit inside the jade coffin in life — wants to free her elder sister", stats: "Actually a Flying Jiangshi-tier entity."}
+  - {id: npc_auctioneer, name: "Auctioneer", attitude: "Professional, neutral", secret: "Owes a debt to the Market Master; not here willingly."}
+  - {id: npc_master_envoy, name: "The Market Master's Emissary", attitude: "Mysterious", info: "The Market Master never appears — the emissary's word is the final judgment."}
+
+locations:
+  - {id: loc_entrance, name: "Entrance", description: "The gatekeeper checks the invitation."}
+  - {id: loc_market, name: "Main Market", description: "Dozens of stalls, all kinds of sellers."}
+  - {id: loc_auction, name: "Auction Hall", description: "Core area — the jade coffin is displayed here."}
+  - {id: loc_private, name: "Private Trading Rooms ×3", description: "Non-public transactions."}
+  - {id: loc_backstage, name: "Backstage", description: "Jade coffin storage, heavily guarded."}
+
+encounters:
+  - {id: enc_enter, name: "Enter the Ghost Market", type: "Social", dc: 10, description: "Persuade the gatekeeper or provide an antique with a story."}
+  - {id: enc_market_explore, name: "Market Exploration", type: "Exploration/Social", dc: "Multiple", description: "Interact with different merchants, gather intel, trade items."}
+  - {id: enc_auction, name: "Auction", type: "Social", dc: 14, description: "Bid on the jade coffin — or prevent “Jade Face” from winning it."}
+  - {id: enc_private_deal, name: "Private Deal", type: "Social", dc: "12-16", description: "Private negotiation with a specific NPC."}
+  - {id: enc_jade_coffin, name: "Jade Coffin Crisis", type: "Combat/Social", ttv: 18, description: "If the jade coffin is opened, a Leaping Jiangshi · Flying Jiangshi-tier resentful spirit is released."}
+  - {id: enc_master_judgment, name: "The Market Master's Judgment", type: "Social", dc: 16, description: "If the Ghost Market's rules are broken."}
+
+key_items:
+  - {id: item_ghost_market_pass, name: "Ghost Market Pass", description: "Permanent qualification to enter the Ghost Market."}
+  - {id: item_sealing_talismans, name: "Sealing Talisman Papers (Advanced) ×3", description: "Can be purchased in the market."}
+  - {id: item_intel, name: "Intel on Multiple Tombs", description: "Other Earth Masters' movements, tomb location info."}
+
+endings:
+  - {id: ending_sealed, name: "Jade Coffin Sealed", condition: "Prevent the jade coffin from being opened / re-seal the resentful spirit", result: "The Market Master thanks you; Ghost Market reputation +3."}
+  - {id: ending_released, name: "Resentful Spirit Released", condition: "The jade coffin is opened; the resentful spirit escapes", result: "The resentful spirit becomes a long-term threat — appears in future scenarios."}
+  - {id: ending_ally, name: "Alliance with Jade Face", condition: "Help Jade Face free her sister while keeping the situation under control", result: "Gain a powerful ally but the Market Master may be displeased."}
+
+rewards: {xp: 400, money: "Depends on trades"}
+scale_adjustments:
+  solo: {playable: true, note: "A social scenario. NPC merchants approach more proactively."}

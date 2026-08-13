@@ -1,0 +1,124 @@
+# Map: S4 The Darkest Age — Disaster Region
+name: "Meteor Disaster — The Blighted Land"
+description: "The area around the meteor impact site, from which the Blight spreads outward"
+
+nodes:
+  - id: "crater"
+    label: "Meteor Crater (Disaster Center)"
+    x: 400
+    y: 300
+    type: "border"
+    explored: false
+    description: "A giant meteor crater — green light seeps from its depths, and all life withers here"
+
+  - id: "your_capital"
+    label: "Your Capital"
+    x: 250
+    y: 480
+    type: "settlement"
+    explored: true
+    description: "The capital of your nation — not yet touched by the Blight"
+
+  - id: "quarantine_zone"
+    label: "Quarantine Defense Line"
+    x: 350
+    y: 400
+    type: "landmark"
+    explored: true
+    description: "A quarantine line set up by the army — to stop the Blight's spread"
+
+  - id: "refugee_camp"
+    label: "Refugee Camp"
+    x: 550
+    y: 450
+    type: "settlement"
+    explored: true
+    description: "A gathering place for refugees from the disaster zone — resources strained, order fragile"
+
+  - id: "collapsed_city"
+    label: "Sodol (Fallen)"
+    x: 550
+    y: 200
+    type: "ruins"
+    explored: true
+    description: "Once a neighboring capital — now a dead city where only monsters roam"
+
+  - id: "ancient_shrine"
+    label: "Ancient Shrine"
+    x: 200
+    y: 200
+    type: "ruins"
+    explored: false
+    description: "Legend says it holds ancient knowledge to fight the Blight"
+
+  - id: "allied_camp"
+    label: "Allied Joint Camp"
+    x: 100
+    y: 400
+    type: "settlement"
+    explored: true
+    description: "A forward base where nations unite to resist the disaster"
+
+  - id: "leyline_node"
+    label: "Ley Line Node"
+    x: 300
+    y: 150
+    type: "resource"
+    explored: false
+    description: "The earth's magic converges here — possibly the key to healing the land"
+
+edges:
+  - from: "crater"
+    to: "quarantine_zone"
+    type: "trail"
+    label: "Blight Spread Direction (expands each turn)"
+  - from: "quarantine_zone"
+    to: "your_capital"
+    type: "path"
+    label: "Supply Route"
+  - from: "crater"
+    to: "collapsed_city"
+    type: "trail"
+    label: "Fallen Zone"
+  - from: "collapsed_city"
+    to: "refugee_camp"
+    type: "trail"
+    label: "Escape Route"
+  - from: "refugee_camp"
+    to: "your_capital"
+    type: "path"
+    label: ""
+  - from: "crater"
+    to: "ancient_shrine"
+    type: "trail"
+    label: "Dangerous Shortcut"
+  - from: "ancient_shrine"
+    to: "leyline_node"
+    type: "trail"
+    label: "Energy Link"
+  - from: "leyline_node"
+    to: "crater"
+    type: "trail"
+    label: ""
+  - from: "your_capital"
+    to: "allied_camp"
+    type: "path"
+    label: "Allied Passage"
+  - from: "allied_camp"
+    to: "ancient_shrine"
+    type: "trail"
+    label: "Joint Exploration Route"
+
+regions:
+  - name: "Blighted Land (Dangerous)"
+    color: "#4CAF50"
+    nodes: ["crater", "collapsed_city"]
+  - name: "Safe Zone"
+    color: "#2196F3"
+    nodes: ["your_capital", "allied_camp"]
+  - name: "Buffer Zone"
+    color: "#FFC107"
+    nodes: ["quarantine_zone", "refugee_camp"]
+  - name: "Unknown Region"
+    color: "#9E9E9E"
+    nodes: ["ancient_shrine", "leyline_node"]

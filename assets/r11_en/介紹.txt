@@ -1,0 +1,43 @@
+# Honkai: Star Rail TRPG — Introduction
+
+**Adaptation Notice**: This ruleset is a tabletop role-playing game (TRPG) adaptation of *Honkai: Star Rail* (original by HoYoverse / miHoYo). It is an unofficial, unlicensed fan work intended solely for fellow enthusiasts and derivative creation.
+
+## What kind of world is this?
+
+Board a train that lays "Star Tracks" across the stars and voyages through the galaxy — and you become a **Nameless (無名客)** who follows the Path of **Trailblaze (開拓)**: no nationality, belonging to no faction, loyal only to exploration itself. In this universe, the supreme beings known as **Aeons (星神)** coalesce from the convictions of all living things, each presiding over a single **Path (命途)**; meanwhile the **Stellarons (星核)** — anomalies that spread on their own and distort the laws of reality — quietly erode world after world. Your mission: at every world where the train makes port — the frozen Belobog, the eternal voyage of Xianzhou Luofu, the layered dreamscape of Penacony — uncover the truth of the Stellaron.
+
+## Who do you play? What do you play?
+
+You are a Pathstrider: you choose the road you follow (one of seven — Destruction, Hunt, Erudition, Harmony, Nihility, Preservation, Abundance), trading conviction for an echo of Aeon-granted power. The core loop is intuitive — explore a planet, scout the Fragmentum, fight Stellaron-born creatures, return to the Astral Express to recuperate, level up, and set out again. Beyond combat, you will also decide which way the train turns through gang strife, dream puzzles, and moral choices.
+
+## System Highlights
+
+- **Energy Point (EP) & Ultimate (Ult) Cycle**: attacking, taking hits, and landing kills all build Energy Points (EP); once full, you can insert a flashy Ultimate (Ult) at any moment. Some Paths can spend their own exclusive resource to empower the Ultimate (Ult) — a rhythm-rich loop.
+- **Weakness Break & Elemental Resonance**: every enemy has elemental weaknesses. Hitting the right element reduces their Toughness and triggers a "Break" control effect, and chains with your allies' different elements into a **Resonance Chain** — this makes "team composition" and "action order" themselves the heart of strategy.
+- **Tiered Success (MoS)**: a d20 check is not a simple pass/fail. The margin by which you beat the Difficulty Class (DC) is split into five tiers, affecting damage segments and extra effects — every pip on the die matters.
+
+## Who is this for?
+
+Players who enjoy **tactical planning** and **resource management** will feel most at home: you must think about when the Energy Point (EP) bursts, how to crack weaknesses, who goes first and who lands the finishing blow. At the same time it offers rich sci-fi exploration and character interaction, suiting groups who like to immerse in the world and cultivate party bonds. **Basic TRPG experience** is required (you know d20, ability checks, turn-based combat), but the character-creation flow has a clear six-step guide so newcomers can pick it up with guidance.
+
+## Game Style Tags
+
+- Combat weight: **Important** (combat is a key segment but not everything)
+- Strategic depth: **Highly strategic** (every decision significantly affects the outcome; mistakes can be fatal)
+- Story-driven: **Story-supported** (clear plot but high player freedom)
+- Resource management: **Moderate management** (main resources to watch, but not oppressive)
+- Character customization: **Highly customizable** (many options to build a unique character)
+- Creation complexity: **Medium** (simple steps, quick to finish)
+- Rule density: **Medium rules** (core rules clear, not cumbersome)
+- GM requirement: **GM required** (a human GM must run it)
+
+## Estimated Play Time
+
+- Single scenario: about **3–5 hours** (completable in one session).
+- Full campaign ("Elegy of Star Tracks", Levels 1–20): about **60–120 hours** (20–30 sessions).
+
+## Basic Info
+
+- Players: **1 GM + 3–5 players** (rules designed for 4; a solo mode of 1 player + 1 GM is also supported).
+- Core dice: **d20** (ability modifier + proficiency bonus vs Difficulty Class (DC)).
+- Character creation: 27-point buy for attributes; choose Origin, Identity, Path, and primary/secondary elements to forge a one-of-a-kind Trailblazer.

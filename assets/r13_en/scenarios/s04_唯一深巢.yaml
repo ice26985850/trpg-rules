@@ -1,0 +1,81 @@
+name: "The Sole Deep Hive"
+difficulty: "High (Challenge Rating (CR) 3)"
+mode: "Mortal · Solo"
+judge: "Magnus Iron (Radical)"
+target_region: "Deep Hive (below Level 2300), a forgotten ancient subterranean temple"
+recommended_attributes: "4-5"
+
+opening_description: >
+  Magnus needs that ancient relic — he does not care about the cost. He gave you the minimum resources, and an assistant he would not mind losing.
+
+surface_goal: >
+  Descend into the ancient subterranean temple of the Deep Hive, obtain the relic, and destroy all Chaos items.
+
+hidden_goal: >
+  Deep within the temple lies a Chaos sacrificial circle sealed for 200 years. The relic itself is part of the seal — removing it will loosen the seal.
+
+known_threats:
+  - "The temple structure is ancient and unstable"
+  - "Possible low-rank Mutants or guardians"
+
+hidden_threats:
+  - "The relic itself carries slight Corruption — holding it grants +1 Corruption per hour"
+  - "A Blind Prophet (former Penitent) awaits deep in the temple — he knows your fate"
+
+resources:
+  medical_pack: 1
+  holy_water: 3
+  holy_oil: 2
+  flare: 1
+  food_water_days: 2
+  ammo_magazines: 1
+
+internal_seduction_trigger:
+  timing: "At the deepest part of the temple, holding the relic"
+  whisper: "Talos is already old. He won't live much longer — he said so himself. If you need to sacrifice someone here to complete the mission — he is the reasonable choice. He might even volunteer."
+
+companions:
+  - name: "Veteran Talos"
+    role: "Former Astra Militarum Sergeant, convicted of \"Desertion\""
+    backstory: "A 50-year-old gray-haired veteran, weary-eyed but with steady hands. He has seen too much"
+    motive: "Retire after completing his penance — find a quiet corner of the Hive City to await death"
+    bottom_line: "Never leave a wounded comrade behind"
+    initial_attitude: 1
+    attributes:
+      faith: 2
+      physique: 3
+      mind: 3
+      skill: 4
+      fate: 2
+    trained_skills: ["Ballistic Skill", "Medicae"]
+    equipment: ["Lasgun (1d6+1)", "Flak Armor (Armor Rating (AR) 2)", "Old comrade's dog tags"]
+    special_ability:
+      name: "Veteran's Intuition"
+      desc: "Once per scenario, the GM must reveal an impending danger. Field Medicae: When using a Medikit, restore an additional 1d4 Hit Points (HP)"
+
+key_checks:
+  - scene: "Cross the gas zone"
+    check: "Endurance (Difficult)"
+    tn_adjustment: -20
+    success: "Talos shares a gas mask, pass safely"
+    failure: "Hit Points (HP) -1d4/round"
+  - scene: "Face the Blind Prophet"
+    check: "Oratory (Standard)"
+    tn_adjustment: 0
+    success: "Receive warning and shortcut"
+    failure: "Cannot gain trust"
+  - scene: "Resist relic contamination"
+    check: "Faith (Extreme)"
+    tn_adjustment: -40
+    success: "Corruption gain halved"
+    failure: "Corruption +1 per minute"
+
+encounters:
+  - name: "Gas corridor"
+    enemies: "Environmental hazard"
+    tactic: "Requires Endurance test. Talos can share a gas mask"
+  - name: "Temple altar"
+    enemies: "Mutant ×1 + low-rank Cultist ×2"
+    tactic: "Cultists attempt to restart the sacrificial circle. Must stop them before they complete it"
+
+map_ref: "maps/map04_temple"

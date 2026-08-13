@@ -1,0 +1,62 @@
+# Multiplayer Campaign Structure File: Crimson Dossier (Campaign Series B)
+# Source: campaign-series-b-crimson-dossier_zh-Hant.md
+# This file is a structured summary; for full scene descriptions see the same-named .md.
+
+meta:
+  title: "Crimson Dossier (Series B)"
+  type: "Multiplayer Campaign"
+  player_count: "Squad (recommended 3–5 players)"
+  level_range: "Lv.1–8"
+  focus: "Investigation / Memetic Identification / Cognitohazards / Information Ethics"
+  setting: "Site-██ (abandoned site self-isolated for 40 years)"
+  plot: "Guided by O5-9 'the Archivist,' players pursue the covered-up truth of the 1978 Site-██ incident, facing an information-responsibility finale on 'whether the truth should be released.'"
+  key_npcs:
+    - "'The Archivist' / O5-9 (remote guide, terminally ill)"
+    - "Site-██ Director Dr. Aldric Voss (self-isolated for 40 years)"
+  source_md: "s03_緋紅檔案.md"
+
+scenes:
+  - id: "B-1"
+    name: "The Station That Doesn't Exist"
+    level: "Lv.1"
+    type: "Environmental Investigation / Atmosphere Building"
+    key_checks: ["Observation TN 60", "Foundation Lore TN 55", "Survival TN 50"]
+    duration: "1–2 sessions"
+    map_ref: "archive_building (archive building overall)"
+
+  - id: "B-2"
+    name: "Forgotten Testimony"
+    level: "Lv.2–3"
+    type: "Document Analysis / Memetic Identification"
+    key_checks: ["Anomalistics TN 62", "Linguistics TN 58", "Resist TN 55"]
+    duration: "2 sessions"
+
+  - id: "B-3"
+    name: "The Mirror Library"
+    level: "Lv.3–4"
+    type: "Cognitohazard Management / Knowledge Trade"
+    key_checks: ["Resist TN 58", "Science TN 60", "Cryptography TN 55"]
+    duration: "2 sessions"
+
+  - id: "B-4"
+    name: "The Red Editor"
+    level: "Lv.4–5"
+    type: "Real-Time Opposition / Truth Pursuit"
+    key_checks: ["Computers TN 65", "Observation TN 62", "Anomalistics TN 60"]
+    duration: "2 sessions"
+
+  - id: "B-5"
+    name: "The Whisper Chain"
+    level: "Lv.5–7"
+    type: "Puzzle Completion / Ultimate Reveal"
+    key_checks: ["Resist TN 60", "Anomalistics TN 68", "Persuasion TN 55"]
+    duration: "2–3 sessions"
+    map_ref: "archive_building (archive column zone + abandoned elevator shaft)"
+
+  - id: "B-6"
+    name: "The Archivist's Choice"
+    level: "Lv.7–8"
+    type: "Moral Finale / Information Responsibility"
+    key_checks: ["All Social Skills", "Resist TN 65"]
+    duration: "1–2 sessions"
+    note: "O5-9 identity revealed; players decide whether to release the truth"

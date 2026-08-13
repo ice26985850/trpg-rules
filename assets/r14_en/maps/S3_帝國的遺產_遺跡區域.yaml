@@ -1,0 +1,109 @@
+# Map: S3 Empire's Legacy — Ancient Ruins Region
+name: "Ancient Ruins — Tower of the Void"
+description: "City ruins left by the previous civilization; at the lowest level lies sealed something that should never be opened"
+
+nodes:
+  - id: "entrance"
+    label: "Ruins Entrance"
+    x: 400
+    y: 500
+    type: "landmark"
+    explored: true
+    description: "A giant stone gate covered in vines, inscribed with unknown script"
+
+  - id: "hall_records"
+    label: "Hall of Records"
+    x: 400
+    y: 400
+    type: "ruins"
+    explored: false
+    description: "Walls inscribed with ancient history — a treasure trove scholars dream of"
+
+  - id: "energy_core"
+    label: "Energy Core Chamber"
+    x: 250
+    y: 350
+    type: "resource"
+    explored: false
+    description: "An ancient energy core still running — the temptation of endless power"
+
+  - id: "weapon_lab"
+    label: "Weapon Research Lab"
+    x: 550
+    y: 350
+    type: "ruins"
+    explored: false
+    description: "Ancient weapon blueprints and prototype arms"
+
+  - id: "seal_gate"
+    label: "Sealed Gate"
+    x: 400
+    y: 150
+    type: "border"
+    explored: false
+    description: "The deepest seal — inscriptions warn of the consequences of opening it"
+
+  - id: "guardian_chamber"
+    label: "Guardian Chamber"
+    x: 400
+    y: 250
+    type: "ruins"
+    explored: false
+    description: "The ancient guardian still carries out its final order — to guard the Sealed Gate"
+
+  - id: "rival_camp_a"
+    label: "Iron Crown Expedition"
+    x: 150
+    y: 500
+    type: "settlement"
+    explored: true
+    description: "An expedition sent by the Iron Crown Kingdom — they want to monopolize the ruins"
+
+  - id: "rival_camp_b"
+    label: "Gnome Research Team"
+    x: 650
+    y: 480
+    type: "settlement"
+    explored: true
+    description: "A scientific expedition from the Southern Gnome Republic — they advocate sharing the findings"
+
+edges:
+  - from: "entrance"
+    to: "hall_records"
+    type: "path"
+    label: "Main Corridor"
+  - from: "hall_records"
+    to: "energy_core"
+    type: "trail"
+    label: "West Wing Passage"
+  - from: "hall_records"
+    to: "weapon_lab"
+    type: "trail"
+    label: "East Wing Passage"
+  - from: "hall_records"
+    to: "guardian_chamber"
+    type: "path"
+    label: "Lower Staircase"
+  - from: "guardian_chamber"
+    to: "seal_gate"
+    type: "path"
+    label: "Final Passage (must defeat the Guardian)"
+  - from: "entrance"
+    to: "rival_camp_a"
+    type: "trail"
+    label: ""
+  - from: "entrance"
+    to: "rival_camp_b"
+    type: "trail"
+    label: ""
+
+regions:
+  - name: "Ruins Upper Level"
+    color: "#795548"
+    nodes: ["entrance", "hall_records", "energy_core", "weapon_lab"]
+  - name: "Ruins Deep Level (Dangerous)"
+    color: "#F44336"
+    nodes: ["guardian_chamber", "seal_gate"]
+  - name: "External Camp"
+    color: "#FF9800"
+    nodes: ["rival_camp_a", "rival_camp_b"]

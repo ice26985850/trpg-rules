@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 920" width="720" height="920">
+  <rect width="720" height="920" fill="#1a1410" rx="4"/>
+  <text x="360" y="32" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#f5e6d3">S2 General's Mound — Shorn-Tail Tiger</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c4a882"/>
+    </marker>
+  </defs>
+  <rect x="20" y="420" width="640" height="160" rx="12" fill="rgba(100,140,80,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="32" y="440" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Front Chamber Area</text>
+  <rect x="20" y="600" width="260" height="140" rx="12" fill="rgba(140,100,60,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="32" y="620" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Side Chamber</text>
+  <rect x="400" y="600" width="290" height="250" rx="12" fill="rgba(80,100,140,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="412" y="620" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Main Chamber</text>
+  <line x1="360" y1="104" x2="360" y2="158" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="224" x2="360" y2="278" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="224" x2="360" y2="398" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="344" x2="360" y2="398" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="464" x2="360" y2="518" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="286" y1="569" x2="221" y2="657" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="402" y1="580" x2="394" y2="663" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="434" y1="568" x2="508" y2="658" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="214" y1="661" x2="279" y2="573" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="398" y1="670" x2="406" y2="587" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="590" y1="704" x2="590" y2="758" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="280" y="50" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="77.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">Mountain Climb to Find Tomb</text>
+  <rect x="280" y="170" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="197.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">Tomb Passage Entrance</text>
+  <rect x="280" y="290" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="317.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">Anti-Theft Stone Gate</text>
+  <rect x="280" y="410" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="437.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">Deep Tomb Passage</text>
+  <rect x="280" y="530" width="160" height="50" rx="8" fill="#4a2020" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="557.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Front Chamber (Mingtang) ⚠</text>
+  <rect x="60" y="650" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="140.0" y="669.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">Side Chamber A — Deputy</text>
+  <text x="140.0" y="685.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">General's Tomb 🔑</text>
+  <rect x="360" y="670" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="440.0" y="697.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">Side Chamber B — Armory</text>
+  <rect x="510" y="650" width="160" height="50" rx="8" fill="#f5e6d3" stroke="#8b7355" stroke-width="2"/>
+  <text x="590.0" y="677.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#1a1410">Main Chamber Entrance</text>
+  <rect x="510" y="770" width="160" height="50" rx="8" fill="#4a2020" stroke="#8b7355" stroke-width="2"/>
+  <text x="590.0" y="797.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Main Tomb Chamber 💀</text>
+  <rect x="20" y="840" width="180" height="94" rx="6" fill="rgba(0,0,0,0.5)" stroke="#8b7355" stroke-width="1"/>
+  <text x="30" y="858" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3" font-weight="bold">Legend</text>
+  <text x="35" y="878" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">💀 Corpse Mutation Threat</text>
+  <text x="35" y="900" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">🔑 Key Plot Item</text>
+  <text x="35" y="922" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">⚠ Trap / Mechanism</text>
+</svg>

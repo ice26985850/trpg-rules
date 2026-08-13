@@ -1,0 +1,201 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Hero&amp;#x27;s Proof / Dungeon Module D4 — Desert | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r05_s4.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r05.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Dungeon Module D4 — Desert</h1>
+<blockquote>
+<p><strong>Recommended Rank</strong>: E/D (Challenge Rating (CR) 7–12) | <strong>Theme</strong>: Golden-sand ruins, mid-tier resource farming
+<strong>Acceptance</strong>: Guild commission "E-Sand1 / D-Sand1" (corresponds to Rank E→D, CL 7–12); or designated by GM as a leveling ground.
+<strong>Map</strong>: <code>maps/D4_沙漠.yaml</code> ＋ <code>maps/D4_沙漠.svg</code>
+This work has <strong>no multiclass</strong>; solo entry follows the player-count scaling rule (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no sidekick).</p>
+</blockquote>
+<h3>How to Enter (opening beat)</h3>
+<ul>
+<li><strong>Take guild commission</strong>: At the Adventurers' Guild bulletin board accept the E-tier "Desert Subjugation" (E-Sand1), then after promotion accept D-Sand1 (corresponds to Rank E→D, CL 7–12).</li>
+<li><strong>Active exploration</strong>: After joining at S0, players may actively explore the desert ruins by the trade road (GM Book 17.1).</li>
+<li><strong>Leveling role</strong>: The top choice for farming resources at CL 7–12; run alongside E/D commissions to grind Rank from E up to D.</li>
+<li><strong>Solo mode</strong>: Supported by Challenge Rating (CR) −3, enemy count ×0.5, no sidekick; the mini-boss room has a 10×10 positioning map (maps/D4_戰鬥_沙王.yaml), entering the room switches to standard combat (Chapter 7), clear the room to return to the exploration round.</li>
+</ul>
+<h2>I. Background</h2>
+<p>In the golden-sand ruins crossing the trade road, a band of sand pirates occupies an ancient altar; their chief, the "Sand King", can trap people in quicksand and manipulate sun-scorch. Past caravans often perished in the sea of sand, so the Guild lists it as an E→D tier subjugation target; deep in the altar, the Sand King is this ruins' mini-boss.</p>
+<h2>II. Room Overview (with fog reveal)</h2>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Name</th>
+<th>Type</th>
+<th>Connects</th>
+<th>Content Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Dune Entrance</td>
+<td>Entrance</td>
+<td>→R2</td>
+<td>Only entry/exit; retreating here is safe.</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Bandit Camp</td>
+<td>Combat</td>
+<td>R1/R3/R6</td>
+<td>Sand Bandit ×2 (CR7).</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Quicksand Shallows</td>
+<td>Trap</td>
+<td>R2/R4/R7</td>
+<td>Weak trap (quicksand).</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Giant Scorpion Cave</td>
+<td>Combat</td>
+<td>R3/R8</td>
+<td>Desert Giant Scorpion ×2 (CR9).</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Merchant Remains</td>
+<td>Chest</td>
+<td>R6/R9</td>
+<td>Waterskin, Glint Shard, G 50~90.</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Vulture Cliff</td>
+<td>Combat</td>
+<td>R5/R7/R2/R10</td>
+<td>Vulture ×2 (CR10).</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Rest Oasis</td>
+<td>Rest</td>
+<td>R6/R8/R3/R11</td>
+<td>Safe rest point.</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Sun-scorched Path</td>
+<td>Trap</td>
+<td>R7/R4/R12</td>
+<td>Strong trap (sun-scorch reflection).</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>Pottery Vault</td>
+<td>Chest</td>
+<td>R5/R10</td>
+<td>Spice, Fine Material, G 60~110.</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>Lizard Den Passage</td>
+<td>Combat</td>
+<td>R9/R11/R6</td>
+<td>Desert Lizard ×2 (CR11).</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>Wind-eroded Pavilion</td>
+<td>Rest</td>
+<td>R10/R12/R7</td>
+<td>Wind-sheltered rest point.</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>Sand King Altar</td>
+<td>Mini-boss</td>
+<td>R8/R11/R13</td>
+<td><strong>Sand King (CR12)</strong> (see below).</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>Exit Sand Path</td>
+<td>Exit</td>
+<td>R12</td>
+<td>Clear point; collect rewards and leave.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) are detailed in GM Book Chapter 17.</p>
+</blockquote>
+<h2>II-1. Combat Room Positioning Battle Map</h2>
+<p>This module's mini-boss room has a 10×10 positioning battle map (same format as S1–S4 Demon General battles), for the GM to directly judge by grid distance and range:</p>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Combat Room</th>
+<th>Positioning Battle Map</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R12</td>
+<td>Sand King Altar (Sand King CR12)</td>
+<td><code>maps/D4_戰鬥_沙王.yaml</code>＋<code>.svg</code></td>
+<td>Boss; AOE marked "Quicksand Cage (Back Row imprisoned)"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Positioning map: enemies on top, our side on bottom, Front/Back Row spaced 2 grids (4m); solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no sidekick).</p>
+</blockquote>
+<h2>III. Key Room Details</h2>
+<ul>
+<li><strong>R3 Quicksand Shallows (weak)</strong>: Perception DC12 (Dexterity (M_DEX) / Luck (M_LUK)); triggers 1d6 Slow. Disable DC14.</li>
+<li><strong>R8 Sun-scorched Path (strong)</strong>: Perception DC18; triggers 2d6 Burn. Mirror reflection can block the R4↔R12 passage (GM ruling).</li>
+<li><strong>R5 Merchant Remains</strong>: Open chest DC12; trick mine 30% (medium, 2d6). Contains Waterskin ×2, Glint Shard, Gold (G) 50~90.</li>
+<li><strong>R9 Pottery Vault</strong>: Open chest DC14; contains Spice ×2, Fine Material, Gold (G) 60~110.</li>
+<li><strong>R13 Exit Sand Path</strong>: After clearing, return to Guild to settle rewards and leave.</li>
+</ul>
+<h2>IV. Mini-boss — Sand King (CR12)</h2>
+<p>Per GM Book 10.4 CR formula and 10.7 boss framework (simplified version):</p>
+<ul>
+<li><strong>Health (HP)</strong> 79 (CR12 formula) | <strong>Attack Bonus (ATK)</strong> +4 (floor(1+0.25×12)) | <strong>Evasion (EVA)</strong> 11 (10+floor(0.15×12)) | <strong>Damage/hit</strong> 20 (floor(6+1.2×12))</li>
+<li><strong>Trait (1 phase)</strong>: <code>Quicksand Cage</code> — once every 3 rounds, imprisons our Back Row for 1 round and deals 2d6 Bludgeon.</li>
+<li><strong>Weakness</strong>: Water / Ice ×1.5 (see Monster Compendium note).</li>
+<li><strong>Drop</strong>: <code>Sand King Crown</code> (story item, redeemable at Guild for Influence Points (IP)+3); Fine Material + low chance of Fine recipe.</li>
+</ul>
+<h2>V. Clear Rewards (full clear)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experience (EXP)</td>
+<td>~3108 (R2 308 + R4 432 + R6 500 + R10 572 + R12 1296, EXP accumulates to Character Level (CL) progress (Class Level (ClassLv) separately counts an independent Class Experience (CEXP) pool, not shared with EXP))</td>
+</tr>
+<tr>
+<td>Gold (G)</td>
+<td>350~550</td>
+</tr>
+<tr>
+<td>Influence Points (IP)</td>
+<td>+3 (clear) / +3 (crown redeem)</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>Waterskin / Spice / low chance of Fine recipe</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Design note: D4 is the stable CL 7–12 "farm EXP+G+materials" ground, refreshes daily (see Commission Catalog, reset rules).</p>
+</blockquote><p><a href="../../assets/r05_en/scenarios/D4_%E6%B2%99%E6%BC%A0.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

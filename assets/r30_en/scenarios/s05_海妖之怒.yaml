@@ -1,0 +1,29 @@
+scenario:
+  id: s05
+  title: "Fury of the Sea Witch"
+  source: "Excerpted from the League of Legends TRPG Campaign Scenario Collection · Multiplayer Scenario · Side Story S1"
+  mode: "Multiplayer"
+  standalone: true
+  level_range: "Lv.3-6"
+  region: "Bilgewater"
+  estimated_time: "2-3 sessions"
+  summary: >
+    Bounty hunters discover a giant sea witch appearing in the open sea off Bilgewater Harbor, threatening
+    shipping lanes. The players are hired to hunt it down — but discover the sea witch was enraged by the
+    illegal alchemical waste of the pirate king, Gangplank.
+  chapters:
+    - id: 1
+      title: "Hunt Preparation"
+      level: "Lv.3"
+      type: "Investigation + Ship Modification"
+    - id: 2
+      title: "Open-Sea Hunt"
+      level: "Lv.4-5"
+      type: "Fleet Battle + Sea Witch Tracking"
+    - id: 3
+      title: "Abyssal Showdown"
+      level: "Lv.6"
+      type: "Boss Battle"
+      boss: "the Abyssal Siren (Health Points (HP) 1,200, three phases: Surface/Shallow/Abyss)"
+  rewards:
+    equipment: "'Sea Witch Scale Armor' (Armor (AR)+30, Magic Resistance (MR)+20, underwater breathing)"

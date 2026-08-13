@@ -1,0 +1,73 @@
+scenario:
+  id: s01
+  title: "Spreading Shadows"
+  source: "Excerpted from the League of Legends TRPG Campaign Scenario Collection · Multiplayer Scenario · Main Campaign Part One"
+  mode: "Multiplayer"
+  standalone: true
+  level_range: "Lv.1-5"
+  region: "Demacia → Noxus"
+  estimated_time: "3-4 sessions"
+  summary: >
+    The White Wall Mine incident revealed an abnormal resonance of the Forbidden Magic Stone — not a
+    natural phenomenon, but someone deliberately collecting Forbidden Magic Stone powder. The squad
+    tracking the source discovers a smuggling network spanning the Demacia border leading to the Noxus
+    Empire. The secret organization "the Obsidian Circle" is using the Forbidden Magic Stone to develop
+    anti-magic weapons; if they succeed, the mages of Runeterra will face annihilation, and Demacia will
+    be dragged into total war.
+  chapters:
+    - id: "1.1"
+      title: "Shadows of Greystone Town"
+      level: "Lv.1"
+      type: "Investigation"
+      core_encounter: "Mine exploration, smuggler interrogation, Tracking Difficulty Class (DC) 15"
+    - id: "1.2"
+      title: "Border Smuggling Line"
+      level: "Lv.2"
+      type: "Stealth/Combat"
+      core_encounter: "Intercept the smuggling convoy, infiltrate the border outpost"
+    - id: "1.3"
+      title: "Noxus Outpost"
+      level: "Lv.3"
+      type: "Combat/Social"
+      core_encounter: "Outpost siege, prisoner interrogation, defection offer"
+    - id: "1.4"
+      title: "Obsidian Forge"
+      level: "Lv.4-5"
+      type: "Dungeon/Boss"
+      core_encounter: "Three-layer dungeon of the Forbidden Magic Stone forge, Boss 'Forge Master Viktor'"
+  key_npcs:
+    - name: "Garen"
+      role: "Demacia military liaison"
+      bond: "Bond unlocks at levels 1-3"
+    - name: "Lux"
+      role: "Secret mage, provides inside intel"
+      bond: "Can develop into a deep bond"
+    - name: "Sylas"
+      role: "Rival — leader of the mage resistance"
+      bond: "Choose to ally or oppose"
+    - name: "Forge Master Viktor"
+      role: "Boss, Chief Forge Master of the Obsidian Circle"
+      bond: "May be persuaded to surrender"
+  boss:
+    name: "Forge Master Viktor"
+    level: "Lv.5"
+    stats:
+      hp: 800
+      ad: 60
+      armor_mr: "60/40"
+      special: "Forbidden Magic Stone Armor: reduces the first skill damage taken by 50% each turn"
+    phases:
+      - phase: "P1"
+        range: "100%-70%"
+        mechanics: "Throws a Forbidden Magic Bomb (3-cell range, Ability Power (AP)×1.0 magic damage + Silence 1 turn)"
+      - phase: "P2"
+        range: "70%-35%"
+        mechanics: "Activates Forbidden Magic Field (all mage skills Difficulty Class (DC) +3, lasts until end of P2); summons 2 Forge Golems (Health Points (HP) 200, Attack Damage (AD) 35)"
+      - phase: "P3"
+        range: "35%-0%"
+        mechanics: "Overload Mode — attacks twice per turn, but suffers Forbidden Magic backlash each turn (Health Points (HP)×5% True Damage)"
+  rewards:
+    exp: 2800
+    gold: "3,000-4,500"
+    equipment: "'Forbidden Magic Stone Charm' (Magic Resistance (MR)+25, 20% chance to reflect Ability Power (AP)×0.3 magic damage when taking magic damage)"
+    augment: "'Obsidian Forging' — can inscribe a Forbidden Magic rune onto 1 piece of armor equipment (Armor (AR)+15, 10% damage reduction against mages)"

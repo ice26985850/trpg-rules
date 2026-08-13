@@ -1,0 +1,48 @@
+name: "Scenario 7: Charm General & Gel General Battle"
+description: Head south to Enchanting Hot Spring Village to subjugate Charm General Lilith·Meiying (CR44), cross east to Gel Archipelago to subjugate Gel General Plum·Gel (CR46), a two-route operation. CL44 threshold, late-stage elite. Dual bosses, three phases.
+difficulty: Extreme
+level_range: [44, 46]
+chapter: 7
+map_ref: maps/劇本7_戰鬥_雙將.yaml
+initial_map: maps/劇本7_探索_魅魔宮.yaml
+encounters:
+  - id: twin_patrol
+    name: Twin-route Scouting
+    enemies:
+      - {name: Charm Imp, cr: 20, count: 3}
+      - {name: Slimelet, cr: 18, count: 4}
+    budget: Extreme×1.2
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: gel_general_boss
+    name: Gel General Plum·Gel (three phases)
+    enemies:
+      - {name: Plum·Gel, cr: 46, count: 1}
+    boss: true
+    phases:
+      - {name: Split & Multiply, hp_threshold: "100%~66%", trait: Split on hit / Crit Immunity not yet active}
+      - {name: Fusion, hp_threshold: "66%", trait: Acid Corrosion}
+      - {name: Crystallization, hp_threshold: "33%", trait: Crit Immunity / break via Blunt-shatter Crystal}
+    budget: Boss Battle Boss CR≈party total level×0.6
+    adjust: "1p→CR43/no sidekick; 5–6p→CR48"
+  - id: charm_general_boss
+    name: Charm General Lilith·Meiying (three phases)
+    enemies:
+      - {name: Lilith·Meiying, cr: 44, count: 1}
+    boss: true
+    phases:
+      - {name: Dance of Seduction, hp_threshold: "100%~66%", trait: Illusion Dance Charm}
+      - {name: Essence Drain, hp_threshold: "66%", trait: Drain HP / Lust Bind Immobilize}
+      - {name: True Form Revealed, hp_threshold: "33%", trait: Inner Demon Split trust crisis}
+    budget: Boss Battle Boss CR≈party total level×0.6
+    adjust: "1p→CR41/no sidekick; 5–6p→CR46"
+rewards:
+  exp: 28608
+  gold: 8000
+  items: [Meiying's Heart Pact, Gel Core, Inner Demon Mirror, Hot Spring Healing Voucher]
+ip_events:
+  - event: Trigger Lilith affinity event
+    ip: 3
+  - event: Peaceful interaction with Gel General (no wanton killing)
+    ip: 4
+  - event: Reconcile with both generals instead of subjugating
+    ip: 10

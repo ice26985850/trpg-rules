@@ -1,0 +1,42 @@
+# "Ghost Collector" — Modern Hong Kong Exorcism Files
+
+A phone rings. Another case. You are a Ghost Collector.
+
+## What Kind of World Is This?
+
+"Ghost Collector" is a supernatural investigation TRPG (tabletop role-playing game) set in modern-day Hong Kong and the Lingnan regional sphere. Here, ghosts are not monsters from special-effects blockbusters, but wronged souls who died with unfinished business, the newly dead whose bodies mutate inside a mortuary drawer, wandering spirits pestering you to deliver a family letter. You are not a Taoist priest, nor a hero — you are a grey-zone professional who makes a living handling paranormal commissions. On the street they call you "Sifu"; the guild officially registers you as a "Folk Customs Consultant." The blue-red-white plastic bags at midnight, the scent of incense at a household altar, the air-conditioning of a funeral parlor — that is your office.
+
+## What Do You Play? Core Gameplay
+
+You play a Ghost Collector. Every "case" is a sharply paced investigation: Take Case → On-Site Investigation → Prepare Rite → Exorcise & Collect → Cleanup. You take cases over WhatsApp, sweep your flashlight across the cinnabar glint on a talisman, and use Intuition (INS) to sense shifts in Yin energy. The point was never "can you win the fight," but "should you fight at all" — many cases are settled through talk; helping a bound spirit fulfill its wish or setting up a spirit tablet for a wandering soul is often more dignified than dispelling it.
+
+## System Highlights
+
+- Yin energy is environmental pollution, not hit points: Every paranormal site has its own Yin Value (YIN). The deeper and colder it gets, the more the lights flicker and space distorts, forcing Composure (CMP) checks; crossing the threshold may assimilate you. Knowing when to stop and when to retreat becomes the real strategy.
+- Spells are tools, not special effects: Opening an altar takes time, drawing talismans needs talisman paper and cinnabar, chanting consumes your Mana Pool (MP). A Ghost Collector is no superhero — just a professional with bills to pay.
+- Spirits have right and wrong, not just strong and weak: Five kinds of ghosts and six kinds of zombies each have their cause and a "correct way to handle them." Deliverance, negotiation, subjugation, destruction — choose the wrong method and bear the consequences.
+
+## Who Is It For?
+
+Players who enjoy investigation and puzzle-solving, character immersion, and making choices in the grey zone will feel right at home; it also suits strategic players who like to manage resources (mana, materials, Yin energy). This game is designed for Solo + 1 GM (Host); that lonely, oppressive feeling of "the whole tenement holds only you and one wronged soul" is hard to replicate in a larger group — though it can expand into a 4–5 person squad cooperating with divided roles. No TRPG experience needed to start.
+
+## Game Style Tags
+
+- Combat Weight: Important
+- Strategic Depth: High
+- Story-Driven: Story-Supporting
+- Resource Management: Moderate
+- Character Customization: Moderate
+- Character Creation Complexity: Moderate
+- Rules Density: Medium
+- GM Required: Yes
+
+## Estimated Play Time
+
+- Single scenario: about 3–5 hours
+- Full campaign (eight connected cases, Level 1→10): about 30–50 hours
+
+## Basic Information
+
+- Players: 1 player minimum, expandable to a 4–5 person squad, plus 1 GM (Host)
+- Core dice: 1d20 (twenty-sided die)

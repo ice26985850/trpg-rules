@@ -1,0 +1,133 @@
+# Scenario Six: Beneath the Rift — Structured Scenario
+
+scenario:
+  name: "Scenario Six: Beneath the Rift"
+  level: "Seq 4 → Seq 3"
+  players: "Team of 3-5, or Solo + 2 Seq 4-5 NPC companions"
+  duration: "5-7 game sessions"
+  mode: [Multiplayer, Solo]
+
+  background: |
+    The second tablet fragment has been fully decoded. Its contents are disturbing:
+
+    > "The complete map of the barrier's weak points — seven in total. The nearest lies at the base of an unnamed island 40 nautical miles beyond the waters of Gray Mist City. The next 'tidal weak period' is expected within the next two months. When it arrives, the barrier will briefly split open — if not sealed, the consciousness of the Outer Deities can pollute all Beyonders within a hundred-mile radius through the rift."
+
+    You relayed this intelligence to the Servant of Concealment. Her reply was brief:
+
+    "The other churches have been notified. In three days, each of the Seven Churches will send a Seq 2 angel to the unnamed island — the largest heavenly joint operation since the Fourth Epoch. You are to come as well."
+
+    "——Why?"
+
+    "Because only the tablet fragment in your hands records the complete sealing ritual. Without that ritual, even a host of angels cannot close the rift."
+
+    "——Then why don't the angels simply take the fragment from me?"
+
+    "Because the tablet fragment chooses its bearer. You were not chosen by it — you decoded it. The tablet of the Ancient Sun God is not something just anyone can read. You read it — and now you and it are bound. An angel could kill you and take the fragment, but the fragment would seal itself upon your death. No one wants to risk that."
+
+    So you were "invited." Not to sit at the round table — but to stand behind the battlefield, performing the sealing ritual, while the angels hold the perimeter and buy you time.
+
+  acts:
+    - title: "Act One: The Unnamed Island"
+      content: |
+        **Scene: Arrival at the Unnamed Island**
+
+        The unnamed island is a volcanic island, with a volcanic crater about 200 meters in diameter at its center. The crater has cooled — but its base is not rock, but a semi-transparent membrane. Beneath the membrane — you can see colors that do not belong to this world flowing. That is the barrier between the Spirit World and the material world. The membrane is thinning.
+
+        Seven angels appear on the island in human form — not for a meeting, but as a military deployment. Their conversation is brief and efficient. No one introduces themselves. No one asks your name. They simply confirm the timing of the ritual, then take their positions.
+
+        But you can sense it — one of the angels is wrong. Not because your intuition told you. It is the tablet fragment in your hand — it is growing faintly warm, as if warning you.
+
+        **Tablet Fragment Warning Mechanic (GM Mechanic):** In this scenario, when the player approaches an entity corrupted by an Outer Deity, the tablet fragment grows faintly warm (physical perception). The intensity of the warmth corresponds to the degree of corruption — faint warmth (low corruption), obvious heat (moderate), scalding (high, i.e., the traitor). This is an added function of the tablet fragment as an "Outer Deity detector."
+
+    - title: "Act Two: The Seven Angels"
+      content: |
+        The GM must portray the seven angels, each with a different personality and task. The player may interact with the angels to gather intelligence — but the angels will not treat you as an equal. At most they will "tolerate" your presence.
+
+        | Angel | Church / Faction | Pathway | Task | Attitude | Suspicion |
+        |------|----------|------|------|------|--------|
+        | **Servant of Concealment** (F) | Church of the Evernight | Sleepless, Seq 2 | Cover — deploy a "Concealment Domain" around the rift to suppress the Outer Deity's consciousness | You know her. She maintains a "transactional" respect toward you | Lowest |
+        | **Calamity** (M) | Church of the Storm | Sailor, Seq 2 | Perimeter alert — seal the waters within 10 nautical miles of the island with a storm | Impatient, disdainful of mortals | Low |
+        | **Lightseeker** (M) | Church of the Eternal Blazing Sun | Bard, Seq 2 | Main attacker — scorch the Outer Deity's consciousness with "Eternal Light" the instant the rift opens | Silent, focused, as if suppressing something | Medium (the tablet fragment grows faintly warm near him) |
+        | **Glory** (F) | Church of the God of Battle | Warrior, Seq 2 | Front-line defense — block the rift in mythic form, absorbing the Outer Deity's first wave of assault | Pragmatic, with a soldier's bearing | Low |
+        | **Wisdom Angel** (M) | Church of Knowledge | Reader, Seq 2 | Recording — document the structural changes of the barrier rift throughout, providing data for future barrier repairs | Cold, academically interested in your tablet fragment | Medium |
+        | **Ferryman** (M) | Spiritology Sect (Death Pathway) | Corpse Collector, Seq 2 | Reserve — forcibly close the rift with "Death Authority" if it goes out of control (at great cost) | Gloomy, spoke fewer than ten sentences | Low |
+        | **White Angel** (F) | Church of the Steam and Machinery God | Savant, Seq 2 | Technical support — build the ritual platform with mechanical constructs | Friendly, interested in your difference-engine background | Low |
+
+        **Key Interaction Points:**
+
+        - The player can gather clues about "who is the traitor" by talking with the angels. Each angel has 2-3 unique lines of dialogue.
+        - The tablet fragment's warmth is the core detection method — but approaching an angel each time draws the angel's attention ("The tablet in your hand is glowing, did you know that?")
+        - Mind+Observation (Extreme): Notice that Lightseeker unconsciously touches his chest with his left hand when discussing the rift — as if suppressing something.
+        - Mind+Mysticism (Legendary): Recognize the "heterogeneity" in Lightseeker's spiritual aura — his Eternal Light is mixed with something that does not belong to the Sun pathway.
+
+        **Truth:** Lightseeker is not the traitor — he is a victim. He was struck by a fragment of the Tree of the Desire Mother during the previous barrier-rift incident, and the corruption within him is slowly spreading. He is hiding it — because once exposed, the other angels would seal him immediately. His "suspicious" behavior is him using his own power to suppress the corruption within. The tablet fragment growing warm near him is not because he is the traitor — it is because of the Outer Deity fragment inside him.
+
+    - title: "Act Three: Beneath the Rift"
+      content: |
+        **Scene 1 — The Sealing Ritual**
+
+        The rift opens on schedule. The barrier membrane tears — a gap about 10 meters wide appears. On the other side of the gap is not the Spirit World — it is a kind of "void" you have never seen. Not darkness — darkness is also a color. It is a negation of existence.
+
+        The tablet-fragment ritual you must perform has three phases:
+
+        1. **Phase One: Locate** (Spirit+Ritual, Difficult): Use the tablet fragment to mark the rift's precise coordinates. Failure → ritual preparation time is extended; the angels must endure an extra round of the Outer Deity's will assault.
+        2. **Phase Two: Seal** (Mind+Will, Extreme): Use the tablet fragment to guide the power of the 7 angels to converge at the rift. Failure → power scatters, rift expands by 5 meters.
+        3. **Phase Three: Lock** (Spirit+Ritual, Legendary −40): Use the tablet fragment to "write" the seal into the barrier's structure — permanently patching this weak point. Failure → the rift can be temporarily sealed, but will reopen within a year.
+
+        **Scene 1.5 — the "He" Within the Rift**
+
+        During the ritual — the "He" on the other side of the rift notices you. Not an attack. A "gaze." The sensation of being gazed upon by an Outer Deity is described by the GM as: "Your consciousness suddenly becomes as smooth as the surface of ice — something is swimming beneath the ice; you cannot see His shape, but you can feel His presence slide across the surface of your thoughts, reading your memories word by word — from your earliest recollection to every second just past."
+
+        **Mind+Will (Extreme, −20):** Resist the Outer Deity's consciousness invasion. Failure → a memory is "stolen" — the GM chooses one of the player's memories (could be a skill, knowledge, or relationship); checks related to that memory take Disadvantage in the next scene. Critical Failure → the Outer Deity leaves a "door" in your consciousness — your Loss of Control Threshold is permanently −15 (representing that the Outer Deity can more easily influence you through this door in the future).
+
+        **Scene 2 — Lightseeker's Fall**
+
+        Halfway through the ritual, Lightseeker suddenly drops to his knees. The fragment of the Tree of the Desire Mother within him was "awakened" as the rift approached. His Eternal Light begins to dim — turning into a sickly purple.
+
+        The other angels immediately notice. Calamity reacts fastest: "He's infected. Seal him — now!"
+
+        But sealing an infected angel requires at least three angels acting together — which would weaken the rift's defense line.
+
+        **The Moment of Choice:**
+
+        | Choice | Execution | Consequence |
+        |------|------|------|
+        | **Prioritize sealing Lightseeker** | Three angels (Calamity + Glory + Ferryman) join forces to seal him | The rift defense line is temporarily weakened — Phase Three difficulty changes from −40 to −60. But Lightseeker is sealed into a sealing crystal, preserving his life. |
+        | **Let Lightseeker sacrifice himself** | Lightseeker proposes himself: "Let me plug the rift. The Outer Deity fragment inside me — it can temporarily neutralize the consciousness on the other side." | He walks into the rift — the Outer Deity consciousness on the other side is thrown into confusion for 10 minutes (because its "own fragment" suddenly appears before it). Ritual difficulty −20. But Lightseeker — remains forever on the other side of the rift. His last words: "Tell the church — I was not a traitor." |
+        | **Split up** | Persuade the angels to let the player handle Lightseeker alone (Charisma+Negotiation, Legendary) — use the tablet fragment to suppress the corruption within him | The tablet fragment can indeed temporarily suppress Outer Deity corruption (this was proven in Scenario Five). Lightseeker regains his reason, but his power is greatly weakened — he can no longer participate in the defense. |
+
+    - title: "Act Four: Aftershocks"
+      content: |
+        The rift is sealed — no matter which path you chose. But a new line of text appears on the tablet fragment after the ritual — as if written in blood:
+
+        > "Fragment 3/9. Location of the next fragment: Backlund — in the hands of one who should not have awoken."
+
+        The Servant of Concealment finds you before you leave:
+
+        > "You survived. Stronger than most at Seq 4 — not in power. In luck." (She pauses) "In the heavens — we have a saying: a mortal who survives their first angel-level operation is no longer a mortal. Welcome to the chessboard."
+
+        **Rewards:**
+
+        | Condition | Reward |
+        |------|------|
+        | Basic completion (all three ritual phases completed) | Seq 3 Promotion ritual qualification + Acting Progress +60 |
+        | Critical Success on Phase Three (roll ≤ 5) | The rift is permanently repaired; the barrier structure at that point is stronger than before. Talent "Barrier Mender": +10 to checks against Outer Deities |
+        | Successfully persuade the angels to split up | Gain the collective respect of angel-level NPCs — in future angel-level events, your words will be truly heard |
+        | Lightseeker's ending (either one) | Gain Lightseeker's keepsake — can summon "Echo of the Eternal Light" once (single attack, 8d10 Light, ignores Outer Deity defense) |
+        | No Loss of Control throughout the ritual | Talent "Anchor of Will": gain Advantage on Loss checks (roll 2d100 take lower) |
+        | The tablet fragment's new message | A clue to the next fragment's location — provides a clear direction for Scenario Seven |
+
+        **Loss of Control Risk:**
+
+        | Risk Point | Value |
+        |--------|-----|
+        | Close-range exposure to the barrier rift | +1d3 / 10 minutes (cumulative) |
+        | Gazed upon by an Outer Deity | +3d6 (first time) + permanent Threshold −15 (if Critical Failure) |
+        | Prolonged coexistence with angels (suppression by their mythic forms) | +1 / per hour |
+        | Sealing ritual failure (any phase) | +1d5 / time |
+        | Spirit Exhaustion | +2d5 |
+        | **Total (full scenario estimate)** | **35-65** (higher if gazed upon by an Outer Deity) |
+
+        > **GM Note:** This scenario introduces the tablet fragment's core new function: **Outer Deity Detector.** In later scenarios, this function can become a key tool for players to detect hidden threats. At the same time — take care to control the angels' sense of presence. The angels are not NPC companions; they are "walking natural disasters." Each time the player interacts with an angel, the player should feel the enormous gap in stature — their coldness or impatience is itself a kind of pressure.
+
+        ---

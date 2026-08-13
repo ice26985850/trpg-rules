@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1340.0" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans CJK TC',sans-serif">
+<rect width="1000" height="1340.0" fill="#0f172a"/>
+<text x="24" y="40" fill="#f8fafc" font-size="26" font-weight="bold">Aincrad Cleared Map · All 100 Floors</text>
+<text x="24" y="64" fill="#94a3b8" font-size="13">SAO TRPG — Floating Castle Vertical Structure: Elevator Tower runs through all floors, maze areas lie deep in each floor, Floor Boss rooms at the bottom of the maze</text>
+<rect x="24" y="92" width="14" height="14" fill="#10b981"/>
+<text x="44" y="104" fill="#e2e8f0" font-size="12">Basic Difficulty Zone (1-25F)</text>
+<rect x="214" y="92" width="14" height="14" fill="#3b82f6"/>
+<text x="234" y="104" fill="#e2e8f0" font-size="12">Intermediate Difficulty Zone (26-50F)</text>
+<rect x="404" y="92" width="14" height="14" fill="#f59e0b"/>
+<text x="424" y="104" fill="#e2e8f0" font-size="12">Advanced Difficulty Zone (51-75F)</text>
+<rect x="594" y="92" width="14" height="14" fill="#ef4444"/>
+<text x="614" y="104" fill="#e2e8f0" font-size="12">Final Clearing Zone (76-99F)</text>
+<rect x="784" y="92" width="14" height="14" fill="#a855f7"/>
+<text x="804" y="104" fill="#e2e8f0" font-size="12">Legendary Realm (100F)</text>
+<rect x="140" y="947.0" width="190" height="262.5" fill="#d1fae5" opacity="0.25"/>
+<rect x="140" y="684.5" width="190" height="262.5" fill="#dbeafe" opacity="0.25"/>
+<rect x="140" y="422.0" width="190" height="262.5" fill="#fef3c7" opacity="0.25"/>
+<rect x="140" y="170.0" width="190" height="252.0" fill="#fee2e2" opacity="0.25"/>
+<rect x="140" y="159.5" width="190" height="10.5" fill="#f3e8ff" opacity="0.25"/>
+<rect x="150" y="1200.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<text x="138" y="1201.0" fill="#cbd5e1" font-size="9" text-anchor="end">1F</text>
+<rect x="150" y="1189.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1179.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1168.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1158.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<text x="138" y="1159.0" fill="#cbd5e1" font-size="9" text-anchor="end">5F</text>
+<rect x="150" y="1147.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1137.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1126.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1116.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1105.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<text x="138" y="1106.5" fill="#cbd5e1" font-size="9" text-anchor="end">10F</text>
+<rect x="150" y="1095.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1084.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1074.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1063.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1053.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<text x="138" y="1054.0" fill="#cbd5e1" font-size="9" text-anchor="end">15F</text>
+<rect x="150" y="1042.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1032.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1021.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1011.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="1000.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<text x="138" y="1001.5" fill="#cbd5e1" font-size="9" text-anchor="end">20F</text>
+<rect x="150" y="990.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="979.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="969.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="958.5" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<rect x="150" y="948.0" width="170" height="9.5" fill="#10b981" opacity="0.55"/>
+<text x="138" y="949.0" fill="#cbd5e1" font-size="9" text-anchor="end">25F</text>
+<rect x="150" y="937.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="927.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="916.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="906.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="895.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<text x="138" y="896.5" fill="#cbd5e1" font-size="9" text-anchor="end">30F</text>
+<rect x="150" y="885.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="874.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="864.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="853.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="843.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<text x="138" y="844.0" fill="#cbd5e1" font-size="9" text-anchor="end">35F</text>
+<rect x="150" y="832.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="822.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="811.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="801.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="790.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<text x="138" y="791.5" fill="#cbd5e1" font-size="9" text-anchor="end">40F</text>
+<rect x="150" y="780.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="769.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="759.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="748.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="738.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<text x="138" y="739.0" fill="#cbd5e1" font-size="9" text-anchor="end">45F</text>
+<rect x="150" y="727.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="717.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="706.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="696.0" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<rect x="150" y="685.5" width="170" height="9.5" fill="#3b82f6" opacity="0.55"/>
+<text x="138" y="686.5" fill="#cbd5e1" font-size="9" text-anchor="end">50F</text>
+<rect x="150" y="675.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="664.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="654.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="643.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="633.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<text x="138" y="634.0" fill="#cbd5e1" font-size="9" text-anchor="end">55F</text>
+<rect x="150" y="622.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="612.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="601.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="591.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="580.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<text x="138" y="581.5" fill="#cbd5e1" font-size="9" text-anchor="end">60F</text>
+<rect x="150" y="570.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="559.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="549.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="538.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="528.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<text x="138" y="529.0" fill="#cbd5e1" font-size="9" text-anchor="end">65F</text>
+<rect x="150" y="517.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="507.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="496.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="486.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="475.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<text x="138" y="476.5" fill="#cbd5e1" font-size="9" text-anchor="end">70F</text>
+<rect x="150" y="465.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="454.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="444.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="433.5" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<rect x="150" y="423.0" width="170" height="9.5" fill="#f59e0b" opacity="0.55"/>
+<text x="138" y="424.0" fill="#cbd5e1" font-size="9" text-anchor="end">75F</text>
+<rect x="150" y="412.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="402.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="391.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="381.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="370.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<text x="138" y="371.5" fill="#cbd5e1" font-size="9" text-anchor="end">80F</text>
+<rect x="150" y="360.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="349.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="339.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="328.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="318.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<text x="138" y="319.0" fill="#cbd5e1" font-size="9" text-anchor="end">85F</text>
+<rect x="150" y="307.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="297.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="286.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="276.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="265.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<text x="138" y="266.5" fill="#cbd5e1" font-size="9" text-anchor="end">90F</text>
+<rect x="150" y="255.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="244.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="234.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="223.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="213.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<text x="138" y="214.0" fill="#cbd5e1" font-size="9" text-anchor="end">95F</text>
+<rect x="150" y="202.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="192.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="181.5" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="171.0" width="170" height="9.5" fill="#ef4444" opacity="0.55"/>
+<rect x="150" y="160.5" width="170" height="9.5" fill="#a855f7" opacity="0.55"/>
+<text x="138" y="161.5" fill="#cbd5e1" font-size="9" text-anchor="end">100F</text>
+<line x1="235.0" y1="1209.5" x2="235.0" y2="170.0" stroke="#e2e8f0" stroke-width="2" stroke-dasharray="3 3" opacity="0.8"/>
+<text x="235.0" y="164.0" fill="#e2e8f0" font-size="9" text-anchor="middle">Elevator Tower</text>
+<line x1="320" y1="1204.2" x2="344" y2="1204.2" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="1204.2" r="4" fill="#10b981"/>
+<rect x="344" y="1189.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+<text x="354" y="1206.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 1 Town of Beginnings</text>
+<text x="354" y="1192.2" fill="#94a3b8" font-size="11">Boss: Illfang the Kobold Lord (Lv.8)</text>
+<line x1="320" y1="1193.8" x2="344" y2="1193.8" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="1193.8" r="4" fill="#10b981"/>
+<rect x="344" y="1178.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+<text x="354" y="1195.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 2 Urbas</text>
+<text x="354" y="1181.8" fill="#94a3b8" font-size="11">Boss: Asteris the Golden Bull King (Lv.10)</text>
+<line x1="320" y1="1183.2" x2="344" y2="1183.2" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="1183.2" r="4" fill="#10b981"/>
+<rect x="344" y="1168.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+<text x="354" y="1185.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 3 Misty Forest</text>
+<text x="354" y="1171.2" fill="#94a3b8" font-size="11">Ranged -10 HIT / Detection -15</text>
+<line x1="320" y1="1172.8" x2="344" y2="1172.8" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="1172.8" r="4" fill="#10b981"/>
+<rect x="344" y="1157.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+<text x="354" y="1174.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 4 Canyon Town</text>
+<text x="354" y="1160.8" fill="#94a3b8" font-size="11">Suspension Bridge AGI Check · Fall 2D20</text>
+<line x1="320" y1="1162.2" x2="344" y2="1162.2" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="1162.2" r="4" fill="#10b981"/>
+<rect x="344" y="1147.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+<text x="354" y="1164.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 5 Ruined City</text>
+<text x="354" y="1150.2" fill="#94a3b8" font-size="11">Trap Disarm Lv.2 Required</text>
+<line x1="320" y1="1109.8" x2="344" y2="1109.8" stroke="#10b981" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="1109.8" r="4" fill="#10b981"/>
+<rect x="344" y="1094.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+<text x="354" y="1111.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 10 Milestone</text>
+<text x="354" y="1097.8" fill="#94a3b8" font-size="11">Boss: Gorma the Twin-Headed Giant (Lv.20)</text>
+<line x1="320" y1="983.8" x2="344" y2="983.8" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="983.8" r="4" fill="#3b82f6"/>
+<rect x="344" y="968.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="354" y="985.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 22 Coral · Lakeside</text>
+<text x="354" y="971.8" fill="#94a3b8" font-size="11">Boss: Lake Dragon (Lv.24) Housing/Marriage Unlocked</text>
+<line x1="320" y1="899.8" x2="344" y2="899.8" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="899.8" r="4" fill="#3b82f6"/>
+<rect x="344" y="884.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="354" y="901.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 30 Storm Dragon</text>
+<text x="354" y="887.8" fill="#94a3b8" font-size="11">Boss: Vient (Lv.32) Asuna Joins</text>
+<line x1="320" y1="742.2" x2="344" y2="742.2" stroke="#3b82f6" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="742.2" r="4" fill="#3b82f6"/>
+<rect x="344" y="727.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="354" y="744.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 45 Observatory</text>
+<text x="354" y="730.2" fill="#94a3b8" font-size="11">★Dual Blades Awakening (System Limiter Removed)</text>
+<line x1="320" y1="689.8" x2="344" y2="689.8" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="689.8" r="4" fill="#f59e0b"/>
+<rect x="344" y="674.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="354" y="691.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 50 Algade</text>
+<text x="354" y="677.8" fill="#94a3b8" font-size="11">Boss: Chaos (Lv.58) Largest Player Market</text>
+<line x1="320" y1="437.8" x2="344" y2="437.8" stroke="#ef4444" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="437.8" r="4" fill="#ef4444"/>
+<rect x="344" y="422.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+<text x="354" y="439.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 74 Gleam Eyes</text>
+<text x="354" y="425.8" fill="#94a3b8" font-size="11">Boss: Gleam Eyes (Lv.76) Dual Blades Revealed</text>
+<line x1="320" y1="427.2" x2="344" y2="427.2" stroke="#ef4444" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="427.2" r="4" fill="#ef4444"/>
+<rect x="344" y="412.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+<text x="354" y="429.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 75 Skull Reaper</text>
+<text x="354" y="415.2" fill="#94a3b8" font-size="11">Boss: Skull Reaper (Lv.80) Kayaba Revealed</text>
+<line x1="320" y1="374.8" x2="344" y2="374.8" stroke="#ef4444" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="374.8" r="4" fill="#ef4444"/>
+<rect x="344" y="359.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+<text x="354" y="376.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 80 Sky Temple</text>
+<text x="354" y="362.8" fill="#94a3b8" font-size="11">Boss: Titan of Light (Aerial Combat)</text>
+<line x1="320" y1="322.2" x2="344" y2="322.2" stroke="#ef4444" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="322.2" r="4" fill="#ef4444"/>
+<rect x="344" y="307.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+<text x="354" y="324.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 85 Abyss</text>
+<text x="354" y="310.2" fill="#94a3b8" font-size="11">Boss: Lord of the Abyss (Total Darkness)</text>
+<line x1="320" y1="217.2" x2="344" y2="217.2" stroke="#ef4444" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="217.2" r="4" fill="#ef4444"/>
+<rect x="344" y="202.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+<text x="354" y="219.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 95 Dragon's Nest</text>
+<text x="354" y="205.2" fill="#94a3b8" font-size="11">Boss: Bahamut the Dragon King</text>
+<line x1="320" y1="175.2" x2="344" y2="175.2" stroke="#ef4444" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="175.2" r="4" fill="#ef4444"/>
+<rect x="344" y="160.2" width="470" height="30" rx="5" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+<text x="354" y="177.2" fill="#f8fafc" font-size="13" font-weight="bold">Floor 99 Gate of Finality</text>
+<text x="354" y="163.2" fill="#94a3b8" font-size="11">Final Preparation Zone (No Boss)</text>
+<line x1="320" y1="164.8" x2="344" y2="164.8" stroke="#a855f7" stroke-width="1.5" opacity="0.7"/>
+<circle cx="320" cy="164.8" r="4" fill="#a855f7"/>
+<rect x="344" y="149.8" width="470" height="30" rx="5" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+<text x="354" y="166.8" fill="#f8fafc" font-size="13" font-weight="bold">Floor 100 Ruby Palace</text>
+<text x="354" y="152.8" fill="#94a3b8" font-size="11">★Final Boss: Kayaba Akihiko (Lv.96) The End</text>
+<text x="24" y="1300.0" fill="#64748b" font-size="11">Source: resources/maps_data.md (Aincrad All-100-Floor Clearing Map). ★ marks a key story node.</text>
+<text x="24" y="1318.0" fill="#64748b" font-size="11">GM Usage: Mark a floor as explored on first arrival; clearing the Boss activates the next floor's teleport gate; Boss rooms are crystal-nullification zones.</text>
+</svg>

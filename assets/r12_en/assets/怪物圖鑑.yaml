@@ -1,0 +1,219 @@
+# Urban Survivors Monster / Enemy Bestiary (structured data)
+# 6 enemy unit types, using the v1.2 3d6 system. Cross-referenced with 怪物圖鑑.md.
+
+catalog: "Monster Bestiary"
+system: "3d6 (bell-curve)"
+total_enemies: 6
+
+# ── Threat Level System ──
+threat_levels:
+  - level: 1
+    meaning: "Minor threat — easily avoided through stealth"
+    civilian_survival_rate: "~95%"
+  - level: 2
+    meaning: "Moderate threat — requires careful handling"
+    civilian_survival_rate: "~70%"
+  - level: 3
+    meaning: "High threat — extremely hard to escape once spotted"
+    civilian_survival_rate: "~30%"
+  - level: 4
+    meaning: "Lethal threat — almost certainly fatal on encounter"
+    civilian_survival_rate: "~10%"
+  - level: 5
+    meaning: "Devastating threat — beyond an individual's ability to resist"
+    civilian_survival_rate: "~1%"
+
+# ── Enemy Units ──
+enemies:
+  - name: "Patrol Soldier (Patrol)"
+    threat: 2
+    attributes:
+      body: 4
+      agility: 3
+      will: 2
+    awareness: "+2 (during routine patrol +0)"
+    move_speed: "1 Distance Band / turn (foot patrol)"
+    attacks:
+      - name: "Assault Rifle"
+        bonus: "+3 Shooting"
+        range: "100 m"
+        damage: "at least Serious Wound"
+      - name: "Rifle Butt"
+        bonus: "+2 Melee"
+        damage: "Minor Wound"
+      - name: "Bayonet"
+        bonus: "+3 Melee"
+        damage: "Serious Wound"
+    special:
+      - "Radio Call: after 1 turn, 1–2 reinforcements arrive within 2d4 turns"
+      - "Flashlight: can illuminate a 30 m area at Night"
+    weaknesses:
+      - "Fixed patrol route — predictable"
+      - "Fatigue — Awareness −2 after prolonged duty"
+      - "May hesitate against civilians — if a character pleads (Social DC 14), 30% chance to go easy"
+    behavior: "Patrols along a route, pausing to observe every 3 turns (~18 seconds). Reports anomalies before investigating. Will not necessarily open fire unless attacked — may shout 'Halt!' first."
+    survival_tip: "Observe the route, move during pauses. If spotted — run. Do not attempt to fight."
+
+  - name: "Sniper (Snipe)"
+    threat: 4
+    attributes:
+      body: 3
+      agility: 5
+      will: 4
+    awareness: "+5 (visual) / +1 (hearing)"
+    move_speed: "0 (fixed at sniping position)"
+    attacks:
+      - name: "Sniper Rifle"
+        bonus: "+5 Shooting"
+        range: "500 m"
+        damage: "at least Fatal Wound; exceeding Defense Value → instant death"
+      - name: "Pistol"
+        bonus: "+2 Shooting"
+        range: "30 m"
+        damage: "Serious Wound"
+    special:
+      - "Aimed Shot: spend 1 turn aiming, +3 to next turn's shot"
+      - "Optical Scope: during Daytime, ignores cover bonuses within 100 m"
+      - "Concealed Position: only discoverable with passive Awareness DC 18"
+    weaknesses:
+      - "Narrow field of view — covers only a specific area (usually a street or square)"
+      - "Most active by day — efficiency drops sharply at Night (without night-vision optics, view drops to 50 m, no aiming bonus)"
+      - "Exposes position after firing"
+    behavior: "Holds high ground and scans during the day. Prioritizes shooting armed targets. Will not necessarily fire on a lone civilian. Relocates 2d4 turns after firing."
+    survival_tip: "Never cross a known sniper zone during Daytime. Wait for Night. Use a mirror or reflective object to confirm position."
+
+  - name: "Officer (Officer)"
+    threat: 3
+    attributes:
+      body: 3
+      agility: 3
+      will: 5
+    awareness: "+4"
+    move_speed: "1 Distance Band / turn"
+    attacks:
+      - name: "Pistol"
+        bonus: "+3 Shooting"
+        range: "30 m"
+        damage: "Serious Wound"
+      - name: "Saber"
+        bonus: "+3 Melee"
+        damage: "Serious Wound"
+    special:
+      - "Command: nearby Patrol Soldiers' Awareness +2, will not hesitate to fire"
+      - "Interrogation: Social Contest DC 16 — may extract intel from captives"
+      - "Tactical Thinking: not easily fooled by feints or diversions"
+    weaknesses:
+      - "Arrogance — may underestimate the civilian threat"
+      - "Self-preservation — retreats first after taking damage"
+      - "Has radio — but may be reluctant to call for support (fears appearing incompetent)"
+    behavior: "Leads 2–4 Patrol Soldiers. Gives orders rather than searching personally. Interrogates civilians first. If a character provides useful intel (Social DC 16), may trade for safe passage."
+    survival_tip: "The Officer is a negotiable opponent — if you have something he needs. But do not underestimate his vigilance."
+
+  - name: "Deserter (Deserter)"
+    threat: 2
+    attributes:
+      body: 4
+      agility: 4
+      will: 2
+    awareness: "+3 (especially sensitive to threats)"
+    move_speed: "1 Distance Band / turn (cautious movement)"
+    attacks:
+      - name: "Assault Rifle"
+        bonus: "+2 Shooting"
+        range: "100 m"
+        damage: "Serious Wound — but limited ammo, only d6 rounds"
+      - name: "Dagger"
+        bonus: "+3 Melee"
+        damage: "Serious Wound"
+    special:
+      - "Desperation: gains Advantage on attacks when surrounded or cornered"
+      - "Wilderness Survival: +3 to scavenging checks"
+      - "Knows patrol routes: can help characters avoid enemy forces (if willing to cooperate)"
+    weaknesses:
+      - "Limited ammo — firing is a last resort"
+      - "Paranoid — hard to trust anyone (Social DC 16 to establish initial trust)"
+      - "Being hunted by his own army — if found with a Deserter, the character is also treated as an enemy"
+    behavior: "Hides, scavenges, avoids everyone. Judges threat first when meeting civilians. May trade — needs food and shelter. If offered shelter, may become a powerful companion — but may also betray the character."
+    survival_tip: "The Deserter is a potential powerful ally, but also a ticking time bomb. Trust takes time to build."
+
+  - name: "Looter (Looter)"
+    threat: "2 (alone) / 3 (group of 3 or more)"
+    attributes:
+      body: 3
+      agility: 3
+      will: 2
+    awareness: "+2"
+    move_speed: "1 Distance Band / turn"
+    attacks:
+      - name: "Club/Pipe"
+        bonus: "+2 Melee"
+        damage: "Minor Wound → Serious Wound"
+      - name: "Knife"
+        bonus: "+3 Melee"
+        damage: "Serious Wound"
+      - name: "Pistol"
+        bonus: "+1 Shooting"
+        range: "20 m"
+        damage: "Serious Wound — only 30% chance of having a gun"
+    special:
+      - "Strength in Numbers: when 3 or more, +1 to attack checks (flanking)"
+      - "Looting: knows which locations may still have supplies"
+    weaknesses:
+      - "Disorganized — may turn on each other"
+      - "Bullies the weak — if met with firm resistance (character's counterattack causes any Wound), Willpower DC 12 or retreat"
+      - "Loud — the Looters themselves may attract enemy forces"
+    behavior: "Scavenges empty houses, robs other Survivors. When meeting a lone civilian, may demand 'hand over all your supplies.' Not necessarily immediate violence — intimidation first. If the character complies, may only take part. If resisted or fleeing, chases for 2d4 turns then gives up."
+    survival_tip: "Looters are bullying opportunists. Sometimes handing over part of your supplies is safer than fighting."
+
+  - name: "Feral Dog (Feral Dog)"
+    threat: "1 (single) / 2 (pack of 3 or more)"
+    attributes:
+      body: 2
+      agility: 4
+      will: 1
+    awareness: "+4 (smell) / +2 (hearing)"
+    move_speed: "2 Distance Bands / turn"
+    attacks:
+      - name: "Bite"
+        bonus: "+3 Melee"
+        damage: "Minor Wound + infection risk (Physique DC 10)"
+      - name: "Pack Rushing"
+        bonus: "3 or more attacking the same target simultaneously → attack gains Advantage"
+        damage: "Minor Wound"
+    special:
+      - "Scent Tracking: can track a scent trail from within 24 hours"
+      - "Night Vision: sight unaffected in darkness"
+    weaknesses:
+      - "Afraid of fire — flames or loud noises can scatter them (Willpower DC 8 or flee)"
+      - "Hungry — can be lured away with food (throw food, automatically succeeds at diverting attention)"
+      - "Retreats after injury — a single Feral Dog flees upon taking any Wound"
+    behavior: "Driven by hunger, seeks anything edible. May attack injured / weakened Survivors. Packs surround prey. Barks a warning first; if the target does not retreat, attacks. Will not chase a target that enters a building."
+    survival_tip: "Feral Dogs fear fire and can be lured away with food. But treat any bite wound — the infection risk is real."
+
+# ── GM Encounter Design Advice: Threat Combination Reference ──
+encounter_combinations:
+  - encounter: "1 patrol squad (2 soldiers)"
+    total_threat: 4
+    suitable_for: "S1 early"
+  - encounter: "Feral Dog pack (3)"
+    total_threat: 6
+    suitable_for: "S1–S2"
+  - encounter: "Patrol Soldier (2) + Officer (1)"
+    total_threat: 7
+    suitable_for: "S2"
+  - encounter: "Looter (3)"
+    total_threat: 9
+    suitable_for: "S2"
+  - encounter: "Sniper (1) + Patrol Soldier (2)"
+    total_threat: 8
+    suitable_for: "S2–S3"
+  - encounter: "Officer (1) + Patrol Soldier (4)"
+    total_threat: 11
+    suitable_for: "S3"
+
+# ── Solo Player Tips ──
+single_player_tips:
+  - "Always provide the option to sneak around"
+  - "Encounters should not be 'obstacles that must be cleared,' but 'risks to be assessed'"
+  - "Let players see patrol routes and hear footsteps — give them time to prepare"
+  - "Even if spotted, fleeing is always a valid option"

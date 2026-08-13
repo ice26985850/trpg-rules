@@ -1,0 +1,40 @@
+# Lord of the Mysteries TRPG — Player Introduction
+
+## Reference Work Disclaimer
+This rulebook is a TRPG adaptation of the novel *Lord of the Mysteries* by Cuttlefish That Loves Diving, and fully incorporates the original work's settings for all 22 Pathways and Sequences from Sequence 9 down to Sequence 0. This is an unofficial fan creation, intended solely for the enjoyment of fellow enthusiasts.
+
+## What Kind of World Is This?
+In a Victorian-style metropolis woven from steam and thick fog, you swallow a potion and become a "Beyonder" — one who can glimpse the world's true face. But power is never free: with every step you climb upward, a measure of your humanity slips away, and you draw one step closer to the fate of "losing control and becoming a monster."
+
+## Worldview
+The story unfolds in a steampunk world akin to 19th-century London: on the surface there are top hats, pocket watches, and private detectives, yet beneath it writhes the unspeakable and the horrific. Through "digesting potions," people climb the 22 Pathways from Sequence 9 all the way to Sequence 0 — the price being gradual corruption by Beyonder power. Churches, secret organizations, and Outer Deities wrestle in the shadows, while "Sealed Artifacts" — objects of wondrous power that carry terrifying side effects — are at once temptation and trap.
+
+## Who Do You Play? Core Gameplay
+You are a bottom-rung Beyonder, starting out at Sequence 9 (street level). The core loop is not about grinding monsters, but the "Acting Method": you must truly live as the role of your Sequence (a Seer must genuinely divine, a Marauder must genuinely steal) in order to digest the potion and advance safely. Amid bizarre commissions you investigate the truth, walking a tightrope between resources and loss of control; in solo mode, you may also lead 1–2 NPC companions as you navigate the conspiracy.
+
+## System Highlights
+- **Acting Method Experience System**: Experience points are not earned by slaying monsters — they accumulate as you "live as your Sequence role." The more convincingly you act, the stronger you become — and the more dangerous.
+- **Loss of Control (LoC)**: Every use of a Beyonder Power builds up corruption. Cross the "Loss of Control Threshold (LoCT)" and you must make a check; failure means you are forever reduced to a monster. This is the most distinctive source of tension in the entire ruleset.
+- **The Temptation of Sealed Artifacts**: Powerful, miraculous items are within easy reach, yet each comes at a cost — permanent injury, memory loss, even the collapse of your Pathway. Take it, or leave it?
+- **Blasphemy Slate Fragments**: A slate left behind by the Ancient Sun God prophesies the apocalypse — by collecting the scattered fragments across the campaign, you will become a "Slate-Bearer" whom even angels cannot ignore.
+
+## Who Is This For?
+Players who enjoy Cthulhu-style mystery investigation, immersive storytelling, and roleplay will feel most at home; it also suits players who relish the strategic feel of "weighing resources against risk." Basic TRPG experience is recommended (character creation has real depth), but the d100 resolution is intuitive and easy to pick up.
+
+## Playstyle Tags
+- Combat weight: Significant
+- Strategic depth: Highly strategic
+- Story-driven: Story-led
+- Resource management: Moderate
+- Character customization: Highly customizable
+- Character creation complexity: Complex
+- Rules density: Medium
+- GM required: Yes
+
+## Estimated Play Time
+- Single scenario: about 3–6 hours (Sequences 9–5); advanced scenarios about 4–10 hours (Sequence 4 and above)
+- Full campaign: about 140–220 hours (8 interconnected scenarios, advancing from street level all the way to the apocalyptic finale — you need not become a god, only hold the slate and walk to the end)
+
+## Basic Information
+- Player count: Group mode 4–5 players + 1 GM; Solo mode 1 player + 1 GM (with NPC companions)
+- Core die: d100 percentile die (roll-under — a roll ≤ the Target Number is a success)

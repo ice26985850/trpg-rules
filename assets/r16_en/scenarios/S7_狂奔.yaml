@@ -1,0 +1,17 @@
+name: "S7: Sprint"
+description: "Level ! — Run If You Don't Want to Die! A ten-kilometer hospital-style corridor. Red alarm lights. Piercing sirens. Behind you, a horde of entities. No choice — only run. Run the ten kilometers. This is not combat. This is pure survival instinct."
+difficulty: "Advanced"
+milestone_range: "7-8"
+play_time: "4-6 hours (single session, extremely high intensity)"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Level ! — Run If You Don't Want to Die!"]
+themes: ["Pure Survival", "Physical Limit", "Life and Death on a Knife's Edge"]
+emotional_arc: "Shock → Adrenaline → Pain → Edge of Limit → Victory"
+scenes:
+  - {id: S7_1, name: "Siren", type: "Opening Shock", desc: "The moment you step into Level ! — red alarm lights flare, a piercing siren echoes down the whole corridor. Behind you in the dark comes the footfall of countless entities. Ahead: a hospital corridor with no visible end. Start running. Now."}
+  - {id: S7_2, name: "Ten Kilometers", type: "Physical Challenge", desc: "The corridor is exactly ten kilometers long. Not a metaphor. Obstacles line the way (overturned hospital beds, collapsed ceilings). A supply point every kilometer (energy bars, Almond Water). Make a Physique or Agility check each kilometer. Failures accumulate fatigue."}
+  - {id: S7_3, name: "Edge of Collapse", type: "Climax", desc: "Kilometers 7-9: the character is at their limit. Legs burning. Lungs searing. Entities behind draw closer. Willpower check DC 18 — failure slows you, caught. Success grits through and continues."}
+  - {id: S7_4, name: "The Finish", type: "Victory", desc: "The 10th kilometer — a door marked EXIT. Push it open. Behind it, a quiet white space. A door leads to the ending. Entities cannot enter here. You made it. But your body will remember these ten kilometers forever."}
+entities: ["Hound pack", "Skin-Stealers", "Smilers — a mixed pursuit of all common entities in Level !"]
+special_rules: "Each player may enter Level ! only once. Once passed, it can never be entered again. If you fail (caught) — the character dies. This is the only stage in the entire campaign with a forced death risk."
+ending: "Push open the EXIT door. Milestone 8 achieved. Leads to the ending level."

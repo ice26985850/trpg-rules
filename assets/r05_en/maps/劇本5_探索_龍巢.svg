@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 740" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans CJK TC','Heiti TC',sans-serif">
+<rect width="680" height="740" fill="#F7F4EC"/>
+<text x="20" y="34" font-size="22" font-weight="bold" fill="#333">S1_Explore_Dragon Nest</text>
+<text x="20" y="56" font-size="13" fill="#666">Scenario S1 · First Demon General · Dragon Spine Peak (CL 5–12)</text>
+<rect x="260" y="385" width="340" height="230" rx="20" fill="#FFD0C0" fill-opacity="0.45" stroke="#FFD0C0" stroke-opacity="0.8"/>
+<text x="268" y="403" font-size="12" fill="#555">Dragon Spine Peak Outskirts</text>
+<rect x="140" y="85" width="280" height="290" rx="20" fill="#FFB3B3" fill-opacity="0.45" stroke="#FFB3B3" stroke-opacity="0.8"/>
+<text x="148" y="103" font-size="12" fill="#555">Dragon Nest Depths</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#888"/></marker><marker id="arrowD" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#C0504D"/></marker></defs>
+<line x1="340" y1="560" x2="340" y2="440" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="440" x2="520" y2="480" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<rect x="398.0" y="449.0" width="64" height="20" rx="6" fill="#FFFBE6" stroke="#E0C97A"/><text x="430.0" y="464.0" font-size="12" fill="#7a5b00" text-anchor="middle">Gear Supply</text>
+<line x1="340" y1="440" x2="340" y2="320" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="320" x2="220" y2="240" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="220" y1="240" x2="340" y2="140" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="320" x2="340" y2="140" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<rect x="261" y="542" width="158" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#3D85C6" stroke-width="2.5"/>
+<text x="340" y="565" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Dragon Spine Peak Trail (Entrance)</text>
+<rect x="298" y="422" width="85" height="36" rx="9" fill="#FFFFFF" fill-opacity="0.55" stroke="#93C47D" stroke-width="2.5"/>
+<text x="340" y="445" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Dragon Nest Outskirts</text>
+<text x="340" y="416.0" font-size="11" fill="#C0504D" text-anchor="middle">(Unexplored)</text>
+<rect x="441" y="462" width="158" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#4F81BD" stroke-width="2.5"/>
+<text x="520" y="485" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Ironforge Outpost (Durin)</text>
+<rect x="305" y="302" width="70" height="36" rx="9" fill="#FFFFFF" fill-opacity="0.55" stroke="#CC6600" stroke-width="2.5"/>
+<text x="340" y="325" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Lava Cave</text>
+<text x="340" y="296.0" font-size="11" fill="#C0504D" text-anchor="middle">(Unexplored)</text>
+<rect x="185" y="222" width="70" height="36" rx="9" fill="#FFFFFF" fill-opacity="0.55" stroke="#C0504D" stroke-width="2.5"/>
+<text x="220" y="245" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Hatchery</text>
+<text x="220" y="216.0" font-size="11" fill="#C0504D" text-anchor="middle">(Unexplored)</text>
+<rect x="298" y="122" width="85" height="36" rx="9" fill="#FFFFFF" fill-opacity="0.55" stroke="#990000" stroke-width="2.5"/>
+<text x="340" y="145" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Dragon General's Throne</text>
+<text x="340" y="116.0" font-size="11" fill="#C0504D" text-anchor="middle">(Unexplored)</text>
+</svg>

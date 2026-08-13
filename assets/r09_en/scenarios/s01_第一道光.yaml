@@ -1,0 +1,40 @@
+title: The First Light
+type: multiplayer
+quality: ★ Apprentice-grade
+players: 1–3 starting mages
+sessions: 1–2
+core_output: 1 Light-element Shard + possible rare Shard
+main_threat: Rival mages, minor environmental hazards
+prerequisite: None
+summary: The players' tower stands at the edge of a suburban forest. Its previous occupant—an old mage named Silas—vanished mysteriously three years ago, leaving behind a tower that is dilapidated but still functional. Lately, the fireflies in the forest have displayed anomalous magical activity—their flight paths form perfect geometric patterns.
+acts:
+- name: Act One—Establishing the Tower
+  scenes:
+  - Scene 1-1: Arrival
+  - Scene 1-2: Discovering Silas's Research Notes
+- name: Act Two—The First Research Loop
+  scenes:
+  - Phase 1: Observe (Perception check, DC 12)
+  - Phase 2: Hypothesize (Theory check, DC 10)
+  - Phase 3: Preparation
+  - Phase 4: Experiment—Excavation Beneath the Old Oak (Craft check, DC 12)
+  - Phase 5: Analyze (Theory check, DC 8, automatic success)
+- name: Act Three—Academic Socializing
+  scenes:
+  - Scene 3-1: The Uninvited Guest—Victor
+  - Scene 3-2: The Village Crisis
+  - Scene 3-3: The Battle Over the Vein (Victor branch)
+npcs:
+- name: Victor Page
+  detail: '- Research style: Bibliographic - Attributes: Perception 4, Theory 6, Craft 3, Will 4, Erudition 7 - Academic Reputation: 12 - Specialty: Light element - Trait: Jealousy—cannot bear anyone being better than himself - Secret: He corresponded with Silas three years ago about the anomalies in the forest—he is here to find Silas''s research results
+
+    **Player Choices**: 1. **Share the discovery**: Tell Victor about the Shard vein → Victor proposes cooperation (leads to the "Collaborative Research" branch) 2. **Keep it secret**: Be evasive and send him away → Victor will explore the forest on his own (leads to the "Rivalry" branch) 3. **Deceive**: Tell him a false location → Victor will discover the deception after 1d3 rounds (leads to the "Conflict" branch)'
+research_checks:
+- attribute: Perception
+  dc: 12
+- attribute: Theory
+  dc: 10
+- attribute: Craft
+  dc: 12
+- attribute: Theory
+  dc: 8

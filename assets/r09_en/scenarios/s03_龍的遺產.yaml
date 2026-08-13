@@ -1,0 +1,22 @@
+title: Legacy of the Dragon
+type: multiplayer
+quality: ★★★–★★★★ Expert-grade to Master-grade
+players: 2–4 mages
+sessions: 3–4
+core_output: Legendary-grade Flame Shard (◈)
+main_threat: Dragon, Dragon Elders Council, rival mage teams
+prerequisite: At least one player with Academic Reputation ≥30; or Taboo-style legend acceleration
+summary: Deep in the eternal-winter ice plains of the north, an ancient fire dragon named Ignarath is growing old. An emissary of the Dragon Elders Council—Valastra—has issued a rare invitation—to allow human mages to participate in the dragon's "death rite".
+acts:
+- name: Act One—Valastra's Trials
+  scenes:
+  - Scene: The Ice Hall of the Dragon Elders Council
+- name: Act Two—Crossing the Ice Plains
+  scenes: []
+- name: Act Three—The Dragon's Death Rite
+  scenes:
+  - Scene: Ignarath
+npcs: []
+research_checks:
+- attribute: null
+  dc: 20

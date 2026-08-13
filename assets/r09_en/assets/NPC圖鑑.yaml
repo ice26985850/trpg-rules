@@ -1,0 +1,224 @@
+source_md: NPC圖鑑.md
+sections:
+- section: NPC List
+  subsection: Ella
+  entries:
+  - Attribute: '**ID**'
+    Content: ella
+  - Attribute: '**Identity**'
+    Content: Apprentice → Chief Apprentice → Companion
+  - Attribute: '**Source Scenario**'
+    Content: S01
+  - Attribute: '**Initial Loyalty**'
+    Content: '60'
+  - Attribute: '**Max Loyalty**'
+    Content: '100'
+  - Attribute: '**Attributes**'
+    Content: Perception 3 | Theory 2 | Craft 4 | Will 5 | Erudition 2
+  - Attribute: '**Special Talent (d8)**'
+    Content: 8 (revealed when becoming Chief Apprentice)
+- section: NPC List
+  subsection: Ella
+  entries:
+  - Target: Player (you)
+    Relationship: Sees you as a mentor. Will grow alongside you.
+  - Target: Lena
+    Relationship: Admires Lena's combat skills and wishes to learn.
+- section: NPC List
+  subsection: Victor Paget
+  entries:
+  - Attribute: '**ID**'
+    Content: victor_paget
+  - Attribute: '**Identity**'
+    Content: Archivist / Quest Giver
+  - Attribute: '**Source Scenario**'
+    Content: S01/S02
+  - Attribute: '**Initial Loyalty**'
+    Content: '50'
+  - Attribute: '**Attributes**'
+    Content: Perception 4 | Theory 6 | Craft 3 | Will 4 | Erudition 7
+  - Attribute: '**Specialty Element**'
+    Content: Radiance
+  - Attribute: '**Learning Style**'
+    Content: Archival Research
+- section: NPC List
+  subsection: Victor Paget
+  entries:
+  - Target: Kohl
+    Relationship: A fatherly mentor. Devastated by Kohl's disappearance.
+  - Target: Player (you)
+    Relationship: Respects your independence, but worries you may stray into taboo research.
+- section: NPC List
+  subsection: Kohl
+  entries:
+  - Attribute: '**ID**'
+    Content: kohl
+  - Attribute: '**Identity**'
+    Content: Victor's Student / Missing Mage
+- section: NPC List
+  subsection: Kohl
+  entries:
+  - Ending: Rescued
+    Result: Returns to the Academy safely. Becomes an occasional ally.
+  - Ending: Rescued but Injured
+    Result: Recovers after 1d3 Long Rests. Provides valuable shard analysis assistance.
+  - Ending: Deceased
+    Result: The player's actions led to his death. Relationship with Victor deteriorates.
+- section: NPC List
+  subsection: Lena Ironwood
+  entries:
+  - Attribute: '**ID**'
+    Content: lena_ironwood
+  - Attribute: '**Identity**'
+    Content: Mercenary Companion
+  - Attribute: '**Source Scenario**'
+    Content: S02
+  - Attribute: '**Initial Loyalty**'
+    Content: '40'
+  - Attribute: '**Class**'
+    Content: Mercenary
+  - Attribute: '**Total Attribute Sum**'
+    Content: '23'
+  - Attribute: '**Attributes**'
+    Content: Perception 6 | Theory 2 | Craft 7 | Will 5 | Erudition 3
+- section: NPC List
+  subsection: Lena Ironwood
+  entries:
+  - Target: Player (you)
+    Relationship: A professional contractual relationship that gradually develops into genuine trust.
+  - Target: Ella
+    Relationship: Teaches her practical combat techniques.
+  - Target: Marcus
+    Relationship: Distrusts the "hidden mage."
+- section: NPC List
+  subsection: Marcus Flintlock
+  entries:
+  - Attribute: '**ID**'
+    Content: marcus_flintlock
+  - Attribute: '**Identity**'
+    Content: Empirical Mage / Cult Member (secret)
+  - Attribute: '**Source Scenario**'
+    Content: S03
+  - Attribute: '**Initial Loyalty**'
+    Content: '60'
+  - Attribute: '**Total Attribute Sum**'
+    Content: '29'
+  - Attribute: '**Attributes**'
+    Content: Perception 5 | Theory 7 | Craft 6 | Will 6 | Erudition 5
+- section: NPC List
+  subsection: Marcus Flintlock
+  entries:
+  - Target: Cult
+    Relationship: A member of the underground taboo research network.
+  - Target: Watchers
+    Relationship: Under protective custody — but not punished.
+  - Target: Void Shard
+    Relationship: It is growing. Drawing nourishment from beyond the Veil.
+- section: NPC List
+  subsection: Olivia Ironwall
+  entries:
+  - Attribute: '**ID**'
+    Content: olivia_ironwall
+  - Attribute: '**Identity**'
+    Content: Watcher Captain
+  - Attribute: '**Will**'
+    Content: '8'
+- section: NPC List
+  subsection: Olivia Ironwall
+  entries:
+  - Target: Marcus
+    Relationship: Viewed as a potential asset, not a criminal.
+  - Target: Player (you)
+    Relationship: Respects your abilities, monitors your taboo tendencies.
+- section: NPC List
+  subsection: Mirror
+  entries:
+  - Attribute: '**ID**'
+    Content: mirror
+  - Attribute: '**Identity**'
+    Content: Cult Leader (identity unknown)
+- section: NPC List
+  subsection: Mirror
+  entries:
+  - Target: Cult Members
+    Relationship: Omniscient, patient, dangerous.
+  - Target: Player (you)
+    Relationship: Recruiter and handler. Frequently tests your loyalty.
+- section: NPC List
+  subsection: Ignaris
+  entries:
+  - Attribute: '**ID**'
+    Content: ignaris
+  - Attribute: '**Identity**'
+    Content: Ancient Fire Dragon / Legendary Mentor
+  - Attribute: '**Source Scenario**'
+    Content: S04
+- section: NPC List
+  subsection: Ignaris
+  entries:
+  - Item: Legendary Flame Shard (◈)
+    Effect: Highest-tier element shard
+  - Item: Ignaris's Sigil
+    Effect: Spell attack +2 (permanent)
+  - Item: Memory Shard
+    Effect: Key clue for S05
+- section: NPC List
+  subsection: Zyphiros
+  entries:
+  - Attribute: '**ID**'
+    Content: zyphiros
+  - Attribute: '**Identity**'
+    Content: Young Fire Dragon / Potential Companion
+  - Attribute: '**Source Scenario**'
+    Content: S04
+  - Attribute: '**Initial Loyalty**'
+    Content: '70'
+  - Attribute: '**Max Form**'
+    Content: Fully grown adult dragon
+  - Attribute: '**Normal Form**'
+    Content: Dog-sized juvenile dragon
+- section: NPC List
+  subsection: Valastraa
+  entries:
+  - Attribute: '**ID**'
+    Content: valastraa
+  - Attribute: '**Identity**'
+    Content: Member of the Dragon Elders Council
+- section: NPC List
+  subsection: Valastraa
+  entries:
+  - Target: Ignaris
+    Relationship: Close friend and contemporary.
+  - Target: Player (you)
+    Relationship: A distant but fair observer.
+- section: NPC List
+  subsection: Selina
+  entries:
+  - Attribute: '**ID**'
+    Content: selina
+  - Attribute: '**Identity**'
+    Content: First Mage / Historical Figure
+- section: NPC List
+  subsection: Ashville
+  entries:
+  - Attribute: '**ID**'
+    Content: ashville
+  - Attribute: '**Identity**'
+    Content: Historical Figure / Taboo Researcher
+- section: Faction Tensions
+  entries:
+  - Faction A: Watcher Council
+    Faction B: Taboo Network
+    Relationship: Hostile
+    Description: The Watchers hunt taboo researchers. The cult views the Watchers as oppressors of knowledge.
+    Player Impact: The player must choose a side or become a double agent.
+  - Faction A: Royal Academy
+    Faction B: Pure Fire
+    Relationship: Neutral
+    Description: The Academy tolerates Pure Fire's existence but does not cooperate with it.
+    Player Impact: "Students must decide: seek Academy accreditation or operate outside the system."
+  - Faction A: Material Trade Alliance
+    Faction B: All other factions
+    Relationship: Commercially Neutral
+    Description: Supplies materials to everyone. Gold speaks.
+    Player Impact: Regardless of faction stance, shards can be sold for profit.

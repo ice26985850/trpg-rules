@@ -1,0 +1,13 @@
+name: Combat Arts Codex
+source_file: 戰技圖鑑.md
+table_count: 1
+tables:
+- section: Complete Combat Arts Overview (orig. §3.9) > Complete Combat Arts Overview
+  headers:
+  - track_a_archetype_exclusive
+  - track_b_universal_schools
+  - total
+  rows:
+  - track_a_archetype_exclusive: 6 archetypes × 5 arts × Lv0-4 = 120 levels
+    track_b_universal_schools: 4 schools × 6 arts = 24 universal arts
+    total: 144 combat art options

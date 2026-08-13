@@ -1,0 +1,40 @@
+name: "Scenario 5: Dragon General Battle"
+description: "Head north to Dragonridge Peak to investigate Dragon General Ignisia Flamescale's trail, explore the dragon's lair, and fight the Dragon General's three-phase Boss battle (Whelp Form / Complete Form / Berserk Form, HP 66% / 33% shift). CL40 threshold, late-phase elite. Uses Method A: one scenario + party-size adjustment."
+difficulty: Hard
+level_range: [40, 42]
+chapter: 5
+map_ref: maps/劇本5_戰鬥_龍將.yaml
+initial_map: maps/劇本5_探索_龍巢.yaml
+encounters:
+  - id: dragon_vanguard
+    name: Dragon Lair Outpost
+    enemies:
+      - {name: Dragon Soldier, cr: 8, count: 3}
+      - {name: Young Dragon Hatchling, cr: 6, count: 2}
+    budget: Hard×1.5
+    adjust: "1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1"
+  - id: dragon_general_boss
+    name: Dragon General Ignisia Flamescale (Three Phases)
+    enemies:
+      - {name: Ignisia Flamescale, cr: 40, count: 1}
+      - {name: Dragon Soldier (Phase 2 summon), cr: 8, count: 2}
+    boss: true
+    phases:
+      - {name: Whelp Form, hp_threshold: "100%~66%", trait: Scale armor DR 30%}
+      - {name: Complete Form, hp_threshold: "66%", trait: Dragon Breath AOE Fire / Aerial Assault}
+      - {name: Berserk Form, hp_threshold: "33%", trait: Scale Armor Shattered / Apocalyptic Breath / Critical-hit Window}
+    budget: Boss Battle CR≈party total level×0.6 (with minions ×1.2)
+    adjust: "1 PC→CR37/no assist; 5–6 PCs→CR42"
+rewards:
+  exp: 9934
+  gold: 1200
+  items: [Flamescale Shard, Dragon General Beacon, Flame Resistance Charm]
+ip_events:
+  - event: Protect the refugee village caught in dragon breath
+    ip: 4
+  - event: Choose the peaceful dialogue option with the Dragon General
+    ip: 5
+  - event: Spare the defeated dragon soldiers (do not kill)
+    ip: 3
+  - event: Reveal the Dragon General's "seeking the strong" motive
+    ip: 2

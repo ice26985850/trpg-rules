@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 640" font-family="'PingFang TC','Microsoft JhengHei','Noto Sans CJK TC',sans-serif">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfeaf2"/>
+      <stop offset="1" stop-color="#c9dcec"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6f1e3"/>
+      <stop offset="1" stop-color="#ece3cf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ocean Background -->
+  <rect x="0" y="0" width="820" height="640" fill="url(#sea)"/>
+  <text x="410" y="34" text-anchor="middle" font-size="26" font-weight="700" fill="#3a2f25">Hongmeng Continent · Geographic Map</text>
+  <text x="410" y="56" text-anchor="middle" font-size="13" fill="#6b5d4f">Five Domains Divided · Central Zhongzhou Richest in Spirit Veins</text>
+
+  <!-- Continent Outline -->
+  <path d="M120 110 Q90 160 110 230 Q80 300 130 360 Q110 440 170 500 Q260 560 410 540 Q560 560 650 500 Q710 440 690 360 Q740 300 710 230 Q730 160 700 110 Q560 70 410 80 Q260 70 120 110 Z"
+        fill="url(#land)" stroke="#b89b6e" stroke-width="3"/>
+
+  <!-- Region: Beiming (North) -->
+  <g>
+    <rect x="320" y="120" width="180" height="92" rx="10" fill="#e8f2f6" stroke="#7fa8c9" stroke-width="2"/>
+    <text x="410" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#2f5b78">Beiming</text>
+    <text x="410" y="176" text-anchor="middle" font-size="12" fill="#4a6678">Polar Ice Fields · Eternal Glaciers</text>
+    <text x="410" y="196" text-anchor="middle" font-size="11" fill="#6b7f8c">Ascetics and Reclusive Masters Dwell</text>
+  </g>
+
+  <!-- Region: Zhongzhou (Center) -->
+  <g>
+    <rect x="330" y="250" width="160" height="118" rx="10" fill="#fdf3d6" stroke="#c9a23a" stroke-width="2.5"/>
+    <text x="410" y="284" text-anchor="middle" font-size="19" font-weight="700" fill="#8a6312">Zhongzhou</text>
+    <text x="410" y="308" text-anchor="middle" font-size="12" fill="#7a5a1e">Heart of the Cultivation Civilization</text>
+    <text x="410" y="328" text-anchor="middle" font-size="11" fill="#8a6e34">Dragon Vein's Main Root · Sects Abound</text>
+    <text x="410" y="348" text-anchor="middle" font-size="11" fill="#8a6e34">Site of the Largest Market</text>
+  </g>
+
+  <!-- Region: Western Domain (West) -->
+  <g>
+    <rect x="140" y="250" width="160" height="120" rx="10" fill="#f3ead9" stroke="#b08a52" stroke-width="2"/>
+    <text x="220" y="284" text-anchor="middle" font-size="18" font-weight="700" fill="#7a5a26">Western Domain</text>
+    <text x="220" y="308" text-anchor="middle" font-size="12" fill="#6b5226">Border of the Demon Abyss</text>
+    <text x="220" y="328" text-anchor="middle" font-size="11" fill="#7a6438">Desert Gobi · Ancient Kingdom Ruins</text>
+    <text x="220" y="348" text-anchor="middle" font-size="11" fill="#7a6438">Demon Cultivators and Rogues Active</text>
+  </g>
+
+  <!-- Region: Eastern Lands (East) -->
+  <g>
+    <rect x="520" y="250" width="160" height="120" rx="10" fill="#e6f3ea" stroke="#5fa07a" stroke-width="2"/>
+    <text x="600" y="284" text-anchor="middle" font-size="18" font-weight="700" fill="#2f6b48">Eastern Lands</text>
+    <text x="600" y="308" text-anchor="middle" font-size="12" fill="#356b4e">Holy Land of Pill Refining</text>
+    <text x="600" y="328" text-anchor="middle" font-size="11" fill="#3f6b54">Sea Archipelagos · Overseas Immortal Mountains</text>
+    <text x="600" y="348" text-anchor="middle" font-size="11" fill="#3f6b54">Home of the Crimson Clouds Valley</text>
+  </g>
+
+  <!-- Region: Southern Wilderness (South) -->
+  <g>
+    <rect x="330" y="410" width="160" height="100" rx="10" fill="#f0e6ef" stroke="#9a6fa0" stroke-width="2"/>
+    <text x="410" y="442" text-anchor="middle" font-size="18" font-weight="700" fill="#6b3f70">Southern Wilderness</text>
+    <text x="410" y="466" text-anchor="middle" font-size="12" fill="#6b4570">Kingdom of Demonic Beasts</text>
+    <text x="410" y="486" text-anchor="middle" font-size="11" fill="#7a557e">Hundred Thousand Mountains · Barbaric Secret Realm</text>
+  </g>
+
+  <!-- Secret Realm Markers -->
+  <g fill="#b3432f">
+    <circle cx="410" cy="232" r="5"/><text x="420" y="236" font-size="11" fill="#7a2f22">Taixu Mountain (Sword Tomb)</text>
+    <circle cx="300" cy="364" r="5"/><text x="200" y="368" font-size="11" fill="#7a2f22">Stargazing Terrace</text>
+    <circle cx="520" cy="364" r="5"/><text x="528" y="368" font-size="11" fill="#7a2f22">Heaven-Forging City</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(600,500)">
+    <rect x="0" y="0" width="190" height="96" rx="8" fill="#ffffffcc" stroke="#b89b6e" stroke-width="1.5"/>
+    <text x="12" y="22" font-size="12" font-weight="700" fill="#3a2f25">Legend</text>
+    <text x="12" y="42" font-size="11" fill="#4a3a2a">■ Five Major Regions (Laid Out by Direction)</text>
+    <text x="12" y="60" font-size="11" fill="#4a3a2a">● Famous Secret Realms / Sect Holy Lands</text>
+    <text x="12" y="78" font-size="11" fill="#4a3a2a">Zhongzhou in the Center, Richest in Spiritual Energy</text>
+  </g>
+
+  <text x="410" y="624" text-anchor="middle" font-size="10" fill="#8a7c6a">This map is a schematic geographic overview; for detailed geography, sects, and secret realms, see "Worldbuilding" (GM Rulebook), Volume 3.</text>
+</svg>

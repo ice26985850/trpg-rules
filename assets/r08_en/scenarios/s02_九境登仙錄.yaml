@@ -1,0 +1,79 @@
+# Tianji: Cultivation of the True Heart — Scenario Structured Index
+# This file pairs with the same-named .md and provides a dual download on the site.
+
+scenario:
+  id: s02
+  key: "Tianji: Cultivation of the True Heart"
+  title: Chronicle of the Nine Realms
+  type: Adventure Epic
+  player_type: Group
+  language: en
+  summary: >
+    A six-act complete adventure epic following a cultivator's crossing of the
+    Nine Realms from mortal (Qi Refining) to ascension (Tribulation Crossing).
+    Players will experience the Ascension Convention, the Taichu Hidden Manor,
+    the Demon Abyss crisis, and the continental war, until they face the choice of the Heavenly Dao.
+  players:
+    min: 1
+    max: 4
+    gm: required
+  depends_on:
+    - Tianji_Cultivation_of_the_True_Heart_Player_Rulebook.md
+    - Tianji_Cultivation_of_the_True_Heart_GM_Rulebook.md
+    - World_Expansion.md (worldview and scenario background, provided with the rulebooks)
+  level_range:
+    start: 1
+    end: 36
+    realms:
+      - Qi Refining
+      - Foundation Establishment
+      - Golden Core
+      - Nascent Soul
+      - Spirit Transformation
+      - Void Refining
+      - Fusion
+      - Mahayana
+      - Tribulation Crossing
+  estimated_sessions: "18-30"
+  estimated_hours: "40-90"
+  npc_companions: []
+  references:
+    - "-> §Worldview (Volume I: Chronicle of the Nine Realms)"
+  acts:
+    - id: 1
+      title: Mortal Awakening
+      level_range: "Lv.1-4"
+      realms: [Qi Refining, Foundation Establishment]
+      sessions: "3-5"
+      key_npcs: [Han Feng (Foundation Establishment)]
+    - id: 2
+      title: The Choice of the Dao
+      level_range: "Lv.5-8"
+      realms: [Foundation Establishment, Golden Core]
+      sessions: "4-6"
+      key_npcs: [Netherworld Five Elements Envoys (Golden Core)]
+    - id: 3
+      title: Winds Rise and Clouds Surge
+      level_range: "Lv.9-12"
+      realms: [Golden Core, Nascent Soul]
+      sessions: "5-8"
+      key_npcs: [Netherworld Demon General · Black Cliff (Nascent Soul)]
+    - id: 4
+      title: Heaven and Earth as the Board
+      level_range: "Lv.13-16"
+      realms: [Nascent Soul, Spirit Transformation]
+      sessions: "6-9"
+      key_npcs: [Demon Lord · Fenyu (Spirit Transformation)]
+    - id: 5
+      title: The Steps to Ascension
+      level_range: "Lv.17-20"
+      realms: [Spirit Transformation, Void Refining, Fusion]
+      sessions: "8-12"
+      key_npcs: [Fallen Immortal · Cang Wudao (Fusion)]
+    - id: 6
+      title: The Peak of the Nine Realms
+      level_range: "Lv.25-28"
+      realms: [Fusion, Mahayana, Tribulation Crossing]
+      sessions: "10-15+"
+      key_npcs: [Demon Ancestor · Devourer of the Dao (Beyond Tribulation Crossing)]
+  tags: [Cultivation, Campaign, Adventure Epic, Growth, Ascension]

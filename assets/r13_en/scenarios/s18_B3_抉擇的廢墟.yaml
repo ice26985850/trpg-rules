@@ -1,0 +1,56 @@
+name: Ruins of the Fateful Choice
+difficulty: Intermediate
+mode: Astartes · Multiplayer
+players: 2-4
+location: Adeptus Mechanicus Abandoned Facility "Thanatos-7 Outpost"
+recommended_attributes: 3–4 growths
+opening_description: |
+  Following the evacuation coordinates, the squad arrives at an abandoned Adeptus Mechanicus
+  research outpost. It has what they need—and perhaps a working transport ship—but an Adeptus
+  Mechanicus facility is never simply "abandoned."
+structure_phases:
+- phase: Arrival
+  content: |
+    The facility appears bombed from the outside. The main building has collapsed, but the
+    underground facility seems intact. The entrance is sealed—requires a Tech-Use test to bypass.
+- phase: Underground Laboratory
+  content: |
+    The Adeptus Mechanicus was researching... xenos technology here. A sealed Eldar comms crystal.
+    The crystal is still active—it has been transmitting a signal all along.
+- phase: Eldar Appear
+  content: |
+    An Eldar Ranger squad (3) arrives, drawn by the crystal's signal. They want the crystal back.
+    They offer a trade: the crystal in exchange for help repairing their transport ship (they have
+    the skill but are unfamiliar with human machinery).
+- phase: The Mechanicus "Guardian"
+  content: The underground facility's automated defense systems are still active—the Machine Spirit has been twisted by Chaotic energy and will attack any intruder.
+oath_conflict: |
+  Conflict: Reject the Xenos vs. Survival Above All. Accept the Eldar's help: repair the transport
+  ship and gain an evacuation tool. But Corruption +3~5, and gain the "Debt to the Eldar". Refuse
+  and drive off the Eldar: remain pure. But you must find your own way to repair the transport
+  ship—which could take weeks.
+key_npcs:
+- name: Eldar Ranger "Elandil"
+  role: Potential Ally / Trade Partner
+  detail: |
+    Calm, arrogant, but genuinely wants the crystal back. He bears no hostility toward humans—
+    merely disdain. If refused, he will not attack, only leave.
+- name: Twisted Machine Spirit
+  role: Environmental Threat
+  detail: |
+    The facility's defense turrets and servo-skulls have been polluted by Warp energy. They are
+    not "evil," only "in pain"—they can be soothed with a Tech-Use test.
+encounters:
+- name: Entrance Defense
+  enemies: Twisted Machine Spirit—Defense Turret ×2 + Servo-skull ×3
+  cr: 1×5
+  tactic: Fixed position, can be bypassed
+- name: Underground Passage
+  enemies: Warp Shadows ×1 (drawn by the crystal)
+  cr: '2'
+  tactic: Lurks near the crystal
+- name: (If attacking the Eldar)
+  enemies: Eldar Ranger ×3
+  cr: 3×3
+  tactic: The Eldar will retreat rather than fight to the death
+map_ref: "maps/map18_thanos7"

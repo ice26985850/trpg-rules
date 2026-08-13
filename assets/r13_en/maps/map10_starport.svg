@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 640" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g10" width="35" height="35"><rect width="35" height="35" fill="none"/><rect x="35" y="0" width="1" height="35" fill="#e0dbd4"/><rect x="0" y="35" width="35" height="1" fill="#e0dbd4"/></pattern>
+<rect width="820" height="640" fill="url(#g10)"/>
+<!-- Starport perimeter -->
+<rect x="40" y="40" width="740" height="560" rx="4" fill="#5a5248" stroke="#222" stroke-width="2" opacity="0.4"/>
+<text x="410" y="72" text-anchor="middle" font-size="10pt" fill="#888">Abandoned Starport (Outer Defense Line)</text>
+<!-- Sector A: Outer Perimeter (first wave) -->
+<rect x="50" y="90" width="240" height="180" fill="#7a7060" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="170" y="130" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">Starport Perimeter</text>
+<text x="170" y="152" text-anchor="middle" font-size="10pt" fill="#333">Buy time</text>
+<text x="170" y="170" text-anchor="middle" font-size="10pt" fill="#333">Mutants ×8 + Tyrant ×2</text>
+<text x="170" y="188" text-anchor="middle" font-size="9pt" fill="#666">CR 1×8+2×2 | Multi-directional assault</text>
+<text x="170" y="206" text-anchor="middle" font-size="9pt" fill="#666">Enemy reinforcements each turn (time pressure!)</text>
+<!-- Reinforcement arrows -->
+<polyline points="60,270 170,270 290,270" fill="none" stroke="#a00" stroke-width="2" stroke-dasharray="6,4"/>
+<polygon points="60,265 60,275 50,270" fill="#a00"/>
+<polygon points="290,265 290,275 300,270" fill="#a00"/>
+<!-- Sector B: Tower Defense (second wave) -->
+<rect x="320" y="90" width="200" height="180" fill="#8a7a68" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="420" y="135" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">Tower Defense</text>
+<text x="420" y="158" text-anchor="middle" font-size="10pt" fill="#333">Aerial Comms Relay</text>
+<text x="420" y="178" text-anchor="middle" font-size="9pt" fill="#333">Warp Shadows ×2</text>
+<text x="420" y="196" text-anchor="middle" font-size="9pt" fill="#666">CR 2×2 | Emerge from walls</text>
+<text x="420" y="214" text-anchor="middle" font-size="9pt" fill="#666">After purification, landing craft signal strengthens</text>
+<text x="420" y="230" text-anchor="middle" font-size="9pt" fill="#a00">⚠ Not purified → signal delayed 1 turn</text>
+<!-- Sector C: Landing Platform (Final Boss) -->
+<rect x="550" y="90" width="210" height="180" fill="#a89078" stroke="#444" stroke-width="2" rx="2"/>
+<text x="655" y="130" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">Landing Pad</text>
+<text x="655" y="150" text-anchor="middle" font-size="10pt" fill="#333">Final Boss Battle</text>
+<text x="655" y="168" text-anchor="middle" font-size="9pt" fill="#333">Chaos Space Marine ×1 + Cultists ×4</text>
+<text x="655" y="186" text-anchor="middle" font-size="9pt" fill="#666">CR 4+0×4 | Must be cleared before landing craft lands</text>
+<!-- Landing craft icon -->
+<rect x="635" y="200" width="40" height="20" fill="#6a6" stroke="#333" stroke-width="1"/>
+<text x="655" y="214" text-anchor="middle" font-size="8pt" fill="#fff">Landing Craft</text>
+<text x="655" y="230" text-anchor="middle" font-size="8pt" fill="#060">⏱ 6-hour Countdown</text>
+<!-- Sector D: Civilian Gathering Point -->
+<rect x="50" y="300" width="240" height="160" fill="#999" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="170" y="340" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">Civilian Staging Point</text>
+<text x="170" y="362" text-anchor="middle" font-size="9pt" fill="#333">20-30 Civilians</text>
+<text x="170" y="380" text-anchor="middle" font-size="9pt" fill="#666">Who boards? (Astartes 1 per seat)</text>
+<text x="170" y="398" text-anchor="middle" font-size="9pt" fill="#666">2 Civilians = 1 seat (can squeeze)</text>
+<!-- Transport option arrows -->
+<text x="170" y="440" text-anchor="middle" font-size="8pt" fill="#080">↓ To Landing Pad (must pass the perimeter)</text>
+<line x1="170" y1="460" x2="170" y2="520" stroke="#080" stroke-width="1.5" stroke-dasharray="5,3"/>
+<!-- Sector E: Command Post -->
+<rect x="320" y="300" width="200" height="160" fill="#b0a088" stroke="#444" stroke-width="1.5" rx="2"/>
+<text x="420" y="340" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">Command Post</text>
+<text x="420" y="362" text-anchor="middle" font-size="9pt" fill="#333">Landing Craft Pilot Lt. Vera</text>
+<text x="420" y="380" text-anchor="middle" font-size="9pt" fill="#666">"She was assigned a suicidal evacuation"</text>
+<!-- Last Mission options (for who stays) -->
+<rect x="320" y="390" width="200" height="50" fill="#c9b896" stroke="#444" stroke-width="1"/>
+<text x="420" y="408" text-anchor="middle" font-size="9pt" fill="#333">Rear Guard / Seal / Protect / Atonement / Message Delivery</text>
+<text x="420" y="422" text-anchor="middle" font-size="8pt" fill="#666">(5 types of final mission)</text>
+<!-- Sector F: Chaos Offer -->
+<rect x="550" y="300" width="210" height="160" fill="#6a4a3a" stroke="#a00" stroke-width="2" rx="2"/>
+<text x="655" y="340" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#ccaa88">The Final Temptation</text>
+<text x="655" y="362" text-anchor="middle" font-size="9pt" fill="#aa8866">"Give us the landing craft</text>
+<text x="655" y="378" text-anchor="middle" font-size="9pt" fill="#aa8866">We will let everyone leave safely</text>
+<text x="655" y="394" text-anchor="middle" font-size="9pt" fill="#aa8866">As long as you promise... to do nothing"</text>
+<text x="655" y="428" text-anchor="middle" font-size="9pt" fill="#c00">Refuse = Chaos's final assault begins</text>
+<!-- End Conditions -->
+<rect x="50" y="490" width="710" height="100" fill="#5a5248" stroke="#444" stroke-width="2" rx="3"/>
+<text x="410" y="525" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#ddd">Endgame Conditions (choose one of four)</text>
+<text x="150" y="552" text-anchor="middle" font-size="9pt" fill="#6a6">Full evacuation (miracle)</text>
+<text x="355" y="552" text-anchor="middle" font-size="9pt" fill="#ddc">Partial evacuation (standard)</text>
+<text x="560" y="552" text-anchor="middle" font-size="9pt" fill="#c66">No evacuation (heroic)</text>
+<!-- Compass -->
+<g transform="translate(740,580)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">N</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">S</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">E</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">W</text>
+</g>
+<line x1="60" y1="605" x2="210" y2="605" stroke="#333" stroke-width="2"/>
+<text x="135" y="622" text-anchor="middle" font-size="10pt">30 meters</text>
+</svg>

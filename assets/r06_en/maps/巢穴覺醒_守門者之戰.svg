@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" font-family="Microsoft JhengHei, sans-serif">
+  <rect width="680" height="480" fill="#1a1a2e"/>
+
+  <!-- Zone: Safe Zone -->
+  <rect x="30" y="80" width="620" height="370" rx="10" fill="#1a3d2e" opacity="0.3"/>
+
+  <!-- Connection A→B -->
+  <line x1="180" y1="280" x2="310" y2="280" stroke="#DC143C" stroke-width="2.5"/>
+
+  <!-- Connection B→C -->
+  <line x1="390" y1="260" x2="510" y2="260" stroke="#DC143C" stroke-width="2.5" stroke-dasharray="8,4"/>
+
+  <!-- Connection B→D -->
+  <line x1="350" y1="300" x2="300" y2="200" stroke="#8B5CF6" stroke-width="1.5"/>
+
+  <!-- Connection B→E -->
+  <line x1="370" y1="320" x2="400" y2="400" stroke="#FF8C00" stroke-width="1.5"/>
+
+  <!-- A: Passage Entrance -->
+  <rect x="80" y="250" width="100" height="60" rx="8" fill="#4B0082" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="130" y="275" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Passage Entrance</text>
+  <text x="130" y="295" text-anchor="middle" fill="#ccc" font-size="9">Start</text>
+
+  <!-- B: Gatekeeper Nest -->
+  <rect x="310" y="240" width="110" height="70" rx="8" fill="#DC143C" stroke="#FF4444" stroke-width="2.5"/>
+  <text x="365" y="265" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Gatekeeper Nest</text>
+  <text x="365" y="285" text-anchor="middle" fill="#ff9999" font-size="9">⚠ BOSS</text>
+
+  <!-- C: Steel Gate -->
+  <rect x="510" y="245" width="100" height="60" rx="8" fill="#2E8B57" stroke="#4CAF50" stroke-width="2"/>
+  <text x="560" y="270" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Steel Gate</text>
+  <text x="560" y="290" text-anchor="middle" fill="#90EE90" font-size="9">Exit</text>
+
+  <!-- D: Cliff Cover -->
+  <rect x="240" y="140" width="90" height="50" rx="8" fill="#4169E1" stroke="#6B8CF6" stroke-width="1.5"/>
+  <text x="285" y="160" text-anchor="middle" fill="white" font-size="11">Cliff Cover</text>
+  <text x="285" y="178" text-anchor="middle" fill="#ccc" font-size="8">Half cover</text>
+
+  <!-- E: Bone Pile -->
+  <rect x="350" y="390" width="80" height="50" rx="8" fill="#FF8C00" stroke="#FFA500" stroke-width="1.5"/>
+  <text x="390" y="410" text-anchor="middle" fill="white" font-size="11">Bone Pile</text>
+  <text x="390" y="428" text-anchor="middle" fill="#ffcc80" font-size="8">⚠ Noise</text>
+
+  <!-- Title -->
+  <text x="340" y="25" text-anchor="middle" fill="#DC143C" font-size="16" font-weight="bold">Nest Awakening — Gatekeeper Battle</text>
+  <text x="340" y="45" text-anchor="middle" fill="#999" font-size="10">S1 Scene Four: Gatekeeper</text>
+
+  <!-- Legend -->
+  <rect x="440" y="400" width="12" height="12" rx="2" fill="#DC143C"/>
+  <text x="458" y="411" fill="#ccc" font-size="10">BOSS</text>
+  <rect x="510" y="400" width="12" height="12" rx="2" fill="#2E8B57"/>
+  <text x="528" y="411" fill="#ccc" font-size="10">Exit</text>
+  <rect x="580" y="400" width="12" height="12" rx="2" fill="#4169E1"/>
+  <text x="598" y="411" fill="#ccc" font-size="10">Cover</text>
+</svg>

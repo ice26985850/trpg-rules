@@ -1,0 +1,23 @@
+# Otherworld Invasion TRPG Scenario — Dragon Isle Expedition
+# id: S14
+
+id: S14
+title: Dragon Isle Expedition
+season: 4
+season_name: Final Battle Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Dragon Isle
+  description: A volcanic island, the territory of the Dragons. Extreme heat, toxic gas, draconic-magic traps.
+- name: Dragon God Temple
+  description: The entrance to Angerwide's divine realm, filled with elemental trial grounds.
+key_scenes:
+- The Dragons' trial: the five-element trial of Fire, Ice, Thunder, Dark, and Holy
+- Dialogue with Angerwide — the Dragon God's condition (demands the players prove humanity is worth saving)
+- Receiving the Dragon God's blessing — but at a cost
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

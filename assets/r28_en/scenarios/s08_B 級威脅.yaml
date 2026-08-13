@@ -1,0 +1,21 @@
+# Otherworld Invasion TRPG Scenario — B-Rank Threat
+# id: S8
+
+id: S8
+title: B-Rank Threat
+season: 2
+season_name: Resistance Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Inside the B-Rank Rift (7 zones)
+- name: Magma Core Chamber
+key_scenes:
+- Progressively delve into the seven zones of the Rift — each zone a different environmental challenge
+- Strategic choice: destroy the core vs. fight the Boss first
+- Kargnus's phase transition — first experience of Boss phase mechanics
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

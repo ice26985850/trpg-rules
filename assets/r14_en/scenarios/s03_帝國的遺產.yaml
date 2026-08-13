@@ -1,0 +1,80 @@
+name: "Empire's Legacy"
+description: "Discover an ancient civilization ruin holding far-ahead technology — and something that should not be opened."
+difficulty: 3
+level_range:
+  era_start: "Kingdom Age"
+  era_end: "Kingdom Age"
+turns_estimated: 50
+player_count: {min: 1, max: 1}
+map_ref: "maps/S3_帝國的遺產_遺跡區域.yaml"
+initial_map: "maps/S3_帝國的遺產_遺跡區域.yaml"
+
+phases:
+  - id: 1
+    name: "Ruin Excavation"
+    turns: "1-12"
+    events:
+      - turn: 1
+        name: "Discover Ruin"
+        type: "exploration"
+        description: "An ancient civilization city ruin is found at the border"
+      - turn: 6
+        name: "First Artifacts"
+        type: "discovery"
+        description: "Discover an energy core and ancient texts"
+      - turn: 10
+        name: "Unknown Signal"
+        type: "mystery"
+        description: "An unknown signal comes from deep within the ruin"
+
+  - id: 2
+    name: "Eyes from All Sides"
+    turns: "13-28"
+    events:
+      - turn: 15
+        name: "News Leaks"
+        type: "diplomacy"
+        description: "Multiple powers send expedition teams"
+      - turn: 20
+        name: "Internal Opposition"
+        type: "internal"
+        description: "The clash between the scholar faction and the military faction"
+
+  - id: 3
+    name: "The Sealed Door"
+    turns: "29-42"
+    events:
+      - turn: 35
+        name: "Discover the Seal"
+        type: "mystery"
+        description: "Discover the sealed door at the deepest point"
+        choices:
+          - option: "Open the seal"
+            outcome: "Random: Guardian / Plague / Void creature / Deity"
+          - option: "Study the seal"
+            outcome: "Tech greatly improved but risk deferred"
+          - option: "Destroy the ruin"
+            outcome: "International dissatisfaction but threat removed"
+
+  - id: 4
+    name: "Consequences"
+    turns: "43-50"
+    events:
+      - turn: 50
+        name: "Legacy Settlement"
+        type: "ending"
+        description: "Different endings unfold based on choices"
+
+endings:
+  - id: "research_shared"
+    condition: "Research and share"
+    result: "Technology +20, international prestige +30"
+  - id: "research_monopoly"
+    condition: "Monopolize research"
+    result: "Technology +30, all relations -20"
+  - id: "seal_opened"
+    condition: "Open the seal"
+    result: "Random result (ally or disaster)"
+  - id: "destroyed"
+    condition: "Destroy the ruin"
+    result: "All relations -10, threat removed"

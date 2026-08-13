@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="'Noto Sans CJK TC','Microsoft JhengHei','PingFang TC',sans-serif">
+  <!-- Background: Starry sea -->
+  <defs>
+    <radialGradient id="space" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#1a1030"/>
+      <stop offset="100%" stop-color="#070414"/>
+    </radialGradient>
+    <linearGradient id="route" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16d6c8"/>
+      <stop offset="100%" stop-color="#3a0ca3"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#space)"/>
+
+  <!-- Star decoration -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="80" cy="90" r="1.5"/><circle cx="820" cy="80" r="1.5"/>
+    <circle cx="120" cy="540" r="1.5"/><circle cx="860" cy="520" r="1.5"/>
+    <circle cx="60" cy="300" r="1"/><circle cx="840" cy="300" r="1"/>
+    <circle cx="450" cy="40" r="1.5"/><circle cx="450" cy="560" r="1"/>
+  </g>
+
+  <!-- Route (extending from the Astral Express) -->
+  <g stroke="url(#route)" stroke-width="2.5" fill="none" opacity="0.85">
+    <line x1="450" y1="300" x2="160" y2="450"/>
+    <line x1="450" y1="300" x2="210" y2="195"/>
+    <line x1="450" y1="300" x2="380" y2="120"/>
+    <line x1="450" y1="300" x2="660" y2="150"/>
+    <line x1="450" y1="300" x2="710" y2="350"/>
+    <line x1="450" y1="300" x2="760" y2="490"/>
+    <line x1="450" y1="300" x2="470" y2="545" stroke="#c026d3" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- Planet nodes -->
+  <g text-anchor="middle">
+    <!-- Belobog -->
+    <circle cx="160" cy="450" r="26" fill="#9fd3ff" stroke="#cfe9ff" stroke-width="2"/>
+    <text x="160" y="456" font-size="13" fill="#06121f" font-weight="bold">Belobog</text>
+    <text x="160" y="490" font-size="12" fill="#9fd3ff">Arc 1 · Ice Plains</text>
+
+    <!-- Rustcrown -->
+    <circle cx="210" cy="195" r="26" fill="#c9a36b" stroke="#e8d6b0" stroke-width="2"/>
+    <text x="210" y="201" font-size="13" fill="#2a1d09" font-weight="bold">Rustcrown</text>
+    <text x="210" y="235" font-size="12" fill="#e8d6b0">Arc 2 · Steampunk</text>
+
+    <!-- Xianzhou Abyss -->
+    <circle cx="380" cy="120" r="26" fill="#b8a4ff" stroke="#ddd2ff" stroke-width="2"/>
+    <text x="380" y="126" font-size="13" fill="#1a0f3a" font-weight="bold">Xianzhou Abyss</text>
+    <text x="380" y="160" font-size="12" fill="#ddd2ff">Arc 3 · Data Graveyard</text>
+
+    <!-- Azure Abyss -->
+    <circle cx="660" cy="150" r="26" fill="#4fd0e0" stroke="#c0f3fa" stroke-width="2"/>
+    <text x="660" y="156" font-size="13" fill="#04222a" font-weight="bold">Azure Abyss</text>
+    <text x="660" y="190" font-size="12" fill="#c0f3fa">Arc 4 · Submerged Sea</text>
+
+    <!-- Faction Crossing -->
+    <circle cx="710" cy="350" r="26" fill="#ffb38a" stroke="#ffe0cc" stroke-width="2"/>
+    <text x="710" y="356" font-size="13" fill="#3a1c0a" font-weight="bold">Faction Crossing</text>
+    <text x="710" y="390" font-size="12" fill="#ffe0cc">Arc 4 · Multiple Planets</text>
+
+    <!-- Void Fragmentum -->
+    <circle cx="760" cy="490" r="26" fill="#8a7dff" stroke="#c8c0ff" stroke-width="2"/>
+    <text x="760" y="496" font-size="13" fill="#0e0a2e" font-weight="bold">Void Fragmentum</text>
+    <text x="760" y="530" font-size="12" fill="#c8c0ff">Arc 5 · Endgame</text>
+
+    <!-- Annihilation's Voice -->
+    <circle cx="470" cy="545" r="20" fill="#c026d3" stroke="#f0a6ff" stroke-width="2" filter="url(#glow)"/>
+    <text x="470" y="550" font-size="12" fill="#fff" font-weight="bold">Annihilation's Voice</text>
+  </g>
+
+  <!-- Astral Express (hub) -->
+  <g text-anchor="middle">
+    <circle cx="450" cy="300" r="40" fill="#3a0ca3" stroke="#16d6c8" stroke-width="3" filter="url(#glow)"/>
+    <text x="450" y="296" font-size="15" fill="#fff" font-weight="bold">Astral Express</text>
+    <text x="450" y="316" font-size="12" fill="#9fe9e2">Astral Express</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="12" fill="#cfc6ff">
+    <rect x="40" y="40" width="14" height="14" rx="3" fill="#3a0ca3" stroke="#16d6c8"/>
+    <text x="62" y="51">Astral Express (Hub Port)</text>
+    <rect x="40" y="62" width="14" height="14" rx="3" fill="#c026d3"/>
+    <text x="62" y="73">Final Antagonist: Annihilation's Voice</text>
+    <line x1="40" y1="92" x2="60" y2="92" stroke="#16d6c8" stroke-width="2.5"/>
+    <text x="62" y="96">Star Track Route (Jump Travel)</text>
+  </g>
+
+  <text x="450" y="582" text-anchor="middle" font-size="13" fill="#9fe9e2">
+    Honkai: Star Rail TRPG — Astral Express Route Map (Five-Arc Route)
+  </text>
+</svg>

@@ -1,0 +1,214 @@
+source_md: 裝備圖鑑.md
+sections:
+- section: Magical Equipment
+  entries:
+  - ID: staff
+    Name: Staff
+    Type: Weapon
+    Slot: Main Hand
+    Bonus: Spell Attack +1
+    Rarity: Common
+    Price: 100 GP
+    Description: Enhances spellcasting concentration. Stacks with proficiency bonus.
+  - ID: robe
+    Name: Robe
+    Type: Armor
+    Slot: Body
+    Bonus: AC +1 or Will save +1
+    Rarity: Common
+    Price: 80 GP
+    Description: Woven with stabilizing runes.
+  - ID: wand
+    Name: Wand
+    Type: Focus
+    Slot: Off Hand
+    Bonus: Spirit Pool +5 max
+    Rarity: Rare
+    Price: 300 GP
+    Description: Stores residual mana from experiments.
+  - ID: crystal_lens
+    Name: Crystal Lens
+    Type: Focus
+    Slot: Eyes
+    Bonus: Perception +1, Library Research DC -1
+    Rarity: Common/Rare
+    Price: 200 GP
+    Description: Reveals hidden magical traits within shards.
+  - ID: ring
+    Name: Noble Signet Ring
+    Type: Trinket
+    Slot: Finger
+    Bonus: Advantage on social checks at academic conferences
+    Rarity: Common/Rare
+    Price: 150 GP
+    Description: Inherited from a noble family.
+  - ID: amulet
+    Name: Dragon Scale Amulet
+    Type: Trinket
+    Slot: Neck
+    Bonus: AC +1 (stacks with Robe)
+    Rarity: Rare
+    Price: Gift
+    Description: From a successful trial in S04. A dragon's blessing.
+  - ID: ward
+    Name: Dragonspeaker Mark
+    Type: Trinket
+    Slot: Body
+    Bonus: Flame shard spell attack +1
+    Rarity: Rare
+    Price: Gift
+    Description: From the knowledge trial in S04.
+  - ID: sigil
+    Name: Ignaris's Sigil
+    Type: Trinket
+    Slot: Body
+    Bonus: All flame spell attacks +2 (permanent)
+    Rarity: Legendary
+    Price: Gift
+    Description: From perfect stabilization in S04. Blessing of the ancient dragon.
+- section: Consumables
+  entries:
+  - ID: healing_potion
+    Name: Healing Potion
+    Effect: Restores 2d8+2 HP as a bonus action
+    Rarity: Common
+    Price: 30 GP
+    Description: Brewed with a Life shard + Ritual medium.
+  - ID: spirit_water
+    Name: Spirit Potion
+    Effect: Restores 1d6+2 Spirit Pool
+    Rarity: Common
+    Price: 25 GP
+    Description: Temporarily boosts spiritual energy.
+  - ID: smoke_bomb
+    Name: Smoke Bomb
+    Effect: 20 ft radius heavily obscured for 1 round
+    Rarity: Common
+    Price: 15 GP
+    Description: Quick escape tool. Allies can throw it as an action.
+  - ID: flash_powder
+    Name: Flash Powder
+    Effect: 15 ft radius all targets blinded 1 round
+    Rarity: Common
+    Price: 15 GP
+    Description: Light shard + Instant form.
+  - ID: fire_elixir
+    Name: Flame Potion
+    Effect: "Next spell gains Flame cross bonus: damage die +1, additional +1d6 against metal armor"
+    Rarity: Common/Rare
+    Price: 40 GP
+    Description: Concentrated flame essence.
+  - ID: cold_elixir
+    Name: Frost Potion
+    Effect: "Next spell gains Frost element: speed -10 ft, failed save halves speed"
+    Rarity: Common/Rare
+    Price: 40 GP
+    Description: Concentrated frost essence.
+  - ID: lightning_tonic
+    Name: Lightning Tonic
+    Effect: Next spell can chain to one additional target within 10 ft (half damage)
+    Rarity: Common/Rare
+    Price: 40 GP
+    Description: Concentrated lightning essence.
+  - ID: void_serum
+    Name: Void Serum
+    Effect: "Next spell: target healing halved for 1 round, caster recovers 50% of damage dealt as HP"
+    Rarity: Rare
+    Price: 100 GP
+    Description: Dangerous but powerful. May trigger a d10 side effect.
+- section: Alchemy Items
+  entries:
+  - ID: refined_trial_base
+    Name: Refined Reagent Base
+    Effect: Reduces experiment material cost by 3 per use
+    Price: 20 GP
+    Description: Basic reagent for low-tier experiments.
+  - ID: element_specific_trial
+    Name: Element-Specific Reagent
+    Effect: Required for Rare shard experiments. Cost reduced by 10 GP
+    Price: 30 GP
+    Description: Must match the target element type.
+  - ID: rare_material
+    Name: Rare Material
+    Effect: Required for Rare shard experiments
+    Price: 100 GP
+    Description: Source varies by element type.
+  - ID: unique_material
+    Name: Unique Material
+    Effect: Required for Legendary shard experiments
+    Price: Cannot be purchased
+    Description: Only obtainable through adventure and completing quests.
+- section: Starter Equipment
+  entries:
+  - ID: starter_eq_1
+    Name: Apprentice Staff
+    Price: 50 GP
+    Effect: Spell Attack +1 (must be held)
+  - ID: starter_eq_2
+    Name: Focusing Crystal
+    Price: 80 GP
+    Effect: Spell save DC +1 (must be held)
+  - ID: starter_eq_3
+    Name: Traveling Mage Robe
+    Price: 120 GP
+    Effect: AC +1, Will save +1
+  - ID: starter_eq_4
+    Name: Dragonhide Gloves
+    Price: 200 GP
+    Effect: Craft (precise manipulation) check +1
+  - ID: starter_eq_5
+    Name: Resonance Amulet
+    Price: 150 GP
+    Effect: Once per day, Spirit cost -2 (minimum 1)
+  - ID: starter_eq_6
+    Name: Stargazer's Mirror
+    Price: 100 GP
+    Effect: Perception (Observation) +1, only within tower / wilderness at night
+  - ID: starter_eq_7
+    Name: Mithril Ring
+    Price: 500 GP
+    Effect: Spell Attack +2 (does not stack with staff)
+  - ID: starter_eq_8
+    Name: Sage's Robe
+    Price: 800 GP
+    Effect: AC +2, all Theory checks +1
+  - ID: starter_con_1
+    Name: Healing Potion (Minor)
+    Price: 25 GP
+    Effect: Restores 2d4+2 HP (drunk as a bonus action)
+  - ID: starter_con_2
+    Name: Healing Potion (Greater)
+    Price: 80 GP
+    Effect: Restores 4d4+4 HP
+  - ID: starter_con_3
+    Name: Spirit Potion
+    Price: 40 GP
+    Effect: Restores 2d4 Spirit
+  - ID: starter_con_4
+    Name: Greater Spirit Potion
+    Price: 120 GP
+    Effect: Restores 4d4 Spirit
+  - ID: starter_con_5
+    Name: Concentration Potion
+    Price: 60 GP
+    Effect: Advantage on concentration saves for the next 1 minute
+  - ID: starter_con_6
+    Name: Element Resistance Potion
+    Price: 50 GP
+    Effect: Choose one element, gain resistance to its damage for 10 minutes
+  - ID: starter_con_7
+    Name: Invisibility Potion
+    Price: 100 GP
+    Effect: Invisible for 1 minute (ends after casting or attacking)
+  - ID: starter_con_8
+    Name: Blank Scroll
+    Price: 10 GP
+    Effect: Can pre-store one spell (pay Spirit when casting, no preparation needed)
+  - ID: starter_alc_1
+    Name: Magic Grease
+    Price: 10 GP
+    Effect: 10-ft square becomes difficult terrain + reflective flash
+  - ID: starter_alc_2
+    Name: Revealing Powder
+    Price: 25 GP
+    Effect: Reveals invisible creatures within 20 ft (Perception DC 15 contest)

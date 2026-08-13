@@ -1,0 +1,85 @@
+name: Relic of the Deep Hive
+difficulty: High (CR 5-6)
+mode: Mortal · Multiplayer
+players: 2-4
+judge: Magnus Iron (Radical)
+target_region: Tarr-Morag Hive City, Deep Hive (below Level 2300), a forgotten ancient underground temple
+recommended_attributes: 4-5
+opening_description: 'You are dispatched to the ancient underground temple in the Deep Hive, to recover a "relic" said to be from the Great Crusade era. But Inquisitor Magnus Iron''s silence is more unsettling than the mission itself.
+
+  '
+surface_goal: Recover a "relic" forgotten in the underground temple—said to be a relic of the Great Crusade era.
+hidden_goal: 'Magnus knows that "relic" is actually a Warp corruption source—but he doesn''t care. What he wants is the relic''s technological value (possibly containing pre-Imperium era Standard Template Construct (STC) template fragments). Whether the Penitents get corrupted is not within his consideration.
+
+  '
+known_threats:
+- Deep Hive environment is extremely hostile (total darkness, toxic gas pockets, structural collapse risk)
+- Rumored to be a Mutant beast active in the area
+- Possibly Warp entities
+hidden_threats:
+- The "relic" is a Chaos-corrupted ancient Standard Template Construct (STC) terminal—those who approach gain +1 Corruption per minute
+- There is a dormant Warp rift inside the underground temple—if triggered by psychic power or explosion, it activates immediately
+- Magnus dispatched a surveillance squad trailing the Penitents—if the Penitents attempt to destroy the relic rather than bring it back, the surveillance squad will intervene
+resources:
+  notes: 'Reduced ration: only 2 Medikits, 2 Flares. Magnus believes "pressure makes you more efficient".'
+  medical_pack: 2
+  flares: 2
+seduction_notes:
+- 1 player Note 1
+- 1 player Note 2
+- 1 player Note 3
+- 1 player Note 4 (all four notes distributed, maximizing team tension)
+key_npcs:
+- name: 'Blind Prophet of the "Chain-Breakers"'
+  role: Potential Ally/Enemy
+  detail: 'An elder of a Mutant community "Rust Children" living in the Deep Hive. He knows the temple''s location but warns that "what''s inside is not a relic, it is sin". You may choose to believe him or ignore him
+
+    '
+- name: Surveillance Squad
+  role: Potential Threat
+  detail: 3 Inquisition assault troopers trailing the Penitents. If the Penitents betray the Inquisitor (destroy the relic), they will attack
+key_checks:
+- scene: Crossing the toxic gas zone
+  check: Endurance (Hard)
+  tn: Body×10+Endurance−20
+  success: Pass safely
+  failure: Hit Points (HP)−1d4/turn
+- scene: Obtaining intel from the Blind Prophet
+  check: Oratory (Standard)
+  tn: Faith×10+Oratory
+  success: Gain warning+shortcut
+  failure: Unable to gain trust
+- scene: Discovering the surveillance squad
+  check: Awareness (Hard)
+  tn: Mind×10+Awareness−20
+  success: Discover the tail
+  failure: Unaware of being watched
+- scene: Resisting the relic's corruption
+  check: Faith (Extreme)
+  tn: Faith×10−40
+  success: Corruption gain halved
+  failure: +1 Corruption per minute
+- scene: 'Choice: Bring back the relic or destroy it'
+  check: No test—pure roleplay (RP) choice
+  tn: —
+  success: —
+  failure: —
+encounters:
+- name: Deep Hive Tunnel
+  enemies: Mutant Lurker×2
+  cr: 1×2
+  tactic: Ambush from the shadows
+- name: Temple Outskirts
+  enemies: Mutant Beast×1
+  cr: '3'
+  tactic: Boss-level, guards the temple entrance
+- name: Temple Interior (optional)
+  enemies: Warp Shadow×1 (if rift activated)
+  cr: '2'
+  tactic: Emerges from the rift
+- name: Evacuation Point (if betraying the Inquisitor)
+  enemies: Inquisition Assault Trooper×3
+  cr: 1×3
+  tactic: Well-equipped, attempting to recover the relic
+evacuation_condition: Proceed to the designated evacuation point after mission completion.
+map_ref: "maps/map14_deep_temple"

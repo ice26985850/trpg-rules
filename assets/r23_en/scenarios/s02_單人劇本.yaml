@@ -1,0 +1,370 @@
+# Yonghe Martial Codex · Solo Campaign (Structured Data)
+# Corresponding player/GM-readable version: s02_單人劇本.md
+# Purpose: machine-readable reference for the site-build script / AI GM engine
+# Mode note: solo mode = 1 player + 1 GM (user-defined, not GM-less)
+# Format: YAML (UTF-8, all traditional Chinese, terms use "English Full Name (ABBR)" format)
+
+scenario:
+  id: s02
+  title: Lone Journey
+  slug: s02_du-xing-jiang-hu
+  type: campaign
+  player_mode: solo                # solo=single (1 player + 1 GM)
+  players:
+    min: 1
+    max: 1
+    gm: required
+    note: "Solo mode = 1 player + 1 GM (user-defined, not GM-less)"
+  recommended_realm: "First Realm · First Glimpse → Sixth Realm · Return to Simplicity"
+  expected_sessions: "11-18 sessions"
+  based_on: "12_一條龍劇本.md (adapted to solo version)"
+  source_files:
+    - "21_Solo Campaign (adapted from 12_One-Dragon Campaign)"
+  reference_files:
+    - "20_Solo Rules"
+    - "12_One-Dragon Campaign"
+    - "14_Enemy Quick Reference"
+    - "15_Random Encounter Table"
+    - "03_Martial Arts System"
+    - "16_Sect-Betrayal Rules"
+  gm_pacing: >-
+    Between each chapter there is a "Jianghu transition" — the PC meets random encounters on the road (15_Random Encounter Table.md, solo version Difficulty (DC) -2); the transition is also when companions join / leave / swap.
+  chapter_overview:
+    - chapter: One
+      realm: First Realm
+      location: Black Wind Stronghold mountain path
+      conflict: "Wipe out bandits / rescue hostages"
+      companion: "—"
+      sessions: "1-2"
+    - chapter: Two
+      realm: Second Realm
+      location: Luoyang City
+      conflict: "Investigate Hua Gong San ingredients / befriend allies"
+      companion: "Liu Shengyan (Yaowang Valley healer)"
+      sessions: "2-3"
+    - chapter: Three
+      realm: Third Realm
+      location: "Yaowang Valley · Qianji Pavilion"
+      conflict: "Pursue insider Nangong Hui / Chu Huaisha's choice"
+      companion: "Liu Shengyan or Duan Tianya (pick one)"
+      sessions: "2-3"
+    - chapter: Four
+      realm: Fourth Realm
+      location: "Tianjian Alliance · Wanxiang Grotto"
+      conflict: "Tianjian Alliance succession crisis / grotto trials"
+      companion: "Duan Tianya (simplified)"
+      sessions: "2-3"
+    - chapter: Five
+      realm: Fifth Realm
+      location: "Blood Moon Cult Main Altar · Northern Frontier"
+      conflict: "Face Ye Xiuluo / court spy surfaces"
+      companion: "Han Tieyi (simplified)"
+      sessions: "2-3"
+    - chapter: Six
+      realm: Sixth Realm
+      location: Northern Frontier battlefield
+      conflict: "Barbarian invasion / ally or final battle"
+      companion: "Any one of the above (if renown suffices)"
+      sessions: "2-3"
+
+  chapters:
+
+    # ===================== Chapter 1 =====================
+    - id: ch1
+      index: 1
+      title: "Black Wind Stronghold · First Steps"
+      pc_realm: "First Realm · First Glimpse"
+      based_on: "12_一條龍劇本.md §Chapter 1"
+      hook: >-
+        Master / sponsor gives the first solo task: bandits at Black Wind Stronghold outside Luoyang are rampant, with captured villagers locked inside; "no need to wipe out the whole stronghold, just rescue the people."
+      solo_encounter_adjustments:
+        - encounter: "Encounter 1: Mountain-Path Ambush"
+          original: "4-6 Mountain Bandit Mooks (14_#2)"
+          solo: "2 Mountain Bandit Mooks (one on the path, one ambushing in a tree)"
+        - encounter: "Encounter 2: Stronghold Gate Guard"
+          original: "Bandit Chief + 2 Mooks"
+          solo: "Bandit Chief ×1 (alone at the gate — 'the others went drinking')"
+        - encounter: "Encounter 3: Boss Han Bao"
+          original: "HP 30, Berserk +3"
+          solo: "HP 20, Berserk cap +2, fear triggers at >15 damage (see 20_Solo Rules.md §2.3)"
+      noncombat_options:
+        - route: Stealth Route
+          detail: "Slip past the gate guard to the woodshed and rescue villagers directly."
+          check: "Stealth Difficulty (DC) 12 (solo version Difficulty (DC) 10, looser defense)"
+        - route: Intimidate Route
+          detail: "Pose as a Six Doors advance scout, have the guard lead to the chieftain, skipping Encounter 2."
+          check: "Strength / Charisma Difficulty (DC) 12"
+      rewards:
+        - name: Experience (Martial Truth / XP) 15
+          type: Experience (Martial Truth / XP)
+          note: "Includes rescue XP"
+        - name: Heroism +8
+          type: Heroism
+          source: "Rescuing villagers"
+        - name: Black Wind Stronghold Treasury
+          type: Silver / Items
+          source: "Silver 1d20+10 taels, Jin Chuang Medicine ×2"
+        - name: Demonic Cult Fragment Shard
+          type: Plot Item
+          source: "On Han Bao's corpse, blurry Hua Gong San formula, unusable but used in Chapter 2"
+        - name: "3 free nights at Luoyang inn"
+          type: Resource
+        - name: Renown +1
+          type: Renown
+
+    # ===================== Chapter 2 =====================
+    - id: ch2
+      index: 2
+      title: "Luoyang · Storm Approaching"
+      pc_realm: "Second Realm · Crossing the Threshold"
+      based_on: "12_一條龍劇本.md §Chapter 2"
+      scene_reskin: >-
+        The PC acts as Shen Wanjin's temporary agent, investigating the Hua Gong San ingredient flow; the original three-way maneuvering (Shen Wanjin / Tie Jingxin / Chu Huaisha) becomes a single-line PC investigation.
+      solo_encounter_adjustments:
+        - encounter: "Shen Family Pawnshop info exchange"
+          solo: "Unchanged — pure social"
+        - encounter: "Six Doors Camel Alley battle (original: help Tie Jingxin)"
+          solo: "PC arrives as battle nears its end; Tie Jingxin solo vs 2 Western Regions saber masters (HP 15 each); PC may join (2v2) or watch (Tie Jingxin wins turn 3 but wounded)"
+        - encounter: "Chu Huaisha's courtyard (original: stop escape)"
+          solo: "Changed to dialogue — Chu Huaisha reveals part of the truth ('bought Dragon-Saliva Herb to save someone'); Read Intent Difficulty (DC) 14 finds his voice changes when mentioning 'sister'"
+      key_npc:
+        name: Liu Shengyan
+        first_meet: "Yaowang Valley Jishi Hall (Luoyang free clinic), bandaging the villager you rescued"
+        join_condition: "Heroism ≥ 8 and helped at least one civilian NPC"
+        companion_data:
+          hp: 20
+          uses_per_combat: 2
+          skills: "Medicine King Needle Art (heal 2d6 HP, costs 1 use)"
+          passive: "PC adjacent to Liu Shengyan: dying check Difficulty (DC) -2"
+          items: "Jin Chuang Medicine ×3 (usable outside combat on PC)"
+      rewards:
+        - name: Experience (Martial Truth / XP) 18
+          type: Experience (Martial Truth / XP)
+          note: "Includes investigation + aiding Tie Jingxin"
+        - name: Silver 30
+          type: Silver
+          source: "Shen Wanjin's investigation fee"
+        - name: Six Doors Favor +1
+          type: Favor
+        - name: Sihai Alliance Favor +1
+          type: Favor
+        - name: Hua Gong San Formula Analysis Report
+          type: Information
+          source: "Liu Shengyan's help, confirms buyers beyond the Blood Moon Cult (see §Chapter 3 Variant D — Western Factory shadow)"
+    # ===================== Chapter 3 =====================
+    - id: ch3
+      index: 3
+      title: "Yaowang Valley · The Insider"
+      pc_realm: "Third Realm · Complete Mastery"
+      based_on: "12_一條龍劇本.md §Chapter 3"
+      scene_reskin: >-
+        Liu Shengyan (or companion) accompanies to the Yaowang Valley entrance, but the PC must handle the interior alone, accepting the 'Three Yaowang Questions' (rule for non-Medicine Sect entrants).
+      solo_encounter_adjustments:
+        - encounter: "Yaowang Valley entrance · mechanism gate"
+          original: "Comprehension Difficulty (DC) 14"
+          solo: "Difficulty (DC) 12 (Su Qingnang went easy on you)"
+        - encounter: "Netherworld Hall exploration"
+          solo: "Mo Ran proactively offers a tour (truly innocent, atmosphere makes PC suspicious)"
+        - encounter: "Nangong Hui Boss Battle"
+          original: "HP 45"
+          solo: "HP 30; Liu Shengyan may wait outside, or if brought in auto-detoxes the PC once per turn"
+      extra_encounter:
+        name: Mo Ran's Test
+        detail: >-
+          Mo Ran decides attitude by the PC's answer; sincerity → gives 'Netherworld Hall outer pass' and hints to inspect Nangong Hui's private pharmacy (altered accounts + leftover Hua Gong San ingredients).
+      chu_huai_sha_ending:
+        save: "Heroism +5; tells 'Po Feng San formula' secret + promises 'mysterious symbol' clue (used Chapter 4); does not join"
+        abandon: "Infamy +3; appears in Chapter 5 as 'brainwashed Blood Moon Cult elite', must be snapped awake not killed (reaction: 'Do you remember me? — Chu Huaisha's saber paused 0.1 second')"
+      rewards:
+        - name: Experience (Martial Truth / XP) 20
+          type: Experience (Martial Truth / XP)
+        - name: Mo Ran's Poison-Needle Pouch ×10
+          type: Dart
+          condition: "Pass Mo Ran's test (coated poison)"
+        - name: Po Feng San Formula
+          type: Plot Item
+          condition: "Save Chu Huaisha"
+        - name: Nangong Hui's Secret Letter
+          type: Information
+          source: "'Cao Duke has approved. Not a word for three months.' Confirms Western Factory spy line"
+
+    # ===================== Chapter 4 =====================
+    - id: ch4
+      index: 4
+      title: "Tianjian Alliance · Wanxiang Grotto"
+      pc_realm: "Fourth Realm · Perfecting the Craft"
+      based_on: "12_一條龍劇本.md §Chapter 4"
+      scene_reskin: >-
+        The PC is invited as the 'key clue to the fragment mystery' (having obtained at least two Wanxiang Grotto fragments in prior chapters). Duan Tianya may become a companion here (righteous route, Heroism ≥20, volunteers to travel together).
+      solo_encounter_adjustments:
+        - encounter: "Tianjian Alliance succession debate"
+          solo: "Lu Chenyuan invites PC to 'say a word'; Charisma Difficulty (DC) 16 may mend some rifts"
+        - encounter: "Wanxiang Grotto four trials"
+          solo: "All four trials done by PC alone; between each, the 'Grotto Spirit' (GM) grants one recovery (full HP, +5 Qi)"
+        - encounter: "Duan Tianya 'spar'"
+          solo: "Changed to Duan Tianya testing PC's worthiness to enter (non-lethal) by Lu Chenyuan's order; after defeat 'You're stronger than me, I'll go in with you'"
+      trial_adjustments:
+        - trial: Force Trial
+          check: "Strength Difficulty (DC) 16"
+          pass: "Lift the gate stone lion; permanent Strength +1 (not counted to cap)"
+        - trial: Wisdom Trial
+          check: "Comprehension Difficulty (DC) 18"
+          pass: "Break the Three-Talents formation; 'Formation-Breaking Insight' Technique Reading Difficulty (DC) -2"
+        - trial: Will Trial
+          check: "Willpower Difficulty (DC) 18"
+          pass: "Face greatest fear in illusion; 'Still Water' Qi Deviation check Difficulty (DC) -3"
+        - trial: Clear-Mind Trial
+          check: "Self-reflection (no Difficulty (DC) — GM judges by story history)"
+          pass: "Face deepest regret; unlock self-created technique condition (realm suffices, no story lock)"
+      rewards:
+        - name: Experience (Martial Truth / XP) 25
+          type: Experience (Martial Truth / XP)
+        - name: Tianjian Art · Initiation Volume
+          type: Martial Arts Manual
+          source: "Taught by Lu Chenyuan"
+        - name: Ancient Map · Complete Edition
+          type: Plot Item
+          source: "Four fragments combined, shows ancient pulse below the Blood Moon Cult Main Altar"
+        - name: Duan Tianya (optional companion)
+          type: Companion
+          condition: "Heroism ≥20 and passed at least two trials"
+        - name: "Named sword 'Chengying' (replica · 1d8+2)"
+          type: Weapon
+          source: "Gift from Lu Chenyuan"
+
+    # ===================== Chapter 5 =====================
+    - id: ch5
+      index: 5
+      title: "Blood Moon Cult · Peak of the Demon Cult"
+      pc_realm: "Fifth Realm · Peak of Perfection"
+      based_on: "12_一條龍劇本.md §Chapter 5 + Western Factory Variant D"
+      scene_reskin: >-
+        The original large frontal clash becomes the PC infiltrating the Main Altar, relying on prior connections (Liu Shengyan's antidote / Duan Tianya's sword cover / Mo Ran's intel) rather than a grand army battle. Han Tieyi appears if the PC contacted the Western Factory or has good Six Doors ties.
+      solo_encounter_adjustments:
+        - encounter: "Altar outskirts"
+          original: "Blood Moon Cult elite ×3 + mooks ×6"
+          solo: "Han Tieyi's Imperial Guard draws the main force; PC faces only 2 elites + 1 minor chief; Han Tieyi gives ranged fire cover once per day"
+        - encounter: "Li Canyang Boss Battle"
+          original: "HP 60"
+          solo: "HP 40; narrow corridor limits 'Setting-Sun Cleave' area mode"
+        - encounter: "Ye Xiuluo Boss Battle"
+          original: "HP 85"
+          solo: "HP 55; if Duan Tianya present he exchanges one round with Ye Xiuluo, granting the PC an extra main action"
+      dialogue:
+        name: Ye Xiuluo
+        text: >-
+          "I have been watching you since five years ago... Make your move. Let me see — are you like them, capable of change, or are you truly different?"
+      ending_branches:
+        - branch: "Go all-out head-on"
+          result: "Ye Xiuluo defeated but refuses capture, leaps into the abyss below Wanxiang Grotto (ancient pulse entrance), leaving last words"
+        - branch: "Spared in battle (gave up pursuit)"
+          result: "Ye Xiuluo survives; appears in Chapter 6 as 'uninvited reinforcements'"
+        - branch: "Infamy route (Infamy ≥25)"
+          result: "Ye Xiuluo stops at 10% HP, invites PC to take over as cult leader; Chapter 6 route greatly changes"
+      west_factory_settlement: >-
+        Zhuque appears after Ye Xiuluo's battle: 'Cao Duke is very interested in you. Next meeting — not on the battlefield.' Foreshadows Chapter 6.
+      rewards:
+        - name: Experience (Martial Truth / XP) 30
+          type: Experience (Martial Truth / XP)
+        - name: Star-Absorbing Great Method · Fragment
+          type: Martial Arts Manual
+          source: "Found in his study after defeating Ye Xiuluo"
+        - name: Ye Xiuluo's Token (Asura Mask)
+          type: Accessory
+          source: "When worn, intimidates same-realm foes (Willpower Difficulty (DC) 18, fail accuracy -2)"
+        - name: Han Tieyi (optional companion)
+          type: Companion
+          condition: "Cooperated with Imperial Guard in battle"
+
+    # ===================== Chapter 6 =====================
+    - id: ch6
+      index: 6
+      title: "Northern Frontier · All Under Heaven"
+      pc_realm: "Sixth Realm · Return to Simplicity"
+      based_on: "12_一條龍劇本.md §Chapter 6"
+      scene_reskin: >-
+        Barbarians breach Yanmen Pass, court collapses; finale is the PC leading a small squad (companion + 3-5 Tianjian disciples / Imperial Guard light cavalry) infiltrating the rear to reach Jin Ridi's command post, stopping him from using the ancient pulse to activate Wanxiang Grotto's final mechanism (an ancient weapon that could destroy the Central Plains martial world).
+      solo_encounter_adjustments:
+        - encounter: "Northern Frontier melee"
+          original: "PC army vs barbarian army head-on"
+          solo: "Small squad infiltrates the rear, companion holds mooks, PC need not roll against every soldier"
+        - encounter: "Jin Ridi Boss Battle"
+          original: "HP 100"
+          solo: "HP 70; 'Wolf Summon' reduced from 3 to 1 (ghost wolf HP 15)"
+      weakness:
+        text: >-
+          Jin Ridi's 'Beast-King's Blood' depends on ancient-pulse energy; before/during battle destroy the pulse-mechanism link (Trapcraft Difficulty (DC) 20 or Comprehension Difficulty (DC) 22), then he loses 1d6 HP per turn thereafter.
+      peace_route:
+        text: >-
+          Solo version triggers the peace route more easily (accumulated Jianghu credibility); proposing a concrete grain / trade plan (Charisma Difficulty (DC) 20) Jin Ridi may retreat.
+      finale_cg: >-
+        Post-battle PC alone on the ancient battlefield recalls: the night at Black Wind Stronghold, Liu Shengyan's Jin Chuang Medicine, Duan Tianya's 'you're stronger than me', Ye Xiuluo's expression at the abyss; 'This road you walked alone — but you were never truly alone'.
+      rewards:
+        - name: Experience (Martial Truth / XP) 40
+          type: Experience (Martial Truth / XP)
+        - name: "Heroism +30 / Infamy +30"
+          type: "Heroism / Infamy"
+          note: "By route"
+        - name: Nine-Character Inner Art True Transmission
+          type: Art
+          source: "Jin Ridi's secret chamber; beyond Return to Simplicity a hidden minor realm (HP +10, Qi +10)"
+        - name: Yonghe Hero Title
+          type: Title
+          source: "Permanent Renown +5"
+        - name: Each sect master's thanks (pick one)
+          type: "Weapon / Art / Wealth / Mechanism"
+          options: "Lu Chenyuan: Chengying Sword (true · 1d10+Strength×2) / Huijue: complete Yi Jin Jing / Shen Wanjin: ten thousand gold / Gongshu Xuan: Qianji Box (one-time battlefield item)"
+  appendices:
+    npc_quickref:       # Appendix A: NPCs per chapter
+      - chapter: One
+        required: "Han Bao (Boss), captured villagers"
+        optional: "—"
+        companion_join: "—"
+      - chapter: Two
+        required: "Shen Wanjin, Tie Jingxin, Chu Huaisha"
+        optional: "Liu Shengyan"
+        companion_join: "Liu Shengyan"
+      - chapter: Three
+        required: "Mo Ran, Nangong Hui (Boss)"
+        optional: "Chu Huaisha, Zhuque"
+        companion_join: "—"
+      - chapter: Four
+        required: "Lu Chenyuan, Duan Tianya"
+        optional: "Ziyang (if Sword Sect PC)"
+        companion_join: "Duan Tianya"
+      - chapter: Five
+        required: "Li Canyang (Boss), Ye Xiuluo (Boss)"
+        optional: "Han Tieyi, Zhuque"
+        companion_join: "Han Tieyi"
+      - chapter: Six
+        required: "Jin Ridi (Boss)"
+        optional: "Huijue, Gongshu Xuan, Ye Xiuluo (if alive)"
+        companion_join: "—"
+    reference_index:     # Appendix B: reference index
+      - ref: "Encounter threat solo algorithm"
+        source: "20_Solo Rules.md §2"
+        chapter: All
+      - ref: "NPC companion system"
+        source: "20_Solo Rules.md §4"
+        chapter: All
+      - ref: "Hero point mechanic"
+        source: "20_Solo Rules.md §3"
+        chapter: All
+      - ref: "Standard enemy data"
+        source: "14_Enemy Quick Reference.md"
+        chapter: All
+      - ref: "Original Boss data"
+        source: "12_一條龍劇本.md §1-6"
+        chapter: All
+      - ref: "Western Factory spy line"
+        source: "12_一條龍劇本.md §Chapter 3 Variant D / §Chapter 5 Variant D"
+        chapter: "§3, §5"
+      - ref: "Random encounter"
+        source: "15_Random Encounter Table.md (solo version Difficulty (DC) -2)"
+        chapter: "Between chapters"
+      - ref: "Sect-defection rules"
+        source: "16_Sect-Betrayal Rules.md"
+        chapter: "NPC-related plots"
+      - ref: "Master-apprentice system"
+        source: "03_Martial Arts System.md §3.1.5"
+        chapter: "Optional per chapter"

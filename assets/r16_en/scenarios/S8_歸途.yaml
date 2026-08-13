@@ -1,0 +1,18 @@
+name: "S8: The Way Home"
+description: "The white space beyond the EXIT door. Two doors. One marked 'Front Hall' — home. One marked 'The Backrooms' — stay. No gatekeeper, no puzzle, no condition. Only you, and your choice."
+difficulty: "Finale (no combat)"
+milestone_range: "8 (Legendary)"
+play_time: "2-3 hours (narrative finale)"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Ending Level — White Space"]
+themes: ["Destination", "Choice", "Identity"]
+emotional_arc: "Respite → Reflection → Choice → Ending"
+scenes:
+  - {id: S8_1, name: "White Space", type: "Respite", desc: "A purely white room. No walls, no ceiling, no floor — only white. Two doors before you. You sit down and reflect on the journey so far."}
+  - {id: S8_2, name: "Reflection", type: "Narrative", desc: "The GM guides the character to reflect on key moments of the whole campaign: first finding Almond Water. First escaping the Hounds. Near despair in the pipes. Friends met. Those lost. Every important choice the character made."}
+  - {id: S8_3, name: "The Two Doors", type: "Ultimate Choice", desc: "The left door: warm light seeps from the gap. You hear the sounds of the real world — traffic, birdsong, someone's laughter. The right door: the light of cold-toned fluorescent lamps. You hear the sounds of the Backrooms — the fluorescent hum, distant footsteps, but also… the voices of other Wanderers. Those you helped."}
+  - {id: S8_4, name: "The Ending", type: "Final Chapter", desc: "You walk toward one of the doors. No turning back."}
+choices:
+  - {id: "home", name: "Return to the Front Hall", desc: "Push open the left door. You wake in your own bed. Your phone shows the date — the day you vanished. Only minutes have passed. But there is no Almond Water in your pocket. Because Almond Water cannot exist in reality. You remember everything — but no one will believe you. You survived. You came home. But the fluorescent hum of the Backrooms still sometimes sounds in the deep of night."}
+  - {id: "stay", name: "Stay in the Backrooms", desc: "Push open the right door. You return to the M.E.G. outpost on Level 11. Old Zhao sees you — he smiles. 'Back?' You nod. This isn't home — but here there are people who need you. You know too many of the Backrooms' secrets. You can help the next ordinary person who phases through. Just as someone once helped you."}
+is_finale: true

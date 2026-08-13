@@ -1,0 +1,22 @@
+# Otherworld Invasion TRPG Scenario — Expedition Prep
+# id: S5
+
+id: S5
+title: Expedition Prep
+season: 2
+season_name: Resistance Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Multiple E/D-Rank Rifts
+- name: Abandoned Heavy Industrial Zone
+- name: Dwarf Underground Workshop (near the otherworld entrance)
+key_scenes:
+- Three material-gathering routes (players may choose the order; each route has different challenges)
+- First contact with the Dwarves—learning otherworld diplomatic culture
+- Discovering someone is quietly sabotaging the expedition plan—a mole lead
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

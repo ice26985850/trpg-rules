@@ -1,0 +1,36 @@
+# Otherworld Invasion TRPG Scenario — Depths of the Erosion Zone
+# id: S3
+
+id: S3
+title: Depths of the Erosion Zone
+season: 1
+season_name: Awakening Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Inside the D-Rank Rift
+  description: A small maze (5 zones) shrouded in otherworld law—Entrance Hall, Mycelial Corridor, Ruined Plaza, Antechamber to the Core, Rift Core.
+- name: Mycelial Corridor
+  description: A passage coated with glowing fungi, hiding otherworld minerals and lurking monsters.
+key_npcs:
+- name: Sato (D-Rank Awakener), a companion
+  role: A veteran Awakener dispatched by the Guild, injured inside the rift and in need of rescue by the players.
+key_scenes:
+- Crossing the mycelial forest—collecting otherworld materials (can be crafted into Green · Uncommon equipment)
+- Discovering the remains of a previous survey team—tension rises
+- Boss battle in the antechamber—first true D-Rank Boss
+- Strange phenomena after the rift closes—a hint from the Collector
+enemy_list:
+- name: Acid Slug
+  quantity: 4-6
+  note: Lv.5-7, appears in groups
+- name: Mycelial Parasite
+  quantity: 2-3
+  note: Lv.8, control-type special ability
+- name: Rift Aggregator
+  quantity: '1'
+  note: D-Rank Boss, Lv.10
+estimated_sessions:
+rewards:
+solo_adjustment:

@@ -1,0 +1,17 @@
+name: "S2: Traverse"
+description: "Level 1's M.E.G. outpost gives you a breather — but ahead lie Level 2's pipe hell and Level 3's electrical maze. Traverse them, or remain trapped in the shallow layers forever."
+difficulty: "Beginner → Intermediate"
+milestone_range: "2-3"
+play_time: "6-9 hours"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Level 1 — Habitable Zone", "Level 2 — Pipe Nightmare", "Level 3 — Power Station"]
+themes: ["Civilization's Remnants", "Oppressive Darkness", "Industrial Horror"]
+emotional_arc: "Hope (outpost) → Oppression (pipes) → Maze (power station) → Relief (exit)"
+scenes:
+  - {id: S2_1, name: "Cornerstone Outpost", type: "Preparation", desc: "A Level 1 M.E.G. outpost. Trade gear, gather intel on Levels 2/3. Can recruit an NPC companion to travel together. M.E.G. intelligence officer Chen provides a map."}
+  - {id: S2_2, name: "Pipe Nightmare", type: "Crisis", desc: "Level 2: 35°C heat, 90% darkness. Hound nests. Shelters of those before and variant Almond Water. The mystery of the red valve room."}
+  - {id: S2_3, name: "Power Station", type: "Maze", desc: "Level 3: abandoned power facility. Exposed wires, malfunctioning equipment, piercing alarms. The 'Electrician' entity wanders the machine room. Must restart the circuits to open the exit."}
+  - {id: S2_4, name: "Light", type: "Exit", desc: "Pass through Level 3's inspection door into a brief safe space — a bright corridor leading to Level 4."}
+entities: ["Hounds (Level 2 nests)", "Smilers (dark zones)", "The Electrician (Level 3-exclusive entity — electric shock attack)"]
+key_npc: ["M.E.G. intelligence officer Chen", "Optional NPC companion"]
+ending: "Pass through the inspection door into the passage toward Level 4. Milestone 3 achieved."

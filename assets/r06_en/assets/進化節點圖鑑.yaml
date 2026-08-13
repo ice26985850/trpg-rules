@@ -1,0 +1,98 @@
+Name: "Devour Gene: Chronicle of Evolution — Evolution Node Codex"
+Sections:
+  - Title: "Attribute Nodes (15)"
+    Table:
+      - {ID: "A01", Node Name: "Strengthened Muscles", Effect: "Strength (LIL)+2", Cost (EP): "2", Requirement: "None", Humanity Change: "0"}
+      - {ID: "A02", Node Name: "Adrenaline Gland", Effect: "Strength (LIL)+1, Agility (MJ)+1", Cost (EP): "3", Requirement: "Strength (LIL) 5+", Humanity Change: "0"}
+      - {ID: "A03", Node Name: "Ultra-Dense Bones", Effect: "Strength (LIL)+2, Constitution (TZ)+1", Cost (EP): "4", Requirement: "Strengthened Muscles", Humanity Change: "0"}
+      - {ID: "A04", Node Name: "Accelerated Nerves", Effect: "Agility (MJ)+2", Cost (EP): "2", Requirement: "None", Humanity Change: "0"}
+      - {ID: "A05", Node Name: "Elastic Fibers", Effect: "Agility (MJ)+1, Constitution (TZ)+1", Cost (EP): "3", Requirement: "Agility (MJ) 5+", Humanity Change: "0"}
+      - {ID: "A06", Node Name: "Lightning Reflexes", Effect: "Agility (MJ)+3", Cost (EP): "4", Requirement: "Accelerated Nerves", Humanity Change: "0"}
+      - {ID: "A07", Node Name: "Reinforced Cells", Effect: "Constitution (TZ)+2", Cost (EP): "2", Requirement: "None", Humanity Change: "0"}
+      - {ID: "A08", Node Name: "Self-Healing Factor", Effect: "Constitution (TZ)+1, recover 1 HP per round", Cost (EP): "4", Requirement: "Constitution (TZ) 6+", Humanity Change: "0"}
+      - {ID: "A09", Node Name: "Immortal Cells", Effect: "Constitution (TZ)+3", Cost (EP): "5", Requirement: "Reinforced Cells + Self-Healing Factor", Humanity Change: "0"}
+      - {ID: "A10", Node Name: "Keen Senses", Effect: "Perception (GZ)+2", Cost (EP): "2", Requirement: "None", Humanity Change: "0"}
+      - {ID: "A11", Node Name: "Echolocation", Effect: "Perception (GZ)+1, no Disadvantage on hearing", Cost (EP): "3", Requirement: "Perception (GZ) 5+", Humanity Change: "0"}
+      - {ID: "A12", Node Name: "Precognitive Intuition", Effect: "Perception (GZ)+2, Initiative +3", Cost (EP): "4", Requirement: "Keen Senses", Humanity Change: "0"}
+      - {ID: "A13", Node Name: "Iron Will", Effect: "Will (YZ)+2", Cost (EP): "2", Requirement: "None", Humanity Change: "0"}
+      - {ID: "A14", Node Name: "Clear Mind", Effect: "Will (YZ)+1, Advantage on Humanity checks", Cost (EP): "3", Requirement: "Will (YZ) 5+", Humanity Change: "0"}
+      - {ID: "A15", Node Name: "Immortal Will", Effect: "Will (YZ)+3", Cost (EP): "5", Requirement: "Iron Will + Clear Mind", Humanity Change: "0"}
+  - Title: "Passive Nodes (20)"
+    Table:
+      - {ID: "P01", Node Name: "Regeneration Lv.1", Effect: "Recover 2 HP per round", Cost (EP): "2", Requirement: "Constitution (TZ) 5+", Humanity Change: "-1"}
+      - {ID: "P02", Node Name: "Regeneration Lv.2", Effect: "Recover 4 HP per round (replaces Lv.1)", Cost (EP): "3", Requirement: "Regeneration Lv.1", Humanity Change: "-1"}
+      - {ID: "P03", Node Name: "Regeneration Lv.3", Effect: "Recover 6 HP per round (replaces Lv.2)", Cost (EP): "4", Requirement: "Regeneration Lv.2, Constitution 10+", Humanity Change: "-1"}
+      - {ID: "P04", Node Name: "Hardened Skin", Effect: "Physical damage -1", Cost (EP): "2", Requirement: "Constitution (TZ) 4+", Humanity Change: "-1"}
+      - {ID: "P05", Node Name: "Steel Skin", Effect: "Physical damage -2 (replaces Hardened Skin)", Cost (EP): "3", Requirement: "Hardened Skin, Constitution 7+", Humanity Change: "-1"}
+      - {ID: "P06", Node Name: "Diamond Skin", Effect: "Physical damage -3 (replaces Steel Skin)", Cost (EP): "4", Requirement: "Steel Skin, Constitution 10+", Humanity Change: "-1"}
+      - {ID: "P07", Node Name: "Thermal Vision", Effect: "No Disadvantage in darkness, sense invisible heat sources", Cost (EP): "2", Requirement: "Perception (GZ) 5+", Humanity Change: "-1"}
+      - {ID: "P08", Node Name: "Poison Resistance", Effect: "Poison duration halved", Cost (EP): "2", Requirement: "Constitution (TZ) 4+", Humanity Change: "-1"}
+      - {ID: "P09", Node Name: "Poison Immunity", Effect: "Completely immune to poison effects", Cost (EP): "4", Requirement: "Poison Resistance, Constitution 8+", Humanity Change: "-1"}
+      - {ID: "P10", Node Name: "Heat Resistance", Effect: "Fire damage -2, unaffected by high-heat environments", Cost (EP): "3", Requirement: "Constitution (TZ) 5+", Humanity Change: "-1"}
+      - {ID: "P11", Node Name: "Cold Resistance", Effect: "Frost damage -2, unaffected by low-temp environments", Cost (EP): "3", Requirement: "Constitution (TZ) 5+", Humanity Change: "-1"}
+      - {ID: "P12", Node Name: "Aquatic Adaptation", Effect: "Breathe underwater, no Disadvantage moving in water", Cost (EP): "2", Requirement: "None", Humanity Change: "-1"}
+      - {ID: "P13", Node Name: "Climbing Claws", Effect: "Climb without check, climb speed equals ground speed", Cost (EP): "2", Requirement: "Strength 4+ or Agility 4+", Humanity Change: "-1"}
+      - {ID: "P14", Node Name: "Jump Enhancement", Effect: "Jump distance ×2", Cost (EP): "2", Requirement: "Strength 5+ or Agility 5+", Humanity Change: "-1"}
+      - {ID: "P15", Node Name: "Camouflage Skin", Effect: "When still, Perception contests Agility; on failure cannot be detected", Cost (EP): "3", Requirement: "Agility (MJ) 5+", Humanity Change: "-1"}
+      - {ID: "P16", Node Name: "Electromagnetic Sense", Effect: "Sense electromagnetic fields and neural activity within 30m", Cost (EP): "3", Requirement: "Perception (GZ) 6+", Humanity Change: "-1"}
+      - {ID: "P17", Node Name: "Super Smell", Effect: "Tracking Advantage, identify individuals by scent", Cost (EP): "2", Requirement: "Perception (GZ) 4+", Humanity Change: "-1"}
+      - {ID: "P18", Node Name: "Psionic Shield", Effect: "Psychic attack damage -2", Cost (EP): "3", Requirement: "Will (YZ) 5+", Humanity Change: "-1"}
+      - {ID: "P19", Node Name: "Evolution Memory", Effect: "When absorbing, unlock one extra option (but can still only pick one)", Cost (EP): "4", Requirement: "Will (YZ) 7+", Humanity Change: "-1"}
+      - {ID: "P20", Node Name: "Adaptive Metabolism", Effect: "Survive 3× longer without food/water", Cost (EP): "2", Requirement: "Constitution (TZ) 4+", Humanity Change: "-1"}
+  - Title: "Active Nodes (25)"
+    Table:
+      - {ID: "S01", Name: "Fanged Bite", Tier: "Low-tier", AP: "1", Energy: "1", Cooldown: "None", Range: "Melee", Effect: "1d8+LIL piercing", Cost: "2", Requirement: "None"}
+      - {ID: "S02", Name: "Claw Strike", Tier: "Low-tier", AP: "2", Energy: "1", Cooldown: "None", Range: "Melee", Effect: "1d6+LIL slashing (can attack twice; consumes 2 AP due to double strike)", Cost: "2", Requirement: "None"}
+      - {ID: "S03", Name: "Poison Sting", Tier: "Low-tier", AP: "1", Energy: "1", Cooldown: "None", Range: "Melee", Effect: "1d4+LIL piercing + poison 3 rounds", Cost: "2", Requirement: "Absorb poisonous creature"}
+      - {ID: "S04", Name: "Slam", Tier: "Low-tier", AP: "1", Energy: "2", Cooldown: "None", Range: "Melee", Effect: "1d10+LIL + knockback 2 squares", Cost: "2", Requirement: "Strength 5+"}
+      - {ID: "S05", Name: "Tail Strike", Tier: "Low-tier", AP: "1", Energy: "1", Cooldown: "None", Range: "Melee", Effect: "1d8+LIL + knockdown", Cost: "2", Requirement: "Strength 4+"}
+      - {ID: "S06", Name: "Acid Saliva", Tier: "Low-tier", AP: "1", Energy: "2", Cooldown: "None", Range: "Mid-range", Effect: "1d6+MJ acid + armor -1", Cost: "3", Requirement: "Absorb acid creature"}
+      - {ID: "S07", Name: "Web Spray", Tier: "Low-tier", AP: "1", Energy: "2", Cooldown: "1 round", Range: "Mid-range", Effect: "Immobilize 1 round (Agility DC 14)", Cost: "2", Requirement: "Absorb spider-type"}
+      - {ID: "S08", Name: "Camouflage Hide", Tier: "Low-tier", AP: "1", Energy: "1", Cooldown: "None", Range: "Self", Effect: "Hidden this round", Cost: "2", Requirement: "Agility 4+"}
+      - {ID: "S09", Name: "Flame Breath", Tier: "Mid-tier", AP: "2", Energy: "3", Cooldown: "1 round", Range: "Cone 3", Effect: "2d6+MJ fire (Agility DC 14 halves) + burning 2 rounds", Cost: "3", Requirement: "Absorb fire element"}
+      - {ID: "S10", Name: "Frost Spit", Tier: "Mid-tier", AP: "2", Energy: "3", Cooldown: "1 round", Range: "Cone 3", Effect: "2d6+MJ frost + movement speed halved", Cost: "3", Requirement: "Absorb ice element"}
+      - {ID: "S11", Name: "Electric Antenna", Tier: "Mid-tier", AP: "2", Energy: "3", Cooldown: "1 round", Range: "Melee", Effect: "2d8+LIL lightning + paralyze 1 round", Cost: "4", Requirement: "Absorb electric creature"}
+      - {ID: "S12", Name: "Petrifying Gaze", Tier: "Mid-tier", AP: "2", Energy: "3", Cooldown: "2 rounds", Range: "Mid-range", Effect: "Petrify 1 round (Constitution DC 15); no direct damage", Cost: "4", Requirement: "Absorb petrifying lizard"}
+      - {ID: "S13", Name: "Vampiric Touch", Tier: "Mid-tier", AP: "1", Energy: "3", Cooldown: "None", Range: "Melee", Effect: "1d8+LIL damage + recover half damage", Cost: "3", Requirement: "Absorb vampiric creature"}
+      - {ID: "S14", Name: "Toxic Mist", Tier: "Mid-tier", AP: "2", Energy: "3", Cooldown: "2 rounds", Range: "Circle 3", Effect: "Poison mist 3 rounds (Constitution DC 14); no direct damage", Cost: "4", Requirement: "Poison Gland"}
+      - {ID: "S15", Name: "Sonic Screech", Tier: "Mid-tier", AP: "2", Energy: "3", Cooldown: "1 round", Range: "Cone 4", Effect: "2d6+YZ psychic + stun", Cost: "3", Requirement: "Perception 6+"}
+      - {ID: "S16", Name: "Burrow Stealth", Tier: "Mid-tier", AP: "2", Energy: "2", Cooldown: "None", Range: "Self", Effect: "Burrow → next round burst out +1d6+LIL", Cost: "3", Requirement: "Strength 5+ or Agility 5+"}
+      - {ID: "S17", Name: "Dragon's Breath", Tier: "High-tier", AP: "3", Energy: "5", Cooldown: "3 rounds", Range: "Cone 5", Effect: "3d10+MJ×2 fire, ignores fire resistance", Cost: "5", Requirement: "Flame Breath + absorb dragon-type"}
+      - {ID: "S18", Name: "Earthquake Smash", Tier: "High-tier", AP: "3", Energy: "5", Cooldown: "3 rounds", Range: "Radius 5", Effect: "2d10+LIL×2 + knockdown (Agility DC 16)", Cost: "5", Requirement: "Strength 10+"}
+      - {ID: "S19", Name: "Psychic Storm", Tier: "High-tier", AP: "3", Energy: "5", Cooldown: "3 rounds", Range: "Ranged", Effect: "4d8+YZ×2 psychic (Will DC 16 halves)", Cost: "5", Requirement: "Will 10+"}
+      - {ID: "S20", Name: "Time Slow", Tier: "High-tier", AP: "2", Energy: "5", Cooldown: "3 rounds", Range: "Self", Effect: "+2 AP per round for 2 rounds", Cost: "5", Requirement: "Agility 10+"}
+      - {ID: "S21", Name: "Black Hole Devour", Tier: "High-tier", AP: "3", Energy: "5", Cooldown: "3 rounds", Range: "Circle 3", Effect: "3d6+YZ×2 pure + pull to center", Cost: "5", Requirement: "Will 10+, absorb void creature"}
+      - {ID: "S22", Name: "Thunder Domain", Tier: "High-tier", AP: "3", Energy: "5", Cooldown: "3 rounds", Range: "Radius 4", Effect: "Lasts 3 rounds, 2d6+MJ lightning per round", Cost: "5", Requirement: "Electric Antenna + Will 8+"}
+      - {ID: "S23", Name: "Life Drain Aura", Tier: "High-tier", AP: "2", Energy: "5", Cooldown: "3 rounds", Range: "Radius 3", Effect: "Lasts 3 rounds, 1d4+YZ damage per round and recover equal HP", Cost: "5", Requirement: "Vampiric Touch + Constitution 8+"}
+      - {ID: "S24", Name: "Void Blade", Tier: "High-tier", AP: "2", Energy: "5", Cooldown: "3 rounds", Range: "Ranged", Effect: "4d8+YZ×2 pure, ignores all resistance", Cost: "5", Requirement: "Will 10+"}
+      - {ID: "S25", Name: "Evolution Resonance", Tier: "Special", AP: "1", Energy: "2", Cooldown: "None", Range: "Melee", Effect: "Copy one of target's low-tier active once (copied damage also applies attribute bonus)", Cost: "4", Requirement: "Perception 8+, Will 8+"}
+  - Title: "Organ Nodes (12)"
+    Table:
+      - {ID: "O01", Node Name: "Poison Gland", Unlock Ability: "Melee carries 1d4 poison / unlocks Toxic Mist", Cost (EP): "3", Biomass: "3", Requirement: "Absorb poisonous creature", Humanity Change: "-4"}
+      - {ID: "O02", Node Name: "Compound Eyes", Unlock Ability: "Vision ×2 / Perception advantage / multi-target observation", Cost (EP): "4", Biomass: "4", Requirement: "Perception 6+", Humanity Change: "-4"}
+      - {ID: "O03", Node Name: "Wings", Unlock Ability: "Flight = ground speed / immune to ground traps", Cost (EP): "5", Biomass: "6", Requirement: "Agility 8+, absorb flying creature", Humanity Change: "-4"}
+      - {ID: "O04", Node Name: "Antenna", Unlock Ability: "Electromagnetic sense / 30m telepathic communication", Cost (EP): "3", Biomass: "3", Requirement: "Perception 5+", Humanity Change: "-4"}
+      - {ID: "O05", Node Name: "Regeneration Organ", Unlock Ability: "Recover 3 HP per round / limb regrowth", Cost (EP): "5", Biomass: "5", Requirement: "Constitution 8+", Humanity Change: "-4"}
+      - {ID: "O06", Node Name: "Color-Changing Skin", Unlock Ability: "Change color at will / stealth advantage / mimic appearance", Cost (EP): "3", Biomass: "3", Requirement: "Agility 6+", Humanity Change: "-4"}
+      - {ID: "O07", Node Name: "Vocal Cord Mutation", Unlock Ability: "Mimic voices / +2 sonic / ultrasonic echolocation", Cost (EP): "3", Biomass: "2", Requirement: "Perception 5+", Humanity Change: "-4"}
+      - {ID: "O08", Node Name: "Strengthened Heart", Unlock Ability: "HP +10 / energy recovery +1 / death immunity", Cost (EP): "5", Biomass: "4", Requirement: "Constitution 10+", Humanity Change: "-4"}
+      - {ID: "O09", Node Name: "Extra Arms", Unlock Ability: "Extra pair of hands / two 1AP attacks per round", Cost (EP): "4", Biomass: "5", Requirement: "Strength 6+", Humanity Change: "-4"}
+      - {ID: "O10", Node Name: "Light Organ", Unlock Ability: "Glow at will / blind / +1d6 vs light-sensitive creatures", Cost (EP): "3", Biomass: "2", Requirement: "None", Humanity Change: "-4"}
+      - {ID: "O11", Node Name: "Carapace", Unlock Ability: "Physical -3 / HP +5 / Agility -1 (permanent)", Cost (EP): "4", Biomass: "6", Requirement: "Constitution 7+", Humanity Change: "-4"}
+      - {ID: "O12", Node Name: "Elemental Gland", Unlock Ability: "Choose one element: attacks carry 1d6 / resistance to that element", Cost (EP): "5", Biomass: "5", Requirement: "Absorb corresponding element creature", Humanity Change: "-4"}
+  - Title: "Form Nodes (6)"
+    Table:
+      - {ID: "M01", Form Name: "Half-Dragon Form", Effect: "LIL+3, TZ+2, YZ+1 / dragon breath enhanced / brief flight / dragon's might", Cost: "5", Biomass: "10", Requirement: "Absorb dragon-type creature", Humanity Change: "-8"}
+      - {ID: "M02", Form Name: "Aquatic Form", Effect: "MJ+2, TZ+1 / breathe underwater / water speed ×2 / sonar / land halved", Cost: "5", Biomass: "8", Requirement: "Aquatic Adaptation + deep water 5 rounds", Humanity Change: "-8"}
+      - {ID: "M03", Form Name: "Flight Form", Effect: "MJ+4 / permanent flight (speed ×1.5) / LIL-2 / body becomes lighter", Cost: "5", Biomass: "8", Requirement: "Wings (organ)", Humanity Change: "-8"}
+      - {ID: "M04", Form Name: "Etherealization", Effect: "Physical immunity / phase through walls / LIL zeroed / HP halved / psionic attack", Cost: "5", Biomass: "5", Requirement: "Will 12+, absorb undead", Humanity Change: "-8"}
+      - {ID: "M05", Form Name: "Gigantification", Effect: "LIL+4, TZ+3 / HP ×1.5 / Giant (2×2) / MJ-3 / movement speed halved", Cost: "5", Biomass: "15", Requirement: "Strength 10+, Constitution 10+", Humanity Change: "-8"}
+      - {ID: "M06", Form Name: "Elemental Fusion", Effect: "Element immunity / skill enhancement / opposing element weakness ×2 / Humanity recovery halved", Cost: "5", Biomass: "10", Requirement: "Elemental Gland (organ)", Humanity Change: "-8"}
+  - Title: "Ultimate Active Nodes (6)"
+    Table:
+      - {ID: "U01", Node Name: "Form Shift", Tier: "Ultimate", AP: "3", Energy: "All Remaining (min 5)", Cooldown: "Once per battle", Range: "Self", Effect: "Immediately activate a Form Node whose unlock requirement you know, gaining all its effects, lasting the entire battle (disappears after battle, not retained)", Cost: "5 Evolution Points", Requirement: "Know that Form Node's unlock requirement, Will (YZ) 10+"}
+      - {ID: "U02", Node Name: "Domain Expansion", Tier: "Ultimate", AP: "3", Energy: "All Remaining (min 5)", Cooldown: "Once per battle", Range: "Self radius 6 squares", Effect: "Deploy exclusive domain lasting entire battle: within domain all your attacks +2 damage, all enemy recovery -50%, at start of each round enemies take 1d6 damage (damage type based on your strongest element or psychic)", Cost: "5 Evolution Points", Requirement: "Own at least 1 high-tier active node"}
+      - {ID: "U03", Node Name: "Ultimate Evolution", Tier: "Ultimate", AP: "3", Energy: "All Remaining (min 5)", Cooldown: "Once per battle", Range: "Self", Effect: "Within this battle, all owned active node damage +1d6, passive node effects ×1.5, attribute nodes additional +1. Lasts entire battle", Cost: "6 Evolution Points", Requirement: "Own 15+ Evolution Nodes"}
+      - {ID: "U04", Node Name: "Self-Destruct Rebirth", Tier: "Ultimate", AP: "3", Energy: "All Remaining (min 5)", Cooldown: "Once per battle", Range: "Self radius 5 squares", Effect: "Deal 5d10+YZ×2 pure damage to all enemies in range (ignores all resistance), then you die and are reborn as Newborn Form after 1d4 rounds: HP full, randomly gain one temporary organ node effect (lasts until battle ends)", Cost: "5 Evolution Points", Requirement: "Constitution (TZ) 8+"}
+      - {ID: "U05", Node Name: "Gene Collapse", Tier: "Ultimate", AP: "3", Energy: "All Remaining (min 5)", Cooldown: "Once per battle", Range: "Single target", Effect: "Will (YZ) DC 20: on failure target randomly loses 1-2 activated active/passive node effects (lasts entire battle), and takes 3d10+YZ×2 pure damage", Cost: "5 Evolution Points", Requirement: "Will (YZ) 12+ or have absorbed Prototype Ω"}
+      - {ID: "U06", Node Name: "Omnivorous Devour", Tier: "Ultimate", AP: "3", Energy: "All Remaining (min 5)", Cooldown: "Once per battle", Range: "Area circle 5 squares", Effect: "Automatically absorb all near-death or paralyzed enemies in range (no check needed), each successfully absorbed enemy recovers 2d6 HP for you and grants a trait sample option (choose one after battle); deals 4d10+YZ×2 pure damage to non-near-death enemies", Cost: "6 Evolution Points", Requirement: "Own basic absorption ability"}

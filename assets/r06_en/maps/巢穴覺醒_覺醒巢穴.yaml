@@ -1,0 +1,65 @@
+# Nest Awakening — Awakening Nest Map
+# Corresponding Scenario: S1 Scene One (Awakening)
+
+nodes:
+  - id: "A"
+    label: "Awakening Hall"
+    x: 200
+    y: 300
+    type: "start"
+    explored: false
+    description: "Central hall, scattered with 12 corpses. Wake up here."
+
+  - id: "B"
+    label: "Water Source"
+    x: 350
+    y: 250
+    type: "rest"
+    explored: false
+    description: "Where underground spring water gathers. Clear water source. Resting restores 1d4 HP (one-time)."
+
+  - id: "C"
+    label: "Nest Passage"
+    x: 200
+    y: 100
+    type: "transition"
+    explored: false
+    description: "Narrow passage to the surface. Glowing fungi provide faint light. Connects to Scene Two."
+
+  - id: "D"
+    label: "Corpse Pile"
+    x: 100
+    y: 350
+    type: "loot"
+    explored: false
+    description: "Concentrated pile of corpses. Can search for resources — Healing Potion ×1, Rusted Dagger ×1."
+
+  - id: "E"
+    label: "Crevice"
+    x: 300
+    y: 380
+    type: "hazard"
+    explored: false
+    description: "Ground crevice, about 2 meters wide. Agility (MJ) DC 10 to jump over. Failure deals 1d4 falling damage."
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "passage"
+  - from: "A"
+    to: "C"
+    type: "passage"
+  - from: "A"
+    to: "D"
+    type: "passage"
+  - from: "A"
+    to: "E"
+    type: "passage"
+
+regions:
+  - name: "Inner Nest"
+    color: "#4B0082"
+    nodes: ["A", "B", "D", "E"]
+  - name: "Exit Direction"
+    color: "#2E8B57"
+    nodes: ["C"]

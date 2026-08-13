@@ -1,0 +1,74 @@
+# Starship Boarding Assault TRPG — Scenario S2: Abyssal Corridor
+scenario_id: S2_Abyssal_Corridor
+title: "Abyssal Corridor — Eternal Watch (S2)"
+subtitle: "An abandoned giant carrier drifts in the asteroid belt. No garrison — but the ship is riddled with malfunctioning automated defenses and unexploded torpedoes."
+difficulty: Hard
+recommended_level: "2–4"
+player_count: { min: 1, max: 6 }
+estimated_duration: "3–5 hours"
+
+mission_type: Data Raid
+enemy_vessel:
+  name: "Eternal Watch (S2)"
+  type: Abandoned Carrier — originally Terran Stellar Concord (TSC)
+  size: Giant (1,200 m length)
+  decks: 5 (only main decks explored)
+  gravity: Standard Gravity (1G) — partially Variable-G where gravity plates have failed
+  self_destruct: false  # Abandoned state — but the reactor is unstable and may explode
+
+story_summary: >
+  A Concord carrier, the Eternal Watch, was damaged early in the Rift War and drifted into the asteroid belt.
+  The crew evacuated entirely, but the shipboard AI was never fully shut down. Over 50 years, the AI gradually
+  broke down in its solitude. Recently an Alliance patrol vessel approached the ship and mysteriously vanished.
+  Intelligence suggests the Eternal Watch may hold a key early-war database. The Arbitrator dispatches an assault
+  team to board — the objective is to locate and recover the tactical database at the bridge.
+
+turning_points:
+  - id: TP1
+    name: "The Bridge Choice"
+    description: "There are two routes to the bridge: the main elevator (fast but may alert the AI) or the repair conduit (long but safe). The Scout's route-planning ability is critical here."
+  - id: TP2
+    name: "Awakening of the AI"
+    description: "When the data download reaches 50%, the shipboard AI 'Watcher' awakens. It is not hostile — but it believes the players are the crew sent to rescue it 50 years ago. The AI begins reconfiguring ship systems to 'assist' — but its assistance is extremely dangerous (opening vacuum hatches to 'fight fire', activating defense turrets to 'protect' the players)."
+  - id: TP3
+    name: "Reactor Crisis"
+    description: "The AI attempts to restart the main reactor. If not stopped, the reactor will overload and explode after 10 rounds."
+
+key_encounters:
+  - id: E1
+    location: Hangar Deck
+    enemies:
+      - type: Defense Robot (Elite)
+        count: 2
+        cr: 3
+        notes: "Rusty and sluggish — 50% chance each round to malfunction and skip its action"
+    total_el: 6
+  - id: E2
+    location: Corridor Before the Bridge
+    enemies:
+      - type: Auto-Turret (Standard)
+        count: 3
+        notes: "May be breached (ENG DC 15) or bypassed via the repair conduit"
+    total_el: 6
+  - id: E3
+    location: Reactor Chamber
+    environment: "Radiation zone — unprotected characters take 1d4 radiation damage per round"
+    challenge: "Breach the AI console (ENG DC 18) to cancel the reactor restart"
+
+rewards:
+  xp_primary: 10         # Primary objective
+  xp_secondary: 4        # Secondary objectives total: 1 × +4
+  xp_full_survival: 3    # Full squad survival
+  xp_gm_bonus: 6         # GM generic pool
+  reputation: 2
+  special_loot:
+    - name: "Watcher AI Fragment"
+      description: "A data core holding early-war AI code — permanently grants +1 to Engineering (ENG) checks when breaching AI vessels."
+
+special_rules:
+  - rule: "Psychological Pressure"
+    description: "The Game Master (GM) should emphasize the horror atmosphere of the environment. Footstep echoes in dark corridors, damaged broadcast systems playing evacuation orders from 50 years ago, dried blood on the bulkheads."
+  - rule: "AI Anomaly"
+    description: "The Watcher AI's behavior is unpredictable. Every 3 rounds the Game Master (GM) rolls 1d6 to determine the AI's 'assistance' action: 1-2 = open/close nearby hatches, 3-4 = broadcast meaningless messages, 5-6 = activate nearby automated defenses."
+
+map_file: "../maps/永恆守望號_S2.yaml"

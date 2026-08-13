@@ -1,0 +1,106 @@
+scenario: S3
+section: Fourth Demon General · Gel General Battle (Gel Islands · CL 23–35)
+map_type: battle
+grid_scale: "1 cell = 2 meters"
+title: S3_Battle_Gel Islands
+# Coordinates are exact grid coordinates (col, row, 0–9), for distance and range calculation
+# Gel General single-boss battle; terrain: Gel Islands (R4) water archipelago
+# Key mechanic: Splitting Proliferation (Phase 1, splits when hit; AOE clear recommended)
+# Crystallization (Phase 3, crit immunity + high DR; must break the Crystallized Core with [Bludgeon-break Crystal])
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: Enemy, role: Front, color: "#FF8A8A"}
+    - {row: 1, side: Enemy, role: Back, color: "#FFC8C8"}
+    - {row: 6, side: Ally, role: Front, color: "#8AAEFF"}
+    - {row: 8, side: Ally, role: Back, color: "#C8D8FF"}
+  aoe:
+    - {cx: 5, cy: 3, r: 2, lp: below, label: Splitting Proliferation Field (Phase 1 · AOE clear recommended)}
+
+nodes:
+  - id: boss
+    label: Gel General (Plume)
+    x: 5
+    y: 1
+    type: boss
+    explored: true
+  - id: crystal
+    label: Crystallized Core (Break with Bludgeon)
+    x: 5
+    y: 2
+    type: Object
+    explored: true
+  - id: e_slime_a
+    label: Slime A
+    x: 3
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_slime_b
+    label: Slime B
+    x: 4
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_slime_c
+    label: Slime C
+    x: 6
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_slime_d
+    label: Slime D
+    x: 7
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: p_front_war
+    label: Ally Front-row Warrior
+    x: 3
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_front_monk
+    label: Ally Front-row Monk
+    x: 6
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_back_mage
+    label: Ally Back-row Mage
+    x: 4
+    y: 8
+    type: Ally Back
+    explored: true
+  - id: p_back_cleric
+    label: Ally Back-row Cleric
+    x: 5
+    y: 8
+    type: Ally Back
+    explored: true
+  - id: p_back_hunter
+    label: Ally Back-row Hunter
+    x: 7
+    y: 8
+    type: Ally Back
+    explored: true
+
+edges:
+  - from: boss
+    to: e_slime_c
+    type: Command
+  - from: crystal
+    to: boss
+    type: Core Link
+    style: dashed
+    label: "Crystallization Link"
+  - from: e_slime_c
+    to: p_front_war
+    type: Melee
+    style: dashed
+  - from: e_slime_d
+    to: p_front_monk
+    type: Melee
+    style: dashed

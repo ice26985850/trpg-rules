@@ -1,0 +1,83 @@
+# Earth Master TRPG Scenario S2: General's Mound — "The Broken-Tail Tiger"
+scenario_id: S2
+title: "General's Mound — The Broken-Tail Tiger"
+level_range: "3-5"
+difficulty: "Moderate"
+sessions: "2-3"
+region: "Guanzhong (Shaanxi mountains)"
+
+synopsis: |
+  A Ming Dynasty general's tomb is discovered at a perilous mountain location. Dragon-Shaker sect Feng Shui records mark this site as the "Broken-Tail Tiger" layout.
+  A tomb-raiding gang has broken through the outer passage; the tomb's contents begin affecting the surroundings — hunters report seeing "armored figures" patrolling on moonlit nights.
+  The tomb lord is a Ming Dynasty provincial commander betrayed by his subordinates, stabbed in the back by his most trusted vice-general. His obsession is not revenge — it is "wanting to know why."
+  The vice-general was also buried alive in a side chamber — as a sacrificial retainer.
+
+npcs:
+  - id: npc_one_eye_chen
+    name: "“One-Eye” Old Chen"
+    role: "Tomb-Raiding Gang Leader"
+    attitude: "Guarded but pragmatic"
+    secret: "They entered the antechamber but fled — the things inside move."
+    stats: "Touch-Gold Clan·No Sect (folk tomb-raider), Agility 5 Geomancy 4"
+
+  - id: npc_general_ghost
+    name: "Provincial Commander's Lingering Spirit"
+    role: "Tomb Lord"
+    attitude: "Dignified, sorrowful, longing for answers"
+    secret: "He does not know that after his death the vice-general was also buried alive."
+    stats:
+      type: "Black Jiangshi"
+      cr: 4
+      hp: 45
+      def: 15
+      attacks:
+        - "Saber Slash: 2d10+5 vs DEF, Hit: 2d6+3 Physical"
+        - "Overwhelming Gaze: Courage DC 14, Failure: Stunned 1 round + Fear +2"
+      special: "Retains memories and language ability from life. Can converse. Learning the vice-general's truth may let it rest on its own."
+
+  - id: npc_vice_general_ghost
+    name: "Vice-General's Lingering Spirit"
+    role: "Tomb Lord's Foe"
+    attitude: "Fearful, remorseful"
+    secret: "He did not betray willingly — the commander's political enemy threatened his family."
+    stats: "Lingering Spirit (White Jiangshi tier), CR 2, HP 25"
+
+  - id: npc_brother_chen
+    name: "Senior Brother Chen"
+    role: "Ally (Optional)"
+    stats: "Folk Martial Master·Dragon-Shaker sect, Level 4"
+    info: "Knows the meaning of the Broken-Tail Tiger layout: the Tiger Sha suppresses internal threats."
+
+tomb_structure:
+  type: "Medium Tomb"
+  chambers:
+    - {id: passage, name: "Passage", length_m: 25, description: "Stone-built, with an anti-theft stone door (Trap detection DC 12)"}
+    - {id: front, name: "Antechamber", size: "5m square", contents: ["Terracotta Warhorse ×4 (some contain hidden traps)", "Weapon rack", "Mural — depicting the commander's last battle"]}
+    - {id: side_a, name: "Side Chamber A", description: "The vice-general's tomb — buried alive. Struggle marks on the inside of the coffin lid", key_item: "Vice-General's Last Letter"}
+    - {id: side_b, name: "Side Chamber B", description: "Armory — genuine Ming Dynasty weaponry."}
+    - {id: main, name: "Main Chamber", size: "8m square", contents: ["Stone outer coffin + wooden coffin", "The commander's remains (wearing armor, saber in hand)", "Seal and war banner"]}
+
+encounters:
+  - {id: enc_climb, name: "Climb to Find the Tomb", type: "Exploration", dc: 10, description: "Treacherous terrain, requires Feng Shui knowledge to locate."}
+  - {id: enc_stone_door, name: "Passage Stone Door", type: "Exploration", dc: 12, description: "Solve the stone door mechanism (Mountain-Mover sect advantage)."}
+  - {id: enc_terra_cotta, name: "Terracotta Warhorses", type: "Combat", ttv: 6, description: "2 animated figurines (White Jiangshi tier), CR 2, HP 25 each."}
+  - {id: enc_vice_general, name: "The Vice-General's Coffin", type: "Exploration/Social", dc: 10, description: "Discover burial-alive traces, can converse with the vice-general's spirit."}
+  - {id: enc_general, name: "The Commander (Black Jiangshi)", type: "Combat/Social", ttv: 10, description: "Black Jiangshi ×1. If the vice-general's truth is revealed, there is a chance for a peaceful resolution."}
+
+key_items:
+  - {id: item_seal, name: "The Commander's Seal", type: "Tomb Lord's Obsession Attachment", description: "Cannot be sold; can prove identity on specific occasions."}
+  - {id: item_weapons, name: "Ming Dynasty Weaponry", type: "Clean Antique", value_ocean: "200-400 (some usable high-quality cold weapons)"}
+  - {id: item_banner, name: "War Banner", type: "Clean Antique", value_ocean: 500, description: "Warlords and foreign teams will compete for it."}
+  - {id: item_letter, name: "Vice-General's Last Letter", type: "Key Item", description: "Key to resolving the obsession — found in the vice-general's coffin."}
+
+endings:
+  - {id: ending_forgive, name: "Forgiveness and Release", condition: "Give the last letter to the commander, soothe both sides", result: "Both are released, gain “Twin-Soul Blessing” (next check automatically a Critical Success)."}
+  - {id: ending_revenge, name: "Revenge Completed", condition: "Let the commander destroy the vice-general's spirit", result: "The commander rests but Sha grows stronger — tomb's Sha permanently +1."}
+  - {id: ending_force, name: "Forced Suppression", condition: "Forcefully suppress with talisman magic", result: "Gain the complete burial goods, but the Tiger Sha transfers to the player (permanent: Yin-energy checks −1)."}
+
+rewards: {xp: 300, money: "300-800 Silver Dollars (depends on ending and deals)"}
+scale_adjustments:
+  solo: {ttv_mult: 0.6, companion: "Senior Brother Chen (NPC ally must be present)", note: "Commander TTV drops to 7"}
+  duo: {ttv_mult: 0.75}
+  trio: {ttv_mult: 0.9}
+  quad: {ttv_mult: 1.0, note: "Terracotta Warhorses increase to 3."}

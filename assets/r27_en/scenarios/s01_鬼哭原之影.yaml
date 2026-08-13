@@ -1,0 +1,175 @@
+# Beastman Warring States TRPG Scenario
+# S1: Shadow of the Wailing Plains
+# Corresponding Campaign: Act 1 (Levels 1–4)
+# Suggested Players: 1–4
+
+scenario_id: "S1"
+title: "Shadow of the Wailing Plains"
+act: 1
+suggested_levels:
+  min: 1
+  max: 4
+difficulty: "Novice"
+estimated_sessions: 2
+
+# ─── Background ───
+background: |
+  The players have only recently been accepted into their school when their master dispatches them to the border village of Kagemi Village to investigate a series of disappearances.
+  The village sits on the edge of the Wailing Plains (Onikoehara)—a place where the lingering malice of a millennium-old battlefield has accumulated.
+  Over the past three months, five villagers have vanished at night, leaving behind only traces of yokai aura.
+
+# ─── Major Factions ───
+factions:
+  player_side:
+    lord: "School Grandmaster (determined by the GM, matching the players' school)"
+    allies:
+      - "Kagemi Village Chief (elderly Ox Clan, provides information and lodging)"
+      - "Village Apothecary (Rabbit Clan, can provide healing and antidote pills)"
+  enemy_side:
+    main_villain: "Beastified Beast (a collective of vengeful spirits of samurai who fell in the Warring States era)"
+    minions:
+      - "Yokai-Eroded Bandit ×3 (CR 0.5)"
+      - "Wraith Ashigaru ×5 (CR 0.25)"
+  neutral:
+    - "Passing Rōnin (Monkey Clan, Level 5)—can be persuaded to become a temporary companion or source of information"
+
+# ─── Involved Schools ───
+involved_schools:
+  - id: "player_school"
+    role: "The players' school—the master assigned this task as part of their training"
+  - id: "Pure Land Style"
+    role: "The village apothecary is a mid-tier disciple of Pure Land Style and can assist in purifying yokai"
+
+# ─── Named-Blade Clue ───
+blade_clue:
+  target: null
+  hint: "This scenario contains no named blade, but deep within the Wailing Plains a single 'Soul-Steel Shard' can be found—a necessary material for forging a blade of Yōmono grade or higher. This is the first cornerstone for forging a named blade in the future."
+
+# ─── Scene Flow ───
+scenes:
+  - id: 1
+    name: "Arrival at Kagemi Village"
+    type: "Exploration / Social"
+    description: |
+      The players arrive at Kagemi Village. The village chief recounts the disappearances—five people have vanished at night over the past three months.
+      An on-site investigation (Perception check DC 13) reveals faint traces of yokai aura pointing toward the Wailing Plains.
+    checks:
+      - skill: "Perception"
+        dc: 13
+        success: "Discover the yokai residue comes from the Wailing Plains to the east"
+      - skill: "Persuasion"
+        dc: 15
+        success: "The chief reveals more detail: the last missing person was said to have heard 'the dead calling his name'"
+    npcs:
+      - name: "Village Chief (Ox Clan)"
+        role: "Information provider"
+      - name: "Apothecary (Rabbit Clan)"
+        role: "Healing and antidote support"
+
+  - id: 2
+    name: "Patrol at the Edge of the Wailing Plains"
+    type: "Exploration / Combat"
+    description: |
+      The players enter the edge of the Wailing Plains. Along the way they encounter bandits eroded by yokai—they have been possessed by vengeful spirits.
+      During combat, yokai continues to accumulate (Wailing Plains scenes: +1 Yokai Value (YK) per turn).
+    enemies:
+      - type: "Yokai-Eroded Bandit"
+        count: 3
+        cr: 0.5
+        stats:
+          hp: 12
+          dv: 11
+          attack: "+2, 1d6+1 slashing"
+    environment:
+      yokai_per_turn: 1
+      description: "A dim forest of dead trees, the ground covered in thin mist. Faint weeping can be heard in the distance."
+
+  - id: 3
+    name: "Night of Wraiths"
+    type: "Combat"
+    description: |
+      After sunset, five Wraith Ashigaru emerge from the mist. They are formed from the resentful souls of the missing villagers.
+      Key point: Wraiths have DR 3 against physical damage, but fire and Pure Land Style techniques deal full damage.
+    enemies:
+      - type: "Wraith Ashigaru"
+        count: 5
+        cr: 0.25
+        stats:
+          hp: 8
+          dv: 10
+          dr: 3
+          attack: "+1, 1d4 yokai damage"
+    tactical_note: |
+      If the players are of Pure Land Style or possess fire-based attacks, the difficulty of this fight drops sharply.
+      Otherwise, the GM is advised to hint that the players use torches or seek the village apothecary's purification aid.
+
+  - id: 4
+    name: "Source of the Yokai"
+    type: "Combat (Boss)"
+    description: |
+      Tracking the source of the yokai leads to a forgotten ancient tumulus. A Beastified Beast (a monster fused from the grudges of many Warring States samurai) guards this place.
+    boss:
+      name: "Beastified Beast"
+      cr: 2
+      stats:
+        hp: 35
+        dv: 13
+        dr: 2
+        speed: 7
+        attacks:
+          - name: "Grudge Claw"
+            hit: "+4"
+            damage: "1d8+2 yokai"
+          - name: "Wraith Howl (AOE)"
+            hit: "Radius 5 squares"
+            damage: "1d6 yokai; requires a Spirit (SPT) saving throw DC 12 or be Stunned for 1 turn"
+      phases:
+        - condition: "HP < 50%"
+          effect: "Summons 1 Wraith Ashigaru per turn"
+    reward:
+      xp: 300
+      gold: 100
+      items:
+        - "Soul-Steel Shard ×1 (material for forging a named blade of Yōmono grade or higher in the future)"
+        - "Relic blade of an ancient warlord (Unsigned Katana / Mumei Uchigatana)"
+
+  - id: 5
+    name: "The Return and Reflection"
+    type: "Giri Dilemma"
+    description: |
+      After defeating the Beastified Beast, the players find the belongings of the missing villagers. Among them is a letter left by the wife of the last missing person.
+      The letter reveals: that missing person was no simple victim—he walked into the Wailing Plains of his own accord, hoping to use himself as a sacrifice to calm the vengeful spirits.
+      Did he succeed? Or was it merely a futile sacrifice?
+
+      Giri Dilemma:
+      - Tell the chief the truth (Giri Value +2): His husband sacrificed himself willingly, but may not be seen as a hero
+      - Conceal the truth, saying he was a victim killed by a monster (Persuasion check DC 15; success brings the village peace of mind): Is this protecting the living or deceiving them?
+      - Conceal the truth but privately erect a grave marker for him (Giri Value +3): Respect for the dead, but unable to give the family true comfort
+    moral_dilemma:
+      title: "Truth vs. Mercy"
+      options:
+        - choice: "Speak the truth"
+          reward: "+2 Giri Value"
+          consequence: "The chief is grief-stricken, but thanks you for your honesty. The apothecary considers this the true meaning of 'purification'—facing the truth."
+        - choice: "Conceal the truth"
+          check: "Persuasion DC 15"
+          reward: "Villagers' gratitude"
+          consequence: "But your conscience is uneasy. Spirit (SPT) check at Disadvantage until the next long rest."
+        - choice: "Privately erect a grave"
+          reward: "+3 Giri Value"
+          consequence: "No one knows the truth, but the spirit of the dead thanks you through dreams."
+
+# ─── Ending Branches ───
+endings:
+  - condition: "Defeat Boss + obtain Soul-Steel Shard"
+    outcome: "Mission complete. The master is satisfied with your performance. School Cultivation Points +10. You obtain your first Soul-Steel Shard—the first step toward forging a named blade of your own."
+  - condition: "Did not obtain Soul-Steel Shard"
+    outcome: "Mission complete, but with regret. The master reminds you: 'Some things matter more than the mission objective—go find it.'"
+
+# ─── Solo Adjustments ───
+solo_adjustments:
+  - "Yokai-Eroded Bandit count: 3→1"
+  - "Wraith Ashigaru count: 5→2"
+  - "Beastified Beast HP: 35→26"
+  - "Beastified Beast cannot summon Wraith Ashigaru (at HP < 50%, instead gains +1d4 attack)"
+  - "Provide NPC companion option: passing Rōnin (Monkey Clan) can be persuaded to join"

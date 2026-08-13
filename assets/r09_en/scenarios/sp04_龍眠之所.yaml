@@ -1,0 +1,27 @@
+source_md: sp04_龍眠之所.md
+title: Where the Dragon Sleeps
+type: solo
+quality: ★★★★ Master-grade
+players: 1 mage (required) + Companion (strongly recommended)
+sessions: 4–5
+core_output: Legendary-grade Fire Shard (◈) + Dragon ally + Dragonkin Companion (possible)
+main_threat: The ancient dragon's trials, polar environment, a rival's shadow, the limits of your own power
+prerequisite: Academic Reputation ≥ 30; possess at least 1 Rare-or-higher Fire Shard; having a Companion with Loyalty ≥ 50 is recommended
+summary: Deep in the **Everwinter Tundra**, an ancient Fire Dragon named **Ignarath (伊格納瑞斯)** is growing old. This is no ordinary dragon — he is a second-generation dragon who saw **Selena** herself and witnessed the sealing of the **Void God** firsthand.
+acts:
+- name: Act One — Crossing the Everwinter
+  scenes:
+  - Scene 1-1 — Valastra's Trials
+  - Scene 1-2 — Crossing the Icefield
+- name: Act Two — Ignarath's Lair
+  scenes:
+  - Scene 2-1 — The Lair Entrance
+  - Scene 2-2 — Facing Ignarath
+  - Scene 2-3 — Final Trial — Stabilizing the Death Shard
+- name: Act Three — The Dragon's Legacy
+  scenes:
+  - Scene 3-1 — Ignarath's Last Gift
+  - Scene 3-2 — Zephyrus's Proposal
+  - Scene 3-3 — The Return Journey
+npcs: []
+research_checks: []

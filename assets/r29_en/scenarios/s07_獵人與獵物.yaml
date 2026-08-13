@@ -1,0 +1,107 @@
+# Last Stand TRPG — Scenario S7 (Solo): Hunter and Prey
+scenario:
+  id: S7
+  name: Hunter and Prey
+  type: solo
+  tier: 2
+  difficulty: 3
+  estimated_duration: 3-4 hours
+  suggested_level: 3-4
+
+  description: >
+    You came for the money—you need it for something important.
+    A mid-sized desert map—at its center sits an abandoned military base hiding
+    the best loot. But fifteen Lone Wolves all know about it. One of them—a
+    retired special forces soldier—has the same reason for entering as you do.
+    For money. For family. He needs the money more than you do. Will you let
+    him have it?
+
+map:
+  name: Salt Flats
+  size: 4 km × 4 km
+  terrain: [Desert (50%), Abandoned Military Base (20%), Dry Riverbed (15%), Mining Site (15%)]
+  landmarks:
+    - { id: L1, name: Abandoned Military Base, type: military, loot_level: Military (Purple), description: Map center—the best loot on the map, but everyone knows it }
+    - { id: L2, name: Radio Relay Station, type: special, loot_level: -, description: A communications facility on a hilltop }
+    - { id: L3, name: Mine Entrance, type: industrial, loot_level: Common (Green), description: An underground mine—a perfect stealth route }
+    - { id: L4, name: Salt Lake, type: natural, loot_level: Scarce (Gray), description: A dried-up salt lake—open terrain; crossing it is suicide }
+
+enemy_configuration:
+  total_lone_wolves: 14
+  distribution:
+    - { type: Rookie, difficulty: ★, count: 4 }
+    - { type: Steady, difficulty: ★★, count: 3 }
+    - { type: Assault, difficulty: ★★★, count: 3 }
+    - { type: Ambush, difficulty: ★★★, count: 3 }
+
+nemesis:
+  name: Alex Chen
+  codename: The Phantom
+  style: Assault type
+  strength: 8/10
+  weapon: M416 + Suppressor + 4x Scope
+  backstory: >
+    A retired special forces soldier. Discharged two years ago, he began
+    entering matches to pay for his daughter's medical bills. His reason for
+    entering is the same as yours—for money. His daughter needs surgery. Your
+    family needs that money. Only one of you will leave with it. He deliberately
+    left a clue on the enemy Lone Wolves you kill—a letter to you.
+    "I know why you are here. So am I."
+
+circle:
+  type: Jump Reversal
+  description: Suddenly changes direction mid-way—forcing the player to cross the open salt lake
+
+airdrop: { count: 2, timing: [Second Circle, Fourth Circle] }
+red_zone: { enabled: true, frequency: every 7 rounds }
+vehicles: [Off-road Vehicle, Motorcycle, Jeep]
+weather: Clear (high heat) + Sandstorm (second half)
+time_of_day: Daytime
+
+special_rules:
+  - 2 Radio Towers
+  - Auditory Compensation active
+  - Lone Wolf Instinct active
+  - Loot pillaging—killed enemy Lone Wolves drop their gear and their story
+
+phases:
+  - phase: Drop over Salt Flats
+    turns: 1
+    gm_notes: >
+      "The desert wind is hot—it is only nine in the morning, yet the heat off
+      the ground already warps the horizon. You see the grey outline of the
+      military base below. Everyone is flying toward it."
+
+  - phase: Base Raid
+    turns: 4-5
+    gm_notes: >
+      The fight inside the military base is the core of this act. Multiple Lone
+      Wolves enter the base to loot at the same time—create layered encounters
+      (A hears footsteps on the first floor while looting on the second, and at
+      the same time spots someone approaching outside the window).
+
+  - phase: The Nemesis's Message
+    turns: 3-4
+    gm_notes: >
+      The player finds clues left by the nemesis on the enemies they kill. This
+      is not mere combat—it is a silent conversation between two people with the
+      same motive. Every letter, every clue, makes the player hesitate:
+      "Should I keep going? He still has a daughter waiting for him."
+
+  - phase: Salt Lake Crossing
+    turns: 3
+    gm_notes: >
+      The circle suddenly reverses—the Safe Zone jumps to the far side of the
+      salt lake. The player is forced to cross open terrain—this is when the
+      ambush teams are most dangerous. Give the player options to use smoke
+      grenades, vehicles, or detour through the mine.
+
+  - phase: Final Circle - The Choice
+    turns: 2-3
+    gm_notes: >
+      You and the Phantom—face to face among the ruins. Offer the player a
+      "lower your gun" option—they can choose not to fire. (But the Phantom will
+      fire—he has a reason he cannot lose.) Make the choice meaningful—even if
+      the outcome is the same, the player made the choice.
+
+victory_condition: Become the last surviving Lone Wolf (or make your choice)

@@ -1,0 +1,698 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>League of Legends TRPG / s10_Solo Scenario Supplement (1 Player + 1 GM Duet Mode · Solo Scenario) | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r30_s10.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r30.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>s10_Solo Scenario Supplement (1 Player + 1 GM Duet Mode · Solo Scenario)</h1>
+<h1>League of Legends TRPG — Solo Scenario Supplement v0.2</h1>
+<blockquote>
+<p>This document is a scenario adaptation guide for the 1 Player + 1 GM (Duet) mode.
+Must be used together with <code>adventures_campaign_v0.2.md</code> (Campaign Script Collection) and <code>solo_rules_v0.2.md</code> (Solo Rules Supplement).
+Each chapter references the specific encounters of the original scenario and provides adjustment data for the solo version.</p>
+</blockquote>
+<hr />
+<h2>I. General Adaptation Principles</h2>
+<p>All encounters in the campaign scenarios are automatically adjusted by the following rules (no need to calculate each one by hand):</p>
+<table>
+<thead>
+<tr>
+<th>Adjustment</th>
+<th>Formula</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enemy Count</td>
+<td>Original Count × 0.4 (round up, minimum 1)</td>
+<td><code>solo_rules_v0.2.md</code> §4.1</td>
+</tr>
+<tr>
+<td>Boss HP</td>
+<td>Original HP × 0.35</td>
+<td><code>solo_rules_v0.2.md</code> §4.2</td>
+</tr>
+<tr>
+<td>Boss Phases</td>
+<td>3 phases merged into 2</td>
+<td><code>solo_rules_v0.2.md</code> §4.3</td>
+</tr>
+<tr>
+<td>Group Check</td>
+<td>Changed to solo check, DC −5</td>
+<td>—</td>
+</tr>
+<tr>
+<td>EXP Reward</td>
+<td>Keep original value (fast solo leveling)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Gold Reward</td>
+<td>Keep original value</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>II. Main Campaign Solo Adaptation</h2>
+<h3>2.1 Part One: Shadow Spread (Lv.1-5)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code>, Part One.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th style="text-align: center;">Original Level</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+<th>Companion Suggestion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1.1</td>
+<td style="text-align: center;">Lv.1</td>
+<td>Mine exploration, smuggler interrogation</td>
+<td><strong>2 smugglers</strong> (orig. 5) + DC10 negotiation/interrogation (orig. DC15)</td>
+<td>None (tutorial level)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.2</td>
+<td style="text-align: center;">Lv.2</td>
+<td>Intercept smuggler convoy, border outpost infiltration</td>
+<td><strong>3 convoy guards</strong> (orig. 6) + outpost infiltration DC10 stealth (orig. DC15)</td>
+<td>Optional: Demacia Guard ×1 (GM-gifted)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.3</td>
+<td style="text-align: center;">Lv.3</td>
+<td>Outpost siege, prisoner interrogation</td>
+<td><strong>4 Noxus Soldiers</strong> (orig. 10) + DC12 negotiation/interrogation (orig. DC18)</td>
+<td>Garen (story NPC, briefly joins)</td>
+</tr>
+<tr>
+<td style="text-align: center;">1.4</td>
+<td style="text-align: center;">Lv.4-5</td>
+<td>Obsidian Forge Dungeon + Boss fight</td>
+<td>Dungeon 2 floors (orig. 3), Boss Viktor HP <strong>280</strong> (orig. 800)</td>
+<td>Lux (story NPC, joins at P2)</td>
+</tr>
+</tbody>
+</table>
+<h4>Boss: Forge Master Viktor (Solo Version)</h4>
+<blockquote>
+<p>Reference: Original boss data in <code>adventures_campaign_v0.2.md</code>, Part One Boss fight, original HP 800.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th style="text-align: center;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td style="text-align: center;"><strong>280</strong> (orig. 800 × 0.35)</td>
+</tr>
+<tr>
+<td>AD</td>
+<td style="text-align: center;">60 (unchanged — already painful enough for solo)</td>
+</tr>
+<tr>
+<td>AR/MR</td>
+<td style="text-align: center;">60/40 (unchanged)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2-Phase Mechanics</strong> (orig. 3 phases merged):
+- <strong>P1 (100%-40% HP)</strong>: Alternately uses Spell-Suppression Bomb + Spell-Suppression Field; summons <strong>1 Forge Golem</strong> (HP 200)
+- <strong>P2 (40%-0% HP)</strong>: Overload — attacks twice per turn, self-damages HP×5% each turn</p>
+<h4>Story Companion: Lux</h4>
+<p>Joins the battle at P2 (Reference: full data in <code>arcane_dlc_player_v0.2.md</code>; if the Arcane DLC is not used, use the Mage-type Lv.3 template from <code>NPC_cards_all.xlsx</code>).</p>
+<hr />
+<h3>2.2 Part Two: Winter's Awakening (Lv.6-10)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code>, Part Two.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th style="text-align: center;">Original Level</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+<th>Companion Suggestion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2.1</td>
+<td style="text-align: center;">Lv.6</td>
+<td>Tundra survival + behemoth encounter</td>
+<td>Solo DC10 survival (orig. group DC15), Icefield Behemoth <strong>HP 450</strong> (orig. 1,200)</td>
+<td>None (survival trial)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2.2</td>
+<td style="text-align: center;">Lv.7</td>
+<td>Three Trials (Hunt/Wrestle/Track)</td>
+<td>Each changed to solo DC 12/14/13 (orig. group DC 15/18/16)</td>
+<td>Ashe (story NPC, provides clues during trials)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2.3</td>
+<td style="text-align: center;">Lv.8</td>
+<td>Three-Tribe Council (persuasion)</td>
+<td>DC changed to 13/16/18 (orig. 18/22/22); failure can be replaced by proving through force</td>
+<td>Braum (story NPC, accompanies throughout)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2.4</td>
+<td style="text-align: center;">Lv.9-10</td>
+<td>Howling Abyss + Boss fight</td>
+<td>Dungeon 3 floors (orig. 5), Boss Ancient Iceborn HP <strong>630</strong> (orig. 1,800)</td>
+<td>Ashe (joins at P2)</td>
+</tr>
+</tbody>
+</table>
+<h4>Boss: Ancient Iceborn (Solo Version)</h4>
+<blockquote>
+<p>Reference: Original HP 1,800 (<code>adventures_campaign_v0.2.md</code>, Part Two Boss fight).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th style="text-align: center;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td style="text-align: center;"><strong>630</strong> (×0.35)</td>
+</tr>
+<tr>
+<td>AD</td>
+<td style="text-align: center;">85 (unchanged)</td>
+</tr>
+<tr>
+<td>AR/MR</td>
+<td style="text-align: center;">120/90 (unchanged)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2-Phase Mechanics</strong>:
+- <strong>P1 (100%-40%)</strong>: Frost Breath + summons <strong>1 Ice Elemental</strong> (orig. 2), alternately uses Winter Storm
+- <strong>P2 (40%-0%)</strong>: Abyssal Rift (ground fissures reduced to 1 square, orig. 2) + Boss Enrage</p>
+<hr />
+<h3>2.3 Part Three: Ascension Trial (Lv.11-16)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code>, Part Three.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th style="text-align: center;">Original Level</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+<th>Companion Suggestion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">3.1</td>
+<td style="text-align: center;">Lv.11</td>
+<td>Desert crossing + Sandworm</td>
+<td>Sandworm <strong>HP 500</strong> (orig. 1,500), DC12 survival/navigation (orig. DC18)</td>
+<td>Nasus (story NPC, provides desert knowledge)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.2</td>
+<td style="text-align: center;">Lv.12-13</td>
+<td>Emperor's Tomb</td>
+<td>Tomb 4 floors (orig. 6), trap DC −5</td>
+<td>Nasus (accompanies throughout)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.3</td>
+<td style="text-align: center;">Lv.14</td>
+<td>Three-Way Standoff</td>
+<td>Social DC 14/17 (orig. 20/22); force route optional</td>
+<td>Nasus</td>
+</tr>
+<tr>
+<td style="text-align: center;">3.4</td>
+<td style="text-align: center;">Lv.15-16</td>
+<td>Ascension Battle + Boss</td>
+<td>Boss the Forbidden Ascended HP <strong>1,120</strong> (orig. 3,200)</td>
+<td>Optional Renekton redemption (joins at P3)</td>
+</tr>
+</tbody>
+</table>
+<h4>Boss: The Forbidden Ascended (Solo Version)</h4>
+<blockquote>
+<p>Reference: Original HP 3,200 (<code>adventures_campaign_v0.2.md</code>, Part Three Boss fight).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th style="text-align: center;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td style="text-align: center;"><strong>1,120</strong> (×0.35)</td>
+</tr>
+<tr>
+<td>AD</td>
+<td style="text-align: center;">120 (unchanged)</td>
+</tr>
+<tr>
+<td>AR/MR</td>
+<td style="text-align: center;">140/140 (unchanged)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2-Phase Mechanics</strong>:
+- <strong>P1 (100%-40%)</strong>: Sun Ray + summons <strong>2 Sand Soldiers</strong> (orig. 3), triggers Ascension Form at 40%
+- <strong>P2 (40%-0%)</strong>: Drains all HP on field to heal self + back weak point exposed</p>
+<h4>Redemption Route (Optional)</h4>
+<p>If the player saved Renekton in chapter 3.3, he joins the battle at P2 and breaks the Boss's Ascension Aura (Reference: <code>adventures_campaign_v0.2.md</code>, Part Three "Optional Redemption Route").</p>
+<hr />
+<h3>2.4 Finale: The Dead Return (Lv.17-20)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code>, Finale.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th style="text-align: center;">Original Level</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+<th>Companion Suggestion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">4.1</td>
+<td style="text-align: center;">Lv.17</td>
+<td>Sea of Mists</td>
+<td>Undead Ship encounter <strong>3 undead</strong> (orig. 8)</td>
+<td>None (solitary voyage)</td>
+</tr>
+<tr>
+<td style="text-align: center;">4.2</td>
+<td style="text-align: center;">Lv.18</td>
+<td>Night of the Thousand Souls negotiation</td>
+<td>DC 14/16/18 negotiation (orig. group DC) + force display can −5 DC</td>
+<td>Kalista (story NPC)</td>
+</tr>
+<tr>
+<td style="text-align: center;">4.3</td>
+<td style="text-align: center;">Lv.19-20</td>
+<td>Void Rift + Final Boss</td>
+<td>Boss Malzahar HP <strong>2,800</strong> (orig. 8,000)</td>
+<td>Undead Coalition (Thresh/Kalista/Hecarim enter in rotation)</td>
+</tr>
+</tbody>
+</table>
+<h4>Boss: Malzahar (Solo Version)</h4>
+<blockquote>
+<p>Reference: Original HP 8,000 (<code>adventures_campaign_v0.2.md</code>, Finale Boss fight).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th style="text-align: center;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HP</td>
+<td style="text-align: center;"><strong>2,800</strong> (×0.35)</td>
+</tr>
+<tr>
+<td>AD/AP</td>
+<td style="text-align: center;">150/180 (unchanged)</td>
+</tr>
+<tr>
+<td>AR/MR</td>
+<td style="text-align: center;">160/160 (unchanged)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3-Phase Mechanics</strong> (Finale Boss retains 3 phases):</p>
+<ul>
+<li><strong>P1 (100%-60%)</strong>: Void Summon <strong>1 Void Wraith</strong> (orig. 3) + Grasp of the Void</li>
+<li><strong>P2 (60%-25%)</strong>: Void Rift field-wide true damage + <strong>1 Void Beast</strong> (orig. multiple)</li>
+<li><strong>P3 (25%-0%)</strong>: Channels ultimate rift for 4 turns (orig. 3 turns, +1 turn as compensation)</li>
+</ul>
+<p><strong>Endings</strong> (three endings unchanged, Reference <code>adventures_campaign_v0.2.md</code>, Finale "Multiple Endings" table):
+- Perfect Victory, Pyrrhic Victory, Void Descends → trigger conditions unchanged</p>
+<hr />
+<h2>III. Side Story Solo Adaptation</h2>
+<h3>3.1 Wrath of the Siren (Lv.3-6)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code> S1.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Hunt Preparation</td>
+<td>Ship refit team DC</td>
+<td>Solo DC12 knowledge (orig. group DC15), hire crew for 500 gold instead</td>
+</tr>
+<tr>
+<td style="text-align: center;">Open Sea Hunt</td>
+<td>Fleet battle</td>
+<td>Changed to solo speedboat chase + <strong>2 waves of lesser sirens</strong> (orig. 4 waves)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Boss</td>
+<td>Abyssal Siren HP 1,200</td>
+<td>Siren HP <strong>420</strong> (×0.35), retains 3 phases (surface/shallow/deep)</td>
+</tr>
+</tbody>
+</table>
+<h3>3.2 Zaun's Abyss (Lv.8-12)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code> S2.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Source of the Poison Fog</td>
+<td>DC18 investigation</td>
+<td>DC13 investigation</td>
+</tr>
+<tr>
+<td style="text-align: center;">Glorious Evolution</td>
+<td>Laboratory dungeon + mutant swarm</td>
+<td><strong>3 mutants</strong> (orig. 8), dungeon 2 floors (orig. 3)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Boss</td>
+<td>Viktor Lv.12</td>
+<td>Viktor HP <strong>450</strong> (orig. Lv.12 stats), moral choice retained</td>
+</tr>
+</tbody>
+</table>
+<h3>3.3 Soul of Ionia (Lv.5-8)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code> S3.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Tears of the Spirit Tree</td>
+<td>Group exploration</td>
+<td>Solo DC12 perception (orig. DC15)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Shadow Stream vs. Equilibrium</td>
+<td>Faction choice</td>
+<td>Zed/Shen each provide 1 NPC to accompany (the chosen NPC becomes a companion)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Boss</td>
+<td>the Wraith Lord Lv.8</td>
+<td>HP <strong>350</strong> (×0.35), dual endings retained</td>
+</tr>
+</tbody>
+</table>
+<h3>3.4 King of the Arena (Lv.10-15)</h3>
+<blockquote>
+<p>Reference: Original scenario in <code>adventures_campaign_v0.2.md</code> S4.</p>
+</blockquote>
+<p>Arena changed to <strong>1v1 tournament</strong> (orig. 2v2/3v3):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Round</th>
+<th>Original Opponent</th>
+<th>Solo Opponent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Qualifier</td>
+<td>Soldiers ×4</td>
+<td>Soldier <strong>×1</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">Quarterfinals</td>
+<td>Assassin Duo</td>
+<td>Assassin <strong>×1</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">Semifinals</td>
+<td>Beast Tamer + 2 Bears</td>
+<td>Beast Tamer <strong>+ 1 Bear</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">Finals</td>
+<td>Former Champion + Partner</td>
+<td>Champion <strong>×1</strong> (HP ×0.35)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Championship Challenge</td>
+<td>Darius</td>
+<td>Darius (not scaled — this is a battle of honor)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>IV. Arcane DLC Scenario Solo Adaptation</h2>
+<blockquote>
+<p>Reference: Arcane DLC scenario in <code>arcane_dlc_gm_v0.2.md</code>, Chapter 5.</p>
+</blockquote>
+<h3>4.1 Shadows of the Twin Cities (Lv.1-6)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A1</td>
+<td>Street gang probing</td>
+<td><strong>2 gang members</strong> (orig. 5)</td>
+</tr>
+<tr>
+<td style="text-align: center;">A2</td>
+<td>Laboratory infiltration</td>
+<td>Solo DC12 stealth (orig. group DC15)</td>
+</tr>
+<tr>
+<td style="text-align: center;">A3</td>
+<td>Confrontation with Sevika</td>
+<td>Optional DC14 negotiation to avoid combat (orig. DC18)</td>
+</tr>
+<tr>
+<td style="text-align: center;">A4</td>
+<td>Singed's Laboratory</td>
+<td>Singed weakened to Lv.7 (HP <strong>350</strong>, AP 45)</td>
+</tr>
+<tr>
+<td style="text-align: center;">A5</td>
+<td>Council choice</td>
+<td>DC14 (orig. DC18); Reference: <code>arcane_dlc_player_v0.2.md</code> council politics rules</td>
+</tr>
+</tbody>
+</table>
+<h3>4.2 Sisters (Lv.7-12)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">B1</td>
+<td>Slums search</td>
+<td>Vi provides clues (story NPC)</td>
+</tr>
+<tr>
+<td style="text-align: center;">B2</td>
+<td>Stillwater Prison</td>
+<td>Prison riot simplified — Vi assists in combat</td>
+</tr>
+<tr>
+<td style="text-align: center;">B3</td>
+<td>Firelight Tree defense</td>
+<td>Ekko (story NPC) assists, Sevika's forces reduced to <strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">B4</td>
+<td>Boss Jinx</td>
+<td>HP <strong>300</strong> (×0.35), emotional choice retained</td>
+</tr>
+</tbody>
+</table>
+<h3>4.3 Glorious Evolution (Lv.13-18)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Chapter</th>
+<th>Original Encounter</th>
+<th>Solo Encounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">C1</td>
+<td>Viktor's Sanctuary</td>
+<td>Dialogue-focused, DC14 knowledge (orig. DC18)</td>
+</tr>
+<tr>
+<td style="text-align: center;">C2</td>
+<td>Mechanical Graveyard</td>
+<td><strong>3 mechanical soldiers</strong> (orig. 10+)</td>
+</tr>
+<tr>
+<td style="text-align: center;">C3</td>
+<td>Complete Singed</td>
+<td>HP <strong>630</strong> (×0.35), Bio-Chemical Behemoth HP <strong>280</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">C4</td>
+<td>Glorious Viktor</td>
+<td>HP <strong>875</strong> (×0.35), three endings retained</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>V. Companion Story Integration Table</h2>
+<p>The following are the story companions recommended for each chapter in solo mode and their sources:</p>
+<table>
+<thead>
+<tr>
+<th>Chapter</th>
+<th>Companion</th>
+<th>Data Source</th>
+<th>Join Timing</th>
+<th>Leave Timing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shadow Spread 1.3</td>
+<td>Garen</td>
+<td><code>NPC_cards_all.xlsx</code> Warrior-type</td>
+<td>Outpost Battle P2</td>
+<td>End of Chapter</td>
+</tr>
+<tr>
+<td>Shadow Spread 1.4</td>
+<td>Lux</td>
+<td><code>arcane_dlc_player_v0.2.md</code> or Mage template</td>
+<td>Boss P2</td>
+<td>End of Campaign Part One</td>
+</tr>
+<tr>
+<td>Winter's Awakening 2.2</td>
+<td>Ashe</td>
+<td>Warrior-type template Lv.7</td>
+<td>During Trials</td>
+<td>End of Chapter</td>
+</tr>
+<tr>
+<td>Winter's Awakening 2.3+</td>
+<td>Braum</td>
+<td>Support-type template Lv.8</td>
+<td>Three-Tribe Council</td>
+<td>Abyss Entrance</td>
+</tr>
+<tr>
+<td>Ascension Trial 3.1+</td>
+<td>Nasus</td>
+<td>Warrior-type template Lv.11</td>
+<td>Desert Encounter</td>
+<td>End of Chapter</td>
+</tr>
+<tr>
+<td>Ascension Trial 3.4</td>
+<td>Renekton</td>
+<td><code>NPC_cards_all.xlsx</code> Boss data weakened</td>
+<td>Redemption Route</td>
+<td>After Boss Fight</td>
+</tr>
+<tr>
+<td>The Dead Return 4.2+</td>
+<td>Kalista</td>
+<td>Marksman-type template Lv.18</td>
+<td>Night of the Thousand Souls</td>
+<td>End of Finale</td>
+</tr>
+<tr>
+<td>Shadows of the Twin Cities A2</td>
+<td>Jayce</td>
+<td><code>arcane_dlc_player_v0.2.md</code></td>
+<td>Laboratory Encounter</td>
+<td>End of Chapter</td>
+</tr>
+<tr>
+<td>Sisters B2+</td>
+<td>Vi</td>
+<td><code>arcane_dlc_player_v0.2.md</code></td>
+<td>Prison Encounter</td>
+<td>End of Entire Script</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Reference: Full data for all story companions in <code>NPC_cards_all.xlsx</code> corresponding tabs, or the Arcane DLC Player Handbook <code>arcane_dlc_player_v0.2.md</code>.</p>
+</blockquote>
+<hr />
+<h2>VI. Quick Reference Card (For GM)</h2>
+<pre><code>[Solo Mode Startup]
+□ Player 2 standard actions/turn
+□ Companion selection (template + passive)
+□ Enemy Count = Original × 0.4
+□ Boss HP = Original × 0.35, phases 3→2
+□ Rest recovery HP×25%
+□ Group DC → Individual DC−5
+□ Rewards (EXP/Gold) keep original value
+</code></pre>
+<hr />
+<blockquote>
+<p><strong>Companion Files</strong>: Main Rulebook <code>LOL_TRPG_Rulebook_v0.2.md</code>, Solo Rules Supplement <code>solo_rules_v0.2.md</code>, Campaign Script Collection <code>adventures_campaign_v0.2.md</code>, NPC Cards <code>NPC_cards_all.xlsx</code></p>
+</blockquote><p><a href="../../assets/r30_en/scenarios/s10_%E5%96%AE%E4%BA%BA%E5%8A%87%E6%9C%AC%E8%A3%9C%E5%85%85.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

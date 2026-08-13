@@ -1,0 +1,67 @@
+scenario: D1
+section: "D1 Goblin Lair·Inner Chamber (CR3)"
+map_type: battle
+grid_scale: "1 square = 2 meters"
+title: D1_Combat_Den
+# Coordinates are precise grid coordinates (col, row, 0–9) for distance and range calculations
+# Archers are in the enemy back row (row1), suppressing our back row from range
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: enemy, role: front, color: "#FF8A8A"}
+    - {row: 1, side: enemy, role: back, color: "#FFC8C8"}
+    - {row: 6, side: ally, role: front, color: "#8AAEFF"}
+    - {row: 8, side: ally, role: back, color: "#C8D8FF"}
+
+nodes:
+  - id: e_arch1
+    label: Goblin Archer A
+    x: 4
+    y: 1
+    type: enemy_ranged
+    explored: true
+  - id: e_arch2
+    label: Goblin Archer B
+    x: 6
+    y: 1
+    type: enemy_ranged
+    explored: true
+  - id: p_front_war
+    label: Our Front-row Warrior
+    x: 3
+    y: 6
+    type: ally_front
+    explored: true
+  - id: p_front_monk
+    label: Our Front-row Monk
+    x: 6
+    y: 6
+    type: ally_front
+    explored: true
+  - id: p_back_mage
+    label: Our Back-row Mage
+    x: 4
+    y: 8
+    type: ally_back
+    explored: true
+  - id: p_back_cleric
+    label: Our Back-row Cleric
+    x: 5
+    y: 8
+    type: ally_back
+    explored: true
+  - id: p_back_hunter
+    label: Our Back-row Hunter
+    x: 7
+    y: 8
+    type: ally_back
+    explored: true
+
+edges:
+  - from: e_arch1
+    to: p_back_cleric
+    type: range
+    style: dashed
+    label: "Ranged Threat"

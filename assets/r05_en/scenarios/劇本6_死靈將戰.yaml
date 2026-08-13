@@ -1,0 +1,38 @@
+name: "Scenario 6: Necromancer General Battle"
+description: "Head west to Silent Burial Wetlands to subjugate Necromancer General Mourvana Silentgrave, exposing the church's dark secrets and foreshadowing the Fifth's lineage. CL42 threshold, late-phase elite. Three-phase Boss battle (Summon / Corpse Tide / Lich-form), key is breaking the Life-preserving Coffin to lift immunity."
+difficulty: Hard~Extreme
+level_range: [42, 44]
+chapter: 6
+map_ref: maps/劇本6_戰鬥_死靈將.yaml
+encounters:
+  - id: necro_patrol
+    name: Wetland Patrol
+    enemies:
+      - {name: Zombie, cr: 13, count: 3}
+      - {name: Skeleton Warrior, cr: 14, count: 2}
+      - {name: Ghost, cr: 16, count: 2}
+    budget: Hard×1.5
+    adjust: "1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1"
+  - id: necro_general_boss
+    name: Necromancer General Mourvana Silentgrave (Three Phases)
+    enemies:
+      - {name: Mourvana Silentgrave, cr: 42, count: 1}
+      - {name: Life-preserving Coffin (Invincible Core), cr: 0, count: 1}
+    boss: true
+    phases:
+      - {name: Summon, hp_threshold: "100%~66%", trait: Undead Summon replenishes minions}
+      - {name: Corpse Tide, hp_threshold: "66%", trait: Life Siphon / Death Domain DoT}
+      - {name: Lich-form, hp_threshold: "33%", trait: Critical Hit Immunity (lifted by breaking coffin) / Final Dirge countdown}
+    budget: Boss Battle CR≈party total level×0.6
+    adjust: "1 PC→CR39/no assist; 5–6 PCs→CR44"
+rewards:
+  exp: 13976
+  gold: 3500
+  items: [Silent Burial Sigil, Soul-cleansing Holy Water x2, Medal of the Resting Dead]
+ip_events:
+  - event: Release the cursed dead souls
+    ip: 4
+  - event: Expose the truth hidden by the church's dark secrets
+    ip: 2
+  - event: Subtly hint at the Fifth's lineage
+    ip: 3

@@ -1,0 +1,43 @@
+name: "S3: Abyssal Probe"
+description: >
+  The rift is spreading. Starting from the initial anomaly signal at Level 3, now multiple levels report the collapse of physical rules.
+  All rifts point in the same direction — the depths of Level 7 'Deep Sea Phobia.' You need to send people into that endless black water.
+  No one volunteered.
+difficulty: Hard
+real_dc: 90
+level_range: "5–6"
+mission_type: ["Reconnaissance Mission", "Resource Recovery Mission"]
+campaign: "Campaign Two: The Rift (Core)"
+min_agents: 3
+recommended_specialty:
+  - Engineering
+  - Reconnaissance
+  - Combat
+required_equipment:
+  - "Sonar Probe (required — underwater visibility is zero)"
+  - "High-capacity Almond Water canister (required — no fresh water source)"
+recommended_equipment:
+  - "Holographic Map Projector"
+  - "Diving Protective Suit"
+encounter_rate: 35
+time_limit: "8 hours (oxygen and Almond Water limits)"
+intel_levels:
+  basic: "DC 68–113 (bias ±25%)"
+  detailed: "DC 77–104 (bias ±15%)"
+  precise: "DC 81–99 (Level 7 limit, minimum bias ±10%)"
+special_environment_rules:
+  - "Underwater movement cost doubled"
+  - "Lighting range halved"
+  - "Each underwater hour consumes 1 unit of Almond Water"
+  - "Comms range only 50 meters"
+  - "Mandatory Stamina Check every 2 hours (d100≥50), failure → Fatigue"
+optional_special_action:
+  name: "Sample Collection"
+  dc: 100
+  success: "Obtain rift core sample — unlocks Dimensional Theory tech tree"
+  failure: "Energy backlash, collector severely wounded"
+rewards:
+  great_success: "Complete data + sample, unlocks detailed info on three rift-handling routes"
+  success: "Determine source location and nature, may choose one route"
+  marginal_success: "Incomplete records, need to dispatch again"
+consequence: "Upon successful completion, unlocks Campaign Two route choice (Destroy/Stabilize/Research)"

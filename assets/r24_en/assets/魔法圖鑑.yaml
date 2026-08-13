@@ -1,0 +1,260 @@
+name: Spell Codex
+source_file: 魔法圖鑑.md
+table_count: 7
+tables:
+- section: Spell List (orig. §3.8.3) > 3.8.3 Spell List > Destruction School (Attack Spells)
+  headers:
+  - spell
+  - ◇
+  - level
+  - effect
+  rows:
+  - spell: '**Shadow Bolt**'
+    ◇: '1'
+    level: Basic
+    effect: Arcana (ARC) vs Defense; single-target damage = Net Successes; can pierce 1 point of physical armor
+  - spell: '**Corrosion Touch**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: Melee spell. Damage = ARC level ×2; applies 1 acid-corrosion damage per round ×3 rounds
+  - spell: '**Shadow Storm**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: Same-room AOE. All enemies take ARC dice pool ÷2 damage (each defends)
+  - spell: '**Annihilation Ray**'
+    ◇: '4'
+    level: Arcana (ARC)≥5
+    effect: Choose a straight line piercing 2 rooms. First enemy in each room takes ARC dice pool damage
+  - spell: '**Soul Collapse**'
+    ◇: '5'
+    level: Arcana (ARC)=5+Legendary
+    effect: Single target. Ignores Defense; damage = ARC dice pool ×1.5. Consumes extra 1●
+  - spell: '**Abyss Torrent**'
+    ◇: '6'
+    level: Ultimate
+    effect: Whole-floor AOE. All enemies take ARC dice pool damage. Consumes extra 2●. Once per combat
+  - spell: '**Chaos Burst**'
+    ◇: '3'
+    level: Arcana (ARC)≥3
+    effect: Single target. Deals ARC dice pool damage; randomly adds one of burning/paralysis/poison
+  - spell: '**Void Arrow**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: Ranged. Can pierce walls/obstacles to strike a target out of sight line (requires approximate location known)
+- section: Spell List (orig. §3.8.3) > 3.8.3 Spell List > Curse School (Debuff/Control Spells)
+  headers:
+  - spell
+  - ◇
+  - level
+  - effect
+  rows:
+  - spell: '**Weakness Curse**'
+    ◇: '1'
+    level: Basic
+    effect: Single target. Target attack dice −2 dice; lasts 2 rounds
+  - spell: '**Dark Chains**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: Single target. Arcana (ARC) vs target Defense; success = immobilized 2 rounds + 1 shadow-erosion damage per round
+  - spell: '**Words of Fear**'
+    ◇: '1'
+    level: Basic
+    effect: Single target within visual range. Dominion (DOM) vs Willpower (WIL); success = feared 2 rounds (cannot voluntarily approach the Lord)
+  - spell: '**Mana Seal**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: Single target. Arcana (ARC) vs opposed ARC; success = target's casting dice pool disabled 1 round (silenced)
+  - spell: '**Fate Curse**'
+    ◇: '4'
+    level: Arcana (ARC)≥5
+    effect: Single target. Target's next 3 checks take Disadvantage (roll twice, take worse)
+  - spell: '**Group Weakness**'
+    ◇: '4'
+    level: Arcana (ARC)≥4+Legendary
+    effect: 'All enemies in same room: attack dice −1 die; lasts 2 rounds'
+  - spell: '**Memory Erosion**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: Single target. Arcana (ARC) vs Willpower (WIL); success = target forgets one skill/spell (GM decides); lasts entire combat
+  - spell: '**Blood Curse**'
+    ◇: 2+●1
+    level: Arcana (ARC)≥3
+    effect: Single target. 1 shadow-erosion damage per round ×3 rounds. Each damage instance restores 1 HP to the Lord
+  - spell: '**Mad Whisper**'
+    ◇: '2'
+    level: Arcana (ARC)≥4
+    effect: All enemies in same room require WIL check; failure = attacks a random target (possibly allies) for 1 round
+- section: Spell List (orig. §3.8.3) > 3.8.3 Spell List > Defense School (Shield/Protection Spells)
+  headers:
+  - spell
+  - ◇
+  - level
+  - effect
+  rows:
+  - spell: '**Dark Shield**'
+    ◇: '1'
+    level: Basic
+    effect: Self/adjacent monster. Defense dice pool +2 dice; lasts until hit once or 3 rounds
+  - spell: '**Mana Barrier**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: All friendly units in same room gain a magic Defense dice pool (shares ARC dice pool); lasts 2 rounds
+  - spell: '**Anti-Magic Field**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: Self. ARC dice pool opposes all casting; success = spell absorbed (converts ◇×1)
+  - spell: '**Unbroken Pact**'
+    ◇: '4'
+    level: Arcana (ARC)≥5
+    effect: 'Self. Auto-triggers when HP reaches 0: immediately restore 2d6 HP; once per combat'
+  - spell: '**Bone Armor**'
+    ◇: '2'
+    level: Arcana (ARC)≥2
+    effect: Self/monster. Physical damage reduction = Arcana (ARC)/2 (rounded down); lasts 3 rounds
+  - spell: '**Group Shield**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: 'All monsters on same floor: Defense dice +1 die; lasts 2 rounds'
+  - spell: '**Magic Reflection**'
+    ◇: '4'
+    level: Arcana (ARC)≥5
+    effect: Reaction spell. Triggers when attacked by a single-target spell; opposed ARC; success = spell reflected back to caster
+- section: Spell List (orig. §3.8.3) > 3.8.3 Spell List > Summoning/Undead School
+  headers:
+  - spell
+  - ◇
+  - level
+  - effect
+  rows:
+  - spell: '**Skeleton Revival**'
+    ◇: 2+●1
+    level: Basic
+    effect: Summon CP1 skeleton from a fallen adventurer's corpse. Each extra 1◇ → Combat Power (CP)+1 (cap CP3). Lasts until end of combat
+  - spell: '**Shadow Creature Summon**'
+    ◇: '3'
+    level: Arcana (ARC)≥3
+    effect: Summon CP2 shadow beast (acts independently); lasts 3 rounds. Each extra 1◇ → +1 Combat Power (CP)
+  - spell: '**Undead Legion**'
+    ◇: 5+●3
+    level: Arcana (ARC)≥4+Undead-exclusive
+    effect: Summon CP1 skeleton ×ARC value. No corpse needed — summoned directly from the Abyss Rift. Dissipates after combat
+  - spell: '**Demon Gate**'
+    ◇: 5+●2
+    level: Arcana (ARC)≥5+Demon-exclusive
+    effect: Summon CP3 demon servant ×DOM value. Lasts 5 rounds. Once per combat
+  - spell: '**Soul Puppet**'
+    ◇: 3+●2
+    level: Arcana (ARC)≥4
+    effect: Briefly transform a captive into a battle puppet (CP = PL+2). Lasts 3 rounds; afterward captive's WIL permanently −1
+  - spell: '**Abyss Hound**'
+    ◇: '2'
+    level: Arcana (ARC)≥2
+    effect: Summon CP1 hellhound ×2; lasts 3 rounds. Tracking scent auto-locks position of fleeing/invisible enemies
+  - spell: '**Elemental Servant**'
+    ◇: '3'
+    level: Arcana (ARC)≥3
+    effect: Summon CP2 minor elemental (choose fire/ice/lightning/stone; corresponding elemental damage); lasts 4 rounds
+  - spell: '**Bone Dragon Projection**'
+    ◇: 6+●5
+    level: Arcana (ARC)=5+Undead-exclusive+Legendary
+    effect: Summon bone dragon phantom (Combat Power (CP)6); lasts only 2 rounds but ignores defense reduction. Once per campaign
+- section: Spell List (orig. §3.8.3) > 3.8.3 Spell List > Utility School (Non-combat Spells)
+  headers:
+  - spell
+  - ◇
+  - level
+  - effect
+  rows:
+  - spell: '**Darkvision**'
+    ◇: '1'
+    level: Basic
+    effect: Target gains darkvision; lasts 1 expedition day / entire dungeon combat
+  - spell: '**Abyssal Whisper**'
+    ◇: '1'
+    level: Basic
+    effect: Send a 25-character telepathic message to 1 known dungeon (requires Embassy Lv1)
+  - spell: '**Item Appraisal**'
+    ◇: '1'
+    level: Basic
+    effect: Appraise 1 magic item, learning its function and hidden properties
+  - spell: '**Teleport Gate**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: Costs 1 action; teleport self from the Throne Hall to any defense floor (combat round) or from the dungeon to any Abyssal embassy location (non-combat)
+  - spell: '**Illusion**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: Create a realistic illusion lasting 3 rounds (fake monster/fake trap/fake terrain). Opposed Cunning (CUN) vs adventurer scouting
+  - spell: '**Soul Trace**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: Touch a captive to extract 1 specific piece of intel from their memory (GM must answer)
+  - spell: '**Shadow Cloak**'
+    ◇: '2'
+    level: Arcana (ARC)≥2
+    effect: Self invisible 2 rounds. Invisibility ends after attacking or casting. During expeditions, +2 Cunning (CUN) dice to avoid encounters
+  - spell: '**Abyss Repair**'
+    ◇: '2'
+    level: Arcana (ARC)≥2
+    effect: Repair 1 trap to restore its trigger state, or repair 1 room's damaged state
+  - spell: '**Tongues**'
+    ◇: '1'
+    level: Basic
+    effect: Lasts 1 expedition day; can read/speak all surface languages. Used for infiltration/scouting missions
+  - spell: '**Void Storage**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: Store 1 item (max volume = 1 Building Material unit) in the void; permanently preserved, retrievable anytime
+- section: Spell List (orig. §3.8.3) > 3.8.3 Spell List > Transformation/Enhancement School
+  headers:
+  - spell
+  - ◇
+  - level
+  - effect
+  rows:
+  - spell: '**Shadow Form**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: Become a semi-corporeal shadow; physical damage −50%; can pass through narrow gaps; lasts 2 rounds
+  - spell: '**Enlarge**'
+    ◇: '3'
+    level: Arcana (ARC)≥4
+    effect: Self/monster. Size doubles; Combat Power (CP)+2; HP+5. But Defense dice −1 die (larger target). Lasts 3 rounds
+  - spell: '**Stoneskin**'
+    ◇: '2'
+    level: Arcana (ARC)≥3
+    effect: Self/monster. Physical Defense +3 dice. Movement −1 room (heavy). Lasts 3 rounds
+  - spell: '**Abyssal Fusion**'
+    ◇: 4+●2
+    level: Arcana (ARC)≥4
+    effect: Lord temporarily fuses with 1 monster → share HP pool; dice pool takes the higher of the two; lasts 2 rounds. Afterward the Lord takes 1d3 damage
+- section: Complete Spell Overview (orig. §3.9) > Complete Spell Overview
+  headers:
+  - school
+  - spell_count
+  - typical_cost
+  rows:
+  - school: Destruction
+    spell_count: '8'
+    typical_cost: 1-6◇
+  - school: Curse
+    spell_count: '9'
+    typical_cost: 1-4◇
+  - school: Defense
+    spell_count: '7'
+    typical_cost: 1-4◇
+  - school: Summoning/Undead
+    spell_count: '8'
+    typical_cost: 2-6◇ + ●
+  - school: Utility
+    spell_count: '10'
+    typical_cost: 1-3◇
+  - school: Transformation/Enhancement
+    spell_count: '4'
+    typical_cost: 2-4◇
+  - school: Enchantment
+    spell_count: '6'
+    typical_cost: 2-10◇ + ●
+  - school: '**Total**'
+    spell_count: '**52**'
+    typical_cost: ''

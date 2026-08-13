@@ -1,0 +1,123 @@
+name: "Level 6 — Blackout"
+description: "Absolutely dark, damp corridors — upon entry all light sources fail, and Shadows prowl in the darkness"
+scenario_ref: "S4_熄燈"
+usage: "Scenario S4 first half: navigate by hearing in a lightless environment, reach the floor-collapse point and fall into Level 7"
+regions:
+  - name: "Entrance"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "Area"
+  - name: "Dark Corridor"
+    color: "#ECEFF1"
+    nodes: ["N02", "N03", "N04"]
+    description: ""
+  - name: "Shadow Domain (Danger)"
+    color: "#F3E5F5"
+    nodes: ["N05"]
+    description: ""
+  - name: "Exit Area"
+    color: "#E3F2FD"
+    nodes: ["N06", "N07", "N08"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Entrance (Light Source Fails)"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "The flashlight goes out the instant you step in — absolute darkness surrounds you"
+  - id: "N02"
+    label: "Dark Corridor 1"
+    x: 300
+    y: 240
+    type: "normal"
+    explored: false
+    description: "Too dark to see your hand in front of you — you can only advance by hearing and touch"
+  - id: "N03"
+    label: "Sound Navigation Point"
+    x: 460
+    y: 190
+    type: "navigation"
+    explored: false
+    description: "A corner with clear echoes — direction can be judged (Perception DC 15)"
+  - id: "N04"
+    label: "Dark Corridor 2"
+    x: 460
+    y: 360
+    type: "normal"
+    explored: false
+    description: "A continuous rustling sound comes from behind"
+  - id: "N05"
+    label: "Shadow Haunt Zone"
+    x: 610
+    y: 300
+    type: "danger"
+    explored: false
+    description: "Shadows move at the edges — contact makes your shadow disappear"
+    threats: "Shadows (shadow disappears)"
+  - id: "N06"
+    label: "Emergency Light Room"
+    x: 300
+    y: 460
+    type: "resource"
+    explored: false
+    description: "An emergency light that still has power — brief illumination can drive away Shadows"
+    resources: "Emergency Light ×1"
+  - id: "N07"
+    label: "Structurally Fragile Zone"
+    x: 650
+    y: 460
+    type: "danger"
+    explored: false
+    description: "The loose floorboards groan — collapse is imminent"
+    threats: "Floor Collapse"
+  - id: "N08"
+    label: "Collapse Opening (Exit)"
+    x: 810
+    y: 360
+    type: "exit"
+    explored: false
+    description: "The floor collapses and you plummet into the water below — leads to Level 7"
+    exit_to: "Level 7 — Thalassophobia"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N06"
+    type: "corridor"
+    label: "Emergency Light"
+  - from: "N03"
+    to: "N05"
+    type: "dangerous_path"
+    label: "Shadows"
+  - from: "N04"
+    to: "N05"
+    type: "dangerous_path"
+    label: "Shadows"
+  - from: "N05"
+    to: "N07"
+    type: "dangerous_path"
+    label: "Fragile Floor"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: ""
+  - from: "N07"
+    to: "N08"
+    type: "dangerous_path"
+    label: "→ Exit (Collapse)"
+  - from: "N05"
+    to: "N08"
+    type: "corridor"
+    label: "→ Exit"

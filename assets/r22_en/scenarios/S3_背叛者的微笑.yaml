@@ -1,0 +1,58 @@
+name: "The Traitor's Smile"
+description: "One companion will betray at a critical moment. The player must find the traitor — but each cycle, the traitor's identity may differ. The core experience is understanding, not punishment."
+difficulty: "Intermediate"
+level_range:
+  min_memory: 5
+  max_memory: 8
+  suggested_cycles: "5-9"
+time_range:
+  days: 5
+core_skills:
+  primary: ["Social", "Memory", "Insight"]
+  secondary: ["Execution"]
+core_mechanic: "Variable Traitor System — each cycle the traitor's identity may differ, turned by an external faction"
+companion_pool:
+  - name: "Sister Liz"
+    faction: "Church of Death"
+    turn_reason: "The Church threatens her family"
+    value: "Medical ability, Church internal intelligence"
+  - name: "Apprentice Kai"
+    faction: "Tower of Time"
+    turn_reason: "Conditioned on healing a Returner's awakening"
+    value: "Tower of Time intelligence, magical knowledge"
+  - name: "Information Broker Rena"
+    faction: "Shadow Guild"
+    turn_reason: "The Guild threatens to expose her brother's whereabouts"
+    value: "Underground network, lockpicking skill"
+  - name: "Scavenger Grigo"
+    faction: "Shadow Guild"
+    turn_reason: "Promised the restoration of the Empire"
+    value: "Combat ability, tactical knowledge"
+  - name: "Ordin the Silent"
+    faction: "Returner Mutual Aid Society"
+    turn_reason: "Notebook stolen, coerced"
+    value: "Cycle experience, written intelligence"
+  - name: "Guard Captain Callen"
+    faction: "None"
+    turn_reason: "Framed as an accomplice"
+    value: "Combat ability, noble-circle intelligence"
+routes:
+  - id: "trust"
+    name: "Trust and Observation"
+    primary: ["Social", "Insight"]
+  - id: "verify"
+    name: "Cross-Verification of Information"
+    primary: ["Memory", "Insight"]
+  - id: "trap"
+    name: "Pre-set Trap"
+    primary: ["Memory", "Execution"]
+signature_clue: "All traitors leave the same smile mark"
+endings:
+  - id: "perfect"
+    name: "Perfect Ending"
+    condition: "Understand the traitor's motive, save rather than punish"
+  - id: "minimum"
+    name: "Minimum Clear"
+    condition: "Successfully identify the traitor and stop the key betrayal action"
+multiplayer_gm_tips: |
+  Designed for solo play; per 14-3 may start with 2-3 players: players form a Returner Squad, the companion NPC pool remains NPCs, the traitor is turned by the GM one person per cycle, different players may trust different companions to disperse the betrayal. 14-3 governs that when S3 recruits combat-type companions, enemy strength rises one tier. Cross-verification of information is stronger with multiple players; confrontation and ending use squad consensus / Team Check.

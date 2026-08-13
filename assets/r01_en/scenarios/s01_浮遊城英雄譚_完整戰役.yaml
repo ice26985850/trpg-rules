@@ -1,0 +1,87 @@
+# SAO TRPG Multiplayer Campaign Scenario (Structured)
+# Corresponds to body: scenarios/s01_浮遊城英雄譚_完整戰役.md
+# ⚠️ This file is the scenario index/structure; full events, dialogue, and GM hints are in the .md of the same name.
+
+rule: "SAO_TRPG"
+scenario_type: "multiplayer"        # Multiplayer (4-6 players + 1 GM)
+title: "Tale of the Floating Castle Heroes — Full Campaign"
+source_md: "s01_浮遊城英雄譚_完整戰役.md"
+based_on: "Sword Art Online, Aincrad Arc (original author: Reki Kawahara)"
+total_levels: "Lv.1 → Lv.100"
+total_floors: "Floor 1 → Floor 100"
+estimated_sessions: "about 44-72 sessions"
+
+volumes:
+  - id: "Vol.1"
+    title: "Day of Origins"
+    levels: "Lv.1-10"
+    floors: "Floors 1-10"
+    sessions: "6-10 sessions"
+    theme: "Awakening to the death game, learning to survive"
+    key_npcs: ["Klein", "Agil", "Argo", "Asuna", "Keita"]
+  - id: "Vol.2"
+    title: "Shadow of the Frontline"
+    levels: "Lv.10-25"
+    floors: "Floors 11-25"
+    sessions: "8-14 sessions"
+    theme: "Guild politics, frontline pressure, PK threat"
+    key_npcs: ["Silica", "Lisbeth"]
+  - id: "Vol.3"
+    title: "The Clearers"
+    levels: "Lv.25-50"
+    floors: "Floors 26-50"
+    sessions: "12-20 sessions"
+    theme: "Glory and sacrifice of the Clearers, guild rise and fall"
+    key_npcs: ["Heathcliff (KoB Leader)"]
+  - id: "Vol.4"
+    title: "Death Labyrinth"
+    levels: "Lv.50-75"
+    floors: "Floors 51-75"
+    sessions: "10-16 sessions"
+    theme: "Death labyrinth, eve of the final Boss"
+    key_npcs: ["Kayaba Akihiko (identity revealed)"]
+  - id: "Vol.5"
+    title: "Final Ruby"
+    levels: "Lv.75-100"
+    floors: "Floors 76-100"
+    sessions: "8-12 sessions"
+    theme: "Ruby Palace, final confrontation"
+    key_npcs: ["All assemble"]
+
+key_npcs:
+  - name: "Heathcliff"
+    role: "KoB Leader / Final Boss"
+    first_appear: "Vol.2"
+    fate: "Boss fight in Vol.4 reveals identity"
+  - name: "Asuna"
+    role: "KoB Vice-Leader"
+    first_appear: "Vol.1"
+  - name: "Klein"
+    role: "Fuurinkazan Leader"
+    first_appear: "Vol.1"
+  - name: "Agil"
+    role: "Merchant / Axe User"
+    first_appear: "Vol.1"
+  - name: "Argo"
+    role: "Info Broker"
+    first_appear: "Vol.1"
+  - name: "Keita"
+    role: "Moonlit Black Cats"
+    first_appear: "Vol.1"
+    fate: "Dies end of Vol.1 (can be changed)"
+  - name: "Silica"
+    role: "Tamer"
+    first_appear: "Vol.2"
+  - name: "Lisbeth"
+    role: "Blacksmith"
+    first_appear: "Vol.2"
+
+final_boss:
+  name: "Kayaba Akihiko (Heathcliff)"
+  floor: "Floor 100 Ruby Palace"
+  level: "Lv.96"
+
+interlude_scenarios:
+  - "Festival Event"
+  - "PK Guild Event"
+  - "Wedding Event"

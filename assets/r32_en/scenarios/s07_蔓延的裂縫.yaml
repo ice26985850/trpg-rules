@@ -1,0 +1,64 @@
+name: "The Spreading Crack"
+type: "Gap Flooding (Emergency Event)"
+difficulty: "★★★★"
+recommended_marks: "6-8"
+play_time: "2-3 sessions"
+core_attributes: ["AW", "TR", "AN"]
+time_pressure: "If not handled within three days → the entire area permanently becomes the Gap Layer"
+
+opening: |
+  The old Eastside neighborhood is vanishing — the alleys show wrong perspective, and when you open your front door it isn't your own living room;
+  the basement goes three levels down and still isn't at the bottom. Three residents have disappeared. The city government has sealed off three blocks.
+  Urgent warning: a Crack in a Sealed Space is expanding. Someone put something inside it that shouldn't be there.
+
+npcs:
+  - name: "The Little Girl's Residual"
+    type: "the Forgotten"
+    desc: "A girl lost in an air raid in the 1940s. Not evil — she is trapped by being forgotten itself"
+    companion_eligible: false
+  - name: "The 80-Year-Old Younger Brother"
+    type: "Key Witness"
+    desc: "The little girl's younger brother. The only one who knows the truth. While present, the Liberate Difficulty Class (DC) drops to 10"
+    companion_eligible: false
+  - name: "Path Guardian (Horse)"
+    type: "Path Guardian"
+    desc: "Guarding the key path. Negotiation Difficulty Class (DC) 14 (each 3 turns waited: Difficulty Class (DC) -2)"
+    companion_eligible: false
+
+scenes:
+  - name: "Assess the Crack"
+    desc: "Awareness Difficulty Class (DC) 10 to see the spatial anomaly. Traverse Difficulty Class (DC) 16 to enter safely (solo already -2)."
+    map_ref: "MAP-07 (Eastside Crack Community) — Sealed-Zone Entrance"
+  - name: "Resist the Spread"
+    desc: "The Crack expands 10 meters each day. Each day passed: Traverse Difficulty Class (DC) +2. Must be resolved within three days."
+    map_ref: "MAP-07 — Three-Day Countdown"
+  - name: "Path Guardian"
+    desc: "Negotiation Difficulty Class (DC) 14. Each 3 turns waited: Difficulty Class (DC) -2. Speaking your True Name auto-succeeds."
+    map_ref: "MAP-07 — Path Guardian location (path between old house → Crack)"
+  - name: "Find the Old Walker's Notes"
+    desc: "Three puzzle-like notes record the sealing method and the girl's name."
+    map_ref: "MAP-07 — Notes scattered in three places (old house / school / Crack)"
+  - name: "Liberate vs. Seal"
+    desc: |
+      Find the little girl. She crouches in a corner humming the same song.
+      Requires three items (photo + schoolbag + name) to liberate.
+      Liberate: Negotiation Difficulty Class (DC) 20 (with the three items, Difficulty Class (DC) 14). Success → she smiles and vanishes.
+      Seal: Anchor Difficulty Class (DC) 18. Temporarily safe; expands again months later.
+      Failure: On the third day the Crack swallows the block. Residents begin to forget they ever lived there.
+    map_ref: "MAP-07 — Crack Center (the Little Girl's Residual location)"
+  - name: "Siblings' Reunion"
+    desc: |
+      If the 80-year-old brother is willing to enter the Gap to see his sister —
+      while present, the Liberate Difficulty Class (DC) drops to 10.
+    map_ref: "MAP-07 — Gap-version of the old house (the brother's location)"
+
+key_choice: |
+  - Liberate the little girl → the Crack heals, Return Mark +1
+  - Re-seal → temporarily safe, can continue in the future
+  - Liberation fails → the block is swallowed by the Gap
+
+rewards:
+  - "Return Mark × 1-2"
+  - "Knowledge Mark: long-term advantage of Sealed Spaces"
+
+companion_recruitment: []

@@ -1,0 +1,96 @@
+# Last Stand TRPG — Scenario S2: Jungle City Street War
+scenario:
+  id: S2
+  name: Jungle City Street War
+  type: multiplayer_squad
+  tier: 2
+  difficulty: 2
+  estimated_duration: 3-5 hours
+  suggested_level: 3-4
+
+  description: >
+    Sanhok — an abandoned resort city in the tropical jungle. Humid air, vine-covered buildings,
+    and a gun barrel that could be hidden behind every window. Red Zone Bombing makes this dead city even more dangerous.
+
+map:
+  name: Sanhok (Jungle City)
+  size: 4 km × 4 km (Jungle + Urban Mixed)
+  terrain: [Tropical Jungle (50%), Abandoned Urban Area (30%), River (20%)]
+  landmarks:
+    - id: L1
+      name: Paradise Resort
+      type: urban
+      loot_level: Abundant (Blue)
+      description: A multi-story building complex in the city center — suited for floor-by-floor combat
+    - id: L2
+      name: Training Camp
+      type: military
+      loot_level: Military (Purple)
+      description: A military training facility in the north of the island, with multiple connected buildings
+    - id: L3
+      name: Cave
+      type: natural
+      loot_level: Common (Green)
+      description: An underground cave system — a perfect ambush point
+    - id: L4
+      name: Riverside Dock
+      type: urban
+      loot_level: Common (Green)
+      description: Warehouses and docks by the water
+
+enemy_configuration:
+  total_squads: 6
+  squads:
+    - { type: Rookie Squad, difficulty: ★, count: 3 }
+    - { type: Steady Squad, difficulty: ★★, count: 2 }
+    - { type: Assault Squad, difficulty: ★★★, count: 1 }
+
+circle:
+  type: Building Lock
+  description: The final circle is within a building complex — forcing close-quarters street combat
+
+airdrop:
+  count: 3
+  timing: [During the 2nd circle contraction, During the 3rd circle contraction, Start of the 4th circle]
+
+red_zone:
+  enabled: true
+  frequency: Bombing triggers once every 5 turns
+  special: None
+
+vehicles: [Off-road Vehicle, Jeep, Motorcycle]
+weather: Overcast (possible showers)
+time_of_day: Day
+
+new_mechanics: [Multi-story Building Combat, Red Zone Bombing, Silencer First Appears]
+
+phases:
+  - phase: Drop & Site Selection
+    turns: 1
+    gm_notes: The jungle canopy provides more cover for drops — but it also means you don't know who dropped in the same area.
+
+  - phase: Jungle Looting
+    turns: 4
+    gm_notes: Loot points in the jungle are more scattered. Use hearing to determine if enemies are nearby.
+
+  - phase: Urban Combat
+    turns: 5-6
+    gm_notes: >
+      Multi-story combat inside buildings is the core of this scenario. Teach players to use floor advantage —
+      higher ground gives better vision, but windows expose your position.
+      Introduce Red Zone Bombing — forcing players to move out of cover.
+
+  - phase: Final Street War
+    turns: 3-5
+    gm_notes: The circle shrinks to within a single building — the climax of close-quarters firefight.
+
+victory_condition: Be the last surviving squad
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  chicken_dinner: 500

@@ -1,0 +1,101 @@
+# Weapon Quick Reference
+weapons:
+  # Energy Weapons
+  - name: "Red Laser"
+    slot: "S"
+    damage: "15-25"
+    range: "Medium"
+    accuracy: 85
+    shield_penetration: "50%"
+    armor_penetration: "0%"
+  - name: "Gamma Laser"
+    slot: "L"
+    damage: "80-130"
+    range: "Long"
+    accuracy: 70
+    shield_penetration: "70%"
+    armor_penetration: "0%"
+  - name: "Particle Lance"
+    slot: "L"
+    damage: "120-200"
+    range: "Long"
+    accuracy: 65
+    shield_penetration: "100%"
+    armor_penetration: "0%"
+    special: "Pierces a row"
+  - name: "Arc Emitter"
+    slot: "X"
+    damage: "150-300"
+    range: "Medium"
+    accuracy: 50
+    shield_penetration: "100%"
+    armor_penetration: "100%"
+    special: "Ignores all defenses"
+
+  # Kinetic Weapons
+  - name: "Mass Accelerator"
+    slot: "S"
+    damage: "12-22"
+    range: "Medium"
+    accuracy: 80
+    shield_bonus: "+30% vs Shields"
+  - name: "Gauss Cannon"
+    slot: "L"
+    damage: "80-140"
+    range: "Long"
+    accuracy: 75
+    armor_penetration: "20%"
+  - name: "Autocannon"
+    slot: "S"
+    damage: "8-15(x3)"
+    range: "Close"
+    accuracy: 70
+    shield_bonus: "+50% vs Shields"
+
+  # Explosive Weapons
+  - name: "Nuclear Missile"
+    slot: "M"
+    damage: "80-120"
+    range: "Long"
+    accuracy: "Guided"
+    special: "Area damage"
+  - name: "Plasma Torpedo"
+    slot: "G"
+    damage: "150-250"
+    range: "Medium"
+    accuracy: "Guided"
+    armor_bonus: "+50% vs Armor"
+  - name: "Swarm Missile"
+    slot: "M"
+    damage: "20-35(x5)"
+    range: "Long"
+    accuracy: "Guided"
+    special: "Suppresses point defense"
+
+  # Strike Craft
+  - name: "Interceptor"
+    slot: "H"
+    damage: "15-20(x4)"
+    range: "Extreme Long"
+    accuracy: "Guided"
+    special: "Prioritizes attacking strike craft/missiles"
+  - name: "Bomber"
+    slot: "H"
+    damage: "60-100(x2)"
+    range: "Extreme Long"
+    accuracy: "Guided"
+    special: "+30% vs Cruiser and above"
+
+  # Point Defense
+  - name: "Point-Defense Laser"
+    slot: "P"
+    damage: "5-8(x4)"
+    range: "Close"
+    accuracy: 90
+    special: "Intercepts missiles/strike craft"
+  - name: "Flak Cannon"
+    slot: "P"
+    damage: "8-12(x3)"
+    range: "Close"
+    accuracy: 75
+    special: "Intercepts missiles/strike craft"

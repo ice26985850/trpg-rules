@@ -1,0 +1,16 @@
+name: "S4: Blackout"
+description: "Level 6: complete, absolute darkness. Even flashlight light is devoured. Level 7: a flooded research base, deep water and high pressure, something swimming below. A test of both mind and body at their limits."
+difficulty: "Upper-Intermediate"
+milestone_range: "4-5"
+play_time: "6-9 hours"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Level 6 — Blackout", "Level 7 — Thalassophobia"]
+themes: ["Survival Limits", "Mental Erosion", "Unknown Abyss"]
+emotional_arc: "Oppression (absolute darkness) → Edge of Collapse → Dive (underwater) → Vast Presence → Surface"
+scenes:
+  - {id: S4_1, name: "Absolute Darkness", type: "Survival", desc: "Level 6: light sources are devoured — a flashlight only lights the ground at your feet. The darkness itself has weight. SP -1 every 15 minutes. Hearing is the only reliance. The entity breathes in the dark."}
+  - {id: S4_2, name: "Corridor of Sound", type: "Navigation", desc: "The only way to navigate is along the walls, listening to dripping water to judge direction. In the dark, whispers occasionally arise — the voices of other Lost, or your own hallucination? Perception DC 16 to tell apart."}
+  - {id: S4_3, name: "Submersion", type: "Transition", desc: "At Level 6's deepest point the floor vanishes — you fall into icy water. Level 7: a research base flooded by seawater. Corridors warp underwater. Must find diving equipment."}
+  - {id: S4_4, name: "The Deep", type: "Horror", desc: "Beyond the windows of the underwater corridor — a vast, unrecognizable black shape slowly swims past. It is bigger than the entire building. Do not look directly at it. Find the drainage pipe leading to Level 8."}
+entities: ["Shadows (Level 6 — formless entities in the darkness)", "Leviathan (Level 7 — gigantic underwater creature, cannot be fought)"]
+ending: "Pass through the drainage pipe into Level 8's caves. Surface. Milestone 5 achieved."

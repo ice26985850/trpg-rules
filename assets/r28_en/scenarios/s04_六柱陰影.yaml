@@ -1,0 +1,38 @@
+# Otherworld Invasion TRPG Scenario — Shadow of the Six Pillars
+# id: S4
+
+id: S4
+title: Shadow of the Six Pillars
+season: 1
+season_name: Awakening Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Shibuya Crossing
+  description: Once the busiest intersection in the world, now a battlefield against the beastman vanguard.
+- name: Werewolf Recon Outpost (Abandoned Department Store)
+  description: A stronghold occupied by werewolves, containing the beastmen's otherworld camp within.
+key_npcs:
+- name: Werewolf Scout Captain Gruk
+  role: The first hostile character with spoken lines. Disdainful of human weakness, yet curious about the System the players display.
+- name: Guild Chief of Staff Takeda
+  role: Tactical commander, providing intelligence and support.
+key_scenes:
+- Street skirmish—first encounter with an organized enemy
+- Department store assault—different tactical challenges on each floor
+- Dialogue with Gruk—reveals the beastman perspective ("Your world is too easy to invade")
+- Discovering the beastmen are collecting "something"—setup for S5
+enemy_list:
+- name: Werewolf Scout
+  quantity: 3-5
+  note: Lv.12-14, has tactical AI
+- name: Werewolf Warrior
+  quantity: 2-3
+  note: Lv.15-16, high damage
+- name: Werewolf Scout Captain Gruk
+  quantity: '1'
+  note: Lv.18 Boss, can be spoken with
+estimated_sessions:
+rewards:
+solo_adjustment:

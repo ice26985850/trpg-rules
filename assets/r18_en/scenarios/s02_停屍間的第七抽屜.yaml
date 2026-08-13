@@ -1,0 +1,25 @@
+name: The Seventh Drawer in the Mortuary
+description: A man who died from a deliberate misdiagnosis has turned into a White Zombie; his wife's Resentful Ghost lingers in the home seeking revenge. The hidden orchestrator behind it buries a Nine Nether Hall thread.
+difficulty: B
+level_range: [4, 6]
+case_type: Zombie + Resentful Ghost
+map_ref: "maps/S2_停屍間.yaml"
+npcs:
+  - Uncle Nine (Shi Chu Shi funeral home, mortuary supervisor)
+  - Sai Cheong (on-duty orderly)
+  - Aki (deceased husband's daughter)
+  - Deceased Husband (Fresh Corpse -> White Zombie, the dead)
+  - Deceased Wife's Resentful Ghost (dead man's wife)
+  - Surgeon (deliberate misdiagnosis, hidden orchestrator)
+key_enemies:
+  - White Zombie (Challenge Rating CR 2)
+  - Resentful Ghost (Challenge Rating CR 3)
+rewards:
+  exp: 300
+  coin: 350
+  items:
+    - Soul-Calming Bell (Rare, possible drop)
+    - Glutinous Rice and Incense, Candle & Hell Bank Notes (supplied by funeral home)
+hooks:
+  - The "surgeon" behind the deliberate misdiagnosis was orchestrated by someone; the thread points to a retired geomancer selling "life-extension folk remedies" (leads to S3).
+  - Uncle Nine hints at an organization across the harbor that collects "intentional death" materials (Nine Nether Hall).

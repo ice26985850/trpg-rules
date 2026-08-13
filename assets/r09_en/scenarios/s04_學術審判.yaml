@@ -1,0 +1,19 @@
+title: The Academic Trial
+type: multiplayer
+quality: ★★★–★★★★ Expert-grade to Master-grade
+players: 2–5 mages (may be filled by non-player mage NPCs)
+sessions: 3–4
+core_output: Large amounts of Academic Reputation, school advancement abilities, political influence
+main_threat: Academic politics, reputation attacks, possible ostracism
+prerequisite: At least one player with Academic Reputation ≥30
+summary: The Arcadia Royal Academy of Magic is about to hold its quinquennial **Grand Council**—the most important academic conference, which will decide the research directions, funding allocation, and—most importantly—**the three seats of the Watcher Council** for the next five years.
+acts:
+- name: Act One—Pre-Council Maneuvering
+  scenes:
+  - Scene: One Week Before the Council
+- name: Act Two—The Grand Council (Three Days)
+  scenes: []
+- name: Act Three—Consequences
+  scenes: []
+npcs: []
+research_checks: []

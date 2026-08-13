@@ -1,0 +1,128 @@
+# Scenario Two: The Blood Money Gang's Invitation — Structured Scenario
+
+scenario:
+  name: "Scenario Two: The Blood Money Gang's Invitation"
+  level: "Seq 8 → 7"
+  players: "Already have 1-2 companions (continuing from a previous scenario or newly recruited)"
+  duration: "3-4 game sessions"
+  mode: [Multiplayer, Solo]
+
+  background: |
+    The player's actions in the previous scenario (or side quest) drew the attention of the Blood Money Gang. The player received an unsigned letter — containing only an address and time: the "Seam Line" Tavern in the Sunken Smoke District, Friday night at nine.
+
+    Upon arrival, it turns out to be an "interview" — the Blood Money Gang is recruiting Beyonders to handle an "internal problem": their district boss — "Rift" Charlie — has lost control. He is not only losing control when using his abilities, but is slowly transforming into a non-human form even in his "daily state." The Blood Money Gang wants to "deal with" him before he fully becomes a monster — but does not want the Nighthawks to know.
+
+  acts:
+    - title: "Act One: Investigation"
+      content: |
+        **Clue Site 1 — Seam Line Tavern**
+
+        The player meets the Blood Money Gang's second-in-command — a female Beyonder named "Widow" Margaret (Hunter Pathway, Seq 7).
+
+        The information she provides:
+        - Charlie began acting "off" three months ago — first irritable, then physical changes (skin hardened, eyes began to glow in the dark)
+        - Charlie is an old member who originally followed the Blood Money Gang's founder — Prisoner Pathway, Seq 7 (Werewolf)
+        - She suspects Charlie did not lose control naturally — "someone has been feeding him something." But she does not know who
+
+        She offers a reward: £50 + a Tier 3 Sealed Artifact.
+
+        **Clue Site 2 — Charlie's Lair (Sunken Smoke District Abandoned Slaughterhouse)**
+
+        Cannot enter directly (Charlie and his men are guarding it). Requires observation / stealth.
+
+        Observation check:
+        - Success: Discover that every three days a deliveryman pushes a cart into the slaughterhouse. The cart is covered with cloth — but the shape under the cloth is not food
+        - Critical Success: Recognize the deliveryman as a maintenance worker from the Gear District Difference Engine Center
+
+        **Clue Site 3 — Gear District Difference Engine Center**
+
+        Investigate the difference-engine personnel:
+        - Lore check: A night-shift maintenance worker at the Difference Engine Center named "Edwin Stone" has recently been working overtime for no reason. His shift records show that each night he worked overtime was exactly two days before the deliveryman appeared
+        - Social check: Edwin's colleagues say he recently "got rich" — started wearing new clothes, but his mental state is poor. "He says he's doing a 'side job' — transporting 'waste' for a laboratory"
+
+        **Clue Site 4 — Edwin's Residence (Iron Bridge District)**
+
+        After sneaking in / persuading your way in, you discover:
+        - Under Edwin's bed is a box of empty glass bottles — the label reads "St. Maria Asylum · Medical Waste"
+        - The residue in the bottles has a very faint Beyonder Characteristic — a Mysticism check identifies it as "stripped residual Beyonder Characteristic"
+
+        Stringing the clues together:
+        - Someone at St. Maria Asylum is conducting Beyonder Characteristic stripping experiments (see Team Side Quest Seven, *St. Maria Asylum*)
+        - The stripped Characteristics need to be "disposed of" — someone sold them to someone inside the Blood Money Gang
+        - Charlie was not "fed" into losing control — someone deliberately used the stripped Characteristics to accelerate his bestial transformation
+
+    - title: "Act Two: Conflict"
+      content: |
+        **Scene 1 — The Abandoned Slaughterhouse (mostly infiltration)**
+
+        Environment: A three-story abandoned slaughterhouse. Charlie's subordinates (3 mortal gang members, CR 1/2 each) patrol.
+
+        Stealth / combat optional. When you find Charlie — he is no longer human. His werewolf form has lost control — larger and more distorted than an ordinary werewolf.
+
+        **Charlie (Lost-Control Werewolf Form)** | Prisoner Pathway, Seq 7 (Edge of Loss) | CR: 3
+        - Attributes: Spirit (SPI) 30 / Mind (MND) 15 / Body (BOD) 55 / Agility (AGI) 45 / Charisma (CHA) 5
+        - HP: 125 / Loss of Control: 85 / Threshold (LoCT): 40 (already far exceeded)
+        - Attack: Rending Claw (+18 / 3d6+11 Bleeding), Frenzied Bite (+15 / 2d8+11)
+        - Abilities: Bestial Rampage (Passive / +2 Loss of Control per turn), Scent Tracking (Passive), Loss-of-Control Rampage (50% chance of indiscriminate attack, roll 1d100 ≤ 50 each turn)
+        - Weakness: Silver damage ×2; attacks −15 in bright light
+        - Tactics: Indiscriminately attacks the nearest target. Distinguishes no friend from foe. Will not retreat.
+
+        **Scene 2 — The Mastermind Revealed**
+
+        After defeating Charlie, searching the slaughterhouse reveals:
+        - A crate of glass bottles — from St. Maria Asylum
+        - A note: "Dear Charlie, do you like these 'gifts'? — Your old friend M"
+        - M is "Widow" Margaret — the Blood Money Gang's second-in-command
+
+        **Scene 3 — Confronting Margaret**
+
+        Back at the Seam Line Tavern. Margaret is waiting for your report. She does not know you have discovered the truth.
+
+        - Social path: Directly confront her — she admits it. Her reasoning: "Charlie knew too many gang secrets. Rather than kill him, better to let him be 'naturally eliminated.' No one would suspect."
+        - Combat path: Her subordinates (3 mortals + Margaret herself, CR=3) surround and attack the player
+        - Compromise path: She gives you a choice — "Take the money, forget about the bottles. Or I tell the Nighthawks you 'broke into private property' last night."
+
+        **Margaret "Widow"** | Hunter Pathway, Seq 7 | CR: 3 (Solo version)
+        - Attributes: Spirit (SPI) 40 / Mind (MND) 50 / Body (BOD) 35 / Agility (AGI) 50 / Charisma (CHA) 45
+        - HP: 85 / Spirit Pool: 125
+        - Attack: Military Revolver (+20 / 2d6 / 20m), Hunting Knife (+18 / 1d8+10)
+        - Abilities: Flame Throw (1 AP / 5 Spirit / 3d6 Fire damage), Sow Discord (makes companion and player suspect each other — Mind opposed)
+
+    - title: "Act Three: The Choice"
+      content: |
+        | Choice | Result | Reward |
+        |------|------|------|
+        | **Report to the Nighthawks** | Margaret is arrested. The Blood Money Gang falls into internal chaos — but the player gains the Nighthawks' high trust | Nighthawks Reputation +20 / free access to Nighthawks headquarters / Acting Progress 80 |
+        | **Accept Margaret's terms** | Take the money and leave. Margaret owes you a "favor" — but she will not forget that you know her secret | £50 + Tier 3 Sealed Artifact / Blood Money Gang Reputation +10 / Acting Progress 60 |
+        | **Kill Margaret** | After combat victory, the Blood Money Gang is left leaderless. The Sunken Smoke District gang order collapses — random street conflict events appear in the following sessions | Margaret's loot / Acting Progress 70 / Blood Money Gang Reputation −30 |
+
+        ## Promotion
+
+        By the end of the scenario, Acting Progress should reach 60-90. The Seq 7 Promotion requires: Acting Progress 100% + potion materials + a Mind check.
+
+        ---
+
+  antagonists:
+    - data: |
+        - Attributes: Spirit (SPI) 30 / Mind (MND) 15 / Body (BOD) 55 / Agility (AGI) 45 / Charisma (CHA) 5
+        - HP: 125 / Loss of Control: 85 / Threshold (LoCT): 40 (already far exceeded)
+        - Attack: Rending Claw (+18 / 3d6+11 Bleeding), Frenzied Bite (+15 / 2d8+11)
+        - Abilities: Bestial Rampage (Passive / +2 Loss of Control per turn), Scent Tracking (Passive), Loss-of-Control Rampage (50% chance of indiscriminate attack, roll 1d100 ≤ 50 each turn)
+        - Weakness: Silver damage ×2; attacks −15 in bright light
+        - Tactics: Indiscriminately attacks the nearest target. Distinguishes no friend from foe. Will not retreat.
+
+        **Scene 2 — The Mastermind Revealed**
+
+    - data: |
+        - Attributes: Spirit (SPI) 40 / Mind (MND) 50 / Body (BOD) 35 / Agility (AGI) 50 / Charisma (CHA) 45
+        - HP: 85 / Spirit Pool: 125
+        - Attack: Military Revolver (+20 / 2d6 / 20m), Hunting Knife (+18 / 1d8+10)
+        - Abilities: Flame Throw (1 AP / 5 Spirit / 3d6 Fire damage), Sow Discord (makes companion and player suspect each other — Mind opposed)
+
+  endings:
+    choices: |
+      | Choice | Result | Reward |
+      |------|------|------|
+      | **Report to the Nighthawks** | Margaret is arrested. The Blood Money Gang falls into internal chaos — but the player gains the Nighthawks' high trust | Nighthawks Reputation +20 / free access to Nighthawks headquarters / Acting Progress 80 |
+      | **Accept Margaret's terms** | Take the money and leave. Margaret owes you a "favor" — but she will not forget that you know her secret | £50 + Tier 3 Sealed Artifact / Blood Money Gang Reputation +10 / Acting Progress 60 |
+      | **Kill Margaret** | After combat victory, the Blood Money Gang is left leaderless. The Sunken Smoke District gang order collapses — random street conflict events appear in the following sessions | Margaret's loot / Acting Progress 70 / Blood Money Gang Reputation −30 |

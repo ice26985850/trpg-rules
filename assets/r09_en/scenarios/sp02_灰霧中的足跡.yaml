@@ -1,0 +1,31 @@
+source_md: sp02_灰霧中的足跡.md
+title: Footprints in the Grey Mist
+type: solo
+quality: ★★ Standard-grade
+players: 1 mage
+sessions: 2–3
+core_output: 1 Uncommon Element Shard + mercenary Companion
+main_threat: Wild creatures, anomalous magical phenomena, a mysterious stalker
+prerequisite: Complete at least Scenario One or equivalent free research; Academic or Practical Reputation ≥ 5; having 1 Apprentice (left to guard the tower) is recommended
+summary: Three months ago, a young mage named **Cole (科爾)** vanished while exploring the Grey Mist Marsh. His mentor — the Academy mage **Victor Paige (維克託·佩吉)** — sent out a plea for help to the Independent Mage community. Cole's last message came through a scrying pool, a single sentence.
+acts:
+- name: Act One — Departure Preparations
+  scenes:
+  - Scene 1-1 — Victor's Commission
+  - Scene 1-2 — A Companion Opportunity on the Journey
+- name: Act Two — Into the Grey Mist
+  scenes:
+  - Scene 2-1 — Clues in the Mist
+  - Scene 2-2 — The First Battle in the Marsh
+  - Scene 2-3 — The Ancient Laboratory
+- name: Act Three — The Secret of the Recording Crystal
+  scenes:
+  - Scene 3-1 — Return to the Tower
+  - Scene 3-2 — Studying the Memory Chip
+  - Scene 3-3 — Lena's Stay or Departure
+npcs:
+- name: Victor Paige (維克託·佩吉)
+  detail: '- Research style: Bibliographic - Attributes: Perception 4, Theory 6, Craft 3, Will 4, Erudition 7 - Specialty: Light element - Stance: A desperate mentor — he is willing to pay, but would rather you genuinely help **Rewards Victor offers**: - **Gold**: 200 Gold Pieces (GP) (100 GP prepaid) - **Knowledge**: A rare manuscript on the Grey Mist Marsh''s magical ecology (research material granting Erudition +1d3 Reputation) - **Favor**: One future free library borrowing right (Victor''s Academy Library Lv3) **If you already have a working relationship with Victor** (from the original Scenario One): he additionally shares a secret — "Cole was studying an ancient structure in the mist. He believes it was **the first necromancer''s laboratory**."'
+- name: Lena Ironwood (莉娜·鐵林)
+  detail: '- Identity: Mercenary, specializing in wilderness tracking and dangerous-beast hunting - Attributes: Perception 6, Theory 2, Craft 7, Will 5, Erudition 3 (attribute total 23, expert-grade Companion) - Personality: Silent, pragmatic, distrustful of mages ("I''ve seen too many mages blow someone else sky-high and then run") — but will cooperate when gold and justice are at stake - Why she is at the inn: She is also heading to the Grey Mist Marsh — a merchant caravan hired her to escort cargo past the marsh''s edge. But after hearing of the marsh''s anomaly, she is weighing whether to take the job. **Player Choices**: 1. **Hire Lena as a Companion**: Persuade her to drop the caravan contract and instead protect you deep into the marsh. DC 15 Persuasion (gold can lower DC: –1 per 50 GP, max –4). On success Lena joins (Loyalty 40 — a contractual relationship). Cost: 200 GP one-time + 30 GP/month. She may continue as your resident Companion in the future. 2. **Propose a division of labor**: You pay her 100 GP as a "marsh guide"; she leads you to the marsh''s edge but does not enter the depths. You gain marsh intelligence and DC –2 on wilderness exploration checks. 3. **Go alone**: Save money, but you lose your only combat Companion. The GM should lower difficulty in later encounters accordingly. ---'
+research_checks: []

@@ -1,0 +1,375 @@
+# Beastman Warring States TRPG — Item Compendium (Structured YAML Edition)
+weapons:
+  blades:
+  - name: Short Blade
+    damage: 1d4
+    type: Slashing / Piercing
+    attribute: Light
+    price: 10 ryō
+    weight: 1 kg
+    special: Throwable (10 squares); Stealth Advantage
+  - name: Wakizashi
+    damage: 1d6
+    type: Slashing
+    attribute: Light
+    price: 30 ryō
+    weight: 1.5 kg
+    special: Can be dual-wielded; no penalty as off-hand
+  - name: Katana
+    damage: 1d8
+    type: Slashing
+    attribute: Standard
+    price: 50 ryō
+    weight: 2 kg
+    special: Most versatile samurai sword
+  - name: Tachi
+    damage: 1d10
+    type: Slashing
+    attribute: Heavy, Two-Handed
+    price: 100 ryō
+    weight: 3 kg
+    special: Cavalry Advantage
+  - name: Twin Wakizashi
+    damage: 1d6+1d6
+    type: Slashing
+    attribute: Light Dual-Wield
+    price: 60 ryō
+    weight: 3 kg
+    special: Requires Two-Sword Style, Initiate tier or above
+  polearms:
+  - name: Long Spear
+    damage: 1d8
+    type: Piercing
+    attribute: Heavy, Two-Handed, Polearm (2 squares)
+    price: 40 ryō
+    weight: 3 kg
+    special: Can attack from 1 square away
+  - name: Naginata
+    damage: 1d10
+    type: Slashing
+    attribute: Heavy, Two-Handed, Polearm (2 squares)
+    price: 80 ryō
+    weight: 4 kg
+    special: +1d6 damage vs cavalry
+  - name: Cross-shaped Spear
+    damage: 1d8
+    type: Piercing / Slashing
+    attribute: Heavy, Two-Handed, Polearm (2 squares)
+    price: 60 ryō
+    weight: 3.5 kg
+    special: Can choose piercing or slashing mode
+  ranged_weapons:
+  - name: Short Bow
+    damage: 1d6
+    type: Piercing
+    attribute: Ranged, Two-Handed
+    price: 30 ryō
+    weight: 1.5 kg
+    range: 30 squares
+    special: Can fire after moving
+  - name: Long Bow
+    damage: 1d10
+    type: Piercing
+    attribute: Ranged, Two-Handed
+    price: 80 ryō
+    weight: 3 kg
+    range: 50 squares
+    special: Can only fire once per turn; unusable while mounted
+  - name: Shuriken
+    damage: 1d4
+    type: Piercing
+    attribute: Light, Throwable
+    price: 2 ryō each
+    weight: 0.1 kg
+    range: 15 squares
+    special: Can throw up to 3 at once (each rolls to hit)
+  - name: Tanegashima
+    damage: 2d6
+    type: Piercing
+    attribute: Ranged, Single-Shot
+    price: 300 ryō
+    weight: 6 kg
+    range: 20 squares
+    special: Requires 1 turn to reload; ignores DR 3; unusable in rain
+  special_weapons:
+  - name: Kanabō
+    damage: 1d12
+    type: Bludgeoning
+    attribute: Heavy, Two-Handed
+    price: 150 ryō
+    weight: 10 kg
+    special: Double damage to buildings and gates; Initiative −2; requires PHY 5+
+  - name: Kusarigama
+    damage: 1d6
+    type: Slashing / Bludgeoning
+    attribute: Light, Polearm (2 squares)
+    price: 35 ryō
+    weight: 2 kg
+    special: After hit, may attempt disarm (Physique Contest)
+  - name: Prayer Beads (Monk's)
+    damage: 1d4
+    type: Bludgeoning
+    attribute: Light, Sacred Implement
+    price: 25 ryō
+    weight: 0.5 kg
+    special: When used as a sacred implement, healing +1d4
+  - name: Bare Fist (Mountain Breaker Style gauntlet)
+    damage: 1d6
+    type: Bludgeoning
+    attribute: Light
+    price: 15 ryō
+    weight: 1 kg
+    special: Mountain Breaker Style only; damage scales with Physique (+1 per 2 PHY)
+  - name: Jitte (Constable's)
+    damage: 1d4
+    type: Bludgeoning
+    attribute: Light
+    price: 20 ryō
+    weight: 1 kg
+    special: Advantage on block; catches blades (disarm DC −4)
+ammo:
+- name: Arrows (Long Bow / Short Bow compatible)
+  quantity: 20
+  price: 2 ryō
+- name: Tanegashima Bullets
+  quantity: 10
+  price: 5 ryō
+- name: Shuriken Refill
+  quantity: 5
+  price: 8 ryō
+- name: Fire Arrow (for Long Bow, +1d6 fire damage)
+  quantity: 5
+  price: 10 ryō
+armor:
+- name: Bare Skin
+  type: Unarmored
+  dv: '+0'
+  dr: '0'
+  agility_cap: Unlimited
+  price: —
+  weight: —
+  special: Default state
+- name: Dōmaru
+  type: Light
+  dv: '+1'
+  dr: '1'
+  agility_cap: Unlimited
+  price: 60 ryō
+  weight: 5 kg
+  special: Can be hidden under clothing
+- name: Haramaki
+  type: Medium
+  dv: '+2'
+  dr: '2'
+  agility_cap: AGI 5
+  price: 120 ryō
+  weight: 10 kg
+  special: Everyday samurai wear
+- name: Ō-yoroi
+  type: Heavy
+  dv: '+3'
+  dr: '3'
+  agility_cap: AGI 3
+  price: 300 ryō
+  weight: 20 kg
+  special: Movement −2, Stealth Disadvantage
+- name: Kote (Arm Guards)
+  type: Accessory
+  dv: '+0'
+  dr: '+1 (arms only)'
+  agility_cap: Unlimited
+  price: 20 ryō
+  weight: 1 kg
+  special: Stacks with Dōmaru
+- name: Jinpachi (War Hat)
+  type: Accessory
+  dv: '+1 (headshot attacks only)'
+  dr: '0'
+  agility_cap: Unlimited
+  price: 15 ryō
+  weight: 0.5 kg
+  special: Critical extra damage against you −1d6
+consumables:
+  medicine:
+  - name: Medicine Pill
+    effect: Restores 1d8 + 2 Hit Points (HP)
+    price: 15 ryō
+  - name: High-Grade Medicine Pill
+    effect: Restores 2d8 + 4 HP
+    price: 50 ryō
+  - name: Premium Medicine Pill
+    effect: Restores 4d8 + 8 HP
+    price: 150 ryō
+  - name: Antidote Pill
+    effect: Cures Poisoned; downgrades Severe Poison to Poisoned
+    price: 30 ryō
+  - name: Vitality Pill
+    effect: Removes Fatigued state (counts as completing a Short Rest)
+    price: 40 ryō
+  - name: Yokai-Calming Pill
+    effect: Immediately reduces Yokai Value by 10
+    price: 60 ryō
+  - name: Purification Pill
+    effect: Removes Yokai Erosion state
+    price: 80 ryō
+  combat_consumables:
+  - name: Smoke Bomb
+    effect: Creates thick smoke in a 5-square radius, blocks sight (lasts 2 turns)
+    price: 10 ryō
+  - name: Incendiary Bomb
+    effect: Thrown explosive, 3d6 fire damage within 3 squares (Agility Saving Throw DC 15 for half)
+    price: 40 ryō
+  - name: Poison Smoke Bomb
+    effect: Creates poison fog in a 3-square radius, inflicts Poisoned inside (Physique Saving Throw DC 14)
+    price: 50 ryō
+  - name: Flash Bomb
+    effect: Blinds within 5-square radius for 1 turn (Agility Saving Throw DC 13)
+    price: 25 ryō
+  ritual_special_items:
+  - name: Talisman
+    effect: +1 to Spirit Saving Throw when resisting Yokai Erosion (single use)
+    price: 25 ryō
+  - name: Warding Talisman
+    effect: Deals 2d8 Spirit damage to Undead targets (ranged touch)
+    price: 60 ryō
+  - name: Blade Oil and Whetstone
+    effect: Maintains blade condition (used during Long Rest, Blade Bond +1; once per blade per Long Rest)
+    price: 5 ryō
+  - name: Soul-Steel Shard
+    effect: Material for forging named blades of Serviceable grade or above (cannot be purchased, only obtained through scenarios)
+    price: —
+  - name: Dragon-Vein Stone
+    effect: After charging at a Dragon-Vein node, restores 1 used Secret Technique use
+    price: 500 ryō
+travel_gear:
+- name: Travel Outfit
+  effect: Clothing and pack suitable for long journeys
+  price: 20 ryō
+- name: War Horse
+  effect: Movement 12 squares, can fight while mounted. Requires Riding skill Initiate tier or above
+  price: 500 ryō
+- name: Fine Steed
+  effect: Movement 14 squares, Advantage on mounted combat attacks (once per day)
+  price: 2000 ryō
+- name: Rope (10 m)
+  effect: +2 to Climb checks
+  price: 10 ryō
+- name: Grappling Hook
+  effect: Can be thrown to 10 squares high, Climb DC −4
+  price: 25 ryō
+- name: Torch (3)
+  effect: Illuminates 5-square radius, lasts 1 hour
+  price: 1 ryō
+- name: Oil Lamp
+  effect: Illuminates 8-square radius, adjustable brightness
+  price: 10 ryō
+- name: Sleeping Bag
+  effect: +5 HP recovery on Long Rest
+  price: 5 ryō
+- name: Waterproof Cloak
+  effect: No environmental penalties in harsh weather
+  price: 15 ryō
+- name: Writing Set (brush, ink, paper)
+  effect: Needed for letters and formal documents
+  price: 5 ryō
+- name: Mask
+  effect: Hides Beastman clan identity (requires Deception check to use)
+  price: 3 ryō
+named_blades:
+  serviceable:
+  - name: Kazakiri
+    blade_grade: Serviceable
+    type: Tachi
+    blade_personality: Swift Thunder
+    special: +1d4 damage when used while mounted
+  - name: Iwato
+    blade_grade: Serviceable
+    type: Katana
+    blade_personality: Guardian
+    special: +1 DR when in a defensive stance
+  - name: Snake Fang
+    blade_grade: Serviceable
+    type: Wakizashi
+    blade_personality: Enchanting
+    special: +2 to poison DC on hit
+  - name: Akatsuki
+    blade_grade: Serviceable
+    type: Long Bow
+    blade_personality: Loyalty
+    special: +1d6 damage during dawn
+  - name: Iron Mass
+    blade_grade: Serviceable
+    type: Kanabō
+    blade_personality: Berserk
+    special: On critical, adds 5-square knockback
+  superior:
+  - name: Tiger Claw
+    blade_grade: Superior
+    type: Katana
+    blade_personality: Conqueror
+    inscription: Army-Breaker
+    special: +1 attack per turn vs multiple enemies
+  - name: Moon Drop
+    blade_grade: Superior
+    type: Wakizashi
+    blade_personality: Mercy
+    inscription: Guardian
+    special: +2 DV under moonlight
+  - name: Gale
+    blade_grade: Superior
+    type: Long Spear
+    blade_personality: Swift Thunder
+    inscription: Trial
+    special: After first successful attack each turn, free move 3 squares
+  - name: Fueki
+    blade_grade: Superior
+    type: Tachi
+    blade_personality: Solitary
+    inscription: Resolution
+    special: +2 DR when fighting alone
+  great:
+  - name: Kotetsu
+    blade_grade: Great
+    type: Katana
+    blade_personality: Conqueror
+    special: +1d8 damage vs targets of higher level
+  - name: Izayoi
+    blade_grade: Great
+    type: Wakizashi (Dual-Wield)
+    blade_personality: Enchanting
+    special: Second strike in dual-wield has no penalty
+  - name: Gi
+    blade_grade: Great
+    type: Katana
+    blade_personality: Loyalty
+    special: Cannot be crit while protecting ward is present
+  - name: Kongō
+    blade_grade: Great
+    type: Kanabō
+    blade_personality: Berserk
+    special: Ignores target DR 5 or below
+  peerless:
+  - name: Haō
+    blade_grade: Peerless
+    type: Tachi
+    blade_personality: Conqueror
+    inherent_ultimate: Tiger Might Style "Lone Tiger" (weakened) (SWM +1)
+    special: First critical each battle ignores DR
+  - name: Mumyō
+    blade_grade: Peerless
+    type: Wakizashi
+    blade_personality: Solitary
+    inherent_ultimate: Moon Shadow Style "Hazy Moon" (weakened) (DV +1)
+    special: Using a technique while stealthed costs no Yokai Pool (once per day)
+  - name: Chikai
+    blade_grade: Peerless
+    type: Katana
+    blade_personality: Loyalty
+    inherent_ultimate: Loyalty Style "Undying Righteousness" (weakened)
+    special: When protecting an ally, halves the damage taken that instance
+  - name: Fueki Kongō
+    blade_grade: Peerless
+    type: Kanabō
+    blade_personality: Immovable
+    inherent_ultimate: Immovable Style "Iron-Forging Heart" (weakened) (HP +5)
+    special: +1 temporary DR each time hit (stacks up to +3)

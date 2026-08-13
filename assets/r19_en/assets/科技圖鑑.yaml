@@ -1,0 +1,45 @@
+# Starting Tech (T1 Tier)
+# Choose 1 of 3 per discipline: Physics / Society / Engineering
+
+techs:
+  physics:
+    - id: "P-T1-01"
+      name: "Basic Fusion Power"
+      desc: "Unlock Energy (EC) base output +2"
+      effect: "Energy (EC) initial output +2"
+    - id: "P-T1-02"
+      name: "Quantum Communication"
+      desc: "Unlock Intelligence Power (INT) +1"
+      effect: "Intelligence Power (INT) initial +1"
+    - id: "P-T1-03"
+      name: "Anti-Gravity Technology"
+      desc: "Unlock Fleet Speed +10%"
+      effect: "Fleet Movement Distance +20%"
+
+  society:
+    - id: "S-T1-01"
+      name: "Basic Diplomacy Studies"
+      desc: "Unlock Diplomacy Power (DIP) +1"
+      effect: "Diplomacy Power (DIP) initial +1"
+    - id: "S-T1-02"
+      name: "Social Contract Theory"
+      desc: "Unlock Stability +10%"
+      effect: "Unity (UNI) initial +1"
+    - id: "S-T1-03"
+      name: "Cross-Species Research"
+      desc: "Unlock NPC Companion Loyalty +1"
+      effect: "Companion Initial Loyalty +1"
+
+  engineering:
+    - id: "E-T1-01"
+      name: "Basic Spaceflight"
+      desc: "Unlock Corvette Construction"
+      effect: "Fleet +1 Corvette"
+    - id: "E-T1-02"
+      name: "Standard Shipbuilding Framework"
+      desc: "Unlock Destroyer Construction"
+      effect: "Fleet +1 Destroyer"
+    - id: "E-T1-03"
+      name: "Automated Colonization Technology"
+      desc: "Unlock Colonization Cost -20%"
+      effect: "Economy Power (ECO) Colonization Check +1 die"

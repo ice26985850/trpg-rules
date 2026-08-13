@@ -1,0 +1,307 @@
+monsters:
+- name: Street Thug
+  cr: 2
+  attributes:
+    insight: '2'
+    memory: '1'
+    execution: '3'
+    social: '2'
+    will: '2'
+    hp: '9'
+    tol: '1'
+    av: '0'
+    initiative: INS 2 + 1d10
+    attack: Fist/Feet (Blunt) 1d4 / Knife (Sharp) 1d6
+    ai: "Ordinary Tier: attacks the nearest target; flees when HP < 4 (Will DC 10); when an ally falls, Will DC 12"
+  type: Human
+  difficulty: Minion
+  intelligence: Ordinary
+  primary_threat: Numbers Advantage
+  tactics: Easy to handle alone, but usually appears in groups of 2-4. Uses numbers advantage to surround the players.
+- name: Guard
+  cr: 3
+  attributes:
+    insight: '3'
+    memory: '2'
+    execution: '4'
+    social: '3'
+    will: '3'
+    hp: '10'
+    tol: '3'
+    av: '2'
+    initiative: INS 3 + 1d10
+    attack: Long Club (Blunt) 1d6+1 / Short Sword (Sharp) 1d6
+  type: Human
+  difficulty: Minion
+  intelligence: Trained
+  primary_threat: Call for Reinforcements
+  special_abilities:
+  - "Call for Reinforcements: Spend 1 TU to blow a whistle; 1d2 Guards arrive within 1d3 turns"
+  - "Flanking Tactics: +2 Attack when flanking the same target with an ally"
+  weakness: Fixed shift-change times (can be learned through observation); while patrolling alone, can be picked off one by one
+- name: Twisted Beast
+  cr: 4
+  attributes:
+    insight: '4'
+    memory: '1'
+    execution: '5'
+    social: '1'
+    will: '3'
+    hp: '16'
+    tol: '5'
+    av: 3 (Thick Hide)
+    initiative: INS 4 + 1d10
+    attack: Claws (Sharp) 1d10 / Bite (Piercing) 1d8
+  type: Monster
+  difficulty: Elite
+  intelligence: Instinctive
+  primary_threat: Frenzied Attack
+  special_abilities:
+  - "Savage Frenzy: After taking a Moderate Wound, gains Attack Advantage (but Defense Disadvantage)"
+  - "Thick Hide: +3 Damage Tolerance"
+  - "Terrifying Howl: Spend 3 TU; enemy Will DC 13, on failure loses reaction rights"
+  weakness: Fire — upon taking Fire Damage, falls into Panic for 1 turn (unable to attack); sensitive to sound, can be lured by noise
+  regions: Wailing Forest, Deep Old City Ruins
+- name: Renegade Knight
+  cr: 5
+  attributes:
+    insight: '4'
+    memory: '3'
+    execution: '6'
+    social: '3'
+    will: '5'
+    hp: '14'
+    tol: 6 (includes Chainmail +4)
+    av: 4 (Chainmail)
+    initiative: INS 4 + 1d10
+    attack: Long Sword (Sharp) 1d8+2 / Shield Bash (Blunt) 1d4+1
+  type: Human
+  difficulty: Elite
+  intelligence: Trained
+  primary_threat: High Armor + Tactics
+  special_abilities:
+  - "Knight's Pride: Once per battle, downgrade a Fatal Wound to a Severe Wound"
+  - "Tactical Cover: Spend 1 TU to grant an ally +2 Defense"
+  weakness:
+  - "Old Wound on Left Shoulder: Attacks aimed at the left shoulder ignore Armor Value"
+  - "Sense of Honor: In a fair duel, will not call allies or attack from behind"
+  tactics: Trained-tier AI — forms a pincer with allies (+2 Attack); retreats in order when HP < 6; prioritizes protecting allies over pursuit
+- name: Guild Assassin
+  cr: 6
+  attributes:
+    insight: '5'
+    memory: '3'
+    execution: '7'
+    social: '4'
+    will: '4'
+    hp: '9'
+    tol: '3'
+    av: 1 (Light Leather Armor)
+    initiative: INS 5 + 1d10 + 2 (Assassin Training)
+    attack: Poisoned Dagger (Piercing + Poison) 1d8+3 / Hand Crossbow (Piercing) 1d6
+  type: Human
+  difficulty: Elite
+  intelligence: Cunning
+  primary_threat: Sneak Attack + Poisoned Blade
+  special_abilities:
+  - "Assassination Strike: On the first turn of combat, if undetected, attacks automatically land precisely (damage +1 tier)"
+  - "Poison Expert: Once a hit succeeds, the poison takes effect (wound escalates one level every 10 minutes)"
+  - "Smoke Bomb: Spend 1 TU to create a 2-zone smoke cloud — all attacks within range suffer Disadvantage"
+  weakness: Low HP (9) — once locked on, easily knocked down; loses sneak-attack advantage in well-lit areas
+- name: Undead Sentinel
+  cr: 4
+  attributes:
+    insight: '3'
+    memory: '1'
+    execution: '5'
+    social: '1'
+    will: '4'
+    hp: '13'
+    tol: 4 (includes Bone Armor +2)
+    av: 2 (Bone Armor)
+    initiative: INS 3 + 1d10
+    attack: Bone Greatsword (Slashing) 1d10
+  type: Undead
+  difficulty: Minion
+  intelligence: Instinctive
+  primary_threat: Tireless
+  special_abilities:
+  - "Tireless: Immune to fear, needs no rest, steadily advances toward the objective"
+  - "Light Aversion: -2 Attack in well-lit areas"
+  weakness: Holy Water and Fire deal extra damage; can be countered by Exorcism; armor comes from bone, so Armor-Piercing attacks are effective
+  ai: "Instinctive Tier — advances straight at the nearest target; ignores fear; after being knocked back, regroups and charges again"
+- name: Temporal Echo
+  cr: 7
+  attributes:
+    insight: '6'
+    memory: '3'
+    execution: '5'
+    social: '1'
+    will: '2'
+    hp: '12'
+    tol: '7'
+    av: 0 (Ethereal)
+    initiative: INS 6 + 1d10 + 3 (Time Acceleration)
+    attack: Time Erosion (Mental Damage) 1d8
+  type: Anomaly
+  difficulty: Elite
+  intelligence: Cunning
+  primary_threat: Ethereal + Time Acceleration
+  special_abilities:
+  - "Ethereal: Physical attack damage halved"
+  - "Time Acceleration: Can act twice per turn (spending from separate TU pools, 12 TU total)"
+  - "Time Drain: On a hit, the target loses 1 TU"
+  weakness: Time Crystal — contact with a Time Crystal temporarily stabilizes it (loses Time Acceleration for 2 turns); cannot pass through solid Time Anchors (e.g. the area of the Eternal Well)
+  regions: Time Anomaly Zone, Deep Old City Ruins, S5 Collapse Area
+- name: Lady Viper
+  cr: 9
+  attributes:
+    insight: '7'
+    memory: '5'
+    execution: '6'
+    social: '8'
+    will: '6'
+    hp: 20 (includes Boss bonus +5)
+    tol: 5 (includes Silken Armor +2)
+    av: '2'
+    initiative: INS 7 + 1d10
+    attack: Poison Needle (Piercing + Poison) 1d6 / Poisoned Dagger (Sharp + Poison) 1d8
+  type: Human
+  difficulty: Boss
+  intelligence: Cunning
+  primary_threat: Three-Phase + Poison
+  three_phase_combat: |
+    Phase One (HP 20→14): "Charming Gaze"
+
+      - Each turn, a minor action: Social 8 vs player Will contest; on failure the player loses 2 TU
+
+      - Primarily ranged Poison Needle attacks, keeping distance
+
+
+    Phase Two (HP 13→7): "Serpent Summoning"
+
+      - Spend 3 TU to summon 1d3 venomous snakes (Minion tier, HP 4, attack 1d4+Poison)
+
+      - Hides within the serpent swarm (Dodge Advantage)
+
+      - Switches to melee Poisoned Dagger
+
+
+    Phase Three (HP 6→0): "Poison Mist Outbreak"
+
+      - One-time ability: all zones become Poison Mist (player takes 1 Light Wound of Poison per turn)
+
+      - Immune to poison itself
+  weakness:
+  - "Fire Fear (Psychological Trauma): Fire Damage +1 tier, Disadvantage on Will checks"
+  - "Narcissism: Social distractions (SOC 8 contest; on success loses 1 TU)"
+  ai: "Cunning Tier — keeps distance, uses Social abilities to divide the party, prioritizes eliminating wounded targets, attempts negotiation when HP < 3"
+- name: Time Devourer Prototype
+  cr: 12
+  attributes:
+    insight: '8'
+    memory: '10'
+    execution: '5'
+    social: '1'
+    will: '4'
+    hp: '18'
+    tol: '2'
+    av: 0 (Ethereal)
+    initiative: INS 8 + 1d10 + 5 (Time Sense)
+    attack: Time Erosion (Mental) 2d6 / Memory Drain (Special)
+  type: Anomaly
+  difficulty: Boss
+  intelligence: Cunning
+  primary_threat: Time Devour
+  special_abilities:
+  - "Time Devour: The struck target loses 1d4 Memory Fragments (effective that round)"
+  - "Time Corridor: Creates a time-loop zone — characters inside repeat the same action each turn (resist with Will DC 18)"
+  - "Precognitive Dodge: Automatically dodges the first attack each turn (knows when the attack will come)"
+  - "Memory Echo: Uses memories of the player's death scenes from past loops to launch Mental attacks (Rift Mark +1d3)"
+  weakness:
+  - "Time Anchor: Loses Precognitive Dodge near the Eternal Well or a Save Point"
+  - "Memory Overload: Taking damage from 3+ different sources in the same round causes time-sense confusion"
+  - "Not Yet Fully Formed: Essentially a collapsed Returner, still retaining fragmented humanity — can be moved by emotion"
+  background: The Time Devourer Prototype is a Returner whose Rift Mark exceeded 40 and became completely Uncontrolled. Their mind has collapsed, and their body is warped by temporal energy. They cannot distinguish past, present, and future — to them, everything happens at once.
+- name: Immortal Inquisitor
+  cr: 14
+  attributes:
+    insight: '9'
+    memory: '8'
+    execution: '8'
+    social: '4'
+    will: '10'
+    hp: 26 (includes Legendary bonus +5)
+    tol: 9 (includes Ritual Plate +6, at soft cap)
+    av: '6'
+    initiative: INS 9 + 1d10 + 2
+    attack: Greatsword (Sharp) 2d6+3 / plus Fire 1d4
+  type: Human
+  difficulty: Legendary
+  intelligence: Genius
+  primary_threat: Four-Phase + Cross-Loop Memory
+  legendary_traits:
+  - 2 reactions per turn (not 1)
+  - Immune to fear effects
+  - Revives once 1d6 turns after death (HP restored to 10)
+  - Not affected by Memory-Fragment weakness discovery (must be observed independently)
+  four_phase_combat: |
+    Phase One (HP 26→20): "Judgment Declaration"
+
+      - Declares a "crime" upon the player → player Will DC 16; on failure, all attacks against the Inquisitor suffer Disadvantage
+
+
+    Phase Two (HP 19→13): "Sin Settlement"
+
+      - Attacks twice per turn (6 TU)
+
+      - Each hit restores 1 HP
+
+
+    Phase Three (HP 12→6): "Eye of Truth"
+
+      - Each turn predicts one player action; if executed, auto-counters
+
+      - May use "Shield of Faith" to negate one attack
+
+
+    Phase Four (HP 5→0): "Final Judgment"
+
+      - All attacks become area attacks (within 2 zones)
+
+      - Self loses 2 HP per turn (self-combustion)
+
+
+    Cross-Loop Memory (exclusive to Genius-tier AI):
+
+      - "Remembers" player tactics from earlier loop combats
+
+      - Repeating the same tactic → auto-countered
+
+      - Player reveals too much future knowledge → Inquisitor begins to ask: "What exactly are you?"
+
+      - After multiple encounters, may become a key narrative figure
+
+
+    Weakness (must be discovered independently; Memory Fragments ineffective):
+
+      - Holy Emblem: The emblem on the chest is the source of power → upon destruction, loses Legendary traits
+
+      - Doctrinal Contradiction: Citing a doctrinal contradiction (Social DC 18) → loses 1 turn
+
+      - Embers of Flame: The phase-four self-combustion can be interrupted with water/ice
+
+
+    ## Generic Monster Templates
+- name: Minion Template (CR 1-3)
+  cr: null
+  attributes: {}
+- name: Elite Template (CR 4-7)
+  cr: null
+  attributes: {}
+- name: Boss Template (CR 8-12)
+  cr: null
+  attributes: {}
+- name: Legendary Template (CR 13-16)
+  cr: null
+  attributes: {}

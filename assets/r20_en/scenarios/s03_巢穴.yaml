@@ -1,0 +1,96 @@
+# Starship Boarding Assault TRPG — Scenario S3: The Brood Nest
+scenario_id: S3_The_Brood_Nest
+title: "The Brood Nest — Broodmother-class Bio-Ship (S3)"
+subtitle: "A Kithrak Brood Nest bio-ship is hatching a new generation of combat creatures. You must plant explosives and evacuate before hatching completes."
+difficulty: Hard
+recommended_level: "3–6"
+player_count: { min: 1, max: 6 }
+estimated_duration: "4–6 hours"
+
+mission_type: Sabotage Mission
+enemy_vessel:
+  name: "Broodmother-class Bio-Ship (S3)"
+  type: Insectoid Bio-Ship
+  faction: Kithrak Brood Nest
+  size: Medium (~400 m length — organic)
+  decks: 3 (organic layers — Muscle Layer, Circulation Layer, Core Layer)
+  gravity: Standard Gravity (0.8G — vessel has its own weak biological gravity field)
+  self_destruct: false  # Bio-ship will not self-destruct — but will trigger an immune response
+
+story_summary: >
+  A Concord reconnaissance satellite discovered a Kithrak Brood Nest bio-ship in the border star system,
+  'hatching' within the asteroid belt — the hull is attached to an asteroid, absorbing minerals to produce a
+  new generation of combat creatures. Intelligence analysis shows the hatching cycle will complete within 12
+  hours, at which point thousands of brood warriors will be released into the star sector. The Mothership
+  Arbitrator dispatches a boarding assault team — the objective is to plant explosives at the bio-ship's central
+  heart (the Broodmother Chamber) before hatching completes, utterly destroying the hatching ground.
+
+turning_points:
+  - id: TP1
+    name: "Limits of the Breach Method"
+    description: "The bio-ship's hull is alive — cutting it with a Plasma Cutter (PC) causes the hull to spasm in pain (gravity fluctuation), but this is the only way. Hacking does not apply (no electronic systems)."
+  - id: TP2
+    name: "Hatching Progress Bar"
+    description: "The Game Master (GM) counts down hatching progress starting from 8, −1 per round. When it hits zero, all remaining incubation pods burst, releasing 2d6 brood larvae."
+  - id: TP3
+    name: "Immune Response"
+    description: "When the players go deep into the Muscle Layer, the bio-ship begins an immune response — releasing antibody creatures (small brood) and spraying digestive enzymes (biochemical damage)."
+
+key_encounters:
+  - id: E1
+    location: Muscle Layer Entrance (Sphincter Passage)
+    enemies:
+      - type: Brood Larva
+        count: 4
+        cr: 1
+    total_el: 4
+    notes: "Swarm attack — each additional larva present gives the whole swarm +1 attack."
+
+  - id: E2
+    location: Circulation Layer (Lymph Channel)
+    enemies:
+      - type: Brood Warrior
+        count: 2
+        cr: 2
+    total_el: 4
+    environment: "Submerged in lymph fluid — movement speed halved. The fluid is weakly acidic — 1 acid damage per round (ignores armor)."
+
+  - id: E3
+    location: Core Layer — Broodmother Chamber
+    enemies:
+      - type: Brood Guardian
+        count: 2
+        cr: 4
+      - type: Brood Brainbug (Boss)
+        count: 1
+        cr: 6
+    total_el: 14
+    summon_frequency: "1d4 every 2 rounds (Brainbug summon rate)"
+    notes: "The Broodmother Chamber is the final battlefield. The Brainbug's mind control (Will DC 18) can force one player to attack an ally for 1 round."
+
+hatching_progress:
+  initial: 8
+  decrement_per_round: 1
+  on_zero: "All remaining incubation pods burst — 1d6 brood larvae appear each round until the players evacuate or die."
+  engineer_delay: "An Engineer may use a system breach to install suppressors on incubation pods — each success adds +2 progress (once per pod)."
+
+rewards:
+  xp_primary: 12         # Primary objective
+  xp_secondary: 6        # Secondary objectives total: 2 × +3
+  xp_full_survival: 3    # Full squad survival
+  xp_gm_bonus: 6         # GM generic pool
+  reputation: 3
+  special_loot:
+    - name: "Brood Nest Pheromone Extract"
+      description: "A pheromone compound extracted from the Brainbug's corpse."
+      effect: "While worn — brood larvae have Disadvantage on attacks against that character. Reputation +1."
+
+special_rules:
+  - rule: "Bio-Ship Environment"
+    description: "No doors — only sphincter passages (passing requires Mobility (MOB) DC 10). The floor is warm and damp. The hull has a heartbeat (low-frequency vibration). The air is full of spores (non-brood characters must pass a Resilience (RES) DC 10 each hour or become nauseated)."
+  - rule: "Flame Advantage"
+    description: "Flame attacks deal double damage to bio-ship structures (brood weakness). The flamethrower is extremely effective in this mission."
+  - rule: "Writhing Corridors"
+    description: "Every 1d6 rounds, the current corridor writhes and contracts — all characters must pass Mobility (MOB) DC 12 or be crushed (1d6 damage) and have movement restricted for 1 round."
+
+map_file: "../maps/孵化者級生物艦_S3.yaml"

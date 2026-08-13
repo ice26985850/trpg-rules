@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="550" viewBox="0 0 808 550" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="808" height="550" fill="#FBFCFE"/>
+<rect x="18" y="186" width="240" height="102" rx="14" fill="#ECEFF1" fill-opacity="0.55" stroke="#ECEFF1" stroke-opacity="0.9"/>
+<text x="28" y="204" font-size="13" font-weight="bold" fill="#37474F">Perimeter</text>
+<rect x="284" y="186" width="240" height="346" rx="14" fill="#FFEBEE" fill-opacity="0.55" stroke="#FFEBEE" stroke-opacity="0.9"/>
+<text x="294" y="204" font-size="13" font-weight="bold" fill="#37474F">Main Building</text>
+<rect x="550" y="308" width="240" height="102" rx="14" fill="#FFF3E0" fill-opacity="0.55" stroke="#FFF3E0" stroke-opacity="0.9"/>
+<text x="560" y="326" font-size="13" font-weight="bold" fill="#37474F">Annex</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">Brotherhood Headquarters</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">Region: Industrial Zone Danger: ★★★★★ Suitable Level (Lv.): 9</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="237" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="227" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="240" font-size="12" fill="#455A64" text-anchor="middle">Hidden Door</text>
+<line x1="404" y1="237" x2="670" y2="359" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="288" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="301" font-size="12" fill="#455A64" text-anchor="middle">Passage</text>
+<line x1="404" y1="237" x2="404" y2="359" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="387" y="288" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="301" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<line x1="404" y1="359" x2="404" y2="481" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="387" y="410" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="423" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<rect x="40" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Backup Passage Entrance</text>
+<title>Backup Passage Entrance: provided by Old Ke's informant; hidden door inside abandoned factory; traitor's rendezvous point</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Barracks Level</text>
+<title>Barracks Level: 6 Elite Guards + 2 Officers (with traitor's help → 3); Stealth TN11 to bypass; dormitory/training ground/cafeteria</title>
+<rect x="572" y="330" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="364" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Armory</text>
+<title>Armory: Heavy Assault Rifle (Gold), Full-body Heavy Armor (Gold); Elite Guard ×1 may appear</title>
+<rect x="306" y="330" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="364" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Command Center</text>
+<title>Command Center: Cossack (staged battle); traitor throws stun grenade on round 3; bulletproof glass cover</title>
+<rect x="306" y="452" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="486" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Roof Extraction Platform</text>
+<title>Roof Extraction Platform: QZAC helicopter landing point; wait 3 rounds, defend against Elite Guards ×2</title>
+</svg>

@@ -1,0 +1,72 @@
+scenario: Scenario 10
+section: "Scenario 10 Otherworld Crusade · World-Eclipse Sovereign (CR75)"
+map_type: battle
+grid_scale: "1 tile = 2 m"
+title: Scenario 10_Battle_World-Eclipse Sovereign
+# Front/back rows are 2 tiles apart (4m); enemy on top, party on bottom
+# Final battle mechanic: Phase 1 summons Void Apostle reinforcements, Phase 2 full Rule Nullification, Phase 3 rift resonance self-heal
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: enemy, role: front, color: "#FF8A8A"}
+    - {row: 1, side: enemy, role: back, color: "#FFC8C8"}
+    - {row: 6, side: party, role: front, color: "#8AAEFF"}
+    - {row: 8, side: party, role: back, color: "#C8D8FF"}
+
+nodes:
+  - id: e_boss
+    label: World-Eclipse Sovereign
+    x: 5
+    y: 2
+    type: boss
+    explored: true
+  - id: e_min1
+    label: World-Eclipse Guard Alpha
+    x: 3
+    y: 3
+    type: enemy melee
+    explored: true
+  - id: e_min2
+    label: World-Eclipse Guard Beta
+    x: 7
+    y: 3
+    type: enemy melee
+    explored: true
+  - id: e_min3
+    label: Eclipse Mage
+    x: 5
+    y: 1
+    type: enemy ranged
+    explored: true
+  - id: p_front_war
+    label: Party Front-row Warrior
+    x: 4
+    y: 6
+    type: party front
+    explored: true
+  - id: p_front_monk
+    label: Party Front-row Monk
+    x: 6
+    y: 6
+    type: party front
+    explored: true
+  - id: p_back_mage
+    label: Party Back-row Mage
+    x: 4
+    y: 8
+    type: party back
+    explored: true
+  - id: p_back_cleric
+    label: Party Back-row Cleric
+    x: 6
+    y: 8
+    type: party back
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: e_boss
+    type: melee
+    style: dashed

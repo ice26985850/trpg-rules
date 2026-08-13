@@ -1,0 +1,125 @@
+name: S1 Tong Lau (Six-Story Old Tong Lau Stairwell)
+corresponding_scenario: S1 The Red Raincoat in the Stairwell
+scene_description: >-
+  Core scene of S1 case file "The Red Raincoat in the Stairwell" — a six-story elevatorless old Tong Lau in Sham Shui Po.
+  A Bound Spirit (a Filipino domestic helper who fell to her death three years ago) repeats the action "go downstairs to mail a letter to Mama" every 3 a.m.;
+  players must investigate the letter hidden under the "Mailbox Bank", use Intuition (INS) to communicate and learn her dying wish, and prepare a Deliverance Rite (incense & candle + hell bank notes + altar) to send her off.
+  The middle of the stairwell has a "Ghost Wall" loop trap; escaping when trapped requires a Composure (CMP) check.
+  Base Yin Value (YIN) 3–8; can reach 11+ if a murder occurred.
+
+nodes:
+  - id: G
+    label: Ground Floor (Metal Gate)
+    x: 200
+    y: 470
+    type: exit
+    explored: false
+  - id: MB
+    label: Mailbox Bank
+    x: 70
+    y: 470
+    type: room
+    explored: false
+  - id: L1
+    label: 1F Stairwell
+    x: 200
+    y: 410
+    type: stair
+    explored: false
+  - id: L2
+    label: 2F Stairwell
+    x: 200
+    y: 350
+    type: stair
+    explored: false
+  - id: L3
+    label: 3F Stairwell
+    x: 200
+    y: 290
+    type: stair
+    explored: false
+  - id: L4
+    label: 4F Stairwell
+    x: 200
+    y: 230
+    type: stair
+    explored: false
+  - id: L5
+    label: 5F Stairwell
+    x: 200
+    y: 170
+    type: stair
+    explored: false
+  - id: L6
+    label: 6F Stairwell
+    x: 200
+    y: 110
+    type: stair
+    explored: false
+  - id: R
+    label: Rooftop
+    x: 200
+    y: 50
+    type: room
+    explored: false
+  - id: A
+    label: Light Well (Daylight Shaft)
+    x: 440
+    y: 260
+    type: room
+    explored: false
+  - id: W
+    label: Ghost Wall Trap
+    x: 330
+    y: 290
+    type: hazard
+    explored: false
+
+edges:
+  - from: G
+    to: L1
+    type: stair
+  - from: L1
+    to: L2
+    type: stair
+  - from: L2
+    to: L3
+    type: stair
+  - from: L3
+    to: L4
+    type: stair
+  - from: L4
+    to: L5
+    type: stair
+  - from: L5
+    to: L6
+    type: stair
+  - from: L6
+    to: R
+    type: stair
+  - from: G
+    to: MB
+    type: corridor
+  - from: A
+    to: L1
+    type: corridor
+  - from: A
+    to: L3
+    type: corridor
+  - from: A
+    to: L5
+    type: corridor
+  - from: W
+    to: L3
+    type: hazard
+  - from: W
+    to: L4
+    type: hazard
+
+regions:
+  - name: Ghost Wall Loop Zone
+    color: "#E8D5C4"
+    nodes: [L2, L3, L4, L5]
+  - name: Light Well Daylight Zone
+    color: "#D5E8E0"
+    nodes: [A]

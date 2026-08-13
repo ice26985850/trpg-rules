@@ -1,0 +1,44 @@
+id: s01
+title: Dessert Syndicate Crisis
+mode: single          # Single-player: 1 GM + 1 Supervisor
+source: Z Corporation TRPG Chapter 2 main Crisis Contract
+duration: 4-8h
+difficulty: 3
+required:
+  - Z公司_玩家規則書.md
+  - Z公司_GM規則書.md
+prep:
+  gm: Read GM Rulebook Chapter 2 thoroughly; prepare Ice Cream Witch, Mr. Tian data cards
+  player: At least 3 Sorcerer employees; Satisfaction≥60; Capital≥100
+initial_state:
+  positive: 0/10      # Weaken Mr. Tian's influence
+  negative: 2/10      # Tensions escalating
+phases:
+  - name: Crisis Report
+    description: Fangfang reports the crisis, Mr. Tian contacts proposing cooperation
+    choice: [Accept cooperation, Refuse cooperation]
+    check: none
+  - name: Strength Assessment
+    branch_by: Squad Strength vs. Threat
+    branches:
+      strong:          # Strength > Threat
+        options:
+          "Collaborate with Intelligence Dept to back Mr. Tian": {result: Ice Cream Witch cannot be recruited}
+          "Take down Mr. Tian": {result: Ice Cream Witch can be recruited}
+        scenes:
+          - "Infiltrate the Warehouse": {check: d100 Intelligence}
+          - "Sabotage the Production Line": {check: d100 Stamina, success: Positive+2}
+          - "BOSS Battle: Ice Cream Witch": {check: d100 Cursed Energy/Stamina, win: Positive+3}
+      weak:            # Strength < Threat
+        options:
+          "Join Advanced Training Dept to eliminate": {result: Threat eliminated, recruit chance lost}
+          "Maintain status quo (reconcile)": {result: Four parallel negotiations}
+endings:
+  win: Positive reaches 10/10 → advance to Chapter 3
+  escalate: Negative reaches 10/10 → crisis intensifies
+  tiebreak: Chapter 4 deployment ends, compare Positive/Negative magnitudes
+recruit:
+  target: Ice Cream Witch
+  condition: Take down Mr. Tian and crisis resolved successfully
+  bonus: {grid occupation -1, attributes treated as +1}
+note: Failure penalty baseline Silver-grade contract Satisfaction -20; abandonment counts as double

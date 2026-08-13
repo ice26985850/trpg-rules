@@ -1,0 +1,44 @@
+# SCP: Containment Protocol
+
+**Reference Work Notice**: This rulebook is a fan-made derivative TRPG based on the SCP Foundation collaborative fiction worldview, drawing upon its core "anomalous containment" setting (the Foundation, SCP Object Classes, O5 Council, Mobile Task Force, D-Class Personnel, and so on). It is not an officially authorized adaptation.
+
+**One-Sentence Pitch**: At the boundary between madness and the everyday, to protect humanity you must first learn to stand against the things that should not exist—and against yourself.
+
+## Worldview
+
+Our world is almost identical to reality, except for one invisible layer of shadow. Beneath the surface, in the deep sea, and beyond the public eye, countless "Anomalies (SCP)" that defy the laws of physics lie in wait: talking statues, reality-warping objects, and memes that parasitize memory. The secret organization known as the "Foundation" has only one motto—"Secure. Contain. Protect." But the Foundation is made of people who make mistakes, who corrupt, and who fracture. And you stand at the very center of that paradox.
+
+## Who Do You Play? What Do You Play?
+
+You are a member of the Foundation: a Mobile Task Force (MTF) operative on the front lines, a Field Agent infiltrating to investigate, a Technical Specialist disassembling anomalies, or even a D-Class Personnel treated as expendable. The core loop is: receive a containment mission → investigate the anomaly's nature → take control through tactical combat or stealth → make a moral choice (sacrifice a teammate? cover up the truth?) → bear the mental cost. This is a survival-horror experience about "how far you are willing to go to protect."
+
+## System Highlights
+
+- **Sanity (SAN) & Stress (SP) Dual-Track**: Beholding the unnameable erodes your Sanity, while sustained high pressure accrues Stress. When Stress crushes your Sanity, you break down—from catatonia and screaming to personality replacement, even Psychogenic Death. The mind is not a health bar; it is something that can shatter.
+- **The Cost of Security Clearance Level (CL)**: The higher you climb, the more classified material you read—but each promotion requires passing a SAN Check, because you have read what you should not have. Power comes with a madness tax.
+- **d100 Roll-Under & Six Degrees of Success**: Roll under the Target Number on a percentile die to succeed, with outcomes graded by the roll into "Legendary / Exceptional / Solid / Ordinary" tiers—high skill is not only for hitting, but determines damage and intel quality. Combat emphasizes Cover, Suppressive Fire, Squad Command, and Morale Spread, like a precise containment raid.
+
+## Who Is It For?
+
+Players who enjoy making hard choices under pressure, tactical shooting and investigative puzzle-solving, and are fascinated by "Cthulhu-esque" unknown terror will be hooked instantly. It requires a bit of TRPG basics (character creation is fairly complex), but once the mechanics are mastered, the tension of "every action may have a cost" becomes addictive.
+
+## Game Style Tags
+
+- Combat Weight: Significant
+- Strategic Depth: Highly Strategic
+- Story-Driven: Story-Supporting
+- Resource Management: Moderate Management
+- Character Customization: Highly Customizable
+- Character Creation Complexity: Complex
+- Rules Density: Mid-Weight Rules
+- GM Requirement: Optional GM (Solo possible; multiplayer requires a GM)
+
+## Estimated Play Time
+
+- Single Scenario (one mission / single game session): approx. 3–5 hours
+- Full Campaign (A/B/C/D series + solo prequel "Lone Wolf Protocol" interlinked): approx. 40–80 hours; a single series such as "Daybreak Protocol" alone is about 40–60 hours
+
+## Basic Information
+
+- Player Count: 1 (Solo Mode) to a 4–5 person squad
+- Core Dice: d100 (percentile die)

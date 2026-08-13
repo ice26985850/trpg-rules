@@ -1,0 +1,51 @@
+name: "S2: Anomaly Signal"
+description: >
+  Level 3 electrical station detected anomalous energy fluctuations. This is not random noise — something seems to be transmitting.
+  This is your team's first time facing a malfunction of the Backrooms itself. And the place where you lose your first person.
+difficulty: Hard
+real_dc: 85
+level_range: "3"
+mission_type: Reconnaissance Mission
+campaign: "Campaign One: The Rookie Director (Climax)"
+min_agents: 2
+recommended_specialty:
+  - Engineering
+  - Reconnaissance
+encounter_rate: 25
+time_limit: null
+intel_levels:
+  basic: "DC 64–106 (bias ±25%)"
+  detailed: "DC 72–98 (bias ±15%)"
+  precise: "DC 81–89 (bias ±5%)"
+rewards:
+  success:
+    intel_gain: 3
+    special: "Obtain rift sample — can be handed to R&D Lab for analysis"
+  great_success:
+    intel_gain: 5
+    special: "Complete rift energy data — unlocks key Campaign Two clue"
+  marginal_success:
+    intel_gain: 2
+    special: "One Explorer lightly wounded"
+  failure:
+    intel_gain: 1
+    special: "Lose key data, must dispatch personnel again"
+  disaster:
+    intel_gain: 0
+    special: "Triggers first Explorer death. Triggers Campaign One emotional climax"
+first_death_trigger: true
+scene_flow:
+  - scene: "Office — Intelligence Assessment"
+    description: "Intelligence Officer Su Ming reports the discovery of the anomaly signal. Player decides Intel Tier and dispatch team."
+  - scene: "Level 3 Entrance — Descent"
+    description: "Behind the metal door is the smell of ozone and flickering amber lights. High-pressure environment threat."
+  - scene: "Sector C Depths — Signal Source"
+    description: "Wires on the wall tremble, like a pulse. In the abandoned control room — a 'rift' is discovered."
+    check: "d100 + team bonus ≥ actual DC 85"
+  - scene: "Catastrophe — Death Notification (if triggered)"
+    description: "After the last sentence in the comms, silence. Only one person walks out."
+    special: "GM should pause here. Give the player time to process."
+consequence_options:
+  - "Immediately dispatch a second team (new mission, DC 90)"
+  - "Seal Sector C (safe, but lose Intelligence)"
+  - "Report to M.E.G. (cost: may be seen as a management failure)"

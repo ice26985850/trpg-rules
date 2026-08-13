@@ -1,0 +1,16 @@
+name: "S5: Trek"
+description: "Cross three utterly distinct levels: Level 8's glowing caves and fungal forests, Level 9's endless suburb under eternal rain, Level 10's boundless golden wheat field. This is a long migration."
+difficulty: "Upper-Intermediate"
+milestone_range: "5-6"
+play_time: "8-12 hours"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Level 8 — Cave System", "Level 9 — Suburb", "Level 10 — Wheat Field"]
+themes: ["Long Migration", "Natural Horror", "False Idyll"]
+emotional_arc: "Oppression (cave) → Unease (suburb) → Brief Calm (wheat field) → Vigilance (false safety)"
+scenes:
+  - {id: S5_1, name: "Glowing Caves", type: "Exploration", desc: "Level 8: damp caves + bioluminescent fungi. The 'stars' on the cave ceiling are glowing spores. The 'Cave Dwellers' entity lurks in the dark — light-sensitive but numerous. Collect edible glowing mushrooms."}
+  - {id: S5_2, name: "Eternal-Night Suburb", type: "Atmospheric Horror", desc: "Level 9: never-ending night rain. Endless suburban streets, streetlights flickering on and off. Every house looks identical. Some houses have lights inside — but it is not human. The shadows behind the windows are wrong. Do not enter any house."}
+  - {id: S5_3, name: "Golden Wheat Field", type: "Respite / Trap", desc: "Level 10: a boundless golden wheat field under warm sunlight. Too beautiful. Too comfortable. But deep in the field stand scarecrows — they move when you aren't looking. The field's paths shift. Seems safe, but is a maze."}
+  - {id: S5_4, name: "The Boundary", type: "Exit", desc: "The field's edge — an asphalt road. Follow it and buildings begin to appear on the horizon. Level 11 has arrived."}
+entities: ["Cave Dwellers (Level 8 — fear light, move in groups)", "Thing Behind the Window (Level 9 — never leaves the house but lures you in)", "Scarecrows (Level 10 — moving field sentinels)"]
+ending: "Reach the edge of Level 11's city. Milestone 6 achieved."

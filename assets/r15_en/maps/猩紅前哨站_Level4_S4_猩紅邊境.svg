@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 520" width="1340" height="520">
+<defs>
+<filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/></filter>
+<marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#546E7A"/></marker>
+<marker id="arrow_main" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#1565C0"/></marker>
+<marker id="arrow_side" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#558B2F"/></marker>
+<marker id="arrow_descent" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#0277BD"/></marker>
+<marker id="arrow_escape" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#D84315"/></marker>
+<marker id="arrow_hazard" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#BF360C"/></marker>
+<marker id="arrow_objective" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#B71C1C"/></marker>
+<marker id="arrow_diplomatic" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#8E24AA"/></marker>
+<marker id="arrow_path" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#5D4037"/></marker>
+<marker id="arrow_nav" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#00695C"/></marker>
+<marker id="arrow_shortcut" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#00695C"/></marker>
+<marker id="arrow_npc" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#F57F17"/></marker>
+<marker id="arrow_threshold" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#512DA8"/></marker>
+</defs>
+<rect width="1340" height="520" fill="#FAFAFA" rx="8"/>
+<rect x="20" y="15" width="1100" height="55" fill="#263238" rx="6"/>
+<text x="40" y="40" fill="white" font-size="18" font-weight="bold" font-family="Arial, sans-serif">Level 4 Abandoned Office Building — Crimson Order Outpost</text>
+<text x="40" y="58" fill="#B0BEC5" font-size="12" font-family="Arial, sans-serif">Scenario: S4_Crimson Frontier</text>
+<rect x="160" y="140" width="310" height="300" fill="#d4edda" opacity="0.4" rx="12" stroke="#d4edda" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="172" y="160" fill="#555" font-size="11" font-family="Arial, sans-serif" font-weight="bold">Diplomatic Zone</text>
+<rect x="610" y="160" width="310" height="260" fill="#f8d7da" opacity="0.4" rx="12" stroke="#f8d7da" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="622" y="180" fill="#555" font-size="11" font-family="Arial, sans-serif" font-weight="bold">Military Zone</text>
+<rect x="60" y="210" width="860" height="290" fill="#fff3cd" opacity="0.4" rx="12" stroke="#fff3cd" stroke-width="1" stroke-dasharray="6,3"/>
+<text x="72" y="230" fill="#555" font-size="11" font-family="Arial, sans-serif" font-weight="bold">Transition Zone</text>
+<line x1="120.0" y1="270.0" x2="220.0" y2="270.0" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrow_main)" opacity="0.8"/>
+<text x="170.0" y="276.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">Enter East Zone</text>
+<line x1="220.0" y1="270.0" x2="370.0" y2="200.0" stroke="#8E24AA" stroke-width="2.5" marker-end="url(#arrow_diplomatic)" opacity="0.8"/>
+<text x="300.0746255839735" y="239.8741976799432" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">Accept Invitation (Diplomatic Route)</text>
+<line x1="220.0" y1="270.0" x2="520.0" y2="270.0" stroke="#1565C0" stroke-width="2.5" marker-end="url(#arrow_main)" opacity="0.8"/>
+<text x="370.0" y="276.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">Bypass Lobby (Force Route)</text>
+<line x1="370.0" y1="200.0" x2="370.0" y2="340.0" stroke="#8E24AA" stroke-width="2.5" marker-end="url(#arrow_diplomatic)" opacity="0.8"/>
+<text x="358.0" y="264.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">Tour after Successful Negotiation</text>
+<line x1="370.0" y1="200.0" x2="520.0" y2="270.0" stroke="#5D4037" stroke-width="2.5" marker-end="url(#arrow_path)" opacity="0.8"/>
+<text x="439.9253744160265" y="239.8741976799432" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">Negotiation Breaks → Turn to Force</text>
+<line x1="520.0" y1="270.0" x2="670.0" y2="220.0" stroke="#558B2F" stroke-width="2.5" marker-end="url(#arrow_side)" opacity="0.8"/>
+<text x="598.7947331922021" y="250.3841995766062" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">East Wing</text>
+<line x1="520.0" y1="270.0" x2="670.0" y2="320.0" stroke="#558B2F" stroke-width="2.5" marker-end="url(#arrow_side)" opacity="0.8"/>
+<text x="591.2052668077979" y="300.3841995766062" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">West Wing (High Risk)</text>
+<line x1="520.0" y1="270.0" x2="820.0" y2="270.0" stroke="#B71C1C" stroke-width="2.5" marker-end="url(#arrow_objective)" opacity="0.8"/>
+<text x="670.0" y="276.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">Go Deep into Core</text>
+<line x1="820.0" y1="270.0" x2="820.0" y2="400.0" stroke="#D84315" stroke-width="2.5" marker-end="url(#arrow_escape)" opacity="0.8"/>
+<text x="808.0" y="329.0" fill="#333" font-size="10" font-family="Arial, sans-serif" text-anchor="middle" font-style="italic">Discover Hidden Passage</text>
+<rect x="55" y="248" width="130" height="44" fill="#4CAF50" stroke="#2E7D32" stroke-width="2" rx="10" ry="10" opacity="1.0" filter="url(#shadow)"/>
+<text x="65" y="268" font-size="16" text-anchor="middle">🚪</text>
+<text x="90" y="267" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">East Zone Entrance</text>
+<rect x="135" y="252" width="40" height="14" fill="#2E7D32" rx="3" opacity="0.7"/>
+<text x="155" y="263" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Entrance</text>
+<rect x="155" y="248" width="130" height="44" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="165" y="268" font-size="16" text-anchor="middle">🏠</text>
+<text x="190" y="267" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Lobby Reception</text>
+<rect x="235" y="252" width="40" height="14" fill="#F9A825" rx="3" opacity="0.7"/>
+<text x="255" y="263" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Room</text>
+<rect x="305" y="178" width="130" height="44" fill="#E1BEE7" stroke="#8E24AA" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="315" y="198" font-size="16" text-anchor="middle">🤝</text>
+<text x="340" y="197" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Conference Room (Negotiation Zone)</text>
+<rect x="385" y="182" width="40" height="14" fill="#8E24AA" rx="3" opacity="0.7"/>
+<text x="405" y="193" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Diplomatic</text>
+<rect x="305" y="318" width="130" height="44" fill="#81D4FA" stroke="#0277BD" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="315" y="338" font-size="16" text-anchor="middle">🔍</text>
+<text x="340" y="337" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Intelligence Room</text>
+<rect x="385" y="322" width="40" height="14" fill="#0277BD" rx="3" opacity="0.7"/>
+<text x="405" y="333" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Discovery</text>
+<rect x="455" y="248" width="130" height="44" fill="#B0BEC5" stroke="#546E7A" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="465" y="268" font-size="16" text-anchor="middle">⬜</text>
+<text x="490" y="267" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Central Corridor</text>
+<rect x="535" y="252" width="40" height="14" fill="#546E7A" rx="3" opacity="0.7"/>
+<text x="555" y="263" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Corridor</text>
+<rect x="605" y="198" width="130" height="44" fill="#FFF9C4" stroke="#F9A825" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="615" y="218" font-size="16" text-anchor="middle">🏠</text>
+<text x="640" y="217" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Barracks</text>
+<rect x="685" y="202" width="40" height="14" fill="#F9A825" rx="3" opacity="0.7"/>
+<text x="705" y="213" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Room</text>
+<rect x="605" y="298" width="130" height="44" fill="#FF7043" stroke="#BF360C" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="615" y="318" font-size="16" text-anchor="middle">⚠️</text>
+<text x="640" y="317" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Armory</text>
+<rect x="685" y="302" width="40" height="14" fill="#BF360C" rx="3" opacity="0.7"/>
+<text x="705" y="313" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Hazard</text>
+<rect x="755" y="248" width="130" height="44" fill="#EF5350" stroke="#B71C1C" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="765" y="268" font-size="16" text-anchor="middle">⭐</text>
+<text x="790" y="267" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Command Center</text>
+<rect x="835" y="252" width="40" height="14" fill="#B71C1C" rx="3" opacity="0.7"/>
+<text x="855" y="263" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Objective</text>
+<rect x="755" y="378" width="130" height="44" fill="#FF9800" stroke="#E65100" stroke-width="2" rx="10" ry="10" opacity="0.95" filter="url(#shadow)"/>
+<text x="765" y="398" font-size="16" text-anchor="middle">🏃</text>
+<text x="790" y="397" fill="#212121" font-size="12" font-family="Arial, sans-serif" font-weight="600">Secret Evacuation Passage</text>
+<rect x="835" y="382" width="40" height="14" fill="#E65100" rx="3" opacity="0.7"/>
+<text x="855" y="393" fill="white" font-size="9" font-family="Arial, sans-serif" text-anchor="middle">Evacuate</text>
+<rect x="1155" y="80" width="175" height="330" fill="white" stroke="#E0E0E0" stroke-width="1.5" rx="8"/>
+<text x="1240" y="105" fill="#37474F" font-size="13" font-weight="bold" font-family="Arial, sans-serif" text-anchor="middle">Legend</text>
+<rect x="1160" y="125" width="22" height="22" fill="#B0BEC5" stroke="#546E7A" stroke-width="1.5" rx="4"/>
+<text x="1190" y="135" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Corridor</text>
+<text x="1190" y="135" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">corridor</text>
+<rect x="1160" y="153" width="22" height="22" fill="#E1BEE7" stroke="#8E24AA" stroke-width="1.5" rx="4"/>
+<text x="1190" y="163" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Diplomatic Zone</text>
+<text x="1190" y="163" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">diplomatic</text>
+<rect x="1160" y="181" width="22" height="22" fill="#81D4FA" stroke="#0277BD" stroke-width="1.5" rx="4"/>
+<text x="1190" y="191" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Discovery Point</text>
+<text x="1190" y="191" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">discovery</text>
+<rect x="1160" y="209" width="22" height="22" fill="#4CAF50" stroke="#2E7D32" stroke-width="1.5" rx="4"/>
+<text x="1190" y="219" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Entrance</text>
+<text x="1190" y="219" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">entrance</text>
+<rect x="1160" y="237" width="22" height="22" fill="#FF9800" stroke="#E65100" stroke-width="1.5" rx="4"/>
+<text x="1190" y="247" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Evacuation Point</text>
+<text x="1190" y="247" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">exit</text>
+<rect x="1160" y="265" width="22" height="22" fill="#FF7043" stroke="#BF360C" stroke-width="1.5" rx="4"/>
+<text x="1190" y="275" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Hazard Zone</text>
+<text x="1190" y="275" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">hazard</text>
+<rect x="1160" y="293" width="22" height="22" fill="#EF5350" stroke="#B71C1C" stroke-width="1.5" rx="4"/>
+<text x="1190" y="303" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Mission Objective</text>
+<text x="1190" y="303" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">objective</text>
+<rect x="1160" y="321" width="22" height="22" fill="#FFF9C4" stroke="#F9A825" stroke-width="1.5" rx="4"/>
+<text x="1190" y="331" fill="#333" font-size="11" font-family="Arial, sans-serif" dy="5">Room</text>
+<text x="1190" y="331" fill="#888" font-size="9" font-family="Arial, sans-serif" dy="18">room</text>
+<text x="1240" y="359" fill="#37474F" font-size="12" font-weight="bold" font-family="Arial, sans-serif" text-anchor="middle">Special Rules</text>
+<text x="1165" y="377" fill="#D32F2F" font-size="10" font-family="Arial, sans-serif">⚠ Guerrilla Tactics</text>
+<text x="1165" y="393" fill="#D32F2F" font-size="10" font-family="Arial, sans-serif">⚠ Self-Destruct Protocol</text>
+<text x="1165" y="409" fill="#D32F2F" font-size="10" font-family="Arial, sans-serif">⚠ Captive Interrogation</text>
+</svg>

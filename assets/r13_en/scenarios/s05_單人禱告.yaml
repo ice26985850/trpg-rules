@@ -1,0 +1,102 @@
+name: "Solitary Prayer"
+difficulty: "Endgame (Challenge Rating (CR) 3-4)"
+mode: "Mortal · Solo"
+judge: "Victor Black (Fallen)"
+target_region: "Carcassonne, lower levels of the Tower of Silence → Black Dock"
+recommended_attributes: "5"
+
+opening_description: >
+  The final mission. Victor Black personally chose this "ultimate trial": travel to the abandoned prison district at the lower levels of the Tower of Silence,
+  and purge a long-forgotten Chaos contamination. He gave you an assistant — a prisoner trapped at the lower levels who has survived there for 47 years.
+  The lower levels of the Tower of Silence — the Eternal Waiting Level — have been abandoned for 200 years. No supplies, no support.
+  If you survive, you prove you deserve redemption.
+  If you die — the Imperium will not notice.
+
+surface_goal: >
+  Purge the Chaos contamination at the lower levels of the Tower of Silence.
+
+hidden_goal: >
+  Victor has been corrupted by Chaos. This mission is the final test — those who survive and complete it qualify to become his followers.
+  Deep below lies a Warp rift sealed for 200 years. The seal is failing.
+
+known_threats:
+  - "The lower levels of the Tower of Silence — the Eternal Waiting Level — have been abandoned for 200 years"
+  - "Something may still be down there"
+  - "No supplies or support of any kind"
+
+hidden_threats:
+  - "Victor is a Fallen Inquisitor, testing who has the potential to cooperate with Chaos"
+  - "There are other Penitents trapped at the lower levels — some retain their sanity, some have been corrupted by Chaos"
+  - "Zero supplies — can only use what remains on your person"
+
+resources:
+  medical_pack: 0
+  holy_water: 0
+  holy_oil: 0
+  flare: 0
+  food_water_days: 0
+  ammo_magazines: 0
+
+internal_seduction_trigger:
+  timing: "At Black Dock, Victor Black speaks to you privately — while Eileen waits nearby"
+  whisper: "You completed the mission. You proved your worth. Now — accept my gift. You no longer need to serve the Imperium. You are free. As for Eileen? She waited 47 years. Another 47 years makes no difference."
+
+companions:
+  - name: "Eileen"
+    role: "The Forgotten, a former Penitent trapped for 47 years"
+    backstory: "She survived 47 years at the lower levels of the Tower of Silence, sustained by faith and the longing for freedom"
+    motive: "Leave this place — return to the outside world"
+    bottom_line: "Never let anyone endure what she endured"
+    initial_attitude: 2
+    attributes:
+      faith: 5
+      physique: 2
+      mind: 4
+      skill: 2
+      fate: 3
+    trained_skills: ["Oratory", "Awareness", "Investigation"]
+    equipment: ["Crude weapon", "No armor", "Map fragments preserved over the years"]
+    special_ability:
+      name: "Two Centuries of Silence"
+      desc: "Faith 5 — grows even more resolute in despair. Provides maps and intelligence. In combat can grant the player a Faith buff (one-time Oratory advantage)"
+
+key_checks:
+  - scene: "Search the ruins for Eileen"
+    check: "Investigation (Difficult)"
+    tn_adjustment: -20
+    success: "Find her and gain her help"
+    failure: "Miss her"
+  - scene: "Face the mad survivor at the lower levels"
+    check: "Oratory (Extreme)"
+    tn_adjustment: -40
+    success: "Awaken his remaining humanity"
+    failure: "Can only fight"
+  - scene: "Seal the Warp rift"
+    check: "Faith (Extreme)"
+    tn_adjustment: -40
+    success: "Rift is purified, Corruption -5"
+    failure: "Rift expands, Warp Shadows ×2 appear"
+
+encounters:
+  - name: "Lower-level ruins"
+    enemies: "Mutant Lurker ×2 + Warp Shadow ×1"
+    tactic: "Multiple threats in the darkness"
+  - name: "Mad Survivor"
+    enemies: "Former Penitent eroded by Chaos (Mutant template)"
+    tactic: "If persuaded → self-destructs. If fought → attempts to persuade the player"
+  - name: "Rift seal (if failed)"
+    enemies: "Warp Shadow ×2"
+    tactic: "Continually emerging from the rift"
+  - name: "Black Dock (Endgame)"
+    enemies: "Inquisition Storm Trooper ×2 + Acolyte-grade Chaos Cultist ×2"
+    tactic: "Victor's arranged silencing. Eileen fights alongside you"
+
+endings:
+  - condition: "Refuse Victor + survive"
+    result: "If Eileen escapes successfully → her testimony can let other Inquisitors discover Victor's betrayal. The character gains true freedom"
+  - condition: "Refuse Victor + die in battle"
+    result: "Glorious ending. Your names will not be remembered — but your choice proves the Emperor's faith is real"
+  - condition: "Accept Victor's gift"
+    result: "The character becomes a follower of Chaos. The GM takes over the character"
+
+map_ref: "maps/map05_dark_tower"

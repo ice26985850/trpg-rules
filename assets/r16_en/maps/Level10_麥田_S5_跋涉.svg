@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" font-family="'Microsoft JhengHei','PingFang TC',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#666"/></marker>
+    <marker id="arrowDanger" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C62828"/></marker>
+  </defs>
+  <rect width="1000" height="650" fill="#FFFDE7" rx="10"/>
+  <text x="500" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2F5496">Level 10 — Wheat Field（corresponding scenario S5_Trek）</text>
+  <rect x="100" y="250" width="100" height="100" rx="15" fill="#E8F5E9" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="150" y="268" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Edge</text>
+  <rect x="280" y="160" width="100" height="300" rx="15" fill="#FFF3E0" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="330" y="178" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Wheat Field</text>
+  <rect x="460" y="150" width="260" height="200" rx="15" fill="#F3E5F5" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="590" y="168" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Scarecrow Zone（Danger）</text>
+  <rect x="640" y="360" width="100" height="100" rx="15" fill="#E3F2FD" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="690" y="378" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Exit Area</text>
+  <rect x="15" y="55" width="195" height="102" rx="8" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="25" y="72" font-size="11" font-weight="bold" fill="#333">▸ Legend</text>
+  <rect x="25" y="83" width="25" height="12" rx="3" fill="#E8F5E9"/>
+  <text x="58" y="94" font-size="9" fill="#555">Edge</text>
+  <rect x="25" y="101" width="25" height="12" rx="3" fill="#FFF3E0"/>
+  <text x="58" y="112" font-size="9" fill="#555">Wheat Field</text>
+  <rect x="25" y="119" width="25" height="12" rx="3" fill="#F3E5F5"/>
+  <text x="58" y="130" font-size="9" fill="#555">Scarecrow Zone（Danger）</text>
+  <rect x="25" y="137" width="25" height="12" rx="3" fill="#E3F2FD"/>
+  <text x="58" y="148" font-size="9" fill="#555">Exit Area</text>
+  <line x1="150" y1="300" x2="330" y2="210" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="150" y1="300" x2="330" y2="410" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <line x1="330" y1="210" x2="510" y2="300" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="410" x2="510" y2="300" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="510" y1="300" x2="670" y2="200" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <line x1="510" y1="300" x2="690" y2="410" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="330" y="388" text-anchor="middle" font-size="11" fill="#C62828" font-weight="bold">⚠ Moving Scarecrow</text>
+  <text x="670" y="178" text-anchor="middle" font-size="11" fill="#C62828" font-weight="bold">⚠ Trap</text>
+  <rect x="115" y="286" width="70" height="28" rx="13" fill="#4CAF50"/>
+  <text x="150" y="304" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Wheat Field Edge</text>
+  <rect x="295" y="196" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="330" y="214" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Wild Berry Bush</text>
+  <rect x="295" y="396" width="70" height="28" rx="13" fill="#C62828"/>
+  <text x="330" y="414" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Scarecrow Gathering Area</text>
+  <rect x="475" y="286" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="510" y="304" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Moving Path 1</text>
+  <rect x="635" y="186" width="70" height="28" rx="13" fill="#C62828"/>
+  <text x="670" y="204" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Horizon Farmhouse（Trap）</text>
+  <rect x="647" y="394" width="85" height="32" rx="13" fill="#2196F3"/>
+  <text x="690" y="414" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Asphalt Road（Exit）</text>
+  <text x="20" y="620" font-size="10" fill="#888">Suggested route: Wheat Field Edge → pick wild berries → follow moving path → find asphalt road exit</text>
+  <text x="20" y="638" font-size="10" fill="#C62828">Warning: Approaching scarecrows continuously drain SP; the horizon farmhouse is a trap — head straight for the asphalt road</text>
+</svg>

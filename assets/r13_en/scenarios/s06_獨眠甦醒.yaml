@@ -1,0 +1,68 @@
+name: "Awakening of the Solitary Sleeper"
+difficulty: "Introductory (Challenge Rating (CR) 1)"
+mode: "Astartes · Solo"
+recommended_attributes: "Character creation"
+
+opening_description: >
+  You wake up in the wreckage of a Thunderhawk gunship. Your squad—your brothers—are dead. Their bodies still sit in their seats, seatbelts still fastened. Only you are alive.
+  One mortal soldier is also alive—she is the gunship's enginseer.
+
+surface_goal: >
+  Search the crashed Thunderhawk gunship wreckage, collect the data-slate and Chapter records, and head for the evacuation point in the northern mountains.
+
+hidden_goal: >
+  Was the gunship shot down by friendly fire—or by the powers of Chaos? The data-slate may hide a disturbing truth.
+
+known_threats:
+  - "Mutants may be prowling the crash zone"
+  - "Comms equipment is damaged—needs repair or an alternate method to make contact"
+
+hidden_threats:
+  - "The gunship crash may be the result of Chaos interference"
+  - "Kaela's prosthetic may not be entirely reliable"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 2
+  flare: 1
+  food_water_days: 2
+  ammo_magazines: 2
+
+companions:
+  - name: "Tech-Sergeant Kaela"
+    role: "Imperial Navy Enginseer"
+    backstory: "A young enginseer who lost an arm in the crash, but built a makeshift prosthetic from wreckage parts"
+    motive: "To leave this planet alive. She has the log of a transport ship—the ship is in the northern mountains"
+    bottom_line: "Never abandons a machine that can be repaired"
+    initial_attitude: 1
+    attributes:
+      faith: 3
+      physique: 2
+      mind: 3
+      skill: 4
+      fate: 3
+    trained_skills: ["Tech-Use", "Investigation"]
+    equipment: ["Laspistol (1d6+1)", "Flak Armor (Armor Rating (AR) 2)", "data-slate (with transport ship coordinates)"]
+    special_ability:
+      name: "Machine Cult Training"
+      desc: "Advantage on Tech-Use checks. Can repair damaged equipment (once per scenario, restores one piece of equipment by one condition level)"
+
+key_checks:
+  - scene: "Search the wreckage"
+    check: "Investigation (Standard)"
+    tn_adjustment: 0
+    success: "Find extra resources (ammo +1, Holy Water +1)"
+    failure: "Only find basic supplies"
+  - scene: "Kaela repairs the comms unit"
+    check: "Tech-Use (Standard)"
+    tn_adjustment: 0
+    success: "Obtain precise evacuation coordinates"
+    failure: "Only a rough direction"
+
+encounters:
+  - name: "Near the wreckage"
+    enemies: "Lesser Mutant ×2"
+    tactic: "Kaela provides support with her laspistol. Note that more mutants may appear"
+
+map_ref: "maps/map06_ravenhawk"

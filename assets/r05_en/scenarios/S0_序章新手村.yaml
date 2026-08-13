@@ -1,0 +1,40 @@
+name: "S0 Prologue: Tutorial Village"
+description: "A narrative ritual where the self-declared Hero goes to the temple to obtain a class, explores the tutorial village, faces a goblin night raid, and takes the Adventurer's Guild enrollment exam (F→E promotion gate). Uses Method A: one scenario + player-count scaling."
+difficulty: Easy~Normal
+level_range: [1, 4]
+chapter: 0
+map_ref: maps/S0_探索_新手村.yaml
+initial_map: maps/S0_探索_新手村.yaml
+encounters:
+  - id: night_thief
+    name: Night Thief (side-story minor combat)
+    enemies:
+      - {name: Mountain Rat, cr: 1, count: 2}
+    budget: Easy×0.5
+    adjust: "1p→CR−3(→CR0.25)/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: goblin_raid
+    name: Goblin Night Raid
+    enemies:
+      - {name: Goblin Warrior, cr: 2, count: 2}
+      - {name: Goblin Archer, cr: 1, count: 2}
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: guild_exam
+    name: Enrollment Exam · Training Phantom
+    enemies:
+      - {name: Training Phantom, cr: 3, count: 3}
+    budget: Standard×1.0
+    adjust: "1p→CR0/enemy×1/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR5/enemy×5"
+rewards:
+  exp: 620
+  gold: 80
+  items: [Wooden Practice Sword, Healing Potion x3, Apprentice Guild Badge]
+ip_events:
+  - event: Choosing "to protect the villagers" dialogue at the temple ritual
+    ip: 2
+  - event: Completing side story "Lost Lamb" (find the child)
+    ip: 3
+  - event: Spare the defeated goblins (do not kill)
+    ip: 3
+  - event: Friendly interaction with Jeno (foreshadowing the Fifth)
+    ip: 3

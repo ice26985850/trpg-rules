@@ -1,0 +1,24 @@
+name: Red Rain over the Block · Squad
+description: Three adjacent Tong Lau in Sham Shui Po simultaneously show a "Red Raincoat" Bound Spirit — actually one unfulfilled last wish mirror-reflected by similar feng shui into three linked images; requires 2–4 Ghost Collectors to investigate separately and perform a synchronized deliverance at 3 a.m., or the resentment will conduct and surge between the buildings.
+difficulty: B/A
+level_range: [3, 6]
+case_type: Bound Spirit (mirror-reflection) / multi-player cooperation
+player_mode: Multi-player (Squad 2–4)
+map_ref: "maps/s09_群樓.svg"
+npcs:
+  - Strong Kee (property manager of the three buildings)
+  - Sister Ping (cleaning lady, resigned)
+  - Uncle Nine of Shi Chu Shi Funeral Home (closing hook)
+key_enemies:
+  - Red Raincoat Bound Spirit ×3 (mirror-reflection images, each Challenge Rating CR 3, linked when synchronized)
+  - Ghost Wall (environmental encounter, Challenge Rating CR 3, optional)
+  - Fierce Ghost (berserk on sync failure, Challenge Rating CR 5, optional)
+rewards:
+  exp: 600
+  coin: 400
+  items:
+    - Incense, candle & Hell Bank Notes (three sets)
+    - Squad reputation "Block-Cooperation"
+hooks:
+  - The true letter's letterhead is "Shi Chu Shi" Funeral Home, leads to S2.
+  - Fu Lam Lau's feng shui drain hides a bronze bell engraved "Shi Chu Shi," suspected someone is cultivating the resentment, leads to S2.

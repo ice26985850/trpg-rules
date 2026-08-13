@@ -1,0 +1,30 @@
+scenario:
+  id: s07
+  title: "Soul of Ionia"
+  source: "League of Legends TRPG Campaign Script Collection · Multiplayer Scenario · Side Story S3"
+  mode: "Multiplayer"
+  standalone: true
+  level_range: "Lv.5-8"
+  region: "Ionia"
+  estimated_time: "2-3 sessions"
+  summary: >
+    The scars of the Noxian War still linger. The players are invited to help with
+    reconstruction, only to discover that the "wraiths" left behind by the war have
+    begun to corrode the Spirit Tree. They must find a path of balance amid the
+    opposition between Zed and Shen.
+  chapters:
+    - id: 1
+      title: "Tears of the Spirit Tree"
+      level: "Lv.5-6"
+      type: "Exploration + Spiritual Cultivation"
+    - id: 2
+      title: "Shadow Stream vs. Equilibrium"
+      level: "Lv.7"
+      type: "Faction Choice"
+    - id: 3
+      title: "the Wraith Lord"
+      level: "Lv.8"
+      type: "Boss + Dual Endings"
+      note: "Choose Zed's or Shen's path"
+  rewards:
+    equipment: "Yin-Yang Resonance (can simultaneously possess Zed's passive and Shen's passive, but each switch costs 1 turn)"

@@ -1,0 +1,153 @@
+id: D7
+name: Ice Plains
+recommended_rank: "B/A (CR 27-34)"
+theme: Everfrost Wastes
+grid: { cols: 5, rows: 5 }
+rooms:
+  - id: R1
+    name: Ice Wall Entrance
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: Sole entry/exit; retreating here is a safe escape.
+  - id: R2
+    name: Ice Wolf Hunting Ground
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R7]
+    cr: 27
+    enemies: [Ice Wolf x2]
+    desc: Ice Wolves x2 hunting.
+  - id: R3
+    name: Thin Ice Cracks
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R8]
+    trap: Weak (Thin Ice Collapse, DC12 / 1d6 Frost)
+    desc: Weak trap, thin ice cracking.
+  - id: R4
+    name: Yeti Lair
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 29
+    enemies: [Yeti x2]
+    desc: Yetis x2 lurking.
+  - id: R5
+    name: Frozen Remains
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R10]
+    treasure: Cold Iron x2, Glint Shard, G 200~320
+    desc: Frozen explorer remains.
+  - id: R6
+    name: Frost Sprite Tunnel
+    type: combat
+    gx: 0
+    gy: 1
+    links: [R1, R7, R11]
+    cr: 30
+    enemies: [Frost Sprite x2]
+    desc: Frost Sprites x2 drifting.
+  - id: R7
+    name: Sheltered Snow Hut
+    type: rest
+    gx: 1
+    gy: 1
+    links: [R6, R8, R2, R12]
+    desc: Safe rest point (restore HP/status).
+  - id: R8
+    name: Ice Spike Passage
+    type: trap
+    gx: 2
+    gy: 1
+    links: [R7, R9, R3, R13]
+    trap: Strong (Falling Ice Spikes, DC18 / 3d6 Pierce)
+    desc: Strong trap, falling ice spikes.
+  - id: R9
+    name: Ice Crystal Vault
+    type: treasure
+    gx: 3
+    gy: 1
+    links: [R8, R10, R4, R14]
+    treasure: Ice Crystal x2, Fine Material, G 220~340
+    desc: Ice crystal cluster vault.
+  - id: R10
+    name: Frost Giant Hall
+    type: combat
+    gx: 4
+    gy: 1
+    links: [R9, R5, R15]
+    cr: 32
+    enemies: [Frost Giant x2]
+    desc: Frost Giants x2 stand guard.
+  - id: R11
+    name: Warm Stone Camp
+    type: rest
+    gx: 0
+    gy: 2
+    links: [R6, R12, R16]
+    desc: Warm stone rest point.
+  - id: R12
+    name: Snow Burial Cache
+    type: treasure
+    gx: 1
+    gy: 2
+    links: [R11, R13, R7]
+    treasure: Evernight Core, G 240~360
+    desc: Cache buried in snow.
+  - id: R13
+    name: Biting Wind Battlefield
+    type: combat
+    gx: 2
+    gy: 2
+    links: [R12, R14, R8, R17]
+    cr: 33
+    enemies: [Ice Wolf x2]
+    desc: Ice Wolves x2 in pack.
+  - id: R14
+    name: Blizzard Trap Zone
+    type: trap
+    gx: 3
+    gy: 2
+    links: [R13, R15, R9]
+    trap: Strong (Blizzard Veil, DC20 / 2d6 Freeze)
+    desc: Strong trap, blizzard obscures.
+  - id: R15
+    name: Ice Spring Rest
+    type: rest
+    gx: 4
+    gy: 2
+    links: [R14, R10]
+    desc: Hot spring rest point.
+  - id: R16
+    name: Yeti Deep Valley
+    type: combat
+    gx: 0
+    gy: 3
+    links: [R11]
+    cr: 33
+    enemies: [Yeti x2]
+    desc: Yetis x2 lurking in the deep valley.
+  - id: R17
+    name: Frost Queen's Throne
+    type: elite
+    gx: 2
+    gy: 3
+    links: [R13, R18]
+    cr: 34
+    enemies: [Frost Queen (Boss)]
+    combat_map: maps/D7_戰鬥_冰霜女王.yaml
+    desc: Mini-boss Frost Queen (CR34).
+  - id: R18
+    name: Exit Ice Path
+    type: exit
+    gx: 2
+    gy: 4
+    links: [R17]
+    desc: Exit; collect reward and leave after clearing.

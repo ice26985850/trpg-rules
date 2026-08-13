@@ -1,0 +1,111 @@
+# Last Stand TRPG — Scenario S6 (Solo): The Survivor
+scenario:
+  id: S6
+  name: The Survivor
+  type: solo
+  tier: 1
+  difficulty: 1
+  estimated_duration: 1.5-2 hours
+  suggested_level: 1-2
+
+  description: >
+    This is your first match. A small night island—only 2 km across.
+    Ten contestants. No teammates. No airdrop. Just you, your gun, and nine
+    strangers closing in through the dark.
+    You are not here to win—you are here to prove you did not come to die.
+
+map:
+  name: Night Mist Island
+  size: 2 km × 2 km
+  terrain: [Coast (30%), Forest (50%), Abandoned Fishing Village (20%)]
+  landmarks:
+    - { id: L1, name: Abandoned Lighthouse, type: tactical, loot_level: Abundant (Blue), description: The island's highest point, but anyone who goes up is visible to the entire island }
+    - { id: L2, name: Fishing Village Pier, type: residential, loot_level: Common (Green), description: An abandoned fishing village—alleys well suited to Silent Move }
+    - { id: L3, name: Radio Tower, type: special, loot_level: -, description: The island's only radio tower. Its green indicator light stands out sharply at night }
+
+enemy_configuration:
+  total_lone_wolves: 9  # incl. player and nemesis = 11
+  distribution:
+    - { type: Rookie, difficulty: ★, count: 5 }
+    - { type: Steady, difficulty: ★★, count: 3 }
+    - { type: Assault, difficulty: ★★★, count: 1 }
+
+nemesis:
+  name: Mikhail Kovach
+  codename: The Veteran
+  style: Steady type
+  strength: 6/10
+  weapon: SKS Sniper Rifle + P92 Pistol
+  backstory: >
+    A veteran who has fought in ten matches. He landed on the island at the
+    same time as you—and you heard his footsteps echo through the nearby woods,
+    but never met him face to face—until the final circle.
+
+circle:
+  type: Central Contraction
+  description: A predictable, standard circle
+
+airdrop: { enabled: false }
+red_zone: { enabled: false }
+vehicles: [Motorcycle only]
+weather: Foggy night
+time_of_day: Night (new moon—the darkest night)
+
+special_rules:
+  - Night vision limited to 30 m (no night-vision scope)
+  - Auditory Compensation active (footsteps audible at 40 m)
+  - Lone Wolf Instinct active
+  - 1 usable Radio Tower
+
+phases:
+  - phase: Solo Descent
+    turns: 1
+    gm_notes: >
+      "The transport plane's cargo door swings open—below is a black sea and a
+      dark island. You take a deep breath and leap. The parachute blossoms in
+      the night sky—you see nine other chutes scattering through the darkness
+      like ghosts."
+
+  - phase: Night Looting
+    turns: 4
+    gm_notes: >
+      Darkness is both your friend and your enemy. You cannot see them, and they
+      cannot see you. But footstep sounds carry clearly on a quiet night. Guide
+      the player to use their hearing—"You hear a rustle in the bushes to your
+      front-left."
+
+  - phase: First Blood
+    turns: 3-4
+    gm_notes: >
+      Stage the player's first solo kill. It should mean something—after the
+      kill, let the player find an item on the enemy's body (a family photo, an
+      unsent letter), a reminder that every contestant is a person.
+
+  - phase: The Radio's Temptation
+    turns: 2
+    gm_notes: >
+      The lighthouse or the radio tower is a strategic high ground—but also
+      extremely exposed. Offer the player a choice: gamble on activating the
+      radio (gain intel), or play it safe on the ground?
+
+  - phase: Final Circle - The Veteran
+    turns: 2-3
+    gm_notes: >
+      The circle shrinks to a single fishing-village shack. You and the veteran.
+      "He steps out of the shadows—fifty-something, with a grizzled grey beard,
+      an SKS scarred all over in his hands. He looks at you and nods slightly.
+      Not a challenge—recognition. 'Not bad—your first match, and you made it
+      this far.' Then he raises his gun."
+
+victory_condition: Become the last surviving Lone Wolf
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  chicken_dinner: 500
+  per_elimination: 80
+  survival_top5: 250

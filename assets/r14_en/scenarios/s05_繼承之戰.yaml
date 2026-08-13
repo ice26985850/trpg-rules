@@ -1,0 +1,80 @@
+name: "War of Succession"
+description: "The founder of the empire has reached the end of his life. Three heirs fight for the throne, and the nation tears apart from within under diplomatic and military pressure."
+difficulty: 5
+level_range:
+  era_start: "Empire Age"
+  era_end: "Legendary Age"
+turns_estimated: 60
+player_count: {min: 1, max: 1}
+map_ref: "maps/S5_繼承之戰_帝國分裂.yaml"
+initial_map: "maps/S5_繼承之戰_帝國分裂.yaml"
+
+phases:
+  - id: 1
+    name: "The King's Death"
+    turns: "1-8"
+    events:
+      - turn: 1
+        name: "Health Worsens"
+        type: "narrative"
+        description: "The old king's health takes a sharp turn for the worse"
+      - turn: 5
+        name: "Designate Heir"
+        type: "choice"
+        description: "Must choose one heir"
+        choices:
+          - option: "Eldest Son (Military Faction)"
+            effect: "Military (MIL)+15, Morale (MOR)-10"
+          - option: "Second Daughter (Reform Faction)"
+            effect: "Economy (ECO)+15, Military (MIL)-10"
+          - option: "Youngest Son (Magic Faction)"
+            effect: "Technology (TEC)+15, Economy (ECO)-10"
+
+  - id: 2
+    name: "Three-Way Divide"
+    turns: "9-25"
+    events:
+      - turn: 12
+        name: "Break Away"
+        type: "internal"
+        description: "Unchosen heirs may break away"
+      - turn: 20
+        name: "Neighbor Provocation"
+        type: "diplomacy"
+        description: "Neighbors stir the pot and sow discord"
+
+  - id: 3
+    name: "War of Bloodline"
+    turns: "26-45"
+    events:
+      - turn: 28
+        name: "Civil War Erupts"
+        type: "war"
+        description: "Civil war erupts or is avoided through diplomacy"
+
+  - id: 4
+    name: "New Order"
+    turns: "46-60"
+    events:
+      - turn: 55
+        name: "Gate of Legend"
+        type: "climax"
+        description: "Does the new ruler open the Legendary Age?"
+      - turn: 60
+        name: "Finale"
+        type: "ending"
+        description: "The empire's fate is decided here"
+
+endings:
+  - id: "bloodline"
+    condition: "A single heir wins"
+    result: "The empire endures, the Legendary Age opens"
+  - id: "triumvirate"
+    condition: "Triarchy"
+    result: "All attributes +5; unlock a unique policy"
+  - id: "reform"
+    condition: "Abolish the monarchy"
+    result: "Morale (MOR)+20; the new system type is decided by the player"
+  - id: "collapse"
+    condition: "Civil war spirals out of control"
+    result: "The empire splits; choose one successor state to continue the game"

@@ -1,0 +1,46 @@
+name: Dungeon Module D1 — Goblin Lair (Goblin Warren)
+description: Recommended Rank F / E (Challenge Rating (CR) 1–8)｜Theme wild cave, low-tier resource farming. Acceptance besides the guild commission "F-For2 Goblin Patrol Clearance," players may also explore voluntarily (see GM Book 17.1). Map `maps/D1_哥布林巢穴.yaml` ＋ `maps/D1_哥布林巢穴.svg`. This game has no multiclass; solo entry follows player-count scaling rules (GM Book 13.1 Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). Exploration round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) see GM Book Chapter 17. In positioning diagram enemies on top, our side on bottom, front/back row spacing 2 grids (4m); solo entry adjusted per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). Design tip D1 is an early "farm EXP + G + materials" stable ground, preventing players from leveling only through main Demon General battles and causing economic imbalance. Can be re-farmed daily (see Commission Catalog reset rules).
+difficulty: F／E
+level_range:
+  - 1
+  - 8
+chapter: 1
+map_ref: maps/D1_哥布林巢穴.yaml
+initial_map: maps/D1_哥布林巢穴.yaml
+player_mode: "Solo/Multiplayer (Method A: one scenario + party-size adjustment)"
+encounters:
+  - id: R2
+    name: Front Hall
+    type: Combat
+    enemies:
+      - name: Goblin Warrior
+        cr: 2
+        count: 2
+    budget: Standard×1.0
+    adjust: 1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1
+  - id: R5
+    name: Sleeping Cave
+    type: Combat
+    enemies:
+      - name: Goblin Archer
+        cr: 3
+        count: 2
+    budget: Standard×1.0
+    adjust: 1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1
+  - id: R7
+    name: Throne Cavern
+    type: Minor Boss
+    enemies:
+      - name: Goblin King
+        cr: 5
+        count: 1
+    budget: Standard×1.0
+    adjust: 1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1
+    boss: true
+rewards:
+  exp: 576
+  gold: 150~250
+  ip: 5
+  items:
+    []
+adjust: 1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1

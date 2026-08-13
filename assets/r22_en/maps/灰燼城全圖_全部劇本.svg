@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 550" font-family="'Microsoft JhengHei','Noto Sans TC',sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="680" height="550" fill="#F5F0E8"/>
+  
+  <!-- Region Base Colors -->
+  <ellipse cx="400" cy="180" rx="130" ry="80" fill="#D6E4F0" opacity="0.6"/>
+  <ellipse cx="400" cy="320" rx="90" ry="60" fill="#E2EFDA" opacity="0.6"/>
+  <ellipse cx="250" cy="230" rx="90" ry="70" fill="#FCE4D6" opacity="0.6"/>
+  <ellipse cx="500" cy="420" rx="100" ry="70" fill="#D9D9D9" opacity="0.6"/>
+  
+  <!-- Connections -->
+  <!-- Bell Tower District - Hearth District -->
+  <line x1="450" y1="190" x2="380" y2="280" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Bell Tower District - Holy Relic District -->
+  <line x1="410" y1="180" x2="330" y2="210" stroke="#666" stroke-width="2"/>
+  <!-- Hearth District - Ash Alley -->
+  <line x1="420" y1="310" x2="510" y2="340" stroke="#666" stroke-width="2" stroke-dasharray="5,3"/>
+  <!-- Hearth District - Holy Relic District -->
+  <line x1="340" y1="280" x2="310" y2="240" stroke="#666" stroke-width="2"/>
+  <!-- Ash Alley - Old City Ruins -->
+  <line x1="530" y1="380" x2="480" y2="430" stroke="#666" stroke-width="2" stroke-dasharray="8,4"/>
+  <!-- Holy Relic District - Old City Ruins -->
+  <line x1="290" y1="270" x2="400" y2="420" stroke="#666" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <!-- Bell Tower District - Old City Ruins (Secret Passage) -->
+  <line x1="470" y1="200" x2="460" y2="430" stroke="#C00000" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Region Nodes -->
+  <!-- Bell Tower District -->
+  <rect x="380" y="130" width="130" height="60" rx="10" fill="#2F5496" opacity="0.9"/>
+  <text x="445" y="155" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Bell Tower District</text>
+  <text x="445" y="175" text-anchor="middle" fill="#D6E4F0" font-size="10">Upper class · council</text>
+  
+  <!-- Hearth District -->
+  <rect x="280" y="280" width="130" height="60" rx="10" fill="#548235" opacity="0.9"/>
+  <text x="345" y="305" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Hearth District</text>
+  <text x="345" y="325" text-anchor="middle" fill="#E2EFDA" font-size="10">Commercial center · market</text>
+  
+  <!-- Ash Alley -->
+  <rect x="490" y="330" width="130" height="60" rx="10" fill="#7F7F7F" opacity="0.9"/>
+  <text x="555" y="355" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Ash Alley</text>
+  <text x="555" y="375" text-anchor="middle" fill="#D9D9D9" font-size="10">Slums · guild</text>
+  
+  <!-- Holy Relic District -->
+  <rect x="180" y="200" width="130" height="60" rx="10" fill="#BF8F00" opacity="0.9"/>
+  <text x="245" y="225" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Holy Relic District</text>
+  <text x="245" y="245" text-anchor="middle" fill="#FCE4D6" font-size="10">Church territory · Eternal Well</text>
+  
+  <!-- Old City Ruins -->
+  <rect x="380" y="430" width="130" height="60" rx="10" fill="#404040" opacity="0.9"/>
+  <text x="445" y="455" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Old City Ruins</text>
+  <text x="445" y="475" text-anchor="middle" fill="#D9D9D9" font-size="10">Empire ruins (underground)</text>
+  
+  <!-- Landmark Markers -->
+  <circle cx="445" cy="145" r="4" fill="#FFC000"/>
+  <text x="445" cy="140" text-anchor="middle" fill="#333" font-size="9">Mayor's Mansion</text>
+  
+  <circle cx="370" cy="120" r="4" fill="#FFC000"/>
+  <text x="370" cy="112" text-anchor="middle" fill="#333" font-size="9">Tower of Time</text>
+  
+  <circle cx="210" cy="215" r="4" fill="#C00000"/>
+  <text x="195" cy="210" text-anchor="end" fill="#333" font-size="9">Eternal Well</text>
+  
+  <circle cx="340" cy="300" r="4" fill="#FFC000"/>
+  <text x="340" cy="295" text-anchor="middle" fill="#333" font-size="9">Cup of Cycles</text>
+  
+  <!-- Legend -->
+  <rect x="20" y="490" width="640" height="50" rx="5" fill="white" stroke="#ccc"/>
+  <line x1="40" y1="510" x2="80" y2="510" stroke="#666" stroke-width="2"/>
+  <text x="85" y="515" fill="#333" font-size="11">Main Road</text>
+  <line x1="150" y1="510" x2="190" y2="510" stroke="#666" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="195" y="515" fill="#333" font-size="11">Alley</text>
+  <line x1="260" y1="510" x2="300" y2="510" stroke="#C00000" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="305" y="515" fill="#333" font-size="11">Secret Passage</text>
+  <circle cx="400" cy="510" r="4" fill="#C00000"/>
+  <text x="410" y="515" fill="#333" font-size="11">Save Point</text>
+  <circle cx="490" cy="510" r="4" fill="#FFC000"/>
+  <text x="500" y="515" fill="#333" font-size="11">Important Landmark</text>
+  
+  <!-- Title -->
+  <text x="340" y="30" text-anchor="middle" fill="#2F5496" font-size="20" font-weight="bold">Ashfall City Complete Map</text>
+  <text x="340" y="50" text-anchor="middle" fill="#666" font-size="12">Resonance Continent · Year 300 of the Age of Embers</text>
+</svg>

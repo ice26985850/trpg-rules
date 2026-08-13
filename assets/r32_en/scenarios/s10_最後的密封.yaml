@@ -1,0 +1,73 @@
+name: "The Final Seal"
+type: "Ultimate Sealed Space"
+difficulty: "★★★★★★"
+recommended_marks: "9-10+"
+play_time: "3-4 sessions"
+core_attributes: ["all"]
+prerequisites:
+  - "Complete at least 6 prior scenarios (recommended 7-9)"
+  - "Return Mark ≥ 8"
+  - "Must possess an Anchoring Item"
+  - "Strongly recommended to have a Companion with Loyalty ≥ 3 accompanying you"
+
+opening: |
+  The oldest Sealed Space in the world has developed cracks.
+  Not from external damage—but from within. Something inside is actively trying to get out.
+  Its location is marked on the map as "the First Seal".
+  Every Walker's Anchoring Item is resonating at once—pointing in the same direction.
+  This is no Commission. It is a summons.
+
+scenes:
+  - name: "Assembly"
+    desc: |
+      Every NPC you know prays for you on the Surface, provides logistics, guards your retreat.
+      Each provides a faint advantage (+1 Negotiation, +1 Anchor, or extra safety net).
+    map_ref: "MAP-10 (First Seal flow) — Scene 1"
+  - name: "Arrival at the Seal"
+    desc: |
+      The Seal lies at the edge of the Deep Gap. Space itself stops here.
+      Awareness DC 10 to confirm the Cracks—they are widening at a visible rate.
+    map_ref: "MAP-10 — Scene 2"
+  - name: "the First Watcher"
+    desc: |
+      The oldest Seal Watcher—composed of pure waiting.
+      Negotiation DC 18. It will not attack—it has waited too long.
+      Question: Why do you want to open it? The Watcher can tell lies apart.
+      Honest answer → steps aside and reveals the nature of what is inside.
+      Lie → must use the Key of the First Seal.
+    map_ref: "MAP-10 — Scene 3"
+  - name: "Enter the Sealed Space"
+    desc: |
+      The inside is not a room—it is a whirlpool of memories.
+      Anchor DC 16 to maintain self-awareness. Companions must each make Anchor DC 12.
+    map_ref: "MAP-10 — Scene 4"
+  - name: "Facing the Denied One"
+    desc: |
+      Its form depends on the player's past decisions—it is the aggregate of all options not chosen.
+      Negotiation DC 20 ultimate Negotiation. It wants to be acknowledged as having existed.
+    map_ref: "MAP-10 — Scene 5"
+  - name: "Final Decision"
+    desc: "Three ending options—see below."
+    map_ref: "MAP-10 — Scene 6 (ending choice)"
+
+endings:
+  - name: "Acknowledge and Release"
+    desc: |
+      You acknowledge the existence of the Denied One. It merges into reality, becoming a new possibility.
+      Return Mark +3, permanent Legendary Mark.
+  - name: "Reseal but Remember"
+    desc: |
+      You do not open it, but you remember it. You leave your Anchoring Item outside the Seal as a witness.
+      From then on this Sealed Space is no longer forgotten. Return Mark +2. Lose Anchoring Item—but no longer need an Anchoring Item.
+  - name: "Refuse"
+    desc: |
+      You judge it too dangerous. Reinforce the Seal. The Watcher is grateful—it can continue to exist.
+      Return Mark +1. Other Walkers may come to open it in the future.
+
+rewards:
+  - "Return Mark × 1-3 (depending on ending)"
+  - "Legendary Mark (full effect at Return Mark 10+)"
+  - "Character completes the full journey—this character may appear as an NPC in the GM's future campaigns"
+  - "Companion Loyalty effect: the Companion who accompanied you to the end gains +2 Loyalty"
+
+companion_recruitment: []

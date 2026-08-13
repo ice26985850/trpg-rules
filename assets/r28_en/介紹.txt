@@ -1,0 +1,36 @@
+Otherworld Invasion TRPG — When Gunfire Fails, You Awaken
+
+【One-Line Pitch】
+Modern cities are invaded by otherworld beastmen; bullets lose all meaning before the rifts — but you receive a "System" visible only to you, and every battle makes you stronger.
+
+【World Setting】
+One day, the otherworld's six great beastman clans tore open the Main Rift at the World Heart, and secondary portals spread across the globe. Humanity soon discovered: bullets that pass through a rift turn to dust, missiles fizzle near monsters, and electronics short-circuit on approach — because when two systems of physics collide, the otherworld's laws take priority. Most people could only retreat, but a very few "Awakened": a floating interface visible only to you appears in your vision — the survival add-on the gods wrote for you. Your starting point is just an ordinary person, but the ceiling is yours to decide.
+
+【Who Do You Play? · Core Gameplay】
+You are an "Awakener," commissioned by Osaikus, the God of Light, and Collector, the God of Play, to shoulder a gamified System and face the rifts. The loop is intuitive: accept a commission or quest → step into an Erosion Zone and purge monsters → gain Experience Points (EXP) and level up → grow stronger, loot equipment, and close the rift. Most distinctive is "Lawful Creep": the invasion seeps in like a tide, making the world more dangerous — you must grow stronger before the next wave, for stagnation equals death.
+
+【System Highlights】
+- This work uses Percentile Dice (d100) for resolution: attack rolls hit on a low roll, while skill checks challenge the Difficulty Class (DC) on a high roll. A roll of 1–5 is a Critical Success, 96–100 a Critical Failure — every action keeps you holding your breath.
+- Six core attributes — Strength (STR), Dexterity (DEX), Constitution (CON), Intelligence (INT), Wisdom (WIS), Spirit (SPI) — plus a dual-class progression: choose one of 8 Combat Classes and one of 8 Life Classes, then pair it with a randomly awakened signature talent (draw "Cheat Death" and you can forcibly keep 1 Hit Point (HP) when you hit zero).
+- Six tiers of rarity for equipment: from White · Common to Red · Mythic, strength readable at a glance. Otherworld resources deep in the rifts are the only source for forging top-tier gear, pushing you into peril.
+
+【For What Kind of Players】
+Players who love the progression thrill of "growing from an ordinary person all the way to a legend" and enjoy point allocation and resource planning will be hooked; meanwhile, rich story branches (five ending divergences) also serve immersive players. A little TRPG foundation helps, but the core rules are clear.
+
+【Game Style Tags】
+- Combat Weight: Core (combat is the primary gameplay)
+- Strategic Depth: Moderate Strategy (requires considering skill combinations and resource timing)
+- Story-Driven: Story-Supported (clear plot, but high player freedom)
+- Resource Management: Moderate Management (must watch key resources, but not too punishing)
+- Character Customization: High (many options to create a unique character)
+- Character Creation Complexity: Moderate (simple steps, quick to finish)
+- Rule Density: Moderate Rules (core rules clear, not cumbersome)
+- GM Requirement: Optional GM (supports both groups and solo play)
+
+【Estimated Play Time】
+- Single Scenario: about 3–6 hours
+- Full Campaign (five seasons, 20 scenarios advancing in sequence, level rising from Lv.1 all the way past 100): about 80–160 hours
+
+【Basic Information】
+- Players: 1–5 players + 1 GM (built-in solo-mode adjustment allows single-player)
+- Core Dice: d100 (Percentile Dice)

@@ -1,0 +1,150 @@
+# S02 Lone Star - Solo Campaign (source file: s02_孤星_單人戰役.yaml)
+# Starship Convoy TRPG — solo-mode campaign
+
+source_md: "s02_孤星_單人戰役.md"
+
+scenario:
+  id: s02
+  title: "Lone Star"
+  subtitle: "Complete solo-mode campaign — from the sole survivor to a sector legend"
+  level_range: "1-10"
+  sessions: "15-20"
+  hours: "60-80"
+  players: "1 Player + 1 Game Master (GM)"
+  mode: "Solo"
+  gm_required: true
+
+hook:
+  summary: "Your convoy was betrayed during an Ash Belt expedition. You are the only one who escaped. Now you drift alone in an unknown sector, fuel only enough for one Jump, food that won't last two weeks. Your four crew watch you, waiting for your decision."
+  key_info:
+    - "The convoy was sold out to pirates by its internal Comms Officer, Victor Dorn"
+    - "The only lead is a codename: 'Ghost'"
+    - "Begin from losing everything, and gradually build your own legend"
+
+acts:
+  - act: 1
+    title: "Drift"
+    level_range: "1-3"
+    sessions: "3-4"
+    theme: "Finding a reason to keep going after losing everything"
+    chapters:
+      - chapter: 1
+        title: "Among the Wreckage"
+        level: 1
+        description: "Escape the convoy wreckage, face the first Crew Council decision"
+      - chapter: 2
+        title: "Three Routes"
+        level: "1-2"
+        branches:
+          - "2A: Return to the Abyss Gate"
+          - "2B: Head to abandoned Outpost C-7"
+          - "2C: Track the traitor lead in the encrypted message"
+      - chapter: 3
+        title: "First Ally"
+        level: "2-3"
+        description: "Starting Ally appears, first fight alone"
+    milestone: "Lv3, first Feat, Starting Ally Reputation +2"
+
+  - act: 2
+    title: "Connection"
+    level_range: "4-6"
+    sessions: "4-5"
+    theme: "Build an NPC ally network, uncover the truth of the betrayal"
+    chapters:
+      - chapter: 4
+        title: "The Genius and the Fugitive"
+        level: 4
+        description: "Recruit genius engineer Marcus Chen, meet intel liaison Leah Starwhisper"
+      - chapter: 5
+        title: "Hunter and Prey"
+        level: 5
+        description: "Reveal the true identity and motive of the traitor Victor Dorn"
+      - chapter: 6
+        title: "Ripples of Choice"
+        level: "5-6"
+        branches:
+          - "A: Execute Victor"
+          - "B: Rescue Victor's family"
+          - "C: Hand Victor to the Drifters' Alliance"
+    milestone: "Lv6, Reputation event triggers"
+
+  - act: 3
+    title: "Rise"
+    level_range: "7-8"
+    sessions: "3-4"
+    theme: "From survivor to legend — facing the real enemy"
+    chapters:
+      - chapter: 7
+        title: "The Secret of Starfall"
+        level: 7
+        description: "Head to the Starfall Sector, meet legendary navigator Carlo Vega"
+      - chapter: 8
+        title: "The Pirate Flagship"
+        level: "7-8"
+        description: "Solo duel the pirate flagship (TL3), obtain the alien energy core"
+    milestone: "Lv8, sector fame begins to spread"
+
+  - act: 4
+    title: "Legacy"
+    level_range: "9-10"
+    sessions: "2-3"
+    theme: "How does your story end?"
+    chapters:
+      - chapter: 9
+        title: "Echoes of the Star Sea"
+        level: 9
+        branches:
+          - "A: The Watchers' Path (hand the core to the Relic Watchers)"
+          - "B: The New Energy Era (hand the core to the Drifters' Alliance)"
+          - "C: The Lonely Guardian (keep the core for yourself)"
+      - chapter: 10
+        title: "Finale — Your Legacy"
+        level: 10
+        endings:
+          - "A: Rebuild the Convoy"
+          - "B: Join a Faction"
+          - "C: Keep Sailing"
+          - "D: Become a Legend"
+    milestone: "Lv10, Reputation 5 (the living legend)"
+
+npcs:
+  key:
+    - name: "Starting Ally (8 types, by background)"
+      role: "Old connection"
+      first_appearance: "Act One, Chapter Three"
+    - name: "Marcus Chen"
+      role: "Recruitable genius engineer"
+      attributes: {CMD: 4, ENG: 10, NAV: 4, DIP: 3, INT: 5}
+      first_appearance: "Act Two, Chapter Four"
+    - name: "Leah Starwhisper"
+      role: "Drifters' Alliance intelligence liaison"
+      attributes: {CMD: 4, ENG: 5, NAV: 6, DIP: 7, INT: 5}
+      first_appearance: "Act Two, Chapter Four"
+    - name: "Victor Dorn"
+      role: "Former convoy Comms Officer / traitor"
+      attributes: {CMD: 6, ENG: 5, NAV: 5, DIP: 4, INT: 7}
+      first_appearance: "Act Two, Chapter Five"
+    - name: "Carlo Vega"
+      role: "Legendary navigator / source of knowledge"
+      attributes: {CMD: 7, ENG: 4, NAV: 6, DIP: 5, INT: 8}
+      first_appearance: "Act Three, Chapter Seven"
+    - name: "Ghost"
+      role: "Pirate commander / main villain"
+      attributes: {CMD: 8, ENG: 3, NAV: 5, DIP: 6, INT: 4}
+      first_appearance: "Act Three, Chapter Eight"
+
+combat_highlights:
+  - level: 3
+    encounter: "1d2 Light Raider Craft (TL1) — first fight alone"
+  - level: 5
+    encounter: "1 Medium Raider Ship (TL2) — Victor-related battle"
+  - level: "7-8"
+    encounter: "Heavy Pirate Flagship (TL3) + escorts — final boss battle"
+
+gm_notes:
+  - "Crew Council replaces convoy voting (see Solo Mode Rules Supplement, Chapter Two)"
+  - "Wingmate system replaces convoy synergy (see Solo Mode Rules Supplement, Chapter Three)"
+  - "NPC crew matter more than in multiplayer mode — they are the player's main interaction targets"
+  - "The Starting Ally should have substantive interaction arranged before Chapter One ends"
+  - "Victor's moral choice is the narrative core of the campaign — do not gloss over it"
+  - "All four endings are valid; let the player's choices genuinely affect how the campaign resolves"

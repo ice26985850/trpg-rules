@@ -1,0 +1,86 @@
+name: "Echo (Multiplayer)"
+type: "Lost Traveler"
+difficulty: "★★★"
+recommended_marks: "3-6"
+players: "3-5 players"
+play_time: "2-3 sessions"
+core_attributes: ["TR", "NG", "RE"]
+
+opening: |
+  Young A-Jie has "vanished" in his apartment—but he hasn't truly disappeared. His roommates occasionally
+  catch his shadow at the end of the hallway, hear footsteps at two in the morning, and food in the fridge
+  goes missing. His grandmother says: "He isn't missing—he's stuck 'on the other side' and can't get out."
+  A-Jie has been "half-missing" for three weeks, his Gap Endurance depleted, in the Middle Stage of Gap Sickness.
+
+npcs:
+  - name: "A-Jie (Lost Traveler)"
+    type: "Lost Traveler"
+    desc: "23-year-old physics graduate student. Stubborn, obsessed with the nature of reality. In the Middle Stage of Gap Sickness—the GM does not tell players whether he knows he is trapped"
+    companion_eligible: false
+  - name: "Xiao-Mei (Roommate)"
+    type: "Commissioner"
+    desc: "A-Jie's roommate and close friend, the one most eager to save him, can provide personal belongings as clues"
+    companion_eligible: false
+  - name: "Advisor Professor"
+    type: "Informed Party"
+    desc: "Knows A-Jie was researching 'spatial folding'; uneasy when mentioned: 'That research… should not have continued'"
+    companion_eligible: false
+  - name: "Lost Item Collector"
+    type: "Gap Creature"
+    desc: "A previous-generation Gap Walker who once lived in this apartment, hoards items in the Gap, knows A-Jie's location but demands a trade"
+    companion_eligible: false
+
+lost_items:
+  - name: "A-Jie's Research Notes (Copy)"
+    tier: "Common Lost Item"
+    dc: 8
+    location: "University Lab Gap Layer"
+    effect: "Reveals A-Jie's research topic and the Resonator"
+  - name: "Resonator"
+    tier: "Gap Construct"
+    dc: 18
+    location: "A-Jie's Room Gap Layer"
+    effect: "A-Jie's homemade spatial resonance device—the key to opening the Gap Threshold"
+  - name: "Mother's Necklace"
+    tier: "Memory Crystal"
+    dc: 15
+    location: "On A-Jie (brought into the Gap with him)"
+    effect: "His Anchoring Item—lets him 'perceive' reality"
+
+gap_creatures:
+  - name: "Lost Item Collector"
+    type: "Hoarder"
+    negotiation_dc: 14
+    location: "Apartment Gap Layer"
+    liberation: "Trade a 'new Lost Item' for information on A-Jie"
+    reward: "Provides A-Jie's exact location"
+
+scenes:
+  - name: "Explore the Apartment Gap Layer"
+    desc: "Enter the Gap from the rooftop (Artificial Threshold DC 12). The apartment Gap Layer is nearly identical to the Surface—the greatest horror is 'nothing changes.' Traverse DC 14 to confirm whether you are truly in the Gap Layer."
+    map_ref: "MAP-05 (A-Jie's Apartment) — Gap Layer, Eighth Floor"
+  - name: "Find A-Jie's Tracks"
+    desc: "A-Jie's room door is open. Retrieval DC 10 to discover the sticky note 'I'm here. Find the Resonator.'"
+    map_ref: "MAP-05 — A-Jie's Room"
+  - name: "Negotiate with the Lost Item Collector"
+    desc: "The Collector (Negotiation DC 14) knows the location, demands a new Lost Item in exchange for information."
+    map_ref: "—"
+  - name: "Find A-Jie"
+    desc: "He is on the apartment rooftop Gap Layer, sitting at the edge watching a false starfield, in the Middle Stage of Gap Sickness."
+    map_ref: "MAP-05 — Rooftop Gap Layer (False Starfield)"
+  - name: "Convince A-Jie to Leave"
+    desc: "Negotiation DC 16. Present an Anchoring Item (mother's necklace, Memory Crystal DC 15 to retrieve) to let him perceive reality."
+    map_ref: "MAP-05 — Necklace on A-Jie"
+  - name: "Exit the Gap"
+    desc: "After A-Jie is brought back to the Surface, he is in the Early Stage of Gap Sickness, requires Surface Rest for 7 days. Return Mark +1."
+    map_ref: "—"
+
+endings:
+  - "After recovering, A-Jie becomes a potential Gap Walker (NPC acquaintance)"
+  - "If not rescued in time → he becomes a new Lost Item Collector in the Late Stage of Gap Sickness"
+  - "The Resonator is recovered → may become a key item in future scenarios"
+
+rewards:
+  - "Return Mark × 1"
+
+companion_recruitment: []

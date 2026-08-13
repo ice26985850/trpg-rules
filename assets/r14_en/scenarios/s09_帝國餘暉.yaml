@@ -1,0 +1,147 @@
+name: "Empire's Afterglow"
+description: "The world steps into its darkest hour, rife with disasters. The last few surviving empires slaughter one another in the afterglow, contesting the final resources and legitimacy. Whoever can unify the world amid the great catastrophe will carve their reign into eternity."
+difficulty: 4
+level_range:
+  era_start: "Empire Age"
+  era_end: "Legendary Age"
+turns_estimated: 70
+years_in_game: 25
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S4_至暗時代_災難區域"
+initial_map: "maps/S4_至暗時代_災難區域.yaml"
+multiplayer_rules:
+  mode: "Competitive (survival + conquest)"
+  victory: "At turn 70, tally the \"Imperial Might Score\" = Stable Provinces×12 ＋ Wars Won×18 ＋ Miracles Built×25 ＋ Survivor Population×0.5; highest ascends the throne. The first to complete the \"Eternal Monument\" triggers the endgame and +35 points."
+  interaction: "Players may forge temporary ceasefires, declare war, launch annihilation wars; during disasters may share refuge resources or profit from others' misfortune."
+starting_conditions:
+  population: 2000
+  attributes:
+    base: 22
+    free_points: 35
+phases:
+  - id: 1
+    name: "Beacons of War Everywhere"
+    turns: "1-18"
+    description: "Empires each integrate their remnant territory in the afterglow"
+    events:
+      - turn: 4
+        name: "Province Submission"
+        type: "diplomacy"
+        description: "Provinces in turmoil submit to a mighty empire"
+        effect: "Stable Provinces +1, Imperial Might Score +12"
+      - turn: 9
+        name: "Famine Alert"
+        type: "crisis"
+        description: "A great famine strikes the whole map, food plummets"
+        effect: "All players' food −20%, Morale (MOR)−5"
+      - turn: 13
+        name: "Border Bloodbath"
+        type: "military"
+        description: "A pitched battle erupts with a neighbor at the border"
+        skill_check: "Military (MIL), DC 18"
+      - turn: 17
+        name: "Refugee Barrier"
+        type: "moral_choice"
+        description: "An incoming wave of refugees; take them in or drive them off?"
+        choices:
+          - option: "Take In En Masse"
+            effect: "Population +200, food pressure rises"
+          - option: "Erect a Barrier"
+            effect: "Morale (MOR)+5, but renown −5"
+  - id: 2
+    name: "The Great Catastrophe Descends"
+    turns: "19-38"
+    description: "The nature of the Darkest Age reveals itself; natural disasters come one after another"
+    events:
+      - turn: 22
+        name: "Crimson Winter"
+        type: "disaster"
+        description: "An abnormal winter freezes the crops, all players Economy (ECO)−8"
+        effect: "Economy (ECO)−8"
+      - turn: 27
+        name: "Refuge Alliance"
+        type: "diplomacy"
+        description: "Several nations forge a refuge alliance, sharing resources"
+        effect: "Each allied nation gains +10 Imperial Might Score"
+      - turn: 32
+        name: "Profit from Others' Misfortune"
+        type: "military"
+        description: "Raid a nation weakened by disaster"
+        skill_check: "Military (MIL), DC 19"
+      - turn: 36
+        name: "Prophet's Oracle"
+        type: "religious"
+        description: "A prophet foretells the site of a salvation miracle"
+        effect: "Guides the miracle construction site, Technology (TEC)+5"
+  - id: 3
+    name: "Iron-Blooded Unification"
+    turns: "39-55"
+    description: "Unify the broken world by force of war"
+    events:
+      - turn: 42
+        name: "War of Annihilation"
+        type: "military"
+        description: "Launch an annihilation-level offensive against a weak nation"
+        crisis_type: "combat"
+        skill_check: "Military (MIL), DC 20"
+      - turn: 47
+        name: "Miracle Foundation"
+        type: "construction"
+        description: "Begin building a miracle structure symbolizing unity"
+        effect: "Miracles Built +1, Imperial Might Score +25"
+      - turn: 51
+        name: "General's Mutiny"
+        type: "betrayal"
+        description: "A general whose merit eclipses his lord rises in revolt"
+        skill_check: "Morale (MOR), DC 18"
+      - turn: 54
+        name: "Plague Spreads"
+        type: "disaster"
+        description: "A pestilence sweeps through the army"
+        effect: "Military (MIL)−6, Population −150"
+  - id: 4
+    name: "The Eternal Imperial Throne"
+    turns: "56-70"
+    description: "The final unification—ascend the throne, or vanish"
+    events:
+      - turn: 60
+        name: "Monument Completed"
+        type: "milestone"
+        description: "Whoever completes the \"Eternal Monument\" proclaims legitimacy"
+        effect: "Imperial Might Score +35, triggers endgame"
+      - turn: 65
+        name: "Final Siege"
+        type: "military"
+        description: "Remaining powers' last siege of the imperial capital"
+        skill_check: "Military (MIL), DC 21"
+      - turn: 70
+        name: "The Eternal Throne"
+        type: "ending"
+        description: "Tally Imperial Might Scores, highest ascends as the Eternal Emperor"
+endings:
+  success:
+    condition: "Highest Imperial Might Score and complete the Eternal Monument"
+    reward: "All attributes +12, unlock the \"Eternal Emperor\" Legendary Deed"
+  partial:
+    condition: "Survive to the endgame but not ascended"
+    reward: "Keep your empire, may enter Free Mode"
+  failure:
+    condition: "Imperial capital falls and population drops to zero"
+    remedy: "Inheritance Mechanism—as a surviving minister, install a young lord, keeping 50% of attributes"
+key_npcs:
+  - name: "Prophetess Ilyan"
+    role: "A wandering prophet who foretells disaster and salvation"
+    personality: "Mysterious, compassionate"
+    relationship: "Can be won over by all sides"
+  - name: "General Karl the Sky-Burner"
+    role: "A famed imperial general whose merit eclipses his lord"
+    personality: "Proud, loyalty and suspicion indistinguishable"
+    relationship: "Double-Edged Blade"
+gm_notes:
+  - "The Empire Age is rife with disasters; the GM should use disaster events to create tension"
+  - "Track stable provinces, miracles built, and survivor population"
+  - "During disasters, encourage players to aid one another or profit from misfortune; both are legitimate"
+  - "Miracle construction is a key score source; avoid any single player monopolizing"
+  - "Maintain survival pressure; make every decision bear on the nation's fate"

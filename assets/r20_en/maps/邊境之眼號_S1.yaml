@@ -1,0 +1,142 @@
+# Border Eye (Border Eye)  —  S1 Maiden Voyage
+# Alliance Patrol Craft, 8 nodes, 2 decks
+# Corresponds to scenario: S1_Maiden Voyage
+
+nodes:
+  - id: N1
+    label: "Airlock / Breach Point"
+    type: entry
+    x: 100
+    y: 350
+    deck: 1
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: null
+    explored: true
+    description: "Where the squad cut through the hull to enter. A small airlock chamber, only fitting 2 people standing at once."
+
+  - id: N2
+    label: "Cargo Hold"
+    type: room
+    x: 250
+    y: 350
+    deck: 1
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: null
+    explored: false
+    description: "A cargo hold packed with supply crates and equipment. Provides cover (+2 DEF). 2 crewmen patrol here."
+
+  - id: N3
+    label: "Corridor Junction"
+    type: corridor
+    x: 400
+    y: 350
+    deck: 1
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: null
+    explored: false
+    description: "Junction of the main corridor and a maintenance shaft. A ship map panel on the wall (Perception DC 10 to learn deck layout)."
+
+  - id: N4
+    label: "Main Stairwell"
+    type: corridor
+    x: 400
+    y: 200
+    deck: 1
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: null
+    explored: false
+    description: "Stairwell connecting Deck 1 and Deck 2. 2 guards patrol here."
+
+  - id: N5
+    label: "Maintenance Shaft Entrance"
+    type: corridor
+    x: 550
+    y: 350
+    deck: 1
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: "Narrow passage  —  only one person fits"
+    explored: false
+    description: "A maintenance shaft hidden behind a wall panel. Requires Engineering (ENG) DC 10 to find and open. Leads directly to Deck 2."
+
+  - id: N6
+    label: "Deck 2 Corridor"
+    type: corridor
+    x: 400
+    y: 80
+    deck: 2
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: null
+    explored: false
+    description: "The main corridor of Deck 2. Narrower than Deck 1, dimly lit."
+
+  - id: N7
+    label: "Data Center Entrance"
+    type: room
+    x: 550
+    y: 80
+    deck: 2
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: "Auto-Turret (CR 2)"
+    explored: false
+    description: "Entrance to the data center. Guarded by 1 auto-turret and 1 marine. The turret can be hacked (ENG DC 15)."
+
+  - id: N8
+    label: "Data Center"
+    type: objective
+    x: 700
+    y: 80
+    deck: 2
+    gravity: "Standard Gravity (1G)"
+    environment: "Pressurized Area"
+    hazard: null
+    explored: false
+    description: "Objective area. Server racks neatly arranged. Requires 3 rounds to download data (Perception DC 13)."
+
+edges:
+  - from: N1
+    to: N2
+    type: "Hatch"
+    description: "Standard hatch  —  unlocked"
+  - from: N2
+    to: N3
+    type: "Corridor"
+    description: "Short corridor"
+  - from: N3
+    to: N4
+    type: "Stairwell"
+    description: "Main stairwell  —  to Deck 2"
+  - from: N3
+    to: N5
+    type: "Maintenance Shaft"
+    description: "Hidden panel  —  ENG DC 10"
+  - from: N4
+    to: N6
+    type: "Stairwell"
+    description: "Reach Deck 2"
+  - from: N5
+    to: N6
+    type: "Maintenance Shaft"
+    description: "Bypass defenders  —  straight to Deck 2"
+  - from: N6
+    to: N7
+    type: "Corridor"
+    description: "Leads to data center"
+  - from: N7
+    to: N8
+    type: "Hatch (Locked)"
+    description: "Military-grade access  —  ENG DC 13 or breach"
+
+regions:
+  - name: "Deck 1"
+    color: "#B3D9FF"
+    nodes: [N1, N2, N3, N4, N5]
+  - name: "Deck 2"
+    color: "#FFD9B3"
+    nodes: [N6, N7, N8]

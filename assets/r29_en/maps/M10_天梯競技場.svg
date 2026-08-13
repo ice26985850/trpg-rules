@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 1020" width="920" height="1020">
+<style>
+  text { font-family: "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif; }
+  .title { font-size: 22px; font-weight: bold; fill: #2F5496; }
+  .subtitle { font-size: 13px; fill: #666; }
+  .region-label { font-size: 12px; font-weight: bold; fill: #444; }
+  .node-label { font-size: 11px; fill: #333; text-anchor: middle; dominant-baseline: middle; }
+  .node-sublabel { font-size: 8px; fill: #666; text-anchor: middle; }
+  .road-label { font-size: 8px; fill: #888; text-anchor: middle; }
+  .landmark-label { font-size: 10px; font-weight: bold; fill: #800; }
+  .legend-text { font-size: 9px; fill: #555; }
+  .circle-label { font-size: 9px; fill: #C00; font-weight: bold; text-anchor: middle; }
+</style>
+<rect width="100%" height="100%" fill="#F8F8F4"/>
+
+<text x="20" y="28" class="title">Ascension Arena</text>
+<text x="20" y="48" class="subtitle">S10_Legendary Endgame | 5-Level Vertical Arena | 3×3km</text>
+  <rect x="60" y="60" width="600" height="170" fill="#E8D8C0" opacity="0.4" stroke="#999" stroke-width="1" rx="8"/>
+  <rect x="60" y="60" width="600" height="30" fill="#E8D8C0" opacity="0.7" rx="8"/>
+  <rect x="60" y="80" width="600" height="10" fill="#E8D8C0" opacity="0.7"/>
+  <text x="70" y="80" class="region-label" fill="#333">Lv.5 — Panoramic Control Room</text>
+  <text x="460" y="80" class="node-sublabel">Indoor | 300×300m</text>
+  <text x="70" y="220" class="node-sublabel" fill="#555">Pandora exec viewing level. Bulletproof glass (HP100). Live feed of the entire arena visible via surveillance monitors</text>
+  <rect x="140" y="110" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="170" y="128" class="node-label">A1</text>
+  <rect x="60" y="240" width="600" height="170" fill="#C0C0C0" opacity="0.4" stroke="#999" stroke-width="1" rx="8"/>
+  <rect x="60" y="240" width="600" height="30" fill="#C0C0C0" opacity="0.7" rx="8"/>
+  <rect x="60" y="260" width="600" height="10" fill="#C0C0C0" opacity="0.7"/>
+  <text x="70" y="260" class="region-label" fill="#333">Lv.4 — Jungle Dome</text>
+  <text x="460" y="260" class="node-sublabel">Artificial Jungle | 600×600m</text>
+  <text x="70" y="400" class="node-sublabel" fill="#555">Climate-controlled artificial rainforest. Dense foliage provides natural cover. Canopy walkways link the sectors</text>
+  <rect x="140" y="290" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="170" y="308" class="node-label">D1</text>
+  <rect x="220" y="290" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="250" y="308" class="node-label">E1</text>
+  <rect x="300" y="290" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="330" y="308" class="node-label">D2</text>
+  <rect x="380" y="290" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="410" y="308" class="node-label">E2</text>
+  <rect x="460" y="290" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="490" y="308" class="node-label">F2</text>
+  <polygon points="352,328 368,328 372,340 368,352 352,352 348,340" fill="#B04040" stroke="#800" stroke-width="1"/>
+  <text x="360" y="362" class="landmark-label" text-anchor="middle">L4 (Landmark)</text>
+  <rect x="60" y="420" width="600" height="170" fill="#FFD4A8" opacity="0.4" stroke="#999" stroke-width="1" rx="8"/>
+  <rect x="60" y="420" width="600" height="30" fill="#FFD4A8" opacity="0.7" rx="8"/>
+  <rect x="60" y="440" width="600" height="10" fill="#FFD4A8" opacity="0.7"/>
+  <text x="70" y="440" class="region-label" fill="#333">Lv.3 — Residential Sim Zone</text>
+  <text x="460" y="440" class="node-sublabel">Residential | 600×600m</text>
+  <text x="70" y="580" class="node-sublabel" fill="#555">Replica city blocks. Apartments, convenience stores, a school—the Champion Memorial Hall is on this level</text>
+  <rect x="140" y="470" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="170" y="488" class="node-label">B4</text>
+  <rect x="220" y="470" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="250" y="488" class="node-label">C4</text>
+  <rect x="300" y="470" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="330" y="488" class="node-label">B5</text>
+  <rect x="380" y="470" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="410" y="488" class="node-label">C5</text>
+  <rect x="460" y="470" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="490" y="488" class="node-label">B6</text>
+  <rect x="540" y="470" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="570" y="488" class="node-label">C6</text>
+  <polygon points="352,508 368,508 372,520 368,532 352,532 348,520" fill="#B04040" stroke="#800" stroke-width="1"/>
+  <text x="360" y="542" class="landmark-label" text-anchor="middle">L3 (Landmark)</text>
+  <rect x="60" y="600" width="600" height="170" fill="#C0E8C0" opacity="0.4" stroke="#999" stroke-width="1" rx="8"/>
+  <rect x="60" y="600" width="600" height="30" fill="#C0E8C0" opacity="0.7" rx="8"/>
+  <rect x="60" y="620" width="600" height="10" fill="#C0E8C0" opacity="0.7"/>
+  <text x="70" y="620" class="region-label" fill="#333">Lv.2 — Factory Maze</text>
+  <text x="460" y="620" class="node-sublabel">Industrial Maze | 600×600m</text>
+  <text x="70" y="760" class="node-sublabel" fill="#555">The map's only Military-tier loot supply point. A container maze—visibility is extremely limited</text>
+  <rect x="140" y="650" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="170" y="668" class="node-label">B2</text>
+  <rect x="220" y="650" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="250" y="668" class="node-label">C2</text>
+  <rect x="300" y="650" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="330" y="668" class="node-label">D2</text>
+  <rect x="380" y="650" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="410" y="668" class="node-label">B3</text>
+  <rect x="460" y="650" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="490" y="668" class="node-label">C3</text>
+  <rect x="540" y="650" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="570" y="668" class="node-label">D3</text>
+  <polygon points="352,688 368,688 372,700 368,712 352,712 348,700" fill="#B04040" stroke="#800" stroke-width="1"/>
+  <text x="360" y="722" class="landmark-label" text-anchor="middle">L2 (Landmark)</text>
+  <rect x="60" y="780" width="600" height="170" fill="#D0D0E0" opacity="0.4" stroke="#999" stroke-width="1" rx="8"/>
+  <rect x="60" y="780" width="600" height="30" fill="#D0D0E0" opacity="0.7" rx="8"/>
+  <rect x="60" y="800" width="600" height="10" fill="#D0D0E0" opacity="0.7"/>
+  <text x="70" y="800" class="region-label" fill="#333">Lv.1 — Central Arena</text>
+  <text x="460" y="800" class="node-sublabel">Open Space | 600×600m</text>
+  <text x="70" y="940" class="node-sublabel" fill="#555">A completely open arena. Four steel pillars support the upper levels. The stage for the final showdown</text>
+  <rect x="140" y="830" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="170" y="848" class="node-label">C3</text>
+  <rect x="220" y="830" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="250" y="848" class="node-label">D3</text>
+  <rect x="300" y="830" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="330" y="848" class="node-label">C4</text>
+  <rect x="380" y="830" width="60" height="28" fill="white" stroke="#888" stroke-width="1" rx="4"/>
+  <text x="410" y="848" class="node-label">D4</text>
+  <polygon points="352,868 368,868 372,880 368,892 352,892 348,880" fill="#B04040" stroke="#800" stroke-width="1"/>
+  <text x="360" y="902" class="landmark-label" text-anchor="middle">L1 (Landmark)</text>
+<text x="690" y="80" class="subtitle" font-weight="bold">Vertical Access</text>
+  <rect x="690" y="98" width="8" height="12" fill="#CC4444"/>
+  <text x="703" y="108" class="legend-text">Central Elevator Shaft (1 round/level) — Fast but exposed</text>
+  <rect x="690" y="114" width="8" height="12" fill="#4444CC"/>
+  <text x="703" y="124" class="legend-text">Outer Wall Climb Points (2 rounds/level) — Stealthy but strenuous</text>
+  <rect x="690" y="130" width="8" height="12" fill="#44CC44"/>
+  <text x="703" y="140" class="legend-text">Ventilation Ducts (3 rounds/level) — Extremely stealthy but slow</text>
+  <rect x="690" y="146" width="8" height="12" fill="#CC44CC"/>
+  <text x="703" y="156" class="legend-text">Emergency Stairwell (1 round/level) — Moderate speed, semi-exposed</text>
+</svg>

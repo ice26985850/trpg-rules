@@ -1,0 +1,71 @@
+Starship Convoy TRPG — Player Introduction
+
+REFERENCE WORKS STATEMENT
+
+The emotional tone and core experience of this work are inspired by two classics: the game FTL: Faster Than Light (Subset Games), for its crisis management and the tension that every jump could be the last; and the anime Cowboy Bebop, for its crew daily life, road-movie atmosphere, and the interpersonal chemistry of "a group of misfits on the same ship." This ruleset is not an official adaptation of those works, but borrows their space-survival aesthetic and narrative rhythm.
+
+ONE-LINE PITCH
+
+You are not a job title on the ship — you ARE the captain. Once you leave the Last Port, the convoy is your whole world.
+
+WORLD OVERVIEW
+
+Human interstellar civilization has reached its end. This is not the dawn of exploration, but the dusk of decline — the "Era of Decline."
+
+Three hundred years ago, humanity colonized the "Glass Sea Sector" at the galaxy's edge — a swath of stars four hundred light-years across — through the Jump Gate Network. But a devastating civil war destroyed the Jump Gate connecting the sector to the core of civilization, severing this frontier forever. Now there is no interstellar government, no law, no reinforcements. Only abandoned colonies scattered across the stars, roaming automated war-ruins defense systems, and a handful of space stations still running.
+
+The last bastion of civilization is the "Abyss Gate" — a massive space station built atop the wreckage of a destroyed Jump Gate. It can still supply fuel and repair ships, but the Abyss Gate's fuel reserves will be exhausted within twenty years. Everyone faces the same choice: stay at the port and wait to die, or leave — betting that the depths of the star sea still hold a future.
+
+Those who leave form a Convoy — a micro-fleet of three to five starships, bound together against the unknown. This is not the fleet of a galactic empire. It is that beat-up car from the road movie, and the people in it who have nothing but each other.
+
+WHAT DO YOU PLAY? WHAT IS THE CORE GAMEPLAY?
+
+You are a starship captain. You have a customizable ship and three to five named, charismatic core crew members with their own hidden agendas. You and your friends — other captains — form a convoy and decide its course together.
+
+This is not a dictatorship. Major decisions are made by Vote. You wanted the safe route, but your shipmates voted for the shortcut — and you are forced to carry out a decision you disagree with. This is not a flaw in the game; it is where the drama begins.
+
+The core gameplay revolves around a four-layer loop:
+- Resource Management: Fuel, Food, Parts, Ammunition, Medicine — five resources are constantly consumed, and every jump must be calculated.
+- Crew Loyalty: your Chief Engineer might be poached by a neighboring ship with better terms; your First Mate might be disappointed in your decisions. Every crew member has their own story and hidden agenda.
+- Voyage Events: derelict ship exploration, distress signals (which may be traps), pirate ambushes, time dilation zones — the star sea is always livelier than you imagine.
+- Convoy Politics: voting is not just a mechanic, it is an experiment in human nature. Persuade allies, bargain, sometimes lose — but the lost vote often makes the best story.
+
+SYSTEM HIGHLIGHTS
+
+Dual-attribute system — both you and your ship are characters.
+You have not only Captain attributes (Command, Engineering, Navigation, Diplomacy, Intuition), but your ship has its own attributes (Engine, Armor, Firepower, Sensors, Cargo Hold). The captain's ability determines what you can do; the ship's performance determines what you can endure. Upgrading the hull and nurturing the captain matter equally.
+
+Crew are not data — they are stories.
+Every bridge crew member has a name, personality, skill bonus, loyalty, and hidden agenda. They may betray you when poached, step up in a crisis, or reveal a side you never saw during the long voyage. Your engineer may drink too much but be supremely gifted; your navigator may be so superstitious they refuse to cross an "ominous nebula." They are the only traveling companions on your road.
+
+Voting system — no dictatorial captain.
+This is not "the GM tells you the plot"; this is "you and your shipmates vote on where to go next." Major decisions require a simple majority, a two-thirds majority, or even unanimous approval. You can try to persuade other captains to change their stance — a Diplomacy (DIP) check against their Command (CMD) attribute. Losing a vote is not game over; it is the beginning of "now you are forced down a road you think is dangerous — what will you do?"
+
+WHO IS IT FOR?
+
+If you like the tension of FTL — where every encounter might cost you a key crew member — if you like the Cowboy Bebop vibe of "a bunch of misfits telling stories on a broken ship," if you like building real dramatic tension with friends while bargaining at the table — this ruleset is written for you.
+
+This ruleset suits players with basic TRPG experience. The core mechanic is clear (d20 + attribute vs Difficulty Class (DC), intuitive at a glance), but the strategic depth comes from resource management and interpersonal play, not stacked complexity. If you prefer an open-world sandbox over a linear plot, if you get excited by questions like "do we have enough fuel for this jump" and "should I really trust that distress signal" — this is your star sea.
+
+GAME STYLE TAGS
+
+- Combat weight: Significant
+- Strategic depth: Moderate strategy
+- Story-driven: Sandbox freedom
+- Resource management: Heavy management
+- Character customization: Highly customizable
+- Character-creation complexity: Medium
+- Rules density: Medium ruleset
+- GM requirement: Requires a GM (host)
+
+ESTIMATED PLAY TIME
+
+- Single scenario (incl. character creation): 8–12 hours (2–3 sessions)
+- Full open-world campaign: 60–100+ hours (depending on the convoy's adventure scope)
+- Solo-mode campaign (Lone Star, levels 1–10): 60–80 hours
+
+BASIC INFO
+
+- Player count: 2–5 (1 GM + 1–4 captains); a solo-mode supplement also supports 1 GM + 1 player
+- Core dice: d20
+- System type: Open-world space-survival TRPG

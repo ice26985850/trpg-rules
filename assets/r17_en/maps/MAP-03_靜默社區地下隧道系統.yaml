@@ -1,0 +1,52 @@
+id: "MAP-03"
+title: "Silent Community Underground Tunnel System"
+region: "Old Town"
+danger: "★★★★☆"
+suitable_levels: [4]
+regions:
+  - name: "Tunnel System"
+    color: "#ECEFF1"
+nodes:
+  - id: "sewer"
+    name: "Sewer Exit"
+    region: "Tunnel System"
+    col: 0
+    row: 0
+    note: "Enter from north side of community; Order symbol; vent (Perception TN11 → hidden door)"
+  - id: "door_b"
+    name: "Building B Hidden Door"
+    region: "Tunnel System"
+    col: 1
+    row: 0
+    note: "Hidden door (Awareness TN11 or Technician detects airflow); leads to ~30m tunnel"
+  - id: "shrine"
+    name: "Main Tunnel — Reliquary"
+    region: "Tunnel System"
+    col: 2
+    row: 0
+    note: "Most spacious area; Order relics (Blue), diary fragments (Purple), Curtain Fragment (Gold); ritual altar"
+  - id: "gate"
+    name: "Tunnel Gate"
+    region: "Tunnel System"
+    col: 3
+    row: 0
+    note: "Metal gate (DR3); closing it (Tech TN14) seals off the Guardian; control panel Electronics TN11"
+  - id: "exit_c"
+    name: "Community Center Rear Exit"
+    region: "Tunnel System"
+    col: 4
+    row: 0
+    note: "Leads to surface; exit blocked by debris (Lockpicking / forced break, Perception TN14)"
+edges:
+  - from: "sewer"
+    to: "door_b"
+    label: "Corridor"
+  - from: "door_b"
+    to: "shrine"
+    label: "Tunnel 30m"
+  - from: "shrine"
+    to: "gate"
+    label: "Corridor"
+  - from: "gate"
+    to: "exit_c"
+    label: "Corridor"

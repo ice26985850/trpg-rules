@@ -1,0 +1,192 @@
+name: Faction Codex
+source_file: 勢力圖鑑.md
+table_count: 7
+tables:
+- section: 5.6 Abyssal Dungeon Political Landscape > 5.6.1 Sixteen Major Dungeons (Full Map) > Sea of Shadows
+  headers:
+  - code
+  - dungeon_name
+  - lord
+  - archetype
+  - lv
+  - alliance
+  rows:
+  - code: D-1
+    dungeon_name: Eternal Slumber Gallery
+    lord: Malthus, "Iron-Bone Marquis"
+    archetype: Necromancer Lord
+    lv: '8'
+    alliance: Bone Mound Council*
+  - code: D-2
+    dungeon_name: Silent Abyss
+    lord: Okalos, "the Silent One"
+    archetype: Necromancer Lord
+    lv: '6'
+    alliance: Bone Mound Council
+  - code: D-3
+    dungeon_name: Shadow Hall Labyrinth
+    lord: Vera, "Web-Weaver"
+    archetype: Shadow Council
+    lv: '6'
+    alliance: Shadow Network*
+  - code: D-4
+    dungeon_name: Nameless Cemetery
+    lord: Glak, "the Gravedigger"
+    archetype: Necromancer Lord
+    lv: '4'
+    alliance: Neutral
+- section: 5.6 Abyssal Dungeon Political Landscape > 5.6.1 Sixteen Major Dungeons (Full Map) > Magma Plains
+  headers: null
+  rows:
+  - col1: D-5
+    col2: Sky-Burning Fortress
+    col3: Balzec, "Earth-Render"
+    col4: Abyssal Overlord
+    col5: '10'
+    col6: Abyssal Legion*
+  - col1: D-6
+    col2: Throne of Sulfur
+    col3: Ignis, "Flame-Heart Queen"
+    col4: Abyssal Overlord
+    col5: '9'
+    col6: Abyssal Legion
+  - col1: D-7
+    col2: Inferno Lake Abyss
+    col3: Drogath, "Furnace Lord"
+    col4: Abyssal Overlord
+    col5: '7'
+    col6: Abyssal Legion
+- section: 5.6 Abyssal Dungeon Political Landscape > 5.6.1 Sixteen Major Dungeons (Full Map) > Gloom Forest
+  headers: null
+  rows:
+  - col1: D-8
+    col2: Twisted Laboratory
+    col3: Moris, "Thousand-Faces"
+    col4: Mad Sorcerer
+    col5: '7'
+    col6: Free Artisans
+  - col1: D-9
+    col2: Void Weaving Workshop
+    col3: Ethlin, "Void-Weaver"
+    col4: Mad Sorcerer
+    col5: '5'
+    col6: Free Artisans
+  - col1: D-10
+    col2: Spore Cavern
+    col3: Zeg, "Fungus King"
+    col4: Mad Sorcerer
+    col5: '4'
+    col6: Neutral
+  - col1: D-11
+    col2: Shadow-Entwined Tower
+    col3: Morgana, "Shadow Lady"
+    col4: Shadow Council
+    col5: '8'
+    col6: Shadow Network
+- section: 5.6 Abyssal Dungeon Political Landscape > 5.6.1 Sixteen Major Dungeons (Full Map) > Scrap Canyon
+  headers: null
+  rows:
+  - col1: D-12
+    col2: Gear Fortress
+    col3: Wrench, "Grand Artificer"
+    col4: Goblin Tinkerer
+    col5: '5'
+    col6: Free Artisans*
+  - col1: D-13
+    col2: Forge Hall
+    col3: Barok, "Anvil King"
+    col4: Goblin Tinkerer
+    col5: '6'
+    col6: Free Artisans
+  - col1: D-14
+    col2: Mint
+    col3: Grix, "Goldtooth"
+    col4: Ancient Wyrm
+    col5: '11'
+    col6: Free Artisans
+- section: 5.6 Abyssal Dungeon Political Landscape > 5.6.1 Sixteen Major Dungeons (Full Map) > Abyssal Core
+  headers: null
+  rows:
+  - col1: D-15
+    col2: Dragon's Rest Abyss
+    col3: Selathil, "Ancient Scale"
+    col4: Ancient Wyrm
+    col5: '12'
+    col6: Non-Aligned
+  - col1: D-16
+    col2: Primordial Rift
+    col3: '"Voice of the Abyss"?'
+    col4: Unknown
+    col5: 14+
+    col6: Untouchable
+- section: 5.6 Abyssal Dungeon Political Landscape > 5.6.2 The Four Alliances
+  headers:
+  - alliance
+  - member_archetype
+  - creed
+  - membership_bonus
+  rows:
+  - alliance: '**Bone Mound Council**'
+    member_archetype: Undead
+    creed: Order above all; rites of death
+    membership_bonus: Undead recruitment cost -20%, bone-pigeon intel, skeleton reinforcements
+  - alliance: '**Abyssal Legion**'
+    member_archetype: Demons
+    creed: Might is right; trial by flame
+    membership_bonus: Combat monsters CV+1, joint military operations
+  - alliance: '**Shadow Network**'
+    member_archetype: Shadow Council
+    creed: Information is power; mutual exploitation
+    membership_bonus: Per-round intel check, +2 dice on assassination aid
+  - alliance: '**Free Artisans**'
+    member_archetype: Goblin / Wizard / Dragon
+    creed: Pragmatism; commerce first
+    membership_bonus: Building Materials -20%, tech workshops, joint orders
+- section: 5.6 Abyssal Dungeon Political Landscape > 5.6.4 d66 Quick-Generate Unknown Minor Dungeons
+  headers:
+  - d66
+  - type
+  - archetype
+  - infamy_inf
+  - attitude
+  rows:
+  - d66: 11-13
+    type: Bone Mound Dungeon
+    archetype: Necromancer Lord
+    infamy_inf: 4-8
+    attitude: Neutral-leaning-cold
+  - d66: 14-16
+    type: Undead Fortress
+    archetype: Undead (High Tier)
+    infamy_inf: 7-10
+    attitude: Cold-leaning-hostile
+  - d66: 21-23
+    type: Inferno Prison Dungeon
+    archetype: Abyssal Overlord
+    infamy_inf: 5-9
+    attitude: Hostile tendency
+  - d66: 31-33
+    type: Mad Laboratory
+    archetype: Mad Sorcerer
+    infamy_inf: 3-7
+    attitude: Neutral-leaning-friendly
+  - d66: 41-43
+    type: Dragon Hoard Vault
+    archetype: Ancient Wyrm
+    infamy_inf: 5-8
+    attitude: Neutral (trade-focused)
+  - d66: 51-53
+    type: Shadow Outpost
+    archetype: Shadow Council
+    infamy_inf: 4-7
+    attitude: Neutral-leaning-friendly
+  - d66: 61-63
+    type: Mechanical Factory
+    archetype: Goblin Tinkerer
+    infamy_inf: 3-6
+    attitude: Friendly
+  - d66: '66'
+    type: '**Special**: roll d6 — 1=dual-lord union, 2=abandoned & explorable, 3=moving caravan, 4=ancient Nexis temple, 5=lord overthrown, 6=Abyssal Rift'
+    archetype: ''
+    infamy_inf: ''
+    attitude: ''

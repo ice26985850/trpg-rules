@@ -1,0 +1,97 @@
+name: "The Last Landing Craft"
+difficulty: "Finale (Challenge Rating (CR) 3-4)"
+mode: "Astartes · Solo"
+recommended_attributes: "+5-7 growth"
+
+opening_description: >
+  The orbital defenses are down. A distress signal has been sent. An Imperial frigate has answered—the Landing Craft is descending.
+  It can only carry **2 people**.
+  You and the surviving companion. And—the civilians you may have rescued in the ruins (if any). And the black box data.
+  Who boards? Who stays?
+
+surface_goal: >
+  Safely reach the evacuation point before the Landing Craft arrives. Carry the black box data (if any).
+
+hidden_goal: >
+  The true purpose of the Landing Craft may not be rescue—but to recover the black box data. Lieutenant Vera may be only a tool.
+
+known_threats:
+  - "The Landing Craft is expected to arrive within 6 hours"
+  - "Chaos forces are pushing toward the Starport"
+  - "You only have 2 seats"
+
+hidden_threats:
+  - "The true purpose of the Landing Craft may not be rescue—but to recover the black box data"
+  - "A Chaos 'messenger' will appear at the final moment"
+  - "The black box data may prove your Chapter Master once gave a wrong order"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 1
+  flare: 2
+  food_water_days: 2
+  ammo_magazines: 2
+
+companions:
+  - name: "Surviving companion (continued)"
+    role: "NPC who survived from SB-1~4"
+    backstory: "If no companion survived, the player is alone"
+    bottom_line: "Depends on the character"
+    initial_attitude: "Continues"
+
+internal_seduction_trigger:
+  timing: "Before the Landing Craft lands, facing the final choice"
+  whisper: "Two seats. You and whom? If you take the black box data—you may need to sacrifice a companion. If you take the companion—the data may be lost forever. Will the Emperor understand your choice?"
+
+key_checks:
+  - scene: "Rally to the evacuation point"
+    check: "No check—RP choice"
+    tn_adjustment: 0
+    success: "Organize an orderly evacuation"
+    failure: "Chaos—delay the landing time"
+  - scene: "Face the Chaos messenger"
+    check: "Faith (Hard)"
+    tn_adjustment: -20
+    success: "Reject the offer"
+    failure: "Corruption +5"
+  - scene: "Calculate who boards"
+    check: "No check—RP choice"
+    tn_adjustment: 0
+    success: "Fairly distribute the Landing Craft seats"
+    failure: "Conflict breaks out"
+
+encounters:
+  - name: "Starport perimeter"
+    enemies: "Mutant ×6 + Tyrant ×2"
+    tactic: "Buy time. Must clear the perimeter threat before the Landing Craft arrives"
+  - name: "Control tower defense"
+    enemies: "Warp Shadows ×2"
+    tactic: "They emerge from the walls. Requires Faith or Psychic resistance"
+  - name: "Landing pad (final)"
+    enemies: "Chaos Space Marine ×1 + Cultist ×4"
+    tactic: "Final Boss battle. Must clear the landing pad before the Landing Craft lands"
+
+oath_conflicts_final:
+  conflict: "The ultimate test of all oaths"
+  choice_a: "Oath to the Emperor—bring back the black box data to overturn the wrongful Exterminatus"
+  choice_b: "Oath to brothers-in-arms—who boards? Who stays?"
+  choice_c: "Oath to the innocent—the civilians—how many can you take?"
+  choice_d: "Oath to the mission—successful evacuation is mission complete"
+
+endings:
+  - condition: "Full evacuation (unlikely)"
+    result: "A miracle. But you know this is not the normal ending of 40K"
+  - condition: "Partial evacuation"
+    result: "At least 1 Astartes boards + black box data. The standard ending. Those left behind gain a dignified final mission"
+  - condition: "No evacuation"
+    result: "A tragic-heroic ending. Your story ends here—but a legend lives on this planet"
+  - condition: "Someone chooses darkness"
+    result: "A nightmare ending. Among those who board, one is no longer himself"
+
+  - condition: "Player stays"
+    result: "Choose a final mission. Gain Faith +5. Your name will not be remembered—but your choice will"
+  - condition: "Companion stays"
+    result: "The companion chooses their own final mission. The GM plays out their farewell. You gain their personal belongings as a relic"
+
+map_ref: "maps/map10_starport"

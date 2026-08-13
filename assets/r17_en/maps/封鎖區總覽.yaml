@@ -1,0 +1,76 @@
+id: "OVERVIEW"
+title: "Quarantine Zone Overview"
+region: "Quarantine Zone (All Sectors)"
+danger: "—"
+suitable_levels: []
+regions:
+  - name: "Edge Zone (★☆☆☆☆)"
+    color: "#E8F5E9"
+  - name: "Old Town (★★☆☆☆)"
+    color: "#E3F2FD"
+  - name: "Industrial Zone (★★★☆☆)"
+    color: "#FFF3E0"
+  - name: "Core Zone (★★★★★)"
+    color: "#FFEBEE"
+nodes:
+  - id: "m1"
+    name: "MAP-01 Ash Mall Parking Garage"
+    region: "Edge Zone (★☆☆☆☆)"
+    col: 0
+    row: 0
+    note: "Edge Zone|Danger ★★☆☆☆|Suitable Lv.1-2"
+  - id: "m2"
+    name: "MAP-02 Silent Community Elementary School"
+    region: "Old Town (★★☆☆☆)"
+    col: 0
+    row: 1
+    note: "Old Town|Danger ★★☆☆☆|Suitable Lv.3"
+  - id: "m3"
+    name: "MAP-03 Underground Tunnel System"
+    region: "Old Town (★★☆☆☆)"
+    col: 1
+    row: 1
+    note: "Old Town|Danger ★★★★☆|Suitable Lv.4"
+  - id: "m4"
+    name: "MAP-04 Rusted Factory Building"
+    region: "Industrial Zone (★★★☆☆)"
+    col: 0
+    row: 2
+    note: "Industrial Zone|Danger ★★★★☆|Suitable Lv.6-7"
+  - id: "m6"
+    name: "MAP-06 Brotherhood Headquarters"
+    region: "Industrial Zone (★★★☆☆)"
+    col: 1
+    row: 2
+    note: "Industrial Zone|Danger ★★★★★|Suitable Lv.9"
+  - id: "m5"
+    name: "MAP-05 Abandoned Church + Crypt"
+    region: "Core Zone (★★★★★)"
+    col: 0
+    row: 3
+    note: "Core Zone Edge|Danger ★★★★☆|Suitable Lv.8"
+  - id: "m7"
+    name: "MAP-07 Ashila Deep Laboratory"
+    region: "Core Zone (★★★★★)"
+    col: 1
+    row: 3
+    note: "Core Zone|Danger ★★★★★|Suitable Lv.10"
+edges:
+  - from: "m1"
+    to: "m2"
+    label: ""
+  - from: "m2"
+    to: "m3"
+    label: ""
+  - from: "m4"
+    to: "m6"
+    label: ""
+  - from: "m3"
+    to: "m4"
+    label: ""
+  - from: "m4"
+    to: "m5"
+    label: ""
+  - from: "m5"
+    to: "m7"
+    label: "Rift Energy Spreading"

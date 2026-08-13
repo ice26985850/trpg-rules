@@ -1,0 +1,109 @@
+name: "Level 7 — Thalassophobia"
+description: "A research base flooded by seawater — oxygen deprivation underwater, a Leviathan prowls the depths"
+scenario_ref: "S4_熄燈"
+usage: "Scenario S4 second half: don diving gear to cross the water, avoid the Leviathan, and head to Level 8 via the drainage pipes"
+regions:
+  - name: "Flooded Zone"
+    color: "#E3F2FD"
+    nodes: ["N01"]
+    description: "Area"
+  - name: "Laboratory"
+    color: "#E8F5E9"
+    nodes: ["N02", "N03"]
+    description: ""
+  - name: "Deep Water Threat (Danger)"
+    color: "#F3E5F5"
+    nodes: ["N04", "N06"]
+    description: ""
+  - name: "Exit Area"
+    color: "#E3F2FD"
+    nodes: ["N05", "N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Flooded Corridor Entrance"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "Fall through the collapse above into waist-deep water — the oxygen countdown begins"
+  - id: "N02"
+    label: "Laboratory"
+    x: 330
+    y: 210
+    type: "resource"
+    explored: false
+    description: "Sealed Almond Water and research supplies"
+    resources: "Sealed Almond Water ×2, research supplies"
+  - id: "N03"
+    label: "Diving Gear Store"
+    x: 330
+    y: 410
+    type: "resource"
+    explored: false
+    description: "Usable diving gear — 30 minutes of oxygen"
+    resources: "Diving Gear ×1"
+  - id: "N04"
+    label: "Deep Water Zone (Leviathan)"
+    x: 530
+    y: 300
+    type: "danger"
+    explored: false
+    description: "A huge black shadow prowls — do not look directly"
+    threats: "Leviathan (direct gaze SP -3)"
+  - id: "N05"
+    label: "Drainage Pipe Entrance"
+    x: 690
+    y: 210
+    type: "navigation"
+    explored: false
+    description: "The start of an upward-sloping drainage channel"
+  - id: "N06"
+    label: "Deep Black Shadow"
+    x: 690
+    y: 410
+    type: "danger"
+    explored: false
+    description: "The deepest water where the Leviathan lurks"
+    threats: "Leviathan"
+  - id: "N07"
+    label: "Drainage Pipe (Exit)"
+    x: 830
+    y: 320
+    type: "exit"
+    explored: false
+    description: "Surface and arrive at Level 8"
+    exit_to: "Level 8 — Cave System"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N01"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "dangerous_path"
+    label: "Leviathan"
+  - from: "N03"
+    to: "N04"
+    type: "dangerous_path"
+    label: "Leviathan"
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: "→ Drainage"
+  - from: "N04"
+    to: "N06"
+    type: "dangerous_path"
+    label: "Depths"
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ Exit"
+  - from: "N06"
+    to: "N07"
+    type: "dangerous_path"
+    label: "→ Exit"

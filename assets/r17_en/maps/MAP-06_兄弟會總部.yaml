@@ -1,0 +1,56 @@
+id: "MAP-06"
+title: "Brotherhood Headquarters"
+region: "Industrial Zone"
+danger: "★★★★★"
+suitable_levels: [9]
+regions:
+  - name: "Perimeter"
+    color: "#ECEFF1"
+  - name: "Main Building"
+    color: "#FFEBEE"
+  - name: "Annex"
+    color: "#FFF3E0"
+nodes:
+  - id: "secret"
+    name: "Backup Passage Entrance"
+    region: "Perimeter"
+    col: 0
+    row: 1
+    note: "Provided by Old Ke's informant; hidden door inside abandoned factory; traitor's rendezvous point"
+  - id: "barrack"
+    name: "Barracks Level"
+    region: "Main Building"
+    col: 1
+    row: 1
+    note: "6 Elite Guards + 2 Officers (with traitor's help → 3); Stealth TN11 to bypass; dormitory/training ground/cafeteria"
+  - id: "armory"
+    name: "Armory"
+    region: "Annex"
+    col: 2
+    row: 2
+    note: "Heavy Assault Rifle (Gold), Full-body Heavy Armor (Gold); Elite Guard ×1 may appear"
+  - id: "command"
+    name: "Command Center"
+    region: "Main Building"
+    col: 1
+    row: 2
+    note: "Cossack (staged battle); traitor throws stun grenade on round 3; bulletproof glass cover"
+  - id: "roof"
+    name: "Roof Extraction Platform"
+    region: "Main Building"
+    col: 1
+    row: 3
+    note: "QZAC helicopter landing point; wait 3 rounds, defend against Elite Guards ×2"
+edges:
+  - from: "secret"
+    to: "barrack"
+    label: "Hidden Door"
+  - from: "barrack"
+    to: "armory"
+    label: "Passage"
+  - from: "barrack"
+    to: "command"
+    label: "Stairs"
+  - from: "command"
+    to: "roof"
+    label: "Stairs"

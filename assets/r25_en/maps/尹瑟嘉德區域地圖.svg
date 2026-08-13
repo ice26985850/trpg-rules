@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" font-family="'Microsoft JhengHei','PingFang TC',sans-serif">
+  <!-- Background: parchment -->
+  <rect x="0" y="0" width="800" height="560" fill="#FCF8F0"/>
+  <!-- East Sea (east coast, where Seabreeze is) -->
+  <path d="M660 0 L800 0 L800 560 L660 560 C630 460 640 360 660 290 C645 230 650 130 670 0 Z" fill="#D6EAF8" stroke="#9CC3E0" stroke-width="1.5"/>
+  <text x="735" y="285" fill="#4A7BA6" font-size="15" text-anchor="middle" transform="rotate(90 735 285)">East Sea</text>
+
+  <!-- Terrain: Anvilhearth (west) mountains -->
+  <g fill="#C9BBA8" stroke="#9C8B73" stroke-width="1">
+    <polygon points="175,330 200,280 225,330"/>
+    <polygon points="205,338 232,285 259,338"/>
+    <polygon points="150,340 173,298 196,340"/>
+  </g>
+  <!-- Terrain: Verdantvale (north) forest -->
+  <g fill="#BFE3B0" stroke="#7FB069" stroke-width="1">
+    <circle cx="318" cy="128" r="16"/>
+    <circle cx="352" cy="118" r="13"/>
+    <circle cx="378" cy="135" r="15"/>
+    <circle cx="335" cy="150" r="12"/>
+  </g>
+
+  <!-- Trade routes -->
+  <g stroke="#8B6F47" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+    <line x1="440" y1="320" x2="690" y2="290"/>   <!-- Royal Capital–Seabreeze East Sea Road -->
+    <line x1="440" y1="320" x2="345" y2="150"/>   <!-- Royal Capital–Verdantvale Emerald Trade Route -->
+    <line x1="440" y1="320" x2="215" y2="300"/>   <!-- Royal Capital–Anvilhearth Foothill Trade Road -->
+    <line x1="345" y1="150" x2="215" y2="300"/>   <!-- Verdantvale–Anvilhearth -->
+    <line x1="215" y1="300" x2="120" y2="165"/>   <!-- Anvilhearth–Watchkeep Ore Road -->
+    <line x1="345" y1="150" x2="120" y2="165"/>   <!-- Verdantvale–Watchkeep -->
+    <line x1="120" y1="165" x2="440" y2="320" stroke-dasharray="7 5"/> <!-- Watchkeep–Royal Capital Border Relay Road -->
+  </g>
+  <!-- Route names -->
+  <g fill="#5A4632" font-size="12" text-anchor="middle">
+    <text x="566" y="298">East Sea Road</text>
+    <text x="398" y="232">Emerald Trade Route</text>
+    <text x="320" y="312">Foothill Trade Road</text>
+    <text x="262" y="212">Nearby (1 wk)</text>
+    <text x="160" y="240">Ore Road</text>
+    <text x="222" y="150">Nearby (1 wk)</text>
+    <text x="300" y="268">Border Relay Road</text>
+  </g>
+
+  <!-- City nodes -->
+  <!-- Royal Capital (center, gold) -->
+  <circle cx="440" cy="320" r="13" fill="#E8B923" stroke="#9A7411" stroke-width="2"/>
+  <text x="440" y="350" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">Royal Capital Edwyna</text>
+  <!-- Seabreeze (east port, blue) -->
+  <circle cx="690" cy="290" r="11" fill="#4A90C2" stroke="#2C5E82" stroke-width="2"/>
+  <text x="690" y="270" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">Port City Seabreeze</text>
+  <!-- Verdantvale (north forest, green) -->
+  <circle cx="345" cy="150" r="11" fill="#6FB069" stroke="#3E7A38" stroke-width="2"/>
+  <text x="345" y="112" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">Forest City Verdantvale</text>
+  <!-- Anvilhearth (west mountain, grey) -->
+  <circle cx="215" cy="300" r="11" fill="#9AA0A6" stroke="#5C6066" stroke-width="2"/>
+  <text x="215" y="270" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">Mountain City Anvilhearth</text>
+  <!-- Watchkeep (border, ochre-red) -->
+  <circle cx="120" cy="165" r="11" fill="#C0654B" stroke="#7E3B27" stroke-width="2"/>
+  <text x="120" y="135" fill="#2B2B2B" font-size="14" font-weight="bold" text-anchor="middle">Border Town Watchkeep</text>
+
+  <!-- Compass -->
+  <g transform="translate(60,500)">
+    <circle r="22" fill="#FFFFFF" stroke="#9C8B73" stroke-width="1.5"/>
+    <polygon points="0,-15 5,2 0,-2 -5,2" fill="#C0654B"/>
+    <text x="0" y="-26" fill="#5A4632" font-size="12" text-anchor="middle">N</text>
+  </g>
+
+  <!-- Title and legend -->
+  <text x="400" y="36" fill="#3A2E1E" font-size="22" font-weight="bold" text-anchor="middle">Ynserghard Regional Map</text>
+  <text x="400" y="58" fill="#6B5B45" font-size="12" text-anchor="middle">Post-Heroic Age · Five Cities and Trade Routes (figures on map are travel-week references)</text>
+  <g transform="translate(560,470)" font-size="12" fill="#5A4632">
+    <rect x="-10" y="-18" width="240" height="64" fill="#FFFFFF" opacity="0.7" stroke="#9C8B73" stroke-width="1"/>
+    <text x="0" y="0">Royal Capital→Seabreeze 1 wk / Verdantvale 1 wk</text>
+    <text x="0" y="16">Royal Capital→Anvilhearth 2 wk / Watchkeep 3 wk</text>
+    <text x="0" y="32">Anvilhearth↔Watchkeep Nearby 1 wk</text>
+  </g>
+</svg>

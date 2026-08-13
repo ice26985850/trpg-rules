@@ -1,0 +1,48 @@
+id: "MAP-01"
+title: "Ash Mall Underground Parking Garage (Expansion)"
+region: "Edge Zone"
+danger: "★★☆☆☆"
+suitable_levels: [1, 2]
+regions:
+  - name: "B1 Level (General Parking)"
+    color: "#E3F2FD"
+  - name: "B2 Level (Deep Parking)"
+    color: "#FFF3E0"
+nodes:
+  - id: "entry"
+    name: "Underground Parking Entrance"
+    region: "B1 Level (General Parking)"
+    col: 0
+    row: 0
+    note: "Ramp leads to B1 Level; stacked shelving above serves as natural cover; Mutant Rats ×3 present"
+  - id: "east"
+    name: "East Parking Lot"
+    region: "B1 Level (General Parking)"
+    col: 1
+    row: 0
+    note: "Open parking area, ~50 spaces. Extraction Point A (flare gun call); Residuals patrol 1-2"
+  - id: "tunnel"
+    name: "Maintenance Passage"
+    region: "B1 Level (General Parking)"
+    col: 2
+    row: 0
+    note: "B1→B2 connector, 1.5m wide, fits one person; Mutant Rat ambush; Stealth TN14"
+  - id: "supply"
+    name: "Supply Truck Zone"
+    region: "B2 Level (Deep Parking)"
+    col: 3
+    row: 0
+    note: "B2 deep level; military supply trucks can be searched; Enhanced Residual ×1; escape stairs lead to surface (Hidden Extraction Point TN14)"
+edges:
+  - from: "entry"
+    to: "east"
+    label: "Ramp"
+  - from: "east"
+    to: "tunnel"
+    label: "Corridor"
+  - from: "tunnel"
+    to: "supply"
+    label: "Ramp / Elevator Shaft"
+  - from: "supply"
+    to: "entry"
+    label: "Escape Stairs (Hidden Extraction)"

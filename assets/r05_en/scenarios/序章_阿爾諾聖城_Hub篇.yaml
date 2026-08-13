@@ -1,0 +1,18 @@
+name: "Prologue: Alno Holy City (Hub) (Town Base Chapter)"
+description: Town base (Hub) chapter — explains the entire campaign's opening flow starting from Alno Holy City and how each scene connects (temple class grant, guild enrollment, out-of-city dungeons, commission system), and clarifies the two top rules "no multiclass" and "solo mode has no sidekick." This chapter is a GM opening handbook and does not replace the content of S0–S4, D1–D2, or the Commission Catalog.
+type: campaign_hub
+chapter: 0
+player_mode: Solo/Multiplayer
+references:
+  - S0_序章新手村.yaml
+  - D1_哥布林巢穴.yaml
+  - D2_沉眠墓窖.yaml
+  - 委託目錄（assets/委託目錄.md）
+encounters:
+  []
+rewards:
+  exp: None
+  gold: None
+  ip: 0
+  items:
+    []

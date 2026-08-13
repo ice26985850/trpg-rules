@@ -1,0 +1,67 @@
+name: "The Last Day"
+description: "On the fourteenth day, time begins to collapse. The player must, within fourteen days, choose one of three routes to stop time from fully stagnating. All the accumulated intelligence and relationships of the first four scenarios bear fruit here."
+difficulty: "Epic"
+level_range:
+  min_memory: 8
+  max_memory: 12
+  suggested_cycles: "10-15"
+time_range:
+  days: 14
+  end_event: "Day 14 — time collapse"
+core_skills:
+  primary: ["Insight", "Memory", "Execution", "Social", "Will"]
+save_point: "Eternal Well (the only one, cannot be skipped)"
+prerequisites: "Recommended to have completed at least three of S1-S4"
+routes:
+  - id: "repair_scales"
+    name: "Repair the Serpent Scales"
+    goal: "Repair the wound of Ouroboros"
+    cost: "A Returner dedicates all their cycles"
+    result: "The Return phenomenon vanishes, all become ordinary people"
+    requires: ["Tower of Time research data (S2)", "Time Watcher ritual knowledge (S4)"]
+  - id: "break_cycle"
+    name: "Break the Cycle"
+    goal: "Activate the Time Fracture Device"
+    cost: "Memories of all Returners erased"
+    result: "No one remembers the cycles, the world restarts"
+    requires: ["Shadow Guild intelligence (S3)", "Imperial device"]
+  - id: "coexist"
+    name: "Coexist with the Serpent"
+    goal: "Returners synchronously sync Save Points"
+    cost: "Never truly able to leave the cycle"
+    result: "Returners form a community spanning the cycles"
+    requires: ["Church scriptures (S1)", "Mutual Aid Society wisdom"]
+timeline:
+  - days: "1-3"
+    phase: "Identify"
+    events: ["Minor temporal fluctuations", "Citizens uneasy"]
+  - days: "4-6"
+    phase: "Mobilize"
+    events: ["Church declares the End-Cycle", "Tower of Time emergency meeting", "Guild profits in the chaos"]
+  - days: "7-9"
+    phase: "Deepen"
+    events: ["Temporal anomalies worsen", "Deeply investigate routes"]
+  - days: "10-12"
+    phase: "Turning Point"
+    events: ["Key NPCs may sacrifice themselves", "Obtain key items"]
+  - days: "13"
+    phase: "Farewell"
+    events: ["Final interaction with important NPCs"]
+  - days: "14"
+    phase: "The End"
+    events: ["Execute the final plan"]
+endings:
+  - route: "Repair the Serpent Scales"
+    success: "Silent Ending — the world returns to normal"
+    partial: "Permanently lose part of memory"
+    failure: "Eternal Stagnation"
+  - route: "Break the Cycle"
+    success: "Blank Ending — starting from zero"
+    partial: "Trapped in the final cycle"
+    failure: "Eternal Stagnation"
+  - route: "Coexist with the Serpent"
+    success: "Resonance Ending — a new community is built"
+    partial: "Conflict with the Church / Tower of Time continues"
+    failure: "Eternal Stagnation (a fourth route may be discovered)"
+multiplayer_gm_tips: |
+  Designed for solo play; per 14-3 may start with 2-3 players: each player manages their own Rift Mark and Memory Fragments; EB = sum of all players' Memory + highest Execution value; combat scenes follow 14-3 enemy scaling. S5 is best for multiple players: the three routes advance in parallel by different players, each negotiating the corresponding faction, converging on Day 13-14; Route Three's collective ritual is naturally a Team Check. Multiple endings by squad consensus; the prerequisite (complete at least three of S1-S4) applies to the squad as a whole.

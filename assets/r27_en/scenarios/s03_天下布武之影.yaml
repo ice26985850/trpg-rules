@@ -1,0 +1,166 @@
+# Beastman Warring States TRPG Scenario
+# S3: Shadow of Tenka Fubu
+# Campaign: Act Three (Levels 11–14)
+# Recommended Players: 1–4
+
+scenario_id: "S3"
+title: "Shadow of Tenka Fubu"
+act: 3
+suggested_levels:
+  min: 11
+  max: 14
+difficulty: "Advanced"
+estimated_sessions: 4
+prerequisite_scenario: "S2_魂刀之呼喚"
+
+background: |
+  The "Tenka Fubu" campaign of Tora Arashi-zai, the Tiger Clan Daimyō, reaches its climax. Total war erupts.
+  The players have been granted command authority within their chosen faction (the Giri Alliance or the Tenka Fubu League).
+  The core of this scenario is a pivotal Mass Battle — the Battle of the Wailing Plains.
+
+  Meanwhile, the trail of the famed blades points to "Onikiri-maru," one of the Five Swords Under Heaven — it lies in Arashi-zai's hands, and its yokai is eroding the wielder's Spirit (SPT).
+
+factions:
+  player_side:
+    lord: "Depends on the players' choices in Acts One and Two"
+    allies: "Other provincial allied forces within the faction"
+  enemy_side:
+    main_villain: "The enemy's grand general (depends on the players' faction choice)"
+    key_figure: "A young enemy commander (the nemesis the players met in Act One)"
+  neutral:
+    - "Jōdo Temple monk-soldier corps (can be asked for medical support)"
+    - "Rat Clan informants (can purchase enemy deployment intelligence)"
+
+scenes:
+  - id: 1
+    name: "War Council — Pre-Battle Preparation"
+    type: "Social / Strategy"
+    description: |
+      The players take part in the faction's war council. They must make three pre-battle decisions:
+      1. Choose your role in the Mass Battle: Commander type (directs troops) or Assault Captain type (charges directly into the enemy formation)
+      2. Allocate limited resources — among Cavalry main force / Archer cover / Monk-soldier medical support, only one may be committed at full strength
+      3. Whether to use spy intelligence (using it grants Advantage (Adv) in the Mass Battle, but may expose your position within the Rat Clan intelligence network)
+    checks:
+      - skill: "Military Strategy"
+        dc: 18
+        success: "Gain enemy deployment intelligence; your entire army gains Advantage (Adv) in the first round of the Mass Battle"
+      - skill: "Persuasion"
+        dc: 20
+        success: "Persuade a neutral faction (such as the Jōdo Temple) to provide support"
+
+  - id: 2
+    name: "Battle of the Wailing Plains"
+    type: "Mass Battle (large-scale combat)"
+    description: |
+      The two sides join decisive battle on the Wailing Plains.
+
+      Mass Battle scale:
+      - Our side: 3,000–5,000 troops (depending on the players' chosen faction)
+      - Enemy: 4,000–6,000 troops
+      - Mass Battle rounds: 5–8 rounds
+
+      Player Characters:
+      - If Commander type: use Command Value (CV) to direct troops
+      - If Assault Captain type: personally cut into the enemy formation
+    mass_battle:
+      player_side:
+        troops:
+          - type: "Heavy Infantry (Ox Clan)"
+            strength: 3
+          - type: "Cavalry (Horse Clan)"
+            strength: 2
+          - type: "Archers (Rooster Clan)"
+            strength: 2
+        morale: 12
+        cp_base: 50
+      enemy_side:
+        troops:
+          - type: "Light Infantry (Dog Clan)"
+            strength: 4  # Adjust if the enemy is the Tiger Clan
+          - type: "Cavalry (Horse Clan)"
+            strength: 3
+          - type: "Ninja Band (Rat Clan)"
+            strength: 1
+        morale: 13
+        cp_base: 60
+      battlefield_events:
+        use_full_table: true
+      moral_dilemma_during_battle: |
+        Midway through the Mass Battle, the young enemy commander (your nemesis) leads an assault team charging into our main camp.
+        His target is you — he demands a Single Combat (Duel).
+
+  - id: 3
+    name: "Single Combat — A Fateful Duel"
+    type: "Single Combat (Duel between commanders)"
+    description: |
+      At the center of the Wailing Plains. Both armies cease fighting temporarily; all eyes turn to you.
+
+      The enemy commander declares: "[Player's school name]'s [Player Name]! I am [Enemy Commander Name], heir of [Enemy Commander's School].
+      From the moment we first met, I knew — only one of us will become a legend.
+      Today, here — let our blades decide whose Giri is true."
+
+      Enemy Commander Information:
+      - Name: Depends on the nemesis the players met in Act One (set by the GM)
+      - Beast Clan: Has a symmetrical or countering relationship to the players
+      - School: Different from the players' but of equal tier
+      - Level: Same as the players
+      - Blade: Wazamono or Yoki-wazamono
+    duel_rules:
+      rounds: 3
+      special: |
+        In the third round, the vengeful spirits of the Wailing Plains are roused by both sides' yokai,
+        and the battlefield is enveloped in a yokai storm (both sides' Yokai Value (YK) increases by +10).
+        Whoever lands the final blow within the storm — will be recorded in the war chronicles of the Sengoku era.
+    post_duel:
+      victory_options:
+        - choice: "Slay"
+          consequence: "Gain the nemesis's blade (Wazamono). Enemy Morale (MOR) −5. But Giri Value (GI) −5. One more blade waits upon the Wailing Plains for two hundred years."
+        - choice: "Release"
+          consequence: "Giri Value (GI) +5. The nemesis owes you a debt of Giri. Enemy Morale (MOR) −2. The nemesis says: 'I will repay this life you spared — when repayment is no longer needed.'"
+        - choice: "Recruit"
+          consequence: "Make a Spirit (SPT) Contest Check (DC 18). On success, the nemesis becomes your companion NPC (CR 6). This is the noblest victory."
+
+  - id: 4
+    name: "Shadow of Onikiri-maru"
+    type: "Exploration / Revelation"
+    description: |
+      After the Mass Battle ends, the players obtain unexpected intelligence — from the Rat Clan intelligence network.
+      The intelligence reveals: the "Onikiri-maru" that Arashi-zai wields, one of the Five Swords Under Heaven, is not the holy sword it appears to be.
+      It is a Cursed Blade, and its yokai is eroding Arashi-zai's Spirit (SPT).
+      Behind Arashi-zai's "Tenka Fubu" — drives the will of Onikiri-maru.
+
+      Key Discoveries:
+      - Every samurai Onikiri-maru cuts down, it absorbs their Spirit (SPT) to empower itself
+      - Arashi-zai is losing control over his own actions
+      - The Black Moon Society is somehow connected to this process
+
+      The players now face a choice:
+      - Report the intelligence to your liege (may trigger an assassination plot against Arashi-zai)
+      - Keep it secret and investigate on your own (act alone, but with limited resources)
+      - Try to report the intelligence to Arashi-zai himself (extremely dangerous, but may save him)
+    moral_dilemma:
+      title: "Truth vs. Strategy"
+      options:
+        - choice: "Report to Liege"
+          consequence: "The liege plots to assassinate Arashi-zai. The players are asked to take part — but Arashi-zai is a victim, not a villain."
+        - choice: "Investigate Alone"
+          consequence: "Gain Giri Value (GI) +3 (you chose to face the truth rather than exploit it). But you lack support."
+        - choice: "Tell Arashi-zai"
+          check: "Infiltrate Owari Province (Stealth DC 22) + Persuade Arashi-zai to believe you (Persuasion DC 25)"
+          consequence: "If successful — Arashi-zai may voluntarily surrender Onikiri-maru, averting further slaughter. This is the only path that simultaneously saves Arashi-zai, ends the war, and obtains Onikiri-maru. But it is also the most difficult."
+
+reward:
+  xp: "Mass Battle: 800 × your unit's performance coefficient. Single Combat: 300. Intelligence revealed: 200."
+  gold: 1000
+  items: "The nemesis's blade (if Slay was chosen). Fragments of intelligence on Onikiri-maru."
+
+follow_up:
+  - "The players' faction's victory or defeat in the Mass Battle shapes the faction landscape of Act Four"
+  - "The intelligence on Onikiri-maru directly leads into the plot of Act Four"
+  - "The nemesis's fate (Slay / Release / Recruit) has major repercussions"
+
+solo_adjustments:
+  - "Mass Battle scale reduced: both sides' unit scale −40%"
+  - "Single Combat enemy commander level: player level −1"
+  - "Provide an NPC adjutant to assist with command (if the player chose Commander type)"
+  - "Mass Battle event table usage halved"

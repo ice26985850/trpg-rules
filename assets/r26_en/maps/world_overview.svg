@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" font-family="sans-serif">
+<rect x="0" y="0" width="760" height="520" fill="#0f1424"/>
+<rect x="0" y="0" width="760" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">World Map Overview</text>
+<text x="740" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">World Structure · Overall</text>
+<line x1="90" y1="152" x2="230" y2="108" stroke="#3a4a72" stroke-width="2"/>
+<line x1="230" y1="152" x2="370" y2="108" stroke="#3a4a72" stroke-width="2"/>
+<line x1="90" y1="232" x2="230" y2="188" stroke="#3a4a72" stroke-width="2"/>
+<line x1="370" y1="232" x2="510" y2="148" stroke="#3a4a72" stroke-width="2"/>
+<line x1="370" y1="152" x2="510" y2="148" stroke="#3a4a72" stroke-width="2"/>
+<line x1="370" y1="152" x2="600" y2="108" stroke="#3a4a72" stroke-width="2"/>
+<line x1="370" y1="232" x2="120" y2="348" stroke="#3a4a72" stroke-width="2"/>
+<line x1="120" y1="392" x2="260" y2="348" stroke="#3a4a72" stroke-width="2"/>
+<line x1="260" y1="392" x2="400" y2="348" stroke="#3a4a72" stroke-width="2"/>
+<line x1="400" y1="392" x2="540" y2="348" stroke="#3a4a72" stroke-width="2"/>
+<rect x="60" y="60" width="640" height="34" rx="8" fill="#243152" stroke="#4a5f93"/>
+<text x="80" y="82" fill="#aac4ff" font-size="15" font-weight="bold">Surface World (Human Civilization Sphere)</text>
+<rect x="37" y="108" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="90" y="128" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Saba City</text>
+<text x="90" y="146" fill="#9fb3e0" font-size="11" text-anchor="middle">Hunter Exam</text>
+<rect x="168" y="108" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="230" y="128" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Heavens Arena</text>
+<text x="230" y="146" fill="#9fb3e0" font-size="11" text-anchor="middle">Fighting Tower</text>
+<rect x="317" y="108" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="370" y="128" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Yorknew City</text>
+<text x="370" y="146" fill="#9fb3e0" font-size="11" text-anchor="middle">Auction</text>
+<rect x="37" y="188" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="90" y="208" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Kukuroo Mountain</text>
+<text x="90" y="226" fill="#9fb3e0" font-size="11" text-anchor="middle">Assassin Mansion</text>
+<rect x="187" y="188" width="87" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="230" y="208" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Meteor City</text>
+<text x="230" y="226" fill="#9fb3e0" font-size="11" text-anchor="middle">Junkyard</text>
+<rect x="317" y="188" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="370" y="208" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Kakin Kingdom</text>
+<text x="370" y="226" fill="#9fb3e0" font-size="11" text-anchor="middle">Voyage Power</text>
+<rect x="457" y="148" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="510" y="168" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Association HQ</text>
+<text x="510" y="186" fill="#9fb3e0" font-size="11" text-anchor="middle">Hunter License</text>
+<rect x="60" y="300" width="640" height="34" rx="8" fill="#243152" stroke="#4a5f93"/>
+<text x="80" y="322" fill="#aac4ff" font-size="15" font-weight="bold">Deep Layer (Dark Continent)</text>
+<rect x="67" y="348" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="368" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">The Gate</text>
+<text x="120" y="386" fill="#9fb3e0" font-size="11" text-anchor="middle">Sole Entrance</text>
+<rect x="207" y="348" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="260" y="368" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Crystallized Wasteland</text>
+<text x="260" y="386" fill="#9fb3e0" font-size="11" text-anchor="middle">Crystallization</text>
+<rect x="338" y="348" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="400" y="368" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Tear Sea</text>
+<text x="400" y="386" fill="#9fb3e0" font-size="11" text-anchor="middle">Emotion Made Physical</text>
+<rect x="487" y="348" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="540" y="368" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Five Calamities</text>
+<text x="540" y="386" fill="#9fb3e0" font-size="11" text-anchor="middle">Ultimate Threat</text>
+<rect x="547" y="108" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="600" y="128" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Greed Island</text>
+<text x="600" y="146" fill="#9fb3e0" font-size="11" text-anchor="middle">Game Space</text>
+<text x="20" y="508" fill="#5e6f9c" font-size="11">Hunter × Hunter TRPG · Map schematic (not to scale)</text>
+</svg>

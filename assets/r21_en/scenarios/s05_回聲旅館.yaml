@@ -1,0 +1,141 @@
+title: Echo Hotel
+difficulty: Progressive (★→★★★★★, solo only)
+stars: 5
+loop_length: "1 day (the blizzard night: 6:00 PM → midnight 00:00 the next day)"
+loop_limit: 15
+suggested_players: 1 (solo)
+action_points: 9 + Action (ACT) Modifier (6-hour effective window)
+tone_tags:
+  - Obsession in loneliness
+  - Every room holds a story
+  - The past is never truly past
+single_player_only: true
+loop_setting:
+  endpoint: Midnight 00:00; the bell in the hotel lobby rings, all guest-room doors lock simultaneously—then reset
+  start: 6:00 PM; wake up by the fireplace in the hotel lobby, a blizzard howling outside
+  boundary: The hotel building + 50 meters around it (beyond it you cannot survive the blizzard, automatic reset)
+  opening: "The fireplace crackles. You open your eyes, curled up on the old lobby sofa. Outside the window is a white blizzard. Behind the bar an old man wipes a glass: 'Awake? The rooms are upstairs—pick any one, no other guests anyway.' You sweep across the register—a dozen-odd names, all crossed out."
+core_truth:
+  anchor_event: "Archaeologist Lin Suwen fell off a cliff saving a companion; her regret 'never told her daughter Mom loves you' was too heavy for the seam to digest, and a Rift formed—every guest became trapped in a six-hour loop."
+  surface_story: A remote mountain hotel, travelers trapped by a blizzard, resetting every midnight.
+  real_story: "The hotel is a 'seam in time' where the final consciousness of those who died in the blizzard stays one night then dissipates; the Keeper is the guardian of the seam (the mountain itself). Lin Suwen did not dissipate and became the Anchor."
+  healing_conditions:
+    - The player finds Lin Suwen's keepsake in Room 204 (the unsent letter to her daughter)
+    - The player tells Lin Suwen the truth—she is no longer among the living, her daughter is still alive, and needs this letter
+    - Optional: visit the other guest rooms to understand their stories (provides Cognition Points and clues)
+truth_fragments:
+  - name: The Secret of the Register
+    type: Scene
+    location: Lobby bar
+    difficulty: Easy
+    loop: 1
+    detail: "Beside the crossed-out names is written 'Died on Month X, Day X, Year XXXX'; the last entry is from ten years ago; beside your name are only the words 'Still alive.'"
+  - name: Weeping from Room 204
+    type: Scene
+    location: Second-floor corridor
+    difficulty: Medium
+    loop: 2
+    detail: "At 10:00 PM you hear weeping passing by, the door is locked; at 11:00 PM it opens for 5 minutes, a woman by the window says she is waiting for her daughter."
+  - name: The Other Guests' Stories
+    type: Conversation
+    location: The various rooms
+    difficulty: Medium
+    loop: 3+
+    detail: "Room 201 the Old Hunter, Room 203 the Young Climber, Room 205 the Trucker—you must understand at least 2 to piece together the nature of the loop."
+  - name: The Keeper's Diary
+    type: Item
+    location: Behind the bar
+    difficulty: Medium
+    loop: 4
+    detail: "The last page, from ten years ago: 'Today a woman came... \"So am I.\" Since that day time here has been broken.'"
+  - name: Lin Suwen's Archaeological Notes
+    type: Item
+    location: Under the bed in Room 204
+    difficulty: Hard
+    loop: 5
+    detail: "An archaeological project from ten years ago, a newspaper photo headlined 'Mountain Rescue Team Searches for Missing Archaeologist,' on the back her daughter asks when she's coming home."
+  - name: The Unsent Letter
+    type: Item
+    location: Under the pillow in Room 204
+    difficulty: Hard
+    loop: 6
+    detail: "Lin Suwen's letter to her daughter Duoduo, stating plainly 'Mom died to save someone.'"
+  - name: The Keeper's True Name
+    type: Conversation
+    location: Bar
+    difficulty: Special
+    loop: 8+
+    detail: "After collecting ≥4 fragments, ask 'Who are you?', and he gives the key to Room 204 (before this it only opened 23:00-23:05)."
+  - name: Delivering the Letter
+    type: Action
+    location: Triggered
+    difficulty: Special
+    loop: 9+
+    detail: "Spend 3 Anchors to anchor that letter; in the next loop it is in your hand, warm—you must leave the hotel and find Duoduo."
+key_npcs:
+  - name: Lin Suwen
+    role: The Waiting Mother (Anchor character)
+    age: 42
+    emotion_baseline: 3/10
+    sensitivity: Extremely High
+    notes: "Every night she watches the window in Room 204, won't open her mouth on her own; if you speak she asks 'Have you seen Duoduo?'"
+  - name: The Hotel Keeper
+    role: The Mountain (guardian of the seam)
+    age: Appears 60 (actually ∞)
+    emotion_baseline: 5/10
+    sensitivity: N/A
+    notes: "Not human, will not degrade or shift, says the same thing every loop, the only unchanging Anchor."
+  - name: The Old Hunter
+    role: Guest in Room 201
+    age: 73
+    emotion_baseline: 4/10
+    sensitivity: N/A
+    notes: "Throat damaged when he froze, does not speak, only nods and points at a map marking where Lin Suwen fell; understanding it grants 1 Cognition Point."
+  - name: The Young Climber
+    role: Guest in Room 203
+    age: 24
+    emotion_baseline: 2/10
+    sensitivity: N/A
+    notes: "Every night he writes half a letter then forgets; help him finish it and he smiles before vanishing, the next day an extra key to Room 204 appears on his door."
+  - name: The Trucker
+    role: Guest in Room 205
+    age: 41
+    emotion_baseline: 6/10
+    sensitivity: N/A
+    notes: "Stubbornly optimistic; tell him the road was abandoned ten years ago and he hands you a slip with Lin Suwen's cliff coordinates."
+recommended_companion:
+  name: The Young Climber
+  age: 24
+  attributes: {physique: 3, alertness: 2, will: 2, affinity: 1}
+  note: "Becomes a companion after the 3rd+ loop once you help him finish his letter; high Physique suits combat and action support; mentioning 'going home' brings Dejection this loop and Disadvantage on all checks."
+degradation:
+  - phase: Loops 1-2 (Mirror)
+    description: Normal hotel, explore the lobby and guest rooms and meet the NPCs, Fragments 1+2 can be obtained.
+  - phase: Loops 3-4 (Mirror→Ripple)
+    description: Room 203's door opens on its own, the stories begin to play on loop, the NPCs' repeated behaviors become obvious.
+  - phase: Loops 5-6 (Ripple)
+    description: The fireplace becomes a soundless flame, Room 204's weeping is clearer then suddenly stops, Fragments 4+5+6 can be obtained.
+  - phase: Loops 7-8 (Crack)
+    description: Faces of the dead from ten years ago flicker past the window, the Keeper says 'What day is it today?' for the first time, Fragment 7 can be obtained.
+  - phase: Loops 9-10 (Fracture)
+    description: Room 204 no longer locks automatically, Lin Suwen speaks complete sentences but the content is what she said to her daughter when she fell ten years ago, Fragment 8 triggers.
+  - phase: Loops 11-12 (Fracture→Collapse)
+    description: The walls turn transparent, revealing the mountain of ten years ago—no abandoned roads, no collapsed bridges.
+  - phase: Loops 13-15 (Collapse)
+    description: All room doors open simultaneously, the guests stand at the doorways waiting for Lin Suwen to make her choice.
+endings:
+  - id: A
+    name: The Letter Is Delivered
+    grade: Perfect (Anchored Ending)
+    condition: All of Fragments 1-7 + Fragment 8 anchored (3 Anchors) + persuade Lin Suwen to accept the truth
+    narrative: "In the next loop the letter is warm in your hand, the hotel door opens outward to a sunny mountain path, you go find Duoduo; the hotel vanishes but no longer needs the loop."
+  - id: B
+    name: You Told Her
+    grade: Normal (Unanchored Ending)
+    condition: Fragments 1-6 + tell the truth but do not anchor the letter
+    narrative: "Lin Suwen smiles and says the letter need not be sent, walks to the window and pushes it open—beyond is her daughter's room, she steps in, the loop stops."
+  - id: C
+    name: Left in the Blizzard
+    grade: Bad
+    condition: Loops exhausted (15 times) without letting her face the truth
+    narrative: "The hotel no longer resets, the blizzard stops and the rooms are empty, only the yellowed letter remains under the pillow; you walk down the mountain alone to find Duoduo."

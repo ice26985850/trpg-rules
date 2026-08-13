@@ -1,0 +1,72 @@
+name: Dungeon Module D6 — Volcano
+description: Recommended Rank C/B (Challenge Rating (CR) 19–26) | Theme Lava ravine, high-tier resource farming | Acceptance Guild commission "C-Fire1 / B-Fire1" (corresponds to Rank C→B, CL 19–26); or designated by GM as a leveling ground. | Map `maps/D6_火山.yaml` ＋ `maps/D6_火山.svg` | This work has no multiclass; solo entry follows the player-count scaling rule (GM Book 13.1 Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). | Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) detailed in GM Book Chapter 17. | Positioning map enemies on top, our side on bottom, Front/Back Row spaced 2 grids (4m); solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). | Design note D6 is the stable CL 19–26 "farm EXP+G+materials" ground, refreshes daily (see Commission Catalog, reset rules).
+difficulty: C/B
+level_range:
+  - 19
+  - 26
+chapter: 6
+map_ref: maps/D6_火山.yaml
+initial_map: maps/D6_火山.yaml
+player_mode: "Single/Multi-player (Method A: one scenario + player-count scaling)"
+encounters:
+  - id: R2
+    name: Fire Salamander Shallows
+    type: Combat
+    enemies:
+      - name: Fire Salamander
+        cr: 19
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R4
+    name: Flame Hound Cave
+    type: Combat
+    enemies:
+      - name: Flame Hound
+        cr: 21
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R6
+    name: Magma Beachhead
+    type: Combat
+    enemies:
+      - name: Magma Elemental
+        cr: 22
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R10
+    name: Lava Giant Chamber
+    type: Combat
+    enemies:
+      - name: Lava Giant
+        cr: 24
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R13
+    name: Flame-vein Battlefield
+    type: Combat
+    enemies:
+      - name: Fire Spider
+        cr: 25
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R16
+    name: Balrog Throne
+    type: Mini-boss
+    enemies:
+      - name: Balrog Lord
+        cr: 26
+        count: 1
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+    boss: true
+rewards:
+  exp: 12568
+  gold: 1000~1500
+  ip: 8
+  items: []
+adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"

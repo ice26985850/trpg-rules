@@ -1,0 +1,89 @@
+name: "Three-Way Standoff"
+description: "Three city-states rise in the same region, contesting resources and influence. Diplomacy, war, and stratagem — whoever steps into the Kingdom Age first will dominate this region."
+difficulty: 2
+level_range:
+  era_start: "City-State Age"
+  era_end: "Kingdom Age"
+turns_estimated: 60
+player_count:
+  min: 1
+  max: 1
+map_ref: "maps/S2_三方鼎立_區域地圖.yaml"
+initial_map: "maps/S2_三方鼎立_區域地圖.yaml"
+
+phases:
+  - id: 1
+    name: "Triangular Posture"
+    turns: "1-15"
+    description: "The three city-states form a triangular standoff"
+    events:
+      - turn: 1
+        name: "Neighbors Appear"
+        type: "introduction"
+        description: "Two neighbors formally appear — one friendly, one hostile"
+      - turn: 8
+        name: "Contest for Trade Route"
+        type: "competition"
+        description: "The three sides contest control of a key trade route"
+      - turn: 12
+        name: "Ancient Ruin"
+        type: "exploration"
+        description: "A ruin is found in the neutral zone — who gets research rights?"
+
+  - id: 2
+    name: "Alliances and Maneuvers"
+    turns: "16-35"
+    description: "Diplomatic maneuvering and internal pressure"
+    events:
+      - turn: 18
+        name: "Alliance Proposal"
+        type: "diplomacy"
+        description: "The friendly neighbor proposes a military alliance — but tech must be shared"
+      - turn: 25
+        name: "Internal Opposition"
+        type: "internal"
+        description: "The clash between the peace faction and the war faction"
+
+  - id: 3
+    name: "Eve of Decisive Battle"
+    turns: "36-50"
+    description: "Regional crisis and the shadow of war"
+    events:
+      - turn: 40
+        name: "Regional Crisis"
+        type: "crisis"
+        description: "The three sides jointly face a disaster"
+      - turn: 45
+        name: "War Threat"
+        type: "military"
+        description: "The hostile neighbor may launch a surprise attack"
+
+  - id: 4
+    name: "Crown of the Kingdom"
+    turns: "51-60"
+    description: "Sprint toward the Kingdom Age"
+    events:
+      - turn: 55
+        name: "Castle Foundation"
+        type: "construction"
+        description: "Begin building the castle — a necessary condition for era upgrade"
+      - turn: 60
+        name: "Coronation Ceremony"
+        type: "ending"
+        description: "Officially become a kingdom"
+
+key_npcs:
+  - name: "Ruler of the Friendly Neighbor"
+    role: "Potential ally"
+  - name: "Ruler of the Hostile Neighbor"
+    role: "Competitor"
+  - name: "Leader of the Peace Faction"
+    role: "Internal opposing voice"
+
+endings:
+  success:
+    condition: "First to enter the Kingdom Age"
+    reward: "Regional hegemony, diplomatic relations +20"
+  partial:
+    condition: "Enter the Kingdom Age but not first"
+    reward: "Basic reward, secondary regional influence"

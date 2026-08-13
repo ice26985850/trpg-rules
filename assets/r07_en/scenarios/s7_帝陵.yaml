@@ -1,0 +1,52 @@
+# Earth Master TRPG Scenario S7: Imperial Mausoleum — "The Tomb Lord Waited a Thousand Years"
+scenario_id: S7
+title: "Imperial Mausoleum — The Tomb Lord Waited a Thousand Years"
+level_range: "12-15"
+difficulty: "Epic"
+sessions: "4-6"
+region: "Guanzhong (Imperial Mausoleum core)"
+
+synopsis: |
+  The end of everything. All clues — the Mercury Maze control map, the Corpse-Nurturing Ground altar inscriptions, the Unrotted Bone's research notes — point to the same Imperial Mausoleum.
+  The tomb lord is an ancient emperor who sought immortality. He succeeded but also failed — his body is undying, yet his soul is trapped in eternal loneliness.
+  For a thousand years he has lain awake in his coffin, unable to die, unable to leave. He waits not for tomb-raiders — but for someone who can end his eternal loneliness.
+  Two forces exist in the Imperial Mausoleum: the tomb lord (yearing to end) and the "Power of Immortality" (resisting ending). This is not a traditional boss fight — it is helping the tomb lord fight against himself.
+
+npcs:
+  - {id: npc_emperor_human, name: "The Tomb Lord — Human Side", role: "Guide", attitude: "Sorrowful, grateful someone came", info: "Appears as a spirit in the Front Court Hall, offering help and guidance"}
+  - {id: npc_emperor_divine, name: "The Tomb Lord — Divine Side (Power of Immortality)", role: "Ultimate Antagonist", attitude: "Indifferent, pure survival instinct", info: "Bears no malice — it simply will not allow itself to be destroyed. The true final boss.", stats: {type: "Conceptual Entity (embodiment of the Power of Immortality)", cr: 14, hp: 150, def: 26, special: "Manipulates the tomb structure — walls shift, floors collapse, Sha storms"}}
+  - {id: npc_designer, name: "Lingering Consciousness of the Imperial Mausoleum's Designer", role: "Information Provider", info: "Appears as an image in the Star Chart Chamber, explaining the Imperial Mausoleum's design intent"}
+
+tomb_structure:
+  type: "Super-Large Tomb"
+  layers:
+    - {id: outer, name: "Outer Defense Ring", chambers: [{name: "Mercury River", note: "Can pass safely using the S3 control map"}, {name: "Terracotta Army Formation", note: "Hundreds of figurines — some move"}, {name: "Repeating-Crossbow Array", note: "Large-scale crossbow mechanism"}]}
+    - {id: middle, name: "Middle Layer — Maze and Trials", chambers: [{name: "Five Elements Halls ×5", note: "Metal, Wood, Water, Fire, Earth — each corresponds to a different trial"}, {name: "Star Chart Chamber", note: "Celestial map + calendar puzzle"}, {name: "Longevity Hall", note: "Records of the tomb lord's life experiments — reveals the truth of the immortality ritual"}]}
+    - {id: inner, name: "Inner Layer — Core", chambers: [{name: "Front Court Hall", note: "Replica of the tomb lord's palace in life — the human-side spirit is here"}, {name: "Burial Chamber", note: "Where the true coffin lies"}, {name: "Earth Vein Core", note: "Source of the Power of Immortality — connects to the underground Dragon Vein"}]}
+
+encounters:
+  - {id: enc_outer, name: "Break Through the Outer Defense", type: "Exploration/Combat", dc: 16, ttv: 20, description: "Terracotta Army + repeating-crossbow array. Requires the S3 control map to lower difficulty."}
+  - {id: enc_elements, name: "Five Elements Hall Trials", type: "Exploration/Ritual", dc: "14-18", description: "Five independent trials corresponding to the Five Elements principles. All must be passed to open the inner layer."}
+  - {id: enc_stars, name: "Star Chart Chamber", type: "Exploration", dc: 18, description: "Solve the astronomical-calendar puzzle, gain the path to the burial chamber."}
+  - {id: enc_dialogue, name: "Front Court Hall — Dialogue with the Tomb Lord", type: "Social", dc: 18, description: "The tomb lord's human side appears. This is the most important conversation — determines the direction of the final ending."}
+  - {id: enc_bedchamber, name: "Burial Chamber — Phase One", type: "Combat", ttv: 30, description: "The divine side manipulates the tomb — walls shift, floors collapse, Sha storms."}
+  - {id: enc_core, name: "Earth Vein Core — Phase Two", type: "Combat", ttv: 35, description: "Embodiment of the Power of Immortality — an entity made of pure Yin-Sha."}
+  - {id: enc_final, name: "Final Choice", type: "Comprehensive", description: "External forces close in (warlord / foreign team / traitor Earth Master) — players must make the final decision under multi-sided pressure."}
+
+key_items:
+  - {id: item_immortality_record, name: "Complete Record of the Immortality Ritual", description: "The pinnacle of forbidden knowledge. Must not be used lightly."}
+  - {id: item_imperial_seal, name: "Imperial Seal", description: "Legendary-tier antique. Value beyond money."}
+  - {id: item_core_crystal, name: "Earth Vein Core Shard", description: "Obtained if the Power of Immortality is destroyed — the strongest artifact core."}
+  - {id: item_emperor_legacy, name: "The Tomb Lord's Bequest", description: "If the tomb lord is helped to rest — the finest essence of his life's knowledge is passed to the players."}
+
+endings:
+  - {id: ending_rest, name: "Rest", condition: "Help the human side defeat the divine side", result: "The tomb lord finally dies. The Imperial Mausoleum collapses but knowledge is preserved. The players become legends."}
+  - {id: ending_seal, name: "Sealing", condition: "Do not destroy the Power of Immortality; seal it permanently", result: "The Imperial Mausoleum stays intact but is sealed forever. Gain the title of Guardian."}
+  - {id: ending_inherit, name: "Inheritance", condition: "Accept the Power of Immortality (very high Will check DC 22)", result: "The player becomes a new Undying One — at the cost of eternal loneliness."}
+  - {id: ending_destruction, name: "Destruction", condition: "Defeated by the divine side / external forces invade", result: "The Imperial Mausoleum collapses, the Power of Immortality leaks out — a world-setting-level major event."}
+
+rewards: {xp: 2000, money: "3000-10000+ Silver Dollars (Legendary-tier reward)"}
+scale_adjustments:
+  solo: {not_recommended: true, reason: "Epic-level. Requires at least 3 people."}
+  duo: {not_recommended: true, reason: "Epic-level. Requires at least 3 people."}
+  trio: {note: "The Five Elements Hall trials simplified to choose 2 of 3", ttv_mult: 0.85}

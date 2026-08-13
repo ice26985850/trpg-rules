@@ -1,0 +1,43 @@
+# Devour Gene: Chronicle of Evolution
+
+**One-line pitch:** You are not leveling up — you are devouring your enemies, growing their powers onto yourself, and step by step becoming something entirely new.
+
+## Worldview
+
+In ancient times, a colossal being called the "Void Abyss Worm" consumed itself and collapsed; its shards scattered across the world, granting all living things the potential to "evolve." Now the world is caught in the turbulent "Fission Era": roughly ninety-five percent of humanity fears the Awakened, while the Evolvers who have awakened are pulled between three factions — the "Ultimate Evolution Cult" that seeks godhood, the "Humanity Guardians" who protect what it means to be human, and the "Symbiosis Accord" that advocates coexistence with evolution. You are a newly Awakened Evolver.
+
+## Who do you play? What do you play?
+
+You awaken from one of six Base Forms — Human, Beast, Insect, Plant, Inorganic, or Hatchling Dragon — and survive, explore, and grow in a world where hostility and opportunity coexist. The core loop is simple yet addictive: fight, defeat enemies, absorb their traits, and graft those abilities onto yourself. You are not clearing a task list; you are piecing together an evolutionary path that belongs to no one but you.
+
+## System Highlights
+
+- **No classes, no levels, no fixed skill trees.** All your abilities come from "Evolution Nodes" — over 80 nodes divided into five types (Attribute, Passive, Active, Organ, Form) that you freely combine into a one-of-a-kind evolution tree.
+- **To absorb is to grow.** Defeated enemies are more than experience points: their fangs, scale armor, venom glands, mental tendrils… can all be absorbed by you, unlocking evolutionary directions you could never otherwise reach.
+- **Evolution has a price — the Humanity Value.** Every major evolution pulls you further from who you once were. The lower your Humanity Value, the stranger the world's gaze upon you, and it may even sway how your story ends. Will you become a god, or guard that last flicker of being human?
+
+## Who is it for?
+
+Players who love the growth thrill of watching a character "grow" new abilities, and who enjoy the trade-offs of point allocation and resource management, will find it a perfect fit; it also suits narrative players who like to struggle between factions and humanity. A little TRPG foundation is helpful (you can roll dice and read a character sheet), but you need not be a veteran.
+
+## Play Style
+
+- Combat weight: Significant
+- Strategic depth: Moderate strategy
+- Story-driven: Story-supported
+- Resource management: Moderate management
+- Character customization: High customization
+- Character creation complexity: Medium
+- Rule density: Medium rules
+- GM requirement: Optional GM
+
+## Play Time
+
+- Single scenario: about 2–8 hours (depending on the scenario chosen)
+- Full campaign (S1–S5 linked): about 20–30 hours
+
+## Basic Information
+
+- Player count: 1 Player + GM (Solo Mode default), expandable to 2–5 Players + GM
+- Core dice: primarily d20 (for checks), supported by d4 / d6 / d8 / d10 / d12 damage dice
+- Five Attributes: Strength [LIL], Agility [MJ], Constitution [TZ], Perception [GZ], Will [YZ]

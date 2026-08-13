@@ -1,0 +1,108 @@
+name: "Level 8 — Cave System"
+description: "Glowing-fungus caves — luminous spores form a starry sky; light-fearing Cave Dwellers inhabit in groups"
+scenario_ref: "S5_跋涉"
+usage: "Scenario S5 starting point: traverse the glowing caves, avoid the Cave Dweller nests, and enter the tunnel to Level 9"
+regions:
+  - name: "Entrance"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "Area"
+  - name: "Glow Forest"
+    color: "#FFF3E0"
+    nodes: ["N02", "N03"]
+    description: ""
+  - name: "Cave Dweller Domain (Danger)"
+    color: "#F3E5F5"
+    nodes: ["N04"]
+    description: ""
+  - name: "Exit Area"
+    color: "#E3F2FD"
+    nodes: ["N05", "N06", "N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Cave Entrance"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "Surface from the Level 7 drainage pipe — enter the glowing cave"
+  - id: "N02"
+    label: "Glowing Spore Forest"
+    x: 330
+    y: 210
+    type: "resource"
+    explored: false
+    description: "Where edible glowing mushrooms grow (Knowledge DC 14 to identify)"
+    resources: "Glowing Mushrooms"
+  - id: "N03"
+    label: "Fungal Forest Depths"
+    x: 330
+    y: 410
+    type: "normal"
+    explored: false
+    description: "The spore 'starry sky' provides faint illumination"
+  - id: "N04"
+    label: "Cave Dweller Nest"
+    x: 530
+    y: 300
+    type: "danger"
+    explored: false
+    description: "Cave Dwellers in groups — they recoil from light"
+    threats: "Cave Dwellers (fear light)"
+  - id: "N05"
+    label: "Mineral Zone"
+    x: 690
+    y: 210
+    type: "resource"
+    explored: false
+    description: "Minerals that can be collected and a resonant low hum"
+    resources: "Minerals"
+  - id: "N06"
+    label: "Tunnel Entrance"
+    x: 690
+    y: 410
+    type: "navigation"
+    explored: false
+    description: "The start of the tunnel leading to Level 9"
+  - id: "N07"
+    label: "Tunnel (Exit)"
+    x: 830
+    y: 320
+    type: "exit"
+    explored: false
+    description: "Go deep into the tunnel to leave the cave — leads to Level 9"
+    exit_to: "Level 9 — Suburb"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N01"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "dangerous_path"
+    label: "Cave Dwellers"
+  - from: "N03"
+    to: "N04"
+    type: "dangerous_path"
+    label: "Cave Dwellers"
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: ""
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ Exit"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "→ Exit"

@@ -1,0 +1,51 @@
+catalog: Item Codex
+system: Time Loop TRPG
+version: 1.0
+description: An overview of the equipment and anchored objects of Time Loop TRPG. This system has no traditional weapon / armor shops; personal belongings are mainly real-world items, and the real resources are information and Memory Anchor Points (MAP).
+references:
+  - 時間循環TRPG_玩家規則書.md
+
+cross_loop_rules:
+  - type: Default Equipment
+    on_reset: Returns to the state at the loop's start
+  - type: Ordinary Items Obtained During a Loop
+    on_reset: Disappear — not on you when you return to the loop's start
+  - type: Anchored Item
+    on_reset: Retained — spend 1 Memory Anchor Point (MAP) to lock it, carried back across loops
+    cost: 1 Memory Anchor Point (MAP) / item
+  - type: Key Plot Item
+    on_reset: Decided by the GM
+
+common_equipment:
+  - Everyday clothing
+  - Mobile phone (can take photos / record audio / take notes; cannot reach outside)
+  - Wallet / ID
+  - Keychain
+
+background_equipment:
+  Law Enforcer: [badge / ID, handcuffs, notebook, walkie-talkie]
+  Seeker: [notebook and pen, voice recorder / camera]
+  Caregiver: [basic first-aid kit, work ID]
+  Laborer: [toolbox, gloves, utility knife (not a weapon)]
+  Outsider: [sketchbook or journal, telescope or old camera, a small meaningful object]
+  The Connected: [an item related to the Core Relationship NPC (group photo, letter, keepsake)]
+
+anchoring_mechanic:
+  when: Loop Settlement Phase
+  pool: Shares the Memory Anchor Point (MAP) pool with information anchoring
+  cost: 1 Memory Anchor Point (MAP) / item
+  effect: At the start of the next loop, the item appears on you
+  note: Anchored items and anchored information crowd each other out — Anchors are never enough
+
+key_items:
+  note: Issued by the GM per scenario, usually tied to a Truth Fragment or Core Relationship; cross-loop ownership is adjudicated by the GM.
+  examples:
+    - Zhang Mingde's suicide note
+    - Chen Yan's trial record
+    - The surveillance footage from the day of the School Festival
+    - The resolution document from the meeting room
+
+design_notes:
+  - Equipment itself barely affects check values; its value lies in carrying information and being an emotional anchor.
+  - Encourage players to treat phone recordings and journals as anchoring targets, making "carrying information across loops" concrete.
+  - Aggressive use of items is handled per the "Violent Conflict" rules; no separate weapon stat table is provided.

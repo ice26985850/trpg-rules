@@ -1,0 +1,85 @@
+name: "The Windowless Room (Multiplayer)"
+type: "Seal Investigation"
+difficulty: "★★"
+recommended_marks: "2-4"
+players: "2-4"
+play_time: "2-3 sessions"
+core_attributes: ["AW", "NG", "AN"]
+
+opening: |
+  Architect Mr. Lin privately contacts a Gap Walker. The firm is renovating a century-old mansion.
+  The crew discovered a "non-existent room" on the third floor—on the blueprints, but windows sealed with bricks, door welded shut from the inside.
+  Any worker who tries to open it feels "unable to breathe." The blueprint reads: "September 1923—Sealed."
+
+npcs:
+  - name: "Mr. Lin"
+    type: "Client"
+    desc: "An architect in his 40s, a pragmatist but spooked by this room"
+    companion_eligible: false
+  - name: "Old Physician"
+    type: "Informant"
+    desc: "A retired physician in his 80s who interned here in the 1940s, still remembers 'that unopened room on the third floor'"
+    companion_eligible: true
+    companion_template:
+      type: "Informant"
+      stats: { RE: 5, AW: 4 }
+      special: "Expert appraisal: Advantage when determining Lost Item ownership"
+      loyalty: 2
+      available_from: "Scenario 2"
+  - name: "Seal Watcher"
+    type: "Seal Watcher"
+    desc: "Stands beside the Crack—not hostile, waiting for a worthy person"
+
+lost_items:
+  - name: "Small silver box (key)"
+    tier: "Benevolent Keepsake"
+    dc: 12
+    location: "First-floor consultation room Gap Layer"
+    effect: "Can be used as a bargaining chip to make the Watcher step back"
+  - name: "Transfer document"
+    tier: "Memory Crystal"
+    dc: 15
+    location: "Inside the Sealed Space"
+    effect: "See the moment the original owner signed the document in 1923"
+  - name: "The mistress's comb"
+    tier: "Common Lost Item"
+    dc: 8
+    location: "Second-floor Gap Layer—original owner's bedroom"
+    effect: "Related Negotiation +1"
+
+scenes:
+  - name: "Investigate the mansion"
+    desc: "Awareness DC 15 reveals the 'spatial pressure' around the room—the entire building's Gap is avoiding this room."
+    map_ref: "MAP-04 (Century Mansion floor plan) — Surface third floor"
+  - name: "Explore the Gap Layer"
+    desc: "Enter through the Natural Threshold at the main gate (Traverse DC 8). Move through the time-compressed hallway, Traverse DC 12 to avoid 'temporal dislocation'."
+    map_ref: "MAP-04 — Gap expansion area"
+  - name: "Find the key"
+    desc: "The Old Physician provides a clue. Retrieval DC 12 to find the small silver box in the first-floor Gap (engraved: Forgive me)."
+    map_ref: "MAP-04 — First-floor consultation room Gap Layer"
+  - name: "The Watcher's trial"
+    desc: "The Seal Watcher (Negotiation DC 18) gazes at the players. Show the small silver box → it steps back."
+    map_ref: "MAP-04 — Second-floor hallway Crack entrance"
+  - name: "Enter the Sealed Space"
+    desc: "A 1923 study. The man's Residual holds the signing posture; he does not need liberation—only wants to be 'seen'. After taking the document the room unseals."
+    map_ref: "MAP-04 — Inside the sealed room"
+  - name: "Return"
+    desc: "Inform Mr. Lin of the document and the truth. Choose: publicize (room becomes a building feature) or keep secret."
+    map_ref: "—"
+
+sealed_space:
+  reason: "Deliberately sealed—artificial marks at the edge of the Crack"
+  content: "A 1923 private study. The original owner signed over his property to his ill wife here, then took his own life"
+  key: "Small silver box (key)"
+  risk: "After entering, the Crack may vanish—trapping you inside the Sealed Space"
+
+endings:
+  - "Publicize history: the room is preserved as a building feature"
+  - "Keep secret: after unsealing the room becomes ordinary, Mr. Lin privately thanks"
+  - "Free the Watcher: summon by True Name → set it free, Return Mark +1"
+
+rewards:
+  - "Return Mark × 2"
+
+companion_recruitment:
+  - "Old Physician (if trust is built) → Informant Companion, initial Loyalty 3"

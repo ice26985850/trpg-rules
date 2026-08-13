@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 460" font-family="sans-serif">
+<rect x="0" y="0" width="620" height="460" fill="#0f1424"/>
+<rect x="0" y="0" width="620" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">Kakin Kingdom &amp; Voyage Fleet</text>
+<text x="600" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">Kingdom · Expedition Fleet · Surface → Deep Layer</text>
+<line x1="120" y1="112" x2="120" y2="198" stroke="#3a4a72" stroke-width="2"/>
+<line x1="120" y1="112" x2="120" y2="328" stroke="#3a4a72" stroke-width="2"/>
+<line x1="120" y1="372" x2="430" y2="178" stroke="#3a4a72" stroke-width="2"/>
+<line x1="430" y1="222" x2="430" y2="308" stroke="#3a4a72" stroke-width="2"/>
+<line x1="430" y1="222" x2="430" y2="408" stroke="#3a4a72" stroke-width="2"/>
+<rect x="67" y="68" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="88" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Kakin Palace</text>
+<text x="120" y="106" fill="#9fb3e0" font-size="11" text-anchor="middle">Center of Power</text>
+<rect x="77" y="198" width="87" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="218" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Prince's Palace</text>
+<text x="120" y="236" fill="#9fb3e0" font-size="11" text-anchor="middle">Throne War</text>
+<rect x="67" y="328" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="120" y="348" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Port</text>
+<text x="120" y="366" fill="#9fb3e0" font-size="11" text-anchor="middle">Assembly &amp; Supply</text>
+<rect x="377" y="178" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="430" y="198" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Voyage Flagship</text>
+<text x="430" y="216" fill="#9fb3e0" font-size="11" text-anchor="middle">CR16</text>
+<rect x="377" y="308" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="430" y="328" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Destroyer Group</text>
+<text x="430" y="346" fill="#9fb3e0" font-size="11" text-anchor="middle">CR10</text>
+<rect x="358" y="408" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="430" y="428" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Heading to Dark Continent</text>
+<text x="430" y="446" fill="#9fb3e0" font-size="11" text-anchor="middle">Unknown</text>
+<text x="20" y="448" fill="#5e6f9c" font-size="11">Hunter × Hunter TRPG · Map schematic (not to scale)</text>
+</svg>

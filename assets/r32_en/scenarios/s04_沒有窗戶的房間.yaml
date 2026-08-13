@@ -1,0 +1,91 @@
+name: "The Windowless Room"
+type: "Seal Investigation"
+difficulty: "★★★"
+recommended_marks: "3-4"
+play_time: "2 sessions"
+core_attributes: ["AW", "NG", "AN"]
+
+opening: |
+  Architect Mr. Lin contacts you privately. His firm is renovating a century-old mansion.
+  The construction crew discovered a "nonexistent room" on the third floor — it appears on the blueprints,
+  but all its windows were bricked shut, and the only door was welded closed from the inside.
+  Any worker who tries to open it feels "unable to breathe."
+  The blueprint is annotated: "September 1923 — Sealed."
+
+npcs:
+  - name: "Mr. Lin"
+    type: "Client"
+    desc: "Architect in his forties, a pragmatist but unnerved by this room"
+    companion_eligible: false
+  - name: "Old Physician"
+    type: "Informant"
+    desc: "Retired physician in his eighties who interned here in the 1940s"
+    companion_eligible: true
+    companion_template:
+      type: "Informant"
+      stats: { RE: 5, AW: 4 }
+      special: "Expert Appraisal: Advantage when determining a Lost Item's ownership"
+      loyalty: 2
+      available_from: "Scenario 4"
+  - name: "Seal Watcher"
+    type: "Seal Watcher"
+    desc: "Stands guard by the Crack — not hostile, waiting for someone worthy"
+
+lost_items:
+  - name: "Silver Box (Key)"
+    tier: "Benevolent Keepsake"
+    solo_dc: 10
+    location: "Gap Layer of the first-floor consultation room"
+    effect: "Can be used as Negotiation Leverage to make the Watcher step aside"
+  - name: "Deed of Transfer"
+    tier: "Memory Crystal"
+    solo_dc: 13
+    location: "Inside the Sealed Space"
+    effect: "The moment of seeing the original owner sign the document in 1923"
+  - name: "The Mistress's Comb"
+    tier: "Common Lost Item"
+    solo_dc: 6
+    location: "Gap Layer of the second floor — original owner's bedroom"
+    effect: "Related Negotiation +1"
+
+scenes:
+  - name: "Surface Investigation"
+    desc: "Awareness DC 8 reveals the area around the doorframe is too clean — no dust, no wear."
+    map_ref: "MAP-04 (Century Mansion floor plan) — Scene 1"
+  - name: "Find the Key"
+    desc: |
+      The old physician provides a lead. Traverse DC 8 to enter the Gap.
+      Retrieval DC 10 to find the silver box (inscription: Forgive me).
+    map_ref: "MAP-04 (Century Mansion floor plan) — Gap extension area (underground consultation room)"
+  - name: "Seal Watcher"
+    desc: "Negotiation DC 16. Present the silver box → the Watcher steps aside."
+    map_ref: "MAP-04 — Second-floor corridor Crack entrance"
+  - name: "Enter the Sealed Space"
+    desc: |
+      A 1923 study. A man's Residual holds his signing posture.
+      Retrieval DC 13 to find the Deed of Transfer — the original owner transferred his property
+      to his ailing wife and then took his own life.
+    map_ref: "MAP-04 — Inside the sealed room (Gap Layer)"
+  - name: "Unsealing"
+    desc: "After taking the document, the seal breaks. The bricks outside the window crumble and sunlight pours in."
+    map_ref: "MAP-04 — Sealed room third-floor structure"
+  - name: "Return"
+    desc: "Tell Mr. Lin the truth. Choice: make it public (the room is preserved as an architectural feature) or keep it secret."
+    map_ref: "—"
+
+sealed_space:
+  reason: "Deliberately sealed"
+  content: "A private study from 1923. The original owner signed the deed transferring his property to his ailing wife, then took his own life"
+  key: "Silver Box (Key)"
+  risk: "After entering, the Crack may vanish — trapping you inside the Sealed Space"
+
+endings:
+  - "Reveal the history: the room is preserved as an architectural feature"
+  - "Keep it secret: after unsealing, the room becomes an ordinary room. Mr. Lin thanks you privately"
+  - "Recruit the Old Physician: becomes an Informant companion (Expert Appraisal Advantage)"
+
+rewards:
+  - "Return Mark × 2"
+
+companion_recruitment:
+  - "Old Physician (if trust is built) → Informant companion, starting Loyalty 3"

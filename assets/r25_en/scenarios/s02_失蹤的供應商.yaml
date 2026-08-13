@@ -1,0 +1,105 @@
+id: s02
+title: The Missing Supplier
+type: Main Scenario
+source: 爐邊譚_劇本集_v1.0.md
+sections:
+  basic_info: '| Item | Content |
+
+    |------|---------|
+
+    | **Difficulty** | ★★ Basic |
+
+    | **Suggested Reputation** | 5-20 (Unknown Shop ~ Neighborhood Favorite) |
+
+    | **Suggested Party** | 3-5 players, recommend having Social or Foraging-related classes |
+
+    | **Length** | 3-5 turns |
+
+    | **Core Themes** | Investigation, interpersonal networks, light wilderness exploration |'
+  synopsis: 'Your main material supplier-Old Hawk-hasn''t delivered on time. It''s the third day.
+
+
+    Old Hawk is a reliable Dwarf merchant who has never missed a delivery in ten years. His delivery route is fixed: Anvilhearth → Verdantvale → your town. After he set out from Anvilhearth last week, no one has seen him since.
+
+
+    Your inventory is running low. If you don''t find him-or an alternative-you''ll have nothing to sell starting next week.'
+  key_npcs: '| NPC | Role | Location |
+
+    |-----|------|---------|
+
+    | **Old Hawk** | The missing supplier | Somewhere on the Foothill Trade Road |
+
+    | **Mrs. Hawk** | Supplier''s wife, anxious | Anvilhearth |
+
+    | **Ranger Leah** | Boundary guard of Verdantvale, last person to see Hawk | Verdantvale entrance |
+
+    | **"Mole"** | A petty thug on the Foothill Trade Road, knows something | Midway on the Foothill Trade Road |'
+  turn_design: '### Turn 1: Stockout
+
+
+    Players discover Old Hawk hasn''t come → inventory check (only 1-2 weeks left). GM gives three clue directions:
+
+
+    - **Direction A**: Go to Anvilhearth to ask Mrs. Hawk about his last itinerary (Social route)
+
+    - **Direction B**: Go to Verdantvale to find Ranger Leah-the last person to see Hawk (exploration route)
+
+    - **Direction C**: Ask around town-has anyone else run out of stock? Could be a larger event (investigation route)
+
+
+    ### Turn 2: The Trail
+
+
+    **If A**: Mrs. Hawk provides the delivery list and route map. Among Hawk''s last batch was a "special order"-a client specified rare volcanic sulfur.
+
+
+    **If B**: Leah recalls: "Three evenings ago, Hawk''s mule cart passed my post. He said he''d travel by night-''an order was urgent.'' I warned him not to take the night road; he said the client paid triple the freight."
+
+
+    **If C**: Players find they''re not the only ones out of stock-three shop owners are all complaining. One potion shop owner whispers: "Heard there was a landslide on the Foothill Trade Road last week."
+
+
+    ### Turn 3: Exploring the Foothill Trade Road
+
+
+    Players head to the Foothill Trade Road to search. Wilderness exploration segment (use Foraging/Survival):
+
+
+    - **Encounter Check** (GM secret roll): Difficulty (DC) 10 + region modifier. Failure → encounter bandit remnants or beasts
+
+    - **Search Check** (Appraisal (APP), DC 12): success → discover an overturned mule cart, scattered cargo
+
+    - **Clue**: One pack of volcanic sulfur is missing from the cargo. The cart was pushed down the slope, not an accident. There are pry marks on the wheel.
+
+
+    ### Turn 4: The Truth
+
+
+    Following the clues leads to "Mole"-a petty foothill thief living in an abandoned hunter''s cabin. He''s not the mastermind, but knows everything:
+
+
+    **The Truth**: An out-of-towner calling himself "the Alchemist" bought up large amounts of volcanic sulfur in Anvilhearth. Old Hawk''s special order was his. But this "Alchemist" is actually making explosives-his goal is to blow open Verdantvale''s ancient seal and take what''s inside. Old Hawk discovered his intent and was locked in an abandoned mineshaft in the foothills.
+
+
+    ### Turn 5: Rescue and Choices
+
+
+    - **Rescue Old Hawk**: Sneak into the mineshaft (Stamina (STA)/Stealth, DC 13). Inside are 2-3 hired thugs. Old Hawk is lightly wounded, but most cargo is intact.
+
+    - **Stop the Alchemist**: If players are fast enough, they can reach Verdantvale before the seal is broken (Stamina (STA) Check DC 14, racing the clock). Verdantvale''s Elf guards will assist.
+
+    - **The Mastermind**: GM''s option-this "Alchemist" is an outer operative of the Myriad Guild (corporate conspiracy line), or hired by the Undercurrent Network (black-market line), or simply a madman (standalone event)'
+  rewards: '| Achievement | Reward |
+
+    |-------------|--------|
+
+    | Rescue Old Hawk | Hawk family lifetime discount (all materials −10%), Reputation +3 |
+
+    | Stop the Explosion | Verdantvale Elf Favor +5, unlock "Forest''s Guidance" |
+
+    | Expose the Mastermind | Relationship change with the corresponding faction based on the mastermind''s truth |
+
+    | Recover Cargo | Gain the cargo from Old Hawk''s cart (materials worth 200G) |
+
+
+    ---'

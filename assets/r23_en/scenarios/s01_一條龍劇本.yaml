@@ -1,0 +1,1055 @@
+# Yonghe Martial Codex · One-Dragon Campaign (Structured Data)
+# Corresponding player/GM-readable version: s01_一條龍劇本.md
+# Purpose: machine-readable reference for the site-build script / AI GM engine
+# Format: YAML (UTF-8, all simplified Chinese, terms use "English Full Name (ABBR)" format)
+
+scenario:
+  id: s01
+  title: One-Dragon Campaign
+  slug: s01_yi-tiao-long
+  type: campaign                # campaign=long continuous scenario / oneshot=single session
+  player_mode: multiplayer      # multiplayer=multiplayer / solo=solo
+  players:
+    min: 4
+    max: 6
+    default: 4
+    gm: required
+  recommended_realm: "First Realm · First Glimpse → Sixth Realm · Return to Simplicity"
+  expected_sessions: "Chapter 1: 1-3 + Chapter 2: 3-5 + Chapter 3: 4-6 + Chapter 4: 5-7 + Chapter 5: 6-8 + Chapter 6: 3-5 sessions (full arc approx. 22-34 sessions)"
+  design_rationale: >-
+    The One-Dragon Campaign provides the GM with a complete adventure path they can pick up and run immediately. It is a narrative framework that has "a main trunk, branches, and a toolbox,"
+    rather than a strictly linear scenario. Design principles: Realm-driven (each chapter corresponds to one realm breakthrough), interwoven factions (the Four Clouds of the Age story threads),
+    ample branching (each chapter end offers optional GM variants), and citation-first (martial arts / equipment / NPCs all reference existing named rulebook entries).
+  source_files:
+    - "12_一條龍劇本.md"
+  reference_files:
+    - "01_Core Mechanics"
+    - "02_Character Creation"
+    - "05_The Jianghu World"
+    - "06_Jianghu Simulation"
+    - "07_GM Guide"
+    - "08_Equipment & Pills"
+    - "09_Martial Arts Codex"
+    - "11_NPC Character Cards"
+    - "14_Enemy Quick Reference"
+    - "15_Random Encounter Table"
+  story_threads:                # Four Clouds of the Age story threads
+    - Leadership Succession
+    - Demon Cult Unrest
+    - Legend of the Hidden Treasury
+    - Northern Frontier War
+  assumptions:                  # premises the scenario depends on
+    - "PC count: 4-6 people (default difficulty baseline for all encounters)"
+    - "Sect distribution: no specific sect required, but recommend at least 1 Righteous and 1 Neutral/Gray PC; an all-Evil party requires the GM to adjust some Righteous NPCs' initial attitudes"
+    - "PC level curve: at the start of each chapter the PCs sit at the peak of the previous chapter's realm; if behind, the GM should insert extra sessions or adjust difficulty"
+    - "NPC character cards: core NPC data is in 11_NPC Character Cards.md; those not yet present are marked 'New NPC'"
+  chapters:
+
+    # ===================== Chapter 1 =====================
+    - id: ch1
+      index: 1
+      title: First Glimpse
+      realm_milestone: "First Glimpse → Crossing the Threshold"
+      pc_realm: "First Realm · First Glimpse (attribute cap 5)"
+      expected_sessions: 1-3
+      attribute_baseline:        # six-attribute baseline (GM reference)
+        pc_avg: "Strength/Agility/Constitution 3-5; Comprehension/Willpower/Charisma 2-5"
+        recommended_dc_range: "Difficulty (DC) 8-12"
+        qi_pool: "8-15 pts"
+        hp_range: "15-30"
+      hooks:
+        - id: hook-a
+          name: Tea House Encounter
+          suited: All Sects
+          scene: >-
+            Three li outside Luoyang City, at the "Sihai Tea House" — a rest stop run by the Sihai Alliance. Today it is unusually lively: a mysterious storyteller is recounting the open and secret struggles among the Tianjian Alliance's five sword factions.
+          conflict_trigger: >-
+            A group of masked men in black bursts in, declaring they act "by order of the Blood Moon Cult" and demanding the righteous disciples hand over their weapons, forcing the PCs to act.
+          why_pc_acts: >-
+            Righteous sects are obliged to protect the people; neutral sects have their own interests threatened; gray-leaning Evil sects may be mistaken for the righteous and attacked alongside them.
+        - id: hook-b
+          name: Sect Field Mission
+          suited: "Righteous / Skill Sect / Medicine Sect"
+          scene: >-
+            The PC's master delivers a task to go to "Longquan Ferry" outside Luoyang City to fetch an item / receive a person; upon arrival, mountain bandits have seized the ferry, led by a boss at the peak of the Second Realm, the "Black Wind Stronghold Chieftain."
+          conflict_trigger: >-
+            The bandit chief (who has studied a fragment of demonic cult scripture and brushed the edge of the Second Realm) plunders the ferry and combat erupts.
+        - id: hook-c
+          name: Calamity from the Sky
+          suited: "Gray-Evil / Shadow Sect / Independent"
+          scene: >-
+            On the highway a spooked carriage careens wildly, with a wounded villager inside. After saving them, the PCs find the wheels were tampered with using a mechanism.
+          conflict_trigger: >-
+            The mechanism's setter, "New NPC: Yin Jiuling (Qianji Pavilion defector, peak Second Realm)," watches coldly from a nearby hillside.
+      key_scenes:
+        - id: scene-1
+          title: Meeting in the Chaos
+          summary: "The PCs meet in battle for the first time, each showing their strengths (Sword Sect draws blades, Qi Sect circulates Qi, Vajra Sect meets force with force, Poison Sect strikes from range)."
+        - id: scene-2
+          title: The Master's Comment (post-battle)
+          summary: "Depending on the hook, the helping elder's identity is: the storyteller (a Gaibang elder of the Skill Sect) / the ferry boatman (a Tianjian Alliance spy) / the masked woman (Liu Shengyan)."
+        - id: scene-3
+          title: The First Choice
+          summary: "The elder gives the PCs a choice: go their separate ways, or band together to find Black Wind Stronghold. This is the first team decision."
+        - id: scene-4
+          title: Black Wind Stronghold (combat scene)
+          summary: "See the encounter design below."
+        - id: scene-5
+          title: Breakthrough (realm breakthrough scene)
+          summary: "After defeating the chieftain they find a demonic-cult fragment (ending note: 'The remaining seven pages are stored at the Shen Family Pawnshop in Luoyang City'), and complete the initiation trial to break through to the Second Realm."
+      encounters:
+        - id: enc-1
+          title: Tea House / Ferry / Highway Skirmish
+          enemies:
+            - name: Man in Black
+              count: "PC count + 1 (Hook A)"
+              hp: 15
+              might: "Strength 3 (mod -1)"
+              agility: "Agility 3 (mod -1)"
+              attack: "Base accuracy +1"
+              damage: "1d6+1"
+            - name: Mountain Bandit
+              count: "= PC count (Hook B)"
+              hp: 12
+              might: "Strength 3"
+              agility: "Agility 2"
+              attack: "Accuracy +0"
+              damage: "1d6"
+            - name: Yin Jiuling's Mechanism Puppet
+              count: 2
+              hp: 20
+              might: "Strength 4 (mod 0)"
+              traits: "Immune to fear; fire damage doubled"
+          difficulty: Moderate (for First Realm PCs)
+          tactics: "Sword Sect / Vajra Sect hold the front line; Qi Sect uses Taiji Fist · Grasping the Sparrow's Tail for defense; Poison Sect outputs from range; Medicine Sect heals; Shadow Sect uses initiative to drop the weakest enemy first."
+          variant: "If all are newbies, reduce 1 enemy; if someone is isolated and surrounded, the elder who has not yet acted steps in once to save the situation."
+        - id: enc-2
+          title: Black Wind Stronghold Outskirts
+          enemies:
+            - name: Black Wind Stronghold Minor Chief
+              count: 1
+              hp: 20
+              might: "Strength 4 (mod 0)"
+              agility: "Agility 3"
+              attack: "Accuracy +2 (uses saber)"
+              damage: "1d8+1 (Short Saber); skill 'Downward Cut' accuracy -2 but damage +1d6"
+            - name: Mountain Bandit Mook
+              count: "= PC count"
+              hp: 12
+              attack: "Accuracy +0"
+              damage: "1d6"
+          difficulty: Moderate
+        - id: enc-3
+          title: "Black Wind Stronghold Chieftain — Boss Battle"
+          enemies:
+            - name: "Han Bao the 'One-Eyed Dragon'"
+              role: boss
+              hp: 30
+              might: "Strength 5 (mod +1)"
+              agility: "Agility 4 (mod 0)"
+              root: "Constitution 4"
+              focus: "Willpower 2"
+              attack: "Accuracy +3 (great saber)"
+              damage: "2d6+1 (Five Tigers Door-Cutting Saber · Wind-Splitting Form)"
+              qi: 6
+              special: "Each time he takes damage, next turn accuracy +1 (Berserk, stacks up to +3); after taking 20+ total damage his berserk ends and he falls into fear."
+          difficulty: Hard (Boss battle)
+          variant: "If the PCs are too weak, the chieftain takes 1d4 internal injury per turn from demonic-art backlash."
+      noncombat_challenges:
+        - id: chal-1
+          title: Tracking Black Wind Stronghold (exploration)
+          check: "Tracking Difficulty (DC) 12 (Comprehension) or Jianghu Lore Difficulty (DC) 10 (Comprehension) asking villagers"
+          success: "Find the mountain path, discover patrol routes, gain initiative +2 on the first encounter's ambush."
+          failure: "Lose an hour lost in the mountains; night battle with sight -2 (Shadow Sect / Poison Sect instead gain stealth bonuses)."
+        - id: chal-2
+          title: Rescue the Captured Villagers (social / stealth)
+          check: "Stealth Difficulty (DC) 12 (Agility) to slip past guards; or Intimidate Difficulty (DC) 12 (Strength) to force a captive to lead the way"
+          success: "Rescue the hostages, gain the villagers' favor and intel — 'The chieftain locks himself in the cellar every night, practicing who-knows-what.'"
+          failure: "Triggers an extra encounter; a villager is wounded (if not treated in time, Heroism -2)."
+      rewards:
+        - name: Demonic Cult Fragment (half page)
+          type: Plot Item
+          source: "Points to Chapter 2 clue — Shen Family Pawnshop"
+        - name: Black Wind Stronghold Loot
+          type: Silver
+          source: "30-50 taels (split among PCs); returning it to the villagers grants Heroism +2"
+        - name: Five Tigers Door-Cutting Saber · Wind-Splitting Form
+          type: Martial Arts Manual
+          source: "On the chieftain (see 09_Martial Arts Codex.md §6); only Independent or saber-using PCs may learn"
+        - name: Jin Chuang Medicine
+          type: Consumable
+          source: "×3 doses (see 08_Equipment & Pills.md §Special Items)"
+      breakthrough:
+        to_realm: Second Realm · Crossing the Threshold
+        xp_requirement: "Cumulative ≥ 20 Experience (Martial Truth / XP)"
+        martial_requirement: "Master at least 1 initiation-level inner manual + 1 basic martial technique"
+        story_lock: "Complete the initiation trial — defeat the Black Wind Stronghold Chieftain and make the choice 'Uphold the Righteous Path / Uphold Yourself'"
+        rewards: "Attribute +3 (max +2 single); Qi realm +3; attribute cap unlocked to 6; Advantage Die vs lower-realm foes; passive 'First Sense of Qi' (short rest recovery +2)"
+      foreshadow:
+        - text: "Secret of the demonic-cult fragment (Shen Family Pawnshop)"
+          points_to: Chapter 2
+        - text: "Identity of the storyteller / boatman / Liu Shengyan"
+          points_to: Chapter 2
+        - text: "Yin Jiuling (if not caught) joins Qianji Pavilion's dark plan"
+          points_to: Chapter 4
+        - text: "The name Blood Moon Cult (from the men in black / the chieftain)"
+          points_to: "Chapters 3-5"
+      gm_variants:
+        - id: var-a
+          title: PCs Decide Not to Party Up
+          detail: "Each PC meets someone needing help; if still not partying up, they regroup in Luoyang days later over a major event."
+        - id: var-b
+          title: PCs Crush It Easily
+          detail: "The chieftain fires a signal flare before dying, leaving a loose thread; add a collapse/fire escape scene."
+        - id: var-c
+          title: PCs Are Defeated
+          detail: "No TPK — locked in the woodshed with the villagers, shifting to a prison-break scene; on retry the chieftain has only half HP."
+
+    # ===================== Chapter 2 =====================
+    - id: ch2
+      index: 2
+      title: Crossing the Threshold
+      realm_milestone: "Crossing the Threshold → Complete Mastery"
+      pc_realm: "Second Realm · Crossing the Threshold (attribute cap 6)"
+      expected_sessions: 3-5
+      attribute_baseline:
+        pc_avg: "Strength/Agility/Constitution 4-6; Comprehension/Willpower/Charisma 3-6"
+        recommended_dc_range: "Difficulty (DC) 10-15"
+        qi_pool: "15-25 pts"
+        hp_range: "25-40"
+      hooks:
+        - id: hook-a
+          name: Shen Wanjin's Invitation
+          suited: "Righteous / Neutral PCs"
+          scene: "At an inn in Luoyang the PCs receive a gilded invitation from Shen Wanjin, chief manager of the Sihai Alliance, who reveals someone is mass-buying the ingredients of Hua Gong San (Dragon-Saliva Herb / Cold-Stone Gall / Seven-Star Begonia)."
+          conflict_trigger: "Shen Wanjin asks the PCs to find out who the buyer is."
+        - id: hook-b
+          name: Liu Shengyan's Plea
+          suited: "Medicine Sect / Neutral / Wandering PCs"
+          scene: "In Luoyang the PCs meet a young woman, Liu Shengyan (chief healer of Yaowang Valley's Jishi Hall), beset by local thugs, investigating banned drugs leaked from Yaowang Valley."
+        - id: hook-c
+          name: Shen Family Pawnshop Clue
+          suited: "Continues Chapter 1 foreshadow"
+          scene: "Bearing the demonic-cult fragment, the PCs go to the Shen Family Pawnshop; the clerk Shen San recognizes the same fragment and mentions 'a black scorpion tattoo'."
+          conflict_trigger: "Jianghu Lore Difficulty (DC) 12 (Comprehension) identifies it as a Blood Moon Cult subordinate mark."
+      key_scenes:
+        - id: scene-1
+          title: Luoyang City Exploration (open scene)
+          locations:
+            - "Yangzhou Tower (Sihai Alliance): Hook A, meet NPCs"
+            - "Longquan Pavilion (sword forge): buy/upgrade weapons, Ziyang due to collect a sword"
+            - "Yaowang Jishi Hall: healing, buy medicine, Liu Shengyan"
+            - "Shen Family Pawnshop: Hook C, gather rumors"
+            - "Six Doors Luoyang Branch: New NPC Tie Jingxin (Fourth Realm)"
+            - "Mixed Riffraff Tea House: rumor-gathering Difficulty (DC) -2"
+        - id: scene-2
+          title: Tracing the Medicinals (investigation chain)
+          summary: "Four clues point to three buyers: Western Regions merchant (Blood Moon Cult), Bashu mysterious buyer (Qianji Pavilion), Luoyang rich man Chu Huaisha (Po Feng San)."
+        - id: scene-3
+          title: Yangzhou Tower Night Banquet — Information Gathering
+          summary: "Shen Wanjin spreads a Luoyang map, pointing out the Western Regions / Bashu / Chu Huaisha locations."
+        - id: scene-4
+          title: Meeting Chu Huaisha (social / stealth)
+          summary: "Chu Huaisha reveals Po Feng San came from Gongshu Xuan and he needs to enter Wanxiang Grotto to cure his poisoned sister."
+        - id: scene-5
+          title: Camel Alley — Shadow of the Blood Moon Cult (combat)
+          summary: "The Western Regions merchant destroys evidence and is blocked by the Six Doors; the PCs may help / intercept / watch."
+      encounters:
+        - id: enc-1
+          title: Camel Alley Skirmish
+          enemies:
+            - name: Western Regions Saber Master
+              count: "PC count + 1"
+              hp: 20
+              might: "Strength 4 (mod 0)"
+              agility: "Agility 4"
+              attack: "Accuracy +3 (curved saber)"
+              damage: "2d6"
+              special: "Skill 'Desert Wind': initiative +2, first cut accuracy +1"
+            - name: Western Regions Poison Master
+              count: 1
+              hp: 15
+              sense: "Comprehension 4"
+              attack: "Accuracy +3 (poison-needle dart)"
+              damage: "1d4+Poisoned (1d4/turn, 2 turns)"
+              special: "Holds 2 Thunderclap Bombs, detonates on dying to take enemies with him"
+          difficulty: Moderate
+          third_party: "On turn 3 a shadowy figure snatches the wagon's letter and vanishes; Agility / Perception Difficulty (DC) 15 may identify 'Huangquan Step' (Wangchuan Tower lightfoot)."
+        - id: enc-2
+          title: Bashu Buyer at Ping'an Inn (optional)
+          enemies:
+            - name: Bashu Mechanism Master
+              count: 2
+              hp: 18
+              sense: "Comprehension 5"
+              special: "Poor in melee, remotely controls mechanisms"
+            - name: Iron-Shell Mechanism Beast
+              count: 1
+              hp: 35
+              might: "Strength 6 (mod +2)"
+              attack: "Accuracy +4"
+              damage: "2d8+2"
+              special: "Dart attacks accuracy -4; fire damage doubled; auto-repairs 1d4 HP per turn"
+          difficulty: Hard
+          background: "A Qianji Pavilion hall master's private act; secret letter 'The Pavilion Elder knows Wanxiang Grotto's location, buy materials swiftly, not a word for three months'."
+        - id: enc-3
+          title: Chu Huaisha's Test (optional social → possible combat)
+          enemies:
+            - name: Chu Huaisha
+              role: "Non-boss (only wants to flee)"
+              hp: 28
+              agility: "Agility 7 (mod +3)"
+              sense: "Comprehension 6 (mod +2)"
+              qi: 20
+              attack: "Chasing Wind Palm accuracy +4, damage 2d6+3"
+              special: "Pre-laid 5 mechanisms (smoke / poison-smoke / rope-net); goal is to stop his escape, not kill him"
+          difficulty: Moderate (unconventional combat)
+      noncombat_challenges:
+        - id: chal-1
+          title: Deciphering the Ancient Map
+          check: "Jianghu Lore Difficulty (DC) 15 (Comprehension) or Calligraphy & Painting Difficulty (DC) 12 (Charisma)"
+          success: "Recognize the area beyond Emei Mountain's back range not on the map; ancient text 'All phenomena return to origin, the grotto has a key'."
+          failure: "Only know Bashu mountains, need Qianji Pavilion to interpret (leads to Chapter 4)."
+        - id: chal-2
+          title: Camel Alley Evidence Tracking
+          check: "Tracking Difficulty (DC) 12 (Comprehension)"
+          success: "Obtain Blood Moon Cult documents + Luoyang defense map (Northern Frontier scouting)."
+          failure: "Fragment '...Northern Frontier...Hua Gong San...' leads to Chapter 6."
+        - id: chal-3
+          title: Persuading Chu Huaisha to Cooperate
+          check: "Oratory Difficulty (DC) 15 (Charisma)"
+          bonus: "Medicine Sect PC → Difficulty (DC) -2; Intimidate → Difficulty (DC) +5 and failure triggers Encounter 3"
+          success: "Gain ancient map + Po Feng San formula + token."
+          failure: "Chu Huaisha leaves Luoyang, met again in Bashu in Chapter 3."
+      rewards:
+        - name: Willow-Leaf Saber / Short Sword
+          type: Weapon
+          source: "Pick one, Shen Wanjin's gift (see 08_Equipment & Pills.md)"
+        - name: Life-Continuing Pill
+          type: Pill
+          source: "×2, Liu Shengyan's thanks"
+        - name: Minor Restoration Pill + Qi-Gathering Pill
+          type: Pill
+          source: "Minor Restoration Pill ×3 + Qi-Gathering Pill ×1, seized from Western Regions crate"
+        - name: Po Feng San Formula
+          type: "Plot / Item"
+          source: "Requires persuading Chu Huaisha (Medicine Sect PC or Alchemy ≥2 to brew, Alchemy Difficulty (DC) 14)"
+        - name: Ancient Map (fragmentary)
+          type: Plot Item
+          source: "Points to Wanxiang Grotto entrance in Chapter 4"
+        - name: Tie Jingxin's Letter of Recommendation
+          type: Plot Item
+          source: "Obtained after helping the Six Doors"
+        - name: Renown +2
+          type: Renown
+      breakthrough:
+        to_realm: Third Realm · Complete Mastery
+        xp_requirement: "Cumulative ≥ 70 Experience (Martial Truth / XP)"
+        martial_requirement: "Orthodox inner manual or above, master at least 5 techniques"
+        story_lock: "Comprehend the 'Martial Truth' — understand the Jianghu is more than dueling"
+        rewards: "Attribute +3 (max +2 single); Qi realm +6; cap to 7; Advantage Die on key checks vs same-or-lower realm (2/scene); 'Seeing the Subtle' Technique Reading +2"
+      foreshadow:
+        - text: "Blood Moon Cult's Northern Frontier plan"
+          points_to: "Chapters 5-6"
+        - text: "Qianji Pavilion knows Wanxiang Grotto (Elder's symbol)"
+          points_to: Chapter 4
+        - text: "Wangchuan Tower's involvement"
+          points_to: "Chapters 3-6"
+        - text: "Chu Huaisha's poisoned sister"
+          points_to: "Chapters 4-6"
+        - text: "Ancient map points to Bashu"
+          points_to: "Chapters 3-4"
+      gm_variants:
+        - id: var-a
+          title: PCs Take the Righteous Path
+          detail: "Six Doors gives later support; Chu Huaisha turns paranoid; Shen Wanjin gifts Golden-Silk Soft Armor / Rhino-Hide Armor."
+        - id: var-b
+          title: PCs Take the Evil Path
+          detail: "Tie Jingxin grows suspicious; Shen Wanjin goes strictly business; Chapter 4 may yield Qianji Pavilion black-market auction benefits."
+        - id: var-c
+          title: PCs Drop the Medicinal Line
+          detail: "Chapter 3 Hua Gong San flows on the black market; the Wanxiang Grotto line can bypass medicinals as Chu Huaisha approaches the PCs directly."
+
+    # ===================== Chapter 3 =====================
+    - id: ch3
+      index: 3
+      title: Complete Mastery
+      realm_milestone: "Complete Mastery → Perfecting the Craft"
+      pc_realm: "Third Realm · Complete Mastery (attribute cap 7)"
+      expected_sessions: 4-6
+      attribute_baseline:
+        pc_avg: "Strength/Agility/Constitution 5-7; Comprehension/Willpower/Charisma 4-7"
+        recommended_dc_range: "Difficulty (DC) 12-18"
+        qi_pool: "25-40 pts"
+        hp_range: "35-50"
+      hooks:
+        - id: hook-a
+          name: Duan Tianya's Invitation
+          suited: "Sword Sect / Righteous PCs"
+          scene: "At the Sword Pavilion the PCs meet Duan Tianya, Tianjian Alliance's Lieyang Sword Master, who invites them to explore Wanxiang Grotto together."
+        - id: hook-b
+          name: Mo Ran's Plight
+          suited: "Medicine Sect / Poison Sect / Neutral PCs"
+          scene: "In a Bashu town Mo Ran (Yaowang Valley's Netherworld Hall Master) is surrounded by villagers; the PCs are asked to help clear his name of an inside-job suspicion."
+        - id: hook-c
+          name: Bashu Jianghu Rumors
+          suited: All Sects
+          scene: "Blue light on the night of the full moon behind Emei Mountain; Qianji Pavilion issues the 'Qianji Invitation' to crack Wanxiang Grotto's seal."
+      key_scenes:
+        - id: scene-1
+          title: Sword Pavilion Pass — Duan Tianya's Spar (non-lethal)
+          summary: "Duan Tianya only uses three moves; the PCs gaining his trust opens the Tianjian Alliance line."
+          duel_data:
+            hp: 50
+            attack: "+7 (holding back ≈ +4)"
+            damage: "2d6+2 / 3d6+2 / 2d8+3 (third move +2 accuracy if PC HP >50%)"
+        - id: scene-2
+          title: Tang Sect Town — Mo Ran's Wrongful Accusation
+          summary: "Draw the snake from its hole or investigate; truth: Meng Chuan stole medicinals coerced by Nangong Hui; Nangong Hui is the real insider."
+        - id: scene-3
+          title: Behind Emei Mountain — Blue Light at Full Moon (exploration / puzzle)
+          summary: "Ancient stele 'All phenomena return to origin, the mind is the key'; requires a sincere statement of motive or Mechanism Difficulty (DC) 18 (Comprehension); first fragment found inside."
+        - id: scene-4
+          title: Qianji Invitation — Heroes Gather
+          summary: "Duan Tianya / Mo Ran / Chu Huaisha / Liu Shengyan / Gongshu Xuan / Blood Moon Cult spy (disguised) all present."
+        - id: scene-5
+          title: Outside Wanxiang Grotto — Three-Way Standoff (climax)
+          summary: "Gongshu Xuan holds the second fragment; the third is on the Blood Moon Cult spy (scorpion tattoo); the PCs' choice decides the ending."
+      encounters:
+        - id: enc-1
+          title: Behind Emei Mountain — Guardian Beast
+          enemies:
+            - name: Stone Lion Puppet
+              count: 2
+              hp: 30
+              might: "Strength 6 (mod +2)"
+              ac: "Defense (AC) 17 (stone)"
+              attack: "Accuracy +5"
+              damage: "2d8+2"
+              special: "Immune to poison / charm / fear; fire doubled; reforms when knocked down; joint weak point Technique Reading Difficulty (DC) 14 (Defense -3)"
+          difficulty: Moderate
+        - id: enc-2
+          title: Qianji Pavilion — Nangong Hui Boss Battle
+          enemies:
+            - name: Nangong Hui
+              role: boss
+              hp: 45
+              sense: "Comprehension 7 (mod +3)"
+              agility: "Agility 6 (mod +2)"
+              root: "Constitution 6"
+              qi: 30
+              attack: "Rotting-Bone Palm accuracy +6, damage 3d6+3 + Poison 2d4/turn"
+              special: "Returning-Spring Formula self-heals 3d6; auto-recovers 1d6/turn (fails if vegetation burned); on dying releases poison mist"
+          difficulty: Hard (Boss battle)
+          background: "The insider Mo Ran pursued, a Blood Moon Cult / Qianji Pavilion double agent; after defeat may be killed / released / handed to Mo Ran."
+        - id: enc-3
+          title: Three-Way Melee (optional)
+          participants: "PCs + Duan Tianya + 2 Tianjian Alliance disciples vs Blood Moon Cult spy ×3 + minor chief"
+          enemies:
+            - name: Duan Tianya (full power)
+              hp: 60
+              attack: "Accuracy +8"
+              damage: "3d6+4"
+            - name: Tianjian Alliance Disciple
+              count: 2
+              hp: 25
+              attack: "Accuracy +5"
+              damage: "2d6+2"
+            - name: Blood Moon Cult Spy
+              count: 3
+              hp: 22
+              attack: "Accuracy +5"
+              damage: "2d6+1 + Poison (Constitution Difficulty (DC) 12, 1d4/turn)"
+            - name: Blood Moon Cult Minor Chief
+              hp: 40
+              attack: "Accuracy +6"
+              damage: "3d6+2"
+              special: "Each turn sacrifices 3 Qi for +2 accuracy; holds the third fragment"
+          difficulty: Hard
+          key_item: "Third fragment on the minor chief; detect in time (Perception / Technique Reading Difficulty (DC) 16) to stop shattering."
+      noncombat_challenges:
+        - id: chal-1
+          title: Cracking Wanxiang Grotto's Seal (mind / cooperation)
+          check: "① Martial comprehension Comprehension Difficulty (DC) 16 ② Ancient script Calligraphy & Painting / Jianghu Lore Difficulty (DC) 16 ③ Qi guidance Constitution + Willpower combined"
+          success: "Great door opens, enter the outer area."
+          failure: "Seal backfires, each takes 1d10 internal injury, cools down to next full moon."
+        - id: chal-2
+          title: Finding the Spy at the Qianji Gathering (social / Read Intent)
+          check: "Read Intent Difficulty (DC) 16 (Comprehension) or Jianghu Lore Difficulty (DC) 14 (Comprehension)"
+          success: "Gain initiative in Scene 5."
+          failure: "In Scene 5 the spy ambushes, reaction -2 on first turn."
+      rewards:
+        - name: Cold Plum Sword Art · Frosty Sword Qi
+          type: Martial Arts Manual
+          source: "Taught by Duan Tianya (after spar and strong showing, see 09_Martial Arts Codex.md §17)"
+        - name: Golden-Silk Soft Armor
+          type: Armor
+          source: "Mo Ran's thanks (see 08_Equipment & Pills.md §Armor)"
+        - name: Pure-Heart Lotus
+          type: Spirit Herb
+          source: "Outer grotto (cures special poisons)"
+        - name: First Fragment (Moonstone)
+          type: Plot Item
+        - name: Realm-Breaking Pill
+          type: Pill
+          source: "×1, on Nangong Hui"
+        - name: Renown +3
+          type: Renown
+      breakthrough:
+        to_realm: Fourth Realm · Perfecting the Craft
+        xp_requirement: "Cumulative ≥ 170 Experience (Martial Truth / XP)"
+        martial_requirement: "Superior inner manual or above"
+        story_lock: "Renowned in a region (Renown 'Regional Hero') + complete one Grudge / Favor line"
+        rewards: "Attribute +3 (max +2 single); Qi realm +10; cap to 8; Steady Die on non-combat checks (3d10 take middle); passive 'Gang Qi Bodyguard' +5 temp HP at combat start"
+      foreshadow:
+        - text: "Wanxiang Grotto main hall (ancient martial pulse)"
+          points_to: Chapter 4
+        - text: "Duan Tianya's ambition"
+          points_to: "Chapters 5-6"
+        - text: "Blood Moon Cult's Hua Gong San plan"
+          points_to: Chapter 5
+        - text: "Wangchuan Tower's shadow"
+          points_to: "Chapters 4-6"
+        - text: "Northern Frontier War"
+          points_to: Chapter 6
+      gm_variants:
+        - id: var-a
+          title: PCs Support the Blood Moon Cult Spy
+          detail: "Spy takes the former-dynasty secret scroll; Tianjian Alliance relation breaks; Heroism -5; Chapter 5 the spy repays."
+        - id: var-b
+          title: PCs Cooperate with No Faction
+          detail: "All three treat PCs as rivals; the grotto becomes a multi-team maze."
+        - id: var-c
+          title: Gongshu Xuan's Test
+          detail: "Gifts a mechanism communicator + safe route map, at the cost of remote observation."
+        - id: var-d
+          title: Shadow of the Western Factory (court spy line)
+          detail: "After Nangong Hui or the medicinal investigation, Zhuque delivers 'Hua Gong San buyers aren't only the Blood Moon Cult — the third batch is the court'; track Agility Difficulty (DC) 18 (tracking Zhuque). Does not change the main line, Chapter 5 foreshadow."
+
+    # ===================== Chapter 4 =====================
+    - id: ch4
+      index: 4
+      title: Perfecting the Craft
+      realm_milestone: "Perfecting the Craft → Peak of Perfection"
+      pc_realm: "Fourth Realm · Perfecting the Craft (attribute cap 8)"
+      expected_sessions: 5-7
+      attribute_baseline:
+        pc_avg: "Strength/Agility/Constitution 6-8; Comprehension/Willpower/Charisma 5-8"
+        recommended_dc_range: "Difficulty (DC) 15-20"
+        qi_pool: "40-55 pts"
+        hp_range: "45-60"
+      hooks:
+        - id: hook-a
+          name: Ziyang's Sword
+          suited: "Qi Sect / Sword Sect / Righteous PCs"
+          scene: "Ziyang (Taixu Palace) arrives, wishing to observe Wanxiang Grotto's 'Heavenly Dao Sword' trial."
+        - id: hook-b
+          name: Gongshu Xuan's Deal
+          suited: "Poison Sect / Shadow Sect / Neutral PCs"
+          scene: "Gongshu Xuan sends word: a second entry method — sacrifice a divine weapon to forge a 'Formation-Breaking Awl' to pierce the protective array."
+        - id: hook-c
+          name: Blood Moon Cult's Counterattack
+          suited: "Continues Chapter 3 foreshadow"
+          scene: "Blood Moon Cult assassins bring Ye Xiuluo's message: willing to trade Hua Gong San antidote for one person to take a branch of the ancient martial pulse inside the grotto."
+      key_scenes:
+        - id: scene-1
+          title: Qianji Pavilion — Gongshu Xuan's Underground Maze
+          summary: "Gongshu Xuan deduces four trials correspond to the four realms of sword / qi / medicine-poison / mind."
+        - id: scene-2
+          title: The Four Trials (core)
+          trials:
+            - name: Sword's Extreme (Heavenly Dao Sword)
+              solve: "Oratory / Willpower Difficulty (DC) 18 or mental duel (HP 40, accuracy +8, damage 3d8, mimics first three moves)"
+              reward: "Sword-Intent Stone (one sword art proficiency +1 level) + permanent +1 attribute"
+            - name: Qi's Source (Origin Return)
+              solve: "Constitution + Willpower Difficulty (DC) 20 suppress / Comprehension Difficulty (DC) 18 + 8 Qi guide / transform-absorb (Willpower Difficulty (DC) 15 avoid deviation)"
+              reward: "Origin Stone (3 uses recover 3d6+4 Qi, or one-time absorb +10 Qi cap)"
+            - name: Life and Death (medicine-poison same source)
+              solve: "Medicine Difficulty (DC) 20 / Poison Difficulty (DC) 16 / Oratory Willpower Difficulty (DC) 18"
+              reward: "Pure-Heart Lotus Seed + Life-Death Stone (poison resist +2, +1d4 damage to poisoned targets)"
+            - name: Mind's Mirror (face the true self)
+              solve: "Willpower Difficulty (DC) 18 accept the past / roleplay dialogue"
+              reward: "Clear-Mind Stone (Willpower +1 breaks cap, reroll one failed Willpower check daily)"
+        - id: scene-3
+          title: Ancient Martial Pulse — Fifth Trial (hidden)
+          summary: "After the four trials the floor opens to the pulse; may take attribute / technique breakthrough / self-creation inspiration / help Ye Xiuluo take a branch / help Ziyang research. Ziyang warns against greed."
+        - id: scene-4
+          title: Leaving the Grotto — The World Has Changed
+          summary: "Outside they find the Northern Barbarians breach the border, Tianjian Alliance forms the Yi Wu Army, Duan Tianya publicly challenges Lu Chenyuan."
+        - id: scene-5
+          title: Duan Tianya vs Lu Chenyuan — Tianjian Alliance Assembly
+          summary: "PCs may join the leadership struggle via Duan Tianya / Six Doors / Ziyang / neutral channels."
+      encounters:
+        - id: enc-1
+          title: Wanxiang Grotto Main Hall — Guardian Sword Spirit
+          enemies:
+            - name: Sword Spirit
+              role: "Trial Boss"
+              hp: 55
+              attack: "Sword Qi accuracy +9"
+              damage: "3d8+3 (internal injury, ignores armor)"
+              special: "Each turn 50% sees through attack; break = use different force/technique type each turn"
+          difficulty: Hard (triggered only on brute-force trial break)
+        - id: enc-2
+          title: Duan Tianya's Challenge (optional)
+          enemies:
+            - name: Duan Tianya (peak Fourth Realm)
+              hp: 65
+              might: "Strength 8 (mod +4)"
+              agility: "Agility 7 (mod +3)"
+              root: "Constitution 7"
+              focus: "Willpower 6"
+              qi: 40
+              attack: "Lieyang Sword Art · Burning Sky accuracy +9, damage 4d6+4, Qi 7; Sun Bodyguard external injury reduction +3"
+              special: "Consecutive Lieyang Sword hits stack +1 accuracy (max +3)"
+          difficulty: Hard (non-lethal; mediator Liu Rushi appears)
+        - id: enc-3
+          title: Blood Moon Cult Ambush (climax melee)
+          enemies:
+            - name: Li Canyang
+              role: boss
+              hp: 70
+              might: "Strength 9 (mod +5)"
+              agility: "Agility 8 (mod +4)"
+              focus: "Willpower 3"
+              qi: 35
+              attack: "Blood Shadow Step (initiative +6) / Heart-Devouring Finger accuracy +8 mental damage 3d6+5 / Heavenly Demon Release (dying burst 4d6)"
+              special: "Every 3 turns loses 1 turn to demonic-art backlash"
+            - name: Blood Moon Cult Elite
+              count: 4
+              hp: 30
+              attack: "Accuracy +6"
+              damage: "2d6+2 + Poison 1d4/turn"
+          difficulty: "Boss battle (Li Canyang early Fifth Realm, realm advantage vs Fourth Realm PCs)"
+          key_plot: "On defeat, find Ye Xiuluo's secret letter 'Plan B'."
+      noncombat_challenges:
+        - id: chal-1
+          title: Speech at the Tianjian Alliance Assembly
+          check: "Oratory Difficulty (DC) 18 (Charisma) or Intimidate Difficulty (DC) 20 (Strength)"
+          success: "At least three sword masters agree, assembly recesses to face the enemy together."
+          failure: "Speech interrupted, does not affect overall assembly direction."
+        - id: chal-2
+          title: Tracking Down Plan B
+          check: "Intel net Difficulty (DC) 14 (Sihai Alliance) / 12 (Gaibang) / 16 (Six Doors) / 18 (Qianji Pavilion, paid)"
+          success: "Discover Plan B = Hua Gong San + Lu Chenyuan."
+          failure: "Know danger but not content, may warn Lu Chenyuan to fortify."
+      rewards:
+        - name: Sword-Intent Stone / Origin Stone / Pure-Heart Lotus Seed + Life-Death Stone / Clear-Mind Stone
+          type: Special Item
+          source: "Passing the four trials"
+        - name: Ancient Martial Pulse Inheritance
+          type: "Attribute / Skill"
+          source: "See Scene 3"
+        - name: Lieyang Sword Art Fragment
+          type: Martial Arts Manual
+          source: "Strong showing in Duan Tianya's challenge (optional)"
+        - name: Renown +5
+          type: Renown
+      breakthrough:
+        to_realm: Fifth Realm · Peak of Perfection
+        xp_requirement: "Cumulative ≥ 370 Experience (Martial Truth / XP)"
+        martial_requirement: "Peerless Divine Art (ancient pulse inheritance or self-study)"
+        story_lock: "Experience the Tianjian Alliance Assembly + Blood Moon Cult ambush + create one's own move"
+        rewards: "Attribute +3 (max +2 single); Qi realm +15; cap to 10; one Inner Strength Infusion (take 18) per battle; 'Intention Moves the Body' initiative +3"
+      foreshadow:
+        - text: "Ye Xiuluo's Plan B"
+          points_to: Chapter 5
+        - text: "Li Canyang's death → Ye Xiuluo appears personally"
+          points_to: Chapter 5
+        - text: "Duan Tianya's transformation"
+          points_to: "Chapters 5-6"
+        - text: "Barbarian breach (second conscription order)"
+          points_to: Chapter 6
+        - text: "Martial pulse withering (optional)"
+          points_to: Chapter 6
+      gm_variants:
+        - id: var-a
+          title: PCs Fail All Four Trials
+          detail: "Return empty-handed but leave enough for later deduction, Renown +2."
+        - id: var-b
+          title: Share the Grotto's Secrets Fully
+          detail: "Renown +5 but draws covetous eyes; Chapter 5 gains more allies."
+        - id: var-c
+          title: Wanxiang Grotto Collapses
+          detail: "Escape sequence Agility Difficulty (DC) 15-18 (fail lose 1d6 HP); pulse destroyed, Emei vegetation withers; NPCs resent."
+
+    # ===================== Chapter 5 =====================
+    - id: ch5
+      index: 5
+      title: Peak of Perfection
+      realm_milestone: "Peak of Perfection → Return to Simplicity"
+      pc_realm: "Fifth Realm · Peak of Perfection (attribute cap 10)"
+      expected_sessions: 6-8
+      attribute_baseline:
+        pc_avg: "Strength/Agility/Constitution 7-10; Comprehension/Willpower/Charisma 6-10"
+        recommended_dc_range: "Difficulty (DC) 18-22"
+        qi_pool: "50-70 pts"
+        hp_range: "55-70"
+      hooks:
+        - id: hook-a
+          name: Lu Chenyuan's Summons
+          suited: Righteous PCs
+          scene: "Sword Alliance order summons PCs to Tianjian Alliance HQ; Lu Chenyuan shows Plan B details (Hua Gong San / assassination / total war in three steps)."
+        - id: hook-b
+          name: Ye Xiuluo's Envoy
+          suited: "Evil / Neutral PCs"
+          scene: "Blood-moon letter to a ruined roadside shrine; Ye Xiuluo's true intent: Plan B is the final layer of the Blood Moon Art, wishes to negotiate with the Tianjian Alliance."
+        - id: hook-c
+          name: Chance to Create Own Technique
+          suited: All PCs
+          scene: "At some point this chapter the self-created technique 'solidifies'; 10-20% stronger but 10-20% costlier, must succeed in real combat to solidify."
+      key_scenes:
+        - id: scene-1
+          title: The Tianjian Alliance's Choice (decision)
+          candidates:
+            - "Lu Chenyuan (conservative)"
+            - "Duan Tianya (reform)"
+            - "Liu Rushi (middle path)"
+          summary: "PCs support a side or act neutrally based on stance."
+        - id: scene-2
+          title: Ye Xiuluo's Plan B — Climax Duel
+          summary: "Ye Xiuluo appears in person at the Tianjian Alliance courtyard; combat triggers on refused negotiation or sudden attack."
+        - id: scene-3
+          title: Righteous-Evil Showdown — Battle of Tianjian Alliance (three fronts)
+          summary: "Front A courtyard NPC battle / Front B central court PCs vs Guardians / Front C rooftop Lu Chenyuan vs Ye Xiuluo (affected by PCs' Front B performance)."
+        - id: scene-4
+          title: Facing Ye Xiuluo — Boss Battle
+          summary: "Defeat the Guardian to reach the rooftop and face Ye Xiuluo directly; outcome decides Lu Chenyuan's life."
+        - id: scene-5
+          title: After the Great Battle — New Order
+          summary: "Ye Xiuluo's four outcomes reshape the Jianghu."
+      encounters:
+        - id: enc-1
+          title: Tianjian Alliance Defense — Front Courtyard
+          enemies:
+            - name: Blood Moon Cult Blood-Robe Guard
+              count: 6
+              hp: 25
+              attack: "Accuracy +6"
+              damage: "2d6+2"
+            - name: Blood Moon Cult Branch Master
+              count: 2
+              hp: 40
+              attack: "Accuracy +7"
+              damage: "3d6+2"
+          allies:
+            - name: Tianjian Alliance Disciple
+              count: 4
+              hp: 20
+              attack: "Accuracy +5"
+              damage: "2d6+1"
+          difficulty: Moderate (allies share the load)
+        - id: enc-2
+          title: Blood Moon Cult Guardian — Central Court
+          enemies:
+            - name: "Second Guardian Baigu"
+              hp: 60
+              sense: "Comprehension 8 (mod +4)"
+              attack: "Heart-Confusing Art accuracy +8 mental damage 3d6 / Phantom Step evade Difficulty (DC) +4"
+              weakness: "Low Constitution (4), melee effective"
+            - name: "Third Guardian Sumei"
+              hp: 55
+              charm: "Charisma 8 (mod +4)"
+              attack: "Blood Moon Needle accuracy +8 damage 2d8+Poison 2d4/turn / Charm Art Willpower Difficulty (DC) 16 else accuracy -2"
+              weakness: "Low Strength (3), powerless in grappling"
+          difficulty: Hard
+          note: "If Li Canyang did not die in Chapter 4, a heavily-wounded version or another guardian substitutes."
+        - id: enc-3
+          title: Ye Xiuluo — Final Boss Battle
+          enemies:
+            - name: Ye Xiuluo
+              role: "Final Boss"
+              hp: 90
+              might: "Strength 9 (mod +5)"
+              agility: "Agility 10 (mod +6)"
+              root: "Constitution 8 (mod +4)"
+              sense: "Comprehension 9 (mod +5)"
+              focus: "Willpower 7 (mod +3)"
+              charm: "Charisma 8 (mod +4)"
+              qi: 70
+              attack: "Blood Moon Art · Blood Moon Slash accuracy +10 damage 4d8+Strength×2 Qi 9 / Blood Shadow Step initiative +8 / Heart-Devouring Finger accuracy +9 mental 3d8 / Heavenly Demon Release (dying HP≤15 burst 5d6)"
+              passive: "Blood Moon's Wrath: each 15 HP lost, accuracy and damage +1 (berserk stack max +3)"
+              weakness: "Every 3 turns demonic-art backlash requires Willpower Difficulty (DC) 18, fail loses 1 turn + 2d6 internal injury"
+          difficulty: Final Boss
+          alternate_path: "If given the pulse branch → Ye Xiuluo has no backlash but deliberately shows openings; Read Intent Difficulty (DC) 16 can turn to negotiation."
+      noncombat_challenges:
+        - id: chal-1
+          title: Resolving the Hua Gong San Crisis
+          check: "Medicine Difficulty (DC) 16 / Alchemy Difficulty (DC) 16 mass-produce antidote (<2 hours)"
+          success: "Tianjian Alliance disciples unaffected by Hua Gong San, Renown +2."
+          failure: "Some disciples' combat power halved."
+        - id: chal-2
+          title: Persuading Duan Tianya to Reconcile with Lu Chenyuan
+          check: "Oratory Difficulty (DC) 20 (Charisma)"
+          success: "Duan Tianya defends the enemy first, becomes a strong NPC ally in the final battle."
+          failure: "Duan Tianya refuses, the two Tianjian forces step on each other."
+        - id: chal-3
+          title: Stopping the Blood Moon Cult Radicals
+          detail: "During negotiation radicals burn a village; save villagers Heroism +5 Renown +2 / stay main battlefield Heroism -3 / split forces most dangerous."
+      rewards:
+        - name: Tianjian Art
+          type: Martial Arts Manual
+          source: "Taught by Lu Chenyuan (superior sword art, optional)"
+        - name: Nine Yang Divine Art Fragment
+          type: Martial Arts Manual
+          source: "Left by Ye Xiuluo (see 09_Martial Arts Codex.md §22, requires Comprehension Difficulty (DC) 18 to learn)"
+        - name: Marrow-Washing Pill
+          type: Pill
+          source: "Tianjian Alliance treasury (permanent Constitution +1, once in a lifetime)"
+        - name: Bright Light Armor
+          type: Armor
+          source: "Gifted by Duan Tianya after reconciliation (optional)"
+        - name: Renown +6
+          type: Renown
+      breakthrough:
+        to_realm: Sixth Realm · Return to Simplicity
+        xp_requirement: "Cumulative ≥ 870 Experience (Martial Truth / XP)"
+        martial_requirement: "Unique inner art mastered + self-created technique solidified"
+        story_lock: "Complete the legendary story line — end / reshape the Tianjian Alliance or Blood Moon Cult"
+        rewards: "Attribute +3 (max +2 single); Qi realm +20; cap to 12 (human limit); three Inner Strength Infusions per battle + Advantage Die all checks; 'Return to Simplicity' Qi cost -2, non-combat recovery ×2"
+      foreshadow:
+        - text: "Northern Frontier urgent"
+          points_to: Chapter 6
+        - text: "Ye Xiuluo's ending"
+          points_to: Chapter 6
+        - text: "Wangchuan Tower's interest (Meng Po)"
+          points_to: Chapter 6
+        - text: "Chu Huaisha's sister"
+          points_to: Chapter 6
+      gm_variants:
+        - id: var-a
+          title: Ye Xiuluo Negotiation Showdown
+          detail: "Deliver antidote → negotiation succeeds, truce signed; not delivered → battle."
+        - id: var-b
+          title: Lu Chenyuan Killed in Battle
+          detail: "Duan Tianya shocked takes over, growth arc deepens."
+        - id: var-c
+          title: PCs Fully Side with Blood Moon Cult
+          detail: "Extremely rare route, final choice has greatest impact."
+        - id: var-d
+          title: Court Intervention — Cao Shaoqin's Chessboard
+          detail: "Han Tieyi leads Imperial Guard encamped; Western Factory knew the Northern Frontier move; Boss battle 50%/25% HP Western Factory intervenes (Zhuque); Chapter 6 final foreshadow."
+
+    # ===================== Chapter 6 =====================
+    - id: ch6
+      index: 6
+      title: Return to Simplicity (Finale)
+      realm_milestone: "Return to Simplicity (Finale)"
+      pc_realm: "Sixth Realm · Return to Simplicity (attribute cap 12)"
+      expected_sessions: 3-5
+      attribute_baseline:
+        pc_avg: "Strength/Agility/Constitution 8-12; Comprehension/Willpower/Charisma 7-12"
+        recommended_dc_range: "Difficulty (DC) 20-26"
+        qi_pool: "60-100 pts"
+        hp_range: "60-85"
+      hooks:
+        - id: hook-a
+          name: Huijue's Admonition
+          suited: All PCs
+          scene: "On Putuo Island, Abbot Huijue grants a Bodhi Bead (auto-recover 1d4 Qi per turn), saying 'the end of martial study is letting go of power'."
+        - id: hook-b
+          name: Meng Po's Deal
+          suited: All PCs
+          scene: "Meng Po (Wangchuan Tower Lord) trades barbarian troop dispositions for the PC's answer to 'what to do with martial arts after the war'."
+          answers:
+            - "Protect what matters / people → Protector ending"
+            - "Found a sect → Sect-Founding Master ending"
+            - "Don't know → Seeker ending"
+        - id: hook-c
+          name: The People of the Northern Frontier
+          suited: Righteous PCs
+          scene: "A fleeing mother begs help for her captured husband Chen Dazhu; save → Heroism +3 and key intel / give silver → no change / ignore → Heroism -2 but tactical lead."
+      key_scenes:
+        - id: scene-1
+          title: Sixteen Prefectures of Yanyun — War Frontline
+          summary: "A real war, not a martial gathering; Sixth Realm PCs may command heroes (Charisma Difficulty (DC) 18) or take beheader / general / shield / sword / sage paths."
+        - id: scene-2
+          title: Meng Po's Past (side quest)
+          summary: "Eve-of-battle Meng Po removes her mask telling Wangchuan Tower's truth; after trust Wangchuan assassins aid three times (each Heroism -2)."
+        - id: scene-3
+          title: Decisive Battle — Yanmen Pass
+          summary: "Five paths: Beheader / General / Shield / Sword / Sage."
+        - id: scene-4
+          title: Atop the Great Wall — Final Monologue
+          summary: "Post-battle PC faces the finale choice, gaining the corresponding title."
+          endings:
+            - "Keep guarding the Jianghu → Jianghu Guardian"
+            - "Found a sect → Sect-Founding Master"
+            - "Retire to the mountains → Recluse Immortal"
+            - "Take Meng Po's tower → Wangchuan Tower Lord (non-orthodox)"
+            - "Travel west / by sea → Wandering Independent"
+      encounters:
+        - id: enc-1
+          title: Barbarian Vanguard — Steppe Cavalry
+          enemies:
+            - name: Barbarian Cavalry
+              count: "PC count × 2"
+              hp: 20
+              might: "Strength 5 (mod +1)"
+              attack: "Charging on horse accuracy +6"
+              damage: "2d8+3 (first turn +1d6)"
+            - name: Barbarian Centurion
+              hp: 40
+              might: "Strength 7 (mod +3)"
+              attack: "Mounted archery accuracy +7"
+              damage: "2d8+2 ranged / 3d6+3 melee"
+          difficulty: "For Sixth Realm PCs: Easy to Moderate (Grandmaster Overwhelm, design intent)"
+        - id: enc-2
+          title: Barbarian Shaman — Ancient Altar
+          enemies:
+            - name: "Great Shaman Wutugu"
+              hp: 50
+              attack: "Bloodline Curse area Willpower Difficulty (DC) 20 / Blood Sacrifice drains 5 HP/turn to empower soldiers"
+              special: "Immune to external injury reduction, not immune to internal / Qi; kill within 3 turns → empowered soldiers lose buff + 2d6 backlash"
+            - name: Blood-Sacrifice Empowered Warrior
+              count: 3
+              hp: 35
+              attack: "Accuracy +9"
+              damage: "3d8+4"
+          difficulty: "Moderate to Hard"
+          reward: "Altar crystal (same source as ancient pulse), for Gongshu Xuan's research."
+        - id: enc-3
+          title: Final Boss — Barbarian King Jin Ridi
+          enemies:
+            - name: Jin Ridi
+              role: "Final Boss"
+              hp: 100
+              might: "Strength 11 (mod +7)"
+              agility: "Agility 7 (mod +3)"
+              root: "Constitution 10 (mod +6)"
+              focus: "Willpower 8 (mod +4)"
+              attack: "Mountain-Shattering Cleave accuracy +8 damage 4d10+Strength×2 knockback 3 steps / Earth Roar area Constitution Difficulty (DC) 18 / Wolf Summon 3 ghost wolves (HP 20)"
+              passive: "Beast-King's Blood: each 1 HP lost gains 1 Blood Fury, every 5 Blood Fury +1 accuracy (max +5)"
+              weakness: "No Qi drive, internal / mental attacks deal 1.5× damage"
+          difficulty: Final Boss
+          peace_path: "Oratory / Charisma Difficulty (DC) 22 persuade retreat (needs concrete grain / trade plan)."
+      noncombat_challenges:
+        - id: chal-1
+          title: Commanding Heroes on the Battlefield
+          check: "Charisma Difficulty (DC) 20 rally rout / Strength Difficulty (DC) 18 repel charge to raise morale"
+          success: "Allied NPCs morale +2 (accuracy +1)."
+          failure: "Some soldiers rout, PCs must fill gaps personally."
+        - id: chal-2
+          title: Persuading Wangchuan Tower to Publicly Support
+          check: "Oratory Difficulty (DC) 22 (Charisma)"
+          success: "Wangchuan Tower gives Northern Frontier public intel + assassination support."
+          failure: "Meng Po refuses but still helps privately."
+      rewards:
+        - name: Purple Lightning Sword
+          type: Divine Weapon
+          source: "Beheader route, Jin Ridi's collection (optional)"
+        - name: Nine Yin Manual · General Principles
+          type: Peerless Inner Art
+          source: "Clear-Mind Stone + return Bodhi Bead, or found at ancient altar (optional)"
+        - name: "Title of Number One Under Heaven + equipment"
+          type: "Title + Weapon"
+          source: "Renown reaches level 4 'Grandmaster'"
+        - name: Wanxiang Grotto Crystal Sample
+          type: Special Item
+          source: "To Gongshu Xuan for 'Origin Resonance' research"
+      breakthrough:
+        to_realm: "Finale (found a sect / retire, no Seventh Realm)"
+        note: "Sixth Realm is humanity's endpoint; the finale choice matters more than any breakthrough."
+      gm_variants:
+        - id: var-a
+          title: Leave a Loose Thread
+          detail: "Sequel teaser: Qianji Pavilion parses a second undersea Wanxiang Grotto."
+        - id: var-b
+          title: PCs Diverge at Finale
+          detail: "Each gets a separate finale narrative + reunion years later."
+        - id: var-c
+          title: Bad Ending
+          detail: "Gray tone: Tianjian Alliance gravely weakened, Jianghu more chaotic; 'the world does not improve because of one person's effort, but because of this person it did not worsen'."
+  appendices:
+    npc_appearance:       # Appendix A: full-scenario NPC appearance table
+      - npc: Lu Chenyuan
+        first: Chapter 4
+        peak: Chapter 5
+        end: "Alliance Leader / deceased (depends on PCs)"
+      - npc: Duan Tianya
+        first: Chapter 3
+        peak: "Chapters 4-5"
+        end: "Hawk faction → reflection → may reconcile with PCs"
+      - npc: Su Qingnang
+        first: "Not directly present"
+        peak: Chapter 6
+        end: "Yaowang Valley Lord, always ally"
+      - npc: Mo Ran
+        first: Chapter 3
+        peak: "Chapters 3-4"
+        end: "Cleared of wrongdoing or still suspected"
+      - npc: Li Canyang
+        first: Chapter 4
+        peak: "Chapters 4-5"
+        end: "Defeated / killed by PCs"
+      - npc: Ye Xiuluo
+        first: Chapter 5
+        peak: Chapter 5
+        end: "Defeated / negotiated / dead"
+      - npc: Ziyang
+        first: Chapter 4
+        peak: Chapter 4
+        end: "Studies the essence of the martial pulse"
+      - npc: Shen Wanjin
+        first: Chapter 2
+        peak: Chapter 2
+        end: "Sihai Alliance, forever a merchant"
+      - npc: Huijue
+        first: Chapter 6
+        peak: Chapter 6
+        end: "Wanfo Temple Abbot, ultimate admonition"
+      - npc: Gongshu Xuan
+        first: Chapter 3
+        peak: "Chapters 4-6"
+        end: "Studies ancient technology"
+      - npc: Meng Po
+        first: Chapter 6
+        peak: Chapter 6
+        end: "Wangchuan Tower Lord, removes mask"
+      - npc: Liu Shengyan
+        first: "Chapter 1 (Hook C) / Chapter 2"
+        peak: "Chapters 2-3"
+        end: "Yaowang Valley Jishi Hall, always ally"
+      - npc: Chu Huaisha
+        first: Chapter 2
+        peak: "Chapters 3-4"
+        end: "Will do anything to save his sister"
+      - npc: Yin Jiuling
+        first: "Chapter 1 (Hook C)"
+        peak: "Chapter 4 (optional)"
+        end: "Qianji Pavilion defector, side villain"
+      - npc: Nangong Hui
+        first: Chapter 3
+        peak: Chapter 3
+        end: "Yaowang Valley defector, double agent"
+      - npc: Tie Jingxin
+        first: Chapter 2
+        peak: Chapter 2
+        end: "Six Doors, PC-court bridge"
+      - npc: Liu Rushi
+        first: Chapter 5
+        peak: "Chapters 5-6"
+        end: "Tianjian Alliance Qingshuang Sword Master, middle path"
+      - npc: Jin Ridi
+        first: Chapter 6
+        peak: Chapter 6
+        end: "Barbarian King, finale Boss"
+    reward_summary:        # Appendix B: per-chapter reward table
+      - chapter: Chapter 1
+        rewards: "Five Tigers Door-Cutting Saber · Wind-Splitting Form (optional), Jin Chuang Medicine ×3, Demonic Cult Fragment (plot), 30-50 taels"
+      - chapter: Chapter 2
+        rewards: "Willow-Leaf Saber / Short Sword (pick one), Life-Continuing Pill ×2, Minor Restoration Pill ×3 + Qi-Gathering Pill ×1, Po Feng San Formula, Ancient Map (fragmentary)"
+      - chapter: Chapter 3
+        rewards: "Cold Plum Sword Art · Frosty Sword Qi (optional), Golden-Silk Soft Armor, Pure-Heart Lotus (optional), First Fragment, Realm-Breaking Pill ×1"
+      - chapter: Chapter 4
+        rewards: "Sword-Intent Stone, Origin Stone, Pure-Heart Lotus Seed + Life-Death Stone, Clear-Mind Stone, Ancient Martial Pulse Inheritance, Lieyang Sword Art Fragment (optional)"
+      - chapter: Chapter 5
+        rewards: "Tianjian Art (optional), Nine Yang Divine Art Fragment (optional), Marrow-Washing Pill ×1, Bright Light Armor (optional)"
+      - chapter: Chapter 6
+        rewards: "Purple Lightning Sword (optional), Nine Yin Manual · General Principles (optional), Wanxiang Grotto Crystal Sample, finale title"
+    gm_checklist:         # Appendix C: GM quick-run checklist
+      opening: "Jianghu rumors / review last session / record PC realm · Heroism · Renown"
+      exploration: "Prepare 2-3 NPCs / confirm key clues / sect-flashing scenes"
+      conflict: "Check enemy data / battle terrain / difficulty adjustment plan"
+      climax: "Core event or turning point / information dividend / character spotlight"
+      closing: "Update Renown Grudges / Favors / grant Experience (Martial Truth / XP) rewards / plant 1-2 next hooks"

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 640 610" font-family="'Microsoft JhengHei','PingFang TC','Heiti TC','Noto Sans CJK TC',sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#555"/></marker></defs>
+<text x="40" y="34" font-size="18" font-weight="bold" fill="#222">MAP-04 Century Mansion — Three-Story Mansion and Sealed Room</text>
+<rect x="40" y="60" width="260" height="520" rx="14" fill="#e8f0fe" fill-opacity="0.4" stroke="#5b8def" stroke-dasharray="6 4"/>
+<text x="52" y="82" font-size="14" font-weight="bold" fill="#5b8def">the Surface (Mansion)</text>
+<rect x="340" y="150" width="260" height="430" rx="14" fill="#efe6ff" fill-opacity="0.4" stroke="#9b6dd6" stroke-dasharray="6 4"/>
+<text x="352" y="172" font-size="14" font-weight="bold" fill="#9b6dd6">Gap Expansion Zone</text>
+<text x="160.0" y="178.0" font-size="11" fill="#666" text-anchor="middle">Enter</text>
+<line x1="160.0" y1="154.0" x2="160.0" y2="210.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="160.0" y="298.0" font-size="11" fill="#666" text-anchor="middle">Upstairs</text>
+<line x1="160.0" y1="274.0" x2="160.0" y2="330.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="160.0" y="418.0" font-size="11" fill="#666" text-anchor="middle">Upstairs</text>
+<line x1="160.0" y1="394.0" x2="160.0" y2="450.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="310.0" y="233.0" font-size="11" fill="#666" text-anchor="middle">Traverse DC8</text>
+<line x1="260.0" y1="252.0" x2="360.0" y2="222.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="460.0" y1="244.0" x2="460.0" y2="300.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="460.0" y="388.0" font-size="11" fill="#666" text-anchor="middle">Show small box → step aside</text>
+<line x1="460.0" y1="364.0" x2="460.0" y2="420.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="310.0" y="473.0" font-size="11" fill="#666" text-anchor="middle">Down</text>
+<line x1="260.0" y1="492.0" x2="360.0" y2="462.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="60" y="90" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="126.0" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Main Entrance</text>
+<rect x="60" y="210" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="229.0" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">1st Floor Clinic</text>
+<text x="160.0" y="246.0" font-size="11" font-weight="normal" fill="#555" text-anchor="middle"></text>
+<text x="160.0" y="263.0" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Silver Box (DC10)</text>
+<rect x="60" y="330" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="357.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">2nd Floor Bedroom</text>
+<text x="160.0" y="374.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Mistress's Comb (DC6)</text>
+<rect x="60" y="450" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="477.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">3rd Floor Sealed Room</text>
+<text x="160.0" y="494.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Golden Residual Glow on Door Frame (DC8)</text>
+<rect x="360" y="180" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="460.0" y="207.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Gap Underground Clinic</text>
+<text x="460.0" y="224.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Silver Box (Key) (DC12)</text>
+<rect x="360" y="300" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="460.0" y="327.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Sealed Crack Entrance</text>
+<text x="460.0" y="344.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Watcher (Negotiation DC18)</text>
+<rect x="360" y="420" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="460.0" y="447.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Inside the Sealed Room</text>
+<text x="460.0" y="464.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Man's Residual / Deed of Transfer (DC15)</text>
+</svg>

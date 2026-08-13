@@ -1,0 +1,39 @@
+name: "S1: Routine Patrol"
+description: >
+  Second week after taking office. The M.E.G. regional dispatch center sent today's mission — Level 1 Sector B corridor routine patrol.
+  Standard route, no expected anomalies. This is your first signature.
+difficulty: Trivial
+real_dc: 40
+estimated_dc_range: "30–50 (basic Intelligence bias ±25%)"
+level_range: "1"
+mission_type: Reconnaissance Mission
+campaign: "Campaign One: The Rookie Director"
+min_agents: 1
+recommended_specialty:
+  - Reconnaissance
+encounter_rate: 5
+time_limit: null
+intel_levels:
+  none: "DC 24–56 (bias ±40%)"
+  basic: "DC 30–50 (bias ±25%)"
+  detailed: null
+  precise: null
+  perfect: null
+rewards:
+  success:
+    intel_gain: 1
+  great_success:
+    intel_gain: 2
+  marginal_success:
+    intel_gain: 1
+scene_flow:
+  - scene: "Office — Signing the Mission Order"
+    description: "The player signs their first mission order in the office. Choose dispatched personnel (1–2), decide whether to purchase Intelligence."
+    key_npc: "Lin Xiao (Trainee Explorer) — her first solo mission"
+  - scene: "Mission Execution — Patrol Begins"
+    description: "Level 1 corridor extends amid the hum of fluorescent lights. Everything normal — too normal."
+    check: "d100 + Explorer Experience (EXP) + Equipment bonus + Doctrine bonus, vs DC 40"
+  - scene: "Office — Mission Report"
+    description: "The patrol returns. Lin Xiao reports all normal — but requests to go farther next time."
+hidden_bonus: "If the player proactively does not use Intelligence (saving 50 budget), the GM hints: 'You are already very familiar with Level 1 Sector B.'"
+design_notes: "Tutorial mission. Minimum configuration success rate 66%. Only natural 1–5 trigger a Catastrophe. Purpose: learn the basic flow."

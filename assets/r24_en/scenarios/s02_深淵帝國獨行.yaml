@@ -1,0 +1,653 @@
+# ============================================================
+# Abyss Lord TRPG — Solo Scenario (Lv1~15 full campaign)
+# AI GM solo mode scenario
+# ============================================================
+
+name: "Abyss Lord TRPG — Solo Scenario (Lv1~15 full campaign)"
+author: "Tabletop Rules Studio (led by Cheng Guiyao)"
+rules_version: "2.5"
+
+# ═══════════════════════════════════════════════════════════
+# Prologue: Embers of the Throne Hall
+# ═══════════════════════════════════════════════════════════
+prologue:
+  name: "Embers of the Throne Hall"
+  level: 1
+  description: |
+    You awaken from the darkness of the Abyss. The mana torches of the Throne Hall have just been lit — this is your first dungeon.
+    Before you are three chambers: your Throne Hall, and two pitch-black tunnels leading into the unknown.
+    A few freshly hired monsters pace uneasily at your feet, awaiting your first command.
+  opening_dialog: |
+    You are a newly ascended Dungeon Lord. The mana torches of the Throne Hall have just been lit — this is your first dungeon.
+    For now there are only three chambers: your Throne Hall, and two undeveloped tunnels ending in pitch darkness.
+    A few freshly hired monsters pace uneasily at your feet. From afar comes the faint sound of surface humans — are they coming?
+  choices:
+    - "Choose your archetype (Necromancer Lord / Abyssal Overlord / Mad Sorcerer / Ancient Wyrm / Shadow Council / Goblin Tinkerer)"
+    - "Allocate 12 attribute points (all five attributes start at 1)"
+    - "Plan your first dig direction (left tunnel or right tunnel)"
+  starting_resources:
+    description: "Allocate starting resources per your archetype (see config.yaml character_creation.archetypes)"
+  first_exploration:
+    ind_check: "IND + Engineering vs Difficulty 1 success"
+    discovery_options:
+      - roll: "2-3"
+        result: "Vein — that space's mine output permanently +50%"
+      - roll: "4"
+        result: "Mana Node — that space's magic-room efficiency +1 die"
+      - roll: "5"
+        result: "Underground Lake — monster upkeep -50%, can build aquaculture facilities"
+      - roll: "6"
+        result: "Ancient Ruins — random treasure / magic item / hidden plot thread"
+    map_init: |
+      [MAP_UPDATE]
+      NODE player-home x=340 y=450 type="player_dungeon" label="Throne Hall" explored=true region="Abyssal Core"
+      [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# Act One: Establishment (Lv1~3)
+# ═══════════════════════════════════════════════════════════
+act1:
+  name: "Establishment"
+  range: "Lv1~3"
+  theme: "Survive. Start from a tiny Throne Hall, digging into the deep darkness."
+  stages:
+    - level: 1
+      name: "First Incursion"
+      description: "After the first dig and expansion, the dungeon finally has its first room (Mine / Trap Workshop). You thought it was hunters, but didn't realize the surface folk had long had their eyes on you."
+      key_events:
+        - "Successfully complete the first dig (spend 1 action + Building Materials ×2)"
+        - "Build the 1st room (recommend: Mine or Trap Workshop)"
+      encounter:
+        type: "Invasion"
+        tier: "T1"
+        count: "2 adventurers (Warrior Allen + Rogue Mira)"
+        boss: "None"
+        loot:
+          defeated: "◆1d3+◇1+●1 each"
+          captured: "WIL to 0 converts to servant"
+        notes: "Tutorial fight — let players experience the full defense loop"
+      sidequest:
+        - "Mira escapes (not captured): returns with a revenge squad after 3 turns"
+      reward: "+3 Experience Point EXP (repel invasion) + first capture +1 Experience Point EXP"
+      transition: |
+        Second week after the battle. Allen is locked in the newly dug prison. Mira escaped — she'll bring people back.
+        But you also have your first real resources. The dungeon's mana torches seem brighter than before.
+      map_update: |
+        [MAP_UPDATE]
+        NODE surface-world x=340 y=100 type="surface" label="Surface World" explored=true region="Surface"
+        NODE order-of-light-hq x=200 y=50 type="order_of_light" label="Order of Light" explored=true region="Surface"
+        [/MAP_UPDATE]
+
+    - level: 2
+      name: "Pains of Expansion"
+      description: "Your first mine begins stable output. But the dungeon is still too small — you need more space, and more defense against adventurers drawn by your fame."
+      key_events:
+        - "Second dig expansion (unlock 2nd room slot)"
+        - "Build 2nd room (prison / training ground / research lab)"
+        - "Begin learning management allocation (trade-off between monster MV and CP)"
+      encounter:
+        type: "Invasion"
+        tier: "T1"
+        count: "1 Warrior + 1 Cleric"
+        boss: "None"
+        loot: "◆2d4+◇1d3+●1"
+      encounter_2:
+        type: "Diplomatic Contact"
+        description: "Neighboring dungeon NPC appears for the first time — a letter arrives at your Throne Hall"
+        npc: "Malthus, 'Iron-Bone Marquis' (liaison of the Bone Mound Council)"
+        letter_content: |
+          To the esteemed new neighbor:
+          The Bone Mound Council has noted your activity in the Sea of Shadows. We appreciate lords who value order.
+          On the day the Embassy is built, allow me to visit in person — to discuss matters of maintaining Abyssal order under the threat of the Order of Light.
+          — Malthus, "Iron-Bone Marquis" of the Eternal Slumber Corridor
+        reward: "+1 Experience Point EXP (room built)"
+      milestone: "Dungeon reaches Lv2: DEP cap +1, room cap +2"
+      map_update: |
+        [MAP_UPDATE]
+        NODE malthus-1 x=150 y=200 type="eternal_slumber_hall" label="Eternal Slumber Hall" explored=true region="Sea of Shadows"
+        EDGE player-home->malthus-1 type="tunnel"
+        [/MAP_UPDATE]
+
+    - level: 3
+      name: "Echoes of Revenge"
+      description: "The Adventurers' Guild has noticed you. Two consecutive turns of invasion — the second wave is the revenge squad led by the escaped Mira."
+      key_events:
+        - "Consecutive invasions (2-turn defense)"
+        - "Decide: strengthen defense or accelerate expansion?"
+        - "First face T2-tier enemies (dice pool 4-5d6)"
+      encounter:
+        type: "Invasion ×2"
+        wave1:
+          tier: "T2"
+          count: "3 adventurers (includes Mira + 2 reinforcements)"
+          mira_trait: "Revenge — first-round attack +1 die"
+        wave2:
+          tier: "T2"
+          count: "2 adventurers (Mage + Ranger)"
+      climax:
+        name: "Wanted Notice"
+        description: |
+          After INF reaches 3, the Guild formally places your dungeon on the Wanted List.
+          Bounty: ◆15, Threat Level: ★★☆☆☆.
+        reward: "+5 Experience Point EXP (defeat Boss)"
+      milestone: "Dungeon reaches Lv3: Archetype Lv3 ability unlocked"
+      map_update: |
+        [MAP_UPDATE]
+        NODE balzak-5 x=530 y=200 type="skyburn_keep" label="Skyburn Keep" explored=true region="Magma Plains"
+        NODE vera-3 x=180 y=350 type="shadow_hall_maze" label="Shadow Hall Maze" explored=true region="Sea of Shadows"
+        EDGE player-home->balzak-5 type="secret_passage"
+        EDGE player-home->vera-3 type="tunnel"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# Act Two: Growth (Lv4~7)
+# ═══════════════════════════════════════════════════════════
+act2:
+  name: "Growth"
+  range: "Lv4~7"
+  theme: "Expansion and choice. The dungeon takes shape. The Abyss Embassy is built — you must choose one of the Four Alliances."
+  stages:
+    - level: 4
+      name: "Abyss Embassy"
+      description: "Your dungeon has taken shape. Now you can build the Abyss Embassy — the hub for establishing contact with NPC dungeons."
+      key_events:
+        - "Build the Abyss Embassy (spend ◆×10 + ■×5)"
+        - "Receive two alliance invitations: Balzec vs Malthus"
+        - "First elite invasion (T3 includes Boss captain)"
+      alliance_choices:
+        - name: "Abyssal Legion"
+          leader: "Balzec, 'Earth-Render'"
+          philosophy: "Might is right; the weak do not deserve to live"
+          benefits: "Combat bonus, improved monster quality"
+          invitation_text: |
+            Newcomer — heard your dungeon is starting to take shape.
+            The gates of the Abyssal Legion are always open to the strong. Come to Skyburn Keep, accept the trial.
+            Pass — you're one of us. Fail — you won't leave even your bones.
+        - name: "Bone Mound Council"
+          leader: "Malthus, 'Iron-Bone Marquis'"
+          philosophy: "Order above all, including death"
+          benefits: "Defense bonus, optimized captive management"
+        - name: "Free Artificers' Guild"
+          leader: "Wrench"
+          philosophy: "Technology knows no borders, only good and bad"
+          benefits: "Faster construction, increased workshop output"
+        - name: "Shadow Network"
+          leader: "Vera (acting for Moris, 'Thousand-Faces')"
+          philosophy: "Intel is the only true power"
+          benefits: "Improved recon, initiative advantage"
+      reward: "Choosing an alliance grants an exclusive bonus (see config.yaml character_creation.archetypes)"
+      map_update: |
+        [MAP_UPDATE]
+        NODE gear-fortress-12 x=500 y=550 type="gear_fortress" label="Gear Fortress" explored=false region="Scrap Canyon"
+        NODE grak-4 x=100 y=250 type="nameless_graveyard" label="Nameless Graveyard" explored=false region="Sea of Shadows"
+        NODE ignis-6 x=600 y=180 type="sulfur_throne" label="Sulfur Throne" explored=false region="Magma Plains"
+        EDGE player-home->gear-fortress-12 type="tunnel"
+        EDGE player-home->grak-4 type="tunnel"
+        EDGE player-home->ignis-6 type="tunnel"
+        EDGE player-home->malthus-1 type="diplomatic_courier"
+        EDGE player-home->balzak-5 type="diplomatic_courier"
+        [/MAP_UPDATE]
+
+    - level: 5
+      name: "Elite Awakening"
+      description: "Unlock elite monster recruitment. Your dungeon begins facing truly threatening invasions — the Adventurers' Guild sends captain-tier Bosses."
+      key_events:
+        - "First recruit elite monsters (Death Knight / Abyssal Fiend / Chimera Beast etc.)"
+        - "Elite invasion (T3 includes Boss captain)"
+        - "Boss triggers Phase 2 (HP ≤50% adds +2 dice)"
+        - "Allied coordination: allied dungeons may proactively send reinforcements"
+      encounter:
+        type: "Invasion"
+        tier: "T3"
+        count: "4-5 adventurers"
+        boss:
+          name: "Paladin Captain (dispatched by the Order of Light)"
+          hp_threshold_phase2: "50% → dice pool +2 + domain skill unlocked"
+      milestone: "INF baseline raised to 5, dungeon Infamy begins to spread"
+
+    - level: 6
+      name: "Abyssal Black Market"
+      description: "After the dungeon reaches a certain scale, Grix, 'Goldtooth' (Ancient Wyrm) invites you to the annual black market auction in the Scrap Canyon."
+      key_events:
+        - "Expedition to the Scrap Canyon (requires DECISION)"
+        - "Black market entry: describe each NPC lord's appearance"
+        - "Social segment: talk with any NPC (small diplomacy check opportunity)"
+        - "Auction segment: 3-5 items, at least 1 legendary item (starting bid ◆50)"
+        - "Assassination event: at the auction's climax, Shadow Network intel shows an assassin has infiltrated"
+      encounter:
+        type: "Black Market Event"
+        stages:
+          - "Entry — describe the lively scene of the Scrap Canyon (CUN + Espionage check, each success reveals 1 NPC's intel)"
+          - "Social — players may talk with any NPC (DOM check, success raises relationship +1~2)"
+          - "Auction — 3-5 items auctioned in sequence (includes 1 legendary item, starting bid ◆50)"
+          - "Assassination — players may choose to expose / condone / exploit the chaos to grab loot"
+      sidequest:
+        name: "Moris and Balzec's Territorial Dispute"
+        description: "Moris, 'Thousand-Faces' asks you to mediate his territorial dispute with Balzec"
+        choices:
+          - "Mediate (DOM + Diplomacy check, Difficulty 2 success)"
+          - "Side with one party (raise that party's relationship, lower the other's)"
+          - "Grab profit in the chaos (CUN + Trap check, gain extra resources)"
+      milestone: "Archetype Lv5 advancement unlocked; dungeon room cap +5"
+      map_update: |
+        [MAP_UPDATE]
+        NODE morris-8 x=200 y=150 type="twisted_laboratory" label="Twisted Laboratory" explored=true region="Gloom Forest"
+        EDGE player-home->morris-8 type="secret_passage"
+        EDGE player-home->balzak-5 type="secret_passage"
+        [/MAP_UPDATE]
+
+    - level: 7
+      name: "Breath of Nexis"
+      description: "Abnormal fluctuations in the Abyssal mana tide. Ethlin (Void-Weaver) warns: the tide may be a prelude to something awakening."
+      key_events:
+        - "Abnormal mana event (MAG check, failure reduces dungeon mana output -50% for 1 turn)"
+        - "Ethlin's whisper: \"Do you feel it? The Mana Crystals are trembling.\""
+        - "Primordial Fissure (D-16) first anomaly — it made a sound"
+      encounter:
+        type: "Resource Crisis"
+        event: "Mana tide disorder causes rooms to malfunction, requiring emergency repair"
+      milestone: "Dungeon reaches Lv7: DEP cap 11, room cap 18"
+      map_update: |
+        [MAP_UPDATE]
+        NODE athyrin-9 x=300 y=130 type="void_weave_works" label="Void-Weave Works" explored=false region="Gloom Forest"
+        NODE primordial-fissure x=340 y=450 type="primordial_fissure" label="Primordial Fissure" explored=false region="Abyssal Core"
+        EDGE player-home->athyrin-9 type="secret_passage"
+        EDGE player-home->primordial-fissure type="abyssal_fissure"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# Act Three: Threat (Lv8~11)
+# ═══════════════════════════════════════════════════════════
+act3:
+  name: "Threat"
+  range: "Lv8~11"
+  theme: "War and betrayal. The dungeon becomes a regional power. The Order of Light begins organizing large-scale expeditions."
+  stages:
+    - level: 8
+      name: "Crusade Expedition"
+      description: "The Order of Light sends 3-4 T3 squads invading simultaneously from different entrances! Must mobilize allied reinforcements."
+      encounter:
+        type: "Multi-front Invasion"
+        entrance_main:
+          name: "Main Entrance (front)"
+          force: "T3 elite squad ×2 (includes Boss captain · Paladin)"
+        entrance_side:
+          name: "Side Fissure (right)"
+          force: "T3 standard squad ×1"
+        entrance_old:
+          name: "Abandoned Passage (left)"
+          force: "T2 patrol ×1 (probing invasion)"
+      ally_aid_check:
+        description: "DOM + Diplomacy check vs Difficulty 3. On each success that dungeon sends reinforcements (1d3 monsters, total CP ≤6) to help defend 1 entrance."
+      reward: "+10 Experience Point EXP (multi-front defense success)"
+      milestone: "Dungeon reaches Lv8: DEP cap 13, room cap 22"
+      map_update: |
+        [MAP_UPDATE]
+        NODE zerg-10 x=250 y=250 type="spore_cavern" label="Spore Cavern" explored=true region="Gloom Forest"
+        EDGE player-home->zerg-10 type="tunnel"
+        EDGE player-home->balzak-5 type="tunnel"
+        [/MAP_UPDATE]
+
+    - level: 9
+      name: "Alliance Cracks"
+      description: "Cracks appear within your alliance. How you handle them will affect all later diplomatic relations."
+      crisis_options:
+        - faction: "Bone Mound Council (if allied)"
+          issue: "Malthus's leadership is being challenged"
+          choices:
+            - "Support the current leader (DOM check Difficulty 2)"
+            - "Stay neutral (relationship unchanged, but may lose trust)"
+            - "Support the challenger (DOM check Difficulty 3, success raises relationship but offends Malthus)"
+        - faction: "Abyssal Legion (if allied)"
+          issue: "Balzec demands you take the flame trial"
+          choices:
+            - "Accept the trial (WAR check Difficulty 2, success grants monster CP +1 reward)"
+            - "Refuse (relationship -2, but saves resources)"
+        - faction: "Free Artificers (if allied)"
+          issue: "Tech-plagiarism dispute"
+        - faction: "Shadow Network (if allied)"
+          issue: "Traitor leaks intel"
+      milestone: "Archetype Lv9 ultimate advancement unlocked"
+      map_update: |
+        [MAP_UPDATE]
+        NODE morgana-11 x=350 y=180 type="shadow_entwined_tower" label="Shadow-Entwined Tower" explored=false region="Gloom Forest"
+        EDGE player-home->morgana-11 type="shadow_passage"
+        [/MAP_UPDATE]
+
+    - level: 10
+      name: "Moris's Desperate Call"
+      description: "Moris, 'Thousand-Faces' suffers a severe accident in his forbidden experiment — his dungeon is going out of control. If you were friendly with him — he sends you a desperate call for help."
+      key_events:
+        - "Unlock first legendary monster (recruitable or encountered)"
+        - "Moris calls for help (time-sensitive side quest, must decide within 4 turns)"
+        - "Choice: rescue / exploit / ignore — three choices affect the whole game"
+      encounter:
+        type: "Rescue Operation"
+        details: "Need to dispatch monsters through the out-of-control dungeon, facing dangerous unstable mana"
+      milestone: "Dungeon reaches Lv10: DEP cap 18, room cap 30, attribute cap +1 (can reach 6)"
+      map_update: |
+        [MAP_UPDATE]
+        NODE selah-15 x=400 y=600 type="dragonsleep_abyss" label="Dragonsleep Abyss" explored=true region="Abyssal Core"
+        NODE colvin-16 x=150 y=500 type="rusted_cathedral" label="Rusted Cathedral" explored=false region="Sea of Shadows"
+        EDGE player-home->selah-15 type="trade_route"
+        EDGE player-home->morris-8 type="diplomatic_courier"
+        EDGE player-home->colvin-16 type="tunnel"
+        [/MAP_UPDATE]
+
+    - level: 11
+      name: "Abyssal Council Meeting"
+      description: "The dungeon reaches regional-power status. Other NPC dungeons begin paying attention to your strength."
+      key_events:
+        - "Receive formal contact requests from at least 2 new NPC dungeons"
+        - "Choose whether to participate in Abyssal-tier politics"
+        - "May gain new allies or make new enemies"
+      milestone: "Dungeon reaches Lv11: DEP cap 21, room cap 35"
+      map_update: |
+        [MAP_UPDATE]
+        NODE gear-fortress-12 x=500 y=550 type="gear_fortress" label="Gear Fortress" explored=true region="Scrap Canyon"
+        NODE anvil-hall-13 x=560 y=520 type="anvil_hall" label="Anvil Hall" explored=true region="Scrap Canyon"
+        EDGE player-home->gear-fortress-12 type="tunnel"
+        EDGE player-home->anvil-hall-13 type="tunnel"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# Act Four: Overlord (Lv12~15)
+# ═══════════════════════════════════════════════════════════
+act4:
+  name: "Overlord"
+  range: "Lv12~15"
+  theme: "Fateful choice. Your dungeon has become a top-tier Abyssal power. The Order of Light prepares the 'Crusade' — and the sleeping entity in the Primordial Fissure is about to wake."
+  stages:
+    - level: 12
+      name: "Dungeon Covenant"
+      description: "You convene (or are invited to) the Abyssal Council. All Lv8+ dungeon lords gather. Topic: unite against the Order of Light, or each fight alone?"
+      encounter:
+        type: "Large-scale Diplomatic Scene"
+        location: "Scrap Canyon, the mint hall of Grix's foundry"
+        attendees: "Malthus (Bone Mound Council), Balzec (Abyssal Legion), Vera (Shadow Network), Wrench (Free Artificers), Moris, Ethlin, Selathil (neutral), Corwin, etc."
+        debate_structure:
+          round1: "Player's opening statement (DOM + Diplomacy check, decides overall atmosphere)"
+          round2: "Three rounds of debate — one topic per round (unite / independent action / resource allocation)"
+          round3: "Final vote — each NPC dungeon's vote depends on its relationship value with the player"
+      reward: "If the union succeeds → all allied dungeon relationships +2, future invasion aid +50%"
+      map_update: |
+        [MAP_UPDATE]
+        EDGE player-home->malthus-1 type="alliance_pact"
+        EDGE player-home->balzak-5 type="alliance_pact"
+        EDGE player-home->vera-3 type="alliance_pact"
+        EDGE player-home->gear-fortress-12 type="alliance_pact"
+        EDGE player-home->anvil-hall-13 type="alliance_pact"
+        [/MAP_UPDATE]
+
+    - level: 13
+      name: "Radiant Crusade"
+      description: "T4-T5 adventurer legions attack all allied dungeons simultaneously. The forces assigned to your dungeon are decided by INF — high Infamy attracts the strongest enemies."
+      encounter:
+        type: "Ultimate Defensive Battle"
+        waves:
+          - "Wave 1: T4 hero squad ×3 (5-6 members, includes Mage / Warrior / Cleric)"
+          - "Wave 2: T4 hero squad ×2 + T5 legendary squad ×1"
+          - "Wave 3: T5 legendary Boss ×2 (legendary tier)"
+        notes: "Use all accumulated resources, monsters, allies, captive cannon fodder — this is the ultimate test of the player's management results"
+      ally_support:
+        description: "Each allied dungeon provides a number of reinforcements based on the mutual relationship value (every +2 relationship provides 1 reinforcement)"
+      reward: "+20 Experience Point EXP (ultimate defense success)"
+      milestone: "Dungeon reaches Lv13: DEP cap 27, room cap 46"
+      map_update: |
+        [MAP_UPDATE]
+        NODE order-of-light-hq x=340 y=30 type="order_of_light" label="Order HQ" explored=true region="Surface"
+        EDGE order-of-light-hq->malthus-1 type="tunnel"
+        EDGE order-of-light-hq->balzak-5 type="tunnel"
+        EDGE order-of-light-hq->vera-3 type="secret_passage"
+        EDGE order-of-light-hq->gear-fortress-12 type="tunnel"
+        [/MAP_UPDATE]
+
+    - level: 14
+      name: "Secret of the Rusted Duke"
+      description: "If defense succeeded last turn — adventurers suffered heavy losses but the Order keeps sending reinforcements. A turning point appears: Corwin, 'Rusted Duke' (former Paladin) reveals a fatal weakness inside the Order."
+      key_events:
+        - "Corwin's infiltration intel: the weakness of the Order's Crusaders is the holy-light resonance under the moonlight"
+        - "Final expedition: this may be the lord's last surface operation"
+        - "Choice: use the intel to counterattack or hold firm awaiting aid"
+      encounter:
+        type: "Final Expedition (surface infiltration)"
+        objective: "Obtain the final piece of intel — the Order's headquarters map"
+        risk: "Success rate depends on the number of intel checks accumulated earlier"
+      milestone: "Dungeon reaches Lv14: DEP cap 30, room cap 52"
+      map_update: |
+        [MAP_UPDATE]
+        EDGE player-home->order-of-light-hq type="secret_passage"
+        [/MAP_UPDATE]
+
+    - level: 15
+      name: "Awakening of Nexis"
+      description: "On the 14th full-moon night of the 700th year of the Rift Era, the Primordial Fissure split open. What walked out was not a monster — but a consciousness. Nexis, the Mother of the Abyss. Her first words echoed through every dungeon in the Abyss:"
+      final_event:
+        opening: |
+          "My children — what have you made of my underworld?"
+        stage1:
+          name: "Descent"
+          description: "All dungeons' Mana Crystals resonate with light simultaneously. Dungeon mana temporarily ×2 — but may be withdrawn afterward"
+        stage2:
+          name: "Judgment"
+          description: "Nexis examines each major alliance in turn. What she sees is not a united Abyss — but division, infighting, and compromise with the surface. Her question: \"What have you built with my blood?\""
+          checks:
+            - "DOM check (respond to the question)"
+            - "ARC check (understand her true intent)"
+        stage3:
+          name: "Choice"
+          choices:
+            - label: "A. Become her right hand"
+              description: "Gain ultimate power — but the dungeon becomes her extension (lose some autonomy)"
+              consequence: "Gain 'Mark of Nexis' (MAG locked at 15, all monsters CP +2), but can never again defy her will"
+            - label: "B. Refuse"
+              description: "Be exiled from the Abyss, become a Wandering Lord"
+              consequence: "Dungeon reclaimed — but receive a joint letter from all allies: you are not alone. Become a Wandering Legend — free to wander between any allied dungeon"
+            - label: "C. Persuade her"
+              description: "The Abyss has evolved, no longer needs a single mother goddess (extremely hard challenge: DOM + Diplomacy ×3 multi-check, all must succeed)"
+              consequence: "Nexis smiles, dissolves into mana filling the sky — the entire Abyss gains permanent +3 mana. Your dungeon becomes the new center of the Abyss. The Order of Light is forced to sign a ceasefire — dungeons are no longer monster nests, they are kingdoms."
+      triple_check_details:
+        - "1st DOM + Diplomacy: prove the Abyss Lord deserves autonomy (at least 3 NPC ally relationships → each +1 die)"
+        - "2nd DOM + Diplomacy: prove the Order of Light can be contained (Corwin's intel +2 dice, record of defeating the Crusade expedition +1 die)"
+        - "3rd Arcana ARC + Arcane Knowledge: prove Abyssal mana has evolved (player's research results +1 die, Ethlin's dimensional research +1 die, dungeon MAG ≥12 → +1 die)"
+      epilogue:
+        scene: |
+          Three Abyssal months later. The day the ceasefire agreement is signed. You stand at the highest point of the Throne Hall, overlooking your dungeon —
+          now it is no longer a string of caves, but a prosperous underground kingdom.
+          Monsters and converted former adventurers coexist in peace. In the distance, the newly built Abyss Embassy blazes with light —
+          those are envoy delegations from sixteen dungeons offering congratulations.
+          The Abyss will never be the same again.
+      milestone: "Campaign complete — dungeon reaches Lv15: DEP cap 34, room cap 60"
+      map_update: |
+        [MAP_UPDATE]
+        NODE primordial-fissure x=340 y=450 type="primordial_fissure" label="Primordial Fissure" explored=true region="Abyssal Core"
+        EDGE player-home->primordial-fissure type="abyssal_fissure"
+        EDGE malthus-1->primordial-fissure type="abyssal_fissure"
+        EDGE balzak-5->primordial-fissure type="abyssal_fissure"
+        EDGE vera-3->primordial-fissure type="abyssal_fissure"
+        EDGE morris-8->primordial-fissure type="abyssal_fissure"
+        EDGE athyrin-9->primordial-fissure type="abyssal_fissure"
+        EDGE selah-15->primordial-fissure type="abyssal_fissure"
+        EDGE morgana-11->primordial-fissure type="abyssal_fissure"
+        EDGE grak-4->primordial-fissure type="abyssal_fissure"
+        EDGE zerg-10->primordial-fissure type="abyssal_fissure"
+        EDGE gear-fortress-12->primordial-fissure type="abyssal_fissure"
+        EDGE anvil-hall-13->primordial-fissure type="abyssal_fissure"
+        EDGE ignis-6->primordial-fissure type="abyssal_fissure"
+        EDGE player-home->order-of-light-hq type="expedition_route"
+        [/MAP_UPDATE]
+
+# ═══════════════════════════════════════════════════════════
+# Side Quests & Commission System
+# ═══════════════════════════════════════════════════════════
+sidequests:
+  description: "Every 3 turns provides 1 optional commission / side quest. Players may choose to execute or ignore it."
+
+  quests:
+    - id: "sq1"
+      name: "Vein Prospecting"
+      trigger: "After first discovering a vein while digging, or every 5 turns"
+      description: "Signs of a suspected rare vein discovered deep in the dungeon"
+      checks:
+        - "IND + Mining check vs Difficulty 2 success"
+      reward_success: "Extra minerals ×2 + possible ancient alloy discovery (◆×3)"
+      reward_failure: "Collapse risk — lose Building Materials ×2, but may discover ancient ruins"
+
+    - id: "sq2"
+      name: "Fugitive Recapture"
+      trigger: "1~3 turns after a captive escapes"
+      description: "The escaped adventurer Mira returns with a squad for revenge, but you once let some captives slip away before capture"
+      checks:
+        - "WAR + Tracking check vs Difficulty 3"
+      reward_success: "Recapture the escapee (Loyalty LOY+1, extra +2 EXP)"
+      reward_failure: "Fugitive passes dungeon intel to the surface (next invasion intensity +1 Tier)"
+
+    - id: "sq3"
+      name: "Ancient Ruins Exploration"
+      trigger: "Digging die d6=6 (ancient ruins found) or every 8 turns"
+      description: "An ancient ruin discovered in the depths — possibly the remains of a prior civilization"
+      checks:
+        - "Arcana ARC + Archaeology check vs Difficulty 3"
+        - "CUN + Stealth check vs Difficulty 2 (prevent triggering traps)"
+      reward_success: "Gain ancient equipment (permanent +1 attribute or one-time special item)"
+      reward_failure: "Release an ancient evil spirit (triggers a special invasion, but grants massive EXP on defeat)"
+
+    - id: "sq4"
+      name: "Intra-Alliance Mediation"
+      trigger: "Every 4~6 turns after choosing an alliance in Act Two"
+      description: "A member within your alliance has a conflict requiring your mediation"
+      checks:
+        - "DOM + Diplomacy check vs Difficulty 2~4 (depending on conflict severity)"
+      reward_success: "Intra-alliance relations improve, allied reinforcement strength +50%"
+      reward_failure: "Alliance relations damaged (next invasion allied reinforcement count -1)"
+
+    - id: "sq5"
+      name: "Underground River Expedition"
+      trigger: "Digging die d6=5 (underground lake found)"
+      description: "You dug to an underground lake — it may hide secrets, or lead to the unknown Abyss"
+      checks:
+        - "CUN + Sailing check vs Difficulty 2 (control a small boat)"
+        - "WAR + Swimming check vs Difficulty 1 (avoid drowning)"
+      reward_success: "Discover ancient dock ruins (permanently unlock water transport, monster movement +1 die)"
+      reward_failure: "Underground lake collapses (floods the room, unusable for 1 turn)"
+
+    - id: "sq6"
+      name: "Black Market Trade Opportunity"
+      trigger: "Auto-offered every 2 turns"
+      description: "A passing merchant passes through your dungeon, bringing exotic goods from afar"
+      checks:
+        - "None (pure economic transaction)"
+      details: "Merchant offers 1~3 items, priced at 70~130% of market (depending on player diplomacy)"
+      reward: "Purchase grants a permanent buff or one-time tactical item"
+
+    - id: "sq7"
+      name: "Monster Evolution Engineering"
+      trigger: "After owning any elite / legendary monster"
+      description: "You may choose to evolve a specific monster — making it stronger but more resource-hungry"
+      checks:
+        - "Arcana ARC + Evolution check vs Difficulty 3"
+      reward_success: "Monster CP+2 or Management Value (MV)+2 (permanent)"
+      reward_failure: "Monster goes berserk (Loyalty LOY-2, may need to spend resources to suppress)"
+
+    - id: "sq8"
+      name: "Diplomatic Envoy"
+      trigger: "Every 4 turns after relationship with any NPC dungeon reaches ≥5"
+      description: "A certain NPC dungeon lord sends an envoy seeking secret cooperation"
+      secret_agreements:
+        - "Intel exchange (each turn gain +1 turn early warning of next invasion's intel)"
+        - "Resource complementarity (both sides contribute part of shared minerals or magical resources)"
+        - "Military alliance (auto-dispatch reinforcements when invaded, but bears certain risk)"
+
+# ═══════════════════════════════════════════════════════════
+# NPC Character Database (available to AI GM in solo mode)
+# ═══════════════════════════════════════════════════════════
+npc_database:
+  - name: "Malthus, 'Iron-Bone Marquis'"
+    faction: "Bone Mound Council"
+    personality: "Elegant yet cold, believes death is the ultimate order"
+    initial_relation: 0
+    dialogue_style: "Quotes ancient sayings, every sentence like an epitaph"
+    loyalty_trigger: "Requires the player to have cooperated with the Bone Mound Council at least once"
+
+  - name: "Balzec, 'Earth-Render'"
+    faction: "Abyssal Legion"
+    personality: "Brutal yet honest, believes might is supreme"
+    initial_relation: -3
+    dialogue_style: "Every sentence like a war cry, loves war metaphors"
+    loyalty_trigger: "Must demonstrate sufficient strength in battle"
+
+  - name: "Moris, 'Thousand-Faces'"
+    faction: "Shadow Network"
+    personality: "Unpredictable, may be your friend or your enemy"
+    initial_relation: "Random (-5 to +5)"
+    dialogue_style: "Speaks with ever only half the truth"
+    note: "Key event character at turn 10"
+
+  - name: "Wrench"
+    faction: "Free Artificers' Guild"
+    personality: "Pragmatist, believes technology can solve everything"
+    initial_relation: 5
+    dialogue_style: "Full of engineering jargon, but passionate about new inventions"
+
+  - name: "Grix, 'Goldtooth'"
+    faction: "Neutral Merchant Guild"
+    personality: "Cunning but keeps his word, the embodiment of the black market"
+    initial_relation: 3
+    dialogue_style: "Every sentence carries a deal's intent"
+    note: "Host of the black market auction at turn 6"
+
+  - name: "Ethlin, 'Void-Weaver'"
+    faction: "Abyssal Researcher"
+    personality: "Curious yet anxious, one of the few who care about Abyssal origins"
+    initial_relation: 3
+    dialogue_style: "Explains magical phenomena using scientific terms"
+    note: "Warner of the mana-tide event at turn 7"
+
+  - name: "Corwin, 'Rusted Duke'"
+    faction: "Former Paladin of the Order of Light"
+    personality: "Sorrowful yet resolute, a former enemy now a possible ally"
+    initial_relation: 2
+    dialogue_style: "With regret but firm will"
+    note: "Key provider of infiltration intel at turn 14"
+
+  - name: "Selathil, 'Evernight Eye'"
+    faction: "Neutral Observer"
+    personality: "Mysterious and detached, only observes, never intervenes"
+    initial_relation: -2
+    dialogue_style: "Every sentence like a riddle"
+
+# ═══════════════════════════════════════════════════════════
+# Solo Mode Special Rules
+# ═══════════════════════════════════════════════════════════
+solo_rules:
+  description: "The following rules are specially designed for solo play, ensuring the AI GM runs the game fairly and interestingly"
+
+  ai_gm_responsibilities:
+    - "Automatically calculate and manage all non-player-character actions (monster AI, adventurer AI, diplomatic relations, etc.)"
+    - "Dynamically adjust invasion intensity and event complexity based on player progress"
+    - "Provide a current dungeon status summary at the end of each turn (resources / actions / available options)"
+    - "Automatically handle management dice pool calculation (IND + skill + floor(ΣMV/2))"
+    - "Automatically handle combat dice pool calculation (WAR + skill + floor(ΣCP/2))"
+    - "Invasion determination auto-completed by AI GM (Infamy INF + 1d6 ≥ 8 triggers)"
+    - "Captive escape determination auto-handled by AI GM"
+
+  difficulty_scaling:
+    - "Early (Lv1-3): AI GM tends to help players, higher error tolerance"
+    - "Mid (Lv4-7): difficulty gradually increases, but supportive events remain"
+    - "Late (Lv8-11): standard difficulty, every player choice is crucial"
+    - "Endgame (Lv12-15): extremely hard mode, but all intel / allies / items accumulated earlier come into play here"
+
+  resource_assistance:
+    - "AI GM remembers all player resource stockpiles, auto-deducts construction / recruitment / upgrade costs"
+    - "Each turn auto-calculates Throne Hall output (◆×1/turn) and the Ancient Wyrm archetype's vault interest"
+    - "WLH attribute auto-calculates resource cap (see rulebook §2.9 storage table)"
+
+  combat_aids:
+    - "AI GM auto-calculates each monster's damage value against adventurers"
+    - "Boss's Phase changes trigger at the correct time point"
+    - "Trap chain triggers and special effects auto-handled by AI GM"
+
+  diplomatic_tracking:
+    - "AI GM auto-maintains relationship values with all NPC dungeons (-10 to +10)"
+    - "Relationship value changes auto-affect diplomacy check bonuses, allied reinforcement strength, trade prices, etc."
+    - "Each NPC has an independent personality and dialogue style, performed by the AI GM based on that character's setup"

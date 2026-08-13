@@ -1,0 +1,76 @@
+# Starter Ship Quick Reference
+ships:
+  - name: "Corvette"
+    alloy_cost: 80
+    maintenance_per_st: "1 Energy (EC) + 0.3 Alloy (ALLOY)"
+    tier: "Starter"
+    hull_hp: "200-600"
+    slots: "3S+1P"
+    speed: 8
+    evasion: "40%"
+    command_pts: 1
+  - name: "Destroyer"
+    alloy_cost: 200
+    maintenance_per_st: "2 Energy (EC) + 0.8 Alloy (ALLOY)"
+    tier: "T2 Engineering"
+    hull_hp: "400-1000"
+    slots: "2M+2M+P"
+    speed: 6
+    evasion: "25%"
+    command_pts: 2
+  - name: "Cruiser"
+    alloy_cost: 500
+    maintenance_per_st: "4 Energy (EC) + 1.5 Alloy (ALLOY)"
+    tier: "T3 Engineering"
+    hull_hp: "800-2000"
+    slots: "2M+2L+P+H"
+    speed: 4
+    evasion: "15%"
+    command_pts: 4
+  - name: "Battleship"
+    alloy_cost: 1000
+    maintenance_per_st: "8 Energy (EC) + 3 Alloy (ALLOY)"
+    tier: "T4 Engineering"
+    hull_hp: "1500-4000"
+    slots: "3L+1X+2P"
+    speed: 3
+    evasion: "5%"
+    command_pts: 8
+  - name: "Titan"
+    alloy_cost: 2000
+    maintenance_per_st: "15 Energy (EC) + 6 Alloy (ALLOY)"
+    tier: "T5 Engineering"
+    hull_hp: "4000-10000"
+    slots: "4L+2X+2P+H"
+    speed: 2
+    evasion: "0%"
+    command_pts: 16
+  - name: "Sovereign"
+    alloy_cost: 5000
+    maintenance_per_st: "30 Energy (EC) + 12 Alloy (ALLOY)"
+    tier: "T5 + Ascension"
+    hull_hp: "8000-20000"
+    slots: "6L+2X+4P+2H"
+    speed: 1
+    evasion: "0%"
+    command_pts: 32
+    limit: "1 per civilization"
+
+# Science / Engineering / Colony Ships
+support_ships:
+  - name: "Science Ship"
+    alloy_cost: 50
+    maintenance: "1 Energy (EC)"
+    build_time: 1
+    hull_hp: 200
+    detection_range: 1
+  - name: "Construction Ship"
+    alloy_cost: 50
+    maintenance: "1 Energy (EC)"
+    build_time: 1
+    hull_hp: 200
+  - name: "Colony Ship"
+    alloy_cost: 150
+    maintenance: "2 Energy (EC) + 2 Consumer Goods (CG)"
+    build_time: 2
+    hull_hp: 300

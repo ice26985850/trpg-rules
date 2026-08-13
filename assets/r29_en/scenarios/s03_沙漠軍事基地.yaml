@@ -1,0 +1,66 @@
+# Last Stand TRPG — Scenario S3: Desert Military Base
+scenario:
+  id: S3
+  name: Desert Military Base
+  type: multiplayer_squad
+  tier: 3
+  difficulty: 3
+  estimated_duration: 4-6 hours
+  suggested_level: 5-6
+  description: >
+    Miramar — an endless desert. Heat haze distorts the horizon. The abandoned military base
+    hides the best gear on the island — but all eight squads know it. You didn't come here to loot.
+    You came to take it by force.
+
+map:
+  name: Miramar (Desert)
+  size: 6 km × 6 km
+  terrain: [Desert (60%), Abandoned Industrial Zone (20%), Military Base (15%), Highway (5%)]
+  landmarks:
+    - { id: L1, name: Military Base, type: military, loot_level: Military (Purple), description: The best loot on the map — and the most dangerous place on the map }
+    - { id: L2, name: Bridge Checkpoint, type: tactical, loot_level: Common (Green), description: The only bridge connecting the east and west zones — a favorite spot for Ambush Squads }
+    - { id: L3, name: Abandoned Factory, type: industrial, loot_level: Abundant (Blue), description: Multi-story industrial building with heavy cover }
+    - { id: L4, name: Gas Station Town, type: urban, loot_level: Common (Green), description: A small town by the desert highway }
+
+enemy_configuration:
+  total_squads: 8
+  squads:
+    - { type: Steady Squad, difficulty: ★★, count: 3 }
+    - { type: Assault Squad, difficulty: ★★★, count: 2 }
+    - { type: Ambush Squad, difficulty: ★★★, count: 2 }
+    - { type: Professional Squad, difficulty: ★★★★, count: 1 }
+
+circle:
+  type: Edge Drift (South)
+  description: Drifts south each circle — the final circle is inside the military base
+
+airdrop: { count: 4, special: Includes 1 Armored Vehicle airdrop }
+red_zone: { enabled: true, special: Red Zone probability doubled inside the military base }
+vehicles: [Off-road Vehicle (Desert Specialist), Jeep, Motorcycle, Armored Vehicle (Airdrop)]
+weather: Clear (high temperature)
+time_of_day: Day
+
+new_mechanics: [Ambush Tactics, Airdrop Contest, Bridgehead Standoff, Armored Vehicle]
+
+phases:
+  - phase: Drop Site Selection
+    turns: 1
+    gm_notes: "Desert visibility is extremely high — you can see other squads' parachutes when dropping. Choice: rush straight into the military base and gamble, or play it safe and develop on the outskirts?"
+
+  - phase: Airdrop Contest
+    turns: 5-6
+    gm_notes: >
+      The airdrop's red smoke is especially conspicuous in the desert. Multiple squads move toward the airdrop at once —
+      you face a choice: go grab it (high risk, high reward), or snipe the airdrop grabbers from afar?
+
+  - phase: Bridgehead Ambush
+    turns: 3-4
+    gm_notes: >
+      The Ambush Squad will wait for you at the bridgehead. Let players experience the pressure of "being ambushed" —
+      and give them a chance to "counter-ambush" (use smoke grenades for cover, swim under the bridge to flank).
+
+  - phase: Military Base Decisive Battle
+    turns: 4-6
+    gm_notes: The circle shrinks inside the military base. Multi-story buildings, heavy cover — the Professional Squad will show its true strength here.
+
+victory_condition: Be the last surviving squad

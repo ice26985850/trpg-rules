@@ -1,0 +1,237 @@
+# Backrooms Walker TRPG — Entity Bestiary (Structured Data)
+# Entities are not monsters. They are part of the environment. Most should not be fought — you should run, hide, or use environmental rules to counter them.
+# Threat Level: ★=No direct threat ★★=Minor ★★★=Moderate ★★★★=High ★★★★★=Extreme
+
+entities:
+  - id: smiler
+    name_zh: Smiler
+    name_en: Smiler
+    threat: "★★★(dark) / ☆(light)"
+    floors: [All dark Levels]
+    behavior: Attacks in darkness — manifests an oversized grin, attacks after staring
+    weakness: Light — any effective light source immediately dispels it
+    hp: 15
+    def: 14
+    atk_bonus: 5
+    damage: "1D4 Physical + SP -1D4"
+    key_mechanic: Lighting system — fully lit(safe)/dim(ethereal)/flickering(50% embodied)/dark(fully embodied)
+    expel: Fully lit source vanishes instantly; thrown Almond Water dispels for 1D3+1 turns; fire keep your distance
+
+  - id: hound
+    name_zh: Hound
+    name_en: Hound
+    threat: "★★★★"
+    floors: ["Level 0(dark zones)", "Level 2(primary habitat)", "Level 1/4(edges)"]
+    behavior: Hunt in packs — locate prey through hearing and thermal sensing
+    weakness: Awkward turning — straight-line Agility 8, drops to 4 when turning
+    hp: 20
+    def: 13
+    atk_bonus: 6
+    damage: "1D6+2 Claw or 1D8 Slam(Slam may knock down, Physique DC13)"
+    group_size: "1-5"
+    key_mechanic: Chase-distance system + turning penalty. Use corners and tight spaces to escape
+    expel: Thrown Almond Water retreats to mid-range for 1D3 turns; loud noise scares it off; fire keep at mid-range or farther
+
+  - id: partygoer
+    name_zh: Partygoer
+    name_en: Partygoer
+    threat: "★★★★★"
+    floors: ["Level 4(F5 and above is main territory)"]
+    behavior: Disguise as friendly Wanderer→invite to a "party"→lead to the venue→conversion ritual
+    weakness: Genuine negative emotion(confusion for 1 minute)/windowless lightless rooms(cannot enter)/mirrors(panic for 1D3 turns)
+    hp: 10
+    def: 12
+    atk_bonus: "3(single) / 6(group suppression)"
+    damage: "1D4 × number of participants in the group"
+    group_size: "15-30"
+    key_mechanic: Three-stage social trap — approach→invitation→trap closure. Conversion ritual Sanity DC18 — failure begins the conversion
+    expel: Cannot be dispelled by normal means. Use weaknesses to create an escape window
+
+  - id: skin-stealer
+    name_zh: Skin-Stealer
+    name_en: Skin-Stealer
+    threat: "★★★★"
+    floors: ["Level 11(main hunting ground)", "occasionally other densely populated Levels"]
+    behavior: Disguise as human→lurk and learn→isolate the target→replace
+    weakness: Abnormal physiological details(number of fingers, joint direction)/splashed Almond Water(briefly reveals)
+    hp: 18
+    def: 14
+    atk_bonus: 5
+    damage: "2D6 Piercing"
+    group_size: 1
+    key_mechanic: Detection difficulty ladder — freshly disguised DC15→long-term DC20. The longer it lasts, the more perfect the disguise
+    expel: Cannot be dispelled. Once revealed, must fight physically or flee
+
+  - id: duller
+    name_zh: Duller
+    name_en: Duller
+    threat: "★★(don't look back) / ★★★★★(look back)"
+    floors: [Any Level(random)]
+    behavior: Stands behind you — does not attack, move, or communicate. When you aren't paying attention, it's just there
+    weakness: Minimal — do not look back. Never look back
+    hp: null
+    def: null
+    atk_bonus: null
+    damage: null
+    group_size: 1
+    key_mechanic: Gaze rule — looking back→SP permanently -5(unrecoverable). Willpower DC20 halves it to -2
+    expel: Cannot be dispelled. Wait for it to vanish on its own(1D6 hours)
+
+  - id: electrician
+    name_zh: Electrician
+    name_en: Electrician
+    threat: "★★★"
+    floors: ["Level 3(Power Station)"]
+    behavior: Patrols the machine room, repairs equipment; releases electric shocks when disturbed or approached too closely
+    weakness: Cutting the main power pauses it(1D6 turns); insulating material defends against shocks
+    hp: 16
+    def: 13
+    atk_bonus: 4
+    damage: "2D6 Electric(and SP-1)"
+    group_size: "1-2"
+    key_mechanic: Exposed-wiring zones — Agility DC12 to pass, otherwise 1D6 Electric. The Electrician's own attack is electric and can be paralyzed by cutting the power
+    expel: Cutting the main power pauses it; moving into a non-powered area lets you escape. Do not kill it directly — restarting the generators is the goal
+
+  - id: shade
+    name_zh: Shade
+    name_en: Shade
+    threat: "★★★(contact) / ☆(no contact)"
+    floors: ["Level 6(Blackout)"]
+    behavior: Moves at the edge of darkness — does not attack directly, contact makes the character's shadow vanish
+    weakness: Any light source(emergency light) dispels it; moves slowly
+    hp: 12
+    def: 12
+    atk_bonus: 3
+    damage: "Shadow vanishes — Agility/Evasion-related checks -1(permanent; Willpower DC15 halves it to -0)"
+    group_size: "2-4"
+    key_mechanic: Contact rule — character contacts a Shadow→loses their own shadow. Maintaining a light source prevents this
+    expel: Restore light source(emergency light) to dispel; cannot be killed
+
+  - id: leviathan
+    name_zh: Leviathan
+    name_en: Leviathan
+    threat: "★★★★★"
+    floors: ["Level 7(Thalassophobia)"]
+    behavior: A massive creature roaming the depths — does not actively pursue, but responds to movement and sound
+    weakness: Cannot be stared at directly(direct gaze SP permanently -3); safe once out of the water
+    hp: 60
+    def: 16
+    atk_bonus: 8
+    damage: "2D10 Devour(Physical) ＋ direct gaze SP permanently -3"
+    group_size: 1
+    key_mechanic: Gaze rule — staring directly at the Leviathan→SP permanently -3(Willpower DC20 halves it to -1). Permanent SP reduction is bounded by the campaign-wide cap
+    expel: Cannot be killed. Stay quiet, avoid direct gaze, pass quickly through the drainage pipes
+
+  - id: attendant
+    name_zh: Attendant
+    name_en: Attendant
+    threat: "★★★"
+    floors: ["Level 5(Horror Hotel)"]
+    behavior: Faceless waiter — guides characters to the banquet hall, urges them to sit
+    weakness: Refuse to follow; destroy the empty chairs in the banquet hall
+    hp: 14
+    def: 12
+    atk_bonus: 3
+    damage: "1D6 Bludgeoning(drag)"
+    group_size: "1-3"
+    key_mechanic: Speaks the character's name to create a sense of dislocation; guides to the empty chairs in the banquet hall(sitting = permanent imprisonment)
+    expel: Refuse and break away; cannot be dispelled by normal means
+
+  - id: dweller
+    name_zh: Dweller
+    name_en: Dweller
+    threat: "★★(single) / ★★★(in groups)"
+    floors: ["Level 8(Cave System)"]
+    behavior: Fear light — act in groups, recoil from light
+    weakness: Any light source(strong light dispels)
+    hp: 10
+    def: 11
+    atk_bonus: 4
+    damage: "1D4 Physical(bite)"
+    group_size: "3-8"
+    key_mechanic: Photophobia — recoil under light; swarm and besiege in darkness. Maintaining a light source is key to survival
+    expel: Maintain light source; strong light temporarily drives them off
+
+  - id: clerk
+    name_zh: Clerk
+    name_en: Clerk
+    threat: "★(environment) / ★★★(when enraged)"
+    floors: ["Level 4(Abandoned Office)"]
+    behavior: A faceless humanoid typing repetitively — does not attack on its own
+    weakness: Can be ignored; the "Last Employee" occasionally types meaningful text(intel)
+    hp: 12
+    def: 12
+    atk_bonus: 0
+    damage: "—(1D4 Stationery stab when enraged)"
+    group_size: 1
+    key_mechanic: Environmental entity — focuses on typing; provides atmosphere and potential intel, poses no direct threat
+    expel: No need to dispel; simply leave its area
+
+  - id: swimmer
+    name_zh: Swimmer
+    name_en: Swimmer
+    threat: "★★★"
+    floors: ["Level 37(Warm-Water Pool)"]
+    behavior: Grabs ankles underwater — tries to keep you
+    weakness: Get out of the water; a strong kick to break free
+    hp: 18
+    def: 13
+    atk_bonus: 4
+    damage: "Grip(Might DC13 to break free, otherwise dragged into deep water 1D4/turn)"
+    group_size: "1-3"
+    key_mechanic: Underwater ankle grab — if grabbed, must make a Might check to break free, otherwise dragged into the depths and drowned
+    expel: Get out of the water; swim quickly toward the shallows
+
+  - id: lifeguard
+    name_zh: Lifeguard
+    name_en: Lifeguard
+    threat: "★★★★(when drowning)"
+    floors: ["Level 37(Warm-Water Pool)"]
+    behavior: Sits motionless on the high chair — drags you into the depths when you drown
+    weakness: Does not move on its own; stay out of its line of sight
+    hp: null
+    def: null
+    atk_bonus: 5
+    damage: "Dragged into deep water(drowning 1D4/turn, until death)"
+    group_size: 1
+    key_mechanic: Drowning-induced — when the character struggles while drowning, the Lifeguard slowly moves over and drags them into the depths. Completely harmless when not drowning
+    expel: No threat if not drowning; conserve strength and swim out on your own
+
+  - id: pipe-worm
+    name_zh: Pipe Worm
+    name_en: Pipe Worm
+    threat: "★(contact ★★)"
+    floors: ["Level 2(Pipes)"]
+    behavior: Non-aggressive — attached to pipe walls, burns on contact
+    weakness: Avoid direct contact; can be bypassed
+    hp: 6
+    def: 10
+    atk_bonus: 0
+    damage: "Contact 1D4 Burn(SP-1)"
+    group_size: "1-3"
+    key_mechanic: Contact burn — touching the worms on the wall causes 1D4 Burn. A purely environmental hazard, not a hunter
+    expel: No need to dispel; simply bypass
+
+  - id: the-lost
+    name_zh: The Lost
+    name_en: The Lost
+    threat: "★(intel source) / ★★★(when enraged)"
+    floors: [Various Levels(former humans with zero Sanity)]
+    behavior: Wanders and mutters — between human and entity
+    weakness: Ignore; rarely attacks on its own
+    hp: 14
+    def: 11
+    atk_bonus: 3
+    damage: "1D4 Physical(erratic attack)"
+    group_size: 1
+    key_mechanic: Intel source — muttering contains fragmentary intel(GM may give clues); enraging it causes attacks
+    expel: Does not actively threaten; simply leave
+
+threat_scale:
+  "★☆☆☆☆": No direct threat — safe to observe
+  "★★☆☆☆": Minor threat — requires caution but is manageable
+  "★★★☆☆": Moderate threat — requires a clear response strategy
+  "★★★★☆": High threat — fleeing is better than fighting
+  "★★★★★": Extreme threat — an encounter may be fatal
+
+note: In the Backrooms, understanding an entity's behavioral rules is more useful than weapons. Information is your true weapon.

@@ -1,0 +1,50 @@
+# Earth Master TRPG Scenario S5: Corpse-Nurturing Ground — "The Whole Cemetery Awakens"
+scenario_id: S5
+title: "Corpse-Nurturing Ground — The Whole Cemetery Awakens"
+level_range: "7-9"
+difficulty: "Hard"
+sessions: "2-3"
+region: "Jing-Chu (Hunan ancient battlefield ruins)"
+
+synopsis: |
+  An anomaly appears at the mass grave below an ancient battlefield — corpses across the whole area are waking. From Fresh Corpses to White Jiangshi, Black Jiangshi, even a Leaping Jiangshi leads them.
+  Local villagers have all evacuated. The Talisman sect issued an emergency call — at least three Earth Masters are needed to jointly set up the "Grand Sha-Suppressing Array."
+  Beneath the mass grave lies a sealed ancient altar — a Warring States-era human-sacrifice site. A thousand years of human sacrifice accumulated unimaginable Yin-Sha energy.
+  Someone recently broke the altar's seal.
+
+npcs:
+  - {id: npc_elder_chen, name: "Old Daoist Chen", role: "Client/Ally", stats: "Maoshan Disciple·Talisman sect, Level 8", info: "Came here when young — the seal was intact then."}
+  - {id: npc_priest, name: "Leaping Jiangshi — Warring States High Priest", role: "Regional Boss", secret: "The altar's last high priest — was sacrificed alive, then became a Leaping Jiangshi. Guards the altar but does not know what he is guarding.", stats: {type: "Leaping Jiangshi", cr: 7, hp: 70, def: 18, special: "Retains partial language ability — may converse"}}
+  - {id: npc_survivor, name: "Tomb-Raider Survivor", role: "Information Source", attitude: "Mentally broken", info: "The only survivor of the tomb-raiding team that broke the seal. Repeatedly says “the thing beneath the altar is not dead.”"}
+  - {id: npc_warlord_scout, name: "Warlord Scout", role: "Potential Threat", info: "One of Liu Dapao's men — will come for antiquities after the corpse horde is dealt with."}
+
+tomb_structure:
+  type: "Open Area + Underground Altar"
+  areas:
+    - {id: surface, name: "Surface Layer — Mass Grave", zones: [{name: "Corpse-Mutation Zone A", enemies: "Fresh Corpse ×10-15"}, {name: "Corpse-Mutation Zone B", enemies: "White Jiangshi ×5-8"}, {name: "Corpse-Mutation Zone C", enemies: "Black Jiangshi ×3-5"}, {name: "Core Zone", enemies: "Leaping Jiangshi's territory"}]}
+    - {id: underground, name: "Underground Altar (Three Layers)", chambers: [{name: "Upper Level: Sacrificial Preparation Room", note: "Already destroyed by tomb-raiders"}, {name: "Middle Level: Sacrificial Hall", note: "A blood pool at the center — still active"}, {name: "Lower Level: Sealing Chamber", note: "Altar core; suppression artifact already removed"}]}
+    - {id: secret_passage, name: "Secret Passage", description: "Leads to older ruins (left for future scenarios)."}
+
+encounters:
+  - {id: enc_cross_zone, name: "Cross the Corpse-Mutation Zone", type: "Exploration/Combat", dc: 14, ttv: 10, description: "Avoid or destroy patrol corpses. Sound and light attract more."}
+  - {id: enc_array, name: "Setting Up the Grand Sha-Suppressing Array", type: "Ritual", dc: 14, description: "Requires three Earth Masters cooperating. Interference may cause the array to fail."}
+  - {id: enc_priest, name: "Leaping Jiangshi High Priest", type: "Combat/Social", ttv: 20, description: "Leaping Jiangshi ×1 + Black Jiangshi ×2. The high priest retains partial language ability — may converse."}
+  - {id: enc_blood_pool, name: "Blood Pool", type: "Environment", dc: 14, description: "Source of Sha — must be sealed or purified."}
+  - {id: enc_altar_core, name: "Altar Core", type: "Exploration/Ritual", dc: 16, description: "Find and repair the suppression artifact. Must decipher ancient inscriptions."}
+  - {id: enc_warlord, name: "Warlord Interference", type: "Social/Combat", dc: 14, description: "The scout may strike at the worst moment."}
+
+key_items:
+  - {id: item_bronze_dagger, name: "The Ancient High Priest's Bronze Dagger (Suppression Artifact)", description: "Key to sealing the altar. Can be taken away, but the seal weakens."}
+  - {id: item_bamboo_slips, name: "List of Human Sacrifices (Bamboo Slips)", description: "Records the victims of a thousand years of human sacrifice; extremely high historical value."}
+  - {id: item_priest_mask, name: "The Leaping Jiangshi High Priest's Mask", description: "Obtained if resolved peacefully. In combat can intimidate low-tier Jiangshi (White Jiangshi and below, Fear DC −4)."}
+
+endings:
+  - {id: ending_perfect, name: "Perfect Seal", condition: "Repair the suppression artifact + purify the blood pool + soothe the high priest", result: "The corpse-nurturing ground returns to normal; gain “Mark of the Purifier” (Sha perception permanently +2)."}
+  - {id: ending_clear, name: "Forced Purge", condition: "Destroy all corpse mutations but do not repair the altar", result: "Temporarily resolved; Sha re-condenses within 3-5 years."}
+  - {id: ending_awaken, name: "High Priest Awakens", condition: "Help the high priest regain his reason", result: "Gain a very strong ally — the high priest voluntarily stays at the altar to guard the seal."}
+
+rewards: {xp: 800, money: "500-1000 Silver Dollars"}
+scale_adjustments:
+  solo: {not_recommended: true, reason: "Requires three people to cooperate in setting up the array."}
+  duo: {note: "NPC allies must be present (Old Daoist Chen + a fellow disciple); corpse horde density halved", ttv_mult: 0.75}
+  trio: {note: "The Grand Sha-Suppressing Array can be simplified to a two-person version (DC +2)", ttv_mult: 0.9}

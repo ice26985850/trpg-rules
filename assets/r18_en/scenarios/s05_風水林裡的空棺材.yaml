@@ -1,0 +1,26 @@
+name: The Empty Coffin in the Feng Shui Woods
+description: Following the S4 thread to the New Territories Walled Village, Seventh Uncle, head of Nine Nether Hall's Hong Kong station, has set up a "practice" corpse-cultivation point in the feng shui woods. Players encounter Seventh Uncle face-to-face for the first time, seize the Ancestral House Acupoint-Eye Diagram, and reach the S3 corpse-cultivating cellar directly.
+difficulty: B
+level_range: [6, 7]
+case_type: Black Zombie + Resentful Ghost + Corpse-Cultivation Outpost
+map_ref: "maps/S3_圍村祖屋.yaml"
+npcs:
+  - Uncle Fuk (Earth God temple keeper, case-taker)
+  - Seventh Uncle (head of Nine Nether Hall's Hong Kong station, first face-to-face encounter)
+  - Cheng Guiyao (Guild Council Chair, referrer)
+  - A-Ying (S4 missing person, listed as material in register)
+key_enemies:
+  - Black Zombie (Challenge Rating (CR) 3, Hard-Skin Mitigation -3)
+  - Wandering Soul (Challenge Rating (CR) 3)
+  - Seventh Uncle (encounter, first face-to-face, mostly escapes)
+  - Ancestral House Acupoint-Eye Diagram (hidden info, leads to S3)
+rewards:
+  exp: 600
+  coin: "500-700"
+  items:
+    - Ink Line Reel (warding material)
+    - Ancestral House Acupoint-Eye Diagram (leads to S3)
+    - Reputation for Defeating Nine Nether Hall Outpost
+hooks:
+  - Before escaping, Seventh Uncle sneers "The Walled Village ancestral house is the real great work; you'll come sooner or later" - pointing directly to S3.
+  - The acupoint-eye diagram matches the S3 Luopan anomaly.

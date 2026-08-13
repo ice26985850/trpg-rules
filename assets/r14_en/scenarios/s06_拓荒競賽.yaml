@@ -1,0 +1,166 @@
+name: "Pioneer Contest"
+description: "Several pioneer bands land on the same shore. Whoever can take root and grow first, and ascend to a city-state before the others? A contest of speed, diplomacy, and raiding."
+difficulty: 1
+level_range:
+  era_start: "Tribal Age"
+  era_end: "City-State Age"
+turns_estimated: 40
+years_in_game: 10
+player_count:
+  min: 2
+  max: 4
+map_ref: "maps/S1_荒野新生_起始區域"
+initial_map: "maps/S1_荒野新生_起始區域.yaml"
+multiplayer_rules:
+  mode: "Competitive (temporary alliances allowed)"
+  victory: "At turn 40, tally the \"Hegemony Score\" = Population (POP)×1 ＋ Buildings×5 ＋ Wars Won×10 ＋ Active Diplomatic Pacts×3; highest wins. Reaching \"Population > 250 and entering the City-State Age\" first immediately triggers the endgame and +20 points."
+  interaction: "Players may forge/break pacts, declare war, trade. Successfully raiding another nation's village seizes Resources (RES) and food, but your own Morale (MOR)−5."
+starting_conditions:
+  population: 50
+  attributes:
+    base: 10
+    free_points: 30
+phases:
+  - id: 1
+    name: "Landing Race"
+    turns: "1-8"
+    description: "Each band lands at a different spot along the coast, racing to claim the best camp"
+    events:
+      - turn: 1
+        name: "Choose Camp"
+        type: "exploration"
+        description: "Riverside (resource-rich but flood risk in Spring) or highland (easy to defend but fewer resources)"
+        choices:
+          - option: "Riverside"
+            effect: "Resources (RES)+5, 20% chance of flood each Spring"
+          - option: "Highland"
+            effect: "Military (MIL)+5, Resources (RES)-3"
+      - turn: 3
+        name: "Neighboring Landing"
+        type: "diplomacy"
+        description: "Discover another band landed miles away—send envoys to make contact, or keep distance?"
+        choices:
+          - option: "Make Contact"
+            effect: "Establish initial relations, may forge a temporary trade"
+          - option: "Keep Distance"
+            effect: "Retain freedom of action, but lose early intelligence"
+      - turn: 5
+        name: "Resource Point Contest"
+        type: "competition"
+        description: "A rich mineral site discovered by two bands at once, first come first served"
+        skill_check: "Military (MIL), DC 12"
+      - turn: 8
+        name: "First Building"
+        type: "milestone"
+        description: "First to complete a permanent building gains renown"
+        effect: "Morale (MOR)+5, Hegemony Score +5"
+  - id: 2
+    name: "Territory Contest"
+    turns: "9-20"
+    description: "Villages grow, borders begin to overlap, friction heats up"
+    events:
+      - turn: 10
+        name: "Border Friction"
+        type: "territorial_dispute"
+        description: "Two bands clash at a hunting ground; can negotiate or use force"
+        choices:
+          - option: "Negotiate Boundaries"
+            effect: "Relations unchanged, each gains a hunting ground"
+          - option: "Drive Off by Force"
+            effect: "Military (MIL) check DC 12; win to seize the hunting ground, lose to drop Morale (MOR)−5"
+      - turn: 13
+        name: "Refugee Wave"
+        type: "moral_choice"
+        description: "A wave of refugees flows toward all villages at once; whoever takes them in gains population and burden"
+        choices:
+          - option: "Take In En Masse"
+            effect: "Population (POP)+15, food consumption rises"
+          - option: "Screen Carefully"
+            effect: "Population (POP)+5, Morale (MOR)+3"
+      - turn: 16
+        name: "Trade Network"
+        type: "diplomacy"
+        description: "Establish trade routes with neighboring nations (or other bands)"
+        effect: "Economy (ECO)+5, may designate a trade partner"
+      - turn: 19
+        name: "Raid Opportunity"
+        type: "military"
+        description: "A neighboring band weakened by plague; seize the chance?"
+        choices:
+          - option: "Launch Raid"
+            effect: "Seize Resources (RES)+10, but Morale (MOR)−5, relations break"
+          - option: "Hold Position"
+            effect: "Keep renown, lose resources"
+  - id: 3
+    name: "Alliance and War"
+    turns: "21-32"
+    description: "The weak ally for self-defense, while the strong try to pick them off one by one"
+    events:
+      - turn: 22
+        name: "Forge Alliance"
+        type: "diplomacy"
+        description: "Two players may form a defense pact, sharing intelligence"
+        effect: "Pact takes effect, both sides gain +3 Hegemony Score each"
+      - turn: 25
+        name: "Moment of Betrayal"
+        type: "betrayal"
+        description: "An allied side may switch sides mid-battle"
+        skill_check: "Morale (MOR), DC 14"
+      - turn: 28
+        name: "Siege"
+        type: "military"
+        description: "A great power lays siege to a weaker nation"
+        crisis_type: "combat"
+        skill_check: "Military (MIL), DC 15"
+      - turn: 31
+        name: "Hero Duel"
+        type: "hero_duel"
+        description: "Both sides' heroes duel on the battlefield, affecting morale"
+        effect: "Winning side's entire army Morale +10"
+  - id: 4
+    name: "The City-State Contest"
+    turns: "33-40"
+    description: "The final sprint—whoever ascends to a city-state first dominates this coast"
+    events:
+      - turn: 34
+        name: "Population Milestone"
+        type: "milestone"
+        description: "Players whose population exceeds 200 take the lead"
+        effect: "Hegemony Score +10"
+      - turn: 37
+        name: "Final Trade"
+        type: "diplomacy"
+        description: "A resource allocation window before the endgame"
+      - turn: 39
+        name: "Era-Upgrade Prep"
+        type: "construction"
+        description: "Meet the final City-State Age condition (Population > 250)"
+      - turn: 40
+        name: "Coastal Hegemon"
+        type: "ending"
+        description: "Tally Hegemony Scores, highest becomes the Coastal Hegemon"
+endings:
+  success:
+    condition: "Highest Hegemony Score and Population > 250 entering the City-State Age"
+    reward: "All attributes +5, unlock the \"Coastal Founder\" Legendary Deed; other players gain corresponding renown by score"
+  partial:
+    condition: "Survive to the endgame but not come out on top"
+    reward: "Keep progress, may enter Free Mode to continue"
+  failure:
+    condition: "Population drops to 0 or Morale drops to 0 (nation destroyed)"
+    remedy: "May use the \"Inheritance Mechanism\"—play a survivor rebuilding elsewhere (keeping 50% of attributes)"
+key_npcs:
+  - name: "Old Karl"
+    role: "Shared agricultural advisor for all bands (narrative vehicle)"
+    personality: "Wise, steady"
+    relationship: "Neutral Mentor"
+  - name: "Raider Chief Grey"
+    role: "Bandit leader entrenched inland"
+    personality: "Cruel, greedy"
+    relationship: "External Threat"
+gm_notes:
+  - "Lower DC by 2 for the first 5 turns, letting players learn the multiplayer mechanics"
+  - "Emphasize player interaction: at least one cross-national action per turn (diplomacy/trade/war)"
+  - "Hegemony Score is recorded by the GM on a whiteboard, updated each phase"
+  - "Allow temporary alliances, but betrayal should have dramatic consequences"
+  - "Avoid direct GM punishment; let player interaction drive the story"

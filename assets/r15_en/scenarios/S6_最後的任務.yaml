@@ -1,0 +1,41 @@
+name: "S6: The Final Assignment"
+description: >
+  The office lights have been on for days. The retirement application is half-filled — beside it are all the mission reports from your term.
+  Three endings await you: pass it on to a successor, dissolve the Bureau, or personally put on equipment and walk into the Backrooms.
+  This is your last signature.
+difficulty: Suicidal
+real_dc: 115
+level_range: "18–20"
+mission_type: "Special — Final Mission"
+campaign: "Campaign Five: The Final Assignment (Finale)"
+endings:
+  - id: A
+    name: "Succession"
+    trigger: "Reputation≥70, has a successor candidate"
+    dc: 115
+    special_bonus: "+15 (Director mentoring bonus)"
+    emotional_core: "'I left the best behind'"
+    final_scene: "Hand the pen to the successor. An empty photo frame appears on the wall — it's for you."
+  - id: B
+    name: "Dissolution"
+    trigger: "Casualties too high or resources depleted"
+    dc: null
+    type: "A series of choices (non-check)"
+    emotional_core: "'I did my best'"
+    final_scene: "Turn off the office lights — for the last time. The corridor is empty. You don't look back."
+    key_choices:
+      - "Find a place for each remaining Explorer (multiple either/or or ternary choices)"
+  - id: C
+    name: "Walk In Personally"
+    trigger: "Specific story clue or guilt value triggered"
+    dc: 115
+    emotional_core: "'This time, I won't send someone else'"
+    special_rules:
+      - "Director as Explorer: bonus = total missions completed during term ÷ 10 (cap +25)"
+      - "Choose 1 primary specialty + 1 secondary specialty"
+      - "Mental state automatically starts from 'Stable'"
+    final_scene: "Push open the outpost's main gate. Take off the equipment. Sign the retirement application. This time — you know what they went through."
+gm_advice:
+  - "Arrange a special long session, don't rush"
+  - "Give the player a moment of silence after the final scene"
+  - "Prepare sequel hooks: ending A's successor can become the next protagonist; ending C's retired Director can become an NPC"

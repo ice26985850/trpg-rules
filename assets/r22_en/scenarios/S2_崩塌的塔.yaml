@@ -1,0 +1,83 @@
+name: "The Collapsing Tower"
+description: "At noon on the seventh day, a time explosion strikes the Tower of Time's central research tower. The player must traverse the seven-floor tower and, within seven days, find the explosive device and expose the mastermind."
+difficulty: "Intermediate"
+level_range:
+  min_memory: 5
+  max_memory: 7
+  suggested_cycles: "3-6"
+time_range:
+  days: 7
+  start: "Monday"
+  end: "Sunday noon"
+core_skills:
+  primary: ["Insight", "Execution", "Memory"]
+  secondary: ["Social"]
+save_point: "Eternal Well (a relay Save Point may be established inside the tower)"
+fixed_events:
+  - id: "explosion"
+    time: "Day 7 noon"
+    name: "Time Explosion"
+    location: "Tower-top Core Resonance Chamber"
+    description: "The tower's central structure collapses (time collapses inward)"
+tower_floors:
+  - floor: 1
+    name: "Hall and Reception"
+    access: "Free entry"
+    key_content: "Public research rooms, visitor pass"
+  - floor: 2
+    name: "Archive Floor"
+    access: "Visitor Pass"
+    key_content: "Temporal record crystals, archivist"
+  - floor: 3
+    name: "Elemental Research Floor"
+    access: "Researcher Clearance"
+    key_content: "Anomalous reading logs"
+  - floor: 4
+    name: "Returner Research Floor"
+    access: "Special Pass"
+    key_content: "Experiment logs, ethical controversy"
+  - floor: 5
+    name: "Core Circle Conference Floor"
+    access: "Core Member Invitation"
+    key_content: "Scholars' private studies, internal contradiction evidence"
+  - floor: 6
+    name: "Time Weaving Floor"
+    access: "Eileen's permission"
+    key_content: "Prophecy crystals, future fragments"
+  - floor: 7
+    name: "Tower-top Core Resonance Chamber"
+    access: "Overcome the Time Lock"
+    key_content: "Explosive device"
+routes:
+  - id: "academic"
+    name: "Academic Route"
+    primary_attribute: "Memory"
+  - id: "infiltration"
+    name: "Infiltration Route"
+    primary_attribute: "Execution"
+  - id: "church"
+    name: "Church Route"
+    primary_attribute: "Social"
+truth_layers:
+  - level: "Surface"
+    content: "The explosion was a research accident out of control"
+  - level: "Middle"
+    content: "Someone sabotaged it deliberately — from within the Core Circle"
+  - level: "Deep"
+    content: "The undercover scholar was planted by the Church, to destroy both the Tower of Time's research and the Church's criminal evidence"
+key_npcs:
+  - name: "Apprentice Kai"
+    role: "Internal intelligence source"
+  - name: "Chief Scholar Victor"
+    role: "Suspicious concealment"
+  - name: "Time Weaver Eileen"
+    role: "Prophecy provider"
+endings:
+  - id: "perfect"
+    name: "Perfect Ending"
+    condition: "Prevent the explosion + expose the undercover agent + protect Eileen"
+  - id: "minimum"
+    name: "Minimum Clear"
+    condition: "Successfully disarm the explosive device"
+multiplayer_gm_tips: |
+  Designed for solo play; per 14-3 may start with 2-3 players: each player manages their own Rift Mark and Memory Fragments; EB = sum of all players' Memory + highest Execution value; clearance / Time Lock use Team Check. The tower's multi-floor structure suits division of labor (by route or by floor), in-tower combat encounters follow 14-3 enemy scaling. The 7th-floor disarmament may assign a lead disarmer, others provide cover for Advantage, or convert to a Team Check.

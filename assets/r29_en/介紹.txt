@@ -1,0 +1,36 @@
+Last Stand TRPG — Player Introduction
+
+[Reference Work Disclaimer]
+This ruleset is a TRPG adaptation of the PUBG (PlayerUnknown's Battlegrounds) battle-royale game. The worldview, core loop (airdrop → looting → zone collapse → final showdown), and map settings are directly adapted from the original, with character progression, narrative structure, and solo mode redesigned for tabletop role-playing.
+
+This is a game of surviving to the very end.
+
+Last Stand TRPG is a tabletop role-playing game (TRPG) themed around near-future battle-royale competition. One hundred contestants airdrop onto an isolated island. No magic, no superpowers—all you have is a scavenged gun, plundered armor, and that one extra second of composure over your opponent. The last one standing (or the last squad) walks away with the prize money.
+
+You play a contestant dropped into a sealed battlefield. Every match is a unique survival adventure: choose your drop site, loot supplies, engage in firefights, and keep migrating as the Safe Zone (the Circle) shrinks, until the final showdown. The core gameplay revolves around "gunfight brinkmanship under scarce resources"—bullets run out, armor breaks, and your hands start to shake.
+
+This ruleset has three signature features:
+
+- Stress System—not a cosmetic stat. When you are surrounded, a teammate goes Downed, or the zone-closing countdown looms, your Calm (CLM) attribute decides whether your hands stay steady. Spanning four stages from "Calm" to "Breakdown," each stage genuinely affects your dice rolls.
+- Zone System—the Safe Zone contracts every few rounds, and you take continuous damage outside it. You must make a brutal trade-off between "keep looting" and "relocate early."
+- Solo Nemesis—Solo Mode offers a dedicated "Lone Wolf" experience: an opponent who is your equal, with a name and a story, rather than a randomly spawned stat-block monster.
+
+Suited for players who enjoy tactical shooting, resource management, and a tense pace. Whether you are a TRPG veteran or running your first session, you can learn to start playing within thirty minutes. Those who crave the thrill of "every step could be the last" will fall in love with this world.
+
+Game Style Tags:
+- Combat Weight: Core (combat is the primary gameplay)
+- Strategic Depth: High Strategy (every decision significantly affects the outcome; mistakes can be fatal)
+- Story-Driven: Story-Supported (clear narrative, but high player freedom)
+- Resource Management: Heavy Management (resources are scarce; careful planning required)
+- Character Customization: Highly Customizable (numerous options to create a unique character)
+- Character Creation Complexity: Moderate (simple steps, quick to complete)
+- Rule Density: Moderate Rules (core rules are clear and not cumbersome)
+- GM Requirement: GM Required (a human GM must run the game)
+
+Estimated Play Time:
+- Single Scenario: ~2–7 hours (varies by level and scale)
+- Full Campaign (levels 1–10): ~40–60 hours
+
+Basic Information:
+- Player Count: 1–4 (solo Lone Wolf, or a 2–4 person squad)
+- Core Dice: d20 (check formula: d20 + Attribute Modifier (AM) + Proficiency Bonus (PB) ≥ Difficulty Class (DC))

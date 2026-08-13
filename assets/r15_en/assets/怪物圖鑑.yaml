@@ -1,0 +1,199 @@
+"threat_levels":
+  - "tl": 1
+    "description": "Minor — easily avoided or no threat"
+    "dc_bonus": "+0"
+    "boss_rule": "No"
+  - "tl": 2
+    "description": "Normal — safe passage with cautious handling"
+    "dc_bonus": "+5"
+    "boss_rule": "No"
+  - "tl": 3
+    "description": "Dangerous — requires specialized equipment and experience"
+    "dc_bonus": "+10"
+    "boss_rule": "No"
+  - "tl": 4
+    "description": "Lethal — only an elite team can stand against it"
+    "dc_bonus": "+20"
+    "boss_rule": "Optional"
+  - "tl": 5
+    "description": "Calamity — use Boss Three-Phase rules"
+    "dc_bonus": "+30"
+    "boss_rule": "Yes"
+"attack_casualty_rate":
+  - "tl": 1
+    "rate": "10%"
+  - "tl": 2
+    "rate": "20%"
+  - "tl": 3
+    "rate": "35%"
+  - "tl": 4
+    "rate": "40%"
+  - "tl": 5
+    "rate": "60%"
+"encounter_trigger":
+  "stages":
+    - "stage": "Entry Phase"
+      "base_rate": "20%"
+      "modifiers":
+        "Cautious Doctrine": "−10%"
+        "Aggressive Doctrine": "+10%"
+        "Detailed Intel": "−5%"
+        "Tech Equipment": "Drone −5%"
+    - "stage": "Execution Phase"
+      "base_rate": "30%"
+      "modifiers":
+        "Cautious Doctrine": "−10%"
+        "Aggressive Doctrine": "+10%"
+        "Detailed Intel": "−10%"
+        "Tech Equipment": "Environmental Analysis −10%"
+    - "stage": "Extraction Phase"
+      "base_rate": "25%"
+      "modifiers":
+        "Cautious Doctrine": "−10%"
+        "Aggressive Doctrine": "+10%"
+        "Detailed Intel": "−5%"
+        "Tech Equipment": "Communicator −10%"
+  "note": "Roll d100 ≤ final trigger rate → encounter triggers. The GM selects from that Level's entity list or rolls a random table."
+"entities":
+  - "id": "E01"
+    "name": "Smilers"
+    "tl": 2
+    "tl_note": "TL3 when unlit"
+    "zones": "Dark areas of Level 0–3"
+    "dc_bonus": "+5（insufficient lighting +10）"
+    "base_encounter_rate": "25%"
+    "traits": "A glowing smiling face emerging from darkness. No physical form — an existence of sorts between light and darkness"
+    "special_rules":
+      - "**Light and Dark**: When any light source fails, TL immediately rises to 3 until the light is restored"
+      - "**Smile Spread**: When an Explorer in the team has the 'Trauma' or 'Breakdown' status, DC +5"
+      - "**Mostly Faced**: Smilers usually appear in numbers of 1d3+1"
+    "countermeasures": "Adequate lighting allows safe passage. High-Power Flashlight (BE-02) provides a counter bonus"
+    "gm_note": "Do not describe 'the Smilers suddenly appearing' — describe the lights beginning to flicker unstably, and in the instant of flickering light the players catch a glimpse of something smiling at the end of the corridor"
+  - "id": "E02"
+    "name": "Partygoers"
+    "tl": 4
+    "tl_note": "TL4"
+    "zones": "Level Fun only"
+    "dc_bonus": "+20"
+    "base_encounter_rate": "90%（encounter is almost certain within Level Fun）"
+    "traits": "Humanoid creatures with yellow skin and cartoonish smiling faces. They convert humans through 'invitation'"
+    "special_rules":
+      - "**Friendly Face**: On first encounter, a Will Contest can be made (d100 ≥ 50); failure means being lured to follow"
+      - "**Party Rules**: Within Level Fun, extraction rules do not apply — the 'party game' must be completed to leave"
+      - "**Irreversible Conversion**: Converted Explorers are permanently removed from the roster"
+      - "**Team Stress Effect**: For each 'Nervous' or 'Trauma' Explorer in the team, DC +3"
+    "countermeasures": ""
+    "gm_note": "Do not make Partygoers a routine encounter. They should be synonymous with 'you might lose someone forever.' Once an Explorer is converted — it is over. No rescue mission."
+  - "id": "E03"
+    "name": "Death Moths"
+    "tl": 5
+    "tl_note": "Boss"
+    "zones": "Level 5, large enclosed spaces"
+    "dc_bonus": "+30"
+    "base_encounter_rate": "15%"
+    "traits": "Giant moths with a 3-meter wingspan. Silent flight, highly acidic bodily fluids"
+    "special_rules":
+      - "**Egg-Laying**: A severely wounded Explorer has a 30% chance of being implanted. The implanted must pass a Medical Check at DC 80 within d6 days, or die"
+      - "**Nest**: Usually appears as a group of d3+1. The nest queen uses the Boss Three-Phase rules"
+      - "**Silent Hunter**: Ignores Doctrine on encounter trigger (Cautious cannot reduce the encounter rate either)"
+    "countermeasures": "High-Frequency Sonic Emitter (EE-03) provides a +3 casualty-rate counter"
+    "boss_phases":
+      - "Phase One (100%) — aerial attack, 3 DC 85 contests"
+      - "Phase Two (50%) — ground melee, acid spray, 2 DC 90 contests"
+      - "Phase Three (25%) — death-throes egg-laying frenzy, 1 DC 95 contest. Failure → all present must make a forced egg-laying check"
+  - "id": "E04"
+    "name": "Facelings"
+    "tl": 1
+    "tl_note": "Aggressive type TL3"
+    "zones": "Level 1–4"
+    "dc_bonus": "+0（aggressive type +10）"
+    "base_encounter_rate": "40%"
+    "traits": "Faceless humanoid creatures. Mostly neutral, even friendly"
+    "special_rules":
+      - "**Aggressive-Type Check**: On encounter, roll d6; 5–6 indicates aggressive type"
+      - "**Mirror Trick**: A team carrying small mirrors has a −5% casualty rate against Facelings (they are confused by their own reflection)"
+      - "**Child Facelings**: 20% chance to encounter a child version (non-aggressive), which can be attempted to bring back to the Outpost — Intel permanently +1, but requires care"
+    "countermeasures": ""
+    "gm_note": "Facelings are the 'least scary' entities in The Backrooms — which is exactly what makes them frightening. They are too human. In a dim corridor, you may not be able to tell a Faceling from a masked colleague from behind."
+  - "id": "E05"
+    "name": "Hounds"
+    "tl": 3
+    "tl_note": "TL3"
+    "zones": "Level 0–3"
+    "dc_bonus": "+10（group +15）"
+    "base_encounter_rate": "30%"
+    "traits": "Large quadruped predators. Pack hunters, high-speed movement"
+    "special_rules":
+      - "**Pack Hunting Instinct**: When the team has a wounded member, TL rises to 4"
+      - "**Howl Intimidation**: Non-elite Explorers who hear the howl must make a Will Contest (d100 ≥ 60); failure means a personal −5 modifier"
+      - "**Tracking Scent**: Once locked on, 1 unit of Almond Water must be used to erase the scent to escape. Otherwise the subsequent encounter rate is doubled (×2)"
+    "countermeasures": "Erase scent with Almond Water, climb to high ground, or use loud noise to temporarily disperse them"
+  - "id": "E06"
+    "name": "Skin-Stealers"
+    "tl": 4
+    "tl_note": "TL4"
+    "zones": "Level 1–3"
+    "dc_bonus": "+20"
+    "base_encounter_rate": "10%"
+    "traits": "Can perfectly mimic human appearance. Flays victims' skin to use as disguise"
+    "special_rules":
+      - "**Infiltrator (GM use)**: Before departure, secretly roll d100; if ≥ 90, one Explorer in the team has already been replaced"
+      - "**Skin Memory**: Can pass basic identity checks. The replaced one acts like the original — but gives vague answers to 'emotion' questions"
+      - "**Exposure Stun**: When exposed, the Skin-Stealer freezes for 1 turn — the team gains 1 free attack/escape opportunity"
+    "countermeasures": ""
+    "gm_note": "This is the strongest psychological horror element in the game. The replaced NPC should betray at a critical moment — not randomly, but at the moment of greatest harm. Give players clues, but not too obvious ones."
+  - "id": "E07"
+    "name": "Wretches"
+    "tl": 2
+    "tl_note": "TL2"
+    "zones": "Level 1–2"
+    "dc_bonus": "+5"
+    "base_encounter_rate": "35%"
+    "traits": "Once human. Completely mentally broken in The Backrooms. Constantly wailing"
+    "special_rules":
+      - "**Soul Echo**: Staying near Wretches for over 30 minutes, the whole team automatically triggers a Psychological Check (d100 ≥ 50); failure → Stress +1"
+      - "**Someone Known**: 10% chance the Wretch is a former Explorer known to someone in the team (GM chooses from the fallen roster)"
+      - "**Rescue Possible**: Can be attempted to bring back to the Outpost for treatment. After 3 months there is a 30% chance of recovery to a Trainee Explorer"
+    "countermeasures": ""
+    "gm_note": "The horror of Wretches is not in the threat — it is that they remind you: this is the end The Backrooms has in store for humans. Every Wretch once had a name, a contract, a Director's signature. Perhaps one day, one of your Explorers will become one of them."
+  - "id": "E08"
+    "name": "Clumps"
+    "tl": 3
+    "tl_note": "TL3"
+    "zones": "Level 2 pipe maze"
+    "dc_bonus": "+10（in narrow pipes +20）"
+    "base_encounter_rate": "20%"
+    "traits": "A giant mass of flesh formed by fused human limbs. Writhing through pipes, absorbing everything"
+    "special_rules":
+      - "**Unstoppable**: Ignores ordinary knockback and physical attacks (must escape rather than fight)"
+      - "**Absorption Growth**: For each person (including entities) absorbed, all subsequent encounters' DC +2"
+      - "**Pipe Echo**: Its approach can be sensed from 3 rooms away — giving the team time to react"
+    "countermeasures": "It cannot turn quickly — use the winding structure of the pipes to escape"
+  - "id": "E09"
+    "name": "Toxic Moths"
+    "tl": 3
+    "tl_note": "TL3"
+    "zones": "Ventilation systems and abandoned areas of Level 4"
+    "dc_bonus": "+10（without sealed protection +15）"
+    "base_encounter_rate": "30%"
+    "traits": "Small, brightly colored moth swarms. Neurotoxic scale powder"
+    "special_rules":
+      - "**Scale Powder Hallucination**: After exposure, Constitution Contest (d100 ≥ 50); failure → personal modifier −10, and experiences random hallucinations"
+      - "**Nest Detonation**: Using fire attacks has a 30% chance of triggering a dust explosion — the whole team is automatically wounded"
+      - "**Swarm Consciousness**: For 3 turns after destroying a swarm, the encounter rate in that area drops to zero"
+    "countermeasures": "Sealed protective suit (SE-02); strictly forbid use of fire"
+  - "id": "E10"
+    "name": "The Hollow"
+    "tl": 5
+    "tl_note": "Unbeatable"
+    "zones": "Any Level (extremely rare, 2% encounter rate)"
+    "dc_bonus": "+30"
+    "base_encounter_rate": ""
+    "traits": "An invisible, untouchable existential threat. Devours 'Presence'"
+    "special_rules":
+      - "**Existence Erosion**: Every 10 minutes, a random Explorer's 'Presence' −1 (starting from 10). Those reduced to zero vanish from everyone's memory — never having existed (detailed rules and GM handling of 'Erasure' are in GM Rulebook 2.11 Presence rules)"
+      - "**Emotional Anchor**: An Explorer carrying a Cherished Keepsake (SPC-05) gains a one-time +20 counter bonus. After use, the keepsake shatters"
+      - "**Power of Record**: Continuously writing or recording (describing once every 5 minutes) can reduce the counter DC by −10"
+      - "**Unbeatable**: The Hollow cannot be 'defeated.' The mission objective is always survival and extraction"
+    "countermeasures": ""
+    "gm_note": "The Hollow is not a monster — it is a conceptual threat. Never describe the Hollow's 'appearance.' Describe the Explorers' perception: memories begin to blur, they cannot recall a colleague's name, unsure whether that person was always in the team. If you make an Explorer 'Erased' — make it the most unforgettable moment of the whole campaign. The forgotten one does not just disappear in the game — other Explorers should genuinely no longer remember them. Players should later stumble upon an empty bunk, unclaimed equipment — and wonder whose it was."

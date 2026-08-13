@@ -1,0 +1,43 @@
+# Frozen Wasteland TRPG — The Survival Song of the Cold Walkers
+
+**The apocalypse is not a ruin of space, but a shatter of time.** In the Frozen Wasteland, time congeals across local regions, freezing the world frame-by-frame into "Freeze Zones." You are a Cold Walker who dares to step inside—scavenging the old world's supplies while everything stands still, yet never knowing whether time will suddenly resume flowing on the next second. And what breaks the heart even more: some of the Frozen are still alive.
+
+## What kind of world is this?
+
+An unknown cataclysm shattered time. Most of the land fell into extreme cold and silence; only the "Freeze Zones" still hold the relics of civilization—and people who have not quite died. Survivors huddle in scattered outposts, living off what the Cold Walkers plunder. A grenade's fuse hangs three centimeters from detonation, a chandelier dangles above your head, a mutant beast's lunge is frozen mid-air—you have a lifetime to run, or none at all on the next second.
+
+## Who do you play? What do you do?
+
+You are a Cold Walker. The core gameplay treats "time" as a physical obstacle on the map: learn the unique Thaw rhythm of each Freeze Zone, scavenge supplies while time stands still, and gamble your life on a reaction at the Thaw Moment (Run, Take Cover, Counterattack, or Keep Looting), all while facing the most heart-wrenching ethical dilemmas—do you save the one who, after thawing, has only a few seconds of awareness left?
+
+## System Highlights
+
+- **Thaw Die**: Inside a Freeze Zone, the GM secretly rolls each turn; the longer you stay, the lower the threshold—you cannot calculate it, only gamble. This is the soul of the whole system.
+- **Attributes-as-Skills**: The Five Attributes (Speed / Perception / Guts / Tech / Negotiation) map directly onto all actions, with no tedious skill lists—fast pace, full tension.
+- **the Frozen Ethics System**: Full Freeze, Critical Freeze, Loop Freeze… each way of "still being alive" forces you to choose, with no standard answer.
+- Alongside these, the **Time Crystal economy** and **Level-less Progression** (accumulating understanding and resources through Milestones rather than stat inflation).
+
+## Who is this for?
+
+Players who enjoy taut survival horror, strategic resource management, and "moral dilemma" narrative immersion will fall in love at first sight. It rewards composure and judgment over piling up combat power—here, the strongest defense is always "not being within the blast radius." A little d20 roleplaying familiarity helps, but the rules are clear and easy to pick up.
+
+## Game Style Tags
+
+- Combat Weight: Significant
+- Strategic Depth: Highly Strategic
+- Story-Driven: Story-Supported
+- Resource Management: Heavy Management
+- Character Customization: Moderate Customization
+- Character Creation Complexity: Medium
+- Rule Density: Medium Rules
+- GM Requirement: GM Required
+
+## Estimated Play Time
+
+- Single Scenario: about 3–4 hours
+- Full Campaign (Road of Ice, 8–10 connected scenarios): about 30–40 hours
+
+## Basic Information
+
+- Players: 2–5 players + 1 GM (Solo Mode is 1 player + 1 GM)
+- Core Dice: d20 (1 twenty-sided die + Attribute Modifier)

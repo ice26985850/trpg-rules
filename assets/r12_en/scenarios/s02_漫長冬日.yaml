@@ -1,0 +1,175 @@
+# Urban Survivors Scenario 2: "The Long Winter" — Mid-Siege: Resource Depletion and Moral Trials
+scenario_id: "S2"
+scenario_name: "The Long Winter"
+difficulty: "★★★☆"
+suggested_players: 1
+siege_days: "Days 30–90"
+estimated_sessions: "14–21"
+core_theme: "Depletion and Choice"
+prerequisite: "Complete S1 'The First Day' or possess a character with a stable Shelter"
+
+summary: |
+  The siege has entered its second month. Winter has arrived. Most easily reachable locations have already been picked clean.
+  Water and power have never been restored. The Black Market has become a necessary evil for survival, and every transaction carries a hidden cost.
+  Cracks begin to show among the people in the Shelter—some want to break out, some want to surrender, and some simply want to sleep and never wake up.
+  The moral choices the player faces grow sharper: steal a neighbor's reserves to feed your own child, or watch your child go hungry?
+
+# ── Winter Special Rules ──
+winter_rules:
+  fuel_consumption: "Doubled (–2 per day)"
+  warmth_decay: "Natural decline rate doubled"
+  daylight: "Daytime shortened (more Night action windows)"
+  disease_risk: "Increased risk of pneumonia infection (hypothermia + damp environment)"
+  scavenge_dc: "All scavenge DCs +2 (most locations already looted)"
+  npc_mortality: "Mortality of elderly NPCs and child NPCs increases (GM's discretion)"
+
+# ── Four-Act Structure ──
+acts:
+  - act: 1
+    title: "The Coming of Deep Winter"
+    days: "Days 30–40"
+    theme: "Fuel crisis, Shelter reinforcement"
+    key_events:
+      - "First snow—Warmth begins to drop rapidly"
+      - "Fuel reserves run low—must go out to find more fuel"
+      - "The Shelter must be reinforced against the severe cold (Sealing must be ≥ 3, otherwise Warmth drops an extra –1 per day)"
+      - "Grandma Marta (NPC #7) shares herbal knowledge—how to make a simple warming poultice"
+  
+  - act: 2
+    title: "Resource Depletion"
+    days: "Days 40–55"
+    theme: "Must scavenge at high-risk locations"
+    key_events:
+      - "Old Town scavenge DC raised from 10 to 12 (looted many times over)"
+      - "The player must travel to dangerous zones like the City Center or North Suburb to find enough supplies"
+      - "First encounter with the Black River Merchant Guild's 'special deal'—the Professor (NPC #3) appears in person"
+      - "Disease begins to spread through the community (dysentery or pneumonia)"
+  
+  - act: 3
+    title: "The Test of Trust"
+    days: "Days 55–70"
+    theme: "NPC secret reveals, betrayal or loyalty"
+    key_events:
+      - "An NPC's secret is accidentally exposed (GM picks a suitable NPC)"
+      - "Victor (NPC #12) proposes an 'information trade'—but you know he is an informant"
+      - "Dmitri's (NPC #8) PTSD is triggered during an artillery shelling—he may act dangerously"
+      - "A conflict breaks out in the Shelter—someone is accused of stealing reserve food"
+  
+  - act: 4
+    title: "The Dark Bargain"
+    days: "Days 70–90"
+    theme: "The pivotal deal with the Black River Merchant Guild"
+    key_events:
+      - "The Professor makes an 'offer you can't refuse'—a large cache of supplies in exchange for a 'small favor'"
+      - "Voice of Liberty (VoL) makes contact with the player—Ghost (NPC #6) asks for help"
+      - "The International Humanitarian Corps announces its final evacuation—but slots are limited"
+      - "An NPC makes an extreme choice (e.g., Victor sells someone out, Carlo's con is exposed)"
+
+# ── New Scavenge Locations ──
+scavenge_locations:
+  - id: "S2_L1"
+    name: "Border Black Market (South Suburb)"
+    type: "Black Market"
+    dc: 14
+    risk: "Medium–High"
+    possible_loot: ["Any items (depending on trade)", "Intel", "Weapons (rare)"]
+    danger: "Swindlers, informants, military raid"
+    special: "Can make contact with Marco (NPC #15) and the Professor (NPC #3) here"
+
+  - id: "S2_L2"
+    name: "Abandoned Hospital (University District)"
+    type: "Medical Facility"
+    dc: 16
+    risk: "High"
+    possible_loot: ["Large amounts of medicine (antibiotics, painkillers, first-aid kits)", "Medical equipment"]
+    danger: "Used by enemy forces as a temporary outpost—very high chance of encountering Patrol Soldiers or Officers"
+    special: "May meet Dr. Elena (NPC #4)"
+
+  - id: "S2_L3"
+    name: "Industrial Warehouse (Industrial District)"
+    type: "Warehouse"
+    dc: 12
+    risk: "Medium"
+    possible_loot: ["Fuel (gasoline, diesel)", "Tools (wrenches, crowbars)", "Materials (tape, rope)"]
+    danger: "Part of the warehouse occupied by gangs—may encounter Looters"
+    special: "Odds of finding fuel are doubled"
+
+  - id: "S2_L4"
+    name: "Bombed-Out Supermarket (City Center)"
+    type: "Shop"
+    dc: 14
+    risk: "High"
+    possible_loot: ["Canned food", "Bottled water", "Batteries", "Luxuries (cigarettes, alcohol)"]
+    danger: "Building structurally unstable (collapse risk), covered by sniper lines of sight"
+    special: "Each scavenge requires an extra artillery-risk check (Willpower DC 10)"
+
+  - id: "S2_L5"
+    name: "Other Shelters (various districts)"
+    type: "Social"
+    dc: "Social Check (not Agility)"
+    risk: "Variable"
+    possible_loot: ["Intel", "Alliances", "Trade opportunities"]
+    danger: "The other side may be unfriendly, may be infiltrated, may be a trap"
+    special: "Outcome depends on the player's Social skills and the other side's attitude"
+
+  - id: "S2_L6"
+    name: "Federal Army Outpost"
+    type: "Military"
+    dc: 18
+    risk: "Extreme"
+    possible_loot: ["Weapons (pistol, rifle)", "Military rations", "Military med-kits"]
+    danger: "Treated as a spy / enemy—arrested or fired upon directly"
+    special: "Only recommended when utterly desperate; success requires very high Stealth or Social skills"
+
+  - id: "S2_L7"
+    name: "Church Basement (Old Town)"
+    type: "Sanctuary"
+    dc: 10
+    risk: "Low"
+    possible_loot: ["Shelter (safe rest spot)", "Spiritual solace (talk to Father Andrei → Trauma –1)", "Intel (the priest knows who needs help)"]
+    danger: "Already known to many—may not be a secret"
+    special: "Father Andrei (NPC #1) is here; cannot be 'scavenged' in the usual way but offers non-material help"
+
+# ── Key NPCs Appear ──
+key_npcs:
+  - name: "The Professor (NPC #3)"
+    introduction: "In Act 3 or 4, introduced through Marco's referral. The Professor waits in an abandoned warehouse—he looks less like a Black Market tycoon and more like a weary university lecturer."
+    role: "Makes a dark bargain"
+  
+  - name: "Dr. Elena (NPC #4)"
+    introduction: "Encountered at a temporary clinic in Old Town or a hospital in the University District. She performs surgery under extremely limited conditions."
+    role: "Medical support (but drugs are limited)"
+  
+  - name: "Ghost (NPC #6)"
+    introduction: "Voice of Liberty contacts the player at night—a masked figure leaves a message."
+    role: "Provides military training and weapons, but demands the player join dangerous missions"
+  
+  - name: "Carlo (NPC #10)"
+    introduction: "A 'Federal Army Officer' approaches the player offering 'inside intel'—but it is Carlo in disguise."
+    role: "A con—the player must see through his lie"
+
+# ── Ending Conditions ──
+completion_conditions:
+  - condition: "Survive the Winter"
+    detail: "Warmth has not hit zero for more than 7 consecutive days"
+  - condition: "Deep Bonds"
+    detail: "Establish meaningful relationships with at least 3 NPCs (REL ≥ 5)"
+  - condition: "Moral Choice"
+    detail: "Make at least 2 major moral choices (recorded by GM)"
+  - condition: "Shelter Survival"
+    detail: "The Shelter has not collapsed (Structural Integrity > 0)"
+
+# ── Completion Rewards ──
+rewards:
+  experience_points: 3
+  fortune_point: 1
+  special: "Unlock one Adaptive Talent (chosen based on Trauma Accumulation value)"
+
+# ── Transition to Scenario 3 ──
+transition_to_S3: |
+  Time jumps to Siege Day 100.
+  GM describes:
+  - The city is unrecognizable. Empty streets, burned-out buildings, and silence everywhere.
+  - Everyone still alive is preparing—preparing to break out, preparing to negotiate, or preparing to die.
+  - The player receives final invitations from multiple factions. Each faction offers an ending—but every ending has a cost.
+  - This is the final phase of the siege. Everything is about to end.

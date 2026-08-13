@@ -1,0 +1,72 @@
+scenario: D4
+section: "D4 Desert·Sand King Altar (CR12)"
+map_type: battle
+grid_scale: "1 cell = 2 m"
+title: D4_Battle_Sand King
+# Coordinates are exact grid coordinates (col, row, 0–9) for distance and range calculations
+# Front and back rows are 2 cells apart (4m); enemy is above, our side is below
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: enemy, role: front, color: "#FF8A8A"}
+    - {row: 1, side: enemy, role: back, color: "#FFC8C8"}
+    - {row: 6, side: our, role: front, color: "#8AAEFF"}
+    - {row: 8, side: our, role: back, color: "#C8D8FF"}
+
+nodes:
+  - id: e_boss
+    label: Sand King
+    x: 5
+    y: 2
+    type: boss
+    explored: true
+  - id: e_min1
+    label: Sand Bandit A
+    x: 3
+    y: 3
+    type: enemy_melee
+    explored: true
+  - id: e_min2
+    label: Sand Bandit B
+    x: 7
+    y: 3
+    type: enemy_melee
+    explored: true
+  - id: e_min3
+    label: Vulture
+    x: 5
+    y: 1
+    type: enemy_ranged
+    explored: true
+  - id: p_front_war
+    label: Our Front-row Warrior
+    x: 4
+    y: 6
+    type: our_front
+    explored: true
+  - id: p_front_monk
+    label: Our Front-row Monk
+    x: 6
+    y: 6
+    type: our_front
+    explored: true
+  - id: p_back_mage
+    label: Our Back-row Mage
+    x: 4
+    y: 8
+    type: our_back
+    explored: true
+  - id: p_back_cleric
+    label: Our Back-row Cleric
+    x: 6
+    y: 8
+    type: our_back
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: e_boss
+    type: melee
+    style: dashed

@@ -1,0 +1,45 @@
+name: "Scenario 11: Final End"
+description: 'CL76–99, final act of the endgame chapter, the decisive battle following the fall of the Eclipse Sovereign in Scenario 10 and the appearance of the Path of Finality. First defeat the Final Herald (CR85 endgame BOSS personal guard) in the antechamber of the Void Core, then face the consecutive battle against the Singularity Beyond the World (CR99 endgame BOSS). The ending branch is determined by total Influence Points (IP) (IP≥60 for True Peace). Uses Method A: one scenario + player-count adjustment.'
+difficulty: Legendary~Mythic
+level_range: [76, 99]
+chapter: 11
+map_ref: maps/劇本11_戰鬥_奇點.yaml
+initial_map: maps/劇本11_戰鬥_終焉預言者.yaml
+encounters:
+  - id: remnant_skirmish
+    name: Path of Finality Remnants (CL76–84)
+    enemies:
+      - {name: Void Apostle, cr: 70, count: 2}
+    budget: Boss fight Boss CR≈total party level×0.6
+    adjust: "1 player→CR67; 5–6 players→CR72"
+  - id: end_herald
+    name: Final Herald (CL85, Endgame BOSS Personal Guard)
+    enemies:
+      - {name: Final Herald, cr: 85, count: 1}
+    boss: true
+    phases:
+      - {name: Prophecy Echo, hp_threshold: "100%~66%", trait: "Reality Distortion / Psychic trial"}
+      - {name: Prophetic Judgment, hp_threshold: "66%", trait: AOE instant-death threat countdown}
+      - {name: Rift Resonance, hp_threshold: "33%", trait: "Recovers 10% Health (HP) per round / upon falling reveals the Singularity's true body"}
+    budget: Endgame BOSS personal guard Boss CR≈total party level×0.6
+    adjust: "1 player→CR82; 5–6 players→CR87"
+  - id: singularity
+    name: Singularity Beyond the World (CL99, Endgame BOSS)
+    enemies:
+      - {name: Singularity Beyond the World, cr: 99, count: 1}
+    boss: true
+    phases:
+      - {name: Path of Finality, hp_threshold: "100%~66%", trait: Continuously flips the positioning map}
+      - {name: World Collapse, hp_threshold: "66%", trait: Area-wide AOE law collapse}
+      - {name: Rift Resonance, hp_threshold: "33%", trait: "+1 stack of Damage Reduction (DR) per round (cap 30%) / instant-death countdown"}
+    budget: Endgame BOSS Boss CR≈total party level×0.6
+    adjust: "1 player→CR96; 5–6 players→CR101"
+rewards:
+  exp: 79144
+  gold: 50000
+  items: [True Hero's Proof, Singularity Core]
+ip_events:
+  - event: Rescue a companion during the Prophetic Judgment countdown
+    ip: 10
+  - event: Achieve the True Peace route (IP≥60) and the Understand-the-Otherworld ending
+    ip: 10

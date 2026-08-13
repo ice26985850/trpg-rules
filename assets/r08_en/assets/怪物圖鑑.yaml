@@ -1,0 +1,501 @@
+catalog: Bestiary
+system: tianji-xiuzhen
+language: en
+count: 56
+entries:
+- '#': '1'
+  Name: shadow cat
+  Grade: ZT247Z level
+  Type: ZT128Z type
+  CR: '0.5'
+  HP: '25'
+  Attack (Damage+Effect): 'Claw attack: melee 1d6 slashes;DarkShadow attack:Dark+15 ZT88Z'
+  Special Abilities: 'Night travel: blackDarkmedium invisibility (undetectable with spiritual consciousness ≤ 30); light ZT243Z: ZT90ZCheck / Roll+15'
+  Evolution Path: Shadow Cat →DarkShadow Leopard (Profound) → Nether Hunter (Earth)
+  Tame DC: '55'
+  ZT92Z requirements: Qi RefiningEarly
+  _section: 3.2YellowgradeSpirit Beast(ZT93Z phase)
+- '#': '2'
+  Name: Red Snake
+  Grade: ZT247Z level
+  Type: ZT128Z type
+  CR: '0.5'
+  HP: '20'
+  Attack (Damage+Effect): 'ZT241Z Fang: Close 1d4 piercing +Poisonelement (ZT75Z 1d4,Duration3 turns, physical difficulty (DC) 50 resistance)'
+  Special Abilities: Thermal sensor:IgnoreblackDark/ stealth detection of living objects within mid-range; winding:HitrearBoundZT157Z
+  Evolution Path: Red Snake→Red Flame Python
+  Tame DC: ''
+  ZT92Z requirements: ''
+  _section: 3.2YellowgradeSpirit Beast(ZT93Z phase)
+- '#': '5'
+  Name: Netherfrost Wolf
+  Grade: ZT248Z level
+  Type: ZT128Z type
+  CR: '3'
+  HP: '65'
+  Attack (Damage+Effect): 'Claw strike: close 1d8 slashes + slowdown (physical difficulty (DC) 55); Frost Breath: short range cone 2d6Icedamage (every 3 turns)'
+  Special Abilities: 'Enhancement under the moon: allCheck / Roll+15 at night; loyal guard:masterautomatically blocks the knife when dying; group tactics: coordination with the wolf pack +10 ZT130Z'
+  Evolution Path: Netherworld Frost Wolf →IceFrost Wolf King (Earth) → Fenrir’s Shadow (Heaven)
+  Tame DC: '68'
+  ZT92Z requirements: Foundation EstablishmentEarly
+  _section: 3.3ProfoundlevelSpirit Beast(ZT94Z ~Golden Coreperiod)
+- '#': '6'
+  Name: Red Flame Python
+  Grade: ZT248Z level
+  Type: ZT128Z type
+  CR: '4'
+  HP: '80'
+  Attack (Damage+Effect): 'Strangle: melee 2d8 bludgeoning +Bound(DC 60); Breath of Fire: short range 3d8Firedamage (every 3 turns)'
+  Special Abilities: 'Molt regeneration: when health value (HP) <25%Recover2d10 (1 time per game);Fireresistance +30; heat induction:Ignorestealth detection'
+  Evolution Path: Red Flame Python → Red Flame Dragon (Earth) → Yanlong (Heaven)
+  Tame DC: '70'
+  ZT92Z requirements: Foundation EstablishmentMiddle
+  _section: 3.3ProfoundlevelSpirit Beast(ZT94Z ~Golden Coreperiod)
+- '#': '7'
+  Name: BiWaterKirin
+  Grade: ''
+  Type: ''
+  CR: ''
+  HP: ''
+  Attack (Damage+Effect): ''
+  Special Abilities: ''
+  Evolution Path: ''
+  Tame DC: ''
+  ZT92Z requirements: ''
+  _section: 3.3ProfoundlevelSpirit Beast(ZT94Z ~Golden Coreperiod)
+- '#': '11'
+  Name: ZT237Z Crystal Phoenix
+  Grade: ''
+  Type: ''
+  CR: ''
+  HP: ''
+  Attack (Damage+Effect): ''
+  Special Abilities: ''
+  Evolution Path: ''
+  Tame DC: ''
+  ZT92Z requirements: ''
+  _section: 3.4EarthlevelSpirit Beast(ZT96Z ~Void Refiningperiod)
+- '12': '14'
+  '**Three-HeadedEarthPrison Dog**': KyuubiSpiritFox
+  ZT249Z level: ZT249Z level
+  ZT128Z type: Auxiliary/Special
+  '10': '9'
+  '200': '130'
+  ? 'Three-head bite: close 3 times 2d6 piercing (independent ZT88Z);EarthprisonFirebreath: mid-range cone 4d10 darkFirewound (every 4 turns)'
+  : 'Fox ZT234Z: mid-range 2d10 ZT243ZFireinjured;CharmedEye: mid-range singleTargetZT175Z (ZT228Z difficulty (DC) 70,Duration2 turns, every 3 turns)'
+  ? Three heads:per roundcan perform 2 main actions (instead of 1);EarthHell Sense:IgnoreInvisibility/Illusion; Regeneration:per roundZT184Z 2d6 HP
+  : 'Nine Tails: Each of the 9 tails stores 1EarthlevelSpell(can be pre-stored); Transformation: Transform into human form;CharmedResistance +30;Spiritual EnergyPerception: Detection within 10 milesSpiritual EnergySource'
+  Three-HeadedEarthCerberus → Cerberus (ZT250Z): KyuubiSpiritFox →HeavenFox
+  '88': ''
+  Nascent SoulLate: ''
+  _section: 3.4EarthlevelSpirit Beast(ZT96Z ~Void Refiningperiod)
+- '#': '17'
+  Name: Five ClawMetalDragon
+  Grade: ZT250Z level
+  Type: ZT128Z type
+  CR: '22'
+  HP: '500'
+  Attack (Damage+Effect): 'Dragon claw: close 5d12 slashing (ZT178Z 20 armor); dragon breath: long range cone 8d12Firedamage; dragon tail sweep: close area 4d12 bludgeoning +Knockback2 zones'
+  Special Abilities: 'Dragon Power: Within super long range ZT194Zper roundZT228Z Difficulty (DC) 75 otherwise ZT169Z; Clouds and Rain: ChangeHeavenQi (ZT250Z Image Control); Transformation: Changeable Humanoid; Dragon Clan Authority: Dragon Clan/Snake ClanSpirit BeastObey'
+  Evolution Path: Five-clawMetalDragon → Zulong (beyondHeavenlevel)
+  Tame DC: '105'
+  ZT92Z requirements: MahayanaMiddle
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- '#': '18'
+  Name: Immortal Phoenix
+  Grade: ZT250Z level
+  Type: ZT128Z/Special
+  CR: '21'
+  HP: '380'
+  Attack (Damage+Effect): 'Phoenix flames: long-range 6d12Firedamage (ZT178ZFireresistance); Nirvana''s ZT234Z: close area 5d12 holyFiredamage (vs. demon × 2); wingsWindviolent: long-range area 4d12 ZT238ZFiremixed damage'
+  Special Abilities: 'Nirvana Rebirth: Automatically fullBloodresurrection 3 rounds after death (ZT128Z 1 time per game); Immortality: Undying after the health value (HP) returns to zero - enters Nirvana state; HolyFirePurification: Clears all negative status (ZT51Z, every 3 rounds)'
+  Evolution Path: Immortal Phoenix (already top level)
+  Tame DC: '110'
+  ZT92Z requirements: MahayanaLate
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- '#': '19'
+  Name: hydra
+  Grade: ZT250Z level
+  Type: ZT128Z type
+  CR: '20'
+  HP: '450'
+  Attack (Damage+Effect): 'Nine-head attack: close 9 times 2d8 puncture (independent ZT88Z, assignable ZT157Z);Poisonliquid spit: long range 6d10Poisondamage + dramaPoison(ZT75Z 3d8,Durationto relieve ZT241Z); entanglement: close 3d12 bludgeoning + ZT170Z'
+  Special Abilities: 'Nine heads:per round3 main actions; decapitation regeneration: head is regenerated in 2 turns after being destroyed (one less main action during regeneration); dramaPoisonZT160Z;Waterdomain lord:WatermediumCombatfullCheck / Roll+20'
+  Evolution Path: Hydra → Ancestor of Hydra (beyondHeavenlevel)
+  Tame DC: '108'
+  ZT92Z requirements: MahayanaEarly
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- '#': '20'
+  Name: Kunpeng
+  Grade: ZT250Z level
+  Type: Mount/Special
+  CR: '21'
+  HP: '420'
+  Attack (Damage+Effect): 'Kuntun: close area 5d12 ZT240ZWaterinjured + swallowed (physical difficulty (DC) 80 otherwise it will be swallowed into the belly); Pengyi: long-range area 4d12Windinjured +Knockback3 areas;HeavenGang ZT238Z: super long-range 6d10Windinjured'
+  Special Abilities: 'Kunpeng changes: can freely switch between Kun (in ZT233Z)/peng (air) form (ZT51Z); can fly with hundreds of people; swallow ZT250Z: can swallow large objects/buildings; cross-border flight: can cross world barriers'
+  Evolution Path: Kunpeng (already top level)
+  Tame DC: '110'
+  ZT92Z requirements: Tribulation CrossingEarly
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- '#': '21'
+  Name: Kirin (adult)
+  Grade: ZT250Z level
+  Type: Auxiliary/Special
+  CR: '19'
+  HP: '350'
+  Attack (Damage+Effect): 'Holy Horn Impact: mid-range 4d12Lightdamage (vs. demons × 2); Auspicious Breath: mid-range cone 3d12Lightdamage + purification (remove all negative effects)'
+  Special Abilities: 'Auspicious Supreme:masterOpportunity +30,Dao Heart+15; Five Virtues:MetalZT232ZWaterZT234ZEarthFullResistance+20; Not stained with evil: Demonthe DaoZT130ZDamagehalved; Benevolent Beast: Will not take the initiativeAttackNon-evil creature'
+  Evolution Path: Holy Kirin (already top level)
+  Tame DC: '100'
+  ZT92Z requirements: FusionLate
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- '#': '22'
+  Name: ZT248Z Wu
+  Grade: ZT250Z level
+  Type: ZT131Z/Special
+  CR: '20'
+  HP: '600'
+  Attack (Damage+Effect): 'ZT248Z Martial Heavy Attack: Close 3d12 bludgeoning +Stunned(Physical Difficulty (DC) 70);ProfoundUnderworld ZT233Z: Long Range 4d10WaterWound +IceFreeze'
+  Special Abilities: 'Absolute ZT131Z: When shrinkingImmuneeverythingDamage/ state (can be maintained for any round);Profoundarmor:Passivearmor +40; Lord of the North Ming:Watermedium breathing /Combat/ teleport; turtle and snake body:per roundZT184Z 3d10 health value (HP)'
+  Evolution Path: ZT248Z Wu (already top-notch)
+  Tame DC: '102'
+  ZT92Z requirements: FusionLate
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- '#': '23'
+  Name: white tiger
+  Grade: ZT250Z level
+  Type: ZT128Z type
+  CR: '20'
+  HP: '400'
+  Attack (Damage+Effect): 'Tiger God Pounce: Close 5d12 slashes + instant death (HP <25%Targetdirect death, difficulty (DC) 80 physical resistance); GengMetalZT238Z Violence: long-range area 4d12Metalinjury (ZT178Z armor); Tiger Roaring Sky: super long-range 3d12 sound waves'
+  Special Abilities: 'Lord of the West:MetalseriesDamage×1.5; Killing Aura: AllAttackcome withBleeding(2d6/turn); God of War:MeleeZT130ZCheck / Roll+25; Evil spirit body protection: Reflect 2d8 damage fromAttackZT231Z'
+  Evolution Path: White Tiger (already top level)
+  Tame DC: '105'
+  ZT92Z requirements: MahayanaEarly
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- '#': '24'
+  Name: ZT250Z Fox
+  Grade: ZT250Z level
+  Type: Special type
+  CR: '18'
+  HP: '300'
+  Attack (Damage+Effect): 'ZT250Z Fox ZT234Z: Ranged 4d10 ZT243ZFireWound (ZT178Z ZT161Z);CharmedBeings: Ranged AreaDao HeartDifficulty (DC) 80 OtherwiseCharmed3 turns'
+  Special Abilities: 'Nine Tails ZT115Z: Each tail stores 1Heavenlevel ZT132Z; Transformation Promise: Can transform into any person/thing (Difficulty of Divinity (DC) 80 to see through); Precognition:Combatonce per game, predict ZT194Z''s actions in the next round; ZT110Z:masterOpportunity +25'
+  Evolution Path: ZT250Z Fox → Nine TailsHeavenFox (beyond theHeavenlevel)
+  Tame DC: '98'
+  ZT92Z requirements: FusionMiddle
+  _section: 3.5HeavenlevelSpirit Beast(ZT99Z ~Tribulation Crossingperiod)
+- Use Case: Novice’s firstCombatpet
+  Recommended Beast: Shadow Cat/Red Snake
+  Grade: ZT247Z level
+  _section: 3.6Spirit Beastquick search
+- Use Case: Requires flying mounts
+  Recommended Beast: Iron-winged Eagle→MetalFeathered Eagle→LightningEagle King
+  Grade: Yellow→Profound→Earth
+  _section: 3.6Spirit Beastquick search
+- Use Case: Tank type guard
+  Recommended Beast: ZT248Z Turtle →ProfoundWu
+  Grade: Earth→Heaven
+  _section: 3.6Spirit Beastquick search
+- Use Case: High burst output
+  Recommended Beast: Three headsEarthprison dog/white tiger
+  Grade: Earth/Heaven
+  _section: 3.6Spirit Beastquick search
+- Use Case: Mascot+auxiliary
+  Recommended Beast: BiWaterKirin/Kirin
+  Grade: Profound/Heaven
+  _section: 3.6Spirit Beastquick search
+- Use Case: Resurrection/Immortality
+  Recommended Beast: ZT237Z Crystal Phoenix → Immortal Phoenix
+  Grade: Earth→Heaven
+  _section: 3.6Spirit Beastquick search
+- Use Case: Long distance travel/large transport
+  Recommended Beast: Kunpeng
+  Grade: Heaven
+  _section: 3.6Spirit Beastquick search
+- Use Case: ZT132Z type auxiliary
+  Recommended Beast: KyuubiSpiritFox →HeavenFox
+  Grade: Earth→Heaven
+  _section: 3.6Spirit Beastquick search
+- Use Case: Tracking/Hunting
+  Recommended Beast: Nether Frost Wolf/White ForeheadSpiritTiger
+  Grade: Profound
+  _section: 3.6Spirit Beastquick search
+- Use Case: The UltimateCombatCompanion
+  Recommended Beast: Five ClawsMetalDragon/Immortal Phoenix
+  Grade: Heaven
+  _section: 3.6Spirit Beastquick search
+- '#': '1'
+  Name: Bandits
+  Realm: mortal
+  CR: '0.25'
+  HP: '20'
+  True Qi: '0'
+  Main ZT130Z: 'Pu Dao: Close 1d6 slashes,Accuracy40%'
+  Special Abilities: 'Strength in numbers: when there are more than 3 peopleAttack+5'
+  fall: Copper coins × 2d10, broken knife (50% probability)
+  _section: 4.1 Mortal ~Qi RefiningIssue ZT193Z
+- '#': '2'
+  Name: bandit leader
+  Realm: mortal warrior
+  CR: '0.5'
+  HP: '35'
+  True Qi: '0'
+  Main ZT130Z: 'Ghost Head Sword: Close 1d8 slash,Accuracy50%'
+  Special Abilities: 'Brute strength:Damage+2; Intimidation: Low morale ZT193ZAttack-5'
+  fall: Copper coins × 5d10, ghost head sword (mundane weapon), copycat ZT148Z
+  _section: 4.1 Mortal ~Qi RefiningIssue ZT193Z
+- '#': '3'
+  Name: gray wolf
+  Realm: mortal beast
+  CR: '0.5'
+  HP: '28'
+  True Qi: '0'
+  Main ZT130Z: 'Bite: Melee 1d6 piercing +Bleeding(1d3/turn)'
+  Special Abilities: Pack Hunting:Attack+10 when working with wolves; scent tracking
+  fall: Wolf skin × 1, wolf teeth × 2
+  _section: 4.1 Mortal ~Qi RefiningIssue ZT193Z
+- '#': '4'
+  Name: Low-levelDemon Beast·Stone Demon
+  Realm: Qi RefiningEarly
+  CR: '0.5'
+  HP: '40'
+  True Qi: '5'
+  Main ZT130Z: 'Stone Fist: Close 1d8 bludgeoning blow'
+  Special Abilities: 'Stoneskin: Armor +5; Slow:Initiative-10'
+  fall: ZT226Z fragments×1d4, stone demon core (10%)
+  _section: 4.1 Mortal ~Qi RefiningIssue ZT193Z
+- '#': '5'
+  Name: Monster Minion·Shadow Ghost
+  Realm: Qi RefiningEarly
+  CR: '0.5'
+  HP: '25'
+  True Qi: '10'
+  Main ZT130Z: 'ZT240Z Shadow Claw: Close 1d6DarkWound'
+  Special Abilities: 'ZT240Z Shadow Stealth: BlackDarkMedium Stealth (Difficulty of Divinity (DC) 40); Fear ZT239Z:LightSeriesDamage×2'
+  fall: ZT240Z shadow residue (ZT124Z material)
+  _section: 4.1 Mortal ~Qi RefiningIssue ZT193Z
+- '#': '6'
+  Name: Boar Demon
+  Realm: Qi RefiningMiddle
+  CR: '1'
+  HP: '50'
+  True Qi: '15'
+  Main ZT130Z: 'Fang Crash: Melee 1d10 Pierce + ZT176Z'
+  Special Abilities: 'Berserk: When HP <50%Damage×1.5; Thick Skin: Armor +3'
+  fall: Wild boar demon skin × 2, animal meat × 5, low gradeSpirit Stone× 1d6
+  _section: 4.1 Mortal ~Qi RefiningIssue ZT193Z
+- '#': '7'
+  Name: ZT201Z·Iron-armored Rhinoceros
+  Realm: Foundation EstablishmentEarly
+  CR: '3'
+  HP: '100'
+  True Qi: '30'
+  Main ZT130Z: 'Iron angle charge: melee 2d8 piercing (ZT178Z 5 armor); trample: melee area 1d10 bludgeoning'
+  Special Abilities: 'Iron armor: Armor +12; Charge: after moving in a straight line ZT130ZDamage+1d8'
+  fall: Rhino horn (refining weapon), armored rhinoceros skin × 3, medium gradeSpirit Stone× 2d6
+  _section: 4.2Foundation Establishment~Golden Coreissue ZT193Z
+- '#': '8'
+  Name: Loose cultivators are hostile and alone ZT122Z
+  Realm: Foundation EstablishmentMiddle
+  CR: '3'
+  HP: '75'
+  True Qi: '55'
+  Main ZT130Z: 'Basic sword technique: close range 1d10+4 slashes; sword energy: short range 2d6Metalinjury'
+  Special Abilities: Sword Heart:AttackZT164Z Next hit +5; Light Kung Fu:Evasion / Dodge+15
+  fall: ZT215Z magic sword (70% durability),Spirit Stone×30,Cultivation Techniquebroken pages (30%)
+  _section: 4.2Foundation Establishment~Golden Coreissue ZT193Z
+- '#': '9'
+  Name: Demonic Cultivator ·BloodEvil Cultist
+  Realm: Foundation EstablishmentLate
+  CR: '4'
+  HP: '85'
+  True Qi: '70'
+  Main ZT130Z: 'ZT242Z Evil Palm: close range 2d8Darkdamage + suctionBlood(ZT129Z 50%RecoverZT196Z);BloodArrow: mid range 2d6 piercing'
+  Special Abilities: 'ZT242Z Sacrifice:Recover3d10 health points (HP) after killing ZT157Z;BloodEscape: Instantly teleport to mid-range when health value (HP) <25% (once per game)'
+  fall: ZT242Z Evil Cult Token, Magic Pill × 1,Spirit Stone× 50
+  _section: 4.2Foundation Establishment~Golden Coreissue ZT193Z
+- '#': '10'
+  Name: Mechanical Puppet·Bronze Man
+  Realm: Golden CoreEarly
+  CR: '5'
+  HP: '130'
+  True Qi: 0 (organ drive)
+  Main ZT130Z: 'Bronze fist: close range 2d10 bludgeoning +Stunned(physical difficulty (DC) 55); machine crossbow: medium range 2d8 piercing (every 3 rounds)'
+  Special Abilities: 'Mechanism ZT160Z:ImmuneZT241Z element/ZT175Z/ZT119Z/ZT172Z/ZT167Z; Self-destruction: 3d10 when the health value (HP) returns to zeroFireinjury (close area)'
+  fall: Bronze Man Core (Item Refining), Fine Iron × 10, Top GradeSpirit Stone× 1
+  _section: 4.2Foundation Establishment~Golden Coreissue ZT193Z
+- '#': '11'
+  Name: Big Demon·BlackWaterZT248Z Snake
+  Realm: Golden CoreMiddle
+  CR: '6'
+  HP: '170'
+  True Qi: '90'
+  Main ZT130Z: 'Snake bite: melee 2d10 piercing +Poisonelement (ZT75Z 2d4, difficulty (DC) 55); Tail sweep: melee 2d8 bludgeoning + knockdown; blackWaterBreath: mid-range cone 3d8WaterZT240Z wound (every 4 turns)'
+  Special Abilities: 'ZT233Z Medium Stealth:WaterMedium Stealth (Difficulty of Divinity (DC) 60); Molt Regeneration: When HP <25%Recover2d10;WaterResistance +30,FireResistance -10'
+  fall: ZT248Z Snake Neidan (medium grade), snake skin × 5,Poisoncapsule × 2, top gradeSpirit Stone× 3
+  _section: 4.2Foundation Establishment~Golden Coreissue ZT193Z
+- '#': '12'
+  Name: Enemy Sect Elite ·Golden CoreZT122Z
+  Realm: Golden CoreLate
+  CR: '7'
+  HP: '150'
+  True Qi: '110'
+  Main ZT130Z: 'QingWindThirteen moves: Close 2d8+6 slashing (success ≥ 2 additional); BurnHeavenSword skills: Close~short range 3d8FireWound + ZT165Z'
+  Special Abilities: 'Sword Heart Transparent:Initiative+15; Sword Control: Flying Sword CanAttackLong Range ZT157Z; Sword Formation: If there are more than 2 fellow disciples,Attack+10'
+  fall: ZT249Z high-grade magic sword (durability 60%), sword manual,Spirit Stone×200, top-gradeSpirit Stone×5
+  _section: 4.2Foundation Establishment~Golden Coreissue ZT193Z
+- '#': '13'
+  Name: Great Demon·Nine-tailed Demon Fox
+  Realm: Nascent SoulEarly
+  CR: '8'
+  HP: '190'
+  True Qi: '160'
+  Main ZT130Z: 'Fox ZT234Z: Mid-range 3d8 ZT243ZFireWound; ZT175Z: Mid-rangeDao HeartDifficulty (DC) 65 otherwiseCharmed2 turns; Demon Claw: Close 2d10 slash'
+  Special Abilities: 'Transformed human form: can be transformed (Difficulty of Divinity (DC) 70 to see through); Nine Tails: 9 tails store 9Profoundlevel ZT132Z;CharmedZT239Z Ring: Close ZT194Zper roundZT228Z Difficulty (DC) 60'
+  fall: Demonic fox inner elixir (top grade), nine-tailed fox hair × 3,Charmedcrystal
+  _section: 4.3Nascent Soul~Spirit Transformationissue ZT193Z
+- '#': '14'
+  Name: Demon General ·BloodDemon Commander
+  Realm: Nascent SoulMiddle
+  CR: '9'
+  HP: '220'
+  True Qi: '200'
+  Main ZT130Z: 'ZT242Z Magic handprint: mid-range 3d10Darkdamage + suction ZT242Z;Bloodsea: long-range area 2d10Darkdamage (ZT158Z 5 rounds, ZT75Z); magic sound penetrating the ears: mid-range 2d8 soul ZT129Z'
+  Special Abilities: 'ZT242Z pool regeneration: standing in ZT242Zper roundZT184Z 3d8 health value (HP); magic power:Dao Heart≤40per roundZT169Z;Bloodclone: ​​split into 3 when health value (HP) <50% (each 1/3 health value (HP))'
+  fall: Demon General's Heart (ZT124Z), magic weapon fragments, top qualitySpirit Stone× 3
+  _section: 4.3Nascent Soul~Spirit Transformationissue ZT193Z
+- '#': '15'
+  Name: Hostile sect elder·ZT97Z Dharma repair
+  Realm: Spirit TransformationEarly
+  CR: '11'
+  HP: '260'
+  True Qi: '280'
+  Main ZT130Z: 'LargeFive ElementsZT132Z: Long range 4d10Five ElementsRotationDamage(ZT75Z for ZT151Z);HeavenZT249ZSpiritual EnergyChop: Long range 3d12 None ZT151ZDamage(ZT178Z ZT161Z)'
+  Special Abilities: 'Spell AspectHeavenZT249Z: Gain +15/temporary health (HP) +50%/Duration5 turns;SpellCounter:per round1 reaction to interrupt spell casting (confrontation with spiritual consciousness);Five ElementsZT186Z:Absorb50 pointsDamage/ ZT75Z'
+  fall: ZT250ZMagic Tool(50% durability),Cultivation Techniquejade slips, top qualitySpirit Stone×5
+  _section: 4.3Nascent Soul~Spirit Transformationissue ZT193Z
+- '#': '16'
+  Name: Ancient ZT201Z·Zhulong
+  Realm: ''
+  CR: ''
+  HP: ''
+  True Qi: ''
+  Main ZT130Z: ''
+  Special Abilities: ''
+  fall: ''
+  _section: 4.3Nascent Soul~Spirit Transformationissue ZT193Z
+- '#': '17'
+  Name: Fallen Immortal·Rebellionthe DaoSword Immortal
+  Realm: Void RefiningMiddle
+  CR: '15'
+  HP: '400'
+  True Qi: '380'
+  Main ZT130Z: 'Wan Jian Jue: long-range area 4d12Metaldamage (differentiationAttackup to 5 ZT157Z); Zhuxian Sword Intent: long-range singleTarget6d10Metaldamage (ZT178Z 20 armor/50%True QiZT186Z)'
+  Special Abilities: 'Immortal body:per roundZT184Z 3d10 health points (HP); Sword range: close to medium distance ZT194ZAttack-20; Curse of the fallen immortal: those killed cannot be resurrected'
+  fall: Fairy Sword Fragments (ZT250Z), Fallen Fairy Sword Manual,Immortal-GradeZT226Z ×2
+  _section: 4.4Void Refining~Fusionissue ZT193Z
+- '#': '18'
+  Name: Ancient Demon Lord·Chiyou Demonic Shadow
+  Realm: FusionEarly
+  CR: '17'
+  HP: '550'
+  True Qi: '500'
+  Main ZT130Z: 'Demon Emperor''s Domination Fist: close range 5d12Darkdamage +Knockback2 areas + ZT168Z; Demonic Flame Tao ZT250Z: long range area 4d12 darkFiredamage (ZT158Z environment); Ten Thousand Demonic Heart Devouring: super long range fullTarget3d10 soul ZT129Z'
+  Special Abilities: 'Demon body:Damagereduced by 15; Demonic power:Dao Heart≤60per roundZT169Z + runaway; Undead Demon Soul: Resurrection 1d4 rounds after HP reaches zero (need to destroy the demon core)'
+  fall: Demon Lord Demonic Core (ZT217Z), ancient magic weapon fragments,Immortal-GradeZT226Z ×5
+  _section: 4.4Void Refining~Fusionissue ZT193Z
+- '#': '19'
+  Name: Ancient Evil Object Devoured by the Void
+  Realm: ''
+  CR: ''
+  HP: ''
+  True Qi: ''
+  Main ZT130Z: ''
+  Special Abilities: ''
+  fall: ''
+  _section: 4.4Void Refining~Fusionissue ZT193Z
+- '#': '20'
+  Name: Enemy mythical beast·black dragon
+  Realm: MahayanaEarly
+  CR: '21'
+  HP: '600'
+  True Qi: '500'
+  Main ZT130Z: 'Black dragon''s breath: super long-range cone 8d12 darkFiredamage (ZT178ZFireresistance); dragon claw tear: close 6d12 slashing (ZT178Z 25 armor); dragon language ZT135Z: long-range 5d10Darkdamage + seal for 1 round'
+  Special Abilities: 'Majesty of the Dragon: Dragon/SnakeSpirit BeastcannotAttackit;DarkBlack Dragon Scale: AllResistance+25; DoomsdayHeavenDisaster: every 5 turnsSummonMeteor (10d10 damage in remote area)'
+  fall: Black Dragon Scale×3 (ZT217Z), Dragon Heart, DragonBlood×10,Immortal-GradeZT226Z ×10
+  _section: 4.5Mahayana~Tribulation Crossingissue ZT193Z
+- '#': '21'
+  Name: ZT250Z Demon·Other TransformationHeavenDemon
+  Realm: Tribulation CrossingEarly
+  CR: '23'
+  HP: '500'
+  True Qi: '800'
+  Main ZT130Z: 'ZT250Z Demonic Bliss: Long range 5d10 soulsDamage+Charmed(ZT228Z difficulty (DC) 80); Demonic clones:Summon3 Demonic clones (each health value (HP) = 100,Attack2d8 souls);HeavenDemonic disintegration: Full screen when HP <25% 8d12Darkinjury (self-explosion)'
+  Special Abilities: 'ZT250Z Magical characteristics: PhysicalAttack50% probability of miss (illusory body);Inner DemonControl:per round1 time, control 1Dao Heart≤50Target1 turn; everywhere: can exist in multiple areas at the same time'
+  fall: ZT250Z magic core (Immortal-Grade), pure magic element × 3,Immortal-GradeZT226Z × 20
+  _section: 4.5Mahayana~Tribulation Crossingissue ZT193Z
+- '#': '22'
+  Name: Ancient Evil · The World-Destroying Snake
+  Realm: Tribulation CrossingLate
+  CR: '25'
+  HP: '800'
+  True Qi: '600'
+  Main ZT130Z: 'Breath of Destruction: super long-range whole area 10d10 chaos damage (every 5 turns); Entangled World: long-range area 6d12 bludgeoning +Boundall; Evil Eye Gaze: long-range singleTarget4d10 soul + petrification (physical difficulty (DC) 85)'
+  Special Abilities: 'Immortality:per roundZT184Z 5d10 health points (HP) (requires special methods to suppress);Poisonof the world:Poisonis irresistible (ZT75Z 3d10, until death or god-level purification); indescribable·extreme: first time seeingDao Heartdifficulty (DC) 90 otherwise crazy'
+  fall: Scales of the World-Destroying Snake × 1 (ZT218Z material),Poisonof the World,Immortal-GradeZT226Z × 50
+  _section: 4.5Mahayana~Tribulation Crossingissue ZT193Z
+- Team ZT92Z: Qi RefiningEarly
+  easy encounter: 3 bandits
+  Standard encounter: Bandit leader +2 bandits
+  Difficult encounters: Gray wolves (5)
+  Boss battle: Stone Demon +2 Shadow Ghost
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: Qi RefiningLate
+  easy encounter: Boar Demon
+  Standard encounter: 2 boar demon
+  Difficult encounters: Stone Demon + 3 Shadow Ghost + 1 Wild Boar Demon
+  Boss battle: Armored Rhino (ChallengeLevel(CR) 3)
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: Foundation EstablishmentMiddle
+  easy encounter: Order ZT122Z
+  Standard encounter: Armored Rhino +2 Bandit Leader
+  Difficult encounters: ZT242Z Sha cultist +3 shadow ghost
+  Boss battle: BlackWaterZT248Z Snake (ChallengeLevel(CR) 6)
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: Golden CoreEarly
+  easy encounter: Mechanical Puppet·Bronze Man
+  Standard encounter: 2 bronze men
+  Difficult encounters: ZT95ZSword Cultivator+2 order ZT122Z
+  Boss battle: BlackWaterZT248Z Snake +BloodShaman×2
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: Nascent SoulEarly
+  easy encounter: nine-tailed fox
+  Standard encounter: Nine-tailed Demon Fox + 2 Bronze Man
+  Difficult encounters: ZT242Z Demon Commander
+  Boss battle: ZT242Z Demon Commander + Nine-tailed Demon Fox
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: Spirit TransformationMiddle
+  easy encounter: ZT97Z law repair
+  Standard encounter: ZT97Z Law repair +2Golden CoreZT122Z
+  Difficult encounters: Candle Dragon Remnant Soul
+  Boss battle: Candle Dragon Remnant Soul +Spirit TransformationDharma Repair
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: Void RefiningMiddle
+  easy encounter: Fallen Immortal·Rebellionthe DaoSword Immortal
+  Standard encounter: Fallen Immortal + Candle Dragon Remnant Soul
+  Difficult encounters: Chi You's Demonic Shadow
+  Boss battle: Chiyou Demonic Shadow + Fallen Immortal
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: FusionLate
+  easy encounter: Devourer of the Void
+  Standard encounter: Void Devourer + Fallen Immortal
+  Difficult encounters: black dragon
+  Boss battle: Black Dragon + Void Devourer
+  _section: 4.6enemyquick reference index
+- Team ZT92Z: MahayanaMiddle
+  easy encounter: black dragon
+  Standard encounter: Black Dragon + Chiyou Demonic Shadow
+  Difficult encounters: He becomes theHeavenDemon
+  Boss battle: The world-destroying snake
+  _section: 4.6enemyquick reference index

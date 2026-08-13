@@ -1,0 +1,119 @@
+name: S9 Red Rain over the Block (Three Adjacent Tong Lau + Synced Altar)
+corresponding_scenario: S9 Red Rain over the Block · Squad
+scene_description: >-
+  Core scene of S9 multiplayer case file "Red Rain over the Block · Squad" — three adjacent Tong Lau in Sham Shui Po (Fu Hing House, Yi Shing Building, Fu Lam House).
+  All three simultaneously manifest the "Red Raincoat" Bound Spirit (a mirror image of Marites, the Filipino domestic helper who fell to her death), repeating "go downstairs to mail a letter" every 3 a.m.
+  The player squad (2–4 people) splits up to occupy the three buildings, investigate the letters hidden in the Mailbox Banks, and piece together the true letter; at 3 a.m. one member leads the altar while the others guard,
+  performing the Deliverance Rite in sync across all three buildings. If unsynced, the lagging building's resentful energy transfers to its neighbor (each round Yin Value (YIN) +2 own building, +1 neighbor), running rampant and summoning a Fierce Ghost.
+  Beneath Fu Lam House, a Feng Shui Channel hides a bronze bell engraved "Shi Chu Shi" — the key to the three buildings' shared source of resentful energy, linking to S2.
+
+nodes:
+  - id: F1
+    label: Fu Hing House · Ground
+    x: 90
+    y: 470
+    type: exit
+    explored: false
+  - id: F2
+    label: Fu Hing House · Floor
+    x: 90
+    y: 350
+    type: stair
+    explored: false
+  - id: F3
+    label: Fu Hing House · Rooftop
+    x: 90
+    y: 230
+    type: room
+    explored: false
+  - id: Y1
+    label: Yi Shing · Ground
+    x: 260
+    y: 470
+    type: exit
+    explored: false
+  - id: Y2
+    label: Yi Shing · Floor
+    x: 260
+    y: 350
+    type: stair
+    explored: false
+  - id: Y3
+    label: Yi Shing · Rooftop
+    x: 260
+    y: 230
+    type: room
+    explored: false
+  - id: L1
+    label: Fu Lam House · Ground
+    x: 430
+    y: 470
+    type: exit
+    explored: false
+  - id: L2
+    label: Fu Lam House · Floor
+    x: 430
+    y: 350
+    type: stair
+    explored: false
+  - id: L3
+    label: Fu Lam House · Rooftop
+    x: 430
+    y: 230
+    type: room
+    explored: false
+  - id: ALT
+    label: Synced Altar
+    x: 350
+    y: 270
+    type: room
+    explored: false
+  - id: WELL
+    label: Fu Lam House Feng Shui Channel (Clue)
+    x: 570
+    y: 450
+    type: room
+    explored: false
+
+edges:
+  - from: F1
+    to: F2
+    type: stair
+  - from: F2
+    to: F3
+    type: stair
+  - from: Y1
+    to: Y2
+    type: stair
+  - from: Y2
+    to: Y3
+    type: stair
+  - from: L1
+    to: L2
+    type: stair
+  - from: L2
+    to: L3
+    type: stair
+  - from: F2
+    to: Y2
+    type: hazard
+  - from: Y2
+    to: L2
+    type: hazard
+  - from: ALT
+    to: F3
+    type: corridor
+  - from: ALT
+    to: Y3
+    type: corridor
+  - from: ALT
+    to: L3
+    type: corridor
+  - from: L1
+    to: WELL
+    type: corridor
+
+regions:
+  - name: Three-Building Mirror Zone
+    color: "#E8D5C4"
+    nodes: [F1, F2, F3, Y1, Y2, Y3, L1, L2, L3]

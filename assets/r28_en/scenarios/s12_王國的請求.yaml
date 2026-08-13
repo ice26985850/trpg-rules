@@ -1,0 +1,18 @@
+# Otherworld Invasion TRPG Scenario — The Kingdom's Plea
+# id: S12
+
+id: S12
+title: The Kingdom's Plea
+season: 3
+season_name: Expedition Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Otherworld Human Capital
+- name: Plains Outside the City (Main Battlefield)
+key_scenes:
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

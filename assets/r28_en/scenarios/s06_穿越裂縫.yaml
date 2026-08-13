@@ -1,0 +1,22 @@
+# Otherworld Invasion TRPG Scenario — Through the Rift
+# id: S6
+
+id: S6
+title: Through the Rift
+season: 2
+season_name: Resistance Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Otherworld Crossing Point (edge of the Beastman Forest)
+- name: Otherworld Human Border Outpost
+- name: Catman Hunting Grounds
+key_scenes:
+- The sensory shock of the crossing moment — an immersive description of the difference in the laws
+- First encounter with Otherworld Humans — initial communication despite the language barrier
+- Ambush by Catman assassins — learning to deal with invisible enemies
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

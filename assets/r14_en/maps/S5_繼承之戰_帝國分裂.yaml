@@ -1,0 +1,139 @@
+# Map: S5 War of Succession — Empire Divided
+name: "Empire Divided — War of Succession"
+description: "Three heirs each hold their own region; the Empire teeters on the brink of civil war"
+
+nodes:
+  - id: "capital"
+    label: "Imperial Capital (Contested)"
+    x: 400
+    y: 350
+    type: "settlement"
+    explored: true
+    description: "The heart of the Empire, where the old King lies bedridden — whoever controls the capital controls the Empire's symbol"
+
+  - id: "heir_military"
+    label: "Eldest Son's Faction (Military)"
+    x: 250
+    y: 150
+    type: "settlement"
+    explored: true
+    description: "The eldest son controls the northern military district — he has the strongest regular army"
+
+  - id: "heir_diplomat"
+    label: "Second Daughter's Faction (Reformist)"
+    x: 600
+    y: 500
+    type: "settlement"
+    explored: true
+    description: "The second daughter is based in southern trade cities — she controls the economic lifeline"
+
+  - id: "heir_magic"
+    label: "Youngest Son's Faction (Arcane)"
+    x: 150
+    y: 500
+    type: "settlement"
+    explored: true
+    description: "The youngest son built his power at the western arcane academy — mastering ancient arcane magic"
+
+  - id: "border_invasion"
+    label: "Foreign Invasion Point"
+    x: 650
+    y: 150
+    type: "border"
+    explored: false
+    description: "Neighboring realms stir as the Empire descends into chaos"
+
+  - id: "neutral_zone"
+    label: "Neutral Zone"
+    x: 400
+    y: 200
+    type: "landmark"
+    explored: true
+    description: "Noble lands yet to declare allegiance — all three heirs seek their support"
+
+  - id: "ancient_vault"
+    label: "Imperial Vault"
+    x: 300
+    y: 450
+    type: "resource"
+    explored: true
+    description: "The old King's accumulated wealth and artifacts — whoever gains the vault gains a huge advantage"
+
+  - id: "senate"
+    label: "Senate"
+    x: 500
+    y: 300
+    type: "landmark"
+    explored: true
+    description: "Seat of the imperial council — persuade the Senate and the succession may be resolved without bloodshed"
+
+edges:
+  - from: "capital"
+    to: "heir_military"
+    type: "path"
+    label: "Northern Avenue"
+  - from: "capital"
+    to: "heir_diplomat"
+    type: "path"
+    label: "Southern Trade Road"
+  - from: "capital"
+    to: "heir_magic"
+    type: "trail"
+    label: "Western Arcane Road"
+  - from: "capital"
+    to: "neutral_zone"
+    type: "path"
+    label: "Noble Lands Passage"
+  - from: "capital"
+    to: "senate"
+    type: "path"
+    label: "Council Avenue"
+  - from: "capital"
+    to: "ancient_vault"
+    type: "trail"
+    label: "Underground Passage"
+  - from: "heir_military"
+    to: "border_invasion"
+    type: "trail"
+    label: "Border Defense"
+  - from: "heir_military"
+    to: "neutral_zone"
+    type: "path"
+    label: ""
+  - from: "heir_diplomat"
+    to: "ancient_vault"
+    type: "trail"
+    label: ""
+  - from: "heir_magic"
+    to: "ancient_vault"
+    type: "trail"
+    label: ""
+  - from: "senate"
+    to: "heir_diplomat"
+    type: "path"
+    label: ""
+  - from: "senate"
+    to: "heir_magic"
+    type: "trail"
+    label: ""
+  - from: "border_invasion"
+    to: "heir_military"
+    type: "trail"
+    label: "Invasion Route"
+
+regions:
+  - name: "Imperial Capital Core"
+    color: "#9C27B0"
+    nodes: ["capital", "senate"]
+  - name: "Eldest Son's Faction (Military)"
+    color: "#F44336"
+    nodes: ["heir_military", "border_invasion"]
+  - name: "Second Daughter's Faction (Reformist)"
+    color: "#2196F3"
+    nodes: ["heir_diplomat"]
+  - name: "Youngest Son's Faction (Arcane)"
+    color: "#4CAF50"
+    nodes: ["heir_magic"]
+  - name: "Neutral / Contested"
+    color: "#FFC107"
+    nodes: ["neutral_zone", "ancient_vault"]

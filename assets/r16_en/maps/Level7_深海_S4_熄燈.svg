@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" font-family="'Microsoft JhengHei','PingFang TC',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#666"/></marker>
+    <marker id="arrowDanger" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#C62828"/></marker>
+  </defs>
+  <rect width="1000" height="650" fill="#FFFDE7" rx="10"/>
+  <text x="500" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2F5496">Level 7 — Thalassophobia（corresponding scenario S4_Blackout）</text>
+  <rect x="100" y="250" width="100" height="100" rx="15" fill="#E3F2FD" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="150" y="268" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Flooded Zone</text>
+  <rect x="280" y="160" width="100" height="300" rx="15" fill="#E8F5E9" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="330" y="178" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Laboratory</text>
+  <rect x="480" y="250" width="260" height="210" rx="15" fill="#F3E5F5" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="610" y="268" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Deep Water Threat（Danger）</text>
+  <rect x="640" y="160" width="240" height="210" rx="15" fill="#E3F2FD" opacity="0.5" stroke="#888" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="760" y="178" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">Exit Area</text>
+  <rect x="15" y="55" width="195" height="102" rx="8" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="25" y="72" font-size="11" font-weight="bold" fill="#333">▸ Legend</text>
+  <rect x="25" y="83" width="25" height="12" rx="3" fill="#E3F2FD"/>
+  <text x="58" y="94" font-size="9" fill="#555">Flooded Zone</text>
+  <rect x="25" y="101" width="25" height="12" rx="3" fill="#E8F5E9"/>
+  <text x="58" y="112" font-size="9" fill="#555">Laboratory</text>
+  <rect x="25" y="119" width="25" height="12" rx="3" fill="#F3E5F5"/>
+  <text x="58" y="130" font-size="9" fill="#555">Deep Water Threat（Danger）</text>
+  <rect x="25" y="137" width="25" height="12" rx="3" fill="#E3F2FD"/>
+  <text x="58" y="148" font-size="9" fill="#555">Exit Area</text>
+  <line x1="150" y1="300" x2="330" y2="210" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="150" y1="300" x2="330" y2="410" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="330" y1="210" x2="530" y2="300" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <line x1="330" y1="410" x2="530" y2="300" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <line x1="530" y1="300" x2="690" y2="210" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="530" y1="300" x2="690" y2="410" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <line x1="690" y1="210" x2="830" y2="320" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="690" y1="410" x2="830" y2="320" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <text x="530" y="278" text-anchor="middle" font-size="11" fill="#C62828" font-weight="bold">⚠ Leviathan（Direct Gaze SP -3）</text>
+  <text x="690" y="388" text-anchor="middle" font-size="11" fill="#C62828" font-weight="bold">⚠ Leviathan</text>
+  <rect x="115" y="286" width="70" height="28" rx="13" fill="#4CAF50"/>
+  <text x="150" y="304" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Flooded Corridor Entrance</text>
+  <rect x="295" y="196" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="330" y="214" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Laboratory</text>
+  <rect x="295" y="396" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="330" y="414" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Diving Equipment Storage</text>
+  <rect x="495" y="286" width="70" height="28" rx="13" fill="#C62828"/>
+  <text x="530" y="304" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Deep Water Zone（Leviathan）</text>
+  <rect x="655" y="196" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="690" y="214" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Drainage Pipe Entrance</text>
+  <rect x="655" y="396" width="70" height="28" rx="13" fill="#C62828"/>
+  <text x="690" y="414" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Deep Dark Shadow</text>
+  <rect x="787" y="304" width="85" height="32" rx="13" fill="#2196F3"/>
+  <text x="830" y="324" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Drainage Pipe（Exit）</text>
+  <text x="20" y="620" font-size="10" fill="#888">Suggested route: entrance → take diving equipment → stay quiet to avoid Leviathan → drainage pipe entrance → exit</text>
+  <text x="20" y="638" font-size="10" fill="#C62828">Warning: Directly gazing at the Leviathan permanently reduces SP by 3（Willpower DC 20, halved -1）; never make eye contact with it</text>
+</svg>

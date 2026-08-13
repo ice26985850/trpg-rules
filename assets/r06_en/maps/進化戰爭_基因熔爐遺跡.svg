@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" font-family="Microsoft JhengHei, sans-serif">
+  <rect width="680" height="520" fill="#0d0d1a"/>
+
+  <!-- Forge Body (central building) -->
+  <rect x="180" y="80" width="320" height="300" rx="15" fill="#1a1025" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+
+  <!-- Pre-entrance camp zone -->
+  <rect x="30" y="380" width="620" height="120" rx="8" fill="#1a1a2e" opacity="0.5"/>
+
+  <!-- === Outside the Ruins === -->
+
+  <!-- Cult Camp (left) -->
+  <rect x="50" y="420" width="150" height="65" rx="8" fill="#8B0000" stroke="#DC143C" stroke-width="2"/>
+  <text x="125" y="445" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Ultimate Evolution Cult</text>
+  <text x="125" y="465" text-anchor="middle" fill="#ff8888" font-size="9">Crimson tents · Showcases evolution results</text>
+  <text x="125" y="478" text-anchor="middle" fill="#ffcccc" font-size="8">Envoy: Six-Armed Victor</text>
+
+  <!-- Guardian Camp (right) -->
+  <rect x="480" y="420" width="150" height="65" rx="8" fill="#1a3a5c" stroke="#4169E1" stroke-width="2"/>
+  <text x="555" y="445" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Humanity Guardians</text>
+  <text x="555" y="465" text-anchor="middle" fill="#8888ff" font-size="9">White camp · Checkpoint</text>
+  <text x="555" y="478" text-anchor="middle" fill="#ccccff" font-size="8">Commander: Elena</text>
+
+  <!-- Symbiosis Accord Observer (bottom center) -->
+  <rect x="275" y="440" width="130" height="40" rx="6" fill="#2d2d2d" stroke="#999" stroke-width="1.5"/>
+  <text x="340" y="458" text-anchor="middle" fill="#ccc" font-size="11">Symbiosis Accord Observer</text>
+  <text x="340" y="472" text-anchor="middle" fill="#999" font-size="8">Alden — Neutral</text>
+
+  <!-- Forge Gate -->
+  <rect x="250" y="360" width="180" height="40" rx="20" fill="#4B0082" stroke="#8B5CF6" stroke-width="3"/>
+  <text x="340" y="385" text-anchor="middle" fill="white" font-size="14" font-weight="bold">⚡ Forge Gate (organic membrane)</text>
+
+  <!-- Progress arrow: gate→interior -->
+  <line x1="340" y1="360" x2="340" y2="330" stroke="#8B5CF6" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- === Inside the Forge === -->
+
+  <!-- Essence Pool -->
+  <ellipse cx="340" cy="220" rx="120" ry="55" fill="#2d1045" stroke="#8B5CF6" stroke-width="2"/>
+  <ellipse cx="340" cy="220" rx="90" ry="35" fill="#4B0082" opacity="0.6"/>
+  <text x="340" y="215" text-anchor="middle" fill="#ffddff" font-size="13" font-weight="bold">Evolution Essence Pool</text>
+  <text x="340" y="233" text-anchor="middle" fill="#ffaaff" font-size="9">⚠ Drink→Free Evolution · Humanity Value -5</text>
+  <text x="340" y="248" text-anchor="middle" fill="#ff8888" font-size="8">Beside→1d6 fire damage per round</text>
+
+  <!-- Bio-Mecha (both sides) -->
+  <rect x="170" y="150" width="75" height="40" rx="6" fill="#DC143C" stroke="#FF4444" stroke-width="2"/>
+  <text x="207" y="167" text-anchor="middle" fill="white" font-size="10">Bio-Mecha A</text>
+  <text x="207" y="181" text-anchor="middle" fill="#ffaaaa" font-size="7">HP 45 · Elite</text>
+
+  <rect x="435" y="150" width="75" height="40" rx="6" fill="#DC143C" stroke="#FF4444" stroke-width="2"/>
+  <text x="472" y="167" text-anchor="middle" fill="white" font-size="10">Bio-Mecha B</text>
+  <text x="472" y="181" text-anchor="middle" fill="#ffaaaa" font-size="7">HP 45 · Elite</text>
+
+  <!-- Core Console -->
+  <rect x="270" y="90" width="140" height="50" rx="8" fill="#FFD700" stroke="#FFA500" stroke-width="2.5"/>
+  <text x="340" y="110" text-anchor="middle" fill="#1a1a2e" font-size="13" font-weight="bold">Core Console</text>
+  <text x="340" y="128" text-anchor="middle" fill="#333" font-size="9">Final choice: Absorb/Stabilize/Shut down</text>
+
+  <!-- BOSS marker -->
+  <circle cx="340" cy="175" r="5" fill="#DC143C"/>
+  <text x="355" y="179" fill="#ff4444" font-size="9">BOSS: Thousand-Faced Bishop / Elena</text>
+
+  <!-- Title -->
+  <text x="340" y="25" text-anchor="middle" fill="#8B5CF6" font-size="16" font-weight="bold">Evolution War — Gene Forge Ruins</text>
+  <text x="340" y="45" text-anchor="middle" fill="#888" font-size="10">S3 · Three-way standoff → Forge contest → Core decision</text>
+
+  <!-- Arrow definition -->
+  <defs>
+    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto">
+      <path d="M0,0 L4,8 L8,0" fill="#8B5CF6"/>
+    </marker>
+  </defs>
+</svg>

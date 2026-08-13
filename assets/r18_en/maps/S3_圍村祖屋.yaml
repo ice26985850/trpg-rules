@@ -1,0 +1,104 @@
+name: S3 Walled Village Ancestral House (Ancestral House and Underground Corpse-Cultivating Cellar)
+corresponding_scenario: S3 The Corpse-Cultivating Cellar beneath the Walled Village
+scene_description: >-
+  Core scene of S3 case file "The Corpse-Cultivating Cellar beneath the Walled Village" — the entire walled-village ancestral house (Haunted House) in the New Territories and its underground corpse-cultivating cellar.
+  The "Seventh Uncle" of the Nine Nether Hall's Hong Kong branch built the corpse-cultivating cellar beneath the ancestral house, refining Cultivated Zombies (Challenge Rating CR 3),
+  and using the villagers' resentful energy to nurture a Fierce Ghost (Challenge Rating CR 5) as a "gatekeeper"; the haunted house itself is a living nest (Death Domain 16+).
+  Proper handling: the Scholar uses Knowledge (KNW) to break the Feng Shui layout and find the "Nexus Eye"; the Warrior uses Prowess (PHS) to suppress the corpses; the Main Caster opens the altar + uses the Demon-Sealing Array to imprison the Fierce Ghost;
+  the key is to find and eliminate Seventh Uncle — only when the corpses lose their source of control do they collapse. The haunted house's spatial distortion (Ghost Wall + Death Domain) is marked as the "Haunted House Distortion Zone".
+
+nodes:
+  - id: EN
+    label: Ancestral House Gate (Entrance)
+    x: 80
+    y: 130
+    type: exit
+    explored: false
+  - id: H
+    label: Main Hall (Central Hall)
+    x: 220
+    y: 130
+    type: room
+    explored: false
+  - id: R1
+    label: Side Room (Wing Room)
+    x: 220
+    y: 50
+    type: room
+    explored: false
+  - id: AH
+    label: Ancestral Shrine (Clan Shrine)
+    x: 380
+    y: 130
+    type: room
+    explored: false
+  - id: CE
+    label: Cellar Entrance (Hidden Door)
+    x: 540
+    y: 130
+    type: secret
+    explored: false
+  - id: C1
+    label: Corpse-Cultivating Cellar Main Chamber
+    x: 220
+    y: 370
+    type: room
+    explored: false
+  - id: Z1
+    label: Corpse-Cultivating Cells (Corpse Array)
+    x: 400
+    y: 370
+    type: room
+    explored: false
+  - id: Q7
+    label: Seventh Uncle's Secret Room (Corpse-Refiner)
+    x: 540
+    y: 300
+    type: boss
+    explored: false
+  - id: EY
+    label: Nexus Eye (Earth-Vein Eye)
+    x: 540
+    y: 470
+    type: hazard
+    explored: false
+
+edges:
+  - from: EN
+    to: H
+    type: corridor
+  - from: H
+    to: AH
+    type: corridor
+  - from: H
+    to: R1
+    type: stair
+  - from: AH
+    to: CE
+    type: corridor
+  - from: CE
+    to: C1
+    type: secret
+  - from: C1
+    to: Z1
+    type: corridor
+  - from: C1
+    to: Q7
+    type: corridor
+  - from: Z1
+    to: Q7
+    type: corridor
+  - from: Q7
+    to: EY
+    type: stair
+  - from: Z1
+    to: EY
+    type: corridor
+
+regions:
+  - name: Haunted House Distortion Zone (Spatial Distortion · Death Domain)
+    color: "#E8D5C4"
+    nodes: [EN, H, R1, AH]
+  - name: Corpse-Cultivating Cellar Zone (Nine Nether Hall refinement site)
+    color: "#D5D5E8"
+    nodes: [C1, Z1, Q7, EY]

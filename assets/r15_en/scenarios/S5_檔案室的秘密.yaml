@@ -1,0 +1,35 @@
+name: "S5: The Archive's Secret"
+description: >
+  Level 99 'Archive' hides the truth about the 'Unifier.'
+  This is not a mission against monsters — this is a mission against knowledge itself. Some truths, once known, cannot be undone.
+difficulty: Extreme
+real_dc: 100
+level_range: "13–14"
+mission_type: ["Reconnaissance Mission", "Intelligence Gathering"]
+campaign: "Campaign Four: Call from the Deep (Core)"
+min_agents: 2
+recommended_specialty:
+  - Negotiation
+  - Medical
+encounter_rate: {表面區域: 0, 歸一者注目時: 35}
+time_limit: null
+intel_restriction: "Level 99's Intelligence is always ±20% (even with precise Intelligence); this level resists being 'foreseen'"
+environment_rules:
+  - "Surface area (Class 1): safe, no encounters"
+  - "Deep area (Class 5): mandatory Will Contest every 30 minutes (d100≥50), failure → Stress +1"
+  - "Reading certain documents: auto-triggers Mental Contest"
+special_reward:
+  name: "The Unifier's Knowledge"
+  effect: "All entity encounter DC −10 (permanent)"
+  cost: "Each use has 20% chance to trigger 'The Unifier's Gaze' — encounter rate ×2 within 24 hours"
+campaign_progression: "Unlocks Campaign Four core choice — open/seal/research the Unifier's passage"
+scene_flow:
+  - scene: "Entering the Archive"
+    description: "Endless wooden bookshelves, the scent of old books, archivists in gray robes. The closest thing to 'home' in the Backrooms — and the most dangerous library."
+  - scene: "Seventh Section — The Weight of Knowledge"
+    description: "Bookshelf contents become ancient and unrecognizable — yet understandable. The air grows heavy. Memories not your own surface in your mind."
+  - scene: "Row Forty-Seven — The Unifier's Archive"
+    description: "An isolated bookshelf. A nameless black book. Slightly warm to the touch."
+    check: "d100 + team bonus ≥ actual DC 100"
+  - scene: "The Weight of Truth"
+    description: "The book closes. The archivist appears at the end of the shelves. 'You read it. Now... you know too much.'"

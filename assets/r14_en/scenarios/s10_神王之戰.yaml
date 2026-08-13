@@ -1,0 +1,142 @@
+name: "War of the God-King"
+description: "The threshold of legend is now before you. The mightiest rulers are no longer content with mortal thrones; they chase divinity, proving themselves worthy of godhood through miracles and conquest. When legends become enemies, the world will meet its finale in the War of the God-King."
+difficulty: 5
+level_range:
+  era_start: "Legendary Age"
+  era_end: "Legendary Age"
+turns_estimated: 75
+years_in_game: 30
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S5_繼承之戰_帝國分裂"
+initial_map: "maps/S5_繼承之戰_帝國分裂.yaml"
+multiplayer_rules:
+  mode: "Competitive (divinity + conquest)"
+  victory: "At turn 75, tally the \"Legend Score\" = Divinity Level×30 ＋ Sanctuaries×20 ＋ Legendary Battles Won×20 ＋ Faith Population×0.5; highest becomes a god. The first to achieve \"Apotheosis\" triggers the endgame and +40 points."
+  interaction: "Players may forge divine alliances, declare war, launch legendary-level duels; occupying a sanctuary draws divine power."
+starting_conditions:
+  population: 5000
+  attributes:
+    base: 25
+    free_points: 40
+phases:
+  - id: 1
+    name: "Legendary Rise"
+    turns: "1-20"
+    description: "Legendary rulers awaken divinity and establish sanctuaries"
+    events:
+      - turn: 4
+        name: "Divinity Awakens"
+        type: "awakening"
+        description: "The ruler first senses the divinity within"
+        effect: "Divinity Level +1, Legend Score +30"
+      - turn: 9
+        name: "Sanctuary Foundation"
+        type: "construction"
+        description: "Establish the first faith sanctuary"
+        effect: "Sanctuaries +1, Legend Score +20"
+      - turn: 14
+        name: "Oracle Dispute"
+        type: "religious"
+        description: "All sides interpret the same oracle, accusing one another of usurpation"
+        skill_check: "Morale (MOR), DC 20"
+      - turn: 18
+        name: "Covenant and Betrayal"
+        type: "diplomacy"
+        description: "Forge a divine alliance, or plot betrayal in secret"
+        choices:
+          - option: "Forge Divine Alliance"
+            effect: "Divine alliance takes effect, each gains +10 Legend Score"
+          - option: "Plot in Secret"
+            effect: "Keep your strength, but relations −15"
+  - id: 2
+    name: "The Pursuit of Divine Wonders"
+    turns: "21-42"
+    description: "Prove divinity through miracles, contest sanctuaries and faith"
+    events:
+      - turn: 25
+        name: "Send Down a Miracle"
+        type: "miracle"
+        description: "Send a miracle upon your lands, absorbing faith"
+        effect: "Faith Population +500, Divinity Level +1"
+      - turn: 30
+        name: "Sanctuary Contest"
+        type: "competition"
+        description: "A masterless sanctuary sparks a multi-sided divine war"
+        skill_check: "Military (MIL), DC 21"
+      - turn: 36
+        name: "The Godslayer Appears"
+        type: "threat"
+        description: "The legendary Godslayer appears, threatening all God-Kings"
+        effect: "All players' Divinity Level −1 (first appearance)"
+      - turn: 40
+        name: "War of Faith"
+        type: "religious_war"
+        description: "Launch a holy war for dominance over faith"
+        crisis_type: "combat"
+        skill_check: "Military (MIL), DC 22"
+  - id: 3
+    name: "The Path of Slaying Gods"
+    turns: "43-60"
+    description: "Legendary duels reach a fever pitch; God-Kings attack one another"
+    events:
+      - turn: 46
+        name: "God-King Duel"
+        type: "legendary_duel"
+        description: "Two God-Kings clash head-on on the battlefield"
+        skill_check: "Combined all attributes, DC 23"
+      - turn: 51
+        name: "God-Stealing Plan"
+        type: "artifact"
+        description: "Seize others' divinity shards to strengthen yourself"
+        effect: "Divinity Level +2, Legend Score +20"
+      - turn: 56
+        name: "Heaven's Wrath"
+        type: "divine_wrath"
+        description: "Divine overload triggers heaven's wrath, testing will"
+        skill_check: "Morale (MOR), DC 22"
+  - id: 4
+    name: "The Eternal Throne"
+    turns: "61-75"
+    description: "The final apotheosis—ascend as a god, or vanish"
+    events:
+      - turn: 66
+        name: "Apotheosis"
+        type: "milestone"
+        description: "Those whose divinity level reaches its peak may declare apotheosis"
+        effect: "Legend Score +40, triggers endgame"
+      - turn: 70
+        name: "The Final War"
+        type: "military"
+        description: "Last standoff of remaining God-Kings"
+        skill_check: "Military (MIL), DC 24"
+      - turn: 75
+        name: "The Moment of Apotheosis"
+        type: "ending"
+        description: "Tally Legend Scores, highest becomes a god"
+endings:
+  success:
+    condition: "Highest Legend Score and achieve apotheosis"
+    reward: "All attributes +15, unlock the \"Eternal God-King\" Legendary Deed"
+  partial:
+    condition: "Survive to the endgame but not deified"
+    reward: "Keep your legendary status, may enter Free Mode"
+  failure:
+    condition: "Divinity collapses and the power disintegrates"
+    remedy: "Inheritance Mechanism—be reborn through reincarnation, keeping 50% of attributes"
+key_npcs:
+  - name: "The Godslayer Veth"
+    role: "A legendary being who hunts God-Kings"
+    personality: "Cold, merciless"
+    relationship: "Threat to All"
+  - name: "The Spirit of the Covenant Ora"
+    role: "The supreme will guiding God-Kings to godhood"
+    personality: "Ethereal, unfathomable"
+    relationship: "Arbiter"
+gm_notes:
+  - "The Legendary Age is the system's pinnacle; the GM should let players wield their legendary abilities freely"
+  - "Track divinity level, sanctuaries, and faith population"
+  - "Divine alliances and betrayal are the core source of dramatic tension"
+  - "The Godslayer, as a global threat, balances overly strong players"
+  - "Apotheosis is the ultimate goal; give it sufficient ceremony"

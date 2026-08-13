@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 470" font-family='Microsoft JhengHei','Noto Sans CJK TC','PingFang TC',sans-serif>
+  <rect width="500" height="470" fill="#fbf7ef"/>
+
+  <text x="250" y="26" text-anchor="middle" font-size="18" fill="#3b2f7a" font-weight="bold">The Old Oak and the Shard Vein (Scenario One)</text>
+  <text x="250" y="44" text-anchor="middle" font-size="10" fill="#777">Ref: Scenes 2-1 / 2-4 / 3-2</text>
+  <text x="250" y="70" text-anchor="middle" font-size="20" fill="#444">↑ North</text>
+  <circle cx="250" cy="250" r="120" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="250" y="140" text-anchor="middle" font-size="9" fill="#c0392b">Root Tendril Guard combat zone (radius 30 ft)</text>
+  <rect x="90" y="90" width="320" height="120" fill="#e6f0d8" stroke="#7a9a55"/>
+  <text x="250" y="112" text-anchor="middle" font-size="12">Forest Edge (safe observation point)</text>
+  <text x="250" y="130" text-anchor="middle" font-size="10">Bushes · 50 ft from the Old Oak</text>
+  <circle cx="250" cy="250" r="46" fill="#8b5a2b" stroke="#5c3a17"/>
+  <text x="250" y="254" text-anchor="middle" font-size="13" fill="#fff">Old Oak</text>
+  <text x="250" y="272" text-anchor="middle" font-size="9" fill="#fff">Shard spawning point</text>
+  <circle cx="250" cy="250" r="20" fill="#fff7c0" opacity="0.55"/>
+  <text x="250" y="225" text-anchor="middle" font-size="9" fill="#b58700">Firefly glow (radius 5 ft, Perception Advantage)</text>
+  <rect x="205" y="300" width="90" height="34" fill="#cfe8ff" stroke="#3a78b0"/>
+  <text x="250" y="321" text-anchor="middle" font-size="10">Player Observation Point</text>
+  <rect x="205" y="350" width="90" height="30" fill="#e8dcc0" stroke="#8a7a55"/>
+  <text x="250" y="369" text-anchor="middle" font-size="10">Tower direction (100 ft west)</text>
+  <circle cx="150" cy="250" r="10" fill="#9aa0a6" stroke="#555"/>
+  <text x="150" y="272" text-anchor="middle" font-size="9">Boulder (cover +2 AC)</text>
+  <circle cx="350" cy="250" r="12" fill="#4a7c3a" stroke="#234"/>
+  <text x="350" y="272" text-anchor="middle" font-size="9">Large Tree (cover +2 AC)</text>
+  <text x="250" y="410" text-anchor="middle" font-size="11" fill="#3b2f7a" font-weight="bold">Key Points</text>
+  <text x="250" y="428" text-anchor="middle" font-size="10">Tree root digging (Craft DC12) · Seal Core (3 ft underground, Will DC13)</text>
+  <text x="250" y="444" text-anchor="middle" font-size="10">Nearby stream can draw water to douse flames</text>
+
+</svg>

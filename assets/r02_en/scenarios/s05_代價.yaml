@@ -1,0 +1,70 @@
+# Multiplayer Campaign Structure File: The Cost (The Price / Campaign Series D)
+# Source: campaign-series-d-the-price_zh-Hant.md
+# This file is a structured summary; for full scene descriptions see the .md file of the same name.
+
+meta:
+  title: "The Cost (The Price)"
+  type: "Multiplayer Campaign"
+  player_count: "Squad (recommended 3–5 players)"
+  level_range: "Lv.1–10"
+  focus: "D-Class narrative / moral awakening / irreversible choice"
+  setting: "Area-14 surface entrance and Foundation containment ecosystem"
+  plot: "Starting from the D-Class perspective, the players delve deeper into the mission and discover the cost of the Foundation's containment system, ultimately facing an irreversible choice and its consequences."
+
+scenes:
+  - id: "D-1"
+    name: "Abyssal Throne"
+    level: "Lv.1–2"
+    type: "Arrival / relationship building / first contact"
+    key_checks: ["Foundation Lore TN 55", "Observation TN 58", "Resist TN 52"]
+    duration: "1–2 sessions"
+    map_ref: "generic_site (Area-14 surface entrance)"
+
+  - id: "D-2"
+    name: "The Warden's Voice"
+    level: "Lv.2–3"
+    type: "Dialogue / empathy / moral awakening"
+    key_checks: ["Persuasion TN 52", "Anomalistics TN 58", "Resist TN 55"]
+    duration: "2 sessions"
+
+  - id: "D-3"
+    name: "What It Contains"
+    level: "Lv.4–5"
+    type: "Investigation / truth reveal"
+    key_checks: ["Anomalistics TN 65", "Computers TN 60", "Observation TN 62"]
+    duration: "2 sessions"
+
+  - id: "D-4"
+    name: "The Rift"
+    level: "Lv.5–6"
+    type: "Team split / stance choice"
+    key_checks: ["Leadership TN 58", "Persuasion TN 60", "Deception TN 55"]
+    duration: "1–2 sessions"
+
+  - id: "D-5"
+    name: "The Voice of the D-Class"
+    level: "Lv.6–7"
+    type: "D-Class narrative core / solidarity"
+    key_checks: ["Leadership TN 55", "Persuasion TN 58", "Resist TN 60"]
+    duration: "2 sessions"
+
+  - id: "D-6"
+    name: "The Cost Ledger"
+    level: "Lv.7–8"
+    type: "Calculation / negotiation / preparation"
+    key_checks: ["All skills — multi-path"]
+    duration: "1–2 sessions"
+
+  - id: "D-7"
+    name: "The Choice"
+    level: "Lv.8–9"
+    type: "Action / irreversible choice"
+    key_checks: ["Varied — depends on plan"]
+    duration: "2–3 sessions"
+
+  - id: "D-8"
+    name: "The Aftermath"
+    level: "Lv.9–10"
+    type: "Ending / reckoning / legacy"
+    key_checks: ["Narrative — few checks"]
+    duration: "1–2 sessions"

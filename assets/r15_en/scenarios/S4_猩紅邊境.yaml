@@ -1,0 +1,33 @@
+name: "S4: Crimson Frontier"
+description: >
+  The Crimson Order established an outpost at Level 4 — right at the doorstep of your jurisdiction.
+  This is the opening of the 'Faction War.' The first shot will be fired by you — or, you may choose not to fire.
+difficulty: Hard
+real_dc: {外交: 75, 武力: 90}
+level_range: "8–9"
+mission_type: ["Diplomatic Mission", "Entity Hunting (against humans)"]
+campaign: "Campaign Three: Faction War (Opening)"
+min_agents: {外交: 2, 武力: 4}
+recommended_specialty:
+  外交: ["Negotiation"]
+  武力: ["Combat", "Medical"]
+encounter_rate: {外交: 20, 武力: 60}
+routes:
+  - name: "Diplomatic Contact"
+    description: "First send a negotiation team to talk, act based on results. Lowest casualty risk, may gain Intelligence."
+    dc: 75
+  - name: "Forceful Expulsion"
+    description: "Full-scale operation to clear the outpost. Swift conclusion, but high casualty risk."
+    dc: 90
+  - name: "Covert Observation"
+    description: "Dispatch a reconnaissance team without contact, gather Intelligence before deciding. Maximum information gain, but may lose the initiative."
+    dc: 70
+faction_impact:
+  外交成功: "Crimson Order relation +5 (max −20)"
+  武力成功: "Crimson Order relation −15"
+rewards:
+  外交成功: "Intelligence +3, may obtain Crimson Order comms frequency"
+  武力成功: "Confiscate comms equipment (Intelligence +3) + Unifier documents (Campaign Four clue)"
+  俘虜: "May interrogate to obtain extra Intelligence (cost: may violate M.E.G. humanitarian norms)"
+moral_ambiguity: "The Crimson Order has a self-consistent ideology. They are not a purely 'evil faction.'"
+campaign_progression: "This mission determines the overall direction of Campaign Three. GM must prepare follow-up missions for the three routes."

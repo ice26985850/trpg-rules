@@ -1,0 +1,106 @@
+# Honkai: Star Rail TRPG — Solo Campaign: Lone Star Journey (Solo Player)
+# Source .md: 單人戰役.md (five-arc solo campaign, 1 GM + 1 Player + 1 NPC Companion)
+# Structured summary: scene / NPC / companion / event / difficulty / flow / branch
+
+campaign:
+  title: Lone Star Journey
+  type: Solo Player Campaign
+  players: "1 GM + 1 Player + 1 NPC Companion"
+  level_range: "Lv 1-20"
+  sessions_total: "20-25 sessions (4-5 per arc)"
+  premise: >
+    You are a lone Trailblazer, with no team and no backup—only a traveling companion whose fate is intertwined with yours,
+    and the navigator aboard the Astral Express who is forever brewing red tea. The journey begins with a distress signal from the frozen wastes of Belobog,
+    passing through Rustcrown's steaming maze-city and the Xianzhou battlefield of Aeons, ultimately pointing toward the final fragment of the "Voice of Annihilation" deep within the Void.
+    You are the only one standing between it and the universe.
+  recurring_NPCs:
+    - name: Himeko
+      role: Remote Mentor / Comms Mission-Giver
+    - name: Silver Wolf
+      role: Mysterious Informant / Frenemy
+    - name: NPC Companion
+      role: Combat Ally / Roleplay Interaction Target (chosen by player)
+    - name: Imaginary Echo
+      role: Final Antagonist
+
+  companion_choice:
+    note: Before Arc 1 begins, the PC chooses one companion from the list below to travel with (can be swapped in later arcs); see the NPC card's "Solo Companion" worksheet
+    options:
+      - name: Aelin
+        path: Preservation
+        element: Physical
+        role: Tank / Shield
+        personality: A taciturn former Cloud Knight deserter; trust takes time
+      - name: Ceno
+        path: Abundance
+        element: Wind
+        role: Healer / Cleanse
+        personality: An optimistic wandering medic who believes everyone is worth saving
+      - name: Rin
+        path: Hunt
+        element: Lightning
+        role: Ranged DPS
+        personality: A calm bounty hunter, few words but precise
+      - name: Mira
+        path: Harmony
+        element: Imaginary
+        role: Buff / Control
+        personality: A lively Star Track navigator trainee, talkative but kind
+
+arcs:
+  - id: 1
+    name: Frozen Signal
+    level: "1-4"
+    sessions: "4-5"
+    scenes: Belobog
+    theme: A Lone Departure
+    suggested_paths: "Any, but recommended non-Preservation/Abundance (companion can fill the role)"
+    opening: >
+      Himeko finds you in the observation car: "Belobog sent an encrypted signal—private channel, using old Trailblazer code.
+      The sender knows the Express, but doesn't want the Great Guardian to know." She pauses: "I'm sending you alone."
+    chapters:
+      - act: Act 1
+        title: The Crack in the Frozen City
+        note: Solo traversal of the mine, first real combat, companion's first coordination
+      - act: Act 2
+        title: Silver Wolf's Trial
+        branch: Discover the Antimatter Legion mentioned the "Voice of Annihilation"; report back to the Express or not
+      - act: Act 3
+        title: Oath Beneath the Starlight
+        note: Himeko confirms the Stellaron Resonance threat and assigns the trip to Rustcrown
+    branch: Solo decisions have no teammates to share the burden; the cost of choices weighs heavier
+
+  - id: 2
+    name: Steam Maze-City
+    level: "5-8"
+    sessions: "4-5"
+    scenes: Rustcrown
+    theme: Trust and Betrayal
+    branch: Develop the Rustcorroded Prophet / companion trust storyline
+
+  - id: 3
+    name: Aeon Battlefield
+    level: "9-12"
+    sessions: "4-5"
+    scenes: Xianzhou Luofu
+    theme: Echoes of the Past
+    antagonist: Imaginary Echo (First Form)
+
+  - id: 4
+    name: Abyssal Whisper
+    level: "13-16"
+    sessions: "4-5"
+    scenes: Azure Abyss
+    theme: The Price of Sacrifice
+    branch: The companion may face a choice of sacrifice
+
+  - id: 5
+    name: Lone Star Finale
+    level: "17-20"
+    sessions: "4-5"
+    scenes: Void Fragmentum
+    theme: A Solo Ending
+    finale_boss: Voice of Annihilation · Distorted Form (CR 25, four-phase)
+    branch: >
+      Neutralization Ritual or Fusion Route (consumes all resources +10 permanent Hit Points (HP) to take over and skip Phase 4);
+      the ending is decided by the lone Trailblazer alone.

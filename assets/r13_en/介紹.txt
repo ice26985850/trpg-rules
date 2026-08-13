@@ -1,0 +1,38 @@
+# Exiles of the Empire TRPG
+
+**In the corners the Emperor forgot, how much of your faith remains?**
+
+**Reference Work Disclaimer:** The worldview, factions, and core atmosphere of these rules were inspired by *Warhammer 40,000* — drawing on its "grim dark future," "Emperor Worship," "Space Marine / Astartes," and "Chaos corruption" elements. This is an original, standalone TRPG design, not an officially licensed adaptation; all mechanics have been rebuilt from the ground up.
+
+**What kind of world is this?**
+The Imperium has abandoned you. Beneath the rust-red starlight of the Vergessen Sector, the Inquisition drafts criminals, heretics, and failures into Penitent Expeditions, assigning them near-suicidal missions. And the Astartes — the Space Marines forgotten after Exterminatus — alone face the ultimate torment on scorched wastelands: whether they should obey the order to exterminate. There are no heroic epics here, only the forgotten clinging to the last shred of dignity in despair.
+
+**Who do you play, and what do you do?**
+You are one of two kinds of "exile": a **Mortal Penitent** — carrying a crime and limited supplies, infiltrating, fighting, and struggling to survive in the darkness of the Hive City's lower depths; or an **Abandoned Astartes** — a transhuman soldier in battered Power Armor, searching the ruined planet for hope of evacuation. The core gameplay is survival, exploration, and moral choice: every action spends bullets, medkits, and — most importantly — your Faith.
+
+**System Highlights**
+1. **Faith & Corruption dual track:** Faith is a consumable, recoverable resource; Corruption silently accumulates upon contact with Chaos. As the two pull against each other, when their sum breaks the threshold you face the **Crisis of Faith** — a gamble over your soul.
+2. **One ruleset, two scales:** Mortals and Astartes share the Five Attributes but have utterly different numerical baselines. A mortal facing a Space Marine is all but certain to lose — yet before the Emperor souls are equal; the contest of Faith and Mind ignores physical gaps.
+3. **Tension of temptation and oaths:** In multiplayer mode, the GM privately hands you a **Temptation Note** — you may be asked to betray a companion, or may have received nothing at all, and you never know what others got. In solo mode it becomes the **Whisper of Chaos**, quietly knocking at your most vulnerable moments; an NPC companion's loyalty and wavering replace inter-player betrayal.
+
+**Who is this for?**
+If you enjoy scrimping and scheming when resources run dry, savor the weight of moral dilemmas, and crave stories of despair yet unyielding hope — this is made for you. It asks for some TRPG experience, as the mechanics are fairly rich; but the core die is just one: d100 Roll-Under, easier to pick up than you'd think.
+
+**Game Style Tags**
+- Combat weight: Significant
+- Strategic depth: Highly strategic
+- Story-driven: Story-led
+- Resource management: Heavy management
+- Character customization: Highly customizable
+- Character-creation complexity: Complex
+- Rules density: Rules-heavy
+- GM requirement: Optional GM
+
+**Estimated Play Time**
+- Single scenario: 3–5 hours
+- Full campaign (20 connected scenarios: 10 multiplayer + 10 solo adaptive): 80–120 hours
+
+**Basic Info**
+- Total scenarios: 20 (5 mortal + 5 Astartes multiplayer campaign; plus 10 solo adaptive versions)
+- Players: traditionally 2–5 (including 1 GM); also supports 1 player with an AI GM for solo play
+- Core die: d100 (Roll-Under)

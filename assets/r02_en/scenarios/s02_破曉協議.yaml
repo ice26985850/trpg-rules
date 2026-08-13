@@ -1,0 +1,72 @@
+# Multiplayer Campaign Structure File: Daybreak Protocol (Campaign Series A)
+# Source: campaign-series-a-breaching-protocol_zh-Hant.md
+# This file is a structured summary; for full scene descriptions see the .md with the same name.
+
+meta:
+  title: "Daybreak Protocol"
+  type: "Multiplayer Player Campaign"
+  player_count: "Squad (recommended 3–5 players)"
+  level_range: "Lv.1–10 (start Lv.1, endgame Lv.9–10)"
+  focus: "Combat / Containment Assault / Moral Branching"
+  setting: "Site-19's Longest Night"
+  plot: "A newly-formed MTF squad 'Hammerbone' faces a Chaos Insurgency infiltration at Site-19,preventing SCP-████-C 'Heart of the Void' from being activated into an XK-Class Scenario."
+  estimated_duration: "12–18 sessions (approx. 40–60 hours)"
+  key_npcs:
+    - "MTF Nu-7 Captain Elena Vasquez (tactical mentor, CI defector)"
+    - "Chaos Insurgency Commander Marcus Kale (primary antagonist)"
+    - "Site-19 Site Director Dr. Ian Harlow"
+
+scenes:
+  - id: "A-1"
+    name: "Red Alert"
+    level: "Lv.1"
+    type: "Combat Intro / Emergency Response"
+    key_checks: ["Firearms TN 75", "Observation TN 60", "Dodge TN 55"]
+    duration: "1 session"
+
+  - id: "A-2"
+    name: "Corridor War"
+    level: "Lv.2–3"
+    type: "Tactical Advance / Suppressive Fire"
+    key_checks: ["Firearms TN 77", "Leadership TN 55", "First Aid TN 60"]
+    duration: "2 sessions"
+    map_ref: "site19_heavy_containment（main corridor T-junction）"
+
+  - id: "A-3"
+    name: "Breaking Point"
+    level: "Lv.4–5"
+    type: "Information Warfare / Moral Branching"
+    key_checks: ["Interrogation TN 55", "Computers TN 65", "Deception TN 60"]
+    duration: "2–3 sessions"
+    note: "Vasquez's CI origin is revealed here, becoming a key turning point"
+
+  - id: "A-4"
+    name: "Heavy Containment"
+    level: "Lv.5–6"
+    type: "Containment Assault / Resource Management"
+    key_checks: ["Anomalistics TN 65", "Engineering TN 60", "Dodge TN 60"]
+    duration: "2 sessions"
+    map_ref: "site19_heavy_containment（underground five levels L12–L18）"
+
+  - id: "A-5"
+    name: "Heart of the Void"
+    level: "Lv.7–8"
+    type: "Final Battle / Keter Containment"
+    key_checks: ["Resist TN 55", "Firearms TN 82", "Demolitions TN 60"]
+    duration: "2–3 sessions"
+    map_ref: "site19_heavy_containment（80m spherical containment chamber）"
+
+  - id: "A-6"
+    name: "Settling the Cost"
+    level: "Lv.9–10"
+    type: "Endgame Choice / Narrative Resolution"
+    key_checks: ["Persuasion TN 60", "Leadership TN 65", "Foundation Lore TN 55"]
+    duration: "1–2 sessions"
+
+  - id: "A-X"
+    name: "The Rats' Path (Optional)"
+    level: "Lv.3–5"
+    type: "Stealth Infiltration / D-Class Perspective"
+    optional: true
+    key_checks: ["Stealth TN 65", "Deception TN 55", "Survival TN 50"]
+    duration: "1 session"

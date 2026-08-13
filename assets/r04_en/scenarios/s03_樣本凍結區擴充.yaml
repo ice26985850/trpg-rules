@@ -1,0 +1,61 @@
+# Sample Freeze Zone Expansion — Frozen Wasteland TRPG (structured index)
+# This file is organized from the same-named .md, for the website to offer .md / .yaml dual-format download.
+# This expansion contains 11 complete Freeze Zone samples, covering the full difficulty gradient from novice to legendary;
+# each Freeze Zone can be used independently, or strung together within a campaign. Full thaw parameters and layout are in the .md.
+# Free structure: this file presents each Freeze Zone as a zones list, non-mandatory fields.
+source_md: "s03_樣本凍結區擴充.md"
+
+name: "Sample Freeze Zone Expansion"
+description: |
+  A collection of 11 ready-to-use Freeze Zone samples, ranging in difficulty from Novice (Slumber Type supermarket)
+  to Legendary (Breath Type Genesis Corridor). Each Freeze Zone contains a thaw rhythm mode, starting threshold,
+  layout, and encounter design, usable as campaign links or standalone sessions.
+difficulty: "Novice → Legendary"
+zones:
+  - name: "Sample 01: Supermarket \"Frostfall Supermarket\""
+    tier: "Novice"
+    rhythm: "Slumber Type"
+    note: "Structurally stable, gentle thaw rhythm — the ideal introductory venue for novice Cold Walkers."
+  - name: "Sample 02: Residential Community \"Frostbell Community\""
+    tier: "Novice"
+    rhythm: "Slumber Type"
+    note: "Neighborhood scene, suited to team building and memory themes."
+  - name: "Sample 03: School \"Daybreak Elementary School\""
+    tier: "Novice"
+    rhythm: "Pulse Type"
+    note: "First Pulse Type rhythm, group ethical dilemma."
+  - name: "Sample 04: Hospital \"St. Mary's Memorial Hospital\""
+    tier: "Intermediate"
+    rhythm: "Pulse Type"
+    note: "Core venue for life ethics and faction involvement."
+  - name: "Sample 05: Subway \"Frozen Vein Line\""
+    tier: "Intermediate"
+    rhythm: "Chain Type"
+    note: "Chain Type thaw, route planning and timing pressure."
+  - name: "Sample 06: Power Plant \"Everfrost Power Plant\""
+    tier: "Intermediate"
+    rhythm: "Breath Type"
+    note: "Technical challenge, consequences first emerge."
+  - name: "Sample 07: Military Checkpoint \"Ironfrost Outpost\""
+    tier: "High-Difficulty"
+    rhythm: "Spasm Type"
+    note: "High-risk Spasm Type, military ethics and truth fragments."
+  - name: "Sample 08: Harbor / Docks \"Frosttide Harbor\""
+    tier: "High-Difficulty"
+    rhythm: "Chain Type"
+    note: "Converging clues, main adversaries appear."
+  - name: "Sample 09: Research Facility \"Time Laboratory — Seventh Floor\""
+    tier: "High-Difficulty"
+    rhythm: "Spasm Type"
+    note: "Genesis Hypothesis core, major reveal."
+  - name: "Sample 10: Clock Tower \"Eternal Spire\""
+    tier: "Legendary"
+    rhythm: "All-Rhythm Mixed"
+    note: "Ultimate trial, world choice."
+  - name: "Sample 11: Wasteland Abyss \"Genesis Corridor\""
+    tier: "Legendary"
+    rhythm: "Breath Type"
+    note: "Legendary ending, character fate."
+notes:
+  - "The first 3 (supermarket, hospital, military checkpoint) are basic samples; the rest are newly added expansions."
+  - "Appendix: Freeze Zone Quick Reference Table."

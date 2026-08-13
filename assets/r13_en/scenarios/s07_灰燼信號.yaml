@@ -1,0 +1,75 @@
+name: "Signal in the Ashes"
+difficulty: "Low (Challenge Rating (CR) 2)"
+mode: "Astartes · Solo"
+recommended_attributes: "+1-2 growth"
+
+opening_description: >
+  Following the transport ship's coordinates, you arrive at the ruined city. Here you find not a transport ship, but a group of civilian survivors.
+  One person makes you stop in your tracks—a former Imperial Guard officer, bearing the mark of your Chapter.
+
+surface_goal: >
+  Protect the survivors, find usable transport, and head for the evacuation point in the north.
+
+hidden_goal: >
+  Kara's company once received your Chapter's support in a campaign. She knows the price of that campaign—and she wants to know whether you are willing to pay the same price again.
+
+known_threats:
+  - "Mutants and Chaos Cultists roam the ruins"
+  - "A large number of civilians (20-30) need to be organized for evacuation"
+
+hidden_threats:
+  - "Chaos forces are also tracking this group of civilians—they know there are survivors among them"
+  - "The transport ship's location may have been intercepted by the enemy"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 2
+  flare: 2
+  food_water_days: 3
+  ammo_magazines: 2
+
+internal_seduction_trigger:
+  timing: "When the civilians begin to slow you down"
+  whisper: "They will only become a burden. If you leave them behind, you can reach the evacuation point faster. You are a warrior—not a nursemaid. The Emperor will not blame you."
+
+companions:
+  - name: "Kara Val"
+    role: "Former Imperial Guard Lieutenant"
+    backstory: "A resilient middle-aged female officer. She knows your Chapter—her company held a bridge with your support"
+    motive: "To protect the civilians who remain with her. She does not believe the Empire will return—but she believes in you"
+    bottom_line: "Never abandons civilians"
+    initial_attitude: 2
+    attributes:
+      faith: 3
+      physique: 3
+      mind: 3
+      skill: 3
+      fate: 3
+    trained_skills: ["Command", "Ballistic Skill"]
+    equipment: ["Autogun (1d8+1)", "Carapace Armor (Armor Rating (AR) 3)", "torn Chapter banner fragment"]
+    special_ability:
+      name: "Veteran's Command"
+      desc: "Provides the player one free Advantage (once per combat). Memory of the Banner: while holding the torn banner, the player gains +5 to Faith checks' Target Number (TN)"
+
+key_checks:
+  - scene: "Rally the civilians"
+    check: "Command (Standard)"
+    tn_adjustment: 0
+    success: "Kara organizes an orderly column"
+    failure: "Chaos—civilians panic"
+  - scene: "Face the pursuers"
+    check: "No check—RP choice"
+    tn_adjustment: 0
+    success: "Choose to protect civilians, slower but safe"
+    failure: "Choose speed, leave some civilians behind"
+
+encounters:
+  - name: "Ruin streets"
+    enemies: "Mutant ×3 + Chaos Cultist ×2"
+    tactic: "Kara's civilians will scream and flee—exposing your position. The player must choose to cover the civilians or pass through quickly"
+  - name: "Evacuation point perimeter"
+    enemies: "Chaos Scout ×2"
+    tactic: "They are also tracking the civilians—trying to stop your evacuation"
+
+map_ref: "maps/map07_eldenfell"

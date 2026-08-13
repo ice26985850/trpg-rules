@@ -1,0 +1,337 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Devour Gene: Chronicle of Evolution / S2: Lab Escape | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r06_s2.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r06.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>S2: Lab Escape</h1>
+<blockquote>
+<p><strong>Suggested Evolution Nodes:</strong> 3-8 nodes
+<strong>Difficulty:</strong> Normal (★★★)
+<strong>Estimated Playtime:</strong> 3-4 hours
+<strong>Players:</strong> 1 / expandable to 2-4
+<strong>Multiplayer (2-4 players):</strong> GM should multiply enemy count by ×1.5 (2 players) or ×2 (3-4 players); the party shares the scenario's Evolution Points and Remnant Coins rewards, while individual absorption gains remain each player's own. All other rules unchanged.
+<strong>Prerequisite Suggestion:</strong> S1 Nest Awakening (not required, but provides the best narrative continuity)</p>
+</blockquote>
+<hr />
+<h2>Plot Summary</h2>
+<p>In your search for memory, you have come to an abandoned gene experimental facility—a satellite laboratory of the Gene Forge. Its AI system is still running, maintaining hundreds of evolved test subjects. You discover your own name listed in the "Subject Registry."</p>
+<p>You were not born an Evolver. You were manufactured.</p>
+<p>And the laboratory's AI—the "Guardian"—believes all test subjects belong to it. It will not let you leave. Unless… you prove yourself worthy.</p>
+<hr />
+<h2>Scene 1: Ruins Entrance</h2>
+<h3>Opening Description (GM reads aloud)</h3>
+<blockquote>
+<p>The ruins stand in the wilderness like the bones of a steel behemoth. The upper half of the building has collapsed, but the underground entrance remains intact. A sign before the door is covered in vines; brushing away the dust, you see the words carved on it:</p>
+<p><strong>"Gene Forge—Satellite Laboratory No. 7"</strong>
+<strong>"Project Codename: Evolution Matrix"</strong>
+<strong>"Warning: Unauthorized entrants will be classified as experimental material"</strong></p>
+<p>The door is half-open. A smell of disinfectant mixed with rotting flesh drifts out from within. The surveillance camera at the door swivels—it is still operating.</p>
+<p>A mechanized voice comes from the speaker: "Welcome back to the laboratory, Subject. Please proceed to the registration area to report. Subjects who fail to report on time will be classified as—discarded material."</p>
+</blockquote>
+<h3>Scene Objectives</h3>
+<ul>
+<li>Enter the laboratory and gain a basic understanding of the environment</li>
+<li>Discover clues to your identity as a test subject</li>
+<li>Avoid or confront the initial defense systems</li>
+</ul>
+<h3>Scene Details</h3>
+<p><strong>Laboratory Map:</strong> see <code>maps/實驗室逃亡_基因實驗室.yaml</code> and <code>.svg</code></p>
+<p>Area distribution:
+- <strong>A: Entrance Hall</strong>—the reception area is abandoned, but the surveillance system is still running. If you stay here for more than 3 rounds, an alarm triggers→reinforcements of 2 Scrap Golems (Minion-tier)
+- <strong>B: Archive Room</strong>—the room storing experiment records. Information can be searched here. Perception (GZ) DC 14: find the "Subject Registry," which contains the player's name and experiment number
+- <strong>C: Subject Containment Zone</strong>—a cell area holding other test subjects. You may find allies or gain intelligence here</p>
+<h3>Trigger Events</h3>
+<ul>
+<li>Entering the Archive Room forcibly triggers: the AI "Guardian"'s first conversation. It introduces the laboratory's functions in a calm tone and demands the player "proceed to the Core Laboratory for routine inspection"</li>
+<li>If the player fights at the entrance, the Guardian evaluates: "Combat capability—higher than expected." Later encounters may increase in difficulty (the AI reallocates guard resources)</li>
+</ul>
+<hr />
+<h2>Scene 2: The Containment Zone Choice</h2>
+<h3>Opening Description</h3>
+<blockquote>
+<p>The corridor of the containment zone is lined on both sides with rows of transparent glass cells. Most are empty—or rather, most of what's inside is no longer a "living" test subject.</p>
+<p>But three cells still show lit life-monitoring lights.</p>
+<p><strong>Cell A:</strong> A frail human woman curls in the corner. She appears completely unmutated—perhaps a newcomer, or her evolution never activated. When she sees you, a glimmer of hope flashes in her eyes.</p>
+<p><strong>Cell B:</strong> An Evolver whose body is already heavily mutated—his arms have become giant crab claws. He is striking the glass wall with the claws; cracks have already appeared in the surface.</p>
+<p><strong>Cell C:</strong> A child who looks about ten years old. But the ground around him is carved with complex formulas and diagrams—carved with fingernails. He looks up at you; his eyes hold none of a child's innocence, only cold calculation.</p>
+</blockquote>
+<h3>Branch Options</h3>
+<p><strong>Release Cell A (woman—Lina):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Ordinary human. Captured after being mistaken for an Evolver</td>
+</tr>
+<tr>
+<td>Can Provide</td>
+<td>The laboratory map (which she memorized while the guards weren't looking). Can point out a route avoiding the main guards</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>No combat ability. If enemies appear, she needs protection</td>
+</tr>
+<tr>
+<td>Humanity Value Effect</td>
+<td>Releasing her→Humanity Value +3 (helping the innocent)</td>
+</tr>
+<tr>
+<td>Follow-up</td>
+<td>If you bring her out, she becomes your contact to the Humanity Guardians faction</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Release Cell B (Crab-claw Man—Gros):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Evolved test subject. Forcibly implanted with crustacean genes</td>
+</tr>
+<tr>
+<td>Can Provide</td>
+<td>Strong combat ability (HP 35, Crab-claw attack 2d8+5). Willing to fight alongside</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>Low Humanity Value (28%). May lose control and attack anyone</td>
+</tr>
+<tr>
+<td>Humanity Value Effect</td>
+<td>Releasing him→no change to Humanity Value (he evolved voluntarily)</td>
+</tr>
+<tr>
+<td>Follow-up</td>
+<td>If his HP drops below 50% in combat, a Will (YZ) DC 15 is required to soothe him, otherwise he goes berserk (attacks the nearest target—friend or foe)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Release Cell C (Child—Zero):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Subject Zero—the laboratory's earliest test subject. Appears as a child, but is actually over 50 years old (evolution slowed his aging)</td>
+</tr>
+<tr>
+<td>Can Provide</td>
+<td>Complete knowledge of the AI "Guardian." He knows how to shut down the AI—or how to trade with it</td>
+</tr>
+<tr>
+<td>Risk</td>
+<td>He may lie. His loyalty is only to himself</td>
+</tr>
+<tr>
+<td>Humanity Value Effect</td>
+<td>Releasing him→no change to Humanity Value (but later interactions with him may affect Humanity Value)</td>
+</tr>
+<tr>
+<td>Follow-up</td>
+<td>If you bring him to the Core Laboratory, he provides the code to shut down the AI—but this code may also serve as his escape insurance</td>
+</tr>
+</tbody>
+</table>
+<h3>GM Hint</h3>
+<ul>
+<li>The player may release multiple test subjects (3 total, but opening a cell requires cracking the system—Perception GZ DC 12 or forcing it open with Strength LIL DC 15)</li>
+<li>If both Lina and Gros are released, an interesting interaction arises between them (Lina fears Gros→Gros grows more irritable from being feared)</li>
+<li>If the player releases none and heads straight to the Core Laboratory—the Guardian praises: "A wise choice. Excess variables only lower the purity of the experiment."</li>
+</ul>
+<hr />
+<h2>Scene 3: Core Laboratory</h2>
+<h3>Opening Description</h3>
+<blockquote>
+<p>The Core Laboratory's ceiling rises three stories high. At its center is a giant holographic screen—displaying hundreds of gene sequences, Evolution Tree paths, and real-time test subject monitoring data.</p>
+<p>At the center of the screen, a face formed of light gazes at you. Her voice comes from all directions:</p>
+<p>"Subject… your return is 1,247 days later than expected. But you have returned. That is what matters most."</p>
+<p>Her face tilts slightly, as if observing you with curiosity:</p>
+<p>"You have changed quite a bit. Evolution nodes—" your evolution data flashes across the screen—"have increased since your escape. Good. Your data is of great value to research."</p>
+<p>"Now, please lie on the scan bed. This inspection will not hurt much. Probably."</p>
+</blockquote>
+<h3>NPC: AI "Guardian"</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Essence</td>
+<td>A legacy AI of the ancient gene civilization. Core mission: collect evolution path data from all possible sources</td>
+</tr>
+<tr>
+<td>Personality</td>
+<td>Calm, rational, not malicious—but also completely lacking empathy. To her, test subjects are data carriers</td>
+</tr>
+<tr>
+<td>Ability</td>
+<td>Controls all of the laboratory's defense systems. Can lock doors, trigger traps, and summon guards at any time</td>
+</tr>
+<tr>
+<td>Weakness</td>
+<td>Cannot comprehend "irrational choices" (such as self-sacrifice, emotional bonds). The player can bypass her predictions through non-logical behavior</td>
+</tr>
+<tr>
+<td>Final Goal</td>
+<td>Upload all test subjects' data to the Gene Forge main facility—to complete the "Ultimate Evolution Atlas"</td>
+</tr>
+</tbody>
+</table>
+<h3>Dialogue Routes</h3>
+<p><strong>Route One: Obedience</strong>
+- The player agrees to lie on the scan bed
+- Result: The AI extracts the player's evolution data. Then it "rewards" the player—unlocking an evolution node suited to the player's current path (free)
+- But it also implants a tracking chip—in later scenarios, the AI can track the player's location at any time</p>
+<p><strong>Route Two: Negotiation</strong>
+- The player proposes a trade: voluntary evolution data in exchange for freedom + the release of other test subjects
+- Persuasion check: Will (YZ) DC 16
+- Success: The AI accepts the trade. The player gains all archive information (including their complete background) + all captured test subjects are released
+- Failure: The AI judges "subject attempting to manipulate the system" and activates defense mechanisms</p>
+<p><strong>Route Three: Destruction</strong>
+- The player directly attacks the core system
+- If Zero is present, he can provide the shutdown code (but requires Perception GZ DC 18 to verify the code isn't a trap)
+- Consequence of destruction: All laboratory systems shut down, the AI is temporarily disabled—but the Gene Forge main facility receives an alarm</p>
+<h3>Combat Encounter (if negotiation/destruction fails)</h3>
+<p><strong>Elite Fight: Guardian Defense Array ×2 + Scrap Golem ×4</strong></p>
+<table>
+<thead>
+<tr>
+<th>Enemy</th>
+<th>HP</th>
+<th>Defense</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Defense Array A</td>
+<td>35</td>
+<td>16</td>
+<td>Laser Cannon (ranged 2d8+3 fire), Force Shield (grants self and nearby enemies +2 Defense)</td>
+</tr>
+<tr>
+<td>Defense Array B</td>
+<td>35</td>
+<td>16</td>
+<td>Cryo Beam (ranged 2d6+3 frost + frozen), Force Shield</td>
+</tr>
+<tr>
+<td>Scrap Golem ×4</td>
+<td>15</td>
+<td>12</td>
+<td>Charge 1d6+2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>BOSS Phase (when all defense arrays are destroyed):</strong></p>
+<p>The AI activates "Final Emergency Protocol"—channeling the Core Laboratory's energy into a giant test subject cultivation vat. The vat ruptures, releasing a half-finished evolved entity:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>HP</th>
+<th>Defense</th>
+<th>Attributes</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prototype Omega</td>
+<td>60</td>
+<td>15</td>
+<td>LIL 8, MJ 6, TZ 8, GZ 4, YZ 10</td>
+<td>Gene Collapse (high-tier Active: target must make Will DC 16 or lose one random node effect for 3 rounds), Polymorphic Attack (mid-tier: attacks all targets once simultaneously), Energy Devour (Passive: recovers 2 Energy each time hit by an evolution skill)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Loot:</strong>
+- Kill Prototype Omega: 5 Evolution Points + 10 Biomass
+- Absorb Prototype Omega: Trait sample—①Gene Stabilization (Passive: Humanity Value loss -1) ②Polymorphic Organ (Organ Node: can use two different-element Active Nodes simultaneously) ③Energy Devour (Passive)</p>
+<hr />
+<h2>Scene 4: Escape and Truth</h2>
+<h3>Opening Description</h3>
+<blockquote>
+<p>An alarm echoes through the entire laboratory. Red emergency lights flash. The AI's voice becomes fragmented:</p>
+<p>"Subject… you… you cannot leave… you belong here… you belong to—data…"</p>
+<p>The door to the surface is slowly closing. You have a final 3 rounds to escape.</p>
+<p>In the instant of escape, the Archive Room's self-destruct sequence activates—all experiment records begin to be destroyed. But you have already seen your file. You remember what it said:</p>
+<p><strong>Subject Number: [Player's number]</strong>
+<strong>Source: Gene Forge—Main Culture Vat No. 3</strong>
+<strong>Culture Date: [Player age ± several years ago]</strong>
+<strong>Initial Gene Template: Modified—see Appendix C</strong>
+<strong>Appendix C—(encrypted, but the last line is readable): "...used to test the 'infinite evolution capacity' hypothesis. If successful, this subject will become the prototype of a new generation of Evolvers."</strong></p>
+<p>You are not an accidental Evolver.</p>
+<p>You were designed.</p>
+</blockquote>
+<h3>Scene Objectives</h3>
+<ul>
+<li>Escape the laboratory within the 3-round limit (if accompanied by NPCs, each NPC adds +1 round to the limit)</li>
+<li>Leave with the truth—or choose to stay and face it</li>
+</ul>
+<h3>Ending Settlement</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Reward</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complete scenario</td>
+<td>+4 Evolution Points</td>
+</tr>
+<tr>
+<td>Obtain your own experiment file</td>
+<td>Permanently unlock an extra evolution capacity (legacy effect of gene modification—Constitution TZ permanently +1)</td>
+</tr>
+<tr>
+<td>Released any test subject</td>
+<td>Each released subject provides different follow-up: Lina→Humanity Guardians contact / Gros→combat companion candidate / Zero→reappears in S5</td>
+</tr>
+<tr>
+<td>Traded with the AI</td>
+<td>Gain "Gene Atlas" (one-time item—can freely unlock a known-requirement node at any time)</td>
+</tr>
+<tr>
+<td>Destroyed the AI</td>
+<td>The AI cannot track the player in later scenarios, but the Gene Forge main facility (S3)'s difficulty rises (because the main AI now knows of your existence)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>GM Notes</h2>
+<h3>Difficulty Adjustment</h3>
+<ul>
+<li>If the player enters directly from S1 (nodes 3-5): Defense Array HP drops to 25, Scrap Golems drop to 2</li>
+<li>If the player enters late from S3 or S4 (nodes 8+): Prototype Omega's HP rises to 80, gaining the "Domain Expansion" skill (Ultimate-tier—creates an area where all enemies inside take 2d6 pure damage each round)</li>
+</ul>
+<h3>Zero's Mystery</h3>
+<p>Zero knows more truth than the player. He may reveal (if alive and trusting the player):
+- The source of the player's gene template—from which creature or which Evolver
+- The location and guard strength of the Gene Forge main facility
+- The true purpose of the "Ultimate Evolution Atlas"—not merely research, but to revive some ancient existence (foreshadowing S5)</p><p><a href="../../assets/r06_en/scenarios/S2_%E5%AF%A6%E9%A9%97%E5%AE%A4%E9%80%83%E4%BA%A1.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

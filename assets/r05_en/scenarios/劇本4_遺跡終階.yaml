@@ -1,0 +1,35 @@
+name: "Scenario 4: Ruin Apex"
+description: "CL35–40 leveling-phase final chapter, centered on D8 Ancient Ruins, from grinding the trap outer corridor to defeating the Ruin Guardian in the deep core (the strongest non-Demon-General enemy of the leveling phase), the bridge from 'level-grinding' into 'Demon General reckoning.' Upon completion leads to Scenario 5 Dragon General Subjugation order. Uses Method A: one scenario + party-size adjustment."
+difficulty: Hard~Extreme
+level_range: [35, 40]
+chapter: 4
+map_ref: maps/D8_戰鬥_遺跡守護者.yaml
+initial_map: maps/D8_古代遺跡.yaml
+encounters:
+  - id: d8_outer_hall
+    name: D8 Outer Corridor Traps and Spirit Guards (CL35–37)
+    enemies:
+      - {name: Gargoyle, cr: 35, count: 2}
+      - {name: Tomb Watcher, cr: 37, count: 2}
+      - {name: Golem, cr: 38, count: 2}
+    budget: Hard×1.2
+    adjust: "1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1"
+  - id: d8_guardian
+    name: D8 Ruin Guardian (CL38–40)
+    enemies:
+      - {name: Ruin Sentinel, cr: 39, count: 2}
+      - {name: Ruin Guardian, cr: 40, count: 1}
+    boss: true
+    budget: Extreme×1.0
+    adjust: "1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1"
+rewards:
+  exp: 18000
+  gold: 12000
+  items: [Ancient Core, Guardian's Token, Ruin Heart]
+ip_events:
+  - event: Decipher the ancient inscriptions (Knowledge check)
+    ip: 3
+  - event: Redeem the Ruin Heart
+    ip: 5
+  - event: Protect rather than destroy the ruins
+    ip: 4

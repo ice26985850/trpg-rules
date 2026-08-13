@@ -1,0 +1,93 @@
+name: "Level 10 — Wheat Field"
+description: "Boundless golden wheat field — a false idyll; moving scarecrows slowly approach, and the paths keep changing"
+scenario_ref: "S5_跋涉"
+usage: "Scenario S5 finale: cross the wheat field to find the asphalt road and leave for Level 11"
+regions:
+  - name: "Edge"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "Area"
+  - name: "Wheat Field"
+    color: "#FFF3E0"
+    nodes: ["N02", "N03"]
+    description: ""
+  - name: "Scarecrow Zone (Danger)"
+    color: "#F3E5F5"
+    nodes: ["N04", "N05"]
+    description: ""
+  - name: "Exit Area"
+    color: "#E3F2FD"
+    nodes: ["N06"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Wheat Field Edge"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "Step from the Suburb into the boundless wheat field — a farmhouse on the horizon catches the eye"
+  - id: "N02"
+    label: "Wild Berry Bush"
+    x: 330
+    y: 210
+    type: "resource"
+    explored: false
+    description: "Wild berries at the edge of the wheat field — can replenish Calorie Reserve"
+    resources: "Wild Berries"
+  - id: "N03"
+    label: "Scarecrow Gathering Area"
+    x: 330
+    y: 410
+    type: "danger"
+    explored: false
+    description: "Scarecrows slowly move closer — approaching them costs SP -1"
+    threats: "Moving Scarecrows"
+  - id: "N04"
+    label: "Moving Path 1"
+    x: 510
+    y: 300
+    type: "navigation"
+    explored: false
+    description: "The paths rearrange every hour — requires Spatial Memory (DC 16)"
+  - id: "N05"
+    label: "Horizon Farmhouse (Trap)"
+    x: 670
+    y: 200
+    type: "danger"
+    explored: false
+    description: "Looks like a shelter — entering triggers a trap"
+    threats: "Trap"
+  - id: "N06"
+    label: "Asphalt Road (Exit)"
+    x: 690
+    y: 410
+    type: "exit"
+    explored: false
+    description: "An asphalt road appearing amid the wheat field — leads to Level 11"
+    exit_to: "Level 11 — Boundless City"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N01"
+    to: "N03"
+    type: "dangerous_path"
+    label: "Scarecrows"
+  - from: "N02"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N03"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N05"
+    type: "dangerous_path"
+    label: "Farmhouse"
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: "→ Exit"

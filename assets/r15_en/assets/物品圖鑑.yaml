@@ -1,0 +1,315 @@
+"items":
+  - "id": "BE-01"
+    "name": "Standard Uniform"
+    "category": "I. Basic Equipment (BE)"
+    "price": 10
+    "effect": "Basic protection; ignores minor environmental damage"
+    "notes":
+      "Rarity": "Common"
+  - "id": "BE-02"
+    "name": "High-Power Flashlight"
+    "category": "I. Basic Equipment (BE)"
+    "price": 15
+    "effect": "Illumination in dark areas; DC −5 when facing Smilers"
+    "notes":
+      "Rarity": "Common"
+  - "id": "BE-03"
+    "name": "Basic Rations (3-day supply)"
+    "category": "I. Basic Equipment (BE)"
+    "price": 10
+    "effect": "Sustains mission duration; without rations, DC +5 for each day exceeded"
+    "notes":
+      "Rarity": "Common"
+  - "id": "BE-04"
+    "name": "Almond Water (Standard ×3 units)"
+    "category": "I. Basic Equipment (BE)"
+    "price": 25
+    "effect": "Detox, mental soothing, low-tier entity expulsion. Recommended at least 1 unit per person per mission"
+    "notes":
+      "Rarity": "Common"
+  - "id": "BE-05"
+    "name": "Basic Toolbox"
+    "category": "I. Basic Equipment (BE)"
+    "price": 30
+    "effect": "Simple repairs; can fix 1 Basic/Combat equipment item (DC 50)"
+    "notes":
+      "Rarity": "Common"
+  - "id": "BE-06"
+    "name": "First Aid Kit"
+    "category": "I. Basic Equipment (BE)"
+    "price": 30
+    "effect": "Minor wound → no casualty (consumable, consumed after use)"
+    "notes":
+      "Rarity": "Common"
+  - "id": "BE-07"
+    "name": "Comms Headset"
+    "category": "I. Basic Equipment (BE)"
+    "price": 25
+    "effect": "Maintains squad comms; comms-interruption chance −10%"
+    "notes":
+      "Rarity": "Common"
+  - "id": "CE-01"
+    "name": "Assault Rifle"
+    "category": "II. Combat Equipment (CE)"
+    "price": 80
+    "effect": "Basic firepower; combat mission DC −5"
+    "notes":
+      "Rarity": "Common"
+  - "id": "CE-02"
+    "name": "Tactical Armor"
+    "category": "II. Combat Equipment (CE)"
+    "price": 100
+    "effect": "Casualty rate −5%"
+    "notes":
+      "Rarity": "Common"
+  - "id": "CE-03"
+    "name": "Flashbang (×3)"
+    "category": "II. Combat Equipment (CE)"
+    "price": 45
+    "effect": "Encounter-escape chance +10% (consumable)"
+    "notes":
+      "Rarity": "Common"
+  - "id": "CE-04"
+    "name": "Shotgun"
+    "category": "II. Combat Equipment (CE)"
+    "price": 70
+    "effect": "Close-range encounter advantage, DC −10 (indoor only)"
+    "notes":
+      "Rarity": "Common"
+  - "id": "CE-05"
+    "name": "Stun Baton"
+    "category": "II. Combat Equipment (CE)"
+    "price": 40
+    "effect": "Non-lethal subdual; can expel entities below TL2"
+    "notes":
+      "Rarity": "Common"
+  - "id": "CE-06"
+    "name": "Smoke Grenade (×3)"
+    "category": "II. Combat Equipment (CE)"
+    "price": 35
+    "effect": "Retreat cover; extraction DC −10 (consumable)"
+    "notes":
+      "Rarity": "Common"
+  - "id": "CE-07"
+    "name": "Sniper Rifle"
+    "category": "II. Combat Equipment (CE)"
+    "price": 150
+    "effect": "Long-range fire support; can weaken entities before encounter (DC −8)"
+    "notes":
+      "Rarity": "Rare"
+  - "id": "SE-01"
+    "name": "High-Capacity Almond Water Jug"
+    "category": "III. Survival Equipment (SE)"
+    "price": 60
+    "effect": "6 units of Almond Water. Poison/mental contest +10%"
+    "notes":
+      "Rarity": "Common"
+  - "id": "SE-02"
+    "name": "Radiation Suit"
+    "category": "III. Survival Equipment (SE)"
+    "price": 90
+    "effect": "Environmental damage resistance; radiation/toxic zones DC −10"
+    "notes":
+      "Rarity": "Common"
+  - "id": "SE-03"
+    "name": "Reinforced Tent"
+    "category": "III. Survival Equipment (SE)"
+    "price": 40
+    "effect": "Safe rest point for long missions; stress-recovery effect doubled"
+    "notes":
+      "Rarity": "Common"
+  - "id": "SE-04"
+    "name": "Navigation Beacon"
+    "category": "III. Survival Equipment (SE)"
+    "price": 50
+    "effect": "Reduces chance of getting lost; retreat DC −5"
+    "notes":
+      "Rarity": "Common"
+  - "id": "SE-05"
+    "name": "Portable Water Filter"
+    "category": "III. Survival Equipment (SE)"
+    "price": 35
+    "effect": "Replenishes water source; Almond Water consumption halved"
+    "notes":
+      "Rarity": "Common"
+  - "id": "SE-06"
+    "name": "Thermostatic Sleeping Bag"
+    "category": "III. Survival Equipment (SE)"
+    "price": 30
+    "effect": "Adapts to extreme temperatures; environmental penalty −5"
+    "notes":
+      "Rarity": "Common"
+  - "id": "SE-07"
+    "name": "Climbing Gear Kit"
+    "category": "III. Survival Equipment (SE)"
+    "price": 45
+    "effect": "Terrain traversal; movement-related DC −5"
+    "notes":
+      "Rarity": "Common"
+  - "id": "TE-01"
+    "name": "Micro Recon Drone"
+    "category": "IV. Tech Equipment (TE)"
+    "price": 100
+    "effect": "Intel Bias −1 tier, encounter chance −5% (limited to 1 use per mission)"
+    "notes":
+      "Rarity": "Rare"
+  - "id": "TE-02"
+    "name": "Cross-Level Communicator"
+    "category": "IV. Tech Equipment (TE)"
+    "price": 150
+    "effect": "The Director can order immediate retreat. Retreat casualty rate −10%"
+    "notes":
+      "Rarity": "Rare"
+  - "id": "TE-03"
+    "name": "Thermal Imager"
+    "category": "IV. Tech Equipment (TE)"
+    "price": 80
+    "effect": "Ignores dark environments; DC −10 for Smilers/lights-out missions"
+    "notes":
+      "Rarity": "Common"
+  - "id": "TE-04"
+    "name": "Sonar Detector"
+    "category": "IV. Tech Equipment (TE)"
+    "price": 90
+    "effect": "Sense behind walls; DC −10 for underwater/enclosed-space missions"
+    "notes":
+      "Rarity": "Common"
+  - "id": "TE-05"
+    "name": "Environmental Analyzer"
+    "category": "IV. Tech Equipment (TE)"
+    "price": 120
+    "effect": "Early warning of environmental hazards; encounter trigger rate −10%"
+    "notes":
+      "Rarity": "Rare"
+  - "id": "TE-06"
+    "name": "Electronic Unlocker"
+    "category": "IV. Tech Equipment (TE)"
+    "price": 70
+    "effect": "Cracks electronic locks; DC −10 for specific missions"
+    "notes":
+      "Rarity": "Common"
+  - "id": "TE-07"
+    "name": "Holographic Map Projector"
+    "category": "IV. Tech Equipment (TE)"
+    "price": 200
+    "effect": "All subsequent missions on the same Level DC −5 (permanent)"
+    "notes":
+      "Rarity": "Rare"
+  - "id": "EE-01"
+    "name": "Prototype Teleporter"
+    "category": "V. Experimental Equipment (EE)"
+    "price": 300
+    "effect": "+4 bonus; can escape one encounter"
+    "notes":
+      "Side Effect (d100)": "01–30: Displacement (1 person missing); 31–60: EMP blast (whole team lightly wounded); 61–100: Normal"
+      "Rarity": "Very Rare"
+  - "id": "EE-02"
+    "name": "Almond Water Concentrate Injector"
+    "category": "V. Experimental Equipment (EE)"
+    "price": 180
+    "effect": "+3 bonus; severe wound → minor wound"
+    "notes":
+      "Side Effect (d100)": "01–40: Injector suffers mental breakdown; 41–70: Half effect; 71–100: Normal"
+      "Rarity": "Rare"
+  - "id": "EE-03"
+    "name": "Resonance Destroyer"
+    "category": "V. Experimental Equipment (EE)"
+    "price": 250
+    "effect": "+4 bonus; area attack against entities"
+    "notes":
+      "Side Effect (d100)": "01–50: Overheat shutdown; 51–100: Normal"
+      "Rarity": "Rare"
+  - "id": "EE-04"
+    "name": "Cognitive Enhancement Helmet"
+    "category": "V. Experimental Equipment (EE)"
+    "price": 220
+    "effect": "+3 bonus; immunity to mental attacks"
+    "notes":
+      "Side Effect (d100)": "01–30: Addiction (psychological downgrade + dependency); 31–100: Normal"
+      "Rarity": "Rare"
+  - "id": "EE-05"
+    "name": "Phase Vest"
+    "category": "V. Experimental Equipment (EE)"
+    "price": 280
+    "effect": "+3 bonus; physical damage halved"
+    "notes":
+      "Side Effect (d100)": "01–40: User severely wounded; 41–100: Normal"
+      "Rarity": "Very Rare"
+  - "id": "EE-06"
+    "name": "Dimensional Stabilizer"
+    "category": "V. Experimental Equipment (EE)"
+    "price": 350
+    "effect": "+4 bonus; immunity to spatial anomalies"
+    "notes":
+      "Side Effect (d100)": "01–50: Overheat shutdown; 51–100: Normal"
+      "Rarity": "Very Rare"
+  - "id": "EE-07"
+    "name": "Telepathic Amplifier"
+    "category": "V. Experimental Equipment (EE)"
+    "price": 300
+    "effect": "+3 bonus; foresee encounters"
+    "notes":
+      "Side Effect (d100)": "01–50: Mental backlash (user trauma); 51–100: Normal"
+      "Rarity": "Very Rare"
+  - "id": "RES-01"
+    "name": "Almond Water"
+    "category": "VI. Resource Items (RES)"
+    "price": ""
+    "effect": ""
+    "notes":
+      "Use": "① Nutritional supplement (1 unit sustains 1 day) ② Detox ③ Mental sedation (Stress −1) ④ Expel low-tier entities (2 units) ⑤ First aid (3 units, death → severe wound)"
+      "Acquisition": "Level 1 Outpost +3 per month; randomly found on some Levels"
+      "Rarity": "Common"
+  - "id": "RES-02"
+    "name": "Royal Ration"
+    "category": "VI. Resource Items (RES)"
+    "price": ""
+    "effect": ""
+    "notes":
+      "Use": "High-energy food, essential for long missions. 1 unit sustains 3 days and provides a morale bonus"
+      "Acquisition": "Produced only in specific rooms of Level 5"
+      "Rarity": "Rare"
+  - "id": "RES-03"
+    "name": "Liquid Silence"
+    "category": "VI. Resource Items (RES)"
+    "price": ""
+    "effect": ""
+    "notes":
+      "Use": "For 30 minutes after drinking, Presence −50%, entities find you hard to detect. Side effect: permanent slight decrease in Presence (after 3+ cumulative uses)"
+      "Acquisition": "Hidden corners of a few Levels"
+      "Rarity": "Very Rare"
+  - "id": "SPC-01"
+    "name": "Rift Core Sample"
+    "category": "VII. Special Items (Story-Related) (SPC)"
+    "price": ""
+    "effect": "Unlocks the Dimensional Theory tech tree. Submitting to the R&D Lab grants extra research progress"
+    "notes":
+      "Source": "S3 Abyssal Probe (special operation success)"
+  - "id": "SPC-02"
+    "name": "The Unifier Archive"
+    "category": "VII. Special Items (Story-Related) (SPC)"
+    "price": ""
+    "effect": "Grants 'Knowledge of the Unifier' — all entity encounters DC −10 (permanent); 20% chance of triggering the Unifier's attention when used"
+    "notes":
+      "Source": "S5 The Archive's Secret"
+  - "id": "SPC-03"
+    "name": "Crimson Order Comms Device"
+    "category": "VII. Special Items (Story-Related) (SPC)"
+    "price": ""
+    "effect": "Intel +3; unlocks Crimson Order comms frequency; subsequent missions against the Crimson Order DC −5"
+    "notes":
+      "Source": "S4 Crimson Frontier (captured)"
+  - "id": "SPC-04"
+    "name": "Former Director's Log"
+    "category": "VII. Special Items (Story-Related) (SPC)"
+    "price": ""
+    "effect": "Story clues + roleplay material. May contain hidden intel or guilt-related content"
+    "notes":
+      "Source": "Random event (61–62)"
+  - "id": "SPC-05"
+    "name": "Cherished Keepsake"
+    "category": "VII. Special Items (Story-Related) (SPC)"
+    "price": ""
+    "effect": "Gains a +20 one-time bonus when facing The Hollow. After use, the keepsake shatters — cannot be repaired"
+    "notes":
+      "Source": "Character creation or story acquisition"

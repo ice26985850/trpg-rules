@@ -1,0 +1,42 @@
+# Starship Boarding Assault TRPG
+
+**What kind of world is this?** You are not the officer giving orders on the bridge — you are the boarding trooper fired by an ejection pod onto an enemy ship's hull, cutting through armor with a Plasma Cutter, face-to-face with alien creatures in zero-G corridors. Every enemy vessel is a separate tactical dungeon.
+
+## Setting
+
+In the starship wars of the Terran Stellar Concord (TSC), victory is rarely decided by broadside exchanges — it is decided by whoever can send a team cutting into the enemy's interior. Human destroyers have tiered corridors and a deeply buried Command Core; insectoid bio-ships are built from writhing organs and sphincter-channels; silicon crystal ships regenerate and heal their own walls; energy-being ships have no air at all. You never know whether the next door opens to a corridor or a stomach — until you cut through it.
+
+## What You Play — Core Gameplay
+
+You belong to the mothership as a member of a Starship Assault Boarding Team (SABT). A single mission runs through five phases: Breach → Enter → Advance → Objective → Extract. The most thrilling part is the desperate sprint once the enemy's self-destruct countdown starts: you must race back to the airlock before the hull detonates. Shoot aliens, hack enemy systems, seize the gravity field to float your enemies — one person can do a lot, but survival depends on teamwork.
+
+## System Highlights
+
+- **Gravity as Tactics:** Zero-G, High-G, and Variable-G are not backdrop. You can use an Engineering (ENG) check to take over the enemy ship's gravity system, pinning the garrison to the floor, or making the ceiling instantly become the ground.
+- **Vessel-as-Dungeon:** The structural logic and hazards of five racial vessel types are completely different; every boarding is a brand-new tactical map.
+- **Fleet Quota (FQ):** High-tier gear is claimed with Quota Points accumulated from mission performance — the scarcity makes every deployment's loadout choice feel like a gamble.
+
+## For What Kind of Players
+
+Players who enjoy close-quarters breaching, team coordination, and time-pressure will love this. Combat fans relish the crossfire and positioning; strategists study gravity control and routes; story fans can watch a squad grow from rookies to legends across five connected scenarios. Requires a little TRPG foundation — d20 is quick to learn, no veteran needed.
+
+## Game Style Tags
+
+- Combat Weight: Important
+- Strategic Depth: High
+- Story-Driven: Story-Supporting
+- Resource Management: Moderate
+- Character Customization: Moderate
+- Character Creation Complexity: Moderate
+- Rules Density: Medium
+- GM Required: Optional
+
+## Estimated Play Time
+
+- Single scenario: 3–5 hours
+- Full campaign (five connected scenarios): 25–40 hours
+
+## Basic Info
+
+- Players: 1–6 (default supports solo adventure)
+- Core Dice: d20 Roll System

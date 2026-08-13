@@ -1,0 +1,48 @@
+# Rift Walker TRPG — Player Introduction
+
+## Reference Works Statement
+
+This work features an original worldview, but its aesthetics and atmosphere are inspired by the following concepts and works: the labyrinthine quality of the online "Liminal Space" and "The Backrooms"; the emptiness of Kenopsia from John Koenig's The Dictionary of Obscure Sorrows; the negative-space philosophy of the Japanese aesthetic "Ma (間)"; the metaphor of the double city in Calvino's Invisible Cities; and the isolated terror of the ice fields in The Terror. These are sources of inspiration only — this work is not an officially licensed adaptation of any of them.
+
+## What Kind of World Is This?
+
+You exist in "the seam between space and space." Thresholds, corridors, the back rooms of late-night convenience stores where no one is around — most people pass through without noticing, but you have the gift of stopping and stepping inside.
+
+## Worldview Overview
+
+The story takes place in the Surface world of a contemporary city, and in the coexisting "Gap Layer" — an interstitial space built from forgotten things, moments of hesitation, and unspoken words. There are no monsters rampaging here, yet there are residents who linger due to obsession: "Threshold Lingerers," "Lost Item Collectors," "the Mirror," and others. Staying too long infects you with "Gap Sickness," gradually assimilating you into this world. You are not here to conquer it — you are here to find a way home for the people and things trapped in the seam.
+
+## What Do You Play? Core Gameplay
+
+You are a "Gap Walker" — a born perceiver of seams. Your daily life is accepting Commissions: helping families recover keepsakes left behind by the deceased in the Gap, guiding lost Residuals across the Threshold, Negotiating with ancient beings, Sealing cracks on the verge of collapse. The Core Loop is "Explore the Gap → Search for Lost Items → Negotiate with the residents → Return and earn a Mark."
+
+## System Highlights
+
+- **Gap Endurance (GE)**: Your energy bar for acting within the seam. Every crossing is a small tear; hitting zero forces Ejection or even infection — it compels you to weigh "whether to go deeper."
+- **Lost Items and Return Marks**: Recovering items is not just a reward, but redemption. Each one you return grants you a permanent "Mark," unlocking deeper abilities and stringing together your entire growth Arc.
+- **Seven-Step Character Creation and Anchoring Item**: From "how you first fell into the Gap as a child" to "what important thing you lost," character background is directly transformed into game mechanics and exclusive advantages.
+
+## For What Kind of Player
+
+Players who enjoy atmospheric immersion, emotional storytelling, puzzle-solving, and Negotiation over combat will dive right in. Little TRPG experience is needed — d20 checks are intuitive and easy to grasp, but resource management and choices reward the attentive.
+
+## Game Style Tags
+
+- Combat weight: Supportive
+- Strategic depth: Moderate strategy
+- Story-driven: Story-led
+- Resource management: Moderate management
+- Character customization: Moderate customization
+- Character creation complexity: Moderate
+- Rule density: Moderate rules
+- GM requirement: GM needed
+
+## Estimated Play Time
+
+- Single scenario: about 3-6 hours
+- Full Campaign (10 connected scenarios, Return Mark growing from 0 to 10+): about 40-80 hours
+
+## Basic Information
+
+- Player count: 1 GM + 1-4 players (Solo Mode is 1 player + 1 GM)
+- Core die: d20 (d20 + Attribute Value vs Difficulty Class (DC))

@@ -1,0 +1,26 @@
+name: The Longevity Contract of the Public Estate
+description: Recovers S3 foreshadowing ④ and ③. Yin Constable Bing comes to the door; an entire floor of residents in a Kwun Tong public housing estate has had their Yang Lifespan "carved away" by the Longevity Contract yet still survive; Nine Nether Hall borrows lifespan by siphoning same-floor tenants' Yang Lifespan, a resister becomes a Fierce Ghost gatekeeper, and the register points to the "Life-Restoring Rite · Opposite-Shore Main Altar."
+difficulty: A
+level_range: [7, 8]
+case_type: Fierce Ghost + Resentful Ghost swarm + Living Haunted House
+map_ref: ""
+npcs:
+  - Ox-Head Bing (Yin Constable, accountability enforcer)
+  - Sister Bing (same-floor estate tenant)
+  - Brother Fat (wealthy household, Life-Borrowing contract mastermind)
+  - Cheng Guiyao (Guild Council Chair, coordinator)
+key_enemies:
+  - Fierce Ghost (gatekeeper, Challenge Rating (CR) 5, warding black aura)
+  - Resentful Ghost swarm (Challenge Rating (CR) 4)
+  - Wandering Soul swarm (Challenge Rating (CR) 3)
+  - Longevity Contract Altar (environmental encounter)
+rewards:
+  exp: 700
+  coin: "700-1000"
+  items:
+    - Soul-Gathering Gourd (capture Fierce Ghost)
+    - Torn Life-Borrowing Register page (leads to S7/S8)
+    - Major "Assisted Yin Constable" reputation
+hooks:
+  - Register's last page "Life-Restoring Rite · Opposite-Shore Main Altar" — leads to S7/S8.
+  - Brother Fat names his superior "the Master's Agent."

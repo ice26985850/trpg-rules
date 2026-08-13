@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 640" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g5" width="25" height="25"><rect width="25" height="25" fill="none"/><rect x="25" y="0" width="1" height="25" fill="#ddd8d0"/><rect x="0" y="25" width="25" height="1" fill="#ddd8d0"/></pattern>
+<rect width="820" height="640" fill="url(#g5)"/>
+<!-- Tower Exterior (surface) -->
+<rect x="300" y="30" width="180" height="80" fill="#ccc8c0" stroke="#333" stroke-width="2"/>
+<text x="390" y="70" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">Tower of Silence (Surface Entrance)</text>
+<!-- Descent stairs/elevator shaft -->
+<rect x="380" y="110" width="20" height="120" fill="#666" stroke="#333" stroke-width="2"/>
+<text x="420" y="170" text-anchor="start" font-size="9pt" fill="#333">Descent Passage</text>
+<text x="420" y="185" text-anchor="start" font-size="9pt" fill="#333">(Unused for 200 years)</text>
+<!-- Level 1: Abandoned Prison -->
+<rect x="40" y="260" width="700" height="160" fill="#b5ada0" stroke="#444" stroke-width="1.5"/>
+<text x="390" y="290" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">Lower Abandoned Prison Zone</text>
+<!-- Cell blocks -->
+<rect x="60" y="310" width="140" height="80" fill="#9c9588" stroke="#555" stroke-width="1"/>
+<text x="130" y="350" text-anchor="middle" font-size="9pt" fill="#111">Cell Block A</text>
+<text x="130" y="365" text-anchor="middle" font-size="8pt" fill="#555">Mutant Lurkers ×3</text>
+<rect x="220" y="310" width="160" height="80" fill="#a89e8e" stroke="#555" stroke-width="1"/>
+<text x="300" y="345" text-anchor="middle" font-size="9pt" fill="#111">Trapped Penitents Zone</text>
+<text x="300" y="362" text-anchor="middle" font-size="8pt" fill="#555">Elder Eileen (the Forgotten)</text>
+<text x="300" y="375" text-anchor="middle" font-size="8pt" fill="#555">Investigation Hard (M) — find her</text>
+<rect x="400" y="310" width="140" height="80" fill="#a89e8e" stroke="#555" stroke-width="1"/>
+<text x="470" y="350" text-anchor="middle" font-size="9pt" fill="#111">Marcus's Domain</text>
+<text x="470" y="367" text-anchor="middle" font-size="8pt" fill="#555">Mutant Tyrant (CR2+)</text>
+<text x="470" y="379" text-anchor="middle" font-size="8pt" fill="#555">Oratory Limit (TN−40) to awaken humanity</text>
+<rect x="560" y="310" width="150" height="80" fill="#9c9588" stroke="#555" stroke-width="1"/>
+<text x="635" y="350" text-anchor="middle" font-size="9pt" fill="#111">Warp Rift</text>
+<text x="635" y="367" text-anchor="middle" font-size="8pt" fill="#555">Faith Limit (TN−40) to seal</text>
+<text x="635" y="379" text-anchor="middle" font-size="8pt" fill="#c00">Success = whole party Corruption −5</text>
+<!-- Seal symbol on rift -->
+<circle cx="635" cy="338" r="8" fill="none" stroke="#a00" stroke-width="2"/>
+<text x="635" y="341" text-anchor="middle" font-size="10pt" fill="#a00">?</text>
+<!-- Deep descent to Black Pier -->
+<rect x="380" y="420" width="20" height="80" fill="#555" stroke="#333" stroke-width="2"/>
+<text x="420" y="460" text-anchor="start" font-size="9pt" fill="#333">Deeper</text>
+<!-- Level 2: Black Pier -->
+<rect x="60" y="510" width="660" height="90" fill="#8b7e6b" stroke="#444" stroke-width="2"/>
+<text x="390" y="540" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">Black Dock (Final Scene)</text>
+<text x="390" y="560" text-anchor="middle" font-size="10pt" fill="#333">Victor Black awaits the "result"</text>
+<!-- Options branches -->
+<rect x="60" y="580" width="150" height="15" fill="#6aa06a" stroke="#444" stroke-width="0.5"/>
+<text x="135" y="592" text-anchor="middle" font-size="8pt" fill="#111">Refuse Victor</text>
+<rect x="220" y="580" width="150" height="15" fill="#c00" stroke="#444" stroke-width="0.5"/>
+<text x="295" y="592" text-anchor="middle" font-size="8pt" fill="#fff">Accept the Gift</text>
+<rect x="380" y="580" width="150" height="15" fill="#d4a040" stroke="#444" stroke-width="0.5"/>
+<text x="455" y="592" text-anchor="middle" font-size="8pt" fill="#111">Deceive Victor</text>
+<!-- Zero supply warning -->
+<rect x="550" y="580" width="160" height="15" fill="#aaa" stroke="#444" stroke-width="0.5"/>
+<text x="630" y="592" text-anchor="middle" font-size="8pt" fill="#111">Zero Supplies</text>
+<!-- Compass -->
+<g transform="translate(740,570)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">N</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">S</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">E</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">W</text>
+</g>
+<!-- Scale -->
+<line x1="60" y1="620" x2="200" y2="620" stroke="#333" stroke-width="2"/>
+<text x="130" y="635" text-anchor="middle" font-size="10pt">25 meters</text>
+</svg>

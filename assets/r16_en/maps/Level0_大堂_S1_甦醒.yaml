@@ -1,0 +1,167 @@
+name: "Level 0 — Lobby"
+description: "The default starting Level of Backrooms Walker TRPG — an infinitely extending maze of yellow office cubicles"
+scenario_ref: "S1_甦醒"
+usage: "The character's initial position after noclipping in, and the main setting of Scenario S1"
+regions:
+  - name: "Starting Area"
+    color: "#E8F5E9"
+    nodes: ["N01", "N02", "N03", "N04"]
+    description: "The area where the character wakes up — relatively safe, with a starter gift (Almond Water)"
+  - name: "Marked Corridor"
+    color: "#FFF3E0"
+    nodes: ["N05", "N06", "N07", "N08"]
+    description: "Chalk arrows and wallpaper marks left by those before — following them leads to the exit"
+  - name: "Dark Zone"
+    color: "#ECEFF1"
+    nodes: ["N09", "N10", "N11"]
+    description: "An area where the fluorescent lights are out — Hounds and Smilers may appear"
+  - name: "Exit Area"
+    color: "#E3F2FD"
+    nodes: ["N12"]
+    description: "The location of the Fire Door leading to Level 1"
+nodes:
+  - id: "N01"
+    label: "Starting Cubicle"
+    x: 150
+    y: 250
+    type: "start"
+    explored: true
+    description: "Where the character opens their eyes — a standard office cubicle, with messages from previous visitors on the wall"
+    resources: "Scissors (in drawer)"
+  - id: "N02"
+    label: "Almond Water Corner"
+    x: 300
+    y: 200
+    type: "resource"
+    explored: false
+    description: "A sealed bottle of Almond Water sits in a damp corner of the wall (starter gift mechanic)"
+    resources: "Almond Water ×1"
+  - id: "N03"
+    label: "Powered-On Computer"
+    x: 450
+    y: 250
+    type: "discovery"
+    explored: false
+    description: "A computer with no power connection is still running — the screen shows Lao Zhao's message"
+    resources: "Information (previous visitor's message)"
+  - id: "N04"
+    label: "Cubicle Cluster"
+    x: 250
+    y: 350
+    type: "normal"
+    explored: false
+    description: "Several empty cubicles — desks and chairs overturned, documents scattered across the floor"
+  - id: "N05"
+    label: "Marked Start"
+    x: 400
+    y: 400
+    type: "navigation"
+    explored: false
+    description: "An obvious chalk arrow on the floor points toward the depths of the corridor"
+  - id: "N06"
+    label: "Long Corridor"
+    x: 550
+    y: 350
+    type: "normal"
+    explored: false
+    description: "A relatively spacious corridor with brighter fluorescent lights — relatively safe"
+  - id: "N07"
+    label: "Previous Visitor's Shelter"
+    x: 650
+    y: 250
+    type: "rest_point"
+    explored: false
+    description: "A makeshift shelter built from overturned office desks — a brief rest is possible here"
+    resources: "Possibly a bottle of Almond Water"
+  - id: "N08"
+    label: "Fork in the Road"
+    x: 700
+    y: 400
+    type: "choice"
+    explored: false
+    description: "The junction of three corridors — the left leads to the Dark Zone, the right continues brightly lit"
+  - id: "N09"
+    label: "Dark Corridor Entrance"
+    x: 800
+    y: 300
+    type: "danger"
+    explored: false
+    description: "The fluorescent lights have gone out — complete darkness ahead. The sound of claws scraping can be heard."
+    threats: "Hounds (possible encounter)"
+  - id: "N10"
+    label: "Dark Depths"
+    x: 900
+    y: 200
+    type: "danger"
+    explored: false
+    description: "The depths of a completely dark corridor — Smilers may lurk here"
+    threats: "Smilers (in the dark)"
+  - id: "N11"
+    label: "Dead End"
+    x: 850
+    y: 450
+    type: "dead_end"
+    explored: false
+    description: "The end of the corridor — a wall. But the texture of the wall is wrong — it may be an unstable exit point (noclip-out)."
+    special: "Forced noclip-out point (Sanity DC 18)"
+  - id: "N12"
+    label: "Fire Door (Exit)"
+    x: 600
+    y: 500
+    type: "exit"
+    explored: false
+    description: "An unmarked Fire Door — slightly lighter in color than the surrounding wallpaper. Leads to Level 1."
+    exit_to: "Level 1 — Warehouse"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: "Short Corridor"
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "Cubicle Passage"
+  - from: "N01"
+    to: "N04"
+    type: "corridor"
+    label: "Side Passage"
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: "Marked Corridor"
+  - from: "N03"
+    to: "N05"
+    type: "corridor"
+    label: "Corner"
+  - from: "N05"
+    to: "N06"
+    type: "corridor"
+    label: "Bright Corridor"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "Side Passage"
+  - from: "N06"
+    to: "N08"
+    type: "corridor"
+    label: "Corridor Extension"
+  - from: "N08"
+    to: "N09"
+    type: "dangerous_path"
+    label: "Dark Corridor (Left)"
+  - from: "N08"
+    to: "N12"
+    type: "corridor"
+    label: "Bright Corridor (Right → Exit)"
+  - from: "N09"
+    to: "N10"
+    type: "dangerous_path"
+    label: "Dark Depths"
+  - from: "N08"
+    to: "N11"
+    type: "corridor"
+    label: "Toward Dead End"
+  - from: "N07"
+    to: "N08"
+    type: "corridor"
+    label: "Return to Main Path"

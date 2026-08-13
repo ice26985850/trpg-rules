@@ -1,0 +1,358 @@
+# Hunter × Hunter TRPG — World Map Overview (structured map data)
+# Each location contains its area, connection relationships, and the corresponding SVG schematic.
+
+rule: Hunter × Hunter TRPG
+maps:
+- key: world_overview
+  name: World Map Overview
+  type: World Structure
+  region: Overall
+  summary: The relative positions of the Surface World (human civilization sphere) and the Deep Layer — Dark Continent. The Surface is governed by the V5/V6 international system, while the Dark Continent is sealed by the Silence Treaty, accessible only through 'The Gate'. Greed Island is an independent game space.
+  areas:
+  - name: Saba City
+    desc: Hunter Exam assembly point, a modern city.
+  - name: Heavens Arena
+    desc: A fighting tower over 200+ floors tall.
+  - name: Yorknew City
+    desc: A city active with underground auctions and the Mafia.
+  - name: Kukuroo Mountain
+    desc: Mansion (assassin) of the Zoldyck Family.
+  - name: Meteor City
+    desc: An unrecognized waste disposal site.
+  - name: Kakin Kingdom
+    desc: A rising power that left the V5, driving the voyage.
+  - name: Hunter Association HQ
+    desc: The hub of the Hunter Association, issuing Hunter Licenses.
+  - name: The Gate (Dark Continent Entrance)
+    desc: The only passage to the Dark Continent.
+  - name: Crystallized Wasteland
+    desc: An endless crystalline plain beyond the Gate, causes crystallization.
+  - name: Tear Sea
+    desc: A sea where inner emotions are made physical.
+  - name: Five Calamities
+    desc: The ultimate threat creatures of the Dark Continent.
+  - name: Greed Island
+    desc: A physical game space built by Nen abilities.
+  connections:
+  - - Saba City
+    - Heavens Arena
+  - - Heavens Arena
+    - Yorknew City
+  - - Kukuroo Mountain
+    - Meteor City
+  - - Kakin Kingdom
+    - Hunter Association HQ
+  - - Yorknew City
+    - Hunter Association HQ
+  - - Kakin Kingdom
+    - The Gate (Dark Continent Entrance)
+  - - The Gate (Dark Continent Entrance)
+    - Crystallized Wasteland
+  - - Crystallized Wasteland
+    - Tear Sea
+  - - Tear Sea
+    - Five Calamities
+  - - Yorknew City
+    - Greed Island
+  svg: world_overview.svg
+- key: hunter_exam
+  name: Hunter Exam Venue
+  type: Trial Complex
+  region: Surface World · Near Saba City
+  summary: Route of the 288th Hunter Exam — from assembly at Saba City, through Deadly Swamp, Mirror Maze, and Combat Elimination, to the final interview hosted by Cheadle. Five stages filter candidates layer by layer; survival rate is under one percent.
+  areas:
+  - name: Saba City Central Plaza
+    desc: First stage — find all 5 hidden registration points within 2 hours (clock tower / sewer / café / warehouse / fountain).
+    hazard: Candidates deceive each other (Tonpa provides false intel).
+  - name: Deadly Swamp
+    desc: Second stage — cross corrosive mud; water level rises 1m every 6 hours.
+    hazard: Crocodile beast CR1/4, poison frog swarm, man-eating vines; mud deals 1d4 acid damage per round.
+  - name: Mirror Maze
+    desc: Third stage — 7 mirror rooms (A-G), must cooperate with teammates to clear.
+    hazard: Mirror doppelgänger fight (CR = self), must persuade or surpass yourself.
+  - name: Combat Elimination Arena
+    desc: Fourth stage — 1v1 elimination, 4 escalating rounds (CR 1/2 → 2).
+    encounter: "'Shadow Step' Alvin (CR1-2), 'Oath Fist' Carlo (CR2)."
+  - name: Final Interview Hall
+    desc: Fifth stage — answer 'truly difficult questions' before Cheadle's long table.
+    loot: Hunter License, 3,000J, same-term Hunter network.
+  connections:
+  - - Saba City Central Plaza
+    - Deadly Swamp
+  - - Deadly Swamp
+    - Mirror Maze
+  - - Mirror Maze
+    - Combat Elimination Arena
+  - - Combat Elimination Arena
+    - Final Interview Hall
+  svg: hunter_exam.svg
+- key: heavens_arena
+  name: Heavens Arena
+  type: Fighting Tower
+  region: Surface World
+  summary: A towering fighting tower with 200+ floors total. Five tiers by floor; the higher, the greater the prize and opponents, with Nen restrictions gradually lifted. The top floor hosts first-rate masters' duels.
+  areas:
+  - name: 10-50 Floors
+    desc: CR 1/4~1/2, prize 500-2,000J, Nen abilities forbidden.
+    encounter: Rookie fighters.
+  - name: 50-100 Floors
+    desc: CR 1~2, prize 3,000-10,000J, Nen abilities forbidden.
+    encounter: Mid-tier fighters.
+  - name: 100-150 Floors
+    desc: CR 3~5, prize 15,000-50,000J, Nen usable.
+    encounter: Nen users.
+  - name: 150-200 Floors
+    desc: CR 6~8, prize 60,000-200,000J, Nen required.
+    encounter: Floor Master candidates.
+  - name: 200+ Floors
+    desc: CR 9+, prize 250,000J+, first-rate masters' duels.
+    encounter: Floor Masters (Heavens Arena top floor).
+  connections:
+  - - 10-50 Floors
+    - 50-100 Floors
+  - - 50-100 Floors
+    - 100-150 Floors
+  - - 100-150 Floors
+    - 150-200 Floors
+  - - 150-200 Floors
+    - 200+ Floors
+  svg: heavens_arena.svg
+- key: yorknew
+  name: Yorknew City
+  type: City · Auction Venue
+  region: Surface World
+  summary: A city active with underground trade and the Mafia. The annual auction is the core event; the venue is divided into five zones, and the Troupe's attack triggers a five-way faction brawl.
+  areas:
+  - name: Yorknew City District
+    desc: City outskirts for intel gathering and commission negotiation.
+    hazard: Mafia checks, pickpockets.
+  - name: Auction Main Hall
+    desc: Spacious, many cover points; the Troupe's primary assault zone.
+    encounter: Troupe combatant A (CR6).
+  - name: VIP Booth
+    desc: Narrow single exit; Mafia escorts VIP evacuation.
+    loot: High-value auction items.
+  - name: Backstage Corridor
+    desc: Long and winding with many corners; guards and Troupe in combat.
+    hazard: Sniping, traps.
+  - name: Vault
+    desc: Heavy iron door (break DC25), where Heart of Darkness is stored.
+    loot: Heart of Darkness (legendary).
+  - name: Underground Parking
+    desc: Open, vehicles as cover; retreat routes of all sides converge.
+    encounter: Troupe support (CR4).
+  connections:
+  - - Yorknew City District
+    - Auction Main Hall
+  - - Auction Main Hall
+    - VIP Booth
+  - - Auction Main Hall
+    - Backstage Corridor
+  - - Auction Main Hall
+    - Vault
+  - - Backstage Corridor
+    - Underground Parking
+  - - Vault
+    - Underground Parking
+  svg: yorknew.svg
+- key: kukuroo_meteor
+  name: Kukuroo Mountain & Meteor City
+  type: Assassin Mansion · Junkyard
+  region: Surface World
+  summary: The mansion of the Zoldyck Family (professional assassins) sits on Kukuroo Mountain with extremely strict access; at its foot connects Meteor City, abandoned by the world, where resource recycling and the black market operate.
+  areas:
+  - name: Assassin's Gate
+    desc: Entrance to Kukuroo Mountain; the testing gate weighs several tons.
+    hazard: If forced, the gate crushes intruders.
+  - name: Testing Gate
+    desc: Mechanism gate the family uses to screen visitors.
+    encounter: Butler (e.g., Kikyo) tests the visitor.
+  - name: Zoldyck Mansion
+    desc: Family main house and training facilities.
+    loot: Family missions, Nen ability inheritance.
+  - name: Meteor City Outer Ring
+    desc: Periphery of the waste accumulation site.
+    hazard: Gang strongholds, toxic gas.
+  - name: Meteor City Black Market
+    desc: Underground auctions and modified-weapon trade.
+    loot: Rare materials, modified Nen equipment.
+  - name: Gang Territory
+    desc: A faction-fragmented zone within the city.
+    encounter: Meteor City-born warriors (e.g., related to Kurapika's hometown).
+  connections:
+  - - Assassin's Gate
+    - Testing Gate
+  - - Testing Gate
+    - Zoldyck Mansion
+  - - Assassin's Gate
+    - Meteor City Outer Ring
+  - - Meteor City Outer Ring
+    - Meteor City Black Market
+  - - Meteor City Black Market
+    - Gang Territory
+  svg: kukuroo_meteor.svg
+- key: chimera_ant
+  name: Chimera Ant Territory
+  type: Ecosystem Nest
+  region: Surface World · Near NGL
+  summary: The hierarchical nest society the Chimera Ants built in NGL (Neo-Green Life Sphere). The Queen lays eggs, Squadron Leaders command the soldiers, evolving rapidly by using humans as nutrients.
+  areas:
+  - name: Nest Core (Queen)
+    desc: Where the Queen lays eggs, most heavily defended.
+    encounter: Chimera Ant King (if born, CR11+).
+  - name: Squadron Leader District
+    desc: Station of elite commanders directly under the Queen.
+    encounter: Squadron Leader (CR 6-10, intelligent with Nen).
+  - name: Soldier Perimeter
+    desc: Edges of human settlements for patrol and hunting.
+    encounter: Soldiers (CR 1-5).
+  - name: Human Settlement (Prey)
+    desc: Villages being preyed upon, resistance organization active.
+    hazard: Regularly hunted.
+  connections:
+  - - Nest Core (Queen)
+    - Squadron Leader District
+  - - Squadron Leader District
+    - Soldier Perimeter
+  - - Soldier Perimeter
+    - Human Settlement (Prey)
+  svg: chimera_ant.svg
+- key: dark_continent
+  name: Dark Continent
+  type: Unknown Continent
+  region: Deep Layer
+  summary: A hyper-ancient continent beyond human cognition, full of unknown ecology and the Five Calamities. Must enter through 'The Gate'; internal regions have anomalous rules such as crystallization and emotion-made-physical.
+  areas:
+  - name: Lake Mobius
+    desc: Voyage starting point; anomalies lurk beneath the calm surface.
+    hazard: Spatial distortion, loss of direction.
+  - name: The Gate
+    desc: Entry trial; only those who pass may enter beyond the Gate.
+    encounter: Gatekeeper's trial.
+  - name: Crystallized Wasteland · Hill of Memory Crystals
+    desc: Silver crystal mountain sealing memories.
+    loot: Memory crystal shards; guardian beast CR10.
+  - name: Crystallized Wasteland · Ancient Civilization Ruins
+    desc: Pyramid of unknown style, eternal blue light at the top.
+    loot: Eternal crystal; autonomous guards ×4, central core CR11.
+  - name: Crystallized Wasteland · Spring of Reverse Crystallization
+    desc: Un-crystallized liquid pool, heals crystallization.
+    loot: Reverse crystal flower; guardian crystal dragon CR13.
+  - name: Tear Sea
+    desc: A sea reflecting the inner self, emotions made physical.
+    encounter: Ancient Tear Sea guardian CR12; Emotion Library.
+  - name: Five Calamities
+    desc: Pap (Plant Weapon) / Zobae (Immortality Disease) / Brion (Weapon) / Hellbell (Twin-Tail Serpent) / Ai (Gas Lifeform).
+    encounter: Calamity-class existence, extremely high CR.
+  connections:
+  - - Lake Mobius
+    - The Gate
+  - - The Gate
+    - Crystallized Wasteland · Hill of Memory Crystals
+  - - The Gate
+    - Crystallized Wasteland · Ancient Civilization Ruins
+  - - The Gate
+    - Crystallized Wasteland · Spring of Reverse Crystallization
+  - - Crystallized Wasteland · Spring of Reverse Crystallization
+    - Tear Sea
+  - - Tear Sea
+    - Five Calamities
+  svg: dark_continent.svg
+- key: kakin_fleet
+  name: Kakin Kingdom & Voyage Fleet
+  type: Kingdom · Expedition Fleet
+  region: Surface → Deep Layer
+  summary: The Kakin Kingdom, having left the V5, devotes the whole nation to drive the Dark Continent voyage. The throne succession (multiple princes) and fleet formation are the core conflicts; the flagship leads destroyers in escort.
+  areas:
+  - name: Kakin Palace
+    desc: Center of power of the king and princes.
+    encounter: Assassination and alliance among princes.
+  - name: Prince's Palace
+    desc: Each prince has their own palace and guardians.
+    hazard: Throne succession war.
+  - name: Port
+    desc: Fleet assembly and supply point.
+    loot: Voyage supplies, Nen equipment.
+  - name: Voyage Flagship
+    desc: Main expedition vessel, carrying V5 special forces.
+    encounter: V5 flagship (CR16-class warship).
+  - name: Destroyer Escort Group
+    desc: Escort fleet accompanying the flagship.
+    encounter: V5 destroyer (CR10).
+  - name: Heading to Dark Continent
+    desc: The fleet's target coordinates, unknown waters.
+    hazard: Five Calamities precursors.
+  connections:
+  - - Kakin Palace
+    - Prince's Palace
+  - - Kakin Palace
+    - Port
+  - - Port
+    - Voyage Flagship
+  - - Voyage Flagship
+    - Destroyer Escort Group
+  - - Voyage Flagship
+    - Heading to Dark Continent
+  svg: kakin_fleet.svg
+- key: greed_island
+  name: Greed Island
+  type: Nen Ability Game Space
+  region: Independent Space
+  summary: A physical game jointly built by Nen users; only those who win the 'one in ten thousand' qualification may enter. The goal is to collect 100 specified cards and trigger departure conditions.
+  areas:
+  - name: Dolre Town (Starting)
+    desc: Starting town where players log in and rest.
+    loot: Basic equipment, mission commissions.
+  - name: Southern Territory (25%)
+    desc: High-difficulty combat and rare-card drop zone.
+    encounter: Game guardian, BIG and other strong foes.
+  - name: Specified Card Collection
+    desc: 100 specified cards scattered across the island.
+    loot: Specified cards (incl. legendary 'One-Turn Kill').
+  - name: Crafting / Training Hall
+    desc: Card synthesis and ability training facility.
+    loot: Self-made cards, Nen ability refinement.
+  - name: Departure Conditions
+    desc: Departure mechanism triggered after collecting specified cards.
+    encounter: Final challenge (GM's discretion).
+  connections:
+  - - Dolre Town (Starting)
+    - Southern Territory (25%)
+  - - Southern Territory (25%)
+    - Specified Card Collection
+  - - Specified Card Collection
+    - Crafting / Training Hall
+  - - Specified Card Collection
+    - Departure Conditions
+  svg: greed_island.svg
+- key: first_civilization
+  name: First Civilization Ruins
+  type: Hyper-Ancient Ruins
+  region: Deep Layer · Dark Continent
+  summary: Hyper-ancient civilization ruins 30,000 years older than humanity, hiding all-knowledge crystals and autonomous guards. Connected to the Crystallized Wasteland and the Emotion Library of the Tear Sea; the truth of 'why the Gate is here'.
+  areas:
+  - name: Ruins Entrance
+    desc: Collapsed outer edge of the institute, mechanisms everywhere.
+    hazard: Ancient traps (high investigation DC).
+  - name: Audrich Institute
+    desc: Last stronghold of the fallen researchers.
+    encounter: Audrich (fallen researcher, CR at GM's discretion).
+  - name: Glass-Tank Specimens
+    desc: Experimental life sealed in liquid.
+    loot: Unknown creature samples, forbidden knowledge.
+  - name: Pyramid Core
+    desc: Central energy tower of the ruins, eternal blue light.
+    encounter: Autonomous guards ×4, central core CR11.
+  - name: Emotion Library
+    desc: A building preserving emotion records deep in the Tear Sea.
+    loot: Emotion crystals ×3, ancient star chart.
+  connections:
+  - - Ruins Entrance
+    - Audrich Institute
+  - - Audrich Institute
+    - Glass-Tank Specimens
+  - - Audrich Institute
+    - Pyramid Core
+  - - Pyramid Core
+    - Emotion Library
+  svg: first_civilization.svg

@@ -1,0 +1,28 @@
+source_md: sp05_守織者的迴響.md
+title: Echoes of the Weaver
+type: solo
+quality: ★★★★★ Legendary-grade
+players: 1 mage (required) + Companion (required)
+sessions: 5–8 (can serve as the campaign finale)
+core_output: Multiple Legendary Shards, completion of the ultimate spell, world-level impact, a conversation with the Void God
+main_threat: The Void Rift, the Void God's lingering consciousness, the Watcher's ultimate trial, Pure Fire's intervention
+prerequisite: Academic Reputation ≥ 60; possess at least 2 Legendary Shards; complete the theoretical preparation of your research goal; complete at least three of Scenarios One through Four; having a Companion with Loyalty ≥ 60 is strongly recommended
+summary: Enough Legendary Shards have gathered in one place. Enough powerful spells have been created. The Starweave itself is beginning to destabilize.
+acts:
+- name: Act One — The Eve of Convergence
+  scenes:
+  - Scene 1-1 — Muster Your Strength
+  - Scene 1-2 — Assembly of Key Companions
+- name: Act Two — Creation of the Ultimate Spell
+  scenes:
+  - Scene 2-1 — Collect the Last Legendary Shards
+  - Scene 2-2 — Create the Ultimate Spell
+- name: Act Three — The Final Choice
+  scenes:
+  - Scene 3-1 — Four Choices
+  - Scene 3-2 — The Companion's Ultimate Choice
+  - Scene 3-3 — The Ultimate Casting
+npcs: []
+research_checks:
+- attribute: Will
+  dc: 22

@@ -1,0 +1,303 @@
+source_md: 碎片圖鑑.md
+sections:
+- section: Elements
+  subsection: Basic Elements
+  entries:
+  - ID: fire
+    Name: Flame
+    Base Damage: 1d6 fire
+    Innate Effect: On hit, target makes a DC 10 Dexterity save or catches fire (1d4 per round; can be extinguished with an action)
+    Rare Upgrade: Damage die → d8; fire damage becomes 1d6
+    Legendary Upgrade: Ignores immunity to fire (treated as resistance); critical range 19–20
+    Research DC (Common): '10'
+    Research DC (Legendary): '22'
+  - ID: water
+    Name: Water
+    Base Damage: 1d4 bludgeoning
+    Innate Effect: Target becomes wet (Disadvantage on Lightning saves, lasts 1 round)
+    Rare Upgrade: Can extinguish non-magical flames within 20 ft
+    Legendary Upgrade: Creates a flood zone of radius 10 ft for 1 minute — movement speed halved
+    Research DC (Common): '10'
+    Research DC (Legendary): '22'
+  - ID: storm
+    Name: Storm
+    Base Damage: 1d6 slashing
+    Innate Effect: Pushes target back 10 ft (Large or smaller creatures)
+    Rare Upgrade: Push distance doubles to 20 ft; affects Gargantuan creatures
+    Legendary Upgrade: Creates a whirlwind zone of radius 20 ft for 1 minute — difficult terrain + 1d6 slashing per round
+    Research DC (Common): '10'
+    Research DC (Legendary): '22'
+  - ID: earth
+    Name: Earth
+    Base Damage: 1d6 bludgeoning
+    Innate Effect: The 5-ft area around the target becomes difficult terrain
+    Rare Upgrade: Target makes a Strength save or is knocked prone
+    Legendary Upgrade: Creates a stone wall (AC 15, HP 30) for 1 minute
+    Research DC (Common): '10'
+    Research DC (Legendary): '22'
+  - ID: wind
+    Name: Wind
+    Base Damage: 1d6 slashing
+    Innate Effect: Applies a wind effect to the target
+    Rare Upgrade: '—'
+    Legendary Upgrade: '—'
+    Research DC (Common): '10'
+    Research DC (Legendary): '22'
+  - ID: ice
+    Name: Frost
+    Base Damage: 1d6 cold
+    Innate Effect: Target speed -10 ft until the start of its next turn
+    Rare Upgrade: Speed halved; target cannot take reactions
+    Legendary Upgrade: Can freeze a 10-ft cube of water; on critical hit, freezes target for 1 round
+    Research DC (Common): '12'
+    Research DC (Legendary): '24'
+- section: Elements
+  subsection: Advanced Elements
+  entries:
+  - ID: lightning
+    Name: Lightning
+    Base Damage: 1d8 lightning
+    Innate Effect: Target cannot take reactions until the start of the caster's next turn
+    Rare Upgrade: Can chain to a second target within 10 ft (half damage)
+    Legendary Upgrade: Critical range 19–20; can chain to a third target
+    Research DC (Common): '12'
+    Research DC (Legendary): '24'
+  - ID: radiance
+    Name: Radiance
+    Base Damage: 1d6 radiant
+    Innate Effect: Target makes a Perception save or is blinded until its next turn
+    Rare Upgrade: +1d6 additional against undead/demons
+    Legendary Upgrade: 30 ft bright light + 30 ft dim light for 1 minute (treated as Daylight)
+    Research DC (Common): '12'
+    Research DC (Legendary): '24'
+  - ID: shadow
+    Name: Shadow
+    Base Damage: 1d6 necrotic
+    Innate Effect: Target makes a Perception save or is frightened until its next turn
+    Rare Upgrade: 50% of damage converts to temporary HP for the caster
+    Legendary Upgrade: Creates magical darkness of radius 15 ft at the target's location for 1 minute
+    Research DC (Common): '12'
+    Research DC (Legendary): '24'
+  - ID: force
+    Name: Force
+    Base Damage: 1d4+2 force
+    Innate Effect: Ignores normal physical cover bonuses; can affect ethereal wraiths
+    Rare Upgrade: +2 against anti-magic checks
+    Legendary Upgrade: After a hit, allies gain +2 against that target (lasts 1 round)
+    Research DC (Common): '12'
+    Research DC (Legendary): '24'
+  - ID: mental
+    Name: Psychic
+    Base Damage: 1d6 psychic
+    Innate Effect: Target's next first attack roll has Disadvantage
+    Rare Upgrade: Changed to Perception save (half damage on success) — completely ignores AC
+    Legendary Upgrade: Can read the target's surface thoughts; failed save cannot concentrate
+    Research DC (Common): '12'
+    Research DC (Legendary): '24'
+- section: Elements
+  subsection: High and Taboo Elements
+  entries:
+  - ID: acid
+    Name: Acid
+    Base Damage: 1d6 acid
+    Innate Effect: Target AC -1 until the end of its next turn
+    Rare Upgrade: Additional +1d4 acid at the end of the next turn
+    Legendary Upgrade: Lasts 2d4×2 rounds; can corrode non-magical metal
+    Research DC (Common): '15'
+    Research DC (Legendary): '28'
+  - ID: sonic
+    Name: Sonic
+    Base Damage: 1d6 thunder
+    Innate Effect: Target makes an Endurance save or is deafened for 1 minute
+    Rare Upgrade: Damage die → d10; Disadvantage on hearing saves
+    Legendary Upgrade: Can destroy non-magical glass/crystal/ceramic within 20 ft
+    Research DC (Common): '15'
+    Research DC (Legendary): '28'
+  - ID: poison
+    Name: Poison
+    Base Damage: 1d4 poison
+    Innate Effect: Target makes an Endurance save or is poisoned for 1 minute (re-save each round)
+    Rare Upgrade: Initial damage → d8; Disadvantage on poison saves
+    Legendary Upgrade: Partially affects creatures normally immune to poison (immune → resistant)
+    Research DC (Common): '15'
+    Research DC (Legendary): '28'
+  - ID: void
+    Name: Void
+    Base Damage: 1d8 void
+    Innate Effect: Target's healing is halved until its next turn
+    Rare Upgrade: Caster recovers 50% of damage dealt as HP
+    Legendary Upgrade: Target makes a Charisma save or is banished to the Border Plane for 1 round
+    Research DC (Common): '18'
+    Research DC (Legendary): '30'
+  - ID: life
+    Name: Life
+    Base Damage: None (deals no damage)
+    Innate Effect: Restores 1d8 + Theory value in HP
+    Rare Upgrade: Also clears one poisoned/stunned/sickened condition
+    Legendary Upgrade: If the target dies within 1 minute, revive to 1 HP (once per Long Rest)
+    Research DC (Common): '15'
+    Research DC (Legendary): '28'
+- section: Forms
+  entries:
+  - ID: projectile
+    Name: Projectile
+    Range: 60 ft
+    Target: Single
+    Attack Type: Spell Attack
+    Special Effect: Standard ranged, applies cover rules
+  - ID: touch
+    Name: Touch
+    Range: Touch
+    Target: Single
+    Attack Type: Spell Attack (Advantage)
+    Special Effect: Voluntary targets auto-hit
+  - ID: area
+    Name: Area
+    Range: 60 ft
+    Target: Sphere radius 15 ft
+    Attack Type: Dexterity save
+    Special Effect: Choose burst point; success halves damage
+  - ID: cone
+    Name: Cone
+    Range: Self
+    Target: 30 ft cone
+    Attack Type: Dexterity save
+    Special Effect: Extends from caster; success halves damage
+  - ID: attach
+    Name: Attach
+    Range: Touch
+    Target: One weapon/item
+    Attack Type: See below
+    Special Effect: Lasts 1 minute; triggers on next hit (effect ×0.8)
+  - ID: delay
+    Name: Delay
+    Range: 60 ft
+    Target: Designated area
+    Attack Type: None
+    Special Effect: Triggers after 1–3 rounds; Dexterity save on trigger
+  - ID: sustained
+    Name: Sustained
+    Range: 60 ft
+    Target: Single target/area
+    Attack Type: Endurance save
+    Special Effect: Requires concentration; duration = 3 + Theory value rounds
+  - ID: instant
+    Name: Instant
+    Range: Self
+    Target: Self/touch
+    Attack Type: No check needed
+    Special Effect: Immediate effect, cannot be interrupted by reactions; effect ×0.7
+- section: Form Combinations
+  entries:
+  - Combination: projectile + area
+    Result Effect: Range 120 ft, radius 20 ft, Dexterity save
+  - Combination: projectile + touch
+    Result Effect: Range 30 ft, spell attack, Advantage
+  - Combination: projectile + sustained
+    Result Effect: Range 120 ft, sustained effect
+  - Combination: projectile + instant
+    Result Effect: Range 120 ft, cannot be interrupted by reactions
+  - Combination: area + delay
+    Result Effect: 120 ft delayed explosion — after 1–3 rounds, radius 20 ft, damage ×1.3
+  - Combination: sustained + area
+    Result Effect: Sustained area effect — triggers within area each round
+  - Combination: attach + projectile
+    Result Effect: Enchanted ammunition, range = weapon's range
+- section: Media
+  entries:
+  - ID: sight
+    Name: Sight
+    Requirement: Must clearly see the target
+    Bonus: Spell attack +2 or save DC +1
+  - ID: secret_touch
+    Name: Secret Touch
+    Requirement: Special medium (crystal/runestone, worth 10 GP or more)
+    Bonus: Damage die +1
+  - ID: word
+    Name: True Word
+    Requirement: Must be spoken aloud (audible within 20 ft)
+    Bonus: Range ×1.5 or radius +5 ft
+  - ID: material
+    Name: Material
+    Requirement: Consumes specific materials (25 GP → damage ×1.5; 100 GP → ×2.0)
+    Bonus: Damage multiplier increased
+  - ID: blood_sacrifice
+    Name: Blood Sacrifice
+    Requirement: Caster pays HP (every 5 HP counts as one stack)
+    Bonus: For every 5 HP, all damage dice take maximum value
+  - ID: ritual
+    Name: Ritual
+    Requirement: Casting time extended to 1 minute
+    Bonus: Spirit cost halved (minimum 1)
+  - ID: resonance
+    Name: Resonance
+    Requirement: Another willing caster within 30 ft cooperates
+    Bonus: All numeric effects ×1.5
+- section: Constraints
+  entries:
+  - ID: cooldown
+    Name: Cooldown
+    Cost: Cannot cast again for X rounds after use (X=1/2/3)
+    Bonus: Spirit cost -(X+1), minimum 1
+  - ID: usage_limit
+    Name: Usage Limit
+    Cost: Can only be used N times per Long Rest (N=1/2/3)
+    Bonus: +N to each damage die
+  - ID: conditional
+    Name: Conditional
+    Cost: Only usable under specific conditions (night/underwater/against specific creatures, etc.)
+    Bonus: All effects ×1.5
+  - ID: concentration
+    Name: Concentration Cost
+    Cost: Maintaining this spell requires concentration
+    Bonus: Duration ×2 or damage die +2
+  - ID: overload
+    Name: Overload
+    Cost: Caster pays additional X Spirit when casting
+    Bonus: For each 1 Spirit paid, add 1 damage die
+  - ID: safety_lock
+    Name: Safety Lock
+    Cost: Spell cannot harm allies (auto-excluded)
+    Bonus: Radius +5 ft
+  - ID: self_harm
+    Name: Self-Harm
+    Cost: Caster takes 1d6 unavoidable damage
+    Bonus: All damage dice → d10 (for those originally below d10)
+- section: Element Crosses — Double
+  entries:
+  - Element Combination: fire + wind
+    Combined Effect: Storm — radius ×1.5
+  - Element Combination: fire + earth
+    Combined Effect: Lava — damage area becomes scalding ground, 1d4 rounds (1d6 fire per round)
+  - Element Combination: fire + water
+    Combined Effect: Steam Burst — area becomes heavily obscured, 1d4+1 rounds
+  - Element Combination: fire + ice
+    Combined Effect: Heat Shock — damage die +1; target makes Endurance save or is stunned 1 round
+  - Element Combination: fire + lightning
+    Combined Effect: Plasma — damage die → d10; additional +1d6 against metal-armored targets
+  - Element Combination: ice + wind
+    Combined Effect: Blizzard — target speed -20 ft; area heavily obscured 1d4 rounds
+  - Element Combination: ice + water
+    Combined Effect: Freeze — target makes Strength save or is restrained 1 round
+  - Element Combination: ice + earth
+    Combined Effect: Ice Rock — damage die +1 and becomes d10; area difficult terrain for 1 minute
+  - Element Combination: lightning + water
+    Combined Effect: Conductivity — all targets in area take additional 1d4 lightning; wet targets have Disadvantage on saves
+  - Element Combination: radiance + fire
+    Combined Effect: Holy Flame — additional +2 damage dice against evil creatures; 30 ft bright light for 1 minute
+  - Element Combination: shadow + mental
+    Combined Effect: Nightmare — frightened + 1d4 psychic per round for 1d4 rounds
+  - Element Combination: void + shadow
+    Combined Effect: Annihilation — damage die → d12; creatures killed by this spell cannot be revived by ordinary means
+  - Element Combination: life + radiance
+    Combined Effect: Holy Healing — healing dice take maximum value; clears one curse or disease
+- section: Element Crosses — Triple
+  entries:
+  - Element Combination: fire + wind + earth
+    Combined Effect: Volcanic Eruption — additional +2 damage dice, radius ×2, area difficult terrain + 2d6 fire per round
+  - Element Combination: ice + water + wind
+    Combined Effect: Polar Storm — radius 40 ft, heavily obscured, 1d8 cold per round + halved speed
+  - Element Combination: lightning + storm + water
+    Combined Effect: Perfect Storm — all damage dice → d12, Disadvantage on saves, can affect flying creatures
+  - Element Combination: radiance + life + fire
+    Combined Effect: Phoenix Nirvana — ×1.5 damage against undead/evil creatures + allies recover equal HP; caster revives once upon death

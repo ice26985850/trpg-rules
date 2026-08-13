@@ -1,0 +1,29 @@
+name: The Corpse-Cultivating Cellar beneath the Walled Village
+description: Seventh Uncle, head of Nine Nether Hall's Hong Kong station, has dug a corpse-cultivating cellar beneath the Walled Village ancestral house, refining Cultivated Zombies and using the village dead's resentment to cultivate a Fierce Ghost gatekeeper. The Haunted House is a living nest; the key is to destroy the source of control, Seventh Uncle.
+difficulty: A/S
+level_range: [7, 10]
+case_type: Cultivated Zombie + Fierce Ghost + Haunted House
+map_ref: "maps/S3_圍村祖屋.yaml"
+npcs:
+  - Village Chief (Walled Village plea-maker)
+  - Second Aunt (surviving village woman)
+  - Seventh Uncle (corpse-refiner, head of Nine Nether Hall's Hong Kong station)
+  - Ox-Head Bing (Yin Constable, holds account at ending)
+  - Cheng Guiyao (Guild Council Chair, referrer)
+key_enemies:
+  - Cultivated Zombie (Challenge Rating CR 3, x2)
+  - Fierce Ghost (Challenge Rating CR 5)
+  - Haunted House (environmental nest, Challenge Rating CR 5)
+  - Seventh Uncle (corpse-refiner, source of control, key destruction target)
+rewards:
+  exp: 600
+  coin: 800
+  items:
+    - Thunder-Struck Wood (Legendary, choose-one drop)
+    - Celestial Master Talisman (Rare, choose-one drop)
+    - Major reputation for Defeating Nine Nether Hall
+hooks:
+  - Seventh Uncle's last words "The Master awaits the great work's completion" - the identity of Nine Nether Hall's behind-the-scenes "Master" is a mystery.
+  - A Spirit Tablet at the bottom of the corpse-cultivating cellar carved with the name related to the players' character "the case you couldn't handle."
+  - Torn page of the "Life-Borrowing Register": celebrities who should be dead but live on; the forbidden Life-Borrowing art was never rooted out.
+  - Yin Constable Ox-Head Bing holds account: the delivered souls were on the Underworld register; who is tampering with the Book of Life and Death.

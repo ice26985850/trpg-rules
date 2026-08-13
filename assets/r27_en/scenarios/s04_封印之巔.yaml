@@ -1,0 +1,206 @@
+# Beastman Warring States TRPG Scenario
+# S4: Apex of the Seal
+# Campaign: Act Four (Levels 16–20)
+# Recommended Players: 1–4
+
+scenario_id: "S4"
+title: "Apex of the Seal"
+act: 4
+suggested_levels:
+  min: 16
+  max: 20
+difficulty: "Legendary"
+estimated_sessions: 5
+prerequisite_scenario: "S3_天下布武之影"
+
+background: |
+  The seal of Heaven Pillar Mountain (Tenchūzan) is crumbling; the awakening of the Great Yokai Calamity is imminent.
+  The locations of all Five Swords Under Heaven have been exposed.
+  The true aim of the Black Moon Society emerges — neither sealing nor liberation, but "fusion."
+  The leader of the Black Moon Society is a fallen Dragon Clan member, who believes that beastmen suppressing their true nature is a form of self-betrayal,
+  and only by fusing with the Great Yokai Calamity can beastmen truly "evolve."
+
+  The players must make their final choice — Seal, Liberate, or Transcend?
+
+factions:
+  player_side:
+    lord: "The school's grandmaster (may already have sacrificed themselves)"
+    allies: "The grandmasters among the Twelve Schools who remain loyal to the seal, and the bearers of the Five Swords Under Heaven"
+  enemy_side:
+    main_villain: "Black Moon Society leader — the fallen Dragon Clan member 'Anryū' (fallen variant of Rising Dragon Style, CR 18)"
+    minions:
+      - "Black Moon Society elite Yokai Adepts ×4 (CR 8)"
+      - "Black Moon Society fallen samurai ×6 (CR 5)"
+      - "Cursed Blade bearers ×2 (CR 10)"
+  neutral:
+    - "Great Yokai Calamity (sealed, unable to act but can influence the consciousness of nearby creatures)"
+    - "Ryūjinshi (Dragon Clan guardian; if the players built a good relationship in the first three acts, he will assist with full effort in this act)"
+
+scenes:
+  - id: 1
+    name: "Foot of Heaven Pillar Mountain — Dragon Clan Trial"
+    type: "Exploration / Social / Combat"
+    description: |
+      Travel to Heaven Pillar Mountain (Tenchūzan); at its foot you meet Ryūjinshi.
+      Ryūjinshi reveals the full truth:
+      - The Great Yokai Calamity is a being the Twelve Sword Saints could not destroy — it can only be sealed
+      - The seal requires the twelve Soul Blades to resonate simultaneously
+      - So far only seven Soul Blades have been found. The remaining five are missing
+      - The Black Moon Society is searching for "Mumei" — the most mysterious beast-god blade among the Five Swords Under Heaven
+      - Mumei has no fixed form. Legend says it becomes "the form its wielder needs most"
+      - And the wielder "it needs" is — one who has "not chosen Giri"
+
+      Ryūjinshi's trial:
+      "If you wish to ascend Heaven Pillar Mountain, you must prove you have not come to seek power — but to bear responsibility."
+      Trial: Ryūjinshi engages the players in a non-lethal battle (CR 16). He fights at full strength.
+      When the players' Hit Points (HP) fall below 30% — the trial ends.
+      Ryūjinshi's evaluation depends on:
+      - How many times did you use Innate Techniques? (Fewer is better — proves you can control your yokai)
+      - Did you protect any companions who might have been present? (Reflects Giri)
+      - What was your Yokai Value (YK)? (Lower is better)
+
+      - Excellent evaluation: Ryūjinshi grants the "Blessing of the Dragon Scales" (DR +2, lasting until the end of the campaign)
+      - Pass evaluation: Permitted to ascend the mountain
+      - Fail: Ryūjinshi says "Go seek Mumei — if you can find it, return."
+
+  - id: 2
+    name: "Ascending Heaven Pillar Mountain — Soul Blade Resonance"
+    type: "Exploration / Roleplay"
+    description: |
+      The climb up Heaven Pillar Mountain is a spiritual journey. With every stretch of ascent, the players sense the resonance of different Soul Blades.
+      The resonance comes from past bearers — who whisper within the players' hearts.
+
+      Encountered along the way:
+      - First: An apparition of an ancient Pure Land Style grandmaster. He asks, "How many have you killed? Do you remember each of their faces?"
+      - Second: An apparition of an ancient Tiger Might Style Sword Saint. He asks, "If you had to kill a companion to save the world — would you?"
+      - Third: An apparition of an ancient Moon Shadow Style priestess. She asks, "Do you see the shadow upon the moon? That is the yokai within you. Do you accept it?"
+
+      Each answer influences which ending routes are available (not a direct check, but a record of the players' inclination):
+      - Inclination toward "Order and Responsibility" → Path of the Seal
+      - Inclination toward "Power and Freedom" → Path of Liberation
+      - Inclination toward "Acceptance and Transformation" → Path of Transcendence (requires specific conditions)
+
+  - id: 3
+    name: "Dragon Emperor Mausoleum — Convergence of the Five Swords Under Heaven"
+    type: "Exploration / Combat"
+    description: |
+      Arrive at the summit of Heaven Pillar Mountain — the Dragon Emperor Mausoleum.
+      The five bearers / seekers of the Five Swords Under Heaven converge here (who is present depends on the first three acts' story).
+
+      Possible attendees:
+      - Tora Arashi-zai (bearer of Onikiri-maru) — if the players chose to tell him the truth in S3 and succeeded, he will surrender Onikiri-maru and ask for its purification
+      - Tsukuyomi-hime (bearer of Gekka) — comes to use Gekka to purify the seal's fractures
+      - Ryūjinshi (bearer of Ryūrin) — the guardian
+      - Ame-no-Murakumo — still in the depths of the mausoleum (the core of the seal)
+      - Mumei — has not yet appeared, awaiting the one who has "not chosen Giri"
+
+      At this moment the Black Moon Society launches a full assault.
+      The mausoleum entrance is blocked by Black Moon Society troops.
+      The players must choose:
+      A. Hold the entrance, buying time for the sealing ritual to complete
+      B. Delve into the mausoleum, searching for Mumei and Ame-no-Murakumo
+      C. Confront the Black Moon Society leader head-on, directly resolving the threat
+
+  - id: 4
+    name: "Black Moon Society Leader — Final Battle"
+    type: "Boss Battle"
+    description: |
+      Whichever path is chosen, the players will ultimately face the Black Moon Society leader — the fallen Dragon Clan member "Anryū."
+
+      He was born of the Dragon Clan, but rejected the mission to guard the seal. He believes beastmen should not suppress their true nature for the sins of antiquity (the Twelve Sword Saints who created the seal).
+      "The Twelve Sword Saints are legends of the past. We live in the now. By what right should the seal of the dead bind the evolution of the living?"
+
+      Anryū's motive is sincere — he is not a purely evil villain. This gives the final battle greater weight.
+    boss:
+      name: "Anryū (Fallen Dragon Clan · Fallen Rising Dragon Style)"
+      cr: 18
+      stats:
+        hp: 160
+        dv: 22
+        dr: 3
+        speed: 8
+        attacks:
+          - name: "Dark Dragon Breath"
+            hit: "10-square cone"
+            damage: "4d8 yokai"
+          - name: "Fallen Dragon Claw"
+            hit: "+14"
+            damage: "2d10+8 slashing"
+          - name: "Call of the Abyss (AOE)"
+            hit: "15-square radius"
+            damage: "2d8 mental damage + Spirit (SPT) Saving Throw DC 20 or Fear"
+      phases:
+        - phase: 1
+          condition: "HP 160–107"
+          behavior: "Alternates Dark Dragon Breath and Fallen Dragon Claw. Uses Call of the Abyss every 3 rounds."
+        - phase: 2
+          condition: "HP 106–54"
+          behavior: "Activates 'Fallen Dragon Scales' — all physical damage halved. Summons 2 Black Moon Society fallen samurai. Attack pattern switches to double strikes."
+        - phase: 3
+          condition: "HP 53–1"
+          behavior: "Full Dragon Transformation — body becomes gigantic. HP recovers 40. DR +2. Acts twice per round. But during the 1-round charging period before transformation, it is completely unable to act (vulnerability window)."
+      final_moment: |
+        When Anryū's HP drops to 0:
+        "You… defeated me. But that doesn't mean you're right.
+        You were simply stronger. A hundred years from now —
+        when your descendants ask you 'why must we sacrifice ourselves for the seal of the dead' —
+        will you… still be able to answer?"
+
+        Anryū does not resist death. He has waited for this answer for centuries.
+        The players' answer at this moment determines the final ending route.
+
+  - id: 5
+    name: "Final Choice"
+    type: "Giri / Ending"
+    description: |
+      Anryū falls; the seal of the Great Yokai Calamity cracks open before you.
+      From the fissure comes a voice — not the roar of a monster, but a weary, ancient, utterly lonely voice:
+      "Two thousand years. Let me out. Or — let me rest."
+
+      The Final Three Choices:
+
+      [Path of the Seal]
+      Use your own Spirit (SPT) as the wedge to reseal the fissure.
+      Spirit (SPT) Saving Throw DC 25.
+      Success: The seal restabilizes. You fall into slumber — uncertain when you will wake. But the Hundred Beasts Archipelago (Hyakujū Retto) regains peace.
+      Failure: The seal stabilizes, but you lose all memory and power (level resets to zero, attributes reset to 1). You wake at the foot of Heaven Pillar Mountain as an ordinary beastman villager. Perhaps — this is what you truly wanted?
+
+      [Path of Liberation]
+      Accept Anryū's logic. Destroy the seal.
+      All beast clans immediately undergo Full Beastification — gaining permanent power but losing self-awareness.
+      You become the sovereign of the new world — but you lose all companions, Giri, and your former "self."
+
+      [Path of Transcendence] (Hidden Ending)
+      Conditions (must meet at least 3):
+      - Bear at least 3 of the Five Swords Under Heaven
+      - Blade Bond (BB) value ≥ 80
+      - Giri Value (GI) ≥ 15
+      - Qualification as a school grandmaster
+      - Chose the "most difficult yet most just" option at least twice in the first three acts
+
+      You find a third path — transforming the Great Yokai Calamity's power into pure Sword Aura.
+      You must make three consecutive Checks:
+      1. Spirit (SPT) Saving Throw DC 22 (resist yokai devouring)
+      2. Swordsmanship (SWM) Check DC 25 (guide the power with Sword Aura)
+      3. Spirit (SPT) (Persuasion) DC 28 (converse with the Great Yokai Calamity — persuade it to accept transformation rather than destruction)
+
+      All succeed: The Great Yokai Calamity becomes endless light, poured into every inch of the Hundred Beasts Archipelago (Hyakujū Retto).
+      All beastmen's yokai vanishes — replaced by pure Sword Aura.
+      Beastmen are no longer beastmen — they become "Sword-People (Swordjin)." A new era begins.
+      You are revered as the "One Who Transcended the Twelve Sword Saints" — an existence beyond all legends.
+      Your blade becomes a new Heaven Pillar — guarding the Hundred Beasts Archipelago forever.
+
+      Any failure: The transformation process goes out of control. You suffer 5d10 irreducible damage.
+      If you survive — you may choose the Path of the Seal or Liberation.
+
+reward:
+  xp: "3000 (Anryū) + 2000 (completing the Final Choice) = 5000 total, enough to go from level 19→20"
+  gold: 3000
+  legacy: "The character's story ends. Whatever the ending — he changed the entire world."
+
+solo_adjustments:
+  - "Anryū HP: 160→120"
+  - "Number of fallen samurai Anryū summons: 2→1"
+  - "NPC Ryūjinshi will accompany the final battle (if relations were good in earlier acts)"
+  - "The Checks on the Path of Transcendence in the Final Choice have their DC reduced by 2 each"
+  - "If the player is alone (no NPC companions), Anryū's HP recovery in Phase Three: 40→20"

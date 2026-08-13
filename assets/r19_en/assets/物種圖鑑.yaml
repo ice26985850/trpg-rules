@@ -1,0 +1,32 @@
+# 10 Species Quick Reference
+species:
+  - name: "Human"
+    bonuses: { "Military Power (MIL)": 0, "Science Power (SCI)": 0, "Economy Power (ECO)": 0, "Diplomacy Power (DIP)": 0, "Unity (UNI)": 0, "Intelligence Power (INT)": 0 }
+    ability: "Adaptability: Once per cycle, reroll any failed check"
+  - name: "Insectoid"
+    bonuses: { "Military Power (MIL)": 1, "Science Power (SCI)": 0, "Economy Power (ECO)": 0, "Diplomacy Power (DIP)": -1, "Unity (UNI)": 1, "Intelligence Power (INT)": 0 }
+    ability: "Hive Mind: Immune to morale debuffs; no independent will"
+  - name: "Synthetic"
+    bonuses: { "Military Power (MIL)": 1, "Science Power (SCI)": 1, "Economy Power (ECO)": 0, "Diplomacy Power (DIP)": 0, "Unity (UNI)": -1, "Intelligence Power (INT)": 0 }
+    ability: "Immortal Framework: Leaders are immune to unnatural death; requires no food, consumes double Energy (EC)"
+  - name: "Psionic"
+    bonuses: { "Military Power (MIL)": -1, "Science Power (SCI)": 1, "Economy Power (ECO)": 0, "Diplomacy Power (DIP)": 0, "Unity (UNI)": 2, "Intelligence Power (INT)": 0 }
+    ability: "Psionic Resonance: +1 die to psionic checks; GM makes a hidden Void Disturbance roll each cycle"
+  - name: "Botanical"
+    bonuses: { "Military Power (MIL)": 0, "Science Power (SCI)": 0, "Economy Power (ECO)": 1, "Diplomacy Power (DIP)": 0, "Unity (UNI)": 1, "Intelligence Power (INT)": -1 }
+    ability: "Photosynthetic Nourishment: Food does not decrease on low-habitability planets; slow growth (Target Number (TN)+1)"
+  - name: "Silicon-Based Life"
+    bonuses: { "Military Power (MIL)": 1, "Science Power (SCI)": -1, "Economy Power (ECO)": 1, "Diplomacy Power (DIP)": 0, "Unity (UNI)": 0, "Intelligence Power (INT)": 0 }
+    ability: "Rocky Body: Army Hull Value (HP)+50%; consumes minerals instead of food"
+  - name: "Energy Being"
+    bonuses: { "Military Power (MIL)": -1, "Science Power (SCI)": 2, "Economy Power (ECO)": -1, "Diplomacy Power (DIP)": 0, "Unity (UNI)": 0, "Intelligence Power (INT)": 0 }
+    ability: "Energy Form: Immune to physical environmental hazards; non-stellar-system Target Number (TN)+1"
+  - name: "Aquatic Intelligence"
+    bonuses: { "Military Power (MIL)": -1, "Science Power (SCI)": 0, "Economy Power (ECO)": 1, "Diplomacy Power (DIP)": 0, "Unity (UNI)": 1, "Intelligence Power (INT)": 0 }
+    ability: "Ocean Specialization: Ocean world output +20%"
+  - name: "Void Native"
+    bonuses: { "Military Power (MIL)": 0, "Science Power (SCI)": 1, "Economy Power (ECO)": 0, "Diplomacy Power (DIP)": 1, "Unity (UNI)": -1, "Intelligence Power (INT)": 0 }
+    ability: "Zero-G Adaptation: Habitat station habitability +10; hyperspace lane detection +1"
+  - name: "Nanite Cluster"
+    bonuses: { "Military Power (MIL)": 0, "Science Power (SCI)": 1, "Economy Power (ECO)": 0, "Diplomacy Power (DIP)": -1, "Unity (UNI)": -1, "Intelligence Power (INT)": 2 }
+    ability: "Nanite Reconstruction: Recover 1 Hull Value per ship per cycle; espionage actions +1 die"

@@ -1,0 +1,233 @@
+name: "Wilderness Birth"
+description: "A company of fewer than a hundred souls arrives at the edge of the continent of Elden and builds its first settlement in the wilderness. From nothing, they endure the first winter, the first diplomacy, the first conflict — ultimately growing from a tribe into a city-state."
+difficulty: 1
+level_range:
+  era_start: "Tribal Age"
+  era_end: "City-State Age"
+turns_estimated: 40
+years_in_game: 10
+player_count:
+  min: 1
+  max: 1
+map_ref: "maps/S1_荒野新生_起始區域"
+initial_map: "maps/S1_荒野新生_起始區域.yaml"
+
+starting_conditions:
+  population: 50
+  attributes:
+    base: 10
+    free_points: 30
+
+phases:
+  - id: 1
+    name: "Landing"
+    turns: "1-5"
+    description: "Arrive on the new continent, choose a camp location, build the first shelter"
+    events:
+      - turn: 1
+        name: "Choose Camp"
+        type: "exploration"
+        description: "Choose a camp location between the riverside (rich resources but flood risk) or high ground (easily defended but few resources)"
+        choices:
+          - option: "Riverside"
+            effect: "Resources (RES)+5, 20% chance of flood each spring"
+          - option: "High Ground"
+            effect: "Military (MIL)+5, Resources (RES)-3"
+      - turn: 2
+        name: "Abandoned Hunter's Cabin"
+        type: "exploration"
+        description: "Discover an abandoned hunter's cabin with a few supply items inside"
+        reward: "Gain 30 Food + 5 Wood"
+      - turn: 3
+        name: "First Contact"
+        type: "diplomacy"
+        description: "A native hunter observes the camp — do you make contact?"
+        skill_check: "Morale (MOR), DC 10"
+      - turn: 4
+        name: "Sounds in the Forest"
+        type: "threat"
+        description: "At night you hear the roar of a large creature — possibly a bear or something more dangerous"
+        skill_check: "Military (MIL), DC 12"
+      - turn: 5
+        name: "First Building Completed"
+        type: "milestone"
+        description: "The first permanent building is finished; the camp is officially born"
+        effect: "Morale (MOR)+5"
+
+  - id: 2
+    name: "The First Winter"
+    turns: "6-10"
+    description: "Survive the trial of the first harsh winter"
+    events:
+      - turn: 6
+        name: "Poor Autumn Harvest"
+        type: "resource_pressure"
+        description: "The autumn harvest falls short of expectations; food reserves are tight"
+      - turn: 7
+        name: "Refugee Plea"
+        type: "moral_choice"
+        description: "A group of refugees asks to join the camp (+10 population, increased food pressure)"
+        choices:
+          - option: "Accept"
+            effect: "Population (POP)+10, Morale (MOR)+5, food consumption increases"
+          - option: "Refuse"
+            effect: "Morale (MOR)-5, but food consumption unchanged"
+      - turn: 8
+        name: "Blizzard"
+        type: "crisis"
+        description: "A blizzard strikes; construction halts completely"
+        crisis_type: "NAT-06"
+        effect: "Construction efficiency drops to zero, food consumption x1.5"
+      - turn: 9
+        name: "Seed Reserves"
+        type: "moral_choice"
+        description: "Food is gone — do you eat the seed meant for next year's planting?"
+        choices:
+          - option: "Eat the seed"
+            effect: "Survive, but next year's food yield is halved"
+          - option: "Endure hunger"
+            effect: "Morale (MOR)-10, but next year's yield is normal"
+      - turn: 10
+        name: "Spring Arrives"
+        type: "milestone"
+        description: "Winter ends; count the casualties"
+        effect: "If there are deaths, Morale (MOR)-10"
+
+  - id: 3
+    name: "Expansion"
+    turns: "11-25"
+    description: "The camp grows steadily and begins to make contact with the outside world"
+    events:
+      - turn: 11
+        name: "Discover Resource Node"
+        type: "resource_discovery"
+        description: "A rich resource node is found nearby (type depends on terrain)"
+      - turn: 13
+        name: "Mysterious Merchant"
+        type: "diplomacy"
+        description: "A stranger calling himself a merchant appears with goods"
+      - turn: 15
+        name: "Newborns"
+        type: "milestone"
+        description: "The camp's first newborns arrive — natural population growth begins"
+        effect: "Population (POP)+3, Morale (MOR)+5"
+      - turn: 17
+        name: "Ancient Temple"
+        type: "exploration"
+        description: "An ancient temple ruin is found — sacrificing grants a blessing"
+        choices:
+          - option: "Offer a sacrifice"
+            effect: "Gain a random blessing (1d6: 1-2: Resources+5, 3-4: Technology+5, 5: Military+5, 6: all attributes+2)"
+          - option: "Study the ruin"
+            effect: "Technology (TEC)+5, Research Points (RP)+20"
+      - turn: 20
+        name: "Border Conflict"
+        type: "diplomatic_crisis"
+        description: "A neighboring patrol crosses the border"
+        crisis_type: "DIP-01"
+      - turn: 23
+        name: "Internal Conflict"
+        type: "internal_event"
+        description: "Two factions clash over resource distribution"
+        skill_check: "Morale (MOR), DC 14"
+      - turn: 25
+        name: "Leadership Challenge"
+        type: "internal_crisis"
+        description: "A charismatic young person challenges your leadership"
+        crisis_type: "INT-04"
+
+  - id: 4
+    name: "The Shadow of Neighbors"
+    turns: "26-35"
+    description: "The neighbor shifts from onlooker to active participant"
+    events:
+      - turn: 26
+        name: "Neighbor Ambassador"
+        type: "diplomacy"
+        description: "The neighbor formally sends an ambassador to establish relations"
+      - turn: 28
+        name: "Border Markers"
+        type: "territorial_dispute"
+        description: "The neighbor sets up border markers near your territory"
+        choices:
+          - option: "Tolerate"
+            effect: "Relation unchanged, lose part of your territory"
+          - option: "Protest"
+            effect: "Relation -10, but keep your territory"
+      - turn: 30
+        name: "Defector"
+        type: "moral_choice"
+        description: "A defector from the neighbor asks for asylum"
+        choices:
+          - option: "Take in"
+            effect: "Relation -30, gain intelligence"
+          - option: "Refuse and repatriate"
+            effect: "Relation +10"
+      - turn: 32
+        name: "Epidemic"
+        type: "crisis"
+        description: "A camp-wide outbreak erupts"
+        crisis_type: "NAT-04"
+      - turn: 35
+        name: "Diplomatic Summit"
+        type: "diplomacy"
+        description: "The first formal diplomatic summit; the neighbor presents terms"
+
+  - id: 5
+    name: "Becoming a City-State"
+    turns: "36-40"
+    description: "The final sprint — population breaks 500, found a city-state"
+    events:
+      - turn: 36
+        name: "Population Milestone"
+        type: "milestone"
+        description: "Population breaks 400 — the camp has become a true settlement"
+      - turn: 37
+        name: "Double Caravans"
+        type: "diplomacy"
+        description: "Caravans from two different directions arrive at once — you can only host one first"
+      - turn: 38
+        name: "Bandit Threat"
+        type: "military"
+        description: "A bandit gang appears nearby, attacking caravans"
+        crisis_type: "combat"
+      - turn: 39
+        name: "Final Preparations"
+        type: "construction"
+        description: "Meet the last condition for the City-State Age"
+      - turn: 40
+        name: "City-State Founded"
+        type: "ending"
+        description: "The settlement officially becomes a city-state — surrounding powers all send envoys"
+
+endings:
+  success:
+    condition: "Population (POP) > 250 and enter the City-State Age"
+    reward: "All attributes +5; unlock the legendary deed 'The First Cornerstone'"
+  partial:
+    condition: "Population (POP) > 100 but the City-State Age not reached"
+    reward: "Population (POP)+10; may continue in free mode"
+  failure:
+    condition: "Population (POP) = 0 or Morale (MOR) = 0"
+    remedy: "Use the inheritance mechanic — play as survivors rebuilding (retain 50% of attributes)"
+
+key_npcs:
+  - name: "Old Karl"
+    role: "Eldest in camp / agricultural advisor"
+    personality: "Wise, steady"
+    relationship: "Loyal Mentor"
+  - name: "Martha"
+    role: "Young hunter"
+    personality: "Brave, impulsive"
+    relationship: "Loyal but needs guidance"
+  - name: "Merchant Victor"
+    role: "Mysterious traveling merchant"
+    personality: "Shrewd, mysterious"
+    relationship: "Pragmatic Ally"
+
+gm_notes:
+  - "The first 5 turns are a tutorial; lower DC by 2"
+  - "The first winter should make players feel real pressure"
+  - "Give NPCs names and stories to strengthen emotional connection"
+  - "Every major choice should have clear consequences"
+  - "Characters introduced in S1 return in later scenarios"

@@ -1,0 +1,126 @@
+name: "Level 3 — Power Station"
+description: "An abandoned power facility — exposed wires, three generator sets, patrolling Electrician Entities"
+scenario_ref: "S2_穿越"
+usage: "Scenario S2 mid-section: restart the three generator sets to open the inspection door to Level 4"
+regions:
+  - name: "Maintenance Area"
+    color: "#E8F5E9"
+    nodes: ["N01", "N02"]
+    description: "Area"
+  - name: "Generator Room"
+    color: "#FFF3E0"
+    nodes: ["N03", "N04", "N05"]
+    description: ""
+  - name: "Control Area"
+    color: "#E3F2FD"
+    nodes: ["N06"]
+    description: ""
+  - name: "Electrician Patrol (Danger)"
+    color: "#ECEFF1"
+    nodes: ["N07"]
+    description: ""
+  - name: "Exit Area"
+    color: "#E3F2FD"
+    nodes: ["N08"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Entrance Maintenance Door"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "The maintenance door entered from Level 2 — behind it roars the machinery room"
+  - id: "N02"
+    label: "Machine Room Antechamber"
+    x: 300
+    y: 250
+    type: "normal"
+    explored: false
+    description: "A spacious antechamber; three passages lead respectively to the generator sets"
+  - id: "N03"
+    label: "Generator Set A"
+    x: 460
+    y: 170
+    type: "objective"
+    explored: false
+    description: "The first generator set — requires restart (Crafting DC 14)"
+  - id: "N04"
+    label: "Generator Set B"
+    x: 460
+    y: 310
+    type: "objective"
+    explored: false
+    description: "The second generator set"
+  - id: "N05"
+    label: "Generator Set C"
+    x: 460
+    y: 450
+    type: "objective"
+    explored: false
+    description: "The third generator set — the inspection door opens after restart"
+  - id: "N06"
+    label: "Control Room"
+    x: 660
+    y: 300
+    type: "resource"
+    explored: false
+    description: "Main console and previous visitors' notes — recording the restart sequence"
+    resources: "Almond Water ×1, previous visitor's notes"
+  - id: "N07"
+    label: "Electrician Patrol Zone"
+    x: 300
+    y: 460
+    type: "danger"
+    explored: false
+    description: "The Electrician Entity's patrol route — risk of electrocution"
+    threats: "Electrician (2D6 electric shock)"
+  - id: "N08"
+    label: "Inspection Door (Exit)"
+    x: 810
+    y: 300
+    type: "exit"
+    explored: false
+    description: "Opens after the three sets are restarted — leads to Level 4"
+    exit_to: "Level 4 — Office"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N05"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N07"
+    type: "dangerous_path"
+    label: "Electrician Patrol"
+  - from: "N03"
+    to: "N06"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: ""
+  - from: "N05"
+    to: "N06"
+    type: "corridor"
+    label: ""
+  - from: "N06"
+    to: "N08"
+    type: "corridor"
+    label: "→ Exit"
+  - from: "N07"
+    to: "N08"
+    type: "dangerous_path"
+    label: "Electrician Patrol"

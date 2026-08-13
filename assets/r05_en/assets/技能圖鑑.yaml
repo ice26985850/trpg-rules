@@ -1,0 +1,2938 @@
+title: "The Hero's Proof— Skill Catalog"
+sections:
+  - heading: "The Hero's Proof— Skill Catalog"
+    text:
+      - > Source: system finalization (Chapter 6 Class, spec locked) , Traditional Chinese, terms use"Chinese full name (abbreviation)"format。
+      - > General rules: 
+      - > - Each class **4 Active(incl. Utility) +  2 Passive  =  6 Base Skill** (ClassLv 1–10) 。
+      - > - SkillDamage/Healing/Shield  =  `Base Value (B)  × f(Skill Level) × (1 + relevant attribute modifier M / 6)`。
+      - > - Skill Level (SkillLv)multiplier `f(n) = 1 + n(n−1)/8` → **Lv1–5 = 1.00 / 1.25 / 1.75 / 2.50 / 3.50**。
+      - > - SPcost `C(n) = 4 + n(n−1)/2` → **Lv1–5 cumulative 4 / 5 / 7 / 10 / 14, max levelcumulative 14 SP** (see §VIII note) 。
+      - > - Utility Skill: fixed 1 level, cost 2 SP, prohibitedcarryingnumeric bonus。
+      - > - attribute multiplier divisor is **6** (STR skills use STR, DEX skills use DEX, MAG skills use MAG; Healing/Aegis use MAG) 。
+      - > - **Four-stage Three-path System**: Base Class (ClassLv 1–10) → at ClassLv 10 from"3 entrySecond StagePath"choose one (**choose one of three, irreversible**, unlock CL11, Lv11–20) → **Third-stage Mastery** (unlock CL21, Lv21–30) → **Fourth-stage Ultimate** (unlock CL31, Lv31–40, max level 40) 。throughoutsingle class, skills and passives accumulate, no multiclass。
+      - > - **Attack Skill Cooldown**: marked in table"—"(no cooldown)'sAttack Skilltreated as"once per short rest" (samePlayer Book §7.3) ; sameAttack Skilllimited to 1 use per round。
+      - > Path naming uses **Ke Jiaoling"07_Races_and_Classes_Architecture_Rebuild"§2 table as the sole standard** (this versionaligned, voiding old draft and system finalization's"four-direction"naming) 。
+      - ---
+    tables:
+      []
+  - heading: I. Warrior | Requirement STR≥13, CON≥12 | Front Row
+    text:
+      []
+    tables:
+      - columns:
+          - Skill
+          - Type
+          - Action Point (AP)
+          - Mana Point (MP)
+          - Base Value B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Skill: Shield Bash
+            Type: Active
+            Action Point (AP): 1
+            Mana Point (MP): 0
+            Base Value B: 1.2 Physical
+            Effect Description: melee heavy strike; chance 20%+5%(n−1) Stun 1 round
+            Status: Stun
+            CD: once per short rest
+            Max SP: 14
+          - Skill: Iron Wall Stance
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 0
+            Base Value B: Damage Reduction 20%+4%(n−1) (cap 44%) 
+            Effect Description: self Damage Reductionuntilstart of next round
+            Status: —
+            CD: 2
+            Max SP: 14
+          - Skill: Whirlwind Slash
+            Type: Active
+            Action Point (AP): 3
+            Mana Point (MP): 4
+            Base Value B: 1.0 Physical AOE surrounding1ring
+            Effect Description: areastrikesurroundingenemies
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Skill: Armor-breaking Strike
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 3
+            Base Value B: 1.6 Physical
+            Effect Description: Sunder (Damage Reduction (DR) −25%, 2 round) 
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Skill: Iron Will
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Class Level all-status Resistance +1% (totalstatus Resistancecap 75%) 
+            Status: —
+            CD: —
+            Max SP: 7
+          - Skill: Sturdy Wall
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: equipshieldwhenper Class Level Block Value +1.2 (converted to EVA) ; takesCritical Damage −10%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: II. Monk | Requirement DEX≥13, CON≥11 | Front Row
+    text:
+      []
+    tables:
+      - columns:
+          - Skill
+          - Type
+          - Action Point (AP)
+          - Mana Point (MP)
+          - Base Value B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Skill: Chain Palm
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 2
+            Base Value B: per hit 0.5, hits 2+floor((n−1)/2) Physical
+            Effect Description: multi-hitpalm strike (DEXcoefficient) 
+            Status: —
+            CD: —
+            Max SP: 14
+          - Skill: Ki-burst Punch
+            Type: Active
+            Action Point (AP): 3
+            Mana Point (MP): 5
+            Base Value B: 2.2 Physical
+            Effect Description: powerfulburst punch and Knockback
+            Status: Knockback
+            CD: —
+            Max SP: 14
+          - Skill: Afterimage Step
+            Type: Utility
+            Action Point (AP): 1
+            Mana Point (MP): 3
+            Base Value B: —
+            Effect Description: this round EVA+30% andcanpass through enemiesDisplacement
+            Status: —
+            CD: 2
+            Max SP: 2
+          - Skill: Breaking Fist
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 4
+            Base Value B: 1.8 Physical
+            Effect Description: Sunder + next round +0.3 multipliercharge
+            Status: Sunder/charge
+            CD: 3
+            Max SP: 14
+          - Skill: Martial Arts Mastery
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: unarmed/gauntletper Skill Level Damage +2.0%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Skill: Swift Body
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Class Level EVA +0.2 (cap +floor(Class Level/5)) ; DEX≥14 additional +1 AP (fixed) 
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: III. Mage | Requirement MAG≥13 | Back Row
+    text:
+      []
+    tables:
+      - columns:
+          - Skill
+          - Type
+          - Action Point (AP)
+          - Mana Point (MP)
+          - Base Value B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Skill: Fireball
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 6
+            Base Value B: 2.0 Fire
+            Effect Description: Range Medium(5tile); Burn 2round (per round 0.3×MAG Fire damage) 
+            Status: Burn
+            CD: —
+            Max SP: 14
+          - Skill: Frost Nova
+            Type: Active
+            Action Point (AP): 3
+            Mana Point (MP): 8
+            Base Value B: 1.2 Freeze AOE radius2
+            Effect Description: Chill (DEX−30%, 2round) 
+            Status: Chill
+            CD: 3
+            Max SP: 14
+          - Skill: Lightning Chain
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 7
+            Base Value B: 0.9 Lightning
+            Effect Description: jump 3+floor((n−1)/3) target; Range Long(8tile)
+            Status: Shock
+            CD: —
+            Max SP: 14
+          - Skill: Mana Surge
+            Type: Utility
+            Action Point (AP): 1
+            Mana Point (MP): 0 (restore) 
+            Base Value B: restore MP = 8+2(n−1)
+            Effect Description: selfrestore MP
+            Status: —
+            CD: 4
+            Max SP: 2
+          - Skill: Spell Specialization
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Skill Level spell multiplier +1.5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Skill: Elemental Resonance
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: againstBurn/Chilltargetsame-elementDamage +1.0%×Skill Level
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: IV. Cleric | Requirement MAG≥12, CON≥10 | Back Row
+    text:
+      []
+    tables:
+      - columns:
+          - Skill
+          - Type
+          - Action Point (AP)
+          - Mana Point (MP)
+          - Base Value B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Skill: Healing Light
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 6
+            Base Value B: 2.0×(1+M_MAG/6) Healing
+            Effect Description: Range Medium(5tile) single targetHealing
+            Status: —
+            CD: —
+            Max SP: 14
+          - Skill: Group Prayer
+            Type: Active
+            Action Point (AP): 3
+            Mana Point (MP): 10
+            Base Value B: 1.0×(1+M_MAG/6) Healing AOE radius2
+            Effect Description: allyareaHealing
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Skill: Warding Aegis
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 5
+            Base Value B: 1.5×(1+M_MAG/6) Shield
+            Effect Description: Shield absorption, Duration 3 round
+            Status: Shield
+            CD: —
+            Max SP: 14
+          - Skill: Purify
+            Type: Utility
+            Action Point (AP): 1
+            Mana Point (MP): 4
+            Base Value B: —
+            Effect Description: dispel 1~2 status
+            Status: —
+            CD: 2
+            Max SP: 2
+          - Skill: Grace of Holy Light
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Skill Level Healingamount +1.8%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Skill: Aegis Sustain
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: AegisDuration +1round/per 3 Skill Levels; healed target EVA +1.0×Skill Level
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: V. Thief | Requirement DEX≥13, LUK≥10 | Flexible
+    text:
+      []
+    tables:
+      - columns:
+          - Skill
+          - Type
+          - Action Point (AP)
+          - Mana Point (MP)
+          - Base Value B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Skill: Backstab
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 2
+            Base Value B: 2.0 Physical
+            Effect Description: flank/rearwhenCritical Threshold (CritTh) dropsuntilguaranteed critical; Bleed
+            Status: Bleed
+            CD: —
+            Max SP: 14
+          - Skill: Smoke Bomb
+            Type: Utility
+            Action Point (AP): 1
+            Mana Point (MP): 3
+            Base Value B: —
+            Effect Description: AOE radius1, enemy EVA−20%, selfStealth 1round
+            Status: —
+            CD: 3
+            Max SP: 2
+          - Skill: Deadly Venom Blade
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 4
+            Base Value B: 1.0 Physical + Poison
+            Effect Description: Poison (per round 0.5×DEX, 3round) 
+            Status: Poison
+            CD: —
+            Max SP: 14
+          - Skill: Shadow Clone
+            Type: Active
+            Action Point (AP): 3
+            Mana Point (MP): 6
+            Base Value B: —
+            Effect Description: Summoncloneassist attack +1 Attacktimes, 1round
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Skill: Lethal Strike
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Skill Level Critical Damage +2.0%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Skill: Lucky Thief
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Class Level drop rateandsteal success rate +1.0%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: VI. Hunter | Requirement DEX≥12, STR≥10 | Back Row
+    text:
+      []
+    tables:
+      - columns:
+          - Skill
+          - Type
+          - Action Point (AP)
+          - Mana Point (MP)
+          - Base Value B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Skill: Precise Shot
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 3
+            Base Value B: 2.2 Physical
+            Effect Description: Range Long(8tile) single targethigh damage
+            Status: —
+            CD: —
+            Max SP: 14
+          - Skill: Pinning Shot
+            Type: Active
+            Action Point (AP): 1
+            Mana Point (MP): 2
+            Base Value B: 1.0 Physical
+            Effect Description: Immobilize(movement prohibited, 1 round); Range Long(8tile)
+            Status: Immobilize
+            CD: —
+            Max SP: 14
+          - Skill: Explosive Trap
+            Type: Utility
+            Action Point (AP): 2
+            Mana Point (MP): 4
+            Base Value B: 1.5 Physical
+            Effect Description: ground deployment, triggers AOE; Knockback; Duration 3 round
+            Status: Knockback
+            CD: 3
+            Max SP: 2
+          - Skill: Hawkeye Mark
+            Type: Utility
+            Action Point (AP): 1
+            Mana Point (MP): 2
+            Base Value B: —
+            Effect Description: "Mark: ally damage against it +10%~+20%(by level), its Critical Threshold −5"
+            Status: Mark
+            CD: 2
+            Max SP: 2
+          - Skill: Beast Instinct
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Skill Level rangedDamage +1.8%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Skill: Trap Master
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: trap damage +2.0%×Skill Level anddeploy count +1/per 3 Class Levels
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: VII. Dancer | Requirement CHA≥13, DEX≥10 | Flexible (usuallyBack Row) 
+    text:
+      - ---
+    tables:
+      - columns:
+          - Skill
+          - Type
+          - Action Point (AP)
+          - Mana Point (MP)
+          - Base Value B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Skill: Battle Cheer
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 4
+            Base Value B: whole party Attack +8%~+15%(by level)
+            Effect Description: whole party Attack + Hit +2, Duration 3round
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Skill: Rainbow Waltz
+            Type: Active
+            Action Point (AP): 3
+            Mana Point (MP): 6
+            Base Value B: whole party EVA +15%
+            Effect Description: next round +1 AP (external cap+1) , Duration 2round
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Skill: Requiem
+            Type: Active
+            Action Point (AP): 2
+            Mana Point (MP): 5
+            Base Value B: per round 0.5×CHA Healing
+            Effect Description: DurationHealing 3round
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Skill: Morale Command
+            Type: Utility
+            Action Point (AP): 1
+            Mana Point (MP): 3
+            Base Value B: —
+            Effect Description: dispel Fear/Fear; targetCritical Threshold (CritTh) −3 (2round) 
+            Status: —
+            CD: 2
+            Max SP: 2
+          - Skill: Stage Charisma
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: per Skill Level buffEffect +2.0%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Skill: Harmonic Resonance
+            Type: Passive
+            Action Point (AP): —
+            Mana Point (MP): —
+            Base Value B: —
+            Effect Description: partyfor eachbuffed ally, Dancerself EVA +1.0
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: VIII. Skill Level Growth Table (all classes) 
+    text:
+      - > note: "Active Skillmax level (Lv5) cumulativecost **14 SP** (formula `C(n)=4+n(n−1)/2`) ; Passive Skillmax level (Lv3) cumulative **7 SP**; Utility Skillfixed 1 level, cost **2 SP**。SP totalamountbased onBi-Dice-An 1.6: character creation 8 SP, CL2 fromper level +1 → `cumulative SP = 7 + CL`, Lv40 approx. 47 SP; players mustoffense/support/Passive choose between, cannot max all。"
+      - >  (original draftpreviously miswritten `C(n)=4+n(n−1)`, that formulacumulativeis 4/6/10/16/24 (max level 24 SP) , andabovevalue tablecontradicts; based onthis instruction"max level 14 SP, remove 24 erroneous statement"and aud-dice unifiedformulacorrectedis `C(n)=4+n(n−1)/2`, yields 4/5/7/10/14。) 
+      - ---
+    tables:
+      - columns:
+          - Skill Level (SkillLv)
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+        rows:
+          - Skill Level (SkillLv): multiplier f(n)
+            1: 1.00
+            2: 1.25
+            3: 1.75
+            4: 2.50
+            5: 3.50
+          - Skill Level (SkillLv): SP cost C(n) (cumulative) 
+            1: 4
+            2: 5
+            3: 7
+            4: 10
+            5: 14
+  - heading: IX. Advanced Class Skill Trees (21 Path・Four-stage, unlock ClassLv 11 / 21 / 31) 
+    text:
+      - > This work**nomulticlass/multiclass**。so-called"Promotion"issingle class'srank advancement: at ClassLv 10 from"3 entrySecond StagePath"choose one (**choose one of three, irreversible**) , at CL21 enteringthatPath**Third-stage Mastery**, at CL31 unlock**Fourth-stage Ultimate**。throughoutonlybelongs tosameClass, SkillandPassivecontinuously accumulate; need notrepeatRequirement, noSkillunfreezemechanism。
+      - > The following 21 Path (per Base Class 3 Path) eachincl.: Second Stage (unlock CL11, Lv11–20) 3 Skill(recommended 2 Active + 1 Passive)/Third Stage (unlock CL21, Lv21–30) 3 Skill (2 Active + 1 Passive) /Fourth-stage Ultimate (unlock CL31, Lv31–40) 3 Skill (**1 signatureActive + 2 Passive**) 。
+      - > all follow `B × f(Skill Level) × (1 + attribute modifier M / 6)` formulaandChapter VIIIGeneral rules。
+    tables:
+      []
+  - heading: 21 Path Name Summary (based on Ke Jiaoying"07_Races_and_Classes_Architecture_Rebuild"§2 as the standard) 
+    text:
+      - ---
+    tables:
+      - columns:
+          - "#"
+          - Base Class
+          - Second Stage (Path) 
+          - Third Stage
+          - Fourth Stage (Ultimate) 
+          - Role
+        rows:
+          - #: 1
+            Base Class: Warrior
+            Second Stage (Path) : Guardian
+            Third Stage: Guard Master
+            Fourth Stage (Ultimate) : Humanoid Fortress
+            Role: Iron Wall Counter
+          - #: 1
+            Base Class: Warrior
+            Second Stage (Path) : Berserker
+            Third Stage: Berserk Lord
+            Fourth Stage (Ultimate) : War God
+            Role: Bloodthirst Burst
+          - #: 2
+            Base Class: Monk
+            Second Stage (Path) : Chi-master
+            Third Stage: Fist Sage
+            Fourth Stage (Ultimate) : Mountain-breaker Venerable
+            Role: Fierce Single-target
+          - #: 2
+            Base Class: Monk
+            Second Stage (Path) : Shadowblade
+            Third Stage: Shadow Fist Sect
+            Fourth Stage (Ultimate) : Shadowless Blade Sage
+            Role: High-speed Multi-hit
+          - #: 3
+            Base Class: Mage
+            Second Stage (Path) : Pyromancer
+            Third Stage: Inferno Ruler
+            Fourth Stage (Ultimate) : Sky-burning Dragon
+            Role: Fire AOE
+          - #: 3
+            Base Class: Mage
+            Second Stage (Path) : Cryomancer
+            Third Stage: Eternal Frost Sage
+            Fourth Stage (Ultimate) : Aurora Oracle
+            Role: Frost/Lightning Control
+          - #: 4
+            Base Class: Cleric
+            Second Stage (Path) : Healer
+            Third Stage: Life Prophet
+            Fourth Stage (Ultimate) : Eternal Radiance Shepherd
+            Role: Healing Aegis
+          - #: 4
+            Base Class: Cleric
+            Second Stage (Path) : Inquisitor
+            Third Stage: Divine Punishment Executor
+            Fourth Stage (Ultimate) : Sacred Judgment Apocalypse
+            Role: Holy Damage
+          - #: 5
+            Base Class: Thief
+            Second Stage (Path) : Assassin
+            Third Stage: Terminus Assassin
+            Fourth Stage (Ultimate) : Nether Death
+            Role: Critical Assassination
+          - #: 5
+            Base Class: Thief
+            Second Stage (Path) : Trapper
+            Third Stage: Mechanism Grandmaster
+            Fourth Stage (Ultimate) : Myriad-mechanism Artisan
+            Role: Mechanism & Trap
+          - #: 6
+            Base Class: Hunter
+            Second Stage (Path) : Sharpshooter
+            Third Stage: Star-piercing Ranger
+            Fourth Stage (Ultimate) : Azure Sky Hawk-eye
+            Role: Extreme-range Pierce
+          - #: 6
+            Base Class: Hunter
+            Second Stage (Path) : Beastmaster
+            Third Stage: Lord of Hundred Beasts
+            Fourth Stage (Ultimate) : King of Ten Thousand Beasts
+            Role: Pet Synergy
+          - #: 7
+            Base Class: Dancer
+            Second Stage (Path) : War-dancer
+            Third Stage: Raging Storm Dancer
+            Fourth Stage (Ultimate) : War Song Goddess
+            Role: Attack Buff
+          - #: 7
+            Base Class: Dancer
+            Second Stage (Path) : Illusion-dancer
+            Third Stage: Dreamy Phantom
+            Fourth Stage (Ultimate) : Illusion Music Demon Queen
+            Role: Illusion-dance Control
+          - #: 1
+            Base Class: Warrior
+            Second Stage (Path) : Spellsword
+            Third Stage: Magic Blade Venerable
+            Fourth Stage (Ultimate) : Holy-Demon Blade Sage
+            Role: Magic Melee
+          - #: 2
+            Base Class: Monk
+            Second Stage (Path) : Grappler
+            Third Stage: Dragon-lock Sect
+            Fourth Stage (Ultimate) : Demon-subduing Venerable
+            Role: Grapple Hard Control
+          - #: 3
+            Base Class: Mage
+            Second Stage (Path) : Necromancer
+            Third Stage: Necromancy Lord
+            Fourth Stage (Ultimate) : Styx Death Lord
+            Role: Curse/Lifesteal/Summon
+          - #: 4
+            Base Class: Cleric
+            Second Stage (Path) : Paladin
+            Third Stage: Judgment Guardian
+            Fourth Stage (Ultimate) : Holy Radiance War Venerable
+            Role: Shield/Holy Shield
+          - #: 5
+            Base Class: Thief
+            Second Stage (Path) : Twin-blade
+            Third Stage: Shadow Blade Sect
+            Fourth Stage (Ultimate) : Thousand-blade Death
+            Role: Twin-blade Combo
+          - #: 6
+            Base Class: Hunter
+            Second Stage (Path) : Skirmisher
+            Third Stage: Swift Wind Outrider
+            Fourth Stage (Ultimate) : Azure Wind Wandering Deity
+            Role: Mobile Displacement
+          - #: 7
+            Base Class: Dancer
+            Second Stage (Path) : Warding-dancer
+            Third Stage: Merciful Shield Dancer
+            Fourth Stage (Ultimate) : Eternal Ward Dance Deity
+            Role: Guard Aura
+  - heading: 9-1 Warrior
+    text:
+      []
+    tables:
+      []
+  - heading: "Path A: Guardian (unlock CL11)  | Third Stage: Guard Master | Fourth-stage Ultimate: Humanoid Fortress"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Shield Wall Stance
+            Type: Active
+            AP: 2
+            MP: 0
+            B: self Damage Reduction+30% (2round) 
+            Effect Description: duringwhen melee-hittriggersfree counterattack
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Shield Bash Intimidation
+            Type: Active
+            AP: 1
+            MP: 3
+            B: 1.0 Physical
+            Effect Description: chance 15%+5%(n−1) Fear 2round
+            Status: Fear
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Sturdy Wall Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: equipshieldwhenBlock Value+1.5/Class Level; Damage Reductionstance+5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Counter Storm
+            Type: Active
+            AP: 2
+            MP: 6
+            B: 2.0 Physical
+            Effect Description: successfulBlockimmediately aftercounterattack, canchain
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Fortress Command
+            Type: Active
+            AP: 2
+            MP: 4
+            B: whole party Damage Reduction +15% (2round) 
+            Effect Description: Shield=0.5×CON absorption
+            Status: Shield
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Immovable Mountain
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Damage Reductionstanceduringcounterattackguaranteed hit; whole party Damage Reduction +5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Fortress Stance
+            Type: Ultimate Active
+            AP: 2
+            MP: 0
+            B: whole party Damage Reduction 55% (3round) 
+            Effect Description: Shield=0.5×CON absorption
+            Status: Shield
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Iron Bulwark
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: equipshieldwhenwhole party Damage Reduction +5%; self Block Valueadditional+2; counterattack damage+20%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Counter Instinct
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: first time melee-hit each roundautomaticallyfree counterattack; counterattack damage+15%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path B: Berserker (unlock CL11)  | Third Stage: Berserk Lord | Fourth-stage Ultimate: War God"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Berserk Blood Awakening
+            Type: Active
+            AP: 2
+            MP: 6
+            B: self Attack +20% (3round) 
+            Effect Description: duringwhen hitreflect damage 0.3×STR Physical
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Blood Fury Charge
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.8 Physical
+            Effect Description: Charge + Knockback
+            Status: Knockback
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Bloodthirsty Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: when hitreflect damage 0.2×STR Physical (1round) ; HP<50% Attack+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Blood Fury Slash
+            Type: Active
+            AP: 3
+            MP: 8
+            B: 3.0 Physical
+            Effect Description: consume 15% current HP convert to massivemultiplier, againstsingle target
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Earth-rending Slash
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 2.0 Physical AOE frontcone
+            Effect Description: Sunder
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Berserk Bloodline
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Attack+15%; Blood Fury Slashconsume HP  dropsuntil 10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: War God Slash
+            Type: Ultimate Active
+            AP: 3
+            MP: 10
+            B: 3.5 Physical
+            Effect Description: consume 20% current HP, against debuffed targets +0.5
+            Status: Sunder
+            CD: 4
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Indomitable War Spirit
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: HP<30% Attack+25%, Healing received+50%, Immune to Fear
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Berserk Blood Frenzy
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Attack+15%; Normal Attackgrants 0.5×STR splash
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: 9-2 Monk
+    text:
+      []
+    tables:
+      []
+  - heading: "Path A: Chi-master (unlock CL11)  | Third Stage: Fist Sage | Fourth-stage Ultimate: Mountain-breaker Venerable"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Breaking Fist Mk.II
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 2.0 Physical
+            Effect Description: Sunder + next round +0.5 multipliercharge
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Vajra Palm
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 1.5 Physical
+            Effect Description: Knockback + self Damage Reduction+15% (2round) 
+            Status: Knockback
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Adamantine Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: per Class Level unarmedDamage+2%; takesCritical Hit−5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Mountain-breaking Fist
+            Type: Active
+            AP: 3
+            MP: 7
+            B: 3.2 Physical
+            Effect Description: super-high multiplier single target, against debuffed targets +0.5
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Rock-crushing Combo
+            Type: Active
+            AP: 2
+            MP: 5
+            B: per hit0.8, hits 3+floor((n−1)/2) Physical
+            Effect Description: Sunder
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Fist Ultimate
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: unarmedCritical Hit+15%; Sunder+5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Heaven-breaking Palm
+            Type: Ultimate Active
+            AP: 3
+            MP: 8
+            B: 4.0 Physical
+            Effect Description: super-high multiplier single target, against debuffed targets +1.0; Sunder
+            Status: Sunder
+            CD: 4
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Martial Ultimate Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: per Class Level unarmedDamage+2.5%; HP<50% Damage+15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Vajra Chain Break
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: SunderSkilladditional +0.5 multipliercharge; Sunder+5%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path B: Shadowblade (unlock CL11)  | Third Stage: Shadow Fist Sect | Fourth-stage Ultimate: Shadowless Blade Sage"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Shadow Combo
+            Type: Active
+            AP: 2
+            MP: 4
+            B: per hit0.7, hits 3+floor((n−1)/2) Physical
+            Effect Description: High-speed Multi-hit
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Phantom Step
+            Type: Utility
+            AP: 1
+            MP: 3
+            B: —
+            Effect Description: this round EVA+40% andpass through enemiesDisplacement + next attackguaranteed hit
+            Status: —
+            CD: 2
+            Max SP: 2
+          - Stage: Second Stage Lv11–20
+            Skill Name: Afterimage
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: multi-hitSkillhitstreated as+1; EVA+1/3Class Level
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Thousand Fierce Palms
+            Type: Active
+            AP: 3
+            MP: 8
+            B: per hit0.6, hits 5+floor(n/2) Physical
+            Effect Description: extreme multi-hit
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Shadow Bind
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.0 Physical
+            Effect Description: Immobilize 1round + self EVA+20% (1round) 
+            Status: Immobilize
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Illusion Shadow
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: multi-hitper hitDamage+5%; EVA+2
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Thousand Phantom Annihilation
+            Type: Ultimate Active
+            AP: 3
+            MP: 8
+            B: per hit0.9, hits 7+floor(n/2) Physical
+            Effect Description: extreme multi-hit
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Shadow Dance Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: multi-hitSkillper hitDamage+5%; EVA+1.0/per 3 Class Levels
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Afterimage Wild Dance
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: multi-hitSkillhitstreated as+1; EVA+20% permanent
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: 9-3 Mage
+    text:
+      []
+    tables:
+      []
+  - heading: "Path A: Pyromancer (unlock CL11)  | Third Stage: Inferno Ruler | Fourth-stage Ultimate: Sky-burning Dragon"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Flame Burst
+            Type: Active
+            AP: 2
+            MP: 7
+            B: 1.8 Fire
+            Effect Description: Medium-range single target; Burn 2round
+            Status: Burn
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Flame Charge
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 1.2 Fire
+            Effect Description: line AOE, Knockback
+            Status: Knockback
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Heat Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: FireDamage+10%; BurnDuration+1round
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Meteor
+            Type: Active
+            AP: 3
+            MP: 12
+            B: 2.5 Fire AOE radius3
+            Effect Description: large areaFire AOE, grantsBurn 3round
+            Status: Burn
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Inferno Prison
+            Type: Active
+            AP: 2
+            MP: 8
+            B: 1.5 Fire AOE radius2
+            Effect Description: Chill + Burn
+            Status: Chill/Burn
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: World-burning
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: FireDamage+15%; Meteorarea+1
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Sky-burning Dragon Flame
+            Type: Ultimate Active
+            AP: 3
+            MP: 14
+            B: 3.0 Fire AOE radius4
+            Effect Description: large areaFire AOE, Burn 3round
+            Status: Burn
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Flame Sovereign
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: FireDamage+15%; Burnper tick+0.1×MAG
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Inferno Burst
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: fire-type skillsBurnchance+10%; next fire skill+30%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path B: Cryomancer (unlock CL11, incl.Thunder God)  | Third Stage: Eternal Frost Sage | Fourth-stage Ultimate: Aurora Oracle"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Ice Seal
+            Type: Active
+            AP: 2
+            MP: 7
+            B: 1.4 Freeze
+            Effect Description: single targetFreeze(Hard Control 1 round) + Chill
+            Status: Freeze/Chill
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Chain Lightning
+            Type: Active
+            AP: 2
+            MP: 7
+            B: 1.2 Lightning
+            Effect Description: jump 2 target
+            Status: Shock
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Frost-Lightning Affinity
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Freeze/LightningDamage+10%; Shock chance+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Absolute Zero
+            Type: Active
+            AP: 3
+            MP: 12
+            B: 1.5 Freeze AOE radius3
+            Effect Description: groupFreeze(Hard Control 1 round) + Chill
+            Status: Freeze/Chill
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Wrath of Thunder God
+            Type: Active
+            AP: 3
+            MP: 14
+            B: 1.5 Lightning whole map
+            Effect Description: whole mapchainLightning, jumpcount scales withlevel
+            Status: Shock
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Eternal Frost
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Freeze/LightningDamage+15%; Freezetargetwhen hitguaranteed critical
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Aurora Terminus
+            Type: Ultimate Active
+            AP: 3
+            MP: 16
+            B: 2.0 Freeze AOE radius4  +  Lightningchain
+            Effect Description: groupFreeze(Hard Control 1 round) + Shock
+            Status: Freeze/Shock
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Eternal Frost Oracle
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Freeze/LightningDamage+15%; Freezetargetwhen hitguaranteed critical
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Frost-Lightning Resonance
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: frost-lightning skillsjump+1; Shock chance+10%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: 9-4 Cleric
+    text:
+      []
+    tables:
+      []
+  - heading: "Path A: Healer (unlock CL11)  | Third Stage: Life Prophet | Fourth-stage Ultimate: Eternal Radiance Shepherd"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Group Heal Enhancement
+            Type: Active
+            AP: 3
+            MP: 9
+            B: 1.2×(1+M_MAG/6) Healing AOE radius2
+            Effect Description: large areagroup heal
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Warding Enhancement
+            Type: Active
+            AP: 2
+            MP: 6
+            B: 1.8×(1+M_MAG/6) Shield whole party
+            Effect Description: Shield + Healing+10% (3round) 
+            Status: Shield
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Merciful Light
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Healing+12%; AegisDuration+1round
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Fountain of Life
+            Type: Active
+            AP: 3
+            MP: 12
+            B: 1.0×(1+M_MAG/6) Healing AOE radius3
+            Effect Description: large areaDurationgroup heal, per roundHealing 3round
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Holy Domain
+            Type: Active
+            AP: 2
+            MP: 8
+            B: 1.5×(1+M_MAG/6) Shield whole party AOE
+            Effect Description: Duration 3round + Regen 2round
+            Status: Shield/Regen
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Eternal Life
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Healing+20%; group healper tick+0.2×MAG
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Eternal Life Holy Spring
+            Type: Ultimate Active
+            AP: 3
+            MP: 14
+            B: 1.5×(1+M_MAG/6) Healing AOE radius4 Duration4round
+            Effect Description: large areaDurationgroup heal
+            Status: —
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Life Blessing
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Healing+20%; Healinggrants +5% max HP Shield
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Radiant Wall
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: whole party Shield absorption+20%; Healing received+10%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path B: Inquisitor (unlock CL11)  | Third Stage: Divine Punishment Executor | Fourth-stage Ultimate: Sacred Judgment Apocalypse"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Holy Judgment
+            Type: Active
+            AP: 2
+            MP: 6
+            B: 1.8 Holy
+            Effect Description: single targetHoly Damage, against Undead +0.5
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Light of Judgment
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 1.2 Holy AOE radius2
+            Effect Description: against Undead+0.5
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Holy Will
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Holy Damage+10%; against Fiendguaranteed hit+5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Divine Punishment
+            Type: Active
+            AP: 3
+            MP: 8
+            B: 2.2 Holy
+            Effect Description: Holy Damageoffense; against Undead ×1.5
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Holy Flame Judgment
+            Type: Active
+            AP: 2
+            MP: 7
+            B: 1.6 Holy
+            Effect Description: single target + Burn (Holy converted to Fire) 
+            Status: Burn
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Divine Verdict
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Holy Damage+15%; against Undead×2.0
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Divine Verdict Heavenly Punishment
+            Type: Ultimate Active
+            AP: 3
+            MP: 12
+            B: 3.0 Holy
+            Effect Description: againstsingle targetHolymassive damage, against Undead×2.0
+            Status: —
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Seal of Divine Verdict
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Holy Damage+15%; against Undead/Fiendadditional+25%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Holy Light Judgment
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Holy skillagainstMark/Undead+0.5; CritTh−2
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: 9-5 Thief
+    text:
+      []
+    tables:
+      []
+  - heading: "Path A: Assassin (unlock CL11)  | Third Stage: Terminus Assassin | Fourth-stage Ultimate: Nether Death"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Lethal Preparation
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.5 Physical
+            Effect Description: next attackguaranteed criticaland +1.0 multiplier (2round) 
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Shadow Strike
+            Type: Active
+            AP: 2
+            MP: 3
+            B: 1.8 Physical
+            Effect Description: ChargeBackstab, guaranteed critical from flank/rear
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Lethal
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Critical Damage+15%; flank/rear attack+20%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Blade of Terminus
+            Type: Active
+            AP: 3
+            MP: 8
+            B: 2.5 Physical
+            Effect Description: extremely highCritical Hitmultipliersingle target (Critical Damageadditional +50%) 
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Deadly Combo Stab
+            Type: Active
+            AP: 2
+            MP: 5
+            B: per hit0.9, hits 2+floor((n−1)/2) Physical
+            Effect Description: multi-hit, flank/rear+0.5
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Death Mark
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Critical Damage+30%; HP<25% targetDamage+25%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: True Blade of Terminus
+            Type: Ultimate Active
+            AP: 3
+            MP: 10
+            B: 3.5 Physical
+            Effect Description: extremely highCritical Hitsingle target (critical damageadditional+100%) , guaranteed critical from flank/rear
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Death Omen
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Critical Damage+30%; against HP<25% targetDamage+25%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Shadow Preparation
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: next attackguaranteed criticaland+1.5multiplier (2round) ; flank/rear attack+20%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path B: Trapper (unlock CL11)  | Third Stage: Mechanism Grandmaster | Fourth-stage Ultimate: Myriad-mechanism Artisan"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Explosive Mechanism
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.8 Physical
+            Effect Description: deploy ground mechanism, triggers AOE radius1 + Knockback, Duration 3round
+            Status: Knockback
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Iron Caltrop Array
+            Type: Active
+            AP: 1
+            MP: 3
+            B: —
+            Effect Description: AOE radius2 iron caltrop, enemy entering Immobilize(movement −2)2round, EVA−15%
+            Status: Immobilize/Chill
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Mechanism Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: trap damage +2.0%×Skill Level; deploy count +1/per 3 Class Levels; trap duration +1round
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Chain Mechanism
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 1.5 Physical AOE radius2
+            Effect Description: triggersafterchainuntil 2+floor((n−1)/2) enemy, per hit 0.8 Physical
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Mechanism Beast Summon
+            Type: Active
+            AP: 3
+            MP: 7
+            B: 1.4 Physical (Mechanism Beast) 
+            Effect Description: SummonMechanism Beastassist attack (Duration 3round, canTaunt) 
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Paralysis Mechanism
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: traptriggershas 15%+5%(n−1) chance Stun 1round; mechanism-type skills MP−1
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Myriad-mechanism Blast Array
+            Type: Ultimate Active
+            AP: 3
+            MP: 10
+            B: 3.0 Physical AOE radius3
+            Effect Description: deploygiant mechanism array, triggersentire field 3 stage explosion, per hit B=1.0
+            Status: Knockback
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Myriad-mechanism Art
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: trap deploy count +2; mechanism duration +2round; trap damage +20%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Mechanism Grandmaster
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Mechanism Beast damage+25%, presentwhenself EVA+2; automatically redeploy each round 1 Basetrap
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: 9-6 Hunter
+    text:
+      []
+    tables:
+      []
+  - heading: "Path A: Sharpshooter (unlock CL11)  | Third Stage: Star-piercing Ranger | Fourth-stage Ultimate: Azure Sky Hawk-eye"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Distant Aim
+            Type: Active
+            AP: 1
+            MP: 2
+            B: —
+            Effect Description: this roundrangedAttackRange + 3tile, guaranteed hit 1  time
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Piercing Arrow
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.8 Physical
+            Effect Description: pierce 1 target (ignores front-row cover) 
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Hawk-eye
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: rangedDamage+12%; extreme-range, no penalty
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Piercing Strike
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 2.6 Physical
+            Effect Description: extreme rangeguaranteed hitpierce (Range Long, ignores front-row cover) 
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Hawk-eye Focus
+            Type: Utility
+            AP: 1
+            MP: 3
+            B: —
+            Effect Description: this roundrangedRange+5tile, guaranteed hit 2  time, CritTh−5
+            Status: —
+            CD: 2
+            Max SP: 2
+          - Stage: Third Stage Lv21–30
+            Skill Name: Sniper God
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: rangedDamage+20%; pierceignore 2  layersDamage Reduction
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Azure Sky Strike
+            Type: Ultimate Active
+            AP: 2
+            MP: 8
+            B: 3.5 Physical
+            Effect Description: extreme rangeguaranteed hitpierce, ignores cover, Range Long+5tile
+            Status: Mark
+            CD: 4
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Distant Sniper Master
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: rangedDamage+20%; exceedRangelimit, still no penalty
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Focused Eye
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: rangedRange+6tile; guaranteed hittimes+3; CritTh−6
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path B: Beastmaster (unlock CL11)  | Third Stage: Lord of Hundred Beasts | Fourth-stage Ultimate: King of Ten Thousand Beasts"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Wild Call
+            Type: Active
+            AP: 2
+            MP: 4
+            B: —
+            Effect Description: Summonwolf pupcoordinate (Duration 2round) 
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Beast Claw Swipe
+            Type: Active
+            AP: 2
+            MP: 3
+            B: 1.2 Physical (pet) 
+            Effect Description: commandpetimmediatelyAttack
+            Status: —
+            CD: 2
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Wildness
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: petDamage+15%; while pet is presentself EVA+1
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Azure Wolf Summon
+            Type: Active
+            AP: 3
+            MP: 8
+            B: 1.5 Physical (pet) 
+            Effect Description: Summonazure wolfcoordinateAttack (Duration 3round, canTaunt) 
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Wild Roar
+            Type: Active
+            AP: 2
+            MP: 4
+            B: —
+            Effect Description: whole party Attack +10%/pet+20% (2round) 
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Beast King
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: pet+25%; assist strike+1 time/round
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Roar of Ten Thousand Beasts
+            Type: Ultimate Active
+            AP: 3
+            MP: 10
+            B: 2.5 Physical (pet) 
+            Effect Description: SummonAzure Wolf Kingcoordinate (Duration4round, Taunt + per roundassist strike B=2.0) 
+            Status: —
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Beast King Pressure
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: petDamage+25%; while pet is presentself EVA+2
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Wild Call Mk.II
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: automatically summon each round 1 wolf pupassist attack (Duration 2round) 
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: 9-7 Dancer
+    text:
+      []
+    tables:
+      []
+  - heading: "Path A: War-dancer (unlock CL11)  | Third Stage: Raging Storm Dancer | Fourth-stage Ultimate: War Song Goddess"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Raging Storm Prep
+            Type: Active
+            AP: 2
+            MP: 4
+            B: whole party Attack +10%
+            Effect Description: whole party berserk prep (Attack +) , 2round
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: War Drum
+            Type: Active
+            AP: 2
+            MP: 3
+            B: whole party Hit+2, CritTh−2
+            Effect Description: Duration 2round
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Battle Spirit
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: whole party Attack buff+15%; first time per battleGrant AP ignoresCooldown
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Raging Storm Dance
+            Type: Active
+            AP: 3
+            MP: 8
+            B: whole party Attack +20%
+            Effect Description: whole party berserk (Attack +CritTh−3) 
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Battle Spirit Boil
+            Type: Active
+            AP: 2
+            MP: 5
+            B: whole party Attack +15%, move speed +2
+            Effect Description: Duration 2round
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Raging Storm
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: whole party Attack +20%; CritTh−3 permanent
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: War Rhythm Finale
+            Type: Ultimate Active
+            AP: 3
+            MP: 12
+            B: whole party Attack +30%, CritTh−5, next round+1AP, Immune to Fear (3round) 
+            Effect Description: Duration 3round
+            Status: —
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Battle Spirit Boil Ultimate
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: whole party Attack buff+25%; first time per battleGrant AP ignoresCooldown
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Raging Storm Dance Mk.II
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: whole party Attack +20%, CritTh −4, move speed +2 permanent
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path B: Illusion-dancer (unlock CL11)  | Third Stage: Dreamy Phantom | Fourth-stage Ultimate: Illusion Music Demon Queen"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Illusion Dance Novice
+            Type: Active
+            AP: 2
+            MP: 4
+            B: whole party Hit+2, designate 1 enemy Charm(friendly fire)1round
+            Effect Description: Charm
+            Status: 3
+            CD: 14
+            Max SP: ""
+          - Stage: Second Stage Lv11–20
+            Skill Name: Ring of Dream
+            Type: Active
+            AP: 2
+            MP: 4
+            B: —
+            Effect Description: AOE radius2 enemy Sleepchance 20%+5%(n−1)(Soft Control, can be awoken by attack)1round
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Phantom Affinity
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Illusion-dance-typeSkillarea+1; Charm/Confusionchance+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Illusion Music Wild Dance
+            Type: Active
+            AP: 3
+            MP: 7
+            B: whole party Attack +15%, EVA+10%
+            Effect Description: enemy AOE radius2 Confusion 1round (friendly fire among each other) 
+            Status: Confusion
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Mirror Flower, Water Moon
+            Type: Active
+            AP: 2
+            MP: 6
+            B: —
+            Effect Description: against 1 enemy PhantomShadow Clone (Attack 50% miss) 2round, self EVA+20%
+            Status: —
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Charm Phantom Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Illusion-dancedebuffDuration+1round; whole party Illusion-dance buff +15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Illusion Music Demon Queen Final Dance
+            Type: Ultimate Active
+            AP: 3
+            MP: 12
+            B: entire fieldenemy Confusion 2round (friendly fire among each other)  + whole party all stats +20% 3round
+            Effect Description: Confusion
+            Status: 5
+            CD: 14
+            Max SP: ""
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Eternal Illusion Rhythm
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Illusion-dancedebuffchance+15%; whole partybuff+20%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Dream Dominator
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: first time per battlecastIllusion-dance skillignoresCooldown; Illusion-dance AOE area+1
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: 9-8 Third Second-stage Path (Path C, per Base Classadded 1 entry, 7 total・ClassLv 11 unlock) 
+    text:
+      - > each paththe same §IX general rules: Second Stage (Lv11–20) 3 Skill (2 Active + 1 Passive) /Third Stage (Lv21–30) 3 Skill (2 Active + 1 Passive) /Fourth-stage Ultimate (Lv31–40) 3 Skill(1 signature Active + 2 Passive)。Skillmultiplier f(n)=1+n(n−1)/8 → 1.00/1.25/1.75/2.50/3.50; SkillDamage = B×f(Skill Level)×(1+attribute modifier M/6)。8 entriesnewStatus (Curse/Lifesteal/Grapple = Immobilize/Sunder/MultiHit/Displacement = Displacement/Guard Aura/Shield) operates per the unified status table in the GM Rulebook。
+    tables:
+      []
+  - heading: "Path C (Warrior) : Spellsword (unlock CL11)  | Third Stage: Magic Blade Venerable | Fourth-stage Ultimate: Holy-Demon Blade Sage"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Magic Blade Slash
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.6 Physical + 0.6 Magic (dual attribute) 
+            Effect Description: single target, grants Sunder (Defense −20%, 2round) 
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Magic Blade Awakening
+            Type: Utility
+            AP: 1
+            MP: 3
+            B: —
+            Effect Description: this roundAttackconvert"Magic-Physical dual attribute (PhysicalandMagicsamewhensettled) "; next Magic Blade skill +0.5 multiplier (2round) 
+            Status: —
+            CD: 2
+            Max SP: 2
+          - Stage: Second Stage Lv11–20
+            Skill Name: Magic Energy Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: MAG≥12 whenAttack+2.0%/Skill Level; Magic-Physical dual attributeSkillDamage+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Flame Chain Slash
+            Type: Active
+            AP: 3
+            MP: 8
+            B: per hit0.7, hits 3+floor((n−1)/2) Physical + Fire
+            Effect Description: multi-hitchain slash, grants Burn 1round
+            Status: MultiHit/Burn
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Armor-rending Slash
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 2.2 Physical + 1.0 Magic
+            Effect Description: Sunder (Defense −25%, 3round) 
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Holy-Demon Sync
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Magic-Physical dual attributeSkillDamage+2.5%/Skill Level; against Sundered targetsDamage+15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Holy-Demon Blade Sage Terminus
+            Type: Ultimate Active
+            AP: 3
+            MP: 12
+            B: 3.0 Physical + 1.5 Magic AOE radius2
+            Effect Description: against Sundered targetsadditional +0.5; self Shield = 1.0×CON absorption
+            Status: Shield/Sunder
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Magic Blade Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Magic-Physical dual attributeSkillDamage+2.0%/Skill Level; MultiHithitstreated as+1
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Holy-Demon Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: first time hit each roundgenerate Shield = 0.5×CON absorption; HP<40% Attack+2.0%/Skill Level
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path C (Monk) : Grappler (unlock CL11)  | Third Stage: Dragon-lock Sect | Fourth-stage Ultimate: Demon-subduing Venerable"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Dragon-grabbing Hand
+            Type: Active
+            AP: 2
+            MP: 3
+            B: 1.4 Physical
+            Effect Description: Grapple (Immobilize, STR contest to escape; Durationuntilescape or  2round)  + next round +0.5 multipliercharge
+            Status: Grapple
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Pressure Point
+            Type: Active
+            AP: 1
+            MP: 2
+            B: 0.8 Physical
+            Effect Description: designate 1 enemy Immobilize(Hard Control 1 round) + that enemynext action −1 Action Point (AP)
+            Status: Grapple
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Dragon-lock Bone
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: grappled targetdamage taken from you+2.0%/Skill Level; unarmedDamage+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Guard-break Combo Fist
+            Type: Active
+            AP: 3
+            MP: 6
+            B: per hit0.8, hits 3+floor((n−1)/2) Physical
+            Effect Description: multi-hitguard break, grants Sunder (Defense −20%, 2round) 
+            Status: MultiHit/Sunder
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Dragon Claw Grapple
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 2.2 Physical
+            Effect Description: Grapple (Immobilize)  + Sunder (Defense −25%, 3round) 
+            Status: Grapple/Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Demon-subduing Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Grapple/Sunder targetDamage+2.5%/Skill Level; unarmedCritical Hit+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Demon-subduing Venerable Suppression
+            Type: Ultimate Active
+            AP: 3
+            MP: 10
+            B: 3.0 Physical
+            Effect Description: Grapple (Immobilize) up to 3 target + Sunder; grappled target cannot escape (2round) 
+            Status: Grapple/Sunder
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Dragon-lock Sect Will
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: on successful grappleselfnext roundAttack+2.0%/Skill Level; unarmedDamage+15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Demon-subduing Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: each enemy grappled, self Damage Reduction+2.0%/Skill Level (permanent) ; HP<30% Attack+15%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path C (Mage) : Necromancer (unlock CL11)  | Third Stage: Necromancy Lord | Fourth-stage Ultimate: Styx Death Lord"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Curse Kill
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 1.6 Necrotic
+            Effect Description: single target, grants Curse (Healing received−30%, damage taken from you+10%, 2round) 
+            Status: Curse
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Vampiric Touch
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.2 Necrotic
+            Effect Description: against Cursed targetsdealDamagewhen Lifesteal (restore 30% Damageis HP) 
+            Status: Lifesteal/Curse
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Necro Affinity
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Necrotic/Curse SkillDamage+2.0%/Skill Level; summonpresentwhenself EVA+1
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Corpse Explosion
+            Type: Active
+            AP: 3
+            MP: 9
+            B: 2.4 Necrotic AOE radius2
+            Effect Description: against Cursed targetsadditional +0.5; areadetonate
+            Status: Curse
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Wraith Summon
+            Type: Active
+            AP: 3
+            MP: 8
+            B: 1.4 Necrotic (Wraith) 
+            Effect Description: SummonWraithassist attack (Duration 3round, canTaunt) 
+            Status: —
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Nether Pact
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Necrotic/Curse Damage+2.5%/Skill Level; Lifestealrestore+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Styx Death Lord Summon
+            Type: Ultimate Active
+            AP: 3
+            MP: 14
+            B: 3.0 Necrotic AOE radius3
+            Effect Description: large areaNecroticexplosion, grants Curse; Summon Styx Wraith (Duration4round) 
+            Status: Curse
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Necromancy Lord Might
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: summonDamage+2.0%/Skill Level; Lifestealrestore+15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Death Lord Pact
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: against Cursed targetsDamage+2.0%/Skill Level; Lifesteal (restore 20% Damageis HP) permanent
+            Status: Lifesteal
+            CD: —
+            Max SP: 7
+  - heading: "Path C (Cleric) : Paladin (unlock CL11)  | Third Stage: Judgment Guardian | Fourth-stage Ultimate: Holy Radiance War Venerable"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Shield Strike
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.6 Holy
+            Effect Description: single target, grants Sunder (Defense −20%, 2round) 
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Holy Shield Aegis
+            Type: Active
+            AP: 2
+            MP: 3
+            B: —
+            Effect Description: self Guard Aura (Damage Reduction+25%, 2round)  + Shield = 0.5×CON absorption
+            Status: Guard Aura/Shield
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Vow of Guard
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Holy/Shield SkillEffect+2.0%/Skill Level; equip shieldwhenDamage Reduction+5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Warding Blessing
+            Type: Active
+            AP: 3
+            MP: 7
+            B: 1.8 Holy AOE radius2
+            Effect Description: whole party Guard Aura (Damage Reduction+15%, 2round)  + self Shield = 0.8×CON
+            Status: Guard Aura/Shield
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Evil-breaking Strike
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 2.4 Holy
+            Effect Description: Sunder (Defense −25%, 3round) ; against Undead/Fiend +0.5
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Holy Radiance
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Holy/Shield Effect+2.5%/Skill Level; against Fiendguaranteed hit+5%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Holy Radiance War Venerable Verdict
+            Type: Ultimate Active
+            AP: 3
+            MP: 12
+            B: 3.0 Holy AOE radius3
+            Effect Description: whole party Guard Aura (Damage Reduction+20%, 3round)  + Shield = 1.0×CON; against Undead/Fiend +0.5
+            Status: Guard Aura/Shield/Sunder
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Judgment Guardian Will
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: whole party Guard Aura Effect+2.0%/Skill Level; self Block Value+2
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Holy Knight Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: first time hit each roundgenerate Shield = 0.5×CON (absorption) ; Guard Auraduringcounterattackguaranteed hit
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path C (Thief) : Twin-blade (unlock CL11)  | Third Stage: Shadow Blade Sect | Fourth-stage Ultimate: Thousand-blade Death"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Twin-blade Wild Dance
+            Type: Active
+            AP: 3
+            MP: 5
+            B: per hit0.7, hits 3+floor((n−1)/2) Physical
+            Effect Description: Dual Wieldmulti-hit, flank/rear+0.5
+            Status: MultiHit
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Shadow Blade Armor-break
+            Type: Active
+            AP: 2
+            MP: 3
+            B: 1.6 Physical
+            Effect Description: Sunder (Defense −20%, 2round) ; guaranteed critical from flank/rear
+            Status: Sunder
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Dual Wield
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Dual WieldAttack+2.0%/Skill Level; flank/rear attack+15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Thousand-blade Slash
+            Type: Active
+            AP: 3
+            MP: 7
+            B: per hit0.6, hits 5+floor(n/2) Physical
+            Effect Description: extreme multi-hit, grants Sunder (Defense −15%, 2round) 
+            Status: MultiHit/Sunder
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Combo Burst
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 2.2 Physical
+            Effect Description: thisAttack MultiHit (hitsdoubled, treated asmulti-hit) ; flank/rear+0.5
+            Status: MultiHit
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Shadow Blade Sect Will
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Dual Wield/MultiHit Damage+2.5%/Skill Level; SundertargetDamage+15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Thousand-blade Death Final
+            Type: Ultimate Active
+            AP: 3
+            MP: 10
+            B: per hit0.9, hits 7+floor(n/2) Physical
+            Effect Description: extreme multi-hitreaping, grants Sunder; guaranteed critical from flank/rear
+            Status: MultiHit/Sunder
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Shadow Blade Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: MultiHit per hitDamage+2.0%/Skill Level; Dual WieldAttack+15%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Death Pact
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: against Sundered targetsDamage+2.0%/Skill Level; flank/rear attack+20%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path C (Hunter) : Skirmisher (unlock CL11)  | Third Stage: Swift Wind Outrider | Fourth-stage Ultimate: Azure Wind Wandering Deity"
+    text:
+      []
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Displacement Step
+            Type: Utility
+            AP: 1
+            MP: 3
+            B: —
+            Effect Description: this round Displacement (Displacement + pass through enemies) andnext shotguaranteed hit (2round) 
+            Status: Displacement
+            CD: 2
+            Max SP: 2
+          - Stage: Second Stage Lv11–20
+            Skill Name: Swift Wind Shot
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.8 Physical
+            Effect Description: shot after Displacement +0.5 multiplier; Range Long(8tile)
+            Status: Displacement
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Skirmisher Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: moving shot damage+2.0%/Skill Level; first attack after Displacement+10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Displacement Chain Shot
+            Type: Active
+            AP: 3
+            MP: 7
+            B: per hit0.7, hits 4+floor((n−1)/2) Physical
+            Effect Description: Displacement Displacementmid-range rapid shot, multi-hit
+            Status: MultiHit/Displacement
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Azure Wind Mark
+            Type: Active
+            AP: 2
+            MP: 4
+            B: 1.6 Physical
+            Effect Description: Mark (ally+15% damage against it, CritTh−5) ; Displacement create distance
+            Status: Displacement
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Swift Wind Outrider Will
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: moving shot/Displacement Damage+2.5%/Skill Level; Range+2tile
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Displacement Thousand Arrows
+            Type: Ultimate Active
+            AP: 3
+            MP: 10
+            B: per hit0.9, hits 6+floor(n/2) Physical AOE radius2
+            Effect Description: Displacement field-wide shooting, multi-hit; grants Chill
+            Status: MultiHit/Displacement
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Swift Wind Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: attack after Displacement+2.0%/Skill Level; Range+3tile
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Wandering Deity Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: first Displacement each round ignoresCooldown; moving shot damage+15%
+            Status: —
+            CD: —
+            Max SP: 7
+  - heading: "Path C (Dancer) : Warding-dancer (unlock CL11)  | Third Stage: Merciful Shield Dancer | Fourth-stage Ultimate: Eternal Ward Dance Deity"
+    text: "---
+*Catalog inclusion statistics: Base Skill 42 (7 classes × 6)  +  Second Stage 63 (21 Path × 3)  +  Third Stage 63 (21 × 3)  +  Fourth Stage 63 (21 × 3)  =  **231 entries**。Utility Skilltotal 10 entries (Base 6  +  ShadowbladeSecond Stage 1  +  SharpshooterThird Stage 1  +  SpellswordSecond Stage 1  +  SkirmisherSecond Stage 1) 。Magic/Spellrelevantcontent see also《Magic Catalog》。*"
+    tables:
+      - columns:
+          - Stage
+          - Skill Name
+          - Type
+          - AP
+          - MP
+          - B
+          - Effect Description
+          - Status
+          - CD
+          - Max SP
+        rows:
+          - Stage: Second Stage Lv11–20
+            Skill Name: Warding Waltz
+            Type: Active
+            AP: 2
+            MP: 4
+            B: —
+            Effect Description: whole party Guard Aura (Damage Reduction+20%, 2round) 
+            Status: Guard Aura
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Ring of Warding
+            Type: Active
+            AP: 2
+            MP: 3
+            B: —
+            Effect Description: whole party Shield = 0.5×CHA absorption (3round) 
+            Status: Shield
+            CD: 3
+            Max SP: 14
+          - Stage: Second Stage Lv11–20
+            Skill Name: Merciful Shield Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Guard Aura/Shield Effect+2.0%/Skill Level; AegisDuration+1round
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Third Stage Lv21–30
+            Skill Name: Eternal Ward Dance
+            Type: Active
+            AP: 3
+            MP: 7
+            B: —
+            Effect Description: whole party Guard Aura (Damage Reduction+15%, 3round)  + Shield = 0.8×CHA absorption
+            Status: Guard Aura/Shield
+            CD: 4
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Merciful Light Shelter
+            Type: Active
+            AP: 2
+            MP: 5
+            B: 1.0×(1+M_CHA/6) Healing AOE radius2
+            Effect Description: Healing + Shield = 0.5×CHA; Duration 2round
+            Status: Shield
+            CD: 3
+            Max SP: 14
+          - Stage: Third Stage Lv21–30
+            Skill Name: Merciful Shield Dancer Will
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Guard Aura/Shield Effect+2.5%/Skill Level; whole party Healing received +10%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Eternal Ward Dance Deity Final Dance
+            Type: Ultimate Active
+            AP: 3
+            MP: 12
+            B: —
+            Effect Description: whole party Guard Aura (Damage Reduction+25%, 3round)  + Shield = 1.0×CHA absorption + Immune to Fear
+            Status: Guard Aura/Shield
+            CD: 5
+            Max SP: 14
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Merciful Shield Mastery
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: Guard Aura Effect+2.0%/Skill Level; whole party Shield absorption+20%
+            Status: —
+            CD: —
+            Max SP: 7
+          - Stage: Fourth Stage Lv31–40
+            Skill Name: Eternal Ward Body
+            Type: Passive
+            AP: —
+            MP: —
+            B: —
+            Effect Description: at start of each roundwhole party Shield = 0.3×CHA absorption (permanent, 1round) ; Guard Auraduringwhole party+5% Attack
+            Status: —
+            CD: —
+            Max SP: 7

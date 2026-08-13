@@ -1,0 +1,45 @@
+Arcane Origins TRPG — You are not a mage who "chooses" spells; you are a magic researcher who "invents" them.
+
+In the world of Arcane Origins, magic is not copied from a spellbook — it comes from "Shards," magic crystals that condense Element, Form, Medium, and Constraint. You are an independent researcher and the master of your own mage tower. Your Fireball is unlike any other mage's.
+
+WHAT KIND OF WORLD IS THIS?
+
+Thousands of years ago, the first mage Selena wove the "Starweave" — the underlying structure from which all magic is built. Seven Weavers once maintained it together, and the seventh, the Void God, has slept sealed for a thousand years. Today magic lies scattered across the world as Shards, contested by independent mages, the Dragons, the Academy, and the暗中 operating Watcher Council. This is a world where scholarship is power and knowledge is danger.
+
+WHO DO YOU PLAY? WHAT DO YOU DO?
+
+You are an independent mage, with your own tower, research direction, and academic reputation. The core gameplay is a loop: observe anomalies, form hypotheses, prepare materials, get to work extracting Shards through experiment, then combine those Shards into spells that are uniquely yours. You will manage the tower's eight facilities, train apprentices, publish theses, and navigate academic politics — and you will also leave the tower to seek legendary Shards in dragon lairs and ruins. Combat is one tool among many, but not the whole of it.
+
+SYSTEM HIGHLIGHTS
+
+Invent, don't choose: Spell = Element (1–3) + Form (1–2) + Medium + Constraint. Flame paired with Wind spreads into a Firestorm; paired with Frost it becomes a Flash Heat surge. Every spell is one of a kind, and its Quality — from Apprentice-grade ★ to Legendary-grade ★★★★★ — is set by the Shard's rarity.
+
+Research loop and risk: Observe (Perception), Hypothesize (Theory), Experiment (Craft) — each step requires a dice check, with the Difficulty Class (DC) set by the Shard's rarity. If a failure exceeds the Safety Threshold, it triggers the d20 Accident Table — anything from elemental backlash to the tower's collapse is possible.
+
+Five research styles: Empirical, Intuitive, Bibliographic, Taboo, Collaborative — once chosen, it fixes how you do scholarship, each trading off completely differently for efficiency.
+
+WHO IS IT FOR?
+
+If you like "building something that's your own," enjoy theoretical deduction and resource planning, and are moved by "my Fireball is different from yours," you will love this ruleset. It suits players who enjoy story immersion and strategic management, and welcomes TRPG newcomers too — character creation is guided and it can be played fully solo; veteran players will find deep enough optimization space to dig into.
+
+GAME STYLE TAGS
+
+- Combat weight: Significant
+- Strategic depth: Moderate strategy
+- Story-driven: Story-supported
+- Resource management: Moderate management
+- Character customization: Highly customizable
+- Character-creation complexity: Medium
+- Rules density: Medium ruleset
+- GM requirement: Requires a GM
+
+ESTIMATED PLAY TIME
+
+- Single scenario: about 4–15 hours (depending on scale; intro scenarios about 4–6 hours)
+- Full campaign: five scenarios strung together, plus free research turns between them, about 40–70 hours
+
+BASIC INFO
+
+- Player count: 1 GM (host) + 1–5 player mages
+- Core dice: 2d10 (roll two ten-sided dice, add the attribute value and proficiency bonus)
+- Attribute system: the five attributes Perception, Theory, Craft, Will, and Erudition

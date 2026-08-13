@@ -1,0 +1,63 @@
+# Multiplayer Campaign Structure File: Site Shadow (Shadow of the Site / Campaign Series C)
+# Source: campaign-series-c-shadow-of-the-site_zh-Hant.md
+# This file is a structured summary; for full scene descriptions, see the corresponding .md.
+
+meta:
+  title: "Site Shadow (Shadow of the Site)"
+  type: "Multiplayer Player Campaign"
+  player_count: "Squad (recommended 3–5 players)"
+  level_range: "Lv.3–10"
+  focus: "Political Maneuvering / Containment Breach Response / Whistleblower Ethics"
+  setting: "An active Site (the new Site where the players are stationed)"
+  plot: "After building relationships at the new Site, the players discover internal anomalous monitoring anomalies, departmental infighting, and ultimately become whistleblowers, deciding the Site's fate at an O5 hearing."
+
+scenes:
+  - id: "C-1"
+    name: "New Site, Old Shadows"
+    level: "Lv.3"
+    type: "Onboarding / Relationship-Building / Site Tour"
+    key_checks: ["Observation TN 62", "Foundation Lore TN 58", "Persuasion TN 52"]
+    duration: "1–2 sessions"
+    map_ref: "generic_site (second-floor administrative level)"
+
+  - id: "C-2"
+    name: "The Fracture"
+    level: "Lv.4–5"
+    type: "Anomaly Monitoring / Preliminary Investigation"
+    key_checks: ["Anomalistics TN 65", "Engineering TN 60", "Observation TN 62"]
+    duration: "1–2 sessions"
+
+  - id: "C-3"
+    name: "Departmental War"
+    level: "Lv.5–6"
+    type: "Political Maneuvering / Resource Negotiation"
+    key_checks: ["Persuasion TN 60", "Deception TN 55", "Leadership TN 58"]
+    duration: "1–2 sessions"
+
+  - id: "C-4"
+    name: "The Thing Released"
+    level: "Lv.6–7"
+    type: "Containment Breach Response / Crisis Management"
+    key_checks: ["Anomalistics TN 68", "Engineering TN 62", "Firearms TN 70"]
+    duration: "2 sessions"
+
+  - id: "C-5"
+    name: "Ethics Committee"
+    level: "Lv.7–8"
+    type: "Ethical Review / Testimony Contest"
+    key_checks: ["Persuasion TN 62", "Foundation Lore TN 60", "Deception TN 58"]
+    duration: "1–2 sessions"
+
+  - id: "C-6"
+    name: "Whistleblower"
+    level: "Lv.8–9"
+    type: "Secret Protection / Truth Dissemination"
+    key_checks: ["Stealth TN 60", "Computers TN 65", "Persuasion TN 65"]
+    duration: "1–2 sessions"
+
+  - id: "C-7"
+    name: "Reckoning"
+    level: "Lv.9–10"
+    type: "O5 Hearing / Site Fate"
+    key_checks: ["All Social Skills", "Leadership TN 68", "Persuasion TN 65"]
+    duration: "1–2 sessions"

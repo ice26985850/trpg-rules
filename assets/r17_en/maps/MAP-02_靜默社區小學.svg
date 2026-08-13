@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="808" height="306" viewBox="0 0 808 306" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="808" height="306" fill="#FBFCFE"/>
+<rect x="18" y="186" width="506" height="102" rx="14" fill="#E8F5E9" fill-opacity="0.55" stroke="#E8F5E9" stroke-opacity="0.9"/>
+<text x="28" y="204" font-size="13" font-weight="bold" fill="#37474F">Outdoor</text>
+<rect x="284" y="64" width="506" height="102" rx="14" fill="#E3F2FD" fill-opacity="0.55" stroke="#E3F2FD" stroke-opacity="0.9"/>
+<text x="294" y="82" font-size="13" font-weight="bold" fill="#37474F">1st Floor</text>
+<rect x="550" y="186" width="240" height="102" rx="14" fill="#F3E5F5" fill-opacity="0.55" stroke="#F3E5F5" stroke-opacity="0.9"/>
+<text x="560" y="204" font-size="13" font-weight="bold" fill="#37474F">2nd Floor</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">Silent Community Elementary School (Expansion)</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">Region: Old Town　Danger: ★★☆☆☆　Suitable Level (Lv.): 3</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="237" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="227" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="240" font-size="12" fill="#455A64" text-anchor="middle">Corridor</text>
+<line x1="404" y1="237" x2="404" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="380" y="166" width="47" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="179" font-size="12" fill="#455A64" text-anchor="middle">East Door</text>
+<line x1="404" y1="237" x2="670" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="514" y="166" width="47" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="179" font-size="12" fill="#455A64" text-anchor="middle">West Door</text>
+<line x1="404" y1="115" x2="670" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="166" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="179" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<line x1="670" y1="115" x2="670" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="653" y="166" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="670" y="179" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<rect x="40" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">North Perimeter Wall Entrance</text>
+<title>North Perimeter Wall Entrance: Collapsed wall section is climbable; Scav Gang of 3 on north street</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Playground</text>
+<title>Playground: Flagpole platform as elevated observation point; soccer goal as light cover</title>
+<rect x="306" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Infirmary</text>
+<title>Infirmary: Supplies left in medicine cabinet; First Aid Kit ×2, Adrenaline ×1 (TN14)</title>
+<rect x="572" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Classrooms ×2</text>
+<title>Classrooms ×2: Classroom Residuals ×2 (former teachers); door can be locked from outside (TN8) to avoid combat; ceiling unstable</title>
+<rect x="572" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">School Building 2nd Floor</text>
+<title>School Building 2nd Floor: Corridor connects two classrooms; windows overlook playground (Perception TN11)</title>
+</svg>

@@ -1,0 +1,82 @@
+scenario: S0
+section: Prologue · Tutorial Village (CL 1–4)
+map_type: explore
+title: S0_Explore_Tutorial Village
+# Coordinates are schematic (not exact distances), unit is SVG canvas pixels
+
+nodes:
+  - id: village
+    label: Tutorial Village
+    x: 340
+    y: 360
+    type: village
+    explored: true
+  - id: guild
+    label: Adventurers' Guild
+    x: 340
+    y: 235
+    type: facility
+    explored: true
+  - id: temple
+    label: Seven Temples (Sanctum of Merciful Light)
+    x: 200
+    y: 300
+    type: facility
+    explored: true
+  - id: forest
+    label: Outskirts Forest
+    x: 450
+    y: 300
+    type: wild
+    explored: true
+  - id: goblin
+    label: Goblin Camp
+    x: 540
+    y: 190
+    type: enemy_nest
+    explored: false
+  - id: exam
+    label: Exam Grounds (F→E)
+    x: 200
+    y: 470
+    type: story_point
+    explored: true
+  - id: farm
+    label: Farmland and Surroundings
+    x: 450
+    y: 470
+    type: village
+    explored: true
+
+edges:
+  - from: village
+    to: guild
+    type: road
+  - from: village
+    to: temple
+    type: road
+  - from: village
+    to: forest
+    type: path
+  - from: forest
+    to: goblin
+    type: path
+    label: "Monsters Appear"
+  - from: village
+    to: exam
+    type: road
+    label: "Promotion Exam"
+  - from: village
+    to: farm
+    type: road
+  - from: guild
+    to: exam
+    type: road
+
+regions:
+  - name: Village Living Zone
+    color: "#FFE6A0"
+    nodes: [village, guild, temple, farm, exam]
+  - name: Wild Danger Zone
+    color: "#C8E6C8"
+    nodes: [forest, goblin]

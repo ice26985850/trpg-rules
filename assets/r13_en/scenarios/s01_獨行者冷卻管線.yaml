@@ -1,0 +1,79 @@
+name: "The Lone Walker's Cooling Tunnels"
+difficulty: "Introductory (Challenge Rating (CR) 1)"
+mode: "Mortal · Solo"
+judge: "Astaroth (Puritan)"
+target_region: "Tarr-Morag Hive, Mid Hive (Level 850), abandoned cooling tunnels"
+recommended_attributes: "2-3"
+
+opening_description: >
+  You are one of the newest batch of Penitents. For this mission, the Inquisitor sent only you — and a guide you have never met.
+  This is not trust. It is a test. Steam from the cooling tunnels spills through the cracks, and the dim lights reveal the mottled rust on the pipe walls.
+
+surface_goal: >
+  Infiltrate the small Chaos Cultist outpost operating within the abandoned cooling tunnels and recover an Imperial Relic they are said to possess.
+
+hidden_goal: >
+  Astaroth wants to see whether you can maintain discipline without the pressure of teammates. The guide is also an observer.
+
+known_threats:
+  - "About 4-6 low-rank cultists"
+  - "Possibly led by 1 Acolyte"
+
+hidden_threats:
+  - "A section of the abandoned pipeline is structurally unstable — an explosion in combat may trigger a collapse"
+  - "The cult is actually awaiting supplies from the Underhive; they are merely an outpost"
+
+resources:
+  medical_pack: 1
+  holy_water: 3
+  holy_oil: 3
+  flare: 2
+  food_water_days: 3
+  ammo_magazines: 2
+
+internal_seduction_trigger:
+  timing: "When discovering the relic inside the outpost"
+  whisper: "This relic is worth a fortune. The Inquisitor will never know its true value. You could say it was damaged in combat."
+
+companions:
+  - name: "Kaz Vell"
+    role: "Guide / former Hive Laborer / Penitent"
+    backstory: "A silent middle-aged man, convicted of Heresy — his heresy was refusing to report his own neighbors"
+    motive: "Live to return and see his daughter (he does not know if she is still waiting)"
+    bottom_line: "Never kill civilians"
+    initial_attitude: 0
+    attributes:
+      faith: 3
+      physique: 3
+      mind: 2
+      skill: 3
+      fate: 2
+    trained_skills: ["Stealth", "Awareness"]
+    equipment: ["Autopistol (1d6)", "Flak Vest (Armor Rating (AR) 1)", "Fragment of a Hive City map"]
+    special_ability:
+      name: "Hive Rat"
+      desc: "Never gets lost in Hive City environments. Can provide the player with a one-time stealth route (player gains Advantage on Stealth tests)"
+
+key_checks:
+  - scene: "Build trust with Kaz"
+    check: "Oratory (Standard)"
+    tn_adjustment: 0
+    success: "Kaz attitude +1, gain a Hive shortcut"
+    failure: "Kaz remains silent"
+  - scene: "Find the outpost entrance"
+    check: "Awareness (Standard)"
+    tn_adjustment: 0
+    success: "Discover sentinel position, can sneak around"
+    failure: "Alert the sentinel, enter combat"
+
+encounters:
+  - name: "Pipeline patrol"
+    enemies: "Chaos Cultist ×2"
+    tactic: "Basic gunfight. Kaz can provide flanking cover"
+  - name: "Inside the outpost"
+    enemies: "Chaos Cultist ×2 + small trap"
+    tactic: "Kaz can help disarm the trap (Tech-Use test)"
+
+evacuation_condition: "Proceed to the designated extraction point after mission completion. No time limit."
+
+map_ref: "maps/map01_cooling_tunnels"

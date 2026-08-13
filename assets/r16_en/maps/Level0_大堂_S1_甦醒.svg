@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" font-family="'Microsoft JhengHei','PingFang TC',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#666"/>
+    </marker>
+    <marker id="arrowDanger" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#C62828"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="650" fill="#FFFDE7" rx="10"/>
+
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2F5496">Level 0 — Lobby（corresponding scenario S1：Awakening）</text>
+
+  <!-- Region: Starting Area -->
+  <rect x="120" y="170" width="360" height="210" rx="15" fill="#E8F5E9" opacity="0.6" stroke="#4CAF50" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="300" y="190" text-anchor="middle" font-size="11" fill="#4CAF50" font-weight="bold">Starting Area</text>
+
+  <!-- Region: Marked Corridor -->
+  <rect x="370" y="220" width="360" height="210" rx="15" fill="#FFF3E0" opacity="0.6" stroke="#FF9800" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="550" y="240" text-anchor="middle" font-size="11" fill="#FF9800" font-weight="bold">Marked Corridor</text>
+
+  <!-- Region: Dark Zone -->
+  <rect x="770" y="180" width="160" height="300" rx="15" fill="#ECEFF1" opacity="0.6" stroke="#607D8B" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="850" y="200" text-anchor="middle" font-size="11" fill="#607D8B" font-weight="bold">Dark Zone</text>
+
+  <!-- Region: Exit Area -->
+  <rect x="550" y="470" width="140" height="70" rx="15" fill="#E3F2FD" opacity="0.6" stroke="#2196F3" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="620" y="490" text-anchor="middle" font-size="11" fill="#2196F3" font-weight="bold">Exit Area</text>
+
+  <!-- Legend -->
+  <rect x="15" y="55" width="195" height="110" rx="8" fill="white" stroke="#ccc" stroke-width="1"/>
+  <text x="25" y="72" font-size="11" font-weight="bold" fill="#333">▸ Legend</text>
+  <rect x="25" y="80" width="25" height="12" rx="3" fill="#4CAF50"/>
+  <text x="58" y="91" font-size="9" fill="#555">Starting Area</text>
+  <rect x="25" y="98" width="25" height="12" rx="3" fill="#FF9800"/>
+  <text x="58" y="109" font-size="9" fill="#555">Marked Corridor</text>
+  <rect x="25" y="116" width="25" height="12" rx="3" fill="#607D8B"/>
+  <text x="58" y="127" font-size="9" fill="#555">Dark Zone（Danger）</text>
+  <rect x="25" y="134" width="25" height="12" rx="3" fill="#2196F3"/>
+  <text x="58" y="145" font-size="9" fill="#555">Exit Area</text>
+
+  <!-- Edges -->
+  <line x1="210" y1="270" x2="290" y2="240" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="290" y1="220" x2="440" y2="260" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="170" y1="300" x2="250" y2="360" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="280" y1="380" x2="390" y2="410" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="280" x2="390" y2="400" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="420" y1="430" x2="530" y2="380" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="560" y1="370" x2="640" y2="280" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="590" y1="390" x2="690" y2="410" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="640" y1="300" x2="690" y2="400" stroke="#666" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <!-- Danger edges -->
+  <line x1="720" y1="420" x2="790" y2="340" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <line x1="810" y1="320" x2="890" y2="240" stroke="#C62828" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowDanger)"/>
+  <!-- Exit edge -->
+  <line x1="720" y1="440" x2="640" y2="510" stroke="#2196F3" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <text x="660" y="455" font-size="9" fill="#2196F3" font-weight="bold">→ Exit Direction</text>
+  <text x="830" y="375" font-size="9" fill="#C62828" font-weight="bold">⚠ Dark Zone</text>
+
+  <!-- Nodes -->
+  <!-- N01: Start -->
+  <rect x="140" y="255" width="70" height="28" rx="13" fill="#4CAF50"/>
+  <text x="175" y="274" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Starting Cubicle</text>
+
+  <!-- N02: Almond Water -->
+  <rect x="260" y="222" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="295" y="241" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Almond Water Corner</text>
+
+  <!-- N03: Computer -->
+  <rect x="410" y="243" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="445" y="262" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Powered-on Computer</text>
+
+  <!-- N04: Cubicle cluster -->
+  <rect x="220" y="348" width="70" height="28" rx="13" fill="#9E9E9E"/>
+  <text x="255" y="367" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Cubicle Cluster</text>
+
+  <!-- N05: Mark start -->
+  <rect x="370" y="398" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="405" y="417" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Marked Start</text>
+
+  <!-- N06: Long corridor -->
+  <rect x="520" y="355" width="70" height="28" rx="13" fill="#9E9E9E"/>
+  <text x="555" y="374" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Long Corridor</text>
+
+  <!-- N07: Shelter -->
+  <rect x="610" y="253" width="70" height="28" rx="13" fill="#4CAF50"/>
+  <text x="645" y="272" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Predecessor Shelter</text>
+
+  <!-- N08: Fork -->
+  <rect x="670" y="393" width="70" height="28" rx="13" fill="#FF9800"/>
+  <text x="705" y="412" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Fork in the Road</text>
+
+  <!-- N09: Dark entrance -->
+  <rect x="770" y="323" width="70" height="28" rx="13" fill="#C62828"/>
+  <text x="805" y="342" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Dark Corridor Entrance</text>
+
+  <!-- N10: Dark deep -->
+  <rect x="865" y="223" width="70" height="28" rx="13" fill="#C62828"/>
+  <text x="900" y="242" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Dark Depths</text>
+
+  <!-- N11: Dead end -->
+  <rect x="820" y="440" width="70" height="28" rx="13" fill="#9E9E9E"/>
+  <text x="855" y="459" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Dead End（Phase-out Point）</text>
+
+  <!-- N12: Exit -->
+  <rect x="570" y="490" width="85" height="32" rx="15" fill="#2196F3"/>
+  <text x="612" y="511" text-anchor="middle" font-size="11" fill="white" font-weight="bold">🔥 Exit</text>
+
+  <!-- Danger warnings -->
+  <text x="900" y="350" text-anchor="middle" font-size="12" fill="#C62828" font-weight="bold">⚠ Hounds</text>
+  <text x="900" y="370" text-anchor="middle" font-size="12" fill="#C62828" font-weight="bold">⚠ Smilers</text>
+
+  <!-- Route hint -->
+  <text x="175" y="620" font-size="10" fill="#888">Suggested route: Starting Cubicle → Almond Water Corner → Powered-on Computer → Marked Start → Long Corridor → Fork in the Road → Exit</text>
+  <text x="175" y="638" font-size="10" fill="#C62828">Warning: The left side of the fork leads to the Dark Zone — the character should choose the right side leading to the exit</text>
+</svg>

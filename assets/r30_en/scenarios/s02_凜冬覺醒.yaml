@@ -1,0 +1,72 @@
+scenario:
+  id: s02
+  title: "Winter's Awakening"
+  source: "Excerpted from the League of Legends TRPG Campaign Scenario Collection · Multiplayer Scenario · Main Campaign Part Two"
+  mode: "Multiplayer"
+  standalone: true
+  level_range: "Lv.6-10"
+  region: "Freljord Tundra"
+  estimated_time: "4-5 sessions"
+  summary: >
+    After destroying the Obsidian Forge, the players discover that the secret backer of 'the Obsidian
+    Circle' comes from Freljord — an ancient bloodline known as the 'Frostborn'. They are attempting to
+    use the Forbidden Magic Stone to awaken the Ancient Iceborn sealed beneath the Howling Abyss. The
+    players must traverse the tundra, broker alliances among the three tribes, and stop the Frostborn's
+    final ritual.
+  chapters:
+    - id: "2.1"
+      title: "Tundra Journey"
+      level: "Lv.6"
+      type: "Survival"
+      core_encounter: "Extreme cold environment trials, Icefield Behemoth encounter, search for Ashe's tribe"
+    - id: "2.2"
+      title: "Tribal Trials"
+      level: "Lv.7"
+      type: "Combat/Trial"
+      core_encounter: "Complete three trials to earn Ashe's trust: Hunting/Wrestling/Tracking"
+    - id: "2.3"
+      title: "Tri-Tribe Council"
+      level: "Lv.8"
+      type: "Social"
+      core_encounter: "Convince Sejuani's Winter's Claw and Lissandra's Frostguard to join the alliance (Difficulty Class (DC) 18-22 negotiation)"
+    - id: "2.4"
+      title: "Howling Abyss"
+      level: "Lv.9-10"
+      type: "Epic Dungeon/Boss"
+      core_encounter: "Descend into the abyss, five-layer dungeon, final Boss 'Ancient Iceborn — Father of Winter'"
+  key_npcs:
+    - name: "Ashe"
+      role: "Empress of the Avarosa, primary ally"
+      bond: "Bond levels 1-6"
+    - name: "Sejuani"
+      role: "Leader of the Winter's Claw, a swing faction that can be won over"
+      bond: "Bond levels 1-3 (must prove your strength)"
+    - name: "Braum"
+      role: "Legendary hero, provides support and guidance"
+      bond: "Bond levels 1-6"
+    - name: "Lissandra"
+      role: "Leader of the Frostguard — friend and foe alike"
+      bond: "May become a rival or a reluctant ally"
+  boss:
+    name: "Ancient Iceborn — Father of Winter"
+    level: "Lv.10"
+    stats:
+      hp: 1800
+      ad: 85
+      armor_mr: "120/90"
+      immunity: "Frost, Slow"
+    phases:
+      - phase: "P1"
+        range: "100%-70%"
+        mechanics: "Frost Breath (3-cell cone in front, Attack Damage (AD)×1.5 + Freeze 1 turn) + summons Ice Elementals (Health Points (HP) 150×2)"
+      - phase: "P2"
+        range: "70%-35%"
+        mechanics: "Adds 'Winter Storm' (all-field Attack Damage (AD)×0.3 frost damage + Move Speed (MS) -2 each turn); Ice Elementals upgrade to Frost Giants (Health Points (HP) 300)"
+      - phase: "P3"
+        range: "35%-0%"
+        mechanics: "Abyss Rupture — the ground randomly generates 2-cell fissures each turn (those who step in take Attack Damage (AD)×1.0 True Damage + fall for 1 turn); Boss enrages (damage +40%)"
+  rewards:
+    exp: 5200
+    gold: "6,000-9,000"
+    equipment: "'Heart of Winter' (Armor (AR)+50, Frost immunity, enemies within 2 cells at the start of each turn lose Move Speed (MS) -1)"
+    augment: "'Iceborn Blessing' — gain the passive ability of Ashe or Sejuani"

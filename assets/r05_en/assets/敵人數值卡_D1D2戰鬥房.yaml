@@ -1,0 +1,272 @@
+title: Enemy Stat Cards — D1/D2 Combat Room Quick Reference
+sections:
+  - heading: Enemy Stat Cards — D1/D2 Combat Room Quick Reference
+    text:
+      - > **Stat Source**: GM Book 10.4 Enemy Challenge Rating (CR) Formula (system finalization locked):
+      - > - Health (HP) = `floor(40 × (1 + 0.09 × (CR − 1)))`
+      - > - Attack Bonus (ATK) = `floor(1 + 0.25 × CR)`
+      - > - Evasion (EVA) = `10 + floor(0.15 × CR)`
+      - > - Damage/Hit = `floor(6 + 1.2 × CR)`
+      - > - Experience (EXP) = `floor(15 × CR × (1 + CR/15))`; Boss EXP ×4
+      - > - Critical Threshold (CritTh) fixed at 20; high Challenge Rating (CR) may lower the threshold by 1–2 (this card uses 19 for CR13+)
+      - >
+      - > **Usage**: `Damage/Hit` is the "base damage" of each monster's Normal Attack, applied directly; `Attack Method` only describes the damage type (Pierce / Slash / Bludgeon / Shadow, etc.) without listing separate weapon dice (consistent with the full bestiary, where weapons are shown for illustration). `Damage Reduction (DR)` marked "suggested" is estimated from the same-family template and may be fine-tuned by the GM. Solo Mode follows GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, minimum 1 each) for quick calculation at the bottom of each card.
+      - >
+      - > Corresponding positioning combat maps: D1 → `maps/D1_戰鬥_前廳／寢窟／王座窟.yaml`; D2 → `maps/D2_戰鬥_前室／停靈堂／巫妖密室.yaml`.
+      - ---
+    tables:
+      []
+  - heading: I. D1 Goblin Lair
+    text:
+      []
+    tables:
+      []
+  - heading: "Card 1 — R2 Antechamber: Goblin Warrior ×2 (CR2)"
+    text:
+      - > **Solo Adjustment (GM Book 13.1, CR−3 min 1)**: enemy count 2→1; CR2−3→1 ⇒ HP 40 / ATK +1 / EVA 10 / Damage 7 / EXP 16.
+    tables:
+      - columns:
+          - Entry
+          - Stat Values
+        rows:
+          - Entry: Challenge Rating (CR)
+            Stat Values: 2 (Minion, ×2 on field)
+          - Entry: Health (HP)
+            Stat Values: 43
+          - Entry: Attack Bonus (ATK)
+            Stat Values: +1
+          - Entry: Evasion (EVA)
+            Stat Values: 10
+          - Entry: Damage/Hit
+            Stat Values: 8
+          - Entry: Critical Threshold (CritTh)
+            Stat Values: 20
+          - Entry: Experience (EXP)
+            Stat Values: 34 (×2 total 68)
+          - Entry: Damage Reduction (DR)
+            Stat Values: 0% (suggested)
+          - Entry: Attack Method
+            Stat Values: Melee Pierce
+          - Entry: Trait
+            Stat Values: Gregarious (appears in groups; GM may pull 2 at once)
+          - Entry: Weakness/Resistance
+            Stat Values: None special
+          - Entry: Drop
+            Stat Values: Goblin Earring, Rags (see bestiary Challenge Rating (CR) 1)
+  - heading: "Card 2 — R5 Sleeping Den: Goblin Archer ×2 (CR3)"
+    text:
+      - > **Solo Adjustment (GM Book 13.1, CR−3 min 1)**: enemy count 2→1; CR3−3→1 ⇒ HP 40 / ATK +1 / EVA 10 / Damage 7 / EXP 16.
+    tables:
+      - columns:
+          - Entry
+          - Stat Values
+        rows:
+          - Entry: Challenge Rating (CR)
+            Stat Values: 3 (Minion, ×2 on field)
+          - Entry: Health (HP)
+            Stat Values: 47
+          - Entry: Attack Bonus (ATK)
+            Stat Values: +1
+          - Entry: Evasion (EVA)
+            Stat Values: 10
+          - Entry: Damage/Hit
+            Stat Values: 9
+          - Entry: Critical Threshold (CritTh)
+            Stat Values: 20
+          - Entry: Experience (EXP)
+            Stat Values: 54 (×2 total 108)
+          - Entry: Damage Reduction (DR)
+            Stat Values: 0% (suggested)
+          - Entry: Attack Method
+            Stat Values: Ranged Pierce (threatens our Back Row)
+          - Entry: Trait
+            Stat Values: Ranged Harassment (prioritizes our Back Row Mage/Cleric/Hunter)
+          - Entry: Weakness/Resistance
+            Stat Values: None special
+          - Entry: Drop
+            Stat Values: Goblin Earring, Rags (same-family materials)
+  - heading: "Card 3 — R7 Throne Cavern: Goblin King (CR5, Boss)"
+    text:
+      - > **Solo Adjustment (GM Book 13.1, CR−3)**: CR5−3=2 ⇒ HP 43 / ATK +1 / EVA 10 / Damage 8 / EXP 136 (CR2 single 34 ×4).
+      - ---
+    tables:
+      - columns:
+          - Entry
+          - Stat Values
+        rows:
+          - Entry: Challenge Rating (CR)
+            Stat Values: 5 (Minor Boss, Boss)
+          - Entry: Health (HP)
+            Stat Values: 54 (CR5 formula; original module misprinted 100, corrected per 10.4)
+          - Entry: Attack Bonus (ATK)
+            Stat Values: +2
+          - Entry: Evasion (EVA)
+            Stat Values: 11
+          - Entry: Damage/Hit
+            Stat Values: 12
+          - Entry: Critical Threshold (CritTh)
+            Stat Values: 20
+          - Entry: Experience (EXP)
+            Stat Values: 400 (CR5 single 100 ×4)
+          - Entry: Damage Reduction (DR)
+            Stat Values: 10% (suggested, leather armor)
+          - Entry: Attack Method
+            Stat Values: Melee Slash
+          - Entry: Trait
+            Stat Values: `Brute Swing`—once every 3 turns, deals Damage ×1.5 to our Front Row and Knockback 1 square (positioning map marks AOE)
+          - Entry: Weakness/Resistance
+            Stat Values: Weakness Fire ×1.5
+          - Entry: Drop
+            Stat Values: Goblin King Sigil (story item; guild exchange grants Influence Points (IP) +2) + basic materials + low-chance Fine recipe
+  - heading: II. D2 Slumbering Tomb
+    text:
+      []
+    tables:
+      []
+  - heading: "Card 4 — R2 Forechamber: Skeleton Warrior ×3 (CR13)"
+    text:
+      - > **Solo Adjustment (GM Book 13.1, CR−3)**: enemy count 3→2 (at least 1, ×0.5 rounded up); CR13−3=10 ⇒ HP 72 / ATK +3 / EVA 11 / Damage 18 / EXP 250 (×2 total 500).
+    tables:
+      - columns:
+          - Entry
+          - Stat Values
+        rows:
+          - Entry: Challenge Rating (CR)
+            Stat Values: 13 (Minion, ×3 on field)
+          - Entry: Health (HP)
+            Stat Values: 83
+          - Entry: Attack Bonus (ATK)
+            Stat Values: +4
+          - Entry: Evasion (EVA)
+            Stat Values: 11
+          - Entry: Damage/Hit
+            Stat Values: 21
+          - Entry: Critical Threshold (CritTh)
+            Stat Values: 19 (high CR lowers threshold by 1)
+          - Entry: Experience (EXP)
+            Stat Values: 364 (×3 total 1,092)
+          - Entry: Damage Reduction (DR)
+            Stat Values: 15% (suggested, bone armor)
+          - Entry: Attack Method
+            Stat Values: Melee Slash/Bludgeon
+          - Entry: Trait
+            Stat Values: Undead; Immune to Psychic; Holy-fearing (Holy ×1.5); line up to block the path
+          - Entry: Weakness/Resistance
+            Stat Values: Weakness Holy ×1.5 (Cleric's "Holy Purify" can weaken)
+          - Entry: Drop
+            Stat Values: Bone Shard, Worn Amulet (see bestiary Challenge Rating (CR) 1 Skeleton Soldier)
+  - heading: "Card 5 — R5 Mortuary Hall: Zombie ×4 (CR15)"
+    text:
+      - > **Solo Adjustment (GM Book 13.1, CR−3)**: enemy count 4→2; CR15−3=12 ⇒ HP 79 / ATK +4 / EVA 11 / Damage 20 / EXP 324 (×2 total 648).
+    tables:
+      - columns:
+          - Entry
+          - Stat Values
+        rows:
+          - Entry: Challenge Rating (CR)
+            Stat Values: 15 (Minion, ×4 on field)
+          - Entry: Health (HP)
+            Stat Values: 90
+          - Entry: Attack Bonus (ATK)
+            Stat Values: +4
+          - Entry: Evasion (EVA)
+            Stat Values: 12
+          - Entry: Damage/Hit
+            Stat Values: 24
+          - Entry: Critical Threshold (CritTh)
+            Stat Values: 19 (high CR lowers threshold by 1)
+          - Entry: Experience (EXP)
+            Stat Values: 450 (×4 total 1,800)
+          - Entry: Damage Reduction (DR)
+            Stat Values: 20% (suggested)
+          - Entry: Attack Method
+            Stat Values: Melee Bludgeon
+          - Entry: Trait
+            Stat Values: Undead; Regen (restores 8 Health (HP) per turn); Holy-fearing (Holy ×1.5); four enemies in a row provide numerical suppression
+          - Entry: Weakness/Resistance
+            Stat Values: Weakness Holy ×1.5
+          - Entry: Drop
+            Stat Values: Rotten Flesh, Ash of the Dead (see bestiary Challenge Rating (CR) 5 Zombie)
+  - heading: "Card 6 — R7 Lich's Chamber: Graveyard Lich (CR18, Boss)"
+    text:
+      - > **Solo Adjustment (GM Book 13.1, CR−3)**: CR18−3=15 ⇒ HP 90 / ATK +4 / EVA 12 / Damage 24 / EXP 1,800 (CR15 single 450 ×4); Summon Dead still judged by the GM based on phase.
+      - ---
+    tables:
+      - columns:
+          - Entry
+          - Stat Values
+        rows:
+          - Entry: Challenge Rating (CR)
+            Stat Values: 18 (Minor Boss, Boss)
+          - Entry: Health (HP)
+            Stat Values: 101 (CR18 formula)
+          - Entry: Attack Bonus (ATK)
+            Stat Values: +5
+          - Entry: Evasion (EVA)
+            Stat Values: 12
+          - Entry: Damage/Hit
+            Stat Values: 27
+          - Entry: Critical Threshold (CritTh)
+            Stat Values: 19 (high CR lowers threshold by 1)
+          - Entry: Experience (EXP)
+            Stat Values: 2,376 (CR18 single 594 ×4)
+          - Entry: Damage Reduction (DR)
+            Stat Values: 20% Physical (suggested)
+          - Entry: Attack Method
+            Stat Values: Ranged Shadow (spell)
+          - Entry: Trait
+            Stat Values: `Necro Flux`—once every 3 turns, deals Damage ×0.8 Shadow Area Effect (AOE) to the whole party (marked on positioning map); `Summon Dead`—when Health (HP) ≤50%, summons Skeleton Warrior ×2 (CR13, see Card 4)
+          - Entry: Weakness/Resistance
+            Stat Values: Shadow Resistance ×0.5; Weakness Holy ×1.5 (Cleric's "Holy Purify" can weaken its summons)
+          - Entry: Drop
+            Stat Values: Tomb Key (story item, unlocks S2 side quest) + basic materials + Epic recipe 20% chance
+  - heading: III. Room EXP Overview (Full Clear; EXP accumulates toward Character Level (CL) progress; Class Level (ClassLv) uses a separate independent Class Experience (CEXP) pool, not shared with EXP)
+    text: > Note: The above table shows "pure combat EXP"; in-module story/scavenging rewards (e.g., D1 rescue hostage EXP+102 / IP+3, D2 Tomb Key IP+5) are counted separately and not double-counted. The GM may appropriately adjust the full-clear EXP cap based on reward balance.
+    tables:
+      - columns:
+          - Module
+          - Room Number
+          - Enemy
+          - Room EXP
+          - Remarks
+        rows:
+          - Module: D1
+            Room Number: R2
+            Enemy: Goblin Warrior ×2
+            Room EXP: 68
+            Remarks: ""
+          - Module: D1
+            Room Number: R5
+            Enemy: Goblin Archer ×2
+            Room EXP: 108
+            Remarks: ""
+          - Module: D1
+            Room Number: R7
+            Enemy: Goblin King
+            Room EXP: 400
+            Remarks: Boss ×4
+          - Module: **D1 Full Clear**
+            Room Number: —
+            Enemy: —
+            Room EXP: **576**
+            Remarks: original module misestimated "about 300", corrected
+          - Module: D2
+            Room Number: R2
+            Enemy: Skeleton Warrior ×3
+            Room EXP: 1,092
+            Remarks: ""
+          - Module: D2
+            Room Number: R5
+            Enemy: Zombie ×4
+            Room EXP: 1,800
+            Remarks: ""
+          - Module: D2
+            Room Number: R7
+            Enemy: Graveyard Lich
+            Room EXP: 2,376
+            Remarks: Boss ×4
+          - Module: **D2 Full Clear**
+            Room Number: —
+            Enemy: —
+            Room EXP: **5,268**
+            Remarks: original module misestimated "about 1,782", corrected

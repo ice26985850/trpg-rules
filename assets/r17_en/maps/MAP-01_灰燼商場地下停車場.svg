@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1074" height="184" viewBox="0 0 1074 184" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="1074" height="184" fill="#FBFCFE"/>
+<rect x="18" y="64" width="772" height="102" rx="14" fill="#E3F2FD" fill-opacity="0.55" stroke="#E3F2FD" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">B1 Level (General Parking)</text>
+<rect x="816" y="64" width="240" height="102" rx="14" fill="#FFF3E0" fill-opacity="0.55" stroke="#FFF3E0" stroke-opacity="0.9"/>
+<text x="826" y="82" font-size="13" font-weight="bold" fill="#37474F">B2 Level (Deep Parking)</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">Ash Mall Underground Parking Garage (Expansion)</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">Region: Edge Zone　Danger: ★★☆☆☆　Suitable Level (Lv.): 1, 2</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="115" x2="404" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="118" font-size="12" fill="#455A64" text-anchor="middle">Ramp</text>
+<line x1="404" y1="115" x2="670" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="520" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="118" font-size="12" fill="#455A64" text-anchor="middle">Corridor</text>
+<line x1="670" y1="115" x2="936" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="754" y="105" width="99" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="803" y="118" font-size="12" fill="#455A64" text-anchor="middle">Ramp / Elevator Shaft</text>
+<line x1="936" y1="115" x2="138" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="474" y="105" width="125" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="118" font-size="12" fill="#455A64" text-anchor="middle">Escape Stairs (Hidden Extraction)</text>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Underground Parking Entrance</text>
+<title>Underground Parking Entrance: Ramp leads to B1 Level; stacked shelving above serves as natural cover; Mutant Rats ×3 present</title>
+<rect x="306" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">East Parking Lot</text>
+<title>East Parking Lot: Open parking area, ~50 spaces. Extraction Point A (flare gun call); Residuals patrol 1-2</title>
+<rect x="572" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Maintenance Passage</text>
+<title>Maintenance Passage: B1→B2 connector, 1.5m wide, fits one person; Mutant Rat ambush; Stealth TN14</title>
+<rect x="838" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="936" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Supply Truck Zone</text>
+<title>Supply Truck Zone: B2 deep level; military supply trucks can be searched; Enhanced Residual ×1; escape stairs lead to surface (Hidden Extraction Point TN14)</title>
+</svg>

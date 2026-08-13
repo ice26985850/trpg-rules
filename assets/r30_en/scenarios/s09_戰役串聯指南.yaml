@@ -1,0 +1,33 @@
+scenario:
+  id: s09
+  title: "Campaign Linkage Guide"
+  source: "League of Legends TRPG Campaign Script Collection · Multiplayer Scenario · Linkage & Usage Guide"
+  type: "Linkage & Usage Guide"
+  mode: "Multiplayer"
+  standalone: true
+  main_campaign_flow:
+    - "White Wall Rift (Lv.1-3) → Shadow Spread (Lv.1-5) → Winter's Awakening (Lv.6-10) → Ascension Trial (Lv.11-16) → The Dead Return (Lv.17-20)"
+    - "If starting from White Wall Rift, Shadow Spread may skip Lv.1-3 and begin directly from the Lv.3 Noxus Outpost"
+  side_insert:
+    - level: "Lv.3-6"
+      side: "Wrath of the Siren"
+    - level: "Lv.5-8"
+      side: "Soul of Ionia"
+    - level: "Lv.8-12"
+      side: "Zaun's Abyss"
+    - level: "Lv.10-15"
+      side: "King of the Arena"
+  level_calibration:
+    - "If the players' level exceeds the main campaign's recommended value after a side story, the GM may: increase main campaign encounter difficulty (Health Points (HP) and Attack Damage (AD) each +10-20%)"
+    - "Let players clear the main campaign faster (retaining the sense of challenge)"
+    - "Or use the GM Difficulty Adjustment Quick Reference Table (Rulebook §4.11)"
+  jump_in:
+    - level: "Lv.1-5"
+      start: "Shadow Spread or White Wall Rift"
+    - level: "Lv.6-10"
+      start: "Winter's Awakening"
+    - level: "Lv.11-16"
+      start: "Ascension Trial"
+    - level: "Lv.17-20"
+      start: "The Dead Return"
+  license: "All scenarios are open-licensed — the GM may freely modify content, replace NPCs, and adjust difficulty; sharing adapted versions is encouraged (just attribute the original source)."

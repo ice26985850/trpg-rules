@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 740" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans CJK TC','Heiti TC',sans-serif">
+<rect width="680" height="740" fill="#F7F4EC"/>
+<text x="20" y="34" font-size="22" font-weight="bold" fill="#333">World Map</text>
+<text x="20" y="56" font-size="13" fill="#666">Scenario Worldbuilding · Altia Continent Full Map (Spatial Reference for Scenarios S0–S4)</text>
+<rect x="50" y="50" width="600" height="700" rx="24" fill="#3B6EA5" fill-opacity="0.10" stroke="#3B6EA5" stroke-opacity="0.5" stroke-dasharray="6 5"/>
+<text x="60" y="70" font-size="13" fill="#3B6EA5" font-weight="bold">Faction: Humans &amp; City-State Alliance</text>
+<rect x="50" y="50" width="600" height="700" rx="24" fill="#9B3B8F" fill-opacity="0.10" stroke="#9B3B8F" stroke-opacity="0.5" stroke-dasharray="6 5"/>
+<text x="60" y="70" font-size="13" fill="#9B3B8F" font-weight="bold">Faction: Demon Lord Army</text>
+<rect x="260" y="345" width="160" height="110" rx="20" fill="#FFD9A0" fill-opacity="0.45" stroke="#FFD9A0" stroke-opacity="0.8"/>
+<text x="268" y="363" font-size="12" fill="#555">Central Plains (Royal Capital Circle)</text>
+<rect x="260" y="65" width="160" height="110" rx="20" fill="#FFB3B3" fill-opacity="0.45" stroke="#FFB3B3" stroke-opacity="0.8"/>
+<text x="268" y="83" font-size="12" fill="#555">Dragoncrest Peak</text>
+<rect x="60" y="345" width="160" height="110" rx="20" fill="#B3D9B3" fill-opacity="0.45" stroke="#B3D9B3" stroke-opacity="0.8"/>
+<text x="68" y="363" font-size="12" fill="#555">Silent Burial Marsh</text>
+<rect x="260" y="625" width="160" height="110" rx="20" fill="#FFB3E6" fill-opacity="0.45" stroke="#FFB3E6" stroke-opacity="0.8"/>
+<text x="268" y="643" font-size="12" fill="#555">Enchanting Hot Spring Village</text>
+<rect x="480" y="345" width="160" height="110" rx="20" fill="#B3E6FF" fill-opacity="0.45" stroke="#B3E6FF" stroke-opacity="0.8"/>
+<text x="488" y="363" font-size="12" fill="#555">Gelatin Archipelago</text>
+<rect x="480" y="65" width="160" height="110" rx="20" fill="#D9B3FF" fill-opacity="0.45" stroke="#D9B3FF" stroke-opacity="0.8"/>
+<text x="488" y="83" font-size="12" fill="#555">Abyssal Covenant City</text>
+<rect x="60" y="65" width="160" height="110" rx="20" fill="#D9D9B3" fill-opacity="0.45" stroke="#D9D9B3" stroke-opacity="0.8"/>
+<text x="68" y="83" font-size="12" fill="#555">Ironforge City</text>
+<rect x="60" y="625" width="160" height="110" rx="20" fill="#B3FFB3" fill-opacity="0.45" stroke="#B3FFB3" stroke-opacity="0.8"/>
+<text x="68" y="643" font-size="12" fill="#555">Avon Green Sea</text>
+<rect x="480" y="625" width="160" height="110" rx="20" fill="#FFE6B3" fill-opacity="0.45" stroke="#FFE6B3" stroke-opacity="0.8"/>
+<text x="488" y="643" font-size="12" fill="#555">Sakura Isle</text>
+<rect x="370" y="490" width="160" height="110" rx="20" fill="#FFF2B3" fill-opacity="0.45" stroke="#FFF2B3" stroke-opacity="0.8"/>
+<text x="378" y="508" font-size="12" fill="#555">Sandscale Khanate</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#888"/></marker><marker id="arrowD" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#C0504D"/></marker></defs>
+<line x1="340" y1="400" x2="340" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="400" x2="140" y2="400" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="400" x2="340" y2="680" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="400" x2="560" y2="400" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="400" x2="560" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<rect x="353.0" y="249.0" width="194" height="20" rx="6" fill="#FFFBE6" stroke="#E0C97A"/><text x="450.0" y="264.0" font-size="12" fill="#7a5b00" text-anchor="middle">S4 Demon Lord Castle (Requires All Four Beacons)</text>
+<line x1="340" y1="400" x2="140" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="400" x2="140" y2="680" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="400" x2="560" y2="680" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="400" x2="450" y2="545" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="120" x2="560" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="140" y1="400" x2="560" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="340" y1="680" x2="560" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="560" y1="400" x2="560" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<line x1="140" y1="120" x2="340" y2="120" stroke="#999" stroke-width="2.2"  marker-end="url(#arrow)"/>
+<rect x="208.0" y="109.0" width="64" height="20" rx="6" fill="#FFFBE6" stroke="#E0C97A"/><text x="240.0" y="124.0" font-size="12" fill="#7a5b00" text-anchor="middle">Dulin Guide</text>
+<rect x="261" y="382" width="158" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#E8A33D" stroke-width="2.5"/>
+<text x="340" y="405" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Central Plains (Royal Capital Circle)</text>
+<rect x="268" y="102" width="144" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#C0504D" stroke-width="2.5"/>
+<text x="340" y="125" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Northern Ice Plains · Dragoncrest Peak</text>
+<rect x="61" y="382" width="158" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#C0504D" stroke-width="2.5"/>
+<text x="140" y="405" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Western Marsh · Silent Burial Marsh</text>
+<rect x="254" y="662" width="173" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#C0504D" stroke-width="2.5"/>
+<text x="340" y="685" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Southern Oasis · Enchanting Hot Spring Village</text>
+<rect x="481" y="382" width="158" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#C0504D" stroke-width="2.5"/>
+<text x="560" y="405" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Eastern Seas · Gelatin Archipelago</text>
+<rect x="474" y="102" width="173" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#7B4B9B" stroke-width="2.5"/>
+<text x="560" y="125" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Core Demon Realm · Abyssal Covenant City</text>
+<rect x="46" y="102" width="188" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#4F81BD" stroke-width="2.5"/>
+<text x="140" y="125" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Ironforge City (Dwarven Alchemy Metropolis)</text>
+<rect x="54" y="662" width="173" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#4F81BD" stroke-width="2.5"/>
+<text x="140" y="685" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Avon Green Sea (Elf Forest)</text>
+<rect x="466" y="662" width="188" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#4F81BD" stroke-width="2.5"/>
+<text x="560" y="685" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Sakura Isle (Eastern Warrior Nation)</text>
+<rect x="364" y="527" width="173" height="36" rx="9" fill="#FFFFFF" fill-opacity="1.0" stroke="#4F81BD" stroke-width="2.5"/>
+<text x="450" y="550" font-size="14" fill="#222" text-anchor="middle" font-weight="bold">Sandscale Khanate (Desert Nomads)</text>
+</svg>

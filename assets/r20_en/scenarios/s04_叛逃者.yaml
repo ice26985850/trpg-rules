@@ -1,0 +1,116 @@
+# Starship Boarding Assault TRPG — Scenario S4: The Defector
+scenario_id: S4_The_Defector
+title: "The Defector — Tyrant's Fist (S4)"
+subtitle: "An enemy senior officer wants to defect — but on the condition that you board his ship and extract him alive."
+difficulty: Hard
+recommended_level: "4–7"
+player_count: { min: 1, max: 6 }
+estimated_duration: "4–6 hours"
+
+mission_type: Decapitation Strike + POW Rescue (mixed)
+enemy_vessel:
+  name: "Tyrant's Fist (S4)"
+  type: Alliance Command Vessel
+  faction: Free Star Alliance (FSA)
+  size: Large (600 m length)
+  decks: 4
+  gravity: Standard Gravity (1G) — but the defector may remotely manipulate the gravity system to assist the players
+  self_destruct: true  # 10-round countdown
+
+story_summary: >
+  A senior Alliance officer, Colonel Victor Kane, contacted the Concord via an encrypted channel — he is willing
+  to defect, offering the Alliance's complete defensive deployment in the star sector. But he has one condition:
+  you must board his ship and extract him alive. His loyal guard has grown suspicious of him and is hunting him
+  aboard the ship. Time is short — Colonel Kane is being rounded up, and once the Alliance command confirms his
+  defection, they will immediately initiate the self-destruct sequence.
+
+turning_points:
+  - id: TP1
+    name: "Finding Kane"
+    description: "Colonel Kane's last communication came from the escape pod area near the bridge. The players must cross the loyal guard's blockade line to find him. Kane's status is random: 1d6 = 1-2 lightly wounded, 3-4 currently engaged (1 marine hunting him), 5-6 already captured (being escorted to the bridge)."
+  - id: TP2
+    name: "Moral Choice: The Database"
+    description: "During withdrawal, Kane points out that the Alliance's complete tactical database is in the adjacent room. Downloading takes 3 rounds — but the loyal guard is closing in. Download the data? Or abandon the data to ensure Kane's safety?"
+  - id: TP3
+    name: "Double Betrayal"
+    description: "30% chance (GM hidden roll) — Kane's defection is a trap. He is actually a decoy for Alliance Intelligence, carrying a tracker. When the players arrive at the extraction point with him, an Alliance stealth assault vessel appears to intercept."
+
+key_encounters:
+  - id: E1
+    location: Blockade Line Before the Bridge
+    enemies:
+      - type: Marine
+        count: 3
+        cr: 3
+      - type: Commander (Boss — Kane's Lieutenant)
+        count: 1
+        cr: 4
+    total_el: 13
+    notes: "The lieutenant commander will shout — demanding the players hand over Kane. A tactical command contest (DC 18) may shake the defenders' morale."
+
+  - id: E2
+    location: Escape Pod Area
+    enemies:
+      - type: Marine
+        count: 2
+        cr: 3
+    total_el: 6
+    notes: "The loyal guard hunting Kane. Kane may already be wounded."
+
+  - id: E3
+    location: Extraction Point — Hangar
+    enemies:
+      - type: Defense Robot
+        count: 2
+        cr: 4
+    total_el: 8
+    notes: "If the trap triggers — 3 additional marines board from the stealth assault vessel."
+
+npc_asset:
+  name: "Colonel Victor Kane"
+  hp: 12
+  armor: 4
+  weapons: "Pistol (1d6)"
+  abilities:
+    - "Tactical Intelligence: Kane can reveal the enemy deployment on the next deck (similar to a Scout's tactical reconnaissance, but requires no check)"
+    - "Gravity Manipulation (this mission only): Kane still holds partial system privileges on the Tyrant's Fist — 2 uses per mission, he can remotely manipulate the gravity of one area"
+  escort_rules: "Escorting the NPC: Kane can move 6 squares per round. If he falls grievously wounded — a player must drag him (costs 3 AP, moves 3 squares)."
+
+moral_choices:
+  - id: MC1
+    situation: "Arrive at the database room — download the tactical data (3 rounds) vs abandon the data to ensure safe withdrawal"
+    choice_a: "Download the data (complete secondary objective)"
+    consequence_a: "XP +2, Reputation +2. But the self-destruct countdown −1d4 rounds (due to the delay). The loyal guard's pursuit arrives — additional EL 5 encounter."
+    choice_b: "Abandon the data (safety first)"
+    consequence_b: "Cannot gain the data reward — but the withdrawal route stays clear. Kane shows respect for the players' professional judgment (hidden relationship bonus)."
+
+  - id: MC2
+    situation: "Kane points out a shortcut — but it is his suggestion. He may be sincerely helping, or setting a trap."
+    choice_a: "Take Kane's suggested shortcut"
+    consequence_a: "50% chance it is a fast route (advance accelerated by 2 rounds). 50% chance of an ambush (EL 8)."
+
+rewards:
+  xp_primary: 14         # Primary objective
+  xp_secondary: 8        # Secondary objectives total: 2 × +4
+  xp_full_survival: 3    # Full squad survival
+  xp_gm_bonus: 6         # GM generic pool
+  reputation: 3
+  bonus_reputation:
+    - condition: Kane survives and data is downloaded
+      reputation: 2
+  special_loot:
+    - name: "Alliance Senior Officer's Scepter (Kane's Scepter)"
+      description: "An ornamental command scepter that is actually an encrypted data storage."
+      effect: "Permanently −2 to DC when breaching Alliance systems. A gift from the defector."
+
+special_rules:
+  - rule: "Hunt Level"
+    description: "The Game Master (GM) secretly tracks a 'Hunt Level' (1–5). Each time Kane is spotted by enemies, the players trigger an alarm, or time passes, the Hunt Level +1; +1 per advance phase. Level 5 → the commander personally leads an elite guard in pursuit (EL 10+)."
+  - rule: "Kane's Shifting Loyalty"
+    description: "The Game Master (GM) may secretly set Kane's 'Loyalty' (1–10). How the players treat him affects this value — threaten him (−1d4), protect him (+1d4), respect him (+2). Below 3 → Kane may betray at a critical moment. Above 7 → Kane proactively offers valuable extra intelligence."
+
+self_destruct:
+  initial: 10
+  note: "If Kane's defection is confirmed (the commander witnesses him with the players), self-destruct starts immediately."
+
+map_file: "../maps/暴君之拳號_S4.yaml"

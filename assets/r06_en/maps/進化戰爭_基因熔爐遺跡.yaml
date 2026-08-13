@@ -1,0 +1,140 @@
+# Evolution War — Gene Forge Ruins Map
+# Corresponding Scenario: S3 (all scenes)
+
+nodes:
+  - id: "A"
+    label: "Scorched Plain"
+    x: 100
+    y: 300
+    type: "start"
+    explored: false
+    description: "Wasteland outside the forge ruins. The Cult (left) and the Guardians (right) camp here."
+
+  - id: "B"
+    label: "Cult Camp"
+    x: 50
+    y: 200
+    type: "social"
+    explored: false
+    description: "Crimson tents of the Ultimate Evolution Cult. Envoy Victor is here."
+
+  - id: "C"
+    label: "Guardian Camp"
+    x: 150
+    y: 400
+    type: "social"
+    explored: false
+    description: "White camp of the Humanity Guardians. Purification Marshal Elena is here."
+
+  - id: "D"
+    label: "Accord Observation Post"
+    x: 250
+    y: 300
+    type: "social"
+    explored: false
+    description: "Grey tent of the Symbiosis Accord. Alden observes here."
+
+  - id: "E"
+    label: "Organic Gate"
+    x: 350
+    y: 300
+    type: "gate"
+    explored: false
+    description: "Living membrane gate. Requires injection of evolution energy to open."
+
+  - id: "F"
+    label: "Forge Outer Ring"
+    x: 450
+    y: 300
+    type: "transition"
+    explored: false
+    description: "Initial area after entering the forge. Skirmish zone of the three factions' forces."
+
+  - id: "G"
+    label: "Evolution Essence Pool"
+    x: 450
+    y: 200
+    type: "hazard"
+    explored: false
+    description: "Glowing evolution essence. Drinking grants free Evolution (Humanity Value -5). Within 2 cells of the pool, 1d6 fire damage per round."
+
+  - id: "H"
+    label: "Forge Core"
+    x: 550
+    y: 200
+    type: "boss"
+    explored: false
+    description: "Forge console. Three options: Maximize Output / Stabilize / Shut Down."
+
+  - id: "I"
+    label: "Bio-Mecha Pad"
+    x: 450
+    y: 400
+    type: "hazard"
+    explored: false
+    description: "Berthing area for the Bio-Mecha. Peels off the wall at round 2."
+
+  - id: "J"
+    label: "Cult Breach Point"
+    x: 550
+    y: 350
+    type: "transition"
+    explored: false
+    description: "Entry route of the Cult forces."
+
+  - id: "K"
+    label: "Guardian Breach Point"
+    x: 550
+    y: 100
+    type: "transition"
+    explored: false
+    description: "Entry route of the Guardian forces."
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "open"
+  - from: "A"
+    to: "C"
+    type: "open"
+  - from: "A"
+    to: "D"
+    type: "open"
+  - from: "A"
+    to: "E"
+    type: "open"
+  - from: "E"
+    to: "F"
+    type: "gate"
+  - from: "F"
+    to: "G"
+    type: "corridor"
+  - from: "F"
+    to: "I"
+    type: "corridor"
+  - from: "G"
+    to: "H"
+    type: "corridor"
+  - from: "I"
+    to: "H"
+    type: "corridor"
+  - from: "J"
+    to: "F"
+    type: "corridor"
+  - from: "K"
+    to: "F"
+    type: "corridor"
+
+regions:
+  - name: "Camp Zone"
+    color: "#4B0082"
+    nodes: ["A", "B", "C", "D"]
+  - name: "Inside the Forge"
+    color: "#DC143C"
+    nodes: ["F", "G", "H", "I"]
+  - name: "Gate"
+    color: "#FF8C00"
+    nodes: ["E"]
+  - name: "Breach Routes"
+    color: "#4169E1"
+    nodes: ["J", "K"]

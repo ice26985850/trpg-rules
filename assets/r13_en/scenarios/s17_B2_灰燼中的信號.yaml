@@ -1,0 +1,47 @@
+name: Signal Amid the Ashes
+difficulty: Low
+mode: Astartes · Multiplayer
+players: 2-4
+location: Ruined City "Eldenfell"
+recommended_attributes: 1–2 growths after character creation
+opening_description: The squad arrives at the bombed-out ruined city. The signal source lies in the administrative tower at the city's center—but there is something else in the city.
+structure_phases:
+- phase: City Edge
+  content: |
+    Encounter survivors—some 40–50 civilians hiding in the city's sewers. Their leader is a former
+    local Arbites Enforcer, "Kara". The civilians regard the Astartes with a mix of awe and fear.
+- phase: City Interior
+  content: |
+    Mutant nest—about 5–8 low-tier Mutants + 1 Mutant Tyrant occupy the main streets. You may
+    choose to go through or around.
+- phase: Administrative Tower
+  content: |
+    The comms device is on the top floor. But the tower has been occupied by Chaos Cultists—a
+    remnant cult that was active here before Exterminatus (about 8–10 followers + 1 Acolyte).
+- phase: Signal Source
+  content: |
+    The comms device is still operating—but the signal is not a distress call. It is an
+    automatically looping Imperial evacuation-coordinate broadcast. This means that before
+    Exterminatus, an evacuation point was set up in the northern mountains.
+oath_conflict: |
+  Conflict: Protect the Innocent vs. Obey Orders. The squad must decide how to handle these
+  civilians: take them along (slows you down, consumes resources) / leave them here (the Mutants
+  will find them) / give them weapons to defend themselves (amounts to admitting the Imperium
+  cannot protect them).
+key_npcs:
+- name: Kara
+  role: Civilian Leader
+  detail: Pragmatic, resilient. Does not trust the Astartes, but knows she cannot survive without them.
+- name: Data-Slate Record
+  role: Clue
+  detail: Records in the administrative tower reveal the "reason" for Exterminatus—a suspected but unconfirmed Chaos contamination report.
+encounters:
+- name: Main Street
+  enemies: Low-tier Mutants ×5 + Tyrant ×1
+  cr: 1×5+2
+  tactic: May choose to bypass (Stealth)
+- name: Administrative Tower
+  enemies: Chaos Cultists ×8 + Acolyte ×1
+  cr: 0×8+1
+  tactic: Floor-by-floor clearing inside a multi-level building
+map_ref: "maps/map17_eldenfell"

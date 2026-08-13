@@ -1,0 +1,17 @@
+name: "S1: Awakening"
+description: "You open your eyes. Yellow wallpaper. Fluorescent lights buzz. Who are you? Where are you? The only clues are chalk arrows left by those before you — and the sound of claws from the darkness."
+difficulty: "Beginner / Tutorial"
+milestone_range: "1"
+play_time: "4-6 hours"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Level 0 — Tutorial Level"]
+themes: ["Lost", "Loneliness", "First Survival Trial"]
+emotional_arc: "Confusion → Fear → Small Victory (Almond Water) → First Threat → Find the Exit"
+scenes:
+  - {id: S1_1, name: "Eyes Open", type: "Opening", desc: "The character wakes in a Level 0 yellow office cubicle, last memory an ordinary, mundane moment. Opening gift mechanic: one of every five cubicles contains a bottle of Almond Water."}
+  - {id: S1_2, name: "Markings of Those Before", type: "Exploration", desc: "Follow chalk arrows and wallpaper marks through the cubicle maze. Discover Old Zhao's message on a powered-on computer. Understand the basic rule that 'light = safety'."}
+  - {id: S1_3, name: "Creeping Darkness", type: "Crisis", desc: "Fluorescent lights go out row by row — darkness bears down on you. Claws scrape the concrete floor. Choose: hide, wait, or run."}
+  - {id: S1_4, name: "The Door", type: "Climax", desc: "An unmarked fire door — leading to Level 1. The last bottle of Almond Water sits before the door. Voices from beyond. Push it open."}
+entities: ["Hounds (first encounter in darkness)"]
+key_npc: "Old Zhao (via messages)"
+ending: "Push the door open and enter Level 1. M.E.G. starter kit. Milestone 1 complete."

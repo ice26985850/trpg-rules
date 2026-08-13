@@ -1,0 +1,62 @@
+Name: "Devour Gene: Chronicle of Evolution — Item Codex"
+Sections:
+  - Title: "I. Weapons"
+    Table:
+      - {Weapon Name: "Dagger", Type: "Light Melee", Damage: "1d4 + LIL/MJ", Requirement: "None", Range: "Melee / Throw 3 squares", Special: "Throwable", Rarity: "Common"}
+      - {Weapon Name: "Short Sword", Type: "Light Melee", Damage: "1d6 + LIL/MJ", Requirement: "None", Range: "Melee", Special: "Light, usable off-hand", Rarity: "Common"}
+      - {Weapon Name: "Longsword", Type: "Medium Melee", Damage: "1d8 + LIL + 1", Requirement: "Strength 4+", Range: "Melee", Special: "Standard weapon", Rarity: "Common"}
+      - {Weapon Name: "Two-Handed Greatsword", Type: "Heavy Melee", Damage: "1d10 + LIL + 3", Requirement: "Strength 6+", Range: "Melee", Special: "Requires two hands", Rarity: "Common"}
+      - {Weapon Name: "Battle Axe", Type: "Medium Melee", Damage: "1d8 + LIL + 2", Requirement: "Strength 5+", Range: "Melee", Special: "Extra +1d4 on crit", Rarity: "Common"}
+      - {Weapon Name: "War Hammer", Type: "Heavy Melee", Damage: "1d10 + LIL + 3", Requirement: "Strength 7+", Range: "Melee", Special: "+2 damage vs armored targets", Rarity: "Common"}
+      - {Weapon Name: "Spear", Type: "Medium Melee", Damage: "1d8 + LIL + 1", Requirement: "Strength 4+", Range: "2 squares (mid-range melee)", Special: "Can attack one square away", Rarity: "Common"}
+      - {Weapon Name: "Short Bow", Type: "Ranged", Damage: "1d6 + MJ", Requirement: "Agility 3+", Range: "10 squares", Special: "Standard ranged", Rarity: "Common"}
+      - {Weapon Name: "Longbow", Type: "Ranged", Damage: "1d8 + MJ + 2", Requirement: "Agility 5+", Range: "15 squares", Special: "Long range", Rarity: "Common"}
+      - {Weapon Name: "Crossbow", Type: "Ranged", Damage: "1d10 + MJ + 2", Requirement: "Agility 3+", Range: "12 squares", Special: "1 shot per round (requires reload 1AP)", Rarity: "Common"}
+  - Title: "II. Armor"
+    Table:
+      - {Armor Name: "Leather Armor", Defense Bonus: "+1", Requirement: "None", Special: "Light, does not affect movement", Rarity: "Common"}
+      - {Armor Name: "Hard Leather Armor", Defense Bonus: "+2", Requirement: "Strength 3+", Special: "Standard protection", Rarity: "Common"}
+      - {Armor Name: "Chainmail", Defense Bonus: "+3", Requirement: "Strength 5+", Special: "Movement speed -1 square", Rarity: "Common"}
+      - {Armor Name: "Plate Armor", Defense Bonus: "+4", Requirement: "Strength 7+", Special: "Movement speed -2 squares, stealth Disadvantage", Rarity: "Common"}
+      - {Armor Name: "Light Shield", Defense Bonus: "+1", Requirement: "None", Special: "Can stack with armor", Rarity: "Common"}
+      - {Armor Name: "Heavy Shield", Defense Bonus: "+2", Requirement: "Strength 5+", Special: "Occupies one hand, can stack with armor", Rarity: "Common"}
+      - {Armor Name: "Dragon Scale Armor", Defense Bonus: "+3", Requirement: "Strength 5+", Special: "Fire damage -2, does not affect stealth", Rarity: "Rare"}
+      - {Armor Name: "Void Cloak", Defense Bonus: "+1", Requirement: "None", Special: "Void-related damage -2, can turn invisible 1 round after each check (once per battle)", Rarity: "Very Rare"}
+  - Title: "III. Consumables"
+    Table:
+      - {Item Name: "Healing Potion", Effect: "Recover 2d6 HP", Rarity: "Common"}
+      - {Item Name: "Strong Healing Potion", Effect: "Recover 4d6 HP", Rarity: "Uncommon"}
+      - {Item Name: "Ultimate Healing Potion", Effect: "Recover 6d6 HP", Rarity: "Rare"}
+      - {Item Name: "Energy Potion", Effect: "Immediately recover 3 Energy", Rarity: "Common"}
+      - {Item Name: "Strong Energy Potion", Effect: "Immediately recover 6 Energy", Rarity: "Uncommon"}
+      - {Item Name: "Antidote", Effect: "Remove poisoned condition", Rarity: "Common"}
+      - {Item Name: "Universal Antidote", Effect: "Remove all poison and disease effects", Rarity: "Uncommon"}
+      - {Item Name: "Stimulant", Effect: "Next round AP +1, then AP -1 for 2 rounds", Rarity: "Uncommon"}
+      - {Item Name: "Evolution Catalyst", Effect: "Next Evolution cost -1 (min 1), only next time", Rarity: "Rare"}
+      - {Item Name: "Advanced Evolution Catalyst", Effect: "Next Evolution cost -2 (min 1), only next time", Rarity: "Very Rare"}
+      - {Item Name: "Biomass Essence", Effect: "Gain 3 Biomass (immediate)", Rarity: "Uncommon"}
+      - {Item Name: "Concentrated Biomass Essence", Effect: "Gain 8 Biomass (immediate)", Rarity: "Rare"}
+      - {Item Name: "Humanity Stabilizer", Effect: "Humanity no longer decreases (lasts 1 week)", Rarity: "Rare"}
+      - {Item Name: "Polymorph Potion", Effect: "Humanity treated as +20 for 24 hours (affects NPC reactions only)", Rarity: "Rare"}
+      - {Item Name: "Purification Stone", Effect: "Recover 1d4+2 Humanity", Rarity: "Very Rare"}
+      - {Item Name: "Gene Atlas", Effect: "One-time item — freely unlock one Evolution Node whose requirement is known", Rarity: "Very Rare"}
+      - {Item Name: "Evolution Essence (vial)", Effect: "Freely evolve one node — but Humanity -5", Rarity: "Special"}
+      - {Item Name: "Void Abyss Shard (miniature)", Effect: "After use, Will (YZ) DC 20: success → all attributes +1; failure → Humanity -10", Rarity: "Legendary"}
+  - Title: "IV. Accessories"
+    Table:
+      - {Accessory Name: "Strength Amulet", Effect: "Strength (LIL)+1", Requirement: "None", Rarity: "Common"}
+      - {Accessory Name: "Agility Ring", Effect: "Agility (MJ)+1", Requirement: "None", Rarity: "Common"}
+      - {Accessory Name: "Constitution Belt", Effect: "Constitution (TZ)+1", Requirement: "None", Rarity: "Common"}
+      - {Accessory Name: "Perception Amulet", Effect: "Perception (GZ)+1", Requirement: "None", Rarity: "Common"}
+      - {Accessory Name: "Will Crown", Effect: "Will (YZ)+1", Requirement: "None", Rarity: "Common"}
+      - {Accessory Name: "Energy Storage Ring", Effect: "Energy max +2", Requirement: "None", Rarity: "Uncommon"}
+      - {Accessory Name: "Regeneration Amulet", Effect: "Recover extra 1 HP per round (stacks with Regeneration passive)", Requirement: "Constitution 5+", Rarity: "Rare"}
+      - {Accessory Name: "Humanity Amulet", Effect: "When Humanity decreases, -1 (min 0)", Requirement: "Humanity > 20%", Rarity: "Rare"}
+      - {Accessory Name: "Evolution Capacity Ring", Effect: "Evolution Capacity +2", Requirement: "None", Rarity: "Very Rare"}
+      - {Accessory Name: "Champion's Mark", Effect: "All attributes +1, Initiative +3", Requirement: "S4 Champion Battle reward", Rarity: "Legendary"}
+  - Title: "V. Special Items"
+    Table:
+      - {Item: "Evolution Essence (pool water)", Effect: "Drinking allows one free Evolution (any node whose requirement is met). But Humanity -5", Source: "Gene Forge (S3)"}
+      - {Item: "Guardian Core Shard", Effect: "Can be inserted into a piece of equipment — that equipment gains +1 effect", Source: "Defeat Prototype Ω (S2)"}
+      - {Item: "Arena Seal Shard", Effect: "Provides Will (YZ)+3 when breaking barriers and seals", Source: "S4 exploration reward"}
+      - {Item: "Void Abyss Core Shard", Effect: "Three uses: absorb → ultimate power / destroy → end evolution / fuse → balanced coexistence", Source: "S5 final choice"}

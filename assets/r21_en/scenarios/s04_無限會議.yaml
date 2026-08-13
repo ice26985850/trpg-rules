@@ -1,0 +1,136 @@
+title: The Infinite Meeting
+difficulty: Expert
+stars: 5
+loop_length: 1 day (an 8-hour meeting)
+loop_limit: 10
+suggested_players: 3-4
+action_points: 4 (highly compressed, each AP ≈ 2 hours)
+tone_tags:
+  - The sins of capital
+  - The price of silence
+  - Individual responsibility within a power structure
+loop_setting:
+  endpoint: 4:00 PM; CEO Chen Hongyuan suffers a fatal heart attack, the meeting is forcibly ended
+  start: 8:00 AM; the players sit down in the meeting room, the meeting just beginning
+  boundary: The entire 30-floor office building (the meeting room is on the 28th floor)
+  opening: "The meeting room door closed behind you. Eight people in suits sit along the long table. CEO Chen Hongyuan taps the table: 'Let's begin, today's agenda is the final vote on the HuiDa acquisition.' You don't know what's inside. But you know—at four in the afternoon, he will die."
+core_truth:
+  anchor_event: "CEO Chen Hongyuan's heart attack was no accident—he was given a slow-acting poison by Director Zhao Yongchang before the meeting. The Rift formed at the instant he died, because the truth died with him."
+  surface_story: A routine board meeting; the CEO dies suddenly during the session.
+  real_story: "Three years ago Chen Hongyuan and Zhao Yongchang cooked the books to maliciously acquire HuiDa; the founder jumped to his death; Zhao Yongchang poisoned him to silence the truth, burying it with Chen Hongyuan."
+  healing_conditions:
+    - Someone (any director) publicly points out the fraud in the acquisition before Chen Hongyuan dies
+    - Expose the fact that Zhao Yongchang poisoned him
+    - Optional: Chen Hongyuan himself confesses and repents
+truth_fragments:
+  - name: The Original HuiDa Case Files
+    type: Document
+    location: 28th-floor archive room
+    difficulty: Medium
+    loop: 2
+    detail: "The real financial data is off by 80 million from the public figures, bearing the signatures of Chen Hongyuan and Zhao Yongchang."
+  - name: Zhao Yongchang's Medicine Bottle
+    type: Item
+    location: Zhao Yongchang's office
+    difficulty: Hard
+    loop: 4
+    detail: "A slow-acting toxin undetectable by routine autopsy, imported from abroad three days before the meeting; the shipping invoice is hidden there."
+  - name: Chen Hongyuan's Diagnosis
+    type: Document
+    location: Chen Hongyuan's office
+    difficulty: Medium
+    loop: 3
+    detail: "His physical exam three months ago showed a perfectly healthy heart; he should never have had a heart attack."
+  - name: HuiDa Founder's Suicide Note
+    type: Item
+    location: HuiDa's old office (30th floor)
+    difficulty: Special
+    loop: 5+
+    detail: "A letter written before he jumped, listing all the truth."
+  - name: The Directors' Secrets
+    type: Conversation
+    location: The various directors
+    difficulty: Hard
+    loop: 6
+    detail: "The CFO knows of the fake books, the Legal Director knows of procedural violations, the HR Director knows of illegal firings; they must be persuaded individually."
+  - name: Zhao Yongchang's Schedule
+    type: Document
+    location: Front-desk computer
+    difficulty: Easy
+    loop: 1
+    detail: "Still in his office at 11:00 PM the night before; surveillance shows him at the pantry, with a bottle whose label was torn off."
+  - name: Chen Hongyuan's Letter of Repentance
+    type: Item
+    location: Chen Hongyuan's briefcase
+    difficulty: Hard
+    loop: 7+
+    detail: "A half-written letter of repentance: 'I know I did wrong... after this meeting—' unfinished."
+  - name: The Meeting Room Clock
+    type: Scene
+    location: Meeting room
+    difficulty: Special
+    loop: 8+
+    detail: "At 3:58 PM the clock stops; the GM freezes time for 5 minutes, during which the players may say anything to any NPC."
+key_npcs:
+  - name: Chen Hongyuan
+    role: CEO (Anchor character)
+    age: 62
+    emotion_baseline: 7/10
+    sensitivity: Extremely High
+    notes: "Wracked with guilt but maintains his image before the directors; in Loop 5+ he pauses mid-sentence staring at his own hands."
+  - name: Zhao Yongchang
+    role: Director
+    age: 55
+    emotion_baseline: 8/10
+    sensitivity: High
+    notes: "The only one who doesn't want the loop to end; every reset means killing him again; in Loop 4+ he grows anxious."
+  - name: Lin Meiling
+    role: CFO
+    age: 45
+    emotion_baseline: 5/10
+    sensitivity: Medium
+    notes: "Knows of the fake books but dares not speak, secretly kept a copy of the original data."
+  - name: Wang Jianguo
+    role: Legal Director
+    age: 50
+    emotion_baseline: 6/10
+    sensitivity: Low
+    notes: "Knows of procedural violations but tells himself it's legal; in Loop 6+ he begins to flip through the HuiDa case files."
+  - name: Zhou Ming
+    role: HuiDa Founder (Deceased)
+    age: N/A
+    emotion_baseline: N/A
+    sensitivity: N/A
+    notes: "Does not exist in the meeting room; a figure occasionally appears at the 30th-floor window, having left the suicide note."
+degradation:
+  - phase: Loops 1-2 (Mirror)
+    description: A normal meeting, Chen Hongyuan has his heart attack right on schedule at 4:00.
+  - phase: Loops 3-4 (Ripple)
+    description: Conversations show subtle changes, Zhao Yongchang starts fidgeting at 3:50.
+  - phase: Loops 5-6 (Crack)
+    description: The light occasionally turns to afternoon warmth, Chen Hongyuan pauses 10 seconds mid-speech with a look of fear.
+  - phase: Loops 7-8 (Fracture)
+    description: The 30th floor seeps into the 28th, Zhao Yongchang's office door opens on its own, a photo of the HuiDa founder appears on the desk.
+  - phase: Loops 9-10 (Collapse)
+    description: The clock freezes at 3:58, Fragment 8 triggers, the last chance.
+endings:
+  - id: A
+    name: The Truth Comes Out
+    grade: Perfect
+    condition: Expose the poisoning + all directors publicly admit the fraud + Chen Hongyuan repents
+    narrative: "Chen Hongyuan doesn't have the attack or is rescued in time, Zhao Yongchang is arrested, the suicide note is made public, the Rift heals."
+  - id: B
+    name: Justice Delayed
+    grade: Normal
+    condition: The fake books are exposed but his death could not be prevented
+    narrative: "Chen Hongyuan says 'I'm sorry' before dying, Zhao Yongchang's crime is exposed, the Rift heals halfway."
+  - id: C
+    name: Mutual Destruction
+    grade: Hidden
+    condition: The players have the two confront each other face to face
+    narrative: "They expose each other's crimes, Chen Hongyuan has the attack and Zhao Yongchang jumps; both die but the truth is revealed, the Rift heals."
+  - id: D
+    name: Everything As Before
+    grade: Bad
+    condition: Loops exhausted
+    narrative: "The meeting proceeds as usual, Chen Hongyuan dies as usual, Zhao Yongchang escapes as usual, only the players remember everything."

@@ -1,0 +1,49 @@
+name: "Scenario 1: Border Trial"
+description: "CL1–12 leveling-period overview, stringing together the three dungeons D1 Goblin Lair / D3 Forest / D4 Desert and their corresponding commissions, forming the rhythm of \"leave the village → farm levels → approach the Demon General threshold.\" Uses Method A: one scenario + player-count scaling."
+difficulty: Easy~Normal
+level_range: [1, 12]
+chapter: 1
+map_ref: maps/D4_戰鬥_沙王.yaml
+initial_map: maps/D1_哥布林巢穴.yaml
+encounters:
+  - id: d1_goblin_warren
+    name: D1 Goblin Lair (CL1–8)
+    enemies:
+      - {name: Goblin Warrior, cr: 2, count: 2}
+      - {name: Goblin Archer, cr: 3, count: 2}
+      - {name: Goblin King, cr: 5, count: 1}
+    boss: true
+    budget: Easy×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: d3_forest
+    name: D3 Forest (CL1–6)
+    enemies:
+      - {name: Goblin Scout, cr: 2, count: 2}
+      - {name: Wild Wolf, cr: 3, count: 2}
+      - {name: Goblin Archer, cr: 4, count: 2}
+      - {name: Goblin King, cr: 5, count: 1}
+    boss: true
+    budget: Easy×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: d4_desert
+    name: D4 Desert (CL7–12)
+    enemies:
+      - {name: Sand Bandit, cr: 7, count: 2}
+      - {name: Desert Giant Scorpion, cr: 9, count: 2}
+      - {name: Sand King, cr: 12, count: 1}
+    boss: true
+    budget: Normal×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+rewards:
+  exp: 5700
+  gold: 1500
+  items: [Basic Material Set, Goblin King Emblem, Sand King Crown, Rank Promotion Credential]
+ip_events:
+  - event: Rescue the bound children (D1)
+    ip: 3
+  - event: Spare the defeated goblins (do not kill)
+    ip: 2
+  - event: Redeem Goblin King Emblem (D1 / D3)
+    ip: 4
+  - event: Redeem Sand King Crown (D4)
+    ip: 3

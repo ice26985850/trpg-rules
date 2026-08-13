@@ -1,0 +1,53 @@
+name: "Scenario 2: Abyssal Echo"
+description: "CL13–26 leveling-period overview, stringing together the three mid-tier dungeons D2 Slumbering Tomb / D5 Ocean / D6 Volcano and their corresponding commissions, forming the leveling rhythm of \"from the undead catacomb to the depths of the volcano\"; first touches the foreshadowing of the Fifth's origins (D2). Uses Method A: one scenario + player-count scaling."
+difficulty: Normal~Hard
+level_range: [13, 26]
+chapter: 2
+map_ref: maps/D6_戰鬥_炎魔領主.yaml
+initial_map: maps/D2_沉眠墓窖.yaml
+encounters:
+  - id: d2_catacomb
+    name: D2 Slumbering Tomb (CL13–18)
+    enemies:
+      - {name: Skeleton Warrior, cr: 13, count: 3}
+      - {name: Zombie, cr: 15, count: 4}
+      - {name: Graveyard Lich, cr: 18, count: 1}
+    boss: true
+    budget: Normal×1.2
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: d5_ocean
+    name: D5 Ocean (CL13–18)
+    enemies:
+      - {name: Pirate, cr: 13, count: 2}
+      - {name: Shark, cr: 15, count: 2}
+      - {name: Water Ghost, cr: 16, count: 2}
+      - {name: Octopus, cr: 17, count: 2}
+      - {name: Sea Siren, cr: 18, count: 1}
+    boss: true
+    budget: Normal×1.2
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: d6_volcano
+    name: D6 Volcano (CL19–26)
+    enemies:
+      - {name: Salamander, cr: 19, count: 2}
+      - {name: Flame Hound, cr: 21, count: 2}
+      - {name: Magma Elemental, cr: 22, count: 2}
+      - {name: Lava Giant, cr: 24, count: 2}
+      - {name: Fire Spider, cr: 25, count: 2}
+      - {name: Balrog Lord, cr: 26, count: 1}
+    boss: true
+    budget: Hard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+rewards:
+  exp: 17000
+  gold: 6000
+  items: [Rest-for-the-Dead Material, Ocean Treasure, Flame-ore Smithing Material, Catacomb Key]
+ip_events:
+  - event: Rest the dead (D2 deliverance)
+    ip: 3
+  - event: Assist fishing-village refugee evacuation (D5)
+    ip: 3
+  - event: Explore the Fifth's origins foreshadowing (D2)
+    ip: 3
+  - event: Obtain Catacomb Key to unlock Necromancer General side story
+    ip: 2

@@ -1,0 +1,2098 @@
+meta:
+  title: Search, Attack, Retreat TRPG Item Codex
+  note: This file is extracted from the bestiary section embedded in the rulebook, cross-referenced with the .md bestiary. Full description see .md.
+sections:
+- name: Pistols
+  tables:
+  - - model: Cheap Pistol
+      damage: 1d6
+      capacity: '6'
+      rarity: Gray
+      price: '800'
+      special: Malfunction rate 1/8
+    - model: Small Pistol
+      damage: 1d6
+      capacity: '7'
+      rarity: White
+      price: 1,200
+      special: Concealable
+    - model: Military Surplus Pistol
+      damage: 1d8
+      capacity: '12'
+      rarity: White
+      price: 1,500
+      special: Reliable
+    - model: Tactical Pistol
+      damage: 1d8
+      capacity: '15'
+      rarity: Blue
+      price: 3,500
+      special: Attachment Slot
+    - model: Heavy Pistol
+      damage: 1d10
+      capacity: '8'
+      rarity: Purple
+      price: 5,000
+      special: Armor-Piercing 2
+- name: Submachine Gun (SMG)
+  tables:
+  - - model: Improvised SMG
+      damage: 1d8
+      capacity: '20'
+      rarity: White
+      price: 2,000
+      special: Malfunction rate 1/6
+    - model: Compact SMG
+      damage: 1d8
+      capacity: '25'
+      rarity: Blue
+      price: 4,500
+      special: Foldable
+    - model: Military SMG
+      damage: 1d8
+      capacity: '30'
+      rarity: Purple
+      price: 8,000
+      special: Full-Auto
+    - model: Tactical PDW
+      damage: 1d6
+      capacity: '30'
+      rarity: Purple
+      price: 10,000
+      special: Built-in Suppressor
+- name: Rifles
+  tables:
+  - - model: Old Hunting Rifle
+      damage: 1d10
+      capacity: '5'
+      rarity: White
+      price: 3,000
+      special: Can mount scope
+    - model: Civilian Rifle
+      damage: 1d10
+      capacity: '10'
+      rarity: White
+      price: 4,000
+      special: Semi-Auto
+    - model: Survivor Carbine
+      damage: 1d8
+      capacity: '15'
+      rarity: Blue
+      price: 6,000
+      special: Lightweight
+    - model: Military Assault Rifle
+      damage: 2d6
+      capacity: '30'
+      rarity: Purple
+      price: 12,000
+      special: Full-Auto, Armor-Piercing 1
+    - model: Spec-Ops Rifle
+      damage: 2d6
+      capacity: '30'
+      rarity: Gold
+      price: 25,000
+      special: Suppressed, Low Recoil, Armor-Piercing 1
+- name: Shotguns
+  tables:
+  - - model: Old Shotgun
+      damage: 2d6
+      capacity: '3'
+      rarity: White
+      price: 2,500
+      special: +1d6 within 5m close range
+    - model: Double-Barrel Shotgun
+      damage: 2d6
+      capacity: '2'
+      rarity: White
+      price: 2,000
+      special: Double-Barrel Salvo 4d6
+    - model: Short-Barrel Shotgun
+      damage: 3d6
+      capacity: '3'
+      rarity: Blue
+      price: 3,500
+      special: Can be secondary weapon
+    - model: Tactical Shotgun
+      damage: 2d6
+      capacity: '6'
+      rarity: Blue
+      price: 6,500
+      special: Semi-Auto
+    - model: Semi-Auto Combat
+      damage: 2d6
+      capacity: '8'
+      rarity: Purple
+      price: 14,000
+      special: Can fire 2x per round
+- name: Sniper Rifles
+  tables:
+  - - model: Hunting Sniper Rifle
+      damage: 2d8
+      capacity: '5'
+      rarity: Blue
+      price: 7,000
+      special: 4× Scope
+    - model: DMR
+      damage: 1d10
+      capacity: '20'
+      rarity: Purple
+      price: 15,000
+      special: Semi-Auto (Designated Marksman Rifle)
+    - model: Military Sniper Rifle
+      damage: 2d10
+      capacity: '10'
+      rarity: Purple
+      price: 18,000
+      special: 8×, Armor-Piercing 2
+    - model: Anti-Materiel Rifle
+      damage: 4d6
+      capacity: '5'
+      rarity: Gold
+      price: 40,000
+      special: Armor-Piercing 5, map-wide gunshot
+- name: Melee Weapons
+  tables:
+  - - model: Crowbar
+      damage: 1d6+Physique
+      rarity: White
+      price: '600'
+      special: Can pick locks
+    - model: Tactical Knife
+      damage: 1d4+Physique
+      rarity: White
+      price: '900'
+      special: Concealable
+    - model: Fire Axe
+      damage: 1d8+Physique
+      rarity: White
+      price: 1,200
+      special: Breach Doors
+    - model: Stun Baton
+      damage: 1d4+Stun
+      rarity: Blue
+      price: 3,000
+      special: Non-Lethal
+    - model: Tactical Axe
+      damage: 1d8+Physique
+      rarity: Purple
+      price: 5,000
+      special: Throwable
+    - model: Prototype Concussion Hammer
+      damage: 2d6+Physique
+      rarity: Gold
+      price: 20,000
+      special: Area Shockwave
+- name: Helmets
+  tables:
+  - - model: Construction Hard Hat
+      Damage Reduction (DR): '1'
+      rarity: Gray
+      price: '300'
+    - model: Kevlar Helmet
+      Damage Reduction (DR): '1'
+      rarity: White
+      price: 2,500
+    - model: High-Cut Tactical Helmet
+      Damage Reduction (DR): '1'
+      rarity: Blue
+      price: 5,000
+    - model: Heavy Riot Helmet
+      Damage Reduction (DR): '2'
+      rarity: Purple
+      price: 8,000
+    - model: Spec-Ops Helmet
+      Damage Reduction (DR): '2'
+      rarity: Gold
+      price: 15,000
+- name: Body Armor
+  tables:
+  - - model: Heavy Coat
+      Damage Reduction (DR): '1'
+      rarity: Gray
+      price: '400'
+      special: Not Stackable
+    - model: Soft Body Armor IIA
+      Damage Reduction (DR): '1'
+      rarity: White
+      price: 3,000
+      special: Damage Reduction (DR) vs rifle rounds halved (min 1)
+    - model: Hard Body Armor III
+      Damage Reduction (DR): '2'
+      rarity: Blue
+      price: 8,000
+      special: Works with all ammo types
+    - model: Ceramic Plate IV
+      Damage Reduction (DR): '3'
+      rarity: Purple
+      price: 18,000
+      special: Degrades after heavy hits
+    - model: Full-Body Heavy Armor
+      Damage Reduction (DR): '4'
+      rarity: Gold
+      price: 35,000
+      special: Speed −3m
+- name: Tactical Vest (determines loot slots + stackable protection)
+  tables:
+  - - model: Waist Pouch
+      loot slots: '+2'
+      Built-in Damage Reduction (DR): '0'
+      rarity: Gray
+      price: '500'
+    - model: Light Chest Rig
+      loot slots: '+4'
+      Built-in Damage Reduction (DR): '0'
+      rarity: White
+      price: 1,500
+    - model: Tactical Vest
+      loot slots: '+6'
+      Built-in Damage Reduction (DR): '0'
+      rarity: Blue
+      price: 4,000
+    - model: Heavy Tactical Vest
+      loot slots: '+8'
+      Built-in Damage Reduction (DR): '1'
+      rarity: Purple
+      price: 8,000
+    - model: Assault Vest
+      loot slots: '+10'
+      Built-in Damage Reduction (DR): '1'
+      rarity: Gold
+      price: 18,000
+- name: Backpack
+  tables:
+  - - model: Torn Backpack
+      carry bonus: +10 kg
+      loot slots: '+2'
+      rarity: Gray
+      price: '500'
+    - model: Simple Backpack
+      carry bonus: +15 kg
+      loot slots: '+3'
+      rarity: White
+      price: 1,200
+    - model: Military Backpack
+      carry bonus: +25 kg
+      loot slots: '+5'
+      rarity: Blue
+      price: 5,000
+    - model: Hiking Backpack
+      carry bonus: +30 kg
+      loot slots: '+6'
+      rarity: Purple
+      price: 10,000
+    - model: Large Gear Bag
+      carry bonus: +40 kg
+      loot slots: '+8'
+      rarity: Gold
+      price: 15,000
+- name: Medical Supplies
+  tables:
+  - - item: Bandage
+      effect: Stop Bleeding (halts bleeding status)
+      rarity: Gray
+      price: '80'
+    - item: First Aid Kit
+      effect: Restore 1d6+2 Hit Points
+      rarity: White
+      price: '250'
+    - item: Military First Aid Kit
+      effect: Restore 2d6+2 Hit Points
+      rarity: Blue
+      price: '600'
+    - item: Advanced Medical Kit
+      effect: Restore 3d6+2 Hit Points + Detox
+      rarity: Purple
+      price: 1,500
+    - item: Adrenaline
+      effect: Restore 1d6 Hit Points + 1 extra Action Point (AP) next round
+      rarity: Blue
+      price: '800'
+- name: Ammunition
+  tables:
+  - - type: 9mm Standard
+      compatible weapons: Pistol/SMG
+      price (per box): 300 ₽ / 50 rounds
+    - type: 5.56 Standard
+      compatible weapons: Rifle
+      price (per box): 500 ₽ / 30 rounds
+    - type: 7.62 Standard
+      compatible weapons: Sniper/Rifle
+      price (per box): 600 ₽ / 20 rounds
+    - type: 12-gauge Shell
+      compatible weapons: Shotgun
+      price (per box): 350 ₽ / 25 rounds
+    - type: Armor-Piercing Rounds (all calibers)
+      compatible weapons: +Armor-Piercing 2
+      price (per box): Blue~Purple
+- name: Tools
+  tables:
+  - - item: Lockpick Tools
+      use: Lockpicking check +1
+      rarity: White
+      price: '500'
+    - item: Multi-Pliers
+      use: Mechanics check +1
+      rarity: Blue
+      price: 1,200
+    - item: GPS Locator
+      use: Navigation, locate extraction point
+      rarity: Blue
+      price: 4,000
+    - item: Radio
+      use: Communicate with teammates/extraction vehicle
+      rarity: Blue
+      price: 3,500
+    - item: Smoke Grenade
+      use: Create smoke screen (5m radius, 3 rounds)
+      rarity: Blue
+      price: '600'
+    - item: Fragmentation Grenade
+      use: 3d6 Damage (5m radius)
+      rarity: Purple
+      price: 2,000
+- name: 4.1 Pistols (Expanded)
+  tables:
+  - - model: Flare Gun
+      damage: —
+      capacity: '1'
+      range: Mid-Range
+      rarity: White
+      price: '500'
+      special: Call extraction / illuminate / ignite
+    - model: Revolver
+      damage: 1d8
+      capacity: '6'
+      range: Close-Mid
+      rarity: White
+      price: 1,200
+      special: Reliable (thus 1/20), cannot be suppressed
+    - model: Competition Pistol
+      damage: 1d6
+      capacity: '10'
+      range: Close-Mid
+      rarity: Blue
+      price: 2,800
+      special: Precision +1, malfunction 1/20
+    - model: Micro Pistol
+      damage: 1d4
+      capacity: '4'
+      range: Point-Blank-Close
+      rarity: White
+      price: '900'
+      special: Ultra-concealable (undetectable by metal detectors)
+    - model: Machine Pistol
+      damage: 1d8
+      capacity: '20'
+      range: Close-Mid
+      rarity: Purple
+      price: 6,000
+      special: Full-Auto, cannot mount suppressor
+    - model: Hunting Revolver
+      damage: 2d6
+      capacity: '5'
+      range: Close-Mid
+      rarity: Purple
+      price: 4,500
+      special: Large caliber, Armor-Piercing 2, Recoil -1
+    - model: Plasma Pistol
+      damage: 2d6
+      capacity: 8 (Energy)
+      range: Close-Mid
+      rarity: Gold
+      price: 22,000
+      special: Ignores Damage Reduction (DR) below 3 armor, no ballistic trajectory
+- name: 4.2 Submachine Guns (Expanded)
+  tables:
+  - - model: Retro SMG
+      damage: 1d6
+      capacity: '50'
+      range: Close-Mid
+      rarity: White
+      price: 3,500
+      special: Drum mag, high malfunction rate (1/6)
+    - model: Spec-Ops SMG
+      damage: 1d8
+      capacity: '30'
+      range: Close-Mid
+      rarity: Purple
+      price: 9,000
+      special: Built-in Suppressor + Red Dot, no disadvantage firing at crouched targets
+    - model: Heavy SMG
+      damage: 1d10
+      capacity: '25'
+      range: Close-Mid
+      rarity: Purple
+      price: 7,500
+      special: Large caliber, Recoil -1
+    - model: Hydraulic SMG
+      damage: 1d8+Armor-Piercing 1
+      capacity: '35'
+      range: Close-Mid
+      rarity: Gold
+      price: 18,000
+      special: Specialized ammo, malfunction rate 1/50
+- name: 4.3 Rifles (Expanded)
+  tables:
+  - - model: Bullpup Rifle
+      damage: 1d10
+      capacity: '30'
+      range: Mid-Long
+      rarity: Blue
+      price: 5,500
+      special: Compact (no penalty in point-blank spaces)
+    - model: Designated Marksman Rifle
+      damage: 1d10
+      capacity: '20'
+      range: Mid-Extreme Long
+      rarity: Purple
+      price: 11,000
+      special: Semi-Auto, built-in 4×, no disadvantage firing prone
+    - model: Battle Rifle
+      damage: 2d8
+      capacity: '20'
+      range: Mid-Long
+      rarity: Purple
+      price: 13,000
+      special: 7.62 caliber, Armor-Piercing 2, heavy recoil (-1 Full-Auto)
+    - model: Caseless Rifle
+      damage: 2d6
+      capacity: '50'
+      range: Mid-Long
+      rarity: Gold
+      price: 28,000
+      special: Caseless (no need to track reload), malfunction 1/50
+    - model: Gauss Rifle
+      damage: 3d6
+      capacity: 10 (Energy)
+      range: Mid-Extreme Long
+      rarity: Gold
+      price: 45,000
+      special: Ignores all Damage Reduction (DR), needs charge (2 Action Point (AP)/shot), map-wide noise
+    - model: Assault Carbine
+      damage: 1d8
+      capacity: '30'
+      range: Close-Long
+      rarity: Blue
+      price: 5,800
+      special: Lightweight (half weight), Full-Auto OK
+- name: 4.4 Shotguns (Expanded)
+  tables:
+  - - model: Sawed-Off Shotgun
+      damage: 3d6
+      capacity: '2'
+      range: Point-Blank-Close
+      rarity: White
+      price: 1,800
+      special: Ultra-short (usable in point-blank spaces), cannot mount attachments
+    - model: Drum Shotgun
+      damage: 2d6
+      capacity: '20'
+      range: Close-Mid
+      rarity: Purple
+      price: 12,000
+      special: Drum-fed, Semi-Auto, Heavy
+    - model: Full-Auto Shotgun
+      damage: 2d6
+      capacity: '10'
+      range: Close-Mid
+      rarity: Gold
+      price: 22,000
+      special: Full-Auto OK (Burst +2d4 per target)
+    - model: Double-Caliber Shotgun
+      damage: 2d6 or 1d10
+      capacity: 2+2
+      range: Close-Mid
+      rarity: Blue
+      price: 4,500
+      special: Upper barrel 12-gauge / lower barrel rifle round, two trigger sets
+- name: 4.5 Sniper Rifles (Expanded)
+  tables:
+  - - model: Suppressed Sniper Rifle
+      damage: 1d10
+      capacity: '8'
+      range: Mid-Long
+      rarity: Blue
+      price: 9,000
+      special: Built-in Suppressor, Subsonic Rounds (Range -1 tier, no gunshot)
+    - model: Bullpup Sniper Rifle
+      damage: 2d8
+      capacity: '10'
+      range: Mid-Extreme Long
+      rarity: Purple
+      price: 16,000
+      special: Compact, 8×, no disadvantage firing prone
+    - model: Repeating Sniper Rifle
+      damage: 2d8
+      capacity: '15'
+      range: Mid-Extreme Long
+      rarity: Gold
+      price: 30,000
+      special: Semi-Auto (Burst capable), 10×, Suppressor standard
+    - model: Railgun Sniper Rifle
+      damage: 4d8
+      capacity: 3 (Energy)
+      range: Long-Extreme Long
+      rarity: Gold
+      price: 60,000
+      special: Ignores all Damage Reduction (DR), penetrates cover (cover Damage Reduction (DR) halved), 2 rounds charge/shot
+    - model: Marking Sniper Rifle
+      damage: 1d10+Mark
+      capacity: '5'
+      range: Mid-Long
+      rarity: Gold
+      price: 25,000
+      special: After hit marks target (allies +1 to hit vs that target for 10 rounds)
+- name: 4.6 Special Weapons (New Category)
+  tables:
+  - - model: Crossbow
+      damage: 1d8
+      capacity: '1'
+      range: Close-Mid
+      rarity: White
+      price: 1,500
+      special: Silent, arrows recoverable
+    - model: Tactical Crossbow
+      damage: 1d10
+      capacity: 5 (Magazine)
+      range: Close-Mid
+      rarity: Blue
+      price: 4,000
+      special: Semi-Auto, can load explosive arrow (+1d6)
+    - model: Flamethrower
+      damage: 2d6+Ignite
+      capacity: 5 (Fuel)
+      range: Point-Blank-Close
+      rarity: Purple
+      price: 12,000
+      special: 3m Cone, can sustain spray (2 Action Point (AP) = 2d6 + 2 rounds Ignite)
+    - model: Grenade Launcher (Underslung)
+      damage: 3d6
+      capacity: '1'
+      range: Mid-Long
+      rarity: Purple
+      price: 8,000
+      special: Mounted under rifle, 5m explosion radius
+    - model: Concussion Launcher
+      damage: 1d6+Stun
+      capacity: '3'
+      range: Close-Mid
+      rarity: Blue
+      price: 5,500
+      special: Non-Lethal, 2m radius, Courage Target Number (TN) 14 or else lose 1 round
+    - model: Plasma Cutter
+      damage: 2d8
+      capacity: 5 (Energy)
+      range: Point-Blank
+      rarity: Gold
+      price: 18,000
+      special: Ignores Damage Reduction (DR) below 5 armor, can cut metal doors
+    - model: Gravity Grenade
+      damage: 3d6+Gravity
+      capacity: 1 (Thrown)
+      range: Throwing
+      rarity: Gold
+      price: 8,000
+      special: 5m radius, targets in range halve Movement for 2 rounds + Prone
+- name: 4.7 Melee Weapons (Expanded)
+  tables:
+  - - model: Baton
+      damage: 1d4+Physique
+      rarity: White
+      price: '400'
+      special: Can be Non-Lethal
+    - model: Machete
+      damage: 1d6+Physique
+      rarity: White
+      price: '700'
+      special: Can chop light obstacles
+    - model: War Hammer
+      damage: 1d8+Physique
+      rarity: White
+      price: 1,000
+      special: -1 Damage Reduction (DR) vs armor
+    - model: Stun Gun
+      damage: 1d6+Stun
+      rarity: Blue
+      price: 2,500
+      special: Mid-Range OK (Non-Lethal Ranged)
+    - model: Chainsaw Sword
+      damage: 2d6+Physique
+      rarity: Gold
+      price: 25,000
+      special: Continuous damage (extra 1d6 after 1 round), malfunction 1/6, map-wide noise
+    - model: Energy Blade
+      damage: 2d6 (Energy)
+      rarity: Gold
+      price: 20,000
+      special: Ignores Damage Reduction (DR) below 3 armor, can serve as light source
+    - model: Gravity Gauntlet
+      damage: 1d6+Physique+Gravity
+      rarity: Gold
+      price: 22,000
+      special: Point-Blank + throwable target (3m), 5 charges
+- name: 5.1 Helmets (Expanded)
+  tables:
+  - - model: Gas Mask
+      Damage Reduction (DR): '0'
+      rarity: White
+      price: '600'
+      special: Toxin/chemical environment immunity
+    - model: Night Vision Goggles (Helmet-Mounted)
+      Damage Reduction (DR): '0'
+      rarity: Blue
+      price: 3,500
+      special: No night disadvantage, needs battery (4 hours)
+    - model: Thermal Goggles
+      Damage Reduction (DR): '0'
+      rarity: Purple
+      price: 8,000
+      special: Can see through thin walls/smoke for heat sources, needs battery (2 hours)
+    - model: Tactical Headset
+      Damage Reduction (DR): '0'
+      rarity: Blue
+      price: 2,000
+      special: Awareness +1 (Hearing), can receive team radio
+    - model: Blast Visor
+      Damage Reduction (DR): '2'
+      rarity: Blue
+      price: 3,000
+      special: Explosion damage -1d6, vision -1
+    - model: Full-Seal Bio Helmet
+      Damage Reduction (DR): '2'
+      rarity: Purple
+      price: 9,000
+      special: Full bio/radiation/toxin immunity, built-in air 6 hours
+    - model: Psionic Headband
+      Damage Reduction (DR): '0'
+      rarity: Gold
+      price: 20,000
+      special: Psi attack Damage Reduction (DR) 2, advantage on Courage checks
+    - model: Tactical Display Helmet
+      Damage Reduction (DR): '3'
+      rarity: Gold
+      price: 18,000
+      special: Built-in HUD (shows ally positions/enemy marks/extraction timer), does not affect Perception
+- name: 5.2 Body Armor (Expanded)
+  tables:
+  - - model: Stab-Proof Vest
+      Damage Reduction (DR): 1 (Melee Only)
+      rarity: White
+      price: 1,800
+      special: Lightweight (no movement penalty), Damage Reduction (DR) 0 vs bullets
+    - model: Liquid Body Armor
+      Damage Reduction (DR): '3'
+      rarity: Purple
+      price: 15,000
+      special: Damage Reduction (DR) not halved for any ammo type, self-repair (recovers 1 Damage Reduction (DR) per day)
+    - model: Blast Protection Suit
+      Damage Reduction (DR): 2 (+Explosion 3)
+      rarity: Blue
+      price: 6,500
+      special: Extra DR 3 vs explosion damage, DR 2 vs bullets
+    - model: Camouflage Suit (Military)
+      Damage Reduction (DR): '0'
+      rarity: Blue
+      price: 3,000
+      special: Stealth +2 (visual), Target Number (TN) +4 to be spotted when crouched still
+    - model: Thermal-Optical Camo
+      Damage Reduction (DR): '0'
+      rarity: Gold
+      price: 35,000
+      special: Completely invisible when still (visual), Stealth +4 when moving, needs battery (30 min)
+    - model: Exoskeleton Frame
+      Damage Reduction (DR): '3'
+      rarity: Gold
+      price: 40,000
+      special: Carry Capacity +30kg, Movement +2m/Action Point (AP), built-in Damage Reduction (DR) 3
+    - model: Full-Seal Protective Suit
+      Damage Reduction (DR): '2'
+      rarity: Purple
+      price: 12,000
+      special: Full bio/radiation/toxin immunity, built-in air 8 hours
+    - model: Energy Shield Belt
+      Damage Reduction (DR): 2 (Shield)
+      rarity: Gold
+      price: 28,000
+      special: Provides regenerating Shield Hit Points (HP) 10 (recovers 1 per round), needs battery
+- name: 5.3 Tactical Vests (Expanded)
+  tables:
+  - - model: Light Recon Vest
+      loot slots: '+4'
+      Built-in DR: '0'
+      load: +2kg
+      rarity: White
+      price: 2,000
+      special: Does not affect Stealth
+    - model: Medic Vest
+      loot slots: '+6'
+      Built-in DR: '0'
+      load: +3kg
+      rarity: Blue
+      price: 5,500
+      special: Built-in medical pocket ×4 (taking meds is free action)
+    - model: Demolition Vest
+      loot slots: '+6'
+      Built-in DR: '1'
+      load: +5kg
+      rarity: Blue
+      price: 6,000
+      special: Built-in explosive pocket ×3 (grenades do not take loot slots)
+    - model: Sniper Vest
+      loot slots: '+5'
+      Built-in DR: '0'
+      load: +4kg
+      rarity: Blue
+      price: 4,500
+      special: Built-in shooting pad, no disadvantage firing prone
+    - model: Commander Vest
+      loot slots: '+8'
+      Built-in DR: '1'
+      load: +4kg
+      rarity: Purple
+      price: 12,000
+      special: Built-in radio, Initiative +2 (team)
+    - model: Exoskeleton-Mounted Vest
+      loot slots: '+12'
+      Built-in DR: '2'
+      load: +10kg
+      rarity: Gold
+      price: 25,000
+      special: Requires Exoskeleton Frame to use
+- name: 5.4 Backpacks (Expanded)
+  tables:
+  - - model: Waterproof Backpack
+      carry bonus: +15kg
+      loot slots: '+3'
+      rarity: White
+      price: 2,000
+      special: Contents unaffected by moisture/rain
+    - model: Rappelling Backpack
+      carry bonus: +20kg
+      loot slots: '+4'
+      rarity: Blue
+      price: 6,000
+      special: Can quick-detach (free action), no movement penalty after detach
+    - model: Cooling Backpack
+      carry bonus: +12kg
+      loot slots: '+2'
+      rarity: Blue
+      price: 4,500
+      special: Can preserve biological samples (24 hours)
+    - model: Weapon Backpack
+      carry bonus: +15kg
+      loot slots: '+4'
+      rarity: Blue
+      price: 5,000
+      special: Can store one primary weapon (does not take a slot)
+    - model: Hard-Shell Case Backpack
+      carry bonus: +20kg
+      loot slots: '+6'
+      rarity: Purple
+      price: 14,000
+      special: Contents unaffected by impact/explosion damage, lockable
+    - model: Airdrop Supply Crate
+      carry bonus: +50kg
+      loot slots: '+12'
+      rarity: Gold
+      price: 30,000
+      special: Can be used as airdrop supply crate (call airdrop at extraction point)
+- name: 6.1 Medical Supplies (Expanded)
+  tables:
+  - - item: Clotting Powder
+      effect: Immediately stops bleeding status (no Action Point (AP) cost)
+      rarity: White
+      price: '150'
+    - item: Sedative
+      effect: After injection immune to fear for 1h, +1 Stress after
+      rarity: White
+      price: '300'
+    - item: Broad-Spectrum Antibiotics
+      effect: Cures infection status, prevents infection for 1 sortie
+      rarity: Blue
+      price: '500'
+    - item: Coagulant Injector
+      effect: Restore 1d8 Hit Points (HP) + stop bleeding, use 1 Action Point (AP)
+      rarity: Blue
+      price: '700'
+    - item: Surgery Kit
+      effect: Can perform field surgery (remove permanent injuries, Tech Target Number (TN) 17)
+      rarity: Purple
+      price: 3,000
+    - item: Regeneration Bandage
+      effect: After applied, restores 1 Hit Points (HP) per round for 1d6 rounds
+      rarity: Purple
+      price: 1,200
+    - item: Radiation Cleanser
+      effect: Clears all radiation buildup, 24h radiation immunity
+      rarity: Purple
+      price: 2,000
+    - item: Combat Stimulant
+      effect: Within 10 min Initiative +3, Damage +1; after effect ends gain 2 Stress
+      rarity: Purple
+      price: 1,500
+    - item: Nano Medkit
+      effect: Restore 3d8+4 Hit Points (HP) + remove all toxins/infection/bleeding
+      rarity: Gold
+      price: 6,000
+    - item: Adrenaline Auto-Injector
+      effect: Use when ally at 0 Hit Points (HP) → restore 1 Hit Points (HP) and regain consciousness (one-time)
+      rarity: Gold
+      price: 5,000
+    - item: Revival Capsule
+      effect: If dead within 24h of use → awaken at hideout after 48h (full Hit Points (HP) but lose all loot from that run)
+      rarity: Gold
+      price: 15,000
+- name: 6.2 Ammunition (Expanded)
+  tables:
+  - - type: Subsonic Rounds
+      compatible: Rifle/Pistol
+      effect: No gunshot (needs suppressor), Range -1 tier
+      rarity: Blue
+      price (per box): ×1.5
+    - type: Hollow-Point Rounds
+      compatible: Pistol/SMG/Rifle
+      effect: +1d4 damage vs unarmored targets
+      rarity: Blue
+      price (per box): ×1.3
+    - type: Armor-Piercing Incendiary Rounds
+      compatible: Rifle/Sniper
+      effect: Armor-Piercing +2, 50% Ignite on hit
+      rarity: Purple
+      price (per box): ×2.5
+    - type: Slug Rounds
+      compatible: Shotgun
+      effect: Damage 2d8 single target, range matches rifle mid-range
+      rarity: White
+      price (per box): ×1.2
+    - type: Dragon's Breath Rounds
+      compatible: Shotgun
+      effect: Damage 2d6+Ignite (3m cone)
+      rarity: Purple
+      price (per box): ×3
+    - type: Rubber Rounds
+      compatible: Pistol/Shotgun
+      effect: Non-Lethal, half damage but target Courage Target Number (TN) 14 or else lose next turn
+      rarity: White
+      price (per box): ×0.8
+    - type: Tracer Rounds
+      compatible: Rifle/Sniper
+      effect: After hit attaches micro tracker (real-time target tracking for 24 hours)
+      rarity: Purple
+      price (per box): ×2
+    - type: EMP Rounds
+      compatible: Special launcher
+      effect: Within 5m radius electronics disabled 1d6 rounds
+      rarity: Purple
+      price (per box): ×3
+    - type: High-Explosive Rounds
+      compatible: Sniper/Anti-Materiel
+      effect: After hit adds 2d6 explosion (3m radius)
+      rarity: Gold
+      price (per box): ×4
+    - type: Dimensional Rounds
+      compatible: Special caliber
+      effect: Ignores all Damage Reduction (DR), ignores cover, after hit teleports target 1d10m
+      rarity: Gold
+      price (per box): ×5
+- name: 6.3 Tools (Expanded)
+  tables:
+  - - item: Multi-Tool Pliers
+      use: Minor repair/lockpick/cut
+      rarity: White
+      price: '400'
+    - item: Wire Saw
+      use: Cut metal fences/chains (slow but quiet)
+      rarity: White
+      price: '300'
+    - item: Telescoping Ladder
+      use: Reach high places (3-5m)
+      rarity: White
+      price: '800'
+    - item: Thermal Cutter
+      use: Quickly cut metal doors/locks (2 Action Point (AP), map-wide noise)
+      rarity: Blue
+      price: 2,500
+    - item: Signal Flare
+      use: Illuminate (50m radius, 5 rounds) / mark position / distress
+      rarity: White
+      price: 100 (per unit)
+    - item: Smoke Grenade (Colored)
+      use: Colored smoke (marking/signal use, 5m radius)
+      rarity: White
+      price: '200'
+    - item: Flashbang
+      use: Within 5m radius, Perception Target Number (TN) 14 or else Blind 2 rounds + Tinnitus
+      rarity: Blue
+      price: '500'
+    - item: Stun Grenade
+      use: Within 5m radius, Courage Target Number (TN) 17 or else lose 1 round
+      rarity: Blue
+      price: '600'
+    - item: Breaching Charge
+      use: Blast open reinforced doors (Damage Reduction (DR) 8 or below), 1d6 within 3m
+      rarity: Blue
+      price: 1,200
+    - item: Remote Explosive (C4)
+      use: 5d6 (3m)/2d6 (10m), timed or remote detonation
+      rarity: Purple
+      price: 3,000
+    - item: Motion Sensor
+      use: Monitors designated direction 30m, radios notification on trigger
+      rarity: Blue
+      price: 2,500
+    - item: Recon Drone
+      use: Flying recon 100m real-time imagery, 10 min endurance, noise (Perception Target Number (TN) 8 to detect)
+      rarity: Purple
+      price: 8,000
+    - item: Signal Jammer
+      use: Within 20m radius radios/remote explosives disabled
+      rarity: Purple
+      price: 6,000
+    - item: 3D Printer (Portable)
+      use: Consumes materials to craft simple parts/tools/ammo
+      rarity: Purple
+      price: 12,000
+    - item: Power Cell
+      use: Charges electronic devices (6 charge cycles)
+      rarity: Blue
+      price: 1,500
+- name: 6.4 Food and Survival Gear
+  tables:
+  - - item: Military Ration
+      effect: Restore 1 Stress (requires eating in safe environment)
+      price: '100'
+    - item: Instant Coffee
+      effect: +1 Perception for 1 hour
+      price: '80'
+    - item: Energy Drink
+      effect: +1m Movement/Action Point (AP) for 1 hour; +1 Stress after
+      price: '150'
+    - item: Water Purification Tablet
+      effect: Purifies 10L water
+      price: '50'
+    - item: Sleeping Bag
+      effect: Rest effect doubled in safe environment
+      price: '200'
+    - item: Tent (Light)
+      effect: Provides safe wilderness rest point (requires 30 min to set up)
+      price: '800'
+- name: 7.1 Gray (Junk Tier, 10~100 ₽)
+  tables:
+  - - d100: 01-08
+      item: Rag
+      volume: '1'
+      value: '10'
+      use: Flammable / stops bleeding (improvised)
+    - d100: 09-15
+      item: Empty Can
+      volume: '1'
+      value: '15'
+      use: Recyclable metal
+    - d100: 16-22
+      item: Waste Paper
+      volume: '1'
+      value: '10'
+      use: Occasionally has useful info
+    - d100: 23-28
+      item: Plastic Scrap
+      volume: '1'
+      value: '10'
+      use: No direct use
+    - d100: 29-34
+      item: Rusted Nail
+      volume: '1'
+      value: '15'
+      use: Can craft improvised traps
+    - d100: 35-40
+      item: Broken Glass
+      volume: '1'
+      value: '10'
+      use: Dangerous (1d2 damage when handled)
+    - d100: 41-46
+      item: Old Newspaper
+      volume: '1'
+      value: '10'
+      use: News from before the collapse (narrative prop)
+    - d100: 47-52
+      item: Wire Scrap
+      volume: '1'
+      value: '20'
+      use: Recyclable copper wire
+    - d100: 53-58
+      item: Empty Shell Casing
+      volume: '1'
+      value: '15'
+      use: Recyclable metal
+    - d100: 59-64
+      item: Rotten Food
+      volume: '1'
+      value: '0'
+      use: Not Edible
+    - d100: 65-70
+      item: Torn Clothing
+      volume: '1'
+      value: '15'
+      use: Flammable / can be torn into bandages (improvised)
+    - d100: 71-76
+      item: Discarded Battery
+      volume: '1'
+      value: '20'
+      use: May still have trace power
+    - d100: 77-82
+      item: Broken Belt
+      volume: '1'
+      value: '15'
+      use: Can be used for binding
+    - d100: 83-88
+      item: Rusted Tool
+      volume: '1'
+      value: '25'
+      use: Barely usable
+    - d100: 89-94
+      item: Empty Lighter
+      volume: '1'
+      value: '10'
+      use: No fuel
+    - d100: 95-100
+      item: Strange Stone
+      volume: '1'
+      value: '30'
+      use: May have anomalous properties (Perception Target Number (TN) 17 to identify)
+- name: 7.2 White (Common Tier, 100~500 ₽)
+  tables:
+  - - d100: 01-05
+      item: 9mm Ammo×20
+      volume: '1'
+      value: '150'
+      use: Most common pistol/SMG ammo
+    - d100: 06-10
+      item: 12-gauge Shell×10
+      volume: '1'
+      value: '150'
+      use: Shotgun Ammo
+    - d100: 11-15
+      item: 5.56 Ammo×15
+      volume: '1'
+      value: '250'
+      use: Rifle Ammo
+    - d100: 16-20
+      item: Bandage×1d3
+      volume: '1'
+      value: '80'
+      use: Stop Bleeding
+    - d100: 21-24
+      item: First Aid Kit×1
+      volume: '1'
+      value: '250'
+      use: Restore 1d6+2 Hit Points (HP)
+    - d100: 25-28
+      item: Painkiller×1d3
+      volume: '1'
+      value: '100'
+      use: Reduces injury effects (1 hour)
+    - d100: 29-32
+      item: Canned Food×1d2
+      volume: '1'
+      value: '50'
+      use: Food
+    - d100: 33-36
+      item: Bottled Water×1d2
+      volume: '1'
+      value: '30'
+      use: Drinking Water
+    - d100: 37-40
+      item: Flashlight
+      volume: '1'
+      value: '150'
+      use: Illuminate (20m), needs battery
+    - d100: 41-44
+      item: Lighter
+      volume: '1'
+      value: '100'
+      use: Ignite
+    - d100: 45-48
+      item: Swiss Knife
+      volume: '1'
+      value: '200'
+      use: Multi-Tool
+    - d100: 49-52
+      item: Work Gloves
+      volume: '1'
+      value: '150'
+      use: Hand protection (Damage Reduction (DR) 1 to hands)
+    - d100: 53-56
+      item: Industrial Tape
+      volume: '1'
+      value: '120'
+      use: Universal repair
+    - d100: 57-60
+      item: Small Toolbox
+      volume: '2'
+      value: '350'
+      use: Mechanics check +1
+    - d100: 61-64
+      item: Rope (20m)
+      volume: '2'
+      value: '200'
+      use: Climb/bind
+    - d100: 65-68
+      item: Canvas Backpack
+      volume: '2'
+      value: '300'
+      use: +10kg Carry, +2 Slots (Torn Backpack tier)
+    - d100: 69-72
+      item: Metal Scrap×1d3
+      volume: '1'
+      value: '200'
+      use: Recyclable/crafting material
+    - d100: 73-76
+      item: Fuel Can (5L)
+      volume: '2'
+      value: '300'
+      use: Fuel/incendiary weapon
+    - d100: 77-80
+      item: Radio Parts
+      volume: '1'
+      value: '250'
+      use: Can assemble improvised radio (Tech Target Number (TN) 11)
+    - d100: 81-84
+      item: Personal Documents
+      volume: '1'
+      value: '100'
+      use: Narrative prop / may trigger side quest
+    - d100: 85-88
+      item: Map Fragment
+      volume: '1'
+      value: '150'
+      use: Completes regional map
+    - d100: 89-92
+      item: Work Boots
+      volume: '1'
+      value: '200'
+      use: Terrain Penalty -1
+    - d100: 93-96
+      item: 7.62 Ammo×10
+      volume: '1'
+      value: '300'
+      use: Sniper/Battle rifle ammo
+    - d100: 97-100
+      item: Small Safe (Empty)
+      volume: '2'
+      value: '400'
+      use: Can serve as personal storage
+- name: 7.3 Blue (Rare Tier, 500~3,000 ₽)
+  tables:
+  - - d100: 01-04
+      item: Electronic Parts
+      volume: '1'
+      value: '800'
+      use: Electronics check material
+    - d100: 05-08
+      item: Weapon Attachment — Red Dot Sight
+      volume: '1'
+      value: 1,200
+      use: Close-Mid range shooting +1
+    - d100: 09-12
+      item: Weapon Attachment — Foregrip
+      volume: '1'
+      value: '900'
+      use: Full-Auto Recoil -1
+    - d100: 13-16
+      item: Weapon Attachment — Suppressor (Pistol)
+      volume: '1'
+      value: 1,500
+      use: Pistol fire makes no gunshot sound
+    - d100: 17-20
+      item: Weapon Attachment — Suppressor (Rifle)
+      volume: '2'
+      value: 2,500
+      use: Rifle fire makes no gunshot sound
+    - d100: 21-24
+      item: GPS Locator
+      volume: '1'
+      value: 4,000
+      use: Navigation, locate extraction point
+    - d100: 25-28
+      item: Radio
+      volume: '1'
+      value: 3,500
+      use: Comms, call extraction
+    - d100: 29-32
+      item: Military First Aid Kit×1
+      volume: '1'
+      value: '600'
+      use: Restore 2d6+2 Hit Points (HP)
+    - d100: 33-36
+      item: Adrenaline Syringe×1
+      volume: '1'
+      value: '800'
+      use: Restore 1d6 + 1 extra Action Point (AP)
+    - d100: 37-40
+      item: Night Vision Goggles
+      volume: '1'
+      value: 3,500
+      use: No night vision disadvantage
+    - d100: 41-44
+      item: Electronic Decoder
+      volume: '1'
+      value: 2,000
+      use: Electronic lock bypass +2
+    - d100: 45-48
+      item: Industrial Chemicals
+      volume: '2'
+      value: '700'
+      use: Crafting/demolition material
+    - d100: 49-52
+      item: Weapon Parts Kit
+      volume: '2'
+      value: 1,500
+      use: Repair weapons / build own weapons
+    - d100: 53-56
+      item: Armor Plate (Soft)
+      volume: '2'
+      value: 1,800
+      use: Can upgrade existing body armor (+1 Damage Reduction (DR))
+    - d100: 57-60
+      item: Encrypted Data Disc
+      volume: '1'
+      value: 1,000-3,000
+      use: Bought at high price by info broker
+    - d100: 61-64
+      item: Anomaly Sample (Small)
+      volume: '1'
+      value: 1,500
+      use: Doctor buys at high price
+    - d100: 65-68
+      item: Power Cell
+      volume: '1'
+      value: 1,500
+      use: Charges electronic devices
+    - d100: 69-72
+      item: Smoke Grenade×2
+      volume: '1'
+      value: 600/each
+      use: Create smoke screen
+    - d100: 73-76
+      item: Flashbang×2
+      volume: '1'
+      value: 500/each
+      use: Blind + Tinnitus
+    - d100: 77-80
+      item: Zone Key
+      volume: '1'
+      value: Variable
+      use: Opens doors to specific area
+    - d100: 81-84
+      item: Brotherhood Radio
+      volume: '1'
+      value: 2,000
+      use: Can intercept Brotherhood comms
+    - d100: 85-88
+      item: QZAC (Quarantine Zone Administration Commission) Pass (Forged)
+      volume: '1'
+      value: 2,500
+      use: Pass QZAC (Quarantine Zone Administration Commission) checkpoint (one-time)
+    - d100: 89-92
+      item: Cult Charm
+      volume: '1'
+      value: 1,800
+      use: Cult favor +5 / tradable
+    - d100: 93-96
+      item: Advanced Lockpick Tools
+      volume: '1'
+      value: 2,500
+      use: Lockpicking +2, hard to break
+    - d100: 97-100
+      item: Blue Weapon (Random)
+      volume: By Weapon
+      value: By Weapon
+      use: 'Roll d6: 1=Compact SMG 2=Survivor Carbine 3=Short-Barrel Shotgun 4=Tactical Pistol 5=Hunting Sniper Rifle 6=Stun Baton'
+- name: 7.4 Purple (Military Tier, 3,000~15,000 ₽)
+  tables:
+  - - d100: 01-05
+      item: Military Assault Rifle
+      volume: '3'
+      value: 12,000
+      use: —
+    - d100: 06-10
+      item: Military Sniper Rifle
+      volume: '3'
+      value: 18,000
+      use: —
+    - d100: 11-14
+      item: Semi-Auto Combat Shotgun
+      volume: '3'
+      value: 14,000
+      use: —
+    - d100: 15-18
+      item: Ceramic Plate Body Armor IV
+      volume: '3'
+      value: 18,000
+      use: Damage Reduction (DR) 3
+    - d100: 19-22
+      item: Heavy Riot Helmet
+      volume: '1'
+      value: 8,000
+      use: Damage Reduction (DR) 2
+    - d100: 23-26
+      item: Fragmentation Grenade×3
+      volume: '2'
+      value: 2,000/each
+      use: 3d6 Explosion 5m
+    - d100: 27-30
+      item: C4 Explosive + Remote
+      volume: '2'
+      value: 3,000
+      use: 5d6 Explosion
+    - d100: 31-34
+      item: Advanced Medical Kit
+      volume: '2'
+      value: 1,500
+      use: 3d6+2+Detox
+    - d100: 35-38
+      item: Military Radio (Encrypted)
+      volume: '1'
+      value: 5,000
+      use: Cross-region comms, cannot be intercepted
+    - d100: 39-42
+      item: Thermal Goggles
+      volume: '1'
+      value: 8,000
+      use: See through smoke/thin walls
+    - d100: 43-46
+      item: Weapon Attachment — ACOG 4×
+      volume: '1'
+      value: 4,500
+      use: Sight +50m, no range penalty at mid-long
+    - d100: 47-50
+      item: Weapon Attachment — Heavy Barrel
+      volume: '2'
+      value: 3,500
+      use: Barrel overheat time ×2 (Full-Auto sustainable longer)
+    - d100: 51-54
+      item: Research Data Hard Drive
+      volume: '1'
+      value: 5,000-10,000
+      use: QZAC (Quarantine Zone Administration Commission)/Owl buys at high price
+    - d100: 55-58
+      item: Prototype Weapon Blueprint
+      volume: '1'
+      value: 8,000
+      use: Unlocks Gold weapon crafting at workbench
+    - d100: 59-62
+      item: Liquid Body Armor Material
+      volume: '2'
+      value: 6,000
+      use: Can upgrade body armor to Liquid Body Armor
+    - d100: 63-66
+      item: Pulse Surge Data Recorder
+      volume: '1'
+      value: 4,000
+      use: Bought by info broker / Intelligence Center upgrade
+    - d100: 67-70
+      item: Cult Ritual Tablet
+      volume: '2'
+      value: 5,000
+      use: Cult/Owl buys at high price
+    - d100: 71-74
+      item: Deep Diver Carapace Fragment
+      volume: '2'
+      value: 4,000
+      use: Can craft special armor
+    - d100: 75-78
+      item: Mutant Core
+      volume: '1'
+      value: 6,000
+      use: Doctor buys at sky-high price for research
+    - d100: 79-82
+      item: Military Encrypted Communicator
+      volume: '1'
+      value: 7,000
+      use: QZAC (Quarantine Zone Administration Commission)/Brotherhood internal comms decryption
+    - d100: 83-86
+      item: Prototype Exoskeleton Part
+      volume: '3'
+      value: 10,000
+      use: Collect 3 to assemble Exoskeleton Frame
+    - d100: 87-90
+      item: Curtain Energy Crystal
+      volume: '1'
+      value: 12,000
+      use: Extremely rare, contested by Cult/QZAC (Quarantine Zone Administration Commission)
+    - d100: 91-94
+      item: Warlord Commander Badge
+      volume: '1'
+      value: 5,000
+      use: Reputation item / plot trigger
+    - d100: 95-97
+      item: Purple Weapon (Random)
+      volume: By Weapon
+      value: By Weapon
+      use: Roll d6 to determine type
+    - d100: 98-100
+      item: Hideout Facility Upgrade Kit
+      volume: '3'
+      value: 8,000-15,000
+      use: Material to raise any facility Level (Lv.) +1
+- name: 7.5 Gold (Legendary Tier, 15,000+ ₽)
+  tables:
+  - - d100: 01-06
+      item: Spec-Ops Rifle
+      volume: '3'
+      value: 25,000
+      use: Suppressed + Low Recoil + Armor-Piercing 1
+    - d100: 07-12
+      item: Anti-Materiel Rifle
+      volume: '3'
+      value: 40,000
+      use: 4d6+Armor-Piercing 5+Map-Wide Gunshot
+    - d100: 13-18
+      item: Full-Body Heavy Armor
+      volume: '5'
+      value: 35,000
+      use: Damage Reduction (DR) 4 (Full Body)
+    - d100: 19-24
+      item: Prototype Concussion Hammer
+      volume: '3'
+      value: 20,000
+      use: 2d6+Physique+Area Shockwave
+    - d100: 25-30
+      item: Spec-Ops Helmet
+      volume: '1'
+      value: 15,000
+      use: Damage Reduction (DR) 2 + no Perception penalty + HUD
+    - d100: 31-35
+      item: Exoskeleton Frame (Complete)
+      volume: '4'
+      value: 40,000
+      use: Damage Reduction (DR) 3 + Carry +30kg + Movement +2m/Action Point (AP)
+    - d100: 36-40
+      item: Plasma Weapon (Random)
+      volume: By Weapon
+      value: 20-60,000
+      use: Pistol/Rifle/Cutter
+    - d100: 41-45
+      item: Dimensional Core
+      volume: '2'
+      value: 50,000
+      use: Top-tier item / QZAC (Quarantine Zone Administration Commission) buys at sky-high price / plot key
+    - d100: 46-50
+      item: Thermal-Optical Camo Suit
+      volume: '2'
+      value: 35,000
+      use: Completely invisible when still
+    - d100: 51-55
+      item: Energy Shield Belt
+      volume: '1'
+      value: 28,000
+      use: Can regenerate Shield Hit Points (HP) 10
+    - d100: 56-60
+      item: Psionic Headband
+      volume: '1'
+      value: 20,000
+      use: Mental Shield + Courage advantage
+    - d100: 61-65
+      item: Nano Medkit×2
+      volume: '1'
+      value: 6,000/each
+      use: 3d8+4+Full Status Recovery
+    - d100: 66-70
+      item: Revival Capsule×1
+      volume: '1'
+      value: 15,000
+      use: Revive at hideout 48h after death
+    - d100: 71-75
+      item: Curtain Shard
+      volume: '3'
+      value: 50,000
+      use: Pure energy crystal / any faction buys at sky-high price / may trigger Cult hostility
+    - d100: 76-80
+      item: Brotherhood Sigil
+      volume: '1'
+      value: 30,000 (Bounty)
+      use: Proof that Cossack has been eliminated
+    - d100: 81-85
+      item: Ashila Prototype Blueprint
+      volume: '1'
+      value: 40,000
+      use: Reveals truth of Curtain experiment / contested by multiple factions
+    - d100: 86-90
+      item: Rift Data Core
+      volume: '1'
+      value: 60,000
+      use: Deep laboratory complete data / key to closing the rift
+    - d100: 91-94
+      item: Gold Attachment (Random)
+      volume: 1-2
+      value: 10-25,000
+      use: Ultimate weapon/armor mod parts
+    - d100: 95-97
+      item: Hideout Full Upgrade Pack
+      volume: '5'
+      value: 50,000
+      use: Can raise any facility straight to Level (Lv.) 5
+    - d100: 98-100
+      item: Legendary Random Gold Weapon
+      volume: By Weapon
+      value: By Weapon
+      use: GM chooses from Gold weapon table or random
+- name: 7.1 Gray (Junk Tier, 10~100 ₽)
+  tables:
+  - - d100: 01-08
+      item: Rag
+      volume: '1'
+      value: '10'
+      use: Flammable / stops bleeding (improvised)
+    - d100: 09-15
+      item: Empty Can
+      volume: '1'
+      value: '15'
+      use: Recyclable metal
+    - d100: 16-22
+      item: Waste Paper
+      volume: '1'
+      value: '10'
+      use: Occasionally has useful info
+    - d100: 23-28
+      item: Plastic Scrap
+      volume: '1'
+      value: '10'
+      use: No direct use
+    - d100: 29-34
+      item: Rusted Nail
+      volume: '1'
+      value: '15'
+      use: Can craft improvised traps
+    - d100: 35-40
+      item: Broken Glass
+      volume: '1'
+      value: '10'
+      use: Dangerous (1d2 damage when handled)
+    - d100: 41-46
+      item: Old Newspaper
+      volume: '1'
+      value: '10'
+      use: News from before the collapse (narrative prop)
+    - d100: 47-52
+      item: Wire Scrap
+      volume: '1'
+      value: '20'
+      use: Recyclable copper wire
+    - d100: 53-58
+      item: Empty Shell Casing
+      volume: '1'
+      value: '15'
+      use: Recyclable metal
+    - d100: 59-64
+      item: Rotten Food
+      volume: '1'
+      value: '0'
+      use: Not Edible
+    - d100: 65-70
+      item: Torn Clothing
+      volume: '1'
+      value: '15'
+      use: Flammable / can be torn into bandages (improvised)
+    - d100: 71-76
+      item: Discarded Battery
+      volume: '1'
+      value: '20'
+      use: May still have trace power
+    - d100: 77-82
+      item: Broken Belt
+      volume: '1'
+      value: '15'
+      use: Can be used for binding
+    - d100: 83-88
+      item: Rusted Tool
+      volume: '1'
+      value: '25'
+      use: Barely usable
+    - d100: 89-94
+      item: Empty Lighter
+      volume: '1'
+      value: '10'
+      use: No fuel
+    - d100: 95-100
+      item: Strange Stone
+      volume: '1'
+      value: '30'
+      use: May have anomalous properties (Perception Target Number (TN) 17 to identify)
+- name: 7.2 White (Common Tier, 100~500 ₽)
+  tables:
+  - - d100: 01-05
+      item: 9mm Ammo×20
+      volume: '1'
+      value: '150'
+      use: Most common pistol/SMG ammo
+    - d100: 06-10
+      item: 12-gauge Shell×10
+      volume: '1'
+      value: '150'
+      use: Shotgun Ammo
+    - d100: 11-15
+      item: 5.56 Ammo×15
+      volume: '1'
+      value: '250'
+      use: Rifle Ammo
+    - d100: 16-20
+      item: Bandage×1d3
+      volume: '1'
+      value: '80'
+      use: Stop Bleeding
+    - d100: 21-24
+      item: First Aid Kit×1
+      volume: '1'
+      value: '250'
+      use: Restore 1d6+2 Hit Points (HP)
+    - d100: 25-28
+      item: Painkiller×1d3
+      volume: '1'
+      value: '100'
+      use: Reduces injury effects (1 hour)
+    - d100: 29-32
+      item: Canned Food×1d2
+      volume: '1'
+      value: '50'
+      use: Food
+    - d100: 33-36
+      item: Bottled Water×1d2
+      volume: '1'
+      value: '30'
+      use: Drinking Water
+    - d100: 37-40
+      item: Flashlight
+      volume: '1'
+      value: '150'
+      use: Illuminate (20m), needs battery
+    - d100: 41-44
+      item: Lighter
+      volume: '1'
+      value: '100'
+      use: Ignite
+    - d100: 45-48
+      item: Swiss Knife
+      volume: '1'
+      value: '200'
+      use: Multi-Tool
+    - d100: 49-52
+      item: Work Gloves
+      volume: '1'
+      value: '150'
+      use: Hand protection (Damage Reduction (DR) 1 to hands)
+    - d100: 53-56
+      item: Industrial Tape
+      volume: '1'
+      value: '120'
+      use: Universal repair
+    - d100: 57-60
+      item: Small Toolbox
+      volume: '2'
+      value: '350'
+      use: Mechanics check +1
+    - d100: 61-64
+      item: Rope (20m)
+      volume: '2'
+      value: '200'
+      use: Climb/bind
+    - d100: 65-68
+      item: Canvas Backpack
+      volume: '2'
+      value: '300'
+      use: +10kg Carry, +2 Slots (Torn Backpack tier)
+    - d100: 69-72
+      item: Metal Scrap×1d3
+      volume: '1'
+      value: '200'
+      use: Recyclable/crafting material
+    - d100: 73-76
+      item: Fuel Can (5L)
+      volume: '2'
+      value: '300'
+      use: Fuel/incendiary weapon
+    - d100: 77-80
+      item: Radio Parts
+      volume: '1'
+      value: '250'
+      use: Can assemble improvised radio (Tech Target Number (TN) 11)
+    - d100: 81-84
+      item: Personal Documents
+      volume: '1'
+      value: '100'
+      use: Narrative prop / may trigger side quest
+    - d100: 85-88
+      item: Map Fragment
+      volume: '1'
+      value: '150'
+      use: Completes regional map
+    - d100: 89-92
+      item: Work Boots
+      volume: '1'
+      value: '200'
+      use: Terrain Penalty -1
+    - d100: 93-96
+      item: 7.62 Ammo×10
+      volume: '1'
+      value: '300'
+      use: Sniper/Battle rifle ammo
+    - d100: 97-100
+      item: Small Safe (Empty)
+      volume: '2'
+      value: '400'
+      use: Can serve as personal storage
+- name: 7.3 Blue (Rare Tier, 500~3,000 ₽)
+  tables:
+  - - d100: 01-04
+      item: Electronic Parts
+      volume: '1'
+      value: '800'
+      use: Electronics check material
+    - d100: 05-08
+      item: Weapon Attachment — Red Dot Sight
+      volume: '1'
+      value: 1,200
+      use: Close-Mid range shooting +1
+    - d100: 09-12
+      item: Weapon Attachment — Foregrip
+      volume: '1'
+      value: '900'
+      use: Full-Auto Recoil -1
+    - d100: 13-16
+      item: Weapon Attachment — Suppressor (Pistol)
+      volume: '1'
+      value: 1,500
+      use: Pistol fire makes no gunshot sound
+    - d100: 17-20
+      item: Weapon Attachment — Suppressor (Rifle)
+      volume: '2'
+      value: 2,500
+      use: Rifle fire makes no gunshot sound
+    - d100: 21-24
+      item: GPS Locator
+      volume: '1'
+      value: 4,000
+      use: Navigation, locate extraction point
+    - d100: 25-28
+      item: Radio
+      volume: '1'
+      value: 3,500
+      use: Comms, call extraction
+    - d100: 29-32
+      item: Military First Aid Kit×1
+      volume: '1'
+      value: '600'
+      use: Restore 2d6+2 Hit Points (HP)
+    - d100: 33-36
+      item: Adrenaline Syringe×1
+      volume: '1'
+      value: '800'
+      use: Restore 1d6 + 1 extra Action Point (AP)
+    - d100: 37-40
+      item: Night Vision Goggles
+      volume: '1'
+      value: 3,500
+      use: No night vision disadvantage
+    - d100: 41-44
+      item: Electronic Decoder
+      volume: '1'
+      value: 2,000
+      use: Electronic lock bypass +2
+    - d100: 45-48
+      item: Industrial Chemicals
+      volume: '2'
+      value: '700'
+      use: Crafting/demolition material
+    - d100: 49-52
+      item: Weapon Parts Kit
+      volume: '2'
+      value: 1,500
+      use: Repair weapons / build own weapons
+    - d100: 53-56
+      item: Armor Plate (Soft)
+      volume: '2'
+      value: 1,800
+      use: Can upgrade existing body armor (+1 Damage Reduction (DR))
+    - d100: 57-60
+      item: Encrypted Data Disc
+      volume: '1'
+      value: 1,000-3,000
+      use: Bought at high price by info broker
+    - d100: 61-64
+      item: Anomaly Sample (Small)
+      volume: '1'
+      value: 1,500
+      use: Doctor buys at high price
+    - d100: 65-68
+      item: Power Cell
+      volume: '1'
+      value: 1,500
+      use: Charges electronic devices
+    - d100: 69-72
+      item: Smoke Grenade×2
+      volume: '1'
+      value: 600/each
+      use: Create smoke screen
+    - d100: 73-76
+      item: Flashbang×2
+      volume: '1'
+      value: 500/each
+      use: Blind + Tinnitus
+    - d100: 77-80
+      item: Zone Key
+      volume: '1'
+      value: Variable
+      use: Opens doors to specific area
+    - d100: 81-84
+      item: Brotherhood Radio
+      volume: '1'
+      value: 2,000
+      use: Can intercept Brotherhood comms
+    - d100: 85-88
+      item: QZAC (Quarantine Zone Administration Commission) Pass (Forged)
+      volume: '1'
+      value: 2,500
+      use: Pass QZAC (Quarantine Zone Administration Commission) checkpoint (one-time)
+    - d100: 89-92
+      item: Cult Charm
+      volume: '1'
+      value: 1,800
+      use: Cult favor +5 / tradable
+    - d100: 93-96
+      item: Advanced Lockpick Tools
+      volume: '1'
+      value: 2,500
+      use: Lockpicking +2, hard to break
+    - d100: 97-100
+      item: Blue Weapon (Random)
+      volume: By Weapon
+      value: By Weapon
+      use: 'Roll d6: 1=Compact SMG 2=Survivor Carbine 3=Short-Barrel Shotgun 4=Tactical Pistol 5=Hunting Sniper Rifle 6=Stun Baton'
+- name: 7.4 Purple (Military Tier, 3,000~15,000 ₽)
+  tables:
+  - - d100: 01-05
+      item: Military Assault Rifle
+      volume: '3'
+      value: 12,000
+      use: —
+    - d100: 06-10
+      item: Military Sniper Rifle
+      volume: '3'
+      value: 18,000
+      use: —
+    - d100: 11-14
+      item: Semi-Auto Combat Shotgun
+      volume: '3'
+      value: 14,000
+      use: —
+    - d100: 15-18
+      item: Ceramic Plate Body Armor IV
+      volume: '3'
+      value: 18,000
+      use: Damage Reduction (DR) 3
+    - d100: 19-22
+      item: Heavy Riot Helmet
+      volume: '1'
+      value: 8,000
+      use: Damage Reduction (DR) 2
+    - d100: 23-26
+      item: Fragmentation Grenade×3
+      volume: '2'
+      value: 2,000/each
+      use: 3d6 Explosion 5m
+    - d100: 27-30
+      item: C4 Explosive + Remote
+      volume: '2'
+      value: 3,000
+      use: 5d6 Explosion
+    - d100: 31-34
+      item: Advanced Medical Kit
+      volume: '2'
+      value: 1,500
+      use: 3d6+2+Detox
+    - d100: 35-38
+      item: Military Radio (Encrypted)
+      volume: '1'
+      value: 5,000
+      use: Cross-region comms, cannot be intercepted
+    - d100: 39-42
+      item: Thermal Goggles
+      volume: '1'
+      value: 8,000
+      use: See through smoke/thin walls
+    - d100: 43-46
+      item: Weapon Attachment — ACOG 4×
+      volume: '1'
+      value: 4,500
+      use: Sight +50m, no range penalty at mid-long
+    - d100: 47-50
+      item: Weapon Attachment — Heavy Barrel
+      volume: '2'
+      value: 3,500
+      use: Barrel overheat time ×2 (Full-Auto sustainable longer)
+    - d100: 51-54
+      item: Research Data Hard Drive
+      volume: '1'
+      value: 5,000-10,000
+      use: QZAC (Quarantine Zone Administration Commission)/Owl buys at high price
+    - d100: 55-58
+      item: Prototype Weapon Blueprint
+      volume: '1'
+      value: 8,000
+      use: Unlocks Gold weapon crafting at workbench
+    - d100: 59-62
+      item: Liquid Body Armor Material
+      volume: '2'
+      value: 6,000
+      use: Can upgrade body armor to Liquid Body Armor
+    - d100: 63-66
+      item: Pulse Surge Data Recorder
+      volume: '1'
+      value: 4,000
+      use: Bought by info broker / Intelligence Center upgrade
+    - d100: 67-70
+      item: Cult Ritual Tablet
+      volume: '2'
+      value: 5,000
+      use: Cult/Owl buys at high price
+    - d100: 71-74
+      item: Deep Diver Carapace Fragment
+      volume: '2'
+      value: 4,000
+      use: Can craft special armor
+    - d100: 75-78
+      item: Mutant Core
+      volume: '1'
+      value: 6,000
+      use: Doctor buys at sky-high price for research
+    - d100: 79-82
+      item: Military Encrypted Communicator
+      volume: '1'
+      value: 7,000
+      use: QZAC (Quarantine Zone Administration Commission)/Brotherhood internal comms decryption
+    - d100: 83-86
+      item: Prototype Exoskeleton Part
+      volume: '3'
+      value: 10,000
+      use: Collect 3 to assemble Exoskeleton Frame
+    - d100: 87-90
+      item: Curtain Energy Crystal
+      volume: '1'
+      value: 12,000
+      use: Extremely rare, contested by Cult/QZAC (Quarantine Zone Administration Commission)
+    - d100: 91-94
+      item: Warlord Commander Badge
+      volume: '1'
+      value: 5,000
+      use: Reputation item / plot trigger
+    - d100: 95-97
+      item: Purple Weapon (Random)
+      volume: By Weapon
+      value: By Weapon
+      use: Roll d6 to determine type
+    - d100: 98-100
+      item: Hideout Facility Upgrade Kit
+      volume: '3'
+      value: 8,000-15,000
+      use: Material to raise any facility Level (Lv.) +1
+- name: 7.5 Gold (Legendary Tier, 15,000+ ₽)
+  tables:
+  - - d100: 01-06
+      item: Spec-Ops Rifle
+      volume: '3'
+      value: 25,000
+      use: Suppressed + Low Recoil + Armor-Piercing 1
+    - d100: 07-12
+      item: Anti-Materiel Rifle
+      volume: '3'
+      value: 40,000
+      use: 4d6+Armor-Piercing 5+Map-Wide Gunshot
+    - d100: 13-18
+      item: Full-Body Heavy Armor
+      volume: '5'
+      value: 35,000
+      use: Damage Reduction (DR) 4 (Full Body)
+    - d100: 19-24
+      item: Prototype Concussion Hammer
+      volume: '3'
+      value: 20,000
+      use: 2d6+Physique+Area Shockwave
+    - d100: 25-30
+      item: Spec-Ops Helmet
+      volume: '1'
+      value: 15,000
+      use: Damage Reduction (DR) 2 + no Perception penalty + HUD
+    - d100: 31-35
+      item: Exoskeleton Frame (Complete)
+      volume: '4'
+      value: 40,000
+      use: Damage Reduction (DR) 3 + Carry +30kg + Movement +2m/Action Point (AP)
+    - d100: 36-40
+      item: Plasma Weapon (Random)
+      volume: By Weapon
+      value: 20-60,000
+      use: Pistol/Rifle/Cutter
+    - d100: 41-45
+      item: Dimensional Core
+      volume: '2'
+      value: 50,000
+      use: Top-tier item / QZAC (Quarantine Zone Administration Commission) buys at sky-high price / plot key
+    - d100: 46-50
+      item: Thermal-Optical Camo Suit
+      volume: '2'
+      value: 35,000
+      use: Completely invisible when still
+    - d100: 51-55
+      item: Energy Shield Belt
+      volume: '1'
+      value: 28,000
+      use: Can regenerate Shield Hit Points (HP) 10
+    - d100: 56-60
+      item: Psionic Headband
+      volume: '1'
+      value: 20,000
+      use: Mental Shield + Courage advantage
+    - d100: 61-65
+      item: Nano Medkit×2
+      volume: '1'
+      value: 6,000/each
+      use: 3d8+4+Full Status Recovery
+    - d100: 66-70
+      item: Revival Capsule×1
+      volume: '1'
+      value: 15,000
+      use: Revive at hideout 48h after death
+    - d100: 71-75
+      item: Curtain Shard
+      volume: '3'
+      value: 50,000
+      use: Pure energy crystal / any faction buys at sky-high price / may trigger Cult hostility
+    - d100: 76-80
+      item: Brotherhood Sigil
+      volume: '1'
+      value: 30,000 (Bounty)
+      use: Proof that Cossack has been eliminated
+    - d100: 81-85
+      item: Ashila Prototype Blueprint
+      volume: '1'
+      value: 40,000
+      use: Reveals truth of Curtain experiment / contested by multiple factions
+    - d100: 86-90
+      item: Rift Data Core
+      volume: '1'
+      value: 60,000
+      use: Deep laboratory complete data / key to closing the rift
+    - d100: 91-94
+      item: Gold Attachment (Random)
+      volume: 1-2
+      value: 10-25,000
+      use: Ultimate weapon/armor mod parts
+    - d100: 95-97
+      item: Hideout Full Upgrade Pack
+      volume: '5'
+      value: 50,000
+      use: Can raise any facility straight to Level (Lv.) 5
+    - d100: 98-100
+      item: Legendary Random Gold Weapon
+      volume: By Weapon
+      value: By Weapon
+      use: GM chooses from Gold weapon table or random

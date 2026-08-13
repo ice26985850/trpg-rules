@@ -1,0 +1,135 @@
+name: "S4: Apex of the Food Chain"
+description: "Trapped in the Evolution Arena, competing with 46 other Evolvers for the sole right to survive. Hunt, ally, betray—or find a way to break the seal amid the bloody competition."
+difficulty: "Extreme"
+level_range: { min_nodes: 10, max_nodes: 15, suggested: "10-15 Evolution Nodes" }
+players: { min: 1, max: 4, default: 1 }
+estimated_time: "5-6 hours"
+map_ref: "食物鏈頂端_進化競技場"
+initial_map: "食物鏈頂端_進化競技場"
+
+scenes:
+  - id: "S4_SC1"
+    name: "The Reluctant Entrant"
+    type: "introduction"
+    description: "Teleported into the Evolution Arena. Initial rank 15/47. Learn the rules: devour or die."
+    ranking_system:
+      initial_participants: 47
+      player_rank: 15
+      rules:
+        - "Kill or absorb other Evolvers to rise in rank"
+        - "May declare 1v1 challenge at the Challenge Stele"
+        - "Defeat wild mutant creatures for small rank rise (but not enough to become apex)"
+      ranks:
+        "1-5": { title: "Apex Predator", bonus: "+2 Evolution Points per opponent eliminated", penalty: "Easier to detect" }
+        "6-15": { title: "High-Rank Hunter", bonus: "Normal" }
+        "16-35": { title: "Mid-Rank Survivor", bonus: "May lie low" }
+        "36-47": { title: "Bottom Prey", penalty: "Cannot actively challenge higher-ranked" }
+
+  - id: "S4_SC2"
+    name: "Hunter and Prey"
+    type: "social_exploration"
+    npcs:
+      - name: "Vera"
+        rank: 28
+        style: "Stealth/Poison"
+        reliability: 4
+        hp: 25
+        condition: "Provides healing and protection"
+        provides: ["Arena map", "Known participant info", "Secret that the seal is breakable"]
+      - name: "Greg (Rock)"
+        rank: 8
+        style: "Defense/Strength"
+        reliability: 5
+        condition: "Help him find his missing younger brother"
+      - name: "Qi (Bug-Whisperer)"
+        rank: 19
+        style: "Perception/Insect"
+        reliability: 3
+        condition: "Share memories from outside the Arena"
+        humanity_check: "Telling of the outside world→affects Humanity Value ±2"
+      - name: "Marcus"
+        rank: 3
+        style: "Mind Control"
+        reliability: 1
+        note: "Will surely betray—will mind-control the player at a critical moment"
+
+  - id: "S4_SC3"
+    name: "Alliance and Betrayal"
+    type: "social_dynamic"
+    events:
+      - trigger: "Ally with Marcus"
+        outcome: "Betrays when player is Near Death (resist mind control with Will YZ DC 18)"
+      - trigger: "Help Greg find his brother"
+        truth: "Brother already absorbed"
+        tell_truth: "Greg goes berserk→needs Will YZ DC 16 to soothe→becomes most loyal ally"
+        hide_truth: "Truth revealed at final battle→more violent reaction"
+      - trigger: "Talk with Qi"
+        kindness: "Humanity Value +2"
+        cruelty: "Humanity Value -2"
+
+  - id: "S4_SC4"
+    name: "Regional Overlord"
+    type: "boss"
+    boss:
+      name: "Wilderness King Zarlax"
+      rank: 2
+      hp: 120
+      defense: 18
+      stats: { LIL: 14, MJ: 8, TZ: 12, GZ: 10, YZ: 8 }
+      energy: 22
+      phases:
+        - phase: 1
+          condition: "HP > 60"
+          skills:
+            - { name: "Massive Jaw Bite", tier: "Low-tier", damage: "2d8+7 piercing" }
+            - { name: "Tail Sweep", tier: "Mid-tier", damage: "2d6+7 bludgeoning + prone DC 16" }
+            - { name: "Lava Breath", tier: "High-tier", damage: "3d10 fire + lava terrain" }
+            - { name: "Dragon Scales", tier: "Passive", effect: "All damage -3" }
+        - phase: 2
+          condition: "HP ≤ 60"
+          behavior: "Retreats to nest to protect the egg"
+          damage_buff: "+1d6"
+          alternative: "Will DC 20 to communicate→reveals truth (child held hostage)"
+    absorb_options:
+      - "Dragon Scales (Passive: all damage -2)"
+      - "Lava Breath (High-tier Active)"
+      - "Beast Heart (Organ: HP +15, Strength LIL +2)"
+      - "Territory Sense (Passive)"
+      - "Paternal Instinct (Passive: Defense +2 when protecting a specific target)—only on peaceful resolution"
+
+  - id: "S4_SC5"
+    name: "The Final Showdown"
+    type: "final_boss"
+    boss:
+      name: "Immortal Kane (Champion)"
+      rank: 1
+      hp: 150
+      defense: 20
+      stats: { LIL: 12, MJ: 14, TZ: 12, GZ: 14, YZ: 16 }
+      energy: 28
+      nodes: "30+ nodes, including 3 Form Nodes"
+      form_cycle:
+        - form: "Beast Form"
+          bonus: "Strength LIL +3, HP +20"
+          skills: ["Earthquake Smash (High-tier)", "Devour (Mid-tier—absorb HP)"]
+        - form: "Spirit Form"
+          bonus: "Physical immunity, mental damage +3"
+          skills: ["Psychic Storm (High-tier)", "Soul Rend (Ultimate)"]
+        - form: "Elemental Form"
+          bonus: "Fire immunity, Frost immunity"
+          skills: ["Elemental Storm (Ultimate—4d10 mixed)", "Elemental Shield (Passive—negates first attack)"]
+    special:
+      arena_energy: "Both sides recover 3 Energy each round"
+      peace_option: "Lay down arms→break the seal together (each Will DC 20)"
+      solo_break: "Break the seal alone (Will DC 28)"
+
+completion_rewards:
+  evolution_points: 5
+  defeat_kane: { evolution_points: 10, absorb: "Ultimate Form Node 'Champion's Body'" }
+  break_seal_together: { special: "Passive 'Seal Breaker' (Will YZ +3)" }
+  peaceful_zarlax: { ally: "Zarlax appears in S5" }
+
+solo_adjustments:
+  kane_hp: 100
+  arena_shrink_slower: true
+  npc_allies: ["Vera", "Greg"]

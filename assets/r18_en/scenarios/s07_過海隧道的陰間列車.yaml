@@ -1,0 +1,27 @@
+name: The Underworld Train of the Cross-Harbour Tunnel
+description: Recovers S3 foreshadowing ①. Nine Nether Hall lays a "Yin-Crossing Array" in the cross-harbour tunnel, refining traffic-accident dead into Hopping Corpses / Black Zombies to guard a Yin channel leading to the opposite-shore main altar; a Fierce Ghost ferries the dead, the Master's Agent appears to command, and after the array is broken slips away — confirming the "Life-Restoring Rite" is being prepared.
+difficulty: A
+level_range: [8, 9]
+case_type: Fierce Ghost + Hopping Corpse + Black Zombie + Yin-Crossing Array
+map_ref: ""
+npcs:
+  - Uncle Choi (CID Miscellaneous Section veteran officer, referrer)
+  - Ox-Head Bing (Yin Constable, tunnel warning)
+  - Cheng Guiyao (Guild Council Chair)
+  - The Master's Agent (Nine Nether Hall commander, elite encounter)
+key_enemies:
+  - Fierce Ghost (ferrier, Challenge Rating (CR) 5)
+  - Hopping Corpse (Challenge Rating (CR) 4, Hard-Skin Mitigation −5)
+  - Black Zombie (Challenge Rating (CR) 3, Hard-Skin Mitigation −3)
+  - Yin-Crossing Array (environmental encounter, Challenge Rating (CR) 4)
+  - Flying Corpse (released by the Master's Agent, elite, Challenge Rating (CR) 5, Hard-Skin Mitigation −8)
+rewards:
+  exp: 800
+  coin: "900-1200"
+  items:
+    - Thunder-Struck Wood (ignores hard-skin vs zombies)
+    - Yin-Crossing Array talisman tablet "Life-Restoring Rite · Countdown" (leads to S8)
+    - Major "Blocked Nine Nether Hall's Channel" reputation
+hooks:
+  - 'The Master''s Agent before slipping away: "Opposite-shore main altar — the Life-Restoring Rite is about to begin" — leads to S8.'
+  - 'Though the channel is severed, the living names on the register are not yet removed.'

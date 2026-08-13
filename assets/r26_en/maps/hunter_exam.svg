@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 720" font-family="sans-serif">
+<rect x="0" y="0" width="560" height="720" fill="#0f1424"/>
+<rect x="0" y="0" width="560" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">Hunter Exam Venue</text>
+<text x="540" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">Trial Complex · Surface World · Near Saba City</text>
+<line x1="280" y1="92" x2="280" y2="188" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="232" x2="280" y2="328" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="372" x2="280" y2="468" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="512" x2="280" y2="608" stroke="#3a4a72" stroke-width="2"/>
+<rect x="199" y="48" width="163" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="68" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Saba City Central Plaza</text>
+<text x="280" y="86" fill="#9fb3e0" font-size="11" text-anchor="middle">5 Registration Points</text>
+<rect x="227" y="188" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="208" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Deadly Swamp</text>
+<text x="280" y="226" fill="#9fb3e0" font-size="11" text-anchor="middle">Rising Water Level</text>
+<rect x="199" y="328" width="163" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="348" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Mirror Maze</text>
+<text x="280" y="366" fill="#9fb3e0" font-size="11" text-anchor="middle">7 Rooms A-G</text>
+<rect x="208" y="468" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="488" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Combat Elimination Arena</text>
+<text x="280" y="506" fill="#9fb3e0" font-size="11" text-anchor="middle">1v1 Four Rounds</text>
+<rect x="208" y="608" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="628" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Final Interview Hall</text>
+<text x="280" y="646" fill="#9fb3e0" font-size="11" text-anchor="middle">Cheadle's Trial</text>
+<text x="20" y="708" fill="#5e6f9c" font-size="11">Hunter × Hunter TRPG · Map schematic (not to scale)</text>
+</svg>

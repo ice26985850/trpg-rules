@@ -1,0 +1,230 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Hero&amp;#x27;s Proof / Dungeon Module D6 — Volcano | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r05_s6.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r05.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Dungeon Module D6 — Volcano</h1>
+<blockquote>
+<p><strong>Recommended Rank</strong>: C/B (Challenge Rating (CR) 19–26) | <strong>Theme</strong>: Lava ravine, high-tier resource farming
+<strong>Acceptance</strong>: Guild commission "C-Fire1 / B-Fire1" (corresponds to Rank C→B, CL 19–26); or designated by GM as a leveling ground.
+<strong>Map</strong>: <code>maps/D6_火山.yaml</code> ＋ <code>maps/D6_火山.svg</code>
+This work has <strong>no multiclass</strong>; solo entry follows the player-count scaling rule (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no sidekick).</p>
+</blockquote>
+<h3>How to Enter (opening beat)</h3>
+<ul>
+<li><strong>Take guild commission</strong>: At the Adventurers' Guild bulletin board accept the C-tier "Volcano Subjugation" (C-Fire1), then after promotion accept B-Fire1 (corresponds to Rank C→B, CL 19–26).</li>
+<li><strong>Active exploration</strong>: After joining at S0, players may delve into the lava ravine from the mining town pass for exploration (GM Book 17.1).</li>
+<li><strong>Leveling role</strong>: The top choice for farming resources at CL 19–26; run alongside C/B commissions to grind Rank from C up to B.</li>
+<li><strong>Solo mode</strong>: Supported by Challenge Rating (CR) −3, enemy count ×0.5, no sidekick; the mini-boss room has a 10×10 positioning map (maps/D6_戰鬥_炎魔領主.yaml), entering the room switches to standard combat (Chapter 7), clear the room to return to the exploration round.</li>
+</ul>
+<h2>I. Background</h2>
+<p>The lava ravine below the mining town has never truly gone quiet; the Balrog Lord rises from the magma lake, ruling over fire lizards and lava giants. Mining crews frequently vanish, so the Guild lists it as a C→B tier subjugation target; at the throne deep in the ravine, the Balrog Lord is this hell's mini-boss.</p>
+<h2>II. Room Overview (with fog reveal)</h2>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Name</th>
+<th>Type</th>
+<th>Connects</th>
+<th>Content Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Crater Edge</td>
+<td>Entrance</td>
+<td>→R2</td>
+<td>Only entry/exit; retreating here is safe.</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Fire Salamander Shallows</td>
+<td>Combat</td>
+<td>R1/R3/R7</td>
+<td>Fire Salamander ×2 (CR19).</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Lava Crevice</td>
+<td>Trap</td>
+<td>R2/R4/R8</td>
+<td>Weak trap (lava vent).</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Flame Hound Cave</td>
+<td>Combat</td>
+<td>R3/R5/R10</td>
+<td>Flame Hound ×2 (CR21).</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Charred Mine</td>
+<td>Chest</td>
+<td>R4/R10</td>
+<td>Fire Crystal, Glint Shard, G 120~200.</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Magma Beachhead</td>
+<td>Combat</td>
+<td>R1/R7/R11</td>
+<td>Magma Elemental ×2 (CR22).</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Volcanic Ash Camp</td>
+<td>Rest</td>
+<td>R6/R8/R2/R12</td>
+<td>Safe rest point.</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Falling Rock Corridor</td>
+<td>Trap</td>
+<td>R7/R9/R3/R13</td>
+<td>Strong trap (falling rocks).</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>Sulfur Treasure Cave</td>
+<td>Chest</td>
+<td>R8/R10/R4/R14</td>
+<td>Sulfur Ore, Fine Material, G 140~220.</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>Lava Giant Chamber</td>
+<td>Combat</td>
+<td>R9/R5/R15</td>
+<td>Lava Giant ×2 (CR24).</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>Heat-sheltered Cliff</td>
+<td>Rest</td>
+<td>R6/R12</td>
+<td>Heat-sheltered rest point.</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>Fire-vein Vault</td>
+<td>Chest</td>
+<td>R11/R13/R7</td>
+<td>Fire-vein Stone, G 150~240.</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>Flame-vein Battlefield</td>
+<td>Combat</td>
+<td>R12/R14/R8/R16</td>
+<td>Fire Spider ×2 (CR25).</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>Geyser Trap Zone</td>
+<td>Trap</td>
+<td>R13/R15/R9</td>
+<td>Strong trap (magma geyser).</td>
+</tr>
+<tr>
+<td>R15</td>
+<td>Cold Spring Rest</td>
+<td>Rest</td>
+<td>R14/R10</td>
+<td>Cold spring rest point.</td>
+</tr>
+<tr>
+<td>R16</td>
+<td>Balrog Throne</td>
+<td>Mini-boss</td>
+<td>R13/R17</td>
+<td><strong>Balrog Lord (CR26)</strong> (see below).</td>
+</tr>
+<tr>
+<td>R17</td>
+<td>Exit Rift</td>
+<td>Exit</td>
+<td>R16</td>
+<td>Clear point; collect rewards and leave.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) are detailed in GM Book Chapter 17.</p>
+</blockquote>
+<h2>II-1. Combat Room Positioning Battle Map</h2>
+<p>This module's mini-boss room has a 10×10 positioning battle map (same format as S1–S4 Demon General battles), for the GM to directly judge by grid distance and range:</p>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Combat Room</th>
+<th>Positioning Battle Map</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R16</td>
+<td>Balrog Throne (Balrog Lord CR26)</td>
+<td><code>maps/D6_戰鬥_炎魔領主.yaml</code>＋<code>.svg</code></td>
+<td>Boss; AOE marked "Lava Eruption (Front/Back Row 3d6)"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Positioning map: enemies on top, our side on bottom, Front/Back Row spaced 2 grids (4m); solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no sidekick).</p>
+</blockquote>
+<h2>III. Key Room Details</h2>
+<ul>
+<li><strong>R3 Lava Crevice (weak)</strong>: Perception DC12 (Dexterity (M_DEX) / Luck (M_LUK)); triggers 1d6 Burn. Disable DC14.</li>
+<li><strong>R8 Falling Rock Corridor (strong)</strong>: Perception DC18; triggers 3d6 Bludgeon. Falling rocks can block the R7↔R13 passage (GM ruling).</li>
+<li><strong>R14 Geyser Trap Zone (strong)</strong>: Perception DC20; triggers 3d6 Burn.</li>
+<li><strong>R5 Charred Mine</strong>: Open chest DC12; trick mine 30% (medium, 2d6). Contains Fire Crystal ×2, Glint Shard, Gold (G) 120~200.</li>
+<li><strong>R9 Sulfur Treasure Cave</strong>: Open chest DC14; contains Sulfur Ore ×2, Fine Material, Gold (G) 140~220.</li>
+<li><strong>R17 Exit Rift</strong>: After clearing, return to Guild to settle rewards and leave.</li>
+</ul>
+<h2>IV. Mini-boss — Balrog Lord (CR26)</h2>
+<p>Per GM Book 10.4 CR formula and 10.7 boss framework (simplified version):</p>
+<ul>
+<li><strong>Health (HP)</strong> 130 (CR26 formula) | <strong>Attack Bonus (ATK)</strong> +7 (floor(1+0.25×26)) | <strong>Evasion (EVA)</strong> 13 (10+floor(0.15×26)) | <strong>Damage/hit</strong> 37 (floor(6+1.2×26))</li>
+<li><strong>Trait (1 phase)</strong>: <code>Lava Eruption</code> — once every 3 rounds, deals 3d6 Fire damage (AOE) to our Front and Back Row.</li>
+<li><strong>Weakness</strong>: Ice ×1.5 (see Monster Compendium note).</li>
+<li><strong>Drop</strong>: <code>Balrog Core</code> (story item, redeemable at Guild for Influence Points (IP)+4); Fine Material + low chance of Fine recipe.</li>
+</ul>
+<h2>V. Clear Rewards (full clear)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experience (EXP)</td>
+<td>~12568 (R2 1292 + R4 1512 + R6 1628 + R10 1872 + R13 2000 + R16 4264, EXP accumulates to Character Level (CL) progress (Class Level (ClassLv) separately counts an independent Class Experience (CEXP) pool, not shared with EXP))</td>
+</tr>
+<tr>
+<td>Gold (G)</td>
+<td>1000~1500</td>
+</tr>
+<tr>
+<td>Influence Points (IP)</td>
+<td>+4 (clear) / +4 (core redeem)</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>Fire Crystal / Sulfur Ore / low chance of Fine recipe</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Design note: D6 is the stable CL 19–26 "farm EXP+G+materials" ground, refreshes daily (see Commission Catalog, reset rules).</p>
+</blockquote><p><a href="../../assets/r05_en/scenarios/D6_%E7%81%AB%E5%B1%B1.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

@@ -1,0 +1,260 @@
+# Last Stand TRPG — Monster Compendium
+# Complete data, AI behavior, and GM guidance for all enemy types
+
+enemies:
+  - id: rookie
+    name: Rookie Contestant
+    difficulty: ★☆☆☆☆
+    difficulty_level: 1
+    challenge_rating: 0.5
+    xp_reward: 50
+    description: >
+      A first-time contestant. Their hands shake, their bullets always miss,
+      and they reload at the wrong moments. They're not a threat—they're ambient atmosphere.
+      But never underestimate a rookie pushed to the breaking point—they're the most unpredictable of all.
+    attributes:
+      Aim (AIM): 10
+      Physique (PHY): 10
+      Tactics (TAC): 8
+      Driving (DRV): 8
+      Calm (CLM): 8
+    derived:
+      hp: 23
+      initiative_mod: -1
+      hearing_range_m: 80
+      stress_threshold: 21
+    equipment:
+      primary_weapon: "UMP45 SMG or P92 Pistol (50%)"
+      secondary_weapon: P92 Pistol
+      helmet: "Level 1 Helmet (50% chance)"
+      armor: "Level 1 Armor (50% chance)"
+      consumables: ["Bandage ×2 (50%)"]
+    ai_behavior:
+      pattern: |
+        Each turn, roll d6:
+        1-2: Hide behind cover, do not fire
+        3-4: Fire a single shot at the nearest target (no aiming)
+        5: Attempt to flee (move toward the Safe Zone)
+        6: Panic fire (burst fire but DC+3)
+      notes:
+        - Does not actively change cover
+        - Reloads at poor timing (reloads with 10+ rounds still in mag)
+        - Will not revive downed allies
+        - Flees from enemy squads stronger than itself
+    gm_narrative: "His scope was never zeroed—the bullet hits the wall three meters away from you."
+
+  - id: steady
+    name: Steady Contestant
+    difficulty: ★★☆☆☆
+    difficulty_level: 2
+    challenge_rating: 1
+    xp_reward: 100
+    description: >
+      A veteran who has played a few matches. Won't make rookie mistakes—
+      uses smoke for cover, revives allies, picks good cover positions.
+      The first real test for newcomers.
+    attributes:
+      Aim (AIM): 13
+      Physique (PHY): 12
+      Tactics (TAC): 12
+      Driving (DRV): 10
+      Calm (CLM): 11
+    derived:
+      hp: 33
+      initiative_mod: +1
+      hearing_range_m: 120
+      stress_threshold: 27
+    equipment:
+      primary_weapon: M16A4 AR
+      secondary_weapon: P92 Pistol
+      helmet: Level 2 Helmet
+      armor: Level 1 Armor
+      consumables: ["First Aid Kit ×1", "Bandage ×3", "Smoke Grenade ×2"]
+    ai_behavior:
+      pattern: |
+        Each turn, evaluate in order:
+        1. Ally downed? → One provides fire cover, one revives
+        2. In a disadvantageous position? → Smoke cover, relocate as a group
+        3. Normal firefight → Take turns firing from cover, maintain sustained fire
+      notes:
+        - Distributes cover reasonably
+        - Uses smoke grenades for tactical relocation
+        - Will mark targets
+        - Moves decisively when outside the zone
+    gm_narrative: "You can tell they're trained—not flailing rookies. Every time they peek, it's from a different spot."
+
+  - id: assault
+    name: Assault Contestant
+    difficulty: ★★★☆☆
+    difficulty_level: 3
+    challenge_rating: 2
+    xp_reward: 150
+    description: >
+      Hunters who specialize in the kill. They don't wait for you—they hunt you.
+      They charge at the sound of gunfire, at the red smoke of an airdrop.
+      Their tactic is simple: push, push, push again.
+    attributes:
+      Aim (AIM): 15
+      Physique (PHY): 14
+      Tactics (TAC): 12
+      Driving (DRV): 12
+      Calm (CLM): 11
+    derived:
+      hp: 52
+      initiative_mod: +2
+      hearing_range_m: 120
+      stress_threshold: 27
+    equipment:
+      primary_weapon: AKM AR
+      secondary_weapon: Vector SMG
+      helmet: Level 2 Helmet
+      armor: Level 2 Armor
+      consumables: ["First Aid Kit ×2", "Energy Drink ×1", "Frag Grenade ×2"]
+    ai_behavior:
+      pattern: |
+        Each turn, evaluate in order:
+        1. Enemy low on HP? → Whole squad pushes, burst-fire suppression
+        2. Airdrop nearby? → Priority: grab the airdrop
+        3. Normal firefight → One suppresses, two flank
+      notes:
+        - Uses vehicles to close distance fast
+        - Excels at flanking
+        - Prefers burst fire
+        - Won't retreat easily
+    gm_narrative: "The engine sound comes from your flank—damn, they're not fleeing, they're circling you!"
+
+  - id: ambush
+    name: Ambush Contestant
+    difficulty: ★★★☆☆
+    difficulty_level: 3
+    challenge_rating: 2.5
+    xp_reward: 175
+    description: >
+      They don't chase you—they wait for you.
+      Bridgeheads, doorways, the routes you must take—you never know where they are,
+      until the first bullet flies past. Ambush squads are the deadliest silent killers on the map.
+    attributes:
+      Aim (AIM): 14
+      Physique (PHY): 12
+      Tactics (TAC): 16
+      Driving (DRV): 10
+      Calm (CLM): 13
+    derived:
+      hp: 40
+      initiative_mod: +3
+      hearing_range_m: 160
+      stress_threshold: 31
+    equipment:
+      primary_weapon: Kar98k SR
+      secondary_weapon: MP5K SMG
+      helmet: Level 2 Helmet
+      armor: Level 1 Armor
+      consumables: ["Frag Grenade ×3", "Smoke Grenade ×1", "First Aid Kit ×1", "Incendiary Grenade ×1"]
+    ai_behavior:
+      pattern: |
+        Before engagement: Choose a route they must pass through to set up an ambush. At least one member holds a sniper at high ground.
+        After engagement:
+        1. First round: All members fire simultaneously, focusing fire on the same target
+        2. Use frag grenades to force the target out of cover
+        3. If the ambush fails (target doesn't enter the trap zone) → keep waiting
+      notes:
+        - Prioritizes attacking vehicles
+        - Uses incendiary grenades to block retreat routes
+        - Uses thrown explosives once the target is in cover
+        - Does not reveal position easily
+    gm_narrative: "There's not a soul on the bridge—but your sixth sense is screaming. Too quiet. Too quiet."
+
+  - id: professional
+    name: Professional Contestant
+    difficulty: ★★★★☆
+    difficulty_level: 4
+    challenge_rating: 4
+    xp_reward: 250
+    description: >
+      This isn't a contestant—it's an army. Frontline tanks, backline snipers,
+      support logistics—clear roles, seamless coordination.
+      They'll fight you for the airdrop, burst out the moment you reload,
+      and already be waiting in the new Safe Zone three turns before the zone contracts.
+    attributes:
+      Aim (AIM): 16
+      Physique (PHY): 14
+      Tactics (TAC): 15
+      Driving (DRV): 13
+      Calm (CLM): 14
+    derived:
+      hp: 75
+      initiative_mod: +3
+      hearing_range_m: 150
+      stress_threshold: 33
+    equipment:
+      primary_weapon: "Front: M416 (full kit); Back: M24 + Suppressor + 8x Scope"
+      secondary_weapon: "Front: P1911; Back: MP5K"
+      helmet: Level 3 Helmet
+      armor: Level 3 Armor
+      consumables: ["First Aid Kit ×3", "Med Kit ×1", "Adrenaline ×1", "Smoke Grenade ×3", "Frag Grenade ×3", "Incendiary Grenade ×2"]
+    ai_behavior:
+      pattern: |
+        Overall strategy:
+        - Frontline (highest PHY): Level 3 Armor + AR/LMG, draws fire
+        - Backline (highest AIM): Level 3 Helmet + suppressed SR, ranged damage
+        - Support (highest CLM): Smoke + First Aid Kit + Frag Grenade, logistics
+
+        Per-turn coordination:
+        1. Frontline marks target → Backline focuses fire on the same target
+        2. Frontline wounded → Support moves up, frontline retreats to patch up
+        3. Unfavorable zone → Group relocates via vehicle (frontline covers the retreat)
+      notes:
+        - Optimal resource allocation
+        - Precisely calculates zone contraction timing
+        - Will burst out the moment you reload
+        - Won't waste ammo on rookie squads (bypass or drive them off)
+    gm_narrative: "Four sets of footsteps moving in perfect sync—like a single person. This isn't a contestant—it's a well-trained squad."
+
+  - id: champion
+    name: Champion Contestant
+    difficulty: ★★★★★
+    difficulty_level: 5
+    challenge_rating: 6
+    xp_reward: 500
+    description: >
+      A legend. A living legend.
+      He doesn't need to ambush you—he waits on the route you must take.
+      He has no superpowers—he just knows where you're going, how many shots you'll fire,
+      when you'll reload, when you'll be afraid.
+      Beating him takes more than marksmanship—it takes being calmer than he is.
+    attributes:
+      Aim (AIM): 18
+      Physique (PHY): 16
+      Tactics (TAC): 17
+      Driving (DRV): 14
+      Calm (CLM): 18
+    derived:
+      hp: 110
+      initiative_mod: +5
+      hearing_range_m: 170
+      stress_threshold: 41
+    equipment:
+      primary_weapon: "AWM + 8x Scope + Suppressor"
+      secondary_weapon: AUG AR
+      tertiary_weapon: Desert Eagle
+      helmet: Level 3 Helmet
+      armor: Level 3 Armor
+      consumables: ["Med Kit ×2", "Adrenaline ×2", "Self-Revive Syringe ×1", "Assorted throwables ×2 each"]
+    ai_behavior:
+      pattern: >
+        The Champion doesn't crush you with numbers—he crushes you with "prediction."
+        When the GM runs the Champion, treat him as "knowing the players' intent."
+        - Players looting a building? The Champion may be waiting in the building across the way
+        - Players setting an ambush at the bridgehead? The Champion may swim under the bridge
+        - Players about to throw a frag grenade? The Champion charges at the exact moment you pull the pin
+
+        Weakness (the GM MUST give the Champion a weakness):
+        - Overconfidence: Will take high-risk actions (e.g., duel you at close range)
+        - Fixed habits: Prefers a certain attack pattern (players can read and counter it)
+        - Emotional attachment: Has an emotional bond with something or someone (may hesitate)
+      notes:
+        - '"Foresees" every step you take'
+        - Won't be fooled by the same tactic twice
+        - Extremely high stress threshold—almost never breaks
+        - Will exploit everything in the environment
+    gm_narrative: "Through the 8x scope you see his face—he's smiling. Not in contempt, but in respect. 'Not bad—getting this far, that's no small thing.' Then he vanishes from behind the scope. Not fleeing—a promise. See you in the next circle."

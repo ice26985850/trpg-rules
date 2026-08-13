@@ -1,0 +1,41 @@
+# Galaxy Civilization — A Galactic Species-Management TRPG
+
+## Reference Disclosure
+This ruleset's worldview and core gameplay are inspired by *Stellaris* (a galactic civilization strategy game developed by Paradox Development Studio), borrowing elements such as galactic exploration, civilization management, and endgame-crisis confrontation. This is an original TRPG adaptation, not an officially licensed product.
+
+## One-Line Pitch
+You do not control a single adventurer — you steer an entire interstellar civilization, starting from one homeworld and writing your own epic across the dark, vast galaxy.
+
+## Worldview in Brief
+In Stellar Union Era Year 847, the galaxy sits in a delicate balance. Thousands of star systems are linked by hyperspace lanes; the Galactic Community maintains a fragile peace, while ancient threats stir in the depths of the void. You may be a newborn civilization just stepping into the stars, or the heir of some lost species. Here, every survey may uncover the ruins of the precursors, and every diplomatic choice may reshape the galactic order — until one day the high-dimensional entity known as the Void Lord awakens from its slumber.
+
+## Who Do You Play? What Is the Core Gameplay?
+You play the leader of an interstellar civilization. Each Stellar Turn (ST) you spend Action Points (AP) to survey unknown systems, colonize planets, research technology, forge alliances, or dispatch fleets to war. The game unfolds across Five Eras and twenty levels — from a fragile newborn fumbling at the edge of its local stars, to a galactic hegemon that stands equal with the Fallen Empires.
+
+What is most special: in Solo Mode you are never truly alone. You befriend NPC companion civilizations — the Verdant Guardian, the Steel-Skull Khanate, the Silent Observer — who have personalities, goals, and may even betray you because of your choices.
+
+## System Highlights
+- d10 Dice Pool Success-Count System: Your attribute score IS your dice pool. Military Power (MIL) 5 means rolling 5 ten-sided dice; each die showing ≥ the Target Number counts as one success. Simple and intuitive — attribute growth is visible.
+- Six Civilization Attributes: Military (MIL), Science (SCI), Economy (ECO), Diplomacy (DIP), Unity (UNI), Intelligence (INT) — six development paths, no "single correct answer."
+- NPC Companion Loyalty System: Companions are not tools, but living powers that hold grudges, feel gratitude, and may sacrifice for you or turn away at the crucial moment.
+
+## Who Is It For?
+Those who love grand narrative and strategic management will dive right in. If you enjoy the achievement of "building an empire from nothing," weighing diplomacy against war, or immersing in "my choices change the world," this is your game. Basic TRPG experience is needed, but you need not be a hardcore wargamer.
+
+## Game Style Tags
+- Combat Weight: Important
+- Strategic Depth: High
+- Story-Driven: Story-Supporting
+- Resource Management: Heavy
+- Character Customization: High
+- Character Creation Complexity: Complex
+- Rules Density: Heavy
+- GM Required: Yes (Solo Mode may use an AI GM instead)
+
+## Estimated Play Time
+- Single scenario (one act): about 8–12 hours
+- Full campaign (Lone Vessel of the Galaxy, five connected acts): about 40–60 hours
+
+## Basic Information
+- Players: 1 GM + 1–4 players (each runs a civilization); Solo Mode is 1 player + AI GM
+- Core dice: d10 (ten-sided die) dice pool

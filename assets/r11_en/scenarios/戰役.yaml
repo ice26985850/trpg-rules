@@ -1,0 +1,147 @@
+# Honkai: Star Rail TRPG — Campaign Scenario Collection (Multiplayer)
+# Source .md: 戰役.md (five-arc campaign, 1 GM + 3-5 Players)
+# Structured summary: scene / NPC / event / difficulty / flow / branch
+
+campaign:
+  title: Stellaron Resonance
+  type: Multiplayer Campaign
+  players: "1 GM + 3-5 Players"
+  level_range: "Lv 1-20"
+  sessions_total: "25-30 sessions (4-6 per arc)"
+  premise: >
+    An anomalous Stellaron fluctuation sweeps across the galaxy; all known Stellarons simultaneously enter a "Resonance state."
+    The Astral Express receives a distress signal from "Rustcrown"; the truth of the Stellaron Resonance points to a forgotten Aeon,
+    the "Voice of Annihilation," whose final fragment is awakening from the Nihility. Players start as new passengers aboard the Express,
+    traverse Rustcrown, infiltrate the Abyss, make choices in the cracks between factions, and finally face the advent of the Voice of Annihilation.
+  recurring_NPCs:
+    - name: Himeko
+      role: Mentor / Mission-Giver
+      first_arc: Arc 1
+    - name: Welt
+      role: Knowledge Source / Crisis Support
+      first_arc: Arc 1
+    - name: Silver Wolf
+      role: Frenemy / Information Broker
+      first_arc: Arc 1
+    - name: Rustcorroded Prophet
+      role: Key Decision Target
+      first_arc: Arc 2
+    - name: Imaginary Echo
+      role: Final Antagonist (multi-form)
+      first_arc: Arc 3
+
+arcs:
+  - id: 1
+    name: First Cry of the Star Track
+    level: "1-4"
+    sessions: "4-5"
+    scenes: Belobog
+    theme: Gathering and Trust
+    suggested_paths: "At least 1 Preservation/Abundance, rest any"
+    chapters:
+      - act: Act 1
+        title: Strangers Aboard the Express
+        level: 1
+        scene: Astral Express Observation Car
+        npcs: [Himeko, Silver Wolf]
+        checks:
+          - dc: 12
+            skill: Perception
+            detail: Notice the quantum static in Silver Wolf's comms background (hinting at being tracked)
+          - dc: 13
+            skill: Insight
+            detail: Judge the truth of Silver Wolf's proposal (partly true—the deal is a test for the players)
+        reward: Express Supplies (Basic Survival Kit ×1)
+      - act: Act 2
+        title: The Crack in the Frozen City
+        level: "1-2"
+        scene: Abandoned Mine in Belobog's Lower Zone
+        encounters:
+          - name: Mine Entrance
+            enemies: "Fragmentum Phantom ×3"
+            cr: "1/2"
+            difficulty: Easy
+          - name: Mine Shaft Midsection
+            enemies: "Frostbound Guard ×2"
+            cr: "1"
+            difficulty: Normal
+          - name: Before the Fragmentum Rift
+            enemies: "Frostvein Guardian (Elite)"
+            cr: "2"
+            difficulty: Hard
+        noncombat:
+          - dc: 13
+            skill: Engineering
+            detail: Repair the mine elevator
+          - dc: 12
+            skill: Survival
+            detail: Track Fragmentum creatures' path to find a shortcut
+        reward: "150 Experience Points (XP)/person; Silver Wolf provides initial Rustcrown intel"
+      - act: Act 3
+        title: Silver Wolf's Trial
+        level: "2-3"
+        scene: Abandoned Observatory in Belobog's Upper Zone
+        encounters:
+          - name: Outpost Perimeter
+            enemies: "Marauder ×2"
+            cr: "3"
+          - name: Observatory Interior
+            enemies: "Marauder + Void Soldier Sentinel ×2"
+            cr: "3+1×2"
+          - name: Observation Room
+            enemies: "Marauder Captain (Elite)"
+            cr: "4"
+        branch: >
+          Discover Antimatter Legion comms mentioning the "Voice of Annihilation." Tell Silver Wolf or not? Tell the Express or not?
+          Affects subsequent intel direction.
+        reward: "300 Experience Points (XP); Stellaron Resonance Data Chip; Lv 3"
+      - act: Act 4
+        title: Oath Beneath the Starlight
+        level: "3-4"
+        scene: Astral Express Observation Car
+        npcs: [Himeko, Welt, Silver Wolf]
+        branch: Short rest before departure; opportunity for character interaction
+        reward: "Milestone Lv 4; Any 3★ Light Cone ×1; 200 Credit Points"
+    reward_summary:
+      Lv1: Identity starting gear / 200+1d4×50 Credit Points
+      Lv2: +100 Credit Points
+      Lv3: Stellaron Resonance Data Chip
+      Lv4: Any 3★ Light Cone ×1 / +200 Credit Points
+
+  - id: 2
+    name: Heart of Rustcrown
+    level: "5-8"
+    sessions: "5-6"
+    scenes: Rustcrown (original planet)
+    theme: Sacrifice and Choice
+    key_NPC: Rustcorroded Prophet
+    branch: Key choice with the Rustcorroded Prophet, affecting Rustcrown's fate and subsequent faction relations
+
+  - id: 3
+    name: Abyssal Echo
+    level: "9-12"
+    sessions: "5-6"
+    scenes: Abyssal Data Graveyard / Xianzhou
+    theme: Truth and Price
+    antagonist: Imaginary Echo (First Form)
+    branch: Player choices in Arc 3 affect Arc 4's story backdrop
+
+  - id: 4
+    name: Crossing Paths
+    level: "13-16"
+    sessions: "5-6"
+    scenes: Multi-planet traversal
+    theme: Factions and Betrayal
+    branch: Choosing sides among factions (IPC / Xianzhou / Fools, etc.) affects support and hostility
+    key_mechanic: Module Menu (branch by player faction choice)
+
+  - id: 5
+    name: Advent of the End
+    level: "17-20"
+    sessions: "5-6"
+    scenes: Void Fragmentum
+    theme: Ending and Rebirth
+    finale_boss: Voice of Annihilation · Distorted Form (CR 25, four-phase)
+    branch: >
+      Neutralization Ritual (tavern challenge DC 18+phase) or Fusion Route (consumes all resources +10 permanent Hit Points (HP) to take over and skip Phase 4);
+      decide the fate of the Voice of Annihilation.

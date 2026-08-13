@@ -1,0 +1,22 @@
+# Otherworld Invasion TRPG Scenario — Allies and Enemies
+# id: S7
+
+id: S7
+title: Allies and Enemies
+season: 2
+season_name: Resistance Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Otherworld Human Capital
+- name: Bearman Border Fortress
+- name: Neutral Trading Post
+key_scenes:
+- Audience at the Capital — persuade the Otherworld Human King to provide support
+- Infiltrate the Bearman Fortress — discover a loophole in Gulam's contract terms
+- Encounter a Black Serpent Clan spy at the trading post — a poisoning incident
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

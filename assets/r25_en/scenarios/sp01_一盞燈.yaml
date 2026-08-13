@@ -1,0 +1,64 @@
+id: sp01
+title: A Single Lamp
+type: Solo Scenario
+source: 爐邊譚_單人劇本集_v1.0.md
+sections:
+  basic_info: |
+    | Item | Content |
+    |------|---------|
+    | **Difficulty** | ★ Introductory (Solo) |
+    | **Suggested Reputation** | 0-8 |
+    | **Length** | 1-3 Turns |
+    | **Core Theme** | First week of opening, finding your direction, meeting your first companion |
+  story_summary: |
+    You have the shop key. When you push the door open, dust dances in the afternoon sunlight. All the previous owner left behind is a cobwebbed counter, two askew chairs, and a yellowed note reading "For Transfer."
+
+    You have 500G. You have your tools. You still have your two hands.
+
+    No one out on the street knows you yet. Inside, this shop doesn't feel like home yet.
+
+    But you know it—every legend begins with the first lamp.
+  key_npcs: |
+    | NPC | Role | Key Line |
+    |-----|------|----------|
+    | **Baker Betty** | Friendly neighbor | "New here? Wonderful—this street finally has the smell of something baking again. I've got a spare oven; want it?" |
+    | **Little Stone** | Prospective apprentice | (Standing silently in the doorway, watching your tools. His eyes speak more than his mouth.) |
+    | **Old Grey** | Stray old hunting hound | (Lying by the back door. His left ear is missing a corner. He looks like he's been waiting a long time.) |
+  turn_design: |
+    ### Turn 1: Opening
+
+    **Setup**: The GM does not roll the Market Fluctuation die—the first week is always steady. Let the player feel the rhythm first.
+
+    **GM Guidance**:
+    - Let the player decide the shop name and first menu / catalog of goods themselves. This isn't a game mechanic—it's the ritual of their first "home."
+    - Betty comes knocking with fresh bread. She isn't here to buy. She's here to welcome you.
+    - First customer: a retired miner who looks about your age. He orders the cheapest thing. After drinking it, he's silent a moment, then says, "Haven't tasted that in a long time." He pays. He'll be back tomorrow.
+
+    **Event**: Do not roll the Random Event die. The only "event" of the first week is discovering the stray dog at the back door (Old Grey). His leg is a bit lame. You can shoo him away, or leave him a bowl of water.
+
+    ### Turn 2: The Choice
+
+    **Setup**: Roll Market Fluctuation normally.
+
+    The player has accumulated some small income. Now comes the first major decision—whom to recruit?
+
+    | Option | Content |
+    |------|------|
+    | **Take in Old Grey (Animal Companion)** | Spend 5G on dog food and ointment. After Old Grey recovers, Tracking Check +1. Loyalty automatically 10. Does not occupy a companion slot. |
+    | **Take Little Stone as Apprentice** | Introduced by Betty—this child lost both parents and does odd jobs on the street. He wants to learn a craft. Weekly wage 3G (discounted), starting Loyalty 7. |
+    | **Both** | If the player has ample funds—but this means less money for upgrades. |
+
+    ### Turn 3: Standing Firm
+
+    - The first companion begins to work. Let the player feel the change of "no longer being alone"—Little Stone's first successful finished product, or Old Grey bringing back the first prey.
+    - The first tax bill arrives. 10G. Not much—but it reminds you: this isn't retirement. It's the first day of a new life.
+    - Roll a Random Event die (warm tones preferred).
+  rewards: |
+    | Achievement | Reward |
+    |------|------|
+    | Complete first transaction | Reputation +1d2 |
+    | Recruit a companion | Unlock companion system |
+    | Gain a repeat customer | Base Foot Traffic permanently +1 (in Solo Mode this effect ×2—each repeat customer +2) |
+    | Name the shop | GM records the shop name—it will appear in later scenarios |
+
+    ---

@@ -1,0 +1,180 @@
+# Beastman Warring States TRPG — Hundred Beasts Archipelago World Map
+# Format: Structured YAML data
+# Purpose: For GM reference; can be marked on VTT or physical maps
+
+map_id: "world_map_01"
+title: "Hundred Beasts Archipelago Full Map"
+scale: "1 grid ≈ 50 km (approx. 3 days on foot)"
+era: "Warring States Era (Year 1501–)"
+
+# ─── Geographic Regions ───
+regions:
+  north:
+    name: "Northern Frontier"
+    climate: "Cold; winter lasts up to 5 months. Mountains are snow-covered."
+    territories:
+      - id: "亥_山城國"
+        clan: "Boar Clan"
+        capital: "Gōriki Castle"
+        terrain: "Mountainous area, ore-vein zone"
+        resources: ["Soul-Steel vein (the only source in the Hundred Beasts Archipelago)", "Stone"]
+        description: "A mining kingdom surrounded by mountains. The Soul-Steel vein of Yamashiro Province is the foundation of all famed blades. The Boar Clan extracts it by brute force, while Ox Clan bladesmiths handle smelting."
+      - id: "丑_武藏國"
+        clan: "Ox Clan"
+        capital: "Tesshin Castle"
+        terrain: "Vast plains, crisscrossing rivers"
+        resources: ["Agriculture (rice)", "Pastures", "Bladesmith Guild Headquarters"]
+        description: "A land of farming and forging. Its vast plains provide most of the Hundred Beasts Archipelago's food. The Bladesmith Guild Headquarters is located here in 'Takumi-chō'."
+
+  central:
+    name: "Central Plains"
+    climate: "Mild, with four distinct seasons. Most habitable."
+    territories:
+      - id: "寅_尾張國"
+        clan: "Tiger Clan"
+        capital: "Kōi Castle"
+        terrain: "Mixed plains and hills, coastal"
+        resources: ["Warhorses", "Iron ore (not Soul-Steel)", "Port"]
+        description: "The most powerful military force in the Hundred Beasts Archipelago. Kōi Castle is the political storm center of the Warring States era. Tora Arashi-zai declared 'Tenka Fubu' here."
+      - id: "辰_天柱山"
+        clan: "Dragon Clan (not a province; holy land)"
+        capital: "Dragon Emperor Mausoleum"
+        terrain: "Sacred mountain, extremely high altitude, shrouded in mist year-round"
+        resources: ["Dragon-Vein energy", "Seal (Great Yokai Calamity)", "Five Swords Under Heaven 'Ame-no-Murakumo'"]
+        description: "A holy land belonging to no province. Dragon Clan guardians watch over the seal here. The Dragon Emperor Mausoleum at the summit is a relic of the dynasty era."
+      - id: "午_駿河國"
+        clan: "Horse Clan"
+        capital: "Shippū Castle"
+        terrain: "Vast plains, grasslands"
+        resources: ["Warhorses (finest quality)", "Grain"]
+        description: "Land of cavalry. Suruga Province on the plains is the Tiger Clan's most important military ally — the Tiger Clan's infantry need the Horse Clan's cavalry to maintain military advantage."
+      - id: "未_淨土領"
+        clan: "Sheep Clan (not a province; religious territory)"
+        capital: "Jōdo Temple"
+        terrain: "Valleys, temple complexes"
+        resources: ["Healing herbs", "Warrior monks", "Spiritual guidance"]
+        description: "Religiously neutral territory. Jōdo Temple is the largest medical and spiritual center in the Hundred Beasts Archipelago. It does not join secular wars, yet its warrior monk corps is feared by every faction."
+
+  east:
+    name: "Kantō"
+    climate: "Humid, rainy, and foggy."
+    territories:
+      - id: "子_伊賀國"
+        clan: "Rat Clan"
+        capital: "Kage Village (not public)"
+        terrain: "Mountains, underground cave networks"
+        resources: ["Intelligence (the core resource)", "Poison", "Ninja training grounds"]
+        description: "Land of intelligence. On the surface a barren mountain state, in truth all intelligence across the archipelago is in the Rat Clan's grasp. It has no fixed, publicly known capital."
+      - id: "卯_月見國"
+        clan: "Rabbit Clan"
+        capital: "Tsukuyomi Palace"
+        terrain: "Lakeside, bamboo groves"
+        resources: ["Moon-Mirror Lake (Holy Lake)", "Tsukuyomi Oracle", "Healing miko"]
+        description: "The mysterious center of Tsukuyomi faith. Moon-Mirror Lake is forever lit by moonlight. Rabbit Clan miko receive oracles here. Tsukuyomi-hime is the spiritual guide of all beast clans."
+      - id: "戌_信濃國"
+        clan: "Dog Clan"
+        capital: "Chūgi Castle"
+        terrain: "Wooded mountains, hills"
+        resources: ["Loyal samurai corps", "Timber"]
+        description: "Land of loyalty. Inutsuka Yoshishige organized the 'Giri Alliance' here — a union of small provinces against Tiger Clan hegemony. Though outnumbered by the Tiger Clan, the Dog Clan samurai's loyalty is the strongest force in the Hundred Beasts Archipelago."
+
+  west:
+    name: "Kansai"
+    climate: "Warm, with abundant sunshine."
+    territories:
+      - id: "酉_伊勢國"
+        clan: "Rooster Clan"
+        capital: "Amaterasu Castle"
+        terrain: "Coastal, sunlit hills"
+        resources: ["Archery dojo", "Sun goddess faith", "Worship center"]
+        description: "Center of the land of fire and sun worship. Ise Province's archery dojo is the finest ranged-training ground in the Hundred Beasts Archipelago. Hōōin Mitsuteru rules here, and secretly he is not of true Phoenix Style master bloodline."
+      - id: "申_紀伊國"
+        clan: "Monkey Clan (itinerant nature)"
+        capital: "No fixed capital (wanderer gathering place: Saru Island)"
+        terrain: "Coast, islands, forests"
+        resources: ["Firearm R&D", "Free trade", "Tech innovation"]
+        description: "A wanderer nation with no fixed territory. The Monkey Clan moves freely among Kii Province's coasts and islands. Their firearm R&D may upend the entire warring-era form of warfare."
+      - id: "巳_大和國"
+        clan: "Snake Clan"
+        capital: "Jarin Castle"
+        terrain: "Wetlands, dense jungle"
+        resources: ["Poison", "Intel manipulation", "Black Moon Society secret base"]
+        description: "Land of intrigue. Yamato Province appears a Tiger Clan vassal but is in truth a Black Moon Society secret base. Hebime Chiyo never goes to the battlefield herself — she lets others die for her."
+
+# ─── Key Landmarks ───
+landmarks:
+  - id: "天柱山"
+    region: "辰_天柱山"
+    type: "Sacred Mountain"
+    description: "Home of the Dragon Emperor Mausoleum and the seal of the Great Yokai Calamity. High and cloud-wrapped; only those recognized by the Dragon Clan may reach the summit."
+  - id: "鬼哭原"
+    region: "寅_尾張國與丑_武藏國交界"
+    type: "Ancient Battlefield"
+    description: "Countless battles over a thousand years took place here. Accumulated grudges formed a Yokai anomaly zone. Folklore says you can hear the weeping of the dead at night."
+  - id: "千刃峽"
+    region: "午_駿河國東側"
+    type: "Trial Ground"
+    description: "A natural gorge whose weathered cliffs are as sharp as blades. The trial ground of ancient Sword Saints; many Soul Blades slumber here."
+  - id: "月鏡湖"
+    region: "卯_月見國中央"
+    type: "Holy Lake"
+    description: "A lake surface forever lit by moonlight. Rabbit Clan miko receive Tsukuyomi oracles here. The water is said to purify Yokai."
+  - id: "魂刀塚"
+    region: "Location Unknown"
+    type: "Legendary Site"
+    description: "Legend says the twelve Soul Blades slumber here. Only 'those chosen by a Soul Blade' can find it. Its location shifts with the ages."
+  - id: "內匠町"
+    region: "丑_武藏國（鐵心城外）"
+    type: "Bladesmith Holy Land"
+    description: "Headquarters of the Bladesmith Guild. All famed blades above Great-Business grade are forged or authenticated here. It holds a Soul-Blade resonance map."
+
+# ─── Marching Distances (between adjacent capitals) ───
+travel_distances:
+  - from: "Kōi Castle (Owari)"
+    to: "Chūgi Castle (Shinano)"
+    days: 5
+    description: "Crossing the Wailing Plains — dangerous, may encounter vengeful spirits"
+  - from: "Kōi Castle (Owari)"
+    to: "Shippū Castle (Suruga)"
+    days: 4
+    description: "Plains highway, the safest travel route"
+  - from: "Tesshin Castle (Musashi)"
+    to: "Gōriki Castle (Yamashiro)"
+    days: 3
+    description: "Mountain trade route, jointly maintained by the Ox and Boar Clans"
+  - from: "Tsukuyomi Palace (Tsukimi)"
+    to: "Jōdo Temple (Jōdo Territory)"
+    days: 4
+    description: "Pilgrimage road, with temples along the way offering lodging"
+  - from: "Any province capital"
+    to: "Heaven Pillar Mountain"
+    days: 7–12
+    description: "Pilgrimage journey. The closer to Heaven Pillar Mountain, the thicker the Yokai."
+
+# ─── Current Warring-States Power Map (Year 1501) ───
+current_conflicts:
+  - axis: "East-West Great War"
+    west_side: ["Tiger Clan (Owari)", "Horse Clan (Suruga)", "Rooster Clan (Ise, supports but not engaged)"]
+    east_side: ["Dog Clan (Shinano)", "Ox Clan (Musashi)", "Rabbit Clan (Tsukimi, Giri Alliance)", "Sheep Clan (Jōdo Territory, medical support)"]
+    status: "Total war (Wailing Plains is the main battlefield)"
+    neutral: ["Boar Clan (Yamashiro, supplies Soul-Steel to both sides)", "Rat Clan (Iga, sells intel to both sides)", "Monkey Clan (Kii, sells firearms to both sides)", "Snake Clan (Yamato, openly pro-Tiger, secretly colludes with all sides)", "Dragon Clan (Heaven Pillar Mountain, transcendent neutral)"]
+
+  - axis: "Sun-Moon Conflict (religious rivalry, not military conflict)"
+    sun_side: ["Rooster Clan · Amaterasu faith"]
+    moon_side: ["Rabbit Clan · Tsukuyomi faith"]
+    status: "Cold war — influence competition, involving the right to interpret oracles"
+
+  - axis: "Shadow War (underground intel war)"
+    involved: ["Rat Clan", "Snake Clan", "Black Moon Society"]
+    status: "Three-way contest — Rat Clan monopolizes intel, Snake Clan manipulates intel, Black Moon Society exploits intel"
+
+# ─── Map Legend (for drawing reference) ───
+legend:
+  capital: "◎ Capital / Holy Land"
+  city: "○ Major City"
+  battlefield: "⚔ Main Battlefield"
+  sacred_site: "✦ Holy Land"
+  mine: "⛏ Ore Vein"
+  port: "⚓ Port"
+  mountain: "▲ Mountain Range"
+  river: "≈ River"

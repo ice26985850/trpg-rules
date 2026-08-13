@@ -1,0 +1,165 @@
+id: s05
+title: The Wanderer God's Last Page
+type: Main Scenario
+source: 爐邊譚_劇本集_v1.0.md
+sections:
+  basic_info: '| Item | Content |
+
+    |------|---------|
+
+    | **Difficulty** | ★★★★★ Legendary |
+
+    | **Suggested Reputation** | 80+ (Kingdom-Famous ~ Legendary Shop) |
+
+    | **Suggested Level** | Primary Attributes 5, core skills 3 |
+
+    | **Suggested Party** | 4-6 players, every class has its moment |
+
+    | **Length** | 8-15 turns |
+
+    | **Core Themes** | Legacy, ultimate achievement, a gift to the world |'
+  synopsis: 'In Ynserghard''s history, the Wanderer God''s recipe book was torn into countless fragments. Most were found. But rumor says-the Wanderer God kept the last page.
+
+
+    That page is not a recipe. It''s a handwritten passage by the Wanderer God. It''s said whoever reads that passage understands the Wanderer God''s true intent-why tear the recipe book apart and scatter it across the land?
+
+
+    Now, an invitation from all over the world arrives at your shop door. The Hearthside Circle, the Elf Elders'' Council, the Dwarf Artisans'' Association, the Adventurers'' Guild, even the Myriad Guild-they jointly invite all Legendary-grade crafters to gather in the Royal Capital for the first "Ynserghard Craft Congress."
+
+
+    The congress''s highest honor: to craft a work "representing your life''s greatest achievement" before everyone. The winner receives a prize-said to be something the Wanderer God left personally.
+
+
+    But you vaguely sense: the congress''s purpose is more than a competition.'
+  phase_design: '### Phase One: Congress Eve (Turns 1-3)
+
+
+    Legendary-grade crafters from around the world arrive at the Royal Capital one after another. The GM should build a three-dimensional portrait of each competitor in this phase-they are not enemies, but fellow craftsmen.
+
+
+    | Competitor | Class | Background | Trait |
+
+    |------------|-------|-----------|-------|
+
+    | **"Iron Saint" Dwalin** | Smith | Dwarf legendary blacksmith, eighty years old | He is a living fossil of smithing. Your Smith may have read his books as a child |
+
+    | **"Medicine Saint" Isabel** | Alchemist | Human, invented cures for three major diseases | Gentle yet weary-she saved lives all her life, but couldn''t save her own son |
+
+    | **"Kitchen Saint" Marco** | Cook | Halfling, wandering chef who traveled the world | He has eaten all Legendary ingredients, but never owned his own shop |
+
+    | **"Book Saint" Cassandra** | Researcher | Elf, lived three hundred years | She knows the truth of the Wanderer God''s recipe book, but hasn''t decided whether to tell |
+
+    | **"Trade Saint" Oren** | Merchant | Human, founder of a competitor to the Myriad Guild | He may be here to sabotage the congress-or to atone |
+
+
+    **Key Scenes**:
+
+    - Opening banquet: Each competitor shares a story. This is the GM''s golden moment to build NPC depth.
+
+    - Private exchanges: Players may build personal relationships with any NPC. These relationships will affect the result at the congress climax.
+
+
+    ### Phase Two: Congress Competition (Turns 4-7)
+
+
+    **Rules**: Each crafter displays one work. The work is scored jointly by five judges (representing five top powers).
+
+
+    This is the highest-pressure crafting segment in the whole game. Each player character (not the whole party) makes one craft individually, aiming for Legendary.
+
+
+    | Player Class | Suggested Work | Required Materials | Suggested DC Offset |
+
+    |-------------|----------------|--------------------|---------------------|
+
+    | Cook | "Wanderer God''s Feast"-a dish containing all elements of the Wanderer God''s recipe | At least 3 Legendary ingredients | +15 |
+
+    | Smith | "Hammer of Legacy"-a weapon that inherits smithing memory | Ember''s Scale + Legendary ore | +15 |
+
+    | Alchemist | "Eternal Medicine"-a drop that cures an incurable disease | Dragonheart Blood + Millennia Ice-Crystal Honey | +15 |
+
+    | Merchant | "Fair Contract"-a commercial agreement that breaks the Myriad Guild''s monopoly | Requires signatures of all competitors (Social challenge) | +15 |
+
+    | Gatherer | "Wanderer God''s Map"-a map marking all known Legendary material locations | Personally visited locations must be ≥ 10 | +15 |
+
+    | Researcher | "Wanderer God''s Recipe Index"-an encyclopedia compiling all known Wanderer God recipes | Requires visiting all competitors to gather data | +15 |
+
+
+    **Cooperation Rule**: The congress allows team assistance. But the final work can be credited to only one person. This is a team test-whose work represents the whole party?
+
+
+    ### Phase Three: The Truth (Turns 8-10)
+
+
+    During the judging, "Book Saint" Cassandra privately finds the players. She finally decides to tell the truth:
+
+
+    > **The Wanderer God''s last page is not a sheet of paper.**
+
+    >
+
+    > The Wanderer God hid the last page inside "legacy" itself. When one crafter teaches the next, and that one teaches the next-every transmission rewrites that page.
+
+    >
+
+    > The real reason the Wanderer God tore the recipe book was not to scatter the formulas. It was to make "the search" itself part of the recipe. The best dish is always the next one-because as long as someone is still searching, the Wanderer God still lives in this world.
+
+
+    **Ultimate Twist**: The congress prize-the Wanderer God''s relic-is not what anyone imagined. It is a small box. Inside is a sheet of paper.
+
+
+    On the paper is only one line:
+
+
+    > *"You have found so much. Now-go teach the next person."*
+
+
+    ### Phase Four: Legacy (Turns 11-15)
+
+
+    The congress ends. But the players'' story does not end.
+
+
+    **Ultimate Choice**: Each player faces a choice:
+
+
+    | Option | Content |
+
+    |--------|---------|
+
+    | **Branch Out** | Open branch shops around the world, each training a new crafter (unlock "Multi-Shop Management" expansion) |
+
+    | **Write a Treatise** | Write all you''ve learned into a book, letting knowledge transcend time (unlock "Academic Legacy" route) |
+
+    | **Take an Apprentice** | Take one apprentice, train wholeheartedly. After the character retires, the player may continue with the apprentice character (unlock "Generational Legacy" expansion) |
+
+    | **Keep Searching** | Refuse the answer. The Wanderer God said "the best dish is always the next one"-so keep searching. This is not an end. (unlock "Endless Exploration" route) |'
+  finale_rewards: '| Achievement | Reward |
+
+    |-------------|--------|
+
+    | Congress Victory | Legendary Shop Reputation unlocked, character becomes a Ynserghard historical figure |
+
+    | Whole Party Legendary | "Legendary Team" title, shop permanent Foot Traffic +3 |
+
+    | All competitors become friends | Unlock "Artisans'' Alliance"-a new organization more influential than the Myriad Guild |
+
+    | Choose Legacy | The shop becomes a place of legacy. A century later, young adventurers still make pilgrimages here |'
+  gm_notes: '- **This is the finale scenario**: If players wish to continue, Phase Four is only a beginning-Generational Legacy and Multi-Shop Management are both playable expansions.
+
+    - **Spotlight every class**: Don''t let any class become a sidekick. Every player should have a "this is my moment" scene at the congress.
+
+    - **Competitors'' endings**: Give NPCs endings too. Dwalin may retire after his display, gifting his hammer to your Smith. Marco may finally decide to open his own shop. These make the world feel weighty.
+
+    - **The Wanderer God''s letter**: Don''t rush to give it. Let players guess first what''s in the box. The best reveal timing is-after they already understand the Wanderer God''s intent.
+
+
+    > **Hearthside Tales Scenario Collection v1.0**
+
+    >
+
+    > Five scenarios, from the first tax coin to the last recipe page.
+
+    > You may play them in order, or draw any one as a standalone adventure.
+
+    > Each scenario leaves room for the GM to improvise-the best story is always the one the players and GM write together.'

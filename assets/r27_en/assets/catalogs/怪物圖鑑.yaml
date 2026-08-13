@@ -1,0 +1,499 @@
+# Beastman Warring States TRPG — Monster Compendium (Structured YAML Edition)
+monsters:
+  minion:
+  - name: Ashigaru
+    type: Beastman (any clan)
+    cr: 0.25
+    attributes:
+      swm: 2
+      phy: 3
+      yp: 1
+      agi: 2
+      spt: 1
+    combat:
+      hp: 8
+      dv: 12
+      dr: 0
+      speed: 6
+    attacks:
+    - name: Katana
+      hit: '+2'
+      damage: 1d6 (slashing)
+    special: Gains Advantage when 3 or more allies gang up on the same target
+    drop: 25 Cultivation Points (XP), Broken Katana
+    ai: Holds formation, attacks in groups of three. May flee when Morale is low
+  - name: Archer Ashigaru
+    type: Beastman (any clan)
+    cr: 0.5
+    attributes:
+      swm: 2
+      phy: 2
+      yp: 1
+      agi: 3
+      spt: 1
+    combat:
+      hp: 10
+      dv: 13
+      dr: 0
+      speed: 6
+    attacks:
+    - name: Short Bow
+      hit: '+3'
+      damage: 1d6 (piercing, Range 30 squares)
+    special: Maintains distance (at least 15 squares); gains Advantage against targets with no cover
+    drop: 30 Cultivation Points (XP), Short Bow, Arrows ×10
+    ai: Prioritizes attacking mages / healers; switches to Wakizashi melee when engaged
+  - name: Squad Leader
+    type: Beastman (any clan)
+    cr: 1
+    attributes:
+      swm: 4
+      phy: 4
+      yp: 2
+      agi: 3
+      spt: 2
+    combat:
+      hp: 18
+      dv: 13
+      dr: 1 (Dōmaru)
+      speed: 6
+    attacks:
+    - name: Katana
+      hit: '+4'
+      damage: 1d8+2 (slashing)
+    special: Command — Minor action to direct 2 Ashigaru, granting them +1 to attacks this turn
+    drop: 50 Cultivation Points (XP), Dōmaru
+    ai: Commands from the rear; steps in personally once subordinates are wiped out
+  - name: Tanegashima Ashigaru
+    type: Beastman (any clan)
+    cr: 0.5
+    attributes:
+      swm: 1
+      phy: 2
+      yp: 1
+      agi: 3
+      spt: 1
+    combat:
+      hp: 10
+      dv: 11
+      dr: 0
+      speed: 5
+    attacks:
+    - name: Tanegashima
+      hit: '+3'
+      damage: 2d6 (piercing, Range 20 squares, ignores DR 3)
+    special: Requires 1 turn to reload; cannot fire in rain; volley combines damage
+    drop: 40 Cultivation Points (XP), Tanegashima, Bullets ×5
+    ai: Fires in rotating volleys of 2–3 (ensuring firepower every turn)
+  mid:
+  - name: Yokai-Eroded Bandit
+    type: Beastman (Yokai-Eroded)
+    cr: 0.5
+    attributes:
+      swm: 3
+      phy: 3
+      yp: 4
+      agi: 2
+      spt: 1
+    combat:
+      hp: 12
+      dv: 11
+      dr: 0
+      speed: 6
+    attacks:
+    - name: Broken Katana
+      hit: '+3'
+      damage: 1d6+1 (slashing + 1 Yokai damage)
+    special: Yokai Boil — +2 Yokai per turn. When Yokai exceeds 30, attack +1d4, but attacks hit friend and foe alike
+    drop: 35 Cultivation Points (XP)
+    ai: No tactics — pure rage. Attacks the nearest target
+  - name: Black Moon Society Ninja
+    type: Beastman (Rat / Snake / Monkey Clan)
+    cr: 2
+    attributes:
+      swm: 4
+      phy: 3
+      yp: 3
+      agi: 6
+      spt: 3
+    combat:
+      hp: 20
+      dv: 16
+      dr: 0
+      speed: 8
+    attacks:
+    - name: Wakizashi
+      hit: '+6'
+      damage: 1d6+2
+    - name: Shuriken
+      hit: '+6'
+      damage: 1d4 (Range 15 squares)
+    special: Stealth Advantage; Smoke Bomb Retreat (Reaction, can use a Smoke Bomb to escape when attacked); Assassinate (critical 19–20 against unaware targets)
+    drop: 100 Cultivation Points (XP), Smoke Bomb ×1
+    ai: Stealth → ambush → Smoke Bomb retreat (when HP < 50%) → stealth again. Does not overcommit
+  - name: Black Moon Society Yokai Wielder
+    type: Beastman (Snake / Rabbit Clan)
+    cr: 3
+    attributes:
+      swm: 2
+      phy: 3
+      yp: 7
+      agi: 4
+      spt: 5
+    combat:
+      hp: 25
+      dv: 14
+      dr: 0
+      speed: 6
+    attacks:
+    - name: Yokai Bolt
+      hit: '+5'
+      damage: ranged 20 squares, 1d8 Yokai
+    special: Yokai Injection — inject Yokai on touch, target's Yokai Value +5; Yokai Absorption — absorb Yokai from creatures within 5 squares (−2 target Yokai / +2 self per turn)
+    drop: 150 Cultivation Points (XP), Yokai-Calming Pill ×1
+    ai: Stays in the rear, prioritizes disrupting frontline warriors with Yokai Injection, then uses Yokai Bolt
+  - name: Wraith Ashigaru
+    type: Undead
+    cr: 0.25
+    attributes:
+      swm: 2
+      phy: 2
+      yp: 5
+      agi: 1
+      spt: 1
+    combat:
+      hp: 8
+      dv: 10
+      dr: 3
+      speed: 4
+    attacks:
+    - name: Wraith Touch
+      hit: '+1'
+      damage: 1d4 Yokai damage
+    special: Physical DR 3; Fire / Spirit damage ignores DR; Pure Land Style techniques deal double damage
+    drop: — (dissipates)
+    ai: Attacks the nearest living creature indiscriminately
+  - name: Snake Clan Assassin
+    type: null
+    cr: 4
+    note: See the GM Rulebook, Chapter 7, for the full stat card
+  - name: Trial Guardian · Form of Wind
+    type: Spirit
+    cr: 5
+    attributes:
+      swm: 6
+      phy: 5
+      yp: 4
+      agi: 8
+      spt: 6
+    combat:
+      hp: 45
+      dv: 17
+      dr: 0
+      speed: 12 (flying)
+    attacks:
+    - name: Wind Blade
+      hit: '+7'
+      damage: 1d8+4 (slashing, Range 5 squares)
+    - name: Storm Barrier
+      hit: Reaction
+      damage: fully negates one physical attack, once per battle
+    special: Insubstantial — non-magical weapon damage halved; Trial Mode — does not kill players, ceases combat when HP drops to 0 or questions are answered
+    drop: 250 Cultivation Points (XP), Soul Blade "Kazakiri" (S2 scenario only)
+    ai: Asks questions first. Becomes friendly-neutral after questions are answered
+  - name: Black Moon Society Fallen Samurai
+    type: Beastman (Fallen)
+    cr: 5
+    attributes:
+      swm: 7
+      phy: 6
+      yp: 6
+      agi: 4
+      spt: 2
+    combat:
+      hp: 42
+      dv: 15
+      dr: 2 (Haramaki)
+      speed: 6
+    attacks:
+    - name: Katana
+      hit: '+9'
+      damage: 1d8+5 (slashing + 1d4 Yokai)
+    special: Fallen Blade (critical 18–20); Yokai Aura (gains temporary HP equal to Yokai Value / 10 at the start of each turn); Giri-Breacher (takes double damage from Pure Land Style techniques)
+    drop: 250 Cultivation Points (XP), Serviceable-grade Katana (possible)
+    ai: Prioritizes attacking characters wielding a Soul Blade or named blade. Disdains retreat
+  elite:
+  - name: Tiger Clan Samurai Commander
+    type: null
+    cr: 8
+    note: See the GM Rulebook, Chapter 7, for the full stat card
+  - name: Fallen Samurai · Bloodstain Wielder
+    type: Beastman (Fallen)
+    cr: 10
+    attributes:
+      swm: 9
+      phy: 8
+      yp: 8
+      agi: 5
+      spt: 3
+    combat:
+      hp: 75
+      dv: 17
+      dr: 3 (Ō-yoroi)
+      speed: 5
+    attacks:
+    - name: Cursed Blade "Bloodstain"
+      hit: '+12'
+      damage: 1d10+7 (slashing + 1d6 Yokai)
+    special: Bloodstain Effect (on kill, restores 50% of target's HP, but Yokai +10); Fallen Blade (critical 17–20); Indomitable Will (at HP 0, makes a Physique Saving Throw DC 20; on success continues at 1 HP, once per battle)
+    fatal_weakness: Gains 10 Yokai per enemy slain — luring its Yokai to 100 to trigger Uncontrolled is the best tactic
+    drop: 600 Cultivation Points (XP), Cursed Blade "Bloodstain" (Great-grade)
+    ai: Berserk assault; always pursues the next target after each kill. Cannot control the urge to kill
+  - name: Black Moon Society Elite
+    type: Beastman (Black Moon Society)
+    cr: 4–8
+    note: Divided into three variants by school (see variants below)
+    variants:
+    - cr: 4
+      school: Snake Clan Snake Bite Style
+      hp: 38
+      dv: 16
+      attack: +6 (1d6+4+poison)
+    - cr: 6
+      school: Rat Clan Shadowmeld Style
+      hp: 45
+      dv: 18
+      attack: +8 (1d6+5), Stealth Advantage, triple sneak attack
+    - cr: 8
+      school: Rabbit Clan Moon Shadow Style
+      hp: 50
+      dv: 19
+      attack: +9 (2d6+5), dual-wield no penalty, DV +2 under moonlight
+  - name: Beastified Beast
+    type: Yokai Beast
+    cr: 2–7 (adjustable)
+    attributes:
+      swm: 4–8
+      phy: 5–9
+      yp: 6–10
+      agi: 3–6
+      spt: 1–3
+    combat:
+      hp: 35–65
+      dv: 13–16
+      dr: 2–4
+      speed: 7
+    attacks:
+    - name: Wraith Claw
+      hit: +4 to +9
+      damage: 1d8+2 to 2d8+5 (Yokai damage)
+    special: Wraith Howl (AOE 1d6 Yokai + Stunned DC 12–15); when HP < 50%, summons a Wraith Ashigaru (1 per turn)
+    drop: 100–400 Cultivation Points (XP), Soul-Steel Shard
+    ai: Beast behavior with no tactics. Attacks the nearest or last creature that hit it
+  - name: Undying Bones
+    type: Undead (remains of an ancient samurai)
+    cr: 14
+    attributes:
+      swm: 10
+      phy: 10
+      yp: 12
+      agi: 4
+      spt: 8
+    combat:
+      hp: 120
+      dv: 16
+      dr: 5
+      speed: 5
+    attacks:
+    - name: Ancient Blade
+      hit: '+13'
+      damage: 2d8+8 (slashing + 2d6 Yokai)
+    special: Undying — at HP 0, automatically revives at 50% HP (must be fully purified with a Pure Land Style secret technique or the Five Swords Under Heaven "Gekka" to stop it); Wraith Aura (Yokai +2 per turn within radius 10 squares); Memory of a Hundred Battles (may reroll one attack per turn)
+    fatal_weakness: Pure Land Style technique damage ×2. A wielder of Gekka (Five Swords Under Heaven) within 10 squares can suppress revival
+    drop: 1200 Cultivation Points (XP), Ancient Great-grade blade (random), Soul-Steel Shard ×3
+    ai: Prioritizes attacking characters wielding a named blade or Soul Blade. Identifies and prioritizes killing Pure Land Style characters
+  legendary:
+  - name: Tora Arashi-zai
+    type: Beastman (Tiger Clan)
+    cr: 17
+    attributes:
+      swm: 12
+      phy: 10
+      yp: 10
+      agi: 8
+      spt: 6
+    combat:
+      hp: 100
+      dv: 19
+      dr: 3 (Ō-yoroi)
+      speed: 7
+    attacks:
+    - name: Onikirimaru (Five Swords Under Heaven)
+      hit: '+15'
+      damage: 1d10+10 (slashing + 1d8 Yokai)
+    moves:
+    - Tiger Claw Flash
+    - Tiger Might Suppression
+    - Tiger King Roar Slash
+    - Lone Tiger
+    mystery: All Beasts Prostrate (releases all Yokai, weapon damage ×3 + Swordsmanship ×3, Yokai +30)
+    special: Onikirimaru Erosion — +3 Yokai automatically each turn. Beyond 60 Yokai, cannot control attack target. Beyond 85 Yokai, attacks indiscriminately
+    role: May be an enemy or a victim seeking help (depends on the first three acts' plot)
+    drop: 2000 Cultivation Points (XP), Onikirimaru (Five Swords Under Heaven)
+    ai: Calm phase (Yokai 0–60) — normal Tiger Might Style tactics. Bestial phase (Yokai 61–85) — abandons defense, all-out attack. Uncontrolled (Yokai 86+) — indiscriminate attack, uses All Beasts Prostrate
+  - name: Black Moon Society Leader "Dark Dragon"
+    type: Fallen Dragon Clan
+    cr: 18
+    note: See Scenario S4 for complete data
+  - name: Ryūjinshi
+    type: Beastman (Dragon Clan)
+    cr: 19
+    attributes:
+      swm: 12
+      phy: 11
+      yp: 9
+      agi: 9
+      spt: 12
+    combat:
+      hp: 130
+      dv: 20
+      dr: 4 (Dragon Scale + Dragon Scale Blade)
+      speed: 8 (flying)
+    attacks:
+    - name: Dragon Scale Blade (Peerless-grade)
+      hit: '+16'
+      damage: 2d10+10 (slashing, Range 5 squares)
+    breath: Fan-shaped 10 squares, 3d8 damage (choose Fire / Cold / Lightning)
+    mystery: Heavenly Dragon Descends (full dragon transformation 3 turns — flying, Dragon Breath 4d6, DV +4, DR +4; after ending, Yokai +40)
+    role: Guardian — may be a mentor, trial-giver, or final ally
+    ai: Trial Mode — uses full power but non-lethal. Combat Mode — prioritize protecting the seal > prioritize killing threats to the seal
+  - name: Great Yokai Calamity
+    type: Primordial Chaos
+    cr: Cannot Fight
+    status: Sealed beneath Heaven Pillar Mountain, cannot act
+    influence: Telepathy — can speak with creatures approaching the seal's fissure. Its will can influence the Yokai and emotions of nearby creatures
+    voice: Ancient, weary, lonely. Not purely evil — a primordial force imprisoned for two thousand years
+    related: Appears only in Scenario S4's final choice scene. Cannot be defeated in battle — only sealed, released, or transformed
+quick_gen_table:
+  entries:
+  - minion_type: Ashigaru
+    hp: 8
+    dv: 12
+    to_hit: '+2'
+    damage: 1d6
+    special: Flanking Advantage
+    cr: 0.25
+  - minion_type: Archer Ashigaru
+    hp: 10
+    dv: 13
+    to_hit: '+3'
+    damage: 1d6
+    special: Range 30 squares
+    cr: 0.5
+  - minion_type: Squad Leader
+    hp: 18
+    dv: 13
+    to_hit: '+3'
+    damage: 1d8
+    special: Commands Ashigaru
+    cr: 1
+  - minion_type: Veteran
+    hp: 25
+    dv: 14
+    to_hit: '+4'
+    damage: 1d8+2
+    special: Critical 19–20
+    cr: 1
+  - minion_type: Tanegashima Ashigaru
+    hp: 10
+    dv: 11
+    to_hit: '+3'
+    damage: 2d6
+    special: Ignores DR 3
+    cr: 0.5
+  - minion_type: Ninja
+    hp: 15
+    dv: 16
+    to_hit: '+4'
+    damage: 1d6+2
+    special: Stealth Advantage
+    cr: 2
+  batch_rules:
+  - 4–5 identical minions → merge into 1 "cluster"
+  - Cluster HP = single HP × count × 0.7
+  - Cluster attack — roll 1 hit; each 3 points over DV deals 1 extra instance of base damage
+  - Cluster HP below 50% — attack −1
+  - Cluster HP below 25% — routs
+cr_table:
+- cr: 0.25
+  typical_hp: 8
+  typical_dv: 12
+  typical_to_hit: '+2'
+  typical_damage: 1d6
+  cultivation_points: 25
+- cr: 0.5
+  typical_hp: 12
+  typical_dv: 13
+  typical_to_hit: '+3'
+  typical_damage: 1d6+1
+  cultivation_points: 40
+- cr: 1
+  typical_hp: 18
+  typical_dv: 13
+  typical_to_hit: '+4'
+  typical_damage: 1d8+2
+  cultivation_points: 100
+- cr: 2
+  typical_hp: 25
+  typical_dv: 15
+  typical_to_hit: '+5'
+  typical_damage: 1d8+3
+  cultivation_points: 200
+- cr: 3
+  typical_hp: 30
+  typical_dv: 15
+  typical_to_hit: '+7'
+  typical_damage: 1d10+3
+  cultivation_points: 300
+- cr: 4
+  typical_hp: 38
+  typical_dv: 16
+  typical_to_hit: '+9'
+  typical_damage: 1d10+4
+  cultivation_points: 400
+- cr: 5
+  typical_hp: 45
+  typical_dv: 17
+  typical_to_hit: '+10'
+  typical_damage: 2d6+4
+  cultivation_points: 500
+- cr: 8
+  typical_hp: 58
+  typical_dv: 17
+  typical_to_hit: '+12'
+  typical_damage: 1d8+8
+  cultivation_points: 800
+- cr: 10
+  typical_hp: 75
+  typical_dv: 17
+  typical_to_hit: '+14'
+  typical_damage: 1d10+7
+  cultivation_points: 1000
+- cr: 14
+  typical_hp: 120
+  typical_dv: 16
+  typical_to_hit: '+16'
+  typical_damage: 2d8+8
+  cultivation_points: 1400
+- cr: 18
+  typical_hp: 160
+  typical_dv: 22
+  typical_to_hit: '+14'
+  typical_damage: 2d10+8
+  cultivation_points: 1800
+- cr: 20
+  typical_hp: 200
+  typical_dv: 24
+  typical_to_hit: '+16'
+  typical_damage: 3d10+10
+  cultivation_points: 2000

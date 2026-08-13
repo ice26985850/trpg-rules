@@ -1,0 +1,74 @@
+scenario:
+  id: s03
+  title: "Ascension Trial"
+  source: "Excerpted from the League of Legends TRPG Campaign Scenario Collection · Multiplayer Scenario · Main Campaign Part Three"
+  mode: "Multiplayer"
+  standalone: true
+  level_range: "Lv.11-16"
+  region: "Shurima Desert"
+  estimated_time: "4-5 sessions"
+  summary: >
+    The fall of the Frostborn revealed the true purpose of 'the Obsidian Circle' — collecting Forbidden
+    Magic Stone on the surface while searching underground for the Shards of the Sun Disc. Legend says
+    that gathering all the shards can restart the Ascension ritual and create a new generation of
+    Ascended. The leader of the Obsidian Circle has already gone to Shurima, deep into the Emperor's
+    Tomb. The players must search the desert for ancient clues and find their place in the inheritance
+    struggle between Azir and Xerath.
+  chapters:
+    - id: "3.1"
+      title: "Desert Gate"
+      level: "Lv.11"
+      type: "Exploration/Combat"
+      core_encounter: "Cross the desert, Sandworm encounter, search for Nasus"
+    - id: "3.2"
+      title: "Emperor's Tomb"
+      level: "Lv.12-13"
+      type: "Dungeon"
+      core_encounter: "Six-layer tomb dungeon: traps/Mummy Guards/ancient puzzles"
+    - id: "3.3"
+      title: "Sun Disc"
+      level: "Lv.14"
+      type: "Boss/Social"
+      core_encounter: "Three-way standoff: Azir vs Xerath vs the Obsidian Circle"
+    - id: "3.4"
+      title: "Battle of Ascension"
+      level: "Lv.15-16"
+      type: "Final Campaign"
+      core_encounter: "Stop the leader of the Obsidian Circle from completing the Forbidden Ascension ritual"
+  key_npcs:
+    - name: "Nasus"
+      role: "Ancient Ascended, guardian of the tomb"
+      bond: "Bond levels 1-8"
+    - name: "Azir"
+      role: "The resurrected emperor of Shurima"
+      bond: "Ally or opponent (depends on player choice)"
+    - name: "Xerath"
+      role: "The traitorous Ascended, a being of pure energy"
+      bond: "Rival"
+    - name: "Renekton"
+      role: "The Ascended controlled by Xerath"
+      bond: "Boss/Redeemable"
+  boss:
+    name: "the Forbidden Ascended"
+    level: "Lv.16"
+    stats:
+      hp: 3200
+      ad: 120
+      armor_mr: "140/140"
+      special: "Ascension Aura: recovers 3% of Health Points (HP) each turn"
+    phases:
+      - phase: "P1"
+        range: "100%-70%"
+        mechanics: "Sunbeam (straight line 4 cells, Ability Power (AP)×1.5) + summons Sand Soldiers (Health Points (HP) 400×3, Attack Damage (AD) 40)"
+      - phase: "P2"
+        range: "70%-35%"
+        mechanics: "Ascended Form — size increases by 50%, attack range +2 cells; number of Sand Soldiers doubles"
+      - phase: "P3"
+        range: "35%-0%"
+        mechanics: "Forbidden Ritual — drains the life of all combatants each turn (Health Points (HP)×3% restored to self); weakness exposed (back +50% damage)"
+    redemption_route: "If Renekton was saved in 3.3, he will appear in P3 to assist, breaking the Boss's Ascension Aura"
+  rewards:
+    exp: 8500
+    gold: "12,000-18,000"
+    equipment: "'Ascended Charm' (Ability Power (AP)+60, Cooldown Reduction (CDR)+15%, once per battle can assume Ascended Form: Ability Power (AP)+30% × 3 turns)"
+    augment: "'Sun Legacy' — gain 1 random Legendary-tier Augment Device"

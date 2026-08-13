@@ -1,0 +1,141 @@
+# Starship Boarding Assault TRPG — Scenario S5: The Final Price
+scenario_id: S5_The_Final_Price
+title: "The Final Price — Twin Doom (S5)"
+subtitle: "The mothership is crippled and cannot wait. The enemy vessel's self-destruct countdown has begun. The objective is unfinished. You must decide."
+difficulty: Legendary
+recommended_level: "5–8"   # Suggested starting level 7
+player_count: { min: 1, max: 6 }
+estimated_duration: "5–8 hours"
+
+mission_type: Total Cripple
+enemy_vessel:
+  name: "Twin Doom (S5) — Flagship 'Ruthless' + AI escort vessel 'Void'"
+  type: Alliance Battleship + AI Drone Vessel
+  faction: Free Star Alliance (FSA) + Remnant
+  size: Super-Giant (Flagship 1,500 m + escort 600 m, two vessels docked)
+  decks: 8 (flagship 6 + escort 2)
+  gravity: "Flagship: Standard Gravity (1G) + partially Variable-G. AI vessel: Zero-G (0G)"
+  self_destruct: true  # Flagship self-destruct countdown 15 rounds. AI vessel has no self-destruct but self-replicates its defenses.
+
+story_summary: >
+  This is the turning point of the Rift War. The Concord United Fleet (CUF) decided to launch a full assault on
+  the Alliance flagship 'Ruthless'. The Ruthless is the Alliance's command hub in the star sector — its
+  destruction will completely collapse the Alliance's defense line. But intelligence missed a critical detail:
+  the Ruthless is docked and connected to a Remnant AI drone vessel, the 'Void'. In desperation the Alliance
+  struck a deal with the AI Remnant — the Void provides technical support in exchange for the Alliance not
+  attacking the Remnant fleet.
+
+  The Mothership Arbitrator's boarding assault team is given an impossible mission: simultaneously cripple the
+  Ruthless's command system (the bridge) and the Void's AI core (the central processing node). Both must be
+  completed within 15 rounds — because once the Alliance commander realizes the flagship is lost, he launches
+  the self-destruct without hesitation.
+
+  Worse still, halfway through the mission, the Arbitrator sent its final communication:
+  "The Arbitrator is heavily damaged. We can't hold. You have 15 minutes. After that we must withdraw. Arbitrator out."
+
+turning_points:
+  - id: TP1
+    name: "Irreversible Choice"
+    description: "There is only one passage at the docking connection between the two vessels. The players must decide: attack the Ruthless first (human defenses) or the Void first (AI defenses)? Is there enough time left to complete both objectives?"
+    options:
+      - choice: Attack the Ruthless first (human route)
+        consequence: "Face stubborn resistance from human defenders — but crippling the command system will cause the AI vessel's enemies to lose coordination."
+      - choice: Attack the Void first (AI route)
+        consequence: "Face dynamically reorganizing corridors and self-replicating defenses — but crippling the AI core will disable all of the Ruthless's electronic systems."
+      - choice: Split forces — half attack the Ruthless, half attack the Void
+        consequence: "Most efficient, but either side is extremely dangerous. Requires perfect team coordination."
+
+  - id: TP2
+    name: "The Arbitrator's Farewell"
+    description: "Round 8 of the countdown — the Arbitrator sends its final communication and withdraws. The players' link to the mothership is cut. Only one path remains: after completing the mission, seize an enemy escape pod."
+    effect: "All mothership support fails. Extraction DC +3."
+
+  - id: TP3
+    name: "Final Choice — Mission vs Survival"
+    description: "Round 3 of the countdown — only one objective remains unfinished. Continue? Or withdraw now? If you continue — you will almost certainly die aboard the ship. If you withdraw — the mission fails, the Alliance flagship survives, the war continues."
+    options:
+      - choice: "Continue — complete the mission (a dead end but mission success)"
+        consequence: "Requires passing 3 consecutive DC 18+ checks. Success → mission complete, but the countdown hits zero. Make a desperate extraction (RES DC 20) — success means a miraculous survival. Failure means death — but the character becomes a legend."
+      - choice: "Withdraw — go home alive (mission fails)"
+        consequence: "Full squad survives. But the Alliance flagship endures. GM: this choice affects later campaigns — the Alliance defense line is not collapsed, the next war is harder."
+
+key_encounters:
+  - id: E1
+    location: Before the Ruthless Bridge — Command Deck
+    enemies:
+      - type: Marine
+        count: 4
+        cr: 3
+      - type: Commander (Boss — Alliance Flagship Captain)
+        count: 1
+        cr: 6
+    total_el: 18
+    notes: "The captain is the final boss. HP 40, DEF 18. Has tactical command ability — can order marines to coordinate attacks. Upon defeating the captain, the Ruthless's command system is crippled."
+
+  - id: E2
+    location: Void AI Core
+    enemies:
+      - type: Defense Robot
+        count: 3
+        cr: 4
+      - type: Blockade Turret Matrix (Boss)
+        count: 1
+        cr: 6
+    total_el: 18
+    notes: "The AI core chamber is Zero-G. Walls reorganize every 2 rounds — changing cover positions. Breach the central AI (ENG DC 22) to cripple it."
+
+  - id: E3
+    location: Withdrawal — Seize Escape Pods
+    challenge: "Find a usable escape pod (Perception (PER) DC 15). Each escape pod holds only 2 people. If more than 2 crew — a second escape pod must be found."
+    environment: "The escape pod area is partially destroyed — vacuum exposure. Requires Armor Integrity (ARMR) to survive."
+
+rewards:
+  xp_primary: 16         # Primary objective
+  xp_secondary: 14       # Secondary objectives total: 3 combined +14
+  xp_full_survival: 3    # Full squad survival
+  xp_gm_bonus: 8         # GM generic pool (finale)
+  reputation: 5
+  bonus_reputation:
+    - condition: Complete the mission after the Arbitrator withdraws
+      reputation: 3
+  special_loot:
+    - name: "Alliance Flagship Captain's Command Blade"
+      description: "A ceremonial command blade, symbolizing the fall of the Alliance flagship."
+      effect: "On any human vessel — enemy morale −2 (mook-level enemies may surrender outright)."
+    - name: "Remnant AI Core Fragment"
+      description: "A sealed fragment of an AI consciousness — hostile intent lost, but retains deep knowledge of all Remnant vessels."
+      effect: "Permanently −3 to breach DC against Remnant (AI) vessels (does not stack with System Mastery). The Engineer's System Mastery ultimate feat is doubled in effect against Remnant vessels."
+
+endings:
+  - id: ENDING_A
+    name: "Legendary Fall"
+    condition: "Complete the mission but sacrifice yourself in the explosion"
+    description: "Your names are engraved on the Arbitrator's monument. Three months later, the Alliance defense line collapses from the flagship's destruction. The Rift War reaches its turning point — and you were the price."
+    legacy: "The next boarding assault team (if players create new characters) gains a free feat — 'Inheritor': Initiative (INIT) +2 on all human vessels."
+
+  - id: ENDING_B
+    name: "Miraculous Survival"
+    condition: "Complete the mission and succeed at the desperate extraction"
+    description: "You burst out of the escape pods in the light of the explosion. The Ruthless and the Void shatter behind you. Comms return — the Arbitrator is back. Captain Moro says: 'I knew you'd find a way.'"
+    legacy: "All crew gain legendary Reputation. Permanent morale advantage for the whole squad on missions against Alliance vessels."
+
+  - id: ENDING_C
+    name: "Survivor"
+    condition: "Withdraw but the mission fails"
+    description: "You came back alive. But the Alliance flagship endures. The war continues. Every night you wonder — if you had held just three more rounds, would the ending have been different."
+    legacy: "In later campaigns — the Alliance's defenses are stronger. But players gain a new personal objective: 'Next time, we will not withdraw.'"
+
+self_destruct:
+  initial: 15
+  note: "The self-destruct cannot be fully disabled (DC 30). It can only be delayed. The Engineer may need to make breach checks every round in this mission to buy time."
+
+special_rules:
+  - rule: "Two Vessels Coexist"
+    description: "The Ruthless and the Void are two independent maps. The docking connection is the only passage. Players can move between the two vessels — but each crossing of the connection may encounter a patrol."
+  - rule: "Mothership Withdrawal"
+    description: "Round 8 — the Arbitrator's comms cut out. From then on: no mothership support, Extraction DC +3, must seize enemy escape pods. The Game Master (GM) should create the strongest sense of despair at this moment."
+  - rule: "Level 10 Exclusive Challenge"
+    description: "If the squad includes a Void Breacher (level 10 character) — their 'Refuse Death' ability is critical in this mission. It is recommended that the Game Master (GM) make this ability the focal point of the story at a critical moment."
+
+map_files:
+  - "../maps/雙子末日_S5.yaml"

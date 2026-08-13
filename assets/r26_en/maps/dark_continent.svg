@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" font-family="sans-serif">
+<rect x="0" y="0" width="600" height="760" fill="#0f1424"/>
+<rect x="0" y="0" width="600" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">Dark Continent</text>
+<text x="580" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">Unknown Continent · Deep Layer</text>
+<line x1="300" y1="82" x2="300" y2="138" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="182" x2="130" y2="268" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="182" x2="300" y2="268" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="182" x2="470" y2="268" stroke="#3a4a72" stroke-width="2"/>
+<line x1="470" y1="312" x2="300" y2="408" stroke="#3a4a72" stroke-width="2"/>
+<line x1="300" y1="452" x2="300" y2="588" stroke="#3a4a72" stroke-width="2"/>
+<rect x="238" y="38" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="58" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Lake Mobius</text>
+<text x="300" y="76" fill="#9fb3e0" font-size="11" text-anchor="middle">Voyage Starting Point</text>
+<rect x="247" y="138" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="158" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">The Gate</text>
+<text x="300" y="176" fill="#9fb3e0" font-size="11" text-anchor="middle">Entry Trial</text>
+<rect x="58" y="268" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="130" y="288" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Hill of Memory Crystals</text>
+<text x="130" y="306" fill="#9fb3e0" font-size="11" text-anchor="middle">CR10</text>
+<rect x="228" y="268" width="144" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="288" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Ancient Civilization Ruins</text>
+<text x="300" y="306" fill="#9fb3e0" font-size="11" text-anchor="middle">CR11 Core</text>
+<rect x="408" y="268" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="470" y="288" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Spring of Reverse Crystallization</text>
+<text x="470" y="306" fill="#9fb3e0" font-size="11" text-anchor="middle">CR13 Dragon</text>
+<rect x="238" y="408" width="125" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="428" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Tear Sea</text>
+<text x="300" y="446" fill="#9fb3e0" font-size="11" text-anchor="middle">Emotion Made Physical</text>
+<rect x="247" y="588" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="300" y="608" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Five Calamities</text>
+<text x="300" y="626" fill="#9fb3e0" font-size="11" text-anchor="middle">Ultimate Threat</text>
+<text x="20" y="748" fill="#5e6f9c" font-size="11">Hunter × Hunter TRPG · Map schematic (not to scale)</text>
+</svg>

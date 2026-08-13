@@ -1,0 +1,157 @@
+# Ostwin City Map
+# Corresponds to: All scenarios
+# Purpose: GM reference for city layout, district connections, and travel routes
+
+map_id: "ostwin_city_map"
+map_name: "Ostwin City Map"
+projection: "Vertical north–south oval, with the River Velta running east–west through the city"
+
+# ── Nodes (six major districts + key locations) ──
+nodes:
+  - id: "old_town"
+    name: "Old Town"
+    type: "District"
+    description: "Centuries-old cobblestone streets interwoven with Ottoman-era buildings and Orthodox churches"
+    population_pre_siege: 180000
+    scavenge_rating: 3
+    danger_rating: 4
+    special_rules: "Stealth checks gain +1 (familiar with narrow alleys); increased chance of encountering snipers"
+    landmarks:
+      - "St. Michael's Cathedral"
+      - "Stone Bridge Market"
+      - "Turkish Bath Ruins"
+    connections: ["city_center", "south_suburb", "underground_old_city"]
+
+  - id: "city_center"
+    name: "City Center"
+    type: "District"
+    description: "Neoclassical government buildings, banks, upscale shopping malls, central square — a primary artillery target"
+    population_pre_siege: 250000
+    scavenge_rating: 5
+    danger_rating: 5
+    special_rules: "Each scavenging attempt requires an additional artillery-risk check (Willpower DC 10)"
+    landmarks:
+      - "Republic Parliament Building"
+      - "Kolvannia National Bank"
+      - "Liberty Square"
+      - "Ostwin Grand Theater"
+    connections: ["old_town", "north_suburb", "industrial_district", "university_district", "sniper_alley"]
+
+  - id: "industrial_district"
+    name: "Industrial District"
+    type: "District"
+    description: "Large factories, chimneys, warehouse complexes, railway branches, and workers' dormitories"
+    population_pre_siege: 80000
+    scavenge_rating: 3
+    danger_rating: 3
+    special_rules: "Chance of scavenging fuel is doubled"
+    landmarks:
+      - "Kolvannia Textile Union Factory"
+      - "Ostwin Power Plant (decommissioned)"
+      - "Freight Train Station"
+    connections: ["city_center", "university_district", "south_suburb"]
+
+  - id: "university_district"
+    name: "University District"
+    type: "District"
+    description: "Modern buildings, tree-lined campuses, libraries, and laboratories"
+    population_pre_siege: 50000
+    scavenge_rating: 4
+    danger_rating: 2
+    special_rules: "Chance of scavenging medicine is doubled; opportunity to find special knowledge resources"
+    landmarks:
+      - "Ostwin National University Main Building"
+      - "University Library"
+      - "Medical School Affiliated Clinic"
+    connections: ["city_center", "industrial_district", "north_suburb"]
+
+  - id: "north_suburb"
+    name: "North Suburb"
+    type: "District"
+    description: "Upscale detached villas, international schools, and diplomatic residential quarters"
+    population_pre_siege: 60000
+    scavenge_rating: 4
+    danger_rating: 3
+    special_rules: "Highest chance of scavenging comfort-related supplies (Luxuries & Comforts)"
+    landmarks:
+      - "Embassies of Various Countries (evacuated)"
+      - "North Suburb Shopping Mall"
+      - "St. Anthony International Hospital"
+    connections: ["city_center", "university_district"]
+
+  - id: "south_suburb"
+    name: "South Suburb"
+    type: "District"
+    description: "Logistics and warehousing zone, abandoned factories, railway marshalling yards, refugee camp"
+    population_pre_siege: 150000
+    scavenge_rating: 2
+    danger_rating: 4
+    special_rules: "Primary stronghold of the black market; trade checks gain +1"
+    landmarks:
+      - "Ostwin Freight Hub"
+      - "River Velta Freight Dock"
+      - "South Suburb Refugee Camp"
+    connections: ["old_town", "industrial_district", "black_market_hub"]
+
+  - id: "sniper_alley"
+    name: "Sniper Alley"
+    type: "Danger Zone"
+    description: "An open stretch of Republic Avenue — covered by sniper fire. Crossing in daytime is extremely dangerous."
+    danger_rating: 5
+    special_rules: "Daytime crossing: one sniper shot (+5 to hit, at least a Fatal Wound). Night crossing: risk greatly reduced."
+    connections: ["city_center_east", "city_center_west"]
+
+  - id: "underground_old_city"
+    name: "Old Town Underground Passages"
+    type: "Secret Route"
+    description: "An ancient drainage system built during the Ottoman period. Dark, damp, and maze-like, but allows safe travel beneath Old Town."
+    danger_rating: 2
+    special_rules: "Movement in darkness — requires a light source or Agility DC 14 to proceed blind. Moderate chance of encountering feral dogs."
+    connections: ["old_town_north", "old_town_south", "south_suburb"]
+
+  - id: "black_market_hub"
+    name: "Black Market Hub"
+    type: "Special Location"
+    description: "The central hub of an underground trading network within the abandoned warehouse clusters of the South Suburb. The main operating area of the Black River Merchant Guild."
+    danger_rating: 3
+    connections: ["south_suburb"]
+
+  - id: "river_velta"
+    name: "River Velta"
+    type: "Natural Landmark"
+    description: "Runs east–west through the city. Three bridges were destroyed in the early days of the siege; only one Federal Army-controlled temporary pontoon bridge remains."
+    connections: ["Pontoon Bridge (Federal Army-controlled)"]
+
+# ── Main roads ──
+main_roads:
+  - name: "Republic Avenue"
+    direction: "North–South"
+    route: "North Suburb → City Center → Old Town → South Suburb"
+    condition: "Blocked by rubble in multiple places; the City Center section is 'Sniper Alley'"
+  
+  - name: "Riverside Road"
+    direction: "East–West"
+    route: "University District ↔ Industrial District (along the south bank of the River Velta)"
+    condition: "Relatively intact, but some stretches are exposed to the opposite bank's line of sight"
+  
+  - name: "Ring Road"
+    direction: "Ring"
+    route: "Circles the city's outer perimeter"
+    condition: "Some stretches still under Federal Army control"
+
+# ── Tactical points ──
+tactical_points:
+  - "Three bridges destroyed, only one Federal Army pontoon bridge remains — crossing the river is extremely difficult"
+  - "Old Town underground drainage system — a key route for stealthy movement"
+  - "Republic Avenue 'Sniper Alley' — cannot be safely crossed in daytime"
+  - "University District — a relatively safe area, suitable as a shelter site"
+  - "South Suburb black market — the only channel for obtaining scarce supplies (but risky)"
+
+# ── GM travel-time reference ──
+travel_times:
+  - route: "Between adjacent districts"
+    time: "30–60 minutes on foot (depending on stealth speed and route safety)"
+  - route: "Old Town → North Suburb"
+    time: "2–3 hours on foot (requires crossing the City Center or taking a detour)"
+  - route: "Via the underground passages (Old Town north–south)"
+    time: "45 minutes on foot (but requires navigation in darkness)"

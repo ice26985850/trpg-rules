@@ -1,0 +1,28 @@
+# Broodmother-class Bio-Ship (Broodmother-class Bio-Ship)  —  S3 The Brood Nest
+# Kisrak Brood-Nest Bio-Ship, 10 core nodes, 3 organic layers
+# Corresponds to scenario: S3_The Brood Nest
+nodes:
+  - { id: N1, label: "Hull Breach Point", type: entry, x: 100, y: 300, deck: 1, gravity: "Low Gravity (0.8G  —  bio-gravity field)", environment: "Hull  —  vacuum (armor required)", hazard: "Hull spasms: vibrates every 1d6 rounds", explored: true }
+  - { id: N2, label: "Muscle Layer Entrance  —  Sphincter Passage", type: corridor, x: 250, y: 300, deck: 1, gravity: "Low Gravity (0.8G)", environment: "Warm and humid. Spore-laden air", hazard: "Sphincter contraction  —  MOB DC 10 to pass", explored: false }
+  - { id: N3, label: "Muscle Layer Passage", type: corridor, x: 400, y: 300, deck: 1, gravity: "Low Gravity (0.8G)", hazard: "4 Brood Larvae. Writhing corridor", explored: false }
+  - { id: N4, label: "Hatching Sac Chamber", type: room, x: 550, y: 300, deck: 1, gravity: "Low Gravity (0.8G)", hazard: "Hatching sac  —  larvae appear each round", explored: false }
+  - { id: N5, label: "Lymph Channel (Circulatory Layer Entrance)", type: corridor, x: 400, y: 200, deck: 2, gravity: "Low Gravity (0.8G)", environment: "Submerged in lymph fluid  —  movement halved. Mildly acidic", hazard: "2 Brood Warriors", explored: false }
+  - { id: N6, label: "Circulatory Channel", type: corridor, x: 550, y: 200, deck: 2, gravity: "Low Gravity (0.8G)", hazard: "Immune response  —  antibody organisms", explored: false }
+  - { id: N7, label: "Nutrient Storage", type: room, x: 700, y: 200, deck: 2, gravity: "Low Gravity (0.8G)", hazard: "Abundant organic matter (recover for +1 Reputation)", explored: false }
+  - { id: N8, label: "Heart Core Entrance  —  Valve Passage", type: corridor, x: 550, y: 100, deck: 3, gravity: "Standard Gravity (1G  —  near the heart)", hazard: "Valve opens/closes each round  —  pass only with right timing", explored: false }
+  - { id: N9, label: "Heart Core Passage", type: corridor, x: 400, y: 100, deck: 3, gravity: "Standard Gravity (1G)", hazard: "Ship heartbeat  —  vibrates each round", explored: false }
+  - { id: N10, label: "Broodmother Chamber (Heart)⭐", type: objective, x: 250, y: 100, deck: 3, gravity: "Standard Gravity (1G)", hazard: "2 Brood Guardians + Brood Brain Worm (Boss)", explored: false }
+edges:
+  - { from: N1, to: N2, type: "Cut through hull to enter" }
+  - { from: N2, to: N3, type: "Sphincter Passage" }
+  - { from: N3, to: N4, type: "Muscle Layer Passage" }
+  - { from: N3, to: N5, type: "Vertical Passage (Climb)" }
+  - { from: N5, to: N6, type: "Lymph Channel" }
+  - { from: N6, to: N7, type: "Circulatory Channel" }
+  - { from: N6, to: N8, type: "Vertical Passage" }
+  - { from: N8, to: N9, type: "Valve Passage" }
+  - { from: N9, to: N10, type: "Heart Core Passage" }
+regions:
+  - { name: "Muscle Layer (Muscle Layer)", color: "#CC9999", nodes: [N1, N2, N3, N4] }
+  - { name: "Circulatory Layer (Circulatory Layer)", color: "#99CC99", nodes: [N5, N6, N7] }
+  - { name: "Heart Core Layer (Heart Core Layer)", color: "#9999CC", nodes: [N8, N9, N10] }

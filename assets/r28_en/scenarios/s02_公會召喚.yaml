@@ -1,0 +1,35 @@
+# Otherworld Invasion TRPG Scenario — Guild Summons
+# id: S2
+
+id: S2
+title: Guild Summons
+season: 1
+season_name: Awakening Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Tower of Dawn
+  description: The Guild's Tokyo headquarters, originally a 40-story office building, now converted into an Awakener base.
+- name: Bayside Industrial Zone
+  description: An abandoned factory district where a D-Rank Rift is forming.
+key_npcs:
+- name: Chairman Kurosaki
+  role: Chairman of the Tower of Dawn, a B-Rank Awakener. Assigns the players their commission.
+- name: Intelligence Officer Yamada
+  role: Responsible for analyzing rift data and providing the mission briefing.
+key_scenes:
+- First impressions of the Guild hall—Awakeners of all ranks coming and going
+- Industrial zone infiltration—learning Stealth and recon checks
+- Preventing the rift from fully opening—a timed mission
+- Guild internal faction politics surface for the first time (setup for S3-S4)
+enemy_list:
+- name: Gargoyle
+  quantity: 2-3
+  note: Lv.5, flying, high recon difficulty
+- name: Rift Vanguard Beast
+  quantity: '1'
+  note: Lv.8, precursor to a D-Rank Boss
+estimated_sessions:
+rewards:
+solo_adjustment:

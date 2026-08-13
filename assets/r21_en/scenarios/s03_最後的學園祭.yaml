@@ -1,0 +1,136 @@
+title: The Last School Festival
+difficulty: Advanced
+stars: 4
+loop_length: 7 days
+loop_limit: 15
+suggested_players: 3-5
+action_points: 8 + Action (ACT) Modifier (7 days, roughly 56-77 AP total)
+tone_tags:
+  - The end of youth
+  - Unspoken words
+  - Doing what must be done even knowing the ending
+loop_setting:
+  endpoint: 3:00 PM on the seventh day (the day of the School Festival); a gas incident occurs at the school and the entire school dies
+  start: 7:00 AM, seven days before the School Festival (Monday); the players wake up in the classroom
+  boundary: The entire school campus (including dorms, gymnasium, and the hill behind)
+  opening: "You wake up at your desk. Your cheek is pressed against the cool desktop, a trace of drool still at the corner of your mouth. Written on the blackboard: '7 days until the School Festival.' The cherry blossoms outside are in bloom—but you remember the cherry trees shouldn't bloom until next week."
+core_truth:
+  anchor_event: "The instant student Su Mian collapsed in the gas, her only thought was 'I still haven't told Classmate Lin I like him'—this regret tore reality apart."
+  surface_story: On the day of the School Festival, gas leaks from the lab—an accident; the whole school perishes.
+  real_story: "Chemistry teacher Jiang Xue hid a fatal lab accident (assistant Zhou Yang), and the gas kept spreading; but the Rift was caused by Su Mian's regret, not Jiang Xue."
+  healing_conditions:
+    - Su Mian (or with the players' help) confesses to Classmate Lin
+    - Expose the truth of the chemistry teacher's accident
+    - Optional: prevent the gas from spreading on the day of the School Festival
+truth_fragments:
+  - name: Su Mian's Diary
+    type: Item
+    location: Su Mian's desk
+    difficulty: Easy
+    loop: 1
+    detail: "A diary written, torn up, and rewritten again and again; every page has only one line: 'Didn't say it today, either.'"
+  - name: The Locked Lab
+    type: Scene
+    location: Chemistry lab
+    difficulty: Medium
+    loop: 3
+    detail: "Locked since three days before the School Festival, a faint smell of bitter almonds seeps from the door gap."
+  - name: The Missing Assistant
+    type: Conversation
+    location: Students
+    difficulty: Easy
+    loop: 2
+    detail: "The senior student Zhou Yang suddenly took leave four days before the School Festival and was never seen again; teachers say he 'transferred.'"
+  - name: Jiang Xue's Overtime Records
+    type: Document
+    location: Faculty office
+    difficulty: Hard
+    loop: 4
+    detail: "Jiang Xue was in the lab from three days before the School Festival until the night before, her signature growing messier."
+  - name: The Ventilation System Map
+    type: Item
+    location: School administration office
+    difficulty: Medium
+    loop: 5
+    detail: "The vents connect to the entire school, including the gymnasium (the main venue of the School Festival)."
+  - name: Classmate Lin's Notebook
+    type: Item
+    location: Library
+    difficulty: Easy
+    loop: 1
+    detail: "Classmate Lin borrowed a poetry collection, with a slip tucked inside: wants to read it under the cherry tree to someone."
+  - name: Su Mian's Final Moment
+    type: Memory
+    location: Gymnasium
+    difficulty: Special
+    loop: 7+
+    detail: "At the instant the gas spreads, if a player is near Su Mian, a flashback triggers: as she falls she looks at Classmate Lin, her lips form 'I like you.'"
+  - name: Jiang Xue's Confession
+    type: Conversation
+    location: Triggered
+    difficulty: Hard
+    loop: 8+
+    detail: "Confront her with Fragments 2+3+4+5, and she breaks down admitting her cover-up killed the whole school."
+key_npcs:
+  - name: Su Mian
+    role: The Girl Who Never Confessed (Anchor character)
+    age: 17
+    emotion_baseline: 5/10
+    sensitivity: Extremely High
+    notes: "Every loop she walks toward Classmate Lin at 2:55 PM on the seventh day but never makes it; if reminded before 2:50 PM, it directly triggers the Rift-Healing."
+  - name: Classmate Lin
+    role: The Crush
+    age: 17
+    emotion_baseline: 7/10
+    sensitivity: High
+    notes: "Actually likes Su Mian too, but she never saw his note; in Loop 6+ may unconsciously doodle Su Mian's name."
+  - name: Jiang Xue
+    role: The Chemistry Teacher
+    age: 34
+    emotion_baseline: 3/10
+    sensitivity: High
+    notes: "Not a bad person, covered up after making a mistake; in Loop 8+ may voluntarily go to the principal's office to confess."
+  - name: Zhou Yang
+    role: The Vanished Assistant
+    age: 18
+    emotion_baseline: N/A
+    sensitivity: N/A
+    notes: "Died before the loop began, afterimage occasionally appears, the Rift's 'omen.'"
+  - name: The Principal
+    role: The One in the Know
+    age: 58
+    emotion_baseline: 6/10
+    sensitivity: Medium
+    notes: "Knows Jiang Xue is hiding something, chose to trust her; his daughter was also at the school on the day of the School Festival."
+degradation:
+  - phase: Loops 1-3 (Mirror)
+    description: Normal school life, build familiarity with Su Mian and Classmate Lin.
+  - phase: Loops 4-6 (Ripple)
+    description: Cherry blossoms wither early, Jiang Xue begins to make mistakes, the number of pages in Su Mian's diary changes daily.
+  - phase: Loops 7-9 (Crack)
+    description: The broadcast occasionally plays songs from a foreign era, corridor lengths change, Su Mian may briefly "realize" the loop.
+  - phase: Loops 10-12 (Fracture)
+    description: The chemistry lab door disappears but the gas still spreads, Zhou Yang's afterimage begins to interact with other NPCs.
+  - phase: Loops 13-15 (Collapse)
+    description: The School Festival decorations change on their own, the gymnasium clock runs backward, Su Mian automatically walks toward Classmate Lin on the seventh day but time slows.
+endings:
+  - id: A
+    name: The Confession
+    grade: Perfect
+    condition: Expose Jiang Xue's truth + Su Mian confesses before the spread + prevent the spread
+    narrative: "The School Festival proceeds normally, Su Mian finishes the poem under the cherry tree, the whole school is saved."
+  - id: B
+    name: Regretful Yet Whole
+    grade: Advanced-Good
+    condition: Truth exposed but the gas could not be stopped, Su Mian confesses at the last moment
+    narrative: "The whole school dies but the loop stops, Su Mian's regret is filled, the Rift heals—at the cost of everyone's dissipation."
+  - id: C
+    name: Su Mian's Choice
+    grade: Hidden
+    condition: Su Mian "half-awakens" in a later loop and chooses on her own
+    narrative: "She may choose to continue the loop (seeing Classmate Lin over and over) or confess (the loop ends but she dies), leaving the choice to the players."
+  - id: D
+    name: The Last School Festival
+    grade: Bad
+    condition: Loops exhausted
+    narrative: "The school vanishes from the map, the only thing left is two characters carved into the cherry tree: 'Su Mian.'"

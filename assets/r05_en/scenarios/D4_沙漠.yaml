@@ -1,0 +1,63 @@
+name: Dungeon Module D4 — Desert
+description: Recommended Rank E/D (Challenge Rating (CR) 7–12) | Theme Golden-sand ruins, mid-tier resource farming | Acceptance Guild commission "E-Sand1 / D-Sand1" (corresponds to Rank E→D, CL 7–12); or designated by GM as a leveling ground. | Map `maps/D4_沙漠.yaml` ＋ `maps/D4_沙漠.svg` | This work has no multiclass; solo entry follows the player-count scaling rule (GM Book 13.1 Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). | Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) detailed in GM Book Chapter 17. | Positioning map enemies on top, our side on bottom, Front/Back Row spaced 2 grids (4m); solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). | Design note D4 is the stable CL 7–12 "farm EXP+G+materials" ground, refreshes daily (see Commission Catalog, reset rules).
+difficulty: E/D
+level_range:
+  - 7
+  - 12
+chapter: 4
+map_ref: maps/D4_沙漠.yaml
+initial_map: maps/D4_沙漠.yaml
+player_mode: "Single/Multi-player (Method A: one scenario + player-count scaling)"
+encounters:
+  - id: R2
+    name: Bandit Camp
+    type: Combat
+    enemies:
+      - name: Sand Bandit
+        cr: 7
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R4
+    name: Giant Scorpion Cave
+    type: Combat
+    enemies:
+      - name: Desert Giant Scorpion
+        cr: 9
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R6
+    name: Vulture Cliff
+    type: Combat
+    enemies:
+      - name: Vulture
+        cr: 10
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R10
+    name: Lizard Den Passage
+    type: Combat
+    enemies:
+      - name: Desert Lizard
+        cr: 11
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R12
+    name: Sand King Altar
+    type: Mini-boss
+    enemies:
+      - name: Sand King
+        cr: 12
+        count: 1
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+    boss: true
+rewards:
+  exp: 3108
+  gold: 350~550
+  ip: 6
+  items: []
+adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"

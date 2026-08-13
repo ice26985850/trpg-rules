@@ -1,0 +1,32 @@
+# Abyss Lord TRPG — You Are Not the Hero. You Are the Lord of the Dungeon.
+
+Seven hundred years ago, the Great Rift tore the world apart, and the surface and the Abyss have been connected ever since. Wave after wave of adventurers pour underground, calling themselves demon-slayers while in truth they come to plunder and slaughter your servants. And you — the Abyss Lord — must build a kingdom in the depths, raise monsters, lay traps, and keep the invaders at the gate, or even turn them into your own slaves. This is a "villain protagonist" dungeon-management TRPG: you need not save the world — only defend the home you love.
+
+You start from a small grotto and make choices every turn: dig to expand, build rooms, dispatch monsters to repel invaders, interrogate and convert defeated adventurers into fighting strength or labor, and even march on the surface yourself to seize resources and forge alliances. Management, defense, and morally grey choices weave together into a villain's drama.
+
+**System Highlights**
+- **d6 Dice Pool**: 5–6 is a success, a 6 explodes and chains. Pool = Attribute + Skill + Environment — intuitive yet deep.
+- **Dual-Track Attributes**: the Lord has Cunning (CUN), Dominion (DOM), Arcana (ARC), Industry (IND), Warfare (WAR); the dungeon separately has Depth (DEP), Infamy (INF), Defense (DEF), Wealth (WLH), Magic (MAG). The two tracks are tightly linked.
+- **Two-Dimensional Monsters**: every monster has both a Combat Value (CV) and a Management Value (MV). Killer or laborer? Squad-building is full of trade-offs.
+
+**Who Is This For?**
+Those who love "management + tower-defense + morally grey choices" will be hooked at once: you must calculate resources and defenses precisely while savoring the tension of the villain's perspective. Some TRPG experience is needed (a GM is required to run it); the rules are not steep.
+
+**Play Style**
+- Combat weight: Significant
+- Strategic depth: Highly strategic
+- Story-driven: Sandbox / freeform
+- Resource management: Heavy management
+- Character customization: Highly customizable
+- Character-creation complexity: Moderate
+- Rule density: Medium-weight rules
+- GM required: Yes
+
+**Estimated Play Time**
+- Single scenario: about 3–5 hours (the starter module "First Incursion" runs about 1–2 sessions)
+- Full campaign: about 40–60 hours (Lv1–15, "From Cavern to Abyss Empire")
+
+**Basic Info**
+- Players: 1 GM + 1–4 players
+- Core dice: d6 dice pool (5–6 success, 6 explodes)
+- Type: Medium-strategy TRPG / dungeon management

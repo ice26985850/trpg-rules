@@ -1,0 +1,72 @@
+scenario: S1
+section: First Demon General · Dragon Spine Peak (CL 5–12)
+map_type: explore
+title: S1_Explore_Dragon Nest
+# Coordinates are schematic (not exact distances), unit is SVG canvas pixels; advance from the outskirts toward the depths
+
+nodes:
+  - id: trail
+    label: Dragon Spine Peak Trail (Entrance)
+    x: 340
+    y: 560
+    type: Entrance
+    explored: true
+  - id: outer
+    label: Dragon Nest Outskirts
+    x: 340
+    y: 440
+    type: Wilderness
+    explored: false
+  - id: forge
+    label: Ironforge Outpost (Durin)
+    x: 520
+    y: 480
+    type: Facility
+    explored: true
+  - id: lava
+    label: Lava Cave
+    x: 340
+    y: 320
+    type: Hazard Zone
+    explored: false
+  - id: hatch
+    label: Hatchery
+    x: 220
+    y: 240
+    type: Enemy Lair
+    explored: false
+  - id: throne
+    label: Dragon General's Throne
+    x: 340
+    y: 140
+    type: Boss Point
+    explored: false
+
+edges:
+  - from: trail
+    to: outer
+    type: Passage
+  - from: outer
+    to: forge
+    type: Passage
+    label: "Gear Supply"
+  - from: outer
+    to: lava
+    type: Passage
+  - from: lava
+    to: hatch
+    type: Passage
+  - from: hatch
+    to: throne
+    type: Passage
+  - from: lava
+    to: throne
+    type: Passage
+
+regions:
+  - name: Dragon Spine Peak Outskirts
+    color: "#FFD0C0"
+    nodes: [trail, outer, forge]
+  - name: Dragon Nest Depths
+    color: "#FFB3B3"
+    nodes: [lava, hatch, throne]

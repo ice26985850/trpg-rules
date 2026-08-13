@@ -1,0 +1,98 @@
+scenario: S3
+section: Third/Fourth Demon General · Succubus General + Gel General Battle (CL 23–35)
+map_type: battle
+grid_scale: "1 cell = 2 meters"
+title: S3_Battle_Twin Generals
+# Coordinates are exact grid coordinates (col, row, 0–9), for distance and range calculation
+# Twin bosses: Succubus General (left) + Gel General (right); front/back rows are 2 cells apart
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: Enemy, role: Front, color: "#FF8A8A"}
+    - {row: 1, side: Enemy, role: Back, color: "#FFC8C8"}
+    - {row: 6, side: Ally, role: Front, color: "#8AAEFF"}
+    - {row: 8, side: Ally, role: Back, color: "#C8D8FF"}
+  aoe:
+    - {cx: 3, cy: 2, r: 2, label: Charm Illusion Area Effect (AOE, radius 2 cells = 4m)}
+    - {cx: 7, cy: 2, r: 2, label: Gel Spray Area Effect (AOE, radius 2 cells = 4m)}
+
+nodes:
+  - id: succubus
+    label: Succubus General (Lilith)
+    x: 3
+    y: 1
+    type: boss
+    explored: true
+  - id: slime
+    label: Gel General (Plume)
+    x: 7
+    y: 1
+    type: boss
+    explored: true
+  - id: e_illus
+    label: Enemy Illusion Attendant
+    x: 5
+    y: 2
+    type: Enemy Support
+    explored: true
+  - id: e_front_a
+    label: Enemy Front-row A
+    x: 4
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_front_b
+    label: Enemy Front-row B
+    x: 6
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: p_front_war
+    label: Ally Front-row Warrior
+    x: 3
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_front_monk
+    label: Ally Front-row Monk
+    x: 6
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_back_mage
+    label: Ally Back-row Mage
+    x: 4
+    y: 8
+    type: Ally Back
+    explored: true
+  - id: p_back_cleric
+    label: Ally Back-row Cleric
+    x: 5
+    y: 8
+    type: Ally Back
+    explored: true
+  - id: p_back_dancer
+    label: Ally Back-row Dancer
+    x: 7
+    y: 8
+    type: Ally Back
+    explored: true
+
+edges:
+  - from: succubus
+    to: e_illus
+    type: Command
+  - from: slime
+    to: e_front_b
+    type: Command
+  - from: e_front_a
+    to: p_front_war
+    type: Melee
+    style: dashed
+  - from: e_illus
+    to: p_back_dancer
+    type: Range
+    style: dashed
+    label: "Illusion Threat"

@@ -1,0 +1,19 @@
+# Otherworld Invasion TRPG Scenario — Abyssal Expedition
+# id: S9
+
+id: S9
+title: Abyssal Expedition
+season: 3
+season_name: Expedition Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: Depths of the Beastman Forest
+- name: Outskirts of the World Heart
+- name: Ancient Ruins (pre-civilization site)
+key_scenes:
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

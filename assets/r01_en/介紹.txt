@@ -1,0 +1,39 @@
+SAO TRPG (Sword Art Online Adaptation) — Player Introduction
+
+[Reference Work Notice]
+This is a tabletop role-playing game (TRPG) directly adapted from the light novel / anime "Sword Art Online" (SAO; original author: Reki Kawahara), specifically the "Aincrad Arc." This is a fan-made, non-official adaptation created as a tribute to the original work; it is not any licensed product.
+
+[One-Line Pitch]
+Trapped inside a VRMMO where death is real, you have one goal — survive and clear all 100 floors.
+
+[World Overview]
+In the year 2022, ten thousand players donned the NerveGear helmet, only to be locked inside the steel floating castle of "Aincrad." Each floor is its own world, and the only way out is to defeat the Floor Boss (BOSS) guarding the top — the 100th floor. The most despairing rule: when your Hit Points (HP) reach zero, your real-world brain is fried — this isn't a game, it's life and death.
+
+[Who You Play / What You Do]
+You are a trapped player. You survive by exploring mazes, slaying Floor Bosses, forging gear, and running guilds. The core tension comes from "permanent death" — fall, and you never return; every sortie is a gamble.
+
+[System Highlights]
+- D100 (Hundred-Sided Die) intuitive checks: roll D100 ≤ your stat to succeed; difficulty adjusted by modifiers; a newcomer can learn in about an hour.
+- Sword Skills (SWD) and Switch (SW): spend Sword Energy (SP) to unleash finishing moves, but leave yourself open with recovery lag; the ally-to-ally "Switch" combo is the key tactic for clearing the upper floors.
+- Skill-slot limits: you can't equip every skill you learn — you must choose, which makes every character unique.
+
+[Who It's For]
+Players who enjoy high-tension combat, narrative immersion, and character building will feel right at home. Whether you're a TRPG newcomer (core rules are easy to grasp) or a veteran (deep point-buy and tactics to dig into), you'll find your fun. Solo play is also supported, fighting alongside NPC companions.
+
+[Game Style Tags]
+- Combat Weight: Core
+- Strategic Depth: High Strategy
+- Story-Driven: Story-Supported
+- Resource Management: Moderate
+- Character Customization: High
+- Character Creation Complexity: Medium
+- Rule Density: Medium
+- GM Requirement: Optional GM (can be a multiplayer group, or solo)
+
+[Estimated Play Time]
+- Single Scenario (one volume / one floor-clearing arc): about 8–20 hours
+- Full Campaign (Lv.1→100, all five volumes, 100 floors): about 130–280 hours; you may also play only the volumes you like
+
+[Basic Info]
+- Players: 1–6 (solo or party clearing)
+- Core Dice: D100 (Hundred-Sided Die)

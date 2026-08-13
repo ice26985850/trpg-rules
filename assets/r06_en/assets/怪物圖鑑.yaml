@@ -1,0 +1,115 @@
+Name: "Devour Gene: Chronicle of Evolution — Monster Codex"
+Sections:
+  - Title: "Mutant Rat (Minion-tier)"
+    Table:
+      - {Item: "HP", Content: "8"}
+      - {Item: "Defense Value", Content: "15 (S1 Minion tier)"}
+      - {Item: "Attributes", Content: "Strength 2, Agility 5, Constitution 2, Perception 3, Will 1"}
+      - {Item: "Attack", Content: "Bite: melee 1d4+4, inflicts disease (Constitution DC 10 or else poisoned)"}
+      - {Item: "Biomass", Content: "1"}
+      - {Item: "Absorbable", Content: "①Night Vision (passive) ②Burrow Stealth (low-tier active) ③Disease Resistance (passive)"}
+      - {Item: "AI", Content: "Prioritize attacking nearest target. Flee when near death (Will DC 12). When an ally is near death, grow savage (attack +1)"}
+  - Title: "Nest Guardian (Elite-tier)"
+    Table:
+      - {Item: "HP", Content: "40"}
+      - {Item: "Defense Value", Content: "17 (S1 Elite tier)"}
+      - {Item: "Attributes", Content: "Strength 7, Agility 5, Constitution 6, Perception 7, Will 3"}
+      - {Item: "Energy", Content: "12"}
+      - {Item: "Skills", Content: "Tail Sting (low-tier, 1AP/1EN, 1d8+5+poison), Bone Plate Charge (low-tier, 1d6+5+knockback), Compound Eye Lock (passive: Perception advantage)"}
+      - {Item: "Biomass", Content: "5"}
+      - {Item: "Absorbable", Content: "①Compound Eye Prototype (organ) ②Hardened Skin (passive) ③Tail Sting (low-tier active) ④Bone Plate Defense (passive) ⑤Insect Affinity (passive)"}
+      - {Item: "AI", Content: "Guard the doorway. Rampages when player approaches the door (attack +2). Will not leave post"}
+  - Title: "Scrap Golem (Minion-tier)"
+    Table:
+      - {Item: "HP", Content: "15"}
+      - {Item: "Defense Value", Content: "15 (S2 Minion tier)"}
+      - {Item: "Attributes", Content: "Strength 4, Agility 1, Constitution 6, Perception 1, Will 1"}
+      - {Item: "Attack", Content: "Charge: melee 1d6+5"}
+      - {Item: "Biomass", Content: "0 (Inorganic)"}
+      - {Item: "Absorbable", Content: "①Metallization (passive) ②Reinforced Bones (attribute) ③Magnetic Sense (passive)"}
+      - {Item: "AI", Content: "Patrol fixed route. Swarm upon detecting intruder"}
+  - Title: "Defense Array (Elite-tier)"
+    Table:
+      - {Item: "HP", Content: "35"}
+      - {Item: "Defense Value", Content: "18 (S2 Elite tier)"}
+      - {Item: "Attributes", Content: "Strength 5, Agility 4, Constitution 7, Perception 6, Will 5"}
+      - {Item: "Energy", Content: "12"}
+      - {Item: "Skills", Content: "Laser Cannon (mid-tier, 2d8+6 fire), Force Field Shield (+2 Defense), Freezing Beam (mid-tier, 2d6+6 frost+freeze)"}
+      - {Item: "Biomass", Content: "0 (Mechanical)"}
+      - {Item: "Absorbable", Content: "None (mechanical body cannot be absorbed)"}
+      - {Item: "AI", Content: "Prioritize protecting the core laboratory. Uses ultimate after shield"}
+  - Title: "Prototype Ω (Boss-tier)"
+    Table:
+      - {Item: "HP", Content: "60"}
+      - {Item: "Defense Value", Content: "20 (S2 Boss tier)"}
+      - {Item: "Attributes", Content: "Strength 8, Agility 6, Constitution 8, Perception 4, Will 10"}
+      - {Item: "Energy", Content: "18"}
+      - {Item: "Skills", Content: "Gene Collapse (high-tier, Will DC 16 or lose node effects for 3 rounds), Polymorphic Attack (mid-tier, 1d10+7, attacks all targets), Energy Devour (passive, +2 Energy when hit by skill attack)"}
+      - {Item: "Absorbable", Content: "①Gene Stabilization (passive: Humanity -1) ②Polymorphic Organ (organ) ③Energy Devour (passive)"}
+      - {Item: "AI", Content: "Targets the strongest opponent. Prioritizes Gene Collapse when HP < 50%"}
+  - Title: "Bio-Mecha (Elite-tier)"
+    Table:
+      - {Item: "HP", Content: "45"}
+      - {Item: "Defense Value", Content: "21 (S3 Elite tier)"}
+      - {Item: "Attributes", Content: "Strength 8, Agility 3, Constitution 8, Perception 4, Will 2"}
+      - {Item: "Skills", Content: "Bio Cannon (mid-tier, 2d8+8), Tentacle Bind (mid-tier, Agility DC 15), Energy Absorption (passive: recover 5HP/round near essence pool)"}
+      - {Item: "Absorbable", Content: "Bio Fusion (organ: can fuse with machinery)"}
+      - {Item: "AI", Content: "Guard the essence pool. Prioritize attacking targets approaching the pool edge"}
+  - Title: "Many-Faced Bishop (Boss-tier)"
+    Table:
+      - {Item: "HP", Content: "90"}
+      - {Item: "Defense Value", Content: "23 (S3 Boss tier)"}
+      - {Item: "Attributes", Content: "Strength 7, Agility 8, Constitution 7, Perception 9, Will 12"}
+      - {Item: "Energy", Content: "20"}
+      - {Item: "Skills", Content: "Form Switch (passive: switch form each round), Many-Faced Touch (high-tier, copy node), Evolution Deprivation (ultimate, permanently lose node)"}
+      - {Item: "Absorbable", Content: "①Form Switch (weakened) ②Copy Touch (high-tier) ③Many-Faced Shell (passive)"}
+      - {Item: "AI", Content: "Form cycle: humanoid → tentacle → flight. Does not easily act personally"}
+  - Title: "Purification Marshal Elena (Boss-tier)"
+    Table:
+      - {Item: "HP", Content: "80"}
+      - {Item: "Defense Value", Content: "23 (S3 Boss tier)"}
+      - {Item: "Attributes", Content: "Strength 9, Agility 7, Constitution 6, Perception 8, Will 10"}
+      - {Item: "Skills", Content: "Purification Strike (mid-tier, 2d10+9+energy purge), Evolution Suppression Field (high-tier, node effects halved), Humanity Judgment (ultimate, lose consciousness if Humanity <40%)"}
+      - {Item: "Absorbable", Content: "N/A (human, not recommended to absorb)"}
+      - {Item: "AI", Content: "Prioritize targeting lowest Humanity target. Protects own engineers"}
+  - Title: "Wild King Zarakth (Boss-tier)"
+    Table:
+      - {Item: "HP", Content: "120 (Phase 1) / Nest Protection Mode (Phase 2)"}
+      - {Item: "Defense Value", Content: "25 (S4 Boss tier)"}
+      - {Item: "Attributes", Content: "Strength 14, Agility 8, Constitution 12, Perception 10, Will 8"}
+      - {Item: "Energy", Content: "22"}
+      - {Item: "Skills", Content: "Giant Jaw Bite (2d8+11), Tail Sweep (mid-tier, 2d6+11+knockdown), Lava Breath (high-tier, 3d10+11 lava terrain), Dragon Scales (passive: all damage -3)"}
+      - {Item: "Second Phase", Content: "Damage +1d6, but does not leave nest. Can communicate (Will DC 20)"}
+      - {Item: "Absorbable", Content: "①Dragon Scales (passive) ②Lava Breath (high-tier) ③Beast Heart (organ) ④Territory Sense (passive) ⑤Paternal Instinct (passive, peace-limited)"}
+      - {Item: "AI", Content: "Phase 1 frontal combat. HP<60% retreat to protect offspring"}
+  - Title: "Immortal Kane — Champion (Boss-tier / Ultimate)"
+    Table:
+      - {Item: "HP", Content: "150"}
+      - {Item: "Defense Value", Content: "30 (S4 Ultimate Boss tier)"}
+      - {Item: "Attributes", Content: "Strength 12, Agility 14, Constitution 12, Perception 14, Will 16"}
+      - {Item: "Energy", Content: "28"}
+      - {Item: "Form Cycle", Content: "Behemoth (physical type) → Spirit (physical immunity + mental type) → Element (element immunity + hybrid type)"}
+      - {Item: "Skills", Content: "Earthquake Smash (2d10+14), Devour (2d8+14, absorbs target Biomass), Psychic Storm (2d8+14 psychic, area), Soul Rend (ultimate, 3d10+16 psychic), Elemental Storm (ultimate, 3d12+16 elemental), Elemental Shield (passive: elemental damage -3)"}
+      - {Item: "Absorbable", Content: "Champion Body (ultimate form)"}
+      - {Item: "AI", Content: "Legendary Evolver of 30+ nodes. Waited 50 years seeking a worthy opponent. Can be resolved peacefully"}
+  - Title: "Seven-Headed Serpent (Elite-tier)"
+    Table:
+      - {Item: "HP", Content: "60 (each head 12 HP)"}
+      - {Item: "Defense Value", Content: "23 (S5 Elite tier)"}
+      - {Item: "Mechanic", Content: "Seven heads each attack independently once (1d6+11). Each destroyed head -1 attack count"}
+      - {Item: "AI", Content: "Prioritize nearest target. Becomes more aggressive after heads destroyed"}
+  - Title: "Void Fluid (Elite-tier ×3)"
+    Table:
+      - {Item: "HP", Content: "25 each"}
+      - {Item: "Defense Value", Content: "8 (special: fluid form, does not use tiered defense formula; physical attacks against it suffer Disadvantage)"}
+      - {Item: "Skills", Content: "Devour Contact (Will DC 15 or else Humanity -1d4), Split (when HP<10 splits into two of 10HP each)"}
+      - {Item: "AI", Content: "Slow movement. Prioritize surrounding target. More dangerous when gathered"}
+  - Title: "Abyssal Gatekeeper (Boss-tier)"
+    Table:
+      - {Item: "HP", Content: "100"}
+      - {Item: "Defense Value", Content: "25 (S5 Boss tier)"}
+      - {Item: "Attributes", Content: "Strength 10, Agility 8, Constitution 12, Perception 10, Will 14"}
+      - {Item: "Energy", Content: "18"}
+      - {Item: "Skills", Content: "Void Tentacle (mid-tier, 2d8+12 psychic+Humanity-1), Worm's Roar (high-tier, area Will DC 18 lose action), Abyssal Gaze (ultimate, Will DC 22 Humanity halved)"}
+      - {Item: "Absorbable", Content: "①Void Resistance (passive) ②Abyss Sense (passive) ③Abyssal Gaze (high-tier — uses Humanity -2)"}
+      - {Item: "AI", Content: "Cannot communicate. Prioritize using Abyssal Gaze on lowest Humanity target"}

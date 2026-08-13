@@ -1,0 +1,103 @@
+# Scenario 3: Warehouse No. 10 — Structured Scenario
+
+scenario:
+  name: "Scenario 3: Warehouse No. 10"
+  mode: [Multiplayer, Solo]
+
+  background: |
+    Warehouse No. 10 in the Ash Harbor District is a Sealed Artifact black market disguised as an ordinary storage depot. For three months, multiple Tier-2-and-above Sealed Artifacts have been stolen from various institutions and factions. Someone is systematically collecting high-tier Sealed Artifacts. The trail points to Warehouse No. 10—but Warehouse No. 10 itself has also been attacked. Its keeper, "Old John" (Spectator Pathway Sequence 5, a retired Beyonder), has sent the players a plea for help.
+
+  hooks:
+    - "**Commission**: The Nighthawks/Church commission the players as \"unofficial\" personnel to investigate—the authorities are unsuited to intervene directly in the black market."
+    - "**Pursuit**: A common name is surfacing behind the antagonists the players previously defeated."
+    - "**Old John's Plea**: One of the players knows Old John (can be set up as an NPC relationship)."
+
+  acts:
+    - title: "Act 1: Investigation"
+      content: |
+        **Clue Point 1 — Warehouse No. 10 (Ash Harbor District docks)**
+        - Status: The warehouse has been ransacked; three Tier-2 Sealed Artifacts are missing. Old John is gravely wounded but alive.
+        - Clue: The attackers left behind a gear-shaped badge—belonging to an organization called the "Gear Council."
+        - Old John's account: "They didn't come to buy. The leader was a woman wearing a bronze mask. She said this was 'restocking,' not 'robbery.'"
+        
+        **Clue Point 2 — Tracking the Stolen Sealed Artifacts**
+        - Missing Sealed Artifact list:
+          1. "Blood Oath Goblet" (Tier 2 / Criminal Pathway) — can force the signing of a contract.
+          2. "Nightwatcher's Pocket Watch" (Tier 2 / Sleepless Pathway) — can pause time for 1 round.
+          3. "Living Map" (Tier 2 / Seer Pathway) — can mark any person's real-time location.
+        - Mysticism check: What can these three Sealed Artifacts achieve together? → Track a specific person + force a contract with them + create an inescapable timing window.
+        
+        **Clue Point 3 — Gear District Difference Engine Center**
+        - Academic / Mysticism challenge: Someone recently queried the Difference Engine's encrypted records—keywords: "Blasphemy Slate," "Ancient Sun God," "Blackwood."
+        - The Difference Engine shows these queries came from different identities but the same handwriting—someone is using false identities to study a dangerous subject touching ancient history.
+        
+        **Clue Point 4 — Ash Harbor District Back Alley**
+        - Social challenge: Pump gang members for information on the Gear Council.
+        - Info: The Gear Council is an emerging force that rose within the past two years. Most members are artisans, inventors, and Difference Engine programmers. But they do not sell things—they are "building things."
+        - Deeper intel (high-difficulty Negotiation/Bribery): The Gear Council's founder is a former Mistgrave University professor named "Blackwood." Five years ago he was expelled by the Steam Church for "illegally researching the Third Epoch Blasphemy Slate"—he was originally a genius scholar of the Savant Pathway Sequence 4.
+
+    - title: "Act 2: Conflict"
+      content: |
+        **Scene 1 — Gear Council Stronghold (Gear District Abandoned Clock Tower)**
+        - Environment: The clock tower has been converted into a mechanical workshop and Difference Engine server room. Gears, conveyor belts, and steam pipes fill the space.
+        - Discovery: The workshop holds several half-finished Sealed Artifacts—the Gear Council's goal is not to collect Sealed Artifacts, but to "dismantle" them and reassemble them into new items.
+        - Document discovery: Experimental logs show they are trying to decode an "encrypted Third Epoch slate rubbing"—Dr. Blackwood believes the slate records the origin of the Pathway system. He uses the Difference Engine as a decoding tool, while Gear Council members collect Sealed Artifacts everywhere—because the ancient Spirituality lingering in certain Sealed Artifacts can aid decoding.
+        
+        **Scene 2 — The Bronze-Masked Woman**
+        - Antagonist: **Engineer Valerie**—Savant Pathway Sequence 6 "Artisan," Dr. Blackwood's lieutenant.
+        - She is assembling a new item from the three stolen Sealed Artifacts: the "Spirit Decoder."
+        - Purpose: Use this device to crack a Third Epoch Blasphemy Slate rubbing—Dr. Blackwood needs the "Decoder" to read the slate's secret about the Pathway origin.
+        
+        **Enemy Data**:
+        - Valerie | Savant Pathway Sequence 6 | CR: 5
+        - Attributes: Spirit (SPI) 40, Mind (MND) 60, Body (BOD) 35, Agility (AGI) 45, Charisma (CHA) 35
+        - HP: 115 / Spirit Pool (SP): 125 / Loss of Control (LoC): 20 / Loss of Control Threshold (LoCT): 130
+        - Attacks: Steam Jet (+20 / 2d8 Fire / 10m / Knockback), Wrench Smash (+20 / 2d6+10 / melee)
+        - Powers: Mechanical Control (1 AP / 3 Spirit / controls the Difference Engine and environmental machinery), Precision Traps (prep / sets 3 mechanical traps), Sealed Artifact Dismantling (can dismantle a Sealed Artifact for parts)
+        - Held Sealed Artifact: Blood Oath Goblet (can force contract signing; already used to summon Gear Council members)
+        - Weakness: Her Difference Engine is the source of her powers—destroying it halves all her powers; she does not understand Mysticism, so she is at Disadvantage when pure machinery faces Beyonders.
+        - Tactics: Uses conveyor belts and mechanical traps to control the field. Once the Difference Engine is damaged she joins the fight personally.
+        
+        **Scene 3 — Choose One of Three**
+        - Pursue Valerie (gain Blackwood's whereabouts but the Sealed Artifacts remain in her hands)
+        - Recover the Sealed Artifacts (protect the three Sealed Artifacts but Valerie escapes)
+        - Infiltrate the Difference Engine for data (gain all of Blackwood's research, but Valerie notices and detonates the Difference Engine)
+        - The players can only complete two of these; the third fails due to lack of time.
+
+    - title: "Act 3: The Choice"
+      content: |
+        | Choice | Result | Reward |
+        |------|------|------|
+        | Prioritize Pursuit | Defeat Valerie, gain the doctor's whereabouts | Blackwood's research notes + Valerie's confession (she was forced to participate) + 300 Progress |
+        | Prioritize Recovery | The three Sealed Artifacts safely recovered | Old John's permanent discount + Sealed Artifact borrowing rights + 250 Progress |
+        | Prioritize Data | Gain all of the doctor's experimental data | Understand the threat of the "Mechanical Heart" + gain key knowledge to oppose the doctor + 350 Progress |
+        
+        **Introducing Blackwood**: Whatever the choice, the players discover one name running through it all—"Dr. Blackwood." Valerie says: "He isn't a bad man... he just found something he shouldn't have. That slate—what's written on it—he says it's humanity's only hope."
+        
+        **Loss of Control Risk**: Contact with stolen Sealed Artifacts +1d5 / Difference Engine malfunction explosion +1d3 / Spirit Exhaustion +2d5
+        
+        ---
+
+  antagonists:
+    - data: |
+        - Attributes: Spirit (SPI) 40, Mind (MND) 60, Body (BOD) 35, Agility (AGI) 45, Charisma (CHA) 35
+        - HP: 115 / Spirit Pool (SP): 125 / Loss of Control (LoC): 20 / Loss of Control Threshold (LoCT): 130
+        - Attacks: Steam Jet (+20 / 2d8 Fire / 10m / Knockback), Wrench Smash (+20 / 2d6+10 / melee)
+        - Powers: Mechanical Control (1 AP / 3 Spirit / controls the Difference Engine and environmental machinery), Precision Traps (prep / sets 3 mechanical traps), Sealed Artifact Dismantling (can dismantle a Sealed Artifact for parts)
+        - Held Sealed Artifact: Blood Oath Goblet (can force contract signing; already used to summon Gear Council members)
+        - Weakness: Her Difference Engine is the source of her powers—destroying it halves all her powers; she does not understand Mysticism, so she is at Disadvantage when pure machinery faces Beyonders.
+        - Tactics: Uses conveyor belts and mechanical traps to control the field. Once the Difference Engine is damaged she joins the fight personally.
+
+  endings:
+    choices: |
+      | Choice | Result | Reward |
+      |------|------|------|
+      | Prioritize Pursuit | Defeat Valerie, gain the doctor's whereabouts | Blackwood's research notes + Valerie's confession (she was forced to participate) + 300 Progress |
+      | Prioritize Recovery | The three Sealed Artifacts safely recovered | Old John's permanent discount + Sealed Artifact borrowing rights + 250 Progress |
+      | Prioritize Data | Gain all of the doctor's experimental data | Understand the threat of the "Mechanical Heart" + gain key knowledge to oppose the doctor + 350 Progress |
+      
+      **Introducing Blackwood**: Whatever the choice, the players discover one name running through it all—"Dr. Blackwood." Valerie says: "He isn't a bad man... he just found something he shouldn't have. That slate—what's written on it—he says it's humanity's only hope."
+      
+      **Loss of Control Risk**: Contact with stolen Sealed Artifacts +1d5 / Difference Engine malfunction explosion +1d3 / Spirit Exhaustion +2d5
+      
+      ---

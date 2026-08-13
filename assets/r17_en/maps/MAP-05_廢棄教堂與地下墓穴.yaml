@@ -1,0 +1,63 @@
+id: "MAP-05"
+title: "Abandoned Church + Crypt"
+region: "Core Zone Edge"
+danger: "★★★★☆"
+suitable_levels: [8]
+regions:
+  - name: "Above-Ground — Church"
+    color: "#FFF3E0"
+  - name: "Underground — Crypt"
+    color: "#ECEFF1"
+nodes:
+  - id: "out"
+    name: "Church Perimeter"
+    region: "Above-Ground — Church"
+    col: 0
+    row: 0
+    note: "Collapsed wall hidden entry; Cult symbol; Cult patrol ×2"
+  - id: "nave"
+    name: "Church Nave"
+    region: "Above-Ground — Church"
+    col: 1
+    row: 0
+    note: "Most prominent gravity anomaly; Guardian ×1, Members ×2; Technician stabilizes gravity TN17"
+  - id: "altar"
+    name: "Altar Area"
+    region: "Above-Ground — Church"
+    col: 2
+    row: 0
+    note: "Cult Leader (solo, weakened); 3 Energy Crystals (HP10/DR2) — destroy to sever the summoning; Curtain Resonator (Gold)"
+  - id: "crypt_in"
+    name: "Crypt Entrance"
+    region: "Underground — Crypt"
+    col: 2
+    row: 1
+    note: "Stone stairs behind the church; Time Bubble trap (Scout Awareness TN14 marks safe route)"
+  - id: "bubble"
+    name: "Time Bubble Zone"
+    region: "Underground — Crypt"
+    col: 1
+    row: 1
+    note: "1 turn inside = 5 turns outside; Deep Diver ×1 (weakened)"
+  - id: "ritual"
+    name: "Ritual Underground Passage"
+    region: "Underground — Crypt"
+    col: 0
+    row: 1
+    note: "Leads to Old Town edge; Perception TN17 to discover hidden passage"
+edges:
+  - from: "out"
+    to: "nave"
+    label: "Main Gate"
+  - from: "nave"
+    to: "altar"
+    label: "Passage"
+  - from: "altar"
+    to: "crypt_in"
+    label: "Stone Stairs"
+  - from: "crypt_in"
+    to: "bubble"
+    label: "Crypt"
+  - from: "bubble"
+    to: "ritual"
+    label: "Tunnel"

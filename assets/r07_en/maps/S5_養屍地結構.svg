@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <rect width="800" height="1000" fill="#1a1410" rx="4"/>
+  <text x="400" y="32" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="22" font-weight="bold" fill="#f5e6d3">S5 Corpse-Raising Ground — Ancient Battlefield Mass Grave + Underground Altar</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c4a882"/>
+    </marker>
+  </defs>
+  <text x="20" y="60" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="16" fill="#f5e6d3" opacity="0.9">▲ Surface — Mass Grave</text>
+  <rect x="10" y="70" width="180" height="120" rx="12" fill="rgba(100,140,80,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="22" y="90" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Safe Zone 🏕️</text>
+  <rect x="195" y="70" width="180" height="120" rx="12" fill="rgba(140,100,60,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="207" y="90" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Corpse Mutation Zone A (Fresh Corpse)</text>
+  <rect x="375" y="70" width="180" height="120" rx="12" fill="rgba(80,100,140,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="387" y="90" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Corpse Mutation Zone B (White Jiangshi)</text>
+  <rect x="555" y="70" width="180" height="120" rx="12" fill="rgba(140,80,100,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="567" y="90" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Corpse Mutation Zone C (Black Jiangshi + Hopping Corpse)</text>
+  <line x1="184" y1="105" x2="188" y2="105" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="184" y1="105" x2="368" y2="105" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="364" y1="105" x2="368" y2="105" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="364" y1="105" x2="548" y2="105" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="544" y1="105" x2="548" y2="105" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="640" y1="134" x2="640" y2="208" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="20" y="80" width="170" height="50" rx="8" fill="#3A5A3A" stroke="#8b7355" stroke-width="2"/>
+  <text x="105.0" y="107.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Outer Safe Zone</text>
+  <rect x="200" y="80" width="170" height="50" rx="8" fill="#5A4A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="285.0" y="107.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Corpse Mutation Zone A</text>
+  <rect x="380" y="80" width="170" height="50" rx="8" fill="#5A3A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="465.0" y="107.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Corpse Mutation Zone B</text>
+  <rect x="560" y="80" width="170" height="50" rx="8" fill="#6A2A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="645.0" y="107.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Corpse Mutation Zone C</text>
+  <rect x="560" y="220" width="170" height="50" rx="8" fill="#2A2A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="645.0" y="247.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Altar Cave Entrance</text>
+  <text x="20" y="330" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="16" fill="#f5e6d3" opacity="0.9">▼ Underground Altar (Three Levels)</text>
+  <line x1="566" y1="259" x2="441" y2="378" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="424" x2="360" y2="488" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="360" y1="554" x2="360" y2="618" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="443" y1="659" x2="489" y2="680" stroke="#8b7355" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="15" y="350" width="340" height="360" rx="12" fill="rgba(100,80,140,0.15)" stroke="#8b7355" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="27" y="370" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#f5e6d3" opacity="0.8">Underground Altar</text>
+  <rect x="280" y="370" width="160" height="50" rx="8" fill="#4A3A3A" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="389.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Upper Level — Ritual</text>
+  <text x="360.0" y="405.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Preparation Room</text>
+  <rect x="280" y="500" width="160" height="50" rx="8" fill="#5A2A2A" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="519.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Middle Level — Ritual Hall</text>
+  <text x="360.0" y="535.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3"> 🩸</text>
+  <rect x="280" y="630" width="160" height="50" rx="8" fill="#6A1A1A" stroke="#8b7355" stroke-width="2"/>
+  <text x="360.0" y="649.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Lower Level — Sealing Room</text>
+  <text x="360.0" y="665.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">🔑</text>
+  <rect x="500" y="660" width="160" height="50" rx="8" fill="#2A2A4A" stroke="#8b7355" stroke-width="2"/>
+  <text x="580.0" y="687.0" text-anchor="middle" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="13" fill="#f5e6d3">Secret Passage</text>
+  <text x="20" y="830" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#c4a882">Sha-Suppression Grand Array: three suppression points (boundaries of Mutation Zones A/B/C). Requires 3 Earth Masters cooperating, DC14.</text>
+  <text x="20" y="855" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="12" fill="#c4a882">External Threat: Warlord scouts — Liu Dapao's men observing from the perimeter</text>
+  <rect x="460" y="830" width="180" height="116" rx="6" fill="rgba(0,0,0,0.5)" stroke="#8b7355" stroke-width="1"/>
+  <text x="470" y="848" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3" font-weight="bold">Legend</text>
+  <text x="475" y="868" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">🏕️ Safe</text>
+  <text x="475" y="890" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">💀 Corpse Mutation</text>
+  <text x="475" y="912" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">🩸 Blood Pool</text>
+  <text x="475" y="934" font-family="Microsoft JhengHei, Noto Sans TC, sans-serif" font-size="11" fill="#f5e6d3">🔑 Suppression Item</text>
+</svg>

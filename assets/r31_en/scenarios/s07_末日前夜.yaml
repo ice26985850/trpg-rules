@@ -1,0 +1,102 @@
+# Scenario Seven: Eve of the Apocalypse — Structured Scenario
+
+scenario:
+  name: "Scenario Seven: Eve of the Apocalypse"
+  level: "Seq 3 → Seq 1 (this scenario spans a wide range)"
+  players: "Team of 3-5, or Solo + 2 Seq 3-4 NPC companions"
+  duration: "6-10 game sessions"
+  mode: [Multiplayer, Solo]
+
+  background: |
+    The tablet fragment's new message points to Backlund. There, you will face not a single enemy — but a forming configuration of power.
+
+    After the angel-level operation of *Beneath the Rift*, your name has spread among the Seven Churches and all the major secret organizations. Not because of your power — but because of the living tablet fragment in your hand, and the fact that you survived before the angels. Some call you the "Stone-Bearer." Some call you the "Variable." Some have already decided — you must die.
+
+    When you arrive in Backlund, you find that news of the third tablet fragment has already leaked. Multiple factions are converging on Backlund:
+
+    | Faction | Goal | Means | Attitude toward you |
+    |------|------|------|-----------|
+    | **Twilight Hermit Order** | Recover the tablet fragment — lock it in Adam's secret chamber | Tracking, pressure, negotiation | "You have proven you are not a threat. But you are not the master either." |
+    | **Church of the Storm** | Obtain the "method to fight the Outer Deities" from the tablet fragment | Semi-public bidding — "legally" acquired | Suspicious — they do not trust "uncontrolled Beyonders" |
+    | **Rose School** | Destroy the tablet fragment (its contents are unfavorable to the Chained) | Assassination, corruption, terror attacks | Hostile — you and the tablet in your hand must both disappear |
+    | **Followers of the Tree of the Desire Mother** | Seize the tablet fragment to stop humanity from finding the method against the Outer Deities | Infiltration, corruption, replacing those around you | Hostile — but They would rather "convert" you than kill you |
+    | **Aurora Order** | Use the tablet fragment to awaken the "True Creator" | Kidnapping, sacrifice | Neutral-leaning-hostile — they believe you could become a "vessel" |
+    | **Your angel ally** | Protect you — but only from the shadows (cannot openly intervene in secular faction conflicts) | Intelligence, emergency rescue | Cooperative — she needs you alive |
+
+    **This is not a structured competition.** No score, no rounds, no referee. The factions act simultaneously, obstructing one another, while you sit at the center — both hunter and prey.
+
+  acts:
+    - title: "Act Five: The Aurora Order's Gamble"
+      content: |
+        The True Creator — not one of the Seven Gods. He is an incomplete, corrupted deity. The Aurora Order's followers believe: so long as all the tablet fragments are sacrificed to the True Creator, He will complete his godhood ritual — becoming humanity's front line against the Outer Deities. They are fanatical followers — not enemies, but their "solution" is diametrically opposed to the Seven Churches'.
+
+        **Scene: The Aurora Order's Holy Site**
+
+        The Aurora Order's holy site lies deep beneath Backlund — an inverted temple left over from the Third Epoch. The ceiling is an abyss-like floor. The floor is a starry sky. The True Creator's altar stands at the center of the temple — a stone platform suspended in mid-air by iron chains. The fourth tablet fragment is embedded in the stone platform.
+
+        The Aurora Order's High Bishop — the Seq 3 "Trinity Templar" — appears before you:
+
+        > "You have come. The one chosen by the tablet fragment. I know you did not come to fight — if you had, you would already be dead. Speak — what do you want?"
+
+        **Trinity Templar** | Secrets Suppliant Pathway, Seq 3 | Team CR: 14 (but combat may not trigger)
+
+        - Attributes: Spirit (SPI) 70, Mind (MND) 65, Body (BOD) 60, Agility (AGI) 50, Charisma (CHA) 55
+        - HP: 135 / SP: 215 / LoCT: 140
+        - Abilities: Three Heads (Passive / can simultaneously use three different pathway abilities — because three different pathways' Beyonder Characteristics are fused within him), Oracle (1 AP / 5 SP / declare a prophecy — must occur next turn), Mark of Sacrifice (Reaction / 5 SP / transfer one instance of damage taken to a willing follower)
+        - Personality: Fanatical but not mad. He is a true believer — he believes what he does is right. He can be persuaded — but only in "the language of faith"
+
+        **Three outcomes:**
+
+        | Outcome | Execution | Consequence |
+        |------|------|------|
+        | **Negotiate** | Offer terms: you share the decoded contents of the tablet fragment with the Aurora Order in exchange for the fourth fragment | The Aurora Order becomes your intelligence ally. The High Bishop gives you a communication Sealed Artifact — can summon Aurora Order support at a critical moment (one-time use) |
+        | **Deceive** | Falsely claim you are the "Tablet Guardian" chosen by the True Creator (Charisma+Deception, Legendary) | If success → the Aurora Order hands over the fragment and regards you as a "Prophet." If failure → combat. The High Bishop feels blasphemed and will kill you at any cost |
+        | **Reveal the truth** | Use the tablet fragment to show evidence of the True Creator's corruption — proving He cannot become humanity's savior | The High Bishop collapses — his faith dealt a fatal blow. He will hand over the fragment, then kneel before the altar for a whole night. The Aurora Order splits into two factions — the "Truth Faction" that follows you and the "Orthodox Faction" that holds to the old faith |
+
+        ## Rewards and Settlement
+
+        | Condition | Reward |
+        |------|------|
+        | Obtain the third tablet fragment (Eileen) | Tablet decoding progress reaches 3/9 — unlocks the Ancient Sun God's "Final Command" |
+        | Obtain the fourth tablet fragment (Aurora Order) | Tablet decoding progress reaches 4/9 — unlocks the next fragment's location + a "partial sketch" of the anti-Outer-Deity weapon |
+        | Successfully cleanse the Outer Deity seed from a companion | Talent "Touch of Purification": +15 to cleansing-ritual checks |
+        | Reach an agreement with the Church of the Storm | Gain use of the Church of the Storm's intelligence network — any dock informant at any port will serve you for free |
+        | Defeat the Disciple of Silence | Gain the Rose School's communication Sealed Artifact, able to continuously monitor enemy movements |
+        | The Aurora Order's split (if you chose Reveal the truth) | Gain a callable Aurora Order branch organization — providing manpower, intelligence, and holy-site shelter |
+
+        **Loss of Control Risk:**
+
+        | Risk Point | Value |
+        |--------|-----|
+        | Latent influence of the Outer Deity seed | +1d3 / scene (until cleansed) |
+        | Engaging the Rose School in combat | +1d5 |
+        | Contact with the Aurora Order's holy site | +1d3 / scene |
+        | Spirit Exhaustion | +2d5 |
+        | **Total (full scenario estimate)** | **25-50** |
+
+        ---
+
+  antagonists:
+    - data: |
+        - Attributes: Spirit (SPI) 60, Mind (MND) 45, Body (BOD) 55, Agility (AGI) 60, Charisma (CHA) 10
+        - HP: 130 / SP: 185 / LoCT: 100
+        - Abilities: Curse Touch (1 AP / 5 SP / Melee / 3d8 Dark+Curse — target's all checks −15 next turn), Living Wall (Passive / can move through walls, cannot be physically blocked), Silence (2 AP / 10 SP / Whole field / all sound vanishes — cannot use verbal abilities or social skills, lasts 2 turns)
+        - Weakness: While in Living Wall state, Spirit attacks ignore its physical defense
+        - Tactics: Does not linger in battle — its goal is to snatch the tablet fragment, not to kill you. Once it grabs the fragment, it immediately dives into the wall and flees
+        - Extra Mechanic: The tablet fragment grows **intensely warm and glows** when he approaches — this partially disables his "Living Wall" ability (he cannot fully sink into the wall)
+
+        **Discovery after repelling:** The Disciple of Silence dropped an item while fleeing — a Rose School communication Sealed Artifact, the "Blood Rose Pin." Through it, you can monitor the Rose School's internal communications (every other scene, the GM may reveal one piece of the Rose School's latest movement).
+
+    - data: |
+        - Attributes: Spirit (SPI) 70, Mind (MND) 65, Body (BOD) 60, Agility (AGI) 50, Charisma (CHA) 55
+        - HP: 135 / SP: 215 / LoCT: 140
+        - Abilities: Three Heads (Passive / can simultaneously use three different pathway abilities — because three different pathways' Beyonder Characteristics are fused within him), Oracle (1 AP / 5 SP / declare a prophecy — must occur next turn), Mark of Sacrifice (Reaction / 5 SP / transfer one instance of damage taken to a willing follower)
+        - Personality: Fanatical but not mad. He is a true believer — he believes what he does is right. He can be persuaded — but only in "the language of faith"
+
+        **Three outcomes:**
+
+        | Outcome | Execution | Consequence |
+        |------|------|------|
+        | **Negotiate** | Offer terms: you share the decoded contents of the tablet fragment with the Aurora Order in exchange for the fourth fragment | The Aurora Order becomes your intelligence ally. The High Bishop gives you a communication Sealed Artifact — can summon Aurora Order support at a critical moment (one-time use) |
+        | **Deceive** | Falsely claim you are the "Tablet Guardian" chosen by the True Creator (Charisma+Deception, Legendary) | If success → the Aurora Order hands over the fragment and regards you as a "Prophet." If failure → combat. The High Bishop feels blasphemed and will kill you at any cost |
+        | **Reveal the truth** | Use the tablet fragment to show evidence of the True Creator's corruption — proving He cannot become humanity's savior | The High Bishop collapses — his faith dealt a fatal blow. He will hand over the fragment, then kneel before the altar for a whole night. The Aurora Order splits into two factions — the "Truth Faction" that follows you and the "Orthodox Faction" that holds to the old faith |

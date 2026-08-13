@@ -1,0 +1,50 @@
+name: Awakening
+difficulty: Introductory
+mode: Astartes · Multiplayer
+players: 2-4
+planet: Requiem
+recommended_attributes: Character Creation
+opening_description: |
+  You lost consciousness during the fall. When you awaken, you find yourselves lying in the
+  wreckage of a crashed Thunderhawk gunship. The fleet is gone. Exterminatus is being carried
+  out—the flames falling from orbit still burn in the distance. You are the only survivors—or are
+  there others?
+structure_phases:
+- phase: Awakening
+  content: |
+    Each of you describes your state as you wake amid the wreckage. Check your gear—the condition
+    of your Power Armor (Step 7). Who is here? Who is not?
+- phase: Search
+  content: |
+    Search the crash site: find 1–2 Chapter Relics (Step 5), determine your current location,
+    and discover a ruined city nearby.
+- phase: First Encounter
+  content: Low-tier Mutants ×2–3—these are the planet's native wildlife, twisted by Chaotic energy.
+- phase: Discover the Signal
+  content: |
+    The comms unit in the wreckage briefly receives an Imperial-channel signal—coming from the
+    northern mountains. The signal is too weak to answer, but at least it is a direction.
+oath_conflict: None—this is the opening scenario, focused on establishing character relationships and the tone of the setting.
+key_checks:
+- scene: Search the Wreckage
+  check: Investigation (Standard)
+  tn: —
+  success: Find useful supplies
+  failure: —
+- scene: Determine the Signal's Source
+  check: Lore (Standard)
+  tn: —
+  success: Determine what the signal might be
+  failure: —
+- scene: First Combat
+  check: Normal Combat Test
+  tn: —
+  success: Adapt to the combat system
+  failure: —
+encounters:
+- name: First Encounter
+  enemies: Low-tier Mutants ×2–3
+  cr: —
+  tactic: Native wildlife twisted by Chaos; adapt to the combat system
+ending_note: The squad regroups and sets out for the northern mountains. The silhouette of a ruined city is faintly visible in the darkness.
+map_ref: "maps/map16_awakening"

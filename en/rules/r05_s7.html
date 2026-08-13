@@ -1,0 +1,237 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Hero&amp;#x27;s Proof / Dungeon Module D7 — Ice Plains (Tundra) | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r05_s7.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r05.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Dungeon Module D7 — Ice Plains (Tundra)</h1>
+<blockquote>
+<p><strong>Recommended Rank</strong>: B/A (Challenge Rating (CR) 27–34) | <strong>Theme</strong>: Perpetual Frozen Tundra, high-tier resource farming
+<strong>Access</strong>: Guild commission "B-Ice1 / A-Ice1" (corresponding to Rank B→A, CL 27–34); or designated by the GM as a leveling ground.
+<strong>Map</strong>: <code>maps/D7_冰原.yaml</code> ＋ <code>maps/D7_冰原.svg</code>
+This work has <strong>no multiclass</strong>; solo entry follows the player-count adjustment rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no allies).</p>
+</blockquote>
+<h3>How to Enter (Opening Beat)</h3>
+<ul>
+<li><strong>Take a guild commission</strong>: At the Adventurers' Guild bulletin board, accept the Rank B "Ice Plains Subjugation" (B-Ice1); after promotion, accept A-Ice1 (corresponding to Rank B→A, CL 27–34).</li>
+<li><strong>Active exploration</strong>: After joining at S0, players may delve deep into the Perpetual Frozen Tundra from the Northern Outpost (GM Book 17.1).</li>
+<li><strong>Leveling role</strong>: The top choice for resource farming at CL 27–34; run alongside B/A commissions to grind Rank from B up to A.</li>
+<li><strong>Solo mode</strong>: Supported at Challenge Rating (CR) −3 and enemy count ×0.5, no allies; the minor-boss room includes a 10×10 positioning map (<code>maps/D7_戰鬥_冰霜女王.yaml</code>). Entering the room switches to standard combat (Chapter 7); after clearing, return to the exploration round.</li>
+</ul>
+<h2>I. Background</h2>
+<p>Beneath the blizzards of the Perpetual Frozen Tundra, the Frost Queen has frozen the entire valley with her Eternal Winter Domain, with yetis and ice wolves as her subjects. Northern villages are gradually frozen and abandoned, and the guild lists this as a B→A rank subjugation target; enthroned above, the Frost Queen is this tundra's minor boss.</p>
+<h2>II. Room Overview (with Fog Reveal)</h2>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Name</th>
+<th>Type</th>
+<th>Connections</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Ice Wall Entrance</td>
+<td>Entrance</td>
+<td>→R2</td>
+<td>Only entrance/exit; retreating here is safe.</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Ice Wolf Hunting Ground</td>
+<td>Combat</td>
+<td>R1/R3/R7</td>
+<td>Ice Wolf ×2 (CR27).</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Thin Ice Fracture</td>
+<td>Trap</td>
+<td>R2/R4/R8</td>
+<td>Weak hazard (thin ice collapse).</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Yeti Lair</td>
+<td>Combat</td>
+<td>R3/R5/R10</td>
+<td>Yeti ×2 (CR29).</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Frozen Remains</td>
+<td>Chest</td>
+<td>R4/R10</td>
+<td>Cold Iron, Glint Shard, G 200~320.</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Frost Wisp Tunnel</td>
+<td>Combat</td>
+<td>R1/R7/R11</td>
+<td>Frost Wisp ×2 (CR30).</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Snow Shelter</td>
+<td>Rest</td>
+<td>R6/R8/R2/R12</td>
+<td>Safe rest point.</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Ice Spike Corridor</td>
+<td>Trap</td>
+<td>R7/R9/R3/R13</td>
+<td>Strong hazard (falling ice spikes).</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>Ice Crystal Vault</td>
+<td>Chest</td>
+<td>R8/R10/R4/R14</td>
+<td>Ice Crystal, Fine materials, G 220~340.</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>Frost Giant Hall</td>
+<td>Combat</td>
+<td>R9/R5/R15</td>
+<td>Frost Giant ×2 (CR32).</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>Warm Stone Camp</td>
+<td>Rest</td>
+<td>R6/R12/R16</td>
+<td>Warm stone rest point.</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>Snow Vault</td>
+<td>Chest</td>
+<td>R11/R13/R7</td>
+<td>Eternal Winter Core, G 240~360.</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>Cold Wind Battlefield</td>
+<td>Combat</td>
+<td>R12/R14/R8/R17</td>
+<td>Ice Wolf ×2 (CR33).</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>Blizzard Trap Zone</td>
+<td>Trap</td>
+<td>R13/R15/R9</td>
+<td>Strong hazard (blizzard mirage).</td>
+</tr>
+<tr>
+<td>R15</td>
+<td>Ice Spring Rest</td>
+<td>Rest</td>
+<td>R14/R10</td>
+<td>Hot spring rest point.</td>
+</tr>
+<tr>
+<td>R16</td>
+<td>Yeti Ravine</td>
+<td>Combat</td>
+<td>R11</td>
+<td>Yeti ×2 (CR33).</td>
+</tr>
+<tr>
+<td>R17</td>
+<td>Frost Queen Throne</td>
+<td>Minor Boss</td>
+<td>R13/R18</td>
+<td>Frost Queen (CR34) (see below).</td>
+</tr>
+<tr>
+<td>R18</td>
+<td>Exit Ice Path</td>
+<td>Exit</td>
+<td>R17</td>
+<td>Clear point; collect rewards and leave.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Exploration round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) are detailed in GM Book Chapter 17.</p>
+</blockquote>
+<h2>II-1. Combat Room Positioning Battle Map</h2>
+<p>This module's minor-boss room includes a 10×10 positioning battle map (same format as the S1–S4 Demon General battles), allowing the GM to resolve range and reach directly by grid distance:</p>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Combat Room</th>
+<th>Positioning Battle Map</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R17</td>
+<td>Frost Queen Throne (Frost Queen CR34)</td>
+<td><code>maps/D7_戰鬥_冰霜女王.yaml</code>＋<code>.svg</code></td>
+<td>Boss; Area Effect noted "Eternal Winter Domain (all −2 ATK)"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>On the positioning map, enemies are at top, allies at bottom, with front and back rows spaced 2 squares (4m) apart; solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no allies).</p>
+</blockquote>
+<h2>III. Key Room Details</h2>
+<ul>
+<li><strong>R3 Thin Ice Fracture (weak)</strong>: Perception DC12 (Dexterity (M_DEX) / Luck (M_LUK)); triggers 1d6 ice damage. Disable DC14.</li>
+<li><strong>R8 Ice Spike Corridor (strong)</strong>: Perception DC18; triggers 3d6 Pierce. Ice spikes can block the R7↔R13 passage (GM discretion).</li>
+<li><strong>R14 Blizzard Trap Zone (strong)</strong>: Perception DC20; triggers 2d6 Frost damage.</li>
+<li><strong>R5 Frozen Remains</strong>: Open chest DC12; trap 30% (moderate, 2d6). Contains Cold Iron ×2, Glint Shard, Gold (G) 200~320.</li>
+<li><strong>R9 Ice Crystal Vault</strong>: Open chest DC14; contains Ice Crystal ×2, Fine materials, Gold (G) 220~340.</li>
+<li><strong>R18 Exit Ice Path</strong>: After clearing, return to the guild to settle rewards and leave.</li>
+</ul>
+<h2>IV. Minor Boss — Frost Queen (CR34)</h2>
+<p>Per GM Book 10.4 CR formula and 10.7 boss framework (simplified version):</p>
+<ul>
+<li><strong>Health (HP)</strong> 158 (CR34 formula) | <strong>ATK Bonus (ATK)</strong> +9 (floor(1+0.25×34)) | <strong>Evasion (EVA)</strong> 15 (10+floor(0.15×34)) | <strong>Damage/hit</strong> 46 (floor(6+1.2×34))</li>
+<li><strong>Trait (1 phase)</strong>: <code>Eternal Winter Domain</code>—once every 3 rounds, all allies −2 ATK for 2 rounds.</li>
+<li><strong>Weakness</strong>: Fire ×1.5 (see Monster Compendium note).</li>
+<li><strong>Drop</strong>: <code>Frost Crown</code> (story item, redeemable at the guild for Influence Points (IP) +4); Fine materials + low chance of Fine recipe.</li>
+</ul>
+<h2>V. Clear Rewards (Full Clear)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experience (EXP)</td>
+<td>approx 23528 (R2 2268 + R4 2552 + R6 2700 + R10 3008 + R13 3168 + R16 3168 + R17 6664; EXP accrues toward Character Level (CL) progress; Class Level (ClassLv) accrues separately in its own Class Experience (CEXP) pool, not shared with EXP)</td>
+</tr>
+<tr>
+<td>Gold (G)</td>
+<td>1800~2600</td>
+</tr>
+<tr>
+<td>Influence Points (IP)</td>
+<td>+5 (clear) / +4 (crown redemption)</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>Cold Iron / Ice Crystal / low chance of Fine recipe</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Design Note</strong>: D7 is a stable ground for CL 27–34 "farming EXP + G + materials," refreshable daily (see Commission Catalog, reset rules).</p>
+</blockquote><p><a href="../../assets/r05_en/scenarios/D7_%E5%86%B0%E5%8E%9F.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

@@ -1,0 +1,49 @@
+name: "The Collector's Bargain"
+type: "Negotiation / Intelligence Gathering"
+difficulty: "★★★"
+recommended_marks: "4-6"
+play_time: "1-2 sessions"
+core_attributes: ["NG", "RE"]
+
+opening: |
+  You notice an anomaly in the Gap — the Lost Items in a certain area are moving.
+  Tracking this phenomenon, you discover an extraordinarily ancient Lost Item Collector.
+  It has remained in the Gap for over a thousand years.
+  Its collection contains lost Gap knowledge.
+
+npcs:
+  - name: "The Millennial Collector"
+    type: "Gap Creature (ancient Lost Item Collector)"
+    desc: "Not transformed from a human — a Han-dynasty bronze mirror that awoke amid layers of accumulated consciousness"
+    companion_eligible: false
+  - name: "Three Lesser Collectors"
+    type: "Gap Creature (offspring)"
+    desc: "Each guards one key item"
+
+scenes:
+  - name: "Tracking the Phenomenon"
+    desc: "Awareness DC 8 reveals the movement trajectory of the Lost Items. Traverse DC 8 to track it to the Collector's Lair."
+  - name: "First Contact"
+    desc: "The Millennial Collector is curious. Negotiation DC 12 to establish initial dialogue."
+  - name: "Trial One: A Poem"
+    desc: "Collector A wants a poem related to loss. The player improvises or recites one."
+  - name: "Trial Two: A Period of Silence"
+    desc: "Collector B wants a period of silence. The player must remain silent for 3 turns. The GM describes anomalies to test this."
+  - name: "Trial Three: A Name"
+    desc: "Collector C wants a name. Must be obtained from Old Mo or another Walker."
+  - name: "The Harvest"
+    desc: |
+      The Millennial Collector reveals a lost Gap map — showing the location of a new nearby Sealed Space.
+      Optionally trade a Lost Item for a Gap Knowledge Mark.
+
+endings:
+  - "Complete the trials → Gap Map (foreshadowing for Scenario 9/10) + Bronze Mirror Fragment (Gap Construct)"
+  - "Extra → permanent Negotiation DC -2 mark against Collectors"
+
+rewards:
+  - "Return Mark × 1"
+  - "Bronze Mirror Fragment (Gap Construct — the only stable light source in the Deep Gap)"
+  - "Gap Knowledge Mark (permanent Advantage on Negotiation with all Collectors)"
+  - "Unlock a new Sealed Space location (foreshadowing)"
+
+companion_recruitment: []

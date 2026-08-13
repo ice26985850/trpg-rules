@@ -1,0 +1,112 @@
+name: "Level 5 — Horror Hotel"
+description: "An infinite Victorian-style hotel — red carpet, crystal chandeliers; room layouts shift; faceless Waiters guide you toward the empty chairs in the banquet hall"
+scenario_ref: "S3_旅館"
+usage: "Scenario S3: find a way out in the shifting hotel, avoid the Servants' guidance, and reach the back door behind the banquet hall's curtain to Level 6"
+regions:
+  - name: "Golden Elevator (Entrance)"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "Area"
+  - name: "Red Carpet Corridor"
+    color: "#ECEFF1"
+    nodes: ["N02", "N03"]
+    description: ""
+  - name: "Portrait Gallery (Danger)"
+    color: "#F3E5F5"
+    nodes: ["N04"]
+    description: ""
+  - name: "Banquet Hall (Lethal)"
+    color: "#FFEBEE"
+    nodes: ["N05"]
+    description: ""
+  - name: "Supply Guest Room"
+    color: "#E3F2FD"
+    nodes: ["N06"]
+    description: ""
+  - name: "Curtain Back Door (Exit)"
+    color: "#E0F7FA"
+    nodes: ["N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Golden Elevator (Entrance)"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "Arrive via the golden elevator from Level 4 — the door closes behind you"
+  - id: "N02"
+    label: "Red Carpet Corridor"
+    x: 320
+    y: 240
+    type: "normal"
+    explored: false
+    description: "Endless red carpet and crystal chandeliers; the layout changes after you look away"
+  - id: "N03"
+    label: "Guest Room Area"
+    x: 320
+    y: 400
+    type: "normal"
+    explored: false
+    description: "Each room door is engraved with the name of a Lost one — behind it may be an ordinary room or an endless maze"
+  - id: "N04"
+    label: "Portrait Gallery"
+    x: 500
+    y: 240
+    type: "danger"
+    explored: false
+    description: "The eyes in the portraits move (Perception DC 14 to notice; noticing costs SP -1D3)"
+    threats: "Portrait Entity (mental attack)"
+  - id: "N05"
+    label: "Banquet Hall"
+    x: 500
+    y: 400
+    type: "danger"
+    explored: false
+    description: "Empty chairs arranged in neat rows — those who sit are permanently imprisoned on this level (character end); the food looks normal, eating it costs SP -1"
+    threats: "Permanent Imprisonment / SP -1"
+  - id: "N06"
+    label: "Supply Guest Room"
+    x: 320
+    y: 540
+    type: "resource"
+    explored: false
+    description: "Some guest rooms occasionally have supplies to scavenge"
+    resources: "Random Supplies"
+  - id: "N07"
+    label: "Curtain Back Door (Exit)"
+    x: 680
+    y: 320
+    type: "exit"
+    explored: false
+    description: "The heavy curtain deep in the banquet hall — pulling it open leads to Level 6"
+    exit_to: "Level 6 — Blackout"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "Guest Rooms"
+  - from: "N02"
+    to: "N04"
+    type: "corridor"
+    label: "Portrait Gallery"
+  - from: "N03"
+    to: "N06"
+    type: "corridor"
+    label: "Supply"
+  - from: "N04"
+    to: "N05"
+    type: "dangerous_path"
+    label: "Waiter's Guidance"
+  - from: "N03"
+    to: "N05"
+    type: "dangerous_path"
+    label: "Banquet Hall"
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ Exit (Curtain)"

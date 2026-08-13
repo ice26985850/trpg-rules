@@ -1,0 +1,59 @@
+id: "MAP-02"
+title: "Silent Community Elementary School (Expansion)"
+region: "Old Town"
+danger: "★★☆☆☆"
+suitable_levels: [3]
+regions:
+  - name: "Outdoor"
+    color: "#E8F5E9"
+  - name: "1st Floor"
+    color: "#E3F2FD"
+  - name: "2nd Floor"
+    color: "#F3E5F5"
+nodes:
+  - id: "wall"
+    name: "North Perimeter Wall Entrance"
+    region: "Outdoor"
+    col: 0
+    row: 1
+    note: "Collapsed wall section is climbable; Scav Gang of 3 on north street"
+  - id: "yard"
+    name: "Playground"
+    region: "Outdoor"
+    col: 1
+    row: 1
+    note: "Flagpole platform as elevated observation point; soccer goal as light cover"
+  - id: "clinic"
+    name: "Infirmary"
+    region: "1st Floor"
+    col: 1
+    row: 0
+    note: "Supplies left in medicine cabinet; First Aid Kit ×2, Adrenaline ×1 (TN14)"
+  - id: "class"
+    name: "Classrooms ×2"
+    region: "1st Floor"
+    col: 2
+    row: 0
+    note: "Classroom Residuals ×2 (former teachers); door can be locked from outside (TN8) to avoid combat; ceiling unstable"
+  - id: "f2"
+    name: "School Building 2nd Floor"
+    region: "2nd Floor"
+    col: 2
+    row: 1
+    note: "Corridor connects two classrooms; windows overlook playground (Perception TN11)"
+edges:
+  - from: "wall"
+    to: "yard"
+    label: "Corridor"
+  - from: "yard"
+    to: "clinic"
+    label: "East Door"
+  - from: "yard"
+    to: "class"
+    label: "West Door"
+  - from: "clinic"
+    to: "f2"
+    label: "Stairs"
+  - from: "class"
+    to: "f2"
+    label: "Stairs"

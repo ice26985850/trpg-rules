@@ -1,0 +1,48 @@
+# Road of Ice — Frozen Wasteland TRPG Campaign Scenario (Structured Index)
+# This file is compiled from the same-named .md scenario, for the website to provide .md / .yaml dual-format download.
+# For full scene descriptions, encounter designs, and GM guidance, refer to s01_冰封之路.md.
+# Free structure: the fields below are only this scenario's organization method, not mandatory.
+
+name: "Road of Ice"
+description: |
+  This is a continuous campaign spanning 8–10 game sessions, telling the story of a group of Cold Walkers
+  who awaken from the wasteland and gradually uncover the truth of the Freeze.
+  From learning to survive in a supermarket to reshaping the world atop the Clock Tower—this is a road
+  from "simply living" to "choosing how to live."
+  The campaign is built around the central secret "Genesis Hypothesis" (the origin of the Freeze and the
+  possibility of reversing it), with the emotional throughline being "The One You're Still Searching For":
+  every character is searching for someone important they lost to the Freeze.
+difficulty: "Novice → Legendary (difficulty increases by act)"
+player_count: "2–5 players + 1 GM"
+starting_equipment:
+  - "Basic scavenging gear (adjusted by the GM based on first-session difficulty and character background)"
+scenes:
+  - name: "Session 1: Under-Ice Market"
+    description: "Novice｜Freeze Zone: Frostfall Supermarket. Survival basics, first ethical choice."
+  - name: "Session 2: Voices of the Neighborhood"
+    description: "Novice｜Freeze Zone: Frostbell Quarter. Team building, memory and loss."
+  - name: "Session 3: The Star Chart on the Blackboard"
+    description: "Novice｜Freeze Zone: Dawnlight Elementary School. First main-plot clue, group ethics."
+  - name: "Session 4: A Heartbeat Under the Scalpel"
+    description: "Intermediate｜Freeze Zone: St. Mary's Memorial Hospital. Life ethics, faction intervention."
+  - name: "Session 5: The Frozen Pulse"
+    description: "Intermediate｜Freeze Zone: Everfrost Power Plant. Technical challenge, first consequences."
+  - name: "Session 6: Lighthouse of the Frozen Sea"
+    description: "High Difficulty｜Freeze Zone: Frosttide Harbor. Clues converge, main adversary appears."
+  - name: "Session 7: Ironshore Comm Link"
+    description: "High Difficulty｜Freeze Zone: Ironshore Outpost. Fragments of truth, military ethics."
+  - name: "Session 8: The Seventh Floor"
+    description: "High Difficulty｜Freeze Zone: Time Laboratory · Seventh Floor. Core of Genesis Hypothesis, major revelation."
+  - name: "Session 9: For Whom the Bell Tolls"
+    description: "Legendary｜Freeze Zone: Eternal Spire. Ultimate test, choice for the world."
+  - name: "Session 10: The Full Picture of Time"
+    description: "Legendary｜Freeze Zone: Genesis Corridor. Legendary ending, character fate."
+objectives:
+  - "Uncover the 'Genesis Hypothesis'—the origin of the Freeze and the possibility of reversing it"
+  - "Find the important person lost to the Freeze"
+rewards:
+  - "Time Crystals, equipment, and understanding (milestone growth, no level-based stat inflation)"
+notes:
+  - "Appendix A: Campaign Main NPC List"
+  - "Appendix B: Genesis Hypothesis Fragment Collection Guide"
+  - "Appendix C: Plot Branch and Consequence Tracking Table"

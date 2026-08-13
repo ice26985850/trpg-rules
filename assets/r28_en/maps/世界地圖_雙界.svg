@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+  <defs>
+    <radialGradient id="oceanGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#16324f"/><stop offset="100%" stop-color="#0a1726"/>
+    </radialGradient>
+    <radialGradient id="riftGlow">
+      <stop offset="0%" stop-color="#e44" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#e44" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#oceanGrad)"/>
+  <text x="700" y="46" text-anchor="middle" fill="#fff" font-size="26" font-weight="bold">Two-Realm World Map — Earth × Aetheria</text>
+  <text x="700" y="70" text-anchor="middle" fill="#9fb3c8" font-size="14">Otherworld Invasion TRPG · Used across all scenarios · Main Rift connects the two realms</text>
+  <text x="360" y="110" text-anchor="middle" fill="#7fd1ff" font-size="18" font-weight="bold">Earth (Modern World)</text>
+  <text x="1040" y="110" text-anchor="middle" fill="#ffb37f" font-size="18" font-weight="bold">Aetheria (Otherworld)</text>
+  <rect x="40" y="125" width="640" height="740" fill="none" stroke="#2a4a66" stroke-width="1.5" rx="8"/>
+  <rect x="720" y="125" width="640" height="740" fill="none" stroke="#5a3a26" stroke-width="1.5" rx="8"/>
+  <path d="M120,200 Q260,160 360,210 Q420,250 380,330 Q300,380 200,360 Q120,320 120,200 Z" fill="#d4c5a0" opacity="0.25" stroke="#6c7c5c" stroke-width="1"/>
+  <path d="M150,430 Q230,410 300,450 Q330,520 280,600 Q210,640 170,580 Q140,500 150,430 Z" fill="#d4c5a0" opacity="0.2" stroke="#6c7c5c" stroke-width="1"/>
+  <path d="M380,170 Q460,150 500,190 Q480,240 430,250 Q390,220 380,170 Z" fill="#d4c5a0" opacity="0.2" stroke="#6c7c5c" stroke-width="1"/>
+  <path d="M780,150 Q900,120 1100,180 Q1180,260 1140,420 Q1080,560 980,660 Q860,700 800,560 Q760,360 780,150 Z" fill="#caa882" opacity="0.18" stroke="#7a5a3c" stroke-width="1"/>
+<g>
+  <circle cx="200" cy="250" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="212" y="246" fill="#e8f0ff" font-size="17" font-weight="bold">Tokyo</text>
+  <text x="212" y="264" fill="#9fb3c8" font-size="12">Tower of Dawn · Rift Density: Extreme</text>
+</g>
+<g>
+  <circle cx="330" cy="300" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="342" y="296" fill="#e8f0ff" font-size="17" font-weight="bold">Shanghai</text>
+  <text x="342" y="314" fill="#9fb3c8" font-size="12">Dragon Gate Station · Rift Density: High</text>
+</g>
+<g>
+  <circle cx="180" cy="430" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="192" y="426" fill="#e8f0ff" font-size="17" font-weight="bold">New York</text>
+  <text x="192" y="444" fill="#9fb3c8" font-size="12">Iron Bastion · Rift Density: High</text>
+</g>
+<g>
+  <circle cx="440" cy="200" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="452" y="196" fill="#e8f0ff" font-size="17" font-weight="bold">London</text>
+  <text x="452" y="214" fill="#9fb3c8" font-size="12">Round Table Fort · Rift Density: Medium</text>
+</g>
+<g>
+  <circle cx="300" cy="570" r="7" fill="#7fd1ff" stroke="#fff" stroke-width="1.5"/>
+  <text x="312" y="566" fill="#e8f0ff" font-size="17" font-weight="bold">São Paulo</text>
+  <text x="312" y="584" fill="#9fb3c8" font-size="12">Emerald Sanctuary · Rift Density: Medium</text>
+</g>
+<g>
+  <circle cx="980" cy="640" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="992" y="636" fill="#e8f0ff" font-size="17" font-weight="bold">Beastman Forest</text>
+  <text x="992" y="654" fill="#9fb3c8" font-size="12">Territory of the Six Clans</text>
+</g>
+<g>
+  <circle cx="1070" cy="575" r="7" fill="#ff6b5e" stroke="#fff" stroke-width="1.5"/>
+  <text x="1082" y="571" fill="#e8f0ff" font-size="17" font-weight="bold">World Heart</text>
+  <text x="1082" y="589" fill="#9fb3c8" font-size="12">Source of the Main Rift · S20 Final Battle</text>
+</g>
+<g>
+  <circle cx="900" cy="250" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="912" y="246" fill="#e8f0ff" font-size="17" font-weight="bold">Human Territory</text>
+  <text x="912" y="264" fill="#9fb3c8" font-size="12">Osaikus Kingdom</text>
+</g>
+<g>
+  <circle cx="945" cy="305" r="7" fill="#9affc0" stroke="#fff" stroke-width="1.5"/>
+  <text x="957" y="301" fill="#e8f0ff" font-size="17" font-weight="bold">Capital · Osaikus City</text>
+  <text x="957" y="319" fill="#9fb3c8" font-size="12">Temple of the God of Light</text>
+</g>
+<g>
+  <circle cx="810" cy="175" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="822" y="171" fill="#e8f0ff" font-size="17" font-weight="bold">Nature Realm</text>
+  <text x="822" y="189" fill="#9fb3c8" font-size="12">Birthplace of the World Tree</text>
+</g>
+<g>
+  <circle cx="790" cy="135" r="7" fill="#9affc0" stroke="#fff" stroke-width="1.5"/>
+  <text x="802" y="131" fill="#e8f0ff" font-size="17" font-weight="bold">World Tree</text>
+  <text x="802" y="149" fill="#9fb3c8" font-size="12">Law Core</text>
+</g>
+<g>
+  <circle cx="1100" cy="430" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="1112" y="426" fill="#e8f0ff" font-size="17" font-weight="bold">Inner &amp; Outer Seas</text>
+  <text x="1112" y="444" fill="#9fb3c8" font-size="12">Merfolk / Fishmen Territory</text>
+</g>
+<g>
+  <circle cx="1090" cy="310" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="1102" y="306" fill="#e8f0ff" font-size="17" font-weight="bold">Ancient Battlefield Desert</text>
+  <text x="1102" y="324" fill="#9fb3c8" font-size="12">Pre-Civilization Ruins</text>
+</g>
+<g>
+  <circle cx="1185" cy="730" r="7" fill="#ffb37f" stroke="#fff" stroke-width="1.5"/>
+  <text x="1197" y="726" fill="#e8f0ff" font-size="17" font-weight="bold">Dragon Isle</text>
+  <text x="1197" y="744" fill="#9fb3c8" font-size="12">Dragon God's Guarded Land</text>
+</g>
+  <line x1="1070" y1="575" x2="200" y2="250" stroke="#ff5544" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.8"/>
+  <circle cx="1070" cy="575" r="40" fill="url(#riftGlow)"/>
+  <text x="700" y="878" text-anchor="middle" fill="#9fb3c8" font-size="12">Red dashed line = Main Rift (World Heart → Tokyo Ground Zero) | Solid dots mark major strongholds and key locations</text>
+</svg>

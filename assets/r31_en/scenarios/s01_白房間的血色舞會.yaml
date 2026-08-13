@@ -1,0 +1,103 @@
+# Scenario 1: Crimson Ball in the White Room — Structured Scenario
+
+scenario:
+  name: "Scenario 1: Crimson Ball in the White Room"
+  mode: [Multiplayer, Solo]
+
+  background: |
+    For three months, a rumor has spread through the artist circles of Gray Mist City: receive a white invitation embossed with a red rose, and you will attend a once-in-a-lifetime ball in the "White Room." Those who returned spoke of their works suddenly bursting with astonishing vitality. After the most recent ball, a painter vanished—leaving an unfinished painting in his studio: six people dancing, but the sixth dancer's face is blurred beyond recognition.
+
+  hooks:
+    - "**Commission**: The missing painter's family hires the players to investigate."
+    - "**Rumor**: The players hear the ball rumor at the Drowned Man Tavern, triggering a Spiritual intuition."
+    - "**Coincidence**: One player receives a white invitation."
+
+  acts:
+    - title: "Act 1: Investigation"
+      content: |
+        **Clue Point 1 — The Missing One's Home (edge of the Crown District)**
+        - Surface clue: The face of the sixth dancer on the painting keeps changing.
+        - Spiritual clue: Spirit Sight → residual Spectator Pathway; Divination → "Dance intertwined with death."
+        - Risk: Spirit Sight pushed too deep triggers +1d3 Loss of Control.
+        
+        **Clue Point 2 — 13 Moran Street (Iron Bridge District)**
+        - Surface clue: Neighbors say a black carriage comes to collect people every Friday night.
+        - Spiritual clue: Divination shows the carriage comes from the direction of the abandoned theater in the Iron Bridge District.
+        
+        **Clue Point 3 — Drowned Man Tavern (Ash Harbor District)**
+        - Social challenge: Must succeed at Negotiation/Bribery against an informant.
+        - Info: Lady White was once a prodigy dancer, "miraculously surviving" the Royal Theater fire five years ago.
+        - Failure consequence: The informant tips off Lady White, increasing the final encounter's difficulty.
+        
+        **Clue Point 4 — Mistgrave University (Academy District)**
+        - Academic challenge: Reading old newspapers reveals the fire report; all follow-up reports vanish.
+        - Mysticism: A Spectator Pathway Sequence 6 can cause large-scale effects in highly emotional environments.
+
+    - title: "Act 2: Conflict"
+      content: |
+        **Scene 1 — Infiltrating the Ball (basement of the abandoned theater, Iron Bridge District)**
+        - Environment: A lavish but dilapidated ballroom; over 20 guests dancing.
+        - Key discovery: One of the six dancers is already dead, but Lady White refuses to admit it.
+        - Path A (Social): Talk with Lady White; discover she lives inside a hallucination of her own making.
+        - Path B (Stealth): Sneak backstage to find the Sealed Artifact.
+        - Path C (Combat): Triggered once discovered.
+        
+        **Scene 2 — Confrontation**
+        - Lady White activates her power: all guests become "dancers" under emotional control.
+        - Objective options: defeat her head-on, recall the controlled guests, or destroy the Sealed Artifact.
+        
+        **Antagonist Data**:
+        - Lady White | Spectator Pathway Sequence 6 "Hypnotist"
+        - Attributes: Spirit (SPI) 55, Mind (MND) 50, Body (BOD) 35, Agility (AGI) 45, Charisma (CHA) 65
+        - HP: 115 / Spirit Pool (SP): 170 / Loss of Control (LoC): 45 / Loss of Control Threshold (LoCT): 110
+        - Powers: Dance Hypnosis (1 AP / 5 Spirit / 20m / area Charm), Emotional Storm (2 AP / 10 Spirit / whole area), Tempo Control (Reaction / controls hypnotized targets' actions)
+        - Weakness: −20 Mind when confronted with the truth; actively showing her the fire memories can shake her power.
+        - Tactics: Places controlled guests in the front line while she controls. Below 50% HP triggers "Eternal Waltz"—a berserk state.
+        
+        **Sealed Artifact Data**:
+        - "Eternal Metronome" | Tier 2 | Spectator Pathway Sequence 6
+        - Positive: Controls the emotions of those around her.
+        - Side effect: Obsessed with the perfect rhythm, thinks of everything in counts of eight.
+        - Hidden: At the stroke of midnight it sways on its own and summons dancers.
+
+    - title: "Act 3: The Choice"
+      content: |
+        **Revelation**: Five years ago, Lady White lost control during the fire and bound the spectators within a dance hallucination. She has been "reholding" the ball, convinced that if they dance perfectly enough, everything can begin again. That dead dancer—was herself, as she sees herself in the hallucination.
+        
+        | Choice | Result | Reward |
+        |------|------|------|
+        | Destroy | Defeat in combat | Tier 1 Sealed Artifact + 200 team Acting Progress |
+        | Hand to Authorities | Persuade with evidence + Social check | Moderate reward + Nighthawks favor + 100 Progress |
+        | Redeem | Recall + help her face the truth | Lady White's token + "Temperance" Tarot card + 300 Progress |
+        
+        **Loss of Control Risk Points**: Spirit Sight +1d3 / Affected by the dance +2 / Contact with the Metronome >3 rounds +1d5 / Witnessing the loss-of-control form +1d3 / Forced Pathway opposition +2 / Critical Failure +1d3 / Spirit Exhaustion +2d5 / Witnessing the truth +1d5
+        
+        ---
+
+  antagonists:
+    - data: |
+        - Attributes: Spirit (SPI) 55, Mind (MND) 50, Body (BOD) 35, Agility (AGI) 45, Charisma (CHA) 65
+        - HP: 115 / Spirit Pool (SP): 170 / Loss of Control (LoC): 45 / Loss of Control Threshold (LoCT): 110
+        - Powers: Dance Hypnosis (1 AP / 5 Spirit / 20m / area Charm), Emotional Storm (2 AP / 10 Spirit / whole area), Tempo Control (Reaction / controls hypnotized targets' actions)
+        - Weakness: −20 Mind when confronted with the truth; actively showing her the fire memories can shake her power.
+        - Tactics: Places controlled guests in the front line while she controls. Below 50% HP triggers "Eternal Waltz"—a berserk state.
+        
+        **Sealed Artifact Data**:
+        - "Eternal Metronome" | Tier 2 | Spectator Pathway Sequence 6
+        - Positive: Controls the emotions of those around her.
+        - Side effect: Obsessed with the perfect rhythm, thinks of everything in counts of eight.
+        - Hidden: At the stroke of midnight it sways on its own and summons dancers.
+
+  endings:
+    choices: |
+      **Revelation**: Five years ago, Lady White lost control during the fire and bound the spectators within a dance hallucination. She has been "reholding" the ball, convinced that if they dance perfectly enough, everything can begin again. That dead dancer—was herself, as she sees herself in the hallucination.
+      
+      | Choice | Result | Reward |
+      |------|------|------|
+      | Destroy | Defeat in combat | Tier 1 Sealed Artifact + 200 team Acting Progress |
+      | Hand to Authorities | Persuade with evidence + Social check | Moderate reward + Nighthawks favor + 100 Progress |
+      | Redeem | Recall + help her face the truth | Lady White's token + "Temperance" Tarot card + 300 Progress |
+      
+      **Loss of Control Risk Points**: Spirit Sight +1d3 / Affected by the dance +2 / Contact with the Metronome >3 rounds +1d5 / Witnessing the loss-of-control form +1d3 / Forced Pathway opposition +2 / Critical Failure +1d3 / Spirit Exhaustion +2d5 / Witnessing the truth +1d5
+      
+      ---

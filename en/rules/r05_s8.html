@@ -1,0 +1,259 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Hero&amp;#x27;s Proof / Dungeon Module D8 — Ancient Ruins | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r05_s8.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r05.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Dungeon Module D8 — Ancient Ruins</h1>
+<blockquote>
+<p><strong>Recommended Rank</strong>: A/S (Challenge Rating (CR) 35–40) | <strong>Theme</strong>: Lost civilization ruins, top-tier resource farming
+<strong>Access</strong>: Guild commission "A-Ruin1 / S-Ruin1" (corresponding to Rank A→S, CL 35–40); or designated by the GM as a leveling ground.
+<strong>Map</strong>: <code>maps/D8_古代遺跡.yaml</code> ＋ <code>maps/D8_古代遺跡.svg</code>
+This work has <strong>no multiclass</strong>; solo entry follows the player-count adjustment rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no allies).</p>
+</blockquote>
+<h3>How to Enter (Opening Beat)</h3>
+<ul>
+<li><strong>Take a guild commission</strong>: At the Adventurers' Guild bulletin board, accept the Rank A "Ruins Subjugation" (A-Ruin1); after promotion, accept S-Ruin1 (corresponding to Rank A→S, CL 35–40).</li>
+<li><strong>Active exploration</strong>: After joining at S0, players may delve deep into the lost ruins from the Archaeological Camp (GM Book 17.1).</li>
+<li><strong>Leveling role</strong>: The top choice for resource farming at CL 35–40; run alongside A/S commissions to grind Rank from A up to S, and face the Demon Generals (CL40+).</li>
+<li><strong>Solo mode</strong>: Supported at Challenge Rating (CR) −3 and enemy count ×0.5, no allies; the minor-boss room includes a 10×10 positioning map (<code>maps/D8_戰鬥_遺跡守護者.yaml</code>). Entering the room switches to standard combat (Chapter 7); after clearing, return to the exploration round.</li>
+</ul>
+<h2>I. Background</h2>
+<p>The ruins of a lost civilization lie buried beneath the yellow sands, where gargoyles and golems still patrol the royal tomb from a thousand years past, and the Ruin Guardian reflects all incoming attacks with its Guardian Stance. Expedition parties seldom return, and the guild lists this as an A→S rank subjugation target; the Ruin Guardian within the sanctuary is this ruin's minor boss.</p>
+<h2>II. Room Overview (with Fog Reveal)</h2>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Name</th>
+<th>Type</th>
+<th>Connections</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Ruins Stone Gate</td>
+<td>Entrance</td>
+<td>→R2</td>
+<td>Only entrance/exit; retreating here is safe.</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Gargoyle Corridor</td>
+<td>Combat</td>
+<td>R1/R3/R8</td>
+<td>Gargoyle ×2 (CR35).</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Collapsed Staircase</td>
+<td>Trap</td>
+<td>R2/R4/R9</td>
+<td>Weak hazard (falling rocks).</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Tomb Guardian Passage</td>
+<td>Combat</td>
+<td>R3/R5/R10</td>
+<td>Tomb Guardian ×2 (CR37).</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Priest Burial Vault</td>
+<td>Chest</td>
+<td>R4/R6/R11</td>
+<td>Ancient Coins, Glint Shard, G 300~480.</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Golem Antechamber</td>
+<td>Combat</td>
+<td>R5/R12</td>
+<td>Golem ×2 (CR38).</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Silent Prayer Hall</td>
+<td>Rest</td>
+<td>R1/R8/R13</td>
+<td>Safe rest point.</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Trap Courtyard</td>
+<td>Trap</td>
+<td>R7/R9/R2/R14</td>
+<td>Strong hazard (repeating-crossbow wall).</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>Golden Reliquary</td>
+<td>Chest</td>
+<td>R8/R10/R3/R15</td>
+<td>Gold Ornaments, Fine materials, G 320~500.</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>Ruin Warden Chamber</td>
+<td>Combat</td>
+<td>R9/R11/R4/R16</td>
+<td>Ruin Warden ×2 (CR39).</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>Stargazing Rest</td>
+<td>Rest</td>
+<td>R10/R12/R5/R17</td>
+<td>Safe rest point.</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>Royal Vault</td>
+<td>Chest</td>
+<td>R11/R6/R18</td>
+<td>Royal Seal, G 340~520.</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>Gargoyle Alley</td>
+<td>Combat</td>
+<td>R7/R14</td>
+<td>Gargoyle ×2 (CR37).</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>Rune Trap Hall</td>
+<td>Trap</td>
+<td>R13/R15/R8</td>
+<td>Strong hazard (rune burst).</td>
+</tr>
+<tr>
+<td>R15</td>
+<td>Astrolabe Treasury</td>
+<td>Chest</td>
+<td>R14/R16/R9/R19</td>
+<td>Astrolabe, G 360~540.</td>
+</tr>
+<tr>
+<td>R16</td>
+<td>Golem Battlefield</td>
+<td>Combat</td>
+<td>R15/R17/R10/R20</td>
+<td>Golem ×2 (CR39).</td>
+</tr>
+<tr>
+<td>R17</td>
+<td>Corridor Rest</td>
+<td>Rest</td>
+<td>R16/R18/R11/R21</td>
+<td>Safe rest point.</td>
+</tr>
+<tr>
+<td>R18</td>
+<td>Falling-Rock Rear Hall</td>
+<td>Trap</td>
+<td>R17/R12</td>
+<td>Strong hazard (falling ceiling stone).</td>
+</tr>
+<tr>
+<td>R19</td>
+<td>Tomb Guardian Chamber</td>
+<td>Combat</td>
+<td>R15/R20</td>
+<td>Tomb Guardian ×2 (CR39).</td>
+</tr>
+<tr>
+<td>R20</td>
+<td>Guardian Sanctuary</td>
+<td>Minor Boss</td>
+<td>R16/R19/R21</td>
+<td>Ruin Guardian (CR40) (see below).</td>
+</tr>
+<tr>
+<td>R21</td>
+<td>Exit Gateway</td>
+<td>Exit</td>
+<td>R20/R17</td>
+<td>Clear point; collect rewards and leave.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Exploration round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) are detailed in GM Book Chapter 17.</p>
+</blockquote>
+<h2>II-1. Combat Room Positioning Battle Map</h2>
+<p>This module's minor-boss room includes a 10×10 positioning battle map (same format as the S1–S4 Demon General battles), allowing the GM to resolve range and reach directly by grid distance:</p>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Combat Room</th>
+<th>Positioning Battle Map</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R20</td>
+<td>Guardian Sanctuary (Ruin Guardian CR40)</td>
+<td><code>maps/D8_戰鬥_遺跡守護者.yaml</code>＋<code>.svg</code></td>
+<td>Boss; Area Effect noted "Guardian Stance (reflect 30% damage)"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>On the positioning map, enemies are at top, allies at bottom, with front and back rows spaced 2 squares (4m) apart; solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no allies).</p>
+</blockquote>
+<h2>III. Key Room Details</h2>
+<ul>
+<li><strong>R3 Collapsed Staircase (weak)</strong>: Perception DC12 (Dexterity (M_DEX) / Luck (M_LUK)); triggers 1d6 Bludgeon. Disable DC14.</li>
+<li><strong>R8 Trap Courtyard (strong)</strong>: Perception DC18; triggers 3d6 Pierce. The crossbow wall can block the R7↔R14 passage (GM discretion).</li>
+<li><strong>R14 Rune Trap Hall (strong)</strong>: Perception DC20; triggers 3d6 Arcane. Runes can block the R13↔R15 passage (GM discretion).</li>
+<li><strong>R18 Falling-Rock Rear Hall (strong)</strong>: Perception DC20; triggers 3d6 Bludgeon.</li>
+<li><strong>R5 Priest Burial Vault</strong>: Open chest DC12; trap 30% (moderate, 2d6). Contains Ancient Coins ×2, Glint Shard, Gold (G) 300~480.</li>
+<li><strong>R9 Golden Reliquary</strong>: Open chest DC14; contains Gold Ornaments ×2, Fine materials, Gold (G) 320~500.</li>
+<li><strong>R21 Exit Gateway</strong>: After clearing, return to the guild to settle rewards and leave.</li>
+</ul>
+<h2>IV. Minor Boss — Ruin Guardian (CR40)</h2>
+<p>Per GM Book 10.4 CR formula and 10.7 boss framework (simplified version):</p>
+<ul>
+<li><strong>Health (HP)</strong> 180 (CR40 formula) | <strong>ATK Bonus (ATK)</strong> +11 (floor(1+0.25×40)) | <strong>Evasion (EVA)</strong> 16 (10+floor(0.15×40)) | <strong>Damage/hit</strong> 54 (floor(6+1.2×40))</li>
+<li><strong>Trait (1 phase)</strong>: <code>Guardian Stance</code>—once every 3 rounds, reflects 30% of damage taken back to the attacker.</li>
+<li><strong>Weakness</strong>: Lightning ×1.5 (see Monster Compendium note).</li>
+<li><strong>Drop</strong>: <code>Heart of the Ruins</code> (story item, redeemable at the guild for Influence Points (IP) +5); Fine materials + low chance of Fine recipe.</li>
+</ul>
+<h2>V. Clear Rewards (Full Clear)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experience (EXP)</td>
+<td>approx 36660 (R2 3500 + R4 3848 + R6 4028 + R10 4212 + R13 3848 + R16 4212 + R19 4212 + R20 8800; EXP accrues toward Character Level (CL) progress; Class Level (ClassLv) accrues separately in its own Class Experience (CEXP) pool, not shared with EXP)</td>
+</tr>
+<tr>
+<td>Gold (G)</td>
+<td>3000~4500</td>
+</tr>
+<tr>
+<td>Influence Points (IP)</td>
+<td>+5 (clear) / +5 (Heart of the Ruins redemption)</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>Ancient Coins / Gold Ornaments / low chance of Fine recipe</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Design Note</strong>: D8 is the top-tier stable ground for CL 35–40 "farming EXP + G + materials," directly leading into the Demon General battles (CL40+); refreshable daily (see Commission Catalog, reset rules).</p>
+</blockquote><p><a href="../../assets/r05_en/scenarios/D8_%E5%8F%A4%E4%BB%A3%E9%81%BA%E8%B7%A1.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

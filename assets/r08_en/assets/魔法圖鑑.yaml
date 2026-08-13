@@ -1,0 +1,1188 @@
+catalog: Spell Compendium
+system: 'Tianji: Cultivation of the True Heart'
+source_md: "\u9B54\u6CD5\u5716\u9451.md"
+language: en
+count: 128
+entries:
+- Name: Breath Regulation Basics
+  Grade: Yellow
+  Attribute: None
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "cultivation gain+5%\uFF1B Spirit Powercap+10"
+  Special Rule: The most basic Inner Art and the introductory technique of nearly every cultivator.
+  Realm Requirement: Qi Refining Early
+  Description: "The first lesson of cultivation \u2014 teaches you how to breathe the Spiritual Energy of heaven and earth."
+  _section: Yellow-Grade Inner Arts (6)
+- Name: Pure Yang Breath Art
+  Grade: Yellow
+  Attribute: Fire
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Fire technique power+8%\uFF1B HPcap+10"
+  Special Rule: Only Fire Spirit Root / Yang attribute may cultivate; night cultivation effect halved.
+  Realm Requirement: Qi Refining Early
+  Description: Temper your meridians with Pure Yang fire; ideal for Fire Spirit Root beginners.
+  _section: Yellow-Grade Inner Arts (6)
+- Name: Taiyin Breathing Method
+  Grade: Yellow
+  Attribute: Water/Yin
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Water/Yin-type technique power+8%\uFF1B Spirit Powerrecover+2/ round"
+  Special Rule: Only Water Spirit Root / Yin attribute may cultivate; daytime cultivation effect halved.
+  Realm Requirement: Qi Refining Early
+  Description: Nourish your Spirit Power with the moonlight of Taiyin; cultivation effect doubles at night.
+  _section: Yellow-Grade Inner Arts (6)
+- Name: Evergreen Art
+  Grade: Yellow
+  Attribute: Wood
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "HPcap+15\uFF1B each roundrecover HP\xD73%\uFF1Blifespan cost reduce5%"
+  Special Rule: Wood Spirit Root exclusive; good compatibility with other Wood Inner Arts.
+  Realm Requirement: Qi Refining Middle
+  Description: Embodies the longevity of plants; slowly builds the resilience of life.
+  _section: Yellow-Grade Inner Arts (6)
+- Name: Vajra Body-Forging Formula
+  Grade: Yellow
+  Attribute: Metal/Earth
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Physique+5\uFF1Bphysical defense+3\uFF1Bloadcap+20 unit"
+  Special Rule: Half effect if not Metal / Earth Spirit Root.
+  Realm Requirement: Qi Refining Middle
+  Description: Forge the body like Vajra adamant; essential for body cultivators.
+  _section: Yellow-Grade Inner Arts (6)
+- Name: Thunderclap Breath Art
+  Grade: Yellow
+  Attribute: Lightning
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Lightning technique power+10%\uFF1B Agility+3\uFF1BInitiative+5"
+  Special Rule: "Lightning Spirit Root only; cultivation speed \xD72 in thunderstorm weather."
+  Realm Requirement: Qi Refining Middle
+  Description: "Vibrate the meridians with the sound of thunder \u2014 essential for Lightning Spirit Root beginners; a faint thunderous hum surrounds you once mastered."
+  _section: Yellow-Grade Inner Arts (6)
+- Name: Azurewood Longevity Art
+  Grade: Profound
+  Attribute: Wood
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "HPcap+25%\uFF1B each roundrecover HP\xD76%\uFF1Blifespan cost reduce10%"
+  Special Rule: A longevity-type technique; lower combat-attribute bonuses but extremely high survivability.
+  Realm Requirement: Foundation Establishment Early
+  Description: The entry-level Inner Art of Cinnabar Cloud Valley, nurturing one's vitality through the Way of plants.
+  _section: Profound-Grade Inner Arts (6)
+- Name: Profound Ice Heart Sutra
+  Grade: Profound
+  Attribute: Ice
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Ice technique power+18%\uFF1B Divine Sense+5\uFF1Bextreme-cold environmentall attributes+3"
+  Special Rule: "Ice Spirit Root optimal; Fire techniques suffer \u221215% power (side effect)."
+  Realm Requirement: Foundation Establishment Early
+  Description: "A heart like profound ice, all thoughts silenced \u2014 the Inner Art most revered by Beiming cultivators."
+  _section: Profound-Grade Inner Arts (6)
+- Name: Tiangang Righteous Qi Formula
+  Grade: Profound
+  Attribute: Metal
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all attributes+3 (including Dao Heart) \uFF1B againstevil demon damage+15%\uFF1B Dao Heart+5"
+  Special Rule: Righteous-aligned cultivators gain an extra +5% power; demon cultivators cannot study it.
+  Realm Requirement: Golden Core Early
+  Description: A righteous-path Inner Art represented by the Taixu Sword Sect, radiating awe-inspiring righteous qi.
+  _section: Profound-Grade Inner Arts (6)
+- Name: Myriad Phenomena Return-to-Origin Formula
+  Grade: Profound
+  Attribute: Chaos
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all Five Elements technique power+10%\uFF1B techniquecompatibility+1 attribute"
+  Special Rule: "More Spirit Roots yields greater benefit; single-Spirit-Root cultivators suffer \u221230% effect."
+  Realm Requirement: Golden Core Middle
+  Description: Strives to embrace all phenomena; a blessing for three-Spirit-Root cultivators.
+  _section: Profound-Grade Inner Arts (6)
+- Name: Dark Night Heart Sutra
+  Grade: Profound
+  Attribute: Dark
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Dark technique power+18%\uFF1B Divine Sense+8\uFF1Bat nightall attributes+3\uFF1Bstealth check time hidden diebecomesopen die (GMdiscernment DC (DC) )"
+  Special Rule: "Dark Spirit Root only; \u221230% effect in sunlight; cannot be cultivated alongside Light Inner Arts."
+  Realm Requirement: Foundation Establishment Late
+  Description: "Takes the dark night as the Dao, merging into the world's shadows \u2014 the core Inner Art of assassins and spies."
+  _section: Profound-Grade Inner Arts (6)
+- Name: Radiant Light Heart Art
+  Grade: Profound
+  Attribute: Light
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Light technique power+18%\uFF1B HPrecover+5/ round\uFF1B againstevil demon damage+20%\uFF1Bcanperceive30 zhangmal ice within"
+  Special Rule: "Light Spirit Root only; \u221220% effect at night; cannot be cultivated alongside Dark Inner Arts."
+  Realm Requirement: Golden Core Early
+  Description: "Nourishes body and mind with sunlight and moonlight \u2014 the entry Inner Art of light cultivators, naturally restraining evil demons."
+  _section: Profound-Grade Inner Arts (6)
+- Name: Taiyi True Formula
+  Grade: Earth
+  Attribute: Metal
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all attributes+6 (including Dao Heart) \uFF1B Spirit Powercap+30%\uFF1BMetal technique power+25%"
+  Special Rule: "Core Inner Art of the Taixu Sword Sect; requires Dao Heart \u226530 to comprehend."
+  Realm Requirement: Nascent Soul Early
+  Description: One of the Taixu Sword Sect's sect-guarding Inner Arts, deducing the Sword Dao through the numbers of Taiyi.
+  _section: Earth-Grade Inner Arts (5)
+- Name: Nine-Cycle Profound Art
+  Grade: Earth
+  Attribute: Earth
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Physique+15\uFF1B HPcap+60%\uFF1Bphysical reduction+25%\uFF1B each time being attack5 timesrecover HP\xD720%"
+  Special Rule: "Body-cultivator exclusive; during study, Spirit Power cap \u221220% (trading qi for body)."
+  Realm Requirement: Nascent Soul Middle
+  Description: "A fragment of an ancient body-cultivator technique, pursuing sanctification of the flesh \u2014 nine cycles, never perishing."
+  _section: Earth-Grade Inner Arts (5)
+- Name: Primordial Unity Dao Sutra
+  Grade: Earth
+  Attribute: Chaos
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all attributes+8 (including Dao Heart) \uFF1B Spirit Powercap+45%\uFF1Bbreakthrough difficulty-15\uFF1Ball technique power+15%"
+  Special Rule: "Requires Chaos Spirit Root or Five-Elements-balanced physique; cultivation cost \xD71.3."
+  Realm Requirement: Spirit Transformation Early
+  Description: A supreme Inner Art said to be transmitted by the Dao Ancestor, compatible with all methods.
+  _section: Earth-Grade Inner Arts (5)
+- Name: Wind-Thunder True Formula
+  Grade: Earth
+  Attribute: Lightning/Wind
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all attributes+5 (including Dao Heart) \uFF1B Agility+15\uFF1BLightning+Wind technique power+25%\uFF1Bbattle movement+1 Zone (constant) \uFF1BInitiative+15"
+  Special Rule: Requires Lightning or Wind Spirit Root; cannot be cultivated alongside pure-Earth Inner Arts.
+  Realm Requirement: Nascent Soul Late
+  Description: "Wind and thunder engendering each other, attaining the Dao through extreme speed \u2014 speed is power, thunder is faith."
+  _section: Earth-Grade Inner Arts (5)
+- Name: Nine-Nether Profound Art
+  Grade: Earth
+  Attribute: Dark
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "Divine Sense+15\uFF1Ball attributes+4 (including Dao Heart) \uFF1BDark technique power+30%\uFF1Binvisibility duration+1 round\uFF1B enemies againstother perceive check additional-15"
+  Special Rule: "Dark Spirit Root only; natural HP recovery \u221250% (darkness devours vitality); Light damage \xD71.3 against it."
+  Realm Requirement: Spirit Transformation Middle
+  Description: "Beneath the Nine Netherworlds, the profound art forms its own school \u2014 trading one's own vitality for ultimate shadow power."
+  _section: Earth-Grade Inner Arts (5)
+- Name: Primordial Unity Immortal Canon
+  Grade: Heaven
+  Attribute: Chaos
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all attributes+15 (including Dao Heart) \uFF1B Spirit Powercap+80%\uFF1Ball technique power+30%\uFF1Bbreakthrough difficulty-25"
+  Special Rule: Requires Chaos Spirit Root; Inner Demon value permanently +15 (Great Dao backlash).
+  Realm Requirement: Fusion Early
+  Description: An immortal canon pointing straight at the Great Dao; mastering it reveals the secret of ascension.
+  _section: Heaven-Grade Inner Arts (3)
+- Name: Supreme Forget-Emotion Dao
+  Grade: Heaven
+  Attribute: None (Beyond Five Elements)
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all attributes+20 (including Dao Heart) \uFF1B Spirit Powercap+100%\uFF1Ball Five Elements technique power+40%\uFF1B Dao Heart+25\uFF1Bimmune to Inner Demons"
+  Special Rule: "Gradually loses emotions after study (GM applies per-stage RP effects); occupies \xD72 Inner Art slots."
+  Realm Requirement: Mahayana Early
+  Description: The Supreme Forgetting of Emotion, the unity of heaven and man. Legend says perfecting it proves the Dao and ascends.
+  _section: Heaven-Grade Inner Arts (3)
+- Name: Myriad Laws Return-to-Source
+  Grade: Heaven
+  Attribute: Chaos
+  Qi Cost: None (Passive)
+  Effect (Lv.1): "all attributes+10 (including Dao Heart) \uFF1BInner Artslotcap+1\uFF1Ball techniquecooldown-1 round (minimum1) \uFF1B techniqueswitch without need cost action\uFF1B Divine Ability Spirit Power cost-20%"
+  Special Rule: "Requires Dao Heart \u226560 and mastery of at least 12 techniques (incl. Inner Arts / Martial Techniques / Divine Abilities); cultivation cost \xD72."
+  Realm Requirement: Mahayana Late
+  Description: "All methods return to one, a furnace nurturing a hundred scriptures \u2014 legend holds only one who has studied all methods can grasp this Dao, unifying every technique under heaven."
+  _section: Heaven-Grade Inner Arts (3)
+- Name: Basic Sword Technique
+  Grade: Yellow
+  Attribute: Metal
+  Qi Cost: '5'
+  Damage/Effect: melee1d6+ Physique/10
+  Cooldown: None
+  Special Rule: Sword-type weapons only.
+  Realm Requirement: Qi Refining Early
+  Description: "Thrust, chop, lift, tap \u2014 the eight-character formula of the sword Dao's entry."
+  _section: Yellow-Grade Martial Techniques (6)
+- Name: Blazing Flame Palm
+  Grade: Yellow
+  Attribute: Fire
+  Qi Cost: '8'
+  Damage/Effect: "melee1d6+2+ Spirit Power/10\uFF1B inflictsburn (1 round HP-3)"
+  Cooldown: None
+  Special Rule: Requires empty hand or gauntlets.
+  Realm Requirement: Qi Refining Early
+  Description: Channel qi into flame and slap out a scorching blaze at the enemy.
+  _section: Yellow-Grade Martial Techniques (6)
+- Name: Clear Wind Step
+  Grade: Yellow
+  Attribute: Wind
+  Qi Cost: '3'
+  Damage/Effect: "Evasion+10 (re action action) \uFF1B movement+1 Zone (1 round)"
+  Cooldown: 2 round
+  Special Rule: "Movement speed \xD71.5 when out of combat."
+  Realm Requirement: Qi Refining Early
+  Description: Infuse the legs with wind qi; the body becomes as light as a swallow.
+  _section: Yellow-Grade Martial Techniques (6)
+- Name: Iron Wall Formula
+  Grade: Yellow
+  Attribute: Earth
+  Qi Cost: '5'
+  Damage/Effect: "this roundphysical defense+10\uFF1Bparry time physical defenseextra +5"
+  Cooldown: 3 round
+  Special Rule: Requires shield or heavy armor; useless against spells.
+  Realm Requirement: Qi Refining Middle
+  Description: Harden the skin with earth qi, like an iron wall of bronze.
+  _section: Yellow-Grade Martial Techniques (6)
+- Name: Air-Piercing Finger
+  Grade: Yellow
+  Attribute: Metal
+  Qi Cost: '6'
+  Damage/Effect: "short range1d6+3+ Spirit Power/10\uFF1B ignore5 physical defense"
+  Cooldown: None
+  Special Rule: Metal Spirit Root only.
+  Realm Requirement: Qi Refining Late
+  Description: Condense sharp metal qi at the fingertip, piercing even iron armor.
+  _section: Yellow-Grade Martial Techniques (6)
+- Name: Ice Finger
+  Grade: Yellow
+  Attribute: Ice
+  Qi Cost: '7'
+  Damage/Effect: "short range1d6+2+ Spirit Power/10\uFF1Bon hit inflicts\u300Cfrost\u300D2 round ( Agility-5)"
+  Cooldown: None
+  Special Rule: Ice Spirit Root only; can freeze water surfaces to create a path.
+  Realm Requirement: Qi Refining Middle
+  Description: "Frost at the fingertip, ice on touch \u2014 the entry Martial Technique for Ice Spirit Roots."
+  _section: Yellow-Grade Martial Techniques (6)
+- Name: Green Lotus Sword Formula
+  Grade: Profound
+  Attribute: Wood
+  Qi Cost: '15'
+  Damage/Effect: "medium range2d8+ Physique/8\uFF1Bon hit+8\uFF1BNo.3 timescausesuse damage\xD71.5"
+  Cooldown: None
+  Special Rule: Sword-type only; the 3rd strike "Green Lotus Bloom" has a dazzling effect.
+  Realm Requirement: Foundation Establishment Middle
+  Description: "Sword like a green lotus, blooming in three folds \u2014 the signature Martial Technique of Cinnabar Cloud Valley sword cultivators."
+  _section: Profound-Grade Martial Techniques (7)
+- Name: Sky-Incinerating Palm
+  Grade: Profound
+  Attribute: Fire
+  Qi Cost: '18'
+  Damage/Effect: "melee2d8+3+ Spirit Power/8\uFF1Bon hitafter3 round inside each round HP-5 (burn)"
+  Cooldown: 2 round
+  Special Rule: Fire Spirit Root gains +10% damage.
+  Realm Requirement: Foundation Establishment Late
+  Description: One palm strike unleashes a sky-burning flame; the struck burns like fire for three days without extinguishing.
+  _section: Profound-Grade Martial Techniques (7)
+- Name: Wind-Riding Step
+  Grade: Profound
+  Attribute: Wind
+  Qi Cost: '10'
+  Damage/Effect: "Evasion+20 (re action) \uFF1Bmay cross2 Zone movement\uFF1Bwalk on water"
+  Cooldown: 1 round
+  Special Rule: Can Evade and move simultaneously in combat.
+  Realm Requirement: Foundation Establishment Early
+  Description: A wind-element movement art, coming and going like the wind, treading water without a trace.
+  _section: Profound-Grade Martial Techniques (7)
+- Name: Thousand-Mechanism Pull
+  Grade: Profound
+  Attribute: Water
+  Qi Cost: '12'
+  Damage/Effect: "medium range2d6+ Spirit Power/8\uFF1Bon hitpull targetpull tomelee"
+  Cooldown: 3 round
+  Special Rule: Can pull allies (deals 0 damage, drag only).
+  Realm Requirement: Golden Core Early
+  Description: Turn water into threads, a line across a thousand li, pulling the enemy into your embrace.
+  _section: Profound-Grade Martial Techniques (7)
+- Name: Ice Seal Technique
+  Grade: Profound
+  Attribute: Ice
+  Qi Cost: '16'
+  Damage/Effect: "medium range2d6+ Spirit Power/8\uFF1Bon hit inflicts\u300C frozen\u300D (2 round unable to movement)"
+  Cooldown: 3 round
+  Special Rule: Ice Spirit Root gains +1 round of freeze; Fire attacks can thaw early.
+  Realm Requirement: Foundation Establishment Late
+  Description: Condense cold qi, sealing the enemy within three chi of profound ice.
+  _section: Profound-Grade Martial Techniques (7)
+- Name: Thunder Flash
+  Grade: Profound
+  Attribute: Lightning
+  Qi Cost: '14'
+  Damage/Effect: "instant teleportto anymelee/medium rangeposition\uFF1B againstpat hpass enemydeal1d8+ Spirit Power/10"
+  Cooldown: 2 round
+  Special Rule: Lightning Spirit Root only; next strike after teleport +20% damage.
+  Realm Requirement: Foundation Establishment Middle
+  Description: "Become thunder-light itself, shifting in an instant \u2014 the signature movement art of Lightning cultivators."
+  _section: Profound-Grade Martial Techniques (7)
+- Name: Shadow Step
+  Grade: Profound
+  Attribute: Dark
+  Qi Cost: '10'
+  Damage/Effect: "invisibility1 round (next time attackmust becritical hit) \uFF1B Evasion+10"
+  Cooldown: 3 round
+  Special Rule: Dark Spirit Root only; effect doubles at night or in darkness (invisibility 2 rounds).
+  Realm Requirement: Foundation Establishment Middle
+  Description: "Merge into the shadows, coming and going without a trace \u2014 the entry lesson for assassins."
+  _section: Profound-Grade Martial Techniques (7)
+- Name: Startling Thunder Flash
+  Grade: Earth
+  Attribute: Lightning
+  Qi Cost: '40'
+  Damage/Effect: "long range3d10+ Spirit Power/6\uFF1B ignore Evasion\uFF1Bon hit inflicts paralysis (50% chance, 1 round unable to action)"
+  Cooldown: 3 round
+  Special Rule: "Lightning Spirit Root damage +15%; rain/thunderstorm environment damage \xD71.5."
+  Realm Requirement: Nascent Soul Middle
+  Description: "Become thunder itself, arriving in an instant \u2014 the strongest single-target Lightning charge."
+  _section: Earth-Grade Martial Techniques (6)
+- Name: Heaven-Rending Sword Qi
+  Grade: Earth
+  Attribute: Metal
+  Qi Cost: '35'
+  Damage/Effect: "medium rangecone3d10+ Physique/5\uFF1B ignore15 physical defense\uFF1B againstflight target damage+30%"
+  Cooldown: 4 round
+  Special Rule: Sword-type only; true inheritance Martial Technique of the Taixu Sword Sect.
+  Realm Requirement: Spirit Transformation Early
+  Description: "One sword rends the heavens, sword qi spanning ten zhang \u2014 the signature Martial Technique of the Taixu Sword Sect."
+  _section: Earth-Grade Martial Techniques (6)
+- Name: Myriad Woods Enclosure
+  Grade: Earth
+  Attribute: Wood
+  Qi Cost: '30'
+  Damage/Effect: "large area (melee+ in ) 2d10+ Spirit Power/6\uFF1B transform terraininto\u300Cdense forest\u300D (3 round inside enemies movement-1 Zone)"
+  Cooldown: 5 round
+  Special Rule: Requires plants/soil environment; Wood Spirit Root extends range +1 Zone.
+  Realm Requirement: Nascent Soul Late
+  Description: "One thought brings ten thousand trees to life, all phenomena enclosed \u2014 the self-preservation ultimate of Cinnabar Cloud Valley alchemists."
+  _section: Earth-Grade Martial Techniques (6)
+- Name: Thousand-Li Ice Seal
+  Grade: Earth
+  Attribute: Ice
+  Qi Cost: '50'
+  Damage/Effect: "large area3d10+ Spirit Power/5\uFF1Bon hit inflicts\u300Cdeep cold\u300D (3 round Agility-15+ each round HP-8) \uFF1B transform terrain into\u300C ice plain\u300D (2 roundnon- inside Ice movement-1 Zone)"
+  Cooldown: 6 round
+  Special Rule: Ice Spirit Root gains +15% damage; Fire environments halve the effect.
+  Realm Requirement: Spirit Transformation Early
+  Description: "One thought summons wind and snow, sealing a thousand li in ice \u2014 the pinnacle Martial Technique of Beiming ice cultivators."
+  _section: Earth-Grade Martial Techniques (6)
+- Name: Heavenly Thunder Formula
+  Grade: Earth
+  Attribute: Lightning
+  Qi Cost: '45'
+  Damage/Effect: "long range single target4d10+ Spirit Power/5\uFF1B ignore30 spell resistance\uFF1Bon hit inflicts\u300C thunder-strike\u300D (50% chance paralysis2 round)"
+  Cooldown: 4 round
+  Special Rule: "Lightning Spirit Root damage +20%; thunderstorm weather damage \xD71.5 and guaranteed hit."
+  Realm Requirement: Nascent Soul Late
+  Description: "Draw heavenly thunder into the body, a single strike of ten-thousand-jun thunder \u2014 the killing move of Lightning cultivators."
+  _section: Earth-Grade Martial Techniques (6)
+- Name: Radiant Slash
+  Grade: Earth
+  Attribute: Light
+  Qi Cost: '35'
+  Damage/Effect: "medium range3d8+ Spirit Power/6\uFF1B againstevil demon/Dark damage\xD72\uFF1Bheal allies HP\xD7 Spirit Power/3 (cone)"
+  Cooldown: 4 round
+  Special Rule: Light Spirit Root only; +25% damage in sunlight.
+  Realm Requirement: Nascent Soul Middle
+  Description: "Turn light into a blade, severing darkness \u2014 a holy-light Martial Technique highly effective against the demon race."
+  _section: Earth-Grade Martial Techniques (6)
+- Name: Myriad Swords Return-to-Source
+  Grade: Heaven
+  Attribute: Metal
+  Qi Cost: '110'
+  Damage/Effect: "whole battlefieldall target5d12+ Physique/4\uFF1B each additional Inner Artslotextra +1d12 (cap+3d12)"
+  Cooldown: 6 round
+  Special Rule: Requires sword-type weapon; cannot act next round after use (stamina spent).
+  Realm Requirement: Fusion Middle
+  Description: "The ultimate mystery of the Sword Dao \u2014 ten thousand swords released at once, heaven and earth change color."
+  _section: Heaven-Grade Martial Techniques (3)
+- Name: Chaos Annihilation Slash
+  Grade: Heaven
+  Attribute: Chaos
+  Qi Cost: '120'
+  Damage/Effect: "single target6d12+ Spirit Power+ Physique/3\uFF1B ignore40defenseand25 resistance\uFF1Bon hit additional\u300Cexistence erased\u300D ( targetall buffdispelled)"
+  Cooldown: per battle1 times
+  Special Rule: "Requires Dao Heart \u226560; Inner Demon value +5 after use."
+  Realm Requirement: Mahayana Early
+  Description: One slash touches the origin of the Great Dao, erasing all of the opponent's protection.
+  _section: Heaven-Grade Martial Techniques (3)
+- Name: Void Rift
+  Grade: Heaven
+  Attribute: Space
+  Qi Cost: '100'
+  Damage/Effect: "medium range5d12+ Spirit Power/4\uFF1B ignoreallphysical defense\uFF1Btearspacecreate\u300Cvoid rift\u300D (2 round inside target unable to movement+ each round HP-20)"
+  Cooldown: 5 round
+  Special Rule: "Requires Space comprehension \u226540; +50% damage to Space-Divine-Ability users."
+  Realm Requirement: Fusion Late
+  Description: "A strike that rends space \u2014 the killing extreme of the law of space."
+  _section: Heaven-Grade Martial Techniques (3)
+- Name: Spirit Crane Avatar
+  Grade: Profound
+  Attribute: Wood/Wind
+  Qi Cost: '30'
+  Damage/Effect: "transform into a spirit crane3 round\uFF1Aflight (may cross3 Zone) \uFF1B Evasion+15\uFF1Bbutduring unable to attack"
+  Cooldown: 6 round
+  Special Rule: Requires Wood or Wind Spirit Root; +20% damage taken during avatar form.
+  Realm Requirement: Golden Core Early
+  Description: "Entrust the spirit to a spirit crane, soaring the nine heavens \u2014 an excellent Divine Ability for scouting and escape."
+  _section: Profound-Grade Divine Abilities (4)
+- Name: Vajra Dharma Manifestation
+  Grade: Profound
+  Attribute: Earth/Metal
+  Qi Cost: '40'
+  Damage/Effect: "summon out Dharma manifestationbody-protecting3 round\uFF1A HPcap\xD71.5\uFF1Bphysical reduction+25%\uFF1Bbut Agility-10"
+  Cooldown: 5 round
+  Special Rule: Body cultivators gain +10% effect; the manifestation is visible (10-zhang golden body).
+  Realm Requirement: Golden Core Late
+  Description: "The body becomes Vajra, indestructible \u2014 the signature Divine Ability of body cultivators."
+  _section: Profound-Grade Divine Abilities (4)
+- Name: Heavenly Eye Insight
+  Grade: Profound
+  Attribute: None
+  Qi Cost: '20'
+  Damage/Effect: "open Heaveneye3 round\uFF1Asee through enemies attribute/weakness/ Divine Abilitycooldown\uFF1Bdiscerninvisibility/illusion\uFF1Binsight formationflaw"
+  Cooldown: 6 round
+  Special Rule: "Requires Comprehension \u226540; can see through targets within 2 realm stages above own."
+  Realm Requirement: Golden Core Middle
+  Description: "The Heavenly Eye at the brow opens, nothing in the world can hide \u2014 a Divine Ability the wise must learn."
+  _section: Profound-Grade Divine Abilities (4)
+- Name: Five-Element Rotation
+  Grade: Profound
+  Attribute: Chaos
+  Qi Cost: '35'
+  Damage/Effect: "willself Five Elements attributetemporaryswitch to any one (3 round) \uFF1Bafter switching attribute technique power+15%\uFF1Bmutual generation attributeextra +5%"
+  Cooldown: 5 round
+  Special Rule: Requires Chaos Spirit Root or at least 3 Five-Element Spirit Roots; cannot use the strongest technique of the original attribute during switch.
+  Realm Requirement: Golden Core Late
+  Description: "Borrow the principle of Five-Element mutual generation, rotating and transforming to answer all methods \u2014 the core Divine Ability of multi-Spirit-Root cultivators."
+  _section: Profound-Grade Divine Abilities (4)
+- Name: Universe-in-Sleeve
+  Grade: Earth
+  Attribute: Space
+  Qi Cost: '50'
+  Damage/Effect: "will targetsuck into the sleeve and imprison2 round\uFF1Bthe imprisoned each roundrequires Divine Sense check (d100\u2264 Divine Sense-20) break free"
+  Cooldown: 5 round
+  Special Rule: Half effect on Large targets (1 round); no effect on Gargantuan.
+  Realm Requirement: Nascent Soul Early
+  Description: "One sleeve can hold the universe whole \u2014 the entry Divine Ability of the Space school."
+  _section: Earth-Grade Divine Abilities (6)
+- Name: Samadhi True Fire
+  Grade: Earth
+  Attribute: Fire
+  Qi Cost: '80'
+  Damage/Effect: "long rangeall inside enemy4d10+ Spirit Power/5\uFF1B ignore Fire resistance\uFF1B inflicts\u300C soul-burn\u300D3 round ( each round HP-15)"
+  Cooldown: per battle1 times
+  Special Rule: "Requires Fire Spirit Root or special constitution (Pure Yang / Solar); Dao Heart \u22123 (temporary) after use."
+  Realm Requirement: Spirit Transformation Early
+  Description: "Refine true fire from essence, qi, and spirit, burning all things \u2014 even the soul cannot escape."
+  _section: Earth-Grade Divine Abilities (6)
+- Name: Tianji Deduction
+  Grade: Earth
+  Attribute: None
+  Qi Cost: '45'
+  Damage/Effect: "preview the future3 round inside battletrend\uFF1Aknow enemiesnext round main action intent\uFF1Bteam Initiative+10 (3 round)"
+  Cooldown: 8 round
+  Special Rule: "Requires Comprehension \u226550; the deduction is not 100% accurate (GM secretly rolls accuracy)."
+  Realm Requirement: Spirit Transformation Late
+  Description: "Deduce the Heavenly Dao with Comprehension, glimpsing fragments of the future \u2014 a Divine Ability of the wise."
+  _section: Earth-Grade Divine Abilities (6)
+- Name: Ice Soul Divine Light
+  Grade: Earth
+  Attribute: Ice
+  Qi Cost: '70'
+  Damage/Effect: "large area4d10+ Spirit Power/5\uFF1Bon hit inflicts\u300C ice seal\u300D1 round (completely unable to action) \uFF1B against Fire damage\xD71.5"
+  Cooldown: 6 round
+  Special Rule: "Ice Spirit Root only; extreme-cold environments damage \xD71.3 and cooldown \u22121 round."
+  Realm Requirement: Spirit Transformation Middle
+  Description: "Refine divine light from Beiming's ten-thousand-year ice soul, freezing all things \u2014 Beiming's strongest control Divine Ability."
+  _section: Earth-Grade Divine Abilities (6)
+- Name: Myriad Thunder Heavenly Prison
+  Grade: Earth
+  Attribute: Lightning
+  Qi Cost: '85'
+  Damage/Effect: "whole battlefieldarea3d12+ Spirit Power/4\uFF1Bon hitall enemy\uFF1B inflicts\u300C thunder prison\u300D (3 round inside each round HP-10+ Agility-10)"
+  Cooldown: per battle1 times
+  Special Rule: Lightning Spirit Root only; the user also suffers 1d12 backlash (Lightning arts are domineering).
+  Realm Requirement: Spirit Transformation Early
+  Description: "Summon the power of the nine-heaven thunder tribulation to drop a thunder prison, locking myriad foes \u2014 hurt the enemy a thousand, lose eighty yourself."
+  _section: Earth-Grade Divine Abilities (6)
+- Name: Void Step
+  Grade: Earth
+  Attribute: Space
+  Qi Cost: '40'
+  Damage/Effect: "can at battle in each roundfree instant movement1 times (short range/medium range) \uFF1B Evasion+25\uFF1Bcrossmoreobstacles/barrier"
+  Cooldown: None ( duration)
+  Special Rule: Lasts 3 rounds; cannot use other Space Divine Abilities during it.
+  Realm Requirement: Nascent Soul Late
+  Description: "One step into the void, ignoring all obstacles \u2014 the ultimate movement art of the law of space."
+  _section: Earth-Grade Divine Abilities (6)
+- Name: Law-Manifesting Heaven-Earth Form
+  Grade: Heaven
+  Attribute: Earth
+  Qi Cost: '120'
+  Damage/Effect: "transform intogiant3 round\uFF1A HP\xD73\uFF1Ball damage\xD72\uFF1B movementcross3 Zone\uFF1Bimmune control\uFF1Bbody sizecovers3 Zone"
+  Cooldown: 72 shichen
+  Special Rule: "After use, weakened 12 shichen (all attributes \u221220)."
+  Realm Requirement: Fusion Early
+  Description: "An ancient great Divine Ability \u2014 manifesting heaven and earth, towering between sky and ground, like an ancient god-demon reborn."
+  _section: Heaven-Grade Divine Abilities (5)
+- Name: Star-Shift Reversal
+  Grade: Heaven
+  Attribute: Space
+  Qi Cost: '100'
+  Damage/Effect: "will1 times enemies attackcompletely reflectreturncaster (including Divine Ability) \uFF1Borinstant teleport to continentany known location (non-combat)"
+  Cooldown: battle6 round/non-combat24 shichen
+  Special Rule: Reflection limited to single-target attacks; teleport requires having visited the destination.
+  Realm Requirement: Fusion Late
+  Description: "The ultimate application of the law of space \u2014 heaven and earth overturned, cause and effect reversed."
+  _section: Heaven-Grade Divine Abilities (5)
+- Name: Creation of All Things
+  Grade: Heaven
+  Attribute: Chaos
+  Qi Cost: '200'
+  Damage/Effect: "create atemporary small world (3 round) \uFF1Aworld insideuseristhe Dao of Heaven\u2014\u2014cultivatealter physicallaw, timeflow speed, spacestructure\uFF1Bworldall inside enemy against targetall attributes-30"
+  Cooldown: 360 shichen (15 Heaven)
+  Special Rule: "Requires Chaos Spirit Root + Dao Heart \u226575; after use Inner Demon value +15 and lifespan drain 100 years."
+  Realm Requirement: Tribulation Crossing Late
+  Description: "Touches the origin of creation \u2014 one thought creates a world, one thought destroys it. The Divine Ability closest to the Dao Ancestor's power."
+  _section: Heaven-Grade Divine Abilities (5)
+- Name: Complete Star-Omens Deduction
+  Grade: Heaven
+  Attribute: None
+  Qi Cost: '150'
+  Damage/Effect: "belowchoose one of three\uFF1A\u2460foresee the future7 days 1 major event (GMmust provide accurate in formation) \uFF1B\u2461 at battle in gain enemiesall members' future2 round action plan\uFF1B\u2462deduce a lost technique whereabouts (gainone exact clue)"
+  Cooldown: 720 shichen (30 Heaven)
+  Special Rule: "Requires Comprehension \u226560 and Divine Sense \u226570; after use Divine Sense \u221220 temporary (24 shichen) \u2014 peering into Heaven's Mechanism drains the mind; every 3 uses, the GM may trigger one \"Heaven's Mechanism Backlash\" (random misfortune)."
+  Realm Requirement: Fusion Middle
+  Description: "The supreme secret teaching of Tianji Manor \u2014 deduce past and future through the trajectories of the stars; information is power."
+  _section: Heaven-Grade Divine Abilities (5)
+- Name: One Thought of Reincarnation
+  Grade: Heaven
+  Attribute: Chaos
+  Qi Cost: '300'
+  Damage/Effect: "ultimate reversal\uFF1Awillselforcause one ally status reverts to3 roundbefore ( HP/ Qi/ buff/position) \uFF1Borcause one enemyreturn to1 roundbefore status ( de buff reset)"
+  Cooldown: 720 shichen (30 Heaven)
+  Special Rule: "Requires Dao Heart \u226585; after use Inner Demon value +25 and randomly lose one studied technique (Heavenly Dao backlash)."
+  Realm Requirement: Tribulation Crossing Late
+  Description: "Touches the law of reincarnation \u2014 reverse cause and effect in a single thought. The cost is dire; never use it lightly except at a life-and-death moment."
+  _section: Heaven-Grade Divine Abilities (5)
+- '#': '1'
+  Name: Maze-Tracing Array
+  Grade: Yellow-Grade
+  Type: Maze Array
+  Coverage Area: 1 Zone (short range)
+  Setup Time: 1 main action
+  Upkeep Cost: 3 Qi/ round
+  Spirit Energy Requirement: 3 pcs Low- Grade Spirit Stone
+  Effect: "inside the array enemies movement cost\xD72\uFF1B enemies attack check-10\uFF1Bscenery inside the array blurs, ranged attack additional-10"
+  Dispel DC: '85'
+  Array Core HP: '20'
+  Realm Requirement: Qi Refining Early
+  _section: 1.2 Yellow-Grade Formations (Qi Refining)
+- '#': '2'
+  Name: Spirit-Gathering Array
+  Grade: Yellow-Grade
+  Type: Support Array
+  Coverage Area: 1 Zone (melee)
+  Setup Time: 2 main action
+  Upkeep Cost: 2 Qi/ round
+  Spirit Energy Requirement: 5 pcs Low- Grade Spirit Stone
+  Effect: "inside the array allies each round additionalrecover 1d4 Qi\uFF1Bmeditation recovery efficiency\xD72"
+  Dispel DC: '80'
+  Array Core HP: '15'
+  Realm Requirement: Qi Refining Early
+  _section: 1.2 Yellow-Grade Formations (Qi Refining)
+- '#': '3'
+  Name: Fire Element Array
+  Grade: Yellow-Grade
+  Type: Attack Array
+  Coverage Area: 1 Zone (short range)
+  Setup Time: 2 main action
+  Upkeep Cost: 4 Qi/ round
+  Spirit Energy Requirement: 5 pcs Low- Grade Spirit Stone+1 pcs Fire Spirit Stone
+  Effect: "inside the array enemies each roundends receiving 1d8 fire damage\uFF1B Wood targetextra +1d4\uFF1B allies Fire technique damage+5"
+  Dispel DC: '88'
+  Array Core HP: '25'
+  Realm Requirement: Qi Refining Middle
+  _section: 1.2 Yellow-Grade Formations (Qi Refining)
+- '#': '4'
+  Name: Bodyguard Array
+  Grade: Yellow-Grade
+  Type: Defense Array
+  Coverage Area: 1 Zone (melee)
+  Setup Time: 1 main action
+  Upkeep Cost: 2 Qi/ round
+  Spirit Energy Requirement: 3 pcs Low- Grade Spirit Stone
+  Effect: "inside the array alliesgain +3 armor\uFF1B Qibody-protecting efficiency\xD71.2\uFF1Bcanabsorbtotal20 points damagecollapses after"
+  Dispel DC: '82'
+  Array Core HP: '30'
+  Realm Requirement: Qi Refining Early
+  _section: 1.2 Yellow-Grade Formations (Qi Refining)
+- '#': '5'
+  Name: Five-Element Sealing Array
+  Grade: Profound-Grade
+  Type: Maze Array
+  Coverage Area: 2 Zone (medium range)
+  Setup Time: 3 main action
+  Upkeep Cost: 8 Qi/ round
+  Spirit Energy Requirement: 10 pcs Mid- Grade Spirit Stone+1 of each Five-Element Stone
+  Effect: "blockade Zoneeverything inside teleport/earth-escape art\uFF1B enemies each roundlose1d6 Qi\uFF1B movement cost\xD73"
+  Dispel DC: '100'
+  Array Core HP: '50'
+  Realm Requirement: Foundation Establishment Middle
+  _section: 1.3 Profound-Grade Formations (Foundation Establishment~Golden Core)
+- '#': '6'
+  Name: Three-Talents Immortal-Trapping Array
+  Grade: Profound-Grade
+  Type: Attack/Defense
+  Coverage Area: 2 Zone (melee+short range)
+  Setup Time: 2 main action
+  Upkeep Cost: 6 Qi/ round
+  Spirit Energy Requirement: 3 pcs Mid- Grade Spirit Stone+1 set array flag (3 face)
+  Effect: "inside the array enemies attack-15, movement\xD72, each round 1d8 metal damage\uFF1B allies attack+10"
+  Dispel DC: '95'
+  Array Core HP: '45'
+  Realm Requirement: Foundation Establishment Early
+  _section: 1.3 Profound-Grade Formations (Foundation Establishment~Golden Core)
+- '#': '7'
+  Name: Eight-Trigram Mountain-Guard Array
+  Grade: Profound-Grade
+  Type: Defense Array
+  Coverage Area: 4 Zone (long range)
+  Setup Time: "non-combat\uFF1A1 shichen"
+  Upkeep Cost: 15 Qi/ shichen
+  Spirit Energy Requirement: 8 pcs Mid- Grade Spirit Stone+Eight-Trigram Array Board
+  Effect: "covers the entiremountain peak\uFF1B enemiesentering requires Divine Sense againstresist\uFF1B formationshield value200 points"
+  Dispel DC: '110'
+  Array Core HP: '80'
+  Realm Requirement: Golden Core Early
+  _section: 1.3 Profound-Grade Formations (Foundation Establishment~Golden Core)
+- '#': '8'
+  Name: Four-Symbols Spirit-Locking Array
+  Grade: Profound-Grade
+  Type: Maze Array
+  Coverage Area: 2 Zone (medium range)
+  Setup Time: 3 main action
+  Upkeep Cost: 7 Qi/ round
+  Spirit Energy Requirement: 4 Mid-Grade Spirit Stones (Azure Dragon / White Tiger / Vermilion Bird / Black Tortoise positions)
+  Effect: "Enemies inside stop recovering Qi; lose 2 Qi/round; technique Qi cost \xD71.5"
+  Dispel DC: '98'
+  Array Core HP: '55'
+  Realm Requirement: Foundation Establishment Late
+  _section: 1.3 Profound-Grade Formations (Foundation Establishment~Golden Core)
+- '#': '11'
+  Name: Nine-Heaven Ten-Earth Soul-Annihilation Array
+  Grade: Earth-Grade
+  Type: Attack Array
+  Coverage Area: 3 Zone (long range)
+  Setup Time: 5 main action
+  Upkeep Cost: 20 Qi/ round
+  Spirit Energy Requirement: 9 pcs High- Grade Spirit Stone+10 pcs Mid- Grade Spirit Stone
+  Effect: "each round 3d10 spirit- soul damage+3d10 Five Elements damage (rotation) \uFF1B ignorebody-protecting qi50%"
+  Dispel DC: '120'
+  Array Core HP: '120'
+  Realm Requirement: Nascent Soul Middle
+  _section: 1.4 Earth-Grade Formations (Nascent Soul~Void Refining)
+- '#': '12'
+  Name: Zhou-Tian Star-Battle Array
+  Grade: Earth-Grade
+  Type: Defense Array
+  Coverage Area: 5 Zone (extreme range)
+  Setup Time: "non-combat\uFF1A6 shichen"
+  Upkeep Cost: 30 Qi/ shichen
+  Spirit Energy Requirement: 365 pcs Spirit Stone (symbolizes the Zhou-Tian star battle)
+  Effect: "formationshield value1000 points\uFF1B enemies attack-30\uFF1Bstarlightcounter attack each round 2d8 Light damage\uFF1Bidentify allinvisibility/disguise"
+  Dispel DC: '135'
+  Array Core HP: '200'
+  Realm Requirement: Nascent Soul Late
+  _section: 1.4 Earth-Grade Formations (Nascent Soul~Void Refining)
+- '#': '13'
+  Name: Liangyi Microdust Array
+  Grade: Earth-Grade
+  Type: Maze Array
+  Coverage Area: 3 Zone (long range)
+  Setup Time: 4 main action
+  Upkeep Cost: 15 Qi/ round
+  Spirit Energy Requirement: 2 pcs Top- Grade Spirit Stone (Yin-Yang) +8 pcs High- Grade Spirit Stone
+  Effect: "inside the arrayspacecompress\uFF1A movement cost\xD75\uFF1Ball attack check-25\uFF1B each round Divine Sense-5 (accumulate) \uFF1B inside the arrayandcompletely isolated from the outside"
+  Dispel DC: '125'
+  Array Core HP: '100'
+  Realm Requirement: Nascent Soul Early
+  _section: 1.4 Earth-Grade Formations (Nascent Soul~Void Refining)
+- '#': '14'
+  Name: Eight-Gate Golden-Lock Array
+  Grade: Earth-Grade
+  Type: Maze/Attack
+  Coverage Area: 3 Zone (long range)
+  Setup Time: 4 main action
+  Upkeep Cost: 18 Qi/ round
+  Spirit Energy Requirement: 8 pcs High- Grade Spirit Stone (Rest/Life/Wound/ Damage/View/Death/Alarm/Open) + array board
+  Effect: "8 gates rotate\uFF1A3 gate is life/5 gate is death\uFF1Bthose who step into the death gate suffer4d10 Metal damage+ seal1 round\uFF1Blife gate each3 roundchange"
+  Dispel DC: '130'
+  Array Core HP: '150'
+  Realm Requirement: Nascent Soul Middle
+  _section: 1.4 Earth-Grade Formations (Nascent Soul~Void Refining)
+- '#': '15'
+  Name: Taiyi Green Spirit Array
+  Grade: Earth-Grade
+  Type: Support Array
+  Coverage Area: 3 Zone (long range)
+  Setup Time: 3 main action
+  Upkeep Cost: 12 Qi/ round
+  Spirit Energy Requirement: 7 pcs High- Grade Spirit Stone+ Wood Top- Grade Spirit Stone1 pcs
+  Effect: "each roundrecover3d8 HP+2d8 Qi\uFF1Bclear poisoning/ burning/bleeding status\uFF1Bheavy injury below statusimmune"
+  Dispel DC: '115'
+  Array Core HP: '90'
+  Realm Requirement: Nascent Soul Early
+  _section: 1.4 Earth-Grade Formations (Nascent Soul~Void Refining)
+- '#': '16'
+  Name: Zhenwu Seven-Severing Array
+  Grade: Earth-Grade
+  Type: Attack Array
+  Coverage Area: 3 Zone (long range)
+  Setup Time: 3 main action
+  Upkeep Cost: 16 Qi/ round
+  Spirit Energy Requirement: 7 pcs High- Grade Spirit Stone (Big Dipper positions)
+  Effect: "each round 7 timessword qi attack ( each time2d8 metal damage,separately lock different target) \uFF1Bsword qi ignore15 points armor"
+  Dispel DC: '128'
+  Array Core HP: '110'
+  Realm Requirement: Spirit Transformation Early
+  _section: 1.4 Earth-Grade Formations (Nascent Soul~Void Refining)
+- '#': '17'
+  Name: Immortal-Execution Sword Array
+  Grade: Heaven-Grade
+  Type: Attack Array
+  Coverage Area: 5 Zone (extreme range)
+  Setup Time: 5 main action
+  Upkeep Cost: 50 Qi/ round
+  Spirit Energy Requirement: "4 pcs Immortal- Grade Spirit Stone+Four Immortal-Execution Swords (Heaven- Grade artifact\xD74)"
+  Effect: "each round 12d12 Metal damage (separate strike4 unit targetorconcentrate1 unit) \uFF1B ignorealldefense damage reduction\uFF1B unable toparry/ Evasion"
+  Dispel DC: '150'
+  Array Core HP: '250'
+  Realm Requirement: Fusion Middle
+  _section: 1.5 Heaven-Grade Formations (Fusion~Tribulation Crossing)
+- '#': '18'
+  Name: Myriad Immortals Array
+  Grade: Heaven-Grade
+  Type: Defense Array
+  Coverage Area: 8 Zone (coversmountain range)
+  Setup Time: "non-combat\uFF1A3day"
+  Upkeep Cost: 100 Qi/ shichen
+  Spirit Energy Requirement: 10000 pcs Spirit Stone (any grade) +Myriad Immortals Array Diagram
+  Effect: "shield value5000\uFF1B enemiesall check-40\uFF1B inside the arraycanhold ten thousand people\uFF1Bautomatic allyidentify enemyself\uFF1B each roundrevive those fallen inside the array allies (limit1 person/ round, HPrecover50%)"
+  Dispel DC: '160'
+  Array Core HP: '500'
+  Realm Requirement: Mahayana Early
+  _section: 1.5 Heaven-Grade Formations (Fusion~Tribulation Crossing)
+- '#': '19'
+  Name: Chaos Heaven-Seal Forbidden Array
+  Grade: Heaven-Grade
+  Type: Seal
+  Coverage Area: 1 target ( single target seal)
+  Setup Time: 5 main action+1 shichen ritual
+  Upkeep Cost: 80 Qi/ round (maintain)
+  Spirit Energy Requirement: 7 pcs Immortal- Grade Spirit Stone+Chaos Stone+Heaven- Seal Stamp
+  Effect: "completely seal targetall technique/ Divine Ability/ Qi/ Divine Sense\uFF1B target unable to action, unable toby damage (time-space freeze) \uFF1B duration= array setterrealm\xD71 shichen"
+  Dispel DC: '155'
+  Array Core HP: '300'
+  Realm Requirement: Mahayana Middle
+  _section: 1.5 Heaven-Grade Formations (Fusion~Tribulation Crossing)
+- '#': '20'
+  Name: Dutian Divine-Fiend Array
+  Grade: Heaven-Grade
+  Type: Attack Array
+  Coverage Area: 5 Zone (extreme range)
+  Setup Time: 6 main action
+  Upkeep Cost: 60 Qi/ round
+  Spirit Energy Requirement: "12 pcs Immortal- Grade Spirit Stone (Twelve Dutian positions) + Divine-Fiend flags\xD712"
+  Effect: "summon Twelve Dutian Divine-Fiendsphantom\uFF1B each round 12d10 Dark damage+3d10 spirit- soul damage\uFF1B enemies each roundrequires Dao Heart checknothenberserk"
+  Dispel DC: '148'
+  Array Core HP: '280'
+  Realm Requirement: Fusion Late
+  _section: 1.5 Heaven-Grade Formations (Fusion~Tribulation Crossing)
+- '#': '21'
+  Name: Mountain-River State Array
+  Grade: Heaven-Grade
+  Type: Defense/Maze
+  Coverage Area: 6 Zone (coverssmall world)
+  Setup Time: "non-combat\uFF1A7day"
+  Upkeep Cost: 80 Qi/ shichen
+  Spirit Energy Requirement: Mountain-River State Diagram (immortal artifact) +99 pcs Top- Grade Spirit Stone
+  Effect: "create an independentsmall worldspace\uFF1B inside the arraylawby array setterset\uFF1B enemiesrequires Divine Sense\u226590 to be ableperceiveto formationexistence"
+  Dispel DC: '165'
+  Array Core HP: '400'
+  Realm Requirement: Mahayana Late
+  _section: 1.5 Heaven-Grade Formations (Fusion~Tribulation Crossing)
+- '#': '22'
+  Name: Taiji Liangyi Demon-Seal Forbidden Array
+  Grade: Heaven-Grade
+  Type: Seal
+  Coverage Area: 3 Zone (long range)
+  Setup Time: 4 main action+ritual
+  Upkeep Cost: 40 Qi/ round
+  Spirit Energy Requirement: Taiji Diagram (immortal artifact) +2 pcs Immortal- Grade Spirit Stone (Yin-Yang)
+  Effect: "sealalldemon race/demon cultivator/Inner Demon\uFF1Bdemonthe Dao techniquecompletely inside the arrayfails\uFF1Bdemon race each roundsuffer5d10 holy light damage\uFF1B duration to Spirit Stoneexhausted"
+  Dispel DC: '145'
+  Array Core HP: '250'
+  Realm Requirement: Fusion Early
+  _section: 1.5 Heaven-Grade Formations (Fusion~Tribulation Crossing)
+- Use Case: Qi Refiningteamdefensedemon beastsiege
+  Recommended Array: Bodyguard Array
+  Grade: Yellow-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: delay pursuing troops to buy escape timetime
+  Recommended Array: Maze-Tracing Array
+  Grade: Yellow-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: safe overnight camping in the wild
+  Recommended Array: Maze-Tracing Array + Bodyguard Arraystacked
+  Grade: Yellow-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: trap Foundation Establishmentperiod enemy
+  Recommended Array: Five-Element Sealing Array / Four-Symbols Spirit-Locking Array
+  Grade: Profound-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: attack enemy againstsect gate
+  Recommended Array: Three-Talents Immortal-Trapping Array + Eight-Trigram Mountain-Guard Array (defensive counter)
+  Grade: Profound-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: largebattlefieldgroup battle
+  Recommended Array: Zhenwu Seven-Severing Array
+  Grade: Earth-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: sealancientdemon creature
+  Recommended Array: "Liangyi Microdust Array \u2192 Chaos Heaven- Seal Forbidden Array"
+  Grade: "Earth\u2192Heaven"
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: Tribulation Crossingself-protect when
+  Recommended Array: Zhou-Tian Star-Battle Array
+  Grade: Earth-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: slay immortals and annihilate gods
+  Recommended Array: Immortal-Execution Sword Array
+  Grade: Heaven-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- Use Case: create an independent Secret Realm
+  Recommended Array: Mountain-River State Array
+  Grade: Heaven-Grade
+  _section: 1.6 Formation Quick-Reference Table
+- '#': '1'
+  Name: Fireball Talisman
+  Grade: Yellow-Grade
+  Type: Attack
+  Action: Support
+  Effect: "short range single inside target 1d8 fire damage\uFF1Bflammable target append burning status (1d3 round, each round 1d4)"
+  Talisman DC: '60'
+  Material Cost: "Low- Grade Spirit Stone\xD72+Cinnabar+Yellow Paper"
+  Realm Requirement: Qi Refining Early
+  _section: 2.2 Yellow-Grade Talismans (Qi Refining)
+- '#': '2'
+  Name: Ice Talisman
+  Grade: Yellow-Grade
+  Type: Attack
+  Action: Support
+  Effect: "short range single inside target 1d8 ice damage\uFF1B target Agility-10 ( duration2 round)"
+  Talisman DC: '60'
+  Material Cost: "Low- Grade Spirit Stone\xD72+Cold Jade Powder+Yellow Paper"
+  Realm Requirement: Qi Refining Early
+  _section: 2.2 Yellow-Grade Talismans (Qi Refining)
+- '#': '3'
+  Name: Spirit Energy Arrow Talisman
+  Grade: Yellow-Grade
+  Type: Attack
+  Action: Support
+  Effect: "short range single inside target 1d10 non-elemental Spirit Power damage\uFF1B ignore3 points armor"
+  Talisman DC: '62'
+  Material Cost: "Low- Grade Spirit Stone\xD73+ Spirit Ink+Yellow Paper"
+  Realm Requirement: Qi Refining Middle
+  _section: 2.2 Yellow-Grade Talismans (Qi Refining)
+- '#': '4'
+  Name: Bodyguard Talisman (Mortal)
+  Grade: Yellow-Grade
+  Type: Defense
+  Action: Support/Reaction
+  Effect: "gain10 pointstemporaryshield ( duration3 roundoruntil exhausted) \uFF1Bcanre action actionactivate"
+  Talisman DC: '58'
+  Material Cost: "Low- Grade Spirit Stone\xD72+Bodyguard Cinnabar+Yellow Paper"
+  Realm Requirement: Qi Refining Early
+  _section: 2.2 Yellow-Grade Talismans (Qi Refining)
+- '#': '5'
+  Name: Light-Body Talisman
+  Grade: Yellow-Grade
+  Type: Support
+  Action: Support
+  Effect: Agility+15, movement time canmorecrossmore1 unitdistance tier, duration3 round
+  Talisman DC: '55'
+  Material Cost: "Low- Grade Spirit Stone\xD71+Wind- Spirit Powder+Yellow Paper"
+  Realm Requirement: Qi Refining Early
+  _section: 2.2 Yellow-Grade Talismans (Qi Refining)
+- '#': '6'
+  Name: Eye-Clearing Talisman
+  Grade: Yellow-Grade
+  Type: Support
+  Action: Support
+  Effect: "Divine Sense+15 (only used forperceive/see throughillusion) , duration5 round\uFF1Bcansee through Yellow- Gradeinvisibility/illusion array"
+  Talisman DC: '55'
+  Material Cost: "Low- Grade Spirit Stone\xD72+Clear-Mind Grass Ju ice+Yellow Paper"
+  Realm Requirement: Qi Refining Early
+  _section: 2.2 Yellow-Grade Talismans (Qi Refining)
+- '#': '7'
+  Name: Evil-Warding Talisman
+  Grade: Yellow-Grade
+  Type: Special
+  Action: Support
+  Effect: "stick on the body/on the gate\uFF1AYellow- Grade and belowdemon creature/ghost creature unable torely onmelee (melee Zone) , duration1 shichen"
+  Talisman DC: '58'
+  Material Cost: "Low- Grade Spirit Stone\xD72+P each- Wood Ash+Yellow Paper"
+  Realm Requirement: Qi Refining Early
+  _section: 2.2 Yellow-Grade Talismans (Qi Refining)
+- '#': '8'
+  Name: Five-Thunder Talisman
+  Grade: Profound-Grade
+  Type: Attack
+  Action: Support
+  Effect: "medium range single inside target 3d8 lightning damage\uFF1B ignore armor\uFF1Bmetal armor targetextra +1d8"
+  Talisman DC: '72'
+  Material Cost: "Mid- Grade Spirit Stone\xD73+ Thunder-Struck Wood Powder+ Spirit Paper"
+  Realm Requirement: Foundation Establishment Early
+  _section: 2.3 Profound-Grade Talismans (Foundation Establishment~Golden Core)
+- '#': '9'
+  Name: Blazing Explosion Talisman
+  Grade: Profound-Grade
+  Type: Attack
+  Action: Support
+  Effect: "short range Zoneall inside target 2d10 fire damage\uFF1B Zone insidecanflammable object burning\uFF1B Wood target+50% damage"
+  Talisman DC: '70'
+  Material Cost: "Mid- Grade Spirit Stone\xD73+Salamander Blood+ Spirit Paper"
+  Realm Requirement: Foundation Establishment Early
+  _section: 2.3 Profound-Grade Talismans (Foundation Establishment~Golden Core)
+- '#': '10'
+  Name: Vajra Talisman
+  Grade: Profound-Grade
+  Type: Defense
+  Action: Support/Reaction
+  Effect: "gain+10 armor and +15 all resistance ( duration3 round) \uFF1Bcanre action actionactivate to respond against single use attack"
+  Talisman DC: '70'
+  Material Cost: "Mid- Grade Spirit Stone\xD74+Vajra Sand+ Spirit Paper"
+  Realm Requirement: Foundation Establishment Middle
+  _section: 2.3 Profound-Grade Talismans (Foundation Establishment~Golden Core)
+- '#': '11'
+  Name: Spirit-Speed Talisman
+  Grade: Profound-Grade
+  Type: Support
+  Action: Support
+  Effect: Agility+30, move action costhalved ( eachcross2 zoneonly requires1 move action) , duration5 round
+  Talisman DC: '68'
+  Material Cost: "Mid- Grade Spirit Stone\xD73+Wind-Peng Feather+ Spirit Paper"
+  Realm Requirement: Foundation Establishment Early
+  _section: 2.3 Profound-Grade Talismans (Foundation Establishment~Golden Core)
+- '#': '12'
+  Name: Earth-Dodge Talisman
+  Grade: Profound-Grade
+  Type: Special
+  Action: Support
+  Effect: "instantly burrow into the ground and movement to medium rangeany position inside (requires ground/soil quality) \uFF1Bnotcancarry others"
+  Talisman DC: '75'
+  Material Cost: "Mid- Grade Spirit Stone\xD75+Earth-Dodge Stone+ Spirit Paper"
+  Realm Requirement: Foundation Establishment Middle
+  _section: 2.3 Profound-Grade Talismans (Foundation Establishment~Golden Core)
+- '#': '13'
+  Name: Rejuvenation Talisman
+  Grade: Profound-Grade
+  Type: Support
+  Action: Support
+  Effect: "recover 2d10+10 HP\uFF1Bclear\"bleeding\" status\uFF1Bcanon others roundcausesuse (re action action)"
+  Talisman DC: '68'
+  Material Cost: "Mid- Grade Spirit Stone\xD73+Lingzhi Liquid+ Spirit Paper"
+  Realm Requirement: Foundation Establishment Early
+  _section: 2.3 Profound-Grade Talismans (Foundation Establishment~Golden Core)
+- '#': '14'
+  Name: Detox Talisman
+  Grade: Profound-Grade
+  Type: Support
+  Action: Support
+  Effect: "clear\"poisoning\" status\uFF1Btoxin damageimmediately stop\uFF1Brecoveralready affected by toxin damage 50%"
+  Talisman DC: '66'
+  Material Cost: "Mid- Grade Spirit Stone\xD73+Detox Herb Ju ice+ Spirit Paper"
+  Realm Requirement: Foundation Establishment Early
+  _section: 2.3 Profound-Grade Talismans (Foundation Establishment~Golden Core)
+- '#': '15'
+  Name: Heavenly Thunder Orthodox Talisman
+  Grade: Earth-Grade
+  Type: Attack
+  Action: Support
+  Effect: "long range single inside target 5d10 lightning damage\uFF1BHeavenly Tribulation attribute ( ignoreall damage reduction) \uFF1Bdemonextra +2d10"
+  Talisman DC: '82'
+  Material Cost: "High- Grade Spirit Stone\xD75+Heavenly Thunder Crystal+Earth Talisman Paper"
+  Realm Requirement: Nascent Soul Early
+  _section: 2.4 Earth-Grade Talismans (Nascent Soul~Void Refining)
+- '#': '16'
+  Name: Ten-Thousand-Li Ice Seal Talisman
+  Grade: Earth-Grade
+  Type: Attack
+  Action: Support
+  Effect: "long range Zoneall target 3d10 ice damage\uFF1B Zoneall inside targetrequires Physique checknothen frozen2 round\uFF1B Zonebecomes\" ice sealterrain\"5 round"
+  Talisman DC: '80'
+  Material Cost: "High- Grade Spirit Stone\xD75+Millennial Ice Soul+Earth Talisman Paper"
+  Realm Requirement: Nascent Soul Middle
+  _section: 2.4 Earth-Grade Talismans (Nascent Soul~Void Refining)
+- '#': '17'
+  Name: Golden Bell Bodyguard Talisman
+  Grade: Earth-Grade
+  Type: Defense
+  Action: Support/Reaction
+  Effect: "gain\"Golden Bell Cover\" effect\uFF1Abody-protecting qiefficiency\xD73, +20 armor, immunepoisoning/ burning/bleeding, duration5 round"
+  Talisman DC: '80'
+  Material Cost: "High- Grade Spirit Stone\xD76+Metal Essence+Earth Talisman Paper"
+  Realm Requirement: Nascent Soul Early
+  _section: 2.4 Earth-Grade Talismans (Nascent Soul~Void Refining)
+- '#': '18'
+  Name: Array-Breaking Talisman
+  Grade: Earth-Grade
+  Type: Special
+  Action: Support
+  Effect: "automatic allybreak1 unit Earth- Grade and below grade formation (rolld100\u2264 Talisman Dao skill value, into techniquethendispelling) \uFF1B against Heaven- Grade formationrequiresd100\u2264 Talisman Dao-30"
+  Talisman DC: '85'
+  Material Cost: "High- Grade Spirit Stone\xD78+ Array-Breaking Stone+Earth Talisman Paper"
+  Realm Requirement: Nascent Soul Middle
+  _section: 2.4 Earth-Grade Talismans (Nascent Soul~Void Refining)
+- '#': '19'
+  Name: Great Teleport Talisman
+  Grade: Earth-Grade
+  Type: Special
+  Action: Support
+  Effect: "instant teleport to long rangeany known insidethe Daoposition\uFF1Bcancarrymelee Zoneat most inside3 person\uFF1Bnotcancross the grand array's blockade"
+  Talisman DC: '83'
+  Material Cost: "High- Grade Spirit Stone\xD710+Void Stone+Earth Talisman Paper"
+  Realm Requirement: Nascent Soul Late
+  _section: 2.4 Earth-Grade Talismans (Nascent Soul~Void Refining)
+- '#': '20'
+  Name: Summoning Talisman (Earth)
+  Grade: Earth-Grade
+  Type: Special
+  Action: Support+Main
+  Effect: "summon1 only Earth- Gradespirit beast/demon beastphantom (CR=userrealm-1, HPhalved) , duration5 round\uFF1Bphantomby instinctbattle"
+  Talisman DC: '82'
+  Material Cost: "High- Grade Spirit Stone\xD78+ Spirit-Beast Essence Blood+Earth Talisman Paper"
+  Realm Requirement: Nascent Soul Middle
+  _section: 2.4 Earth-Grade Talismans (Nascent Soul~Void Refining)
+- '#': '21'
+  Name: Spirit-Seal Talisman
+  Grade: Earth-Grade
+  Type: Special
+  Action: Support
+  Effect: "medium range single inside target\uFF1A sealone designated technique causesuse ( duration5 round) \uFF1B targetcan each roundrolld100\u2264Comprehension-20 lift"
+  Talisman DC: '80'
+  Material Cost: "High- Grade Spirit Stone\xD76+ Spirit- Seal Stone+Earth Talisman Paper"
+  Realm Requirement: Nascent Soul Early
+  _section: 2.4 Earth-Grade Talismans (Nascent Soul~Void Refining)
+- '#': '22'
+  Name: Nine-Heaven Divine Thunder Talisman
+  Grade: Heaven-Grade
+  Type: Attack
+  Action: Support
+  Effect: "extreme range single inside target 8d12 lightning damage\uFF1BHeavenly Tribulation attribute\uFF1B ignorealldefense/ resistance/immune\uFF1B inflicts\"Heavenly-Tribulation mark\" (permanently)"
+  Talisman DC: '92'
+  Material Cost: "Immortal- Grade Spirit Stone\xD73+Heavenly-Tribulation Embers+Heaven Talisman Paper"
+  Realm Requirement: Fusion Middle
+  _section: 2.5 Heaven-Grade Talismans (Fusion~Tribulation Crossing)
+- '#': '23'
+  Name: Sky-Incinerating Talisman
+  Grade: Heaven-Grade
+  Type: Attack
+  Action: Support
+  Effect: "long range Zoneall target 6d12 fire damage\uFF1Bcreate\"Sky-Incinerating\"environment (10 round) \uFF1B Zoneeverything insidecanflammable object incinerated\uFF1B Water technique effect-50%"
+  Talisman DC: '90'
+  Material Cost: "Immortal- Grade Spirit Stone\xD73+True Sun Fire+Heaven Talisman Paper"
+  Realm Requirement: Fusion Early
+  _section: 2.5 Heaven-Grade Talismans (Fusion~Tribulation Crossing)
+- '#': '24'
+  Name: Indestructible Golden Body Talisman
+  Grade: Heaven-Grade
+  Type: Defense
+  Action: Support/Reaction
+  Effect: "3 round insideimmuneall damageand negative status (trulyinvincible) \uFF1Bfalls into after ending\"weakness\" status5 round\uFF1Bper battlebattlelimited use1 times"
+  Talisman DC: '93'
+  Material Cost: "Immortal- Grade Spirit Stone\xD75+Vajra Relic+Heaven Talisman Paper"
+  Realm Requirement: Fusion Late
+  _section: 2.5 Heaven-Grade Talismans (Fusion~Tribulation Crossing)
+- '#': '25'
+  Name: Substitute Talisman
+  Grade: Heaven-Grade
+  Type: Special
+  Action: Reaction
+  Effect: "with talismancreate substitute endures1 times attack/spell all effect (usercompletely unharmed) \uFF1Bcausessubstitute shatters after use"
+  Talisman DC: '90'
+  Material Cost: "Immortal- Grade Spirit Stone\xD73+Substitute Wood+1 drop of life-bound essence blood+Heaven Talisman Paper"
+  Realm Requirement: Fusion Early
+  _section: 2.5 Heaven-Grade Talismans (Fusion~Tribulation Crossing)
+- '#': '26'
+  Name: Ten-Thousand-Li Teleport Talisman
+  Grade: Heaven-Grade
+  Type: Special
+  Action: Support
+  Effect: "teleportto any known location within ten thousand li\uFF1Bcancarrymelee Zoneat most inside10 person\uFF1Bcancross the grand array's blockade (Heaven- Grade below) \uFF1Brequires1 roundguide"
+  Talisman DC: '92'
+  Material Cost: "Immortal- Grade Spirit Stone\xD78+Void Crystal Core+Heaven Talisman Paper"
+  Realm Requirement: Fusion Late
+  _section: 2.5 Heaven-Grade Talismans (Fusion~Tribulation Crossing)
+- '#': '27'
+  Name: Qiankun-Reversal Talisman
+  Grade: Heaven-Grade
+  Type: Special
+  Action: Support
+  Effect: "willcurrent round\"reverse\" to roundat the start (except talisman cost outside, all status/ damage/ action reverts) \uFF1Bper battlebattlelimit1 times"
+  Talisman DC: '98'
+  Material Cost: "Immortal- Grade Spirit Stone\xD710+Time Sand+Heaven Talisman Paper+lifespan1 year"
+  Realm Requirement: Mahayana Early
+  _section: 2.5 Heaven-Grade Talismans (Fusion~Tribulation Crossing)
+- '#': '28'
+  Name: Immortal-Seal Talisman
+  Grade: Heaven-Grade
+  Type: Special
+  Action: Support+Main
+  Effect: "long range single inside target\uFF1A seal targetall supernatural abilities (treated as a mortal) 3 round\uFF1B targetcan each roundrolld100\u2264Comprehension-40 lift\uFF1BTribulation Crossing and aboveimmune"
+  Talisman DC: '95'
+  Material Cost: "Immortal- Grade Spirit Stone\xD77+Immortal- Seal Stone+Heaven Talisman Paper"
+  Realm Requirement: Mahayana Middle
+  _section: 2.5 Heaven-Grade Talismans (Fusion~Tribulation Crossing)
+- Use Case: Qi Refiningperiod ranged finisher
+  Recommended Talisman: Fireball Talisman / Ice Talisman
+  Grade: Yellow-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: emergency life-saving
+  Recommended Talisman: Bodyguard Talisman (Mortal)
+  Grade: Yellow-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: quick escape
+  Recommended Talisman: Light-Body Talisman
+  Grade: Yellow-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: Foundation Establishmentperiod burst output
+  Recommended Talisman: Five- Thunder Talisman / Blazing Explosion Talisman
+  Grade: Profound-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: defense Bossultimate move
+  Recommended Talisman: Vajra Talisman
+  Grade: Profound-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: break free when surrounded
+  Recommended Talisman: Earth-Dodge Talisman
+  Grade: Profound-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: Nascent Soulperioddispelling
+  Recommended Talisman: Array-Breaking Talisman
+  Grade: Earth-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: team emergency evacuation
+  Recommended Talisman: Great Teleport Talisman
+  Grade: Earth-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: resist Bossinstant-kill technique
+  Recommended Talisman: Golden Bell Bodyguard Talisman
+  Grade: Earth-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: Tribulation Crossing/god-slaying battle
+  Recommended Talisman: Nine-Heaven Divine Thunder Talisman / Sky-Incinerating Talisman
+  Grade: Heaven-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: ultimate life-saving
+  Recommended Talisman: Substitute Talisman / Indestructible Golden Body Talisman
+  Grade: Heaven-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: turn the tables in a desperate situation
+  Recommended Talisman: Qiankun-Reversal Talisman
+  Grade: Heaven-Grade
+  _section: 2.6 Talisman Quick-Reference Table
+- Use Case: sealstrong enemy
+  Recommended Talisman: Immortal- Seal Talisman
+  Grade: Heaven-Grade
+  _section: 2.6 Talisman Quick-Reference Table

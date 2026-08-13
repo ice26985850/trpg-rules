@@ -1,0 +1,76 @@
+name: "Traitor's Gene"
+difficulty: "High (Challenge Rating (CR) 3)"
+mode: "Astartes · Solo"
+recommended_attributes: "+4-5 growth"
+
+opening_description: >
+  The transport ship is repaired, but the orbital defense system beyond the atmosphere will shoot it down. You must go to the crashed cruiser "Justicar" to disable the defense system.
+  Deep in the wreckage, you meet a man—a Chaos Space Marine. He was once Imperial Fists. 300 years ago, he too was a man stranded on this planet.
+
+surface_goal: >
+  Go to the Justicar wreckage, disable the orbital defense system, and ensure the transport ship can leave safely.
+
+hidden_goal: >
+  The Chaos Space Marine Kastor knows the location of the black box data—the key evidence proving Exterminatus was wrong.
+  But Kastor himself is also a temptation—he represents the ultimate compromise after 300 years of solitude.
+
+known_threats:
+  - "The Justicar wreckage has unstable structure"
+  - "The defense system is still operational—requires physical access to the console"
+
+hidden_threats:
+  - "Kastor gradually broke down over 300 years—he is not an enemy, he is your future"
+  - "The black box data may contain truths you would rather not know"
+
+resources:
+  medical_pack: 1
+  holy_water: 2
+  holy_oil: 2
+  flare: 1
+  food_water_days: 3
+  ammo_magazines: 2
+
+companions:
+  - name: "Companion from SB-1/2/3"
+    role: "Surviving teammate"
+    backstory: "Based on the outcome of previous scenarios. Inside the ship, the companion is trapped in a sealed compartment for 1 scene"
+    bottom_line: "Depends on the character"
+    initial_attitude: "Continues"
+
+internal_seduction_trigger:
+  timing: "When facing Kastor"
+  whisper: "Is what he says true? 300 years from now, will you become him? The Emperor did not answer. The Emperor never answers. Look at him—a loyal warrior, abandoned for 300 years. Are you sure the Emperor will answer you?"
+
+key_checks:
+  - scene: "Dialogue with Kastor"
+    check: "No check—RP choice"
+    tn_adjustment: 0
+    success: "Kastor reveals the black box location and chooses self-destruction"
+    failure: "Kastor is persuaded—Corruption +8. Or choose to fight"
+  - scene: "Fight Kastor (if attack is chosen)"
+    check: "Solo Boss battle"
+    tn_adjustment: 0
+    success: "Kastor dies in battle—obtain the black box data"
+    failure: "Heavily wounded—companion joins in round 3, but with heavy losses"
+
+  - scene: "Recover the black box data"
+    check: "Investigation (Standard)"
+    tn_adjustment: 0
+    success: "Obtain complete data"
+    failure: "Data partially corrupted—requires an additional check to decipher"
+
+encounters:
+  - name: "Ship corridor"
+    enemies: "Structural collapse risk"
+    tactic: "Requires a Tech check to keep balance. Companion is isolated in the sealed compartment"
+  - name: "Kastor's quarters (final scene)"
+    enemies: "Chaos Space Marine Kastor"
+    tactic: "Solo Boss battle scaling: Hit Points (HP) 45, only 1 attack per turn. This is an RP choice—fight, dialogue, or corruption"
+
+oath_conflicts:
+  conflict: "The ultimate test of all oaths"
+  choice_a: "Oath to the Emperor—disable the defense system, fulfill the mission"
+  choice_b: "Oath to brothers-in-arms—Kastor was once Imperial Fists, worthy of respect"
+  choice_c: "Oath to truth—the black box data may overturn Exterminatus, but may also prove the Inquisitor right"
+
+map_ref: "maps/map09_justicar"

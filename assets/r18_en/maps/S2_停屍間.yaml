@@ -1,0 +1,72 @@
+name: S2 Mortuary (Funeral Home Mortuary)
+corresponding_scenario: S2 The Seventh Drawer in the Mortuary
+scene_description: >-
+  Core scene of S2 case file "The Seventh Drawer in the Mortuary" — the mortuary of the "Shi Chu Shi" funeral home.
+  The newly deceased in the Seventh Drawer died with eyes open → corpse mutation (Fresh Corpse → White Zombie, Challenge Rating CR 2);
+  his wife's Resentful Ghost (Challenge Rating CR 3) lurks in the corridor seeking revenge out of grief for her lost husband. The two overlap.
+  Proper handling: Peachwood Sword / Corpse-Still Talisman to physically suppress the mutation; the Medium uses Intuition (INS) to communicate and comfort the Resentful Ghost, and uncover the truth of the deliberate misdiagnosis;
+  the funeral home demands resolution "before dawn" under time pressure; if the mutation is not contained it spreads to other drawers (area-of-effect AOE crisis).
+  Base Yin Value (YIN) 5–10.
+
+nodes:
+  - id: E
+    label: Exit (Fire Exit)
+    x: 90
+    y: 240
+    type: exit
+    explored: false
+  - id: C
+    label: Mortuary Corridor
+    x: 250
+    y: 240
+    type: corridor
+    explored: false
+  - id: O
+    label: Mortuary Office (Uncle Nine)
+    x: 560
+    y: 140
+    type: room
+    explored: false
+  - id: DW
+    label: Drawer Wall (Honeycomb Cells)
+    x: 400
+    y: 190
+    type: room
+    explored: false
+  - id: D7
+    label: Seventh Drawer (Fresh Corpse · White Zombie)
+    x: 400
+    y: 350
+    type: boss
+    explored: false
+  - id: V
+    label: Resentful Ghost Lurking Zone (Widow)
+    x: 250
+    y: 380
+    type: hazard
+    explored: false
+
+edges:
+  - from: E
+    to: C
+    type: corridor
+  - from: C
+    to: DW
+    type: corridor
+  - from: C
+    to: O
+    type: corridor
+  - from: C
+    to: V
+    type: corridor
+  - from: DW
+    to: D7
+    type: stair
+
+regions:
+  - name: Drawer-Wall Cold Zone
+    color: "#D5D5E8"
+    nodes: [DW, D7]
+  - name: Corridor Forbidden Zone
+    color: "#E8D5C4"
+    nodes: [C, V]

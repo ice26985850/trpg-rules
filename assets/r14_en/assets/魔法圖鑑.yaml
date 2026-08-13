@@ -1,0 +1,91 @@
+# Nation Building TRPG — Spell Codex
+
+spells:
+  - name: "Arcane Missile"
+    type: "Arcane"
+    attribute: "Knowledge (KNW)"
+    dc: 12
+    mp: 3
+    cooldown: "None"
+    effect: "Deals 2d6+Knowledge damage"
+  - name: "Arcane Shield"
+    type: "Arcane"
+    attribute: "Knowledge (KNW)"
+    dc: 14
+    mp: 4
+    cooldown: "None"
+    effect: "Target's Defense (DEF) +5, 3 turns"
+  - name: "Meteor Strike"
+    type: "Arcane"
+    attribute: "Knowledge (KNW)"
+    dc: 18
+    mp: 8
+    cooldown: "3 turns"
+    effect: "Deals 6d6 + Knowledge (KNW)×2 Flame damage to an area, can strike multiple targets simultaneously"
+  - name: "Heal"
+    type: "Divine"
+    attribute: "Charisma (CHA)"
+    dc: 12
+    mp: 3
+    cooldown: "None"
+    effect: "Restores 2d6+Charisma Hit Points (HP)"
+  - name: "Turn Undead"
+    type: "Divine"
+    attribute: "Charisma (CHA)"
+    dc: 14
+    mp: 4
+    cooldown: "None"
+    effect: "Deals ×2 extra damage to Undead / Aberrant"
+  - name: "Entangle"
+    type: "Nature"
+    attribute: "Knowledge (KNW)"
+    dc: 12
+    mp: 3
+    cooldown: "None"
+    effect: "Bind (BIND) target, DC 12 to escape"
+  - name: "Speak with Beasts"
+    type: "Nature"
+    attribute: "Knowledge (KNW)"
+    dc: 10
+    mp: 2
+    cooldown: "None"
+    effect: "Ask wild beasts for information"
+  - name: "Enchant"
+    type: "Rune"
+    attribute: "Craft (CRF)"
+    dc: 14
+    mp: 5
+    cooldown: "None"
+    effect: "Equipment +1 (permanent)"
+  - name: "Warding Rune"
+    type: "Rune"
+    attribute: "Craft (CRF)"
+    dc: 13
+    mp: 3
+    cooldown: "None"
+    effect: "Allied units in area +2 Defense (DEF)"
+  - name: "Explosive"
+    type: "Alchemy"
+    attribute: "Craft (CRF)"
+    dc: 12
+    mp: 2
+    cooldown: "None"
+    effect: "Area 2d6 Flame damage"
+  - name: "Healing Draught"
+    type: "Alchemy"
+    attribute: "Craft (CRF)"
+    dc: 10
+    mp: 1
+    cooldown: "None"
+    effect: "Brew a healing potion (instant +1d6+2 Hit Points (HP))"
+  - name: "Time Stop"
+    type: "Chrono"
+    attribute: "Knowledge (KNW)"
+    dc: 20
+    mp: 10
+    cooldown: "5 turns"
+    effect: "All enemy units on the field skip 1 turn of action (including monsters / armies); an epic-grade crowd-control Spell"
+notes:
+  - "Critical Success (natural 20): Spell effect ×1.5 with no extra Mana (MP) spent."
+  - "Critical Failure (natural 1): Mana (MP) backlash deals 1d6 self-damage."
+  - "Spells marked with a CD must wait that many turns after casting before they can be cast again; unmarked spells may be cast every turn (limited by the Mana (MP) cap). High-tier Spells (Meteor Strike, Time Stop) are CD-limited to prevent a single Hero from endlessly clearing the field."

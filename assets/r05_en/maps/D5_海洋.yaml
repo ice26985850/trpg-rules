@@ -1,0 +1,120 @@
+id: D5
+name: Ocean
+recommended_rank: "D/C (CR 13-18)"
+theme: Azure Reef
+grid: { cols: 5, rows: 4 }
+rooms:
+  - id: R1
+    name: Beach Landing
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: Sole entry/exit; retreating here is a safe escape.
+  - id: R2
+    name: Shoal Outpost
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R7]
+    cr: 13
+    enemies: [Pirate x2]
+    desc: Pirates x2 on guard.
+  - id: R3
+    name: Undertow Corridor
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R8]
+    trap: Weak (Undertow Vortex, DC12 / 1d6 Pull)
+    desc: Weak trap, undertow suction.
+  - id: R4
+    name: Shark Waters
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 15
+    enemies: [Shark x2]
+    desc: Sharks x2 patrol.
+  - id: R5
+    name: Shipwreck Hold
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R10]
+    treasure: Pearl Shell x2, Glint Shard, G 80~140
+    desc: Shipwreck treasure.
+  - id: R6
+    name: Reef Ambush
+    type: combat
+    gx: 0
+    gy: 1
+    links: [R1, R7, R11]
+    cr: 16
+    enemies: [Water Ghoul x2]
+    desc: Water Ghouls x2 ambush from the reef.
+  - id: R7
+    name: Driftwood Rest
+    type: rest
+    gx: 1
+    gy: 1
+    links: [R6, R8, R2, R12]
+    desc: Safe rest point (restore HP/status).
+  - id: R8
+    name: Venom Jelly Swarm
+    type: trap
+    gx: 2
+    gy: 1
+    links: [R7, R9, R3, R13]
+    trap: Strong (Venom Jelly, DC18 / 2d6 Poison)
+    desc: Strong trap, venom jellyfish.
+  - id: R9
+    name: Shell Mound Cache
+    type: treasure
+    gx: 3
+    gy: 1
+    links: [R8, R10, R4, R14]
+    treasure: Coral x2, Fine Material, G 90~150
+    desc: Shell mound treasure.
+  - id: R10
+    name: Octopus Lair
+    type: combat
+    gx: 4
+    gy: 1
+    links: [R9, R5]
+    cr: 17
+    enemies: [Octopus x2]
+    desc: Octopuses x2 lurk.
+  - id: R11
+    name: Wave-sheltered Cove
+    type: rest
+    gx: 0
+    gy: 2
+    links: [R6, R12]
+    desc: Wave-sheltered rest point.
+  - id: R12
+    name: Tidal Treasure Vault
+    type: treasure
+    gx: 1
+    gy: 2
+    links: [R11, R13, R7]
+    treasure: Tidal Crystal, G 100~160
+    desc: Treasure vault exposed at high tide.
+  - id: R13
+    name: Sea Siren's Pool
+    type: elite
+    gx: 2
+    gy: 2
+    links: [R12, R14, R8]
+    cr: 18
+    enemies: [Sea Siren (Boss)]
+    combat_map: maps/D5_戰鬥_海妖.yaml
+    desc: Mini-boss Sea Siren (CR18).
+  - id: R14
+    name: Exit Channel
+    type: exit
+    gx: 3
+    gy: 2
+    links: [R13, R9]
+    desc: Exit; collect reward and leave after clearing.

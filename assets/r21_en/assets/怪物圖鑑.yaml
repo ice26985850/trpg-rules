@@ -1,0 +1,105 @@
+catalog: Monster Codex
+system: Time Loop TRPG
+version: 1.0
+description: An overview of the anomalous entities, environmental crises, and temporal anomalies in the Time Loop world that pose a threat to players. The vast majority cannot be defeated, and can only be dispelled through understanding the truth, correct action, or endurance.
+references:
+  - sheets/敵人角色卡合集.xlsx
+
+threat_classes:
+  - name: Anomalous Entity
+    desc: Humanoid afterimages / phantoms made visible by rifts; their gaze triggers a Will (WIL) check and Panic.
+  - name: Environmental Threat
+    desc: Ownerless area crises (e.g., gas leaks) that cannot be attacked and can only be resolved through action.
+  - name: Temporal Anomaly
+    desc: Collapses of the world's rules themselves (e.g., time jumps); cannot be opposed, only endured while ending the loop as quickly as possible.
+
+threat_levels:
+  "2": Common
+  "3": Dangerous
+  "4": Critical
+  "5": Lethal (must escape)
+
+entities:
+  - id: elevator_shadow
+    name: The Phantom of the Elevator
+    type: Anomalous Entity / Temporal
+    threat_level: 2
+    scenario: The Elevator
+    appear: Inside the elevator car — from Loop 6 onward
+    attrs:
+      act: 2
+      wil: 4
+      ins: 3
+      social_resist: 5
+    attack: No direct attack — it does not harm the living
+    damage: 0 (but it makes you see things you shouldn't → triggers a Panic check)
+    defeat: Cannot be defeated — can only be dispelled through "farewell"
+    abilities:
+      - "Gaze Fear: When nearby, make a Will (WIL) check (Normal +0); failure → Mild Panic"
+      - "Time Distortion: Clocks near it accelerate — bringing you closer to the loop endpoint"
+      - "Truth Mapping: If the player says to Zhang Mingde \"He is no longer here,\" it dissipates and leaves behind a fragment clue"
+      - "Degradation Boost: After Loop 9 its presence grows stronger — the Will (WIL) check becomes Hard (−1)"
+    gm_note: This is not an enemy; it is the "manifestation" of a rift. It does not want to harm the player; it is waiting for the player to understand the truth.
+
+  - id: town_square_afterimage
+    name: The Afterimage at the Town Square (Chen Yan's Afterimage)
+    type: Anomalous Entity
+    threat_level: 3
+    scenario: Town Judgment Day
+    appear: The town square — from Loop 7 onward, on the third day at dusk
+    attrs:
+      act: 1
+      wil: 5
+      ins: 4
+      social_resist: 5
+    attack: Gaze — no contact needed
+    damage: Mental Damage (fatigue +2, if the Will (WIL) check fails)
+    defeat: Cannot be attacked — can only be released by exposing the truth
+    abilities:
+      - "Silent Gaze: Locking eyes for more than 3 seconds → Will (WIL) check (Hard −1); success grants a Flashback, failure +2 fatigue"
+      - "Memory Projection: If the player has obtained ≥5 fragments, it directly projects images into their mind"
+      - "Time Freeze: Loop 10+, when it appears nearby NPCs briefly freeze (5–10 seconds)"
+      - "Truth Release: When the mayor publicly confesses his crime — it smiles, then dissipates"
+    gm_note: "Chen Yan's afterimage. This is not a vengeful ghost; it is the structure of reality reminding the living: the truth has not yet been spoken."
+
+  - id: chem_lab_gas
+    name: Gas Leak in the Chemistry Lab
+    type: Environmental Threat
+    threat_level: 4
+    scenario: The Last School Festival
+    appear: Around the chemistry lab → spreads to the whole school on Day 7
+    attrs:
+      act: 0
+      wil: 0
+      ins: 0
+      social_resist: 0
+    attack: Area continuous damage
+    damage: 1 round exposed → Minor Wound; 2 rounds → Moderate Wound; 3 rounds → Severe Wound; 4 rounds → Near-Death
+    defeat: Cannot be defeated — can only be stopped by sealing the source
+    abilities:
+      - "Area Spread: Each round the spread radius +1 area (lab → entire floor → whole school)"
+      - "Odorless and Colorless: Detection requires an Insight (INS) check (Hard −1); failure means you don't realize you've been exposed"
+      - "Time Pressure: Each round the countdown −2 grid (high pressure)"
+      - "Sealing Window: Seal the vents before it spreads to the whole school — only requires 1 standard action (2 Action Points (AP)) + Action check (Hard −1)"
+    gm_note: An environmental threat is not an enemy; it is a crisis that needs to be "resolved." Combat cannot stop it — only correct action can.
+
+  - id: time_leap_collapse
+    name: Time-Jump Collapse
+    type: Temporal Anomaly
+    threat_level: 5
+    scenario: All Scenarios (Loop 10+)
+    appear: Any scene — triggered when a d10 roll comes up 1
+    attrs:
+      act: 0
+      wil: 0
+      ins: 0
+      social_resist: 0
+    attack: Time jump — the character is thrown into a random future / past moment
+    damage: The jump itself causes no damage, but may place the character in a lethal scene
+    defeat: Cannot be defeated
+    abilities:
+      - "Time Jump: Triggered on d10=1, jumps 1d3 rounds"
+      - "Causal Disorder: After returning from the jump, the character may find that some things have happened / not yet happened — inconsistent with teammates' memories"
+      - "Fatigue Accumulation: Each time experiencing a time jump → fatigue +2"
+      - "Accelerated Loop Cap: Loop 12+, the d10=1 trigger threshold changes to d10 ≤ 2"
+    gm_note: This is the loop structure itself collapsing, not an enemy — it is a world rule. It cannot be opposed; it can only be endured while ending the loop as quickly as possible.

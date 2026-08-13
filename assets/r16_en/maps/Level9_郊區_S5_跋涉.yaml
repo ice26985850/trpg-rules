@@ -1,0 +1,113 @@
+name: "Level 9 — Suburb"
+description: "An endless suburb in perpetual-night rain — identical houses, something behind the window peering from behind every window"
+scenario_ref: "S5_跋涉"
+usage: "Scenario S5 mid-section: navigate by following the streetlight flicker sequence; never enter any house"
+regions:
+  - name: "Street"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "Area"
+  - name: "House Zone (Danger)"
+    color: "#F3E5F5"
+    nodes: ["N02", "N04", "N06"]
+    description: ""
+  - name: "Streetlight Sequence"
+    color: "#FFF3E0"
+    nodes: ["N03", "N05"]
+    description: ""
+  - name: "Exit Area"
+    color: "#E3F2FD"
+    nodes: ["N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Street Start"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "An endless street in the perpetual-night drizzle — every house is identical"
+  - id: "N02"
+    label: "Identical House A"
+    x: 330
+    y: 200
+    type: "danger"
+    explored: false
+    description: "Something moves behind the window — do not enter"
+    threats: "Thing Behind the Window (entering traps you)"
+  - id: "N03"
+    label: "Streetlight Sequence 1"
+    x: 330
+    y: 410
+    type: "navigation"
+    explored: false
+    description: "A streetlight flicker sequence — judge direction (Perception DC 15)"
+  - id: "N04"
+    label: "Identical House B"
+    x: 510
+    y: 200
+    type: "danger"
+    explored: false
+    description: "Another identical house — the thing behind the window peeks"
+    threats: "Thing Behind the Window"
+  - id: "N05"
+    label: "Streetlight Sequence 2"
+    x: 510
+    y: 410
+    type: "navigation"
+    explored: false
+    description: "The sequence continues — keep following"
+  - id: "N06"
+    label: "Supplies Inside House (Trap)"
+    x: 670
+    y: 200
+    type: "danger"
+    explored: false
+    description: "The door is ajar, supplies inside — but entering traps you"
+    resources: "Supplies (Trap)"
+    threats: "Thing Behind the Window"
+  - id: "N07"
+    label: "End of Streetlights (Exit)"
+    x: 690
+    y: 410
+    type: "exit"
+    explored: false
+    description: "The end of the sequence connects to the wheat field — leads to Level 10"
+    exit_to: "Level 10 — Wheat Field"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "dangerous_path"
+    label: "House"
+  - from: "N01"
+    to: "N03"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N04"
+    type: "dangerous_path"
+    label: "House"
+  - from: "N03"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N03"
+    to: "N05"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N05"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N06"
+    type: "dangerous_path"
+    label: "Trap"
+  - from: "N05"
+    to: "N07"
+    type: "corridor"
+    label: "→ Exit"
+  - from: "N06"
+    to: "N07"
+    type: "dangerous_path"
+    label: "→ Exit"

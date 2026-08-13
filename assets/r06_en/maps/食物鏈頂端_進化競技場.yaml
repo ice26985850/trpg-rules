@@ -1,0 +1,127 @@
+# Apex of the Food Chain — Evolution Arena Map
+# Corresponding Scenario: S4 (all scenes)
+
+nodes:
+  - id: "A"
+    label: "Entry Point"
+    x: 300
+    y: 450
+    type: "start"
+    explored: false
+    description: "Location where the player is teleported into the arena."
+
+  - id: "B"
+    label: "Mutant Forest"
+    x: 150
+    y: 350
+    type: "exploration"
+    explored: false
+    description: "Forest of evolved plant lifeforms. Trees have eyes, ground feels like skin."
+
+  - id: "C"
+    label: "Gathering Stone"
+    x: 300
+    y: 280
+    type: "safe"
+    explored: false
+    description: "The arena's only neutral zone. Combat forbidden. Most surviving Evolvers linger here."
+
+  - id: "D"
+    label: "Challenge Stele"
+    x: 450
+    y: 350
+    type: "challenge"
+    explored: false
+    description: "Declare a challenge against a higher-ranked Evolver before the stele. Forced 1v1 duel."
+
+  - id: "E"
+    label: "Volcano Plateau (East)"
+    x: 550
+    y: 200
+    type: "boss"
+    explored: false
+    description: "Territory of Zarakth, the Beast King. His offspring are in the nest."
+
+  - id: "F"
+    label: "Corrupted Swamp (South)"
+    x: 200
+    y: 150
+    type: "hazard"
+    explored: false
+    description: "Swamp full of mutant creatures. Constitution DC 14 each round or suffer poisoning."
+
+  - id: "G"
+    label: "Ruined Tower (West)"
+    x: 100
+    y: 200
+    type: "loot"
+    explored: false
+    description: "Ancient ruins of the arena. May retain evolution resources."
+
+  - id: "H"
+    label: "Central Arena"
+    x: 350
+    y: 100
+    type: "final_boss"
+    explored: false
+    description: "Finals venue. Sealed by energy barrier. Where Champion Kane resides."
+
+  - id: "I"
+    label: "Seal Core"
+    x: 300
+    y: 50
+    type: "secret"
+    explored: false
+    description: "Energy core of the arena's seal. Key location for breaking the seal."
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "open"
+  - from: "A"
+    to: "C"
+    type: "open"
+  - from: "A"
+    to: "D"
+    type: "open"
+  - from: "B"
+    to: "F"
+    type: "passage"
+  - from: "B"
+    to: "G"
+    type: "passage"
+  - from: "C"
+    to: "D"
+    type: "open"
+  - from: "C"
+    to: "H"
+    type: "open"
+  - from: "D"
+    to: "E"
+    type: "passage"
+  - from: "C"
+    to: "F"
+    type: "passage"
+  - from: "C"
+    to: "G"
+    type: "passage"
+  - from: "H"
+    to: "I"
+    type: "secret"
+  - from: "E"
+    to: "I"
+    type: "passage"
+
+regions:
+  - name: "Central Zone"
+    color: "#4B0082"
+    nodes: ["A", "C", "D"]
+  - name: "Wild Zone"
+    color: "#2E8B57"
+    nodes: ["B", "F", "G"]
+  - name: "BOSS Zone"
+    color: "#DC143C"
+    nodes: ["E", "H"]
+  - name: "Secret Zone"
+    color: "#FFD700"
+    nodes: ["I"]

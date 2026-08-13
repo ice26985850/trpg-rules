@@ -1,0 +1,71 @@
+# SAO TRPG Solo Campaign Scenario (Structured)
+# Corresponds to body: scenarios/s02_獨行玩家戰役_孤高的劍士.md
+# ⚠️ This file is the scenario index/structure; full events, dialogue, and GM hints are in the .md of the same name.
+
+rule: "SAO_TRPG"
+scenario_type: "solo"               # Solo (1 player + 1 GM)
+title: "The Lonely Blade — Solo Player Campaign"
+source_md: "s02_獨行玩家戰役_孤高的劍士.md"
+requires: "Requires Solo Mode Rules Supplement (assets/單人模式規則補充.md)"
+based_on: "Sword Art Online, Aincrad Arc (original author: Reki Kawahara)"
+total_levels: "Lv.1 → Lv.100"
+estimated_sessions: "about 44-72 sessions"
+
+volumes:
+  - id: "Vol.1"
+    title: "Town of Beginnings"
+    levels: "Lv.1-10"
+    floors: "Floors 1-10"
+    theme: "Awakening, survival, first Boss"
+    companions: ["Klein", "Argo"]
+  - id: "Vol.2"
+    title: "Solo on the Frontline"
+    levels: "Lv.10-30"
+    floors: "Floors 11-30"
+    theme: "Moonlit Black Cats, Clearers"
+    companions: ["Keita / Moonlit Black Cats", "Asuna"]
+  - id: "Vol.3"
+    title: "Dual Blades"
+    levels: "Lv.30-55"
+    floors: "Floors 31-55"
+    theme: "Unique Skill unlock, guild founding"
+    companions: ["Asuna", "Lisbeth"]
+  - id: "Vol.4"
+    title: "Knights of the Blood"
+    levels: "Lv.55-75"
+    floors: "Floors 56-75"
+    theme: "KoB, Kayaba's truth"
+    companions: ["Asuna", "Klein"]
+  - id: "Vol.5"
+    title: "The End"
+    levels: "Lv.75-96"
+    floors: "Floors 76-100"
+    theme: "Final showdown"
+    companions: ["All assemble"]
+
+key_companions:
+  - name: "Klein"
+    role: "Fuurinkazan Leader / First Companion"
+    unlock: "Vol.1"
+  - name: "Argo"
+    role: "Info Broker"
+    unlock: "Vol.1"
+  - name: "Keita"
+    role: "Moonlit Black Cats"
+    unlock: "Vol.2"
+    fate: "Dies end of Vol.2 (can be changed)"
+  - name: "Asuna"
+    role: "KoB Vice-Leader / Core Companion"
+    unlock: "Vol.2"
+  - name: "Lisbeth"
+    role: "Blacksmith / Weapon Forging"
+    unlock: "Vol.3"
+
+final_boss:
+  name: "Kayaba Akihiko (Heathcliff)"
+  floor: "Floor 100 Ruby Palace"
+  level: "Lv.96"
+
+notes:
+  - "Solo mode includes an NPC companion system (see Solo Mode Rules Supplement §S3)."
+  - "Permanent death in solo mode equals campaign end; the character-inheritance mechanic is recommended."

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="542" height="794" viewBox="0 0 542 794" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="542" height="794" fill="#FBFCFE"/>
+<rect x="18" y="64" width="240" height="224" rx="14" fill="#ECEFF1" fill-opacity="0.55" stroke="#ECEFF1" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">Annex / Outskirts</text>
+<rect x="284" y="186" width="240" height="102" rx="14" fill="#E3F2FD" fill-opacity="0.55" stroke="#E3F2FD" stroke-opacity="0.9"/>
+<text x="294" y="204" font-size="13" font-weight="bold" fill="#37474F">1st Floor</text>
+<rect x="284" y="308" width="240" height="102" rx="14" fill="#E8F5E9" fill-opacity="0.55" stroke="#E8F5E9" stroke-opacity="0.9"/>
+<text x="294" y="326" font-size="13" font-weight="bold" fill="#37474F">2nd Floor</text>
+<rect x="284" y="430" width="240" height="102" rx="14" fill="#FFF3E0" fill-opacity="0.55" stroke="#FFF3E0" stroke-opacity="0.9"/>
+<text x="294" y="448" font-size="13" font-weight="bold" fill="#37474F">3rd Floor</text>
+<rect x="284" y="552" width="240" height="102" rx="14" fill="#F3E5F5" fill-opacity="0.55" stroke="#F3E5F5" stroke-opacity="0.9"/>
+<text x="294" y="570" font-size="13" font-weight="bold" fill="#37474F">4th Floor</text>
+<rect x="284" y="674" width="240" height="102" rx="14" fill="#FFEBEE" fill-opacity="0.55" stroke="#FFEBEE" stroke-opacity="0.9"/>
+<text x="294" y="692" font-size="13" font-weight="bold" fill="#37474F">5th Floor</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">Rusted Factory Administration Building (Expansion)</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">Region: Industrial Zone　Danger: ★★★★☆　Suitable Level (Lv.): 6, 7</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="237" x2="138" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="114" y="166" width="47" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="138" y="179" font-size="12" fill="#455A64" text-anchor="middle">Forklift</text>
+<line x1="138" y1="115" x2="404" y2="481" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="208" y="288" width="125" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="301" font-size="12" fill="#455A64" text-anchor="middle">Vent (TN11)</text>
+<line x1="404" y1="237" x2="404" y2="359" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="387" y="288" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="301" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<line x1="404" y1="359" x2="404" y2="481" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="387" y="410" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="423" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<line x1="404" y1="481" x2="404" y2="603" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="387" y="532" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="545" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<line x1="404" y1="603" x2="404" y2="725" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="387" y="654" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="404" y="667" font-size="12" fill="#455A64" text-anchor="middle">Stairs</text>
+<line x1="404" y1="237" x2="138" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="241" y="227" width="60" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="240" font-size="12" fill="#455A64" text-anchor="middle">Underground Pipes</text>
+<rect x="40" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">East Scrap Yard</text>
+<title>East Scrap Yard: Forklift climbing platform; QZAC abandoned surveillance equipment (Electronics TN14 to repair → monitoring feed)</title>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Ventilation Duct System</text>
+<title>Ventilation Duct System: Connects scrap yard and 3rd floor; fits one person; Stealth TN14; companion cannot pass</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="242" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">1st Floor — Boiler Room</text>
+<title>1st Floor — Boiler Room: High-temperature boiler; underground pipes lead to west scrap yard; Iron Brotherhood soldier ×1 (can be ambushed)</title>
+<rect x="306" y="330" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="364" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">2nd Floor — Office Area</text>
+<title>2nd Floor — Office Area: Surveillance room (live feed of all corridors); patrol crossing point</title>
+<rect x="306" y="452" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="478" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">3rd Floor — Comms</text>
+<text x="404" y="495" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Room + Armory</text>
+<title>3rd Floor — Comms Room + Armory: Sentry ×1 patrols; bug installation (TN11); armory (Tech TN14); vent (TN11)</title>
+<rect x="306" y="574" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="608" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">4th Floor — Rest Area</text>
+<title>4th Floor — Rest Area: Dormitory ambush window; kitchen smoke grenades / flammables</title>
+<rect x="306" y="696" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="730" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">5th Floor — Command Center</text>
+<title>5th Floor — Command Center: Victor + guards ×2; tactical map wall; rooftop antenna extraction call point</title>
+</svg>

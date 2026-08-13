@@ -1,0 +1,83 @@
+id: "MAP-04"
+title: "Rusted Factory Administration Building (Expansion)"
+region: "Industrial Zone"
+danger: "★★★★☆"
+suitable_levels: [6, 7]
+regions:
+  - name: "Annex / Outskirts"
+    color: "#ECEFF1"
+  - name: "1st Floor"
+    color: "#E3F2FD"
+  - name: "2nd Floor"
+    color: "#E8F5E9"
+  - name: "3rd Floor"
+    color: "#FFF3E0"
+  - name: "4th Floor"
+    color: "#F3E5F5"
+  - name: "5th Floor"
+    color: "#FFEBEE"
+nodes:
+  - id: "yard"
+    name: "East Scrap Yard"
+    region: "Annex / Outskirts"
+    col: 0
+    row: 1
+    note: "Forklift climbing platform; QZAC abandoned surveillance equipment (Electronics TN14 to repair → monitoring feed)"
+  - id: "vent"
+    name: "Ventilation Duct System"
+    region: "Annex / Outskirts"
+    col: 0
+    row: 0
+    note: "Connects scrap yard and 3rd floor; fits one person; Stealth TN14; companion cannot pass"
+  - id: "f1"
+    name: "1st Floor — Boiler Room"
+    region: "1st Floor"
+    col: 1
+    row: 1
+    note: "High-temperature boiler; underground pipes lead to west scrap yard; Iron Brotherhood soldier ×1 (can be ambushed)"
+  - id: "f2"
+    name: "2nd Floor — Office Area"
+    region: "2nd Floor"
+    col: 1
+    row: 2
+    note: "Surveillance room (live feed of all corridors); patrol crossing point"
+  - id: "f3"
+    name: "3rd Floor — Comms Room + Armory"
+    region: "3rd Floor"
+    col: 1
+    row: 3
+    note: "Sentry ×1 patrols; bug installation (TN11); armory (Tech TN14); vent (TN11)"
+  - id: "f4"
+    name: "4th Floor — Rest Area"
+    region: "4th Floor"
+    col: 1
+    row: 4
+    note: "Dormitory ambush window; kitchen smoke grenades / flammables"
+  - id: "f5"
+    name: "5th Floor — Command Center"
+    region: "5th Floor"
+    col: 1
+    row: 5
+    note: "Victor + guards ×2; tactical map wall; rooftop antenna extraction call point"
+edges:
+  - from: "yard"
+    to: "vent"
+    label: "Forklift"
+  - from: "vent"
+    to: "f3"
+    label: "Vent (TN11)"
+  - from: "f1"
+    to: "f2"
+    label: "Stairs"
+  - from: "f2"
+    to: "f3"
+    label: "Stairs"
+  - from: "f3"
+    to: "f4"
+    label: "Stairs"
+  - from: "f4"
+    to: "f5"
+    label: "Stairs"
+  - from: "f1"
+    to: "yard"
+    label: "Underground Pipes"

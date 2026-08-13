@@ -1,0 +1,45 @@
+# Lone Wolf's Path — Frozen Wasteland TRPG Solo Campaign Scenario (Structured Index)
+# This file is compiled from the identically named .md scenario, for the website to provide .md / .yaml dual-format download.
+# For full scene descriptions, encounter design, and solo rules, refer to s02_孤狼之路.md.
+# Structure is free: the fields below are merely this scenario's organization, not mandatory.
+
+name: "Lone Wolf's Path"
+description: |
+  Solo campaign (1 Player + 1 GM + 1 NPC Companion). You are a lone Cold Walker —
+  not because you chose solitude, but because your team was wiped out in a Spasm Type Thaw. You survived,
+  but at the cost of a guilt you can never shake. You receive a commission from the Lakeheart City Cold Walker Guild:
+  venture deep into the Freeze Zones to find a pre-Freeze scientist said to be "still alive," who may hold
+  the truth behind the Freeze.
+  This is a growth arc from Trauma, through Trust, to the final choice — 9 sessions spanning Novice to Legendary.
+difficulty: "Novice → Legendary (difficulty increases act by act)"
+player_count: "1 Player + 1 GM + 1 NPC Companion (Solo Mode)"
+starting_equipment:
+  - "Basic plundering gear (adjusted per the Solo Mode Rules Supplement and the first session's difficulty)"
+scenes:
+  - name: "Session 1: Beneath the Frostfall"
+    description: "Novice｜Freeze Zone: Frostfall Supermarket. Start, learn to walk alone."
+  - name: "Session 2: The Silent Bell"
+    description: "Novice｜Freeze Zone: Frostbell Courtyard. Echo, accept a companion."
+  - name: "Session 3: Echoes on the Blackboard"
+    description: "Novice｜Freeze Zone: Dawnlight Elementary. Trust, group ethics."
+  - name: "Session 4: Silence Under the Scalpel"
+    description: "Intermediate｜Freeze Zone: St. Mary's Hospital. Skill growth, life ethics."
+  - name: "Session 5: The Eternal Pulse"
+    description: "Intermediate｜Freeze Zone: Permafrost Power Plant. Betrayal, technical challenge."
+  - name: "Session 6: The Lamp of the Frozen Sea"
+    description: "High Difficulty｜Freeze Zone: Frosttide Harbor. Test of trust, converging leads."
+  - name: "Session 7: The Voice of Ironfrost"
+    description: "High Difficulty｜Freeze Zone: Ironfrost Outpost. Confront Trauma, military ethics."
+  - name: "Session 8: The Seventh Floor"
+    description: "High Difficulty｜Freeze Zone: Time Laboratory · 7th Floor. Truth revealed, core of the Genesis Hypothesis."
+  - name: "Session 9: The Full Picture of Time"
+    description: "Legendary｜Freeze Zone: Genesis Corridor. Final choice, character fate."
+objectives:
+  - "Find the pre-Freeze scientist who is 'still alive' and uncover the truth of the Freeze"
+  - "Rebuild trust in solitude, and make peace with yourself"
+rewards:
+  - "Time Crystals, gear, and understanding (Milestone growth, no level-based stat inflation)"
+notes:
+  - "Uses the NPC Companion system, solo combat scaling, and solo rescue alternatives from the Solo Mode Rules Supplement"
+  - "References the Freeze Zones from the Sample Freeze Zone Expansion (noted per session)"
+  - "Appendices: NPC Companion Overview / Genesis Hypothesis Fragment Collection Guide"

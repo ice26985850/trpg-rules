@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="542" height="550" viewBox="0 0 542 550" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="542" height="550" fill="#FBFCFE"/>
+<rect x="18" y="64" width="240" height="102" rx="14" fill="#E8F5E9" fill-opacity="0.55" stroke="#E8F5E9" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">Edge Zone (★☆☆☆☆)</text>
+<rect x="18" y="186" width="506" height="102" rx="14" fill="#E3F2FD" fill-opacity="0.55" stroke="#E3F2FD" stroke-opacity="0.9"/>
+<text x="28" y="204" font-size="13" font-weight="bold" fill="#37474F">Old Town (★★☆☆☆)</text>
+<rect x="18" y="308" width="506" height="102" rx="14" fill="#FFF3E0" fill-opacity="0.55" stroke="#FFF3E0" stroke-opacity="0.9"/>
+<text x="28" y="326" font-size="13" font-weight="bold" fill="#37474F">Industrial Zone (★★★☆☆)</text>
+<rect x="18" y="430" width="506" height="102" rx="14" fill="#FFEBEE" fill-opacity="0.55" stroke="#FFEBEE" stroke-opacity="0.9"/>
+<text x="28" y="448" font-size="13" font-weight="bold" fill="#37474F">Core Zone (★★★★★)</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">Quarantine Zone Overview</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">Region: Quarantine Zone (All Sectors) Danger: —</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="115" x2="138" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="237" x2="404" y2="237" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="359" x2="404" y2="359" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="404" y1="237" x2="138" y2="359" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="359" x2="138" y2="481" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<line x1="138" y1="481" x2="404" y2="481" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="228" y="471" width="86" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="484" font-size="12" fill="#455A64" text-anchor="middle">Rift Energy Spreading</text>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="112" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-01</text>
+<text x="138" y="129" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Ash Mall Parking Garage</text>
+<title>MAP-01 Ash Mall Parking Garage: Edge Zone|Danger ★★☆☆☆|Suitable Lv.1-2</title>
+<rect x="40" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="234" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-02</text>
+<text x="138" y="251" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Silent Community Elementary School</text>
+<title>MAP-02 Silent Community Elementary School: Old Town|Danger ★★☆☆☆|Suitable Lv.3</title>
+<rect x="306" y="208" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="234" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-03</text>
+<text x="404" y="251" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Underground Tunnel System</text>
+<title>MAP-03 Underground Tunnel System: Old Town|Danger ★★★★☆|Suitable Lv.4</title>
+<rect x="40" y="330" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="356" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-04</text>
+<text x="138" y="373" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Rusted Factory Building</text>
+<title>MAP-04 Rusted Factory Building: Industrial Zone|Danger ★★★★☆|Suitable Lv.6-7</title>
+<rect x="306" y="330" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="356" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-06</text>
+<text x="404" y="373" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Brotherhood Headquarters</text>
+<title>MAP-06 Brotherhood Headquarters: Industrial Zone|Danger ★★★★★|Suitable Lv.9</title>
+<rect x="40" y="452" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="478" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-05</text>
+<text x="138" y="495" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Abandoned Church + Crypt</text>
+<title>MAP-05 Abandoned Church + Crypt: Core Zone Edge|Danger ★★★★☆|Suitable Lv.8</title>
+<rect x="306" y="452" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="478" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">MAP-07</text>
+<text x="404" y="495" font-size="12.5" font-weight="bold" fill="#212121" text-anchor="middle">Ashila Deep Laboratory</text>
+<title>MAP-07 Ashila Deep Laboratory: Core Zone|Danger ★★★★★|Suitable Lv.10</title>
+</svg>

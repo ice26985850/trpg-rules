@@ -1,0 +1,44 @@
+# Nation Building TRPG
+
+**You are no adventurer — you are the King.**
+
+This is a tabletop role-playing game built around "nation management": your Hit Points (HP) are your population, your equipment is your infrastructure, and your skill tree is your technology and magic systems.
+
+## Worldview
+
+The story unfolds on the new continent of **Elden**. Five hundred years ago, the old world was destroyed by a magical catastrophe — **The Sundering** — and survivors came to this land strewn with ancient ruins and unknown magic. Magic flows as naturally as wind and water; the **Ley Lines** threading the earth are everywhere; Humans, Dwarves, Elves, Orcs, and Dragonborn coexist. You will lead them from a camp of 50 souls, onward through tribe, city-state, kingdom, and empire, until the legendary age when you speak with the gods.
+
+## What do you play?
+
+You run a nation's day-to-day: plant wheat or potatoes this year? Ally with the neighboring realm or make war? The game advances by "years," each with four turns — Spring, Summer, Autumn, Winter; every turn you declare actions, roll checks, and respond to crises, watching civilization grow walls and academies from the wilderness. You can also dispatch "Hero" units with nine attributes to explore, negotiate, or fight, and unlock spells from five schools — Arcane, Divine, Nature, Rune, Alchemy — even dropping meteors and stopping time.
+
+## What's different?
+
+- **The nation is your character:** replace traditional character attributes with the "National Six Dimensions (POP/RES/ECO/MIL/TEC/MOR)." There are no levels or XP; growth comes from accumulated construction and era advancement.
+- **Crisis Deck:** each turn may draw a crisis event — from famine and rebellion to neighboring extortion; management always has variables.
+- **Race & Culture Fusion:** choose a single or dual race; each race has independent satisfaction; mixed-bloods unlock unique fusion tech.
+
+## Who is this for?
+
+Those who enjoy strategic management, resource allocation, diplomatic maneuvering, and the satisfaction of building from nothing will find joy here. It asks for a bit of TRPG foundation, but not that you be a rules maven — the core mechanics are clear and easy to pick up.
+
+## Game Style Tags
+
+- Combat weight: Supportive (combat exists but is not the focus)
+- Strategic depth: Highly strategic (every decision significantly affects outcomes; mistakes can be fatal)
+- Story-driven: Story-supported (clear scenarios but high player freedom)
+- Resource management: Moderate management (watch key resources without being harsh)
+- Character customization: Highly customizable (many options, create unique characters)
+- Character-creation complexity: Moderate (simple steps, quick to finish)
+- Rules density: Mid-weight rules (clear core rules, not cumbersome)
+- GM requirement: Optional GM (multiplayer or solo)
+
+## Estimated Play Time
+
+- Single scenario: about 4–8 hours (from nation creation to scenario ending)
+- Full campaign: about 50–80 hours (five scenarios linked, from wilderness camp to legendary empire)
+
+## Basic Info
+
+- Players: 1 player + 1 GM (GM optional; solo self-GM also possible); in multiplayer each player governs one nation
+- Core die: d20 (twenty-sided die) + attribute Modifier (MOD)

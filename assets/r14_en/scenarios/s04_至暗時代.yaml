@@ -1,0 +1,71 @@
+name: "The Darkest Age"
+description: "A global disaster descends — the meteor falls and brings the blight. You must not only build your nation, but ensure that civilization itself survives."
+difficulty: 4
+level_range:
+  era_start: "Kingdom Age"
+  era_end: "Empire Age"
+turns_estimated: 70
+player_count: {min: 1, max: 1}
+map_ref: "maps/S4_至暗時代_災難區域.yaml"
+initial_map: "maps/S4_至暗時代_災難區域.yaml"
+
+phases:
+  - id: 1
+    name: "Disaster Falls"
+    turns: "1-10"
+    events:
+      - turn: 1
+        name: "Meteor Falls"
+        type: "disaster"
+        description: "A green meteor streaks across the sky, bringing the blight"
+      - turn: 5
+        name: "Seal or Aid"
+        type: "moral_choice"
+        description: "Choose to close the border or open aid"
+
+  - id: 2
+    name: "Groping in the Dark"
+    turns: "11-30"
+    events:
+      - turn: 15
+        name: "Find the Meteor"
+        type: "exploration"
+        description: "Find the meteor impact site for research"
+      - turn: 25
+        name: "Plunder Each Other"
+        type: "diplomacy"
+        description: "Powers begin to blame and plunder each other"
+
+  - id: 3
+    name: "A Light of Hope"
+    turns: "31-55"
+    events:
+      - turn: 35
+        name: "Coalition Expedition"
+        type: "expedition"
+        description: "Organize a multinational coalition expedition"
+      - turn: 45
+        name: "The Cure's Price"
+        type: "moral_choice"
+        description: "The cure requires sacrifice — at the cost of lifespan"
+
+  - id: 4
+    name: "A New Dawn"
+    turns: "56-70"
+    events:
+      - turn: 60
+        name: "The Sacrificer's Choice"
+        type: "climax"
+        description: "Decide who bears the sacrifice"
+      - turn: 70
+        name: "Civilization Rebuilt"
+        type: "ending"
+        description: "The new world order after the disaster"
+
+endings:
+  - id: "savior"
+    condition: "Find the cure and save others"
+    result: "International prestige +50, all attributes +10"
+  - id: "fortress"
+    condition: "Seal off and self-protect"
+    result: "All attributes +5, but internationally isolated"

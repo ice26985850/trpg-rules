@@ -1,0 +1,95 @@
+name: "The Other Me (Multiplayer)"
+type: "Mirror Chase"
+difficulty: "★★★★★"
+recommended_marks: "7-10+"
+players: "2-4 players"
+play_time: "3-4 sessions"
+core_attributes: ["AN", "NG", "AW"]
+
+opening: |
+  This is not a commission—it is personal. One player's Mirror begins to make "movements it shouldn't,"
+  at first just tiny deviations, but worsening: the Mirror speaks in the player's own voice of things the player doesn't know.
+  It says: "Do you still remember that summer, years ago? Under the bridge—what was it you cast away?"
+
+core_design: |
+  The GM must privately communicate with the target player before starting, to determine: a memory the player
+  forgot in childhood, the secret the Mirror "knows," and the Mirror's purpose (replace you? or warn you?).
+
+npcs:
+  - name: "The Player's Mirror"
+    type: "the Mirror"
+    desc: "Negotiation DC 16, uses the player's same attribute values. Not an enemy—it is 'the repressed part'"
+    companion_eligible: false
+  - name: "Childhood Acquaintance"
+    type: "Informant"
+    desc: "A childhood friend, neighbor, or family member who may still be on the Surface, providing clues about 'that summer'"
+    companion_eligible: false
+  - name: "Lost Item Collector"
+    type: "Gap Creature"
+    desc: "Once witnessed the Mirror leave the player and act independently, can trade for information"
+    companion_eligible: false
+  - name: "Memory Guardian"
+    type: "Path Guardian"
+    desc: "Guards the location of the core memory—the Path Guardian under the bridge, requires 'a name' or 'a genuine memory' to pass"
+    companion_eligible: false
+
+lost_items:
+  - name: "Childhood Diary"
+    tier: "Memory Crystal"
+    dc: 15
+    location: "Gap Layer of the childhood home"
+    effect: "Mentions a childhood friend who drowned under the bridge one summer"
+  - name: "Torn Photo (Half)"
+    tier: "Common Lost Item"
+    dc: 8
+    location: "Gap Layer of the old school"
+    effect: "A fragment for assembling the truth"
+  - name: "The Small Iron Box Under the Bridge"
+    tier: "Gap Construct"
+    dc: 18
+    location: "Gap Layer under the bridge"
+    effect: "A key item sealing the repressed memory"
+
+gap_creatures:
+  - name: "the Mirror"
+    type: "the Mirror"
+    negotiation_dc: 16
+    location: "The player's personal history scenes"
+    liberation: "Three stages: Hinting → Dialogue → Confrontation; endpoint at the memory core"
+    reward: "Three endings: Merge / Reject / Sacrifice"
+  - name: "Memory Guardian"
+    type: "Path Guardian"
+    negotiation_dc: 12
+    location: "The passage under the bridge"
+    liberation: "Provide a genuine memory or a name"
+    reward: "Yields the path to the bridge"
+
+scenes:
+  - name: "First Anomaly"
+    desc: "See the Mirror during a routine crossing. Anchor DC 14 to confirm 'is this real or a hallucination.'"
+    map_ref: "—"
+  - name: "Track the Mirror"
+    desc: "The Mirror leaves a Residual-echo path. Awareness DC 12 to track, the path leads through the player's personal history."
+    map_ref: "MAP-08 (Mirror Tracking Path) — Scene A"
+  - name: "Dialogue with the Mirror"
+    desc: "In the childhood home Gap Layer, the Mirror reveals: 'What you forgot was not a summer, it was a person.' Negotiation DC 16."
+    map_ref: "MAP-08 — Scene B"
+  - name: "Dig Up the Memory"
+    desc: "Assemble through Lost Items and NPCs: a childhood friend drowned under the bridge one summer, the player was there but out of fear did not help."
+    map_ref: "MAP-08 — Scene B"
+  - name: "Confrontation Under the Bridge"
+    desc: "Arrive at the bridge's Gap Layer. The Mirror stands under the bridge—choices: accept the memory (Merge), reject it (Mirror independent), the Mirror's Sacrifice."
+    map_ref: "MAP-08 — Scene D"
+  - name: "Wrap-Up"
+    desc: "Whatever the choice, the player is permanently changed. Accept the memory: Return Mark +1 (return a memory to yourself)."
+    map_ref: "—"
+
+endings:
+  - "Merge: the player becomes more whole, permanent Advantage on all future Anchor Checks"
+  - "Reject: the Mirror stays in the Gap, may reappear in the future"
+  - "Sacrifice: the player recovers, the Mirror disappears forever—you remember it every time you face a mirror"
+
+rewards:
+  - "Return Mark × 1 (when accepting the memory)"
+
+companion_recruitment: []

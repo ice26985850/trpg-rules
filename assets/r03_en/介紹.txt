@@ -1,0 +1,39 @@
+# Z Corporation TRPG — The Sorcerer Management War Chronicle
+
+## Reference Works Disclaimer
+The worldview and core terminology of this work (Sorcerers, Cursed Energy, Techniques, Heavenly Restriction, Reverse Technique, Special-Grade rating, etc.) are inspired by *Jujutsu Kaisen*. It draws upon its "Cursed Energy system powered by emotion" and its "cost-for-power exchange" concepts; however, the game framework is entirely original—you are not a Sorcerer who fights on the battlefield, but a corporate Supervisor who manages them from behind a desk.
+
+## One-Line Pitch
+At a sprawling enterprise powered by Cursed Energy, you are not the Sorcerer who fights—you are the Supervisor who dispatches them. Under the watchful eyes of the Board of Directors, lead your team through one supernatural crisis after another.
+
+## Worldview Overview
+Z Corporation holds "Cursed Energy" and the "Singularity." Outwardly it serves the public and its Privileged Members; inwardly it is a labyrinth of departments and warring factions. Beneath the glossy corporate empire lies the "Eternal Pact"—a scheme that distorts time and is fueled by the life force of Sorcerers. You begin as a grassroots Supervisor, gradually drawn into the Dessert Syndicate crisis and the time-rift incidents, until you uncover the Board's buried truths and, at the endgame, make the choice that alters the course of the world.
+
+## Who Do You Play? Core Gameplay
+You play a Supervisor, running a team of Sorcerers. Each Cycle is divided into three phases: recruit new talent, dispatch them on missions, and invest or promote during the Interlude. You do not fight directly—instead you deploy your personnel, weigh the risks, and nurture your subordinates. The most moving part is this: your employees grow, awaken, and confide in you through communication; and the bonds between you will decide how they perform in moments of crisis.
+
+## System Highlights
+- Three-Resource Management: Computing Power, Satisfaction, and Capital are tightly interlinked. Let Satisfaction hit zero and you lose your job—forcing you to weigh every move with care.
+- Sublimation Growth: "Promotion" triggers a qualitative shift in an employee's Core Ability, advancing from No Sublimation all the way to Special-Grade. Each person awakens in a way uniquely their own.
+- Intuitive d100 Checks: Attribute grades convert directly into hit values. Roll a die and succeed if the result is ≤ the value—transparent thresholds, brisk pacing.
+
+## Who Is This For?
+Players who enjoy "management & nurturing + narrative immersion" will dive in instantly. You must allocate resources and bear the cost of your decisions like a manager, yet care about each character's fate like a storyteller. Basic TRPG experience is needed (understanding GM moderation and dice rolls), but no mastery of wargaming is required.
+
+## Game Style Tags
+- Combat Weight: Significant
+- Strategic Depth: High Strategy
+- Story-Driven: Story-Led
+- Resource Management: Heavy Management
+- Character Customization: Moderate Customization
+- Character Creation Complexity: Medium
+- Rules Density: Heavy Rules
+- GM Requirement: GM Required
+
+## Estimated Playtime
+- Single Scenario (one Crisis Contract chapter): about 4–8 hours
+- Full Campaign (five consecutive story chapters): about 40–80 hours
+
+## Basic Information
+- Player Count: 1 GM (moderator) + 1 or more players (each playing one Supervisor)
+- Core Dice: d100

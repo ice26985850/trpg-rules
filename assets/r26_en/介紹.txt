@@ -1,0 +1,39 @@
+# Hunter × Hunter TRPG — Player Introduction
+
+## Reference Work Disclaimer
+This ruleset is a fan-made TRPG adaptation of Yoshihiro Togashi's *HUNTER×HUNTER*. The worldview, the Nen ability system, and the main stages are all drawn from the original work's settings. This is an unofficial fan creation and has no affiliation with or authorization from the original copyright holders.
+
+## What Kind of Game Is This?
+This is a TRPG where you personally design your own unique Nen ability and fight your way through life-and-death trials in the Hunter world. In one line: **"Your restrictions are your power."**
+
+## Worldview Overview
+In this world, a rare few who awaken can manipulate the life energy within their bodies known as "Nen," while "Hunters" are license holders who wield nearly unlimited authority. From the brutally low pass rate of the Hunter Exam, to the layered deathmatches of Heavens Arena, to the unknown dangers of the Yorknew underworld and the Dark Continent, the core conflict of the world is always "the limits of humanity and Nen" — the more harshly one treats oneself, the closer one draws to the essence of Nen.
+
+## What Do You Play? Core Gameplay
+You play an original character who aspires to become a Hunter. Through "Water Divination" you awaken one of the six major Nen types (Enhancement, Transmutation, Emission, Conjuration, Manipulation, Specialization), then design your own Nen ability from scratch. Core combat uses a d20 resolution system. Its most distinctive feature is the **reverse declaration order**: the side with lower Initiative declares its action first, and the side with higher Initiative acts second to counter — faithfully recreating the "reading ahead" mind-games of the original work. Each round you also allocate your Spirit Points (SP) across three zones — Attack, Defense, and Special — adjusting on the fly as the battle evolves.
+
+## System Highlights
+- **Binding Pledge points (BP) system:** You voluntarily add restrictions to your ability (such as "requires chanting," "once per day," "death on failure") to earn Binding Pledge points (BP) that strengthen its effect. This is the soul of the entire ruleset, making every player's Nen ability one of a kind.
+- **Spirit Point (SP) three-zone allocation (Ryu):** Dynamically allocate SP each round, and even "bluff" to deceive your opponent's senses — recreating the configuration mind-game of Nen battles.
+- **Experience Points (XP) point-buy system and six-stage growth:** Advance from Rookie all the way to Legendary, freely investing in attributes, skills, and new abilities — no rigid level table.
+
+## Who Is This For?
+Players who enjoy **tactical mind-games** and **character building** will feel most at home — you must both calculate each round's SP allocation and carefully design your ability combination. It also suits fans of the original work who want to personally walk through the Hunter Exam and the Dark Continent. A little TRPG experience is recommended, as the rules are dense and character creation has many steps.
+
+## Game Style Tags
+- Combat weight: core
+- Strategic depth: highly strategic
+- Story-driven: story-supported
+- Resource management: moderate
+- Character customization: highly customizable
+- Character-creation complexity: complex
+- Rules density: heavy rules
+- GM requirement: GM required
+
+## Estimated Play Time
+- Single scenario: about 3–5 hours (including character creation)
+- Full campaign: the five main scenarios, interlinked, run about 40–60 hours
+
+## Basic Information
+- Players: 3–5 players + 1 Game Master (GM)
+- Core dice: d20 (advantage/disadvantage = 2d20 take higher / take lower)

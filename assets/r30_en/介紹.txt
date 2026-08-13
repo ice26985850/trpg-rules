@@ -1,0 +1,37 @@
+# League of Legends TRPG — An Invitation to Adventurers
+
+## Reference Work Disclaimer
+This ruleset is a non-commercial fan adaptation TRPG based on *League of Legends* (Riot Games) and its Runeterra world setting. It borrows the original regions, champions, and abilities and transforms them into a tabletop experience. It has no official affiliation with Riot Games.
+
+## What Kind of World Is This?
+You are about to set foot in Runeterra. In a single sentence: amid the magic-banning Demacia, the iron-blooded Noxus, the shadow-wreathed Shadow Isles, and the alchemical mists of Zaun, you play an adventurer who wields the power of champions, and write your own Rune War.
+
+## Worldview Overview
+Runeterra is not a fairy-tale continent waiting to be saved, but a living world already torn apart by power, still bleeding yet still struggling. The World Runes scattered across it can reshape reality, yet are enough to unleash world-ending catastrophe, and the factions struggle over them without end. There is no pure good or evil here: Demacia's magic-banning order, Noxus's will of the strong, Ionia's shattered balance, and Freljord's icy destiny each have their own logic and cruelty. Between the three axes of "power and cost," "order and chaos," and "belonging and exile," you will make your own choices.
+
+## What Do Players Play? What Is the Core Gameplay?
+You play an adventurer hailing from one of eight regions, choosing your combat role from five archetypes: Assassin, Warrior, Mage, Marksman, and Support. The most distinctive experience is this: combat brings *League of Legends* "skill-shotting" to the tabletop — Non-Targeted Skills require you to roll dice to hit your opponent's Evasion DC (Difficulty Class), and to maneuver, ambush, and kite on a grid map. You may delve into dungeons to hunt Epic Monsters, navigate the powers of towns, or forge Bonds with legendary champions to unlock exclusive abilities.
+
+## System Highlights
+First, the Two-Layer Attribute Architecture: Combat Attributes (Attack Damage (AD), Ability Power (AP), Health Points (HP), Armor (Armor), Magic Resistance (MR), etc.) and Character Abilities (Strength (STR), Agility (AGI), Constitution (CON), Intelligence (INT), Perception (PER), Charisma (CHA)) are separated, so that "number-crunching builds" and "roleplaying" each shine in their own arena. Second, five Talent Trees combined with a gold-and-equipment economy create nearly limitless build combinations. Third, the Regional Origin System: your origin is not mere background, but grants unique traits and an initial Bond — Demacians resist magic yet draw the hatred of mages, Noxians are fierce yet trusted by no one; every choice comes with a price.
+
+## Who Is This For?
+Players who enjoy tactical positioning, ability combos, and build synergy will feel right at home; it also suits narrative players who love morally gray stories, faction choices, and immersive worldbuilding. Whether you are a TRPG newcomer (with recommended starter builds and quick-character sheets) or a veteran tabletop veteran (deep Talents and a multiclass system), you will find your fun.
+
+## Game Style Tags
+- Combat Weight: Core (combat is the main gameplay)
+- Strategic Depth: Moderate strategy (requires considering ability combos and resource timing)
+- Story-Driven: Story-assisted (has a clear plot but high player freedom)
+- Resource Management: Moderate management (must watch primary resources but not overly punishing)
+- Character Customization: High customization (many options to create a unique character)
+- Character Creation Complexity: Moderate (simple steps, can be completed quickly)
+- Rules Density: Heavy rules (many mechanics to learn)
+- GM Requirement: Requires a GM (a human GM must run the game)
+
+## Estimated Play Time
+- Single scenario: about 3–5 hours (the intro module "White Wall Rift" is about 4 hours)
+- Full campaign: four chapters leveling from Lv.1 to Lv.20, about 40–60 hours
+
+## Basic Information
+- Players: 3–5 players + 1 GM (a Solo / Duet mode is also provided: 1 player + 1 host)
+- Core die: d20 (for Advantage / Disadvantage, roll 2d20 and take the higher / lower)

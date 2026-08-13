@@ -1,0 +1,664 @@
+# Last Stand TRPG — Item Compendium
+# Complete weapon, armor, attachment, consumable, and vehicle data
+
+# =============================================================================
+# Weapons
+# =============================================================================
+weapons:
+  Pistol:
+    - name: P92
+      damage: 1d8
+      range_effective: 25m
+      range_max: 50m
+      magazine: 15
+      weight_kg: 1.0
+      rarity: Common
+      price_cr: 200
+      proficiency: AIM 10
+      special: Standard-issue pistol. Switching is a Free Action (does not consume a Tactical Action). Low recoil.
+
+    - name: P1911
+      damage: 1d10
+      range_effective: 20m
+      range_max: 40m
+      magazine: 7
+      weight_kg: 1.1
+      rarity: Common
+      price_cr: 250
+      proficiency: AIM 10
+      special: Large-caliber pistol. Close range (within 15m) damage +2. Smaller magazine.
+
+    - name: Desert Eagle
+      damage: 2d8
+      range_effective: 30m
+      range_max: 60m
+      magazine: 7
+      weight_kg: 2.0
+      rarity: Rare
+      price_cr: 800
+      proficiency: AIM 14, PHY 13
+      special: A sniper among pistols. Can penetrate Lv.1 armor (ignores 2 DR). Burst DC+3 (huge recoil).
+
+    - name: Skorpion
+      damage: 1d6
+      range_effective: 30m
+      range_max: 60m
+      magazine: 20
+      weight_kg: 1.5
+      rarity: Uncommon
+      price_cr: 400
+      proficiency: AIM 10
+      special: Fully-automatic pistol. Can fire 2-round bursts/turn. Burst DC+1/shot.
+
+  SMG:
+    - name: UMP45
+      damage: 1d8
+      range_effective: 40m
+      range_max: 80m
+      magazine: 25
+      weight_kg: 2.5
+      rarity: Common
+      price_cr: 400
+      proficiency: AIM 10
+      special: .45-caliber damage-focused SMG. Strong close-range suppression (Suppressing Fire option available).
+
+    - name: Vector
+      damage: 1d6
+      range_effective: 30m
+      range_max: 60m
+      magazine: 19
+      weight_kg: 2.3
+      rarity: Uncommon
+      price_cr: 600
+      proficiency: AIM 10
+      special: Fastest-firing SMG. Can fire 4-round bursts/turn (DC+1/shot). Small mag but astonishing burst power.
+
+    - name: MP5K
+      damage: 1d6
+      range_effective: 50m
+      range_max: 100m
+      magazine: 30
+      weight_kg: 2.0
+      rarity: Common
+      price_cr: 500
+      proficiency: AIM 10
+      special: The most balanced SMG. Burst recoil DC penalty -1 (first three shots no DC added).
+
+    - name: Tommy Gun
+      damage: 1d8
+      range_effective: 35m
+      range_max: 70m
+      magazine: 50
+      weight_kg: 4.5
+      rarity: Rare
+      price_cr: 700
+      proficiency: AIM 10
+      special: Drum magazine. 4-round bursts/turn. Best sustained fire. Heavier weight.
+
+  AR:
+    - name: M16A4
+      damage: 1d10
+      range_effective: 200m
+      range_max: 400m
+      magazine: 30
+      weight_kg: 3.5
+      rarity: Common
+      price_cr: 800
+      proficiency: AIM 12
+      special: 3-round burst only (3 shots/turn, DC+1/shot). High single-shot accuracy. Controllable recoil.
+
+    - name: SCAR-L
+      damage: 1d10
+      range_effective: 180m
+      range_max: 360m
+      magazine: 30
+      weight_kg: 3.3
+      rarity: Uncommon
+      price_cr: 1200
+      proficiency: AIM 12
+      special: Best recoil control. Burst DC penalty -1. Firing while moving DC-1.
+
+    - name: AKM
+      damage: 1d12
+      range_effective: 200m
+      range_max: 400m
+      magazine: 30
+      weight_kg: 4.0
+      rarity: Uncommon
+      price_cr: 1000
+      proficiency: AIM 12
+      special: Largest-caliber AR. Can penetrate Lv.1 armor (ignores 2 DR). Burst DC+2/shot (high recoil).
+
+    - name: M416
+      damage: 1d10
+      range_effective: 200m
+      range_max: 400m
+      magazine: 30
+      weight_kg: 3.5
+      rarity: Rare
+      price_cr: 1800
+      proficiency: AIM 12
+      special: King of attachments (5 attachment slots). Fully kitted, burst DC no penalty. All-around ultimate rifle.
+
+    - name: AUG
+      damage: 1d10
+      range_effective: 220m
+      range_max: 440m
+      magazine: 30
+      weight_kg: 3.6
+      rarity: Airdrop
+      price_cr: "-"  # Airdrop only, no sale price
+      proficiency: AIM 12
+      special: Airdrop only. Built-in 2x scope effect. Burst DC-1. Firing while moving DC-1.
+
+  SR:
+    - name: Kar98k
+      damage: 2d10
+      range_effective: 500m
+      range_max: 700m
+      magazine: 5
+      weight_kg: 4.5
+      rarity: Uncommon
+      price_cr: 1500
+      proficiency: AIM 14
+      special: Classic bolt-action sniper. After aiming, shots ignore Lv.2 and below helmet DR. Requires 1 turn to aim.
+
+    - name: M24
+      damage: 2d10+2
+      range_effective: 550m
+      range_max: 750m
+      magazine: 5
+      weight_kg: 5.0
+      rarity: Rare
+      price_cr: 2500
+      proficiency: AIM 14
+      special: Built-in bipod—prone aiming takes only half a turn. Slightly higher damage than Kar98k.
+
+    - name: AWM
+      damage: 2d12
+      range_effective: 600m
+      range_max: 800m
+      magazine: 5
+      weight_kg: 6.0
+      rarity: Airdrop
+      price_cr: "-"  # Airdrop only, no sale price
+      proficiency: AIM 16, PHY 14
+      special: Ultimate sniper rifle. Ignores Lv.3 helmet DR. Vital hit (d20=19-20) instant kill—ignores HP. Legendary weapon.
+
+    - name: SKS
+      damage: 2d8
+      range_effective: 300m
+      range_max: 500m
+      magazine: 10
+      weight_kg: 4.0
+      rarity: Uncommon
+      price_cr: 1200
+      proficiency: AIM 14
+      special: Semi-auto sniper—no aiming turn needed, can fire once per turn. Good for mid-range support.
+
+    - name: Mini-14
+      damage: 1d10
+      range_effective: 250m
+      range_max: 400m
+      magazine: 20
+      weight_kg: 3.5
+      rarity: Uncommon
+      price_cr: 1000
+      proficiency: AIM 12
+      special: Designated marksman rifle. No aiming needed, can fire 2-round bursts (DC+1/shot). Large mag, low recoil.
+
+  Shotgun:
+    - name: S686
+      damage_near: 4d6
+      damage_mid: 2d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 2
+      weight_kg: 3.5
+      rarity: Common
+      price_cr: 500
+      proficiency: PHY 12
+      special: Double-barrel shotgun. Can fire 2 shots in one turn (DC penalty not stacked). Then must reload.
+
+    - name: S1897
+      damage_near: 3d6
+      damage_mid: 1d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 5
+      weight_kg: 3.8
+      rarity: Common
+      price_cr: 500
+      proficiency: PHY 12
+      special: Pump-action. Close-range hit applies knockback (target pushed back 5m, PHY DC12 to resist).
+
+    - name: S12K
+      damage_near: 3d6
+      damage_mid: 1d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 5
+      weight_kg: 4.0
+      rarity: Uncommon
+      price_cr: 800
+      proficiency: PHY 12
+      special: Semi-auto. Can fire 2-round bursts/turn (DC+1/shot). Can use rifle attachments (suppressor, extended mag).
+
+    - name: DBS
+      damage_near: 4d6
+      damage_mid: 2d6
+      damage_far: 1d4
+      range_near: 10m
+      range_mid: 20m
+      magazine: 14
+      weight_kg: 5.5
+      rarity: Airdrop
+      price_cr: "-"  # Airdrop only, no sale price
+      proficiency: PHY 12
+      special: Airdrop-only double-barrel semi-auto. Can fire twice per turn (2 shots each). Reload takes a full turn.
+
+  LMG:
+    - name: DP-28
+      damage: 1d10
+      range_effective: 300m
+      range_max: 500m
+      magazine: 47
+      weight_kg: 9.0
+      rarity: Uncommon
+      price_cr: 1500
+      proficiency: AIM 8, PHY 8
+      special: Pan magazine. Prone firing recoil DC penalty halved. Reload takes a full turn.
+
+    - name: M249
+      damage: 1d10
+      range_effective: 300m
+      range_max: 500m
+      magazine: 75
+      weight_kg: 7.5
+      rarity: Rare
+      price_cr: 2500
+      proficiency: AIM 8, PHY 8
+      special: King of suppressing fire. 4-round bursts/turn. Can perform Suppressing Shot (designate 5m×5m area).
+
+    - name: MG3
+      damage: 1d12
+      range_effective: 350m
+      range_max: 550m
+      magazine: 75
+      weight_kg: 11.0
+      rarity: Airdrop
+      price_cr: "-"  # Airdrop only, no sale price
+      proficiency: AIM 8, PHY 10
+      special: "Airdrop only. Optional ultra-high fire rate mode: 6 shots/turn (DC+2/shot). Consumes ammo extremely fast."
+
+  Crossbow:
+    - name: Tactical Crossbow
+      damage: 2d8
+      range_effective: 50m
+      range_max: 80m
+      magazine: 1
+      weight_kg: 2.5
+      rarity: Uncommon
+      price_cr: 400
+      proficiency: AIM 6
+      special: Completely silent—does not reveal position (no gunshot, no muzzle flash, no tracer smoke). Must reload after each shot (consumes a Tactical Action).
+
+  Melee Weapons:
+    - name: Frying Pan
+      damage: 1d6+PHYmod
+      weight_kg: 1.0
+      rarity: Common
+      special: Legendary weapon. 20% chance to block bullets from behind (roll d100, 01-20 = blocked, damage zeroed).
+
+    - name: Crowbar
+      damage: 1d8+PHYmod
+      weight_kg: 1.5
+      rarity: Common
+      special: Can pry open locked doors or supply crates (no key needed). Consumes 1 turn.
+
+    - name: Tactical Knife
+      damage: 1d4+PHYmod
+      weight_kg: 0.3
+      rarity: Common
+      special: On vital hit (d20=20), damage ×3 instead of ×2.5.
+
+    - name: Machete
+      damage: 1d10+PHYmod
+      weight_kg: 2.0
+      rarity: Uncommon
+      special: Can cut through brush to open a path. Melee range +1m.
+
+# =============================================================================
+# Armor
+# =============================================================================
+armor:
+  Helmet:
+    - level: 1
+      name: Level 1 Helmet
+      dr: 1
+      durability: 3
+      weight_kg: 0.5
+      price_cr: 200
+      special: None
+
+    - level: 2
+      name: Level 2 Helmet
+      dr: 2
+      durability: 4
+      weight_kg: 1.0
+      price_cr: 400
+      special: None
+
+    - level: 3
+      name: Level 3 Helmet
+      dr: 3
+      durability: 5
+      weight_kg: 1.5
+      price_cr: 800
+      special: Immune to instant headshot kill. Even an AWM headshot only deals ×1.5 damage and won't instakill.
+
+  Torso Armor:
+    - level: 0
+      name: Sports Protector
+      dr: 1
+      durability: 2
+      weight_kg: 1.0
+      price_cr: 100
+      special: Lightweight sports protector. Low durability but extremely light
+
+    - level: 0
+      name: Tactical Vest
+      dr: 1
+      durability: 3
+      weight_kg: 2.0
+      price_cr: 150
+      special: Lightweight tactical gear. Provides extra +2kg carry capacity (extra pockets)
+
+    - level: 1
+      name: Level 1 Armor
+      dr: 2
+      durability: 4
+      weight_kg: 3.0
+      price_cr: 300
+      special: None
+
+    - level: 2
+      name: Level 2 Armor
+      dr: 3
+      durability: 5
+      weight_kg: 5.0
+      price_cr: 600
+      special: None
+
+    - level: 3
+      name: Level 3 Armor
+      dr: 4
+      durability: 6
+      weight_kg: 7.0
+      price_cr: 1200
+      special: Heavy armor—while worn, movement speed -5m (can be offset by a feat).
+
+# =============================================================================
+# Weapon Attachments
+# =============================================================================
+attachments:
+  Scope:
+    - name: Red Dot Sight
+      compatible: [Pistol, SMG, AR]
+      effect: DC-1 within 50m
+      weight_kg: 0.2
+    - name: Holo Sight
+      compatible: [Pistol, SMG, AR]
+      effect: DC-1 within 50m (slightly wider field than red dot)
+      weight_kg: 0.2
+    - name: 2x Scope
+      compatible: [SMG, AR, LMG]
+      effect: DC-1 within 100m
+      weight_kg: 0.3
+    - name: 4x Scope
+      compatible: [AR, SR, LMG]
+      effect: DC-2 within 150m
+      weight_kg: 0.4
+    - name: 8x Scope
+      compatible: [SR]
+      effect: DC-3 within 300m
+      weight_kg: 0.5
+    - name: Thermal Scope
+      compatible: [SR]
+      effect: Can see target silhouette through smoke, night vision 200m
+      weight_kg: 0.8
+      rarity: Airdrop
+
+  Muzzle:
+    - name: Suppressor
+      compatible: [Pistol, SMG, AR, SR]
+      effect: Gunshot audible distance halved
+      weight_kg: 0.3
+    - name: Compensator
+      compatible: [AR, SR, LMG]
+      effect: Burst recoil DC penalty -1
+      weight_kg: 0.3
+    - name: Flash Hider
+      compatible: [AR, SR]
+      effect: No muzzle flash when firing (no position reveal at night)
+      weight_kg: 0.2
+
+  Magazine:
+    - name: Extended Mag
+      compatible: [Most firearms]
+      effect: Magazine capacity +50% (rounded down)
+      weight_increase: +20%
+    - name: Quickdraw Mag
+      compatible: [Most firearms]
+      effect: Reload time halved (except LMG—from full turn to 1 Tactical Action)
+      weight_increase: +15%
+    - name: Dual Mag
+      compatible: [AR, SMG]
+      effect: First reload is a Free Action (normal afterward)
+      weight_increase: +30%
+
+  Grip:
+    - name: Vertical Grip
+      compatible: [AR, SMG, LMG]
+      effect: Burst recoil DC penalty -1
+      weight_kg: 0.3
+    - name: Angled Grip
+      compatible: [AR, SMG]
+      effect: Faster aim-down-sight (aiming takes only half a turn)
+      weight_kg: 0.2
+    - name: Light Grip
+      compatible: [AR, SMG]
+      effect: Firing while moving DC-1
+      weight_kg: 0.2
+
+  Stock:
+    - name: Tactical Stock
+      compatible: [AR, SMG, SR]
+      effect: Firing while moving DC-1, recoil recovery +1 turn
+      weight_kg: 0.4
+    - name: Folding Stock
+      compatible: [SMG]
+      effect: Firing while moving no DC penalty
+      weight_kg: 0.2
+    - name: Heavy Stock
+      compatible: [SR, LMG]
+      effect: Prone DC-2
+      weight_kg: 0.6
+
+  Other:
+    - name: Laser Sight
+      compatible: [Pistol, SMG]
+      effect: DC-2 within 15m
+      weight_kg: 0.1
+    - name: Tactical Flashlight
+      compatible: [Pistol, SMG, AR]
+      effect: Normal vision within 20m at night
+      weight_kg: 0.2
+    - name: Bipod
+      compatible: [LMG, SR]
+      effect: Prone firing DC-2. Doesn't occupy an attachment slot (free install).
+      weight_kg: 0.5
+
+# =============================================================================
+# Consumables
+# =============================================================================
+consumables:
+  - name: Bandage
+    weight_kg: 0.2
+    use_time: 1 turn
+    effect: Restore 1d4 HP (up to 75% HP)
+    price_cr: 20
+
+  - name: Tourniquet
+    weight_kg: 0.1
+    use_time: 1 turn
+    effect: Stops bleeding status; stabilizes downed ally (resets downed timer to 3 turns); does not restore HP
+    price_cr: 15
+
+  - name: First Aid Kit
+    weight_kg: 1.0
+    use_time: 2 turns
+    effect: Restore to 75% HP (cannot exceed 75%)
+    price_cr: 100
+
+  - name: Med Kit
+    weight_kg: 2.0
+    use_time: 4 turns
+    effect: Restore to 100% HP. Clears all negative statuses.
+    price_cr: 300
+
+  - name: Energy Drink
+    weight_kg: 0.3
+    use_time: 1 turn
+    effect: Physique +1 (5 turns). Slowly restores 1 HP/turn (5 turns).
+    price_cr: 50
+
+  - name: Painkiller
+    weight_kg: 0.2
+    use_time: 1 turn
+    effect: Immune to Pain Slowed effect (5 turns).
+    price_cr: 40
+
+  - name: Adrenaline
+    weight_kg: 0.5
+    use_time: 1 turn
+    effect: Physique +2, movement speed ×1.5 (3 turns). After it ends, Fatigued Disadvantage for 2 turns.
+    price_cr: 200
+
+  - name: Self-Revive Syringe
+    weight_kg: 0.3
+    use_time: Automatic
+    effect: Auto-triggers when HP hits zero, restores to 1 HP. After triggering, Weakened status. Solo Mode only, once per match.
+    price_cr: 300
+
+  - name: Sedative
+    weight_kg: 0.2
+    use_time: 1 turn
+    effect: Stress value -5.
+    price_cr: 100
+
+  - name: Smoke Grenade
+    weight_kg: 0.5
+    use_time: Instant
+    effect: 5m radius dense smoke. Lasts 2 turns. Fully blocks vision.
+    price_cr: 80
+
+  - name: Frag Grenade
+    weight_kg: 0.5
+    use_time: Instant
+    effect: 3d8 area damage. 5m radius. TAC DC12 for half.
+    price_cr: 150
+
+  - name: Incendiary Grenade
+    weight_kg: 0.5
+    use_time: Instant
+    effect: 2d6/turn burning damage. 3m radius. Lasts 3 turns.
+    price_cr: 120
+
+  - name: Flashbang
+    weight_kg: 0.3
+    use_time: Instant
+    effect: 5m radius Blinded 1 turn (attack Disadvantage) + Ringing Ears 2 turns (hearing halved). CLM DC14 to resist.
+    price_cr: 100
+
+  - name: C4 Explosive
+    weight_kg: 1.0
+    use_time: 3 turns to set up
+    effect: 4d8 area damage. 10m radius. Requires remote detonation.
+    price_cr: 300
+
+  - name: Anti-Vehicle Mine
+    weight_kg: 2.0
+    use_time: 2 turns to set up
+    effect: 6d10 damage to vehicles. Trigger-based. 1d10 to pedestrians.
+    price_cr: 500
+
+# =============================================================================
+# Vehicles
+# =============================================================================
+vehicles:
+  - name: Motorcycle
+    crew: 2
+    speed: Very Fast (80m/turn)
+    hp: 30
+    armor: None
+    noise: Medium
+    terrain: All-terrain (but rough terrain driving check DC+2)
+    special: Fastest but most fragile. Driver has no protection. On rollover, driver takes 3d6 damage.
+
+  - name: Snowmobile
+    crew: 2
+    speed: Fast (60m/turn)
+    hp: 25
+    armor: None
+    noise: Medium
+    terrain: No slowdown on snow, better than normal motorcycle on other terrain
+    special: Snow-only motorcycle variant. On non-snow terrain, equivalent to a normal motorcycle.
+
+  - name: Buggy
+    crew: 4
+    speed: Fast (60m/turn)
+    hp: 60
+    armor: Light (crew torso DR+1)
+    noise: Medium
+    terrain: All-terrain no slowdown
+    special: Off-road specialist—no slowdown on rough terrain. Good for desert and mountains.
+
+  - name: Jeep
+    crew: 4
+    speed: Medium (50m/turn)
+    hp: 80
+    armor: Medium (crew torso DR+2)
+    noise: Loud
+    terrain: Best on roads, off-road slows to 30m
+    special: All-around vehicle. Most common. Provides good crew protection.
+
+  - name: Sedan
+    crew: 4
+    speed: Medium (55m/turn)
+    hp: 60
+    armor: Light (crew torso DR+1)
+    noise: Medium
+    terrain: Fastest on roads (65m), off-road slows to 20m
+    special: Road speed bonus. Poor off-road performance.
+
+  - name: Boat
+    crew: 4
+    speed: Slow (30m/turn)
+    hp: 60
+    armor: None
+    noise: Low
+    terrain: Water only
+    special: The only water transport. Cannot go ashore.
+
+  - name: Armored Car
+    crew: 4
+    speed: Slow (35m/turn)
+    hp: 150
+    armor: Heavy (crew treated as Level 3 Armor protection, torso DR+4)
+    noise: Very Loud (audible across the whole map)
+    terrain: All-terrain but slow
+    special: Airdrop only. Moving fortress. When tires are shot, movement halved. At zero durability, explodes (10m radius 4d10 damage).

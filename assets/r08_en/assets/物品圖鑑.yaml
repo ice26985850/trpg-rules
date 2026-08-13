@@ -1,0 +1,1864 @@
+catalog: Item Compendium
+system: 'Tianji: Cultivation of the True Heart'
+language: en
+count: 221
+source_md: 物品圖鑑.md
+entries:
+- Heaven-Earth-Profound-Yellow: Yellow-Grade
+  Original Grade: Mortal-Grade(1-3)
+  Applicable Realm: Qi Refining(Lv.1-4)
+  Base Damage Die: 1d6+Attribute/10
+  Price Range (Spirit Stones): 30-500
+  Rarity: Common
+  _section: Heaven-Earth-Profound-Yellow Grade Mapping Table
+- Heaven-Earth-Profound-Yellow: Profound-Grade
+  Original Grade: Spirit-Grade(4-6)
+  Applicable Realm: Foundation Establishment~Golden Core(Lv.5-12)
+  Base Damage Die: 1d10+Attribute/8
+  Price Range (Spirit Stones): 500-8,000
+  Rarity: Uncommon
+  _section: Heaven-Earth-Profound-Yellow Grade Mapping Table
+- Heaven-Earth-Profound-Yellow: Earth-Grade
+  Original Grade: Earth-Grade~Heaven-Grade(7-12)
+  Applicable Realm: Nascent Soul~Void Refining(Lv.13-24)
+  Base Damage Die: 2d8~3d10+Attribute/6~5
+  Price Range (Spirit Stones): 8,000-80,000
+  Rarity: Rare
+  _section: Heaven-Earth-Profound-Yellow Grade Mapping Table
+- Heaven-Earth-Profound-Yellow: Heaven-Grade
+  Original Grade: Immortal-Grade~Divine-Grade(13+)
+  Applicable Realm: Fusion~Tribulation Crossing(Lv.25-36)
+  Base Damage Die: 4d12~6d12+Attribute/4~3
+  Price Range (Spirit Stones): 80,000-5,000,000+
+  Rarity: Legendary/Mythic
+  _section: Heaven-Earth-Profound-Yellow Grade Mapping Table
+- Name: Refined Iron Sword
+  Grade: Yellow
+  Damage: 1d6
+  Attribute Bonus: RSS/10
+  Special Effect: "\u2014"
+  Price (Spirit Stones): '80'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Swords (7)
+- Name: Cold Iron Sword
+  Grade: Yellow
+  Damage: 1d6+2
+  Attribute Bonus: RSS/10
+  Special Effect: against Water-attributetargetDamage+2
+  Price (Spirit Stones): '200'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Swords (7)
+- Name: Azure Edge Sword
+  Grade: Profound
+  Damage: 1d10
+  Attribute Bonus: RSS/8
+  Special Effect: Hit+5
+  Price (Spirit Stones): 1,200
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Swords (7)
+- Name: Flowing Cloud Sword
+  Grade: Profound
+  Damage: 1d10+3
+  Attribute Bonus: RSS+SHF/8
+  Special Effect: Initiative+5; each roundfirst AttackHit+3
+  Price (Spirit Stones): 4,500
+  Realm Requirement: "Golden Core\xB7Early"
+  _section: Swords (7)
+- Name: Violet Lightning Sword
+  Grade: Earth
+  Damage: 2d8
+  Attribute Bonus: RSS/6
+  Special Effect: carriesLightningAttribute; on hit10%chanceParalysis(1round)
+  Price (Spirit Stones): 18,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Swords (7)
+- Name: Azure Firmament Immortal-Slayer Sword
+  Grade: Earth
+  Damage: 2d10+5
+  Attribute Bonus: RSS/5
+  Special Effect: ignore10Physical Defense; against Demon CultivatorDamage+25%
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Spirit Transformation\xB7Early"
+  _section: Swords (7)
+- Name: Grand Void Immortal-Execution Sword
+  Grade: Heaven
+  Damage: 4d12
+  Attribute Bonus: RSS/4
+  Special Effect: "Hit+15; Critical Range+3(d100\u226410namely Critical Hit); against Tribulation Crossingbelow ignore20Defense"
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Swords (7)
+- Name: Heavenly Dao Heart-Inquiry Sword
+  Grade: Heaven
+  Damage: 5d12+8
+  Attribute Bonus: RSS+DAX/3
+  Special Effect: "Hit after adds \"DAXInquiry \"set (targetd100\u2264DAXotherwise Fear2round); execute(targetHP<25%instant kill)"
+  Price (Spirit Stones): 900,000
+  Realm Requirement: "Mahayana\xB7Early"
+  _section: Swords (7)
+- Name: Iron-Back Saber
+  Grade: Yellow
+  Damage: 1d6+1
+  Attribute Bonus: RSS/10
+  Special Effect: "\u2014"
+  Price (Spirit Stones): '100'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Sabers (7)
+- Name: Blazing Flame Saber
+  Grade: Yellow
+  Damage: 1d6+3
+  Attribute Bonus: RSS+Spirit/10
+  Special Effect: carries"Burning"(1round, HP-3)
+  Price (Spirit Stones): '350'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Sabers (7)
+- Name: Tiger Soul Saber
+  Grade: Profound
+  Damage: 1d10+2
+  Attribute Bonus: RSS/8
+  Special Effect: "Hit+3; killrestoreHP\xD75"
+  Price (Spirit Stones): 2,000
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Sabers (7)
+- Name: Mountain-Severing Saber
+  Grade: Profound
+  Damage: 1d10+5
+  Attribute Bonus: RSS/8
+  Special Effect: against large targetsDamage+30%; Carry Weight+1
+  Price (Spirit Stones): 6,000
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Sabers (7)
+- Name: Blood-Drinking Berserker Saber
+  Grade: Earth
+  Damage: 2d8+4
+  Attribute Bonus: RSS/6
+  Special Effect: "killrestoreHP\xD715%; consecutive kills3target after below AttackDamage\xD72"
+  Price (Spirit Stones): 18,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Sabers (7)
+- Name: Yama Soul-Severing Saber
+  Grade: Earth
+  Damage: 3d10
+  Attribute Bonus: RSS/5
+  Special Effect: carries"Demon Malice "(2round, each roundHP-12DAX-3); against Righteous cultivatorsDamage+20%
+  Price (Spirit Stones): 40,000
+  Realm Requirement: "Void Refining\xB7Early"
+  _section: Sabers (7)
+- Name: Heaven-Dominating Earth-Rending Saber
+  Grade: Heaven
+  Damage: 4d12+5
+  Attribute Bonus: RSS/4
+  Special Effect: on hit addsKnockback(targetretreat 1zone); Defense-5(user)Damage+30%
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Sabers (7)
+- Name: Primordial Unity Immortal-Slayer Saber
+  Grade: Heaven
+  Damage: 6d12
+  Attribute Bonus: RSS+Spirit/3
+  Special Effect: "Critical Range+5(d100\u226412Critical Hit); each Critical Hit1selfHPrestore10%"
+  Price (Spirit Stones): 1,800,000
+  Realm Requirement: "Tribulation Crossing\xB7Early"
+  _section: Sabers (7)
+- Name: Iron-Spine Spear
+  Grade: Yellow
+  Damage: 1d6+1
+  Attribute Bonus: RSS/10
+  Special Effect: Mid-range Attack(ordinary Spear melee); first-strike attackHit+2
+  Price (Spirit Stones): '120'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Spears (6)
+- Name: Armor-Breaking Spear
+  Grade: Yellow
+  Damage: 1d6+3
+  Attribute Bonus: RSS/10
+  Special Effect: ignore5Physical Defense
+  Price (Spirit Stones): '300'
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Spears (6)
+- Name: Silver Dragon Spear
+  Grade: Profound
+  Damage: 1d10+2
+  Attribute Bonus: RSS/8
+  Special Effect: Mid-range Attack; Hit+3
+  Price (Spirit Stones): 2,500
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Spears (6)
+- Name: Frost Ice Spear
+  Grade: Profound
+  Damage: 1d10+4
+  Attribute Bonus: RSS+Spirit/8
+  Special Effect: carriesIceAttribute; HittargetSHF-5(2round)
+  Price (Spirit Stones): 5,500
+  Realm Requirement: "Golden Core\xB7Middle"
+  _section: Spears (6)
+- Name: Army-Breaker Cloud-Piercing Spear
+  Grade: Earth
+  Damage: 2d8+5
+  Attribute Bonus: RSS/6
+  Special Effect: long-rangeAttack(can reach 3zone); Pierce(strike in straight linetoward 's below 1target, Damage-30%)
+  Price (Spirit Stones): 15,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Spears (6)
+- Name: Hegemon Spear
+  Grade: Earth
+  Damage: 2d10+3
+  Attribute Bonus: RSS/5
+  Special Effect: "single-target Critical HitDamage\xD73; each AttackconsumeHP\xD75(wound )"
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  _section: Spears (6)
+- Name: Heaven's Punishment World-Ending Spear
+  Grade: Heaven
+  Damage: 5d12
+  Attribute Bonus: RSS+Spirit/4
+  Special Effect: "long-range; Hit after Chase +LightningTribulation set (d100\u2264targetRSSotherwise adds 3d10Lightningwound )"
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Spears (6)
+- Name: Chaos Void-Shattering Spear
+  Grade: Heaven
+  Damage: 6d12+6
+  Attribute Bonus: RSS/3
+  Special Effect: ignore30Physical Defense15Spell Resistance; each killrestoreall LIL10%
+  Price (Spirit Stones): 800,000
+  Realm Requirement: "Tribulation Crossing\xB7Middle"
+  _section: Spears (6)
+- Name: Hunter's Bow
+  Grade: Yellow
+  Damage: 1d6
+  Attribute Bonus: SHF/10
+  Special Effect: Mid-range Attack
+  Price (Spirit Stones): '60'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Bows (6)
+- Name: Iron-Frame Bow
+  Grade: Yellow
+  Damage: 1d6+3
+  Attribute Bonus: SHF/10
+  Special Effect: long-rangeAttack; Pierce Armor (ignore3Defense)
+  Price (Spirit Stones): '150'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Bows (6)
+- Name: Wind-Chasing Bow
+  Grade: Profound
+  Damage: 1d10+1
+  Attribute Bonus: SHF/8
+  Special Effect: long-rangeAttack; Initiative+5
+  Price (Spirit Stones): 1,800
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Bows (6)
+- Name: Sun-Shooting Bow
+  Grade: Profound
+  Damage: 1d10+4
+  Attribute Bonus: SHF/8
+  Special Effect: Long-range Attack; against flighttargetDamage+25%
+  Price (Spirit Stones): 5,000
+  Realm Requirement: "Golden Core\xB7Late"
+  _section: Bows (6)
+- Name: Falling Star Bow
+  Grade: Earth
+  Damage: 2d8+3
+  Attribute Bonus: SHF/6
+  Special Effect: long-range; each roundfirst Attackextra+1d8(Power of Stars)
+  Price (Spirit Stones): 20,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  _section: Bows (6)
+- Name: Vault-Cleaving Sky-Rending Bow
+  Grade: Earth
+  Damage: 3d10
+  Attribute Bonus: SHF+Divine/5
+  Special Effect: Divine Sense lock-on(Hit+10); Arrow can Pierceobstacles(coverDefense)
+  Price (Spirit Stones): 58,000
+  Realm Requirement: "Void Refining\xB7Early"
+  _section: Bows (6)
+- Name: Sun-Shooting Meteor Bow
+  Grade: Heaven
+  Damage: 4d12+5
+  Attribute Bonus: SHF/4
+  Special Effect: long-range; can time Attack2target(Damageeach -20%); against SunAttribute/LightAttributetargetDamage+40%
+  Price (Spirit Stones): 90,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Bows (6)
+- Name: Myriad Phenomena Return-to-Source Bow
+  Grade: Heaven
+  Damage: 6d12
+  Attribute Bonus: SHF+DAX/3
+  Special Effect: Dao Heart lock-on(Hit Checkcan use DAXreplaceSHF); Hit after targetDAX-1d10(permanentstack, each battlecap-15)
+  Price (Spirit Stones): 2,500,000
+  Realm Requirement: "Mahayana\xB7Late"
+  _section: Bows (6)
+- Name: Flying Locust Stone
+  Grade: Yellow
+  Damage: 1d4
+  Attribute Bonus: SHF/10
+  Special Effect: short-range; each battlecan use 5; Hit+3
+  Price (Spirit Stones): 30(10pieces )
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Hidden Weapons (6)
+- Name: Sleeve Arrow
+  Grade: Yellow
+  Damage: 1d6+2
+  Attribute Bonus: SHF/10
+  Special Effect: mid-range; first-strike attacktime Hit+5; each battle1
+  Price (Spirit Stones): '180'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Hidden Weapons (6)
+- Name: Shadowless Needle
+  Grade: Profound
+  Damage: 1d10+1
+  Attribute Bonus: SHF/8
+  Special Effect: mid-range; ignore; carries"Paralysis"(50%chance, 1round)
+  Price (Spirit Stones): 1,800
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Hidden Weapons (6)
+- Name: Soul-Chasing Dart
+  Grade: Profound
+  Damage: 1d10+4
+  Attribute Bonus: SHF+Divine/8
+  Special Effect: Divine Sense lock-onHit+8; each battle3
+  Price (Spirit Stones): 6,500
+  Realm Requirement: "Golden Core\xB7Late"
+  _section: Hidden Weapons (6)
+- Name: Rainstorm Pear-Blossom Needles
+  Grade: Earth
+  Damage: "2d8\xD73(Three Waves)"
+  Attribute Bonus: SHF/6
+  Special Effect: conezone within has target; each can ; Cooldown3round
+  Price (Spirit Stones): 22,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Hidden Weapons (6)
+- Name: Netherworld Soul-Chasing Spike
+  Grade: Earth
+  Damage: 2d10+5
+  Attribute Bonus: SHF+Spirit/5
+  Special Effect: ignoreSpell Resistance; on hit adds"Devour Soul "(2roundSHS-5)
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  _section: Hidden Weapons (6)
+- Name: Heaven-Net Earth-Web Needles
+  Grade: Heaven
+  Damage: 4d12
+  Attribute Bonus: SHF/4
+  Special Effect: battlefieldzone; has hostiletarget; Cooldown6round
+  Price (Spirit Stones): 250,000
+  Realm Requirement: "Fusion\xB7Late"
+  _section: Hidden Weapons (6)
+- Name: Karma Life-Tracking Talisman
+  Grade: Heaven
+  Damage: 6d12
+  Attribute Bonus: SHF+DAX/3
+  Special Effect: must set Hit(without /slot ); userconsumecurrentHP's 30%; each battle1
+  Price (Spirit Stones): 800,000
+  Realm Requirement: "Tribulation Crossing\xB7Early"
+  _section: Hidden Weapons (6)
+- Name: Peachwood Talisman Brush
+  Grade: Yellow
+  Damage: 1d4
+  Attribute Bonus: LIL/10
+  Special Effect: Talismantime between -10%; TalismanPower +10%
+  Price (Spirit Stones): '120'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Talisman Brushes (6)
+- Name: Cinnabar Talisman Brush
+  Grade: Yellow
+  Damage: 1d6
+  Attribute Bonus: LIL/10
+  Special Effect: Talismanbecome rate +5; Talismanlasts+1round
+  Price (Spirit Stones): '280'
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Talisman Brushes (6)
+- Name: Spirit Ink Talisman Brush
+  Grade: Profound
+  Damage: 1d8
+  Attribute Bonus: LIL/8
+  Special Effect: TalismanPower +20%; can store1pre-made Talisman(Combat in auxiliary actionrelease)
+  Price (Spirit Stones): 2,800
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Talisman Brushes (6)
+- Name: Five-Elements Talisman Brush
+  Grade: Profound
+  Damage: 1d10
+  Attribute Bonus: Spirit+Divine/8
+  Special Effect: Root in AttributeswitchDamageType(Metal WoodWaterFireEarth ); TalismanconsumeLIL-15%
+  Price (Spirit Stones): 6,000
+  Realm Requirement: "Golden Core\xB7Middle"
+  _section: Talisman Brushes (6)
+- Name: Heaven's Mechanism Talisman Brush
+  Grade: Earth
+  Damage: 2d8
+  Attribute Bonus: LIL/6
+  Special Effect: TalismanPower +35%; Combat in can consumeauxiliary actiontemporary1low Grade Talisman
+  Price (Spirit Stones): 20,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  _section: Talisman Brushes (6)
+- Name: Ten-Thousand Talismans Return-to-Source Brush
+  Grade: Earth
+  Damage: 2d10+5
+  Attribute Bonus: Spirit+DAX/5
+  Special Effect: "at field Talismaneach more 1, Damage+1d6(cap+5d6); Talismanspeed \xD72"
+  Price (Spirit Stones): 65,000
+  Realm Requirement: "Void Refining\xB7Late"
+  _section: Talisman Brushes (6)
+- Name: Void Symbol-Drawing Brush
+  Grade: Heaven
+  Damage: 4d12
+  Attribute Bonus: LIL/4
+  Special Effect: without need Talisman, emptiness Painting Talisman(void emptiness Talisman); TalismanconsumeLIL-50%; Cooldown5round after can 1Heaven-GradeTalisman
+  Price (Spirit Stones): 450,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Talisman Brushes (6)
+- Name: Creation Talisman Brush
+  Grade: Heaven
+  Damage: 6d12
+  Attribute Bonus: Spirit+DAX/3
+  Special Effect: can turn any TalismanEffect(will AttackTalismanturn heal Talismanetc ); has TalismanEffect+50%
+  Price (Spirit Stones): 3,000,000
+  Realm Requirement: "Tribulation Crossing\xB7Middle"
+  _section: Talisman Brushes (6)
+- Name: Spirit Wood Staff
+  Grade: Yellow
+  Damage: 1d6
+  Attribute Bonus: LIL/10
+  Special Effect: Spell Damage+10%
+  Price (Spirit Stones): '80'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Staves (7)
+- Name: Spirit-Gathering Staff
+  Grade: Yellow
+  Damage: 1d6+2
+  Attribute Bonus: LIL/10
+  Special Effect: "each roundextrarestoreLIL\xD72"
+  Price (Spirit Stones): '150'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Staves (7)
+- Name: Cold Jade Staff
+  Grade: Profound
+  Damage: 1d10
+  Attribute Bonus: LIL/8
+  Special Effect: IceCultivation TechniquesPower +15%; Ultimate Cold Ring Realm without Punish
+  Price (Spirit Stones): 1,800
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Staves (7)
+- Name: Blazing Sun Staff
+  Grade: Profound
+  Damage: 1d10+3
+  Attribute Bonus: Spirit+WUX/8
+  Special Effect: FireCultivation TechniquesPower +20%; against Wood-attributetargetDamage+15%
+  Price (Spirit Stones): 5,800
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Staves (7)
+- Name: Star Staff
+  Grade: Earth
+  Damage: 2d8+3
+  Attribute Bonus: LIL/6
+  Special Effect: Star Elephant Cultivation TechniquesPower +25%; night between LILrestore+3/round
+  Price (Spirit Stones): 24,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Staves (7)
+- Name: Myriad Phenomena Magic Staff
+  Grade: Earth
+  Damage: 2d10+5
+  Attribute Bonus: Spirit+Divine/5
+  Special Effect: has Spell Range+1zone; Spell Hit+5
+  Price (Spirit Stones): 52,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  _section: Staves (7)
+- Name: Heaven's Mechanism Calculation Staff
+  Grade: Heaven
+  Damage: 4d12+3
+  Attribute Bonus: LIL/4
+  Special Effect: ignore15Spell Resistance; Spell Cooldown-1round(most low 1); foresee(each combat3round after can below roundact move )
+  Price (Spirit Stones): 250,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Staves (7)
+- Name: Chaos Myriad-Phenomena Staff
+  Grade: Heaven
+  Damage: 6d12
+  Attribute Bonus: Spirit+DAX/3
+  Special Effect: can change any WeaponType(each combat1auxiliary actionswitch); all AttributesMethod +30%Power
+  Price (Spirit Stones): 2,200,000
+  Realm Requirement: "Tribulation Crossing\xB7Early"
+  _section: Staves (7)
+- Name: Iron Finger-Ring Gauntlet
+  Grade: Yellow
+  Damage: 1d6
+  Attribute Bonus: RSS/10
+  Special Effect: "\u2014"
+  Price (Spirit Stones): '50'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Gauntlets (6)
+- Name: Stone-Crushing Gauntlets
+  Grade: Yellow
+  Damage: 1d6+3
+  Attribute Bonus: RSS/10
+  Special Effect: "against buildings/puppetsDamage\xD72"
+  Price (Spirit Stones): '200'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Gauntlets (6)
+- Name: Vajra Gauntlets
+  Grade: Profound
+  Damage: 1d10+1
+  Attribute Bonus: RSS/8
+  Special Effect: Defense+3(Equipmenttime ); can slot meleeAttack
+  Price (Spirit Stones): 1,500
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Gauntlets (6)
+- Name: Tiger-Vanguard Gauntlets
+  Grade: Profound
+  Damage: 1d10+4
+  Attribute Bonus: RSS+Spirit/8
+  Special Effect: each roundcan enter act 2Fist strike (2Damage-50%)
+  Price (Spirit Stones): 4,800
+  Realm Requirement: "Golden Core\xB7Middle"
+  _section: Gauntlets (6)
+- Name: Void-Shattering Gauntlets
+  Grade: Earth
+  Damage: 2d8+5
+  Attribute Bonus: RSS/6
+  Special Effect: ignore15Physical Defense; on hittargetDefense-3(stack, cap-12)
+  Price (Spirit Stones): 26,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Gauntlets (6)
+- Name: Realm-Breaking Gauntlets
+  Grade: Earth
+  Damage: 3d10
+  Attribute Bonus: RSS+DAX/5
+  Special Effect: "Critical Hittime Knockback2zone; against space-type/barrierDamage\xD72"
+  Price (Spirit Stones): 40,000
+  Realm Requirement: "Void Refining\xB7Early"
+  _section: Gauntlets (6)
+- Name: Sky-Rending Gauntlets
+  Grade: Heaven
+  Damage: 4d12+6
+  Attribute Bonus: RSS/4
+  Special Effect: each strike stack"Rend HeavenSeal "(4layer create become 6d12extraDamage); ignore25Defense
+  Price (Spirit Stones): 90,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Gauntlets (6)
+- Name: Chaos Heaven-Opening Fist
+  Grade: Heaven
+  Damage: 6d12+8
+  Attribute Bonus: RSS+DAX/3
+  Special Effect: "charge1round after release(Damage\xD72); can strike shatter barrier/domain; each combat1"
+  Price (Spirit Stones): 1,800,000
+  Realm Requirement: "Tribulation Crossing\xB7Perfected"
+  _section: Gauntlets (6)
+- Name: Cowhide Whip
+  Grade: Yellow
+  Damage: 1d4+1
+  Attribute Bonus: SHS/10
+  Special Effect: Mid-range Attack; Hit after targetSHF-2(1round)
+  Price (Spirit Stones): '60'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Whips (5)
+- Name: Thorn Whip
+  Grade: Yellow
+  Damage: 1d6+3
+  Attribute Bonus: SHS/10
+  Special Effect: carries"Bleeding"(2round, each roundHP-3)
+  Price (Spirit Stones): '220'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Whips (5)
+- Name: Silver Snake Whip
+  Grade: Profound
+  Damage: 1d8+2
+  Attribute Bonus: SHS/8
+  Special Effect: mid-range; can target(targetneed SHFset )
+  Price (Spirit Stones): 2,200
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Whips (5)
+- Name: Spirit-Binding Whip
+  Grade: Profound
+  Damage: 1d10+2
+  Attribute Bonus: Divine+Spirit/8
+  Special Effect: on hit addsLILSeal (targetLIL-10, lasts2round)
+  Price (Spirit Stones): 5,500
+  Realm Requirement: "Golden Core\xB7Late"
+  _section: Whips (5)
+- Name: Heaven-Net Strangling Whip
+  Grade: Earth
+  Damage: 2d8+5
+  Attribute Bonus: SHS/6
+  Special Effect: after each roundmove create become 2d8Damage; most more 3round
+  Price (Spirit Stones): 20,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  _section: Whips (5)
+- Name: Heart-Slaying Soul-Refining Whip
+  Grade: Earth
+  Damage: 3d10
+  Attribute Bonus: Divine+DAX/5
+  Special Effect: "on hit addsDAXset (targetd100\u2264DAXotherwise DAX-1d5permanent); Demonic Artifact, each make use Inner Demon Value+2"
+  Price (Spirit Stones): 40,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  _section: Whips (5)
+- Name: Immortal-Binding Rope (Whip)
+  Grade: Heaven
+  Damage: 4d12
+  Attribute Bonus: SHS/4
+  Special Effect: must set (first Attack); be without Method move/cast Method ; each roundneed SHSset (DC=userSHS)
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Whips (5)
+- Name: Karma Reincarnation Whip
+  Grade: Heaven
+  Damage: 6d12
+  Attribute Bonus: Divine+DAX/3
+  Special Effect: "be strike in need through DAXset (d100\u2264DAX-20)otherwise enter in \"Reincarnation Illusion\"1round(without Method act move )"
+  Price (Spirit Stones): 2,500,000
+  Realm Requirement: "Tribulation Crossing\xB7Late"
+  _section: Whips (5)
+- Name: Bamboo-Frame Fan
+  Grade: Yellow
+  Damage: 1d4
+  Attribute Bonus: SHS/10
+  Special Effect: short-rangeconeAttack(can strike 2target); Damageeach -2
+  Price (Spirit Stones): '100'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Fans (5)
+- Name: Iron-Frame Fan
+  Grade: Yellow
+  Damage: 1d6+2
+  Attribute Bonus: SHS/10
+  Special Effect: can switchmelee/short-range; switchauxiliary action
+  Price (Spirit Stones): '280'
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Fans (5)
+- Name: Clear Wind Bright Moon Fan
+  Grade: Profound
+  Damage: 1d8+2
+  Attribute Bonus: SHS/8
+  Special Effect: mid-rangecone; on hit adds"Charm"(50%chance, targetbelow roundAttackits friendly)
+  Price (Spirit Stones): 3,200
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  _section: Fans (5)
+- Name: Yin-Yang Five-Elements Fan
+  Grade: Profound
+  Damage: 1d10+2
+  Attribute Bonus: Divine+Spirit/8
+  Special Effect: can switch5kind Attribute Damage; switchfree action
+  Price (Spirit Stones): 6,500
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Fans (5)
+- Name: Heavenly Wind Fan
+  Grade: Earth
+  Damage: 2d8+5
+  Attribute Bonus: SHS/6
+  Special Effect: mid-rangecone; can scatter range within Cloud Mist /poison Mist /TalismanEffect
+  Price (Spirit Stones): 30,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Fans (5)
+- Name: Myriad Phenomena Vast Fan
+  Grade: Earth
+  Damage: 2d10+3
+  Attribute Bonus: Divine+DAX/5
+  Special Effect: large range(cone2zone); has targetSHF-10(2round)
+  Price (Spirit Stones): 58,000
+  Realm Requirement: "Void Refining\xB7Perfected"
+  _section: Fans (5)
+- Name: Creator's Fan
+  Grade: Heaven
+  Damage: 4d12+5
+  Attribute Bonus: SHS/4
+  Special Effect: create Wind storm (entire battlefield3round, each roundhas hostiletarget2d12Wind wound ); Cooldown8round
+  Price (Spirit Stones): 480,000
+  Realm Requirement: "Fusion\xB7Late"
+  _section: Fans (5)
+- Name: Yin-Yang Chaos Fan
+  Grade: Heaven
+  Damage: 6d12
+  Attribute Bonus: Divine+DAX/3
+  Special Effect: "1Fan birth (heal friendlyallHP\xD75d12), 1Fan Destruction (all5d12Damage); each battleeach 1"
+  Price (Spirit Stones): 2,200,000
+  Realm Requirement: "Tribulation Crossing\xB7Perfected"
+  _section: Fans (5)
+- Name: Coarse Cloth Robe
+  Grade: Yellow
+  Physical Defense: '+2'
+  Spell Resistance: '+2'
+  Special Effect: "\u2014"
+  Price (Spirit Stones): '30'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Cloth Armor (4)
+- Name: Spirit-Pattern Cloth Robe
+  Grade: Yellow
+  Physical Defense: '+4'
+  Spell Resistance: '+6'
+  Special Effect: LILrestore+1/round
+  Price (Spirit Stones): '150'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Cloth Armor (4)
+- Name: Cloud-Pattern Brocade Robe
+  Grade: Profound
+  Physical Defense: '+8'
+  Spell Resistance: '+12'
+  Special Effect: SHF+5; Initiative+3
+  Price (Spirit Stones): 3,500
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Cloth Armor (4)
+- Name: Heavenly Silk Cloud-Brocade Robe
+  Grade: Profound
+  Physical Defense: '+12'
+  Spell Resistance: '+18'
+  Special Effect: all Spell Resistance+10%; LILconsume-10%
+  Price (Spirit Stones): 6,800
+  Realm Requirement: "Golden Core\xB7Late"
+  _section: Cloth Armor (4)
+- Name: Beast-Hide Armor
+  Grade: Yellow
+  Physical Defense: '+5'
+  Spell Resistance: '+0'
+  Special Effect: against Beast Damage-3
+  Price (Spirit Stones): '80'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Leather Armor (4)
+- Name: Spirit-Rhino Leather Armor
+  Grade: Yellow
+  Physical Defense: '+8'
+  Spell Resistance: '+2'
+  Special Effect: SHF+3; +2
+  Price (Spirit Stones): '300'
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Leather Armor (4)
+- Name: Flood-Dragon Leather Armor
+  Grade: Profound
+  Physical Defense: '+14'
+  Spell Resistance: '+5'
+  Special Effect: against Water-attributeAttack+20%; +5
+  Price (Spirit Stones): 3,800
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  _section: Leather Armor (4)
+- Name: Black Tortoise Leather Armor
+  Grade: Profound
+  Physical Defense: '+18'
+  Spell Resistance: '+10'
+  Special Effect: Object DamageReduction+8%; Carry Weightnot Shadow SHF
+  Price (Spirit Stones): 7,200
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Leather Armor (4)
+- Name: Iron-Ring Chainmail
+  Grade: Yellow
+  Physical Defense: '+7'
+  Spell Resistance: '+0'
+  Special Effect: against Pierce stab Damage-4
+  Price (Spirit Stones): '150'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Chainmail (4)
+- Name: Mysterious Iron Chainmail
+  Grade: Yellow
+  Physical Defense: '+10'
+  Spell Resistance: '+2'
+  Special Effect: Object DamageReduction+5%
+  Price (Spirit Stones): '380'
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Chainmail (4)
+- Name: Spirit Steel Chainmail
+  Grade: Profound
+  Physical Defense: '+16'
+  Spell Resistance: '+8'
+  Special Effect: against Object Critical HitDamageReduction+20%
+  Price (Spirit Stones): 4,500
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  _section: Chainmail (4)
+- Name: Star-Meteor Chainmail
+  Grade: Profound
+  Physical Defense: '+20'
+  Spell Resistance: '+12'
+  Special Effect: Object DamageReduction+12%; carriesreflect damage(each to 3meleeAttack, counterattack1d8)
+  Price (Spirit Stones): 7,800
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Chainmail (4)
+- Name: Plain Daoist Robe
+  Grade: Yellow
+  Physical Defense: '+3'
+  Spell Resistance: '+5'
+  Special Effect: DAX+3
+  Price (Spirit Stones): '200'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Daoist Robes (5)
+- Name: Taiji Daoist Robe
+  Grade: Yellow
+  Physical Defense: '+5'
+  Spell Resistance: '+8'
+  Special Effect: DAX+5; strike cultivate refine time LILrestore+2/Shichen
+  Price (Spirit Stones): '400'
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Daoist Robes (5)
+- Name: Liangyi Daoist Robe
+  Grade: Profound
+  Physical Defense: '+10'
+  Spell Resistance: '+16'
+  Special Effect: DAX+8; Yin Yang AttributeCultivation TechniquesPower +10%
+  Price (Spirit Stones): 4,000
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Daoist Robes (5)
+- Name: Four Symbols Daoist Robe
+  Grade: Profound
+  Physical Defense: '+14'
+  Spell Resistance: '+22'
+  Special Effect: DAX+10; all AttributesCultivation TechniquesPower +8%
+  Price (Spirit Stones): 7,500
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Daoist Robes (5)
+- Name: Eight Trigrams Daoist Robe
+  Grade: Earth
+  Physical Defense: '+20'
+  Spell Resistance: '+30'
+  Special Effect: DAX+15; WUX+5; can perceive200li within Spiritual Energymove ; Formation ArrayPower +15%
+  Price (Spirit Stones): 20,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Daoist Robes (5)
+- Name: Wuji Daoist Robe
+  Grade: Earth
+  Physical Defense: '+25'
+  Spell Resistance: '+38'
+  Special Effect: DAX+20; SHS+10; Qigong Deviation+20; Breakthrough Check+5
+  Price (Spirit Stones): 65,000
+  Realm Requirement: "Void Refining\xB7Late"
+  _section: Daoist Robes (5)
+- Name: Spirit-Silk Magic Robe
+  Grade: Yellow
+  Physical Defense: '+4'
+  Spell Resistance: '+8'
+  Special Effect: LILrestore+2/round
+  Price (Spirit Stones): '350'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Magic Robes (5)
+- Name: Five-Elements Magic Robe
+  Grade: Profound
+  Physical Defense: '+12'
+  Spell Resistance: '+20'
+  Special Effect: Root in LILAttributeswitchagainst should Origin Plain +20%
+  Price (Spirit Stones): 5,000
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Magic Robes (5)
+- Name: Gold-Thread Jade Garment
+  Grade: Profound
+  Physical Defense: '+16'
+  Spell Resistance: '+24'
+  Special Effect: SHF+3; Object DamageReduction8%; Valuable(sale price+30%)
+  Price (Spirit Stones): 8,000
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Magic Robes (5)
+- Name: Heavenly Silkworm Treasure Armor
+  Grade: Earth
+  Physical Defense: '+24'
+  Spell Resistance: '+32'
+  Special Effect: "all Attributes+3(DAX); +5; each roundrestoreHP\xD73%"
+  Price (Spirit Stones): 22,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Magic Robes (5)
+- Name: Five-Elements Battle Armor
+  Grade: Earth
+  Physical Defense: '+30'
+  Spell Resistance: '+40'
+  Special Effect: all Attributes+5(DAX); 5act +15%; Protective Qi+30
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Spirit Transformation\xB7Late"
+  _section: Magic Robes (5)
+- Name: Star Magic Robe
+  Grade: Heaven
+  Physical Defense: '+38'
+  Spell Resistance: '+55'
+  Special Effect: all Attributes+8(DAX); LILrestore+5/round; night between Star Elephant Cultivation TechniquesPower +30%
+  Price (Spirit Stones): 90,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Magic Robes (5)
+- Name: Primordial Unity Daoist Robe
+  Grade: Heaven
+  Physical Defense: '+45'
+  Spell Resistance: '+65'
+  Special Effect: all Attributes+12(DAX); Protective Qi+100; each roundmove transform 1Face state state
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Mahayana\xB7Early"
+  _section: Magic Robes (5)
+- Name: Spirit Radiance Armor
+  Grade: Profound
+  Physical Defense: '+18'
+  Spell Resistance: '+14'
+  Special Effect: strike time has 10%chancetrigger"SpiritLightBodyguard "(extra+10Defense1round)
+  Price (Spirit Stones): 5,500
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  _section: Spirit Armor (4)
+- Name: Imperishable Battle Armor
+  Grade: Earth
+  Physical Defense: '+28'
+  Spell Resistance: '+22'
+  Special Effect: each combatcan collect before 3Attack's 50%Damage; battle after need 1Shichen can
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Spirit Armor (4)
+- Name: Dragon-Scale Battle Armor
+  Grade: Earth
+  Physical Defense: '+35'
+  Spell Resistance: '+28'
+  Special Effect: Physical Damage Reduction+20%; against Dragon-attributeauraimmune; RSS+5
+  Price (Spirit Stones): 68,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  _section: Spirit Armor (4)
+- Name: Black Tortoise Immortal Armor
+  Grade: Heaven
+  Physical Defense: '+50'
+  Spell Resistance: '+45'
+  Special Effect: "Physical Damage Reduction+35%; each roundrestoreHP\xD78%; when HP<30%time move trigger\"Black Tortoise Protection \"(3round within has Damage-50%), Cooldown72Shichen"
+  Price (Spirit Stones): 420,000
+  Realm Requirement: "Fusion\xB7Late"
+  _section: Spirit Armor (4)
+- Name: Imperishable Golden Body Armor
+  Grade: Heaven
+  Physical Defense: '+60'
+  Spell Resistance: '+55'
+  Special Effect: Physical Damage Reduction+50%; Spell Damage Reduction+25%; deathtime move triggerNirvana(restore50%HP/LIL), each 360Shichen only 1
+  Price (Spirit Stones): 800,000
+  Realm Requirement: "Tribulation Crossing\xB7Perfected"
+  _section: Spirit Armor (4)
+- Name: Cloud-Silk Feather Robe
+  Grade: Earth
+  Physical Defense: '+22'
+  Spell Resistance: '+36'
+  Special Effect: SHF+10; +10; can short flight(Combat in each roundcan 2zone)
+  Price (Spirit Stones): 38,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  _section: Immortal Garments (4)
+- Name: Rainbow Heavenly Garment
+  Grade: Earth
+  Physical Defense: '+28'
+  Spell Resistance: '+42'
+  Special Effect: SHS+8; charm-type/mental-typeAttack+30%; set +15
+  Price (Spirit Stones): 40,000
+  Realm Requirement: "Void Refining\xB7Late"
+  _section: Immortal Garments (4)
+- Name: Phoenix Feather Robe
+  Grade: Heaven
+  Physical Defense: '+42'
+  Spell Resistance: '+58'
+  Special Effect: all Attributes+10(DAX); death after move Nirvanarebirth(80%HP/LIL), each 720Shichen 1
+  Price (Spirit Stones): 480,000
+  Realm Requirement: "Fusion\xB7Late"
+  _section: Immortal Garments (4)
+- Name: Nine-Heaven Mysterious Maiden Immortal Garment
+  Grade: Heaven
+  Physical Defense: '+55'
+  Spell Resistance: '+70'
+  Special Effect: "all Attributes+18(DAX); flightspeed \xD73; has control-typeEffectimmune; all Spell Cooldown-1round"
+  Price (Spirit Stones): 2,500,000
+  Realm Requirement: "Tribulation Crossing\xB7Middle"
+  _section: Immortal Garments (4)
+- Name: Iron Ring (Storage)
+  Grade: Yellow
+  Effect: Storage Space+5slot
+  Price (Spirit Stones): '50'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Rings (8)
+- Name: Spirit-Gathering Ring
+  Grade: Yellow
+  Effect: LILcap+5
+  Price (Spirit Stones): '300'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Rings (8)
+- Name: Bodyguard Ring
+  Grade: Profound
+  Effect: Protective Qi+10; fatal woundtime Shatters1(permanentconsume)
+  Price (Spirit Stones): 2,000
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Rings (8)
+- Name: Spirit-Gathering Treasure Ring
+  Grade: Profound
+  Effect: LILcap+15; LILrestore+2/round
+  Price (Spirit Stones): 5,500
+  Realm Requirement: "Golden Core\xB7Middle"
+  _section: Rings (8)
+- Name: Sumeru Ring
+  Grade: Earth
+  Effect: Storage Space+50slot ; LILcap+20
+  Price (Spirit Stones): 18,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Rings (8)
+- Name: Heaven's Mechanism Calculation Ring
+  Grade: Earth
+  Effect: WUX+8; comprehendCultivation Techniquestime set +10; Fortune+3
+  Price (Spirit Stones): 45,000
+  Realm Requirement: "Void Refining\xB7Early"
+  _section: Rings (8)
+- Name: Dao Heart Mirror Ring
+  Grade: Heaven
+  Effect: DAX+12; Inner Demon+20; Breakthrough Check+8
+  Price (Spirit Stones): 250,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Rings (8)
+- Name: Ten-Thousand Laws Return-to-Source Ring
+  Grade: Heaven
+  Effect: all Attributes+8(DAX); Technique Slot+2(Inner Art+1/Martial Technique+1); can store1DAXDivine Ability(Combat in release)
+  Price (Spirit Stones): 800,000
+  Realm Requirement: "Mahayana\xB7Middle"
+  _section: Rings (8)
+- Name: Spirit Stone Pendant
+  Grade: Yellow
+  Effect: cultivate refine time LILrestore+1/Shichen
+  Price (Spirit Stones): '100'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Necklaces (8)
+- Name: Heart-Protection Mirror (Pendant)
+  Grade: Yellow
+  Effect: fatal woundtime 10point out Damage(1)
+  Price (Spirit Stones): '280'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Necklaces (8)
+- Name: Tear of Moonlight
+  Grade: Profound
+  Effect: night between LILrestore+3/round; month Radiance type Cultivation TechniquesPower +10%
+  Price (Spirit Stones): 2,800
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Necklaces (8)
+- Name: Dragon Breath Pendant
+  Grade: Profound
+  Effect: against Dragon-attribute/auraFearimmune; RSS+5
+  Price (Spirit Stones): 5,800
+  Realm Requirement: "Golden Core\xB7Late"
+  _section: Necklaces (8)
+- Name: Fountain of Life Pendant
+  Grade: Earth
+  Effect: "HPcap+30; each roundrestoreHP\xD75; Lifespanconsume -15%"
+  Price (Spirit Stones): 15,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Necklaces (8)
+- Name: Heart of Stars
+  Grade: Earth
+  Effect: "SHS+10; perceiverange\xD72; night between can summon1\"Starlight Protection\"(all +20%, lasts3round)"
+  Price (Spirit Stones): 52,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  _section: Necklaces (8)
+- Name: Heaven's Dao Favor
+  Grade: Heaven
+  Effect: "Fortune+15; has set Critical Success range+2(d100\u2264N+2namely Critical Success); deathtime 30%chancetriggerHeaven's Dao Protection(avoid death)"
+  Price (Spirit Stones): 250,000
+  Realm Requirement: "Fusion\xB7Late"
+  _section: Necklaces (8)
+- Name: Heart of Chaos
+  Grade: Heaven
+  Effect: "all Attributes+12(DAX); BreakthroughDegree -20; cultivation speed\xD71.5; Lifespancap+30%"
+  Price (Spirit Stones): 900,000
+  Realm Requirement: "Tribulation Crossing\xB7Early"
+  _section: Necklaces (8)
+- Name: Bronze Bracelet (Storage)
+  Grade: Yellow
+  Effect: Storage Space+3slot
+  Price (Spirit Stones): '40'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Bracelets (4)
+- Name: Spirit Jade Bracelet
+  Grade: Profound
+  Effect: SHF+5; set +3
+  Price (Spirit Stones): 2,200
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Bracelets (4)
+- Name: Qiankun Bracelet
+  Grade: Earth
+  Effect: Storage Space+30slot ; can store1Weapon(Combat in auxiliary actionswitch)
+  Price (Spirit Stones): 16,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Bracelets (4)
+- Name: Creation Jade Bracelet
+  Grade: Heaven
+  Effect: all Attributes+5(DAX); each Suncan trigger1"create Spirit TransformationLight"(removehas Face state state return 20%HP/LIL)
+  Price (Spirit Stones): 90,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Bracelets (4)
+- Name: Beast-Hide Belt
+  Grade: Yellow
+  Effect: Carry Weightcap+10slot
+  Price (Spirit Stones): '60'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Belts (4)
+- Name: Spirit Silkworm-Silk Belt
+  Grade: Profound
+  Effect: Carry Weightcap+30slot ; can mount3Pills/Talisman(Combat in auxiliary actionmake use not consumeround)
+  Price (Spirit Stones): 2,500
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Belts (4)
+- Name: Hundred-Treasure Belt
+  Grade: Earth
+  Effect: Carry Weightcap+60slot ; can mount6Pills/Talisman; Pillsmake use Cooldown-1round
+  Price (Spirit Stones): 15,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Belts (4)
+- Name: Limitless Qiankun Belt
+  Grade: Heaven
+  Effect: Carry Weightcap+120slot ; has Object Grade heavy  -half ; can exist store 10Pills/Talismanready to use
+  Price (Spirit Stones): 90,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Belts (4)
+- Name: Peachwood Hairpin
+  Grade: Yellow
+  Effect: DAX+3; cultivate refine time LILconsume-5%
+  Price (Spirit Stones): '120'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Hairpins (4)
+- Name: Spirit Jade Hairpin
+  Grade: Profound
+  Effect: WUX+5; comprehension check+5
+  Price (Spirit Stones): 2,000
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Hairpins (4)
+- Name: Phoenix Hairpin
+  Grade: Earth
+  Effect: charm-typeAttackimmune; SHS+8; can store1"Phoenix Cry"(groupremove1Face state state )
+  Price (Spirit Stones): 20,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  _section: Hairpins (4)
+- Name: Nine-Heaven Mysterious Maiden Hairpin
+  Grade: Heaven
+  Effect: "WUX+10; DAX+10; has Technique comprehension speed\xD72; can store1DAXHeaven-GradeDivine Ability(Combat in release)"
+  Price (Spirit Stones): 90,000
+  Realm Requirement: "Mahayana\xB7Early"
+  _section: Hairpins (4)
+- Name: Peace Jade Pendant
+  Grade: Yellow
+  Effect: Fortune+3; each Heavenfirst set if can heavy 1(take )
+  Price (Spirit Stones): '200'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Jade Pendants (8)
+- Name: Spirit-Nurturing Jade Pendant
+  Grade: Yellow
+  Effect: SHS+5; strike effect rate +20%
+  Price (Spirit Stones): '350'
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Jade Pendants (8)
+- Name: Clear-Heart Jade Pendant
+  Grade: Profound
+  Effect: DAX+5; Inner Demon Valuehowever  -+2/month
+  Price (Spirit Stones): 2,500
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Jade Pendants (8)
+- Name: Spirit-Communing Jade Pendant
+  Grade: Profound
+  Effect: can SpiritBeast heart Spiritthrough (distance10li ); Beast cap+1
+  Price (Spirit Stones): 4,800
+  Realm Requirement: "Golden Core\xB7Middle"
+  _section: Jade Pendants (8)
+- Name: Dao-Protecting Jade Pendant
+  Grade: Earth
+  Effect: DAX+8; Qigong Deviation+25; Inner Demonset +15
+  Price (Spirit Stones): 18,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Jade Pendants (8)
+- Name: Heaven's Mechanism Jade Pendant
+  Grade: Earth
+  Effect: Fortune+10; Realm explorationchance+20%; gain take extraspoilschance+15%
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  _section: Jade Pendants (8)
+- Name: Dragon-Phoenix Auspicious Jade Pendant
+  Grade: Heaven
+  Effect: all Attributes+8(DAX); CombatOpen time move gain "DragonPhoenix Bodyguard "(first 3roundhas Damage-30%)
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Jade Pendants (8)
+- Name: Creation Jade Disc (Fragment)
+  Grade: Heaven
+  Effect: all Attributes+15(DAX); Fortune+20; can foreseenamely will birth 's cause life ( before 1Shichen ); each large Realm Realm Breakthroughtime gain 1"Dao Ancestor"(GMgive grant key plot clue)
+  Price (Spirit Stones): 3,000,000
+  Realm Requirement: "Tribulation Crossing\xB7Late"
+  _section: Jade Pendants (8)
+- Name: Vitality-Nurturing Pill
+  Grade: Yellow
+  Category: Cultivation
+  Effect: cultivate refine time gain extra+5cultivate /Shichen (lasts2Shichen )
+  Toxicity: '+1'
+  Price (Spirit Stones): '20'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Spirit-Returning Pill
+  Grade: Yellow
+  Category: Recovery
+  Effect: restoreLIL20
+  Toxicity: '+1'
+  Price (Spirit Stones): '20'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Wound-Healing Pill
+  Grade: Yellow
+  Category: Recovery
+  Effect: restoreHP15
+  Toxicity: '+1'
+  Price (Spirit Stones): '15'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Clear-Heart Powder
+  Grade: Yellow
+  Category: Antidote
+  Effect: remove1kind low-grade toxin; Inner Demon Value-5
+  Toxicity: '+1'
+  Price (Spirit Stones): '30'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Power-Accumulating Pill
+  Grade: Yellow
+  Category: Buff
+  Effect: below AttackDamage+1d6(1Combat within )
+  Toxicity: '+2'
+  Price (Spirit Stones): '50'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Body-Tempering Powder
+  Grade: Yellow
+  Category: Buff
+  Effect: RSS+5(lasts1Shichen )
+  Toxicity: '+3'
+  Price (Spirit Stones): '80'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Meridian-Opening Pill
+  Grade: Yellow
+  Category: Breakthrough
+  Effect: Qi RefiningBreakthrough Check+5
+  Toxicity: '+3'
+  Price (Spirit Stones): '100'
+  Realm Requirement: "Qi Refining\xB7Late"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Eye-Brightening Powder
+  Grade: Yellow
+  Category: Special
+  Effect: SHS+5; can to weak Spiritual EnergyFlow move (lasts1Shichen )
+  Toxicity: '+1'
+  Price (Spirit Stones): '40'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Grain-Avoiding Pill
+  Grade: Yellow
+  Category: Special
+  Effect: 7Sunnot need enter drink Water
+  Toxicity: '+1'
+  Price (Spirit Stones): '25'
+  Realm Requirement: "Qi Refining\xB7Early"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Qi-Gathering Pill
+  Grade: Yellow
+  Category: Buff
+  Effect: LILcaptemporary+10(lasts1Shichen )
+  Toxicity: '+2'
+  Price (Spirit Stones): '60'
+  Realm Requirement: "Qi Refining\xB7Middle"
+  _section: Yellow-Grade Pills (Qi Refining, 10 kinds)
+- Name: Greater Spirit-Returning Pill
+  Grade: Profound
+  Category: Recovery
+  Effect: restoreLIL60
+  Toxicity: '+3'
+  Price (Spirit Stones): '300'
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Bone-Mending Pill
+  Grade: Profound
+  Category: Recovery
+  Effect: restoreHP45; can reattach broken bones
+  Toxicity: '+3'
+  Price (Spirit Stones): '150'
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Foundation-Establishment Pill
+  Grade: Profound
+  Category: Breakthrough
+  Effect: "Qi Refining\u2192Foundation EstablishmentBreakthrough Check+20"
+  Toxicity: '+10'
+  Price (Spirit Stones): 1,800
+  Realm Requirement: "Qi Refining\xB7Perfected"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Spirit-Condensing Pill
+  Grade: Profound
+  Category: Cultivation
+  Effect: cultivate refine time cultivate gain take +20/Shichen (lasts4Shichen )
+  Toxicity: '+4'
+  Price (Spirit Stones): '450'
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Ice-Heart Pill
+  Grade: Profound
+  Category: Antidote
+  Effect: removemid-grade toxin; Inner Demon Value-10
+  Toxicity: '+3'
+  Price (Spirit Stones): '400'
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Vajra Pill
+  Grade: Profound
+  Category: Buff
+  Effect: RSS+10, Physical Damage Reduction+10%(lasts1Shichen )
+  Toxicity: '+6'
+  Price (Spirit Stones): '800'
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Spirit-Gathering Pill
+  Grade: Profound
+  Category: Buff
+  Effect: LILcaptemporary+25(lasts1Shichen )
+  Toxicity: '+5'
+  Price (Spirit Stones): '650'
+  Realm Requirement: "Golden Core\xB7Early"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Clarity Pill
+  Grade: Profound
+  Category: Special
+  Effect: WUX+10(lasts2Shichen ); use at comprehend/break relieve
+  Toxicity: '+4'
+  Price (Spirit Stones): '500'
+  Realm Requirement: "Golden Core\xB7Early"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Gold-Condensing Pill
+  Grade: Profound
+  Category: Breakthrough
+  Effect: "Foundation Establishment\u2192Golden CoreBreakthrough Check+15; Minor Heavenly Tribulation+10"
+  Toxicity: '+15'
+  Price (Spirit Stones): 15,000
+  Realm Requirement: "Foundation Establishment\xB7Perfected"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Marrow-Cleansing Pill (Lower)
+  Grade: Profound
+  Category: Special
+  Effect: "Toxicityvalue -30(only Toxicity\u226540time make use )"
+  Toxicity: '-30'
+  Price (Spirit Stones): 5,000
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  _section: Profound-Grade Pills (Foundation Establishment~Golden Core, 10 kinds)
+- Name: Supreme Spirit-Returning Pill
+  Grade: Earth
+  Category: Recovery
+  Effect: restoreLIL150
+  Toxicity: '+5'
+  Price (Spirit Stones): 2,500
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Regeneration Pill
+  Grade: Earth
+  Category: Recovery
+  Effect: restoreHP120; removelimb injuries
+  Toxicity: '+5'
+  Price (Spirit Stones): 2,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Infant-Transformation Pill
+  Grade: Earth
+  Category: Breakthrough
+  Effect: "Golden Core\u2192Nascent SoulBreakthrough Check+15"
+  Toxicity: '+15'
+  Price (Spirit Stones): 18,000
+  Realm Requirement: "Golden Core\xB7Perfected"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Spirit-Transformation Pill
+  Grade: Earth
+  Category: Breakthrough
+  Effect: "Nascent Soul\u2192Spirit TransformationBreakthrough Check+12; Inner Demonset +10"
+  Toxicity: '+18'
+  Price (Spirit Stones): 45,000
+  Realm Requirement: "Nascent Soul\xB7Perfected"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Heavenly Origin Pill
+  Grade: Earth
+  Category: Cultivation
+  Effect: cultivate refine time cultivate gain take +80/Shichen (lasts6Shichen )
+  Toxicity: '+8'
+  Price (Spirit Stones): 6,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Deathless Pill
+  Grade: Earth
+  Category: Special
+  Effect: to fatal woundtime move triggerrestore50%HP(be move , laststo trigger24Shichen )
+  Toxicity: '+12'
+  Price (Spirit Stones): 15,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Ten-Thousand Poisons Antidote
+  Grade: Earth
+  Category: Antidote
+  Effect: removehas Earth-Gradebelow toxin; Inner Demon Value-20
+  Toxicity: '+6'
+  Price (Spirit Stones): 5,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Heavenly Gang Pill
+  Grade: Earth
+  Category: Buff
+  Effect: all Attributes+8(DAX, lasts1Shichen ); CombatAttributesignificantincrease
+  Toxicity: '+10'
+  Price (Spirit Stones): 12,000
+  Realm Requirement: "Spirit Transformation\xB7Early"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Void-Refining Pill
+  Grade: Earth
+  Category: Breakthrough
+  Effect: "Spirit Transformation\u2192Void RefiningBreakthrough Check+10"
+  Toxicity: '+20'
+  Price (Spirit Stones): 40,000
+  Realm Requirement: "Spirit Transformation\xB7Perfected"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Marrow-Cleansing Pill (Upper)
+  Grade: Earth
+  Category: Special
+  Effect: "Toxicityvalue -50(only Toxicity\u226560time make use )"
+  Toxicity: '-50'
+  Price (Spirit Stones): 18,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  _section: Earth-Grade Pills (Nascent Soul~Void Refining, 10 kinds)
+- Name: Immortal Spirit Pill
+  Grade: Heaven
+  Category: Recovery
+  Effect: restoreLIL400
+  Toxicity: '+10'
+  Price (Spirit Stones): 18,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Nine-Turn Soul-Restoring Pill
+  Grade: Heaven
+  Category: Recovery
+  Effect: restoreHP350; can revive those who died within 6 Shichen
+  Toxicity: '+15'
+  Price (Spirit Stones): 40,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Realm-Breaking Pill
+  Grade: Heaven
+  Category: Breakthrough
+  Effect: any Realm Realm Breakthrough Check+25(Spirit Transformationbelow birth effect )
+  Toxicity: '+20'
+  Price (Spirit Stones): 200,000
+  Realm Requirement: "Nascent Soul\xB7Perfected"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Tribulation-Crossing Pill
+  Grade: Heaven
+  Category: Breakthrough
+  Effect: Tribulation Crossing+20; Grand Heavenly Tribulationeach round Damage-20%
+  Toxicity: '+18'
+  Price (Spirit Stones): 60,000
+  Realm Requirement: "Mahayana\xB7Perfected"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Mahayana Creation Pill
+  Grade: Heaven
+  Category: Breakthrough
+  Effect: "Fusion\u2192MahayanaBreakthrough Check+15; Heaven-Earth Resonanceset +10"
+  Toxicity: '+22'
+  Price (Spirit Stones): 300,000
+  Realm Requirement: "Fusion\xB7Perfected"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Creation Immortal Pill
+  Grade: Heaven
+  Category: Cultivation
+  Effect: cultivate refine time cultivate gain take +400/Shichen (lasts12Shichen )
+  Toxicity: '+15'
+  Price (Spirit Stones): 80,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Nine-Turn Golden Core Pill
+  Grade: Heaven
+  Category: Buff
+  Effect: all Attributes+20(DAX, lasts2Shichen ); DAXtemporary+15
+  Toxicity: '+25'
+  Price (Spirit Stones): 90,000
+  Realm Requirement: "Mahayana\xB7Early"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Myriad-Phenomena Detox Pill
+  Grade: Heaven
+  Category: Antidote
+  Effect: removehas Leveltoxin(Heaven-Grade); Inner Demon Value-40
+  Toxicity: '+12'
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Fusion\xB7Middle"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Ascension Pill
+  Grade: Heaven
+  Category: Special
+  Effect: "Tribulation Crossing\u2192Fly ascend time all Heavenly Tribulationset +20(only 1)"
+  Toxicity: '+30'
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Tribulation Crossing\xB7Perfected"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Nirvana Rebirth Pill
+  Grade: Heaven
+  Category: Special
+  Effect: death72Shichen within below can revivereturn 80%HP/LIL; each deathonly can make use 1; Toxicity+50
+  Toxicity: '+50'
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Fusion\xB7Early"
+  _section: Heaven-Grade Pills (Fusion~Tribulation Crossing, 10 kinds)
+- Name: Appearance-Locking Pill
+  Grade: Profound
+  Category: Special
+  Effect: currentappearance100year not change
+  Toxicity: '+2'
+  Price (Spirit Stones): 1,000
+  Realm Requirement: "Foundation Establishment\xB7Early"
+  _section: Special Pills Supplement (Grade-independent)
+- Name: Disguise Pill
+  Grade: Profound
+  Category: Special
+  Effect: change appearance/aura6Shichen (Realm Realm below without Method see through)
+  Toxicity: '+3'
+  Price (Spirit Stones): '800'
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Special Pills Supplement (Grade-independent)
+- Name: Life-Extending Pill
+  Grade: Earth
+  Category: Special
+  Effect: restoreLifespan50-200year (random)
+  Toxicity: '+20'
+  Price (Spirit Stones): 100,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  _section: Special Pills Supplement (Grade-independent)
+- Name: Forget-Sorrow Pill
+  Grade: Earth
+  Category: Special
+  Effect: "clearFinger set period's memory(targetneed voluntarySHS\u2264user)"
+  Toxicity: '+8'
+  Price (Spirit Stones): 30,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  _section: Special Pills Supplement (Grade-independent)
+- Name: Heaven's Mechanism Pill
+  Grade: Heaven
+  Category: Special
+  Effect: foreseefuture3Sun within 's 1major event(GMgive grant vaguehint)
+  Toxicity: '+15'
+  Price (Spirit Stones): 200,000
+  Realm Requirement: "Void Refining\xB7Early"
+  _section: Special Pills Supplement (Grade-independent)
+- Name: Dual-Cultivation Pill
+  Grade: Profound
+  Category: Special
+  Effect: dual cultivationtime cultivate gain take +50%(lasts4Shichen )
+  Toxicity: '+5'
+  Price (Spirit Stones): 1,500
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  _section: Special Pills Supplement (Grade-independent)
+- Name: Flying Sword (Mortal)
+  Grade: Yellow
+  Type: Attack
+  Base Affinity: 20%
+  Effect: "Ranged Attack1d8+LIL/10; Combat in can switchlong-rangeAttack; explorationtime flightspeed \xD72"
+  Durability: '30'
+  Price (Spirit Stones): '500'
+  Realm Requirement: "Qi Refining\xB7Early"
+  Description: "cultivate Immortal\u2014\u20141mouth Flying SwordHeavenbelow"
+  _section: 4.1 Attack-Type Magic Treasures (6)
+- Name: Fire Crow Flask
+  Grade: Profound
+  Type: Attack
+  Base Affinity: 25%
+  Effect: release3only FireCrow (each 2d6Damage); FireCrow can Attacknot target
+  Durability: '25'
+  Price (Spirit Stones): 5,000
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  Description: Flask in nurture FireCrow , 4
+  _section: 4.1 Attack-Type Magic Treasures (6)
+- Name: Immortal-Slayer Flying Knife
+  Grade: Earth
+  Type: Attack
+  Base Affinity: 30%
+  Effect: "ranged3d10+LIL/6; Hit after Chase +sever first set (targetd100\u2264RSS+DAXotherwise HP-50%)"
+  Durability: '20'
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  Description: "upper Magic Treasure\u2014\u20141Saber out , DivineImmortalalso low"
+  _section: 4.1 Attack-Type Magic Treasures (6)
+- Name: Five-Elements Thunder Seal
+  Grade: Earth
+  Type: Attack
+  Base Affinity: 35%
+  Effect: "release5act DivineLightning(Attribute): mid-range3d10+LIL/5; Attribute Damage\xD71.5"
+  Durability: '18'
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Void Refining\xB7Early"
+  Description: 1Seal 5act LightningMethod , change transform without
+  _section: 4.1 Attack-Type Magic Treasures (6)
+- Name: Chaos Bell
+  Grade: Heaven
+  Type: Attack
+  Base Affinity: 40%
+  Effect: "Chaos Bell: entire battlefieldhas hostiletarget5d12+LIL/4; adds \"Stun\"(1round); each consumeDurability\xD72"
+  Durability: '10'
+  Price (Spirit Stones): 220,000
+  Realm Requirement: "Fusion\xB7Middle"
+  Description: "upper Divine ArtifactGrade \u2014\u20141, HeavenEarth"
+  _section: 4.1 Attack-Type Magic Treasures (6)
+- Name: God-Striking Whip
+  Grade: Heaven
+  Type: Attack
+  Base Affinity: 45%
+  Effect: "single-target 6d12+LIL/3; ignore1Defense/; against Divine/Immortal BodytargetDamage\xD72; each strike consumeuserHP\xD710%"
+  Durability: '8'
+  Price (Spirit Stones): 800,000
+  Realm Requirement: "Mahayana\xB7Late"
+  Description: "Legendary in Deification's battle 's Divine Artifact\u2014\u2014strike ImmortalDivine Soul"
+  _section: 4.1 Attack-Type Magic Treasures (6)
+- Name: Bodyguard Jade Talisman
+  Grade: Yellow
+  Type: Defense
+  Base Affinity: 30%
+  Effect: move 1cause life Attack after Shatters; strike time Physical Defense+3
+  Durability: 1(Shatters)
+  Price (Spirit Stones): '300'
+  Realm Requirement: "Qi Refining\xB7Early"
+  Description: "Sect technique in technique \u2014\u2014Jade Talismanat SHF, safe heart 3"
+  _section: 4.2 Defense-Type Magic Treasures (6)
+- Name: Spirit Radiance Dome
+  Grade: Profound
+  Type: Defense
+  Base Affinity: 25%
+  Effect: activate after Protective Qi+40; lasts1Combat; can actively dismiss
+  Durability: '20'
+  Price (Spirit Stones): 5,000
+  Realm Requirement: "Foundation Establishment\xB7Middle"
+  Description: SpiritLighttransform Dome , Myriad Method not 1time
+  _section: 4.2 Defense-Type Magic Treasures (6)
+- Name: Five-Elements Shield
+  Grade: Earth
+  Type: Defense
+  Base Affinity: 30%
+  Effect: 'activateagainst should Attributeprotect Shield : the Attribute Damageimmune; its Attribute Damage-30%; lasts3round'
+  Durability: '15'
+  Price (Spirit Stones): 20,000
+  Realm Requirement: "Nascent Soul\xB7Middle"
+  Description: 5act Flow turn , Attribute's DAXtransform relieve
+  _section: 4.2 Defense-Type Magic Treasures (6)
+- Name: Black Tortoise Shell
+  Grade: Earth
+  Type: Defense
+  Base Affinity: 35%
+  Effect: "Object DamageReduction+30%; each roundrestoreHP\xD78%; SHF-10(Carry Weight)"
+  Durability: '25'
+  Price (Spirit Stones): 48,000
+  Realm Requirement: "Spirit Transformation\xB7Early"
+  Description: Myriad year Black Tortoise 's Armor refine , Defensewithout
+  _section: 4.2 Defense-Type Magic Treasures (6)
+- Name: Nine-Dragon Divine Fire Cover
+  Grade: Heaven
+  Type: Defense
+  Base Affinity: 40%
+  Effect: 'activate after 9FireDragonRing : has meleeAttack3d10Firewound ; Ranged AttackDamage-40%; Method AttackDamage-25%; lasts5round'
+  Durability: '12'
+  Price (Spirit Stones): 250,000
+  Realm Requirement: "Fusion\xB7Middle"
+  Description: "9DragonBodyguard , Myriad Method near \u2014\u2014defend 1Body 's Heaven-GradeMagic Treasure"
+  _section: 4.2 Defense-Type Magic Treasures (6)
+- Name: Heaven-Earth-Profound-Yellow Pagoda
+  Grade: Heaven
+  Type: Defense
+  Base Affinity: 45%
+  Effect: 'Heaven-Earth-Profound-Yellow4layer protect Shield : Yellow(Object defend +20), Profound(Method +20), Earth(all Reduction+15%), Heaven(immune1fatal wound); each break 1layer need 1round'
+  Durability: '20'
+  Price (Spirit Stones): 900,000
+  Realm Requirement: "Mahayana\xB7Middle"
+  Description: "upper HeavenDAXto Treasure \u2014\u20144layer Heaven-Earth-Profound-Yellow, layer layer Protection"
+  _section: 4.2 Defense-Type Magic Treasures (6)
+- _section: 4.3 Auxiliary-Type Magic Treasures (7)
+  Name: Spirit-Gathering Array Disc
+  Grade: Profound
+  Type: Auxiliary
+  Base Affinity: 30%
+  Effect: 'Open after become Gather SpiritArray(half 1li ): Spiritual EnergyDegree +50%; cultivation speed+20%; lasts12Shichen'
+  Durability: '30'
+  Price (Spirit Stones): 6,000
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  Description: "Gather SpiritArray\u2014\u2014scatter cultivate 's most"
+- _section: 4.3 Auxiliary-Type Magic Treasures (7)
+  Name: Flying Boat (Medium)
+  Grade: Earth
+  Type: Auxiliary
+  Base Affinity: 25%
+  Effect: "can carry6person flight; speed \xD75(exploration); daily consumptionSpirit Stones\xD710"
+  Durability: '40'
+  Price (Spirit Stones): 40,000
+  Realm Requirement: "Nascent Soul\xB7Early"
+  Description: "in flightMagic Treasure\u2014\u2014Sect technique any 's"
+- _section: 4.3 Auxiliary-Type Magic Treasures (7)
+  Name: Heaven's Mechanism Disc
+  Grade: Earth
+  Type: Auxiliary
+  Base Affinity: 30%
+  Effect: explorationtime Realm chance+25%; can 500li within Spiritual Energy; Fortune+10
+  Durability: '15'
+  Price (Spirit Stones): 35,000
+  Realm Requirement: "Void Refining\xB7Middle"
+  Description: "Heaven's Mechanism Manor's Token Magic Treasure\u2014\u2014Treasure 's sharp"
+- _section: 4.3 Auxiliary-Type Magic Treasures (7)
+  Name: Myriad-Spirits Pearl
+  Grade: Heaven
+  Type: Auxiliary
+  Base Affinity: 35%
+  Effect: can collect store exist any 1Cultivation Techniques(store exist after usergain the Cultivation TechniquesLv.1Effect); most more store exist 3technique ; switchstore exist Cultivation Techniquesauxiliary action
+  Durability: '12'
+  Price (Spirit Stones): 450,000
+  Realm Requirement: "Fusion\xB7Middle"
+  Description: "can contain Myriad Method 's SpiritPearl \u2014\u2014 equivalent to SHFBelt 3extraTechnique Slot"
+- _section: 4.3 Auxiliary-Type Magic Treasures (7)
+  Name: Creation Jade Disc
+  Grade: Heaven
+  Type: Auxiliary
+  Base Affinity: 50%
+  Effect: 'each Suncan trigger1"create transform Fortune": heavy any 1set (take ); Fortune+20; explorationchance+30%'
+  Durability: "\u2014"
+  Price (Spirit Stones): 3,000,000
+  Realm Requirement: "Tribulation Crossing\xB7Perfected"
+  Description: "Dao Ancestorbecome the Daotime scatter Falling 's Creation Jade Discfragment\u2014\u2014Great Dao Source's Power"
+- Name: Formation-Breaking Cone
+  Grade: Profound
+  Type: Special
+  Base Affinity: 25%
+  Effect: break relieve Formation Arraytime SHSset +15; against Yellow-GradeFormation Arraycan move break relieve
+  Durability: '15'
+  Price (Spirit Stones): 8,000
+  Realm Requirement: "Foundation Establishment\xB7Late"
+  Description: "Formation Array's sharp \u2014\u20141Cone at hand , Formation Arraynot"
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Name: Spirit-Binding Rope
+  Grade: Profound
+  Type: Special
+  Base Affinity: 20%
+  Effect: "cast after move Chase target: SHSset (d100\u2264userSHS)become bind 3round"
+  Durability: '12'
+  Price (Spirit Stones): 4,500
+  Realm Requirement: "Golden Core\xB7Early"
+  Description: SpiritSilkworm Silk , can move person
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Name: Soul-Settling Bell
+  Grade: Earth
+  Type: Special
+  Base Affinity: 30%
+  Effect: "after against battlefield's has hostiletargetenter act SHSagainst (d100\u2264userSHS-20, \"Immobilize\"2round)"
+  Durability: '10'
+  Price (Spirit Stones): 38,000
+  Realm Requirement: "Nascent Soul\xB7Late"
+  Description: "set Soul \u2014\u2014battlefield's sharp"
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Name: Shift-Talisman Array
+  Grade: Earth
+  Type: Special
+  Base Affinity: 20%
+  Effect: "below after can to set 's Earthpoint (distance\u22641000li ); 1make use after need heavy new"
+  Durability: 1(Each Setup)
+  Price (Spirit Stones): 25,000(Array Materials)
+  Realm Requirement: "Spirit Transformation\xB7Early"
+  Description: "life Divine Artifact\u2014\u2014strike not , breath 1000"
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Name: Heaven's Mechanism Manor Network Token
+  Grade: Earth
+  Type: Special
+  Base Affinity: "\u2014"
+  Effect: "this cause Token can make use Heaven's Mechanism Manorintelligence network 3 : toward Heaven's Mechanism ManorInquiry 1Body Inquiry , GM must must give out emotion (can not )\u3002only Tianya Ziits Robe-and-Bowl Disciplecan gain take"
+  Durability: '3'
+  Price (Spirit Stones): Not Tradeable
+  Realm Requirement: "Golden Core\xB7Early"
+  Description: "Heaven's Mechanism Manorto high Object \u2014\u2014emotion namely is Power"
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Name: Hourglass of Time
+  Grade: Heaven
+  Type: Special
+  Base Affinity: 40%
+  Effect: "turn Sand Hourglass : time between Flow change \u2014\u2014usergain extra1round(main+move+Auxiliary); Cooldown12Shichen"
+  Durability: '5'
+  Price (Spirit Stones): 600,000
+  Realm Requirement: "Fusion\xB7Early"
+  Description: "touch time between Method \u2014\u2014namely"
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Name: Northern Frontier Army Token
+  Grade: Heaven
+  Type: Special
+  Base Affinity: "\u2014"
+  Effect: "this Army Talismancan move North Frontier 1000person cultivator Army  1 (lasts 1 field battle  7 Heaven)\u3002only North-Suppressing True Lordits Robe-and-Bowl Disciplecan gain take ; make use after Army Talismanreturn return North-Suppressing True Lord"
+  Durability: '1'
+  Price (Spirit Stones): Not Tradeable
+  Realm Requirement: "Nascent Soul\xB7Early"
+  Description: "North Frontier most high Army Staff \u2014\u20141Talismanout , 1000Army act"
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Name: Reincarnation Mirror
+  Grade: Heaven
+  Type: Special
+  Base Affinity: 45%
+  Effect: "toward target: targetto 's before world /world \u2014\u2014need through DAXset (d100\u2264DAX-30)otherwise in \"Reincarnation Illusion\"3round(all )"
+  Durability: '7'
+  Price (Spirit Stones): 1,800,000
+  Realm Requirement: "Mahayana\xB7Late"
+  Description: "Reincarnation's Power SpiritSoul \u2014\u2014 in 3birth 3world at  before"
+  _section: 4.4 Special-Type Magic Treasures (8)
+- Type: Sword
+  Yellow-Grade Representative: Refined Iron Sword(80Spirit Stones)
+  Profound-Grade Representative: Azure Edge Sword(1,200)
+  Earth-Grade Representative: Violet Lightning Sword(18,000)
+  Heaven-Grade Representative: Grand Void Immortal-Execution Sword(350,000)
+  _section: Weapon Quick Reference
+- Type: Saber
+  Yellow-Grade Representative: Iron-Back Saber(100)
+  Profound-Grade Representative: Tiger Soul Saber(2,000)
+  Earth-Grade Representative: Blood-Drinking Berserker Saber(25,000)
+  Heaven-Grade Representative: Heaven-Dominating Earth-Rending Saber(320,000)
+  _section: Weapon Quick Reference
+- Type: Spear
+  Yellow-Grade Representative: Iron-Spine Spear(120)
+  Profound-Grade Representative: Silver Dragon Spear(2,500)
+  Earth-Grade Representative: Army-Breaker Cloud-Piercing Spear(22,000)
+  Heaven-Grade Representative: Heaven's Punishment World-Ending Spear(500,000)
+  _section: Weapon Quick Reference
+- Type: Bow
+  Yellow-Grade Representative: Hunter's Bow(60)
+  Profound-Grade Representative: Wind-Chasing Bow(1,800)
+  Earth-Grade Representative: Falling Star Bow(20,000)
+  Heaven-Grade Representative: Sun-Shooting Meteor Bow(420,000)
+  _section: Weapon Quick Reference
+- Type: Dark
+  Yellow-Grade Representative: Flying Locust Stone(30/10pieces )
+  Profound-Grade Representative: Shadowless Needle(3,000)
+  Earth-Grade Representative: Rainstorm Pear-Blossom Needles(32,000)
+  Heaven-Grade Representative: Heaven-Net Earth-Web Needles(380,000)
+  _section: Weapon Quick Reference
+- Type: Talisman Brush
+  Yellow-Grade Representative: Peachwood Talisman Brush(120)
+  Profound-Grade Representative: Spirit Ink Talisman Brush(2,800)
+  Earth-Grade Representative: Heaven's Mechanism Talisman Brush(28,000)
+  Heaven-Grade Representative: Void Symbol-Drawing Brush(450,000)
+  _section: Weapon Quick Reference
+- Type: Method Staff
+  Yellow-Grade Representative: Spirit Wood Staff(80)
+  Profound-Grade Representative: Cold Jade Staff(3,000)
+  Earth-Grade Representative: Star Staff(24,000)
+  Heaven-Grade Representative: Chaos Myriad-Phenomena Staff(2,200,000)
+  _section: Weapon Quick Reference
+- Type: Fist Set
+  Yellow-Grade Representative: Iron Finger-Ring Gauntlet(50)
+  Profound-Grade Representative: Vajra Gauntlets(1,500)
+  Earth-Grade Representative: Void-Shattering Gauntlets(26,000)
+  Heaven-Grade Representative: Sky-Rending Gauntlets(400,000)
+  _section: Weapon Quick Reference
+- Type: Whip
+  Yellow-Grade Representative: Cowhide Whip(60)
+  Profound-Grade Representative: Silver Snake Whip(2,200)
+  Earth-Grade Representative: Heaven-Net Strangling Whip(28,000)
+  Heaven-Grade Representative: bind ImmortalRope (500,000)
+  _section: Weapon Quick Reference
+- Type: Fan
+  Yellow-Grade Representative: Bamboo-Frame Fan(100)
+  Profound-Grade Representative: Clear Wind Bright Moon Fan(3,200)
+  Earth-Grade Representative: Heavenly Wind Fan(30,000)
+  Heaven-Grade Representative: Yin-Yang Chaos Fan(3,500,000)
+  _section: Weapon Quick Reference
+- Grade: Yellow
+  Recovery: Spirit-Returning Pill(20Spirit Stones)
+  Breakthrough: Meridian-Opening Pill(100Spirit Stones)
+  Antidote: Clear-Heart Powder(30Spirit Stones)
+  Buff: Power-Accumulating Pill(50Spirit Stones)
+  _section: Pill Quick Reference
+- Grade: Profound
+  Recovery: Greater Spirit-Returning Pill(300Spirit Stones)
+  Breakthrough: Foundation-Establishment Pill(3,000Spirit Stones)
+  Antidote: Ice-Heart Pill(400Spirit Stones)
+  Buff: Vajra Pill(800Spirit Stones)
+  _section: Pill Quick Reference
+- Grade: Earth
+  Recovery: Supreme Spirit-Returning Pill(2,500Spirit Stones)
+  Breakthrough: Infant-Transformation Pill(25,000Spirit Stones)
+  Antidote: Ten-Thousand Poisons Antidote(5,000Spirit Stones)
+  Buff: Heavenly Gang Pill(12,000Spirit Stones)
+  _section: Pill Quick Reference
+- Grade: Heaven
+  Recovery: Immortal Spirit Pill(25,000Spirit Stones)
+  Breakthrough: Tribulation-Crossing Pill(120,000Spirit Stones)
+  Antidote: Myriad-Phenomena Detox Pill(55,000)
+  Buff: Nine-Turn Golden Core Pill(180,000)
+  _section: Pill Quick Reference

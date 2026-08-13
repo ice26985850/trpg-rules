@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="628" viewBox="0 0 512 628" font-family="Noto Sans CJK SC, Microsoft JhengHei, PingFang TC, Heiti TC, sans-serif">
+<rect x="0" y="0" width="512" height="628" rx="10" fill="#fbf7ee"/>
+<text x="18" y="34" font-size="22" font-weight="bold" fill="#2c2c2c">Three-Tribe Ice Palace</text>
+<text x="18" y="58" font-size="13" fill="#6b6b6b">Grid 8x8</text>
+<text x="74" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C1</text>
+<text x="130" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C2</text>
+<text x="186" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C3</text>
+<text x="242" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C4</text>
+<text x="298" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C5</text>
+<text x="354" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C6</text>
+<text x="410" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C7</text>
+<text x="466" y="90" font-size="13" fill="#6b6b6b" text-anchor="middle">C8</text>
+<text x="36" y="133" font-size="13" fill="#6b6b6b" text-anchor="end">R1</text>
+<rect x="46" y="100" width="56" height="56" fill="#f1c40f" stroke="#cbb994" stroke-width="1"/>
+<text x="74" y="136" font-size="22" fill="#2c2c2c" text-anchor="middle">Boss</text>
+<rect x="102" y="100" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="158" y="100" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="214" y="100" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="242" y="136" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="270" y="100" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="298" y="136" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="326" y="100" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="382" y="100" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="438" y="100" width="56" height="56" fill="#f1c40f" stroke="#cbb994" stroke-width="1"/>
+<text x="466" y="136" font-size="22" fill="#2c2c2c" text-anchor="middle">Boss</text>
+<text x="36" y="189" font-size="13" fill="#6b6b6b" text-anchor="end">R2</text>
+<rect x="46" y="156" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="102" y="156" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="158" y="156" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="186" y="192" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="214" y="156" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="270" y="156" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="326" y="156" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="354" y="192" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="382" y="156" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="438" y="156" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<text x="36" y="245" font-size="13" fill="#6b6b6b" text-anchor="end">R3</text>
+<rect x="46" y="212" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="74" y="248" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="102" y="212" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="158" y="212" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="214" y="212" width="56" height="56" fill="#6fbf73" stroke="#cbb994" stroke-width="1"/>
+<text x="242" y="248" font-size="22" fill="#2c2c2c" text-anchor="middle">Door</text>
+<rect x="270" y="212" width="56" height="56" fill="#6fbf73" stroke="#cbb994" stroke-width="1"/>
+<text x="298" y="248" font-size="22" fill="#2c2c2c" text-anchor="middle">Door</text>
+<rect x="326" y="212" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="382" y="212" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="410" y="248" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="438" y="212" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<text x="36" y="301" font-size="13" fill="#6b6b6b" text-anchor="end">R4</text>
+<rect x="46" y="268" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="102" y="268" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="158" y="268" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="186" y="304" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="214" y="268" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="270" y="268" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="326" y="268" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="354" y="304" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="382" y="268" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="438" y="268" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<text x="36" y="357" font-size="13" fill="#6b6b6b" text-anchor="end">R5</text>
+<rect x="46" y="324" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="74" y="360" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="102" y="324" width="56" height="56" fill="#9b59b6" stroke="#cbb994" stroke-width="1"/>
+<text x="130" y="360" font-size="22" fill="#ffffff" text-anchor="middle">Reflect</text>
+<rect x="158" y="324" width="56" height="56" fill="#9b59b6" stroke="#cbb994" stroke-width="1"/>
+<text x="186" y="360" font-size="22" fill="#ffffff" text-anchor="middle">Reflect</text>
+<rect x="214" y="324" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="270" y="324" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="326" y="324" width="56" height="56" fill="#9b59b6" stroke="#cbb994" stroke-width="1"/>
+<text x="354" y="360" font-size="22" fill="#ffffff" text-anchor="middle">Reflect</text>
+<rect x="382" y="324" width="56" height="56" fill="#9b59b6" stroke="#cbb994" stroke-width="1"/>
+<text x="410" y="360" font-size="22" fill="#ffffff" text-anchor="middle">Reflect</text>
+<rect x="438" y="324" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="466" y="360" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<text x="36" y="413" font-size="13" fill="#6b6b6b" text-anchor="end">R6</text>
+<rect x="46" y="380" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="102" y="380" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="158" y="380" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="186" y="416" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="214" y="380" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="270" y="380" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="326" y="380" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="354" y="416" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="382" y="380" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="438" y="380" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<text x="36" y="469" font-size="13" fill="#6b6b6b" text-anchor="end">R7</text>
+<rect x="46" y="436" width="56" height="56" fill="#f1c40f" stroke="#cbb994" stroke-width="1"/>
+<text x="74" y="472" font-size="22" fill="#2c2c2c" text-anchor="middle">Boss</text>
+<rect x="102" y="436" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="158" y="436" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="214" y="436" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="242" y="472" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="270" y="436" width="56" height="56" fill="#e8a33d" stroke="#cbb994" stroke-width="1"/>
+<text x="298" y="472" font-size="22" fill="#2c2c2c" text-anchor="middle">Lantern</text>
+<rect x="326" y="436" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="382" y="436" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="438" y="436" width="56" height="56" fill="#f1c40f" stroke="#cbb994" stroke-width="1"/>
+<text x="466" y="472" font-size="22" fill="#2c2c2c" text-anchor="middle">Boss</text>
+<text x="36" y="525" font-size="13" fill="#6b6b6b" text-anchor="end">R8</text>
+<rect x="46" y="492" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="102" y="492" width="56" height="56" fill="#4a9d5b" stroke="#cbb994" stroke-width="1"/>
+<text x="130" y="528" font-size="22" fill="#ffffff" text-anchor="middle">Tree</text>
+<rect x="158" y="492" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="214" y="492" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="270" y="492" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="326" y="492" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="382" y="492" width="56" height="56" fill="#4a9d5b" stroke="#cbb994" stroke-width="1"/>
+<text x="410" y="528" font-size="22" fill="#ffffff" text-anchor="middle">Tree</text>
+<rect x="438" y="492" width="56" height="56" fill="#fdfbf4" stroke="#cbb994" stroke-width="1"/>
+<rect x="18" y="566" width="16" height="16" fill="#f1c40f" stroke="#cbb994"/>
+<text x="40" y="579" font-size="12" fill="#2c2c2c">Boss  Boss / leader position</text>
+<rect x="177" y="566" width="16" height="16" fill="#e8a33d" stroke="#cbb994"/>
+<text x="199" y="579" font-size="12" fill="#2c2c2c">Lantern  Lantern / lighting</text>
+<rect x="335" y="566" width="16" height="16" fill="#6fbf73" stroke="#cbb994"/>
+<text x="357" y="579" font-size="12" fill="#2c2c2c">Door  Exit/Entrance</text>
+<rect x="18" y="592" width="16" height="16" fill="#9b59b6" stroke="#cbb994"/>
+<text x="40" y="605" font-size="12" fill="#2c2c2c">Reflect  Ice reflection (refraction)</text>
+<rect x="177" y="592" width="16" height="16" fill="#4a9d5b" stroke="#cbb994"/>
+<text x="199" y="605" font-size="12" fill="#2c2c2c">Tree  Thicket (concealment / difficult terrain)</text>
+</svg>

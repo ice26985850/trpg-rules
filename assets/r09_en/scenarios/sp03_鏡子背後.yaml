@@ -1,0 +1,26 @@
+source_md: sp03_鏡子背後.md
+title: Behind the Mirror
+type: solo
+quality: ★★★ Expert-grade
+players: 1 mage
+sessions: 3–4
+core_output: 1–2 Rare Shards + contact with the Taboo Network + positioning of Watcher relations
+main_threat: Taboo researchers, Watcher scrutiny, psychic corruption
+prerequisite: Academic Reputation ≥ 10; having 1 Companion (combat or academic) is recommended; completing Scenario Two for the Grey Mist thread is recommended
+summary: A sensation rocked the academic world of **Arcadia City (阿卡迪亞城)** — an Empirical-style mage named **Marcus Flintlock (馬庫斯·燧發槍)**, who was also a secret member of the **Taboo Researchers'' Underground Network**, lost control during a Void Shard experiment. He did not trigger the Accident Table — he triggered something worse.
+acts:
+- name: Act One — A Two-Faced Mission
+  scenes:
+  - Scene 1-1 — Two Missions
+  - Scene 1-2 — Entering Watcher Headquarters
+  - Scene 1-3 — Meeting Marcus
+- name: Act Two — Infiltrating the Sealed Tower
+  scenes:
+  - Scene 2-1 — The Secret Passage
+  - Scene 2-2 — Marcus's Tower
+- name: Act Three — The Price of Trust
+  scenes:
+  - Scene 3-1 — Report and Choice
+  - Scene 3-2 — Watcher or Taboo Network Follow-up
+npcs: []
+research_checks: []

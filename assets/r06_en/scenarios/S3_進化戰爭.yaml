@@ -1,0 +1,119 @@
+name: "S3: Evolution War"
+description: "The Ultimate Evolution Cult and the Humanity Guardians face off before the Gene Forge Ruins. Choose a faction—or become a spoiler. Control the ancient facility that accelerates evolution."
+difficulty: "Hard"
+level_range:
+  min_nodes: 6
+  max_nodes: 12
+  suggested: "6-12 Evolution Nodes"
+players: { min: 1, max: 4, default: 1 }
+estimated_time: "4-5 hours"
+map_ref: "進化戰爭_基因熔爐遺跡"
+initial_map: "進化戰爭_基因熔爐遺跡"
+prerequisite: "S1_巢穴覺醒 (recommended)"
+
+scenes:
+  - id: "S3_SC1"
+    name: "Invitations from Both Sides"
+    type: "social"
+    description: "Before the Gene Forge Ruins, the three factions each present their terms."
+    factions:
+      - id: "Ultimate Evolution Cult"
+        representative: "'Six Arms' Victor"
+        offer:
+          payment: "5 Evolution Points (2 prepaid) + free Form Node (Humanity Value -10)"
+          requirements: ["Help open the gate", "Fight the Guardians", "Absorb at least one Forge guardian creature"]
+          risk: "Humanity Value drops sharply. The Cult may not honor all promises"
+      - id: "Humanity Guardians"
+        representative: "Purification Marshal Elena"
+        offer:
+          payment: "A set of Rare equipment + Humanity Value +5 + Purification Mark"
+          requirements: ["Help shut down the Forge", "Protect the engineers", "Maintain Humanity Value 40%+"]
+          risk: "Become enemy of the Cult. Cannot use the Forge to evolve"
+      - id: "Symbiosis Accord"
+        representative: "Alden (Observer)"
+        offer:
+          payment: "Passive 'Heart of Balance' (Will YZ+2, Humanity Value no longer decreases from evolution)"
+          requirements: ["Infiltrate alone", "Shut down the core while both sides fight"]
+          risk: "No support, face the Forge defense alone. If discovered, both sides become hostile"
+
+  - id: "S3_SC2"
+    name: "The Forge Gate"
+    type: "challenge"
+    description: "An organic membrane gate requires evolution energy to open."
+    routes:
+      - faction: "Cult"
+        method: "5 Evolvers inject together (fast but each loses 1 Humanity Value)"
+      - faction: "Guardians"
+        method: "Energy Simulator (operate with Perception GZ DC 16)"
+        failure: "Device explodes, costs 1d4 rounds"
+      - faction: "Accord"
+        method: "Inject alone (Will YZ DC 18)"
+        success: "Gate opens only for you (first-strike advantage)"
+        failure: "Gate opens fully + energy drained"
+
+  - id: "S3_SC3"
+    name: "The Forge Contest"
+    type: "combat_dynamic"
+    description: "Three-way melee. A different event occurs each round."
+    dynamic_events:
+      - round: 1
+        event: "Cult vanguard (3 Minions) vs Guardian soldiers (3 Minions) melee"
+      - round: 2
+        event: "Forge defense activates—Bio-Mech ×2 (Elite) attacks all"
+      - round: 3
+        event: "Primordial Fluid pool boils (1d6 fire damage within 2 squares of pool). Drinking fluid grants free evolution (Humanity Value -5)"
+      - round: 4
+        event: "Hostile faction BOSS appears"
+      - round: 5
+        event: "Forge core overload countdown—explodes in 5 rounds"
+    enemies:
+      - type: "Bio-Mech"
+        rank: "Elite"
+        count: 2
+        hp: 45
+        defense: 15
+        skills: ["Bio-Cannon (ranged 2d8+3)", "Tentacle Bind (mid-range, Agility DC 15)", "Energy Absorption (recovers 5 HP from fluid pool each round)"]
+    bosses:
+      - id: "Thousand-Faced Bishop"
+        faction: "Ultimate Evolution Cult"
+        hp: 90
+        defense: 17
+        stats: { LIL: 7, MJ: 8, TZ: 7, GZ: 9, YZ: 12 }
+        energy: 20
+        skills:
+          - { name: "Form Shift", tier: "Passive", effect: "Shift form each round (human/tentacle/flying), different skill sets" }
+          - { name: "Thousand-Faced Touch", tier: "High-tier", energy: 5, effect: "Touch target, Will DC 18 or copies one evolution node" }
+          - { name: "Evolution Deprivation", tier: "Ultimate", effect: "Will DC 20 or permanently loses one evolution node" }
+      - id: "Purification Marshal Elena"
+        faction: "Humanity Guardians"
+        hp: 80
+        defense: 18
+        stats: { LIL: 9, MJ: 7, TZ: 6, GZ: 8, YZ: 10 }
+        skills:
+          - { name: "Purification Strike", tier: "Mid-tier", effect: "Melee 2d10+4 + target loses all Energy" }
+          - { name: "Evolution Suppression Domain", tier: "High-tier", energy: 5, effect: "Evolution node effects halved in range, 3 rounds" }
+          - { name: "Humanity Judgment", tier: "Ultimate", effect: "Target with Humanity Value < 40% loses consciousness 1 round directly" }
+
+  - id: "S3_SC4"
+    name: "The Core Choice"
+    type: "narrative"
+    description: "Make the final decision before the Forge core console."
+    choices:
+      - id: "Maximize Output"
+        check: { attribute: "Will (YZ)", dc: 20 }
+        success: "Gain 10 Evolution Points (usable immediately)"
+        failure: "Roll d6 on evolution loss-of-control table"
+        cost: "Humanity Value -15 (regardless of outcome)"
+        consequence: "Afterward each new node's Humanity Value loss ×2"
+      - id: "Stabilize"
+        reward: "Evolution capacity +5, all node effects +20%"
+        cost: "Humanity Value -5"
+        consequence: "Afterward DC to absorb enemies -2"
+      - id: "Shut Down"
+        reward: "Gain 'Heart of Balance' Passive Node (Will YZ+2, Humanity Value no longer decreases from evolution)"
+        cost: "No Humanity Value loss"
+        consequence: "Become a permanent ally of the Accord"
+
+completion_rewards:
+  evolution_points: 5
+  extra_boss: { evolution_points: 3, absorb: "BOSS trait sample" }

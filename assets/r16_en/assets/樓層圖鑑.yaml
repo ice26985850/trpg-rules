@@ -1,0 +1,139 @@
+# Backrooms Walker TRPG — Level Index (Structured Data)
+# The Backrooms is composed of infinitely many "Levels". The following is a complete reference to all Levels (15+) involved across the 8 scenarios.
+# Suitability: ★=Beginner-friendly ★☆=Preparation needed ★★=High challenge ★★★=Extreme
+
+levels:
+  - id: L0
+    name_zh: Level 0 — Tutorial Level (Front Hall)
+    scenario: "S1: Awakening"
+    type: Yellow office cubicles — the classic entrance to the Backrooms
+    space_stability: Mildly unstable (minor spatial shifts)
+    main_threats: [Sense of isolation (SP erosion), occasional Hounds]
+    initial_gift: Within 5 cubicles there is always a bottle of Almond Water
+    exits: [Fire door→L1, Dark staircase→L2, Elevator→L4]
+    suitability: "★★★★★"
+
+  - id: L1
+    name_zh: Level 1 — Habitable Zone
+    scenario: "S2: Traverse"
+    type: Giant warehouse — concrete floor, exposed pipes
+    main_threats: [Smilers (dark corners), faction competition]
+    key_locations: [M.E.G. outpost "Cornerstone" (15-25 people)]
+    exits: [Maintenance stairs→L2, Elevator→L4, Loading door→L11]
+    suitability: "★★★★☆"
+
+  - id: L2
+    name_zh: Level 2 — Pipe Nightmare
+    scenario: "S2: Traverse"
+    type: Dim pipe maze — high temperature 35°C, 90% darkness
+    main_threats: [Hound nests, Smilers, heat fatigue]
+    unique_resources: [Variant Almond Water (concentrated/contaminated/void)]
+    special_rules: [Darkness weighting (extra SP -1/30min), sound absorption 50%]
+    suitability: "★★☆☆☆"
+
+  - id: L3
+    name_zh: Level 3 — Power Station
+    scenario: "S2: Traverse"
+    type: Abandoned power facility — exposed wires, malfunctioning equipment
+    main_threats: ["The Electrician entity (2D6 Electric attack)"]
+    core_mechanic: Must restart 3 generator units to open the maintenance door
+    exits: [Maintenance door→L4]
+    suitability: "★★★☆☆"
+
+  - id: L4
+    name_zh: Level 4 — Abandoned Office
+    scenario: "S3: The Hotel"
+    type: Modern office building — B2 to F8
+    main_threats: [Partygoers (F5 and above), The Clerk entity]
+    safe_zone: F7 mirror room (Partygoers do not enter)
+    exits: [F1 revolving door→L0, Golden elevator→L5]
+    suitability: "★★★☆☆"
+
+  - id: L5
+    name_zh: Level 5 — Horror Hotel
+    scenario: "S3: The Hotel"
+    type: Infinite Victorian hotel — red carpet, crystal chandeliers
+    main_threats: [The Waiter (Servant) (faceless waiter), portrait entity (eyes move)]
+    core_danger: Empty chairs in the banquet hall — sitting = permanent imprisonment
+    exits: [Entrance:L4 golden elevator, Exit:Banquet hall curtain back door→L6]
+    suitability: "★★☆☆☆"
+
+  - id: L6
+    name_zh: Level 6 — Blackout
+    scenario: "S4: Blackout"
+    type: Absolutely dark damp corridors — light sources are devoured
+    main_threats: [Shadows entity (touch→shadow permanently vanishes)]
+    special_rules: [SP -1 every 15 minutes, navigate by hearing alone]
+    exits: [Floor collapse→L7]
+    suitability: "★★☆☆☆"
+
+  - id: L7
+    name_zh: Level 7 — Thalassophobia
+    scenario: "S4: Blackout"
+    type: Flooded research base
+    main_threats: [Leviathan — massive underwater creature (cannot be stared at directly, SP permanently -3)]
+    resources: [Diving equipment (30 minutes of oxygen)]
+    exits: [Drainage pipe→L8]
+    suitability: "★★☆☆☆"
+
+  - id: L8
+    name_zh: Level 8 — Cave System
+    scenario: "S5: Trek"
+    type: Fluorescent fungus cave — glowing spores "starry sky"
+    main_threats: [Cave Dwellers (fear light, act in groups)]
+    resources: [Edible glowing mushrooms (Knowledge DC14 to identify)]
+    exits: [Tunnel→L9]
+    suitability: "★★★☆☆"
+
+  - id: L9
+    name_zh: Level 9 — Suburb
+    scenario: "S5: Trek"
+    type: Endless suburb in eternal-night rain — identical houses
+    main_threats: [Thing Behind the Window (lures you into houses)]
+    navigation: Follow the streetlight flicker sequence (Perception DC15)
+    rules: [Do not enter any house]
+    suitability: "★★★☆☆"
+
+  - id: L10
+    name_zh: Level 10 — Wheat Field
+    scenario: "S5: Trek"
+    type: Boundless golden wheat field — false idyll
+    main_threats: [Moving scarecrows (not hostile but unsettling)]
+    navigation: Paths change (Spatial Memory DC16)
+    exits: [Asphalt road→L11]
+    suitability: "★★★☆☆"
+
+  - id: L11
+    name_zh: Level 11 — Boundless City
+    scenario: "S6: Respite"
+    type: Infinite modern city — the only civilized-looking place in the Backrooms
+    main_threats: [Skin-Stealers (infiltrate the community)]
+    key_locations: [BNTG trade center, M.E.G. city outpost]
+    special_rules: [Building interiors reset every 30 days]
+    exits: [Abandoned hospital basement elevator→L!]
+    suitability: "★★★★☆"
+
+  - id: L!
+    name_zh: Level ! — Run If You Don't Want to Die!
+    scenario: "S7: Sprint"
+    type: Ten-kilometer hospital-style corridor — red alert + swarms of entities
+    threats: [Mixed pursuit of all common entities]
+    core_rules: [Physical check every kilometer, the only level with a forced death risk]
+    restrictions: [Each character may enter only once]
+    exits: [EXIT door→Ending Level]
+    suitability: "★☆☆☆☆"
+
+  - id: ending
+    name_zh: Ending Level — White Space
+    scenario: "S8: The Way Home"
+    type: Pure white void — two doors
+    core: [Left=Front Hall (go home), Right=The Backrooms (stay)]
+    rules: [No DC, no combat — a pure choice]
+    suitability: null
+
+suitability_scale:
+  "★★★★★": Beginner entry — starting gift guarantees survival
+  "★★★★☆": Has M.E.G. safety net / Civilized respite — social and investigation
+  "★★★☆☆": Power station maze + Electrician / Long trek — endurance test
+  "★★☆☆☆": High temperature + darkness + Hounds / Peak psychological horror / Absolute darkness + mental erosion / Underwater horror / F1-4 safe F5+ extremely dangerous
+  "★☆☆☆☆": Extreme survival — the only forced death risk

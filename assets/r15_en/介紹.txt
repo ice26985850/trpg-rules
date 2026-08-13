@@ -1,0 +1,56 @@
+Backrooms Administration Bureau TRPG —— Player Introduction
+============================================================
+
+【Reference Works Statement】
+The worldview of this work is inspired by the Backrooms (後室) internet creepypasta and the liminal space horror culture. Names such as The Backrooms, Entity, Almond Water, M.E.G. (Major Explorer Group), and BNTG (Backrooms Nonprofit Trade Group) are borrowed from that community's creative ecosystem. This ruleset is an original adaptation, not an officially licensed product.
+
+
+What Is This?
+-------------
+Backrooms Administration Bureau TRPG is a strategy-management tabletop role-playing game. You are not a survivor inside The Backrooms — you are the "Director" sitting in the office of a safe outpost: deciding who to send into those endless yellow corridors, how much gear to give them, and how much risk to take. The design philosophy boils down to one line — courage is not walking into The Backrooms, but sending others in and then sitting here waiting for them to come back (or not).
+
+
+Worldview
+---------
+The Backrooms is an anomalous space composed of countless bizarre Levels, where the laws of physics are broken, Entities lurk, and reality runs thin. The Bureau is a human organization trying to maintain order amid the chaos, and you are in charge of a frontline outpost. Every dispatch is a gamble played on asymmetric information — you can never be certain of the truth in the depths, yet you must personally sign every order.
+
+
+What Do You Play?
+-----------------
+You run an Exploration Department: recruit Explorers, allocate equipment, interpret intelligence, and negotiate with M.E.G. and other factions. The game cycles by "month" — at month-start you settle the budget, accept missions, dispatch teams, roll the dice (d100) to resolve success or failure, and handle casualties and spoils. You never fight on the field yourself, yet every casualty report is signed off by your own hand.
+
+
+System Highlights
+-----------------
+‧ Responsibility as gameplay: Explorers are real characters with names, contracts, and the capacity to break down. Their lives or deaths are tied directly to your decisions, and Guilt will push you toward different endings.
+‧ Intel Bias Mechanic: the mission difficulty (DC) you see is always biased — the higher your Intelligence (INT), the more accurate your estimate. Guess wrong once, and the whole team may vanish.
+‧ Probabilistic casualties: there is no traditional HP; Entity attacks are resolved as a percentage Casualty Rate, carrying the terror of "The Backrooms is unpredictable" through the entire game.
+
+
+Who Is This For?
+----------------
+Players who enjoy strategic resource management, narrative immersion, and moral dilemmas. You need not be a combat expert, but you must answer for your choices. Suited to those with basic TRPG experience who relish "running things and bearing the consequences"; commander-type players who want to taste cold human tension will find it especially addictive.
+
+
+Game Style Tags
+---------------
+‧ Combat Weight: Supporting
+‧ Strategic Depth: Highly Strategic
+‧ Story-Driven: Story-Supporting
+‧ Resource Management: Heavy Management
+‧ Character Customization: Moderate Customization
+‧ Character Creation Complexity: Moderate
+‧ Rules Density: Medium Rules
+‧ GM Requirement: Optional GM
+
+
+Estimated Play Time
+-------------------
+‧ Single Scenario: about 3–5 hours (including character creation)
+‧ Full Campaign: about 40–60 hours (six scenarios linked in sequence, advancing from "Routine Patrol" all the way to the finale "The Final Assignment")
+
+
+Basic Information
+-----------------
+‧ Player Count: 1 Player + 1 GM (optional); also supports multiple players each running their own department
+‧ Core Dice: d100 (percentile dice, two ten-sided dice)

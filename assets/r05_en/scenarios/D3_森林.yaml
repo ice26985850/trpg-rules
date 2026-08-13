@@ -1,0 +1,55 @@
+name: Dungeon Module D3 — Forest
+description: "Recommended Rank: F / E (Challenge Rating (CR) 1–6) | Theme: Verdant dense forest, low-mid tier resource grinding. Accept: Guild commission 'F-For1 / E-For1' (corresponds Rank F→E, CL 1–6); or designated by GM as leveling field. Map: `maps/D3_森林.yaml` + `maps/D3_森林.svg`. This work has no multiclass; solo entry follows party-size adjustment rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no assist). Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) see GM Book Chapter 17. Positioning diagram: enemies on top, allies on bottom, front/back row spacing 2 squares (4m); solo entry adjusted per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no assist). Design hint: D3 is a stable CL 1–6 area for 'grinding EXP+G+materials,' preventing players from leveling only through main-story Demon General battles and causing economic imbalance. Can be re-cleared daily (see 'Commission Catalog' opening, reset rules)."
+difficulty: F/E
+level_range:
+  - 1
+  - 6
+chapter: 3
+map_ref: maps/D3_森林.yaml
+initial_map: maps/D3_森林.yaml
+player_mode: "Solo/Multi (Method A: one scenario + party-size adjustment)"
+encounters:
+  - id: R2
+    name: Fern Battlefield
+    type: Combat
+    enemies:
+      - name: Goblin Scout
+        cr: 2
+        count: 2
+    budget: Standard×1.0
+    adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1
+  - id: R3
+    name: Wolf Path
+    type: Combat
+    enemies:
+      - name: Wild Wolf
+        cr: 3
+        count: 2
+    budget: Standard×1.0
+    adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1
+  - id: R6
+    name: Archer's Forest Glade
+    type: Combat
+    enemies:
+      - name: Goblin Archer
+        cr: 4
+        count: 2
+    budget: Standard×1.0
+    adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1
+  - id: R10
+    name: Ancient Tree Throne
+    type: Mini-boss
+    enemies:
+      - name: Goblin King
+        cr: 5
+        count: 1
+    budget: Standard×1.0
+    adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1
+    boss: true
+rewards:
+  exp: 728
+  gold: 200~350
+  ip: 5
+  items:
+    []
+adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1

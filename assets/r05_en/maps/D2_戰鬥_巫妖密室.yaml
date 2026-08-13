@@ -1,0 +1,64 @@
+scenario: D2
+section: "D2 Slumbering Tomb·Lich Chamber (Graveyard Lich CR18)"
+map_type: battle
+grid_scale: "1 cell = 2 m"
+title: D2_Battle_Lich Chamber
+# Coordinates are exact grid coordinates (col, row, 0–9) for distance and range calculations
+# Graveyard Lich (boss) is at enemy back-row center; trait 'Necro Torrent' covers the whole party (AOE)
+# 'Summon Undead' at Health (HP) ≤50% summons Skeleton Warriors ×2 (CR13), added by the GM per phase
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: enemy, role: front, color: "#FF8A8A"}
+    - {row: 1, side: enemy, role: back, color: "#FFC8C8"}
+    - {row: 6, side: our, role: front, color: "#8AAEFF"}
+    - {row: 8, side: our, role: back, color: "#C8D8FF"}
+  aoe:
+    - {cx: 5, cy: 7, r: 2, label: Necro Torrent (Full-party AOE)}
+
+nodes:
+  - id: boss
+    label: Graveyard Lich (CR18)
+    x: 5
+    y: 1
+    type: boss
+    explored: true
+  - id: p_front_war
+    label: Our Front-row Warrior
+    x: 3
+    y: 6
+    type: our_front
+    explored: true
+  - id: p_front_monk
+    label: Our Front-row Monk
+    x: 6
+    y: 6
+    type: our_front
+    explored: true
+  - id: p_back_mage
+    label: Our Back-row Mage
+    x: 4
+    y: 8
+    type: our_back
+    explored: true
+  - id: p_back_cleric
+    label: Our Back-row Cleric
+    x: 5
+    y: 8
+    type: our_back
+    explored: true
+  - id: p_back_hunter
+    label: Our Back-row Hunter
+    x: 7
+    y: 8
+    type: our_back
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: boss
+    type: melee
+    style: dashed
+    label: "Engage"

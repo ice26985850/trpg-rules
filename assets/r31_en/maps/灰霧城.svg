@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640" font-family="sans-serif">
+  <rect width="900" height="640" fill="#10131a"/>
+  <text x="450" y="36" fill="#e8e2d0" font-size="22" text-anchor="middle">Gray Mist City — Districts &amp; Key Locations</text>
+  <text x="450" y="58" fill="#9aa0aa" font-size="12" text-anchor="middle">Victorian steampunk style ｜ dark blocks = dangerous/slum areas, light blocks = noble/academic districts</text>
+
+  <!-- districts -->
+  <g stroke="#3a4150" stroke-width="1.5">
+    <rect x="80"  y="110" width="200" height="150" rx="10" fill="#2a3550"/><text x="180" y="190" fill="#cdd6e6" font-size="15" text-anchor="middle">Crown District</text><text x="180" y="210" fill="#8c97ad" font-size="11" text-anchor="middle">Nobles / Royalty</text>
+    <rect x="320" y="110" width="200" height="150" rx="10" fill="#243a3a"/><text x="420" y="190" fill="#cde6d6" font-size="15" text-anchor="middle">Academy District</text><text x="420" y="210" fill="#8cad9c" font-size="11" text-anchor="middle">Mistgrave University</text>
+    <rect x="560" y="110" width="260" height="150" rx="10" fill="#3a2f22"/><text x="690" y="185" fill="#e6d2b0" font-size="15" text-anchor="middle">Iron Bridge District</text><text x="690" y="205" fill="#b09a78" font-size="11" text-anchor="middle">Industry / Royal Theater</text><text x="690" y="222" fill="#b09a78" font-size="11" text-anchor="middle">Abandoned Clock Tower</text>
+    <rect x="80"  y="300" width="260" height="150" rx="10" fill="#1f2a2a"/><text x="210" y="380" fill="#bcdcd6" font-size="15" text-anchor="middle">Ash Harbor District</text><text x="210" y="400" fill="#8cb0aa" font-size="11" text-anchor="middle">Drowned Man Tavern</text>
+    <rect x="380" y="300" width="220" height="150" rx="10" fill="#2e2e3a"/><text x="490" y="380" fill="#c8c2e0" font-size="15" text-anchor="middle">Gear District</text><text x="490" y="400" fill="#9a93b8" font-size="11" text-anchor="middle">Morrison Textile Factory</text><text x="490" y="417" fill="#9a93b8" font-size="11" text-anchor="middle">Underground Ancient Ruins</text>
+    <rect x="640" y="300" width="180" height="150" rx="10" fill="#241f25"/><text x="730" y="380" fill="#d6b8c2" font-size="15" text-anchor="middle">Sunken Smoke District</text><text x="730" y="400" fill="#a88a95" font-size="11" text-anchor="middle">Poor / Gangs</text>
+    <rect x="300" y="490" width="300" height="100" rx="10" fill="#1a2230"/><text x="450" y="540" fill="#9fb6d6" font-size="14" text-anchor="middle">Spirit World Rift (beneath the city)</text><text x="450" y="560" fill="#6f87a8" font-size="11" text-anchor="middle">Transit layer to the Spirit/Astral worlds</text>
+  </g>
+
+  <!-- routes -->
+  <g stroke="#6b7280" stroke-width="2" stroke-dasharray="6 5" fill="none" opacity="0.7">
+    <line x1="280" y1="185" x2="320" y2="185"/>
+    <line x1="520" y1="185" x2="560" y2="185"/>
+    <line x1="180" y1="260" x2="210" y2="300"/>
+    <line x1="420" y1="260" x2="490" y2="300"/>
+    <line x1="690" y1="260" x2="730" y2="300"/>
+    <line x1="210" y1="450" x2="300" y2="490"/>
+    <line x1="490" y1="450" x2="450" y2="490"/>
+    <line x1="730" y1="450" x2="560" y2="490"/>
+  </g>
+
+  <!-- key markers -->
+  <g font-size="11" fill="#f0e9d2">
+    <circle cx="210" cy="380" r="5" fill="#e0b34a"/><text x="222" y="384">Drowned Man Tavern (Intelligence Hub)</text>
+    <circle cx="490" cy="400" r="5" fill="#c05a5a"/><text x="502" y="404">Morrison Textile Factory (Crime Scene)</text>
+    <circle cx="690" cy="205" r="5" fill="#8a6ad0"/><text x="702" y="209">Abandoned Clock Tower (Slate Decoy)</text>
+    <circle cx="420" cy="190" r="5" fill="#5ac0a0"/><text x="432" y="194">Mistgrave University (Archives)</text>
+    <circle cx="690" cy="160" r="5" fill="#c0506a"/><text x="702" y="164">Royal Theater (Lady White's Ball)</text>
+    <circle cx="490" cy="417" r="5" fill="#d06a9a"/><text x="502" y="421">Gear District Underground Ruins (Traitor's Hideout)</text>
+  </g>
+</svg>

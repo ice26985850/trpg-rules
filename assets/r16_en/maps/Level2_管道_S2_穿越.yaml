@@ -1,0 +1,158 @@
+name: "Level 2 — Pipes"
+description: "A dim pipe maze — high temperature, darkness, Hound dens. Level 2 is a three-dimensional maze divided into upper, middle, and lower layers."
+scenario_ref: "S2_深處"
+usage: "The route the characters take after entering Level 2 from Level 1, traversing the pipes toward Level 11"
+regions:
+  - name: "Entrance Area"
+    color: "#E8F5E9"
+    nodes: ["N01", "N02"]
+    description: "Entered via the maintenance stairs from Level 1 — relatively bright, with emergency lights"
+  - name: "Main Pipe Layer (Middle Layer)"
+    color: "#FFF3E0"
+    nodes: ["N03", "N04", "N05", "N06"]
+    description: "The main thoroughfare — marked by previous visitors, limited light"
+  - name: "Hound Activity Zone"
+    color: "#FFEBEE"
+    nodes: ["N07", "N08", "N09"]
+    description: "A zone of Hound patrols and dens — extremely dangerous"
+  - name: "Shelter"
+    color: "#E3F2FD"
+    nodes: ["N10"]
+    description: "A hidden shelter built by previous visitors — rest and resupply possible"
+  - name: "Exit Area"
+    color: "#E8EAF6"
+    nodes: ["N11"]
+    description: "A narrow passage exit leading to Level 11"
+nodes:
+  - id: "N01"
+    label: "Maintenance Stairs (Entrance)"
+    x: 150
+    y: 100
+    type: "entrance"
+    explored: true
+    description: "Maintenance stairs descending from Level 1. The emergency red light is the only light source."
+    entrance_from: "Level 1 — Warehouse"
+  - id: "N02"
+    label: "Initial Pipe Junction"
+    x: 300
+    y: 150
+    type: "choice"
+    explored: false
+    description: "The first junction — left: main pipes (marked, safer), right: branch pipes (shortcut, more dangerous)"
+  - id: "N03"
+    label: "Main Pipes (Middle Layer)"
+    x: 450
+    y: 100
+    type: "normal"
+    explored: false
+    description: "A fairly spacious pipe (1.5-2m wide). Directional marks left by previous visitors on the walls."
+  - id: "N04"
+    label: "Vertical Pipe Shaft"
+    x: 550
+    y: 200
+    type: "vertical"
+    explored: false
+    description: "A vertical pipe connecting the upper, middle, and lower layers. Climbing required (Athletics DC 13)."
+  - id: "N05"
+    label: "Steam Leak Zone"
+    x: 350
+    y: 280
+    type: "danger"
+    explored: false
+    description: "A burst pipe sprays high-temperature steam. Requires Agility DC 12 to dodge, or suffer burns (1D4)."
+  - id: "N06"
+    label: "Pipe Marking Wall"
+    x: 500
+    y: 350
+    type: "navigation"
+    explored: false
+    description: "Walls covered with marks and arrows left by previous visitors. Perception DC 10 to read the directions."
+  - id: "N07"
+    label: "Hound Patrol Zone"
+    x: 200
+    y: 350
+    type: "danger"
+    explored: false
+    description: "The metal surfaces are all claw marks. The sound of distant Hound footsteps can be heard."
+    threats: "Hounds (1-2 on patrol)"
+  - id: "N08"
+    label: "Nest Edge"
+    x: 100
+    y: 450
+    type: "danger"
+    explored: false
+    description: "The pipes grow even narrower. The sounds of Hound pups come from the depths — the nest is nearby."
+    threats: "Hound Pack (3-5)"
+  - id: "N09"
+    label: "Red Valve Room"
+    x: 350
+    y: 480
+    type: "discovery"
+    explored: false
+    description: "A small machinery room with several red valves on the wall. Turning them changes the pipe flow."
+    special: "The correct combination may trigger a special event (GM's choice)"
+  - id: "N10"
+    label: "Previous Visitor's Shelter"
+    x: 600
+    y: 450
+    type: "rest_point"
+    explored: false
+    description: "A small shelter hidden in a pipe compartment — camp bed, oil lamp, Wang Jing's diary, variant Almond Water sample."
+    resources: "Almond Water ×2, variant Almond Water ×1, oil lamp"
+  - id: "N11"
+    label: "Narrow Passage (Exit)"
+    x: 700
+    y: 300
+    type: "exit"
+    explored: false
+    description: "An extremely narrow pipe — only one person can pass sideways. Natural light seeps in at the end. Leads to Level 11 city sewers."
+    exit_to: "Level 11 — Boundless City"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: "Initial Passage"
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "Main Pipes (Left — Recommended Route)"
+  - from: "N02"
+    to: "N05"
+    type: "dangerous_path"
+    label: "Branch Pipes (Right — Shortcut but Dangerous)"
+  - from: "N03"
+    to: "N04"
+    type: "vertical"
+    label: "Vertical Passage"
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: "Lower-Layer Pipes"
+  - from: "N05"
+    to: "N06"
+    type: "corridor"
+    label: "Detour Around Steam Zone"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "Corner Passage"
+  - from: "N07"
+    to: "N08"
+    type: "dangerous_path"
+    label: "Toward the Nest (Danger!)"
+  - from: "N06"
+    to: "N10"
+    type: "corridor"
+    label: "Side Passage (to Shelter)"
+  - from: "N10"
+    to: "N11"
+    type: "corridor"
+    label: "Final Pipe Section"
+  - from: "N06"
+    to: "N09"
+    type: "corridor"
+    label: "Valve Room Passage"
+  - from: "N04"
+    to: "N11"
+    type: "corridor"
+    label: "Upper-Layer Detour Route"

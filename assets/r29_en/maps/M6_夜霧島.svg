@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" width="760" height="540">
+<style>
+  text { font-family: "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif; }
+  .title { font-size: 22px; font-weight: bold; fill: #2F5496; }
+  .subtitle { font-size: 13px; fill: #666; }
+  .region-label { font-size: 12px; font-weight: bold; fill: #444; }
+  .node-label { font-size: 11px; fill: #333; text-anchor: middle; dominant-baseline: middle; }
+  .node-sublabel { font-size: 8px; fill: #666; text-anchor: middle; }
+  .road-label { font-size: 8px; fill: #888; text-anchor: middle; }
+  .landmark-label { font-size: 10px; font-weight: bold; fill: #800; }
+  .legend-text { font-size: 9px; fill: #555; }
+  .circle-label { font-size: 9px; fill: #C00; font-weight: bold; text-anchor: middle; }
+</style>
+<rect width="100%" height="100%" fill="#F8F8F4"/>
+
+<text x="20" y="28" class="title">Night Mist Island</text>
+<text x="20" y="48" class="subtitle">S6_The Survivor | 2×2km | 0.5km per cell</text>
+  <line x1="120" y1="80" x2="120" y2="400" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="200" y1="80" x2="200" y2="400" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="280" y1="80" x2="280" y2="400" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="360" y1="80" x2="360" y2="400" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="440" y1="80" x2="440" y2="400" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="120" y1="80" x2="440" y2="80" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="120" y1="160" x2="440" y2="160" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="120" y1="240" x2="440" y2="240" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="120" y1="320" x2="440" y2="320" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="120" y1="400" x2="440" y2="400" stroke="#CCC" stroke-width="0.5"/>
+  <text x="160" y="75" class="node-sublabel">A</text>
+  <text x="240" y="75" class="node-sublabel">B</text>
+  <text x="320" y="75" class="node-sublabel">C</text>
+  <text x="400" y="75" class="node-sublabel">D</text>
+  <text x="108" y="124" class="node-sublabel">1</text>
+  <text x="108" y="204" class="node-sublabel">2</text>
+  <text x="108" y="284" class="node-sublabel">3</text>
+  <text x="108" y="364" class="node-sublabel">4</text>
+  <rect x="202" y="162" width="76" height="76" fill="#C8C0A0" opacity="0.4" rx="4"/>
+  <rect x="282" y="242" width="76" height="76" fill="#FFD4A8" opacity="0.4" rx="4"/>
+  <rect x="362" y="242" width="76" height="76" fill="#FFD4A8" opacity="0.4" rx="4"/>
+  <rect x="282" y="322" width="76" height="76" fill="#FFD4A8" opacity="0.4" rx="4"/>
+  <rect x="362" y="322" width="76" height="76" fill="#FFD4A8" opacity="0.4" rx="4"/>
+  <rect x="122" y="82" width="76" height="76" fill="#C8C0A0" opacity="0.4" rx="4"/>
+  <rect x="122" y="162" width="76" height="76" fill="#A8E6A1" opacity="0.4" rx="4"/>
+  <rect x="122" y="242" width="76" height="76" fill="#A8E6A1" opacity="0.4" rx="4"/>
+  <rect x="202" y="242" width="76" height="76" fill="#A8E6A1" opacity="0.4" rx="4"/>
+  <rect x="202" y="402" width="76" height="76" fill="#B3D9FF" opacity="0.4" rx="4"/>
+  <rect x="282" y="402" width="76" height="76" fill="#B3D9FF" opacity="0.4" rx="4"/>
+  <rect x="122" y="482" width="76" height="76" fill="#B3D9FF" opacity="0.4" rx="4"/>
+  <rect x="202" y="482" width="76" height="76" fill="#B3D9FF" opacity="0.4" rx="4"/>
+  <rect x="282" y="482" width="76" height="76" fill="#B3D9FF" opacity="0.4" rx="4"/>
+  <rect x="362" y="82" width="76" height="76" fill="#D0C8B0" opacity="0.4" rx="4"/>
+  <rect x="362" y="162" width="76" height="76" fill="#D0C8B0" opacity="0.4" rx="4"/>
+  <text x="204" y="174" class="region-label">Abandoned Lighthouse</text>
+  <text x="284" y="254" class="region-label">Fishing Village Dock</text>
+  <text x="124" y="94" class="region-label">Radio Tower</text>
+  <text x="124" y="174" class="region-label">Northern Forest</text>
+  <text x="204" y="414" class="region-label">Southern Beach</text>
+  <text x="364" y="94" class="region-label">Eastern Cliff</text>
+  <polygon points="252,168 268,168 272,180 268,192 252,192 248,180" fill="#B04040" stroke="#800" stroke-width="1"/>
+  <text x="260" y="202" class="landmark-label" text-anchor="middle">Abandoned Lighthouse</text>
+  <polygon points="332,328 348,328 352,340 348,352 332,352 328,340" fill="#B04040" stroke="#800" stroke-width="1"/>
+  <text x="340" y="362" class="landmark-label" text-anchor="middle">Fishing Village Dock</text>
+  <polygon points="172,88 188,88 192,100 188,112 172,112 168,100" fill="#B04040" stroke="#800" stroke-width="1"/>
+  <text x="180" y="122" class="landmark-label" text-anchor="middle">Radio Tower</text>
+<text x="120" y="424" class="subtitle">Zone Example: Central Contraction (Fixed)</text>
+  <circle cx="0" cy="0" r="120.0" fill="none" stroke="#FF4444" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="0" y="-124.0" class="circle-label">Ring 1</text>
+  <circle cx="0" cy="0" r="72.0" fill="none" stroke="#FF8844" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="0" y="-76.0" class="circle-label">Ring 2</text>
+  <circle cx="0" cy="0" r="32.0" fill="none" stroke="#FFAA44" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="0" y="-36.0" class="circle-label">Ring 3</text>
+  <circle cx="160" cy="120" r="8.0" fill="none" stroke="#FFCC44" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="160" y="108.0" class="circle-label">Ring 4</text>
+  <circle cx="160" cy="120" r="2.4" fill="none" stroke="#FF4444" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+  <text x="160" y="113.6" class="circle-label">Final Ring</text>
+<text x="470" y="90" class="subtitle" font-weight="bold">Legend</text>
+  <rect x="470" y="110" width="16" height="12" fill="#D0D0D0" stroke="#999" stroke-width="0.5"/>
+  <text x="490" y="120" class="legend-text">Loot: Scarce</text>
+  <rect x="470" y="126" width="16" height="12" fill="#90C890" stroke="#999" stroke-width="0.5"/>
+  <text x="490" y="136" class="legend-text">Loot: Common</text>
+  <rect x="470" y="142" width="16" height="12" fill="#6090D0" stroke="#999" stroke-width="0.5"/>
+  <text x="490" y="152" class="legend-text">Loot: Abundant</text>
+  <rect x="470" y="158" width="16" height="12" fill="#B060D0" stroke="#999" stroke-width="0.5"/>
+  <text x="490" y="168" class="legend-text">Loot: Military</text>
+  <rect x="470" y="174" width="16" height="12" fill="#E0E0E0" stroke="#999" stroke-width="0.5"/>
+  <text x="490" y="184" class="legend-text">Loot: None</text>
+</svg>

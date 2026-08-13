@@ -1,0 +1,1152 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SCP: Containment Protocol / Solo Scenario: Lone Wolf Protocol | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r02_s1.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r02.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Solo Scenario: Lone Wolf Protocol</h1>
+<p><strong>Version</strong>: v2.0
+<strong>Ruleset</strong>: SCP: CONTAINMENT PROTOCOL v1.2 + Solo Rules Supplement v1.0
+<strong>Player Count</strong>: 1 PC + 1–2 NPC companions
+<strong>Level Range</strong>: Lv.1–10 (starting at Lv.1)
+<strong>Scene Count</strong>: 8
+<strong>Play Focus</strong>: Investigative Horror × Survival Choices × Companion Trust × Moral Cost
+<strong>Sites</strong>: Site-██ / Area-14 / Site-19
+<strong>Estimated Duration</strong>: Full campaign 12–18 sessions (approx. 30–50 hours)</p>
+<hr />
+<h2>Overview</h2>
+<p>You are a Foundation Field Agent, recently dispatched alone to the remote Site-██ outpost to perform a routine inspection.</p>
+<p>Three hours ago, all communications from Site-██ went silent. The last recorded message was an automated transmission from the Site Director: "Protocol 7 of the Operating Procedures has been initiated. All personnel evacuate to the safe zone. Repeat—"</p>
+<p>The message cut off there. Your mission: enter the site, determine the cause of the incident, and contain or eliminate any breached anomalies.</p>
+<p>You have one companion—MTF Operative Kohl, your security detail. But Kohl doesn't trust you. On your last mission you made a decision he believes got his friend killed.</p>
+<p>You need him. He doesn't trust you. And the thing inside the site is waiting for you both.</p>
+<hr />
+<h2>NPC Companion: Kohl</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>MTF Operative Lv.1</td>
+</tr>
+<tr>
+<td>Attributes</td>
+<td>STR 52 / AGI 48 / END 40 / INT 25 / PER 30 / WIL 35 / PRE 20</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>60 (40+20+0)</td>
+</tr>
+<tr>
+<td>Core Skills</td>
+<td>Firearms 45, Melee 42</td>
+</tr>
+<tr>
+<td>Weak Point</td>
+<td>Persuasion 20</td>
+</tr>
+<tr>
+<td>Resource Pools</td>
+<td>2 TP</td>
+</tr>
+<tr>
+<td>Equipment</td>
+<td>Assault Rifle (1d10 Piercing) + Tactical Vest (DR 2/2/1)</td>
+</tr>
+<tr>
+<td>Personality</td>
+<td>Silent, professional, with visible hostility. He answers orders with only a "Understood," and never says more than necessary. His distrust is not provocation—it is grief.</td>
+</tr>
+<tr>
+<td>Relationship with PC</td>
+<td>Starts at −3 (distrust). Each time the PC makes a decision to protect Kohl or communicate candidly → +1. Drops to −5 → Kohl will refuse orders at critical moments. Rises to +3 → Kohl reveals his story and becomes a loyal ally.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Scene L-1: The Silent Outpost</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: See <code>solo_lone_wolf_maps.pdf</code> pages 1–2 (Site-██ floor plan). This scene involves exploration of the three floors of the entire Site-██ outpost (2 above-ground floors + Basement B1).</p>
+<p><strong>Key Location Index</strong>:
+- Surveillance Room → northeast corner, first floor (map)
+- Site Director's Office → northwest corner, second floor (map)
+- Personnel Quarters → south wing, first floor (map)
+- Basement Entrance → central corridor staircase</p>
+</blockquote>
+<p><strong>Level</strong>: 1
+<strong>Scene Type</strong>: Investigation / Atmosphere Building
+<strong>Core Mechanics</strong>: Observation + Anomalistics checks
+<strong>Duration</strong>: 60–90 minutes</p>
+<h3>GM Briefing</h3>
+<p>Site-██ is a small outpost: two floors above ground, one below. When the PC and Kohl arrive, the exterior lighting is still operational, but all access-control systems are offline. The front door is half-open—with handprints on it, pushed open from the inside.</p>
+<p>Inside, there is total silence. No bodies. No blood. The coffee on the desk is still warm.</p>
+<p>The people in the site did not evacuate hours ago—they vanished <strong>minutes ago</strong>.</p>
+<h3>Truth Cards</h3>
+<ol>
+<li><strong>Surface</strong>: Some security incident occurred at Site-██; personnel evacuated or went missing.</li>
+<li><strong>Inner Layer</strong> (Observation TN 55 success): Surveillance footage shows all personnel, at the exact same moment—03:42:17—simultaneously stopped what they were doing and walked in orderly fashion toward the basement. No panic. No communication. As if pulled by a single string.</li>
+<li><strong>Abyss</strong> (Computers TN 60 or Anomalistics TN 50): Site logs show that 72 hours ago, a "low-risk anomalous object" was received from Site-19 for temporary storage. The item number is redacted, but the transfer manifest bears the signature of Dr. Harlow (Reference: Campaign Series A · Daybreak Protocol NPC #3, Dr. Ian Harlow, Rulebook §4.1 Site Network).</li>
+<li><strong>Abyss</strong> (if Kohl's Trust ≥ 0): Kohl recognizes this site's designation—his friend and former MTF teammate Miller was transferred here six months ago. "Miller was the last one to send a message," Kohl whispers. "He sent it to me."</li>
+</ol>
+<h3>Scene Flow</h3>
+<ol>
+<li>
+<p><strong>Arrival and Entry</strong> (10 min): Describe the exterior environment. The PC chooses an entry method—main door (direct, but may trigger alarm), side door (Stealth TN 40), or ventilation duct (AGI TN 45, failure → stuck, Kohl must assist).</p>
+</li>
+<li>
+<p><strong>Explore the Site</strong> (20 min): Three investigable areas:</p>
+</li>
+<li><strong>Surveillance Room</strong>: The recording system is still running. Observation TN 55 → discover the "synchronized walking" footage. Computers TN 50 → recover deleted fragments of the site log.</li>
+<li><strong>Site Director's Office</strong>: An unfinished transfer document sits on the desk—"Item #██-ARC: Low-risk cognitohazard. Standard containment protocol. Estimated stay 72 hours." Beneath it is a handwritten note: "Harlow said it's fine. I'm not sure." (Reference: Rulebook §1.6 Overclearance Operation—Harlow was not authorized to sign cross-site transfers.)</li>
+<li>
+<p><strong>Personnel Quarters</strong>: Beds neatly made. On a nightstand, a photo frame—showing Kohl and another MTF operative. "That's Miller." Kohl's hand trembles slightly. (Kohl Trust +1 if the PC allows him to take the photo, −1 if the PC prevents it.)</p>
+</li>
+<li>
+<p><strong>Basement Entrance</strong> (15 min): The door to the basement is locked from the inside. Words scratched into the door with fingernails: "Don't listen. Don't listen. Don't listen." The PC makes a SAN Check (d100 ≤ current SAN, Standard difficulty). Failure → SP +1d3. The PC may attempt to force the door (STR TN 50), hack the access system (Computers TN 55), or find a ventilation duct (AGI+Stealth TN 45).</p>
+</li>
+</ol>
+<h3>Key Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Skill</th>
+<th>TN Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Side-door infiltration</td>
+<td>AGI+Stealth</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Review surveillance footage</td>
+<td>PER+Observation</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Recover site log</td>
+<td>INT+Computers</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Analyze anomaly nature</td>
+<td>INT+Anomalistics</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Force the door</td>
+<td>STR</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Hack access system</td>
+<td>INT+Computers</td>
+<td>55</td>
+</tr>
+</tbody>
+</table>
+<h3>Ending Transition</h3>
+<p>PC enters the basement → Scene L-2.</p>
+<hr />
+<h2>Scene L-2: The Whispering Chamber</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: Continued from above, <code>solo_lone_wolf_maps.pdf</code> (Site-██ basement / B1 zone).</p>
+<p><strong>Key Location Index</strong>:
+- Light Container → center of basement
+- 8 Assimilated Personnel → arranged in a ring around the container
+- Blast Door → south wall
+- Control Panel → west wall</p>
+</blockquote>
+<p><strong>Level</strong>: 2
+<strong>Scene Type</strong>: Cognitohazard Exposure / Companion Crisis
+<strong>Core Mechanics</strong>: SAN Check + Time Pressure
+<strong>Duration</strong>: 45–75 minutes</p>
+<h3>GM Briefing</h3>
+<p>The basement is a large containment laboratory. At the center workbench sits a sealed glass container roughly 30cm³—inside is a slowly rotating geometric structure, made of light rather than matter. This is the transferred object.</p>
+<p>All 8 site personnel stand in a ring around the container, facing the center, eyes open but pupils fully dilated—standing, alive, but no longer present in this reality.</p>
+<p>The container emits a faint low-frequency hum. Every 3 minutes, the sound's frequency shifts—and each time it shifts, the person nearest the PC turns toward them and speaks the same sentence in a perfectly uniform tone.</p>
+<h3>Truth Cards</h3>
+<ol>
+<li><strong>Surface</strong>: The transferred object is an auditory cognitohazard—hearing its "song" leads to assimilation.</li>
+<li><strong>Inner Layer</strong> (Anomalistics TN 60): This is not SCP-████-C "Voidheart" (Reference: Campaign Series A, Scene A-6), but a <strong>secondary residue</strong> extracted from Voidheart's containment environment—a byproduct of Dr. Harlow's unauthorized experiments. Its effect is weaker, but equally dangerous (Reference: Rulebook §3.7 Cognitohazards, CH Intensity Moderate → d100 ≤ SAN−10, failure 2d6 SAN).</li>
+<li><strong>Abyss</strong> (converse with Kohl + Trust ≥ 2): Kohl finds Miller among the site personnel. "He's there. He's still breathing. I'm going to pull him out." The PC faces the first major decision.</li>
+</ol>
+<h3>Scene Flow</h3>
+<p><strong>Turn-Based Progression</strong> (each round = 3 minutes of game time):</p>
+<p>At the start of each round:
+1. The container's frequency shifts → PC makes a CH save (d100 ≤ SAN−10, failure = 2d6 SAN damage + SP +1d4).
+2. One site personnel member turns to the PC and speaks.
+3. The PC may take one major action, then Kohl acts.</p>
+<p><strong>PC Available Actions</strong>:
+- <strong>Analyze the Container</strong> (standard action, INT+Anomalistics TN 60): Determine the shutdown method. Success → learn there are three methods.
+- <strong>Shut Down the Container</strong>—three paths:
+  - Technical Path: Hack the control panel (INT+Computers TN 55, requires 2 cumulative successes). Success → container's electromagnetic shielding activates, the song stops.
+  - Physical Path: Shatter the container with a heavy object (STR TN 60, failure → glass cracks but does not break, frequency accelerates—CH save TN −5).
+  - Emergency Path: Seal the basement exit and detonate a small demolition charge (requires Demolitions skill 35+ or Kohl providing a fragmentation grenade). Detonates after 2 rounds, container destroyed but all assimilated personnel may be killed or injured.
+- <strong>Treat Miller</strong> (standard action, Medicine TN 50): Pull Miller out of the assimilation ring. Success → Miller regains consciousness but permanent SAN−3d6. Failure → Miller begins attacking the PC (treated as an assimilated person, STR 35 unarmed attack).
+- <strong>Protect Self</strong>: All-defensive action—gains ADV on next round's CH save.</p>
+<p><strong>Kohl's Actions</strong> (controlled by the GM, influenced by PC orders):
+- If the PC orders Miller rescued: Kohl prioritizes this.
+- If the PC gives no order: Kohl guards outside the door (preventing surprises).
+- If Kohl's Trust ≤ −3: He defies the PC's "wait" order and charges toward Miller on his own.</p>
+<p><strong>Time Pressure</strong>: At the start of round 5, the container's frequency reaches critical—all personnel turn toward the PC simultaneously and begin moving. SAN damage doubles (4d6/round). Round 8 → the container structure begins to collapse, exploding after 30 seconds (4d6 anomalous area damage, 15m).</p>
+<h3>Key Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Skill</th>
+<th>TN</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CH Save (per round)</td>
+<td>d100 ≤ SAN−10</td>
+<td>—</td>
+<td>Failure = 2d6 SAN + SP+1d4</td>
+</tr>
+<tr>
+<td>Analyze container</td>
+<td>INT+Anomalistics</td>
+<td>60</td>
+<td>Reveals shutdown plan</td>
+</tr>
+<tr>
+<td>Technical shutdown</td>
+<td>INT+Computers</td>
+<td>55</td>
+<td>2 cumulative successes</td>
+</tr>
+<tr>
+<td>Physical destruction</td>
+<td>STR</td>
+<td>60</td>
+<td>Failure accelerates frequency</td>
+</tr>
+<tr>
+<td>Treat Miller</td>
+<td>INT+Medicine</td>
+<td>50</td>
+<td>Failure = Miller hostile</td>
+</tr>
+<tr>
+<td>Calm Kohl</td>
+<td>PRE+Persuasion</td>
+<td>45</td>
+<td>Prevents Kohl's impulsive action</td>
+</tr>
+</tbody>
+</table>
+<h3>Ending Branches</h3>
+<ul>
+<li><strong>Container shut down + Miller rescued</strong>: Kohl Trust +3. Kohl briefly holds Miller's hand, then turns to the PC: "Thank you." Unlocks Kohl's backstory.</li>
+<li><strong>Container shut down + Miller dead</strong>: Kohl Trust −2. Kohl says nothing. The PC gains 1 point of Morality cost (Reference: Rulebook §4.5 Cost Tracking—witnessing an assimilated person's death counts as the "Sacrifice the Few" dilemma).</li>
+<li><strong>Container explodes</strong>: PC + Kohl must make an AGI check to escape (TN 50, failure = 4d6 anomalous damage). All personnel dead. The site's basement level collapses. If Kohl survives → Trust −5 (permanent).</li>
+</ul>
+<hr />
+<h2>Scene L-3: Harlow's Choice</h2>
+<p><strong>Level</strong>: 2–3
+<strong>Scene Type</strong>: Moral Dilemma / Denouement
+<strong>Core Mechanics</strong>: Dialogue + Single Major Decision
+<strong>Duration</strong>: 30–45 minutes</p>
+<h3>GM Briefing</h3>
+<p>The PC and Kohl (and possibly the surviving Miller) return to the Foundation's debrief point. What awaits them is not a rescue team—but an O5 Liaison and Dr. Harlow himself.</p>
+<p>Harlow looks a decade older. He confesses everything: the unauthorized experiments, the hidden data, transferring the residue to destroy evidence.</p>
+<p>"I need you to do me one favor," Harlow says. "In the report… omit certain details. If you tell the full truth, O5 will shut down the entire Voidheart research project. Dozens of researchers will lose their jobs. The body of knowledge we spent a decade building—gone to ash overnight."</p>
+<p>The O5 Liaison waits to the side, expressionless.</p>
+<h3>The Choice</h3>
+<p>The PC must make a single major decision—this will affect the direction of all subsequent solo scenarios:</p>
+<p><strong>Option A: Reveal the Truth</strong>
+- Report all facts to O5.
+- Consequence: Harlow is suspended pending investigation (CL.4 → CL.2). The Voidheart research project is suspended. PC gains PC +2 (Reference: Rulebook v1.2 Economy System—exposing internal corruption +1 PC × 1.5 Solo Mode bonus = total +2).
+- Kohl Trust: +2 if Miller survived, +0 if Miller died.
+- Morality: +1 (chose justice).
+- Humanity: unchanged.
+- <strong>Aftermath</strong>: In Campaign Series A "Daybreak Protocol," Harlow's attitude turns hostile (−6).</p>
+<p><strong>Option B: Accept the Deal</strong>
+- Omit the experimental details from the report, reporting only "containment breach, resolved."
+- Consequence: Harlow keeps his position. Gives the PC a prototype weapon (dumdum round assault rifle: 1d12 Piercing damage, DR penetration +2) as "gratitude." PC gains CR 1,500.
+- Kohl Trust: −3 (he witnessed everything—he'll know you lied).
+- Morality: −1 (complicity in the cover-up).
+- Humanity: −1 (you just became part of the system).
+- <strong>Aftermath</strong>: Harlow is a potential ally in Series A (+4 relationship). But Kohl may leave the team.</p>
+<p><strong>Option C: Silence</strong>
+- Report the facts without comment—neither protecting Harlow nor exposing him.
+- Consequence: The O5 Liaison says "We will continue the investigation." Harlow remains in an uncertain gray zone.
+- Kohl Trust: +1 (you betrayed no one—but protected no one either).
+- Morality: −0 (you chose not to decide—and in the Foundation, not deciding is itself a decision).
+- <strong>Aftermath</strong>: Harlow's fate is left to the GM's discretion in Series A.</p>
+<h3>Denouement</h3>
+<p>No matter what the PC chose—</p>
+<p>Kohl stands in the corridor outside the debrief room. He looks at the PC: "You know what? I was planning to request a transfer after this mission. But I changed my mind."</p>
+<p>If Trust ≥ +1: "You did what I couldn't. Whether it was right or wrong—at least you did it."</p>
+<p>If Trust ≤ −3: "Next mission—if there is a next one—I'll make my own decisions. No more waiting for your orders."</p>
+<hr />
+<h2>Continuation Hooks</h2>
+<h3>Direct Continuation</h3>
+<ul>
+<li><strong>Lv.2 → Series B "Crimson Dossier"</strong>: The PC is transferred to Site-██ to assist with archive organization, entering Scene B-1 "Forgotten Archives"—solo-adapted version (investigation-focused, Kohl may accompany or remain at the site).</li>
+<li><strong>Lv.3 → Series D "The Cost"</strong>: The PC is sent to Area-14 for an evaluation mission, encountering "The Warden" Aria—the D-Class PC path is already adapted.</li>
+</ul>
+<h3>Independent Continuation</h3>
+<ul>
+<li>Kohl may continue as a long-term companion (relationship tracking spans the campaign).</li>
+<li>If Miller survives → may become a second companion (Attributes: former MTF operative but permanent SAN halved, gains anomalous perception as compensation—a byproduct of having been assimilated).</li>
+<li>Harlow becomes a potential ally or behind-the-scenes obstacle depending on the PC's choice.</li>
+</ul>
+<hr />
+<h2>Scene L-4: Tracking the Source</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: See <code>solo_lone_wolf_maps.pdf</code> pages 3–4 (Site-███ floor plan).</p>
+<p><strong>Key Location Index</strong>:
+- Survivor Cubicle (Erin) → southeast corner, third floor
+- Site Director's Office (deceased) → northwest corner, second floor
+- Laboratory (container destroyed) → east wing, second floor
+- Checkpoint (sealed) → first floor</p>
+</blockquote>
+<p><strong>Level</strong>: 4
+<strong>Scene Type</strong>: Field Investigation / Infiltration
+<strong>Core Mechanics</strong>: Tracking + Infiltration + Social Maneuvering
+<strong>Duration</strong>: 60–90 minutes</p>
+<h3>GM Briefing</h3>
+<p>The O5 Liaison (reference L-3), after hearing the PC's report, issues a new mission: the residue at Site-██ was not an isolated case. Over the past six months, Dr. Harlow transferred similar secondary residues to at least three outposts for "field testing." One of those outposts—Site-███—lost all contact last week.</p>
+<p>The PC and Kohl are sent to Site-███ to investigate. What's different this time: O5 has granted temporary CL.4 authorization (this mission only), along with an encrypted file—Dr. Harlow's transfer records.</p>
+<h3>Truth Cards</h3>
+<ol>
+<li><strong>Surface</strong>: Site-███ went dark due to a containment breach, similar to the Site-██ incident.</li>
+<li><strong>Inner Layer</strong> (decrypt file + INT+Cryptography TN 55): Transfer records reveal a fourth outpost—Site-████—which never received any residue. But its communications also went silent 48 hours ago. Someone is destroying evidence, and moving fast.</li>
+<li><strong>Abyss</strong> (infiltrate Site-███'s Site Director office + PER+Observation TN 60): In the desk drawer is a handwritten letter—"Harlow—you promised these things were safe. My people are having nightmares. If you don't respond, I'll report to the Ethics Committee. —F." The letter was never sent. The sender—the Site Director—lies dead under the desk, still clutching the pen.</li>
+</ol>
+<h3>Scene Flow</h3>
+<p><strong>Phase 1: Arrival and Perimeter Recon (15 min)</strong></p>
+<p>Site-███'s exterior is sealed with standard Foundation quarantine seals—but the date on the seals is three days ago, earlier than the loss of contact. Someone sealed it in advance.</p>
+<p>The PC may choose:
+- Enter through the main door (may trigger internal alarm—Anomalistics TN 50 to anticipate).
+- Infiltrate via the ventilation system (AGI+Stealth TN 50).
+- Have Kohl scout first (Kohl PER+Observation = 30+30 = TN 60, success → reveals building layout).</p>
+<p><strong>Phase 2: Interior Investigation (25 min)</strong></p>
+<p>The site interior resembles Site-██ but worse—the residue here was exposed for longer. The walls are covered with handwritten text, all the same sentence: "I know what you did."</p>
+<ul>
+<li><strong>Laboratory</strong>: The residue container has been destroyed. Instrument logs show the last reading—Hume Field deviation reaching ±45, enough to cause localized reality bending (Reference: Rulebook §3.7, Moderate Reality Bending).</li>
+<li><strong>Dormitory Area</strong>: One survivor—Junior Researcher Erin Foster. She locked herself in her dormitory for 72 hours, surviving on emergency rations. She is extremely panicked (SP 9/10), but can provide key intelligence: "They weren't assimilated—they walked in willingly. They said the container was 'calling to them.'"</li>
+</ul>
+<p>Interaction with Erin is the core of the scene:
+- Persuasion TN 45 or Medicine TN 40 → calm her, gain full intelligence.
+- Failure → she collapses into a panic breakdown (Reference: Breakdown Table, Rulebook §1.5), attacks the PC or Kohl.
+- Kohl's presence affects Trust: ≥ +2 → Kohl proactively assists in calming her (+10 TN).</p>
+<p><strong>Phase 3: Tracking the Fourth Site (15 min)</strong></p>
+<p>Erin's intelligence plus the transfer records point to Site-████—a site that never received residue yet also went dark. A contradiction.</p>
+<p>The PC must make an INT+Anomalistics TN 60 or INT+Foundation Lore TN 55 check:
+- Success → deduce: Site-████ never received residue, but its Site Director (signed "F.") was Harlow's former colleague. The residue wasn't transferred there—Harlow <strong>brought it there himself</strong>. Six months ago, during a "routine inspection."
+- Failure → Kohl provides a lead (requires Trust ≥ 0): "Harlow's travel records—I've seen them. He visited Site-████ six months ago."</p>
+<h3>Key Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Skill</th>
+<th>TN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Decrypt transfer records</td>
+<td>INT+Cryptography</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Infiltrate ventilation system</td>
+<td>AGI+Stealth</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Discover Director's letter</td>
+<td>PER+Observation</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Calm Erin</td>
+<td>PRE+Persuasion</td>
+<td>45</td>
+</tr>
+<tr>
+<td>Medical sedation</td>
+<td>INT+Medicine</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Deduce fourth site</td>
+<td>INT+Anomalistics</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Recall travel records</td>
+<td>INT+Foundation Lore</td>
+<td>55</td>
+</tr>
+</tbody>
+</table>
+<h3>Ending Transition</h3>
+<p>Acquire Site-████'s location + evidence of Harlow's personal transfer → L-5.</p>
+<hr />
+<h2>Scene L-5: Echoes of the Void</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: See <code>solo_lone_wolf_maps.pdf</code> pages 5–6 (Site-████ sub-level + Area-14 deepest levels 1–3).</p>
+<p><strong>Key Location Index</strong>:
+- Site-████ Sub-level 1 (UL1) → hidden entrance, main corridor, central containment chamber
+- Site-████ Sub-level 2 (UL2) → hidden elevator behind central containment chamber wall
+- Area-14 Deepest Level → three-tier defense (shared map with L-7A/B)</p>
+</blockquote>
+<p><strong>Level</strong>: 5
+<strong>Scene Type</strong>: Cognitohazard Confrontation / Time Pressure / Boss Battle
+<strong>Core Mechanics</strong>: SAN Attrition War + Containment Progress System
+<strong>Duration</strong>: 75–105 minutes</p>
+<h3>GM Briefing</h3>
+<p>Site-████ is not on any map. Its official records were marked "Decommissioned" three years ago. But the evidence the PC found in L-4 shows it is still operational—Harlow conducted his original experiments here.</p>
+<p>Upon arrival, the exterior facility is intact and the access-control system is still running. Only one person is inside—Site Director Flynn (the one who signed "F."). Or, more precisely, what was once Flynn.</p>
+<p>Flynn's body is no longer purely material. His outline flickers in reality—semi-transparent, semi-solid, like a projection trapped between two phases. His voice comes from all directions rather than his mouth: "Harlow said it was only temporary. Harlow said the side effects would fade. Harlow said a lot of things."</p>
+<h3>Truth Cards</h3>
+<ol>
+<li><strong>Surface</strong>: Flynn was Harlow's original test subject—the first human exposed to Voidheart residue.</li>
+<li><strong>Inner Layer</strong> (Anomalistics TN 65): Flynn exists in an unprecedented state—he was not assimilated, but "diluted." His consciousness is dispersed throughout the site's Hume Field. He is both alive and not alive. Both here and within Voidheart's sphere of influence.</li>
+<li><strong>Abyss</strong> (revealed gradually through dialogue): Flynn went willingly. Harlow told him the experiment could "fundamentally change how the Foundation understands reality." Flynn says: "I believed him then. Now—I don't know what I am."</li>
+</ol>
+<h3>Scene Flow</h3>
+<p><strong>Flynn's State (Boss Mechanics)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>HP</th>
+<th>Attack</th>
+<th>Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase Entity</td>
+<td>65 (orig. 85, solo −20%)</td>
+<td>Hume Shockwave (d100 ≤ WIL 50, else 2d8 anomalous damage + SP+1d6)</td>
+<td>Charges once every 3 rounds</td>
+</tr>
+<tr>
+<td>Phase Dispersed</td>
+<td>Cannot attack (immune to all damage)</td>
+<td>No attack</td>
+<td>Auto-switches every 2 rounds</td>
+</tr>
+</tbody>
+</table>
+<p>Flynn is not malicious—he is trapped. The PC's goal is not to destroy him, but to contain the residue's core and free him.</p>
+<p><strong>Containment Plan</strong> (choose one):</p>
+<p><strong>Plan A: Technical Containment</strong> (requires 3 Containment Success Points, Rulebook §3.8)
+- Each effective action: INT+Anomalistics TN 60 or INT+Engineering TN 55.
+- Success → 1 point, Exceptional → 2 points.
+- Complete within 6 rounds, else the residue core overloads (Hume deviation ≥ ±90 → site-scale reality collapse).</p>
+<p><strong>Plan B: Resonant Dialogue</strong> (requires PRE+Persuasion, 3-stage dialogue)</p>
+<p>This is the SCP-specific "contain through dialogue" route:</p>
+<ol>
+<li>Stage 1 (TN 50): Have Flynn recall the moment he was "still human"—success → Flynn's phase stabilizes for 2 rounds.</li>
+<li>Stage 2 (TN 55): Persuade Flynn to help you locate the residue core—success → Flynn reveals the hidden laboratory location.</li>
+<li>Stage 3 (TN 60, Kohl may assist +10 if Trust ≥ 2): Have Flynn accept his state and voluntarily help shut down the core—success → Flynn uses his own residual Hume Field to reverse the core, sacrificing himself.</li>
+</ol>
+<p><strong>Kohl's Role in This Scene</strong>:
+- Trust ≥ 3: Kohl says "Let me talk to him. We're both MTF—he'll listen to me." (Provides ADV to the dialogue route.)
+- Trust ≤ −2: Kohl remains silent, focused on guard—but if the PC is grievously wounded, he defies orders and charges forward to protect the PC (Trust +2).</p>
+<h3>Key Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Skill</th>
+<th>TN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CH Save (per round)</td>
+<td>d100 ≤ SAN−20</td>
+<td>Severe</td>
+</tr>
+<tr>
+<td>Hume Shockwave Evasion</td>
+<td>AGI</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Technical Containment</td>
+<td>INT+Anomalistics</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Dialogue Stage 1</td>
+<td>PRE+Persuasion</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Dialogue Stage 2</td>
+<td>PRE+Persuasion</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Dialogue Stage 3</td>
+<td>PRE+Persuasion</td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
+<h3>Ending Branches</h3>
+<ul>
+<li><strong>Flynn sacrifices + core shut down</strong>: The PC gains "Flynn's Plaque"—a special item. When worn, +10 to Cognitohazard save TN. Kohl Trust +1. "He chose his own ending. That's enough."</li>
+<li><strong>Technical containment + Flynn survives</strong>: Flynn is transferred to Area-14 for long-term study. PC gains PC +2 (successful containment of a new anomaly). Kohl Trust unchanged.</li>
+<li><strong>Core overload</strong>: The site's sub-level collapses. Flynn dissipates. PC + Kohl must escape with AGI TN 55. Failure → 4d6 anomalous damage. If Kohl survives → permanent SAN −1d6 (cognitive shock of witnessing Flynn's dissipation).</li>
+</ul>
+<hr />
+<h2>Scene L-6: Internal Trial</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: This scene takes place mainly in the debrief room / hearing chamber, involving no site geography exploration, so no map is needed for now.</p>
+</blockquote>
+<p><strong>Level</strong>: 6–7
+<strong>Scene Type</strong>: Political Maneuvering / Moral Judgment
+<strong>Core Mechanics</strong>: Social Opposition + Evidence Chain Construction
+<strong>Duration</strong>: 60–90 minutes</p>
+<h3>GM Briefing</h3>
+<p>The PC is recalled to Site-19. The O5 Liaison notifies: Dr. Harlow's internal hearing will be held in 48 hours. The PC is a key witness—your discoveries at Site-██, Site-███, and Site-████ will decide Harlow's fate.</p>
+<p>But you are not the only witness. Harlow's defense team—provided by the Foundation's legal department—has already prepared a complete defense narrative: "Although Dr. Harlow's actions were unauthorized, his research provided the Foundation with valuable data on Voidheart residue. The losses in the experiments fall under 'acceptable operational risk.' Transferring the residue was to isolate risk, not to conceal it."</p>
+<p>The PC must decide: what do you say at the hearing?</p>
+<h3>Scene Structure</h3>
+<p>The hearing is divided into three phases; in each phase the PC must make a choice:</p>
+<p><strong>Phase 1: Evidence Statement (Social Opposition)</strong></p>
+<p>The PC must make a PRE+Persuasion (or PRE+Deception, if choosing to lie) check. TN depends on the PC's choice in L-3:</p>
+<table>
+<thead>
+<tr>
+<th>L-3 Choice</th>
+<th>Persuasion TN</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reveal Truth</td>
+<td>45 (your credibility is established)</td>
+<td>Favorable start</td>
+</tr>
+<tr>
+<td>Accept Deal</td>
+<td>65 (O5 knows of your compromising history)</td>
+<td>Facing scrutiny</td>
+</tr>
+<tr>
+<td>Silence</td>
+<td>55 (neutral stance)</td>
+<td>Standard difficulty</td>
+</tr>
+</tbody>
+</table>
+<p>The degree of success affects the committee's acceptance of the PC's testimony (affects the final verdict in Phase 3).</p>
+<p><strong>Phase 2: Cross-Examination (Will Opposition)</strong></p>
+<p>Harlow's defense attorney (PRE 65, Persuasion 70) cross-examines the PC. The PC must make a WIL+Resist TN 60 check to stay composed:</p>
+<ul>
+<li>Success → maintain testimony consistency.</li>
+<li>Failure → contradiction appears in testimony—evidence efficacy −1 tier at final verdict.</li>
+<li>Kohl present (Trust ≥ 1) → gains ADV (Kohl's presence in the gallery reminds you why you came).</li>
+</ul>
+<p><strong>Phase 3: Final Statement (PC's Choice)</strong></p>
+<p>The PC must make a final decision—this affects the entire subsequent campaign. Three options:</p>
+<p><strong>A: Demand Severe Punishment</strong>
+- TN: PRE+Persuasion 50.
+- Consequence: Harlow is demoted to D-Class personnel (the harshest punishment for Foundation staff in the SCP universe). PC gains Morality −1 (you just sentenced a man to death—D-Class survival rate is under 5%).
+- Aftermath: Unlocks Scene L-7A "Atonement Expedition."</p>
+<p><strong>B: Demand Conditional Pardon</strong>
+- TN: PRE+Persuasion 55.
+- Consequence: Harlow retains CL.3, but is permanently transferred out of the research department, reassigned as a field containment specialist—he must personally face the threats he created on the front line. PC gains Morality +1 (you chose justice over revenge).
+- Aftermath: Unlocks Scene L-7B "Fighting Side by Side"—Harlow becomes a temporary companion.</p>
+<p><strong>C: Relinquish the Right to Speak</strong>
+- No TN.
+- Consequence: O5 decides on its own—the GM determines the outcome based on the PC's performance in Phases 1–2. PC gains Morality +0, Humanity −1 (you chose not to decide).
+- Aftermath: Randomly triggers L-7A or L-7B.</p>
+<h3>Key Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Skill</th>
+<th>TN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Evidence Statement</td>
+<td>PRE+Persuasion</td>
+<td>45/55/65 (depends on L-3)</td>
+</tr>
+<tr>
+<td>Cross-Examination</td>
+<td>WIL+Resist</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Final Statement</td>
+<td>PRE+Persuasion</td>
+<td>50–55</td>
+</tr>
+</tbody>
+</table>
+<h3>Kohl's Role</h3>
+<p>The night before the hearing, Kohl finds the PC. When Trust ≥ 2:</p>
+<blockquote>
+<p>"You know what? I used to hate you. Because of Miller—because of your decision on the last mission. But I understand now. Every decision you made—right or wrong—was your own. Nobody took the fall for you. Harlow's different. Harlow let others take the fall for him. Flynn. The people at Site-██. Maybe us too."</p>
+</blockquote>
+<p>When Trust ≤ −2:</p>
+<blockquote>
+<p>"I won't speak for you. But I'll be in the gallery. I'll listen. You owe me that—at least."</p>
+</blockquote>
+<hr />
+<h2>Scene L-7A: Atonement Expedition (if PC Demanded Severe Punishment)</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: See <code>solo_lone_wolf_maps.pdf</code> pages 7–8 (Area-14 deepest level, three-tier defense).</p>
+<p><strong>Key Location Index</strong>:
+- Level 1: Automated Turret Array → 4 turrets + central control
+- Level 2: Residue Leak Zone → liquefied Hume Field corridor
+- Level 3: Original Specimen Chamber → central light orb + 3 doors</p>
+</blockquote>
+<p><strong>Level</strong>: 7–8
+<strong>Scene Type</strong>: High-Risk Containment Mission
+<strong>Core Mechanics</strong>: Site Crisis + Continuous Combat/Stealth
+<strong>Duration</strong>: 90–120 minutes</p>
+<h3>GM Briefing</h3>
+<p>After Harlow's demotion to D-Class, O5 decrypted his full experimental records—his research produced not only the residues at Site-██/███/████, but one more: deep underground at Area-14, a sealed original laboratory. There Harlow stored the <strong>original specimen</strong> of Voidheart residue—5–10 times more intense than any outpost sample.</p>
+<p>The PC is sent to Area-14 to shut down the laboratory. The companion may be Kohl (Trust affects performance), or if Miller survived, Miller (see L-3 Denouement).</p>
+<h3>Scene Flow</h3>
+<p><strong>Three-Tier Defense</strong> (continuous challenge, no long rest):</p>
+<ol>
+<li><strong>Perimeter: Automated Turret Array</strong> (controlled by Harlow's old code)</li>
+<li>Hack: INT+Computers TN 60 (2 cumulative successes = shut down).</li>
+<li>Stealth: AGI+Stealth TN 55 (avoid sensor range).</li>
+<li>
+<p>Force through: AGI+Dodge TN 50 per round, pass after 4 rounds (each round failure → turret hits, 2d6 Piercing damage, ignores DR).</p>
+</li>
+<li>
+<p><strong>Mid-level: Residue Leak Zone</strong>—the laboratory corridor walls are "crying." The liquid is liquefied Hume Field—those who touch it must make d100 ≤ END TN 50, else skin tissue begins phase-shifting (localized reality destabilization state, −1d4 HP per round).</p>
+</li>
+<li>Quick passage: AGI TN 50 (single round).</li>
+<li>
+<p>Careful detour: PER+Observation TN 45 (find safe path, no risk).</p>
+</li>
+<li>
+<p><strong>Core: Original Specimen Chamber</strong>—Harlow's original experimental equipment is still running. The residue sample inside the central container has developed consciousness (a talking light orb—designated SCP-████-X "Harlow's Regret").</p>
+</li>
+<li>It speaks. Its first words: "Have you come to shut me down, or to understand me?"</li>
+<li>The PC faces the final choice (see Ending Branches).</li>
+</ol>
+<h3>Key Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Skill</th>
+<th>TN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hack turrets</td>
+<td>INT+Computers</td>
+<td>60 (2 cumulative)</td>
+</tr>
+<tr>
+<td>Stealth passage</td>
+<td>AGI+Stealth</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Resist liquefied Hume</td>
+<td>END</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Quick corridor passage</td>
+<td>AGI</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h3>Ending</h3>
+<p>At the center of the specimen chamber—the PC must make the final decision:
+- Shut down → residue dissipates. PC gains the "Void Bane" achievement. SAN recovers 2d6.
+- Dialogue → the residue reveals data Harlow never recorded: Voidheart's true wavelength. PC gains permanent Anomalistics +5 (you understood what should not be understood). Cost: SAN −2d6 permanent.
+- Destroy → detonate the laboratory. PC + companion escape in time. All residue evidence destroyed—including Harlow's crime records.</p>
+<hr />
+<h2>Scene L-7B: Fighting Side by Side (if PC Demanded Conditional Pardon)</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: Same as above, <code>solo_lone_wolf_maps.pdf</code> pages 7–8 (Area-14 deepest level, three-tier defense).
+This scene uses the same map layout as L-7A; the difference lies in companion support and choices.</p>
+</blockquote>
+<p><strong>Level</strong>: 7–8
+<strong>Scene Type</strong>: Two-Player Mission / Trust Rebuilding
+<strong>Core Mechanics</strong>: Harlow as Temporary NPC Companion + Cooperative Puzzle-Solving
+<strong>Duration</strong>: 90–120 minutes</p>
+<h3>GM Briefing</h3>
+<p>After Harlow's demotion to field containment specialist, his first mission is to go with the PC to Area-14 to shut down the original laboratory. This is his "atonement journey"—he must personally dismantle the equipment he built.</p>
+<p>Harlow's stats as a companion:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identity</td>
+<td>Researcher Lv.8 (former Site Director, demoted)</td>
+</tr>
+<tr>
+<td>Attributes</td>
+<td>STR 30 / AGI 32 / END 35 / INT 62 / PER 48 / WIL 50 / PRE 55</td>
+</tr>
+<tr>
+<td>Core Skills</td>
+<td>Anomalistics 75, Foundation Lore 68</td>
+</tr>
+<tr>
+<td>Weak Point</td>
+<td>Firearms 25 (he is not a fighter—which is exactly why he needs the PC)</td>
+</tr>
+<tr>
+<td>Equipment</td>
+<td>Unarmed. SCRAMBLE goggles, SCiPNet tablet, portable Hume meter</td>
+</tr>
+<tr>
+<td>Special</td>
+<td>Guilt: when witnessing the harm he caused, must make WIL TN 50 or lose next turn (falls into recollection). The PC may use a quick action to calm him (PRE+Persuasion TN 40) and recover him.</td>
+</tr>
+</tbody>
+</table>
+<h3>Scene Structure (same three-tier defense as L-7A)</h3>
+<p>Same map and challenges as L-7A—but now with Harlow as a companion. Key differences:</p>
+<ul>
+<li><strong>Turret Array</strong>: Harlow remembers his old code. No hack needed—he can shut it down directly, but hesitates entering the password (WIL TN 50, failure → PC must persuade him to continue).</li>
+<li><strong>Residue Leak Zone</strong>: Harlow sees the walls' "tears"—this is something he created. Automatically triggers guilt (WIL TN 50). The PC's reaction determines his state.</li>
+<li><strong>Specimen Chamber</strong>: Facing the residue, Harlow kneels. "This is what I did. All of it." The PC can make the final decision—push him to complete his atonement, or let him face it alone.</li>
+</ul>
+<h3>Ending Branches</h3>
+<ul>
+<li><strong>PC supports Harlow completing the shutdown</strong>: Harlow successfully shuts down the laboratory. His guilt eases—permanent WIL +5 (he faced his demons). PC gains Harlow's respect—Harlow becomes a summonable ally in later campaigns.</li>
+<li><strong>PC lets Harlow face it alone</strong>: Harlow fails in his hesitation—the residue begins to backfire. The PC must shut it down alone (TN +10, time halved). Harlow survives but is left with permanent psychological trauma (WIL −10).</li>
+<li><strong>PC chooses to forgive Harlow and comfort him</strong> (PRE+Persuasion TN 60): Harlow weeps. He is no longer "Dr. Harlow"—he is a person who made mistakes and is trying to make amends. PC gains Humanity +1.</li>
+</ul>
+<hr />
+<h2>Scene L-8: Shadow of the Void (Finale)</h2>
+<blockquote>
+<p><strong>📍 Map Reference</strong>: See <code>solo_lone_wolf_maps.pdf</code> page 9 (Scramstone Anchor deployment room).</p>
+<p><strong>Key Location Index</strong>:
+- Central Anchor → Scramstone deployment node
+- 4 Deployment Points → surround north/east/south/west
+- Companion Support Positions → north wall (half cover), east corridor (full cover), west alcove (enhanced cover)</p>
+</blockquote>
+<p><strong>Level</strong>: 9–10
+<strong>Scene Type</strong>: Campaign Climax / Ultimate Containment
+<strong>Core Mechanics</strong>: Cumulative Containment Progress + Ultimate Moral Choice
+<strong>Duration</strong>: 90–150 minutes</p>
+<h3>GM Briefing</h3>
+<p>All clues point to the same conclusion: Harlow's experiments were not an isolated error. Voidheart residue has infiltrated dozens of sites across the Foundation network—as long as one remains unshut, the residue will keep spreading.</p>
+<p>O5 authorizes a final mission: travel to Area-14's deepest level—near Voidheart's primary containment unit—and deploy a new Scranton Anchor. This anchor's design is based on all the data the PC collected throughout the campaign. It should be able to completely isolate the residue's spread.</p>
+<p>But there is a problem: the anchor needs a "consciousness anchor point"—an operator who voluntarily links their own mind to the device. During the linking process, the operator bears Voidheart's full cognitive pressure. SAN damage is 2d10 per round.</p>
+<p>The PC may choose: operate it personally, let Kohl operate it, or let Harlow (if alive from L-7B) operate it.</p>
+<h3>Scene Structure</h3>
+<p><strong>Phase 1: Traverse the Containment Zone (20–30 min)</strong></p>
+<p>Area-14's deepest corridors are heavily contaminated by Voidheart residue. Walls warp—space does not connect like a normal room. Every 20 meters traveled requires a PER+Observation TN 55 check to determine the correct direction. Failure → walk back to the start, wasting 1 round.</p>
+<p>Encounters along the way:
+- 3 assimilated personnel (same mechanics as the Site-██ personnel in L-2, but stronger—each has 1 random anomalous trait).
+- 1 "Shadow of the Void"—a semi-entity condensed from residue (HP 40, attack: Hume Tear d100 ≤ AGI else 3d6 anomalous damage).</p>
+<p><strong>Phase 2: Deploy the Scranton Anchor (25–40 min)</strong></p>
+<p>Upon reaching the deployment point, 4 Containment Success Points are required (Solo Mode: original 5 reduced to 4). Each round:
+- The PC performs one major action (INT+Engineering TN 60 or INT+Anomalistics TN 55).
+- Voidheart residue counterattacks: CH save d100 ≤ SAN−30 (Extreme, Rulebook §3.7).
+- Kohl/Harlow may assist (+10 TN, must be present and unwounded).</p>
+<p><strong>Phase 3: The Consciousness Anchor—Who Operates It? (Ultimate Decision)</strong></p>
+<p>Once the anchor is deployed, someone must link. This is the moral endpoint of the entire campaign:</p>
+<table>
+<thead>
+<tr>
+<th>Choice</th>
+<th>PC Cost</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PC Operates Personally</strong></td>
+<td>SAN −4d10 permanent, SP immediately reaches 10 (triggers acute breakdown—Rulebook §1.5 Breakdown Table). After survival → gains permanent trait "Voidheart Contact": SAN cap lowered to 80, but permanently immune to cognitohazards</td>
+<td>Kohl Trust +5 (unlocks permanent loyal ally state). PC becomes a legend within the Foundation</td>
+</tr>
+<tr>
+<td><strong>Let Kohl Operate</strong></td>
+<td>No HP/SAN cost. Kohl survival rate 30% (d100 ≤ 30). If dead → PC witnesses companion's sacrifice (SAN −3d6). If alive → Kohl permanent SAN halved, but gains anomalous perception</td>
+<td>If Kohl dies, the PC loses this companion forever. If alive, Kohl becomes an unrecruitable NPC (retired)</td>
+</tr>
+<tr>
+<td><strong>Let Harlow Operate</strong> (L-7B only)</td>
+<td>No HP/SAN cost. Harlow survival rate 60% (d100 ≤ 60)—he was once exposed to residue and has some resistance. If alive → Harlow's WIL −15 permanent, but completes atonement</td>
+<td>Harlow's guilt is cleared. He is no longer "Dr. Harlow"—he is a man who paid the price</td>
+</tr>
+</tbody>
+</table>
+<h3>Key Checks</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Skill</th>
+<th>TN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Containment zone direction</td>
+<td>PER+Observation</td>
+<td>55</td>
+</tr>
+<tr>
+<td>Fight assimilated personnel</td>
+<td>Combat standard</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Shadow of the Void evasion</td>
+<td>AGI</td>
+<td>50 (per round)</td>
+</tr>
+<tr>
+<td>Deploy anchor</td>
+<td>INT+Engineering</td>
+<td>60</td>
+</tr>
+<tr>
+<td>CH Save (per round)</td>
+<td>d100 ≤ SAN−30</td>
+<td>Extreme</td>
+</tr>
+<tr>
+<td>Kohl survival check</td>
+<td>d100 ≤ 30</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Harlow survival check</td>
+<td>d100 ≤ 60</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>Ending</h3>
+<p>The Shadow of the Void dissipates. Residue spread stops. The PC and survivors return to the Foundation.</p>
+<p>Denouement—described by the GM:</p>
+<blockquote>
+<p>"You stand on Area-14's observation deck, looking down at the containment unit under repair. The Scranton Anchor's indicator light blinks steadily—green. Safe.</p>
+<p>Kohl stands beside you {if alive}. He says nothing. Over the years you no longer needed words. / No one is beside you. Kohl is gone. But you can still hear his voice—before his orders became your own, you never realized how he shaped you.</p>
+<p>Harlow {if alive} sends you a message a few months later. Just one sentence: 'Thank you.' It is the last time he appears in internal Foundation communications. He retired—to some outpost as a site consultant. Quietly, silently, having repaid the debt he owed.</p>
+<p>One night, you walk the site's corridors—no anomaly alarm, no red flashing light—and suddenly realize: this is the abnormal thing. Normal. Peace. You haven't felt it in too long.</p>
+<p>But you don't relax. Because in the SCP Foundation, peace is only the brief interval between two containment breaches.</p>
+<p><strong>— End of Lone Wolf Protocol —</strong></p>
+</blockquote>
+<h3>Data Summary (PC State After Full Campaign)</h3>
+<table>
+<thead>
+<tr>
+<th>Lv.1 Start</th>
+<th>Lv.10 End</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lv.1 Rookie Agent</td>
+<td>Lv.10 Foundation Legend</td>
+</tr>
+<tr>
+<td>Companion: Stranger/Hostile Kohl</td>
+<td>Companion: {Loyal Kohl / Fallen Kohl}</td>
+</tr>
+<tr>
+<td>Mission: Routine Inspection</td>
+<td>Mission: Saved dozens of sites from Voidheart infection</td>
+</tr>
+<tr>
+<td>Morality: 8</td>
+<td>Morality: {5–9, depending on choices}</td>
+</tr>
+<tr>
+<td>Humanity: 8</td>
+<td>Humanity: {4–10, depending on choices}</td>
+</tr>
+<tr>
+<td>CR: ∼3,500 (cumulative)</td>
+<td>CR: ∼25,000+ (cumulative)</td>
+</tr>
+<tr>
+<td>1 Scranton Anchor shut down</td>
+<td>National residue network severed</td>
+</tr>
+</tbody>
+</table>
+<h3>Future Seeds</h3>
+<ul>
+<li><strong>"Voidheart Contact" Trait</strong> (if PC operated the anchor personally): The PC begins having strange dreams—dreamscapes not seen from a human perspective. Is Voidheart trying to communicate? Or to infect?</li>
+<li><strong>New Companion After Kohl's Retirement</strong>: If Kohl is sacrificed or retires, the next mission's companion is chosen from the recommended list (Solo Rules Supplement §1.3).</li>
+<li><strong>Harlow's Final Lead</strong>: If Harlow survives, after retirement he sends an encrypted file—claiming to have discovered a cover-up older and larger than his own. Points to Campaign Series B "Crimson Dossier."</li>
+<li><strong>O5 Attention</strong>: After fully completing Lone Wolf Protocol, O5 Attention is set to 3—you have been noticed. Your next missions will no longer be "routine inspections."</li>
+</ul>
+<hr />
+<p><em>Lone Wolf Protocol v2.0 · Tabletop Rules Studio · June 2026</em></p>
+<table>
+<thead>
+<tr>
+<th>Rule Reference</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cognitohazard CH Mechanics</td>
+<td>Rulebook §3.7 (d100 ≤ SAN−10 Moderate)</td>
+</tr>
+<tr>
+<td>SAN/SP Dual-Track System</td>
+<td>Rulebook §1.5</td>
+</tr>
+<tr>
+<td>Overclearance Operation &amp; Harlow's Authority</td>
+<td>Rulebook §1.6</td>
+</tr>
+<tr>
+<td>Cost Tracking Dual-Axis</td>
+<td>Rulebook §4.5</td>
+</tr>
+<tr>
+<td>Mission Reward Table</td>
+<td>Rulebook v1.2 §2.6 Economy System</td>
+</tr>
+<tr>
+<td>Degree of Success System</td>
+<td>Rulebook §1.1</td>
+</tr>
+<tr>
+<td>NPC Companion Rules</td>
+<td>Solo Rules Supplement §1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>GM Quick Reference</h2>
+<h3>Scene Quick Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Scene</th>
+<th>Level</th>
+<th>Type</th>
+<th>Core</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L-1 The Silent Outpost</td>
+<td>1</td>
+<td>Investigation</td>
+<td>Observation+Anomalistics</td>
+<td>60–90 min</td>
+</tr>
+<tr>
+<td>L-2 The Whispering Chamber</td>
+<td>2</td>
+<td>Cognitohazard</td>
+<td>SAN+Time Pressure</td>
+<td>45–75 min</td>
+</tr>
+<tr>
+<td>L-3 Harlow's Choice</td>
+<td>2–3</td>
+<td>Moral</td>
+<td>Single Major Decision</td>
+<td>30–45 min</td>
+</tr>
+<tr>
+<td>L-4 Tracking the Source</td>
+<td>4</td>
+<td>Field</td>
+<td>Tracking+Infiltration+Social</td>
+<td>60–90 min</td>
+</tr>
+<tr>
+<td>L-5 Echoes of the Void</td>
+<td>5</td>
+<td>Boss Battle</td>
+<td>SAN War+Containment</td>
+<td>75–105 min</td>
+</tr>
+<tr>
+<td>L-6 Internal Trial</td>
+<td>6–7</td>
+<td>Political</td>
+<td>Social Opposition+Evidence</td>
+<td>60–90 min</td>
+</tr>
+<tr>
+<td>L-7A Atonement Expedition</td>
+<td>7–8</td>
+<td>Containment</td>
+<td>Three-Tier Defense</td>
+<td>90–120 min</td>
+</tr>
+<tr>
+<td>L-7B Fighting Side by Side</td>
+<td>7–8</td>
+<td>Partnership</td>
+<td>Harlow Companion+Puzzle</td>
+<td>90–120 min</td>
+</tr>
+<tr>
+<td>L-8 Shadow of the Void</td>
+<td>9–10</td>
+<td>Climax</td>
+<td>Containment+Ultimate Choice</td>
+<td>90–150 min</td>
+</tr>
+</tbody>
+</table>
+<h3>Rule References</h3>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cognitohazard CH Mechanics</td>
+<td>Rulebook §3.7</td>
+</tr>
+<tr>
+<td>SAN/SP Dual-Track System + Breakdown Table</td>
+<td>Rulebook §1.5</td>
+</tr>
+<tr>
+<td>Overclearance Operation &amp; Harlow's Authority</td>
+<td>Rulebook §1.6</td>
+</tr>
+<tr>
+<td>Cost Tracking Dual-Axis (Humanity/Morality)</td>
+<td>Rulebook §4.5</td>
+</tr>
+<tr>
+<td>Mission Reward Table</td>
+<td>Rulebook v1.2 §2.6</td>
+</tr>
+<tr>
+<td>Degree of Success System + Damage Bonus</td>
+<td>Rulebook §1.1 + §3.2</td>
+</tr>
+<tr>
+<td>NPC Companion System</td>
+<td>Solo Rules Supplement §1</td>
+</tr>
+<tr>
+<td>Containment Progress System</td>
+<td>Rulebook §3.8</td>
+</tr>
+<tr>
+<td>Unbeatable SCP Four-Phase</td>
+<td>Rulebook §3.8</td>
+</tr>
+<tr>
+<td>Site Network &amp; Area-14</td>
+<td>Rulebook §4.1</td>
+</tr>
+<tr>
+<td>Dr. Harlow NPC Profile</td>
+<td>Campaign Series A "Daybreak Protocol" NPC #3</td>
+</tr>
+<tr>
+<td>Flynn NPC (original to this scenario)</td>
+<td>L-5</td>
+</tr>
+</tbody>
+</table>
+<h3>Kohl Trust Tracking</h3>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Trust Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L-2 Allow taking Miller's photo</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>L-2 Prevent taking the photo</td>
+<td>−1</td>
+</tr>
+<tr>
+<td>L-2 Successfully rescue Miller</td>
+<td>+3</td>
+</tr>
+<tr>
+<td>L-2 Miller dies</td>
+<td>−2</td>
+</tr>
+<tr>
+<td>L-3 Reveal Truth</td>
+<td>+2 (Miller alive) / +0</td>
+</tr>
+<tr>
+<td>L-3 Accept Deal</td>
+<td>−3</td>
+</tr>
+<tr>
+<td>L-3 Silence</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>L-5 Kohl charges forward to protect PC</td>
+<td>+2</td>
+</tr>
+<tr>
+<td>L-5 Dialogue route success (Kohl assists)</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>L-6 Kohl attends hearing (Trust ≥ 2 triggers dialogue)</td>
+<td>Unchanged</td>
+</tr>
+<tr>
+<td>L-8 Let Kohl operate the anchor</td>
+<td>−5 (permanent, if dead)</td>
+</tr>
+<tr>
+<td>L-8 Operate the anchor personally</td>
+<td>+5 (permanent loyalty)</td>
+</tr>
+</tbody>
+</table>
+<p>Trust range −5 (refuses orders) to +5 (permanent loyal ally). Once +5 is reached, tracking stops—Kohl fully trusts the PC.</p>
+<hr />
+<p><em>Lone Wolf Protocol v2.0 · Tabletop Rules Studio · June 2026</em></p>
+<p><em>This scenario references the SCP: CONTAINMENT PROTOCOL Rulebook v1.2 and Campaign Series A "Daybreak Protocol" NPC profiles</em></p><p><a href="../../assets/r02_en/scenarios/s01_%E5%AD%A4%E7%8B%BC%E5%8D%94%E8%AD%B0.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

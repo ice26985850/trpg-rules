@@ -1,0 +1,371 @@
+campaign: Lone Vessel of the Galaxy (Coalition Edition)
+rule: Galaxy Civilization
+mode: Multiplayer (2-4 players + 1 GM)
+source_md: Galaxy Civilization TRPG_Coalition Campaign_Lone Vessel of the Galaxy.md
+solo: false
+player_count: 2-4
+ap_formula: 3 + ⌊Economy Power (ECO)/3⌋ (core multiplayer formula, without the solo edition's +1)
+crisis_scaling:
+  note: Scale the crisis according to the actual number of player civilizations; NPC civilization assistance is extra support and does not count toward this scaling.
+  4_player_baseline:
+    fleet_scale: 100%
+    boss_hp_scale: 100%
+    phase_speed: baseline
+  3_players:
+    fleet_scale: 80%
+    boss_hp_scale: 85%
+    phase_speed: baseline
+  2_players:
+    fleet_scale: 65%
+    boss_hp_scale: 70%
+    phase_speed: ×0.8
+total_acts: 5
+acts:
+- name: 'Act I: Stellar Dawn'
+  level_range: Level (Lv.) 1-4
+  st_range: Stellar Turn (ST) 1-20
+  theme: Survival & First Contact
+  era: I
+  opening: 'You are a group of rising interstellar civilizations. The galaxy is vast and dangerous—you are both potential allies and possibly future competitors.
+
+
+    Each of you has only a few ships, one homeworld, and a future full of problems.
+
+    '
+  act_events:
+  - st: Stellar Turn (ST) 1-5
+    chapter: First Jump
+    events:
+    - st_label: Stellar Turn (ST) 1
+      type: narrative
+      description: Each player completes civilization creation. The GM describes each player civilization's home system in turn—stars, planets, history, and culture. Emphasize fragility and hope, and the still-undefined relationships between them.
+      check: None (pure narrative)
+    - st_label: Stellar Turn (ST) 2-3
+      type: action
+      description: The science vessels of each player civilization begin surveying nearby systems. The GM may let players survey individually or coordinate direction in a "Coalition Council" to cover a larger area.
+      check: Science Power (SCI) Survey Check
+      expected_result: Discover 1 habitable planet (>=80% Habitability) + 1 anomaly (geological anomaly, Difficulty Class (DC) 6)
+    - st_label: Stellar Turn (ST) 3-5
+      type: action
+      description: At the end of Stellar Turn (ST) 3, a certain player's science vessel receives a faint distress signal from a third, unsurveyed system—Verdant Colony is under threat from Raider Mercenaries (small raider fleet, Military Power (MP) ~500).
+      check: Science Power (SCI) Survey Check, Difficulty Class (DC)=7 (signal is faint, requires precise positioning)
+      cxp: Complete First Contact +5 / Resolve Event +10 (awarded separately to each participating player civilization)
+    - st_label: Stellar Turn (ST) 4-5
+      type: moral_choice
+      description: Coalition resolves how to respond (costs Action Points (AP)).
+      choices:
+      - A) Immediately dispatch a fleet to protect the colony — costs 2 Action Points (AP), Military Power (MIL) Check
+      - B) Attempt a diplomatic solution — costs 1 Action Point (AP), Diplomacy Power (DIP) Check
+      - C) Stand by and watch — Verdant Colony will be destroyed at Stellar Turn (ST) 8, losing the chance to befriend them
+      success_effect: Choose A or B -> Verdant Guardian's attitude toward the Coalition rises to 8 (initially Friendly); Seran becomes the Coalition's first important NPC friend
+  - st: Stellar Turn (ST) 6-12
+    chapter: Neighbors & Borders
+    events:
+    - st_label: Stellar Turn (ST) 6-8
+      type: action
+      description: Verdant Guardian shares the star chart of nearby space with the Coalition. A certain player civilization discovers a resource-rich system (planet with Habitability >=60% + mineral vein).
+      check: Economy Power (ECO) Colonization Check
+      cxp: Colonize New Planet +15
+    - st_label: Stellar Turn (ST) 9-12
+      type: conflict
+      description: 'Kronos Syndicate (human/militarist/oligarchy/xenophobe+1) claims sovereignty over the same system. Coalition resolution: military, diplomatic, or back down.'
+      check: Military Power (MIL) Fleet Battle (Difficulty Class (DC) 6-7, Military Power (MP) ratio roughly 1:1) or Diplomacy Power (DIP) Contest Check (Difficulty Class (DC) 7)
+      cxp: Win Fleet Battle +25 / Successful Diplomatic Agreement +10
+  - st: Stellar Turn (ST) 13-20
+    chapter: Secrets Beneath the Heavens
+    events:
+    - st_label: Stellar Turn (ST) 13-16
+      type: archaeology
+      description: Verdant Guardian scientists discover an Lv2 archaeological site in an abandoned system. Main story foreshadowing—inscriptions point to the "Void Lord" and the secret of the galactic core.
+      check: Science Power (SCI) Archaeological Excavation, Difficulty Class (DC)=7-9
+      cxp: Complete Archaeological Site +20
+    - st_label: Stellar Turn (ST) 17-20
+      type: narrative
+      description: A certain player's scientist receives a psychic echo from deep in the galaxy—an ancient powerful entity is "watching" them. A Fallen Empire's capital beacon begins to flicker.
+      check: Unity (UNI) Check, Difficulty Class (DC)=7 (resist the psychic echo)
+      success_effect: That civilization gains a vague prophecy
+      failure_effect: One scientist of that civilization falls into short-term mental confusion
+  npc_civilizations:
+  - name: Verdant Guardian
+    leader: Seran, plant-type species
+    archetype: Loyal Guardian
+    initial_attitude: 8
+    condition: Rescue the colony before Stellar Turn (ST) 8 (options A or B)
+  first_act_end:
+    expected_level: Level (Lv.) 3-4
+    total_cxp: ~130-180
+    flags:
+    - green_protectorate_ally
+    - void_hint_awakened
+    - 'cronos_syndicate_relation: neutral/hostile'
+  act_number: 1
+  act_cn: Stellar Dawn
+- name: 'Act II: Stellar Expansion'
+  level_range: Level (Lv.) 5-8
+  st_range: Stellar Turn (ST) 21-40
+  theme: Build Power & Choose
+  era: II
+  opening: 'You are no longer a group of tiny newborn civilizations. You have made allies, built colonies, and seen a clear threat.
+
+
+    Now is the time to build real power.
+
+    '
+  act_events:
+  - st: Stellar Turn (ST) 21-30
+    chapter: Wrath of Steel Skull
+    events:
+    - st_label: Stellar Turn (ST) 21-25
+      type: contact
+      description: Insectoid civilization "Steel-Skull Khanate" raids the border. Deeper investigation reveals they are refugees whose hive was destroyed by a powerful Interstellar Empire (militarist+authoritarian+xenophobe, Scale 3~4).
+      check: Intelligence Power (INT) Intelligence Gathering, Difficulty Class (DC)=7 (discover the truth)
+      choices:
+      - A) Forcefully expel — Military Power (MIL) Check, medium fleet battle (player Military Power (MP) advantage roughly 1.5:1)
+      - B) Offer shelter and alliance — Diplomacy Power (DIP) Check, Difficulty Class (DC)=8 (must overcome the insectoids' natural distrust of aliens)
+      - C) Drive them toward the Interstellar Empire — lose the chance to befriend them
+      cxp: Discover Truth +10 / Form Alliance +15
+    - st_label: Stellar Turn (ST) 26-30
+      type: war
+      description: Coalition and Steel-Skull Khanate join forces to counterattack the Interstellar Empire. Medium-length war sequence (3-5 turns), using the War Weariness system. Victory condition is a peace agreement recognizing Coalition sovereignty.
+      check: Military Power (MIL) Operations + Diplomacy Power (DIP) Negotiations
+      cxp: Win the War +25
+    - st_label: After Stellar Turn (ST) 25
+      type: unlock
+      civilization: Steel-Skull Khanate
+      leader: Gorak the Great Khan
+      archetype: Avenger
+      initial_attitude: 6
+      condition: Choose B and successfully form alliance
+  - st: Stellar Turn (ST) 31-40
+    chapter: Halls of Power
+    events:
+    - st_label: Stellar Turn (ST) 31-35
+      type: action
+      description: Galactic Community extends an invitation (with conditions). The Coalition must deliver a council speech (Diplomacy Power (DIP) Check) to gain a permanent council seat. Kronos Syndicate representatives try to obstruct.
+      check: Diplomacy Power (DIP) Speech Check, Difficulty Class (DC)=7 + Intelligence Power (INT) Gather Dirt (optional)
+      cxp: Successfully Join +10
+    - st_label: Stellar Turn (ST) 36-40
+      type: political
+      description: An anti-Coalition alliance forms—led by Kronos Syndicate and the Void Cult. The Coalition must maneuver politically, building coalitions.
+      check: Multiple rounds of Diplomacy Power (DIP) Contest Checks
+      narrative_event: Silent Observer anonymously provide key intelligence, helping dismantle the anti-Coalition alliance
+      cxp: Dismantle Anti-Coalition Alliance +15
+  npc_civilizations:
+  - name: Steel-Skull Khanate
+    leader: Gorak the Great Khan, insectoid
+    archetype: Avenger
+    initial_attitude: 6
+    condition: Form alliance during Stellar Turn (ST) 21-25
+  second_act_end:
+    expected_level: Level (Lv.) 7-8
+    total_cxp: ~300-400
+    flags:
+    - steel_skull_ally
+    - galactic_community_member
+    - anti_player_alliance_defeated
+    - silent_watchers_contact_initiated
+  act_number: 2
+  act_cn: Stellar Expansion
+- name: 'Act III: Galactic Integration'
+  level_range: Level (Lv.) 9-12
+  st_range: Stellar Turn (ST) 41-60
+  theme: Politics & Shadows
+  era: III
+  opening: 'You are already a major power in the galaxy. But the greater the power, the stronger the enemies.
+
+
+    And deep in the galaxy, some ancient threat is awakening.
+
+    '
+  act_events:
+  - st: Stellar Turn (ST) 41-50
+    chapter: Awakening Guardians
+    events:
+    - st_label: Stellar Turn (ST) 41-45
+      type: narrative
+      description: 'Silent Observer make formal contact, revealing: "Your species'' genes carry the mark of an ancient civilization. That civilization foresaw the threat and planted ''contingency plans'' among multiple races across the galaxy. You are part of them."'
+      check: Unity (UNI) Check, Difficulty Class (DC)=8 (psychological shock of accepting the truth; may let one representative or all Coalition members roll and take the majority)
+      cxp: Contact Silent Observer +15
+    - st_label: Stellar Turn (ST) 46-50
+      type: journey
+      description: Journey to the Sealed Land at the galactic core, must cross the sector claimed as holy domain by the Fallen Empire "Holy Sentinels."
+      check: 'Stealth: Intelligence Power (INT), Difficulty Class (DC)=9 | Diplomacy: Diplomacy Power (DIP), Difficulty Class (DC)=10'
+      failure_narrative: Stealth fails -> border fleet encounter battle | Diplomacy succeeds -> must pay a price (tech/colony/promise to protect holy land)
+      cxp: Successfully Cross +20
+  - st: Stellar Turn (ST) 51-60
+    chapter: Sealed Land
+    events:
+    - st_label: Stellar Turn (ST) 51-55
+      type: archaeology
+      description: The Sealed Land—a ring-shaped fragment orbiting a dormant black hole. Ancient automated defense systems are still active.
+      check: Science Power (SCI) Archaeological Excavation, continuous, Difficulty Class (DC)=9~11
+      ruins_discovery_table:
+        dice: d6
+        results:
+        - range: '1'
+          reward: Ancient Database—unlocks a random T3 technology
+        - range: '2'
+          reward: Sealed Specimen—organic lifeform sealed for tens of thousands of years (possibly friendly or dangerous)
+        - range: '3'
+          reward: Void Rift—see the domain of the Void Lord
+        - range: '4'
+          reward: Star Chart Room—complete galactic star map marking all Fallen Empires and crisis trigger points
+        - range: '5'
+          reward: Armory—unlocks Ancient Energy Weapon technology
+        - range: '6'
+          reward: Last Words of the Precursors—reveals the nature of the Void Lord and why it was sealed
+      cxp: Each major discovery +10~15
+    - st_label: Stellar Turn (ST) 56-60
+      type: narrative
+      description: Activity stirs the Void Lord. Dimensional rifts, psionic fluctuations, and missing ships appear across the galaxy. Omega warns about ~30 turns remaining.
+      cxp: Warning Unlocked
+  npc_civilizations:
+  - name: Silent Observer
+    leader: Omega, machine intelligence
+    archetype: Mentor Civilization
+    initial_attitude: 5
+    condition: Contact during Stellar Turn (ST) 41-45 (requires trust accumulated in prior two acts)
+  third_act_end:
+    expected_level: Level (Lv.) 11-12
+    total_cxp: ~550-700
+    flags:
+    - silent_watchers_ally
+    - all_three_civilizations_unlocked
+    - void_lord_awakening_declared
+    - sealed_land_archaeology_started
+    - 'void_threat_timeline: ~30 Stellar Turns (ST) to full awakening'
+  act_number: 3
+  act_cn: Galactic Integration
+- name: 'Act IV: Galactic Hegemony'
+  level_range: Level (Lv.) 13-16
+  st_range: Stellar Turn (ST) 61-75
+  theme: Crisis Descends
+  era: IV
+  opening: 'The awakening of the Void Lord is no longer a secret. The entire galaxy can feel its influence.
+
+
+    The Fallen Empires begin to act. The omens of cataclysm have arrived.
+
+    '
+  act_events:
+  - st: Stellar Turn (ST) 61-70
+    chapter: Rifts
+    events:
+    - st_label: Stellar Turn (ST) 61-65
+      type: crisis
+      description: Void Lord's vanguard force—the Void Devourers—pours in from dimensional rifts at the galactic core. Use the "High-Dimensional Invader" crisis template, scaled per the crisis scale table at the start (2 players 65% / 3 players 80% / 4 players 100%).
+      check: Diplomacy Power (DIP) Emergency Meeting, Difficulty Class (DC)=7 (initiate joint defense proposal) + Military Power (MIL) Fleet Battle
+      civilization_responses:
+      - 'Verdant Guardian (attitude 8): fights with full force, provides fleet support'
+      - 'Steel-Skull Khanate (attitude 6): fights, demands help rebuilding their hive after the war'
+      - 'Silent Observer (attitude 5): key intelligence + tech support, fleet protects ancient installations'
+      note: NPC civilization assistance is extra support and does not count toward crisis scale scaling. Attitude below 5 may refuse to fight or backstab.
+      cxp: Each Void fleet repelled +15 / Hold key system +20
+    - st_label: Stellar Turn (ST) 66-70
+      type: moral_choice
+      description: Void Devourers attack two targets simultaneously—a certain player civilization's home system or the Verdant Guardian's homeworld. The Coalition's fleet can only reach one in time to rescue it.
+      gm_option: To heighten intra-Coalition tension, make both targets player civilization homeworlds, forcing the players to decide "whom to save."
+      choices:
+      - Defend Player Homeworld -> Verdant Guardian homeworld destroyed, Seran attitude drops to 2 ("You chose your own people"), provides only limited support
+      - Defend Verdant Guardian -> that player's homeworld heavily damaged (population halved, capital buildings destroyed), Seran attitude rises to 10, devotes all resources
+      note: This choice has no "correct answer"—it defines the emotional tone of the story that follows
+      cxp: Survive the Sacrifice Event +30
+  - st: Stellar Turn (ST) 71-75
+    chapter: Awakening Ancients
+    events:
+    - st_label: Stellar Turn (ST) 71-75
+      type: diplomacy
+      description: Fallen Empires awaken—not all will help the Coalition.
+      fallen_empires:
+      - name: Ancient Caretakers
+        stance: Join the Coalition's side (their calling is to protect organic life)
+        cxp: '+25'
+      - name: Holy Sentinels
+        stance: Remain neutral, but their holy land lies on the Void Lord's path of awakening
+        check: Diplomacy Power (DIP) Persuade Passage Through Territory, Difficulty Class (DC)=9
+      - name: Military Isolationists
+        stance: Refuse to participate
+      cxp: Gain Ancient Caretakers' Support +25
+  fourth_act_end:
+    expected_level: Level (Lv.) 15-16
+    total_cxp: ~950-1100
+    flags:
+    - void_threat_full_scale
+    - 'sacrifice_made: player_or_green_protectorate'
+    - ancient_guardian_allied
+    - holy_sentinel_neutral
+    - final_preparations_begins
+  act_number: 4
+  act_cn: Galactic Hegemony
+- name: 'Act V: Endgame Era'
+  level_range: Level (Lv.) 17-20
+  st_range: Stellar Turn (ST) 76-90
+  theme: Final Choice
+  era: V
+  opening: 'The Void Lord is about to fully awaken. The fate of the galaxy depends on your Coalition.
+
+
+    This is the final campaign.
+
+    '
+  act_events:
+  - st: Stellar Turn (ST) 76-85
+    chapter: Final Seal
+    events:
+    - st_label: Stellar Turn (ST) 76-80
+      type: preparation
+      description: Ultimate preparation phase. The Coalition completes three things before the Void Lord fully awakens.
+      tasks:
+      - 1. Assemble the fleets of all allies (total Military Power (MP) should reach 20000+)
+      - 2. Deploy a Dimensional Suppressor at the galactic core (Economy Power (ECO) megastructure construction Check)
+      - '3. Decide final strategy: permanent seal / complete annihilation / attempt communication (affects Boss battle rules; Coalition must reach consensus, GM adjudicates disagreements based on each civilization''s stance)'
+      check: 'Multiple parallel lines: Economy Power (ECO) Construction / Diplomacy Power (DIP) Rally / Science Power (SCI) Research Suppressor'
+    - st_label: Stellar Turn (ST) 81-85
+      type: final_battle
+      description: Final Decisive Battle—Void Lord. Scaled by number of participating player civilizations per the crisis scale table (2 players 65% / 3 players 80% / 4 players 100%). The table below is the 4-player 100% baseline.
+      boss_data:
+        name: Void Lord
+        hp: 25000
+        dimension_barrier: 8000
+        speed: 1
+        attacks:
+        - 'Reality Collapse: 500-800 damage (50% chance double)'
+        - 'Dimensional Devour: every 3 rounds releases a Void Pulse; all fleets in range lose Hull Points (HP) -20%'
+        - 'Summon Vanguard: each round summons 3-5 Void Devourer units'
+        - 'Endgame Countdown: from round 10, each round a random galaxy system is devoured by the Void'
+        weaknesses:
+        - 'After Dimensional Suppressor activated: cannot summon reinforcements, barrier halved'
+        - Psionic attack damage +100%
+        - 'More than 3 civilizations attacking simultaneously: for each extra one, Boss defense -10%'
+      check: Full Fleet Battle rules (Chapter 3)
+      note: GM should give each player civilization's fleet a "hero moment"; NPC civilizations (those meeting the attitude threshold) should also have their moments.
+      cxp: Defeat the Void Lord +50
+  - st: Stellar Turn (ST) 86-90
+    chapter: Afterglow — Ending
+    events:
+    - st_label: Stellar Turn (ST) 86-90
+      type: ending
+      description: The Void Lord has been defeated. The galaxy welcomes peace.
+      endings:
+      - path: A) Galactic Guardian
+        condition: Maintain good relations with NPC civilizations throughout, Verdant Guardian survives
+        description: The player civilizations, Verdant Guardian, and Steel-Skull Khanate jointly establish a new galactic order. Seran delivers a touching speech reminiscing about the journey.
+      - path: B) Lonely Victor
+        condition: Chose power over friendship, or sacrificed some companions/members
+        description: A certain player civilization becomes the galaxy's sole superpower, but the victory is bitter. Gorak's soul whispers—"You got what you wanted—but lost what you needed."
+      - path: C) Echoes of the Void
+        condition: Chose to communicate/trade with the Void Lord
+        description: The Void Lord is re-sealed, but the Coalition changes—part of the population begins to exhibit psionic power. A brand-new story is brewing.
+      final_roll:
+        description: Regardless of ending, the GM has each player civilization make a separate Unity (UNI) Check—to set that civilization's attitude tone toward the post-war galaxy.
+        note: The result is recorded on the civilization character sheet as a permanent mark of the campaign.
+  fifth_act_end:
+    expected_level: Level (Lv.) 19-20
+    total_cxp: ~1550-1800
+    flags:
+    - void_lord_defeated
+    - 'ending_path: guardian_or_lonely_or_echo'
+    - final_uni_roll_recorded
+    - campaign_complete
+  act_number: 5
+  act_cn: Endgame Era

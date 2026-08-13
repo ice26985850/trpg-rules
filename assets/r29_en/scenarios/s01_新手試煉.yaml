@@ -1,0 +1,128 @@
+# Last Stand TRPG — Scenario S1: Novice Trial
+# Type: Multiplayer Squad
+# Suggested Level: 1-2
+# Difficulty: ★☆☆☆☆
+
+scenario:
+  id: S1
+  name: Novice Trial
+  type: multiplayer_squad
+  tier: 1
+  difficulty: 1
+  estimated_duration: 2-3 hours
+
+  description: >
+    Your first drop. Erangel (Newbie Island) — an abandoned Soviet military island.
+    The sea breeze carries the smell of salt and rust. Twenty contestants, four squads — including yours.
+    No one expects you to win. But you don't plan to let them have their way either.
+
+map:
+  name: Erangel (Newbie Island)
+  size: 4 km × 4 km (condensed version)
+  terrain:
+    - Coastal Plains (40%)
+    - Hills (30%)
+    - Abandoned Military Facilities (20%)
+    - Small Town (10%)
+  landmarks:
+    - id: L1
+      name: Abandoned Radar Station
+      type: military
+      loot_level: Abundant (Blue)
+      description: An abandoned radar station atop a hill — excellent view, but easily sniped
+    - id: L2
+      name: Porto Noma Fishing Village
+      type: residential
+      loot_level: Common (Green)
+      description: A fishing village by the coast, a dozen wooden huts with narrow alleys
+    - id: L3
+      name: Sakura Farm
+      type: rural
+      loot_level: Scarce (Gray)
+      description: Open farmland and barns — good for vehicles, poor for hiding
+    - id: L4
+      name: Military Outpost
+      type: military
+      loot_level: Military (Purple)
+      description: A small military outpost in the northeast corner — the best loot on the map, but remote
+
+enemy_configuration:
+  total_squads: 4  # Includes player; 5 squads, 20 people total
+  squads:
+    - id: E1
+      type: Rookie Squad
+      difficulty: ★
+      count: 3
+      members_per_squad: 4
+      drop_location: Random
+    - id: E2
+      type: Steady Squad
+      difficulty: ★★
+      count: 1
+      members_per_squad: 4
+      drop_location: Military Outpost
+
+circle:
+  type: Central Contraction
+  description: A predictable standard circle — suitable for beginners
+
+airdrop:
+  count: 1
+  timing: During the 2nd circle contraction
+  content: M24 Sniper Rifle + 4x Scope + .300 Ammo ×30
+
+red_zone: false
+vehicles: [Jeep, Motorcycle]
+weather: Clear
+time_of_day: Day (noon)
+
+phases:
+  - phase: Drop
+    turns: 1
+    gm_notes: >
+      Describe the parachute drop scene: "The transport plane's rear cargo door opens — sea breeze rushes in,
+      engines roar. Twenty contestants stand at the doorway, looking down at the island. Some are already praying."
+      Let the players choose their drop point.
+
+  - phase: Looting Phase
+    turns: 5
+    gm_notes: >
+      First circle — give players ample looting time. Describe the environmental atmosphere.
+      In the distance, occasional gunshots ring out (encounters between NPCs).
+      Tip: "Listen while looting — footsteps are the earliest warning."
+
+  - phase: First Battle
+    turns: 3-4
+    gm_notes: >
+      Arrange for the players to encounter a Rookie Squad. This is the players' first battle —
+      let the Rookies make some obvious mistakes (poor reload timing, unsteady aim),
+      so players can experience the full loop of "hit → damage → down."
+
+  - phase: Circle Pressure
+    turns: 4
+    gm_notes: >
+      The 2nd circle contracts — the safe zone center is near the players' current position.
+      This means other squads are moving toward the players.
+      Introduce the Steady Squad — tougher than the Rookies, and they use smoke grenades.
+
+  - phase: Final Battle
+    turns: 3-5
+    gm_notes: >
+      2-3 squads remain (including players). The circle shrinks to 200m.
+      Ensure the final battle has enough cover and tactical choices.
+      Victory condition: eliminate all enemies or be the last surviving squad.
+
+victory_condition: Be the last surviving squad
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  survival_top10: 150
+  survival_top5: 250
+  chicken_dinner: 500
+  per_elimination: 80
+  squad_wipe: 150

@@ -1,0 +1,385 @@
+title: The Hero's Proof — Monster Catalog
+sections:
+- heading: The Hero's Proof — Monster Catalog
+  text:
+  - 'Source of values: System Finalization (Chapter 5 Enemy Challenge Rating (CR) and Boss framework), Traditional Chinese; terms use the "Chinese full name (abbreviation)" format.'
+  - 'Enemy value formulas (locked by System Finalization):'
+  - '- Health (HP) = `floor(40 × (1 + 0.09 × (CR − 1)))`'
+  - '- Attack Bonus (ATK) = `floor(1 + 0.25 × CR)`'
+  - '- Evasion (EVA) = `10 + floor(0.15 × CR)`'
+  - '- Damage/hit = `floor(6 + 1.2 × CR)`'
+  - '- Damage = the base output value per attack, an independent figure from Attack Bonus (ATK) (which governs hit chance); the magnitude gap between the two is an intended design choice (not an error), confirmed by Audit Item 71.'
+  - '- Critical Threshold (CritTh) is fixed at 20 (high Challenge Rating (CR) may lower it by 1–2 thresholds)'
+  - '- Experience (EXP) = `floor(15 × CR × (1 + CR/15))`; Boss EXP ×4'
+  - 'Template fields: Name / Challenge Rating (CR) / Health (HP) / Attack Bonus (ATK) / Evasion (EVA) / Damage Reduction (DR) / Movement / Initiative Bonus / Attack / Skill / Trait / Experience (EXP) / Drop.'
+  - Boss phase transitions are uniformly bound to Health (HP) 66% / 33% (unaffected by critical-hit fluctuation).
+  - '---'
+  tables: []
+- heading: I. Common Monsters (tiered by Challenge Rating (CR))
+  text:
+  - Each of the following 20 Common Monsters includes a "Drop" field; drops are basic materials, while magic gear must still be obtained through smithing / temples etc. (see Player Book Chapter 4).
+  tables: []
+- heading: Challenge Rating (CR) 1 (HP 40 / Attack Bonus (ATK) +1 / Evasion (EVA) 10 / Damage 7)
+  text: []
+  tables:
+  - columns:
+    - Name
+    - Damage Reduction (DR)
+    - Movement
+    - Initiative
+    - Attack
+    - Skill
+    - Trait
+    - Experience (EXP)
+    - Drop
+    rows:
+    - Name: Goblin Scout
+      Damage Reduction (DR): 0%
+      Movement: 5 tiles
+      Initiative: '+1'
+      Attack: Short Spear Pierce 1d6+1
+      Skill: Stone Throw (Ranged 2d4 Bludgeon)
+      Trait: Pack (appears in groups)
+      Experience (EXP): 16
+      Drop: Goblin Earring, Tattered Cloth
+    - Name: Wild Wolf
+      Damage Reduction (DR): 0%
+      Movement: 6 tiles
+      Initiative: '+2'
+      Attack: Bite Bludgeon 1d6+1
+      Skill: —
+      Trait: Coordination (allied attacks +1 damage)
+      Experience (EXP): 16
+      Drop: Wolf Fang, Raw Meat
+    - Name: Slime
+      Damage Reduction (DR): 5% Bludgeon
+      Movement: 3 tiles
+      Initiative: '+0'
+      Attack: Slam Bludgeon 1d6
+      Skill: —
+      Trait: 'Critical-Hit Immunity; Split: when struck, spawns 1 clone; clone HP = 50% of body''s current HP, treated as half the original CR, max 2 bodies on field (including original), body death clears the field, no infinite splitting'
+      Experience (EXP): 16
+      Drop: Slime Fluid, Slime Core
+    - Name: Skeleton (Undead)
+      Damage Reduction (DR): 10%
+      Movement: 4 tiles
+      Initiative: '+0'
+      Attack: Bone Axe Bludgeon 1d6+1
+      Skill: —
+      Trait: Undead; Psychic Immunity; Holy Vulnerability (Holy ×1.5)
+      Experience (EXP): 16
+      Drop: Bone Fragment, Worn Amulet
+    - Name: Cave Bat
+      Damage Reduction (DR): 0%
+      Movement: 5 tiles
+      Initiative: '+3'
+      Attack: Sonic Bludgeon 1d4
+      Skill: Shriek (Shock, 1 round)
+      Trait: Flight
+      Experience (EXP): 16
+      Drop: Bat Wing, Ultrasound Crystal
+- heading: Challenge Rating (CR) 5 (HP 54 / Attack Bonus (ATK) +2 / Evasion (EVA) 10 / Damage 12)
+  text: []
+  tables:
+  - columns:
+    - Name
+    - Damage Reduction (DR)
+    - Movement
+    - Initiative
+    - Attack
+    - Skill
+    - Trait
+    - Experience (EXP)
+    - Drop
+    rows:
+    - Name: Orc Warrior
+      Damage Reduction (DR): 10%
+      Movement: 5 tiles
+      Initiative: '+1'
+      Attack: War Axe Slash 1d10+2
+      Skill: War Cry (self Attack +2, 2 rounds)
+      Trait: Frenzy (HP<50% Attack +3)
+      Experience (EXP): 100
+      Drop: Orc Fang, Iron Axe Shard
+    - Name: Goblin Poisoner
+      Damage Reduction (DR): 5%
+      Movement: 5 tiles
+      Initiative: '+2'
+      Attack: Poison Dagger Pierce 1d6+2
+      Skill: Poison Mist (AOE Poison 3 rounds)
+      Trait: Flee (retreats at low HP)
+      Experience (EXP): 100
+      Drop: Poison Gland, Poison Vial
+    - Name: Zombie (Undead)
+      Damage Reduction (DR): 15%
+      Movement: 3 tiles
+      Initiative: −1
+      Attack: Claw Bludgeon 1d8+2
+      Skill: —
+      Trait: Undead; Regen (recover 4 HP per round); Holy Vulnerability
+      Experience (EXP): 100
+      Drop: Rotten Flesh, Ash of the Dead
+    - Name: Giant Spider
+      Damage Reduction (DR): 10%
+      Movement: 5 tiles
+      Initiative: '+3'
+      Attack: Venom Fang Pierce 1d8+2
+      Skill: Web (Slow, Action Point (AP) −1, 2 rounds)
+      Trait: Climb
+      Experience (EXP): 100
+      Drop: Spider Silk, Venom Sac
+    - Name: Salamander
+      Damage Reduction (DR): 10%
+      Movement: 4 tiles
+      Initiative: '+1'
+      Attack: Fire Bite Fire 1d8+2
+      Skill: Flame Burst (AOE radius 1, Burn 2 rounds)
+      Trait: Fire Resistance ×0.5
+      Experience (EXP): 100
+      Drop: Salamander Scale, Fire Gland
+- heading: Challenge Rating (CR) 10 (HP 72 / Attack Bonus (ATK) +3 / Evasion (EVA) 11 / Damage 18)
+  text: []
+  tables:
+  - columns:
+    - Name
+    - Damage Reduction (DR)
+    - Movement
+    - Initiative
+    - Attack
+    - Skill
+    - Trait
+    - Experience (EXP)
+    - Drop
+    rows:
+    - Name: Orc Berserker
+      Damage Reduction (DR): 15%
+      Movement: 5 tiles
+      Initiative: '+2'
+      Attack: Great Axe Slash 2d6+3
+      Skill: Sundering Cleave (Defense −20%, 3 rounds)
+      Trait: Frenzy; Sunder
+      Experience (EXP): 250
+      Drop: Berserker Totem, Great Axe Edge
+    - Name: Gargoyle
+      Damage Reduction (DR): 20%
+      Movement: 6 tiles
+      Initiative: '+1'
+      Attack: Stone Fist Bludgeon 1d10+3
+      Skill: Petrifying Gaze (Paralyze, 1 round)
+      Trait: Flight; Stone Skin (Fire Weakness ×1.5)
+      Experience (EXP): 250
+      Drop: Rock Core, Stone Dust
+    - Name: Lich Servant (Undead)
+      Damage Reduction (DR): 15%
+      Movement: 4 tiles
+      Initiative: '+3'
+      Attack: Shadow Bolt Shadow 2d6+3
+      Skill: Weakening Curse (Weak, output −25%, 2 rounds)
+      Trait: Undead; Shadow Resistance ×0.5; Holy Vulnerability
+      Experience (EXP): 250
+      Drop: Lich Ash, Shadow Shard
+    - Name: Frost Wolf
+      Damage Reduction (DR): 10%
+      Movement: 7 tiles
+      Initiative: '+4'
+      Attack: Ice Claw Frost 1d10+3
+      Skill: Frost Breath (AOE Chill, Dexterity −30%, 2 rounds)
+      Trait: Frost Resistance ×0.5
+      Experience (EXP): 250
+      Drop: Ice Crystal Fang, Frost Fur
+    - Name: Ogre
+      Damage Reduction (DR): 15%
+      Movement: 4 tiles
+      Initiative: '+0'
+      Attack: Club Bludgeon 2d8+3
+      Skill: Smash (Knockback)
+      Trait: High HP; Bludgeon Specialist
+      Experience (EXP): 250
+      Drop: Ogre Club Head, Giant Bone
+- heading: Challenge Rating (CR) 20 (HP 108 / Attack Bonus (ATK) +6 / Evasion (EVA) 13 / Damage 30)
+  text:
+  - '---'
+  tables:
+  - columns:
+    - Name
+    - Damage Reduction (DR)
+    - Movement
+    - Initiative
+    - Attack
+    - Skill
+    - Trait
+    - Experience (EXP)
+    - Drop
+    rows:
+    - Name: Crypt Wyrm
+      Damage Reduction (DR): 20% Acid
+      Movement: 3 tiles
+      Initiative: '+0'
+      Attack: Acid Spit Acid 2d10+6
+      Skill: 'Acid Spray (AOE: on hit, target Damage Reduction (DR) −20%, lasts 3 rounds, stackable up to −40% cap)'
+      Trait: Acid Immunity
+      Experience (EXP): 700
+      Drop: Acid Gland, Worm Shell
+    - Name: Troll
+      Damage Reduction (DR): 20%
+      Movement: 4 tiles
+      Initiative: '+1'
+      Attack: Great Claw Bludgeon 2d12+6
+      Skill: Rend (Bleed 2 rounds)
+      Trait: Regen (recover 12 HP per round; fire damage interrupts)
+      Experience (EXP): 700
+      Drop: Troll Regen Flesh, Great Claw
+    - Name: Death Knight (Undead)
+      Damage Reduction (DR): 25%
+      Movement: 5 tiles
+      Initiative: '+3'
+      Attack: Soul Blade Slash+Shadow 2d10+6
+      Skill: Fear Aura (Fear, 2 rounds)
+      Trait: Undead; Shadow Resistance ×0.5; Holy Vulnerability
+      Experience (EXP): 700
+      Drop: Soul Blade Shard, Undead Sigil
+    - Name: Dragonborn Soldier
+      Damage Reduction (DR): 25%
+      Movement: 6 tiles
+      Initiative: '+4'
+      Attack: Dragon Lance Pierce+Fire 2d10+6
+      Skill: Dragon Flame (AOE Fire Burn)
+      Trait: Fire Resistance ×0.5; Dragonkin
+      Experience (EXP): 700
+      Drop: Dragon Scale, Dragon Flame Core
+    - Name: Swamp Golem
+      Damage Reduction (DR): 30%
+      Movement: 3 tiles
+      Initiative: −1
+      Attack: Mud Fist Bludgeon 3d8+6
+      Skill: Swamp Bind (Bind 1 round)
+      Trait: High Damage Reduction; Slow Aura
+      Experience (EXP): 700
+      Drop: Mud Core, Golem Shard
+- heading: II. Four Demon Generals
+  text:
+  - Phase transitions bound to Health (HP) 66% / 33%; each general's "Phase Three" is set as the player's critical-hit finishing window (weakened Damage Reduction / exposed core / breakable object).
+  tables: []
+- heading: Dragon General Ignis Ember-Scale (Drakaina General)
+  text:
+  - '- Challenge Rating (CR): "40　Health (HP): 720　Attack Bonus (ATK): +11　Evasion (EVA): 16　Damage Reduction (DR): Scales 30% Physical　Movement: 6 tiles　Initiative Bonus: +3　Critical Threshold (CritTh): 20　Experience (EXP): 8,800 (Boss ×4)'
+  - '- Attack: Dragon Claw Slash 2d8+11 (Fire rider)'
+  - '- Skill: Dragon Breath (AOE cone Fire, Burn 2 rounds) / Aerial Assault (Charge + Fear 2 rounds)'
+  - '- Trait: Phase One "Wyrmling Form" scales Damage Reduction 30%; Phase Two (HP 66%) unlocks Dragon Breath and Aerial Assault; Phase Three (HP 33%) "Berserk Form" Damage Reduction drops to 15% and every 2 rounds casts [World-ending Breath] large Area Effect (AOE), entering a critical-hit window. Fire Resistance ×0.5.'
+  - '- **Humanoid Image**: A tall, human-shaped figure appears — crimson long hair cascading like flowing lava, a pair of jet-black dragon horns sprouting from her brow, her armor inlaid with layered dragon scales that gleam with a cold metallic sheen under the firelight; her eyes are molten-gold amber, exhaling scorching white smoke with every breath. Though she has restrained her colossal dragon body, the texture of scales and draconic pride still emanate from her very bones — she is the foremost of the Four Demon Generals, the one closest to the "dragon."'
+  - '- Battle entrance line: "Stand down, weaklings. My scales shall not warm for you."'
+  - '- Drop: Dragon Scale Fragment, Ember-scale Core (Epic enchantment material)'
+  tables: []
+- heading: Succubus General Lilith Charmshade (Succubus General)
+  text:
+  - '- Challenge Rating (CR): "44　Health (HP): 776　Attack Bonus (ATK): +12　Evasion (EVA): 16　Damage Reduction (DR): 15% Physical　Movement: 6 tiles　Initiative Bonus: +5　Critical Threshold (CritTh): 20　Experience (EXP): 10,384 (Boss ×4)'
+  - '- Attack: Charm Whip Shadow 2d10+12'
+  - '- Skill: Illusion Dance (Charm, by level 1–3 rounds) / Desire Bind (Immobilize) / Inner-Demon Split (copies ally appearance)'
+  - '- Trait: Phase One "Dance of Seduction" Illusion Dance controls; Phase Two (HP 66%) drains HP from charmed targets to heal self; Phase Three (HP 33%) true form revealed, Inner-Demon Split creates a trust crisis, full output after charm is broken. Shadow Resistance ×0.5, Psychic Immunity.'
+  - '- **Humanoid Image**: A standard succubus-type humanoid — bat wings folded behind her like a draped cloak, pointed ears peeking from her charming purple long hair, the corners of her eyes curved with a seductive arc, a smile forever fixed as if calculating the hearts of men. She walks like a cat and speaks like honey; though she has put away the demon''s ferocity, that innate seductive quality still seeps from her gaze and breath.'
+  - '- Battle entrance line: "Come now~ just sleep quietly, and it won''t hurt, okay?"'
+  - '- Drop: Charmshade''s Tear (Epic accessory material), Mind Orb'
+  tables: []
+- heading: Necromancer General Morvana Silentgrave (Necromancer General)
+  text:
+  - '- Challenge Rating (CR): "42　Health (HP): 748　Attack Bonus (ATK): +11　Evasion (EVA): 16　Damage Reduction (DR): 20% Physical　Movement: 4 tiles　Initiative Bonus: +4　Critical Threshold (CritTh): Critical-Hit Immunity　Experience (EXP): 9,576 (Boss ×4)'
+  - '- Attack: Necromancer Staff Shadow 2d10+11'
+  - '- Skill: Undead Summon (replenishes minions each round) / Life Siphon (Lifesteal) / Death Domain (field-wide DoT)'
+  - '- Trait: Phase One "Summon" consumes player Area Effect (AOE); Phase Two (HP 66%) zombie tide and Death Domain; Phase Three (HP 33%) lich transformation, [Critical-Hit Immunity] invincible until core is exposed, must destroy the life-preserving coffin (breakable object) to dispel, [Final Dirge] countdown. Undead; Shadow Resistance ×0.5; Holy Vulnerability ×1.5.'
+  - '- **Humanoid Image**: Clad in a pallid shrine-maiden robe, her skin like frost under the moon, her form semi-transparent as if a single breeze could scatter her; spectral blue netherfire drifts slowly around her, her hands cradling a bone staff carved with the names of the dead and festooned with fine bone shards. She speaks as if through a layer of water, gentle to the point of sorrow — a shrine maiden who has kept vigil for the deceased too long and can never return.'
+  - '- Battle entrance line: "Sleep well… I will let them keep you company in eternal slumber."'
+  - '- Drop: Silentgrave Soul Core (Epic material), Rune of Immortality'
+  tables: []
+- heading: Slime General Prum Gel (Slime General)
+  text:
+  - '- Challenge Rating (CR): "46　Health (HP): 808　Attack Bonus (ATK): +12　Evasion (EVA): 16　Damage Reduction (DR): 10% All types　Movement: 4 tiles　Initiative Bonus: +1　Critical Threshold (CritTh): 19 (high CR lowers 1 threshold)　Experience (EXP): 11,224 (Boss ×4)'
+  - '- Attack: Sticky Strike Bludgeon 2d10+12 (Acid)'
+  - '- Skill: Split (when struck, divides into two bodies) / Acid Corrosion (on hit, target Damage Reduction (DR) −20%, lasts 3 rounds) / Fusion (child body merges and restores to full)'
+  - '- Trait: "Phase One \"Splitting Proliferation\" requires Area Effect (AOE) to clear the field (Split: when struck, spawns 1 clone; clone HP = 50% of body''s current HP, treated as half the original CR, max 2 bodies on field (including original), body death clears the field, no infinite splitting); Phase Two (HP 66%) Fusion restores to full + Acid Corrosion; Phase Three (HP 33%) \"Crystallize\" [Critical-Hit Immunity] + high Damage Reduction (80%), must break the crystal with Bludgeon then enter a fragile finish. Critical-Hit Immunity; Acid Immunity.'
+  - '- **Humanoid Image**: A translucent, jelly-textured humanoid girl whose body wobbles faintly like jelly, light passing through her refracting into rainbow colors, and a finger-touch makes her "boing" right back. She calls people big brother and big sister in a baby voice, and her eyes light up at the sight of sweets — the most innocent yet slimiest glutton of the four generals, until she melts entirely and wraps her enemies into syrup balls.'
+  - '- Battle entrance line: "Prum is hungry~ shall I turn you… into sweet little treats?"'
+  - '- Drop: Pure Gel Core (Epic material), Viscous Essence'
+  - '---'
+  tables: []
+- heading: III. Demon Queen
+  text: []
+  tables: []
+- heading: Vercellia Nordheim (The Demon Queen)
+  text:
+  - '- Challenge Rating (CR): "50　Health (HP): 864　Attack Bonus (ATK): +13　Evasion (EVA): 17　Damage Reduction (DR): 35% All types　Movement: 6 tiles　Initiative Bonus: +6　Critical Threshold (CritTh): 18　Experience (EXP): 13,000 (Boss ×4)'
+  - '- Attack: Demon Lord Blade Shadow+Physical 3d12+13'
+  - '- Skill: "Four-General Echo (rotates Dragon/Charm/Death/Gel powers) / Sovereign Domain (field-wide debuff) / Four-Element Annihilation (rotating AOE) / Eschaton Judgment (field-wide instakill threat countdown: 5-round countdown; if core not broken / judgment source not destroyed within 5 rounds, field-wide instakill (party wipe); during countdown the core / judgment source is exposed and can be attacked)'
+  - '- Trait: Phase One "Sovereign" rotates the four generals'' powers; Phase Two (HP 66%) true Demon Lord form, Sovereign Domain + Four-Element Annihilation; Phase Three (HP 33%) Eschaton, [Eschaton Judgment] instakill countdown, players must break the core within the limit. Can be negotiated / turned / surrendered (Influence Points (IP) ≥ 40 opens the Reconciliation Ending). All-attribute Resistance ×0.5, Psychic Immunity.'
+  - '- Drop: Demon Lord Sigil (Legendary material), Crown of Sovereignty'
+  - '---'
+  tables: []
+- heading: IV. The Betrayer
+  text: []
+  tables: []
+- heading: Jeno Gojo (female human traitor, Demon Lord Army "Fifth Demon General")
+  text:
+  - '- **Identity**: Sex Female | Race Human | Identity Human traitor, Demon Lord Army "Fifth Demon General" (the one who bears the "Four Heavenly Kings yet five people" gag). A former genius knight of the Human Kingdom, falsely accused of cheating and expelled from the guild promotion exam, then angrily joined the Demon Lord Army; a straight-faced tsukkomi character who insists "I''m the fifth, not one of the Four Heavenly Kings." Not fundamentally evil; in Scenario 2 (S2), touching her loneliness can trigger a defection side quest.'
+  - '- Challenge Rating (CR): "45　Health (HP): 792　Attack Bonus (ATK): +12　Evasion (EVA): 16　Damage Reduction (DR): 30% Physical　Movement: 7 tiles　Initiative Bonus: +6　Critical Threshold (CritTh): 20　Experience (EXP): 10,800 (Boss ×4)'
+  - '- Attack: Formless Blade Pierce 3d10+12 (can copy class moves)'
+  - '- Skill: Tactical Foresight (reads player actions ahead, higher Evasion (EVA)) / Copy Ally Skill (counter) / Backstab Crit (guaranteed crit on isolated targets)'
+  - '- Trait: Phase One "Guerrilla" high evasion; Phase Two (HP 66%) betrayal revealed, copies ally skills + guaranteed crit on isolated targets; Phase Three (HP 33%) branch — if Influence Points (IP) are sufficient, [Atonement Burst] assists, otherwise [Despair Burst] at full power becomes the hardest fight. Human (no racial resistance).'
+  - '- **Humanoid Image**: A human female swordswoman in a black-knight-style cloak, bearing a formless blade, a "traitor''s banner" sigil branded on her left eye; a sharp contrast to the four generals'' alien styles, marking her as the "human traitor."'
+  - '- Note: Her "defection assist" is a one-time story / phase-transition mechanic for that battle in S4, not a permanent ally; in solo mode per Clarification B, no extra assist character is added, and she only temporarily becomes a neutral friendly unit in the battle where the Influence Points (IP) threshold is met.'
+  - '- Drop: Gojo''s Blade (Legendary weapon material), Traitor''s Banner Shard'
+  - '---'
+  tables: []
+- heading: V. Beyond-the-World (Otherworld) Enemies
+  text:
+  - 'Not the native Demon Lord Army, but Otherworld entities from the "World Rift". They poured in through the rift after the Demon Lord Castle collapsed in Scenario 8 (see Scenarios 9–11 endgame chapter). Thematic traits distinct from native enemies: **Reality Warp** (randomly changes positioning map / teleports characters), **Rule Nullification** (ignores some native Damage Reduction (DR) / terrain cover), **Beyond-the-World Resistance** (reduces damage from native elements, must use Otherworld-exclusive means to break defense), **Rift Synergy** (high-tier units recover HP each round).'
+  - 'Values computed directly from GM Book 10.4 formula (Critical Threshold (CritTh): "CR55–75 lowered by 1 threshold to 19, CR85–99 lowered by 2 thresholds to 18); solo mode per Clarification B: CR−3, enemy count ×0.5.'
+  - 'Three-chapter endgame structure: Scenario 9 final battle **Void Sentinel (CR65 mini-boss)**; Scenario 10 final battle **Eclipse Sovereign (CR75 mid-boss)**; Scenario 11 first fight **Eschaton Prophet (CR85 final-boss bodyguard)** then **The Beyond · Singularity (CR99 final boss)**.'
+  tables: []
+- heading: Rift Vanguard (Otherworld Elite · Outpost)
+  text:
+  - '- Challenge Rating (CR): "55　Health (HP): 234　Attack Bonus (ATK): +14　Evasion (EVA): 18　Damage Reduction (DR): 25% All types　Movement: 6 tiles　Initiative Bonus: +5　Critical Threshold (CritTh): 19　Experience (EXP): 15,400 (Boss ×4)'
+  - '- Attack: Rift Sunder Untyped 3d12+14'
+  - '- Skill: Reality Warp (flips positioning map every 3 rounds) / Beyond-the-World Resistance (native element damage reduction 50%)'
+  - '- Trait: Phase One "Infiltration" frequent repositioning; Phase Two (HP 50%) triggers Reality Warp; Phase Three (HP 25%) Rift Synergy recovers 5% HP each round.'
+  - '- Drop: Rift Shard (Legendary material), Otherworld Crystal'
+  tables: []
+- heading: Void Sentinel (Otherworld Mini-boss · Scenario 9 final battle)
+  text:
+  - '- Challenge Rating (CR): "65　Health (HP): 1080　Attack Bonus (ATK): +17　Evasion (EVA): 19　Damage Reduction (DR): 30% All types　Movement: 6 tiles　Initiative Bonus: +6　Critical Threshold (CritTh): 19　Experience (EXP): 20,800 (Boss ×4)'
+  - '- Attack: Sentinel Sunder Untyped 3d12+17'
+  - '- Skill: Reality Warp (flips positioning map every 2 rounds) / Beyond-the-World Resistance (native element damage reduction 50%) / Sentinel Field (AOE Chill)'
+  - '- Trait: Phase One "Border Patrol" repositioning + summons Rift Vanguard; Phase Two (HP 50%) Rule Nullification (ignores a player''s Damage Reduction (DR)); Phase Three (HP 25%) Rift Synergy recovers 6% HP each round.'
+  - '- Drop: Sentinel Core (Legendary material), Otherworld Crystal ×2'
+  tables: []
+- heading: Void Apostle (Otherworld Boss · Scenario 10 outpost tier)
+  text:
+  - '- Challenge Rating (CR): "70　Health (HP): 288　Attack Bonus (ATK): +18　Evasion (EVA): 20　Damage Reduction (DR): 30% All types　Movement: 7 tiles　Initiative Bonus: +6　Critical Threshold (CritTh): 19　Experience (EXP): 23,800 (Boss ×4)'
+  - '- Attack: Void Devour Untyped 4d12+18'
+  - '- Skill: Rule Nullification (ignores a player''s Damage Reduction (DR)) / Reality Warp (teleports player units) / Gap Burst (AOE)'
+  - '- Trait: Phase One "Erosion" weakens player status; Phase Two (HP 50%) Rule Nullification + Reality Warp; Phase Three (HP 25%) Rift Synergy recovers 8% HP each round. Beyond-the-World Resistance ×0.5.'
+  - '- Drop: Void Core (Legendary material), Apostle Sigil'
+  tables: []
+- heading: Eclipse Sovereign (Otherworld Mid-boss · Scenario 10 final battle)
+  text:
+  - '- Challenge Rating (CR): "75　Health (HP): 1224　Attack Bonus (ATK): +19　Evasion (EVA): 21　Damage Reduction (DR): 35% All types　Movement: 7 tiles　Initiative Bonus: +7　Critical Threshold (CritTh): 19　Experience (EXP): 27,000 (Boss ×4)'
+  - '- Attack: Eclipse Devour Untyped 4d12+19'
+  - '- Skill: Rule Nullification (ignores multiple native Damage Reduction (DR)) / Reality Warp (splits positioning map) / Eclipse Domain (field-wide DoT + cover disabled)'
+  - '- Trait: Phase One "World Eclipse" weakens player status + summons Void Apostle; Phase Two (HP 50%) full Rule Nullification + Reality Warp; Phase Three (HP 25%) Rift Synergy recovers 9% HP each round, Beyond-the-World Resistance ×0.5.'
+  - '- Drop: Eclipse Core (Mythic material), Sovereign Sigil'
+  tables: []
+- heading: Eschaton Prophet (Otherworld Boss · Final-boss Bodyguard · Scenario 11 pre-fight)
+  text:
+  - '- Challenge Rating (CR): "85　Health (HP): 1368　Attack Bonus (ATK): +22　Evasion (EVA): 22　Damage Reduction (DR): 35% All types　Movement: 8 tiles　Initiative Bonus: +7　Critical Threshold (CritTh): 18　Experience (EXP): 34,000 (Boss ×4)'
+  - '- Attack: Eschaton Decree Untyped 5d12+22'
+  - '- Skill: "Reality Warp (flips / splits positioning map) / Rule Nullification (ignores terrain cover and partial immunity) / Prophetic Judgment (AOE instakill threat countdown: 5-round countdown; if core not broken / judgment source not destroyed within 5 rounds, field-wide instakill (party wipe); during countdown the core / judgment source is exposed and can be attacked)'
+  - '- Trait: Phase One "Prophecy" reads player intent; Phase Two (HP 50%) Prophetic Judgment countdown; Phase Three (HP 25%) Rift Synergy recovers 10% HP each round. Beyond-the-World Resistance ×0.5, Psychic Immunity. As the bodyguard of The Beyond · Singularity, the Singularity''s true form is revealed only after it falls.'
+  - '- Drop: Prophecy Tablet (Mythic material), Eschaton Crown'
+  tables: []
+- heading: The Beyond · Singularity (Otherworld Endgame Entity · Scenario 11 final battle)
+  text:
+  - '- Challenge Rating (CR): "99　Health (HP): 1568　Attack Bonus (ATK): +25　Evasion (EVA): 24　Damage Reduction (DR): 40% All types　Movement: 9 tiles　Initiative Bonus: +8　Critical Threshold (CritTh): 18　Experience (EXP): 45,144 (Boss ×4)'
+  - '- Attack: Singularity Collapse Untyped 6d12+25'
+  - '- Skill: Reality Warp (continuously flips positioning map) / Rule Nullification (ignores most native defenses) / World Collapse (field-wide AOE law collapse)'
+  - '- Trait: Phase One "Descent" warps the laws; Phase Two (HP 50%) World Collapse sustained AOE; Phase Three (HP 25%) Rift Synergy recovers 12% HP each round, must be fought swiftly. Beyond-the-World Resistance ×0.5, Psychic Immunity, All-attribute Resistance ×0.5.'
+  - '- Drop: Singularity Core (Mythic material), Beyond-the-World Sigil'
+  - '*Catalog total entries: 20 Common Monsters (CR1×5 / Challenge Rating (CR) 5×5 / Challenge Rating (CR) 10×5 / Challenge Rating (CR) 20×5) + Four Demon Generals 4 + Demon Queen 1 + The Betrayer 1 + Beyond-the-World Otherworld enemies 6 = 32 types.*'
+  tables: []

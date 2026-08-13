@@ -1,0 +1,17 @@
+name: "S6: Respite"
+description: "Level 11 — the Boundless City. The only place in the Backrooms that resembles civilization. Trade, rest, and build relationships here. But the city holds Skin-Stealers — they can be anyone. Including those you trust."
+difficulty: "Intermediate (Social / Investigation)"
+milestone_range: "6-7"
+play_time: "7-10 hours"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Level 11 — Boundless City"]
+themes: ["Civilization's Facade", "Trust and Betrayal", "Intelligence Gathering"]
+emotional_arc: "Relief (arrive at city) → Integration (trade and socialize) → Suspicion (Skin-Stealer infiltration) → Revelation (truth) → Resolve (press onward)"
+scenes:
+  - {id: S6_1, name: "City Entrance", type: "Exploration", desc: "Level 11 streets. A BNTG trader hails you. A recruitment poster for M.E.G.'s city outpost. Find lodgings. Learn the city's rules — 30-day reset, empty buildings, false sky."}
+  - {id: S6_2, name: "Market and Trade", type: "Social", desc: "BNTG trade center. Upgrade gear, trade intel. Meet key NPCs: cartographer Mira, Doctor Wu, Old Zhao (finally meeting him in person). Gather intel on deeper layers — the legend of Level !."}
+  - {id: S6_3, name: "The Infiltrator", type: "Investigation", desc: "Strange things begin happening in the city — Wanderers vanish, replaced. An NPC you know starts acting wrong. Investigation reveals: Skin-Stealers have already infiltrated the community. Find it — before it replaces the next person."}
+  - {id: S6_4, name: "The Decision", type: "Turning Point", desc: "Enough intel gathered: the entrance to Level ! lies in the basement of some building. Level ! is the only path through — legend says you can only reach deeper layers by running the full hospital corridor. Prepare final supplies."}
+entities: ["Skin-Stealers (invisible threat in the city)", "Occasional Smilers (underground parking)"]
+key_npc: ["Old Zhao (finally met)", "cartographer Mira", "Doctor Wu", "BNTG trader"]
+ending: "Find the Level ! entrance. Milestone 7 achieved."

@@ -1,0 +1,74 @@
+name: "The Mirror Maze"
+type: "Mirror Chase / Psychological Thriller"
+difficulty: "★★★★"
+recommended_marks: "7-8"
+play_time: "2-3 sessions"
+core_attributes: ["AN", "NG", "AW"]
+
+opening: |
+  This isn't a commission — it's personal.
+  Your Mirror has started making movements it shouldn't.
+  At first it was just small deviations — it lagged half a second when you stopped.
+  But last time, in the Gap, it spoke to you. In your voice, saying things you didn't know:
+  "Do you still remember that summer? Under the bridge — what was it you abandoned?"
+  You never abandoned anything under the bridge. But you do have a gap in your memory.
+
+gm_notes: |
+  This scenario is highly personal. The GM must secretly communicate with the player:
+  1. A forgotten childhood memory of the character (may come from character creation step 5 "What You Lost")
+  2. What the Mirror knows — related to that memory
+  3. The GM chooses an ending direction: Fusion, Separation, Sacrifice
+
+scenes:
+  - name: "First Anomaly"
+    desc: |
+      During a routine traverse, you see the Mirror's anomalous behavior.
+      It stops mimicking, stands still — and speaks a sentence.
+      Anchor Difficulty Class (DC) 10 to confirm this isn't a hallucination.
+    map_ref: "MAP-08 (Mirror Tracking Path) — Scene A (start)"
+  - name: "Tracking"
+    desc: "The Mirror moves through the Gap, leaving a resonant trail. Awareness Difficulty Class (DC) 10 to track."
+    map_ref: "MAP-08 — Path from Scene A → Scene B"
+  - name: "Dig Up the Memory"
+    desc: |
+      Retrieval Difficulty Class (DC) 13 to find a diary (Memory Crystal) in the Gap of your childhood home.
+      You see the day your childhood friend drowned — you were there, but out of fear did not help.
+    map_ref: "MAP-08 — Scene B (Gap Layer of childhood home)"
+  - name: "Memory Guardian"
+    desc: |
+      The path to the bridge is blocked by a Path Guardian.
+      Negotiation Difficulty Class (DC) 12. You need a true memory to pass.
+    map_ref: "MAP-08 — Scene C (where the Memory Guardian blocks the way)"
+  - name: "Confrontation Under the Bridge"
+    desc: "Three ending options — see below."
+    map_ref: "MAP-08 — Scene D (bridge-end terminus)"
+
+mirror_stages:
+  - stage: 1
+    name: "Hint"
+    desc: "The Mirror lags, shows slight deviation"
+    check: "Awareness Difficulty Class (DC) 10 to confirm the anomaly"
+  - stage: 2
+    name: "Dialogue"
+    desc: "The Mirror begins to speak, in your voice, saying things you don't know"
+    check: "Anchor Difficulty Class (DC) 12 to confirm if this is a hallucination or real"
+  - stage: 3
+    name: "Confrontation"
+    desc: "The Mirror waits for you under the bridge"
+    check: "See ending options"
+
+endings:
+  - name: "Fusion"
+    desc: "The Mirror fuses with you. Gap Sickness reverses one stage. Permanent Advantage on all Anchor checks."
+  - name: "Rejection"
+    desc: "The Mirror stays in the Gap as an independent existence. Anchor Difficulty Class (DC) 16 to resist Gap Sickness worsening. May meet again in the future."
+  - name: "Sacrifice"
+    desc: "If in any stage of Gap Sickness, the Mirror bears it in your place. You recover, and lose the Mirror permanently."
+
+rewards:
+  - "Return Mark × 1 (returning the memory to yourself)"
+  - "Fusion Ending: Permanent Advantage (all Anchor checks)"
+  - "Rejection Ending: Future Mirror-related plots may continue"
+  - "Sacrifice Ending: Character recovers"
+
+companion_recruitment: []

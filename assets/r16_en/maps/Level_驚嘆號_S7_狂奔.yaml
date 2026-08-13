@@ -1,0 +1,107 @@
+name: "Level ! — Run If You Don't Want to Die!"
+description: "Ten-kilometer hospital-style corridor — red alert and piercing siren; packs of Entities chase from behind; the only level with a forced death risk"
+scenario_ref: "S7_狂奔"
+usage: "Scenario S7: ten-kilometer life-and-death race against time; a Physique check every kilometer; reaching the EXIT door at the end leads to the White Space (ending level)"
+regions:
+  - name: "Starting Corridor"
+    color: "#E8F5E9"
+    nodes: ["N01"]
+    description: "Area"
+  - name: "Hospital Corridor"
+    color: "#ECEFF1"
+    nodes: ["N02", "N04", "N06"]
+    description: ""
+  - name: "Supply Room"
+    color: "#E3F2FD"
+    nodes: ["N03"]
+    description: ""
+  - name: "Panic Corner (Danger)"
+    color: "#F3E5F5"
+    nodes: ["N05"]
+    description: ""
+  - name: "EXIT Door (Exit)"
+    color: "#E0F7FA"
+    nodes: ["N07"]
+    description: ""
+nodes:
+  - id: "N01"
+    label: "Starting Corridor"
+    x: 150
+    y: 300
+    type: "start"
+    explored: false
+    description: "Red alert lights up, siren piercing — the swarm behind has already begun the chase"
+  - id: "N02"
+    label: "Hospital Corridor 1"
+    x: 320
+    y: 240
+    type: "normal"
+    explored: false
+    description: "Long straight corridor — a Physique check required every 1 km advanced (DC escalates 10→20)"
+  - id: "N03"
+    label: "Supply Room"
+    x: 320
+    y: 420
+    type: "resource"
+    explored: false
+    description: "An intermittently appearing supply room — Almond Water, bandages"
+    resources: "Almond Water ×1 / bandages ×1"
+  - id: "N04"
+    label: "Hospital Corridor 2"
+    x: 500
+    y: 240
+    type: "normal"
+    explored: false
+    description: "Shattered glass and toppled hospital beds — risk of tripping (environmental damage 1D4)"
+  - id: "N05"
+    label: "Panic Corner"
+    x: 500
+    y: 420
+    type: "danger"
+    explored: false
+    description: "9th kilometer Willpower DC 18 (avoid panic); failure causes panic for 1 round, chase distance -2"
+    threats: "Panic (distance -2)"
+  - id: "N06"
+    label: "Hospital Corridor 3"
+    x: 680
+    y: 240
+    type: "normal"
+    explored: false
+    description: "The finish is in sight — the red EXIT sign flickers"
+  - id: "N07"
+    label: "EXIT Door (Exit)"
+    x: 850
+    y: 300
+    type: "exit"
+    explored: false
+    description: "White EXIT door — leads to the White Space (ending level). Each character may enter only once; being caught = character death"
+    exit_to: "White Space (Ending Level)"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: ""
+  - from: "N02"
+    to: "N03"
+    type: "corridor"
+    label: "Supply"
+  - from: "N02"
+    to: "N04"
+    type: "corridor"
+    label: ""
+  - from: "N04"
+    to: "N05"
+    type: "dangerous_path"
+    label: "9th km"
+  - from: "N04"
+    to: "N06"
+    type: "corridor"
+    label: ""
+  - from: "N05"
+    to: "N06"
+    type: "dangerous_path"
+    label: "Panic"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "→ Exit"

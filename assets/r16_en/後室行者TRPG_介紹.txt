@@ -1,0 +1,33 @@
+Backrooms Walker TRPG —— You Are Not a Hero, You Just Want to Survive
+===========================================================================
+
+**What kind of world is this?**
+You "noclipped" from the real world into The Backrooms — a parallel labyrinth made of infinite Levels, where yellow fluorescent lights buzz forever, the carpet is always damp, and every wall looks exactly the same. There is no manual, no mission, no way back. The Backrooms do not care about you; it bears no malice — it simply bears no goodwill either.
+
+**Who do you play?**
+An ordinary person. Maybe an office worker pulling a late shift, a delivery driver lost in a parking garage, a student who took a wrong door at home. Your only goal: survive, and find the next exit. The Backrooms have "Entities" — but most are not monsters you can defeat; they are part of the environment. Most of the time, you should run, not fight.
+
+**What makes this ruleset special?**
+First, combat is the last resort. Entities resist physical damage; a spear's value lies in keeping distance, not dealing harm — your real weapon is understanding the environment's rules. Second, an original "Sanity Points (SP)" system — The Backrooms continuously erode your mind; when Sanity hits zero you do not die, you become "The Lost." Third, character growth uses no levels, but "Milestones" — the important moments you live through in The Backrooms, each one changing who you are.
+
+**Who is it for?**
+Players who enjoy survival horror, resource management, and atmospheric immersion will love it. If you savor the moral dilemmas of This War of Mine, the wilderness survival of S.T.A.L.K.E.R., or simply want to experience the loneliness of finding meaning in an endless maze, this is your game. No extensive TRPG experience needed — if you can roll a twenty-sided die (D20), you can play.
+
+**Game Style Tags**
+- Combat Weight: Supporting (combat exists but is not the focus)
+- Strategic Depth: Highly Strategic (every decision significantly shapes the outcome; mistakes can be fatal)
+- Story-Driven: Story-Supporting (clear story but high player freedom)
+- Resource Management: Heavy Management (resources are scarce; every calculation matters)
+- Character Customization: Highly Customizable (many options; create a unique character)
+- Character Creation Complexity: Moderate (simple steps; quick to finish)
+- Rules Density: Medium Rules (core rules clear, not cumbersome)
+- GM Requirement: GM Required (a human GM must host; each scenario also supports "1 Player + 1 GM" solo mode)
+
+**Estimated Play Time**
+- Single Scenario: 2–4 hours
+- Full Campaign (eight linked scenarios S1 Awakening → S8 The Way Home): 25–40 hours
+
+**Basic Information**
+- Player Count: 1 Player + 1 GM (also supports 2–5 player groups)
+- Core Dice: D20 (twenty-sided die)
+- Solo Mode: every scenario is designed to support solo play by default. The rules include a built-in "Soliloquy Companion" mechanic (talking to yourself, recording logs, writing letters — all can restore Sanity) and dedicated difficulty adjustments (resource generation +25–50%, Entities become single-threat, enhanced NPC presence), so braving The Backrooms alone stays just as tense.

@@ -1,0 +1,78 @@
+# Last Stand TRPG — Scenario S4: Snowfield Survival Contest
+scenario:
+  id: S4
+  name: Snowfield Survival Contest
+  type: multiplayer_squad
+  tier: 4
+  difficulty: 4
+  estimated_duration: 5-7 hours
+  suggested_level: 7-8
+  description: >
+    Vikendi — a snow-covered abandoned ski resort. Every step leaves an indelible mark on the snow.
+    A Champion-tier squad is on this map — they're not looking for you, they're hunting you.
+    After nightfall, anyone without night-vision goggles is blind.
+
+map:
+  name: Vikendi (Snowfield)
+  size: 6 km × 6 km
+  terrain: [Snowfield (45%), Abandoned Town (25%), Forest (15%), Frozen Lake (15%)]
+  landmarks:
+    - { id: L1, name: Snow Castle, type: urban, loot_level: Abundant (Blue), description: A resort converted from an abandoned medieval-style castle }
+    - { id: L2, name: Cosmodrome, type: military, loot_level: Military (Purple), description: An abandoned space research facility — with labs underground }
+    - { id: L3, name: Frozen Lake Village, type: residential, loot_level: Common (Green), description: A small village by the frozen lake — moving on the ice is risky }
+    - { id: L4, name: Cement Plant, type: industrial, loot_level: Abundant (Blue), description: A large industrial building — abundant heavy cover }
+
+enemy_configuration:
+  total_squads: 10
+  squads:
+    - { type: Steady Squad, difficulty: ★★, count: 2 }
+    - { type: Assault Squad, difficulty: ★★★, count: 3 }
+    - { type: Ambush Squad, difficulty: ★★★, count: 2 }
+    - { type: Professional Squad, difficulty: ★★★★, count: 2 }
+    - { type: Champion-tier, difficulty: ★★★★★, count: 1 }
+
+circle:
+  type: Jump Reversal
+  description: Suddenly shifts sharply midway — breaking everyone's plans
+
+airdrop: { count: 4, special: Includes night-vision goggles and thermal imaging scopes }
+red_zone: { enabled: true }
+vehicles: [Snowmobile, Jeep, Armored Vehicle (Airdrop)]
+weather: Light Snow → Blizzard (night)
+time_of_day: Day → Night (night falls after the 4th circle)
+
+new_mechanics:
+  - Snow Tracks (Track check advantage, exposes movement route)
+  - Champion-tier Squad (strongest opponent on the field)
+  - Night Mode (limited vision, requires night-vision goggles)
+  - Blizzard Weather
+
+phases:
+  - phase: Silence of the Snow
+    turns: 3
+    gm_notes: >
+      The snowfield is unusually quiet — footsteps are absorbed by the snow. This silence is unnerving.
+      Use the footprint system to give players clues: "There are two sets of tracks in the snow — one is very fresh."
+
+  - phase: Shadow of the Champion-tier
+    turns: 3-4
+    gm_notes: >
+      Let players "feel" the presence of the Champion-tier — without direct contact.
+      "A figure on a distant slope — standing still. You can see him through your sniper scope,
+      and he is looking back at you through his. Then he turns and vanishes — not fleeing, but making a pact."
+
+  - phase: Blizzard Arrives
+    turns: 3
+    gm_notes: >
+      The weather changes abruptly — the blizzard drops visibility to 50m. Hearing fails.
+      This is the best time for the Champion-tier to hunt.
+      Also give players a counter chance — set traps in the blizzard, or use the blizzard to move hidden.
+
+  - phase: Night Final Battle
+    turns: 4-6
+    gm_notes: >
+      Night — squads without night-vision goggles can barely fight.
+      Let the final circle be at a lit location (such as the lights inside Snow Castle),
+      or force everyone to grope in the dark — the most desperate yet thrilling scene.
+
+victory_condition: Be the last surviving squad (or defeat the Champion-tier)

@@ -1,0 +1,94 @@
+name: "The Spreading Crack (Multiplayer)"
+type: "Gap Flooding"
+difficulty: "★★★★"
+recommended_marks: "5-8"
+players: "3-5 players"
+play_time: "3-4 sessions"
+core_attributes: ["AW", "TR", "AN"]
+
+opening: |
+  This is not a commission—it is an emergency. An old Eastside community is "disappearing"—space itself is collapsing.
+  A veteran Gap Walker sent a warning: "Someone put something that shouldn't be in a previous-generation Sealed Space.
+  The Crack is growing. If it isn't dealt with within three days, the entire area will become a permanent Gap Layer."
+
+npcs:
+  - name: "Old Chen's Notes"
+    type: "Clue"
+    desc: "Sealing records left by the previous-generation Gap Walker, scattered in three places: old residence (Surface), private Threshold (Gap Layer), undelivered letter"
+    companion_eligible: false
+  - name: "The Little Girl's Residual"
+    type: "the Forgotten"
+    desc: "A little girl who vanished in a 1940s air raid; Retrieval DC 22 to recover; she is not evil, she is forgetting itself"
+    companion_eligible: false
+  - name: "Path Guardian"
+    type: "Gap Creature"
+    desc: "A horse that can never cross the Threshold (from the old stable), blocking the only path to the core area"
+    companion_eligible: false
+  - name: "Local Residents"
+    type: "Anchor Point"
+    desc: "A few residents inside the sealed-off zone who refuse to evacuate; one old man is the little girl's younger brother, now in his 80s, the only 'anchor point'"
+    companion_eligible: false
+
+lost_items:
+  - name: "The Little Girl's Schoolbag"
+    tier: "Memory Crystal"
+    dc: 15
+    location: "Sealed-Off Zone Gap—the Residual of a school"
+    effect: "See the moment she was forgotten"
+  - name: "The Brother's Photo"
+    tier: "Common Lost Item"
+    dc: 8
+    location: "Sealed-Off Zone Gap—an old mansion"
+    effect: "Stirs the little girl's memory of her brother"
+  - name: "Old Chen's Sealing Notes"
+    tier: "Gap Construct"
+    dc: 18
+    location: "Assembled from three locations"
+    effect: "Gain the 'Knowledge Mark about this Sealed Space'"
+
+gap_creatures:
+  - name: "Path Guardian (Horse)"
+    type: "Threshold Guardian"
+    negotiation_dc: 16
+    location: "Edge of the core area"
+    liberation: "Speaking the True Name auto-succeeds (clue in Old Chen's notes); after each negotiation, wait 3 turns, DC -2"
+    reward: "Yields the path to the core area"
+  - name: "the Forgotten (Little Girl)"
+    type: "the Forgotten"
+    negotiation_dc: 22
+    location: "Center of the Crack"
+    liberation: "DC drops to 16 with the three items (photo + schoolbag + name); drops to 10 when the brother is present"
+    reward: "Return Mark +1; the Crack begins to heal"
+
+scenes:
+  - name: "Assess the Crack"
+    desc: "Arrive at the edge of the sealed-off zone. Awareness DC 12 to see the spatial anomaly; Traverse DC 18 to enter safely, failure loses 1d4 Gap Endurance (GE)."
+    map_ref: "MAP-07 (Eastside Crack Community) — Sealed-Off Zone Entrance"
+  - name: "Fight the Expansion"
+    desc: "The Crack expands 10 meters per day, Traverse DC +2/day. Must be resolved within three days."
+    map_ref: "MAP-07 — Sealed-Off Zone Gap Layer"
+  - name: "Path Guardian"
+    desc: "The horse-shaped guardian on the outskirts of the core area. Negotiation DC 16; waiting strategy -2 each time."
+    map_ref: "MAP-07 — Path to the Crack Core"
+  - name: "Find Old Chen's Notes"
+    desc: "Three puzzle-like notes record the sealing method, the little girl's name, and the liberation attempts. Reading them in full grants the Knowledge Mark."
+    map_ref: "MAP-07 — Old Mansion / School / Beside the Core"
+  - name: "The Little Girl—the Forgotten"
+    desc: "Find her in the core area. Retrieval DC 22 to identify her; needs the brother's photo, schoolbag, and name."
+    map_ref: "MAP-07 — Center of the Crack"
+  - name: "Liberate vs. Seal"
+    desc: "Liberate (Negotiation DC 22, drops to 16 with items) to heal the Crack; or re-seal (Anchor DC 20) to delay."
+    map_ref: "MAP-07 — Center of the Crack"
+  - name: "The Brother Who Assists Liberation"
+    desc: "An old man in his 80s is willing to come into the Gap to see his sister. When present, Liberation DC drops to 10."
+    map_ref: "MAP-07 — Surface Old Mansion"
+
+endings:
+  - "Liberation success: the Crack heals, the brother and sister's Residuals meet briefly. Return Mark +1, special achievement"
+  - "Seal success: temporarily safe, may become a setup for other scenarios in the future"
+  - "Liberation failure: the block is swallowed by the Gap, may trigger a Gap Sickness check"
+
+rewards:
+  - "Return Mark × 2 (on liberation success)"
+
+companion_recruitment: []

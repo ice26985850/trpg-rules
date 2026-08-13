@@ -1,0 +1,79 @@
+# Twin Doom (Twin Doom)  —  S5 The Final Price
+# Flagship 'Ruthless' + AI Escort Vessel 'Void', two ships docked together
+# 35 nodes, 8 decks (Ruthless 6 decks + Void 2 decks)
+# Corresponds to scenario: S5_The Final Price
+nodes:
+  # === Ruthless (Flagship) ===
+  - { id: N1, label: "Hangar (Breach Point)", type: entry, x: 80, y: 380, deck: 1, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: null, explored: true }
+  - { id: N2, label: "Ruthless Main Corridor L1", type: corridor, x: 200, y: 380, deck: 1, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: null, explored: false }
+  - { id: N3, label: "Defender Rally Point", type: room, x: 320, y: 380, deck: 1, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "4 Marines patrolling", explored: false }
+  - { id: N4, label: "Main Elevator L1", type: corridor, x: 200, y: 310, deck: 1, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: null, explored: false }
+  - { id: N5, label: "Engineering Bay Entrance", type: room, x: 440, y: 380, deck: 1, vessel: "Ruthless", gravity: "High Temperature  —  Standard Gravity", hazard: "Engine noise  —  Disadvantage on PER checks", explored: false }
+  - { id: N6, label: "L2 Corridor", type: corridor, x: 200, y: 240, deck: 2, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: null, explored: false }
+  - { id: N7, label: "Barracks L2", type: room, x: 320, y: 240, deck: 2, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "2 Guards", explored: false }
+  - { id: N8, label: "Armory", type: room, x: 440, y: 240, deck: 2, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "Locked  —  ENG DC 18. Contains advanced weapons", explored: false }
+  - { id: N9, label: "L3 Corridor", type: corridor, x: 200, y: 170, deck: 3, vessel: "Ruthless", gravity: "Variable-G (enemy-controlled)", hazard: null, explored: false }
+  - { id: N10, label: "Comms Array", type: room, x: 320, y: 170, deck: 3, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "Can intercept or jam enemy communications", explored: false }
+  - { id: N11, label: "L4 Corridor", type: corridor, x: 200, y: 100, deck: 4, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "2 Auto-Turrets", explored: false }
+  - { id: N12, label: "Data Center", type: room, x: 320, y: 100, deck: 4, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "Secondary objective  —  can download tactical data", explored: false }
+  - { id: N13, label: "L5 Corridor", type: corridor, x: 200, y: 50, deck: 5, vessel: "Ruthless", gravity: "Low Gravity (0.3G)", hazard: null, explored: false }
+  - { id: N14, label: "Command Deck Blockade Line", type: corridor, x: 320, y: 50, deck: 5, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "4 Marines + Flagship Captain (Boss CR 6)", explored: false }
+  - { id: N15, label: "Bridge ⭐", type: objective, x: 440, y: 50, deck: 5, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "Final battle with Flagship Captain. After defeat, Ruthless command system goes offline", explored: false }
+  - { id: N16, label: "Self-Destruct Control Room", type: room, x: 440, y: 170, deck: 3, vessel: "Ruthless", gravity: "High Gravity (3G)  —  anti-intrusion", hazard: "Hack self-destruct DC 20+. Success → countdown +2d4 rounds", explored: false }
+  - { id: N17, label: "Escape Pod Bay (Extraction)", type: objective, x: 80, y: 80, deck: 5, vessel: "Ruthless", gravity: "Standard Gravity (1G)", hazard: "Partially destroyed  —  vacuum exposure. Max 2 per pod", explored: false }
+
+  # === Docking Connector ===
+  - { id: N18, label: "Docking Connector Corridor", type: corridor, x: 500, y: 250, deck: 3, vessel: "Connector", gravity: "Zero-G (0G)", hazard: "Narrow passage  —  only one person. Enemies may appear on either side", explored: false }
+
+  # === Void (AI Vessel) ===
+  - { id: N19, label: "Void Access Point", type: entry, x: 580, y: 250, deck: 1, vessel: "Void", gravity: "Zero-G (0G)", hazard: null, explored: false }
+  - { id: N20, label: "Void Corridor", type: corridor, x: 660, y: 250, deck: 1, vessel: "Void", gravity: "Zero-G (0G)", hazard: "Walls reconfigure every 2 rounds  —  changes cover", explored: false }
+  - { id: N21, label: "Defense Node A", type: room, x: 740, y: 250, deck: 1, vessel: "Void", gravity: "Zero-G (0G)", hazard: "2 Defense Robot", explored: false }
+  - { id: N22, label: "Void Upper Corridor", type: corridor, x: 660, y: 180, deck: 2, vessel: "Void", gravity: "Zero-G (0G)", hazard: null, explored: false }
+  - { id: N23, label: "Defense Node B", type: room, x: 740, y: 180, deck: 2, vessel: "Void", gravity: "Zero-G (0G)", hazard: "1 Defense Robot + Laser Fence", explored: false }
+  - { id: N24, label: "AI Core Antechamberchamber", type: corridor, x: 660, y: 110, deck: 2, vessel: "Void", gravity: "Zero-G (0G)", hazard: "Blockade Turret Matrix (Boss CR 6)", explored: false }
+  - { id: N25, label: "AI Core ⭐", type: objective, x: 740, y: 110, deck: 2, vessel: "Void", gravity: "Zero-G (0G)", hazard: "Hack central AI (ENG DC 22). Walls reconfigure each round", explored: false }
+
+  # === Ruthless Reactor Route ===
+  - { id: N26, label: "Reactor Outer Layer", type: room, x: 560, y: 380, deck: 1, vessel: "Ruthless", gravity: "High Temp & High Gravity (3G)", hazard: "Radiation  —  RES DC 13 each round or take 1d4", explored: false }
+  - { id: N27, label: "Reactor Core", type: room, x: 680, y: 380, deck: 1, vessel: "Ruthless", gravity: "Extreme Gravity (4G)", hazard: "If overloaded  —  countdown halved. Can manually detonate as a giant bomb", explored: false }
+
+edges:
+  # Inside Ruthless
+  - { from: N1, to: N2, type: "Corridor" }
+  - { from: N2, to: N3, type: "Corridor" }
+  - { from: N2, to: N4, type: "Corridor" }
+  - { from: N3, to: N5, type: "Corridor" }
+  - { from: N4, to: N6, type: "Elevator" }
+  - { from: N6, to: N7, type: "Corridor" }
+  - { from: N6, to: N8, type: "Hatch (Locked)" }
+  - { from: N6, to: N9, type: "Stairwell" }
+  - { from: N9, to: N10, type: "Corridor" }
+  - { from: N9, to: N16, type: "Hatch (Locked)" }
+  - { from: N9, to: N11, type: "Stairwell" }
+  - { from: N11, to: N12, type: "Hatch" }
+  - { from: N11, to: N13, type: "Stairwell" }
+  - { from: N13, to: N14, type: "Corridor" }
+  - { from: N14, to: N15, type: "Hatch (Blocked)" }
+  - { from: N14, to: N17, type: "Corridor" }
+  - { from: N5, to: N26, type: "Hatch" }
+  - { from: N26, to: N27, type: "Hatch (Radiation Blocked)" }
+  # Connection
+  - { from: N10, to: N18, type: "Docking Passage" }
+  - { from: N18, to: N19, type: "Docking Passage  —  enter Void" }
+  # Inside Void
+  - { from: N19, to: N20, type: "Corridor (dynamic reconfiguration)" }
+  - { from: N20, to: N21, type: "Corridor" }
+  - { from: N20, to: N22, type: "Vertical Passage" }
+  - { from: N22, to: N23, type: "Corridor" }
+  - { from: N22, to: N24, type: "Corridor" }
+  - { from: N24, to: N25, type: "Hatch (Quantum Lock  —  DC 22)" }
+  # Shortcut Route
+  - { from: N3, to: N18, type: "Maintenance Shaft (hidden  —  PER DC 18)" }
+
+regions:
+  - { name: "Ruthless Lower Decks (L1-L2)", color: "#B3C6FF", nodes: [N1, N2, N3, N4, N5, N6, N7, N8, N26, N27] }
+  - { name: "Ruthless Mid Decks (L3-L4)", color: "#FFC6B3", nodes: [N9, N10, N11, N12, N16] }
+  - { name: "Ruthless Upper Deck (L5)", color: "#FFB3B3", nodes: [N13, N14, N15, N17] }
+  - { name: "Docking Connector", color: "#D9D9D9", nodes: [N18] }
+  - { name: "Void (AI Vessel)", color: "#C6B3FF", nodes: [N19, N20, N21, N22, N23, N24, N25] }

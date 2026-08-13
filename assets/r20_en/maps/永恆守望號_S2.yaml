@@ -1,0 +1,46 @@
+# Eternal Watch (Eternal Watch)  —  S2 Abyssal Corridor
+# Abandoned Concord Carrier, 18 core nodes, 5 decks
+# Corresponds to scenario: S2_Abyssal Corridor
+nodes:
+  - { id: N1, label: "Hangar Deck (Breach Point)", type: entry, x: 100, y: 350, deck: 1, gravity: "Standard Gravity (1G)", environment: "Pressurized Area  —  partially damaged", hazard: "Abandoned fighter wreckage (cover)", explored: true }
+  - { id: N2, label: "Hangar Control Room", type: room, x: 100, y: 250, deck: 1, gravity: "Standard Gravity (1G)", hazard: "2 Defense Robots (rusted)", explored: false }
+  - { id: N3, label: "Main Elevator Shaft", type: corridor, x: 250, y: 300, deck: 1, gravity: "Variable-G (malfunction)", hazard: "Elevator cable snapped  —  Climb check DC 13", explored: false }
+  - { id: N4, label: "Deck 1 Main Corridor", type: corridor, x: 250, y: 150, deck: 1, gravity: "Standard Gravity (1G)", hazard: null, explored: false }
+  - { id: N5, label: "Barracks", type: room, x: 400, y: 150, deck: 1, gravity: "Standard Gravity (1G)", hazard: "Abandoned 50 years  —  dust and mold", explored: false }
+  - { id: N6, label: "Mess Hall / Lounge", type: room, x: 550, y: 150, deck: 1, gravity: "Standard Gravity (1G)", hazard: null, explored: false }
+  - { id: N7, label: "Medical Bay", type: room, x: 400, y: 300, deck: 2, gravity: "Standard Gravity (1G)", hazard: "Abandoned medicine (may be useful)", explored: false }
+  - { id: N8, label: "Laboratory", type: room, x: 550, y: 300, deck: 2, gravity: "Low Gravity (0.3G)  —  gravity panel malfunction", hazard: "Chemical leak (biohazard)", explored: false }
+  - { id: N9, label: "Deck 2 Main Corridor", type: corridor, x: 400, y: 220, deck: 2, gravity: "Standard Gravity (1G)", hazard: "3 Auto-Turrets", explored: false }
+  - { id: N10, label: "Data Center (Old)", type: room, x: 550, y: 220, deck: 2, gravity: "Standard Gravity (1G)", hazard: "Some servers still running", explored: false }
+  - { id: N11, label: "Repair Shaft", type: corridor, x: 250, y: 400, deck: 3, gravity: "Zero-G (0G)", hazard: "Narrow  —  only one person", explored: false }
+  - { id: N12, label: "Deck 3", type: corridor, x: 400, y: 400, deck: 3, gravity: "Variable-G", hazard: null, explored: false }
+  - { id: N13, label: "Engine Control Room", type: room, x: 550, y: 400, deck: 3, gravity: "High Gravity (2G)", hazard: "Radiation Zone", explored: false }
+  - { id: N14, label: "Reactor Room", type: room, x: 700, y: 400, deck: 4, gravity: "High Temperature  —  Standard Gravity", hazard: "Radiation (1d4 per round)", explored: false }
+  - { id: N15, label: "AI Core Room", type: room, x: 700, y: 250, deck: 4, gravity: "Zero-G (0G)", hazard: "Watcher AI anomaly", explored: false }
+  - { id: N16, label: "Pre-Bridge Corridor", type: corridor, x: 550, y: 120, deck: 5, gravity: "Standard Gravity (1G)", hazard: "3 Auto-Turrets", explored: false }
+  - { id: N17, label: "Bridge", type: objective, x: 700, y: 80, deck: 5, gravity: "Standard Gravity (1G)", hazard: null, explored: false }
+  - { id: N18, label: "Captain's Quarters", type: room, x: 700, y: 160, deck: 5, gravity: "Standard Gravity (1G)", hazard: "Captain's Log (story item)", explored: false }
+edges:
+  - { from: N1, to: N2, type: "Hatch" }
+  - { from: N1, to: N3, type: "Corridor" }
+  - { from: N3, to: N4, type: "Elevator Shaft" }
+  - { from: N3, to: N11, type: "Repair Shaft" }
+  - { from: N4, to: N5, type: "Corridor" }
+  - { from: N5, to: N6, type: "Corridor" }
+  - { from: N4, to: N7, type: "Stairwell" }
+  - { from: N7, to: N8, type: "Corridor" }
+  - { from: N7, to: N9, type: "Corridor" }
+  - { from: N9, to: N10, type: "Hatch" }
+  - { from: N9, to: N12, type: "Stairwell" }
+  - { from: N12, to: N13, type: "Corridor" }
+  - { from: N13, to: N14, type: "Hatch (Blocked)" }
+  - { from: N11, to: N15, type: "Repair Shaft" }
+  - { from: N10, to: N16, type: "Elevator" }
+  - { from: N16, to: N17, type: "Hatch (Locked)" }
+  - { from: N17, to: N18, type: "Hatch" }
+regions:
+  - { name: "Deck 1  —  Hangar & Living Quarters", color: "#B3D9FF", nodes: [N1, N2, N3, N4, N5, N6] }
+  - { name: "Deck 2  —  Research & Data", color: "#FFD9B3", nodes: [N7, N8, N9, N10] }
+  - { name: "Deck 3  —  Power & Repair", color: "#FFB3B3", nodes: [N11, N12, N13] }
+  - { name: "Deck 4  —  Core Systems", color: "#D9B3FF", nodes: [N14, N15] }
+  - { name: "Deck 5  —  Command Deck", color: "#B3FFD9", nodes: [N16, N17, N18] }

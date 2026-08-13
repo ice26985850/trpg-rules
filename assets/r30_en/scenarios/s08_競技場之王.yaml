@@ -1,0 +1,32 @@
+scenario:
+  id: s08
+  title: "King of the Arena"
+  source: "League of Legends TRPG Campaign Script Collection · Multiplayer Scenario · Side Story S4"
+  mode: "Multiplayer"
+  standalone: true
+  level_range: "Lv.10-15"
+  region: "Noxus Arena"
+  estimated_time: "1-2 sessions"
+  summary: >
+    The purest form of arena deathmatch. The players participate in the Noxian
+    underground arena league in 2v2 or 3v3 format, challenging increasingly powerful
+    opponent combinations, ultimately facing the reigning champion.
+  rounds:
+    - round: "Qualifier"
+      level: "Lv.10"
+      opponent: "Noxus Soldiers ×4"
+    - round: "Quarterfinals"
+      level: "Lv.11"
+      opponent: "Assassin Duo (2 Assassin-type NPCs)"
+    - round: "Semifinals"
+      level: "Lv.12"
+      opponent: "Beast Tamer + 2 War Bears"
+    - round: "Finals"
+      level: "Lv.13-14"
+      opponent: "Former Champion Iron Fist + Partner"
+    - round: "Championship Challenge"
+      level: "Lv.15"
+      opponent: "Darius (optional — defeating him allows you to invite him into your Bond)"
+  rewards:
+    equipment: "Champion's Belt (Attack Damage (AD)+20, Health Points (HP)+200, +10% damage in arena)"
+    bond: "Darius Bond"

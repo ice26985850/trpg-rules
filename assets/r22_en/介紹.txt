@@ -1,0 +1,36 @@
+Death Return TRPG — Learn through death, in the endless loop
+
+## Reference Work Disclaimer
+The core mechanic of this work, "Death Return (Return)" — returning to a save point after death, keeping your memories yet losing everything else — was inspired by the same-named ability in *Re:Zero − Starting Life in Another World* (original story by Tappei Nagatsuki). This rulebook is an original setting and system expansion, not an officially licensed adaptation.
+
+## What kind of world is this?
+You are a "Returner" who returns to the past after dying. In Ashfall City of the Age of Embers, time is leaking from the seams — some streets repeat the same minute, while different districts flow at wildly different speeds. Legend says that when the Time Serpent Ouroboros was pierced, the mark its blood stamped upon mortal souls granted you the curse of starting over again and again. There are no heroic epics here — only an ordinary person, between death and rebirth, trying to piece together the truth buried within the loop.
+
+## Who do you play, and what is the core gameplay?
+You play a Returner who has just awakened. Every time you die, you are dragged back to the nearest Save Point, carrying away all your memories yet losing your money, equipment, and relationships. The core loop is simple: gather intel → plan your route → take action → die or succeed. You don't need to get it right the first time — you only need to survive back to the start, and carry the truth you learned this round into the next.
+
+## System Highlights
+- **Memory Fragments**: This is the rule's most distinctive resource. Each round you can carry only a limited number of memory fragments — about an event, a person, a place, a skill, even a fate. The more you remember, the stronger you become next round; but capacity is limited, so you must choose "what matters most to carry forward."
+- **Memory Is Power**: The first time you face an enemy you are at a disadvantage; but once you carry a memory fragment about it, the higher your Memory Value and the more weaknesses you know, the more you turn the tables — even automatically seeing through its weaknesses. Your experience is written directly into combat.
+- **Rift Marks (Rift) and Their Cost**: Every death accumulates Rift Marks — psychological trauma; the higher they climb, the closer you are to losing control and madness. Death is not a free do-over; it leaves a mark upon your soul.
+
+## Who is this for?
+Players who enjoy mystery deduction, narrative immersion, and "learn-to-grow-stronger" time-loop stories will feel right at home. You needn't be a combat fanatic — investigating the mayor's death, maneuvering among three great factions, and persuading key NPCs are often more effective than drawing your sword. Suited to players with basic TRPG experience who enjoy strategy and resource trade-offs; the character-creation flow is clear, and newcomers can get started smoothly under a GM's guidance. The rules default to solo play (1 player + 1 GM), and can be expanded to 2–3 players via the GM Rules Book 14-3 "Multi-Player Variant"; each scenario's ending includes "Multi-Player GM Tips" noting specific role division and enemy scaling.
+
+## Play Style Tags
+- Combat weight: Important
+- Strategic depth: High strategy
+- Story-driven: Story-supported
+- Resource management: Moderate management
+- Character customization: High
+- Character creation complexity: Medium
+- Rule density: Mid-weight
+- GM requirement: GM required
+
+## Estimated Play Time
+- Single scenario: ~3–6 hours (from character creation to scenario completion; the epic final chapter is longer)
+- Full campaign: The connected "Age of Embers" main plot of S1–S5, ~30–50 hours
+
+## Basic Information
+- Player count: 1 player + 1 GM (expandable via the multi-player variant)
+- Core dice: twenty-sided die (d20). The check formula is "d20 + Attribute Modifier (MOD) + Skill Level" against the Difficulty Class (DC)

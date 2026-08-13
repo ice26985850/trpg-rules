@@ -1,0 +1,89 @@
+name: The Traitor's Genetic Legacy
+difficulty: High
+mode: Astartes · Multiplayer
+players: 2-4
+location: Wreck of the Fallen Warship "Justicar"
+recommended_attributes: 4–5 growths
+opening_description: |
+  The transport ship is repaired (or the Eldar helped repair it)—but it cannot take off. The
+  orbital defense system above the planet's atmosphere is still active and will shoot down any ship
+  attempting to leave. The squad must travel to the wreck of the fallen Imperial cruiser "Justicar"
+  to shut down the orbital defense system—or hijack the ship's comms array to call for rescue.
+structure_phases:
+- phase: Arrival at the Wreck
+  content: |
+    The Justicar was shot down by friendly fire while Exterminatus was being carried out—not by
+    Chaos, but by its own people. The shipwreck is enormous, stretching for kilometers.
+- phase: The Bridge Mystery
+  content: |
+    The ship's black box recording reveals a truth: the "reason" for Exterminatus may have been a
+    misjudgment. The Chaos contamination on the planet was exaggerated, or worse—it was a certain
+    Inquisitor's personal vendetta.
+- phase: Surviving Crew
+  content: |
+    Some sections of the ship still have people alive—30 Imperial Navy crew members were trapped in
+    sealed compartments when the ship fell. They have been trapped for 47 days. Half of them have
+    begun to doubt the Emperor.
+- phase: The Temptation of Chaos
+  content: |
+    Deep in the wreck lies a Chaos Space Marine—a traitor who was active on this planet before
+    Exterminatus began. He senses the presence of the Astartes and tries to persuade them to join
+    him: "You have already been abandoned by the Imperium—why still fight for them?"
+oath_conflict: |
+  Dual Conflict: 1. Protect the Innocent vs. Obey Orders: If Exterminatus was a misjudgment—what
+  should the squad do? Take the evidence back? Or continue to carry out the Imperium's sentence?
+  2. Oath to the Emperor vs. Survival: The Chaos Space Marine's question is real—you truly have been
+  abandoned by the Imperium. How much longer can your faith hold?
+key_npcs:
+- name: Chaos Space Marine "the Forgotten" Kassar
+  role: Boss / Dialogue Target
+  detail: |
+    He was once a member of the Imperial Fists—left on this planet to die 300 years ago. His fall
+    was not from ambition, but from despair. He can be a mirror—showing what an Astartes becomes if
+    it loses all hope.
+- name: The Captain's Final Log
+  role: Clue
+  detail: The truth the captain recorded before his death. He tried to stop Exterminatus—and was executed by the Inquisitor on charges of "treason."
+- name: The Ship's Machine Spirit
+  role: Environment
+  detail: The Machine Spirit of the Justicar is still active—it remembers everything. It will play the captain's final prayer over the ship's internal broadcast system.
+key_checks:
+- scene: Recover black box data
+  check: Tech-Use (Hard)
+  tn: —
+  success: Obtain the truth
+  failure: —
+- scene: Dialogue with Kassar
+  check: Oratory (Extreme) or Mind (Extreme)
+  tn: —
+  success: Reject his logic—or be shaken
+  failure: —
+- scene: Rescue the crew
+  check: Command (Standard)
+  tn: —
+  success: Organize the crew's evacuation
+  failure: —
+encounters:
+- name: Ship Corridors
+  enemies: Low-tier Mutants ×4 (mutated crew)
+  cr: 1×4
+  tactic: Melee in confined spaces
+- name: Engine Room
+  enemies: Warp Shadows ×2
+  cr: 2×2
+  tactic: Concentration of Warp energy
+- name: Bridge (optional finale)
+  enemies: Chaos Space Marine Kassar
+  cr: '4'
+  tactic: If he was not persuaded
+branch_endings:
+- choice: Persuade Kassar
+  result: |
+    He cannot be saved—his corruption runs too deep. But at the last moment he can choose
+    self-destruction rather than fight the squad. His final words before death: "Tell the Emperor...
+    I did not forget Him."
+- choice: Shaken by Kassar
+  result: A warrior may gain a permanent +2 Corruption and receive the brand of "Suspicion of the Warmaster."
+- choice: Obtain the Truth
+  result: The black box data becomes the key to the finale—it can be used to prove Exterminatus was wrong.
+map_ref: "maps/map19_justicar"

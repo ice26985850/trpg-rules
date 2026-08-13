@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <linearGradient id="abyssGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="40%" stop-color="#1a0a2e"/>
+      <stop offset="70%" stop-color="#0d0015"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="rfitGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4B0082" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="600" fill="url(#abyssGrad)"/>
+
+  <!-- Rift crevice (center) -->
+  <path d="M300,60 L320,200 L310,340 L330,480 L340,590" fill="none" stroke="#4B0082" stroke-width="2" opacity="0.3"/>
+  <path d="M360,60 L350,200 L360,340 L345,480 L340,590" fill="none" stroke="#4B0082" stroke-width="2" opacity="0.3"/>
+
+  <!-- Vertical dashed line in descent direction -->
+  <line x1="340" y1="100" x2="340" y2="540" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+
+  <!-- ====== Ground Layer ====== -->
+  <rect x="180" y="65" width="320" height="65" rx="10" fill="none" stroke="#2E8B57" stroke-width="2" stroke-dasharray="3,3" opacity="0.4"/>
+
+  <!-- A: Rift Edge -->
+  <rect x="200" y="40" width="130" height="50" rx="8" fill="#2E8B57" stroke="#4CAF50" stroke-width="2.5"/>
+  <text x="265" y="60" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Rift Edge</text>
+  <text x="265" y="78" text-anchor="middle" fill="#90EE90" font-size="8">📍 Start · Allies Assemble</text>
+
+  <!-- B: Descent Point -->
+  <rect x="380" y="40" width="100" height="50" rx="8" fill="#2E8B57" stroke="#4CAF50" stroke-width="2"/>
+  <text x="430" y="60" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Descent Point</text>
+  <text x="430" y="78" text-anchor="middle" fill="#90EE90" font-size="8">Pick companions</text>
+
+  <!-- Connection A→B -->
+  <line x1="330" y1="65" x2="380" y2="65" stroke="#4CAF50" stroke-width="2"/>
+
+  <!-- Connection B→C -->
+  <line x1="430" y1="90" x2="340" y2="150" stroke="#4169E1" stroke-width="2"/>
+
+  <!-- Ground Layer label -->
+  <text x="260" y="120" fill="#2E8B57" font-size="9" opacity="0.6">━━ Ground Layer ━━</text>
+
+  <!-- ====== 100m: Seven-Headed Serpent ====== -->
+  <rect x="240" y="145" width="200" height="55" rx="10" fill="#4169E1" stroke="#6B8CF6" stroke-width="2"/>
+  <text x="340" y="167" text-anchor="middle" fill="white" font-size="12" font-weight="bold">100m — Seven-Headed Serpent Nest</text>
+  <text x="340" y="185" text-anchor="middle" fill="#ffaaaa" font-size="8">⚠ Seven-Headed Serpent (Elite) · 7 heads attack independently</text>
+
+  <!-- Connection C→D -->
+  <line x1="340" y1="200" x2="310" y2="250" stroke="#8B5CF6" stroke-width="2"/>
+
+  <text x="200" y="230" fill="#4169E1" font-size="9" opacity="0.6">100m ━━</text>
+
+  <!-- ====== 300m: Void Flow Zone ====== -->
+  <rect x="200" y="245" width="280" height="65" rx="10" fill="#8B5CF6" stroke="#A78BFA" stroke-width="2"/>
+  <text x="340" y="267" text-anchor="middle" fill="white" font-size="12" font-weight="bold">300m — Void Flow Zone</text>
+  <text x="340" y="285" text-anchor="middle" fill="#ffaaaa" font-size="8">⚠ Void Fluid ×3 (Elite) · Physical Disadvantage · Splits at HP&lt;10</text>
+  <text x="340" y="300" text-anchor="middle" fill="#ddbbff" font-size="7">Devour Contact: Will DC 15 or Humanity Value -1d4</text>
+
+  <!-- Connection D→E -->
+  <line x1="340" y1="310" x2="340" y2="360" stroke="#DC143C" stroke-width="2.5"/>
+
+  <text x="200" y="340" fill="#8B5CF6" font-size="9" opacity="0.6">300m ━━</text>
+
+  <!-- ====== 500m: Abyssal Gatekeeper ====== -->
+  <rect x="210" y="355" width="260" height="80" rx="12" fill="#DC143C" stroke="#FF4444" stroke-width="3"/>
+  <text x="340" y="382" text-anchor="middle" fill="white" font-size="13" font-weight="bold">⚠ 500m — Gatekeeper Nest</text>
+  <text x="340" y="400" text-anchor="middle" fill="#ffaaaa" font-size="9">Abyssal Gatekeeper (Boss)</text>
+  <text x="340" y="415" text-anchor="middle" fill="#ffcccc" font-size="7">Void Tentacle · Worm's Roar · Abyssal Gaze (Ultimate)</text>
+  <text x="340" y="428" text-anchor="middle" fill="#ff8888" font-size="7">⚠ Uncommunicative · Lost reason</text>
+
+  <!-- Connection E→F -->
+  <line x1="340" y1="435" x2="340" y2="490" stroke="#FFD700" stroke-width="2.5" stroke-dasharray="8,2"/>
+
+  <text x="200" y="465" fill="#DC143C" font-size="9" opacity="0.6">500m ━━</text>
+
+  <!-- ====== Deepest: Shard Hall ====== -->
+  <rect x="200" y="485" width="280" height="55" rx="15" fill="#FFD700" stroke="#FFA500" stroke-width="3"/>
+  <text x="340" y="507" text-anchor="middle" fill="#1a1a2e" font-size="13" font-weight="bold">💎 Shard Hall</text>
+  <text x="340" y="525" text-anchor="middle" fill="#333" font-size="8">Memory shards of the Void Abyss Worm · Void Abyss Echo rests here</text>
+  <text x="340" y="537" text-anchor="middle" fill="#661a00" font-size="8">❓ Final Choice</text>
+
+  <!-- G: Core Shard -->
+  <circle cx="410" cy="565" r="28" fill="#FFD700" stroke="#FFA500" stroke-width="3"/>
+  <circle cx="410" cy="565" r="18" fill="#FFF8DC" opacity="0.8"/>
+  <circle cx="410" cy="565" r="8" fill="#FFA500"/>
+  <text x="410" y="570" text-anchor="middle" fill="#1a1a1a" font-size="7" font-weight="bold">Core Shard</text>
+
+  <!-- Connection F→G -->
+  <line x1="340" y1="540" x2="395" y2="550" stroke="#FFD700" stroke-width="2"/>
+
+  <!-- Three choice markers -->
+  <g transform="translate(460, 520)">
+    <rect x="0" y="0" width="100" height="20" rx="4" fill="#DC143C" opacity="0.8"/>
+    <text x="50" y="14" text-anchor="middle" fill="white" font-size="8">① Absorb → New God</text>
+    <rect x="0" y="23" width="100" height="20" rx="4" fill="#4169E1" opacity="0.8"/>
+    <text x="50" y="37" text-anchor="middle" fill="white" font-size="8">② Destroy → Mortal</text>
+    <rect x="0" y="46" width="100" height="20" rx="4" fill="#FFD700" opacity="0.8"/>
+    <text x="50" y="60" text-anchor="middle" fill="#1a1a1a" font-size="8">③ Merge → Balance</text>
+  </g>
+
+  <!-- Floating light points (memory shards) -->
+  <circle cx="280" cy="500" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="310" cy="520" r="1.5" fill="#FFD700" opacity="0.4"/>
+  <circle cx="360" cy="505" r="2.5" fill="#FFD700" opacity="0.7"/>
+  <circle cx="390" cy="515" r="1.5" fill="#FFD700" opacity="0.5"/>
+  <circle cx="300" cy="495" r="1" fill="#FFA500" opacity="0.5"/>
+  <circle cx="370" cy="495" r="2" fill="#FFA500" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="340" y="15" text-anchor="middle" fill="#FFD700" font-size="16" font-weight="bold">The Final Evolution — Abyssal Rift</text>
+  <text x="340" y="30" text-anchor="middle" fill="#888" font-size="9">S5 · Descend → Shard Hall → Final Choice</text>
+
+  <!-- Depth scale -->
+  <g transform="translate(595, 125)">
+    <text x="0" y="0" fill="#888" font-size="7">Depth</text>
+    <line x1="0" y1="5" x2="0" y2="160" stroke="#888" stroke-width="1"/>
+    <text x="5" y="8" fill="#888" font-size="6">Ground</text>
+    <rect x="-3" y="32" width="6" height="2" fill="#4169E1"/><text x="10" y="35" fill="#4169E1" font-size="6">100m</text>
+    <rect x="-3" y="73" width="6" height="2" fill="#8B5CF6"/><text x="10" y="76" fill="#8B5CF6" font-size="6">300m</text>
+    <rect x="-3" y="155" width="6" height="2" fill="#DC143C"/><text x="10" y="150" fill="#DC143C" font-size="6">500m</text>
+  </g>
+</svg>

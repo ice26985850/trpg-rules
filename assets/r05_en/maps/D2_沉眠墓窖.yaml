@@ -1,0 +1,82 @@
+id: D2
+name: Slumbering Tomb
+recommended_rank: "C/D (CR 13-18)"
+theme: Undead Tomb
+grid: { cols: 4, rows: 4 }
+rooms:
+  - id: R1
+    name: Collapsed Entrance
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: Sole entry/exit point; retreating here means a safe escape.
+  - id: R2
+    name: Antechamber
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R4]
+    cr: 13
+    enemies: [Skeleton Warriors x3]
+    combat_map: maps/D2_戰鬥_前室.yaml
+    desc: Skeleton Warriors x3 guard the door.
+  - id: R3
+    name: Burial Corridor
+    type: treasure
+    gx: 2
+    gy: 0
+    links: [R2, R5]
+    treasure: Bone Amulet x2, Decayed Goldware x3, G 200~400
+    desc: Pile of burial goldware.
+  - id: R4
+    name: Spike Trap Room
+    type: trap
+    gx: 1
+    gy: 1
+    links: [R2, R6]
+    trap: Medium (Floor Spikes, DC16 / 2d6)
+    desc: Medium trap spike room.
+  - id: R5
+    name: Mortuary Hall
+    type: combat
+    gx: 2
+    gy: 1
+    links: [R3, R6]
+    cr: 15
+    enemies: [Zombies x4]
+    combat_map: maps/D2_戰鬥_停靈堂.yaml
+    desc: Resting place of Zombies x4.
+  - id: R6
+    name: Phantom Corridor
+    type: trap
+    gx: 1
+    gy: 2
+    links: [R4, R5, R7]
+    trap: Strong (Phantom Misdirection + Falling Rocks, DC20 / 3d6 + Stun)
+    desc: Strong trap phantom corridor.
+  - id: R7
+    name: Lich Chamber
+    type: elite
+    gx: 2
+    gy: 2
+    links: [R6, R8]
+    cr: 18
+    enemies: [Graveyard Lich (Boss)]
+    combat_map: maps/D2_戰鬥_巫妖密室.yaml
+    desc: Mini-boss Graveyard Lich (CR18).
+  - id: R8
+    name: Tomb Master's Coffin Chamber
+    type: treasure
+    gx: 3
+    gy: 2
+    links: [R7, R9]
+    treasure: Tomb Key (Plot Item), Epic Recipe (20% chance)
+    desc: Tomb master's coffin; holds the key to clear the floor.
+  - id: R9
+    name: Rift Exit
+    type: exit
+    gx: 3
+    gy: 3
+    links: [R8]
+    desc: Exit; evacuate through the rift.

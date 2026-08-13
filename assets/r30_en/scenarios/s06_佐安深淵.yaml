@@ -1,0 +1,29 @@
+scenario:
+  id: s06
+  title: "Zaun's Abyss"
+  source: "League of Legends TRPG Campaign Script Collection · Multiplayer Scenario · Side Story S2"
+  mode: "Multiplayer"
+  standalone: true
+  level_range: "Lv.8-12"
+  region: "Zaun"
+  estimated_time: "2-3 sessions"
+  summary: >
+    A series of toxic gas leaks has struck the lower levels of Zaun, with victims
+    exhibiting strange "alchemy mutations." The players' investigation reveals —
+    Viktor is conducting Glorious Evolution experiments, fusing living humans with machinery.
+  chapters:
+    - id: 1
+      title: "Source of the Poison Fog"
+      level: "Lv.8-9"
+      type: "Investigation + Infiltration"
+    - id: 2
+      title: "Glorious Evolution"
+      level: "Lv.10-11"
+      type: "Laboratory Dungeon + Mutant Combat"
+    - id: 3
+      title: "Viktor"
+      level: "Lv.12"
+      type: "Boss + Moral Choice"
+      note: "Destroy or understand?"
+  rewards:
+    equipment: "Glorious Evolution Core (transforms 1 piece of equipment into a mechanical version: stats +20%, but no longer affected by healing spells)"

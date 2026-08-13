@@ -1,0 +1,34 @@
+id: s02
+title: The Time Rift Incident
+mode: multi           # Multiplayer: 1 GM + 2~4 Supervisors
+source: Z Corporation TRPG Chapter 3 Crisis Contract
+duration: 5-9h
+difficulty: 4
+required:
+  - Z公司_玩家規則書.md
+  - Z公司_GM規則書.md
+prep:
+  player: Each brings their own team (≥4 employees, including members with high Intelligence/high Cursed Energy)
+  gm: Prepare data cards for Madam Time and the Board of Directors
+time_distortion_table:   # roll d6
+  1: Time Rewind (void this round's dispatch)
+  2: Acceleration (Time Slot +1)
+  3: Afterimage (enemy duplicates, threat increased)
+  4: Sluggishness (Computing Power -10)
+  5: Foresight (next Check +10)
+  6: GM's discretion
+tasks:
+  - T1: Seal the Rift (d100 Cursed Energy)
+  - T2: Evacuate Civilians (d100 Charisma/Intelligence)
+  - T3: Trace the Source (d100 Intelligence)
+  - T4: Deep Investigation (reveal the Eternal Pact)
+  - Support: Coordinate departments / soothe public opinion
+player_interaction:
+  - Supervisor communication / trade employees / joint missions (Rapport bonus up to +20)
+  - Satisfaction ranking affects Board evaluation
+  - GM handles each Supervisor's phase in round-robin
+endings:
+  success: Jointly achieve T4 revelation → enter Chapter 4
+  fail: Rifts spiral out of control → negative escalation triggers final-choice preconditions
+note: Contact with Madam Time can reveal part of the truth ahead of time, affecting Chapter 4 stance
+source_md: s02_時間裂縫事件.md

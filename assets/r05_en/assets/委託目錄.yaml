@@ -1,0 +1,424 @@
+title: "Commission Catalog (Adventurer's Commission Catalog)"
+sections:
+  - heading: "Commission Catalog (Adventurer's Commission Catalog)"
+    text:
+      - >
+        This catalog is a stable leveling source of **side content** (non-main-quest) in *The Hero's Proof*. Running parallel to the main-quest Demon General battles (S1–S4), players may pick up commissions at the Adventurer's Guild bulletin board at any time to farm **Experience (EXP) / Gold (G) / Influence Points (IP)** and unlock dungeons (see GM Book Chapter 17).
+      - ""
+      - >
+        Companion rules: Guild Rank (Rank F→S) and acceptance caps — see **GM Book 12.4**; Influence Points (IP) accumulation and ending thresholds — see **GM Book Chapter 14**; structured dungeon play — see **GM Book Chapter 17**.
+      - ""
+      - >
+        This game **has no multiclassing / multiple classes** (promotion = a single-class advancement at ClassLv 11/21); solo mode **provides no assist characters (no helpers)**, and commission difficulty scales per the party-size adjustment rules (GM Book 13.1).
+      - "---"
+    tables:
+      []
+  - heading: "0. General Commission Rules"
+    text:
+      - "1. **Acceptance Method**: Adventurer's Guild bulletin board (Alno Holy City headquarters or branch offices in each city). You may only accept commissions whose **target Challenge Rating (CR) ≤ current Rank cap** (see table below)."
+      - "2. **Reward Settlement**:"
+      - "- **Experience (EXP)**: EXP granted by a commission accumulates toward Character Level (CL) progression (Class Level (ClassLv) draws from a separate Class Experience (CEXP) pool and does not share EXP); Skill Level (SkillLv) does not accumulate from this EXP (Skill Points (SP) come only from CL increases)."
+      - "- **Gold (G)**: may be spent at temples / the guild to exchange for magical gear, or on smithing purchases (Player Book Chapter 4)."
+      - "- **Influence Points (IP)**: accumulate per GM Book 14.1, determining the Reconciliation Ending (≥40 Peace / ≥60 True Peace), affinity and defection, and some guild / temple side-quest rewards."
+      - "3. **Reset & Repeat**: Basic commissions **refresh daily**, bounty-type **refresh weekly**; they may be repeatedly accepted to grind resources, but only a **first clear** of the same commission grants full IP — reruns grant only EXP + G (IP halved)."
+      - "4. **Failure / Abandonment**: You may abandon mid-way without losing Rank; if unfinished, no EXP / G / IP is awarded. A failed assessment (see 12.4 Promotion) may be retaken, with the interval set by the GM."
+      - "5. **Party-size Adjustment**: Solo → enemy Challenge Rating (CR) −3, enemy count ×0.5 (minimum 1), no helpers; multi-player per GM Book 13.1."
+    tables:
+      []
+  - heading: "Acceptance Cap Quick Reference (Guild Rank)"
+    text:
+      - "---"
+      - >
+        **CL1–40 Leveling-phase correspondence**: The F→A commissions below run parallel to the "Six Themed Dungeons (D3 Forest / D4 Desert / D5 Ocean / D6 Volcano / D7 Ice Plains / D8 Ancient Ruins)" as a stable leveling source before the Demon General battles (see GM Book 13.2 and Chapter 17, culminating in the Scenario 1–4 Leveling-phase Summary). Each themed commission's target Challenge Rating (CR) matches the corresponding dungeon's mini-boss; Rank S commissions are prerequisites for the Demon Lord Castle (Scenario 8); for CL50+, see also "Otherworld Bounties (Scenario 9–11)".
+    tables:
+      - columns:
+          - Rank
+          - Commissioner CR Cap
+          - Unlocks
+        rows:
+          - Tier: F Novice
+            Max Acceptable Commission CR: 1–4
+            Unlocks: Basic commissions, Basic Shop, temple entry
+          - Tier: E
+            Max Acceptable Commission CR: 5–8
+            Unlocks: Regional subjugation commissions, guild warehouse
+          - Tier: D
+            Max Acceptable Commission CR: 9–12
+            Unlocks: Escort / reconnaissance high-tier commissions
+          - Tier: C
+            Max Acceptable Commission CR: 13–18
+            Unlocks: Subjugation bounties, 5% guild discount
+          - Tier: B
+            Max Acceptable Commission CR: 19–28
+            Unlocks: Demon General–related frontline commissions, 10% discount
+          - Tier: A
+            Max Acceptable Commission CR: 29–40
+            Unlocks: Elite bounties, exclusive smithing quota
+          - Tier: S
+            Max Acceptable Commission CR: 41+
+            Unlocks: Demon Lord Castle subjugation / full peace authority, Legendary reputation (requires IP≥40)
+  - heading: "1. Rank F (1–4) Commissions | Forest Theme"
+    text:
+      []
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: F-For1
+            Title: Gather Moonleaf Grass
+            Type: Reconnaissance / Gathering
+            Target CR: 2
+            Expected Encounter: 3
+            EXP: 102
+            G: 80
+            IP: +3
+            Brief Description: Gather Moonleaf Grass at the forest edge and drive off the small grass-guarding beasts (Wild Rabbit×2 / Thornvine Sprite×1).
+            Special: Reconnaissance check, Difficulty Class (DC) 12, to locate the grass tufts.
+          - ID: F-For2
+            Title: Eradicate Goblin Patrol
+            Type: Subjugation
+            Target CR: 3
+            Expected Encounter: 3
+            EXP: 144
+            G: 100
+            IP: +4
+            Brief Description: Eradicate the goblin patrol that infiltrated the forest path (Goblin×3).
+            Special: Jungle terrain (Movement −1).
+  - heading: "2. Rank E (5–8) Commissions | Forest / Desert Theme"
+    text:
+      []
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: E-For1
+            Title: Wipe Out Goblin Nest
+            Type: Subjugation
+            Target CR: 5
+            Expected Encounter: 3
+            EXP: 300
+            G: 250
+            IP: +5
+            Brief Description: Take down the goblin nest in the woods (Goblin×2 / Goblin Slinger / Goblin Chief CR6). → **Unlocks Dungeon D3 Forest** (see Chapter 17).
+            Special: Narrow terrain (Movement −1).
+          - ID: E-Des1
+            Title: Escort Across the Yellow Sands
+            Type: Escort
+            Target CR: 7
+            Expected Encounter: 2
+            EXP: 308
+            G: 300
+            IP: +5
+            Brief Description: Escort a caravan across the desert edge (Sand Bandit CR7 blocking the way / take shelter from sandstorm).
+            Special: Diplomacy check, Difficulty Class (DC) 14; avoiding combat can skip a battle.
+  - heading: "3. Rank D (9–12) Commissions | Desert / Ocean Theme"
+    text:
+      []
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: D-Des1
+            Title: Subjugate the Sand King
+            Type: Subjugation (Boss)
+            Target CR: 12
+            Expected Encounter: 4
+            EXP: 1296
+            G: 800
+            IP: +8
+            Brief Description: Subjugate the "Sand King" entrenched in the desert ruins (Sand Scorpion×3 / Sand Elemental / Sand King CR12). → **Unlocks Dungeon D4 Desert**.
+            Special: Boss battle, using the GM Book 10.7 framework.
+          - ID: D-Sea1
+            Title: Repel the Sea Siren
+            Type: Subjugation
+            Target CR: 12
+            Expected Encounter: 3
+            EXP: 972
+            G: 800
+            IP: +8
+            Brief Description: A coastal fishing village is harassed by a Sea Siren; drive it off for the villagers (Tide Monster×2 / Sea Siren CR12). → **Unlocks Dungeon D5 Ocean**.
+            Special: Aquatic terrain (land combat Movement −1; water combat requires a Swim check).
+  - heading: "4. Rank C (13–18) Commissions | Ocean / Volcano Theme"
+    text:
+      []
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: C-Sea1
+            Title: Ghost Ship Expedition
+            Type: Reconnaissance / Exploration
+            Target CR: 14
+            Expected Encounter: 3
+            EXP: 1218
+            G: 1000
+            IP: +7
+            Brief Description: Investigate the haunted ghost ship and uncover the source of the undead.
+            Special: Discover the entrance to the "Slumbering Tomb" → **Unlocks Dungeon D2** (see Chapter 17).
+          - ID: C-Vol1
+            Title: Gather Flame Ore
+            Type: Gathering / Subjugation
+            Target CR: 18
+            Expected Encounter: 3
+            EXP: 1782
+            G: 1500
+            IP: +8
+            Brief Description: Gather Flame Ore from the volcanic lode (Fire Lizard×2 / Flame Golem / Vein Guardian CR18). → **Unlocks Dungeon D6 Volcano**.
+            Special: "Fiery environment: every turn, area Fire damage +1."
+  - heading: "5. Rank B (19–28) Commissions | Volcano / Ice Plains Theme"
+    text:
+      []
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: B-Vol1
+            Title: Subjugate the Balrog Lord
+            Type: Subjugation (Boss)
+            Target CR: 26
+            Expected Encounter: 4
+            EXP: 4264
+            G: 2500
+            IP: +10
+            Brief Description: Subjugate the Balrog Lord deep in the volcano (Balrog Guard×4 / Flamecaster CR26 / Patrol×2). → **Unlocks Dungeon D6 Volcano (Deep Layer)**.
+            Special: Concurrent events +1 (see party-size adjustment).
+          - ID: B-Ice1
+            Title: Ice Plains Reconnaissance
+            Type: Reconnaissance
+            Target CR: 26
+            Expected Encounter: 3
+            EXP: 3198
+            G: 2500
+            IP: +10
+            Brief Description: Scout the anomaly in the frozen north (Ice Wolf×2 / Frost Guard CR26). → **Unlocks Dungeon D7 Ice Plains**.
+            Special: "Severe-cold environment: each turn, Constitution (CON) save, Difficulty Class (DC) 14, to resist freezing."
+  - heading: "6. Rank A (29–40) Commissions | Ice Plains / Ancient Ruins Theme"
+    text:
+      []
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: A-Ice1
+            Title: Subjugate the Frost Queen
+            Type: Subjugation (Boss)
+            Target CR: 34
+            Expected Encounter: 3
+            EXP: 4998
+            G: 5000
+            IP: +12
+            Brief Description: Subjugate the Frost Queen upon the ice throne (Frost Guard×3 / Ice Golem / Queen CR34). → **Unlocks Dungeon D7 Ice Plains (Deep Layer)**.
+            Special: Boss battle CR34; frozen control (Immobilize) threat.
+          - ID: A-Run1
+            Title: Ruins Puzzle
+            Type: Reconnaissance / Exploration
+            Target CR: 35
+            Expected Encounter: 3
+            EXP: 5250
+            G: 4500
+            IP: +12
+            Brief Description: Solve the seal maze of the ancient ruins (Guardian Golem CR35 / Trap×2 / Spirit Watcher). → **Unlocks Dungeon D8 Ancient Ruins**.
+            Special: Obtain 1 "Epic Recipe" (equipment clue).
+  - heading: "7. Rank S (41+) Commissions | Ancient Ruins / Demon Lord Castle Prelude"
+    text:
+      []
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: S-Run1
+            Title: Seal the Guardian
+            Type: Subjugation (Boss)
+            Target CR: 40
+            Expected Encounter: 3
+            EXP: 6600
+            G: 8000
+            IP: +15
+            Brief Description: Seal the "Ruin Guardian" at the deepest part of the ancient ruins (Guard×2 / Spirit Watcher / Guardian CR40). The final battle of the leveling phase, leading to Rank S cap. → **Unlocks Dungeon D8 Ancient Ruins (Deep Layer)**.
+            Special: Requires Influence Points (IP) ≥40 to accept (at CL40 end of leveling phase this is usually already met naturally).
+          - ID: S-1
+            Title: Demon Lord Castle Perimeter Recon
+            Type: Reconnaissance
+            Target CR: 40
+            Expected Encounter: 4
+            EXP: 8800
+            G: 8000
+            IP: +15
+            Brief Description: Gather intelligence for the final subjugation (Demon General outpost CR40 / recon / ambush / retreat).
+            Special: Requires Influence Points (IP) ≥40 to accept (see 14.2).
+          - ID: S-2
+            Title: Peace Envoy
+            Type: Social / Escort
+            Target CR: 35
+            Expected Encounter: 2
+            EXP: 3500
+            G: 6000
+            IP: +20
+            Brief Description: The final diplomacy to induce a Demon General's defection (nonbelievers blocking the way / peace-guardian).
+            Special: Pure social line; combat can be entirely avoided; a major source of Influence Points (IP).
+  - heading: "Leveling Route Cross-reference (CL1–40 Leveling Phase)"
+    text:
+      - >
+        After the leveling phase ends (CL40, Rank S), proceed to Scenario 5 Dragon General battle (CR40) to begin the main-quest Demon General reckoning.
+    tables:
+      - columns:
+          - Themed Dungeon
+          - Suggested Character Level (CL)
+          - Corresponding Rank
+          - Mini-boss (CR)
+          - Corresponding Commission
+        rows:
+          - Themed Dungeon: D3 Forest
+            Suggested Character Level (CL): 1–6
+            Corresponding Rank: F→E
+            Mini-Boss (CR): Goblin King (CR5)
+            Corresponding Commission: F-For1 / E-For1
+          - Themed Dungeon: D4 Desert
+            Suggested Character Level (CL): 7–12
+            Corresponding Rank: E→D
+            Mini-Boss (CR): Sand King (CR12)
+            Corresponding Commission: E-Des1 / D-Des1
+          - Themed Dungeon: D5 Ocean
+            Suggested Character Level (CL): 13–18
+            Corresponding Rank: D→C
+            Mini-Boss (CR): Sea Siren (CR18)
+            Corresponding Commission: D-Sea1 / C-Sea1
+          - Themed Dungeon: D6 Volcano
+            Suggested Character Level (CL): 19–26
+            Corresponding Rank: C→B
+            Mini-Boss (CR): Balrog Lord (CR26)
+            Corresponding Commission: C-Vol1 / B-Vol1
+          - Themed Dungeon: D7 Ice Plains
+            Suggested Character Level (CL): 27–34
+            Corresponding Rank: B→A
+            Mini-Boss (CR): Frost Queen (CR34)
+            Corresponding Commission: B-Ice1 / A-Ice1
+          - Themed Dungeon: D8 Ancient Ruins
+            Suggested Character Level (CL): 35–40
+            Corresponding Rank: A→S
+            Mini-Boss (CR): Ruin Guardian (CR40)
+            Corresponding Commission: A-Run1 / S-Run1
+  - heading: "Otherworld Bounties (CL50+ Endgame · Corresponding to Scenario 9–11)"
+    text:
+      - >
+        For Otherworld enemy stats and traits, see **Monster Compendium Chapter 5**; for story linkage, see **Scenario 9 Rift Manifest / Scenario 10 Otherworld Crusade / Scenario 11 The End**.
+      - "---"
+    tables:
+      - columns:
+          - ID
+          - Title
+          - Type
+          - Target CR
+          - Expected Encounters
+          - EXP
+          - G
+          - IP
+          - Summary
+          - Special
+        rows:
+          - ID: Rlm1
+            Title: Subjugate the Void-realm Sentinel
+            Type: Subjugation (Mini-boss)
+            Target CR: 65
+            Expected Encounter: 1 (Boss×4)
+            EXP: 20800
+            G: 20000
+            IP: +20
+            Brief Description: "Scenario 9 final battle: an outpost commander dispatched by the Singularity (Otherworld trait: reality distortion / rule nullification)."
+            Special: Open only after the Demon Lord Castle collapses and the Otherworld invades (Scenario 9).
+          - ID: Rlm2
+            Title: Crusade Against the Eclipse Sovereign
+            Type: Subjugation (Mid-boss)
+            Target CR: 75
+            Expected Encounter: 1 (Mid-boss×4)
+            EXP: 27000
+            G: 28000
+            IP: +25
+            Brief Description: "Scenario 10 final battle: the executor of the Singularity's will in the Otherworld's true domain (rule nullification fully active)."
+            Special: Requires clearing Scenario 9 and CL66+ to accept.
+          - ID: Rlm3
+            Title: The End-seer + the Singularity
+            Type: Subjugation (Escort + Final Boss)
+            Target CR: 85/99
+            Expected Encounter: 1 (Guard×4) + 1 (Final Boss×4)
+            EXP: 34000+45144
+            G: 50000
+            IP: +35
+            Brief Description: "Scenario 11 final battle: first defeat the personal guard, the End-seer (CR85), then the true form, the Otherworld · Singularity (CR99, all traits active)."
+            Special: Requires clearing Scenario 10 and CL76+ to accept; Influence Points (IP) ≥60 can trigger the True Peace ending.
+  - heading: "8. GM Custom Commission Quick Reference"
+    text: |
+      The GM may quickly generate new commissions using the following benchmarks:
+
+      - **Single-monster EXP** = `floor(15 × CR × (1 + CR/15))` (consistent with GM Book 10.4; Boss ×4).
+      - **Total commission EXP** ≈ single-monster EXP × expected encounters (multi-battlefield commissions add ~10–20%).
+      - **Gold (G)** ≈ EXP × 0.8 (bounties / escorts higher, recon / exploration lower); commission settlements also deduct a **5% guild tax** (actual received = listed G × 0.95, deducted by the GM before paying out; see GM Book §4.4 Gold Sink).
+      - **Influence Points (IP)** by rank: F +3~4 / E +5 / D +6~8 / C +7~8 / B +10 / A +12 / S +15~20; pure-social / reconciliation-oriented commissions double IP.
+      - **Target CR must not exceed the acceptor's Rank cap** (see quick-reference table above); anything exceeding it counts as an "over-tier commission," requiring GM approval and reduced EXP.
+
+      > Design note: Commissions are the main source of **IP and equipment economy**, while the main-quest Demon General battles emphasize **EXP and story**. Combining the two avoids the imbalance of "only fighting bosses yet unable to afford gear / gather enough IP."
+    tables:
+      []

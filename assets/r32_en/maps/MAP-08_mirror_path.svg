@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="140 0 360 730" font-family="'Microsoft JhengHei','PingFang TC','Heiti TC','Noto Sans CJK TC',sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#555"/></marker></defs>
+<text x="180" y="24" font-size="18" font-weight="bold" fill="#222">MAP-08 Mirror Tracking Path — The Memory Trail of Childhood</text>
+<rect x="180" y="50" width="280" height="640" rx="14" fill="#fde7e9" fill-opacity="0.4" stroke="#e0586b" stroke-dasharray="6 4"/>
+<text x="192" y="72" font-size="14" font-weight="bold" fill="#e0586b">Echo Path (Linear Retrace)</text>
+<line x1="350.0" y1="140.0" x2="350.0" y2="200.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="350.0" y1="260.0" x2="350.0" y2="320.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="350.0" y1="380.0" x2="350.0" y2="440.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="350.0" y1="500.0" x2="350.0" y2="560.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="240" y="80" width="220" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="350.0" y="105.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Start: Routine Crossing Point</text>
+<text x="350.0" y="122.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Anchor DC10 to confirm not a hallucination</text>
+<rect x="240" y="200" width="220" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="350.0" y="225.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Scene A: Last Crossing Node</text>
+<text x="350.0" y="242.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Mirror Residual Awareness DC10</text>
+<rect x="240" y="320" width="220" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="350.0" y="345.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Scene B: Childhood Home Gap Layer</text>
+<text x="350.0" y="362.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Diary (Memory Crystal) DC13</text>
+<rect x="240" y="440" width="220" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="350.0" y="465.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Scene C: Memory Guardian</text>
+<text x="350.0" y="482.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Negotiation DC12</text>
+<rect x="240" y="560" width="220" height="60" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="350.0" y="585.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Scene D: Confrontation Under the Bridge</text>
+<text x="350.0" y="602.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Merge / Reject / Sacrifice</text>
+</svg>

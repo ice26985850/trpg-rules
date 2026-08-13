@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" font-family="'Microsoft JhengHei','Noto Sans TC',sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto"><path d="M0,0 L6,2 L0,4 Z" fill="#888"/></marker>
+  </defs>
+  <rect width="680" height="560" fill="#FDF8F0"/>
+  
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" fill="#2F5496" font-size="18" font-weight="bold">Mayor's Mansion Floor Plan</text>
+  <text x="340" y="48" text-anchor="middle" fill="#888" font-size="11">S1: Who Killed the Mayor — Two-Story Building</text>
+  
+  <!-- ===== First Floor ===== -->
+  <rect x="50" y="290" width="580" height="230" rx="5" fill="#F0F4FA" stroke="#B0C4DE" stroke-width="1"/>
+  <text x="65" y="310" fill="#2F5496" font-size="12" font-weight="bold">First Floor</text>
+  
+  <!-- Main Gate -->
+  <rect x="300" y="460" width="80" height="40" rx="3" fill="#D6E4F0" stroke="#2F5496" stroke-width="2"/>
+  <text x="340" y="486" text-anchor="middle" fill="#2F5496" font-size="11" font-weight="bold">🚪 Main Gate</text>
+  
+  <!-- Foyer -->
+  <rect x="290" y="395" width="100" height="55" rx="4" fill="#E8EFF7" stroke="#B0C4DE"/>
+  <text x="340" y="428" text-anchor="middle" fill="#333" font-size="10">Foyer</text>
+  
+  <!-- First Floor Corridor -->
+  <rect x="290" y="330" width="100" height="55" rx="4" fill="#E8EFF7" stroke="#B0C4DE"/>
+  <text x="340" y="363" text-anchor="middle" fill="#333" font-size="10">First Floor Corridor</text>
+  
+  <!-- Banquet Hall -->
+  <rect x="80" y="330" width="180" height="70" rx="6" fill="#E2EFDA" stroke="#548235" stroke-width="1.5"/>
+  <text x="170" y="360" text-anchor="middle" fill="#333" font-size="12" font-weight="bold">Banquet Hall</text>
+  <text x="170" y="380" text-anchor="middle" fill="#666" font-size="9">Day 1 evening merchant guild meeting</text>
+  
+  <!-- Reception Room -->
+  <rect x="420" y="330" width="180" height="70" rx="6" fill="#E2EFDA" stroke="#548235" stroke-width="1.5"/>
+  <text x="510" y="360" text-anchor="middle" fill="#333" font-size="12" font-weight="bold">Reception Room</text>
+  <text x="510" y="380" text-anchor="middle" fill="#666" font-size="9">Where the mayor meets privately</text>
+  
+  <!-- Kitchen -->
+  <rect x="60" y="250" width="160" height="70" rx="6" fill="#FFF2CC" stroke="#BF8F00" stroke-width="1"/>
+  <text x="140" y="280" text-anchor="middle" fill="#333" font-size="12" font-weight="bold">Kitchen</text>
+  <text x="140" y="298" text-anchor="middle" fill="#666" font-size="9">Servants' source of information</text>
+  
+  <!-- Back Door -->
+  <rect x="20" y="270" width="30" height="30" rx="3" fill="#FFF2CC" stroke="#BF8F00" stroke-width="1"/>
+  <text x="35" y="258" text-anchor="middle" fill="#666" font-size="8">Back Door</text>
+  
+  <!-- Garden -->
+  <rect x="400" y="460" width="200" height="60" rx="8" fill="#C8E6C9" stroke="#66BB6A" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="500" y="496" text-anchor="middle" fill="#388E3C" font-size="11">🌿 Front Garden</text>
+  
+  <!-- First Floor Connections -->
+  <line x1="300" y1="480" x2="300" y2="440" stroke="#888" stroke-width="1.5"/>
+  <line x1="340" y1="450" x2="340" y2="440" stroke="#888" stroke-width="1.5"/>
+  <line x1="260" y1="400" x2="290" y2="400" stroke="#888" stroke-width="1.5"/>
+  <line x1="260" y1="400" x2="180" y2="380" stroke="#888" stroke-width="1.5"/>
+  <line x1="390" y1="400" x2="420" y2="380" stroke="#888" stroke-width="1.5"/>
+  <line x1="390" y1="370" x2="420" y2="370" stroke="#888" stroke-width="1.5"/>
+  <line x1="180" y1="370" x2="220" y2="300" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="220" y1="300" x2="140" y2="290" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="450" y1="470" x2="450" y2="410" stroke="#66BB6A" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="450" y1="470" x2="140" y2="470" stroke="#66BB6A" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- ===== Staircase Markers ===== -->
+  <rect x="290" y="210" width="100" height="30" rx="3" fill="#D9D9D9" stroke="#999" stroke-width="1"/>
+  <text x="340" y="230" text-anchor="middle" fill="#555" font-size="10">⬆ Main Staircase</text>
+  
+  <!-- Servant Staircase -->
+  <rect x="100" y="180" width="30" height="60" rx="3" fill="#D9D9D9" stroke="#999" stroke-width="1"/>
+  <text x="115" y="175" text-anchor="middle" fill="#555" font-size="8">Servant Stairs</text>
+  
+  <!-- Staircase Connections -->
+  <line x1="340" y1="330" x2="340" y2="240" stroke="#999" stroke-width="1.5"/>
+  <line x1="180" y1="290" x2="115" y2="240" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- ===== Second Floor ===== -->
+  <rect x="50" y="70" width="580" height="132" rx="5" fill="#FCE4D6" stroke="#E6B8A0" stroke-width="1"/>
+  <text x="65" y="90" fill="#BF8F00" font-size="12" font-weight="bold">Second Floor</text>
+  
+  <!-- Second Floor Corridor -->
+  <rect x="290" y="130" width="100" height="40" rx="4" fill="#F5E6D0" stroke="#E6B8A0"/>
+  <text x="340" y="156" text-anchor="middle" fill="#333" font-size="10">Second Floor Corridor</text>
+  
+  <!-- Study — Murder Scene -->
+  <rect x="430" y="80" width="170" height="80" rx="8" fill="#FFD7D7" stroke="#C00000" stroke-width="2.5"/>
+  <text x="515" y="112" text-anchor="middle" fill="#A00000" font-size="14" font-weight="bold">🔴 Study</text>
+  <text x="515" y="135" text-anchor="middle" fill="#A00000" font-size="10">⚠ Murder Scene</text>
+  
+  <!-- Markers Inside the Study -->
+  <rect x="450" y="145" width="40" height="10" rx="2" fill="#FFF" stroke="#C00" stroke-width="0.5"/>
+  <text x="470" y="153" text-anchor="middle" fill="#A00" font-size="7">Desk</text>
+  <rect x="540" y="145" width="40" height="10" rx="2" fill="#FFF" stroke="#C00" stroke-width="0.5"/>
+  <text x="560" y="153" text-anchor="middle" fill="#A00" font-size="7">Fireplace</text>
+  
+  <!-- Balcony -->
+  <rect x="550" y="50" width="70" height="25" rx="4" fill="#C8E6C9" stroke="#66BB6A" stroke-width="1"/>
+  <text x="585" y="67" text-anchor="middle" fill="#388E3C" font-size="9">Balcony</text>
+  <line x1="515" y1="80" x2="550" y2="62" stroke="#66BB6A" stroke-width="1"/>
+  
+  <!-- Mayor's Bedroom -->
+  <rect x="80" y="100" width="180" height="70" rx="6" fill="#F0E6D6" stroke="#C0A880" stroke-width="1.5"/>
+  <text x="170" y="132" text-anchor="middle" fill="#333" font-size="12" font-weight="bold">Mayor's Bedroom</text>
+  <text x="170" y="152" text-anchor="middle" fill="#666" font-size="9">The wife's diary is here</text>
+  
+  <!-- Servants' Room -->
+  <rect x="80" y="180" width="70" height="30" rx="4" fill="#D9D9D9" stroke="#999" stroke-width="1"/>
+  <text x="115" y="200" text-anchor="middle" fill="#555" font-size="9">Servants' Room</text>
+  
+  <!-- Second Floor Connections -->
+  <line x1="340" y1="170" x2="340" y2="210" stroke="#999" stroke-width="1.5"/>
+  <line x1="290" y1="150" x2="170" y2="145" stroke="#C0A880" stroke-width="1.5"/>
+  <line x1="390" y1="150" x2="430" y2="140" stroke="#C00000" stroke-width="1.5"/>
+  <line x1="80" y1="195" x2="80" y2="240" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Legend -->
+  <rect x="60" y="520" width="560" height="32" rx="5" fill="#FFF" stroke="#CCC"/>
+  <rect x="70" y="528" width="16" height="16" rx="2" fill="#E2EFDA" stroke="#548235"/>
+  <text x="92" y="541" fill="#333" font-size="10">Public Area</text>
+  <rect x="160" y="528" width="16" height="16" rx="2" fill="#FCE4D6" stroke="#E6B8A0"/>
+  <text x="182" y="541" fill="#333" font-size="10">Private Area</text>
+  <rect x="250" y="528" width="16" height="16" rx="2" fill="#FFD7D7" stroke="#C00000"/>
+  <text x="272" y="541" fill="#333" font-size="10">Murder Scene</text>
+  <rect x="340" y="528" width="16" height="16" rx="2" fill="#FFF2CC" stroke="#BF8F00"/>
+  <text x="362" y="541" fill="#333" font-size="10">Service Area</text>
+  <rect x="430" y="528" width="16" height="16" rx="2" fill="#C8E6C9" stroke="#66BB6A"/>
+  <text x="452" y="541" fill="#333" font-size="10">Outdoor</text>
+  <line x1="520" y1="536" x2="550" y2="536" stroke="#999" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="555" y="541" fill="#333" font-size="10">Hidden Passage</text>
+</svg>

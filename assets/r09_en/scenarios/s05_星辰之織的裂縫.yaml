@@ -1,0 +1,28 @@
+title: Rift of the Starweave
+type: multiplayer
+quality: ★★★★★ Legendary-grade
+players: 1–4 mages
+sessions: 4–6 (can serve as the campaign finale)
+core_output: Multiple Legendary Shards, completion of a Legendary spell, world-level impact
+main_threat: The lingering consciousness of the Void God, the Watchers' ultimate trial, the players' own research goals
+prerequisite: At least one player with Academic Reputation ≥60; and at least the theoretical preparation of their own research goal completed
+summary: If enough Legendary Shards gather in one place—if a sufficiently powerful spell is created—the Starweave itself becomes unstable. As the players approach completion of their ultimate research goal, they begin to notice some anomalies.
+acts:
+- name: Act One—The Call from the Void
+  scenes:
+  - Scene: The Players' Tower
+- name: Act Two—The Key Choice
+  scenes: []
+- name: Act Three—Converging Power
+  scenes: []
+- name: Act Four—The Final Rite
+  scenes:
+  - Scene: The Void Rift—the Edge of the Starweave
+npcs: []
+research_checks:
+- attribute: Will
+  dc: 22
+- attribute: Perception
+  dc: 24
+- attribute: Will
+  dc: 20

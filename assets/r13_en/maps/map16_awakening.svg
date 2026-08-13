@@ -1,0 +1,54 @@
+<svg viewBox="0 0 880 680" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Microsoft JhengHei, sans-serif">
+<rect width="880" height="680" fill="#f7f4ec"/>
+<rect x="52" y="52" width="580" height="300" rx="10" fill="rgba(102,102,102,0.2)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="60" y="70" font-size="11pt" fill="#7a6f55">Thunderhawk Wreckage</text>
+<rect x="682" y="332" width="146" height="132" rx="10" fill="rgba(212,74,32,0.1)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="690" y="350" font-size="11pt" fill="#7a6f55">Distant View</text>
+<line x1="258" y1="202" x2="314" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="342" y1="188" x2="314" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="426" y1="181" x2="314" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="510" y1="188" x2="314" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="314" y1="90" x2="90" y2="286" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="314" y1="90" x2="258" y2="314" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="314" y1="90" x2="594" y2="258" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<circle cx="258" cy="202" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="258" y="200" text-anchor="middle" font-size="10.5pt" fill="#222">Awakening Position A1</text>
+<circle cx="342" cy="188" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="342" y="186" text-anchor="middle" font-size="10.5pt" fill="#222">Awakening Position A2</text>
+<circle cx="426" cy="181" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="426" y="179" text-anchor="middle" font-size="10.5pt" fill="#222">Awakening Position A3</text>
+<circle cx="510" cy="188" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="510" y="186" text-anchor="middle" font-size="10.5pt" fill="#222">Awakening Position A4</text>
+<circle cx="90" cy="286" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="90" y="284" text-anchor="middle" font-size="10.5pt" fill="#222">Engine Bay</text>
+<text x="90" y="328" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="258" cy="314" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="258" y="312" text-anchor="middle" font-size="10.5pt" fill="#222">Cargo Hold</text>
+<text x="258" y="356" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="594" cy="258" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="594" y="256" text-anchor="middle" font-size="10.5pt" fill="#222">Cockpit</text>
+<text x="594" y="300" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="314" cy="90" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="314" y="88" text-anchor="middle" font-size="10.5pt" fill="#222">Search Zone</text>
+<circle cx="720" cy="370" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="720" y="368" text-anchor="middle" font-size="10.5pt" fill="#222">Distant Exterminatus Flames</text>
+<text x="720" y="384" text-anchor="middle" font-size="8.5pt" fill="#a33">Orbital Bombardment | Not in this area</text>
+<circle cx="790" cy="426" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="790" y="424" text-anchor="middle" font-size="10.5pt" fill="#222">Toward Ruin City</text>
+<text x="790" y="468" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<rect x="705" y="550" width="160" height="120" rx="6" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="715" y="570" font-size="10pt" font-weight="bold" fill="#333">Legend</text>
+<circle cx="723" cy="586" r="8" fill="#6fae6f" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="590" font-size="9.5pt" fill="#333">Entrance</text>
+<circle cx="723" cy="601" r="8" fill="#5b9bd5" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="605" font-size="9.5pt" fill="#333">Extraction</text>
+<circle cx="723" cy="616" r="8" fill="#c04040" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="620" font-size="9.5pt" fill="#333">Boss</text>
+<circle cx="723" cy="631" r="8" fill="#e08a2b" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="635" font-size="9.5pt" fill="#333">Environmental Hazard</text>
+<circle cx="723" cy="646" r="8" fill="#9aa0a6" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="650" font-size="9.5pt" fill="#333">Staging Area</text>
+<circle cx="723" cy="661" r="8" fill="#cdbf9a" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="665" font-size="9.5pt" fill="#333">Zone</text>
+<g transform="translate(825,55)"><circle r="26" fill="#f5f0e0" stroke="#333" stroke-width="2"/><text x="0" y="-12" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#333">N</text><line x1="0" y1="-22" x2="0" y2="-8" stroke="#c00" stroke-width="2"/></g>
+</svg>

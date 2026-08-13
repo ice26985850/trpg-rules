@@ -1,0 +1,350 @@
+meta:
+  title: Search, Attack, Retreat TRPG Bestiary
+  note: This file is extracted from the bestiary section embedded in the rulebook, cross-referenced with the .md bestiary. Full description see .md.
+sections:
+- name: 3.1 Residuals (Basic AI Enemy)
+  tables:
+  - - attribute: Physique
+      value: '4'
+      skill: Melee
+      level: '1'
+    - attribute: Precision
+      value: '1'
+      skill: Awareness
+      level: '1'
+    - attribute: Perception
+      value: '3'
+      skill: —
+      level: —
+    - attribute: Tech
+      value: '1'
+      skill: —
+      level: —
+    - attribute: Courage
+      value: '10'
+      skill: Willpower
+      level: '5'
+    - attribute: '**Initiative**'
+      value: '4'
+      skill: ''
+      level: ''
+  - - part: Head
+      Hit Points (HP): '10'
+    - part: Chest
+      Hit Points (HP): '18'
+    - part: Abdomen
+      Hit Points (HP): '12'
+    - part: Left Arm
+      Hit Points (HP): '8'
+    - part: Right Arm
+      Hit Points (HP): '8'
+    - part: Left Leg
+      Hit Points (HP): '9'
+    - part: Right Leg
+      Hit Points (HP): '9'
+  - - equipment: Attack
+      details: Unarmed Bite (1d4+Physique), or wield scrap metal (1d6+Physique)
+    - equipment: Armor
+      details: None (Damage Reduction (DR) 0)
+    - equipment: Special
+      details: No fear reaction (immune to fear/morale checks), no pain (part injury no penalty, loses function only at Hit Points (HP)=0)
+- name: 3.2 Mutant Hound
+  tables:
+  - - attribute: Physique
+      value: '5'
+      skill: Melee
+      level: '2'
+    - attribute: Precision
+      value: '1'
+      skill: Awareness
+      level: '3'
+    - attribute: Perception
+      value: '6'
+      skill: Stealth
+      level: '2'
+    - attribute: Tech
+      value: '1'
+      skill: Survival
+      level: '2'
+    - attribute: Courage
+      value: '8'
+      skill: Willpower
+      level: '3'
+    - attribute: '**Initiative**'
+      value: '7'
+      skill: ''
+      level: ''
+  - - part: Head
+      Hit Points (HP): '11'
+    - part: Chest
+      Hit Points (HP): '20'
+    - part: Abdomen
+      Hit Points (HP): '13'
+    - part: Left Front Leg
+      Hit Points (HP): '9'
+    - part: Right Front Leg
+      Hit Points (HP): '9'
+    - part: Left Hind Leg
+      Hit Points (HP): '10'
+    - part: Right Hind Leg
+      Hit Points (HP): '10'
+  - - equipment: Attack
+      details: Bite (1d8+Physique), Knockdown (after hit target Physique Target Number (TN) 12 or else Prone)
+    - equipment: Armor
+      details: Thick Hide (Damage Reduction (DR) 1)
+    - equipment: Special
+      details: Keen Smell (advantage on Awareness checks), Pack Hunting (tactical coordination when 3+ present)
+- name: 3.3 Mutant (Industrial/Core Zone)
+  tables:
+  - - attribute: Physique
+      value: '7'
+      skill: Melee
+      level: '3'
+    - attribute: Precision
+      value: '2'
+      skill: Throwing
+      level: '2'
+    - attribute: Perception
+      value: '5'
+      skill: Awareness
+      level: '2'
+    - attribute: Tech
+      value: '1'
+      skill: —
+      level: —
+    - attribute: Courage
+      value: '10'
+      skill: Willpower
+      level: '5'
+    - attribute: '**Initiative**'
+      value: '7'
+      skill: ''
+      level: ''
+  - - part: Head
+      Hit Points (HP): '13'
+    - part: Chest
+      Hit Points (HP): '24'
+    - part: Abdomen
+      Hit Points (HP): '15'
+    - part: Left Arm
+      Hit Points (HP): '11'
+    - part: Right Arm
+      Hit Points (HP): '11'
+    - part: Left Leg
+      Hit Points (HP): '12'
+    - part: Right Leg
+      Hit Points (HP): '12'
+  - - equipment: Attack
+      details: Mutant Claws (1d10+Physique), throw rocks (1d6+Precision, mid-range)
+    - equipment: Armor
+      details: Hardened Skin (Damage Reduction (DR) 2)
+    - equipment: Special
+      details: Short-Range Teleport (1/encounter, teleport within 10m), Gravity Slam (3m cone, 2d6 + target Prone)
+- name: 3.4 Lone Wolf Veteran
+  tables:
+  - - attribute: Physique
+      value: '5'
+      skill: Firearms
+      level: '3'
+    - attribute: Precision
+      value: '6'
+      skill: Stealth
+      level: '4'
+    - attribute: Perception
+      value: '7'
+      skill: Awareness
+      level: '3'
+    - attribute: Tech
+      value: '4'
+      skill: Survival
+      level: '2'
+    - attribute: Courage
+      value: '6'
+      skill: Willpower
+      level: '4'
+    - attribute: '**Initiative**'
+      value: '13'
+      skill: ''
+      level: ''
+  - - part: Head
+      Hit Points (HP): '11'
+      Damage Reduction (DR): '0'
+    - part: Chest
+      Hit Points (HP): '20'
+      Damage Reduction (DR): '1'
+    - part: Abdomen
+      Hit Points (HP): '13'
+      Damage Reduction (DR): '1'
+    - part: Left Arm
+      Hit Points (HP): '9'
+      Damage Reduction (DR): '0'
+    - part: Right Arm
+      Hit Points (HP): '9'
+      Damage Reduction (DR): '0'
+    - part: Left Leg
+      Hit Points (HP): '10'
+      Damage Reduction (DR): '0'
+    - part: Right Leg
+      Hit Points (HP): '10'
+      Damage Reduction (DR): '0'
+  - - equipment: Weapon
+      details: Military Sniper Rifle (2d10, Armor-Piercing 2), Tactical Pistol (1d8)
+    - equipment: Armor
+      details: Soft Body Armor IIA (Damage Reduction (DR) 1)
+    - equipment: Special
+      details: Tactical Assessment (1 Action Point (AP) to assess target threat level)
+- name: 3.5 Warlord Patrol (Single)
+  tables:
+  - - attribute: Physique
+      value: '6'
+      skill: Firearms
+      level: '3'
+    - attribute: Precision
+      value: '5'
+      skill: Melee
+      level: '2'
+    - attribute: Perception
+      value: '5'
+      skill: Awareness
+      level: '2'
+    - attribute: Tech
+      value: '4'
+      skill: Leadership
+      level: '2'
+    - attribute: Courage
+      value: '7'
+      skill: Willpower
+      level: '4'
+    - attribute: '**Initiative**'
+      value: '10'
+      skill: ''
+      level: ''
+  - - part: Head
+      Hit Points (HP): '12'
+      Damage Reduction (DR): '1'
+    - part: Chest
+      Hit Points (HP): '22'
+      Damage Reduction (DR): '2'
+    - part: Abdomen
+      Hit Points (HP): '14'
+      Damage Reduction (DR): '2'
+    - part: Left Arm
+      Hit Points (HP): '10'
+      Damage Reduction (DR): '0'
+    - part: Right Arm
+      Hit Points (HP): '10'
+      Damage Reduction (DR): '0'
+    - part: Left Leg
+      Hit Points (HP): '11'
+      Damage Reduction (DR): '0'
+    - part: Right Leg
+      Hit Points (HP): '11'
+      Damage Reduction (DR): '0'
+  - - equipment: Weapon
+      details: Military Assault Rifle (2d6, Full-Auto), Tactical Pistol (1d8)
+    - equipment: Armor
+      details: Hard Body Armor III (Damage Reduction (DR) 2), Kevlar Helmet (Damage Reduction (DR) 1)
+- name: 3.6 Bounty Hunter
+  tables:
+  - - attribute: Physique
+      value: '5'
+      skill: Firearms
+      level: '4'
+    - attribute: Precision
+      value: '7'
+      skill: Tracking
+      level: '3'
+    - attribute: Perception
+      value: '6'
+      skill: Stealth
+      level: '3'
+    - attribute: Tech
+      value: '4'
+      skill: Intimidation
+      level: '3'
+    - attribute: Courage
+      value: '6'
+      skill: Willpower
+      level: '3'
+    - attribute: '**Initiative**'
+      value: '13'
+      skill: ''
+      level: ''
+  - - part: Head
+      Hit Points (HP): '11'
+      Damage Reduction (DR): '0'
+    - part: Chest
+      Hit Points (HP): '20'
+      Damage Reduction (DR): '2'
+    - part: Abdomen
+      Hit Points (HP): '13'
+      Damage Reduction (DR): '2'
+    - part: Left Arm
+      Hit Points (HP): '9'
+      Damage Reduction (DR): '0'
+    - part: Right Arm
+      Hit Points (HP): '9'
+      Damage Reduction (DR): '0'
+    - part: Left Leg
+      Hit Points (HP): '10'
+      Damage Reduction (DR): '0'
+    - part: Right Leg
+      Hit Points (HP): '10'
+      Damage Reduction (DR): '0'
+  - - equipment: Weapon
+      details: DMR (1d10, Semi-Auto), Heavy Pistol (1d10, Armor-Piercing 2)
+    - equipment: Armor
+      details: Hard Body Armor III (Damage Reduction (DR) 2)
+    - equipment: Special
+      details: Bounty Mark (1 Action Point (AP) to mark target, +1 to hit vs marked target)
+- name: '3.7 Boss: "Iron Wall" Cossack'
+  tables:
+  - - attribute: Physique
+      value: '9'
+      skill: Heavy Weapons
+      level: '4'
+    - attribute: Precision
+      value: '5'
+      skill: Melee
+      level: '5'
+    - attribute: Perception
+      value: '4'
+      skill: Willpower
+      level: '5'
+    - attribute: Tech
+      value: '3'
+      skill: Leadership
+      level: '4'
+    - attribute: Courage
+      value: '8'
+      skill: Intimidation
+      level: '4'
+    - attribute: '**Initiative**'
+      value: '9'
+      skill: ''
+      level: ''
+  - - part: Head
+      Hit Points (HP): '15'
+      Damage Reduction (DR): '2'
+    - part: Chest
+      Hit Points (HP): '28'
+      Damage Reduction (DR): '4'
+    - part: Abdomen
+      Hit Points (HP): '17'
+      Damage Reduction (DR): '4'
+    - part: Left Arm
+      Hit Points (HP): '13'
+      Damage Reduction (DR): '4'
+    - part: Right Arm
+      Hit Points (HP): '13'
+      Damage Reduction (DR): '4'
+    - part: Left Leg
+      Hit Points (HP): '14'
+      Damage Reduction (DR): '4'
+    - part: Right Leg
+      Hit Points (HP): '14'
+      Damage Reduction (DR): '4'
+  - - equipment: Weapon
+      details: Heavy Assault Rifle (2d6, Full-Auto, Armor-Piercing 1), Tactical Axe (1d8+Physique)
+    - equipment: Armor
+      details: Full-Body Heavy Armor (Damage Reduction (DR) 4), Heavy Riot Helmet (Damage Reduction (DR) 2)

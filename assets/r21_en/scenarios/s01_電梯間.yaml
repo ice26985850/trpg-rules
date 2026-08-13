@@ -1,0 +1,125 @@
+title: The Elevator
+difficulty: Novice
+stars: 1
+loop_length: 24 minutes (strict)
+loop_limit: 10
+suggested_players: 2-3
+action_points: 2 (extremely compressed, each AP ≈ 12 minutes)
+tone_tags:
+  - Denial
+  - The elongation of death-bound time
+  - Five lives compressed into 24 minutes
+loop_setting:
+  endpoint: The elevator falls from the 30th floor to the ground (at the 24-minute mark)
+  start: 8:00 AM, the instant the elevator doors close
+  boundary: Inside the elevator car (approx. 2m × 2m)
+  opening: "The elevator doors closed behind you. Five people are packed into this cramped space. The numbers on the panel begin to flicker—30. You catch a faint whiff of cologne and last night's alcohol. Everything is perfectly normal. Except... one of these people shouldn't be here."
+core_truth:
+  anchor_event: "The moment the five walk into the elevator—one of them (Zhang Mingde) had already died of a heart attack before entering; reality cannot process the contradiction of 'a dead person walking into the elevator,' and the Rift forms here."
+  surface_story: The elevator malfunctions, the five are trapped, and it ultimately crashes.
+  real_story: "Zhang Mingde suffered a heart attack while working late alone at 5:00 AM and died at his desk; at 7:55 AM his 'body' stood up and walked into the elevator—no longer him, the Rift's first anomalous manifestation."
+  healing_conditions:
+    - The living recognize that one person in the elevator is already "gone"
+    - The living say "farewell" to Zhang Mingde—acknowledging his death
+    - Optional: find the suicide note in Zhang Mingde's pocket, written to his daughter
+truth_fragments:
+  - name: The Stopped Watch
+    type: Scene
+    location: On Zhang Mingde
+    difficulty: Easy
+    loop: 1
+    detail: "Zhang Mingde's watch stopped at 4:58 AM, but he doesn't look like a man wearing a stopped watch; he checked the time twice more inside the elevator."
+  - name: No Breathing Sounds
+    type: Scene
+    location: All
+    difficulty: Medium
+    loop: 2
+    detail: "In the instant the elevator fell silent, you counted the breaths—only four people's. But you saw five chests rising and falling."
+  - name: The Suicide Note
+    type: Item
+    location: Inner pocket of Zhang Mingde's coat
+    difficulty: Medium
+    loop: 3
+    detail: "A letter Zhang Mingde wrote to his daughter at 3:00 AM: your tuition is in the third drawer of the desk. But he never sent it."
+  - name: The Medicine Bottle
+    type: Item
+    location: Zhang Mingde's briefcase
+    difficulty: Easy
+    loop: 1
+    detail: "Fast-acting heart pills, cap open with a few missing, dated this morning."
+  - name: The Colleague's Memory
+    type: Conversation
+    location: Passenger B—Li Na
+    difficulty: Medium
+    loop: 4
+    detail: "Li Na says he was very quiet today, normally would complain the elevator is slow; pauses then says: 'Did he... get on the elevator today? I don't remember him coming in.'"
+  - name: The Blind Spot
+    type: Scene
+    location: Elevator ceiling
+    difficulty: Hard
+    loop: 5
+    detail: "Zhang Mingde stands precisely in the camera's blind spot; from reality's perspective there are only four people in this elevator."
+  - name: The Cold
+    type: Scene
+    location: Near Zhang Mingde
+    difficulty: Easy
+    loop: 2
+    detail: "Getting close to Zhang Mingde brings a chill seeping from the bones, felt only by those near him."
+  - name: Farewell
+    type: Conversation
+    location: Triggered
+    difficulty: Special
+    loop: 6+
+    detail: "When all the living acknowledge he is gone and someone says farewell to him, he smiles and dissolves into light, and the elevator stops falling."
+key_npcs:
+  - name: Zhang Mingde
+    role: The Deceased
+    age: 52
+    emotion_baseline: N/A
+    sensitivity: Extremely High
+    notes: "Essentially gone; the afterimage repeats checking his watch, straightening his tie, smiling; does not speak but listens."
+  - name: Li Na
+    role: The Colleague
+    age: 34
+    emotion_baseline: 4/10
+    sensitivity: Medium
+    notes: "Fatigue after working late; knew Zhang Mingde hadn't been well lately, mistook the afterimage for him in person this morning."
+  - name: Wang Jianguo
+    role: The Stranger
+    age: 45
+    emotion_baseline: 6/10
+    sensitivity: Low
+    notes: "An ordinary office worker, sneaks looks at the stock market on his phone in the elevator, completely unaware of the anomaly."
+  - name: Chen Xiaoyu
+    role: The Intern
+    age: 23
+    emotion_baseline: 7/10
+    sensitivity: High
+    notes: "Nervous on her first day; a classmate of Zhang Mingde's daughter."
+degradation:
+  - phase: Loops 1-2
+    description: Normal, the elevator runs smoothly, players first experience the normal environment, reset after the fall.
+  - phase: Loops 3-4
+    description: The floor display occasionally skips a number, Zhang Mingde checks his watch more frequently.
+  - phase: Loops 5-6
+    description: The elevator occasionally blacks out for 1 second, after relighting Zhang Mingde's position has changed once.
+  - phase: Loops 7-8
+    description: Zhang Mingde begins to "lose focus," others occasionally can't see him.
+  - phase: Loops 9-10
+    description: The lights turn pale blue (the light in his office), the last chance.
+endings:
+  - id: A
+    name: The Doors Open
+    grade: Perfect
+    condition: Obtain all fragments + say farewell to Zhang Mingde
+    narrative: "The elevator stops at the 1st floor and the doors open, beyond is the hospital's white light, he smiles and turns to walk out, the remaining four look at one another."
+  - id: B
+    name: One Person Remembers
+    grade: Normal
+    condition: At least one person says farewell but the others fall silent
+    narrative: "The elevator hangs suspended, the afterimage dissipates, lights go out then relight, the four walk out, one looks back at the empty corner."
+  - id: C
+    name: Loop Exhausted
+    grade: Bad
+    condition: No one says farewell, loops used up
+    narrative: "The final fall passes through the ground and keeps dropping, lights go out completely, the panel numbers no longer light up."

@@ -1,0 +1,187 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Hero&amp;#x27;s Proof / D3 Forest | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r05_s3.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r05.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>D3 Forest</h1>
+<blockquote>
+<p><strong>Recommended Rank</strong>: F / E (Challenge Rating (CR) 1–6) | <strong>Theme</strong>: Verdant dense forest, low-mid tier resource grinding
+<strong>Accept</strong>: Guild commission "F-For1 / E-For1" (corresponds Rank F→E, CL 1–6); or designated by GM as leveling field.
+<strong>Map</strong>: <code>maps/D3_森林.yaml</code> + <code>maps/D3_森林.svg</code>
+This work has <strong>no multiclass</strong>; solo entry follows party-size adjustment rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no assist).</p>
+</blockquote>
+<h3>How to Enter (Opening Beat)</h3>
+<ul>
+<li><strong>Take guild commission</strong>: At the adventurer guild bulletin board accept F-tier "Forest Subjugation" (F-For1), after promotion accept E-For1 (corresponds Rank F→E, CL 1–6).</li>
+<li><strong>Active exploration</strong>: After players join in S0, they may actively explore from the forest edge outside the city (GM Book 17.1).</li>
+<li><strong>Leveling positioning</strong>: CL 1–6 veterans' / resource-grinding first choice; parallel with F/E commissions, grind Rank from F to E (see "Prologue · Alno Holy City Hub section").</li>
+<li><strong>Solo mode</strong>: Supported by CR−3, enemy count ×0.5, no assist; mini-boss room includes 10×10 positioning diagram (maps/D3_戰鬥_哥布林王.yaml), entering switches to standard combat (Chapter 7), clearing returns to exploration round.</li>
+</ul>
+<h2>I. Background</h2>
+<p>Deep in the verdant dense forest outside Dawnlight Village, a tribe of goblins built a stronghold beneath the ancient tree's roots; the chief who calls himself "Goblin King" rules the surrounding hunting trails with vine armor and brute force. The guild lists this as an F→E tier subjugation target; at the end of the dense forest, the ancient tree throne hosts this mini-boss.</p>
+<h2>II. Room Overview (with Fog Reveal)</h2>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Name</th>
+<th>Type</th>
+<th>Connects</th>
+<th>Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Forest Edge Entrance</td>
+<td>Entrance</td>
+<td>→R2</td>
+<td>Sole entry/exit; retreating here is safe.</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Fern Battlefield</td>
+<td>Combat</td>
+<td>R1/R3/R6</td>
+<td>Goblin Scout ×2 (CR2).</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Wolf Path</td>
+<td>Combat</td>
+<td>R2/R4/R7</td>
+<td>Wild Wolf ×2 (CR3).</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Pitfall Trail</td>
+<td>Trap</td>
+<td>R3/R8</td>
+<td>Weak trap (bear trap).</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Mossy Stone Vault</td>
+<td>Chest</td>
+<td>R6/R9</td>
+<td>Herbs, ragged cloth, Gold (G) 30~60.</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Archer's Forest Glade</td>
+<td>Combat</td>
+<td>R5/R7/R2/R10</td>
+<td>Goblin Archer ×2 (CR4).</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Resting Clearing</td>
+<td>Rest</td>
+<td>R6/R8/R3/R11</td>
+<td>Safe rest point.</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Poison Bee Corridor</td>
+<td>Trap</td>
+<td>R7/R4</td>
+<td>Strong trap (bee nest).</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>Relic Stone Chamber</td>
+<td>Chest</td>
+<td>R5/R10</td>
+<td>Forest fruit, Fine materials, G 40~80.</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>Ancient Tree Throne</td>
+<td>Mini-boss</td>
+<td>R9/R11/R6</td>
+<td><strong>Goblin King (CR5)</strong> (see below).</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>Exit Trail</td>
+<td>Exit</td>
+<td>R10/R7</td>
+<td>Clear point; collect reward and leave.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) see GM Book Chapter 17.</p>
+</blockquote>
+<h2>II-1. Combat Room Positioning Battle Diagrams</h2>
+<p>This module's mini-boss room includes a 10×10 positioning battle diagram (same format as Scenario 1–Scenario 4 Demon General battles), for GM to judge grid distance and range directly:</p>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Combat Room</th>
+<th>Positioning Battle Diagram</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R10</td>
+<td>Ancient Tree Throne (Goblin King CR5)</td>
+<td><code>maps/D3_戰鬥_哥布林王.yaml</code>+<code>.svg</code></td>
+<td>Boss; AOE marked "Brute Swing (Front Row ×1.5)"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Positioning diagram: enemies on top, allies on bottom, front/back row spacing 2 squares (4m); solo entry adjusted per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no assist).</p>
+</blockquote>
+<h2>III. Key Room Details</h2>
+<ul>
+<li><strong>R4 Pitfall Trail (Weak)</strong>: Perception DC12 (Dexterity (M_DEX) / Luck (M_LUK)); trigger 1d6 Pierce. Disarm DC14.</li>
+<li><strong>R8 Poison Bee Corridor (Strong)</strong>: Perception DC18; trigger 2d6 Poison + Stun 1 round. Disturbing the bee nest can block R3↔R7 passage (GM ruling).</li>
+<li><strong>R5 Mossy Stone Vault</strong>: Open chest DC12; trap 30% (mid, 2d6). Contains: herbs ×3, ragged cloth ×2, Gold (G) 30~60.</li>
+<li><strong>R9 Relic Stone Chamber</strong>: Open chest DC14; contains forest fruit ×2, Fine materials, Gold (G) 40~80.</li>
+<li><strong>R11 Exit Trail</strong>: After clearing return to guild to settle reward and leave.</li>
+</ul>
+<h2>IV. Mini-boss — Goblin King (CR5)</h2>
+<p>Per GM Book 10.4 CR formula and 10.7 Boss framework (simplified):</p>
+<ul>
+<li><strong>Health (HP)</strong> 54 (CR5 formula) | <strong>Attack Bonus (ATK)</strong> +2 (floor(1+0.25×5)) | <strong>Evasion (EVA)</strong> 10 (10+floor(0.15×5)) | <strong>Damage/hit</strong> 12 (floor(6+1.2×5))</li>
+<li><strong>Trait (1 phase)</strong>: <code>Brute Swing</code>—once every 3 rounds, deals damage ×1.5 to Front Row and Knockback 1 square.</li>
+<li><strong>Weakness</strong>: Fire ×1.5 (see Monster Bestiary fire-weakness note).</li>
+<li><strong>Drop</strong>: <code>Goblin King Insignia</code> (story item, redeemable at guild for Influence Points (IP) +2); basic materials + low chance Fine recipe.</li>
+</ul>
+<h2>V. Clear Rewards (Full Clear)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experience (EXP)</td>
+<td>~728 (R2 68 + R3 108 + R6 152 + R10 400, EXP accumulates to Character Level (CL) progress (Class Level (ClassLv) counts separately in independent Class Experience (CEXP) pool, not shared with EXP))</td>
+</tr>
+<tr>
+<td>Gold (G)</td>
+<td>200~350</td>
+</tr>
+<tr>
+<td>Influence Points (IP)</td>
+<td>+3 (clear) / +2 (insignia redemption)</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>Goblin Earring / ragged cloth / low chance Fine recipe</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Design hint: D3 is a stable CL 1–6 area for "grinding EXP+G+materials," preventing players from leveling only through main-story Demon General battles and causing economic imbalance. Can be re-cleared daily (see "Commission Catalog" opening, reset rules).</p>
+</blockquote><p><a href="../../assets/r05_en/scenarios/D3_%E6%A3%AE%E6%9E%97.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

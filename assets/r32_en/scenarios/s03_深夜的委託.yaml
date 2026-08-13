@@ -1,0 +1,99 @@
+name: "The Late-Night Commission"
+type: "Lost-Item Commission + First Negotiation"
+difficulty: "★★"
+recommended_marks: "1-2"
+play_time: "1-2 sessions"
+core_attributes: ["NG", "TR"]
+
+opening: |
+  The owner of the "Night Voyage" Café, A-Kai, contacts you late at night.
+  A part-time worker, Xia Xia (19), left her grandmother's silver bracelet at the café when closing up.
+  But the bracelet is no longer on the Surface—"it fell down."
+  A-Kai can sense the bracelet in the Gap Layer, but he cannot enter it himself.
+
+npcs:
+  - name: "A-Kai"
+    type: "the Sensitive"
+    desc: "Owner of the Night Voyage Café. In his fifties, knows all the local Walkers"
+    companion_eligible: true
+    companion_template:
+      type: "the Sensitive"
+      stats: { AW: 5, NG: 4 }
+      special: "Local Intel: Surface access DC -3"
+      loyalty: 2
+      available_from: "Scenario 3"
+
+  - name: "Xia Xia"
+    type: "Newly Awakened Gap Walker"
+    desc: "A 19-year-old part-timer. Can see the Gap but doesn't know what it is"
+    companion_eligible: true
+    companion_template:
+      type: "Apprentice Walker"
+      stats: { TR: 3, RE: 4 }
+      special: "Keen Smell: Advantage on searching for Lost Items"
+      loyalty: 2
+      available_from: "Scenario 3"
+
+  - name: "Lost Item Collector"
+    type: "Gap Creature"
+    desc: "Drawn by the silver bracelet's resonance to forage in the café's Gap Layer"
+
+lost_items:
+  - name: "Silver Bracelet"
+    tier: "Benevolent Keepsake"
+    solo_dc: 10
+    location: "Café Gap Layer—under Xia Xia's seat"
+    effect: "Endurance Cost recovers 1d6+2 Gap Endurance (GE)"
+  - name: "Grandmother's Old Recipe"
+    tier: "Common Lost Item"
+    solo_dc: 6
+    location: "Café Gap Layer—kitchen"
+    effect: "Reveals the bracelet's emotional meaning to Xia Xia; related Negotiation +1"
+  - name: "A Suicide Note"
+    tier: "Memory Crystal"
+    solo_dc: 13
+    location: "On the Collector (obtained by trading a story)"
+    effect: "See memory fragments of when the Collector was once a Walker"
+
+gap_creatures:
+  - name: "Lost Item Collector"
+    negotiation_dc: 12
+    exchange: "Wants a new story—the player tells of one of their own regrets"
+    gives: "Silver Bracelet + clue: the bracelet was left deliberately by the grandmother"
+    notes: "Sincere Negotiation DC -2, perfunctory +2"
+
+scenes:
+  - name: "Surface Investigation"
+    desc: "Awareness DC 8 to confirm the bracelet is not on the Surface. A-Kai describes the feeling of falling down."
+  - name: "Enter the Gap"
+    desc: "The café's main door is a Natural Threshold DC 6. After traversing, the café is twice as large in the Gap Layer as on the Surface."
+  - name: "Search"
+    desc: |
+      Retrieval DC 6 to find the grandmother's recipe.
+      Tucked in the recipe is a note: 'To Xia Xia, this bracelet was given to me by my mother. Now it's yours. Don't lose it.'
+      But the bracelet is not under the seat.
+  - name: "Encounter the Collector"
+    desc: |
+      The Collector is placing the bracelet into its collection. Negotiation DC 12.
+      It wants a new story. The player must role-play and tell of their regret.
+      Sincere DC -2, perfunctory DC +2.
+  - name: "Trade Successful"
+    desc: |
+      The Collector hands over the bracelet: \"This bracelet didn't fall—someone kept putting it on and taking it off. Hesitation wore reality thin.\"
+  - name: "Reveal the Truth"
+    desc: |
+      Xia Xia's grandmother passed away last month. Every night after closing, Xia Xia sits wearing the bracelet for a long time—
+      unaware she is wearing reality thin. She is close to awakening.
+
+endings:
+  - "Return bracelet + tell Xia Xia the truth → Xia Xia becomes an Apprentice Walker Companion (Loyalty 3)"
+  - "Return bracelet only → Return Mark +1"
+  - "Keep the bracelet → can use the Benevolent Keepsake effect, but Xia Xia will keep looking for you"
+
+rewards:
+  - "Return Mark × 1-2"
+  - "Can recruit A-Kai or Xia Xia as Companions"
+
+companion_recruitment:
+  - "A-Kai (if helped) → Sensitive Companion, starting Loyalty 3"
+  - "Xia Xia (if told the truth) → Apprentice Walker Companion, starting Loyalty 3"

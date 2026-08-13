@@ -1,0 +1,52 @@
+# Trait Selection
+# Total of 3 Trait Points (TP); each trait has a corresponding Trait Points (TP) cost
+
+traits:
+  - name: "Adaptable"
+    tp_cost: 1
+    desc: "Colony success rate +10%"
+    attribute: "Economy Power (ECO) +1"
+  - name: "Industrial"
+    tp_cost: 1
+    desc: "Construction cost -10%"
+    attribute: "Economy Power (ECO) +1"
+  - name: "Artist"
+    tp_cost: 1
+    desc: "Stability +5%"
+    attribute: "Unity (UNI) +1"
+  - name: "Bio-Engineering"
+    tp_cost: 2
+    desc: "Medical progress, extended lifespan"
+    attributes: "Science Power (SCI) +1, Unity (UNI) +1"
+  - name: "Ecologist"
+    tp_cost: 1
+    desc: "Habitable planet output +15%"
+    attribute: "Economy Power (ECO) +1"
+  - name: "Robust"
+    tp_cost: 1
+    desc: "Initial fleet Hull Points (HP) +10%"
+    attribute: "Military Power (MIL) +1"
+  - name: "Curious"
+    tp_cost: 1
+    desc: "Detection range +1 system"
+    attribute: "Science Power (SCI) +1"
+  - name: "Philosopher King"
+    tp_cost: 2
+    desc: "Tradition unlock Difficulty Class (DC) -1"
+    attributes: "Unity (UNI) +1, Diplomacy Power (DIP) +1"
+  - name: "Warrior Culture"
+    tp_cost: 1
+    desc: "Combat damage +10%"
+    attribute: "Military Power (MIL) +1"
+  - name: "Trade Tradition"
+    tp_cost: 1
+    desc: "Energy (EC) output +15%"
+    attribute: "Economy Power (ECO) +1"
+  - name: "Spiritual Leader"
+    tp_cost: 2
+    desc: "Unity (UNI) checks always count as a critical success"
+    attributes: "Unity (UNI) +2"
+  - name: "Space-Born"
+    tp_cost: 1
+    desc: "Zero-G adaptation, fleet speed +10%"
+    attribute: "Military Power (MIL) +1"

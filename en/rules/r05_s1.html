@@ -1,0 +1,177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Hero&amp;#x27;s Proof / Dungeon Module D1 — Goblin Lair (Goblin Warren) | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r05_s1.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r05.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Dungeon Module D1 — Goblin Lair (Goblin Warren)</h1>
+<blockquote>
+<p><strong>Recommended Rank</strong>: F / E (Challenge Rating (CR) 1–8)｜<strong>Theme</strong>: Wild cave, low-tier resource farming
+<strong>Acceptance</strong>: Besides the guild commission "F-For2 Goblin Patrol Clearance," players may also explore voluntarily (see GM Book 17.1).
+<strong>Map</strong>: <code>maps/D1_哥布林巢穴.yaml</code> ＋ <code>maps/D1_哥布林巢穴.svg</code>
+This game has <strong>no multiclass</strong>; solo entry follows the player-count scaling rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no sidekick).</p>
+</blockquote>
+<h3>How to Enter (Opening Beat)</h3>
+<ul>
+<li><strong>Take a guild commission</strong>: Accept the F-tier "F-For2 Goblin Patrol Clearance" on the Adventurer's Guild bulletin board (the deep Throne Cavern also corresponds to E-For1 Goblin Lair Purge) (corresponds to Rank F/E, CL 1–8); or designated by the GM as a leveling ground.</li>
+<li><strong>Voluntary exploration</strong>: Players may also, after enrolling in S0, go explore the abandoned mine outside the city on their own (GM Book 17.1).</li>
+<li><strong>Leveling positioning</strong>: The top choice for familiar farming / resource farming after the prologue; suggested CL 1–4 to fight D1 + F/E commissions, grinding Rank from F to E (see "Prologue: Alno Holy City (Hub)").</li>
+<li><strong>Solo mode</strong>: Supported by Challenge Rating (CR) −3, enemy count ×0.5, no sidekick; the three combat rooms come with 10×10 positioning diagrams (map/D1_戰鬥_*.yaml), entering a room triggers standard combat (Chapter 7), returning to the exploration round after clearing.</li>
+</ul>
+<h2>I. Background</h2>
+<p>In the depths of the abandoned mine on the northern foot of Dawn Village, a band of goblins has occupied the old mining tunnels, kidnapping village children to extract the location of the ore vein. The guild lists this as an F-tier subjugation target; deep in the lair lurks a chieftain who styles himself "Goblin King."</p>
+<h2>II. Room Overview (with Fog Reveal)</h2>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Name</th>
+<th>Type</th>
+<th>Connections</th>
+<th>Content Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>Entrance Cave</td>
+<td>Entrance</td>
+<td>→R2</td>
+<td>Sole entry/exit; retreating here is safe.</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>Front Hall</td>
+<td>Combat</td>
+<td>R1 / R3 / R4</td>
+<td>Goblin Warrior ×2 (CR2).</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>Storage Cave</td>
+<td>Chest</td>
+<td>R2 / R5</td>
+<td>Food and ragged weapons; basic materials + Gold (G).</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>Trap Corridor</td>
+<td>Trap</td>
+<td>R2 / R6</td>
+<td>Weak mechanism (spiked stakes).</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Sleeping Cave</td>
+<td>Combat</td>
+<td>R3 / R6</td>
+<td>Goblin Archer ×2 (CR3).</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>Sacrifice Pit</td>
+<td>Trap</td>
+<td>R4 / R5 / R7</td>
+<td>Strong mechanism (rockfall).</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Throne Cavern</td>
+<td>Minor Boss</td>
+<td>R6 / R8</td>
+<td><strong>Goblin King (CR5)</strong> (see below).</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>Escape Tunnel</td>
+<td>Exit</td>
+<td>R7</td>
+<td>Clear point; rescue the hostage and leave to claim rewards.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Exploration round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) see GM Book Chapter 17.</p>
+</blockquote>
+<h2>II-B. Combat Room Positioning Battle Diagrams</h2>
+<p>All three combat rooms in this module come with 10×10 positioning battle diagrams (same format as the S1–S4 Demon General battles), for the GM to directly judge grid distance and range:</p>
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Combat Room</th>
+<th>Positioning Battle Diagram</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>Front Hall (Goblin Warrior ×2, CR2)</td>
+<td><code>maps/D1_戰鬥_前廳.yaml</code>＋<code>.svg</code></td>
+<td>Melee engagement</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>Sleeping Cave (Goblin Archer ×2, CR3)</td>
+<td><code>maps/D1_戰鬥_寢窟.yaml</code>＋<code>.svg</code></td>
+<td>Archers in enemy back row, ranged threat to our back row</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>Throne Cavern (Goblin King CR5)</td>
+<td><code>maps/D1_戰鬥_王座窟.yaml</code>＋<code>.svg</code></td>
+<td>Boss; Area Effect (AOE) marked "Brute Swing (Front Row ×1.5)"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>In the positioning diagram enemies are on top, our side on bottom, front/back row spacing 2 grids (4m); solo entry adjusted per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no sidekick).</p>
+</blockquote>
+<h2>III. Key Room Details</h2>
+<ul>
+<li><strong>R4 Trap Corridor (weak)</strong>: Perception Difficulty Class (DC) 12 (Dexterity (M_DEX) / Luck (M_LUK)); trigger 1d6 Pierce. Disarm Difficulty Class (DC) 14.</li>
+<li><strong>R6 Sacrifice Pit (strong)</strong>: Perception Difficulty Class (DC) 20; trigger 3d6 Bludgeon + Stun 1 round. Rockfall can block the R5↔R7 passage (GM ruling).</li>
+<li><strong>R3 Storage Cave</strong>: Open chest Difficulty Class (DC) 12; trap 30% (medium, 2d6). Contains: Goblin Earring ×2, Tattered Cloth ×3, Gold (G) 40~80.</li>
+<li><strong>R8 Escape Tunnel</strong>: Hostage (village child) imprisoned here; after rescue, clear the dungeon, return to guild for settlement <strong>EXP +102 / G +80 / IP +3</strong> (equivalent to F-For1 commission).</li>
+</ul>
+<h2>IV. Minor Boss — Goblin King (CR5)</h2>
+<p>Per GM Book 10.4 CR formula and 10.7 Boss framework (simplified version):</p>
+<ul>
+<li><strong>Health (HP)</strong> 54 (CR5 formula)｜<strong>Attack Bonus (ATK)</strong> +2 (floor(1+0.25×5))｜<strong>Evasion (EVA)</strong> 10 (10+floor(0.15×5))｜<strong>Damage/hit</strong> 12 (floor(6+1.2×5))</li>
+<li><strong>Trait (1 stage)</strong>: <code>Brute Swing</code> — once every 3 rounds, deals Damage ×1.5 to the front row and Knockback 1 grid.</li>
+<li><strong>Weakness</strong>: Fire ×1.5 (see monster bestiary fire-weakness note).</li>
+<li><strong>Drop</strong>: <code>Goblin King Emblem</code> (plot item, redeemable at guild for Influence Points (IP) +2); basic materials + low chance of Fine recipe.</li>
+</ul>
+<h2>V. Clear Rewards (full clear)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Experience (EXP)</td>
+<td>≈ 576 (R2 68 + R5 108 + R7 400, EXP accumulates to Character Level (CL) progress (Class Level ClassLv separately pools independent Class Experience (CEXP), not shared with EXP))</td>
+</tr>
+<tr>
+<td>Gold (G)</td>
+<td>150~250</td>
+</tr>
+<tr>
+<td>Influence Points (IP)</td>
+<td>+3 (rescue hostage) / +2 (emblem redemption)</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>Goblin Earring / Tattered Cloth / low chance of Fine recipe</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Design tip: D1 is an early "farm EXP + G + materials" stable ground, preventing players from leveling only through the main Demon General battles and causing economic imbalance. Can be re-farmed daily (see Commission Catalog reset rules).</p>
+</blockquote><p><a href="../../assets/r05_en/scenarios/D1_%E5%93%A5%E5%B8%83%E6%9E%97%E5%B7%A2%E7%A9%B4.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

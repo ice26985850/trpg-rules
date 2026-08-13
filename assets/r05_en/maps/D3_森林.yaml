@@ -1,0 +1,96 @@
+id: D3
+name: Forest
+recommended_rank: "F/E (CR 1-6)"
+theme: Verdant Woods
+grid: { cols: 4, rows: 3 }
+rooms:
+  - id: R1
+    name: Forest Edge Entrance
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: Sole entry/exit point; retreating here means a safe escape.
+  - id: R2
+    name: Fern Battlefield
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R6]
+    cr: 2
+    enemies: [Goblin Scouts x2]
+    desc: Goblin Scouts x2 lie in ambush.
+  - id: R3
+    name: Wolf Path
+    type: combat
+    gx: 2
+    gy: 0
+    links: [R2, R4, R7]
+    cr: 3
+    enemies: [Wild Wolves x2]
+    desc: Wild Wolves x2 patrol.
+  - id: R4
+    name: Pitfall Trail
+    type: trap
+    gx: 3
+    gy: 0
+    links: [R3, R8]
+    trap: Weak (Bear Trap, DC12 / 1d6)
+    desc: Weak trap trail.
+  - id: R5
+    name: Mossy Stone Vault
+    type: treasure
+    gx: 0
+    gy: 1
+    links: [R6, R9]
+    treasure: Herbs x3, Rags x2, G 30~60
+    desc: Hunter's supplies hidden behind mossy stones.
+  - id: R6
+    name: Archer's Forest Window
+    type: combat
+    gx: 1
+    gy: 1
+    links: [R5, R7, R2, R10]
+    cr: 4
+    enemies: [Goblin Archers x2]
+    desc: Goblin Archers x2 shoot from above.
+  - id: R7
+    name: Resting Clearing
+    type: rest
+    gx: 2
+    gy: 1
+    links: [R6, R8, R3, R11]
+    desc: Safe rest point (restores HP/status).
+  - id: R8
+    name: Poison Bee Corridor
+    type: trap
+    gx: 3
+    gy: 1
+    links: [R7, R4]
+    trap: Strong (Hornet Nest, DC18 / 2d6 Poison)
+    desc: Strong trap; disturbs the hornet nest.
+  - id: R9
+    name: Relic Stone Chamber
+    type: treasure
+    gx: 0
+    gy: 2
+    links: [R5, R10]
+    treasure: Forest Fruit x2, Fine Materials, G 40~80
+    desc: Relics of an ancient hunter.
+  - id: R10
+    name: Ancient Tree Throne
+    type: elite
+    gx: 1
+    gy: 2
+    links: [R9, R11, R6]
+    cr: 5
+    enemies: [Goblin King (Boss)]
+    combat_map: maps/D3_戰鬥_哥布林王.yaml
+    desc: Mini-boss Goblin King (CR5).
+  - id: R11
+    name: Exit Trail
+    type: exit
+    gx: 2
+    gy: 2
+    links: [R10, R7]
+    desc: Exit; collect reward and leave after clearing.

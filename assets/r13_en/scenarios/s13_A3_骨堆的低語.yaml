@@ -1,0 +1,72 @@
+name: Whisper of the Bone Pile
+difficulty: Intermediate (CR 4-5)
+mode: Mortal · Multiplayer
+players: 2-4
+judge: Ilya Cole (Radical)
+target_region: Tarr-Morag Hive City, Abandoned Hive "Bone Pile" Level 2000
+recommended_attributes: 3-4
+opening_description: 'You infiltrate the Abandoned Hive "Bone Pile", to find a Chaos cult outpost reportedly operating there. The mission is to eliminate the cultists and destroy all Chaos items... but Inquisitor Ilya''s orders seem to hide deeper secrets.
+
+  '
+surface_goal: Infiltrate the Abandoned Hive "Bone Pile", find a Chaos cult outpost reportedly operating there, eliminate the cultists and destroy all Chaos items.
+hidden_goal: 'Ilya is eager to prove himself. He suspects the cult here is preparing a summoning ritual—but he did not tell the Penitents. If the ritual is completed, the Penitents become the sacrifice. If the Penitents stop the ritual—Ilya will claim the credit for himself.
+
+  '
+known_threats:
+- Approximately 15-20 cultists
+- At least 2 Acolytes
+- Underhive environment is dangerous (darkness, structural instability)
+hidden_threats:
+- The cult leader is an unregistered Psi 3 Psyker—he is performing a ritual to summon a Warp entity
+- The ritual has reached day 7 (9 days total). If the players fail to stop it within two game sessions, the summoning completes
+- Ilya deliberately under-provided Flare ration (only 3 given), citing "limited resources"
+resources:
+  notes: 3 Flares (instead of 5). The rest standard ration.
+  flares: 3
+seduction_notes:
+- 1 player Note 1
+- 1 player Note 3 (the true goal of the mission is to test who will betray)
+- 2 players Note 4
+key_npcs:
+- name: '"Lightless" Gang Contact'
+  role: Potential Ally
+  detail: Underhive gang willing to provide intel and shortcuts—but demands a grenade in exchange
+- name: 'Psyker Cult Leader "the Whisperer"'
+  role: Boss
+  detail: Psi 3, grows stronger if the ritual completes. Flies into a rage when the ritual is interrupted
+key_checks:
+- scene: Searching for the outpost in the darkness
+  check: Awareness (Hard)
+  tn: Mind×10+Awareness−20
+  success: Find an undetected infiltration route
+  failure: Alert the cultists, fight head-on
+- scene: Negotiating with the Lightless
+  check: Deceive (Standard)
+  tn: Fate×10+Deceive
+  success: Gain intel and shortcuts
+  failure: Demanded a higher price
+- scene: Seeing through Ilya's concealment
+  check: Awareness (Easy)
+  tn: Mind×10+Awareness+20
+  success: Discover the true danger of the ritual
+  failure: Unaware of the time pressure
+- scene: Interrupting the ritual
+  check: Attack the Psyker or destroy the ritual circle
+  tn: Combat
+  success: Stop the summoning
+  failure: Warp Shadows appear
+encounters:
+- name: Outer Outpost
+  enemies: Cultist×6 + Acolyte×1
+  cr: 0×6+1
+  tactic: Defend using cover
+- name: Ritual Hall (before ritual completes)
+  enemies: Acolyte×2 + Cultist×4 + Whisperer(Psi3)
+  cr: 1×2+0×4+2
+  tactic: Whisperer continuously casts psychic powers
+- name: Ritual Hall (if ritual completes)
+  enemies: Acolyte×1 + Cultist×2 + Whisperer(Psi3 enhanced) + Warp Shadow×1
+  cr: 1+0×2+3+2
+  tactic: Extremely dangerous
+evacuation_condition: Proceed to the designated evacuation point after mission completion.
+map_ref: "maps/map13_bonestack"

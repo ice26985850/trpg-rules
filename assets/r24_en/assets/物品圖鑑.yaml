@@ -1,0 +1,268 @@
+name: Item Codex
+source_file: 物品圖鑑.md
+table_count: 6
+tables:
+- section: 2.4.1 Forging & Equipment System ⭐ > Ores & Materials
+  headers:
+  - d6
+  - material
+  - quality
+  - use
+  rows:
+  - d6: 1-3
+    material: '**Iron Ingot**'
+    quality: Common
+    use: Forge basic weapons/armor (consume 2 Iron Ingots → 1 equipment)
+  - d6: 4-5
+    material: '**Obsidian Steel**'
+    quality: Fine
+    use: Forge fine equipment (consume 2 Obsidian Steel +1◇ → 1 equipment)
+  - d6: '6'
+    material: '**Abyss Alloy**'
+    quality: Epic
+    use: Forge epic equipment (consume 1 Abyss Alloy +2◇ +1● → 1 equipment; requires Forge Room Lv3)
+- section: 2.4.1 Forging & Equipment System ⭐ > Forgeable Equipment
+  headers:
+  - equipment
+  - material_req
+  - forge_room
+  - effect
+  - trade_price
+  rows:
+  - equipment: '**Iron Claw**'
+    material_req: Iron Ingot×2
+    forge_room: Lv1
+    effect: Equipped monster CP+1
+    trade_price: '8'
+  - equipment: '**Iron Armor**'
+    material_req: Iron Ingot×3
+    forge_room: Lv1
+    effect: Equipped monster Defense dice +1 die
+    trade_price: '10'
+  - equipment: '**Mining Pick**'
+    material_req: Iron Ingot×2
+    forge_room: Lv1
+    effect: Equipped monster Management Value (MV)+1 (Mine/excavation only)
+    trade_price: '6'
+  - equipment: '**Obsidian Blade**'
+    material_req: Obsidian Steel×2+◇×1
+    forge_room: Lv2
+    effect: Equipped monster CP+2; adds Bleeding (1 damage per round ×2 rounds)
+    trade_price: '25'
+  - equipment: '**Obsidian Heavy Armor**'
+    material_req: Obsidian Steel×3+◇×1
+    forge_room: Lv2
+    effect: Equipped monster Defense dice +2 dice; Max HP +3
+    trade_price: '30'
+  - equipment: '**Engineering Kit**'
+    material_req: Obsidian Steel×2+◇×1
+    forge_room: Lv2
+    effect: Equipped monster Management Value (MV)+2; trap construction speed −1 round
+    trade_price: '20'
+  - equipment: '**Abyss Weapon**'
+    material_req: Abyss Alloy×1+◇×2+●×1
+    forge_room: Lv3
+    effect: Equipped monster CP+3; recover 1 HP per kill
+    trade_price: '60'
+  - equipment: '**Abyss Bastion**'
+    material_req: Abyss Alloy×2+◇×3+●×1
+    forge_room: Lv3
+    effect: Equipped monster Defense dice +3 dice; Max HP +8
+    trade_price: '80'
+  - equipment: '**Lord Armament**'
+    material_req: Abyss Alloy×2+◇×5+●×3
+    forge_room: Lv3
+    effect: Lord physical attack dice +2 dice; can enchant 1 extra effect
+    trade_price: '150'
+- section: E. Magic Item Table (d66) > Weapons & Armor (11-26)
+  headers:
+  - d66
+  - item
+  - quality
+  - effect
+  rows:
+  - d66: '11'
+    item: Shadow Dagger
+    quality: Common
+    effect: CUN attack +1 die; on hit, target −1 die next round
+  - d66: '12'
+    item: Flame Longsword
+    quality: Common
+    effect: WAR attack +1 fire damage
+  - d66: '13'
+    item: Dragonbone Shield
+    quality: Fine
+    effect: Defense dice +2 dice; fire damage −1
+  - d66: '14'
+    item: Holy Light Warhammer
+    quality: Fine
+    effect: Damage ×1.5 vs Undead/Demons (adventurer-exclusive)
+  - d66: '15'
+    item: Venom Edge
+    quality: Common
+    effect: Applies poison on hit; 1 damage per round ×3 rounds
+  - d66: '16'
+    item: Frost Staff
+    quality: Fine
+    effect: ARC frost spell damage +2; can cast "Shadow Bolt" once free per combat
+  - d66: '21'
+    item: Thunder Spear
+    quality: Fine
+    effect: WAR attack can leap to an adjacent enemy (second target's dice pool −2)
+  - d66: '22'
+    item: Shadow-Erosion Armor
+    quality: Fine
+    effect: Physical damage reduction = Warfare (WAR)/2; Holy Light damage +50%
+  - d66: '23'
+    item: Vampiric Blade
+    quality: Epic
+    effect: Recover 1 HP per 3 damage dealt
+  - d66: '24'
+    item: Anti-Magic Bow
+    quality: Fine
+    effect: Ranged attacks ignore magic shields (adventurer-exclusive)
+  - d66: '25'
+    item: Giant Slayer
+    quality: Epic
+    effect: Damage +3 vs targets with CP≥5
+  - d66: '26'
+    item: Abyssal Verdict
+    quality: Legendary
+    effect: Warfare (WAR)+ARC attack dice pool takes the higher; one free "Annihilation Ray" per combat
+- section: E. Magic Item Table (d66) > Accessories & Rings (31-46)
+  headers:
+  - d66
+  - item
+  - quality
+  - effect
+  rows:
+  - d66: '31'
+    item: Mana Ring
+    quality: Common
+    effect: Mana Crystal storage cap +3
+  - d66: '32'
+    item: Cloak of Invisibility
+    quality: Fine
+    effect: 'Once per combat: invisible 2 rounds (ends after attacking or casting)'
+  - d66: '33'
+    item: Lucky Rabbit Foot
+    quality: Common
+    effect: 'Once per combat: reroll 1 die'
+  - d66: '34'
+    item: Charm Necklace
+    quality: Fine
+    effect: Dominion (DOM) interrogation +1 die; captive pacification effect +1
+  - d66: '35'
+    item: Shield Badge
+    quality: Common
+    effect: 'Once per combat: reaction triggered; Defense dice pool +3 dice single use'
+  - d66: '36'
+    item: Teleport Stone
+    quality: Epic
+    effect: 'Once per combat: instantly teleport to any room on the same floor'
+  - d66: '41'
+    item: Undead Charm
+    quality: Fine
+    effect: Undead monster LOY+1; skeleton CP+1
+  - d66: '42'
+    item: Elemental Heart
+    quality: Epic
+    effect: Choose 1 element immunity (fire/ice/lightning/acid; irreversible once chosen)
+  - d66: '43'
+    item: Hourglass of Time
+    quality: Legendary
+    effect: 'Once per combat: gain 1 full extra round of actions'
+  - d66: '44'
+    item: Oath Ring
+    quality: Fine
+    effect: Swap with 1 ally; each gains one of the other's archetype passive ability (shared cooldown)
+  - d66: '45'
+    item: Void Gem
+    quality: Epic
+    effect: Can absorb 1 lethal attack (HP restored from 0 to 1; once per campaign)
+  - d66: '46'
+    item: Dragonheart Charm
+    quality: Legendary
+    effect: Max HP +5; automatically recover 1 HP each round
+- section: E. Magic Item Table (d66) > Consumables (51-66)
+  headers:
+  - d66
+  - item
+  - quality
+  - effect
+  rows:
+  - d66: '51'
+    item: Healing Potion
+    quality: Common
+    effect: Restore 2d6 HP (once)
+  - d66: '52'
+    item: Mana Potion
+    quality: Common
+    effect: Restore ◇×3 (once)
+  - d66: '53'
+    item: Holy Water
+    quality: Common
+    effect: Deal 3d6 damage to Undead/Demons (once; held by adventurers)
+  - d66: '54'
+    item: Explosive Reagent
+    quality: Common
+    effect: Same-room AOE 2d6 damage (once)
+  - d66: '55'
+    item: Invisibility Potion
+    quality: Fine
+    effect: Invisible 3 rounds (once)
+  - d66: '56'
+    item: Antidote
+    quality: Common
+    effect: Remove Poisoned status (once)
+  - d66: '61'
+    item: 'Scroll: Shadow Storm'
+    quality: Fine
+    effect: Cast "Shadow Storm" once (requires ARC≥2)
+  - d66: '62'
+    item: 'Scroll: Group Shield'
+    quality: Fine
+    effect: Cast "Group Shield" once (requires ARC≥3)
+  - d66: '63'
+    item: 'Scroll: Unbroken Pact'
+    quality: Epic
+    effect: Cast "Unbroken Pact" once (requires ARC≥4)
+  - d66: '64'
+    item: Soul Stone
+    quality: Fine
+    effect: Store ●×3 (can be used as Soul Essence)
+  - d66: '65'
+    item: Rune Trap
+    quality: Fine
+    effect: Immediately deploy 1 free magical rune trap (no build round needed)
+  - d66: '66'
+    item: 'Tears of Nexis'
+    quality: Legendary
+    effect: Restore all HP+◇+● to full. Limit 1 held per campaign
+- section: E. Magic Item Table (d66) > Acquiring Magic Items
+  headers:
+  - source
+  - chance
+  - quality_pref
+  rows:
+  - source: T1 Adventurer Drop
+    chance: 5%
+    quality_pref: Common
+  - source: T2 Adventurer Drop
+    chance: 10%
+    quality_pref: Common (80%)/Fine (20%)
+  - source: T3 Adventurer Drop
+    chance: 20%
+    quality_pref: Fine (70%)/Epic (25%)/Legendary (5%)
+  - source: T4 Adventurer Drop
+    chance: 35%
+    quality_pref: Fine (50%)/Epic (35%)/Legendary (15%)
+  - source: T5 Adventurer Drop
+    chance: 50%
+    quality_pref: Epic (50%)/Legendary (50%)
+  - source: Abyss Black Market Purchase
+    chance: Price = quality base price
+    quality_pref: Common◆10 / Fine◆30 / Epic◆80 / Legendary◆200+
+  - source: Ancient Ruins Discovery
+    chance: 100%
+    quality_pref: Quality relates to DEP

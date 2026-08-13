@@ -1,0 +1,72 @@
+scenario: D5
+section: "D5 Ocean·Sea Siren's Pool (CR18)"
+map_type: battle
+grid_scale: "1 cell = 2m"
+title: D5_Battle_Sea Siren
+# Coordinates are exact grid coords (col, row, 0–9) for distance and range calculation
+# Front/back rows spaced 2 cells (4m) apart; enemy on top, our side on bottom
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: Enemy, role: Front, color: "#FF8A8A"}
+    - {row: 1, side: Enemy, role: Back, color: "#FFC8C8"}
+    - {row: 6, side: Our, role: Front, color: "#8AAEFF"}
+    - {row: 8, side: Our, role: Back, color: "#C8D8FF"}
+
+nodes:
+  - id: e_boss
+    label: Sea Siren
+    x: 5
+    y: 2
+    type: boss
+    explored: true
+  - id: e_min1
+    label: Water Ghoul A
+    x: 3
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_min2
+    label: Water Ghoul B
+    x: 7
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_min3
+    label: Octopus
+    x: 5
+    y: 1
+    type: Enemy Ranged
+    explored: true
+  - id: p_front_war
+    label: Our Front Warrior
+    x: 4
+    y: 6
+    type: Our Front
+    explored: true
+  - id: p_front_monk
+    label: Our Front Monk
+    x: 6
+    y: 6
+    type: Our Front
+    explored: true
+  - id: p_back_mage
+    label: Our Back Mage
+    x: 4
+    y: 8
+    type: Our Back
+    explored: true
+  - id: p_back_cleric
+    label: Our Back Cleric
+    x: 6
+    y: 8
+    type: Our Back
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: e_boss
+    type: Melee
+    style: dashed

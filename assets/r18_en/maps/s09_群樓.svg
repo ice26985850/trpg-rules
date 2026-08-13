@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 560" font-family="serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="680" height="560" fill="#F7F3EC"/>
+
+  <!-- Title -->
+  <text x="20" y="26" font-size="20" fill="#2B2B2B" font-weight="bold">S9 Red Rain over the Block · Three Adjacent Tong Lau (Squad Split)</text>
+
+  <!-- Region base color -->
+  <rect x="40" y="90" width="500" height="420" rx="12" fill="#E8D5C4" fill-opacity="0.18" stroke="#C9A98C" stroke-dasharray="6 4" stroke-width="1.2"/>
+  <text x="50" y="108" font-size="12" fill="#8A6B4F">Three-Building Mirror Zone (resentful energy can transfer between them)</text>
+  <rect x="500" y="430" width="150" height="60" rx="10" fill="#D5E8E0" fill-opacity="0.3" stroke="#7FB0A0" stroke-dasharray="6 4" stroke-width="1.2"/>
+  <text x="510" y="448" font-size="12" fill="#3E7A66">Fu Lam House</text>
+  <text x="510" y="466" font-size="11" fill="#3E7A66">Feng Shui Channel (same source)</text>
+
+  <!-- Connections: three buildings' stairwells vertical + resentful energy transfer + synced altar -->
+  <g stroke="#777" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <!-- Fu Hing House vertical -->
+    <line x1="90" y1="448" x2="90" y2="432"/>
+    <line x1="90" y1="328" x2="90" y2="312"/>
+    <line x1="90" y1="208" x2="90" y2="192"/>
+    <!-- Yi Shing Building vertical -->
+    <line x1="260" y1="448" x2="260" y2="432"/>
+    <line x1="260" y1="328" x2="260" y2="312"/>
+    <line x1="260" y1="208" x2="260" y2="192"/>
+    <!-- Fu Lam House vertical -->
+    <line x1="430" y1="448" x2="430" y2="432"/>
+    <line x1="430" y1="328" x2="430" y2="312"/>
+    <line x1="430" y1="208" x2="430" y2="192"/>
+    <!-- Resentful energy transfer (three buildings interconnected) -->
+    <line x1="110" y1="380" x2="250" y2="380"/>
+    <line x1="280" y1="380" x2="410" y2="380"/>
+    <!-- Synced altar connecting upper floors of three buildings -->
+    <line x1="200" y1="260" x2="270" y2="260"/>
+    <line x1="340" y1="290" x2="340" y2="270"/>
+    <line x1="370" y1="260" x2="430" y2="260"/>
+  </g>
+
+  <!-- Nodes -->
+  <g font-size="13" text-anchor="middle" fill="#2B2B2B">
+    <!-- Fu Hing House -->
+    <rect x="30" y="448" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="90" y="473">Fu Hing House · Ground</text>
+    <rect x="30" y="328" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="90" y="353">Fu Hing House · Floor</text>
+    <rect x="30" y="208" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="90" y="233">Fu Hing House · Rooftop</text>
+
+    <!-- Yi Shing Building -->
+    <rect x="200" y="448" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="260" y="473">Yi Shing · Ground</text>
+    <rect x="200" y="328" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="260" y="353">Yi Shing · Floor</text>
+    <rect x="200" y="208" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="260" y="233">Yi Shing · Rooftop</text>
+
+    <!-- Fu Lam House -->
+    <rect x="370" y="448" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="430" y="473">Fu Lam House · Ground</text>
+    <rect x="370" y="328" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="430" y="353">Fu Lam House · Floor</text>
+    <rect x="370" y="208" width="120" height="40" rx="8" fill="#E1E8F0" stroke="#9AA9C0" stroke-width="1.5"/>
+    <text x="430" y="233">Fu Lam House · Rooftop</text>
+
+    <!-- Synced Altar (center) -->
+    <rect x="290" y="240" width="120" height="44" rx="8" fill="#F0E2C0" stroke="#C9A23C" stroke-width="2"/>
+    <text x="350" y="267">Synced Altar</text>
+
+    <!-- Feng Shui Channel -->
+    <rect x="510" y="430" width="120" height="40" rx="8" fill="#E8E1D0" stroke="#BBAE92" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="570" y="455">Feng Shui Channel (Clue)</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="11" fill="#555">
+    <rect x="520" y="350" width="14" height="14" rx="3" fill="#E1E8F0"/><text x="540" y="362">Tong Lau Node</text>
+    <rect x="520" y="370" width="14" height="14" rx="3" fill="#F0E2C0"/><text x="540" y="382">Synced Altar</text>
+    <rect x="520" y="390" width="14" height="14" rx="3" fill="#E8E1D0"/><text x="540" y="402">Clue Point</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="20" y="540" font-size="12" fill="#666">Scenario: S9 Red Rain over the Block · Squad (Multiplayer)｜Key: Letters hidden in the three buildings' Mailbox Banks, synchronized deliverance at 3 a.m., the Feng Shui Channel's shared source points to "Shi Chu Shi"</text>
+</svg>

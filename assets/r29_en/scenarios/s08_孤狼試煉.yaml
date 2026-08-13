@@ -1,0 +1,311 @@
+# Last Stand TRPG — Scenario S8 (Solo): Lone Wolf Trial
+# Type: Solo
+# Suggested Level: 5-6
+# Difficulty: ★★★★
+scenario:
+  id: S8
+  name: Lone Wolf Trial
+  type: solo
+  tier: 2.5
+  difficulty: 4
+  estimated_duration: 4-5 hours
+  suggested_level: 5-6
+
+  description: >
+    You are no longer a Rookie. You survived three matches—that alone is an
+    achievement. But it also means you are now "valuable prey".
+
+    The bounty hunters receive a list—every contestant who has survived more
+    than three matches, each with a price on their head. Your name is on it.
+    Your codename is on it. Attached is a photo of you from your last match—one
+    you never knew was taken.
+
+    An abandoned industrial park is your stage. Sixteen Lone Wolves—at least
+    half of them after you. You are not the hunter. You are the prey. But you
+    are not about to give up without a fight.
+
+map:
+  name: Rust Belt Industrial Park
+  size: 5 km × 5 km
+  terrain_mix: { abandoned_factory: 40%, chemical_zone: 20%, rail_yard: 15%, workers_quarters: 15%, polluted_waterway: 10% }
+  description: >
+    Once the heart of this city—thousands worked here. Abandoned after the war.
+    Rusted pipes, collapsed workshops, and chemical barrels scattered
+    everywhere. Some barrels are still leaking—you do not know what is inside,
+    but it smells like death.
+  special_rules:
+    - "Bounty Hunter System: in this scenario, 30% of enemy Lone Wolves are 'Bounty Hunters'—they actively track the player"
+    - "Chemical Contamination Zone: in the chemical zone, a Physique DC 14 check is required each round; failure deals 1d6 toxin damage (ignores armor)"
+    - "Drone Patrol: every 5 rounds, the GM announces a drone flying over. Being scanned by the drone = position revealed to all bounty hunters"
+    - "Industrial Cover: heavy steel structures give +5 DC cover bonus, but some structures are unstable (5% collapse chance, 3d6 crush damage)"
+
+regions:
+  - id: R1
+    name: Central Steel Plant
+    terrain: Heavy Industrial
+    loot_level: Abundant (Blue)
+    nodes: [C3, D3, C4, D4]
+    landmark: L1
+    special: The massive steel-smelting furnace provides heavy cover. The abandoned crane control room is an excellent sniping point—but has only one entrance/exit
+  - id: R2
+    name: Chemical Zone
+    terrain: Hazard Zone
+    loot_level: Abundant (Blue)
+    nodes: [A2, B2, A3, B3]
+    landmark: L2
+    special: Chemical barrels leaking—Physique DC 14 each round, failure 1d6 toxin damage. But a Military-grade gas mask can be found (immune to toxin)
+  - id: R3
+    name: Rail Yard
+    terrain: Industrial
+    loot_level: Common (Green)
+    nodes: [E2, F2, E3, F3, E4, F4]
+    landmark: L3
+    special: Abandoned train cars provide linear cover. Can move quickly along car tops (Agility DC 12, failure = fall for 1d6)
+  - id: R4
+    name: Workers' Quarters
+    terrain: Residential
+    loot_level: Common (Green)
+    nodes: [B5, C5, B6, C6]
+    landmark: L4
+    special: Dense low-rise apartments. Suited to Silent Move—but bounty hunters know this. Every room may be a trap
+  - id: R5
+    name: Polluted Waterway
+    terrain: Water/Barrier
+    loot_level: None
+    nodes: [D6, E6, F6, G6]
+    landmark: L5
+    special: Black water—falling in deals 2d6 toxin damage per round. The only passage is a rusted iron bridge (limited load, vehicles cannot cross)
+  - id: R6
+    name: South District Warehouse Cluster
+    terrain: Industrial
+    loot_level: Common (Green)
+    nodes: [D1, E1, D2, E2]
+    special: Container maze—plenty of heavy cover, but terrible visibility. Suited to close-range ambush
+  - id: R7
+    name: North District Power Plant
+    terrain: Industrial
+    loot_level: Military (Purple)
+    nodes: [G3, H3, G4, H4]
+    landmark: L6
+    special: Best loot on the map—but the generator is still running. Noise masks all footsteps (Hearing Range −20 m)
+
+landmarks:
+  - id: L1
+    name: Central Steel Plant
+    buildings:
+      - { name: Main Plant, floors: 3, description: A massive steel-structure building. An abandoned steel-smelting furnace occupies the center—providing 360-degree cover }
+      - { name: Crane Control Room, floors: 1, elevation: 20m, description: A control room suspended in mid-air—the best sniping point on the map. But it has only one ladder in and out. Trapped inside means death }
+      - { name: Raw Material Yard, type: outdoor, description: Small hills of scrap steel and ore—providing irregular cover }
+  - id: L2
+    name: Chemical Zone
+    buildings:
+      - { name: Chemical Warehouse, floors: 1, special: Unknown liquid on the floor. The GM may designate some areas as fire traps (ignite on contact with open flame, 3d8) }
+      - { name: Laboratory Building, floors: 2, special: Second floor has Military-grade gas masks ×2 (retrievable) }
+    hazard: Contamination zone marker—each round without a gas mask requires PHY DC 14
+  - id: L3
+    name: Rail Yard
+    features:
+      - Abandoned freight trains ×20 (usable as linear cover or fast-movement routes)
+      - Dispatch tower ×1 (3 floors, covers the entire yard with line of sight)
+      - Maintenance garage ×1 (may contain a vehicle—50% chance of a motorcycle)
+  - id: L4
+    name: Workers' Quarters
+    buildings:
+      - { name: Apartment Block, count: 8, floors: 3-5, description: Densely packed abandoned apartments. 3–5 floors each. Similar internal layouts—easy to get lost }
+      - { name: Community Center, floors: 2, description: Once the workers' canteen and activity center. The first-floor hall is suited to ambush }
+    special: Radio Tower located on the apartment rooftops (the easternmost block)
+  - id: L5
+    name: Rusted Iron Bridge
+    features:
+      - The only river crossing—a mandatory path (for the southern Safe Zone)
+      - 150 m long, foot traffic only (motorcycles barely pass)
+      - Many holes in the deck—requires Agility DC 10 to avoid stepping through
+      - The waterway below is a dead end (contaminated water is lethal)
+  - id: L6
+    name: North District Power Plant
+    buildings:
+      - { name: Generator Room, floors: 1, special: A running giant generator. Extremely loud—everyone's Hearing Range −20 m. Gunshots masked by noise—suppressors are meaningless here }
+      - { name: Control Room, floors: 1, special: A safe area behind soundproof glass. Overlooks the entire generator room. Military-grade loot stored here }
+      - { name: Cooling Tower, floors: 1, elevation: 30m, special: Tower top overlooks all of the north district—but climbing requires PHY DC 14 }
+
+enemy_configuration:
+  total_lone_wolves: 16  # incl. player and nemesis = 18
+  bounty_hunters: 5  # 30% are bounty hunters
+  distribution:
+    - type: Rookie Lone Wolf
+      difficulty: ★
+      count: 3
+      note: No real threat—but they may become bait for the bounty hunters
+    - type: Steady Lone Wolf
+      difficulty: ★★
+      count: 4
+      note: Ordinary contestants—will not actively track the player, but will defend themselves
+    - type: Bounty Hunter
+      difficulty: ★★★
+      count: 5
+      note: Actively tracks the player. Knows the player's name and tactical preferences from the last match
+    - type: Assault Lone Wolf
+      difficulty: ★★★
+      count: 2
+      note: Will come when they hear gunfire—not targeting the player, but adds chaos
+    - type: Professional-grade Sniper
+      difficulty: ★★★★
+      count: 1
+      note: A Professional who acts alone. Not after the bounty—only to test himself. Occupies the crane control room
+
+nemesis:
+  name: Vera Samoilova
+  codename: The Banshee
+  style: Bounty Hunter Leader
+  strength: 9/10
+  weapon: M24 Sniper Rifle + Suppressor + 8x Scope + Desert Eagle (melee)
+  armor: Level 3 Helmet + Level 2 Armor
+  backstory: >
+    Leader of the bounty hunters. A retired intelligence officer—before
+    becoming a bounty hunter, she served in the military as a counter-sniper.
+    Her specialty is finding hidden people. Her record: she has hunted down 14
+    "valuable prey"—all successful.
+
+    A photo of you hangs on the wall of her office. Next to it, three screenshots
+    from your last match—you never knew you were photographed. She studied every
+    one of your habits: which weapon you prefer, whether you like high ground or
+    the ground, whether under pressure you attack or defend.
+
+    She is waiting for your first mistake.
+
+  special_abilities:
+    - Counter-Sniper Training: when the player fires a second shot from the same position, she automatically knows the player's position
+    - Drone Control: every 5 rounds, she can dispatch a drone to scan an area (200 m radius)
+    - Decoy Trap: she may leave a "first-aid kit" in a room—but a tripwire grenade is behind the door (Perception DC 16)
+
+drone_system:
+  description: >
+    The Pandora Entertainment Group deployed patrol drones in this match. The
+    drones are not weapons—they are cameras. The audience wants excitement—they
+    want to watch the bounty hunters hunt you.
+  mechanics:
+    - frequency: every 5 rounds
+    - announcement: "GM narration: 'A buzzing comes from overhead—the drone. Its red indicator light flickers beneath the clouds.'"
+    - scan_radius: "200 m (centered on the drone's flight path)"
+    - consequence: Players caught in the scan—their position is revealed to all bounty hunters. They will arrive within 1–3 rounds
+    - counter: Hiding indoors or in thick smoke avoids being scanned. Destroying the drone requires a DC 18 Marksmanship check (one shot suffices, but reveals your position)
+    - note: Drones stop functioning in the final circle (the circle is too small to matter)
+
+circle:
+  type: Edge Drift (southeast bias—forces the player to cross the iron bridge or chemical zone)
+  description: >
+    The circle slowly drifts southeast. The final circle is at the south end of
+    the iron bridge or an abandoned warehouse on the south bank. This means:
+    players in the north must cross the bridge before the fourth circle—and the
+    bounty hunters know this.
+
+phases:
+  - phase: Bounty Announcement
+    turns: 0 (pre-drop)
+    gm_notes: >
+      Before the player parachutes, give them a special opening:
+      "The transport plane's broadcast system crackles with static—then switches
+      to a woman's voice. Not the standard Pandora announcer. This voice is
+      colder, more professional. 'Attention all contestants. The Pandora Bounty
+      Committee has listed the following contestants as "High-Value Targets" for
+      this match. Contestants who eliminate the targets below will receive double
+      the bounty. The list is as follows—' Your name is on the list. Your
+      codename is on the list. The broadcast ends. The rear cargo door of the
+      transport plane opens. Below is a rusted expanse of grey."
+
+  - phase: First Blood
+    turns: 3-4
+    gm_notes: >
+      Make the player feel pressure immediately after landing. The bounty hunters
+      will not grant the luxury of looting. The first bounty hunter begins
+      tracking within 2 rounds of landing. Give the player a choice: go to the
+      chemical zone for a gas mask (high risk), or move stealthily through the
+      dormitory area (safer but poor loot).
+
+      The focus of this stretch is building the feeling of "being hunted":
+      - a sniper-scope glint in the distance (a bounty hunter looking for you)
+      - radio interference—bounty hunters jamming communications
+      - a copy of the list on a killed Rookie—your name circled
+
+  - phase: Drone Game
+    turns: 4-5
+    gm_notes: >
+      Introduce the drone system. Let the player experience the fear of being
+      watched. First drone scan—give the player a chance to react: "Buzzing—take
+      cover!" Second drone scan—if the player has not learned, let a bounty
+      hunter find them.
+
+      Best design: have the drone appear when the player thinks they are safe—
+      "You just finished bandaging your wound and caught your breath. Buzzing."
+
+  - phase: Banshee's Hunting Ground
+    turns: 4-5
+    gm_notes: >
+      Vera begins to take the initiative. She will not rush in like the other
+      bounty hunters—she sets traps, creates false impressions, and uses other
+      bounty hunters as her hounds.
+
+      Techniques:
+      - let the player find an "abandoned first-aid kit"—with a tripwire grenade nearby
+      - let a sniper-scope glint appear in an impossible position—that is a mirror, not her
+      - let the player defeat a bounty hunter and find a walkie-talkie on the body—Vera's voice comes through it:
+        "You are harder to handle than I expected. Good—that makes it interesting."
+
+  - phase: Iron Bridge Deadlock
+    turns: 3-4
+    gm_notes: >
+      The circle forces the player to cross the bridge. This is the most
+      dangerous stretch of the journey—because Vera is waiting. So are the other
+      bounty hunters.
+
+      Give the player multiple options:
+      - frontal bridge rush (most dangerous)—but smoke grenades can provide cover
+      - detour through the chemical zone to find a shallow ford—but toxin damage will weaken you
+      - use a vehicle to rush the bridge at high speed—leaving bounty hunters only a 2-second sniper window
+      - fake a bridge rush then retreat—draw out the sniper's position, then counter-snipe
+
+      Every choice has a cost and an opportunity—there is no "safe" option.
+
+  - phase: Final Circle - Bounty Settlement
+    turns: 2-3
+    gm_notes: >
+      The last survivors: you, Vera, and at most 1–2 other Lone Wolves. The
+      circle shrinks to an abandoned warehouse. Vera finally confronts you face
+      to face.
+
+      Give the player a climactic scene. Let Vera speak—
+      "Do you know what your bounty is? Five hundred thousand Credits.
+      Enough for an ordinary family to live fifty years.
+      Do you know why it is so high? Because you made me look like a Rookie."
+
+      Her weakness: perfectionism. She cannot accept failure. When her plan is
+      disrupted—when the player makes a move she did not anticipate—she makes
+      mistakes. This is the player's only opening.
+
+      The final confrontation is not just gunplay—it is psychological warfare.
+      Let her seethe because the player will not follow her script.
+      "You were not supposed to go left—every time in your last match you went right—"
+      "You switched weapons? Why? Your data says you prefer—"
+
+victory_condition: Become the last surviving Lone Wolf (and defeat or shake off the bounty hunter "Banshee")
+
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  chicken_dinner: 500
+  per_elimination: 80
+  bounty_hunter_defeated: 200
+  nemesis_defeated: 500
+  drone_destroyed: 80
+
+new_mechanics_introduced:
+  - Bounty Hunter System (enemies actively track the player)
+  - Drone Patrol System (environmental surveillance pressure)
+  - Chemical Contamination Zone (sustained environmental damage)
+  - Unstable Structures (risk of industrial cover collapsing)
+  - Decoy Traps (deceptive behavior of enemy AI)

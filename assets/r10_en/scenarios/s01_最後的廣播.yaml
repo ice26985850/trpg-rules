@@ -1,0 +1,132 @@
+# S01 The Last Broadcast (source file: s01_最後的廣播.yaml)
+# Starship Convoy TRPG — starter module
+
+source_md: "s01_最後的廣播.md"
+
+scenario:
+  id: s01
+  title: "The Last Broadcast"
+  subtitle: "The convoy's first adventure after departing the Abyss Gate"
+  level_range: "1-2"
+  sessions: "2-3"
+  hours: "8-12"
+  players: "2-5"
+  gm_required: true
+
+hook:
+  summary: "The Abyss Gate's public channel receives an encrypted broadcast from legendary navigator Carlo Vega — he claims to possess a complete Ash Belt navigation chart, but his ship is stranded in orbit around Nephys-4."
+  key_info:
+    - "Carlo Vega is a legendary navigator, presumed dead three years ago"
+    - "Nephys-4 requires one medium-range Jump (Engine Lv.2+, 10 units of Fuel)"
+    - "A Skyhook Group tracker is also monitoring this channel"
+
+acts:
+  - act: 1
+    title: "The Hook — You've Got a Friend in Deep Space"
+    scenes:
+      - description: "The convoy receives Carlo Vega's broadcast and faces its first major decision."
+  - act: 2
+    title: "The First Vote — Go or Stay?"
+    vote_type: "Simple Majority"
+    secret_motives:
+      - id: 1
+        text: "Your engine needs rare parts: Carlo is said to have once found a military repair ship"
+      - id: 2
+        text: "You owe a debt to an Abyss Gate information broker — not going buys time, going makes the debt due"
+      - id: 3
+        text: "One of your crew was once Carlo's navigation apprentice and begs you to mount a rescue"
+      - id: 4
+        text: "The Skyhook Group is also tracking this signal; they want the navigation chart"
+  - act: 3
+    title: "The Voyage — The Road Through the Ashes"
+    jump_required: true
+    jump_distance: "Medium-range"
+    fuel_cost: 10
+    events:
+      - range: "1-8"
+        name: "Smooth Jump"
+        effect: "Arrive but with +5 extra units of fuel consumed"
+      - range: "9-12"
+        name: "Derelict Fleet"
+        effect: "May scavenge but risks triggering automated defenses"
+      - range: "13-16"
+        name: "Distress Signal"
+        effect: "A smaller convoy's engine has failed; they may know the situation at Nephys-4"
+      - range: "17-20"
+        name: "Anomalous Interference"
+        effect: "Communications hit by electromagnetic interference; signal originates from the planet's surface"
+  - act: 4
+    title: "Arrival — Nephys-4: The Forgotten Research Station"
+    scenes:
+      - id: "A"
+        name: "Orbital Debris"
+        check: "SEN DC 12"
+        reward: "Navigation data fragments + encrypted log"
+        clue: "He's not on the ship; there are things they need to know in the research station"
+      - id: "B"
+        name: "Research Station — Surface Level"
+        findings:
+          - "Abandoned laboratory whose research subject is alternative energy for hyperspace jumps"
+          - "Carlo's makeshift camp"
+          - "Final log entry reveals the existence of hyperspace entities"
+      - id: "C"
+        name: "Research Station — Deep Level"
+        npc_found: "Carlo Vega (mentally unstable)"
+        threat: "Hyperspace anomaly closing in (2 hours)"
+        dilemma: "Shut down the device + rescue vs. take the data and evacuate"
+  - act: 5
+    title: "The Second Vote — Take Him, or Take the Chart?"
+    vote_type: "Two-Thirds Majority"
+    threat: "Hyperspace anomaly (TL4), arriving in 2 hours"
+    options:
+      - id: "A"
+        name: "Take Carlo to the core to shut down the device, then evacuate"
+        risk: "Tight on time, possible encounter with hyperspace entities"
+        reward: "Complete navigation chart + Carlo's knowledge + intel on hyperspace entities"
+      - id: "B"
+        name: "Forcefully take the data pad and leave immediately"
+        risk: "Hyperspace entities may track the jump trajectory"
+        reward: "Navigation chart but missing safe-route markers"
+      - id: "C"
+        name: "Take Carlo but skip the core"
+        risk: "Device left running; threat may spread"
+        reward: "Navigation chart + Carlo"
+      - id: "D"
+        name: "Kill Carlo, take the data pad"
+        risk: "Moral cost; tense convoy relations"
+        reward: "Complete navigation chart"
+  - act: 6
+    title: "Endings and Consequences"
+    outcomes:
+      - option: "A"
+        result: "May trigger a TL2 hyperspace entity encounter; on success gain the full reward"
+        sequel: "Track the origin of the hyperspace entities"
+      - option: "B"
+        result: "d20 ≥ 12 breaks pursuit; on failure encounter hyperspace entities on the next jump"
+      - option: "C"
+        result: "GM secretly records the spreading hyperspace anomaly, affecting other sectors later"
+      - option: "D"
+        result: "Crew Loyalty drops; the Relic Watchers may mark the convoy"
+
+npcs:
+  - name: "Carlo Vega"
+    role: "Legendary navigator / source of the distress signal"
+    attributes: {CMD: 7, ENG: 4, NAV: 6, DIP: 5, INT: 8}
+    description: "In his fifties, mentally damaged but deeply knowledgeable"
+    function: "Information source, core of a moral dilemma"
+  - name: "Erin Colt"
+    role: "Skyhook Group tracker"
+    attributes: {CMD: 5, ENG: 4, NAV: 5, DIP: 7, INT: 6}
+    description: "Professional and cold-eyed, represents the group's interests"
+    function: "Third-party pressure, recurring character"
+  - name: "The 'Gate-Bottom' Informant"
+    role: "Wandering information broker"
+    attributes: {CMD: 3, ENG: 4, NAV: 5, DIP: 6, INT: 7}
+    function: "Information source, connecting point between modules"
+
+gm_notes:
+  - "Ensure both votes carry dramatic tension"
+  - "The second vote is the scenario climax; give each Captain time to speak"
+  - "Carlo can become a long-term NPC"
+  - "Hyperspace entities pave the way for sequel modules"
+  - "Erin's stance can shift based on the convoy's actions"

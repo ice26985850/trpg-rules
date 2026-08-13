@@ -1,0 +1,148 @@
+# Beastman Warring States TRPG Scenario
+# S2: Call of the Soul Blade
+# Corresponding Campaign: Act 2 (Levels 6–9)
+# Suggested Players: 1–4
+
+scenario_id: "S2"
+title: "Call of the Soul Blade"
+act: 2
+suggested_levels:
+  min: 6
+  max: 9
+difficulty: "Intermediate"
+estimated_sessions: 3
+prerequisite_scenario: "S1_鬼哭原之影"
+
+# ─── Background ───
+background: |
+  During a meditation training, the player senses the presence of a Soul Blade—not one of the Five Swords Under Heaven, but a lesser Soul Blade left behind by an ancient Sword Saint.
+  The Soul Blade's resonance comes from the Thousand-Blade Gorge (Senzangyō)—a natural canyon on the eastern side of the Horse Clan's territory, and the traditional site where ancient Sword Saints underwent their trials.
+  The player must travel to the Thousand-Blade Gorge to seek this Soul Blade, but the Horse Clan Daimyō "Kiba no Jingorō" imposes strict restrictions on outsiders entering the canyon.
+
+# ─── Major Factions ───
+factions:
+  player_side:
+    lord: "School Grandmaster"
+    allies:
+      - "Dog Clan Giri Alliance (if the player chose the Giri Alliance path)"
+  enemy_side:
+    main_villain: "Black Moon Society Elite (Snake Clan, Snake Bite Style, Secret-Transmission rank)"
+    minions:
+      - "Black Moon Society Ninja ×4 (CR 2)"
+      - "Black Moon Society Yokai Wielder ×2 (CR 3)"
+  neutral:
+    - "Horse Clan Border Guard Captain—requires persuasion or bribery to pass"
+    - "Guardian Sprite of the Thousand-Blade Gorge (neutral, can provide trial hints)"
+
+# ─── Scene Flow ───
+scenes:
+  - id: 1
+    name: "Horse Clan Border Negotiation"
+    type: "Social"
+    description: |
+      Arrive at the border of the Horse Clan's Suruga Province. The guard captain demands to see the Daimyō's passage permit—you don't have one.
+      Three ways to resolve this:
+      - Persuasion (DC 18): Request passage in the name of the Soul Blade's resonance
+      - Stealth (DC 16): Sneak in under cover of night
+      - Confrontation: A small fight, but offends the Horse Clan (affects later plot)
+    checks:
+      - skill: "Persuasion"
+        dc: 18
+        success: "The guard captain allows passage, but with a condition—help deal with the bandit problem at the Thousand-Blade Gorge"
+      - skill: "Stealth"
+        dc: 16
+        success: "Successfully sneak into the Thousand-Blade Gorge, but lose the supplies the Horse Clan guards might have provided"
+
+  - id: 2
+    name: "Trial of the Thousand-Blade Gorge"
+    type: "Exploration / Combat"
+    description: |
+      In the Thousand-Blade Gorge, the rock walls are sharp as blades. The trial ground of the ancient Sword Saints lies deep in the canyon.
+      The trial has three steps:
+      1. Climb the Blade-Sharp Cliff (Climb DC 16; failure takes 1d6 slashing damage)
+      2. Keep balance crossing a narrow bridge in strong winds (Agility (AGI) saving throw DC 15)
+      3. Face the Trial Guardian's test
+    boss:
+      name: "Trial Guardian (Sprite · Form of Wind)"
+      cr: 5
+      type: "Sprite (Friendly Neutral)"
+      stats:
+        hp: 45
+        dv: 17
+        speed: 12
+        attacks:
+          - name: "Wind Blade"
+            hit: "+7"
+            damage: "1d8+4 slashing"
+          - name: "Storm Barrier"
+            effect: "Reaction action; fully negates one physical attack"
+      test: |
+        The guardian does not truly wish to harm you—it wants to test your understanding of the "blade."
+        It will ask three questions (GM chooses):
+        - "What is a blade?"
+        - "Why do you swing your blade?"
+        - "What does your blade remember?"
+        Each sincere answer (not a combat check, pure RP) weakens the guardian by 10 HP.
+        After the three questions the guardian will voluntarily cease combat.
+    reward:
+      xp: 500
+      gold: 300
+      items:
+        - "Soul Blade 'Wind-Cutter' (Yōmono-grade tachi)"
+        - "Blade Inscription: Trial (Wind-Cutter exclusive; crit range 19–20 when using this blade in combat)"
+
+  - id: 3
+    name: "Black Moon Society Ambush"
+    type: "Combat"
+    description: |
+      Upon leaving the Thousand-Blade Gorge, the player is ambushed by the Black Moon Society—they too are searching for the Soul Blade.
+      The Black Moon Society elite (Snake Clan) says to the player: "That Soul Blade does not belong to a weak samurai like you. Hand it over and you may leave alive."
+    enemies:
+      - name: "Black Moon Society Elite (Snake Clan · Snake Bite Style)"
+        cr: 4
+        stats:
+          hp: 38
+          dv: 16
+          attack: "+6, 1d6+4 + poison (Physique (PHY) saving throw DC 16)"
+          special: "Shadow Stitch (Advantage on attacks while stealthing)"
+      - name: "Black Moon Society Ninja"
+        count: 4
+        cr: 2
+    tactical_note: |
+      The Black Moon Society elite possesses a Soul-Blade-shard detection device—if during combat the player's Hit Points (HP) fall below 50%,
+      the elite will retreat using a smoke bead and leave these words: "We will meet again at the place of the seal. Then—you will regret not handing over the Soul Blade today."
+
+  - id: 4
+    name: "Soul Blade Awakening—Dialogue with the Blade"
+    type: "Roleplay / Giri"
+    description: |
+      At a safe location, perform the "Dialogue with the Blade" ritual.
+      The Soul Blade "Wind-Cutter" begins to reveal its Blade Nature and memories.
+    blade_details:
+      name: "Wind-Cutter"
+      grade: "Yōmono"
+      personality: "Swift Thunder" # restless and active, craves speed
+      memory: |
+        Wind-Cutter remembers its former master—a Horse Clan Gale Style swordsman who completed an impossible trial in the storm of the Thousand-Blade Gorge.
+        But the former master later died in battle protecting comrades.
+        Wind-Cutter waited two hundred years in the gorge, awaiting the next "Wind-Chaser."
+    moral_dilemma: |
+      Wind-Cutter asks you a question: "My former master died protecting his comrades. If the same choice were laid before you—what would you choose?"
+      Your answer determines the initial Blade Bond value:
+      - "I would make the same choice" (Blade Bond +10): the blade senses your righteousness (Giri)
+      - "I would find a way to protect both comrades and myself" (Blade Bond +5): the blade admires your ambition
+      - "I would let my comrades protect me" (Blade Bond −5): the blade despises your cowardice
+
+# ─── Aftermath ───
+follow_up:
+  - "The player obtains their first Soul Blade, unlocking the Blade Inscription system"
+  - "The Black Moon Society takes notice of the player—they may face pursuit in future scenarios"
+  - "If the player helped the Horse Clan border guards deal with bandits, they obtain a Horse Clan Passage Permit (usable in Act 3)"
+  - "The School Grandmaster praises the player for finding the Soul Blade—Cultivation Points +15"
+
+# ─── Solo Adjustments ───
+solo_adjustments:
+  - "Black Moon Society Ninja count: 4→2"
+  - "Trial Guardian question count: 3→2"
+  - "Black Moon Society Elite HP: 38→28"
+  - "Provide NPC companion option: Horse Clan Border Guard Captain (if persuasion succeeds, may accompany into the gorge)"

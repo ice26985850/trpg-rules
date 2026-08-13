@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" font-family="Microsoft JhengHei, PingFang TC, sans-serif">
+<rect x="0" y="0" width="1200" height="960" fill="#fff"/>
+<text x="40" y="40" font-size="20" font-weight="bold" fill="#7a1f1f">🗺 Generic Foundation Site (Campaign C/D)</text>
+<rect x="40" y="80" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="102" font-size="15" font-weight="bold" fill="#2c3e50">▣ First Floor — Operations &amp; Containment</text>
+<rect x="40" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Central Control Room</text>
+<text x="124" y="146" font-size="9.5" text-anchor="middle" fill="#666">Monitoring</text>
+<rect x="516" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Containment Wing Alpha (Safe)</text>
+<text x="600" y="146" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="110" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="129" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Containment Wing Beta (Euclid)</text>
+<text x="1076" y="146" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Containment Wing Gamma (Keter)</text>
+<text x="124" y="236" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">D-Class Detention Block (North)</text>
+<text x="600" y="236" font-size="9.5" text-anchor="middle" fill="#666">C-3</text>
+<rect x="992" y="200" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="219" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Medical Bay (East)</text>
+<text x="1076" y="236" font-size="9.5" text-anchor="middle" fill="#666">D-3</text>
+<rect x="40" y="290" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="309" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Server Room</text>
+<text x="124" y="326" font-size="9.5" text-anchor="middle" fill="#666">C-6</text>
+<rect x="516" y="290" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="309" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Warehouse</text>
+<text x="600" y="326" font-size="9.5" text-anchor="middle" fill="#666">C-7</text>
+<rect x="40" y="300" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="322" font-size="15" font-weight="bold" fill="#2c3e50">▣ Second Floor — Administrative Zone</text>
+<rect x="40" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Research Dept. Office</text>
+<text x="124" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">MTF Office</text>
+<text x="600" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="330" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="349" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Medical Dept. Office</text>
+<text x="1076" y="366" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Security Dept. Office</text>
+<text x="124" y="456" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Conference Room</text>
+<text x="600" y="456" font-size="9.5" text-anchor="middle" fill="#666">C-2</text>
+<rect x="992" y="420" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="439" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Chief Administrator's Office</text>
+<text x="1076" y="456" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="510" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="529" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Morales Research Lab</text>
+<text x="124" y="546" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="510" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="529" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Ethics Committee Office</text>
+<text x="600" y="546" font-size="9.5" text-anchor="middle" fill="#666">D-2/C-4</text>
+<rect x="992" y="510" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="529" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Cafeteria</text>
+<text x="1076" y="546" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="520" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="542" font-size="15" font-weight="bold" fill="#2c3e50">▣ Third Floor — Residential &amp; Support</text>
+<rect x="40" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Personnel Dormitory</text>
+<text x="124" y="586" font-size="9.5" text-anchor="middle" fill="#666">847 personnel</text>
+<rect x="516" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Lounge</text>
+<text x="600" y="586" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="550" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="569" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Psychological Evaluation Center</text>
+<text x="1076" y="586" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Reserve Facility</text>
+<text x="124" y="676" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="640" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="659" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Rooftop Helipad</text>
+<text x="600" y="676" font-size="9.5" text-anchor="middle" fill="#666">Evacuation</text>
+<rect x="40" y="740" width="1120" height="200" fill="#f7f5f0" stroke="#bbb" stroke-dasharray="4 3"/>
+<text x="48" y="762" font-size="15" font-weight="bold" fill="#2c3e50">▣ Sublevel B1 — Special Containment</text>
+<rect x="40" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Keter Containment Pod</text>
+<text x="124" y="806" font-size="9.5" text-anchor="middle" fill="#666">C-5 Full Breach</text>
+<rect x="516" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Hume Generators ×4</text>
+<text x="600" y="806" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="992" y="770" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="1076" y="789" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Emergency Blast Doors ×6</text>
+<text x="1076" y="806" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="40" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="124" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Scramstone Anchor ×2</text>
+<text x="124" y="896" font-size="9.5" text-anchor="middle" fill="#666"></text>
+<rect x="516" y="860" width="168" height="46" rx="6" fill="#fff" stroke="#2c3e50" stroke-width="1.6"/>
+<text x="600" y="879" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Secure Elevator → Area-14</text>
+<text x="600" y="896" font-size="9.5" text-anchor="middle" fill="#666">C-6/D-5</text>
+</svg>

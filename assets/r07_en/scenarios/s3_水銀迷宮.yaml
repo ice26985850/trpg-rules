@@ -1,0 +1,47 @@
+# Earth Master TRPG Scenario S3: Mercury Maze — "Outskirts of the Imperial Mausoleum"
+scenario_id: S3
+title: "Mercury Maze — Outskirts of the Imperial Mausoleum"
+level_range: "5-7"
+difficulty: "Moderate"
+sessions: "2-3"
+region: "Guanzhong"
+
+synopsis: |
+  The outer defense system of the Imperial Mausoleum is discovered — a maze encircled by a mercury river. The designers imitated the Qin Dynasty technique of "using mercury as the hundred rivers, lakes, and seas."
+  The maze traps the resentful spirits of craftsmen who perished during construction. The players must cross the maze to find the true exit — this is only the outer wall of the Imperial Mausoleum.
+
+npcs:
+  - {id: npc_old_zhou, name: "“The Mapmaker” Old Zhou", role: "Information Source", stats: "Touch-Gold Clan·Mountain-Mover sect (disabled, retired)", info: "Provides part of the maze map — only reached the second control room. Lost a leg and three companions in the maze."}
+  - {id: npc_master_craftsman, name: "Master Craftsman's Resentful Spirit", role: "Core Spirit", attitude: "Angry — they were buried alive in the maze.", secret: "Knows the layout of all traps, but will only reveal it once players fulfill a dying wish (dying wish: bring news of their deaths to their descendants)."}
+  - {id: npc_japanese, name: "Contact of the Japanese East-Asia Archaeological Society", role: "Competitor", attitude: "Polite but dangerous", secret: "They too have found the maze entrance — digging from another direction."}
+
+tomb_structure:
+  type: "Large Annex Building"
+  chambers:
+    - {id: entrance, name: "Entrance Hall", description: "Stone door + inscription (records the maze's construction purpose)."}
+    - {id: maze, name: "Maze Body", features: ["Mercury river network (flowing mercury, toxic vapor)", "Trap control rooms ×3", "Craftsmen's remains gathering area", "False exits ×2"]}
+    - {id: island, name: "Island in the Mercury River", description: "Relay safe point — the only place without toxic vapor."}
+    - {id: exit, name: "True Exit", description: "Leads toward the Imperial Mausoleum (not reached in this scenario)."}
+
+encounters:
+  - {id: enc_mercury, name: "Mercury Toxic Vapor", type: "Environment", dc: 12, description: "Long-term exposure accumulates toxicity. Every 30 minutes a Constitution DC 12 check; failure means poisoning."}
+  - {id: enc_sluice, name: "Sluice Gate Mechanism", type: "Exploration", dc: 14, description: "Wrong operation → mercury floods the area. The three control rooms each control a different area."}
+  - {id: enc_craftsmen, name: "Craftsmen's Resentful Spirits", type: "Social/Combat", ttv: 8, description: "3-5 resentful spirits. Can be soothed by fulfilling the dying wish."}
+  - {id: enc_trap_corridor, name: "Trap Corridor", type: "Exploration", dc: "12-14", description: "Linked false floors + crossbow bolts + quicksand."}
+  - {id: enc_fake_exit, name: "False Exit Trap", type: "Exploration", dc: 14, description: "Distinguish real from fake exits — beyond the fake exit lies a more dangerous area."}
+  - {id: enc_japanese, name: "Japanese Team Competition", type: "Social", dc: 12, description: "Possible cooperation (sharing maps) or conflict."}
+
+key_items:
+  - {id: item_control_map, name: "Maze Control Map", description: "In the third control room. Allows safe navigation of the maze. Key item for the future Imperial Mausoleum scenario."}
+  - {id: item_mercury_sample, name: "Mercury Sample", description: "Rare alchemy / talisman-craft material."}
+  - {id: item_jade_token, name: "Master Craftsman's Jade Token", description: "Obtained after fulfilling the dying wish. Can summon a craftsman's help once (in any tomb)."}
+  - {id: item_qin_fragment, name: "Fragment of a Qin Dynasty Engineering Diagram", description: "Reveals part of the Imperial Mausoleum's structure."}
+
+endings:
+  - {id: ending_perfect, name: "Perfect Clear", condition: "Soothe the craftsmen + complete control map + true exit", result: "All rewards; unlocks the Imperial Mausoleum scenario."}
+  - {id: ending_violent, name: "Violent Clear", condition: "Force a breakthrough", result: "Craftsmen's curse attaches to you — future checks in all Qin Dynasty tombs suffer Disadvantage."}
+
+rewards: {xp: 500, money: "200-600 Silver Dollars"}
+scale_adjustments:
+  solo: {not_recommended: true, reason: "Requires operating multiple sluice gates; hard for one person to do simultaneously."}
+  duo: {note: "Reduce the number of craftsmen's resentful spirits to 1-2."}

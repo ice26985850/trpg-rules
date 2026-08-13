@@ -1,0 +1,36 @@
+Search, Attack, Retreat TRPG — In the collapsed Quarantine Zone, getting out alive is victory
+
+[Reference Works Note]
+This work's setting and core "Extraction" gameplay are inspired by the extraction mechanics of Escape from Tarkov and Dark and Darker. It is not an officially licensed adaptation of any original work; rather, it brings the tense Scavenge—Fight—Extract loop into the narrative depth of a TRPG.
+
+[What kind of world is this?]
+Three years ago, the Ashila Research Facility of the Northern Federation lost control during a high-energy experiment codenamed "Curtain," tearing open an unstable dimensional rift. An anomalous pulse rewrote the physical laws within the zone; life began to mutate, and residents who couldn't evacuate in time were twisted into non-human "Residuals." The military erected a perimeter wall and founded the "Quarantine Zone Administration Commission (QZAC)" to permanently isolate this land—and you are one of the scavengers who risk death to infiltrate the Quarantine Zone.
+
+[What do you do in this world?]
+You play a Scavenger—a mercenary, a treasure hunter, or someone with their back against the wall. Every deployment is a life-or-death gamble: prepare your gear at the hideout, choose an entry point, infiltrate the ruins to scavenge high-value supplies, then race to an extraction point and escape before the pulse surge or enemies arrive. Every bullet and every piece of body armor you bring in is a stake; only by getting out alive does the loot truly become yours. Die? You lose everything you carried—not a deducted XP, but a real strike through your character sheet.
+
+[System Highlights]
+1. Seven-Part Independent Hit Points (HP): Head, chest, abdomen, and limbs each have their own HP pool. A headshot is instant death, a chest hit is mortal, a shattered leg means you can't walk—hit location makes every shot matter.
+2. Courage (CRG) Dual Mechanic: This ruleset turns "fear" and "greed" into a diceable psychological system. Can you stay calm when you hear footsteps? When you spot gold legendary loot but your backpack is full, can you suppress the temptation and extract in time?
+3. True Death × Insurance × Inheritance: Death is real, but the insurance mechanic and hideout inheritance let you rise again—you lose your gear, yet keep your facilities, relationships, and stories.
+
+[Who is this for?]
+Those who love tension, resource management, and tactical trade-offs will fall for it. You needn't be a TRPG veteran—there's a 3-minute quick character creation, as well as a 7-step deep creation. If you enjoy the greedy tug-of-war of "knowing you should leave but reluctant to," and like negotiating or ambushing other motivated NPC scavengers, this is your world.
+
+[Game Style Tags]
+- Combat Weight: Significant
+- Strategic Depth: Highly Strategic
+- Narrative Drive: Narrative-Supported
+- Resource Management: Heavy Management
+- Character Customization: Highly Customizable
+- Character Creation Complexity: Moderate
+- Rules Density: Mid-Rules
+- GM Requirement: Optional GM
+
+[Estimated Play Time]
+- Single Scenario: 3–5 hours
+- Full Campaign: 40–60 hours
+
+[Basic Info]
+- Players: 2–4 (plus 1 GM to run; Solo Supplement rules allow 1 player)
+- Core Dice: 3d6 (Bell Curve) + Attribute + Skill ≥ Target Number (TN)

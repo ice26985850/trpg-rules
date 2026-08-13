@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="950" height="680" viewBox="0 0 950 680">
+  <rect width="950" height="680" fill="#F7F5EF"/>
+  <text x="90" y="50" font-family="Microsoft JhengHei, sans-serif" font-size="22" font-weight="bold" fill="#333333">Scenario 10 Exploration · Otherworld Domain</text>
+  <text x="90" y="78" font-family="Microsoft JhengHei, sans-serif" font-size="14" fill="#666666">Recommended Rank S+ (CL66+)　｜　Theme: Otherworld Domain · Shard Sea　｜　Rooms 12</text>
+  <text x="90" y="105" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#999999">Dashed lines indicate connections; unexplored rooms are revealed by GM during play.</text>
+  <line x1="170" y1="335" x2="330" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="170" y1="335" x2="330" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="205" x2="330" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="335" x2="490" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="330" y1="465" x2="490" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="205" x2="490" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="335" x2="330" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="335" x2="330" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="335" x2="490" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="465" x2="330" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="490" y1="465" x2="650" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="205" x2="490" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="205" x2="650" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="335" x2="490" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="335" x2="650" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="465" x2="490" y2="465" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="650" y1="465" x2="810" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="810" y1="205" x2="650" y2="205" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <line x1="810" y1="205" x2="810" y2="335" stroke="#888888" stroke-width="3" stroke-dasharray="6 4"/>
+  <rect x="110" y="288" width="120" height="95" rx="8" fill="#93C47D" stroke="#333333" stroke-width="2"/>
+  <text x="170" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R1 Reverse Passage</text>
+  <text x="170" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Entrance]</text>
+  <rect x="270" y="158" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R2 Shard Cluster</text>
+  <text x="330" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Combat CR68]</text>
+  <rect x="270" y="288" width="120" height="95" rx="8" fill="#BF9000" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R3 Void Devour</text>
+  <text x="330" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Trap]</text>
+  <rect x="270" y="418" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R4 Apostle Outpost</text>
+  <text x="330" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Combat CR70]</text>
+  <rect x="430" y="158" width="120" height="95" rx="8" fill="#674EA7" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R5 World Shard</text>
+  <text x="490" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Treasure]</text>
+  <rect x="430" y="288" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R6 Apostle Patrol</text>
+  <text x="490" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Combat CR70]</text>
+  <rect x="430" y="418" width="120" height="95" rx="8" fill="#6FA8DC" stroke="#333333" stroke-width="2"/>
+  <text x="490" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R7 Floating Refuge</text>
+  <text x="490" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Rest]</text>
+  <rect x="590" y="158" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="650" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R8 Apostle Main Force</text>
+  <text x="650" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Combat CR72]</text>
+  <rect x="590" y="288" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="650" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R9 Shard Maze</text>
+  <text x="650" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Combat CR72]</text>
+  <rect x="590" y="418" width="120" height="95" rx="8" fill="#BF9000" stroke="#333333" stroke-width="2"/>
+  <text x="650" y="447" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R10 World-Eclipse Trap</text>
+  <text x="650" y="469" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Trap]</text>
+  <rect x="750" y="158" width="120" height="95" rx="8" fill="#C0504D" stroke="#333333" stroke-width="2"/>
+  <text x="810" y="187" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R11 Core Guard</text>
+  <text x="810" y="209" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Combat CR70]</text>
+  <rect x="750" y="288" width="120" height="95" rx="8" fill="#990000" stroke="#333333" stroke-width="2"/>
+  <text x="810" y="317" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF">R12 World-Eclipse Overlord</text>
+  <text x="810" y="339" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#FFFFFF">[Mini-boss CR75]</text>
+  <text x="810" y="359" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="11" fill="#FFE0E0">Boss</text>
+  <text x="90" y="580" font-family="Microsoft JhengHei, sans-serif" font-size="13" font-weight="bold" fill="#333333">Legend (Room Types):</text>
+  <rect x="90" y="590" width="18" height="18" rx="3" fill="#93C47D" stroke="#333" stroke-width="1"/>
+  <text x="114" y="604" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">Entrance</text>
+  <rect x="185" y="590" width="18" height="18" rx="3" fill="#C0504D" stroke="#333" stroke-width="1"/>
+  <text x="209" y="604" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">Combat</text>
+  <rect x="280" y="590" width="18" height="18" rx="3" fill="#BF9000" stroke="#333" stroke-width="1"/>
+  <text x="304" y="604" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">Trap</text>
+  <rect x="375" y="590" width="18" height="18" rx="3" fill="#674EA7" stroke="#333" stroke-width="1"/>
+  <text x="399" y="604" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">Treasure</text>
+  <rect x="470" y="590" width="18" height="18" rx="3" fill="#6FA8DC" stroke="#333" stroke-width="1"/>
+  <text x="494" y="604" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">Rest</text>
+  <rect x="565" y="590" width="18" height="18" rx="3" fill="#990000" stroke="#333" stroke-width="1"/>
+  <text x="589" y="604" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">Mini-boss</text>
+  <rect x="660" y="590" width="18" height="18" rx="3" fill="#38761D" stroke="#333" stroke-width="1"/>
+  <text x="684" y="604" font-family="Microsoft JhengHei, sans-serif" font-size="12" fill="#333333">Exit</text>
+</svg>

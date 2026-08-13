@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 700" font-family="sans-serif">
+<rect x="0" y="0" width="420" height="700" fill="#0f1424"/>
+<rect x="0" y="0" width="420" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">Heavens Arena</text>
+<text x="400" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">Fighting Tower · Surface World</text>
+<line x1="210" y1="92" x2="210" y2="178" stroke="#3a4a72" stroke-width="2"/>
+<line x1="210" y1="222" x2="210" y2="308" stroke="#3a4a72" stroke-width="2"/>
+<line x1="210" y1="352" x2="210" y2="438" stroke="#3a4a72" stroke-width="2"/>
+<line x1="210" y1="482" x2="210" y2="568" stroke="#3a4a72" stroke-width="2"/>
+<rect x="100" y="48" width="220" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="210" y="68" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">10-50 Floors</text>
+<text x="210" y="86" fill="#9fb3e0" font-size="11" text-anchor="middle">CR 1/4~1/2</text>
+<rect x="119" y="178" width="182" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="210" y="198" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">50-100 Floors</text>
+<text x="210" y="216" fill="#9fb3e0" font-size="11" text-anchor="middle">CR 1~2</text>
+<rect x="110" y="308" width="201" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="210" y="328" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">100-150 Floors</text>
+<text x="210" y="346" fill="#9fb3e0" font-size="11" text-anchor="middle">CR 3~5</text>
+<rect x="110" y="438" width="201" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="210" y="458" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">150-200 Floors</text>
+<text x="210" y="476" fill="#9fb3e0" font-size="11" text-anchor="middle">CR 6~8</text>
+<rect x="119" y="568" width="182" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="210" y="588" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">200+ Floors</text>
+<text x="210" y="606" fill="#9fb3e0" font-size="11" text-anchor="middle">CR 9+ Floor Master</text>
+<text x="20" y="688" fill="#5e6f9c" font-size="11">Hunter × Hunter TRPG · Map schematic (not to scale)</text>
+</svg>

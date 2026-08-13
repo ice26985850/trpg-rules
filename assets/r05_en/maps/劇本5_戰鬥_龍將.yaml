@@ -1,0 +1,102 @@
+scenario: S1
+section: First Demon General · Dragon General Battle (CL 5–12)
+map_type: battle
+grid_scale: "1 cell = 2 meters"
+title: S1_Battle_Dragon General
+# Coordinates are exact grid coordinates (col, row, 0–9), for distance and range calculation
+# Front/back rows are 2 cells apart (4m); enemy on top, ally on bottom
+
+battle:
+  cols: 10
+  rows: 10
+  # Front Row Line (closest to opponent) and Back Row Line are 2 cells apart
+  lines:
+    - {row: 3, side: Enemy, role: Front, color: "#FF8A8A"}
+    - {row: 1, side: Enemy, role: Back, color: "#FFC8C8"}
+    - {row: 6, side: Ally, role: Front, color: "#8AAEFF"}
+    - {row: 8, side: Ally, role: Back, color: "#C8D8FF"}
+  # Area Effect (AOE): center cell + radius R cells (per Combat System §10)
+  aoe:
+    - {cx: 5, cy: 2, r: 2, label: Dragon Breath Area Effect (AOE, radius 2 cells = 4m)}
+
+nodes:
+  - id: boss
+    label: Dragon General (Ignis)
+    x: 5
+    y: 1
+    type: boss
+    explored: true
+  - id: e_front_a
+    label: Enemy Front-row A
+    x: 3
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_front_b
+    label: Enemy Front-row B
+    x: 6
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_front_c
+    label: Enemy Front-row C
+    x: 8
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_back_arc
+    label: Enemy Back-row Archer
+    x: 2
+    y: 1
+    type: Enemy Ranged
+    explored: true
+  - id: e_back_mag
+    label: Enemy Back-row Mage
+    x: 7
+    y: 1
+    type: Enemy Ranged
+    explored: true
+  - id: p_front_war
+    label: Ally Front-row Warrior
+    x: 3
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_front_monk
+    label: Ally Front-row Monk
+    x: 6
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_back_mage
+    label: Ally Back-row Mage
+    x: 4
+    y: 8
+    type: Ally Back
+    explored: true
+  - id: p_back_cleric
+    label: Ally Back-row Cleric
+    x: 5
+    y: 8
+    type: Ally Back
+    explored: true
+  - id: p_back_hunter
+    label: Ally Back-row Hunter
+    x: 7
+    y: 8
+    type: Ally Back
+    explored: true
+
+edges:
+  - from: boss
+    to: e_front_a
+    type: Command
+  - from: e_back_arc
+    to: p_back_cleric
+    type: Range
+    style: dashed
+    label: "Mid-range Threat"
+  - from: p_front_war
+    to: e_front_a
+    type: Melee
+    style: dashed

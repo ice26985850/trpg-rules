@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg">
+<pattern id="g7" width="30" height="30"><rect width="30" height="30" fill="none"/><rect x="30" y="0" width="1" height="30" fill="#e0dbd4"/><rect x="0" y="30" width="30" height="1" fill="#e0dbd4"/></pattern>
+<rect width="820" height="620" fill="url(#g7)"/>
+<!-- City perimeter wall (ruined) -->
+<rect x="40" y="40" width="740" height="520" rx="4" fill="#4a4540" stroke="#222" stroke-width="3" opacity="0.3" stroke-dasharray="12,6"/>
+<text x="410" y="70" text-anchor="middle" font-size="10pt" fill="#666">City Ruins (Outer Wall)</text>
+<!-- SECTOR A: City Edge / Sewer Entrance -->
+<rect x="50" y="90" width="200" height="180" fill="#8a8070" stroke="#444" stroke-width="1.5" rx="3"/>
+<text x="150" y="140" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">City Edge</text>
+<text x="150" y="160" text-anchor="middle" font-size="10pt" fill="#333">Civilian Gathering Place</text>
+<text x="150" y="178" text-anchor="middle" font-size="9pt" fill="#666">40-50 Civilians</text>
+<text x="150" y="194" text-anchor="middle" font-size="9pt" fill="#666">Leader: Kara (former Arbites Enforcer)</text>
+<!-- Sewer tunnels -->
+<rect x="50" y="280" width="200" height="90" fill="#7a7060" stroke="#444" stroke-width="1"/>
+<text x="150" y="315" text-anchor="middle" font-size="10pt" font-weight="bold" fill="#111">Sewer Network</text>
+<text x="150" y="333" text-anchor="middle" font-size="9pt" fill="#666">Civilian Hideout</text>
+<text x="150" y="349" text-anchor="middle" font-size="9pt" fill="#666">Stealth Test / traverse</text>
+<!-- SECTOR B: Main Street (Mutant nest) -->
+<rect x="280" y="90" width="280" height="180" fill="#a89a80" stroke="#444" stroke-width="1.5" rx="3"/>
+<text x="420" y="145" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">Main Street</text>
+<text x="420" y="165" text-anchor="middle" font-size="10pt" fill="#333">Low-tier Mutants ×5 + Tyrant ×1</text>
+<text x="420" y="183" text-anchor="middle" font-size="9pt" fill="#666">CR 1×5+2 | Pass through or bypass</text>
+<!-- Stealth path (green dashed) -->
+<path d="M280,270 Q350,200 420,200 Q490,200 560,270" fill="none" stroke="#080" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="420" y="195" text-anchor="middle" font-size="9pt" fill="#060">★ Stealth Route</text>
+<!-- SECTOR C: Admin Building (Chaos cultists) -->
+<rect x="590" y="90" width="180" height="180" fill="#b89a78" stroke="#444" stroke-width="1.5" rx="3"/>
+<text x="680" y="145" text-anchor="middle" font-size="12pt" font-weight="bold" fill="#111">Admin Building</text>
+<text x="680" y="165" text-anchor="middle" font-size="10pt" fill="#333">Multi-story building</text>
+<text x="680" y="182" text-anchor="middle" font-size="9pt" fill="#333">Top floor: Comms Device</text>
+<text x="680" y="200" text-anchor="middle" font-size="9pt" fill="#333">Ground floor: Chaos Cultists ×8 + Acolyte ×1</text>
+<text x="680" y="218" text-anchor="middle" font-size="9pt" fill="#666">CR 1 | Clear floor by floor</text>
+<!-- Tower symbol -->
+<rect x="660" y="240" width="40" height="20" fill="#555" stroke="#333" stroke-width="1"/>
+<text x="680" y="254" text-anchor="middle" font-size="8pt" fill="#fff">Signal</text>
+<!-- SECTOR D: Data Board (clue) -->
+<rect x="280" y="310" width="280" height="70" fill="#c9b896" stroke="#444" stroke-width="1" rx="2"/>
+<text x="420" y="345" text-anchor="middle" font-size="11pt" fill="#333">Exterminatus Data Board → Cause: suspicious but unconfirmed Chaos contamination report</text>
+<text x="420" y="362" text-anchor="middle" font-size="9pt" fill="#666">→ Key clue for the following scenario</text>
+<!-- SECTOR E: Ruins/Rubble field -->
+<rect x="50" y="400" width="720" height="140" fill="#9a9080" stroke="#444" stroke-width="1" rx="3"/>
+<text x="410" y="440" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#111">Ruins Wasteland</text>
+<text x="410" y="462" text-anchor="middle" font-size="9pt" fill="#333">Transit area from the city to the northern mountains</text>
+<text x="410" d="480" text-anchor="middle" font-size="9pt" fill="#555">Random Encounter: Low-tier Mutants ×2-3 | Environmental Hazard: Debris Collapse</text>
+<!-- Arrows: route options -->
+<polyline points="250,270 280,350" fill="none" stroke="#080" stroke-width="2"/>
+<text x="260" y="320" font-size="9pt" fill="#060">North → Mountains</text>
+<!-- Compass -->
+<g transform="translate(740,560)">
+<circle cx="30" cy="30" r="22" fill="#f0ebe0" stroke="#333" stroke-width="2"/>
+<text x="30" y="22" text-anchor="middle" font-size="10pt" font-weight="bold">N</text>
+<text x="30" y="44" text-anchor="middle" font-size="8pt">S</text>
+<text x="50" y="34" text-anchor="middle" font-size="8pt">E</text>
+<text x="10" y="34" text-anchor="middle" font-size="8pt">W</text>
+</g>
+<line x1="60" y1="580" x2="210" y2="580" stroke="#333" stroke-width="2"/>
+<text x="135" y="596" text-anchor="middle" font-size="10pt">30 meters</text>
+</svg>

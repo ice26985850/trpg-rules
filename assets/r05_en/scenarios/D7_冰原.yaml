@@ -1,0 +1,82 @@
+name: Dungeon Module D7 — Ice Plains (Tundra)
+description: 'Recommended Rank: B/A (Challenge Rating (CR) 27–34) | Theme: Perpetual Frozen Tundra, high-tier resource farming. Access: Guild commission B-Ice1 / A-Ice1 (corresponding to Rank B→A, CL 27–34); or designated by the GM as a leveling ground. Map: `maps/D7_冰原.yaml` + `maps/D7_冰原.svg`. This work has no multiclass; solo entry follows the player-count adjustment rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no allies). Exploration round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) are detailed in GM Book Chapter 17. On the positioning map, enemies are at top, allies at bottom, with front and back rows spaced 2 squares (4m) apart; solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no allies). Design Note: D7 is a stable ground for CL 27–34 "farming EXP + G + materials," refreshable daily (see Commission Catalog, reset rules).'
+difficulty: B/A
+level_range:
+  - 27
+  - 34
+chapter: 7
+map_ref: maps/D7_冰原.yaml
+initial_map: maps/D7_冰原.yaml
+player_mode: 'Solo/Multi (Method A: one scenario + player-count adjustment)'
+encounters:
+  - id: R2
+    name: Ice Wolf Hunting Ground
+    type: Combat
+    enemies:
+      - name: Ice Wolf
+        cr: 27
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R4
+    name: Yeti Lair
+    type: Combat
+    enemies:
+      - name: Yeti
+        cr: 29
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R6
+    name: Frost Wisp Tunnel
+    type: Combat
+    enemies:
+      - name: Frost Wisp
+        cr: 30
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R10
+    name: Frost Giant Hall
+    type: Combat
+    enemies:
+      - name: Frost Giant
+        cr: 32
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R13
+    name: Cold Wind Battlefield
+    type: Combat
+    enemies:
+      - name: Ice Wolf
+        cr: 33
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R16
+    name: Yeti Ravine
+    type: Combat
+    enemies:
+      - name: Yeti
+        cr: 33
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R17
+    name: Frost Queen Throne
+    type: Minor Boss
+    enemies:
+      - name: Frost Queen
+        cr: 34
+        count: 1
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+    boss: true
+rewards:
+  exp: 23528
+  gold: 1800~2600
+  ip: 9
+  items:
+    []
+adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"

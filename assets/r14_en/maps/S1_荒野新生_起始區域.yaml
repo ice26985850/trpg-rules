@@ -1,0 +1,112 @@
+# Map: S1 Wilderness Birth — Starting Region
+# Corresponding Scenario: S1_Wilderness Birth, Phase One "Landing"
+
+nodes:
+  - id: "camp"
+    label: "Player's Camp"
+    x: 400
+    y: 350
+    type: "settlement"
+    explored: true
+    description: "Your first settlement — humble but full of hope"
+
+  - id: "river"
+    label: "Jade River"
+    x: 350
+    y: 420
+    type: "resource"
+    explored: true
+    description: "A clear river providing water and fish"
+
+  - id: "forest_east"
+    label: "Eastern Forest"
+    x: 600
+    y: 300
+    type: "wilderness"
+    explored: false
+    description: "A dense forest, rumored to hold herbs and beasts"
+
+  - id: "hills_north"
+    label: "Northern Hills"
+    x: 400
+    y: 150
+    type: "wilderness"
+    explored: false
+    description: "Rolling hills — possibly mineral veins"
+
+  - id: "ruins_west"
+    label: "Abandoned Shrine"
+    x: 150
+    y: 300
+    type: "ruins"
+    explored: false
+    description: "An ancient shrine overgrown with vines"
+
+  - id: "neighbor_border"
+    label: "Neighbor's Border"
+    x: 650
+    y: 500
+    type: "border"
+    explored: false
+    description: "Cross this invisible line and you enter a neighbor's territory"
+
+  - id: "hunters_cabin"
+    label: "Hunter's Cabin"
+    x: 500
+    y: 250
+    type: "landmark"
+    explored: true
+    description: "An abandoned hunter's cabin — seemingly left in haste"
+
+  - id: "trading_post"
+    label: "Trading Post Ruins"
+    x: 250
+    y: 500
+    type: "landmark"
+    explored: false
+    description: "Once a trading post — now only ruins remain"
+
+edges:
+  - from: "camp"
+    to: "river"
+    type: "path"
+    label: "Water-Gathering Path"
+  - from: "camp"
+    to: "forest_east"
+    type: "trail"
+    label: "Hunting Trail"
+  - from: "camp"
+    to: "hills_north"
+    type: "trail"
+    label: "Exploration Route"
+  - from: "camp"
+    to: "hunters_cabin"
+    type: "path"
+    label: "Old Hunting Path"
+  - from: "camp"
+    to: "ruins_west"
+    type: "trail"
+    label: "Ancient Road"
+  - from: "camp"
+    to: "trading_post"
+    type: "path"
+    label: "Old Trade Road"
+  - from: "forest_east"
+    to: "neighbor_border"
+    type: "trail"
+    label: "Border Passage"
+  - from: "ruins_west"
+    to: "trading_post"
+    type: "trail"
+    label: "Ancient Road"
+
+regions:
+  - name: "Player Territory"
+    color: "#4CAF50"
+    nodes: ["camp", "river", "hunters_cabin"]
+  - name: "Unexplored Region"
+    color: "#9E9E9E"
+    nodes: ["forest_east", "hills_north", "ruins_west", "trading_post"]
+  - name: "Neighbor's Territory"
+    color: "#FF9800"
+    nodes: ["neighbor_border"]

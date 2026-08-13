@@ -1,0 +1,68 @@
+# Nest Awakening — Gatekeeper Battle Map
+# Corresponding Scenario: S1 Scene Four (Gatekeeper)
+
+nodes:
+  - id: "A"
+    label: "Passage Entrance"
+    x: 100
+    y: 250
+    type: "start"
+    explored: false
+    description: "Starting point entering from the passage."
+
+  - id: "B"
+    label: "Gatekeeper Nest"
+    x: 300
+    y: 250
+    type: "boss"
+    explored: false
+    description: "Stronghold of the nest guard. BOSS battle area."
+
+  - id: "C"
+    label: "Steel Gate"
+    x: 500
+    y: 250
+    type: "exit"
+    explored: false
+    description: "Exit to the surface. Engraved with a serpent symbol devouring its own tail. Requires defeating the Gatekeeper to pass."
+
+  - id: "D"
+    label: "Cliff Cover"
+    x: 250
+    y: 150
+    type: "cover"
+    explored: false
+    description: "Protruding cliff face, provides half cover (ranged attacks against targets behind cover have Disadvantage)."
+
+  - id: "E"
+    label: "Bone Pile"
+    x: 350
+    y: 380
+    type: "hazard"
+    explored: false
+    description: "Prey bones piled by the Gatekeeper. Crossing requires Agility (MJ) DC 10; failure makes noise — Gatekeeper gains +2 attack next round."
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "open"
+  - from: "B"
+    to: "C"
+    type: "blocked"  # Gatekeeper blocks
+  - from: "B"
+    to: "D"
+    type: "passage"
+  - from: "B"
+    to: "E"
+    type: "passage"
+
+regions:
+  - name: "Combat Zone"
+    color: "#DC143C"
+    nodes: ["B"]
+  - name: "Safe Zone"
+    color: "#2E8B57"
+    nodes: ["A", "C", "D"]
+  - name: "Hazard Zone"
+    color: "#FF8C00"
+    nodes: ["E"]

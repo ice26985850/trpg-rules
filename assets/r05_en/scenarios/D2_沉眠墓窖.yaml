@@ -1,0 +1,46 @@
+name: Dungeon Module D2 — Slumbering Tomb (Silent Crypt)
+description: "Recommended Rank: C / D (Challenge Rating (CR) 13–18) | Theme: Undead tomb, links to S2 Necromancer line. Unlock: Complete guild commission 'C-Sea1 Ghost Ship Expedition' to discover the entrance; or opened by GM per story. Map: `maps/D2_沉眠墓窖.yaml` + `maps/D2_沉眠墓窖.svg`. This work has no multiclass; solo entry follows party-size adjustment rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no assist). Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) see GM Book Chapter 17. Undead enemies in the tomb are weak to Holy ×1.5 (see Monster Bestiary). Positioning diagram: enemies on top, allies on bottom, front/back row spacing 2 squares (4m); solo entry adjusted per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no assist). Design hint: D2 is a mid-game dual-purpose area for 'grinding EXP+G+Epic recipes' and S2 main-story prelude. Suggest clearing the tomb before advancing S2, both to level and weaken the boss's outer ring."
+difficulty: C/D
+level_range:
+  - 13
+  - 18
+chapter: 2
+map_ref: maps/D2_沉眠墓窖.yaml
+initial_map: maps/D2_沉眠墓窖.yaml
+player_mode: "Solo/Multi (Method A: one scenario + party-size adjustment)"
+encounters:
+  - id: R2
+    name: Antechamber
+    type: Combat
+    enemies:
+      - name: Skeleton Warrior
+        cr: 13
+        count: 3
+    budget: Standard×1.0
+    adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1
+  - id: R5
+    name: Mortuary Hall
+    type: Combat
+    enemies:
+      - name: Zombie
+        cr: 15
+        count: 4
+    budget: Standard×1.0
+    adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1
+  - id: R7
+    name: Lich Chamber
+    type: Mini-boss
+    enemies:
+      - name: Graveyard Lich
+        cr: 18
+        count: 1
+    budget: Standard×1.0
+    adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1
+    boss: true
+rewards:
+  exp: 5268
+  gold: 800~1200
+  ip: 12
+  items:
+    []
+adjust: 1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1

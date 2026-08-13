@@ -1,0 +1,35 @@
+name: "The Forgotten Save Point"
+description: "The player discovers a Save Point they created but completely do not remember. Accessing it triggers a Memory Fragment overload, revealing a shocking truth the past player tried to hide."
+difficulty: "Advanced"
+level_range:
+  min_memory: 7
+  max_memory: 10
+  suggested_cycles: "7-12"
+time_range:
+  days: 10
+core_skills:
+  primary: ["Memory", "Will", "Insight"]
+  secondary: ["Social"]
+core_mechanic: "Memory Fragment overload — accessing the Save Point grants memories but requires a Will check; repeated access may cause permanent amnesia"
+hidden_truth: "A past player discovered a certain NPC was once a companion, and the player themselves pushed them toward their current fate. Unable to bear the truth, they sealed the memory."
+overload_mechanic:
+  gain: "3-5 Memory Fragments from past cycles"
+  will_dc: 16
+  success: "Memory is clear, gain key intelligence"
+  failure: "Memory is muddled, true or false hard to tell"
+  three_times: "Permanently lose part of memory"
+endings:
+  - id: "reconciliation"
+    name: "Reconciliation"
+    reward: "Will permanently +1"
+  - id: "burden"
+    name: "Burden"
+    reward: "Will strengthened, borne alone"
+  - id: "forget_again"
+    name: "Forget Again"
+    consequence: "Save Point permanently destroyed, fiercer return in the future"
+  - id: "collapse"
+    name: "Collapse"
+    consequence: "Fragmented state, approaching Time Devourer transformation"
+multiplayer_gm_tips: |
+  Designed for solo play; per 14-3 may start with 2-3 players: each player manages their own Rift Mark and Memory Fragments; the memory overload Will check (DC 16) may become a Team Check, partial passers relay to others easing the penalty. S4 has very little combat, enemy scaling almost never triggers; recommended to advance the ten days separately (one on fragments, one dialoguing NPCs), gathering on Day 6-7 to access the Save Point. Multiple endings by squad consensus.

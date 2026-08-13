@@ -1,0 +1,66 @@
+id: "MAP-07"
+title: "Ashila Facility Deep Laboratory"
+region: "Core Zone"
+danger: "★★★★★"
+suitable_levels: [10]
+regions:
+  - name: "Perimeter/Mid-level"
+    color: "#ECEFF1"
+  - name: "Deep Level — Rift"
+    color: "#FFEBEE"
+nodes:
+  - id: "qzac"
+    name: "QZAC Licensed Passage Entrance"
+    region: "Perimeter/Mid-level"
+    col: 0
+    row: 0
+    note: "Endgame special core zone entrance; security checkpoint; Companion: 'Four go in, two come out'"
+  - id: "ruins"
+    name: "Time-Distorted Ruins"
+    region: "Perimeter/Mid-level"
+    col: 1
+    row: 0
+    note: "No Curtain Resonator → disadvantage on all checks; teleport-type / core zone mutant ×1; Energy Cell (Gold)"
+  - id: "deep_in"
+    name: "Deep Entrance (Gravity Collapse)"
+    region: "Perimeter/Mid-level"
+    col: 2
+    row: 0
+    note: "Backup elevator (Technician TN17) or climb elevator shaft (Physique TN14); teleport mutants ×2"
+  - id: "core"
+    name: "Deep Laboratory — Rift Core"
+    region: "Deep Level — Rift"
+    col: 2
+    row: 1
+    note: "Dimensional Rift; Dimensional Guardian (ultimate, weakened); Companion may sacrifice to gain 1 turn"
+  - id: "control"
+    name: "Control Room"
+    region: "Deep Level — Rift"
+    col: 1
+    row: 1
+    note: "Close the Rift: Tech TN23×3 (with Technician's help → TN20); energy wave 2d6 each round"
+  - id: "escape"
+    name: "Final Escape Route"
+    region: "Perimeter/Mid-level"
+    col: 3
+    row: 0
+    note: "Chained collapse; extract within 10 rounds; QZAC helicopter arrives in final 3 rounds"
+edges:
+  - from: "qzac"
+    to: "ruins"
+    label: "Passage"
+  - from: "ruins"
+    to: "deep_in"
+    label: "Passage"
+  - from: "deep_in"
+    to: "core"
+    label: "Elevator Shaft"
+  - from: "deep_in"
+    to: "control"
+    label: "Passage"
+  - from: "core"
+    to: "control"
+    label: "Passage"
+  - from: "control"
+    to: "escape"
+    label: "Collapsed Passage"

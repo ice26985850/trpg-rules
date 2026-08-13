@@ -1,0 +1,72 @@
+scenario: S3
+section: Third/Fourth Demon General · Succubus Palace and Gel Pool (CL 23–35)
+map_type: explore
+title: S3_Explore_Succubus Palace
+# Coordinates are schematic (not exact distances), unit is SVG canvas pixels; from the Grand Hall through the Illusion Corridor to the Twin Generals' Throne
+
+nodes:
+  - id: entrance
+    label: Succubus Palace Entrance
+    x: 340
+    y: 560
+    type: Entrance
+    explored: true
+  - id: hall
+    label: Grand Hall
+    x: 340
+    y: 440
+    type: Indoor
+    explored: false
+  - id: spa
+    label: Hot Spring Village Outskirts
+    x: 520
+    y: 480
+    type: Facility
+    explored: true
+  - id: corridor
+    label: Illusion Corridor
+    x: 340
+    y: 320
+    type: Illusion Zone
+    explored: false
+  - id: gel
+    label: Gel Pool (Slime Domain)
+    x: 220
+    y: 240
+    type: Enemy Lair
+    explored: false
+  - id: dual
+    label: Twin Generals' Throne
+    x: 340
+    y: 140
+    type: Boss Point
+    explored: false
+
+edges:
+  - from: entrance
+    to: hall
+    type: Passage
+  - from: hall
+    to: spa
+    type: Passage
+    label: "Rest"
+  - from: hall
+    to: corridor
+    type: Passage
+  - from: corridor
+    to: gel
+    type: Passage
+  - from: corridor
+    to: dual
+    type: Passage
+  - from: gel
+    to: dual
+    type: Passage
+
+regions:
+  - name: Succubus Palace
+    color: "#FFC8EE"
+    nodes: [entrance, hall, spa, corridor, dual]
+  - name: Gel Pool Domain
+    color: "#C8ECFF"
+    nodes: [gel]

@@ -1,0 +1,414 @@
+# Urban Survivors — Item Catalog (structured data)
+# 53 items across 8 categories. Cross-referenced with 物品圖鑑.md.
+# Slot: small=Small, medium=Medium, large=Large; uses (durability/quantity) marked "Single-use" for one-time items.
+
+catalog: "Item Catalog"
+total_items: 53
+categories: 8
+
+items:
+  # ── I. Food ──
+  - id: F01
+    name: "Canned Food (1 can)"
+    category: "Food"
+    effect: "Provides one day of basic nutrition (approx. 400–600 calories)"
+    slot: "Medium (1 Slot)"
+    uses: "Single-use"
+    note: "Contains meat/vegetables/soup; long shelf life; the most common food during the siege"
+  - id: F02
+    name: "Compression Biscuits (1 pack, 6 pieces)"
+    category: "Food"
+    effect: "Provides half a day of nutrition; extremely lightweight"
+    slot: "Small (3 packs/Slot)"
+    uses: "Single-use"
+    note: "Hard to swallow without water, but small and easy to carry"
+  - id: F03
+    name: "MRE (1 pack)"
+    category: "Food"
+    effect: "Provides a full day of nutrition; includes a heating packet"
+    slot: "Medium (1 Slot)"
+    uses: "Single-use"
+    note: "Contains various snacks and drink powders; can raise Morale; extremely rare"
+  - id: F04
+    name: "Dried Food (rice/noodles/beans, 500g)"
+    category: "Food"
+    effect: "Provides 2–3 days of basic nutrition (requires cooking and water)"
+    slot: "Medium (1 Slot)"
+    uses: "By consumption"
+    note: "Requires cooking equipment and water; cannot be eaten raw; can be stored long-term"
+  - id: F05
+    name: "Sugar (200g)"
+    category: "Food"
+    effect: "Provides instant energy; can be traded"
+    slot: "Small (3 packs/Slot)"
+    uses: "By consumption"
+    note: "High calorie; can be used to preserve food or for trade; extremely precious during the siege"
+  - id: F06
+    name: "Salt (100g)"
+    category: "Food"
+    effect: "Food preservation, seasoning, trade"
+    slot: "Small (3 packs/Slot)"
+    uses: "By consumption"
+    note: "Long-term deficiency causes health problems; a hard currency during the siege"
+  - id: F07
+    name: "Vitamin Tablets (1 bottle, 60 tablets)"
+    category: "Food"
+    effect: "Compensates for nutritional imbalance; 1 tablet daily"
+    slot: "Small (3 bottles/Slot)"
+    uses: "60 uses"
+    note: "Essential when fresh fruits and vegetables are lacking long-term; prevents scurvy, etc."
+  - id: F08
+    name: "Energy Bar (1 bar)"
+    category: "Food"
+    effect: "Provides the energy of one meal; ready to eat"
+    slot: "Small (3 bars/Slot)"
+    uses: "Single-use"
+    note: "Lightweight but sometimes too sweet and poor-tasting; good for carrying on outings"
+
+  # ── II. Water ──
+  - id: W01
+    name: "Bottled Water (1 liter)"
+    category: "Water"
+    effect: "Provides one day of drinking water needs"
+    slot: "Medium (1 Slot)"
+    uses: "Single-use"
+    note: "Clean and drinkable directly; one of the most precious supplies"
+  - id: W02
+    name: "Large Bottled Water (5 liters)"
+    category: "Water"
+    effect: "Provides 5 days of drinking water needs"
+    slot: "Large (2 Slots)"
+    uses: "By consumption"
+    note: "Bulky but extremely valuable; best stored at the Shelter rather than carried out"
+  - id: W03
+    name: "Water Purification Tablets (1 box, 20 tablets)"
+    category: "Water"
+    effect: "1 tablet purifies 1 liter of water; wait 30 minutes"
+    slot: "Small (3 boxes/Slot)"
+    uses: "20 uses"
+    note: "Makes non-drinking water drinkable; a siege essential"
+  - id: W04
+    name: "Simple Water Filter (manual)"
+    category: "Water"
+    effect: "Can filter 50 liters of water before the filter cartridge must be replaced"
+    slot: "Medium (1 Slot)"
+    uses: "50 uses"
+    note: "More durable than purification tablets, but larger in size"
+  - id: W05
+    name: "Collapsible Water Bag (3 liters)"
+    category: "Water"
+    effect: "A foldable water storage container"
+    slot: "Medium (empty) / Large (full)"
+    uses: "Reusable"
+    note: "Easy to carry when empty; bulky when full but can save lives"
+
+  # ── III. Medicine ──
+  - id: M01
+    name: "First Aid Kit (standard)"
+    category: "Medicine"
+    effect: "Contains bandages, antiseptic, gauze, scissors — treats 3 Minor Wounds or 1 Serious Wound"
+    slot: "Medium (1 Slot)"
+    uses: "1–3 uses"
+    note: "First Aid check +1 (when using this item)"
+  - id: M02
+    name: "Antibiotics (1 course, 7-day supply)"
+    category: "Medicine"
+    effect: "Treats bacterial infection; 1 tablet daily; course must be completed"
+    slot: "Small (3 courses/Slot)"
+    uses: "7 uses"
+    note: "The most precious medicine during the siege; interrupting the course may render it ineffective"
+  - id: M03
+    name: "Painkillers (1 box, 12 tablets)"
+    category: "Medicine"
+    effect: "Relieves pain; each tablet lasts 4–6 hours; temporarily −1 to pain-related penalties"
+    slot: "Small (3 boxes/Slot)"
+    uses: "12 uses"
+    note: "Overuse leads to dependence"
+  - id: M04
+    name: "Disinfectant Alcohol (200ml)"
+    category: "Medicine"
+    effect: "Disinfects wounds, cleans tools, can be used as fuel"
+    slot: "Small (3 bottles/Slot)"
+    uses: "Approx. 10 uses"
+    note: "Can also be used for trade or ignition"
+  - id: M05
+    name: "Tourniquet (1 strap)"
+    category: "Medicine"
+    effect: "Emergency bleeding control; stops fatal blood loss"
+    slot: "Small (3 straps/Slot)"
+    uses: "Up to 3 uses"
+    note: "Proper medical treatment should be sought as soon as possible after use"
+  - id: M06
+    name: "Burn Ointment (1 tube)"
+    category: "Medicine"
+    effect: "Treats burns; reduces pain and risk of infection"
+    slot: "Small (3 tubes/Slot)"
+    uses: "Approx. 5 uses"
+    note: "Especially important after artillery shelling"
+  - id: M07
+    name: "Sedatives (1 box, 6 tablets)"
+    category: "Medicine"
+    effect: "Briefly suppresses panic/anxiety; lasts 2–4 hours"
+    slot: "Small (3 boxes/Slot)"
+    uses: "6 uses"
+    note: "Temporarily ignores Trauma effects; after the effect wears off, Trauma sensation +1 (until next sleep)"
+  - id: M08
+    name: "Epinephrine Auto-injector (EpiPen)"
+    category: "Medicine"
+    effect: "Emergency treatment for anaphylactic shock; temporarily boosts physical capacity (10 minutes)"
+    slot: "Small (3 pens/Slot)"
+    uses: "Single-use"
+    note: "Extremely rare; non-medical use has side effects (Physique −1 for 1 hour after use)"
+
+  # ── IV. Fuel ──
+  - id: L01
+    name: "Lighter (1 unit)"
+    category: "Fuel"
+    effect: "Ignition; usable approx. 100 times"
+    slot: "Small (3 units/Slot)"
+    uses: "Approx. 100 uses"
+    note: "An indispensable item during the siege"
+  - id: L02
+    name: "Candle (1 stick)"
+    category: "Fuel"
+    effect: "Provides 4–6 hours of lighting"
+    slot: "Small (3 sticks/Slot)"
+    uses: "Single-use"
+    note: "A silent, smokeless, reliable light source — safer than a flashlight (does not reveal position)"
+  - id: L03
+    name: "Gasoline (1 liter)"
+    category: "Fuel"
+    effect: "Vehicle fuel, fire accelerant, makes Molotov cocktails"
+    slot: "Medium (1 Slot)"
+    uses: "Single-use"
+    note: "Volatile and dangerous — requires extra care in storage"
+  - id: L04
+    name: "Hand-crank Flashlight (1 unit)"
+    category: "Fuel"
+    effect: "No batteries needed; 1 minute of cranking provides 10 minutes of light"
+    slot: "Medium (1 Slot)"
+    uses: "Reusable"
+    note: "Quiet, renewable, but cranking makes noise (Noise Level 2)"
+  - id: L05
+    name: "Solid Fuel Blocks (1 box, 8 blocks)"
+    category: "Fuel"
+    effect: "Each block burns approx. 20 minutes; can boil 500ml of water"
+    slot: "Small (3 boxes/Slot)"
+    uses: "8 uses"
+    note: "Smokeless, lightweight cooking fuel"
+
+  # ── V. Materials ──
+  - id: T01
+    name: "Tape (heavy-duty waterproof, 1 roll)"
+    category: "Materials"
+    effect: "Universal repair, sealing, fastening"
+    slot: "Small (3 rolls/Slot)"
+    uses: "Approx. 20 uses"
+    note: "A survivor's best friend — patch windows, secure bandages, mark routes"
+  - id: T02
+    name: "Rope (10 meters, nylon)"
+    category: "Materials"
+    effect: "Climbing, binding, building, rescue"
+    slot: "Medium (1 Slot)"
+    uses: "Reusable"
+    note: "Load capacity approx. 150 kg"
+  - id: T03
+    name: "Wire (5 meters)"
+    category: "Materials"
+    effect: "Repair, reinforcement, trap-making, lock-picking"
+    slot: "Small (3 rolls/Slot)"
+    uses: "Reusable"
+    note: "More durable than rope but less flexible"
+  - id: T04
+    name: "Cloth/Old Clothing (1 piece)"
+    category: "Materials"
+    effect: "Tear into bandages, stuff gaps, insulate, filter"
+    slot: "Medium (1 Slot)"
+    uses: "By consumption"
+    note: "Can be scavenged from abandoned buildings"
+  - id: T05
+    name: "Nails and Screws (1 box, 50 pieces)"
+    category: "Materials"
+    effect: "Repair furniture, reinforce doors and windows, make traps"
+    slot: "Small (3 boxes/Slot)"
+    uses: "50 uses"
+    note: "Essential for reinforcing the Shelter"
+  - id: T06
+    name: "Tarp/Waterproof Sheet (2×2 meters)"
+    category: "Materials"
+    effect: "Rain shelter, rainwater collection, temporary cover, wrapping bodies"
+    slot: "Medium (1 Slot)"
+    uses: "Reusable"
+    note: "A versatile supply, extremely practical during the siege"
+
+  # ── VI. Tools ──
+  - id: U01
+    name: "Multi-tool Knife (Swiss Army grade)"
+    category: "Tools"
+    effect: "Knife, scissors, screwdriver, can opener, saw"
+    slot: "Small (3 units/Slot)"
+    durability: 5
+    note: "Repair check +1; a core survival tool during the siege"
+  - id: U02
+    name: "Hand-crank Radio (with flashlight function)"
+    category: "Tools"
+    effect: "Receives broadcast information; hand-crank power generation"
+    slot: "Medium (1 Slot)"
+    durability: "Reusable"
+    note: "The only channel for outside information — priceless"
+  - id: U03
+    name: "Wrench/Crowbar (1 unit)"
+    category: "Tools"
+    effect: "Pry open doors and windows, strike, simple repairs"
+    slot: "Medium (1 Slot)"
+    durability: 5
+    note: "Can double as a weapon (melee damage equal to a small blunt weapon)"
+  - id: U04
+    name: "Sewing Kit (1 set)"
+    category: "Tools"
+    effect: "Mend clothing, suture wounds (emergency), repair fabric"
+    slot: "Small (3 sets/Slot)"
+    durability: "Approx. 30 uses"
+    note: "First Aid check −1 when suturing wounds in an emergency (non-professional use)"
+  - id: U05
+    name: "Binoculars/Small Telescope (1 pair)"
+    category: "Tools"
+    effect: "Long-distance observation; identify distant figures and threats"
+    slot: "Medium (1 Slot)"
+    durability: 3
+    note: "Observation check +2 (when used on distant targets)"
+  - id: U06
+    name: "Large Backpack/Military Pack (1 unit)"
+    category: "Tools"
+    effect: "Adds 4 item slots"
+    slot: "Large (occupies 2 Slots itself, net +2 Slots)"
+    durability: 4
+    note: "Increases carrying capacity but is bulky itself"
+  - id: U07
+    name: "Map (city/regional)"
+    category: "Tools"
+    effect: "Navigation; mark safe routes and danger zones"
+    slot: "Small (3 sheets/Slot)"
+    durability: "Reusable"
+    note: "Can mark information such as safe-house locations and sniper positions"
+  - id: U08
+    name: "Compass (1 unit)"
+    category: "Tools"
+    effect: "Maintain a sense of direction in unfamiliar areas or ruins"
+    slot: "Small (3 units/Slot)"
+    durability: 5
+    note: "Crucial in ruined areas lacking landmarks"
+
+  # ── VII. Weapons ──
+  - id: A01
+    name: "Kitchen Knife (1 unit)"
+    category: "Weapons"
+    attack_attr: "Agility"
+    damage: "Serious Wound (if hit)"
+    slot: "Small (3 units/Slot)"
+    durability: 4
+    note: "The most common self-defense weapon; also usable for cooking and cutting; Noise Level 2"
+  - id: A02
+    name: "Pipe/Baseball Bat (1 unit)"
+    category: "Weapons"
+    attack_attr: "Physique"
+    damage: "Minor–Moderate Wound"
+    slot: "Medium (1 Slot)"
+    durability: 5
+    note: "Requires no skill, pure strength; Noise Level 3; can block (Defense Value +1)"
+  - id: A03
+    name: "Pistol (with 1 magazine, approx. 12 rounds)"
+    category: "Weapons"
+    attack_attr: "Agility"
+    damage: "Serious Wound (fatal potential)"
+    slot: "Medium (1 Slot)"
+    durability: 4
+    note: "Ammunition is extremely scarce; gunshots draw attention within 150 meters (Noise Level 5)"
+  - id: A04
+    name: "Shotgun (with 6 rounds)"
+    category: "Weapons"
+    attack_attr: "Agility"
+    damage: "Serious–Fatal Wound"
+    slot: "Large (2 Slots)"
+    durability: 4
+    note: "Extremely lethal at close range; harder to obtain ammunition than for pistols; very loud gunshot (Noise Level 5)"
+  - id: A05
+    name: "Pepper Spray (1 can)"
+    category: "Weapons"
+    attack_attr: "Agility"
+    damage: "No direct damage (blinding/irritation)"
+    slot: "Small (3 cans/Slot)"
+    durability: "Approx. 5 uses"
+    note: "Non-lethal self-defense; temporarily incapacitates the target (1d6 minutes); draws no attention"
+  - id: A06
+    name: "Rock/Brick (for throwing)"
+    category: "Weapons"
+    attack_attr: "Agility"
+    damage: "Very Minor Wound"
+    slot: "Small (3 pieces/Slot)"
+    durability: "Single-use"
+    note: "Mainly used to create noise and divert attention; throwing range 10 meters"
+
+  # ── VIII. Luxuries & Comforts ──
+  - id: C01
+    name: "Cigarettes (1 pack, 20 sticks)"
+    category: "Luxuries & Comforts"
+    effect: "Temporarily relieves stress (Willpower check +1 within 1 hour)"
+    slot: "Small (3 packs/Slot)"
+    uses: "20 uses"
+    note: "One of the most widely used \"currencies\" during the siege; long-term smoking causes −1 to Physique-related checks"
+  - id: C02
+    name: "Liquor (spirits, 500ml)"
+    category: "Luxuries & Comforts"
+    effect: "Temporarily relieves stress, disinfects wounds, trade"
+    slot: "Medium (1 Slot)"
+    uses: "By consumption"
+    note: "Can be used for disinfection; excessive drinking causes Agility −2"
+  - id: C03
+    name: "Coffee (instant, 100g)"
+    category: "Luxuries & Comforts"
+    effect: "Counteracts fatigue for 4 hours; slightly raises Morale"
+    slot: "Small (3 cans/Slot)"
+    uses: "Approx. 20 cups"
+    note: "Requires hot water; extremely precious during the siege"
+  - id: C04
+    name: "Book/Magazine (1 copy)"
+    category: "Luxuries & Comforts"
+    effect: "Passes the time; maintains mental health"
+    slot: "Medium (1 Slot)"
+    uses: "Re-readable"
+    note: "Some books contain practical knowledge (maps, medicine, mechanics); can be exchanged for reading with others"
+  - id: C05
+    name: "Paper and Pen (notebook + pen)"
+    category: "Luxuries & Comforts"
+    effect: "Record information, keep a diary, draw maps, write a last will"
+    slot: "Small (3 sets/Slot)"
+    uses: "By consumption"
+    note: "Recording information is vital to survival; keeping a diary slightly reduces Trauma"
+  - id: C06
+    name: "Toy/Plush Doll (1 unit)"
+    category: "Luxuries & Comforts"
+    effect: "Soothes children (and one's own heart)"
+    slot: "Medium (1 Slot)"
+    uses: "Reusable"
+    note: "Excellent soothing effect on child NPCs; adults may also find comfort in it"
+  - id: C07
+    name: "Photo/Memento (1 piece/item)"
+    category: "Luxuries & Comforts"
+    effect: "Reminds you why you keep living"
+    slot: "No Slot (carried on person)"
+    uses: "Permanent"
+    note: "Obtained at character creation — the physical embodiment of \"what you still want to protect\"; one gaze per day restores Mental State"
+
+# ── Trade Reference (barter, not fixed prices) ──
+trade_reference:
+  - item: "1 liter of clean drinking water"
+    exchanges_for: "2–3 cans of food, 1 roll of bandage, 1 hour of skilled labor"
+  - item: "1 dose of antibiotics"
+    exchanges_for: "3–5 cans of food, a small tool, a service, or information"
+  - item: "1 can of canned food"
+    exchanges_for: "1 liter of fuel (gasoline), 2–3 candles, a small tool"
+  - item: "1 pack of cigarettes"
+    exchanges_for: "1–2 cans of food, 1 small bottle of liquor (trade between luxuries is extremely flexible)"
+  - item: "1 medical service"
+    exchanges_for: "Depending on the wound: 2–10 cans of food, valuables, a long-term favor"

@@ -1,0 +1,110 @@
+# Lab Escape — Gene Laboratory Map
+# Corresponding Scenario: S2 (all scenes)
+
+nodes:
+  - id: "A"
+    label: "Entrance Hall"
+    x: 150
+    y: 400
+    type: "start"
+    explored: false
+    description: "Ruins entrance. Surveillance system still active. Staying more than 3 rounds triggers an alarm."
+
+  - id: "B"
+    label: "Archive Room"
+    x: 300
+    y: 350
+    type: "loot"
+    explored: false
+    description: "Stores experiment records. Perception (GZ) DC 14 to find the specimen roster."
+
+  - id: "C"
+    label: "Containment Zone A"
+    x: 300
+    y: 200
+    type: "social"
+    explored: false
+    description: "Lina's cell — an ordinary human woman."
+
+  - id: "D"
+    label: "Containment Zone B"
+    x: 400
+    y: 200
+    type: "social"
+    explored: false
+    description: "Gros's cell — an evolution subject (crab claws)."
+
+  - id: "E"
+    label: "Containment Zone C"
+    x: 500
+    y: 200
+    type: "social"
+    explored: false
+    description: "Zero's cell — the original subject (appears as a child)."
+
+  - id: "F"
+    label: "Core Laboratory"
+    x: 400
+    y: 100
+    type: "boss"
+    explored: false
+    description: "Where the AI 'Guardian' resides. Holographic projection, scan platform, final confrontation."
+
+  - id: "G"
+    label: "Escape Tunnel"
+    x: 550
+    y: 50
+    type: "exit"
+    explored: false
+    description: "The final passage to the surface. 3-round time limit once self-destruct initiates."
+
+  - id: "H"
+    label: "Abandoned Incubation Room"
+    x: 200
+    y: 250
+    type: "loot"
+    explored: false
+    description: "Abandoned specimen incubation tanks. May find healing potions and energy tonics."
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "corridor"
+  - from: "B"
+    to: "C"
+    type: "corridor"
+  - from: "B"
+    to: "H"
+    type: "corridor"
+  - from: "C"
+    to: "D"
+    type: "corridor"
+  - from: "D"
+    to: "E"
+    type: "corridor"
+  - from: "C"
+    to: "F"
+    type: "corridor"
+  - from: "D"
+    to: "F"
+    type: "corridor"
+  - from: "F"
+    to: "G"
+    type: "corridor"
+
+regions:
+  - name: "Entrance Zone"
+    color: "#4B0082"
+    nodes: ["A"]
+  - name: "Research Zone"
+    color: "#4169E1"
+    nodes: ["B", "H"]
+  - name: "Containment Zone"
+    color: "#FF8C00"
+    nodes: ["C", "D", "E"]
+  - name: "Core Zone"
+    color: "#DC143C"
+    nodes: ["F"]
+  - name: "Exit Zone"
+    color: "#2E8B57"
+    nodes: ["G"]

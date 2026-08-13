@@ -1,0 +1,35 @@
+name: "Scenario 10: Otherworld Campaign"
+description: 'CL66–75, second act of the endgame chapter, following the reverse deep Otherworld campaign after Scenario 9''s Voidward Sentry fell and the passage was temporarily sealed. In the Otherworld proper, first repel the Void Apostle (CR70 boss), then defeat the Eclipse Sovereign (CR75 mid-boss) at the fragment core. Design Challenge Rating (CR) ≈ total party level × 0.6. Uses Method A: one scenario + player-count adjustment.'
+difficulty: Extreme
+level_range: [66, 75]
+chapter: 10
+map_ref: maps/劇本10_戰鬥_界蝕主宰.yaml
+initial_map: maps/劇本10_探索_異界領域.yaml
+encounters:
+  - id: void_apostle
+    name: Void Apostle (CL66–72, Boss)
+    enemies:
+      - {name: Void Apostle, cr: 70, count: 1}
+    boss: true
+    budget: Boss fight Boss CR≈total party level×0.6
+    adjust: "1 player→CR67; 5–6 players→CR72"
+  - id: eclipse_sovereign
+    name: Eclipse Sovereign (CL73–75, Mid-Boss)
+    enemies:
+      - {name: Eclipse Sovereign, cr: 75, count: 1}
+    boss: true
+    phases:
+      - {name: Deep Realm Campaign, hp_threshold: "100%~66%", trait: Summon Void Apostle reinforcements}
+      - {name: Rule Nullification, hp_threshold: "66%", trait: Ignores multiple native Damage Reduction (DR)}
+      - {name: Rift Resonance, hp_threshold: "33%", trait: "Recovers 9% Health (HP) per round / finish swiftly"}
+    budget: Mid-boss fight Boss CR≈total party level×0.6
+    adjust: "1 player→CR72; 5–6 players→CR77"
+rewards:
+  exp: 50800
+  gold: 30000
+  items: [Fragment Core Shard, Eclipse Sovereign Core]
+ip_events:
+  - event: Assist an Otherworld survivor scholar in repairing the World Anchor
+    ip: 8
+  - event: Understand the true nature of the "fragments" (non-destruction route)
+    ip: 5

@@ -1,0 +1,170 @@
+name: "S1: Nest Awakening"
+description: "Awaken in an underground nest, having lost all memory. Devour the enemies before you, climb upward out of the darkness. Your first evolution begins here."
+difficulty: "Easy"
+level_range:
+  min_nodes: 0
+  max_nodes: 5
+  suggested: "0-5 Evolution Nodes"
+players:
+  min: 1
+  max: 4
+  default: 1
+estimated_time: "2-3 hours"
+map_ref: "巢穴覺醒_覺醒巢穴"
+initial_map: "巢穴覺醒_覺醒巢穴"
+
+scenes:
+  - id: "S1_SC1"
+    name: "Awakening"
+    type: "exploration"
+    description: "Wake up in a nest full of corpses. Explore the environment, establish your character's identity, and feel the void of amnesia."
+    objectives:
+      - "Create character (choose Base Form, Background, Root Node)"
+      - "Explore the nest environment"
+      - "Search the corpses for resources"
+    key_items:
+      - name: "Healing Potion"
+        quantity: 1
+        effect: "Restore 2d6 HP"
+      - name: "Rusty Dagger"
+        quantity: 1
+        effect: "1d4 damage, throwable (3 squares)"
+    checks:
+      - attribute: "Perception (GZ)"
+        dc: 12
+        success: "Discover gnawing marks on the corpses—not from animals, but from a conscious presence"
+      - attribute: "Perception (GZ)"
+        dc: 10
+        success: "Discover old wounds on your own body have healed at an abnormal rate"
+
+  - id: "S1_SC2"
+    name: "The First Meal"
+    type: "combat"
+    description: "Encounter a pack of mutant rats. The first combat, and the first encounter with the 'Kill or Absorb' choice."
+    encounters:
+      - id: "Mutant Rat Pack"
+        difficulty: "Easy"
+        enemies:
+          - type: "Mutant Rat"
+            rank: "Minion"
+            count: 2
+            hp: 8
+            defense: 9
+            stats: { LIL: 2, MJ: 5, TZ: 2, GZ: 3, YZ: 1 }
+            attacks: [{ name: "Bite", type: "Melee", damage: "1d4+2", effect: "Disease (Constitution DC 10 or else poisoned)" }]
+          - type: "Reinforced Mutant Rat"
+            rank: "Minion"
+            count: 1
+            hp: 10
+            defense: 10
+            stats: { LIL: 2, MJ: 5, TZ: 4, GZ: 3, YZ: 1 }
+            attacks: [{ name: "Reinforced Bite", type: "Melee", damage: "1d6+2" }]
+    rewards:
+      kill: { evolution_points: 3, biomass: 3 }
+      absorb:
+        description: "Trait sample (choose one of three)"
+        options:
+          - name: "Night Vision"
+            type: "Passive Node"
+            effect: "No Disadvantage in darkness"
+          - name: "Burrowing Stealth"
+            type: "Low-tier Active Node"
+            effect: "Burrow underground, erupt from any position next turn + 1d6 damage"
+          - name: "Disease Resistance"
+            type: "Passive Node"
+            effect: "Poison duration halved"
+    choices:
+      - id: "Kill"
+        description: "Gain Evolution Points + Biomass (short-term gain)"
+      - id: "Absorb"
+        description: "Gain trait sample, unlock a unique evolution path (long-term gain)"
+
+  - id: "S1_SC3"
+    name: "Voices in the Dark"
+    type: "social"
+    description: "Meet another evolved survivor—Ryan. His body has begun to mutate, but he still retains a human mind."
+    npc:
+      name: "Ryan"
+      base_form: "Human"
+      hp: 20
+      defense: 12
+      nodes: ["Hardened Skin", "Sharp Claws"]
+      humanity: 55
+      attitude: "Cautious—longs for companionship but fears betrayal"
+    branches:
+      - choice: "Heal and ally"
+        outcome: "Ryan joins as an NPC companion"
+      - choice: "Refuse help"
+        outcome: "Ryan leaves alone, may reappear in S2"
+      - choice: "Absorb him (requires Humanity Value < 40%)"
+        outcome: "Gain trait sample (Hardened Skin/Sharp Claws/Human Will), Humanity Value -10"
+
+  - id: "S1_SC4"
+    name: "The Gatekeeper"
+    type: "boss"
+    description: "At the nest exit, face the gatekeeping elite—a half-lizard, half-insect evolved guardian ensuring no one leaves alive."
+    encounters:
+      - id: "Nest Guardian"
+        difficulty: "Hard"
+        enemies:
+          - type: "Nest Guardian"
+            rank: "Elite"
+            count: 1
+            hp: 40
+            defense: 14
+            stats: { LIL: 7, MJ: 5, TZ: 6, GZ: 7, YZ: 3 }
+            energy: 12
+            skills:
+              - name: "Tail Spike"
+                tier: "Low-tier"
+                ap: 1
+                energy: 1
+                range: "Melee"
+                effect: "1d8+3 piercing + poison (Constitution DC 13)"
+              - name: "Bone Plate Charge"
+                tier: "Low-tier"
+                ap: 1
+                energy: 0
+                range: "Melee"
+                effect: "1d6+3 bludgeoning + target pushed back 2 squares (Strength DC 14)"
+              - name: "Compound Eye Lock"
+                tier: "Passive"
+                effect: "Advantage on Perception (GZ) checks, no Disadvantage against stealth targets"
+    rewards:
+      kill: { evolution_points: 3, biomass: 5 }
+      absorb:
+        description: "Trait sample (choose one of five)"
+        options:
+          - "Compound Eye Prototype (Organ Node)"
+          - "Hardened Skin (Passive Node)"
+          - "Tail Spike (Low-tier Active Node)"
+          - "Bone Plate Defense (Passive Node: physical damage -1)"
+          - "Insect Affinity (Passive Node)"
+    map_ref: "巢穴覺醒_守門者之戰"
+
+  - id: "S1_SC5"
+    name: "The Surface"
+    type: "narrative"
+    description: "Escape the nest and stand under the sunlight. Three directions lead to three different fates."
+    branches:
+      - choice: "Head North (White Tower City)"
+        next_scenario: "S3_進化戰爭"
+      - choice: "Head East (Ruins)"
+        next_scenario: "S2_實驗室逃亡"
+      - choice: "Head South (Wilderness)"
+        next_scenario: "S4_食物鏈頂端"
+
+completion_rewards:
+  evolution_points: 3
+  special:
+    - condition: "Absorbed at least 1 enemy"
+      reward: "Extra +1 Evolution Points"
+    - condition: "Healed and did not betray Ryan"
+      reward: "Gain passive 'Bond Memory'—Will (YZ) check +1 (when protecting others)"
+
+solo_adjustments:
+  enemies_reduced: true
+  mutant_rats: 2
+  guardian_hp: 30
+  extra_items: ["Healing Potion ×1"]
+  npc_friendly: "Ryan's starting attitude is friendlier"

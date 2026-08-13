@@ -1,0 +1,96 @@
+# The Final Evolution — Abyssal Rift Map
+# Corresponding Scenario: S5 (all scenes)
+
+nodes:
+  - id: "A"
+    label: "Rift Edge"
+    x: 300
+    y: 450
+    type: "start"
+    explored: false
+    description: "Edge of the Abyssal Rift. All allies assemble here. Choose which companions to bring."
+
+  - id: "B"
+    label: "Descent Point"
+    x: 300
+    y: 380
+    type: "transition"
+    explored: false
+    description: "Starting point of the descent."
+
+  - id: "C"
+    label: "100m — Seven-Headed Serpent Nest"
+    x: 300
+    y: 300
+    type: "encounter"
+    explored: false
+    description: "First layer encounter — Seven-Headed Serpent (Elite-tier)."
+
+  - id: "D"
+    label: "300m — Void Flow Zone"
+    x: 250
+    y: 220
+    type: "encounter"
+    explored: false
+    description: "Second layer encounter — Void Fluid ×3 (Elite-tier). Physical attacks at Disadvantage."
+
+  - id: "E"
+    label: "500m — Gatekeeper Nest"
+    x: 300
+    y: 140
+    type: "boss"
+    explored: false
+    description: "Third layer encounter — Abyssal Gatekeeper (Boss-tier). The Void Abyss Worm's 'watchdog'."
+
+  - id: "F"
+    label: "Shard Hall"
+    x: 300
+    y: 60
+    type: "final"
+    explored: false
+    description: "Deepest part of the rift. Memory shards of the Void Abyss Worm float here. Where the Void Abyss Echo resides."
+
+  - id: "G"
+    label: "Core Shard"
+    x: 350
+    y: 60
+    type: "decision"
+    explored: false
+    description: "The worm's core shard. The final three choices are made here: Absorb / Destroy / Merge."
+
+edges:
+  - from: "A"
+    to: "B"
+    type: "passage"
+  - from: "B"
+    to: "C"
+    type: "vertical"
+  - from: "C"
+    to: "D"
+    type: "vertical"
+  - from: "D"
+    to: "E"
+    type: "vertical"
+  - from: "E"
+    to: "F"
+    type: "vertical"
+  - from: "F"
+    to: "G"
+    type: "passage"
+
+regions:
+  - name: "Ground Zone"
+    color: "#2E8B57"
+    nodes: ["A", "B"]
+  - name: "Upper Rift"
+    color: "#4169E1"
+    nodes: ["C"]
+  - name: "Middle Rift"
+    color: "#8B5CF6"
+    nodes: ["D"]
+  - name: "Deep Rift"
+    color: "#DC143C"
+    nodes: ["E"]
+  - name: "Core"
+    color: "#FFD700"
+    nodes: ["F", "G"]

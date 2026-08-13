@@ -1,0 +1,93 @@
+name: Last Prayer at Black Dock
+difficulty: Endgame (CR 6-7)
+mode: Mortal · Multiplayer
+players: 2-4
+judge: Victor Black (Fallen)
+target_region: Carcassonne—Tower of Silence bottom level → Black Dock
+recommended_attributes: '5'
+opening_description: 'The final mission. Inquisitor Victor Black personally selected you to carry out this "ultimate trial": go to the abandoned prison area at the bottom level of the Tower of Silence, and purge a long-forgotten Chaos corruption. But the nature of this trial is darker than anyone imagined.
+
+  '
+surface_goal: Go to the abandoned prison area at the bottom level of the Tower of Silence, and purge a long-forgotten Chaos corruption.
+hidden_goal: 'Victor Black has been corrupted by Chaos. This mission is his final test of the Penitents—a test of "fall potential". After completing the mission, he will privately offer each survivor a choice: accept Chaos''s "gift" → gain freedom and power; refuse → be executed by him on the grounds of "proven unredeemable".
+
+  '
+known_threats:
+- The bottom level of the Tower of Silence—the "Eternal Waiting Level"—has been abandoned for 200 years
+- There may still be "something" down there
+- No supplies or support whatsoever
+hidden_threats:
+- At the bottom ruins is a sealed Warp rift, whose 200-year seal is failing
+- In the ruins are other Penitents trapped at the bottom level—some still retain their sanity, some have been corrupted by Chaos
+- Victor's true motive
+resources:
+  notes: 'Zero supplies. Only what you still have on you. Victor says: "If you still need my help by now, you are not worth redeeming."
+
+    '
+seduction_notes:
+- 'All notes are invalid in this mission—or transformed into Victor''s private communications. The GM may give each player a "Victor''s Whisper": a privately offered, tempting choice.
+
+  '
+key_npcs:
+- name: 'Elder Erin, the "Forgotten"'
+  role: A former Penitent trapped for 47 years
+  detail: 'Faith 5 (even more steadfast in despair). Can provide a map of the bottom level and intel. If the players save her, she becomes the final witness against Victor
+
+    '
+- name: Mutated Penitent Marcus
+  role: A Penitent who fell after being trapped for 23 years
+  detail: Has become a Mutant Tyrant. The Temptation Note he once received was Note 1—he chose to betray his teammates. But that did not save him
+- name: Victor Black's Avatar
+  role: Final Boss
+  detail: The Inquisitor himself will not appear in person—but will await the "result" at Black Dock
+key_checks:
+- scene: Searching the ruins for Erin
+  check: Investigation (Hard)
+  tn: Mind×10+Investigation−20
+  success: Find and gain help
+  failure: Miss her
+- scene: Facing Marcus's madness
+  check: Oratory (Extreme)
+  tn: Faith×10+Oratory−40
+  success: Awaken his remaining humanity (give him a moment of clarity, he may choose self-destruction)
+  failure: Can only fight
+- scene: Sealing the Warp rift
+  check: Faith (Extreme)+full-team Group Test
+  tn: Faith×10−40
+  success: Rift purified, all present −5 Corruption
+  failure: Rift expands, Warp Shadow×2 appear
+- scene: Refusing Victor's "gift"
+  check: Faith (Hard)
+  tn: Faith×10−20
+  success: Refuse—gain chance at the Emperor's Mark
+  failure: Accept—permanent +10 Corruption + Chaos Mark, but gain freedom
+encounters:
+- name: Bottom Ruins
+  enemies: Mutant Lurker×3 + Warp Shadow×1
+  cr: 1×3+2
+  tactic: Multiple threats in the darkness
+- name: Marcus's Domain
+  enemies: Mutant Tyrant "Marcus"
+  cr: 2 (enhanced)
+  tactic: If awakened→self-destruct (no combat). If combat→he will try to persuade players to join his "way of survival"
+- name: Rift Seal (if failed)
+  enemies: Warp Shadow×2
+  cr: 2×2
+  tactic: Continuously pouring from the rift
+- name: Black Dock (endgame)
+  enemies: If refuse Victor→Inquisition Assault Trooper×4 + Acolyte-level Chaos Cultist×2
+  cr: 1×4+1×2
+  tactic: Victor has already arranged the "silencing"
+branch_endings:
+- choice: Refuse Victor + survive
+  result: 'If Erin is rescued→her testimony can let other Inquisitors discover Victor''s betrayal. The character gains true freedom... but what does that mean in the 40k world?
+
+    '
+- choice: Refuse Victor + die in battle
+  result: Glorious ending. Your names will not be remembered—but your choice proves the Emperor's faith is real
+- choice: Accept Victor's "gift"
+  result: Character becomes a Chaos follower. You are "free"—but no longer yourselves. GM takes over the character
+- choice: Deceive Victor (pretend to accept, report to other Inquisitors)
+  result: Extremely dangerous. Requires Deceive Test (Extreme) success to fool the Fallen Inquisitor
+evacuation_condition: None—this is the final trial, no evacuation, only choices.
+map_ref: "maps/map15_silent_tower"

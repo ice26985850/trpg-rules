@@ -1,0 +1,113 @@
+# Starship Boarding Assault TRPG — Scenario S1: Maiden Voyage
+# Format: YAML structured scenario
+
+scenario_id: S1_Maiden_Voyage
+title: "Maiden Voyage — Border Eye (S1)"
+subtitle: "A rookie's first mission. Learn the basic mechanics. No self-destruct system — minimal pressure."
+difficulty: Tutorial
+recommended_level: 1
+player_count:
+  min: 1
+  max: 6
+estimated_duration: "2–3 hours"
+
+mission_type: Data Raid
+enemy_vessel:
+  name: "Border Eye (S1)"
+  type: Human Patrol Vessel
+  faction: Free Star Alliance (FSA)
+  size: Small (85 m length)
+  decks: 2
+  gravity: Standard Gravity (1G) — entire vessel
+  self_destruct: false  # No self-destruct system
+
+story_summary: >
+  The Intelligence Division of the Concord United Fleet (CUF) intercepted anomalous communications from an
+  Free Star Alliance (FSA) patrol vessel, the Border Eye, in the border star system. The vessel appears to be
+  conducting some kind of reconnaissance mission, carrying the latest data on Alliance fleet deployments.
+  The Mothership Arbitrator dispatches a rookie squad on their first real boarding assault — the objective is to
+  board, extract the tactical data, and withdraw safely. This is a mission designed for "controlled difficulty."
+  The Border Eye has no self-destruct system, and its defenders are mostly poorly trained crewmen rather than marines.
+
+turning_points:
+  - id: TP1
+    name: "Breach Point Selection"
+    description: "The players may choose to breach from the Cargo Hold (safe but farthest from the data center) or the Hull near the Bridge (fast but high risk)."
+    options:
+      - choice: Cargo Hold Breach
+        consequence: "Starting point is far from the objective but lightly defended. Suited to a stealth approach."
+      - choice: Bridge-Side Breach
+        consequence: "Close to the objective but meets 2 Guards in the first round."
+
+  - id: TP2
+    name: "Guards Between Decks"
+    description: "The main staircase to the second deck is patrolled by 2 Guards. The players may choose to fight or bypass via the maintenance conduit."
+    options:
+      - choice: Frontal Engagement
+        consequence: "Triggers an EL 3 encounter (2 Guards). Continue advancing after winning."
+      - choice: Maintenance Conduit Detour
+        consequence: "No combat. But requires an Engineering (ENG) check (DC 10) to open the maintenance conduit entrance."
+
+  - id: TP3
+    name: "Last Line at the Data Center"
+    description: "Outside the data center door are 1 automated turret and 1 marine (the squad's only elite enemy)."
+    options:
+      - choice: Tactical Breach
+        consequence: "Triggers an EL 5 encounter. May directly breach the turret (ENG DC 15) to turn it to your side."
+      - choice: Feint to Lure
+        consequence: "Use flashbangs or smoke to divert the turret's attention. Mobility (MOB) DC 13 to circle to its rear dead angle."
+
+key_encounters:
+  - id: E1
+    location: Cargo Hold (Node 2)
+    enemies:
+      - type: Crewman (Mook)
+        count: 2
+        cr: 0.5
+    total_el: 1
+    notes: "Poorly trained defenders. Tend to flee or surrender rather than fight to the death."
+
+  - id: E2
+    location: Main Corridor Staircase (Node 4)
+    enemies:
+      - type: Guard (Standard)
+        count: 2
+        cr: 2
+    total_el: 4
+    notes: "Optional encounter — may be bypassed via the maintenance conduit."
+
+  - id: E3
+    location: Data Center Entrance (Node 7)
+    enemies:
+      - type: Auto-Turret (Standard)
+        count: 1
+        cr: 2
+      - type: Marine (Elite)
+        count: 1
+        cr: 3
+    total_el: 5
+    notes: "Last line of defense. The commander-type foe may shout, trying to intimidate the players into retreating."
+
+rewards:
+  xp_primary: 8          # Primary objective
+  xp_secondary: 3        # Secondary objectives total: 1 × +3
+  xp_full_survival: 3    # Full squad survival
+  xp_gm_bonus: 6         # GM generic pool
+  reputation: 1
+  bonus_reputation:
+    - condition: Complete mission without triggering alarm
+      reputation: 1
+  special_loot:
+    - name: "Alliance Patrol Vessel Tactical Chart"
+      description: "A tactical map marking all Alliance patrol routes in the star sector."
+      effect: "Reputation +1; Initiative (INIT) +1 when facing Alliance vessels in the future."
+
+special_rules:
+  - rule: "Tutorial Pacing"
+    description: "The Game Master (GM) should pause the game to explain each time a new mechanic appears. The first firearm check, the first breach check, and the first gravity change (if any) should all be explained step by step."
+  - rule: "No Self-Destruct"
+    description: "The Border Eye has no self-destruct system. After completing the objective the players may withdraw at leisure — but once the alarm is triggered, enemy reinforcements will gradually increase."
+  - rule: "Failure Buffer"
+    description: "Even if the objective fails (data not extracted), the mothership will still recover the squad. This is a training mission. But failure leaves a bad impression on the mothership commander (no XP reward, no Reputation)."
+
+map_file: "../maps/邊境之眼號_S1.yaml"

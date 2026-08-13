@@ -1,0 +1,73 @@
+name: "The Deep Gap"
+type: "Exploration / Survival (the deepest layer of the Gap)"
+difficulty: "★★★★★"
+recommended_marks: "8-10"
+play_time: "2-3 sessions"
+core_attributes: ["all"]
+prerequisites:
+  - "Possess an Anchoring Item"
+  - "Recommended: a Companion with Loyalty ≥ 3 accompanies you"
+  - "Recommended: obtain the Bronze Mirror Shard from Scenario 6"
+
+opening: |
+  On the map of the Millennia Collector you found a mark: "Below this point — no one returns."
+  That isn't a Sealed Space — it's the Deep Gap. The bottom of the Gap — built from millennia of all forgotten things stacked together.
+  Your Anchoring Item resonated — it's pointing into the depths.
+
+npcs:
+  - name: "Old Mo (Companion)"
+    type: "Predecessor Walker"
+    desc: "If already recruited, may accompany you in. In his youth he once tried to explore the Deep Gap — retreated after reaching the second layer"
+    companion_eligible: true
+    available_from: "Scenario 9 (if recruited earlier)"
+  - name: "The Nonexistent One"
+    type: "Remnant of the Forgotten"
+    desc: "Not a creature — a remnant of a possibility utterly forgotten by everyone"
+  - name: "The Voice of the Gap"
+    type: "Reaction of the Gap itself"
+    desc: "Not a creature, not a consciousness — the Gap's reaction to something moving"
+
+deep_gap_rules: |
+  Deep Gap exclusive rules:
+  - Each layer's Gap Endurance (GE) cost +1: first layer -2/turn, second layer -3/turn, third layer -4/turn
+  - Time Flow uses d6+2 (minimum 3, maximum 8 days)
+  - Gap Sickness worsening check frequency doubled (once per scene)
+  - No sense of direction — all Traverse Difficulty Class (DC) +2
+  - The Bronze Mirror Shard provides light and can briefly stabilize direction (1 use/layer, Traverse Advantage)
+
+scenes:
+  - name: "First Layer: Memory Sediment Layer"
+    desc: |
+      Building residuals from countless eras overlap — medieval stone walls pass through modern glass curtain walls.
+      Awareness Difficulty Class (DC) 10 to find the footprints of previous Walkers.
+    map_ref: "MAP-09 (Deep Gap three-layer structure) — First Layer area"
+  - name: "Second Layer: Sea of Possibilities"
+    desc: |
+      Physical laws begin to fail. The space is filled with residuals of unchosen paths.
+      Anchor Difficulty Class (DC) 14 to resist being drawn into your own possibilities. Failure → Lost (condition).
+    map_ref: "MAP-09 — Second Layer area"
+  - name: "Third Layer: City of the Nameless"
+    desc: |
+      A city built from forgotten existences. Everything is slowly collapsing.
+      Negotiation Difficulty Class (DC) 16 to speak with one of them — it remembers something but cannot say it.
+    map_ref: "MAP-09 — Third Layer area"
+  - name: "The Bottom: Mirror Surface"
+    desc: |
+      The bottom of the Deep Gap is an infinitely large mirror surface. The you in the mirror is the closest to real among all your versions.
+      The you in the mirror speaks to you: you finally made it.
+      Choice: Touch the mirror surface / Accept the counterpart and leave / Reject
+    map_ref: "MAP-09 — Bottom mirror surface"
+
+endings:
+  - "Touch the Mirror Surface: the Anchoring Item becomes a Complete Anchoring Item (Gap Endurance (GE) +10). A part stays in the mirror forever"
+  - "Accept the Counterpart and Leave: the Anchoring Item is upgraded to a Deep Anchoring Item (Gap Endurance (GE) +8). No side effects"
+  - "Reject: Permanent Advantage on all Anchor checks — your Anchor comes not from an item"
+
+rewards:
+  - "Return Mark × 2"
+  - "Strengthen the Anchoring Item (by choice) + Gap Endurance (GE) Maximum increase"
+  - "Gap-Depth Knowledge Mark (Advantage on all future Deep Gap-related checks)"
+  - "If a Companion accompanies to the end: Companion Loyalty +1"
+
+companion_recruitment:
+  - "Old Mo (if accompanies to the end) → Loyalty +1"

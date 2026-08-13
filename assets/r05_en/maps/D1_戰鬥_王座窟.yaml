@@ -1,0 +1,63 @@
+scenario: D1
+section: "D1 Goblin Lair·Throne Crypt (Goblin King CR5)"
+map_type: battle
+grid_scale: "1 square = 2 meters"
+title: D1_Combat_ThroneCavern
+# Coordinates are precise grid coordinates (col, row, 0–9) for distance and range calculations
+# Goblin King (Boss) is at the center of the enemy back row; its trait "Brute Swing" covers our front row (AOE)
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: enemy, role: front, color: "#FF8A8A"}
+    - {row: 1, side: enemy, role: back, color: "#FFC8C8"}
+    - {row: 6, side: ally, role: front, color: "#8AAEFF"}
+    - {row: 8, side: ally, role: back, color: "#C8D8FF"}
+  aoe:
+    - {cx: 5, cy: 6, r: 1, label: "Brute Swing (Front ×1.5)"}
+
+nodes:
+  - id: boss
+    label: Goblin King (CR5)
+    x: 5
+    y: 1
+    type: boss
+    explored: true
+  - id: p_front_war
+    label: Our Front-row Warrior
+    x: 3
+    y: 6
+    type: ally_front
+    explored: true
+  - id: p_front_monk
+    label: Our Front-row Monk
+    x: 6
+    y: 6
+    type: ally_front
+    explored: true
+  - id: p_back_mage
+    label: Our Back-row Mage
+    x: 4
+    y: 8
+    type: ally_back
+    explored: true
+  - id: p_back_cleric
+    label: Our Back-row Cleric
+    x: 5
+    y: 8
+    type: ally_back
+    explored: true
+  - id: p_back_hunter
+    label: Our Back-row Hunter
+    x: 7
+    y: 8
+    type: ally_back
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: boss
+    type: melee
+    style: dashed
+    label: "Engage"

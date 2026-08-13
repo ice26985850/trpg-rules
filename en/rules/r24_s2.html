@@ -1,0 +1,355 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abyss Lord TRPG / Abyss Lord TRPG — Solo Player Scenario: Abyss Empire Solo | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r24_s2.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r24.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Abyss Lord TRPG — Solo Player Scenario: Abyss Empire Solo</h1>
+<blockquote>
+<p>Reverse-derived readable scenario from <code>solo_campaign.yaml</code>. For the AI GM solo mode only.</p>
+</blockquote>
+<p><strong>name</strong>: Abyss Lord TRPG — Solo Scenario (Lv1~15 full campaign)
+<strong>author</strong>: Tabletop Rules Studio (led by Cheng Guiyao)
+<strong>rules_version</strong>: 2.5</p>
+<h2>prologue</h2>
+<p><strong>name</strong>: Embers of the Throne Hall
+<strong>level</strong>: 1
+<strong>description</strong>: You awaken from the darkness of the Abyss. The mana torches of the Throne Hall have just been lit — this is your first dungeon. Before you are three chambers: your Throne Hall, and two pitch-black tunnels leading into the unknown. A few freshly hired monsters pace uneasily at your feet, awaiting your first command.</p>
+<p><strong>opening_dialog</strong>: You are a newly ascended Dungeon Lord. The mana torches of the Throne Hall have just been lit — this is your first dungeon. For now there are only three chambers: your Throne Hall, and two undeveloped tunnels ending in pitch darkness. A few freshly hired monsters pace uneasily at your feet. From afar comes the faint sound of surface humans — are they coming?</p>
+<h3>choices</h3>
+<ul>
+<li>Choose your archetype (Necromancer Lord / Abyssal Overlord / Mad Sorcerer / Ancient Wyrm / Shadow Council / Goblin Tinkerer)</li>
+<li>Allocate 12 attribute points (all five attributes start at 1)</li>
+<li>Plan your first dig direction (left tunnel or right tunnel)</li>
+</ul>
+<h3>starting_resources</h3>
+<p><strong>description</strong>: Allocate starting resources per your archetype (see config.yaml character_creation.archetypes)</p>
+<h3>first_exploration</h3>
+<p><strong>ind_check</strong>: IND + Engineering vs Difficulty 1 success</p>
+<h4>discovery_options</h4>
+<ul>
+<li><strong>roll: 2-3</strong></li>
+<li><strong>roll: 4</strong></li>
+<li><strong>roll: 5</strong></li>
+<li><strong>roll: 6</strong>
+<strong>map_init</strong>: [MAP_UPDATE]
+NODE player-home x=340 y=450 type="player_dungeon" label="Throne Hall" explored=true region="Abyssal Core"
+[/MAP_UPDATE]</li>
+</ul>
+<h2>act1</h2>
+<p><strong>name</strong>: Establishment
+<strong>range</strong>: Lv1~3
+<strong>theme</strong>: Survive. Start from a tiny Throne Hall, digging into the deep darkness.</p>
+<h3>stages</h3>
+<ul>
+<li><strong>level: 1</strong></li>
+<li>key_events:</li>
+<li>Successfully complete the first dig (spend 1 action + Building Materials ×2)</li>
+<li>Build the 1st room (recommend: Mine or Trap Workshop)</li>
+<li>encounter:
+  <strong>type</strong>: Invasion
+  <strong>tier</strong>: T1
+  <strong>count</strong>: 2 adventurers (Warrior Allen + Rogue Mira)
+  <strong>boss</strong>: None
+  ##### loot
+  <strong>defeated</strong>: ◆1d3+◇1+●1 each
+  <strong>captured</strong>: WIL to 0 converts to servant
+  <strong>notes</strong>: Tutorial fight — let players experience the full defense loop</li>
+<li>sidequest:</li>
+<li>Mira escapes (not captured): returns with a revenge squad after 3 turns</li>
+<li><strong>level: 2</strong></li>
+<li>key_events:</li>
+<li>Second dig expansion (unlock 2nd room slot)</li>
+<li>Build 2nd room (prison / training ground / research lab)</li>
+<li>Begin learning management allocation (trade-off between monster MV and CP)</li>
+<li>encounter:
+  <strong>type</strong>: Invasion
+  <strong>tier</strong>: T1
+  <strong>count</strong>: 1 Warrior + 1 Cleric
+  <strong>boss</strong>: None
+  <strong>loot</strong>: ◆2d4+◇1d3+●1</li>
+<li>encounter_2:
+  <strong>type</strong>: Diplomatic Contact
+  <strong>description</strong>: Neighboring dungeon NPC appears for the first time — a letter arrives at your Throne Hall
+  <strong>npc</strong>: Malthus, "Iron-Bone Marquis" (liaison of the Bone Mound Council)
+  <strong>letter_content</strong>: To the esteemed new neighbor:
+  The Bone Mound Council has noted your activity in the Sea of Shadows. We appreciate lords who value order.
+  On the day the Embassy is built, allow me to visit in person — to discuss matters of maintaining Abyssal order under the threat of the Order of Light.
+  — Malthus, "Iron-Bone Marquis" of the Eternal Slumber Corridor</li>
+</ul>
+<p><strong>reward</strong>: +1 Experience Point EXP (room built)
+- <strong>level: 3</strong>
+  - key_events:
+  - Consecutive invasions (2-turn defense)
+  - Decide: strengthen defense or accelerate expansion?
+  - First face T2-tier enemies (dice pool 4-5d6)
+  - encounter:
+  <strong>type</strong>: Invasion ×2
+  ##### wave1
+  <strong>tier</strong>: T2
+  <strong>count</strong>: 3 adventurers (includes Mira + 2 reinforcements)
+  <strong>mira_trait</strong>: Revenge — first-round attack +1 die
+  ##### wave2
+  <strong>tier</strong>: T2
+  <strong>count</strong>: 2 adventurers (Mage + Ranger)
+  - climax:
+  <strong>name</strong>: Wanted Notice
+  <strong>description</strong>: After INF reaches 3, the Guild formally places your dungeon on the Wanted List.
+  Bounty: ◆15, Threat Level: ★★☆☆☆.</p>
+<p><strong>reward</strong>: +5 Experience Point EXP (defeat Boss)</p>
+<h2>act2</h2>
+<p><strong>name</strong>: Growth
+<strong>range</strong>: Lv4~7
+<strong>theme</strong>: Expansion and choice. The dungeon takes shape. The Abyss Embassy is built — you must choose one of the Four Alliances.</p>
+<h3>stages</h3>
+<ul>
+<li><strong>level: 4</strong></li>
+<li>key_events:</li>
+<li>Build the Abyss Embassy (spend ◆×10 + ■×5)</li>
+<li>Receive two alliance invitations: Balzec vs Malthus</li>
+<li>First elite invasion (T3 includes Boss captain)</li>
+<li>alliance_choices:</li>
+<li><strong>name: Abyssal Legion</strong></li>
+<li><strong>name: Bone Mound Council</strong></li>
+<li><strong>name: Free Artificers' Guild</strong></li>
+<li><strong>name: Shadow Network</strong></li>
+<li><strong>level: 5</strong></li>
+<li>key_events:</li>
+<li>First recruit elite monsters (Death Knight / Abyssal Fiend / Chimera Beast etc.)</li>
+<li>Elite invasion (T3 includes Boss captain)</li>
+<li>Boss triggers Phase 2 (HP ≤50% adds +2 dice)</li>
+<li>Allied coordination: allied dungeons may proactively send reinforcements</li>
+<li>encounter:
+  <strong>type</strong>: Invasion
+  <strong>tier</strong>: T3
+  <strong>count</strong>: 4-5 adventurers
+  ##### boss
+  <strong>name</strong>: Paladin Captain (dispatched by the Order of Light)
+  <strong>hp_threshold_phase2</strong>: 50% → dice pool +2 + domain skill unlocked</li>
+<li><strong>level: 6</strong></li>
+<li>key_events:</li>
+<li>Expedition to the Scrap Canyon (requires DECISION)</li>
+<li>Black market entry: describe each NPC lord's appearance</li>
+<li>Social segment: talk with any NPC (small diplomacy check opportunity)</li>
+<li>Auction segment: 3-5 items, at least 1 legendary item (starting bid ◆50)</li>
+<li>Assassination event: at the auction's climax, Shadow Network intel shows an assassin has infiltrated</li>
+<li>encounter:
+  <strong>type</strong>: Black Market Event
+  ##### stages</li>
+<li>Entry — describe the lively scene of the Scrap Canyon (CUN + Espionage check, each success reveals 1 NPC's intel)</li>
+<li>Social — players may talk with any NPC (DOM check, success raises relationship +1~2)</li>
+<li>Auction — 3-5 items auctioned in sequence (includes 1 legendary item, starting bid ◆50)</li>
+<li>Assassination — players may choose to expose / condone / exploit the chaos to grab loot</li>
+<li>sidequest:
+  <strong>name</strong>: Moris and Balzec's Territorial Dispute
+  <strong>description</strong>: Moris, "Thousand-Faces" asks you to mediate his territorial dispute with Balzec
+  ##### choices</li>
+<li>Mediate (DOM + Diplomacy check, Difficulty 2 success)</li>
+<li>Side with one party (raise that party's relationship, lower the other's)</li>
+<li>Grab profit in the chaos (CUN + Trap check, gain extra resources)</li>
+<li><strong>level: 7</strong></li>
+<li>key_events:</li>
+<li>Abnormal mana event (MAG check, failure reduces dungeon mana output -50% for 1 turn)</li>
+<li>Ethlin's whisper: "Do you feel it? The Mana Crystals are trembling."</li>
+<li>Primordial Fissure (D-16) first anomaly — it made a sound</li>
+<li>encounter:
+  <strong>type</strong>: Resource Crisis
+  <strong>event</strong>: Mana tide disorder causes rooms to malfunction, requiring emergency repair</li>
+</ul>
+<h2>act3</h2>
+<p><strong>name</strong>: Threat
+<strong>range</strong>: Lv8~11
+<strong>theme</strong>: War and betrayal. The dungeon becomes a regional power. The Order of Light begins organizing large-scale expeditions.</p>
+<h3>stages</h3>
+<ul>
+<li><strong>level: 8</strong></li>
+<li>encounter:
+  <strong>type</strong>: Multi-front Invasion
+  ##### entrance_main
+  <strong>name</strong>: Main Entrance (front)
+  <strong>force</strong>: T3 elite squad ×2 (includes Boss captain · Paladin)
+  ##### entrance_side
+  <strong>name</strong>: Side Fissure (right)
+  <strong>force</strong>: T3 standard squad ×1
+  ##### entrance_old
+  <strong>name</strong>: Abandoned Passage (left)
+  <strong>force</strong>: T2 patrol ×1 (probing invasion)</li>
+<li>ally_aid_check:
+  <strong>description</strong>: DOM + Diplomacy check vs Difficulty 3. On each success that dungeon sends reinforcements (1d3 monsters, total CP ≤6) to help defend 1 entrance.</li>
+<li><strong>level: 9</strong></li>
+<li>crisis_options:</li>
+<li><strong>faction: Bone Mound Council (if allied)</strong><ul>
+<li>choices:</li>
+<li>Support the current leader (DOM check Difficulty 2)</li>
+<li>Stay neutral (relationship unchanged, but may lose trust)</li>
+<li>Support the challenger (DOM check Difficulty 3, success raises relationship but offends Malthus)</li>
+</ul>
+</li>
+<li><strong>faction: Abyssal Legion (if allied)</strong><ul>
+<li>choices:</li>
+<li>Accept the trial (WAR check Difficulty 2, success grants monster CP +1 reward)</li>
+<li>Refuse (relationship -2, but saves resources)</li>
+</ul>
+</li>
+<li><strong>faction: Free Artificers (if allied)</strong></li>
+<li><strong>faction: Shadow Network (if allied)</strong></li>
+<li><strong>level: 10</strong></li>
+<li>key_events:</li>
+<li>Unlock first legendary monster (recruitable or encountered)</li>
+<li>Moris calls for help (time-sensitive side quest, must decide within 4 turns)</li>
+<li>Choice: rescue / exploit / ignore — three choices affect the whole game</li>
+<li>encounter:
+  <strong>type</strong>: Rescue Operation
+  <strong>details</strong>: Need to dispatch monsters through the out-of-control dungeon, facing dangerous unstable mana</li>
+<li><strong>level: 11</strong></li>
+<li>key_events:</li>
+<li>Receive formal contact requests from at least 2 new NPC dungeons</li>
+<li>Choose whether to participate in Abyssal-tier politics</li>
+<li>May gain new allies or make new enemies</li>
+</ul>
+<h2>act4</h2>
+<p><strong>name</strong>: Overlord
+<strong>range</strong>: Lv12~15
+<strong>theme</strong>: Fateful choice. Your dungeon has become a top-tier Abyssal power. The Order of Light prepares the "Crusade" — and the sleeping entity in the Primordial Fissure is about to wake.</p>
+<h3>stages</h3>
+<ul>
+<li><strong>level: 12</strong></li>
+<li>encounter:
+  <strong>type</strong>: Large-scale Diplomatic Scene
+  <strong>location</strong>: Scrap Canyon, the mint hall of Grix's foundry
+  <strong>attendees</strong>: Malthus (Bone Mound Council), Balzec (Abyssal Legion), Vera (Shadow Network), Wrench (Free Artificers), Moris, Ethlin, Selathil (neutral), Corwin, etc.
+  ##### debate_structure
+  <strong>round1</strong>: Player's opening statement (DOM + Diplomacy check, decides overall atmosphere)
+  <strong>round2</strong>: Three rounds of debate — one topic per round (unite / independent action / resource allocation)
+  <strong>round3</strong>: Final vote — each NPC dungeon's vote depends on its relationship value with the player</li>
+<li><strong>level: 13</strong></li>
+<li>encounter:
+  <strong>type</strong>: Ultimate Defensive Battle
+  ##### waves</li>
+<li>Wave 1: T4 hero squad ×3 (5-6 members, includes Mage / Warrior / Cleric)</li>
+<li>Wave 2: T4 hero squad ×2 + T5 legendary squad ×1</li>
+<li>Wave 3: T5 legendary Boss ×2 (legendary tier)
+  <strong>notes</strong>: Use all accumulated resources, monsters, allies, captive cannon fodder — this is the ultimate test of the player's management results</li>
+<li>ally_support:
+  <strong>description</strong>: Each allied dungeon provides a number of reinforcements based on the mutual relationship value (every +2 relationship provides 1 reinforcement)</li>
+<li><strong>level: 14</strong></li>
+<li>key_events:</li>
+<li>Corwin's infiltration intel: the weakness of the Order's Crusaders is the holy-light resonance under the moonlight</li>
+<li>Final expedition: this may be the lord's last surface operation</li>
+<li>Choice: use the intel to counterattack or hold firm awaiting aid</li>
+<li>encounter:
+  <strong>type</strong>: Final Expedition (surface infiltration)
+  <strong>objective</strong>: Obtain the final piece of intel — the Order's headquarters map
+  <strong>risk</strong>: Success rate depends on the number of intel checks accumulated earlier</li>
+<li><strong>level: 15</strong></li>
+<li>final_event:
+  <strong>opening</strong>: "My children — what have you made of my underworld?"</li>
+</ul>
+<p>##### stage1
+  <strong>name</strong>: Descent
+  <strong>description</strong>: All dungeons' Mana Crystals resonate with light simultaneously. Dungeon mana temporarily ×2 — but may be withdrawn afterward
+  ##### stage2
+  <strong>name</strong>: Judgment
+  <strong>description</strong>: Nexis examines each major alliance in turn. What she sees is not a united Abyss — but division, infighting, and compromise with the surface. Her question: "What have you built with my blood?"
+  ###### checks
+  - DOM check (respond to the question)
+  - ARC check (understand her true intent)
+  ##### stage3
+  <strong>name</strong>: Choice
+  ###### choices
+  - <strong>label: A. Become her right hand</strong>
+  - <strong>label: B. Refuse</strong>
+  - <strong>label: C. Persuade her</strong>
+  - triple_check_details:
+  - 1st DOM + Diplomacy: prove the Abyss Lord deserves autonomy (at least 3 NPC ally relationships → each +1 die)
+  - 2nd DOM + Diplomacy: prove the Order of Light can be contained (Corwin's intel +2 dice, record of defeating the Crusade expedition +1 die)
+  - 3rd Arcana ARC + Arcane Knowledge: prove Abyssal mana has evolved (player's research results +1 die, Ethlin's dimensional research +1 die, dungeon MAG ≥12 → +1 die)
+  - epilogue:
+  <strong>scene</strong>: Three Abyssal months later. The day the ceasefire agreement is signed. You stand at the highest point of the Throne Hall, overlooking your dungeon —
+  now it is no longer a string of caves, but a prosperous underground kingdom.
+  Monsters and converted former adventurers coexist in peace. In the distance, the newly built Abyss Embassy blazes with light —
+  those are envoy delegations from sixteen dungeons offering congratulations.
+  The Abyss will never be the same again.</p>
+<h2>sidequests</h2>
+<p><strong>description</strong>: Every 3 turns provides 1 optional commission / side quest. Players may choose to execute or ignore it.</p>
+<h3>quests</h3>
+<ul>
+<li><strong>id: sq1</strong></li>
+<li>checks:</li>
+<li>IND + Mining check vs Difficulty 2 success</li>
+<li><strong>id: sq2</strong></li>
+<li>checks:</li>
+<li>WAR + Tracking check vs Difficulty 3</li>
+<li><strong>id: sq3</strong></li>
+<li>checks:</li>
+<li>Arcana ARC + Archaeology check vs Difficulty 3</li>
+<li>CUN + Stealth check vs Difficulty 2 (prevent triggering traps)</li>
+<li><strong>id: sq4</strong></li>
+<li>checks:</li>
+<li>DOM + Diplomacy check vs Difficulty 2~4 (depending on conflict severity)</li>
+<li><strong>id: sq5</strong></li>
+<li>checks:</li>
+<li>CUN + Sailing check vs Difficulty 2 (control a small boat)</li>
+<li>WAR + Swimming check vs Difficulty 1 (avoid drowning)</li>
+<li><strong>id: sq6</strong></li>
+<li>checks:</li>
+<li>None (pure economic transaction)</li>
+<li><strong>id: sq7</strong></li>
+<li>checks:</li>
+<li>Arcana ARC + Evolution check vs Difficulty 3</li>
+<li><strong>id: sq8</strong></li>
+<li>secret_agreements:</li>
+<li>Intel exchange (each turn gain +1 turn early warning of next invasion's intel)</li>
+<li>Resource complementarity (both sides contribute part of shared minerals or magical resources)</li>
+<li>Military alliance (auto-dispatch reinforcements when invaded, but bears certain risk)</li>
+</ul>
+<h2>npc_database</h2>
+<ul>
+<li><strong>name: Malthus, "Iron-Bone Marquis"</strong></li>
+<li><strong>name: Balzec, "Earth-Render"</strong></li>
+<li><strong>name: Moris, "Thousand-Faces"</strong></li>
+<li><strong>name: Wrench</strong></li>
+<li><strong>name: Grix, "Goldtooth"</strong></li>
+<li><strong>name: Ethlin, "Void-Weaver"</strong></li>
+<li><strong>name: Corwin, "Rusted Duke"</strong></li>
+<li><strong>name: Selathil, "Evernight Eye"</strong></li>
+</ul>
+<h2>solo_rules</h2>
+<p><strong>description</strong>: The following rules are specially designed for solo play, ensuring the AI GM runs the game fairly and interestingly</p>
+<h3>ai_gm_responsibilities</h3>
+<ul>
+<li>Automatically calculate and manage all non-player-character actions (monster AI, adventurer AI, diplomatic relations, etc.)</li>
+<li>Dynamically adjust invasion intensity and event complexity based on player progress</li>
+<li>Provide a current dungeon status summary at the end of each turn (resources / actions / available options)</li>
+<li>Automatically handle management dice pool calculation (IND + skill + floor(ΣMV/2))</li>
+<li>Automatically handle combat dice pool calculation (WAR + skill + floor(ΣCP/2))</li>
+<li>Invasion determination auto-completed by AI GM (Infamy INF + 1d6 ≥ 8 triggers)</li>
+<li>Captive escape determination auto-handled by AI GM</li>
+</ul>
+<h3>difficulty_scaling</h3>
+<ul>
+<li>Early (Lv1-3): AI GM tends to help players, higher error tolerance</li>
+<li>Mid (Lv4-7): difficulty gradually increases, but supportive events remain</li>
+<li>Late (Lv8-11): standard difficulty, every player choice is crucial</li>
+<li>Endgame (Lv12-15): extremely hard mode, but all intel / allies / items accumulated earlier come into play here</li>
+</ul>
+<h3>resource_assistance</h3>
+<ul>
+<li>AI GM remembers all player resource stockpiles, auto-deducts construction / recruitment / upgrade costs</li>
+<li>Each turn auto-calculates Throne Hall output (◆×1/turn) and the Ancient Wyrm archetype's vault interest</li>
+<li>WLH attribute auto-calculates resource cap (see rulebook §2.9 storage table)</li>
+</ul>
+<h3>combat_aids</h3>
+<ul>
+<li>AI GM auto-calculates each monster's damage value against adventurers</li>
+<li>Boss's Phase changes trigger at the correct time point</li>
+<li>Trap chain triggers and special effects auto-handled by AI GM</li>
+</ul>
+<h3>diplomatic_tracking</h3>
+<ul>
+<li>AI GM auto-maintains relationship values with all NPC dungeons (-10 to +10)</li>
+<li>Relationship value changes auto-affect diplomacy check bonuses, allied reinforcement strength, trade prices, etc.</li>
+<li>Each NPC has an independent personality and dialogue style, performed by the AI GM based on that character's setup</li>
+</ul><p><a href="../../assets/r24_en/scenarios/s02_%E6%B7%B1%E6%B7%B5%E5%B8%9D%E5%9C%8B%E7%8D%A8%E8%A1%8C.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>

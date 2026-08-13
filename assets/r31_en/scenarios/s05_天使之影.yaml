@@ -1,0 +1,224 @@
+# Scenario 5: Shadow of the Angel — Structured Scenario
+
+scenario:
+  name: "Scenario 5: Shadow of the Angel"
+  level: "Seq 5 → Seq 4"
+  players: "Party of 3-5, or solo + 2 Sequence 4-5 NPC companions"
+  duration: "4-6 game sessions"
+  continues_from: "Approximately 2-3 weeks (in-game time) after the ending of Mechanical Heart"
+  mode: [Multiplayer, Solo]
+
+  background: |
+    In the third week after obtaining the slate fragment, you begin to notice something is off.
+    
+    Your shadow occasionally moves on its own without wind. The reflection in the mirror turns its head half a beat late. When you wake at midnight, there is a faint ozone scent in the air beside the bed—the residual trace of an angel-level being passing by. You know you are being watched, but the watcher never shows itself.
+    
+    Until that night. On your walk home from the Drowned Man Tavern, the street suddenly becomes three times longer than usual. The streetlamps on both sides go out one by one, leaving only the one above your head. You hear footsteps behind you—but when you turn, there is nothing.
+    
+    Then the air before you begins to fold. A formless being unfolds before her—not humanoid, but a constantly shifting geometric shape woven from dark-purple starlight. Her words are written directly into your mind, bypassing the ears:
+    
+    **"You hold that slate fragment. In three days, someone will come to take it—not a human, but a Sequence 3 Saint. You will die. Unless—you accept my protection."**
+    
+    She is a Sequence 2 Angel of the Church of the Evernight—the "Servant of Concealment." She is hunting a high-Sequence traitor who escaped from a Seal, and that traitor is collecting slate fragments. She needs your fragment as "bait" to locate the traitor. In exchange—she will protect you in battle, and provide "Concealment" protection when you advance to Sequence 4 (reducing your loss-of-control risk).
+    
+    **This is not friendship. This is a transaction.** An angel does not make friends with you—an angel negotiates terms with you. She makes it clear: if you refuse, she will take the slate fragment; you lose it but will not die. If you accept—you step into an angel-level shadow war.
+
+  hooks:
+    - "**Omen Dream**: For three nights running you dream the same image—a stone stele slowly cracking in the darkness, its fragments flying in all directions. Spirituality + Divination (Hard): reveals each fragment fell into different hands, and one is moving toward Gray Mist City where you are."
+    - "**Manhunt**: One night, three Sequence 6 assassins break into your lodgings. After repelling them, you discover they belong to the Twilight Hermit Order—Adam's organization. They leave a line: \"The slate fragment does not belong to mortals.\""
+    - "**Messenger**: A Spirit World messenger (a glowing orb) appears in your room, leaving a spoken message: \"In three days, when the bell tolls, come to the Abandoned Clock Tower in the Iron Bridge District. Bring the slate. If you do not come—I will come to you.—G\""
+
+  acts:
+    - title: "Act 1: The Chessboard of the Shadow War"
+      content: |
+        The Servant of Concealment gives you a list—three factions she is tracking, all seeking the same slate fragment:
+        
+        **Clue Point 1 — Holy Wind Cathedral Underground Archive**
+        
+        The Servant of Concealment sent authorization in your name to the Nighthawks. You gain access to the church's confidential archives.
+        
+        - Mind + Mysticism (Hard): Research literature on the Blasphemy Slate. Success → learn: the Blasphemy Slate was created by the Ancient Sun God in the Third Epoch; after His fall the slate was shattered into "at least nine known fragments." Two are held by the Seven Churches (each church guards one), at least three are in the hands of Concealed organizations, and the rest are unaccounted for. The slate's complete contents are said to include "the exact time of the doomsday countdown" and "the method of resisting the Outer Deities."
+        - Risk: Researching highly classified literature → Mind check (Routine); failure costs +1d3 Loss of Control.
+        
+        **Clue Point 2 — Ash Harbor District Abandoned Lighthouse**
+        
+        The traitor angel once lingered here briefly. You can find the traces He left:
+        
+        - Spirituality + Spirit Sight (Hard): Perceive the residual Spirituality at the top of the lighthouse—the traitor's Spiritual scent is "burning stars," mixed with the "rotten sweetness" of Outer Deity power. This proves the traitor has been corrupted by an Outer Deity (speculated to be the Mother Tree of Desire).
+        - Agility + Tracking (Routine): Find a scorched strip of cloth on the floor—the traitor lost control here while being corrupted, burning off His clothing. The cloth bears a Spiritual coordinate—pointing to the ancient ruins beneath the Gear District.
+        
+        **Clue Point 3 — Gear District Underground Ruins**
+        
+        The traitor's hiding place—a Third Epoch underground temple ruin. This was once a sanctuary of the Ancient Sun God; the slate fragment has a "resonance" reaction to the Spiritual environment here.
+        
+        - Spirituality + Ritual (Hard): Use your slate fragment as a detector to track the traitor's Spiritual trail. Success → discover the traitor is hiding in the "Sanctum Chamber" deep in the ruins. He is performing some ritual with His own slate fragment—trying to establish a deeper connection with the Outer Deity.
+        - Risk: The Spiritual contamination in the ruins (the lingering resentment of the Ancient Sun God at His fall) → for every 15 minutes spent here, +1 Loss of Control.
+
+    - title: "Act 2: The Fragment Contest"
+      content: |
+        The Servant of Concealment has placed a "Concealment Mark" on your slate fragment—once the traitor touches the fragment, His position is locked, and the angel will arrive instantly. What you must do now: **stay alive and bring the fragment before the traitor.**
+        
+        But the other two factions are closing in:
+        
+        - **Twilight Hermit Order**: Sent three Sequence 5 executors. They do not seize the fragment—they want to "recover" all fragments and lock them in Adam's secret chamber. They consider mortals holding slate fragments an "unstable factor."
+        - **Mother Tree of Desire's followers**: A squad of mutated Beyonders corrupted by Outer Deity power. They want to destroy the slate fragment—because it records the method of resisting the Outer Deities.
+        
+        **Scene 1 — Ambush at the Ruins Perimeter**
+        
+        On the way to the Sanctum Chamber, you meet the Twilight Hermit Order's executors.
+        
+        **Twilight Hermit Order Executors** | Spectator Pathway Sequence 5 "Dreamwalker" ×1 + Reader Pathway Sequence 6 "Polymath" ×2 | Party CR: 8 (Solo: 3)
+        
+        - Dreamwalker Attributes: Spirit (SPI) 55, Mind (MND) 60, Body (BOD) 35, Agility (AGI) 40, Charisma (CHA) 50
+        - HP: 85 / Spirit Pool (SP): 170 / Loss of Control Threshold (LoCT): 130
+        - Powers: Dream Traction (2 AP / 10 SP / 20m / target enters a half-dream state—next round's action must first pass a Mind check, failure means the action fails), Mental Deterrence (1 AP / 5 SP / Mind opposition, failure causes 1 round of Deterrence)
+        - Tactics: They do not kill—they try to render you incapable of action, then take the fragment. After you fall unconscious, they leave a Twilight Hermit Order mark and an "explanatory letter" on the spot: "For the safety of humanity. Please understand."
+        - **Optional Routes:**
+          - Direct combat (repel them)
+          - Persuade them (Charisma + Negotiation, Very Hard): prove you are more fit than Adam to guard the fragment—because you are "using" it rather than "sealing" it.
+          - Deceive them (Charisma + Deception, Hard): falsely claim the fragment was already taken by the traitor, luring them toward the traitor.
+        
+        **Scene 2 — Ambush by the Outer Deity's Followers**
+        
+        At the entrance to the Sanctum Chamber, the Mother Tree of Desire's followers have long lain in wait.
+        
+        **Corrupted Beyonders** | Prisoner Pathway Sequence 5 "Puppet" ×2 (already corrupted by the Mother Tree of Desire) | Party CR: 7 (Solo: 2.5)
+        
+        - Attributes: Spirit (SPI) 45, Mind (MND) 25 (severely corrupted), Body (BOD) 50, Agility (AGI) 45, Charisma (CHA) 10
+        - HP: 115 / Spirit Pool (SP): 140 (auto-consumes 3 per round)
+        - Powers: Touch of Desire (1 AP / 5 SP / melee / 3d6 Dark + Outer Deity contamination—target +1d3 Loss of Control), Puppet Control (2 AP / 10 SP / controls an ordinary NPC to attack the player)
+        - Appearance: Their skin bears bark-like textures that do not belong to humans. Their eyes have no pupils—only dark-red light.
+        - Weakness: Spirituality attacks have Advantage (the Outer Deity contamination weakened their Spiritual defense).
+        - Special Drop: From them you can obtain a small vial of "Sap of the Mother Tree of Desire" (Tier 3 Sealed Artifact)—usable for tracking the Spiritual traces of other Outer Deity followers.
+        
+        **Scene 3 — Sanctum Chamber: Confrontation with the Traitor**
+        
+        The traitor angel—once a Warrior Pathway Sequence 3 "Silver Knight," now corrupted by the Mother Tree of Desire into a semi-Outer-Deity construct.
+        
+        **Fallen Silver Knight** | Warrior Pathway Sequence 3 (corrupted state) | Party CR: 12 (Solo: 4)
+        
+        - Attributes: Spirit (SPI) 40, Mind (MND) 30 (severely corrupted), Body (BOD) 75, Agility (AGI) 60, Charisma (CHA) 5
+        - HP: 165 / Spirit Pool (SP): 120 (but due to corruption, recovers 10 HP per round—only Spirituality attacks can stop the recovery)
+        - Loss of Control Threshold (LoCT): 70 (corruption greatly lowers the loss-of-control threshold—every use of a power may trigger loss of control)
+        - Powers:
+          - Corrupted Slash (1 AP / 5 SP / melee / 3d10+15 / Dark + Physical): each hit → target +1d3 Loss of Control
+          - Outer Deity's Shield (Reaction / 10 SP): blocks one attack, but self +5 Loss of Control
+          - Desire Screech (2 AP / 15 SP / whole area / Mind opposition): failure causes 1 round of Deterrence + +2 Loss of Control
+          - Dawn Blade (3 AP / all remaining SP / straight line 50m / 4d12+20 Light): His residual Warrior Pathway power—the last echo of him as a "Silver Knight." After use, self +15 Loss of Control
+        - Weakness:
+          - The Third Epoch "Purification Rune" still remains on the floor of His Sanctum Chamber—can be activated with Spirituality + Ritual (Hard) to deal 3d6 Light damage to Him per round.
+          - If you approach Him holding the slate fragment, the fragment resonates—temporarily weakening His Outer Deity contamination (all checks −10, lasts 2 rounds)
+        - **Tactical Turn**: When HP drops to 30%, He kneels to the ground—for an instant, the red light in His eyes vanishes, and you see a pair of weary gray eyes. In His original voice He says:
+          > "Kill me. While I can still call myself 'me.' Kill me—then take my slate fragment. It records—where the next fragment lies. Go. Quick—He is watching me—"
+        
+        This is what you wanted. The angel will arrive in this very instant.
+
+    - title: "Act 3: The Servant of Concealment's Judgment"
+      content: |
+        The Servant of Concealment descends—the walls of the Sanctum Chamber are covered with dark-purple starlight. She does not reveal Her full Mythical Form (for that would drive all mortals present into loss of control), but Her three-meter-tall silhouette of shadow is already enough for you to feel the angel's absolute stature.
+        
+        **Mind + Will check (Hard):** Maintain your self before the angel. Failure → +2d6 Loss of Control, and unable to act for 1 round.
+        
+        She binds the Fallen Silver Knight with starlight. Then She turns to look at you—with that inhuman gaze, like looking at an interesting species.
+        
+        > "You did better than I expected. Mortal—what is your name?" (This is the first time She asks your name.)
+        
+        She keeps Her promise: the Fallen Silver Knight's slate fragment goes to you. She only takes the Fallen Silver Knight's Beyonder Characteristic—that was Her original mission in hunting the traitor. Before leaving, She leaves a line:
+        
+        > "When you are within the fragment's resonance range—I can perceive you. If you wish to survive the next fragment resonance—call my name."
+        
+        She gives you a portion of Her Honorific Name. This is the angel's highest recognition of a mortal—but it also means you are formally drawn into the high-level view of the Church of the Evernight. You are no longer a pawn—you are a card.
+        
+        **Rewards:**
+        
+        | Condition | Reward |
+        |------|------|
+        | Basic Completion | Sequence 4 Promotion Ritual qualification + 70 Acting Progress |
+        | Activate the Ruins' Purification Rune | Obtain a copy of the "Third Epoch Purification Rune"—ritual knowledge for resisting Outer Deity contamination |
+        | Successfully Persuade the Twilight Hermit Order | The Twilight Hermit Order stops hunting you—shifts to "neutral observation." Gain a mysterious contact. |
+        | Execute the Fallen Silver Knight (personally) | Obtain the Silver Knight's Warrior Pathway Sequence 3 Beyonder Characteristic (usable as future trade or Promotion material) + the angel's personal recognition |
+        | Obtain the Second Slate Fragment | The slate fragment's recorded contents: the complete list of Outer Deities + the geographic coordinates of barrier weak points (provides a lead for Scenario 6) |
+        | The Servant of Concealment's Honorific Name | Talent "Concealment's Favor": +15 to Stealth and Concealment-related checks; can consume this talent (one-time) to summon the angel's remote assistance once |
+        
+        **Loss of Control Risk:**
+        
+        | Risk Point | Value |
+        |--------|-----|
+        | Researching classified literature | +1d3 |
+        | Ruins Spiritual contamination | +1 / 15 minutes |
+        | Hit by Corrupted Slash (each) | +1d3 |
+        | Desire Screech | +2 |
+        | Angel's descent (close to Mythical Form) | +2d6 |
+        | Full engagement with the Fallen Silver Knight | +2d3 |
+        | Spirit Exhaustion | +2d5 |
+        | **Total (full scenario estimate)** | **25-45** |
+        
+        > **GM Note:** Players reach the Sequence 4 Promotion condition at the end of this scenario. The Sequence 4 Promotion Ritual is recommended to relate to "completing an extraordinary feat in the angel's witness"—which is exactly this scenario's ending.
+        
+        ---
+
+  antagonists:
+    - data: |
+        - Dreamwalker Attributes: Spirit (SPI) 55, Mind (MND) 60, Body (BOD) 35, Agility (AGI) 40, Charisma (CHA) 50
+        - HP: 85 / Spirit Pool (SP): 170 / Loss of Control Threshold (LoCT): 130
+        - Powers: Dream Traction (2 AP / 10 SP / 20m / target enters a half-dream state—next round's action must first pass a Mind check, failure means the action fails), Mental Deterrence (1 AP / 5 SP / Mind opposition, failure causes 1 round of Deterrence)
+        - Tactics: They do not kill—they try to render you incapable of action, then take the fragment. After you fall unconscious, they leave a Twilight Hermit Order mark and an "explanatory letter" on the spot: "For the safety of humanity. Please understand."
+        - **Optional Routes:**
+          - Direct combat (repel them)
+          - Persuade them (Charisma + Negotiation, Very Hard): prove you are more fit than Adam to guard the fragment—because you are "using" it rather than "sealing" it
+          - Deceive them (Charisma + Deception, Hard): falsely claim the fragment was already taken by the traitor, luring them toward the traitor
+
+    - data: |
+        - Attributes: Spirit (SPI) 45, Mind (MND) 25 (severely corrupted), Body (BOD) 50, Agility (AGI) 45, Charisma (CHA) 10
+        - HP: 115 / Spirit Pool (SP): 140 (auto-consumes 3 per round)
+        - Powers: Touch of Desire (1 AP / 5 SP / melee / 3d6 Dark + Outer Deity contamination—target +1d3 Loss of Control), Puppet Control (2 AP / 10 SP / controls an ordinary NPC to attack the player)
+        - Appearance: Their skin bears bark-like textures that do not belong to humans. Their eyes have no pupils—only dark-red light.
+        - Weakness: Spirituality attacks have Advantage (the Outer Deity contamination weakened their Spiritual defense).
+        - Special Drop: From them you can obtain a small vial of "Sap of the Mother Tree of Desire" (Tier 3 Sealed Artifact)—usable for tracking the Spiritual traces of other Outer Deity followers.
+        
+        **Scene 3 — Sanctum Chamber: Confrontation with the Traitor**
+
+    - data: |
+        - Attributes: Spirit (SPI) 40, Mind (MND) 30 (severely corrupted), Body (BOD) 75, Agility (AGI) 60, Charisma (CHA) 5
+        - HP: 165 / Spirit Pool (SP): 120 (but due to corruption, recovers 10 HP per round—only Spirituality attacks can stop the recovery)
+        - Loss of Control Threshold (LoCT): 70 (corruption greatly lowers the loss-of-control threshold—every use of a power may trigger loss of control)
+        - Powers:
+          - Corrupted Slash (1 AP / 5 SP / melee / 3d10+15 / Dark + Physical): each hit → target +1d3 Loss of Control
+          - Outer Deity's Shield (Reaction / 10 SP): blocks one attack, but self +5 Loss of Control
+          - Desire Screech (2 AP / 15 SP / whole area / Mind opposition): failure causes 1 round of Deterrence + +2 Loss of Control
+          - Dawn Blade (3 AP / all remaining SP / straight line 50m / 4d12+20 Light): His residual Warrior Pathway power—the last echo of him as a "Silver Knight." After use, self +15 Loss of Control
+        - Weakness:
+          - The Third Epoch "Purification Rune" still remains on the floor of His Sanctum Chamber—can be activated with Spirituality + Ritual (Hard) to deal 3d6 Light damage to Him per round.
+          - If you approach Him holding the slate fragment, the fragment resonates—temporarily weakening His Outer Deity contamination (all checks −10, lasts 2 rounds)
+        - **Tactical Turn**: When HP drops to 30%, He kneels to the ground—for an instant, the red light in His eyes vanishes, and you see a pair of weary gray eyes. In His original voice He says:
+          > "Kill me. While I can still call myself 'me.' Kill me—then take my slate fragment. It records—where the next fragment lies. Go. Quick—He is watching me—"
+
+  endings:
+    choices: |
+      **Rewards:**
+      
+      | Condition | Reward |
+      |------|------|
+      | Basic Completion | Sequence 4 Promotion Ritual qualification + 70 Acting Progress |
+      | Activate the Ruins' Purification Rune | Obtain a copy of the "Third Epoch Purification Rune"—ritual knowledge for resisting Outer Deity contamination |
+      | Successfully Persuade the Twilight Hermit Order | The Twilight Hermit Order stops hunting you—shifts to "neutral observation." Gain a mysterious contact. |
+      | Execute the Fallen Silver Knight (personally) | Obtain the Silver Knight's Warrior Pathway Sequence 3 Beyonder Characteristic (usable as future trade or Promotion material) + the angel's personal recognition |
+      | Obtain the Second Slate Fragment | The slate fragment's recorded contents: the complete list of Outer Deities + the geographic coordinates of barrier weak points (provides a lead for Scenario 6) |
+      | The Servant of Concealment's Honorific Name | Talent "Concealment's Favor": +15 to Stealth and Concealment-related checks; can consume this talent (one-time) to summon the angel's remote assistance once |
+      
+      **Loss of Control Risk:**
+      
+      | Risk Point | Value |
+      |--------|-----|
+      | Researching classified literature | +1d3 |
+      | Ruins Spiritual contamination | +1 / 15 minutes |
+      | Hit by Corrupted Slash (each) | +1d3 |
+      | Desire Screech | +2 |
+      | Angel's descent (close to Mythical Form) | +2d6 |
+      | Full engagement with the Fallen Silver Knight | +2d3 |
+      | Spirit Exhaustion | +2d5 |
+      | **Total (full scenario estimate)** | **25-45** |
+      
+      > **GM Note:** Players reach the Sequence 4 Promotion condition at the end of this scenario. The Sequence 4 Promotion Ritual is recommended to relate to "completing an extraordinary feat in the angel's witness"—which is exactly this scenario's ending.
+      
+      ---

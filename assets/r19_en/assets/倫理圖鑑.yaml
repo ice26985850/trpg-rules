@@ -1,0 +1,49 @@
+# Ethics (Moral Orientation) Selection
+# 4 axes totaling 3 points, each axis -1 to +1
+
+ethics:
+  axes:
+    - name: "Social Structure"
+      options:
+        - value: "1"
+          label: "Militarism"
+          desc: "Advocates military force; Fleet Maintenance Cost -10%"
+        - value: "0"
+          label: "Order"
+          desc: "Middle path; no bonus, no penalty"
+        - value: "-1"
+          label: "Liberalism"
+          desc: "Pursues freedom; Stability +10%"
+    - name: "Diplomatic Stance"
+      options:
+        - value: "1"
+          label: "Xenophobia"
+          desc: "Unwelcoming to outsiders; Diplomatic Relations -10% but Intelligence Defense +20%"
+        - value: "0"
+          label: "Universalism"
+          desc: "Middle path; no bonus, no penalty"
+        - value: "-1"
+          label: "Xenophilia"
+          desc: "Welcoming to outsiders; Diplomatic Relations +10% but Intelligence Defense -20%"
+    - name: "Life Form"
+      options:
+        - value: "1"
+          label: "Capitalism"
+          desc: "Pursues profit; Energy (EC) Output +20%"
+        - value: "0"
+          label: "Collectivism"
+          desc: "Middle path; no bonus, no penalty"
+        - value: "-1"
+          label: "Cooperativism"
+          desc: "Shares resources; Food Output +20%"
+    - name: "Technology View"
+      options:
+        - value: "1"
+          label: "Machine Intelligence Worship"
+          desc: "Worships AI; AI-related tech gains +1 free"
+        - value: "0"
+          label: "Materialism"
+          desc: "Middle path; no bonus, no penalty"
+        - value: "-1"
+          label: "Spiritualism"
+          desc: "Pursues psionics; Psionic Ability +20%"

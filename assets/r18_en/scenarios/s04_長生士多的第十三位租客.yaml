@@ -1,0 +1,26 @@
+name: The Thirteenth Tenant of Cheung Sang Store
+description: A retired geomancer drains tenants' life force with "Life-Borrowing," refines their bodies into White Zombies, and hides a small "Longevity Furnace" in the back room - a prototype of Nine Nether Hall's corpse-cultivation art; the account book points to Seventh Uncle and the Walled Village great work.
+difficulty: B
+level_range: [5, 6]
+case_type: White Zombie + Resentful Ghost
+map_ref: "maps/S1_唐樓.yaml"
+npcs:
+  - Sister Ping (property manager, case-taker)
+  - Uncle Chuen (Cheung Sang Store owner, Nine Nether Hall peripheral)
+  - Uncle Chan (same-building resident)
+  - A-Ying (first resister, died and became a Resentful Ghost)
+  - Seventh Uncle (head of Nine Nether Hall's Hong Kong station, named in account book)
+key_enemies:
+  - White Zombie (Challenge Rating (CR) 2, Hard-Skin Mitigation -2, xMultiple)
+  - Resentful Ghost (A-Ying, Challenge Rating (CR) 3)
+  - Longevity Furnace (small corpse-cultivation device, environmental encounter, Challenge Rating (CR) 2)
+rewards:
+  exp: 500
+  coin: "400-600"
+  items:
+    - Corpse-Still Talisman and Glutinous Rice (consumable resupply)
+    - Account book clue (leads to S5/S3)
+    - Reputation for Tracking Nine Nether Hall Threads
+hooks:
+  - The account book's last page "Received by Seventh Uncle above, for the Walled Village ancestral house great work" - leads to S5/S3.
+  - Uncle Chuen is only peripheral; the identity of the real "one above" is a mystery.

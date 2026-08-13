@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" font-family="Microsoft JhengHei, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/></filter>
+    <filter id="pulse"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0606"/><stop offset="50%" stop-color="#0D0A0A"/><stop offset="100%" stop-color="#06060A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="650" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="500" y="25" text-anchor="middle" fill="#FFCC88" font-size="18" font-weight="bold">Twin Doom (Twin Doom)  —  S5 The Final Price</text>
+  <text x="500" y="44" text-anchor="middle" fill="#665544" font-size="11">Ruthless (Alliance Flagship) + Void (AI Escort Vessel) | 27 nodes | 8 decks | Self-Destruct Countdown 15 rounds</text>
+
+  <!-- Mothership Evacuation Notice -->
+  <rect x="250" y="55" width="500" height="22" rx="4" fill="#662222" opacity="0.8" stroke="#FF4444" stroke-width="1"/>
+  <text x="500" y="71" text-anchor="middle" fill="#FF8888" font-size="11">⚠ Round 8: Arbitrator heavily damaged and withdrawing  —  all mothership support fails! You must seize enemy escape pods!</text>
+
+  <!-- ====== Ruthless (Left Block) ====== -->
+  <rect x="15" y="85" width="580" height="555" rx="12" fill="#1A1313" opacity="0.6" stroke="#884444" stroke-width="2.5"/>
+  <text x="305" y="110" text-anchor="middle" fill="#CC6666" font-size="15" font-weight="bold">Ruthless (Ruthless)  —  Alliance Flagship</text>
+  <text x="305" y="128" text-anchor="middle" fill="#885555" font-size="10">1,500 m | 6 decks | Human Defenders + Commanding Captain</text>
+
+  <!-- Deck Tiers -->
+  <rect x="30" y="140" width="550" height="75" rx="6" fill="#1A2222" opacity="0.4" stroke="#336666" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="160" fill="#558888" font-size="11" font-weight="bold">L1 Hangar &amp; Engineering Deck</text>
+  <rect x="30" y="222" width="550" height="65" rx="6" fill="#222211" opacity="0.4" stroke="#666633" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="242" fill="#888855" font-size="11" font-weight="bold">L2 Barracks Deck</text>
+  <rect x="30" y="294" width="550" height="75" rx="6" fill="#221122" opacity="0.4" stroke="#663366" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="314" fill="#885588" font-size="11" font-weight="bold">L3 Comms &amp; Self-Destruct Deck (Variable-G)</text>
+  <rect x="30" y="376" width="550" height="55" rx="6" fill="#222222" opacity="0.4" stroke="#666666" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="45" y="396" fill="#888888" font-size="11" font-weight="bold">L4 Data Center Deck</text>
+  <rect x="30" y="438" width="550" height="95" rx="6" fill="#221111" opacity="0.5" stroke="#CC4444" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="45" y="458" fill="#DD5555" font-size="11" font-weight="bold">L5 Command Deck (Bridge)  —  Low Gravity 0.3G</text>
+
+  <!-- Ruthless Connections -->
+  <!-- L1 -->
+  <line x1="110" y1="192" x2="230" y2="192" stroke="#8899AA" stroke-width="2"/>
+  <line x1="230" y1="192" x2="350" y2="192" stroke="#8899AA" stroke-width="2"/>
+  <line x1="230" y1="192" x2="230" y2="165" stroke="#8899AA" stroke-width="1.5"/>
+  <line x1="350" y1="192" x2="470" y2="192" stroke="#8899AA" stroke-width="2"/>
+  <line x1="470" y1="192" x2="590" y2="192" stroke="#CC8844" stroke-width="2"/>
+  <text x="525" y="185" fill="#CC8844" font-size="8">High Gravity</text>
+  <line x1="590" y1="192" x2="670" y2="192" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="625" y="185" fill="#DD4444" font-size="7">Radiation</text>
+  <!-- L1→L2 -->
+  <line x1="230" y1="165" x2="230" y2="255" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="212" fill="#BB9944" font-size="8">Elevator</text>
+  <!-- L2 -->
+  <line x1="230" y1="255" x2="350" y2="255" stroke="#8899AA" stroke-width="2"/>
+  <line x1="230" y1="255" x2="470" y2="255" stroke="#DD4444" stroke-width="2"/>
+  <text x="345" y="248" fill="#DD4444" font-size="7">Locked</text>
+  <!-- L2→L3 -->
+  <line x1="230" y1="255" x2="230" y2="335" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="297" fill="#BB9944" font-size="8">Stairwell</text>
+  <!-- L3 -->
+  <line x1="230" y1="335" x2="350" y2="335" stroke="#8899AA" stroke-width="2"/>
+  <line x1="350" y1="335" x2="470" y2="335" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="405" y="327" fill="#DD4444" font-size="7">Locked</text>
+  <!-- L3→L4 -->
+  <line x1="230" y1="335" x2="230" y2="400" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="370" fill="#BB9944" font-size="8">Stairwell</text>
+  <!-- L4 -->
+  <line x1="230" y1="400" x2="350" y2="400" stroke="#8899AA" stroke-width="2"/>
+  <!-- L4→L5 -->
+  <line x1="230" y1="400" x2="230" y2="470" stroke="#BB9944" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="245" y="438" fill="#BB9944" font-size="8">Stairwell</text>
+  <!-- L5 -->
+  <line x1="230" y1="470" x2="350" y2="470" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="285" y="462" fill="#DD4444" font-size="7">Blockade Line</text>
+  <line x1="350" y1="470" x2="470" y2="470" stroke="#8899AA" stroke-width="2"/>
+  <line x1="350" y1="470" x2="350" y2="510" stroke="#33AA55" stroke-width="2.5"/>
+  <text x="365" y="492" fill="#33AA55" font-size="8">Extraction</text>
+  <!-- Shortcut Route -->
+  <line x1="350" y1="192" x2="570" y2="335" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="445" y="258" fill="#88CC88" font-size="7" transform="rotate(40,445,258)">Maintenance Shaft PER DC18</text>
+
+  <!-- Ruthlessnodes -->
+  <rect x="50" y="172" width="80" height="35" rx="6" fill="#225544" stroke="#44AA66" stroke-width="2" filter="url(#shadow)"/>
+  <text x="90" y="192" text-anchor="middle" fill="#88DDAA" font-size="9" font-weight="bold">Hangar N1</text>
+  <rect x="180" y="172" width="80" height="35" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1" filter="url(#shadow)"/>
+  <text x="220" y="192" text-anchor="middle" fill="#AABBCC" font-size="9">L1 Corridor N2</text>
+  <rect x="300" y="172" width="80" height="35" rx="6" fill="#552222" stroke="#DD4444" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="340" y="192" text-anchor="middle" fill="#FF8888" font-size="9">Defender Rally N3</text>
+  <rect x="420" y="172" width="80" height="35" rx="6" fill="#553322" stroke="#CC8844" stroke-width="1" filter="url(#shadow)"/>
+  <text x="460" y="192" text-anchor="middle" fill="#FFAA66" font-size="9">Engineering Entrance N5</text>
+  <rect x="590" y="172" width="70" height="35" rx="6" fill="#662222" stroke="#FF4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="625" y="192" text-anchor="middle" fill="#FF8888" font-size="9">☢Reactor N27</text>
+  <rect x="360" y="405" width="70" height="35" rx="6" fill="#221122" stroke="#663366" stroke-width="1" filter="url(#shadow)"/>
+  <text x="395" y="425" text-anchor="middle" fill="#885588" font-size="9">L3 Corridor N9</text>
+
+  <rect x="50" y="235" width="120" height="35" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1" filter="url(#shadow)"/>
+  <text x="110" y="255" text-anchor="middle" fill="#AABBCC" font-size="9">L2 Corridor N6</text>
+  <rect x="300" y="235" width="80" height="35" rx="6" fill="#334455" stroke="#6688AA" stroke-width="1" filter="url(#shadow)"/>
+  <text x="340" y="255" text-anchor="middle" fill="#AABBCC" font-size="9">Barracks L2 N7</text>
+  <rect x="420" y="235" width="80" height="35" rx="6" fill="#664422" stroke="#FFAA44" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="255" text-anchor="middle" fill="#FFCC88" font-size="9">Armory N8</text>
+
+  <!-- ====== Docking Connector ====== -->
+  <rect x="585" y="300" width="60" height="60" rx="30" fill="#222222" stroke="#AAAAAA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="615" y="325" text-anchor="middle" fill="#CCCCCC" font-size="8" font-weight="bold">Docking Connector</text>
+  <text x="615" y="340" text-anchor="middle" fill="#888888" font-size="7">N18 0G</text>
+  <text x="615" y="353" text-anchor="middle" fill="#888888" font-size="7">Only one person</text>
+
+  <!-- ====== Void (Right Block) ====== -->
+  <rect x="635" y="85" width="350" height="555" rx="12" fill="#111122" opacity="0.6" stroke="#6644AA" stroke-width="2.5"/>
+  <text x="810" y="110" text-anchor="middle" fill="#9966DD" font-size="15" font-weight="bold">Void (Void)  —  AI Unmanned Vessel</text>
+  <text x="810" y="128" text-anchor="middle" fill="#664488" font-size="10">600 m | 2 decks | remnant AI | entire area Zero-G (0G)</text>
+
+  <!-- Void Deck -->
+  <rect x="650" y="142" width="320" height="80" rx="6" fill="#111122" opacity="0.5" stroke="#4444AA" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="665" y="162" fill="#6666BB" font-size="11" font-weight="bold">Deck 1  —  Zero-G (0G) | walls reconfigure every 2 rounds</text>
+  <rect x="650" y="230" width="320" height="120" rx="6" fill="#11111A" opacity="0.5" stroke="#5533AA" stroke-width="1" stroke-dasharray="6,3"/>
+  <text x="665" y="250" fill="#7755CC" font-size="11" font-weight="bold">Deck 2  —  AI Core Layer | Zero-G (0G)</text>
+
+  <!-- Void Connections -->
+  <line x1="680" y1="195" x2="780" y2="195" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="195" x2="880" y2="195" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="195" x2="780" y2="280" stroke="#AA66DD" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="795" y="240" fill="#AA66DD" font-size="8">Vertical</text>
+  <line x1="780" y1="280" x2="880" y2="280" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="280" x2="780" y2="330" stroke="#8866CC" stroke-width="2"/>
+  <line x1="780" y1="330" x2="880" y2="330" stroke="#DD4444" stroke-width="2.5"/>
+  <text x="825" y="322" fill="#DD4444" font-size="7">Quantum Lock DC22</text>
+
+  <!-- Voidnodes -->
+  <rect x="660" y="175" width="85" height="35" rx="6" fill="#221144" stroke="#6644AA" stroke-width="2" filter="url(#shadow)"/>
+  <text x="702" y="195" text-anchor="middle" fill="#9988DD" font-size="9">Access Point N19</text>
+  <rect x="740" y="175" width="85" height="35" rx="6" fill="#221133" stroke="#5533AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="782" y="195" text-anchor="middle" fill="#8866CC" font-size="9">Corridor N20</text>
+  <rect x="840" y="175" width="85" height="35" rx="6" fill="#331144" stroke="#AA44DD" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="882" y="195" text-anchor="middle" fill="#CC88EE" font-size="9">Defense A N21</text>
+  <rect x="740" y="260" width="85" height="35" rx="6" fill="#221133" stroke="#5533AA" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="782" y="280" text-anchor="middle" fill="#8866CC" font-size="9">Upper Corridor N22</text>
+  <rect x="840" y="260" width="85" height="35" rx="6" fill="#331144" stroke="#AA44DD" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="882" y="280" text-anchor="middle" fill="#CC88EE" font-size="9">Defense B N23</text>
+  <rect x="740" y="310" width="85" height="35" rx="6" fill="#441122" stroke="#DD4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="782" y="325" text-anchor="middle" fill="#FF6666" font-size="8">⚠AI Core Antechamber N24</text>
+  <text x="782" y="338" text-anchor="middle" fill="#CC4444" font-size="7">Turret Matrix CR6</text>
+  <rect x="840" y="310" width="85" height="35" rx="6" fill="#442266" stroke="#AA44FF" stroke-width="3" filter="url(#shadow)"/>
+  <text x="882" y="325" text-anchor="middle" fill="#CC88FF" font-size="9" font-weight="bold">⭐AI Core N25</text>
+  <text x="882" y="338" text-anchor="middle" fill="#9966CC" font-size="7">Hack DC22</text>
+
+  <!-- Objective Markers -->
+  <rect x="300" y="450" width="100" height="35" rx="6" fill="#442222" stroke="#FF4444" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="350" y="465" text-anchor="middle" fill="#FF8888" font-size="9" font-weight="bold">Blockade Line N14</text>
+  <text x="350" y="478" text-anchor="middle" fill="#CC6666" font-size="7">4 Elites + Captain CR6</text>
+  <rect x="420" y="450" width="80" height="35" rx="6" fill="#662222" stroke="#FFAA44" stroke-width="3" filter="url(#shadow)"/>
+  <text x="460" y="465" text-anchor="middle" fill="#FFCC88" font-size="9" font-weight="bold">⭐Bridge N15</text>
+  <text x="460" y="478" text-anchor="middle" fill="#CC9944" font-size="7">Disable Command</text>
+  <rect x="300" y="500" width="80" height="35" rx="6" fill="#226644" stroke="#44AA66" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="340" y="515" text-anchor="middle" fill="#88DDAA" font-size="9" font-weight="bold">🚀 Escape Pod N17</text>
+  <text x="340" y="528" text-anchor="middle" fill="#559977" font-size="7">Max 2 per pod</text>
+  <rect x="420" y="315" width="80" height="35" rx="6" fill="#552222" stroke="#DD4444" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="330" text-anchor="middle" fill="#FF8888" font-size="8" font-weight="bold">Comms N10</text>
+  <text x="460" y="343" text-anchor="middle" fill="#996666" font-size="7">Can intercept comms</text>
+  <rect x="420" y="400" width="80" height="35" rx="6" fill="#445522" stroke="#AAAA44" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="460" y="415" text-anchor="middle" fill="#DDDD88" font-size="8">Data Center N12</text>
+  <text x="460" y="428" text-anchor="middle" fill="#999966" font-size="7">Tactical Data</text>
+  <rect x="300" y="405" width="70" height="35" rx="6" fill="#445522" stroke="#AAAA44" stroke-width="1" filter="url(#shadow)"/>
+  <text x="335" y="420" text-anchor="middle" fill="#DDDD88" font-size="8">L4 Corridor N11</text>
+  <text x="335" y="433" text-anchor="middle" fill="#999966" font-size="7">2 Turrets</text>
+  <rect x="300" y="335" width="70" height="35" rx="6" fill="#553322" stroke="#CC8844" stroke-width="2" filter="url(#shadow)"/>
+  <text x="335" y="350" text-anchor="middle" fill="#FFAA66" font-size="8">⚠ Self-Destruct Room N16</text>
+  <text x="335" y="363" text-anchor="middle" fill="#996633" font-size="7">3G DC20+</text>
+
+  <!-- Dual-Objective Instruction -->
+  <rect x="40" y="560" width="450" height="50" rx="6" fill="#220A0A" opacity="0.8" stroke="#FF4444" stroke-width="1.5"/>
+  <text x="260" y="578" text-anchor="middle" fill="#FF8888" font-size="12" font-weight="bold">⚠ Must simultaneously disable Ruthless Bridge (N15) and Void AI Core (N25)!</text>
+  <text x="260" y="598" text-anchor="middle" fill="#996666" font-size="10">Otherwise the enemy will explode after 15 rounds of self-destruct countdown  —  and you must complete it and extract before the countdown reaches zero</text>
+
+  <!-- Legend -->
+  <rect x="740" y="400" width="230" height="140" rx="8" fill="#0D0D0D" opacity="0.85" stroke="#553333" stroke-width="1"/>
+  <text x="855" y="422" text-anchor="middle" fill="#998888" font-size="12" font-weight="bold">Legend</text>
+  <rect x="755" y="435" width="14" height="9" rx="3" fill="#225544" stroke="#44AA66" stroke-width="1"/>
+  <text x="778" y="444" fill="#88DDAA" font-size="9">Breach Point / Extraction Point</text>
+  <rect x="755" y="452" width="14" height="9" rx="3" fill="#442266" stroke="#AA44FF" stroke-width="2"/>
+  <text x="778" y="461" fill="#CC88FF" font-size="9">Objective Area</text>
+  <rect x="755" y="469" width="14" height="9" rx="3" fill="#552222" stroke="#DD4444" stroke-width="2"/>
+  <text x="778" y="478" fill="#FF8888" font-size="9">Hazard / Boss</text>
+  <line x1="755" y1="492" x2="771" y2="492" stroke="#BB9944" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="778" y="497" fill="#BB9944" font-size="9">Elevator / Stairwell</text>
+  <line x1="755" y1="509" x2="771" y2="509" stroke="#88CC88" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="778" y="514" fill="#88CC88" font-size="9">Maintenance Shaft</text>
+  <line x1="890" y1="435" x2="906" y2="435" stroke="#DD4444" stroke-width="2"/>
+  <text x="913" y="440" fill="#FF8888" font-size="9">Blocked Hatch</text>
+  <line x1="890" y1="454" x2="906" y2="454" stroke="#33AA55" stroke-width="2.5"/>
+  <text x="913" y="459" fill="#44BB66" font-size="9">Extraction Route</text>
+
+  <text x="500" y="638" text-anchor="middle" fill="#554444" font-size="10">Map corresponds to scenario S5 'The Final Price (The Final Price)' | Difficulty: Legendary | Level 7-10 | Dual-Ship Finale 15 rounds</text>
+</svg>

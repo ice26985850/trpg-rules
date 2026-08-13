@@ -1,0 +1,27 @@
+source_md: sp01_塔樓甦醒.md
+title: Tower Awakens
+type: solo
+quality: ★ Apprentice-grade
+players: 1 starting mage
+sessions: 1–2
+core_output: 1 common Element Shard + first Apprentice + basis for a possible NPC Companion
+main_threat: Tower's residual magic, minor environmental hazards, optional social interaction
+prerequisite: None — this scenario is the starting point of the campaign
+summary: You have inherited a tower — or rather, a tower has chosen you. It stands at the forest's edge on the outskirts of town. Its previous occupant, **Silas Duskstar (塞拉斯·暮星)**, vanished under mysterious circumstances three years ago, leaving behind a building that is dilapidated but still functional. The basic infrastructure is intact — Laboratory Lv1, Library Lv1, Observatory Lv1, Containment Room Lv1, and Defense System Lv1.
+acts:
+- name: Act One — Arrival and Discovery
+  scenes:
+  - Scene 1-1 — Name Your Tower
+  - Scene 1-2 — Silas's Research Notes
+  - Scene 1-3 — The Tower's First "Visitor"
+- name: Act Two — The First Research Loop in the Forest
+  scenes:
+  - Scene 2-1 — Reproducing Silas's Observations
+- name: Act Three — The Call of Awakening
+  scenes:
+  - Scene 3-1 — The Tower's First Crisis
+  - Scene 3-2 — The Truth of the Seal
+npcs:
+- name: Eira (艾拉)
+  detail: '- Identity: A young woman from a nearby village who once helped Silas tend the tower - Attributes: Perception 4, Theory 3, Craft 4, Will 5, Erudition 2 - Personality: Shy but curious, with an undeveloped talent for magic - She brings: a basket of fresh bread ("The elder said the new resident might need it") and a question ("Um… do you take apprentices?") **GM Roleplay Hints**: Eira is not here to demand anything. She hands over the bread, lingers by the doorway, and only then works up the courage to ask that question. If the player hesitates, she says, "I can help with cleaning and organizing — you can observe me first," then quickly changes the subject to the weather. **Player Choices**: 1. **Accept Eira as a novice apprentice**: Requires an apprentice dorm (starting at Lv0 — not yet built, but a spare room can serve temporarily). Eira joins with Loyalty 60. → Gain an NPC Apprentice (promotable to Companion later) 2. **Decline but stay in contact**: Eira leaves the bread and says, "If you change your mind, I work at the mill in the village." → Recruitable any time in the future, starting Loyalty +10 (because you refused her first — which makes her feel you are serious) 3. **Refuse outright**: Eira leaves disappointed. → You may have lost an apprentice with special talent (GM Secret: Eira''s hidden potential — if she becomes Chief Apprentice, her special skill is "Secret Talent," a d8 that directly yields 8, the content of which the GM designs) ---'
+research_checks: []

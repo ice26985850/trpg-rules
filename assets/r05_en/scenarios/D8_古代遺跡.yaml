@@ -1,0 +1,91 @@
+name: Dungeon Module D8 — Ancient Ruins
+description: 'Recommended Rank: A/S (Challenge Rating (CR) 35–40) | Theme: Lost civilization ruins, top-tier resource farming. Access: Guild commission A-Ruin1 / S-Ruin1 (corresponding to Rank A→S, CL 35–40); or designated by the GM as a leveling ground. Map: `maps/D8_古代遺跡.yaml` + `maps/D8_古代遺跡.svg`. This work has no multiclass; solo entry follows the player-count adjustment rules (GM Book 13.1: Challenge Rating (CR) −3, enemy count ×0.5, no allies). Exploration round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) are detailed in GM Book Chapter 17. On the positioning map, enemies are at top, allies at bottom, with front and back rows spaced 2 squares (4m) apart; solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no allies). Design Note: D8 is the top-tier stable ground for CL 35–40 "farming EXP + G + materials," directly leading into the Demon General battles (CL40+); refreshable daily (see Commission Catalog, reset rules).'
+difficulty: A/S
+level_range:
+  - 35
+  - 40
+chapter: 8
+map_ref: maps/D8_古代遺跡.yaml
+initial_map: maps/D8_古代遺跡.yaml
+player_mode: 'Solo/Multi (Method A: one scenario + player-count adjustment)'
+encounters:
+  - id: R2
+    name: Gargoyle Corridor
+    type: Combat
+    enemies:
+      - name: Gargoyle
+        cr: 35
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R4
+    name: Tomb Guardian Passage
+    type: Combat
+    enemies:
+      - name: Tomb Guardian
+        cr: 37
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R6
+    name: Golem Antechamber
+    type: Combat
+    enemies:
+      - name: Golem
+        cr: 38
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R10
+    name: Ruin Warden Chamber
+    type: Combat
+    enemies:
+      - name: Ruin Warden
+        cr: 39
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R13
+    name: Gargoyle Alley
+    type: Combat
+    enemies:
+      - name: Gargoyle
+        cr: 37
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R16
+    name: Golem Battlefield
+    type: Combat
+    enemies:
+      - name: Golem
+        cr: 39
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R19
+    name: Tomb Guardian Chamber
+    type: Combat
+    enemies:
+      - name: Tomb Guardian
+        cr: 39
+        count: 2
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+  - id: R20
+    name: Guardian Sanctuary
+    type: Minor Boss
+    enemies:
+      - name: Ruin Guardian
+        cr: 40
+        count: 1
+    budget: Standard×1.0
+    adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"
+    boss: true
+rewards:
+  exp: 36660
+  gold: 3000~4500
+  ip: 10
+  items:
+    []
+adjust: "1 player→CR−3/enemy count×0.5(at least 1)/no allies; 2 players→CR−1/enemy count×0.75; 3 players→baseline; 4 players→baseline; 5–6 players→CR+2/enemy count×1.5/concurrent+1"

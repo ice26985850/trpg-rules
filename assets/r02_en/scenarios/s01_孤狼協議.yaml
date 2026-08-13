@@ -1,0 +1,100 @@
+# Solo Scenario Structure File: Lone Wolf Protocol
+# Source: solo-adventure-lone-wolf_zh-Hant.md (player/GM scenario text)
+# This file is a structured summary for quick reference of scene flow; for full descriptions see the .md of the same name.
+
+meta:
+  title: "Lone Wolf Protocol"
+  type: "Solo Player Scenario"
+  player_count: "1 PC + 1–2 NPC companions"
+  level_range: "Lv.1–10 (starting at Lv.1)"
+  scene_count: 8
+  focus: "Investigative Horror × Survival Choices × Companion Trust × Moral Cost"
+  sites: "Site-██ / Area-14 / Site-19"
+  estimated_duration: "Full campaign 12–18 sessions (approx. 30–50 hours)"
+  companion:
+    name: "Kohl"
+    role: "MTF Operative Lv.1"
+    relationship_start: -3
+    note: "Starts with distrust; PC protecting or being candid → +1; −5 refuses orders; +3 becomes loyal ally"
+
+scenes:
+  - id: "L-1"
+    name: "The Silent Outpost"
+    type: "Investigation / Atmosphere Building"
+    summary: "Explore the three-floor outpost (2 above-ground floors + Basement B1), discover the truth behind the communication blackout, and establish a tense atmosphere."
+    key_checks:
+      - "Observation (search for clues)"
+      - "Survival (adapt to site environment)"
+    map_ref: "solo_lone_wolf_maps pages 1–2"
+
+  - id: "L-2"
+    name: "The Whispering Chamber"
+    type: "Cognitohazard Exposure / Companion Crisis"
+    summary: "Encounter Voidheart's secondary residue (cognitohazard), Kohl falls into crisis, PC faces rescue and sanity decisions."
+    key_checks:
+      - "Anomalistics TN 60 (recognize inner-layer truth)"
+      - "d100 ≤ SAN−10 (CH Intensity Moderate, failure 2d6 SAN)"
+    map_ref: "solo_lone_wolf_maps pages 3–4"
+
+  - id: "L-3"
+    name: "Harlow's Choice"
+    type: "Moral Dilemma / Denouement"
+    summary: "Facing Site Director Harlow's fate, the PC decides severe punishment or pardon, directly affecting the L-7 branch direction."
+    key_checks:
+      - "Persuasion / Resist (self-belief confirmation)"
+    branches:
+      - "Severe punishment → L-7A Atonement Expedition"
+      - "Conditional pardon → L-7B Fighting Side by Side"
+
+  - id: "L-4"
+    name: "Tracking the Source"
+    type: "Field Investigation / Infiltration"
+    summary: "Field infiltration investigation, interact with Erin, track down Voidheart's extraction source and Harlow's unauthorized experiments."
+    key_checks:
+      - "Observation TN 62"
+      - "Stealth (infiltration)"
+    map_ref: "solo_lone_wolf_maps pages 5–6"
+
+  - id: "L-5"
+    name: "Echoes of the Void"
+    type: "Cognitohazard Confrontation / Time Pressure / Boss Battle"
+    summary: "Boss battle against Voidheart's secondary residue, accompanied by time pressure and sustained cognitohazard exposure."
+    key_checks:
+      - "Firearms / Melee (Boss battle)"
+      - "Resist (resist the echoes)"
+    map_ref: "solo_lone_wolf_maps pages 7–8"
+
+  - id: "L-6"
+    name: "Internal Trial"
+    type: "Political Maneuvering / Moral Judgment"
+    summary: "Internal Foundation trial; the PC's past decisions are scrutinized, relationships and clearance levels are affected."
+    key_checks:
+      - "Persuasion TN 60"
+      - "Foundation Lore TN 55"
+
+  - id: "L-7A"
+    name: "Atonement Expedition"
+    type: "High-Risk Containment Mission"
+    condition: "If PC demanded severe punishment for Harlow"
+    summary: "High-risk containment assault, completing the final containment proof under harsh conditions."
+    key_checks:
+      - "Anomalistics TN 65"
+      - "Engineering TN 60"
+
+  - id: "L-7B"
+    name: "Fighting Side by Side"
+    type: "Two-Player Mission / Trust Rebuilding"
+    condition: "If PC demanded conditional pardon"
+    summary: "Execute missions alongside Kohl, rebuild trust, relationship trends toward loyal ally."
+    key_checks:
+      - "Leadership TN 55"
+      - "Coordinated Combat (companion commands)"
+
+  - id: "L-8"
+    name: "Shadow of the Void (Finale)"
+    type: "Campaign Climax / Ultimate Containment"
+    summary: "Finale, face the Shadow of the Void itself, complete the ultimate containment and resolve the fate of companions and sites."
+    key_checks:
+      - "Resist TN 65"
+      - "Firearms TN 82 (ultimate battle)"
+    map_ref: "solo_lone_wolf_maps page 9"

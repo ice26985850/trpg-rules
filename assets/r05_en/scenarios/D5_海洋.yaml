@@ -1,0 +1,63 @@
+name: Dungeon Module D5 — Ocean
+description: Recommended Rank D/C (Challenge Rating (CR) 13–18) | Theme Blue-wave reefs, mid-high-tier resource farming | Acceptance Guild commission "D-Sea1 / C-Sea1" (corresponds to Rank D→C, CL 13–18); or designated by GM as a leveling ground. | Map `maps/D5_海洋.yaml` ＋ `maps/D5_海洋.svg` | This work has no multiclass; solo entry follows the player-count scaling rule (GM Book 13.1 Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). | Exploration-round rules, traps (17.4), chests (17.5), rest (17.6), retreat (17.3) detailed in GM Book Chapter 17. | Positioning map enemies on top, our side on bottom, Front/Back Row spaced 2 grids (4m); solo entry adjusts per GM Book 13.1 (Challenge Rating (CR) −3, enemy count ×0.5, no sidekick). | Design note D5 is the stable CL 13–18 "farm EXP+G+materials" ground, refreshes daily (see Commission Catalog, reset rules).
+difficulty: D/C
+level_range:
+  - 13
+  - 18
+chapter: 5
+map_ref: maps/D5_海洋.yaml
+initial_map: maps/D5_海洋.yaml
+player_mode: "Single/Multi-player (Method A: one scenario + player-count scaling)"
+encounters:
+  - id: R2
+    name: Shallow Shoal Outpost
+    type: Combat
+    enemies:
+      - name: Pirate
+        cr: 13
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R4
+    name: Shark Waters
+    type: Combat
+    enemies:
+      - name: Shark
+        cr: 15
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R6
+    name: Reef Ambush
+    type: Combat
+    enemies:
+      - name: Water Ghost
+        cr: 16
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R10
+    name: Octopus Lair
+    type: Combat
+    enemies:
+      - name: Octopus
+        cr: 17
+        count: 2
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: R13
+    name: Sea Siren Pool
+    type: Mini-boss
+    enemies:
+      - name: Sea Siren
+        cr: 18
+        count: 1
+    budget: Standard×1.0
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+    boss: true
+rewards:
+  exp: 6084
+  gold: 600~900
+  ip: 7
+  items: []
+adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"

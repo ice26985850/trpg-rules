@@ -1,0 +1,286 @@
+Title: Earth Master TRPG — Bestiary
+Sections:
+- Name: I. Jiangshi Type
+  Subsections:
+  - Name: Fresh Corpse (CR 0.5)
+    CR: '0.5'
+    Blocks:
+    - Type: code
+      Content: |
+        Health Points (HP): 15
+        Defense (DEF): 5–8 (Agility 1–3 + No Armor + Iron Body 0)
+        Initiative (INIT): +1–3
+        Movement: 10 ft (Stiff)
+
+        Attacks:
+          Claw Strike — 2d10+2 vs Defense (DEF), Hit: 1d6 physical damage
+
+        Special Abilities:
+          - None
+
+        Weaknesses:
+          - Sunlight: 1d6 damage per turn under sunlight
+          - Evil-Dispelling Talisman: Instant death (no damage roll needed)
+          - Corpse-Suppressing Talisman: Completely immobilized
+
+        Tactics: Instinctively attacks the nearest target. No tactical awareness.
+        Appears: S1 First Cry, newly mutated tomb
+    - Type: paragraph
+      Content: '---'
+  - Name: White Jiangshi (CR 2–3)
+    CR: 2–3
+    Blocks:
+    - Type: code
+      Content: |
+        Health Points (HP): 30
+        Defense (DEF): 12–13 (Agility 2–3 + Innate Hard Skin ~9–10 + Iron Body 0)
+        Initiative (INIT): +2–4
+        Movement: 20 ft (Arms outstretched, hopping; cannot turn or bend)
+
+        Attacks:
+          Dual-Claw Swipe — 2d10+3 vs Defense (DEF), Hit: 1d6+2 physical + Putrefaction Infection (DC 12)
+          Grapple — 2d10+3 vs Defense (DEF), Hit: Pin (opposed Agility DC 14 to escape)
+
+        Special Abilities:
+          - Leaping Pounce: Movement + Attack combined into one action, +1 to Hit
+          - Corpse-Qi Aura: Living creatures within 10 ft gain +1 Fear Value / turn
+
+        Weaknesses:
+          - Evil-Dispelling Talisman: 1d8 burn + Weaken (next turn attacks at Disadvantage + movement halved)
+          - Corpse-Suppressing Talisman: Completely immobilized (no Qi infusion needed)
+          - Coin Sword: Additional +1d4 burn damage
+          - Glutinous Rice: 1d4 burn when stepped on
+          - Ink-Line Boundary: Cannot pass through
+          - Sunlight: 1d6 damage per turn
+
+        Tactics: Leaping pounce at the nearest target. Prioritizes the fastest-moving target. No tactical awareness.
+        Appears: S1 (variant), S2, small ancient tomb
+    - Type: paragraph
+      Content: '---'
+  - Name: Black Jiangshi (CR 4–5)
+    CR: 4–5
+    Blocks:
+    - Type: code
+      Content: |
+        Health Points (HP): 50
+        Defense (DEF): 14–16 (Agility 3–4 + Hardened Skin ~11–12 + Iron Body 0)
+        Initiative (INIT): +3–5
+        Movement: 25 ft (Can walk freely but joints are stiff, like a locked puppet)
+
+        Attacks:
+          Claw Tear — 2d10+4 vs Defense (DEF), Hit: 2d6+3 physical + Putrefaction Infection (DC 16)
+          Charge — 2d10+4 vs Defense (DEF), Hit: 2d4+2 physical, target knocked back 10 ft + knocked prone (DC 14)
+
+        Special Abilities:
+          - Memory Fragment from Life: Retains partial language ability (can hold simple conversations)
+          - Spreading Corpse-Qi: Living creatures within 20 ft gain +1 Fear Value / turn, Qi recovery −1 / turn
+          - Hardened Skin: Physical damage reduction −3
+          - Hunting Instinct: Prioritizes already-wounded targets
+
+        Weaknesses:
+          - Evil-Dispelling Talisman: Effect halved (1d6 burn, weaken effect lasts only half a turn)
+          - Corpse-Suppressing Talisman: Requires Qi infusion (DC 18 talisman-drawing check) to hold
+          - Ink-Line Boundary: Cannot pass through (Gold-Thread Ink-Line lasts 3 hours)
+          - Coin Sword: Normal damage
+
+        Tactics: Has simple tactical awareness. Will attempt to isolate a single target. If wounded, retreats to wait for an opening.
+            May be willing to talk — if the player shows respect or mentions something the tomb's owner cared about in life.
+        Appears: S2 General's Mound, medium ancient tomb, tomb with broken seal
+    - Type: paragraph
+      Content: '---'
+  - Name: Leaping Corpse (CR 6–7)
+    CR: 6–7
+    Blocks:
+    - Type: code
+      Content: |
+        Health Points (HP): 80
+        Defense (DEF): 17–18 (Agility 5–6 + Bronze Skin Iron Bone ~12 + Iron Body 0)
+        Initiative (INIT): +5–7
+        Movement: 30 ft (Moves freely, indistinguishable from a living person, can run and jump)
+
+        Attacks:
+          Steel-Claw Slash — 2d10+6 vs Defense (DEF), Hit: 3d6+4 physical + Putrefaction Infection (DC 20)
+          Tearing Grapple — 2d10+6 vs Defense (DEF), Hit: automatically deals 2d6 each turn thereafter (opposed Agility DC 18 to escape)
+          Throw — 2d10+5 vs Defense (DEF), Hit: 2d8 physical, target knocked prone
+
+        Special Abilities:
+          - Bronze Skin Iron Bone: Normal weapons deal 0 damage. Physical damage reduction −5
+          - High-Tier Corpse-Qi: Within 30 ft, Fear Value +2 / turn. Courage DC 16 or Panic
+          - Leaping Ambush: Can jump-attack from 40 ft away, Initiative check at Advantage
+          - Residual Consciousness: Retains some memories and combat skills from life
+          - Perfect Disguise: Indistinguishable from a living person (at CR 7)
+
+        Weaknesses:
+          - Evil-Dispelling Talisman: Can only drive it back a few steps (1d4 damage)
+          - Corpse-Suppressing Talisman: Can only hold it for a few minutes (rather than hours)
+          - Five-Thunder Palm / Five-Thunder Talisman: 3d8 spirit-artifact damage (can cleave the surface)
+          - Spirit Artifact (Peachwood Sword / Coin Sword / Century Peachwood Sword): Normal damage
+          - Iron Body Mastery (LV12 Martial Master): Unarmed attacks count as spirit artifacts
+
+        Tactics: Smart and lethal. Prioritizes attacking talisman casters (greatest threat). Knows how to use the environment. Will feint.
+            If it retains more of its memories from life, it may be willing to talk — but harder to persuade than Black Jiangshi.
+        Appears: S5 Corpse-Nurturing Ground, high-tier ancient tomb, imperial mausoleum guard
+    - Type: paragraph
+      Content: '---'
+  - Name: Leaping Corpse · Flying Corpse (CR 8–9, Leaping Corpse variant)
+    CR: 8–9
+    Blocks:
+    - Type: code
+      Content: |
+        Health Points (HP): 65
+        Defense (DEF): 19–20 (Agility 6–7 + Bronze Skin Iron Bone ~13 + Iron Body 0)
+        Initiative (INIT): +7–8
+        Movement: 30 ft (ground) + Fly 40 ft
+
+        Attacks (inherits all Leaping Corpse attacks, plus):
+          Diving Grab — Attack while flying, 2d10+7 vs Defense (DEF), Hit: grabs target and flies it high into the air
+          High-Altitude Throw — After being grabbed, thrown down next turn, 4d6 falling damage
+
+        Special Abilities (inherits all Leaping Corpse abilities, plus):
+          - Flight: 40 ft flying speed
+          - Aerial Advantage: Attacks against ground targets at Advantage
+          - Plundering Dive: After a diving attack, can immediately fly away (does not trigger opportunity attacks)
+
+        Weaknesses: Same as Leaping Corpse. Extra weakness — confined spaces restrict flight (cannot fly when ceiling height is under 10 ft)
+        Appears: S4 Ghost Market Trade (vengeful spirit in the jade coffin), S7 Imperial Mausoleum, contents of high-tier sealed objects
+    - Type: paragraph
+      Content: '---'
+  - Name: Un-Rotting Bone (CR 10–12)
+    CR: 10–12
+    Blocks:
+    - Type: code
+      Content: |
+        Health Points (HP): 120
+        Defense (DEF): 22–24 (Agility 7–8 + Millennial Corpse Body ~15–16 + Iron Body 0)
+        Initiative (INIT): +7–9
+        Movement: 30 ft (Completely free, can disguise as human and blend into crowds)
+
+        Attacks:
+          Bone-Crushing Strike — 2d10+8 vs Defense (DEF), Hit: 4d6+5 physical + Putrefaction Infection (DC 24)
+          Sweep — 2d10+7 vs Defense (DEF), Hit: 2d8+3 physical, 15 ft cone area
+          Spiritual Stun — Courage DC 20, Fail: Stunned 1 turn + Fear Value +4
+
+        Special Abilities:
+          - Impervious to Blades and Spears: Normal weapons deal 0 damage. Physical damage reduction −8
+          - Immune to Water and Fire: Fire / environmental damage negated
+          - Disguise as Human: Indistinguishable from a living person. Can perfectly mimic human behavior
+          - Millennial Corpse-Qi: Within 50 ft, Fear Value +3 / turn. Courage DC 18 or Panic
+          - Undying Will: When HP drops to 0, Courage DC 22; success means it continues fighting at 1 HP (once per battle)
+          - Full Intelligence: Can devise complex strategies, manipulate others, and make long-term plans
+          - Master of Language: Can use human language perfectly (even multiple dialects)
+
+        Weaknesses:
+          - Ordinary talismans: Completely ineffective
+          - Corpse-Suppressing Talisman: Catches fire on contact
+          - Only spirit artifacts (Century Peachwood Sword / Dragon-Slaying Sword / Celestial Master Talisman) or Five-Thunder Palm can deal effective damage
+          - Obsession from Life: May be the only non-combat solution
+
+        Tactics: Extremely dangerous. First stuns the whole party spiritually, then prioritizes killing the talisman casters. Will retreat, set ambushes, and use hostages.
+            When facing strong resistance, it retreats and replans. The greatest danger is not its power — it is its intelligence.
+        Appears: S6 Un-Rotting Bone, S7 Imperial Mausoleum, hidden final threat
+    - Type: paragraph
+      Content: '---'
+  Blocks: []
+- Name: II. Spirit Type
+  Subsections:
+  - Name: Lingering Spirit (General)
+    Blocks:
+    - Type: code
+      Content: |
+        Challenge Rating (CR): 1–2
+        Health Points (HP): 20 (Incorporeal — only spirit artifacts / talismans can hit)
+        Defense (DEF): 10 (Incorporeal — ordinary physical attacks automatically miss)
+        Initiative (INIT): +3
+        Movement: 20 ft (Floating)
+
+        Attacks:
+          Mental Interference — Courage DC 12, Fail: 1d4 mental damage + Fear Value +1
+
+        Weaknesses: Spirit artifacts, talismans, fulfilling its obsession
+        Appears: S1 Third Concubine, minor spirits in various tombs
+    - Type: paragraph
+      Content: '---'
+  - Name: Wraith / Vengeful Ghost
+    Blocks:
+    - Type: code
+      Content: |
+        Challenge Rating (CR): 3–6
+        Health Points (HP): 30–50 (Incorporeal — only spirit artifacts / talismans can hit)
+        Defense (DEF): 14 (Incorporeal — ordinary physical attacks automatically miss)
+        Initiative (INIT): +4–6
+        Movement: 30 ft (Floating, can pass through walls)
+
+        Attacks:
+          Mental Shock — opposed Courage DC 14–18, Fail: 2d6 mental damage + Fear Value +2
+          Object Control Attack — 2d10+4 vs Defense (DEF), Hit: 2d4 physical (controls ownerless objects to throw)
+          Possession — Willpower Hold DC 16–20, Fail: body controlled for 1d4 turns
+
+        Special Abilities:
+          - Incorporeal: Ordinary physical attacks automatically miss
+          - Wall-Pass: Can pass through any non-enchanted solid obstacle
+          - Spirit Manifestation: Can selectively let specific people see it
+          - Obsession Lock: If a player is connected to its obsession, attacks at Advantage
+
+        Weaknesses:
+          - Spirit artifacts / talismans: Normal damage
+          - Evil-Dispelling Talisman: 1d8 burn
+          - Defilement-Breaking Talisman: Force dispel
+          - Fulfilling its obsession: The only path to peaceful resolution
+
+        Appears: S3 Mercury Maze (artisan wraith), S4 Vengeful Spirit in the Jade Coffin, wronged souls in various tombs
+    - Type: paragraph
+      Content: '---'
+  Blocks: []
+- Name: III. Spirit Beast Type
+  Subsections:
+  - Name: Fox Immortal / Spirit Beast
+    Blocks:
+    - Type: code
+      Content: |
+        Challenge Rating (CR): 3–8 (depending on age and cultivation)
+        Attitude: Friendly Neutral — has its own interests and bottom line
+        Negotiation Difficulty Class (DC): 14–18
+
+        Traits:
+          - Can communicate and negotiate, with full intelligence
+          - Will not harm others without cause, nor help without cause
+          - Likes fair barter trade
+          - Has some understanding of the human world but not complete
+          - May possess unique information or abilities
+
+        Appears: S4 Ghost Market Trade, wilderness encounters, spirit grounds near ancient tombs
+    - Type: paragraph
+      Content: '---'
+  Blocks: []
+- Name: IV. Environmental Hazards
+  Subsections:
+  - Name: Ghost Wall
+    Blocks:
+    - Type: code
+      Content: |
+        Trigger Condition: Areas with Yin concentration ≥ 4, or deliberately created by a specific wraith
+        Effect: No matter which way the players walk, they return to the starting point
+        Duration: Until broken
+
+        Break Methods:
+          1. See Through with Yin-Yang Eye — DC 14
+          2. Compass Navigation — DC 16
+          3. Consecrated Eight-Trigram Mirror — consumes 2 Qi, automatic success
+          4. Path-Guiding Talisman — automatic success (consumes 1 talisman)
+          5. Walking Backward with Eyes Closed — Courage DC 14 (folk remedy)
+  - Name: Corpse-Nurturing Ground
+    Blocks:
+    - Type: code
+      Content: |
+        Effect (Area):
+          - All undead creatures in the area gain Advantage on checks
+          - All living people in the area recover Qi −1 / turn
+          - Corpse mutation probability in the area ×3
+          - Ink-Line Boundary duration at the area boundary halved
+
+        Break: Suppress-Sha Grand Formation (requires 3 Earth Masters cooperating, DC 14) or repair the suppressant object (DC 16)
+    - Type: paragraph
+      Content: '---'
+    - Type: paragraph
+      Content: '> **Earth Master TRPG Bestiary v1.0** | Tabletop Rules Studio'
+  Blocks: []

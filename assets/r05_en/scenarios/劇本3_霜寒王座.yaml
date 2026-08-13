@@ -1,0 +1,35 @@
+name: "Scenario 3: Frost Throne"
+description: "CL27–34 leveling-phase master chapter, centered on D7 Ice Plains, from grinding at the ice plains outskirts to defeating the Frost Queen in the depths. The last stretch of 'pure level-grinding' before the Demon General reckoning; upon completion Rank is pushed to S, Influence Points (IP) reach 40, unlocking Scenario 5. Uses Method A: one scenario + party-size adjustment."
+difficulty: Hard
+level_range: [27, 34]
+chapter: 3
+map_ref: maps/D7_戰鬥_冰霜女王.yaml
+initial_map: maps/D7_冰原.yaml
+encounters:
+  - id: d7_patrol
+    name: D7 Ice Plains Outskirts Patrol (CL27–30)
+    enemies:
+      - {name: Ice Wolf, cr: 27, count: 2}
+      - {name: Yeti, cr: 29, count: 2}
+      - {name: Frost Sprite, cr: 30, count: 2}
+    budget: Hard×1.0
+    adjust: "1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1"
+  - id: d7_frost_queen
+    name: D7 Frost Queen (CL31–34)
+    enemies:
+      - {name: Frost Giant, cr: 32, count: 2}
+      - {name: Frost Queen, cr: 34, count: 1}
+    boss: true
+    budget: Hard×1.2
+    adjust: "1 PC→CR−3/enemy count×0.5(at least 1)/no assist; 2 PCs→CR−1/enemy count×0.75; 3 PCs→baseline; 4 PCs→baseline; 5–6 PCs→CR+2/enemy count×1.5/concurrent events+1"
+rewards:
+  exp: 12000
+  gold: 9000
+  items: [Everfrost Core, Ice Crystal Medal, Frost Crown]
+ip_events:
+  - event: Rescue the frozen abandoned village
+    ip: 4
+  - event: Redeem the Frost Crown
+    ip: 4
+  - event: Treat the frost minions gently (no wanton killing)
+    ip: 2

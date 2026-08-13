@@ -1,0 +1,28 @@
+name: The Life-Restoring Rite of Nine Nether Hall
+description: Recovers all S3 foreshadowing. Nine Nether Hall's underground opposite-shore main altar launches the "Life-Restoring Rite," batch-transferring Yang Lifespan via the Life-Borrowing register to refine an entire district into a dead-zone corpse-cultivating ground; the players ally with the Guild + Bing + Uncle Nine to raid the main altar, confront the Master (Challenge Rating (CR) 7), destroy the register, halt the catastrophe, and leave the "Register-Keeper" loose end.
+difficulty: S
+level_range: [9, 10]
+case_type: Flying Corpse + Fierce Ghost + Cultivated Zombie swarm + the Master
+map_ref: ""
+npcs:
+  - Cheng Guiyao (Guild Council Chair, full mobilization)
+  - Ox-Head Bing (Yin Constable, allied force)
+  - Uncle Nine (Shi Chu Shi Funeral Home, allied force)
+  - The Master (Nine Nether Hall mastermind, control source / finale boss)
+  - Register-Keeper (register inserted-page loose end)
+key_enemies:
+  - The Master (control source / finale boss, Challenge Rating (CR) 7)
+  - Flying Corpse (Challenge Rating (CR) 6, Hard-Skin Mitigation −8)
+  - Fierce Ghost (altar guardian, Challenge Rating (CR) 7)
+  - Cultivated Zombie swarm (Challenge Rating (CR) 5)
+rewards:
+  exp: 900
+  coin: "1200-1500"
+  items:
+    - Celestial Master Talisman (Rare; exorcism effect +2)
+    - Authentic Life-Borrowing Register (contains S3/S6 living names)
+    - Legendary "Annihilated Nine Nether Hall Main Altar" reputation
+    - Patriarch's Favor (Grade S closure passive; Advantage on Invite Deity Possession Composure (CMP) checks)
+hooks:
+  - Register inserted page "Above the Master, there is another Register-Keeper" — leaves a sequel loose end.
+  - Living names still remain on the register, unremoved; the source of the Register of Life and Death tampering — Bing continues the pursuit.

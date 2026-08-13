@@ -1,0 +1,142 @@
+name: "Level 4 — Office"
+description: "An abandoned modern office building — B2 to F8. Above F5 is Partygoer territory."
+scenario_ref: "S3_派對邀請"
+usage: "The characters encounter Partygoers on Level 4, exploring from F1/F3 to the F5 venue, and finally escape"
+regions:
+  - name: "Safe Floors (F1-F4)"
+    color: "#E8F5E9"
+    nodes: ["N01", "N02", "N03", "N04", "N05"]
+    description: "Fewer Partygoers — normal office space, with resources but stay alert"
+  - name: "Partygoer Domain (Above F5)"
+    color: "#FFEBEE"
+    nodes: ["N06", "N07", "N08"]
+    description: "The main domain of the Partygoers — extremely dangerous, social traps"
+  - name: "Basement Level (B1-B2)"
+    color: "#ECEFF1"
+    nodes: ["N09"]
+    description: "Parking garage and archive — occasional Hounds, and a flooded area leading to Level 37"
+  - name: "Special Area"
+    color: "#E3F2FD"
+    nodes: ["N10"]
+    description: "F7 mirror room — a safe zone the Partygoers won't enter"
+nodes:
+  - id: "N01"
+    label: "F1 Lobby"
+    x: 400
+    y: 450
+    type: "entrance"
+    explored: true
+    description: "Office building entrance — revolving door leads to Level 0. Has a medical room (first-aid supplies largely taken)."
+    entrance_from: "Level 0 Elevator"
+  - id: "N02"
+    label: "F1 Medical Room"
+    x: 250
+    y: 480
+    type: "resource"
+    explored: false
+    description: "A small medical room — leftover bandages and disinfecting alcohol. One-time resource (largely taken by previous visitors)."
+    resources: "Bandages ×2, disinfecting alcohol"
+  - id: "N03"
+    label: "F3 Office Area"
+    x: 350
+    y: 320
+    type: "normal"
+    explored: false
+    description: "Open-plan office area — cubicles, computers. A corner office holds the 'Last Employee' Clerk Entity. The IT department is on this floor."
+  - id: "N04"
+    label: "F3 Clerk Office"
+    x: 220
+    y: 300
+    type: "discovery"
+    explored: false
+    description: "Corner office — the special 'Clerk' Entity occasionally types meaningful text: 'Please help me leave this place. I have been typing for 37 years.'"
+    special: "The GM may use this to provide clues"
+  - id: "N05"
+    label: "F4 Pantry"
+    x: 500
+    y: 350
+    type: "resource"
+    explored: false
+    description: "Has a water dispenser — a small amount of Almond Water remains. This floor is the upper limit of the safe zone — above F5 is Partygoer territory."
+    resources: "Almond Water ×1-2"
+  - id: "N06"
+    label: "F5 Party Venue"
+    x: 350
+    y: 120
+    type: "danger"
+    explored: false
+    description: "A party venue converted from a large conference room — 15-30 Partygoers. Streamers, balloons, a conversion-ritual stage."
+    threats: "Partygoer Crowd (15-30)"
+  - id: "N07"
+    label: "F5 Server Room"
+    x: 500
+    y: 150
+    type: "discovery"
+    explored: false
+    description: "Holds digital records of the Partygoers' origin — they were once human. The servers are still running."
+    special: "A key location revealing the Partygoers' origin"
+  - id: "N08"
+    label: "F6-F8 Deep Territory"
+    x: 250
+    y: 70
+    type: "danger"
+    explored: false
+    description: "The core territory of the Partygoers — more Partygoers, more conversion-ritual venues. The higher up, the more dangerous."
+    threats: "Extremely high Partygoer density"
+  - id: "N09"
+    label: "B2 Parking Garage"
+    x: 550
+    y: 520
+    type: "normal"
+    explored: false
+    description: "Underground parking garage — occasional Hounds wander here from the Level 2 pipe system. Has a flooded area — leads to Level 37."
+    exit_to: "Level 37 — Warm Water Pool (via flooded area)"
+  - id: "N10"
+    label: "F7 Mirror Room"
+    x: 450
+    y: 240
+    type: "rest_point"
+    explored: false
+    description: "A room whose walls are all mirrors. The Partygoers won't enter — their reflections have no faces. Stay over 10 minutes and the reflection in the mirror begins to smile."
+    special: "A safe rest point — but unsettling in itself"
+edges:
+  - from: "N01"
+    to: "N02"
+    type: "corridor"
+    label: "F1 Corridor"
+  - from: "N01"
+    to: "N03"
+    type: "stairs"
+    label: "Stairs/Elevator → F3"
+  - from: "N03"
+    to: "N04"
+    type: "corridor"
+    label: "Corner Office"
+  - from: "N03"
+    to: "N05"
+    type: "stairs"
+    label: "Stairs → F4"
+  - from: "N05"
+    to: "N06"
+    type: "stairs"
+    label: "⚠ F5 — Partygoer Territory!"
+  - from: "N06"
+    to: "N07"
+    type: "corridor"
+    label: "Server Room"
+  - from: "N06"
+    to: "N08"
+    type: "stairs"
+    label: "⚠ Deeper Territory"
+  - from: "N01"
+    to: "N09"
+    type: "stairs"
+    label: "Stairs → B2"
+  - from: "N03"
+    to: "N10"
+    type: "stairs"
+    label: "F7 Mirror Room"
+  - from: "N10"
+    to: "N01"
+    type: "stairs"
+    label: "Return to F1 Safe Zone"

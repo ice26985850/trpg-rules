@@ -1,0 +1,77 @@
+name: The Last Ship
+difficulty: Final
+mode: Astartes · Multiplayer
+players: 2-4
+location: Mountain Evacuation Point
+recommended_attributes: Levels 5–7 (approaching Chapter Master level)
+opening_description: |
+  The orbital defenses are down. The rescue signal has been sent. An Imperial escort responded—but
+  it can only dispatch one landing craft. The landing craft holds at most 6 people. And you have: 4
+  Astartes (possibly fewer), 20–30 rescued civilians (depending on earlier choices), possible Eldar
+  "allies". Also—the black box data you obtained from B-4. If you take it back, it may overturn
+  Exterminatus. But if you take the data... more people must be left behind.
+structure_phases:
+- phase: Final Mustering
+  content: All remaining characters, civilians, and allies gather at the evacuation point—an abandoned starport. The landing craft is expected to arrive within 6 hours.
+- phase: Chaos's Final Assault
+  content: |
+    The Chaos forces on the planet sense the evacuation attempt. A mixed force of Mutants, Warp
+    entities, and a Chaos Space Marine (if Kassar is dead, a new Chaos Space Marine (CSM)) is
+    advancing on the starport. They are not trying to stop the evacuation—they want that landing
+    craft.
+- phase: The Calculation
+  content: |
+    The landing craft holds 6 people. Who boards? An Astartes takes 1 person per seat. 2 civilians
+    count as 1 seat (they can squeeze). The Eldar is not human—he needs 1 seat but may be unwilling
+    to board a human ship.
+- phase: Those Who Stay
+  content: |
+    Warriors who choose to stay gain the "Final Mission"—they do not stay in vain. They will hold
+    the starport until the landing craft safely takes off, after which their ultimate fate will be
+    decided jointly by the GM and the players.
+oath_conflict: |
+  Ultimate test: Oath to the Emperor (bring back the black box data—overturning a wrongful
+  Exterminatus may be the greater loyalty?) / Oath to Comrades (who boards? who stays? will the
+  brothers who stay forgive you?) / Oath to the Innocent (civilians—how many can you take?) / Oath to
+  the Mission (a successful evacuation is mission complete—but what counts as "success"?)
+key_npcs:
+- name: Landing Craft Pilot Lieutenant Vera
+  role: Last Hope
+  detail: A young Imperial Navy pilot. She was assigned to this "suicide evacuation mission." She is afraid—but she is here.
+- name: Chaos's "Envoy"
+  role: Final Temptation
+  detail: |
+    Before the Chaos assault begins, a voice echoes through the starport—not an enemy, but Chaos's
+    offer: "Give us the landing craft. We will let all of you leave safely—so long as you promise...
+    to do nothing."
+encounters:
+- name: Starport Perimeter
+  enemies: Mutants ×8 + Tyrant ×2
+  cr: 1×8+2×2
+  tactic: Buy time
+- name: Control Tower Defense
+  enemies: Warp Shadows ×2
+  cr: 2×2
+  tactic: They emerge from the walls
+- name: Landing Pad (finale)
+  enemies: Chaos Space Marine ×1 (leader of the final wave) + Cultists ×4
+  cr: 4+0×4
+  tactic: Final boss fight. The landing pad must be cleared before the landing craft lands.
+branch_endings:
+- choice: Full Evacuation (unlikely)
+  result: |
+    Find some way to get everyone aboard—or the civilians choose to stay. A miracle. But you know
+    this is not the normal ending of 40k.
+- choice: Partial Evacuation
+  result: |
+    At least 1 Astartes aboard + black box data. Standard ending. Those who stay gain a dignified
+    "Final Mission."
+- choice: No Evacuation
+  result: |
+    Everyone chooses to stay, or the landing craft is destroyed. A solemn ending. Your story ends
+    here—but a legend is born on the planet from then on.
+- choice: Someone Chooses Darkness
+  result: |
+    An Astartes accepts Chaos's help—or uses the power of Chaos to ensure evacuation. Nightmare
+    ending. Among those who board, one is no longer himself.
+map_ref: "maps/map20_last_ship"

@@ -1,0 +1,36 @@
+name: "Scenario 8: Demon Lord Castle"
+description: Collect the four Demon General beacons to open Abyssal Oath Castle, and face the final three-phase battle against Demon Lord Vercellia·Nornheim (CR50); the Fifth, Jeno (CR45), appears in a reversal. CL46–50, IP≥40 unlocks the Reconciliation Ending.
+difficulty: Legendary~Mythic
+level_range: [46, 50]
+chapter: 8
+map_ref: maps/劇本8_戰鬥_魔王.yaml
+encounters:
+  - id: castle_guard
+    name: Castle Gate Guards
+    enemies:
+      - {name: Demon Realm Guards, cr: 46, count: 3}
+    budget: Legendary×1.2
+    adjust: "1p→CR−3/enemy×0.5(min1)/no sidekick; 2p→CR−1/enemy×0.75; 3p→baseline; 4p→baseline; 5–6p→CR+2/enemy×1.5/concurrent+1"
+  - id: demon_lord_boss
+    name: Demon Lord Vercellia·Nornheim (three phases)
+    enemies:
+      - {name: Vercellia·Nornheim, cr: 50, count: 1}
+      - {name: Jeno·Gojo (Fifth's reversal), cr: 45, count: 1}
+    boss: true
+    phases:
+      - {name: Sovereign, hp_threshold: "100%~66%", trait: Four Generals' Echo rotating attributes}
+      - {name: True Demon Lord Form, hp_threshold: "66%", trait: Sovereign Domain / Four Elements Annihilation AOE}
+      - {name: The End, hp_threshold: "33%", trait: Judgment of the End instant-death countdown}
+    budget: Final battle Boss CR≈party total level×0.6
+    adjust: "1p→CR47/no sidekick; 5–6p→CR52"
+rewards:
+  exp: 48000
+  gold: 30000
+  items: [Hero's Proof, Demon Realm Core Shard, World Tree Leaf]
+ip_events:
+  - event: Castle-opening ritual settles total IP≥40 to unlock reconciliation
+    ip: 0
+  - event: Recruit a Demon General as ally (each)
+    ip: 8
+  - event: Jeno defection atonement branch
+    ip: 6

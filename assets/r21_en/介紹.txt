@@ -1,0 +1,35 @@
+Time Loop TRPG — Assemble the one truth within the endless repetition
+
+You wake up in a world that keeps resetting. The entire town vanishes at midnight, elevators keep falling, the school festival never ends — and you remember everything that happened yesterday. But your character, the ordinary person trapped in the loop, wakes up blank every single time.
+
+What kind of world is this?
+The core tension of Time Loop TRPG is not combat — it is "asymmetric information": the players know everything, yet the character remembers nothing. Crueler still, the world resists your memory — every reset degrades things slightly: a locked door, a changed NPC, something that should not exist appearing. The loop is not an infinite sandbox for trial and error; it is a countdown of roughly ten cycles.
+
+Who do you play, and what is the core gameplay?
+You play an ordinary person trapped in the loop. Through investigation, dialogue, and adventure, you assemble "Truth Fragments" at the end of each cycle. The real goal is not to break the loop, but to understand why it exists. You form bonds with key NPCs, draw a "Hidden Information Card" known only to yourself, and choose a "Time Attitude" toward the loop — Optimist, Skeptic, Guardian, Fatalist, or Curious.
+
+System Highlights
+- Memory Anchoring: At the end of a cycle, spend Memory Anchor Points (MAP) to "lock" intel into the next loop. But anchors are never enough — remember "who the killer is" or "the escape route"? The trade-off itself is the gameplay.
+- World Degradation: As cycles advance, the world actively changes to fight your memory; past roughly ten cycles, difficulty spikes sharply.
+- Loop Fatigue: Witnessing death and repeated failure accumulates mental trauma; exceeding the Loop Fatigue Threshold (LFT) drags down performance. Even a cup of coffee or a sunset can earn you one more cycle.
+
+Who is this for?
+Players who enjoy mystery deduction, time-loop themes, and dramatic choices born from asymmetric information. Combat is merely a means; understanding is the goal. Those with a little TRPG experience who love to think and role-play will feel right at home; newcomers can also pick it up quickly under a GM's guidance.
+
+Play Style
+- Combat weight: Supportive (combat exists but is not the focus)
+- Strategic depth: High (every decision significantly affects outcomes)
+- Story-driven: Story-supported (clear plot, but high player freedom)
+- Resource management: Heavy (scarce resources, careful planning required)
+- Character customization: High (many options, unique characters possible)
+- Character creation complexity: Medium (~20–30 minutes)
+- Rule density: Mid-weight (core rules clear, not cumbersome)
+- GM requirement: Optional GM (supports both group and solo play)
+
+Estimated Play Time
+- Single scenario: ~3–6 hours (including character creation)
+- Full campaign (linking the scenario series): ~30–50 hours
+
+Basic Information
+- Player count: Main mode 1 GM + 2–5 players; a solo mode is also included for 1 player
+- Core dice: 2d6 + Attribute Modifier (attributes are Memory (MEM), Insight (INS), Will (WIL), Action (ACT), Empathy (EMP))

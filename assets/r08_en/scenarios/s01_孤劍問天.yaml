@@ -1,0 +1,73 @@
+# Tianji: Cultivation of the True Heart — Scenario Structured Index
+# This file is paired with the identically named .md to provide dual download on the site.
+
+scenario:
+  id: s01
+  key: "Tianji: Cultivation of the True Heart"
+  title: Lone Sword Questions Heaven
+  type: Campaign
+  player_type: Solo
+  language: en
+  summary: >
+    The complete legend of a lone cultivator from mortal to ascension. The player
+    enters the Hongmeng Continent alone, befriends close friends, apprentices under
+    renowned masters, fights the demonic path, and finally faces the Heaven's Mechanism.
+  players:
+    min: 1
+    max: 1
+    gm: required
+  depends_on:
+    - Tianji_Cultivation_of_the_True_Heart_Player_Rulebook.md
+    - Tianji_Cultivation_of_the_True_Heart_GM_Rulebook.md
+    - solo_rules.md (Solo Rules Supplement, provided with the rulebook)
+  level_range:
+    start: 1
+    end: 36
+    realms:
+      - Qi Refining
+      - Foundation Establishment
+      - Golden Core
+      - Nascent Soul
+      - Spirit Transformation
+      - Void Refining
+      - Fusion
+      - Mahayana
+      - Tribulation Crossing
+  estimated_sessions: "18-30"
+  estimated_hours: "40-80"
+  npc_companions:
+    - Bai Ling
+    - Qingxuan
+    - Ironcliff
+  references:
+    - "→ §4.5 (Qingshi Town)"
+    - "→ solo § (Solo Rules)"
+  acts:
+    - id: 1
+      title: Mortal Enters the Dao · First Taste of the Jianghu
+      level_range: "Lv.1-3"
+      realms: [Qi Refining]
+      sessions: "2-3"
+      locations: [Qingshi Town, Black Pine Ridge]
+      key_npcs: [Chen Bonian, Yao Buran, Bai Ling]
+    - id: 2
+      title: Apprenticeship · First Gleam of the Blade
+      level_range: "Lv.4-6"
+      realms: [Foundation Establishment]
+      sessions: "3-4"
+    - id: 3
+      title: Golden Core Perfected · First Sign of the Demonic
+      level_range: "Lv.7-9"
+      realms: [Golden Core]
+      sessions: "3-5"
+    - id: 4
+      title: Nascent Soul Seeks the Dao · Righteous-Demon Clash
+      level_range: "Lv.10-18"
+      realms: [Nascent Soul, Spirit Transformation]
+      sessions: "5-8"
+    - id: 5
+      title: Path to Ascension · Choice of the Heavenly Dao
+      level_range: "Lv.19-36"
+      realms: [Void Refining, Fusion, Mahayana, Tribulation Crossing]
+      sessions: "5-10"
+  tags: [Cultivation, Solo, Campaign, Growth, Righteous-Demon Conflict]

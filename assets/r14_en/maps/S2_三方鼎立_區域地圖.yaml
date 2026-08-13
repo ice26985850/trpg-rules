@@ -1,0 +1,85 @@
+# Map: S2 Three-Way Standoff — Regional Map
+name: "Three-Way Standoff Regional Map"
+description: "A region contested by three city-states — trade routes, ancient ruins, and a disputed border zone"
+
+nodes:
+  - id: "player_city"
+    label: "Your City-State"
+    x: 350
+    y: 400
+    type: "settlement"
+    explored: true
+  - id: "friendly_city"
+    label: "Friendly Neighbor"
+    x: 600
+    y: 200
+    type: "settlement"
+    explored: true
+  - id: "hostile_city"
+    label: "Hostile Neighbor"
+    x: 150
+    y: 150
+    type: "settlement"
+    explored: true
+  - id: "trade_route"
+    label: "Main Trade Route"
+    x: 400
+    y: 300
+    type: "resource"
+    explored: true
+  - id: "ruins"
+    label: "Ancient Ruins"
+    x: 500
+    y: 500
+    type: "ruins"
+    explored: false
+  - id: "border_zone"
+    label: "Disputed Border Zone"
+    x: 250
+    y: 280
+    type: "border"
+    explored: true
+
+edges:
+  - from: "player_city"
+    to: "friendly_city"
+    type: "path"
+    label: "Trade Road"
+  - from: "player_city"
+    to: "hostile_city"
+    type: "trail"
+    label: "Tense Border"
+  - from: "player_city"
+    to: "trade_route"
+    type: "path"
+    label: "Trade Route"
+  - from: "player_city"
+    to: "ruins"
+    type: "trail"
+    label: "Exploration Route"
+  - from: "friendly_city"
+    to: "trade_route"
+    type: "path"
+    label: ""
+  - from: "hostile_city"
+    to: "border_zone"
+    type: "trail"
+    label: "Border Infiltration"
+  - from: "border_zone"
+    to: "player_city"
+    type: "trail"
+    label: ""
+
+regions:
+  - name: "Your Territory"
+    color: "#4CAF50"
+    nodes: ["player_city"]
+  - name: "Friendly Faction"
+    color: "#2196F3"
+    nodes: ["friendly_city", "trade_route"]
+  - name: "Hostile Faction"
+    color: "#F44336"
+    nodes: ["hostile_city", "border_zone"]
+  - name: "Neutral Zone"
+    color: "#9E9E9E"
+    nodes: ["ruins"]

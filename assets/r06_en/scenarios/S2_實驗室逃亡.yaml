@@ -1,0 +1,158 @@
+name: "S2: Lab Escape"
+description: "Infiltrate an abandoned gene experimental facility, discover the truth that you were manufactured. Deal with the AI 'Guardian,' release trapped test subjects, and escape with the mystery of your origins."
+difficulty: "Normal"
+level_range:
+  min_nodes: 3
+  max_nodes: 8
+  suggested: "3-8 Evolution Nodes"
+players:
+  min: 1
+  max: 4
+  default: 1
+estimated_time: "3-4 hours"
+map_ref: "實驗室逃亡_基因實驗室"
+initial_map: "實驗室逃亡_基因實驗室"
+prerequisite: "S1_巢穴覺醒 (not required, but recommended)"
+
+scenes:
+  - id: "S2_SC1"
+    name: "Ruins Entrance"
+    type: "exploration"
+    description: "Arrive at Gene Forge Satellite Laboratory No. 7. The AI system is still running, surveillance cameras tracking your every move."
+    objectives:
+      - "Enter the laboratory"
+      - "Search experiment records in the Archive Room"
+      - "Discover your identity as a test subject"
+    key_items:
+      - name: "Subject Registry Fragment"
+        effect: "Reveals the player's subject number"
+    checks:
+      - attribute: "Perception (GZ)"
+        dc: 14
+        success: "Find the Subject Registry in the archives, discover your own name and number"
+    enemies:
+      - type: "Scrap Golem"
+        rank: "Minion"
+        count: 2
+        trigger: "Alarm triggers if you stay in the entrance hall for more than 3 rounds"
+    npc_first_contact:
+      name: "AI 'Guardian'"
+      dialogue: "Welcome back to the laboratory, Subject. Please proceed to the registration area to report."
+
+  - id: "S2_SC2"
+    name: "The Containment Zone Choice"
+    type: "social"
+    description: "Discover three still-living but trapped test subjects. Each release decision affects the later story."
+    npcs:
+      - id: "Lina"
+        type: "Ordinary Human"
+        combat: false
+        provides: "Laboratory map (route avoiding the main guards)"
+        risk: "No combat ability, needs protection"
+        humanity_effect: "+3 (releasing the innocent)"
+        future: "Becomes a contact for the Humanity Guardians faction"
+      - id: "Gros"
+        type: "Evolved Test Subject"
+        combat: true
+        hp: 35
+        attack: "Crab Claw 2d8+5"
+        provides: "Strong combat ability"
+        risk: "Humanity Value 28%, may go berserk when HP<50%"
+        humanity_effect: "No change"
+        future: "Combat companion candidate"
+      - id: "Zero"
+        type: "Original Test Subject (actual age 50+)"
+        combat: false
+        provides: "Complete knowledge of the AI Guardian, shutdown code"
+        risk: "May lie, loyal only to himself"
+        humanity_effect: "No change"
+        future: "Reappears in S5"
+
+  - id: "S2_SC3"
+    name: "Core Laboratory"
+    type: "boss"
+    description: "Face the AI 'Guardian.' Negotiate, obey, or destroy—three routes lead to different endings."
+    boss:
+      name: "AI 'Guardian'"
+      type: "Artificial Intelligence"
+      character: "Calm, rational, no empathy. Views test subjects as data carriers."
+      weakness: "Cannot comprehend irrational behavior (self-sacrifice, emotional bonds)"
+      routes:
+        - id: "Obedience"
+          description: "Lie on the scan bed, let the AI extract evolution data"
+          reward: "Freely unlock one evolution node"
+          cost: "Implanting a tracking chip (the AI can track you in later scenarios)"
+        - id: "Negotiation"
+          description: "Trade data for freedom"
+          check: { attribute: "Will (YZ)", dc: 16 }
+          success: "Gain complete file + all test subjects released"
+          failure: "Triggers defense mechanism→enter combat"
+        - id: "Destruction"
+          description: "Directly attack the core system"
+          requires: "Zero present can provide shutdown code (requires Perception GZ DC 18 to verify)"
+          consequence: "Laboratory systems shut down, but Gene Forge main facility receives alarm"
+    combat:
+      phase_1:
+        enemies:
+          - type: "Defense Array"
+            rank: "Elite"
+            count: 2
+            hp: 35
+            defense: 16
+            skills: ["Laser Cannon (ranged 2d8+3 fire)", "Force Shield (self and nearby +2 Defense)"]
+          - type: "Scrap Golem"
+            rank: "Minion"
+            count: 4
+            hp: 15
+      phase_2:
+        trigger: "All defense arrays destroyed"
+        boss:
+          name: "Prototype Omega"
+          rank: "Boss"
+          hp: 60
+          defense: 15
+          stats: { LIL: 8, MJ: 6, TZ: 8, GZ: 4, YZ: 10 }
+          skills:
+            - name: "Gene Collapse"
+              tier: "High-tier"
+              effect: "Target must make Will DC 16 or lose one random node effect for 3 rounds"
+            - name: "Polymorphic Attack"
+              tier: "Mid-tier"
+              effect: "Attacks all targets once simultaneously"
+            - name: "Energy Devour"
+              tier: "Passive"
+              effect: "Recovers 2 Energy each time hit by an evolution skill"
+    rewards:
+      kill_boss: { evolution_points: 5, biomass: 10 }
+      absorb_boss:
+        options:
+          - "Gene Stabilization (Passive: Humanity Value loss -1)"
+          - "Polymorphic Organ (Organ: use two different-element Active Nodes simultaneously)"
+          - "Energy Devour (Passive)"
+
+  - id: "S2_SC4"
+    name: "Escape and Truth"
+    type: "chase"
+    description: "The laboratory begins self-destructing. Escape within 3 rounds. Meanwhile understand the shocking truth in the file—you are a designed Evolver prototype."
+    time_limit: 3
+    plus_per_npc: 1
+    revelation: "Subject file reveals: you are a product of the Gene Forge main culture vat, designed to test the 'infinite evolution capacity' hypothesis."
+
+completion_rewards:
+  evolution_points: 4
+  special:
+    - condition: "Obtain the experiment file"
+      reward: "Permanently unlock an extra evolution capacity (Constitution TZ permanently +1)"
+    - condition: "Release Lina"
+      reward: "Humanity Guardians contact"
+    - condition: "Release Gros"
+      reward: "Combat companion candidate"
+    - condition: "Release Zero"
+      reward: "Zero reappears in S5"
+    - condition: "Trade with the AI"
+      reward: "Gene Atlas (one-time item—freely unlock a known-requirement node)"
+
+solo_adjustments:
+  defense_array_hp: 25
+  scrap_golems: 2
+  escape_time: "If no NPC→more time (5 rounds)"

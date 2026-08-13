@@ -1,0 +1,118 @@
+id: s04
+title: The Secret Medicine of Dragonsfall
+type: Main Scenario
+source: 爐邊譚_劇本集_v1.0.md
+sections:
+  basic_info: '| Item | Content |
+
+    |------|---------|
+
+    | **Difficulty** | ★★★★ High |
+
+    | **Suggested Reputation** | 40-80 (City-Renowned ~ Kingdom-Famous) |
+
+    | **Suggested Level** | Primary Attributes ≥ 4, some skills at level 2-3 |
+
+    | **Suggested Party** | 3-5 players, must have Gatherer or Survival ability, recommend an Alchemist |
+
+    | **Length** | 6-10 turns |
+
+    | **Core Themes** | Long-distance exploration, Legendary materials, moral dilemma |'
+  synopsis: 'A handwritten letter from the Verdantvale Elf elder. Not a commission-a request.
+
+
+    The elder''s daughter, Moonwhisper, suffers from a rare disease-"Dragonsfall Syndrome." The patient''s body temperature keeps dropping, eventually falling into eternal slumber. The only cure requires three Legendary materials:
+
+
+    1. **Dragonheart Blood**-taken from a living dragon, without killing it
+
+    2. **Millennia Ice-Crystal Honey**-exists only in the eternal-frozen hive of the far-north snow mountains
+
+    3. **Tears of Atonement**-a flower that grows only on the ancient battlefield of the Rift War
+
+
+    This is one of the hardest recipes in Ynserghard''s history-it''s said a page in the Wanderer God''s recipe book records it. The Elf elder is willing to pay any price. But how the materials are obtained will test every player''s moral bottom line.'
+  material_acquisition: '### Part One: Dragonheart Blood (Turns 2-3)
+
+
+    Living dragon info: In the northern mountains of Anvilhearth lives an old dragon named "Ember." He lost his mate in the Rift War and has since lived in seclusion.
+
+
+    **How to obtain dragon blood without killing the dragon?**
+
+
+    | Option | Method | Difficulty | Moral Impact |
+
+    |--------|--------|------------|--------------|
+
+    | A | Trade-exchange a rare treasure or Legendary material with the dragon for a drop of blood | Social Check DC 18 + requires an offering worth ≥ 500G | Morally clean |
+
+    | B | Request-confess everything to the dragon, bet on its sympathy | Social Check DC 20 (but on Critical Success the dragon helps willingly) | Morally clean |
+
+    | C | Steal-take blood while the dragon sleeps | Stealth Check DC 16 + Stamina (STA) Check DC 14 | Highest risk, morally tainted |
+
+    | D | Fight-subdue the dragon (it won''t kill you, but will beat you half to death) | Dangerous-level encounter, Stamina (STA) Check DC 16 | The dragon may respect your courage |
+
+
+    GM hint: Ember is not a monster. He is a grieving old dragon. Give him a voice, a story. Let players struggle between "take blood to save a life" and "don''t disturb the grieving dragon."
+
+
+    ### Part Two: Millennia Ice-Crystal Honey (Turns 4-5)
+
+
+    The eternal-frozen hive of the far-north snow mountains-honey guarded by thumb-sized ice bees. Ice bees don''t attack people, but their hive melts once intruded.
+
+
+    **How to obtain?**
+
+
+    | Option | Method | Difficulty |
+
+    |--------|--------|------------|
+
+    | A | Negotiate with the ice bee queen (Elf or Halfling +2) | Social Check DC 16 |
+
+    | B | Collect with a magically temperature-controlled container (Researcher can craft one) | Design Check DC 14 + materials |
+
+    | C | Violent harvesting-get the honey before the hive melts | Stamina (STA) Check DC 16, but the ice bee swarm will remember you |
+
+
+    ### Part Three: Tears of Atonement (Turns 6-7)
+
+
+    The ancient battlefield of the Rift War-the "Sighing Plains" west of Watchkeep. There grows a flower that only blooms in places of sorrow; the dew on its petals is called "Tears of Atonement."
+
+
+    This is the hardest moral checkpoint. The flower itself is not rare, but picking it awakens the ghostly memories of the battlefield-players will be forced to face their most painful memories from the war (or the pre-adventurer era).
+
+
+    **Mechanic**: Each player entering the flower field makes an Inspiration (INS) Check (DC 15). Success → gain the flower, but experience a vision (a short scene designed by the GM based on the character''s background). Failure → crushed by the memory, gain "Inspiration Depletion" status, unable to continue picking.
+
+
+    **Key Turn**: When picking the last flower, players discover an old grave in the center of the field-the tombstone bears the name of one of the player characters (or a comrade). This is the final moral test.'
+  return_and_ending: 'All three materials gathered. The Alchemist performs a Legendary-grade craft (DC 18), requiring the whole team''s assistance.
+
+
+    | Result | Condition | Narrative |
+
+    |--------|-----------|-----------|
+
+    | **Legendary Success** | Legendary quality | The medicine not only heals Moonwhisper-it fully records the Dragonsfall Syndrome recipe, which is no longer a lost formula. Moonwhisper''s first words on waking: "I saw the dragon. It said thank you for not hurting it." |
+
+    | **Success** | Fine or above | Moonwhisper recovers. The Elf elder gifts the shop an eternal Verdant leaf-a passive bonus. |
+
+    | **Near Failure** | Crude but check succeeded | The medicine works but Moonwhisper will have an aftereffect-she can no longer sing. The Elf elder still thanks, but with regret. |'
+  rewards: '| Achievement | Reward |
+
+    |-------------|--------|
+
+    | Moonwhisper Recovered | Verdantvale Elf Favor permanently +10, unlock all Elf recipes |
+
+    | Dragon Unkilled | Ember becomes the shop''s "Silent Patron"-sends a dragon treasure each season |
+
+    | All three materials obtained morally | Gain "Wanderer God''s Blessing"-future all Legendary-grade crafts DC −1 |
+
+    | Legendary Medicine | Reputation +5d6, unlock "Legendary Alchemist" hidden title |
+
+
+    ---'

@@ -1,0 +1,123 @@
+title: Town Judgment Day
+difficulty: Standard
+stars: 3
+loop_length: 3 days
+loop_limit: 13
+suggested_players: 3-4
+action_points: 8 + Action (ACT) Modifier (3 days × AP)
+tone_tags:
+  - Collective guilt
+  - Complicit silence
+  - The delay of justice
+loop_setting:
+  endpoint: Midnight on the third day; all townsfolk vanish collectively
+  start: 6:00 AM on the first day; the players wake up in the town's inn
+  boundary: The entire town and its surrounding 3 km (old mine, forest edge)
+  opening: "You wake up. Sunlight streams through the inn's old curtains. There's a smell of autumn in the air—dry leaves, woodsmoke in the distance. From downstairs comes the sound of the innkeeper's wife preparing breakfast. Everything is perfectly normal. Except... you don't quite remember how you came to this little town."
+core_truth:
+  anchor_event: "Fifteen years ago (1994) the outsider teacher Chen Yan was lynched by the townsfolk—he had uncovered the mayor's financial scandal (embezzled government grants) and was silenced; for fifteen years the whole town became an accomplice in silence."
+  surface_story: The town is peaceful, the residents harmonious, with a gathering every three days.
+  real_story: "Chen Yan's death was to silence him; the whole town collectively concealed the truth, and the loop is the embodiment of that guilt."
+  healing_conditions:
+    - At least one townsperson publicly admits Chen Yan was wrongly accused
+    - The players find Chen Yan's diary from that year (hidden in the old schoolhouse basement)
+    - Optional: persuade the mayor to tell the truth at the gathering
+truth_fragments:
+  - name: The Last Lesson
+    type: Document
+    location: Second floor of the old schoolhouse
+    difficulty: Medium
+    loop: 2
+    detail: "A letter Chen Yan wrote to his students the day before he died: 'Tomorrow I'm going to tell you something important, about the future of this town.'"
+  - name: The Mayor's Alibi
+    type: Document
+    location: Township office archives
+    difficulty: Hard
+    loop: 4
+    detail: "Phone records from October 1994—the mayor was not at the lynching scene that night."
+  - name: The Old Tailor's Dream
+    type: Conversation
+    location: Grandma Lin's tailor shop
+    difficulty: Easy
+    loop: 1
+    detail: "'I dreamed that young teacher came back again, standing in the square.'"
+  - name: The Marks Beneath the Square
+    type: Scene
+    location: Town square
+    difficulty: Medium
+    loop: 3
+    detail: "At sunset on the third day, dark stains in the seams of the stone slabs."
+  - name: The Merchant's Ledger
+    type: Item
+    location: Back room of the grocery
+    difficulty: Medium
+    loop: 5
+    detail: "Records of 'special compensation' the grocery owner received after Chen Yan's death."
+  - name: The Student's Silence
+    type: Conversation
+    location: Town high school
+    difficulty: Hard
+    loop: 6
+    detail: "Lin Xiao, Chen Yan's student from that year, kept Chen Yan's diary."
+  - name: The Basement Diary
+    type: Item
+    location: Old schoolhouse basement
+    difficulty: Hard
+    loop: 7
+    detail: "Chen Yan's diary records the process of uncovering the financial scandal; the last page: 'They know. Something may happen tonight.'"
+  - name: The Truth of the Ritual
+    type: Memory
+    location: Town square
+    difficulty: Special
+    loop: 8+
+    detail: "If ≥4 fragments have been obtained, the silent ritual triggers a collective Déjà Vu—all players simultaneously see a flashback of that night fifteen years ago."
+key_npcs:
+  - name: Zhou Zhengyi
+    role: Mayor
+    age: 56
+    emotion_baseline: 4/10
+    sensitivity: High
+    notes: "Repressed anxiety; knows Chen Yan was innocent but fears telling the truth would destroy the town; in Loops 7-9 may say 'I should have stood up back then.'"
+  - name: Lin Xiao
+    role: High School Teacher
+    age: 30
+    emotion_baseline: 5/10
+    sensitivity: Extremely High
+    notes: "Chen Yan's favorite student, secretly reads the diary once a week; in Loop 6 the first memory residue, unconsciously writes Chen Yan's name on the blackboard."
+  - name: Wang Fugui
+    role: Grocery Owner
+    age: 62
+    emotion_baseline: 6/10
+    sensitivity: High
+    notes: "Took part in the lynching and took the compensation; in Loop 8+ may break down sobbing 'I dream of him every night.'"
+degradation:
+  - phase: Loops 1-2 (Mirror)
+    description: A normal town, let the players feel the "goodness," first total wipe at midnight on the third day.
+  - phase: Loop 3 (Final Mirror)
+    description: The last normal loop, Fragments 3+4 can be obtained.
+  - phase: Loops 4-5 (Ripple)
+    description: The inn clock runs 3 minutes slow, the mayor forgets coffee at lunch, Fragments 2+5 can be obtained.
+  - phase: Loop 6 (Crack)
+    description: Lin Xiao's first memory residue, Fragment 6 can be obtained.
+  - phase: Loops 7-9 (Crack)
+    description: A reflection from fifteen years ago appears in the old schoolhouse windows, the fountain water goes still, Fragments 1+7 can be obtained.
+  - phase: Loops 10-12 (Fracture)
+    description: Spatial jumps, Lin Xiao may become half-awakened, Fragment 8 can be obtained.
+  - phase: Loop 13 (Collapse)
+    description: The last chance, NPCs may tell the truth or remain silent forever.
+endings:
+  - id: A
+    name: Justice Delayed
+    grade: Perfect
+    condition: 8 fragments + the mayor reveals the truth publicly + the diary is made public
+    narrative: "No townsperson vanishes, the Rift heals."
+  - id: B
+    name: One Person's Farewell
+    grade: Normal
+    condition: ≥6 fragments + Lin Xiao reads out the diary
+    narrative: "The town vanishes but Lin Xiao remains, the Rift heals halfway."
+  - id: C
+    name: The Fifteenth Autumn
+    grade: Bad
+    condition: Loops exhausted
+    narrative: "The residents turn to statues forever encircling the square, the players remember everything—and to remember is, in itself, meaning."

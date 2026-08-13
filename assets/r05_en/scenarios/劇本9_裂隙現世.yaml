@@ -1,0 +1,37 @@
+name: "Scenario 9: Rift Emergence"
+description: "CL50–65 finale chapter first act, continuing from Scenario 8 Demon Lord Castle's collapse and the Otherworld invasion. Defend the World Anchors to block the Rift's expansion, then defeat the Void Sentry (CR65 mini-boss) deep in the Rift Front. Design Challenge Rating (CR)≈party total level×0.6. Uses Method A: one scenario + player-count scaling."
+difficulty: Extreme
+level_range: [50, 65]
+chapter: 9
+map_ref: maps/劇本9_戰鬥_虛界哨戒.yaml
+initial_map: maps/劇本9_探索_裂隙前線.yaml
+encounters:
+  - id: rift_vanguard
+    name: Rift Outpost (CL50–59)
+    enemies:
+      - {name: Rift Vanguard, cr: 55, count: 1}
+    boss: true
+    budget: Boss Battle Boss CR≈party total level×0.6
+    adjust: "1p→CR52; 5–6p→CR57"
+  - id: void_sentinel
+    name: Void Sentry (CL60–65, mini-boss)
+    enemies:
+      - {name: Void Sentry, cr: 65, count: 1}
+    boss: true
+    phases:
+      - {name: Reality Distortion, hp_threshold: "100%~66%", trait: Flip positioning map / beyond-world resistance}
+      - {name: Rule Nullification, hp_threshold: "66%", trait: Ignore certain Damage Reduction (DR) / summon Rift Vanguard reinforcement}
+      - {name: Rift Sync, hp_threshold: "33%", trait: Flip positioning every 2 rounds / core exposure window}
+    budget: Boss Battle Boss CR≈party total level×0.6
+    adjust: "1p→CR62; 5–6p→CR67"
+rewards:
+  exp: 36200
+  gold: 20000
+  items: [Rift Stabilization Core, Void Sentry Core]
+ip_events:
+  - event: Protect refugees evacuating the Otherworld front
+    ip: 6
+  - event: Wanton killing of panicked civilians
+    ip: -5
+  - event: Benevolent interaction with the Rift Watcher
+    ip: 3

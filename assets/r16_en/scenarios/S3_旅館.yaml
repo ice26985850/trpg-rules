@@ -1,0 +1,17 @@
+name: "S3: The Hotel"
+description: "Level 4's Partygoer trap is only the beginning. The real terror is at Level 5 — an endless Victorian hotel, corridors lined with blood-red carpet, walls hung with portraits whose eyes move."
+difficulty: "Intermediate"
+milestone_range: "3-4"
+play_time: "7-10 hours"
+supported_modes: ["Solo (1 Player + 1 GM)", "Group (2-5 Players + 1 GM)"]
+primary_levels: ["Level 4 — Abandoned Office", "Level 5 — Horror Hotel"]
+themes: ["Erosion of Trust", "Eternal Imprisonment", "Sacrifice"]
+emotional_arc: "Temptation (Partygoers) → Revelation (truth) → Flight → Deeper Nightmare (hotel) → Awakening"
+scenes:
+  - {id: S3_1, name: "Friendly Strangers", type: "Social Trap", desc: "In Level 4's corridors, two beaming 'Wanderers' invite you to an F5 party. Sense Something Wrong DC 14. Partygoer three-stage trap."}
+  - {id: S3_2, name: "Party Venue", type: "Climax", desc: "F5 — a conversion ritual of 15-30 Partygoers. The group chase after the reveal. Use the mirror room (F7) and the lightless room to escape."}
+  - {id: S3_3, name: "Hotel Entrance", type: "Transition", desc: "While fleeing Level 4 you wander into a golden elevator — it only goes to Level 5. The elevator doors open: red carpet, crystal chandelier, a white-gloved Waiter smiles and says 'Welcome back, sir/madam.' It knows your name."}
+  - {id: S3_4, name: "Endless Corridor", type: "Exploration / Horror", desc: "Level 5's corridors are endless. Each room door is carved with a name — all those who were once lost here. You find your own room. Your name is carved on the door. The portraits' eyes move. The 'Servant' entity patrols the corridors."}
+  - {id: S3_5, name: "Banquet Hall", type: "Finale", desc: "The banquet hall at the hotel's deepest point. The long table is full of lavishly dressed 'guests' — their eyes are empty. They await a new member to join. Will you take that empty chair? Find the back door and escape."}
+entities: ["Partygoers (Level 4)", "Servant (Level 5 — faceless waiter in a suit)", "Portraits (Level 5 — animate entities within the paintings)"]
+ending: "Find the hotel's back door and escape → Level 6 entrance. Or choose to take the empty chair in the banquet hall (character permanently imprisoned in Level 5)."

@@ -1,0 +1,302 @@
+# Backrooms Walker TRPG — Item Catalog (Structured Data)
+# All items use Traditional Chinese. Rarity: Common / Scarce / Uncommon / Rare
+
+items:
+  # ===== Light Sources =====
+  - category: Light Sources
+    name: Flashlight
+    weight: 0.5
+    rarity: Common
+    effect: Illuminates near to mid range. Essential on dark Levels
+    durability: 6 hours battery
+  - category: Light Sources
+    name: Glow Stick (pack of 3)
+    weight: 0.1
+    rarity: Common
+    effect: Illuminates near range. Dimmer than a flashlight but does not attract entity attention
+    durability: 6 hours (each)
+  - category: Light Sources
+    name: Lighter
+    weight: 0.05
+    rarity: Common
+    effect: Illuminates near range. Can ignite flammable objects. Battery never runs out
+    durability: 100 uses
+  - category: Light Sources
+    name: Headlamp
+    weight: 0.2
+    rarity: Uncommon
+    effect: Illuminates near to mid range. Frees both hands
+    durability: 8 hours battery
+  - category: Light Sources
+    name: Camping Lantern
+    weight: 1
+    rarity: Uncommon
+    effect: Illuminates mid range. Can cover a small room. Battery cannot be replaced
+    durability: 12 hours battery
+  - category: Light Sources
+    name: Oil Lamp
+    weight: 1.5
+    rarity: Rare
+    effect: Illuminates mid to far range. Warm, steady light. Some entities dislike firelight
+    durability: Requires fuel
+
+  # ===== Weapons & Tools =====
+  - category: Weapons & Tools
+    name: Metal Pipe
+    weight: 2
+    rarity: Common
+    effect: Can be used as a lever
+    damage: 1D6 Bludgeoning
+  - category: Weapons & Tools
+    name: Screwdriver
+    weight: 0.1
+    rarity: Common
+    effect: Can pick locks, dismantle equipment
+    damage: 1D3 Piercing
+  - category: Weapons & Tools
+    name: Hammer
+    weight: 1.5
+    rarity: Common
+    effect: Can break obstacles
+    damage: 1D6 Bludgeoning
+  - category: Weapons & Tools
+    name: Scissors
+    weight: 0.1
+    rarity: Common
+    effect: Can cut items
+    damage: 1D4 Piercing
+  - category: Weapons & Tools
+    name: Machete
+    weight: 1
+    rarity: Uncommon
+    effect: Can cut through ropes
+    damage: 1D8 Edged
+  - category: Weapons & Tools
+    name: Fire Axe
+    weight: 3
+    rarity: Uncommon
+    effect: Can break doors and obstacles. Cumbersome
+    damage: 1D10 Edged
+  - category: Weapons & Tools
+    name: Homemade Spear
+    weight: 2
+    rarity: Scarce
+    effect: Mid-range. Requires Crafting skill (Knowledge DC14)
+    damage: 1D6 Piercing
+  - category: Weapons & Tools
+    name: Multi-tool Knife
+    weight: 0.2
+    rarity: Common
+    effect: Multi-purpose — can be used as scissors, screwdriver, can opener
+    damage: 1D3 Edged
+
+  # ===== Food & Water =====
+  - category: Food & Water
+    name: Canned Food
+    weight: 0.5
+    rarity: Common
+    effect: Restores 2 Calories
+  - category: Food & Water
+    name: Energy Bar
+    weight: 0.1
+    rarity: Common
+    effect: Restores 1 Calorie
+  - category: Food & Water
+    name: Bottled Water (500ml)
+    weight: 0.5
+    rarity: Common
+    effect: Maintains hydration for 1 day
+  - category: Food & Water
+    name: Military Ration
+    weight: 0.8
+    rarity: Uncommon
+    effect: Restores 3 Calories, no need to eat for 24 hours
+  - category: Food & Water
+    name: Thermos (coffee)
+    weight: 0.5
+    rarity: Scarce
+    effect: Restores 1 Calorie, resists one fatigue effect within 6 hours
+  - category: Food & Water
+    name: Insulated Bag (with food)
+    weight: 0.3
+    rarity: Scarce
+    effect: Restores 2 Calories
+
+  # ===== Medical Supplies =====
+  - category: Medical Supplies
+    name: Bandage (5 uses)
+    weight: 0.2
+    rarity: Common
+    effect: Restores 2D6 HP, removes Bleeding status
+  - category: Medical Supplies
+    name: First Aid Medicine (3 uses)
+    weight: 0.1
+    rarity: Uncommon
+    effect: Restores 3D6 HP, removes Poisoned and Bleeding
+  - category: Medical Supplies
+    name: Disinfectant Alcohol (5 uses)
+    weight: 0.3
+    rarity: Common
+    effect: Prevents wound infection (hardcore mode)
+  - category: Medical Supplies
+    name: Sedative (2 uses)
+    weight: 0.05
+    rarity: Uncommon
+    effect: Restores 1D6 SP, temporarily resists Panic
+  - category: Medical Supplies
+    name: Complete First Aid Kit
+    weight: 1
+    rarity: Rare
+    effect: Contains Bandage×5, First Aid Medicine×3, Disinfectant Alcohol×5, Sedative×2
+
+  # ===== Clothing & Protection =====
+  - category: Clothing & Protection
+    name: Work Gloves
+    weight: 0.1
+    rarity: Common
+    effect: Protects hands — +1 when climbing and handling dangerous items
+  - category: Clothing & Protection
+    name: Medical Gloves (2 pairs)
+    weight: 0.05
+    rarity: Common
+    effect: No Physique check needed when handling contaminated items
+  - category: Clothing & Protection
+    name: Protective Vest
+    weight: 2
+    rarity: Uncommon
+    effect: DEF+1, reduces physical damage by 1
+  - category: Clothing & Protection
+    name: Nurse Uniform
+    weight: 0.3
+    rarity: Scarce
+    effect: Multiple pockets — Carry Capacity +1 kg
+
+  # ===== Communication & Recording =====
+  - category: Communication & Recording
+    name: Notebook and Pen
+    weight: 0.2
+    rarity: Common
+    effect: Record a log — each diary entry restores 1 SP (once per day)
+  - category: Communication & Recording
+    name: Walkie-Talkie (pair)
+    weight: 0.5
+    rarity: Uncommon
+    effect: Communication within mid range. Requires battery
+  - category: Communication & Recording
+    name: Voice Recorder
+    weight: 0.1
+    rarity: Scarce
+    effect: Record a voice log — each recording restores 1 SP (once per day)
+  - category: Communication & Recording
+    name: Mobile Phone
+    weight: 0.2
+    rarity: Common
+    effect: No signal but can be used as a flashlight (2 hours battery) or for recording
+
+  # ===== Special Items =====
+  - category: Special Items
+    name: Almond Water (250ml)
+    weight: 0.3
+    rarity: Common
+    effect: "Drink: Restores 1D6 HP + 1D4 SP. Throw: dispels specific entities. 1 unit per use"
+  - category: Special Items
+    name: Concentrated Almond Water
+    weight: 0.2
+    rarity: Uncommon
+    effect: Doubled effect + 1 hour of darkvision. Exclusive to Level 2
+  - category: Special Items
+    name: Tape (roll)
+    weight: 0.3
+    rarity: Common
+    effect: Universal repair tool. Can temporarily repair any item
+  - category: Special Items
+    name: Rope (10 m)
+    weight: 1
+    rarity: Common
+    effect: Climbing, binding, setting traps
+  - category: Special Items
+    name: Universal Key
+    weight: 0.1
+    rarity: Uncommon
+    effect: Automatic success on simple locks (DC12 or below). 3 uses
+  - category: Special Items
+    name: Backrooms Map (fragment)
+    weight: 0.05
+    rarity: Scarce
+    effect: Shows part of a specific Level. May be outdated
+  - category: Special Items
+    name: Large Backpack
+    weight: 0.5
+    rarity: Scarce
+    effect: Carry Capacity +3 kg
+  - category: Special Items
+    name: Calculator
+    weight: 0.1
+    rarity: Scarce
+    effect: +1 to Knowledge-related checks
+
+# ===== Rarity Scavenge DC Reference =====
+scavenge_dc:
+  common: 8
+  scarce: 12
+  uncommon: 15
+  rare: 18
+
+# ===== Shelf Life (Soft Cap) =====
+shelf_life_note: Almond Water has no explicit expiration, but long-term storage (over one month of in-game time) has a low chance (about 5% per week) of becoming contaminated — drinking contaminated Almond Water requires a Physique DC12 check, otherwise an extra -1D4 SP. This is a soft throttle to prevent early hoarding from causing a surplus later; the GM may adjust or disable it based on campaign length.
+
+# ===== Trade Price Reference (Almond Water as common currency) =====
+trade_prices:
+  note: Actual prices are determined by the GM and Level supply and demand; may rise 2-3× when scarce. BNTG offers credit loans (high interest); M.E.G. prefers exchanging supplies for mission contributions.
+  items:
+    - name: Almond Water (1 unit)
+      buy: 1
+      sell: 1.5
+      note: Base currency
+    - name: Concentrated Almond Water
+      buy: 3
+      sell: 5
+      note: Exclusive to Level 2
+    - name: Canned Food
+      buy: 0.5
+      sell: 1
+    - name: Energy Bar
+      buy: 0.2
+      sell: 0.5
+    - name: Bandage (5 uses)
+      buy: 1
+      sell: 2
+    - name: First Aid Medicine (3 uses)
+      buy: 2
+      sell: 4
+    - name: Flashlight
+      buy: 1
+      sell: 2
+    - name: Headlamp
+      buy: 2
+      sell: 4
+    - name: Machete
+      buy: 2
+      sell: 4
+    - name: Fire Axe
+      buy: 4
+      sell: 8
+    - name: Homemade Spear
+      buy: 1
+      sell: 3
+      note: Requires Crafting skill
+    - name: Universal Key
+      buy: 3
+      sell: 6
+    - name: Backrooms Map (fragment)
+      buy: 2
+      sell: 5
+      note: High information value
+    - name: Rare Level Intel
+      buy: "3-5"
+      sell: null
+      note: GM discretion
+    - name: Complete Level Map
+      buy: "5-10"
+      sell: null
+      note: GM discretion

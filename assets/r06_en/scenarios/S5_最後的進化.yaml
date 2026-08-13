@@ -1,0 +1,119 @@
+name: "S5: The Final Evolution"
+description: "Enter the deepest depths of the Abyssal Rift, face the residual consciousness of the Void Abyss Worm. Absorb, destroy, or merge—the three choices decide the fate of the evolution era and your own existence."
+difficulty: "Lethal"
+level_range: { min_nodes: 13, max_nodes: 20, suggested: "13-20 Evolution Nodes" }
+players: { min: 1, max: 4, default: 1 }
+estimated_time: "6-8 hours"
+map_ref: "最後的進化_深淵裂谷"
+initial_map: "最後的進化_深淵裂谷"
+prerequisite: "S1 + any two of S2/S3/S4"
+
+scenes:
+  - id: "S5_SC1"
+    name: "The Rift Entrance"
+    type: "narrative"
+    description: "Say farewell to allies along the way (or summon them to go together). Only those evolved to a certain degree can withstand the abyssal pressure."
+    companions:
+      - { name: "Ryan", source: "S1", assist: "Will +1 during Humanity Value crisis", risk: "Needs Will DC 14 each round" }
+      - { name: "Zarlax", source: "S4", assist: "Shares final BOSS damage", risk: "Opposes sacrificial choices" }
+      - { name: "Zero", source: "S2", assist: "Reveals extra truth", risk: "May betray at the last moment" }
+      - { name: "Alden", source: "S3", assist: "Recovers 1 Humanity Value each round", risk: "HP only 30" }
+
+  - id: "S5_SC2"
+    name: "The Rift Descent"
+    type: "combat_gauntlet"
+    description: "A three-layer descent, one encounter per layer. The deeper, the more distorted."
+    encounters:
+      - depth: "100m"
+        enemy: { name: "Seven-Headed Serpent", rank: "Elite", hp: 60, defense: 13, mechanic: "7 heads each attack independently 1d6+3. Each head destroyed, attack count -1" }
+      - depth: "300m"
+        enemy: { name: "Void Fluid", rank: "Elite", count: 3, hp: 25, defense: 8, mechanic: "Disadvantage on physical attacks. Devour→Will DC 15 or Humanity Value -1d4. Splits when HP<10" }
+      - depth: "500m"
+        boss: { name: "Abyss Gatekeeper", rank: "Boss", hp: 100, defense: 16, stats: { LIL: 10, MJ: 8, TZ: 12, GZ: 10, YZ: 14 }, energy: 18 }
+        skills:
+          - { name: "Void Tentacle", tier: "Mid-tier", energy: 3, effect: "2d8+5 mental + Humanity Value -1" }
+          - { name: "Worm's Roar", tier: "High-tier", energy: 5, effect: "All present make Will DC 18 or lose actions" }
+          - { name: "Abyssal Gaze", tier: "Ultimate", effect: "Will DC 22 or Humanity Value halved" }
+        absorb: ["Void Resistance (Passive)", "Abyssal Sense (Passive)", "Abyssal Gaze (High-tier—but Humanity Value -2/use)"]
+
+  - id: "S5_SC3"
+    name: "The Hall of Fragments"
+    type: "exploration_narrative"
+    description: "The Void Abyss Worm's memory fragments float in endless darkness. Obtain the complete truth. Dialogue with the Void Abyss Echo."
+    truths:
+      - "Evolution is a side effect of the Worm's fragments"
+      - "Humanity Value represents 'the part outside the fragments'"
+      - "The Rift expands because the Worm is awakening"
+      - "Three methods to stop the expansion—each with a cost"
+    npc:
+      name: "Void Abyss Echo"
+      form: "Appears in the form of the person the player trusts most"
+      nature: "No concept of good or evil—merely a memory waiting to be released"
+
+  - id: "S5_SC4"
+    name: "The Final Choice"
+    type: "final_decision"
+    choices:
+      - id: "Absorb"
+        description: "Fully absorb the core fragment, become the new Void Abyss Worm"
+        effects:
+          stats: "Strength LIL+10, Constitution TZ+10, Will YZ+10"
+          capacity: "Infinite evolution capacity"
+          humanity: "Hits zero—permanently"
+          consequence: "Character becomes NPC/Villain. World's fate depends on the new identity's choices"
+        suitable: "Players pursuing ultimate power who don't mind losing themselves"
+      - id: "Destroy"
+        description: "Detonate the core fragment with your own evolution energy"
+        effects:
+          global: "Evolution potential vanishes worldwide. Rift fully closes. Age of evolution ends"
+          personal: "All evolution nodes permanently fail, attributes revert to Base Form initial values"
+          humanity: "Restored to 100"
+        consequence: "Becomes an ordinary hero. Peace at the cost of sacrificing a miracle"
+        suitable: "Players who value humanity, willing to sacrifice power"
+      - id: "Merge"
+        description: "Fuse the fragment in but bind it to Humanity Value with Will"
+        check: { attribute: "Will (YZ)", dc: 30 }
+        success:
+          reward: "'Ultimate Form' (freely switch all forms + Humanity Value no longer decreases) + all attributes +5 + 'Fragment Resonance' skill"
+          meaning: "Becomes living proof of the balance between evolution and humanity"
+        failure:
+          table:
+            - { roll: "1-3", outcome: "Fragment destroys you—character death" }
+            - { roll: "4-5", outcome: "Fragment partially controls—character becomes NPC" }
+            - { roll: "6", outcome: "Fragment refuses to merge but is weakened—Rift shrinks 50%" }
+        suitable: "Players pursuing the third path, who believe in balance"
+
+    companion_influence:
+      - { companion: "Ryan", absorb: "Leaves sadly", destroy: "Breathes a sigh of relief", merge: "Will check +3" }
+      - { companion: "Zarlax", absorb: "Attacks you", destroy: "Understands", merge: "Will check DC -3" }
+      - { companion: "Zero", absorb: "Tries to seize the fragment (contested Will)", merge: "Intent exposed before merging" }
+      - { companion: "Alden", merge: "Evolution Meditation assistance (Will check DC -5)" }
+
+  - id: "S5_SC5"
+    name: "Aftermath"
+    type: "epilogue"
+    endings:
+      - type: "Absorb"
+        title: "A New God Descends"
+        description: "You become the new Devourer. Occasionally—very occasionally—you recall your old name."
+      - type: "Destroy"
+        title: "The Ordinary Hero"
+        description: "Lost all evolution ability, but friends still recognize you. Age of evolution ends."
+      - type: "Merge Success"
+        title: "The Balance Guardian"
+        description: "You become the spiritual leader of the Symbiosis Accord—living proof that evolution and humanity are not opposed."
+      - type: "Merge Failure But Survived"
+        title: "The Echo Walker"
+        description: "Gain Passive 'Echo'. Rift partially shrinks. Your journey is not yet over."
+
+completion_rewards:
+  evolution_points: 5
+  absorb: "Ultimate Evolution—character retires (Legendary NPC/BOSS)"
+  destroy: "'Hero's Mark'—brand-new ordinary adventure starting point"
+  merge_success: "'Ultimate Form' + Will YZ permanently +5"
+  merge_partial: "Passive 'Echo'—Will YZ +2"
+
+solo_adjustments:
+  abyss_guardian_hp: 80
+  fusion_dc_reduction: "-2 (lower threshold for solo play)"
+  extra_companions: "May bring all available NPC companions (no limit)"

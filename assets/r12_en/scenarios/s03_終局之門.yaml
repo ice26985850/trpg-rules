@@ -1,0 +1,167 @@
+# Urban Survivors — Scenario Three: "The Final Gate" — Late Siege: The Final Choice
+scenario_id: "S3"
+scenario_name: "The Final Gate"
+difficulty: "★★★★☆"
+suggested_players: 1
+siege_days: "Day 100+"
+estimated_sessions: "7–10"
+core_theme: "The Final Ending"
+prerequisite: "Complete S2 \"The Long Winter\" or a character with a deep relationship network and substantial trauma"
+
+summary: |
+  The siege has entered its hundredth day. The city is barely recognizable—former cafés have become graves,
+  former schoolyards have become fortresses, former homes have become rubble.
+
+  The end is coming. But not in one way—rather, it approaches in multiple possible shapes at once.
+  The Federal Army plans a final breakout, the Black River Merchant Guild sells secret evacuation routes,
+  the International Humanitarian Aid convoy negotiates an evacuation list, the Voice of Liberty prepares its
+  final act of resistance, and the Church has opened its doors to welcome anyone in need of shelter.
+
+  The player must make the ultimate choice—and that choice will permanently change everything that remains.
+
+# ── Final Offers from Multiple Factions ──
+faction_offers:
+  - faction: "Federal Army (KFA)"
+    offer: "Join the final breakout operation"
+    cost: "Extremely high risk of death (breakout survival rate ~30%)"
+    mechanics: "Must pass at least 3 high-DC checks (Stealth, Physique, Willpower)"
+    reward: "If successful: freedom, reconnection with the outside world"
+    who_would_choose_this: "Characters who crave battle or have no other choice"
+
+  - faction: "Black River Merchant Guild (BRS)"
+    offer: "Secret evacuation route—cross the front line to the neutral zone"
+    cost: "Steep cost: all supplies, a secret, or a favor owed (must be repaid in the future)"
+    mechanics: "Bargaining DC 16 can reduce the cost; route is not 100% safe (20% encounter chance)"
+    reward: "Safe evacuation (if the route is successfully traversed)"
+    who_would_choose_this: "Pragmatists who have something to trade"
+    note: "Limited slots—the Professor offers only 1–2 slots. If the player has NPC companions, a choice must be made."
+
+  - faction: "Voice of Liberty (VoL)"
+    offer: "Take part in the final resistance—launch sabotage within the city during the enemy's general assault"
+    cost: "Near-certain sacrifice (survival rate < 10%)"
+    mechanics: "A series of combat / Stealth checks, DC 16–20"
+    reward: "Even in death, your actions may shift the course of the war—your name may be remembered"
+    who_would_choose_this: "Wraith, Dimitri (if he overcomes his PTSD)—and trauma-bearing characters who choose to atone with their lives"
+
+  - faction: "International Humanitarian Aid (IHA)"
+    offer: "Negotiate evacuation—leave as civilians via the humanitarian corridor"
+    cost: "Must prove 'civilian status'—may need to abandon armed companions or deny any link to VoL"
+    mechanics: "Social DC 14 to persuade IHA officials; must surrender all weapons"
+    reward: "The safest evacuation method (survival rate > 80%)"
+    who_would_choose_this: "Protectors with the vulnerable (children, elderly)"
+    note: "Dr. Elena (NPC #4) can help vouch for the player's civilian status"
+
+  - faction: "St. Michael's Church"
+    offer: "Stay in the city—guard those who cannot leave in the church basement"
+    cost: "Endure the final phase of the siege—bombardment, street fighting, and possible occupation"
+    mechanics: "No check required; simply choose to stay. But a daily Willpower DC 14 check is needed to maintain morale"
+    reward: "You protected those who cannot protect themselves—and found inner peace"
+    who_would_choose_this: "Father Andre, Grandma Marta—and those who choose not to flee"
+
+# ── Key NPCs' Endgame Choices ──
+npc_endgame_choices:
+  - npc: "Father Andre (NPC #1)"
+    choice: "Stay and guard the church to the very last moment. Even if the city falls, he will not leave."
+    impact: "If the player also chooses to stay: receive the priest's final blessing (full recovery of Mental State, once)"
+
+  - npc: "Yana Novak (NPC #2)"
+    choice: "Hesitates—she wants to lead the community in a breakout, yet is unwilling to abandon anyone."
+    impact: "The player's choice may affect her decision. At REL ≥ 7 she will follow the player's choice."
+
+  - npc: "The Professor (NPC #3)"
+    choice: "Prepares his own evacuation plan—one step ahead of everyone else."
+    impact: "If the player has a good relationship with the Professor (REL ≥ 5), he may provide one extra evacuation slot."
+
+  - npc: "Dimitri (NPC #8)"
+    choice: "Faces his final chance at redemption—he may choose to join VoL's final operation to atone, or break down completely."
+    impact: "The player's support can decide which path he takes. At REL ≥ 7 he will heed the player's advice."
+
+  - npc: "Victor (NPC #12)"
+    choice: "His informant identity may be exposed at the endgame."
+    impact: "How the player handles him—forgive, exile, or punish—will set the community's moral tone."
+
+  - npc: "Nico and Lena (NPC #9)"
+    choice: "The children's fate is the heaviest moral counterweight."
+    impact: "Any choice involving children brings the greatest emotional impact and traumatic consequences."
+
+# ── The Ultimate Moral Dilemma: "The Signal" ──
+ultimate_dilemma:
+  name: "The Signal"
+  trigger: "The player obtains a radio frequency—the besieging side's command frequency (possibly found by accident, obtained from VoL, or sold by the Professor)"
+  options:
+    - id: A
+      name: "Hand it to the Voice of Liberty"
+      consequence: "VoL uses the frequency to launch precision sabotage. This may turn the tide, but the besieging side will inevitably launch retaliatory massacre. Your hands are stained with the blood of those who died in retaliation—but you may also have saved the entire city."
+      trauma: "+5 Trauma Accumulation"
+
+    - id: B
+      name: "Sell it to the Black River Merchant Guild"
+      consequence: "The Professor trades the frequency for a large quantity of supplies and 2 evacuation slots. You are safe—but the others in the city are abandoned. You will never know what the frequency was used for."
+      trauma: "+3 Trauma Accumulation"
+
+    - id: C
+      name: "Use the frequency to negotiate personally"
+      consequence: "Attempt to negotiate safe passage with the besieging side as an individual. Social DC 18. Success → you and designated companions gain safe passage. Failure → you are located, enemy special forces come to 'deal with' you."
+      trauma: "Success +1 / Failure +4"
+
+    - id: D
+      name: "Destroy the frequency"
+      consequence: "Do nothing. Let fate take its course. No blood on your hands—but you also give up the chance to change the outcome. Can you bear the consequence of 'doing nothing'?"
+      trauma: "+1 (the torment of 'what if…')"
+
+# ── Ending Determination (for GM use) ──
+ending_determination:
+  method: "Weighted judgment across four factors"
+  factors:
+    - factor: "World Setting (40%)"
+      description: "The siege cause chosen by the GM before the game starts (Setting A/B/C). This decides the siege's general direction."
+
+    - factor: "Player Influence (30%)"
+      description: "Calculated from the player's cumulative choices across the three scenarios: how many people were helped, what alliances were built, what sacrifices were made."
+
+    - factor: "Key Events (20%)"
+      description: "The final handling of 'The Signal,' relationship status with key NPCs, survival of the Shelter."
+
+    - factor: "Random (10%)"
+      description: "Roll 3d6: 3–7 situation worsens / 8–12 holds steady / 13–18 situation unexpectedly improves."
+
+# ── Possible Endings ──
+possible_endings:
+  - ending: "Liberation"
+    condition: "Friendly forces break the siege + player assistance (e.g., providing intelligence)"
+    narrative_tone: "Hope and trauma intertwined"
+
+  - ending: "Siege Lifted"
+    condition: "Diplomatic negotiation succeeds + player did not break the peace process"
+    narrative_tone: "Bitter relief"
+
+  - ending: "Fall"
+    condition: "Enemy's final offensive succeeds + player failed to stop or flee"
+    narrative_tone: "The price of survival is living under occupation"
+
+  - ending: "Escape"
+    condition: "Player successfully evacuates via Black Market / IHA / VoL routes"
+    narrative_tone: "Freedom—but at what cost?"
+
+  - ending: "Freeze and Starve to Death"
+    condition: "Resources exhausted, basic survival unsustainable"
+    narrative_tone: "The most ordinary ending of the siege"
+
+  - ending: "Open-ended"
+    condition: "Player and GM choose not to end the story"
+    narrative_tone: "The siege continues…"
+
+# ── Post-Ending Handling (GM Guide) ──
+post_ending:
+  steps:
+    - "Character Summary: write an ending narrative for each surviving character—based on their choices, relationships, and trauma"
+    - "Lingering Questions: raise 'what happened next?'—where did the characters go? Did relationships with NPCs endure?"
+    - "Group Reflection: let players share their most unforgettable moments"
+    - "GM Closing Words: bring this siege to a close"
+
+# ── Completion Rewards ──
+rewards:
+  experience_points: 4
+  fortune_point: "Restored to maximum (5 points)"
+  trauma_reduction: "Upon completing the core mission, Trauma Accumulation −5 (one-time—a major breather in a long campaign)"
+  special: "Unlock the 'Siege Survivor' title—the character gains a permanent ending narrative"

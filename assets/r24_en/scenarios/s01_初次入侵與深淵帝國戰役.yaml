@@ -1,0 +1,107 @@
+name: "Abyss Lord TRPG — Multiplayer Modules & Campaign: First Incursion & the Abyss Empire"
+type: "multiplayer_scenario"
+author: "Tabletop Rules Studio (led by Cheng Guiyao)"
+rules_version: '2.5'
+player_count: "1 GM + 1~4 players"
+dungeon_level: "Lv1-15"
+estimated_time:
+  module: "1-2 sessions"
+  campaign: "15-30 sessions"
+prerequisite: "Use together with the Abyss Lord Player Rulebook and GM Guide"
+module:
+  title: "Starter Module \"First Incursion\""
+  level: 1
+  scenes:
+  - id: 1
+    name: "Establish the Initial Dungeon"
+    gm_setup: "Have players fill in the core of the character sheet (archetype, attributes, starting monsters); introduce the resource system and turn structure (5 scenes = 5 turns)."
+    player_needs: "Familiarize with attributes, assign starting monsters, plan which side to dig first."
+  - id: 2
+    name: "First Dig & Expansion"
+    check: "IND + Engineering skill vs Difficulty 1"
+    results:
+      failure: "Only scraped off rubble, materials spent, space not unlocked; GM gives clue \"Something seems to be glowing behind the rock...\""
+      1_success: "Dug out a small cave."
+      2_plus_success: "Discovered shimmering crystals — a Vein! That space's mine output permanently +50%."
+  - id: 3
+    name: "First Wave of Invasion"
+    recon: "If a Scout Outpost was built, automatically gain intel; otherwise roll CUN + Espionage."
+    preset_adventurers:
+    - name: "Allen"
+      class: "Warrior T1"
+      cp: "1d6+2"
+      hp: 5
+      trait: "Shield: Defense +1 die"
+      bg: "Saving up for his sister's medicine"
+    - name: "Mira"
+      class: "Rogue T1"
+      cp: "2d6+1"
+      hp: 3
+      trait: "Can scout traps: Trap DC -2"
+      bg: "Impulsive and reckless"
+    ai_behavior_2d6:
+      "2-4": "Mira scouts first, Allen guards the rear"
+      "5-7": "Advance cautiously"
+      "8-10": "Mira sneaks past, Allen draws head-on"
+      "11-12": "Allen charges recklessly"
+    combat_tips: "Tutorial fight; environment may trigger rockslide dealing 1d3 to adventurers; Mira retreats at HP<2, introducing the capture mechanic."
+  - id: 4
+    name: "First Captive & Interrogation"
+    methods:
+    - "Interrogation (DOM)"
+    - "Torture (WAR)"
+    - "Charm (DOM + spend ◆)"
+    example: "Allen's weakness \"mentions of his sister make his eyes flicker\" → Charm mentioning family DOM+1 die; Mira's weakness \"impulsive\" → waiting >2 turns before interrogation WIL-1."
+    reward: "Achievement \"First Prisoner\" +1 Experience Point (EXP)."
+  - id: 5
+    name: "Post-battle Settlement & Second Expansion"
+    loot: "Each defeated T1 adventurer: ◆1d3 + ◇1 + ●1; captives yield no loot."
+    exp: "Repel T1 invasion +3 EXP; first capture +1 EXP."
+    transition: "Experience the full \"dig → build → allocate → defend\" loop; Mira's escape will bring people back."
+campaign:
+  title: "From Cavern to Abyss Empire (Lv1-15)"
+  acts:
+  - act: 1
+    name: "Establishment"
+    level: "Lv1-3"
+    theme: "Survive, starting from Throne Hall + 2 tunnels."
+    key_events: "Lv1 First Incursion tutorial fight; Lv2 first natural resource + letter from neighboring dungeon; Lv3 Guild wanted notice (INF≥3)."
+    climax: "Adventurers' Guild wanted notice — dungeon placed on the Wanted List."
+  - act: 2
+    name: "Growth"
+    level: "Lv4-7"
+    theme: "Expansion and choice; Abyss Embassy built, must choose one of the Four Alliances."
+    key_events: "Lv4 alliance invitation (Balzec vs Malthus); Lv5 elite monsters + Boss fight; Lv6 inter-dungeon politics mediation."
+    climax: "Abyssal Black Market auction (Grix, 'Goldtooth'), with social/auction/assassination segments."
+  - act: 3
+    name: "Threat"
+    level: "Lv8-11"
+    theme: "War and betrayal; company-level Crusade expeditions from the Order of Light."
+    key_events: "Lv8 Crusade expedition three-entrance multi-front defense; Lv9 intra-alliance cracks; Lv10 legendary monster + Moris out-of-control side quest."
+    climax: "Breath of Nexis — Primordial Fissure (D-16) first anomalous sound."
+  - act: 4
+    name: "Overlord"
+    level: "Lv12-15"
+    theme: "Fateful choice; Crusade and awakening of the Primordial Fissure."
+    key_events: "Lv12 Dungeon Covenant; Lv13 Radiant Crusade; Lv14 surface infiltration (Corwin, 'Rusted Duke')."
+    climax: "Ultimate Event: Awakening of Nexis."
+  finale:
+    name: "Awakening of Nexis"
+    stages:
+    - stage: "Descent"
+      check: "None (narrative)"
+      effect: "Abyssal mana temporarily ×2."
+    - stage: "Judgment"
+      check: "DOM respond to question; ARC understand true intent"
+      effect: "Nexis examines each alliance."
+    - stage: "Choice"
+      check: "Ultimate multi-check"
+      options:
+      - "A Become right hand (ultimate power / lose autonomy)"
+      - "B Refuse → Wandering Lord"
+      - "C Persuade (DOM+Diplomacy×3 all succeed, extremely hard)"
+    - stage: "Consequence"
+      effect: "A=Right Hand of God; B=Wandering Legend; C=New Center of the Abyss, Order ceasefire."
+  tracking_tables:
+    growth: "Lv1 DEP1/INF1/1-3 rooms/3-5 monsters; Lv5 DEP7/INF5/8-12 rooms/8-12 monsters/1 ally; Lv15 DEP34/INF15/50-60 rooms/35-50 monsters/Whole Abyss."
+    npc_relations: "Malthus 0, Balzec -3, Vera +2, Wrench +5, Moris random, Selathil -2, Ethlin +3, Corwin +2."

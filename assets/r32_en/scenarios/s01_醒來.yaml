@@ -1,0 +1,58 @@
+name: "Awakening"
+type: "Character Origin (Tutorial)"
+difficulty: "☆"
+recommended_marks: 0
+play_time: "1 session"
+core_attributes: ["AW", "TR", "RE", "NG", "AN"]
+
+opening: |
+  You didn't come because you took a Commission. You woke up.
+  This morning you walked through the office glass door as usual—but the other side of the glass was not the lobby.
+  It was a corridor. A corridor you had never seen, three times longer than it should be.
+  You looked back—the glass door was still there, but beyond it was a grayish-white light, no street, no people.
+  You are trapped in the Gap Layer.
+
+npcs:
+  - name: "Old Mo"
+    type: "Previous Walker / Mentor"
+    desc: "A retired Walker in his sixties. \"Fishes\" in the Gap Layer—using shards of a Memory Crystal as bait"
+    companion_eligible: false
+    companion_unlock: "Recruitable after Scenario 9"
+
+scenes:
+  - name: "Awakening"
+    desc: |
+      The player wakes in the Gap Layer. The GM describes the Gap Layer's sensory feel (light from the wrong direction, delayed footsteps).
+      Passive Awareness (10+AW) automatically senses the spatial anomaly.
+    checks:
+      - "Passive Awareness: automatically reveals initial clues"
+  - name: "Meeting Old Mo"
+    desc: |
+      Old Mo sits on a folding chair in the middle of the corridor.
+      Teaches the three basic tutorial actions: Confirm Layer (AN DC 8), Move (TR DC 6), Observe the Surface (AW DC 8).
+  - name: "First Search"
+    desc: "Retrieval DC 6 to find an old keychain (Common Lost Item)."
+    checks:
+      - "Retrieval DC 6: search the corridor"
+  - name: "The Mirror Appears"
+    desc: |
+      The player's Mirror appears at the other end of the corridor. Old Mo: \"Watch it Exit the Gap.\"
+      Negotiation DC 6—non-verbal interaction with the Mirror (maintain eye contact, retreat slowly).
+    checks:
+      - "Negotiation DC 6: interact with the Mirror"
+    notes: "Never turn your back on the Mirror—this is an iron law of the Gap"
+  - name: "Finding the Exit"
+    desc: "Natural Threshold DC 6. Traverse check. Success → return to the Surface. Failure → Old Mo assists (Advantage)."
+    checks:
+      - "Traverse DC 6: enter the Natural Threshold"
+  - name: "Return to the Surface"
+    desc: "Only 3 minutes have passed. But a golden Residual glow now lingers on the doorframe—you can see the Gap forever."
+
+endings:
+  - "Old Mo becomes a Contact (can be visited during Interludes; Retrieval knowledge +2)"
+  - "Obtain your first Lost Item: an old keychain (origin unknown)"
+
+rewards:
+  - "Return Mark × 0 (tutorial scenario)"
+
+companion_recruitment: []

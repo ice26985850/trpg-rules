@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 680 654" font-family="'Microsoft JhengHei','PingFang TC','Heiti TC','Noto Sans CJK TC',sans-serif">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#555"/></marker></defs>
+<text x="40" y="34" font-size="18" font-weight="bold" fill="#222">MAP-07 Eastside Crack Community — The Vanishing Block</text>
+<rect x="40" y="60" width="240" height="520" rx="14" fill="#e8f0fe" fill-opacity="0.4" stroke="#5b8def" stroke-dasharray="6 4"/>
+<text x="52" y="82" font-size="14" font-weight="bold" fill="#5b8def">Surface Blockade Zone</text>
+<rect x="320" y="120" width="320" height="460" rx="14" fill="#fff3e0" fill-opacity="0.4" stroke="#ef8c2e" stroke-dasharray="6 4"/>
+<text x="332" y="142" font-size="14" font-weight="bold" fill="#ef8c2e">Gap Blockade Zone (Distorted)</text>
+<line x1="160.0" y1="154.0" x2="160.0" y2="200.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="160.0" y1="264.0" x2="160.0" y2="330.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="160.0" y1="264.0" x2="160.0" y2="460.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="300.0" y="222.28571428571428" font-size="11" fill="#666" text-anchor="middle">Block</text>
+<line x1="260.0" y1="246.3" x2="340.0" y2="206.3" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="440.0" y1="224.0" x2="440.0" y2="300.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="260.0" y1="372.7" x2="340.0" y2="342.7" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="104.0" y1="460.0" x2="384.0" y2="364.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="440.0" y1="364.0" x2="440.0" y2="450.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="440.0" y="458.0" font-size="11" fill="#666" text-anchor="middle">Fail</text>
+<line x1="440.0" y1="364.0" x2="440.0" y2="560.0" stroke="#555" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="60" y="90" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="126.0" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Blockade Line</text>
+<rect x="60" y="200" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="227.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Blockade Zone Entrance</text>
+<text x="160.0" y="244.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Spatial Anomaly (DC10)</text>
+<rect x="60" y="330" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="357.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Old House (Younger Brother's Home)</text>
+<text x="160.0" y="374.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Photo (DC6)</text>
+<rect x="60" y="460" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="160.0" y="487.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">School Residual</text>
+<text x="160.0" y="504.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Backpack (DC13)</text>
+<rect x="340" y="160" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="440.0" y="187.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Path Guardian (Horse)</text>
+<text x="440.0" y="204.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Negotiation DC16 / Wait -2</text>
+<rect x="340" y="300" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="440.0" y="327.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Crack Center</text>
+<text x="440.0" y="344.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Little Girl's Residual (DC22→14)</text>
+<rect x="340" y="450" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="440.0" y="477.5" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">Old Walker's Notes ×3</text>
+<text x="440.0" y="494.5" font-size="11" font-weight="normal" fill="#555" text-anchor="middle">Puzzle Retrieval DC16</text>
+<rect x="340" y="560" width="200" height="64" rx="10" fill="#ffffff" stroke="#444" stroke-width="1.8"/>
+<text x="440.0" y="596.0" font-size="13" font-weight="bold" fill="#222" text-anchor="middle">[Three Days Later] The Crack Swallows Everything</text>
+</svg>

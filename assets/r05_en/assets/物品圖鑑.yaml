@@ -1,0 +1,858 @@
+title: "The Hero's Proof — Item Catalog"
+sections:
+  - heading: "The Hero's Proof — Item Catalog"
+    text:
+      - >
+        Data source: System finalization (Chapter 8, Equipment & Economy), Traditional Chinese, terms use the "Chinese full name (abbreviation)" format.
+      - >
+        Price unit: Gold (G).　Base Price = `floor(20 × CL^1.3)` (CL = Recommended Level / Level Requirement ReqLv).
+      - >
+        White-board Price = Base Price × (1 + 0.15 × (ReqLv − 1)); final price of magic equipment = White-board Price × Rarity Multiplier (Common ×1 / Fine ×3 / Rare ×8 / Epic ×20 / Legendary ×35).
+      - >
+        Durability (Dur): Weapons 40 (Heavy 60) / Armor 50 (Heavy Armor 80) / Accessories 60. At 0 Durability it becomes unusable; Repair Cost = Sale Price × 5% × (Max − Current)/Max.
+      - >
+        Penalty for not meeting the Equipment Level Requirement (ReqLv): Hit Bonus (Hit) −2, Effect −10%.
+      - >
+        >
+      - >
+        [Basic Shop General Principle] Town shops sell only "basic (white-board) items": basic equipment (Common, no special effects) + basic consumables (Beginner Healing Potion, Mana Potion) + basic food (Holy Light Wheat-tier recovery type).
+      - >
+        Consumables and dishes **also follow** this principle — mid/high-tier potions, bombs, scrolls, and buff dishes **are not stocked on shop shelves**, and must be self-crafted via Life Skills (Farming → Alchemy / Cooking) or obtained from adventure drops.
+      - >
+        The Basic Shop offers white-board items matching the player's Character Level (CL) with corresponding ReqLv (ReqLv floats ±2 levels), so high-CL players can purchase suitable basic gear, addressing Audit Item 40.
+      - >
+        [Crafting System] All equipment / consumables / dishes use "Material-attribute Driven" design: finished product values are determined by the **Material Table** (see Section III, 8 unified fields) + **Item Template**, freely combined by players. This catalog does not exhaustively list finished products, only materials tables, templates, and a few examples.
+      - ---
+    tables:
+      []
+  - heading: "I. Equipment"
+    text:
+      []
+    tables:
+      []
+  - heading: "1-0 White-board Baseline (Common ×1 / No Material Requirement)"
+    text:
+      - >
+        Per Audit Item ④ "White-board Equipment Gap", supplemented: town Basic Shops supply "strictly one-tier-lower" basic gear by ReqLv (Common rarity ×1, no material requirement, durability matches the corresponding slot). Weapon damage dice / armor Damage Reduction (DR) percentages are all "one tier lower" than the same-name premium gear, price = White-board Price formula (Common ×1).
+      - >
+        Note: White-board armor DR uses percentages (DR%), consistent with the combat Damage Reduction system and bounded by the total DR Cap of 60%; the original instruction "DR 1d8 / 1d10 / 1d12 / 2d8" is presented as "strictly one-tier-lower" percentages (e.g., at ReqLv30 white-board is 40%, lower than Guardian Plate's 45%).
+    tables:
+      - columns:
+          - Name
+          - Rarity (Multiplier)
+          - Class Restriction
+          - Equipment Level Requirement (ReqLv)
+          - Stats / Effect
+          - Durability
+          - Price (G)
+        rows:
+          - Name: White-board Longsword
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Weapon Damage 1d8 Slash; Melee
+            Durability: 40
+            Price (G): 20
+          - Name: White-board Longsword ·5
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Weapon Damage 1d8 Slash; Melee
+            Durability: 40
+            Price (G): 259
+          - Name: White-board Greatsword
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Weapon Damage 1d10 Slash; Melee
+            Durability: 40
+            Price (G): 938
+          - Name: White-board Heavy Sword
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Weapon Damage 1d12 Slash; Melee
+            Durability: 40
+            Price (G): 3,781
+          - Name: White-board Holy Sword
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 30
+            Stats / Effect: Weapon Damage 2d8 Slash; Melee
+            Durability: 40
+            Price (G): 8,902
+          - Name: White-board Leather Armor
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Damage Reduction (DR) 8% Physical; Light armor
+            Durability: 50
+            Price (G): 20
+          - Name: White-board Leather Armor ·5
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Damage Reduction (DR) 12% Physical; Light armor
+            Durability: 50
+            Price (G): 259
+          - Name: White-board Chainmail
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Damage Reduction (DR) 25% Physical; Medium armor, Strength (STR) ≥13
+            Durability: 50
+            Price (G): 938
+          - Name: White-board Plate Armor
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Damage Reduction (DR) 30% Physical; Heavy armor, Constitution (CON) ≥12
+            Durability: 80
+            Price (G): 3,781
+          - Name: White-board Dragon Scale Armor
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 30
+            Stats / Effect: Damage Reduction (DR) 40% Physical; Heavy armor
+            Durability: 80
+            Price (G): 8,902
+  - heading: "1-1 Weapon"
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - Rarity (Multiplier)
+          - Class Restriction
+          - Equipment Level Requirement (ReqLv)
+          - Stats / Effect
+          - Durability
+          - Price (G)
+        rows:
+          - Name: Training Longsword
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Weapon Damage 1d8 Slash; Melee
+            Durability: 40
+            Price (G): 20
+          - Name: Hunter's Longbow
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Hunter
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Weapon Damage 1d6 Pierce; Long Range (8 squares)
+            Durability: 40
+            Price (G): 20
+          - Name: Thief's Dagger
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Thief
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Weapon Damage 1d4 Pierce; Dexterity (DEX) bonus to hit
+            Durability: 40
+            Price (G): 20
+          - Name: Fist Gauntlets
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Monk
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Weapon Damage 1d4 Bludgeon; Unarmed usable
+            Durability: 40
+            Price (G): 20
+          - Name: Mage's Wand
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Mage
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Spell Focus; Magic (MAG) spell hit +1
+            Durability: 40
+            Price (G): 20
+          - Name: Cleric's Staff
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Cleric
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Holy spell focus; Healing amount +5%
+            Durability: 40
+            Price (G): 20
+          - Name: Dancer's Instrument
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Dancer
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Casting focus; Buff skill range +1 square
+            Durability: 40
+            Price (G): 20
+          - Name: Raging Wind Fist Blade
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Monk
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Weapon Damage 1d6 Bludgeon (Base Multiplier B=1.0, unarmed usable); Dexterity (DEX) +1
+            Durability: 40
+            Price (G): 777
+          - Name: Mountain-crushing Iron Fist
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Monk
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Weapon Damage 1d8 Bludgeon; Critical Threshold (CritTh) −1; Strength (STR) ≥13
+            Durability: 40
+            Price (G): 7,504
+          - Name: Holy Radiance Scepter
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Cleric
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Holy spell focus; Healing amount +10%; Holy spell B +0.2
+            Durability: 40
+            Price (G): 777
+          - Name: Ever-oath Bishop's Staff
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Cleric
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Holy spell focus; Healing amount +15%; Holy/Aura spell B +0.3; Magic (MAG) ≥13
+            Durability: 40
+            Price (G): 7,504
+          - Name: Flowing Light Harp
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Dancer
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Casting focus; Buff skill range +1 square; Buff spell B +0.2; Action Point (AP) grant +1
+            Durability: 40
+            Price (G): 777
+          - Name: Iridescent Tambourine
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Dancer
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Casting focus; Buff skill range +2 squares; Buff/Control spell B +0.3; Magic (MAG) ≥13
+            Durability: 40
+            Price (G): 7,504
+          - Name: Fine Steel Greatsword
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Weapon Damage 1d10 Slash; Strength (STR) ≥13
+            Durability: 60
+            Price (G): 777
+          - Name: Shadow Dagger
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Thief
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Weapon Damage 1d6 Pierce; Backstab Critical Threshold (CritTh) additional −1
+            Durability: 40
+            Price (G): 777
+          - Name: Swift Wind Short Bow
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Hunter
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Weapon Damage 1d8 Pierce; Long Range (10 squares)
+            Durability: 40
+            Price (G): 777
+          - Name: Flame Staff
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Mage
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Fire spell B +0.3; Magic (MAG) ≥13
+            Durability: 40
+            Price (G): 7,504
+          - Name: Frost Wand
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Mage / Cleric
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Frost spell B +0.3; Spell hit +2
+            Durability: 40
+            Price (G): 7,504
+          - Name: Mithril Greatsword
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Weapon Damage 1d12 Slash; Strength (STR) ≥13
+            Durability: 60
+            Price (G): 7,504
+          - Name: Formation-breaker Greatsword
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 15
+            Stats / Effect: Weapon Damage 2d6 Slash; Critical Threshold (CritTh) −1
+            Durability: 60
+            Price (G): 16,768
+          - Name: Dawn-break Holy Bow
+            Rarity (Multiplier): Epic (×20)
+            Class Restriction: Hunter
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Weapon Damage 2d6 Pierce; Damage vs Undead ×1.5; Dexterity (DEX) ≥14
+            Durability: 40
+            Price (G): 75,620
+          - Name: Star Radiance Staff
+            Rarity (Multiplier): Epic (×20)
+            Class Restriction: Mage / Cleric
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Spell focus; All-spell Base Multiplier (B) +0.5; Magic (MAG) ≥16
+            Durability: 40
+            Price (G): 75,620
+          - Name: Heavenly Sound Harp
+            Rarity (Multiplier): Epic (×20)
+            Class Restriction: Dancer
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Casting focus; Buff/Control spell Base Multiplier (B) +0.5; Buff skill range +2 squares; Magic (MAG) ≥16
+            Durability: 40
+            Price (G): 75,620
+          - Name: Blazing Sun Greatsword
+            Rarity (Multiplier): Epic (×20)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Weapon Damage 2d8 Slash; Sunder (ignores 15% Physical DR); Strength (STR) ≥15
+            Durability: 60
+            Price (G): 75,620
+          - Name: Moon-devouring Greatsword
+            Rarity (Multiplier): Epic (×20)
+            Class Restriction: Warrior / Hunter
+            Equipment Level Requirement (ReqLv): 25
+            Stats / Effect: Weapon Damage 2d10 Slash; Critical Threshold (CritTh) −2; Strength (STR) ≥16 or Dexterity (DEX) ≥15
+            Durability: 60
+            Price (G): 120,780
+          - Name: Legendary Sword · Dragon-slayer
+            Rarity (Multiplier): Legendary (×35)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 30
+            Stats / Effect: Weapon Damage 3d8 Slash; Damage vs Dragon ×1.5; Sunder
+            Durability: 60
+            Price (G): 311,570
+          - Name: Eternal Astral Staff
+            Rarity (Multiplier): Legendary (×35)
+            Class Restriction: Mage / Cleric
+            Equipment Level Requirement (ReqLv): 30
+            Stats / Effect: Spell focus; All-spell Base Multiplier (B) +0.7; Spell hit +3; Magic (MAG) ≥18
+            Durability: 40
+            Price (G): 311,570
+          - Name: Lute of the Gods
+            Rarity (Multiplier): Legendary (×35)
+            Class Restriction: Dancer
+            Equipment Level Requirement (ReqLv): 30
+            Stats / Effect: Casting focus; Buff/Control spell Base Multiplier (B) +0.7; Buff skill range +3 squares; Action Point (AP) grant +2; Magic (MAG) ≥18
+            Durability: 40
+            Price (G): 311,570
+  - heading: "1-2 Armor"
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - Rarity (Multiplier)
+          - Class Restriction
+          - Equipment Level Requirement (ReqLv)
+          - Stats / Effect
+          - Durability
+          - Price (G)
+        rows:
+          - Name: Light Leather Armor
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Thief / Hunter / Dancer / Monk
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Damage Reduction (DR) 10% Physical; Light armor
+            Durability: 50
+            Price (G): 20
+          - Name: Apprentice's Robe
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Mage / Cleric
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Damage Reduction (DR) 5%; Magic (MAG) +1
+            Durability: 50
+            Price (G): 20
+          - Name: Chainmail
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Damage Reduction (DR) 20% Physical; Strength (STR) ≥13
+            Durability: 50
+            Price (G): 777
+          - Name: Plate Armor
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Damage Reduction (DR) 30% Physical; Heavy armor, Constitution (CON) ≥12
+            Durability: 80
+            Price (G): 7,504
+          - Name: Dragon Scale Breastplate
+            Rarity (Multiplier): Epic (×20)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Damage Reduction (DR) 35% Physical + Fire Resistance ×0.5
+            Durability: 80
+            Price (G): 75,620
+          - Name: Guardian Plate · Ever-oath
+            Rarity (Multiplier): Legendary (×35)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 30
+            Stats / Effect: Damage Reduction (DR) 45% Physical; Critical hit damage taken −20%
+            Durability: 80
+            Price (G): 311,570
+          - Name: Ranger's Cloak
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Hunter / Thief
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Damage Reduction (DR) 12% Physical; Evasion (EVA) +2
+            Durability: 50
+            Price (G): 777
+  - heading: "1-2a Head / Hand / Foot Armor"
+    text:
+      - Head / Hand / Foot are independent armor slots (calculated separately from body armor, DR can stack), and Basic Shop white-board items are stocked by Equipment Level Requirement (ReqLv); examples below.
+      - >
+        Head / Hand / Foot armor slots are independent and multiply with body armor DR (see combat DR rules); prices align with the White-board Price formula (Common ReqLv1 = 20G / Fine ReqLv5 = 777G).
+    tables:
+      - columns:
+          - Name
+          - Rarity (Multiplier)
+          - Class Restriction
+          - Equipment Level Requirement (ReqLv)
+          - Stats / Effect
+          - Durability
+          - Price (G)
+        rows:
+          - Name: Leather Helm
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Damage Reduction (DR) 5% Physical; Light armor (head)
+            Durability: 50
+            Price (G): 20
+          - Name: Fine Steel Helmet
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Warrior / Monk
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Damage Reduction (DR) 10% Physical; Strength (STR) ≥13 (head)
+            Durability: 50
+            Price (G): 777
+          - Name: Leather Gauntlets
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Damage Reduction (DR) 3% Physical; Unarmed/Fist weapon damage +1 (hand)
+            Durability: 50
+            Price (G): 20
+          - Name: Chainmail Gloves
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Warrior / Monk
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Damage Reduction (DR) 8% Physical (hand)
+            Durability: 50
+            Price (G): 777
+          - Name: Traveler's Boots
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Damage Reduction (DR) 3% Physical; Movement +1 square (foot)
+            Durability: 50
+            Price (G): 20
+          - Name: Swift Wind Boots
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Hunter / Thief / Dancer
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Damage Reduction (DR) 8% Physical; Evasion (EVA) +1 (foot)
+            Durability: 50
+            Price (G): 777
+  - heading: "1-2b Shield"
+    text:
+      - Shields are an independent equipment slot (do not occupy weapon/armor slots); once equipped they activate the Warrior's passive "Iron Wall" and the GM book 7.7 Block reaction. Block Value provides additional reduction at the end of final damage after an enemy's melee hit (Shield base Block Value + Warrior "Iron Wall" +1.2 per Class Level (ClassLv)).
+    tables:
+      - columns:
+          - Name
+          - Rarity (Multiplier)
+          - Class Restriction
+          - Equipment Level Requirement (ReqLv)
+          - Block Value
+          - Stats / Effect
+          - Durability
+          - Price (G)
+        rows:
+          - Name: Wooden Shield
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: Warrior / Monk / Thief / Hunter
+            Equipment Level Requirement (ReqLv): 1
+            Block Value: 5
+            Stats / Effect: Damage Reduction (DR) 5% Physical
+            Durability: 40
+            Price (G): 25
+          - Name: Steel Shield
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: Warrior / Monk
+            Equipment Level Requirement (ReqLv): 5
+            Block Value: 7
+            Stats / Effect: Damage Reduction (DR) 10% Physical
+            Durability: 50
+            Price (G): 777
+          - Name: Tower Shield
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: Warrior
+            Equipment Level Requirement (ReqLv): 10
+            Block Value: 9
+            Stats / Effect: Damage Reduction (DR) 15% Physical; Constitution (CON) ≥12
+            Durability: 80
+            Price (G): 7,504
+          - Name: Holy Shield · Ever-oath
+            Rarity (Multiplier): Legendary (×35)
+            Class Restriction: Cleric / Paladin
+            Equipment Level Requirement (ReqLv): 30
+            Block Value: 12
+            Stats / Effect: Damage Reduction (DR) 20% Physical; Critical hit damage taken −15%
+            Durability: 80
+            Price (G): 311,570
+  - heading: "1-3 Accessory"
+    text:
+      - ---
+    tables:
+      - columns:
+          - Name
+          - Rarity (Multiplier)
+          - Class Restriction
+          - Equipment Level Requirement (ReqLv)
+          - Stats / Effect
+          - Durability
+          - Price (G)
+        rows:
+          - Name: Strength Ring
+            Rarity (Multiplier): Common (×1)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 1
+            Stats / Effect: Strength (STR) +1
+            Durability: 60
+            Price (G): 20
+          - Name: Dexterity Amulet
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Dexterity (DEX) +2; Evasion (EVA) +1
+            Durability: 60
+            Price (G): 777
+          - Name: Mana Orb
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Magic (MAG) +3; Mana Point (MP) +10
+            Durability: 60
+            Price (G): 7,504
+          - Name: Lucky Coin
+            Rarity (Multiplier): Fine (×3)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 5
+            Stats / Effect: Luck (LUK) +2; Drop rate +5%
+            Durability: 60
+            Price (G): 777
+          - Name: Critical Amulet
+            Rarity (Multiplier): Epic (×20)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 20
+            Stats / Effect: Critical Threshold (CritTh) −2; Critical damage +10%
+            Durability: 60
+            Price (G): 75,620
+          - Name: Guardian Earring
+            Rarity (Multiplier): Rare (×8)
+            Class Restriction: All classes
+            Equipment Level Requirement (ReqLv): 10
+            Stats / Effect: Health (HP) +20; All abnormal status resistance +5%
+            Durability: 60
+            Price (G): 7,504
+  - heading: "II. Consumable"
+    text:
+      - >
+        Price formula: Base Price × (1 + 0.10 × (Recommended Level − 1)).
+      - >
+        The "Acquisition" column indicates: Shop-sold (white-board basic) / Self-crafted (Alchemy) / Drop. The "Price" in the table is the **Crafting Cost Baseline** (not the shop sale price).
+      - >
+        High-tier consumable prices follow the White-board Price formula × Rarity Multiplier (Audit Item ⑥): ReqLv20 Epic ×20 = White-board Price 3,781 ×20 = 75,620G; ReqLv30 Legendary ×35 = White-board Price 8,902 ×35 = 311,570G.
+      - >
+        Bombs / scrolls and mid/high-tier potions are **not stocked on shop shelves** (see the Basic Shop General Principle at top), and can only be Alchemy-crafted or dropped by monsters; and they are **for personal use or delivery of commissions/quests only, and may not be resold to shops or specialty merchants for cash** (cutting the gathering → Alchemy farm loop; see GM Book §4.4).
+      - ---
+    tables:
+      - columns:
+          - Name
+          - Type
+          - Rarity
+          - Recommended Level
+          - Stats / Effect (Material Example)
+          - Acquisition
+          - Crafting Cost Baseline (G)
+        rows:
+          - Name: Beginner Healing Potion
+            Type: Potion
+            Rarity: Common
+            Recommended Level: 1
+            Stats / Effect (Material Example): Restore Health (HP) 2d6 (Healing Herb)
+            Acquisition: Shop-sold / Self-crafted
+            Crafting Cost Baseline (G): 20
+          - Name: Intermediate Healing Potion
+            Type: Potion
+            Rarity: Common
+            Recommended Level: 5
+            Stats / Effect (Material Example): Restore Health (HP) 4d6 (Healing Herb ×2 + Adjuvant)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 227
+          - Name: Advanced Healing Potion
+            Type: Potion
+            Rarity: Fine
+            Recommended Level: 10
+            Stats / Effect (Material Example): Restore Health (HP) 8d6 (Holy Light Flower)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 758
+          - Name: Mana Potion
+            Type: Potion
+            Rarity: Common
+            Recommended Level: 5
+            Stats / Effect (Material Example): Restore Mana Point (MP) 3d6 (Mana Mushroom)
+            Acquisition: Shop-sold / Self-crafted
+            Crafting Cost Baseline (G): 227
+          - Name: Strong Mana Potion
+            Type: Potion
+            Rarity: Fine
+            Recommended Level: 10
+            Stats / Effect (Material Example): Restore Mana Point (MP) 6d6 (Mana Mushroom ×2)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 758
+          - Name: Fire Bomb
+            Type: Bomb
+            Rarity: Common
+            Recommended Level: 5
+            Stats / Effect (Material Example): Fire Area Effect (AOE) radius 1; Damage 3d6 Fire (Fire Flower)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 227
+          - Name: Frost Bomb
+            Type: Bomb
+            Rarity: Fine
+            Recommended Level: 10
+            Stats / Effect (Material Example): Frost Area Effect (AOE) radius 1; 2d6 Frost + Chill (Frost Dew)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 758
+          - Name: Flash Scroll
+            Type: Scroll
+            Rarity: Common
+            Recommended Level: 3
+            Stats / Effect (Material Example): Area Effect (AOE) radius 2; Enemy Evasion (EVA) −20%, Blind 1 turn
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 100
+          - Name: Purify Scroll
+            Type: Scroll
+            Rarity: Fine
+            Recommended Level: 5
+            Stats / Effect (Material Example): Remove 1~2 abnormal statuses (Purifying Moss)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 227
+          - Name: Firepower Scroll
+            Type: Scroll
+            Rarity: Fine
+            Recommended Level: 10
+            Stats / Effect (Material Example): Single-target Fire damage 5d6; applies Burn (Fire Flower)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 758
+          - Name: Group Healing Potion
+            Type: Potion
+            Rarity: Epic
+            Recommended Level: 20
+            Stats / Effect (Material Example): Restore all allies within 3 squares range Health (HP) 4d8 (Group Healing Herb)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 75,620
+          - Name: Status-cure Potion
+            Type: Potion
+            Rarity: Epic
+            Recommended Level: 20
+            Stats / Effect (Material Example): Clear 1~2 abnormal statuses from all allies within 3 squares range (Cleansing Moss)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 75,620
+          - Name: High-tier Single-target Healing Potion
+            Type: Potion
+            Rarity: Legendary
+            Recommended Level: 30
+            Stats / Effect (Material Example): Restore single target Health (HP) 8d8 (Holy Healing Flower)
+            Acquisition: Self-crafted / Drop
+            Crafting Cost Baseline (G): 311,570
+  - heading: "III. Life-Skill Products and Material Tables"
+    text:
+      - >
+        Source: Gathering skills (Mining / Logging / Herbalism / Fishing & Hunting / Farming) produce raw materials; crafting skills (Alchemy / Cooking / Smithing) take raw materials × Item Template to produce finished goods. Life Skills do not consume Skill Points (SP).
+      - >
+        **The complete material list is maintained as a separate volume**: all materials and their 8 unified fields (Damage Base (DmgBase) / DR Base (DRBase) / Stat Bonus (StatBonus) / Durability Base (DurBonus) / Special-effect Tags (Tags) / Level Requirement & Rarity files (ReqLv / Rarity) / Heal Base (HealBase) / Buff Type & Value (BuffType / BuffVal)) are detailed in **`圖鑑/材料圖鑑.md`**. This section retains only each crafting skill's description and a few finished-product examples, to avoid duplicate maintenance. A blank "—" indicates the material does not use that field.
+    tables:
+      []
+  - heading: "3-1 Gathering (Raw Material Sources) — see `材料圖鑑.md`"
+    text:
+      - The former "Farming" has been split into **Farming (Stronghold)** + **four field-gathering skills (Mining / Logging / Herbalism / Fishing & Hunting)**. For the raw material categories produced by each gathering skill and their corresponding materials, see `材料圖鑑.md` §1 Wood / §2 Ore & Metal / §3 Herbs / §4 Food Ingredients / §5 Accessory Materials / §6 Hunt Materials. Gathering DCs and node distribution are in Player Book Chapter 4.
+    tables:
+      []
+  - heading: "3-2 Alchemy — Herbs → Potions / Bombs / Scrolls (Facility: Laboratory)"
+    text:
+      - >
+        Uses the herb's `HealBase` / `DmgBase` / `Tags` to generate finished products (see Item Templates Potion / Bomb / Scroll). Beginner Healing / Mana Potions can be bought in shops; the rest are self-crafted / dropped.
+    tables:
+      []
+  - heading: "3-3 Cooking — Ingredients → Dishes (Facility: Kitchen)"
+    text:
+      - >
+        **Basic Food (sold at Basic Shops, for Health (HP) recovery)**: Basic food is not listed under the self-crafted dish column, but sold directly by town Basic Shops (see the Basic Shop General Principle at top). Named examples below:
+      - >
+        - **Holy Light Wheat Bread**: Type Basic Food; Rarity Common; Recommended Level 1; Effect Restores Health (HP) 1d6 +2, and grants temporary Health (HP) max +5 (Buff Level 1, lasts for combat); Shop Sale Price **20 Gold (G)** (White-board Price = Base Price floor(20×1^1.3)=20 × (1+0.15×0)=20G, aligned with the "basic food priced by white-board price" dish pricing formula). Does not occupy the dish slot; can be carried and used in combat.
+      - >
+        All dishes are uniformly "self-crafted (kitchen)", not sold in shops (except basic food).
+      - >
+        If self-crafted dishes are traded between players or bought by NPCs, sale price = main ingredient base price × (1 + 0.4 × buff level) (buff level 1~3); basic food is instead priced by white-board price (Audit Item 41).
+    tables:
+      - columns:
+          - Dish (Example)
+          - Main Ingredient
+          - Buff Effect
+          - Acquisition
+        rows:
+          - Dish (Example): Hero's Stew
+            Main Ingredient: Meat
+            Buff Effect: Temporary Hit Bonus (Hit) +2, lasts 3 turns
+            Acquisition: Self-crafted (Kitchen)
+          - Dish (Example): Recovery Bread
+            Main Ingredient: Holy Light Wheat
+            Buff Effect: Temporary Health (HP) max +10, lasts for combat
+            Acquisition: Self-crafted (Kitchen)
+          - Dish (Example): Energy Soup
+            Main Ingredient: Egg
+            Buff Effect: Temporary Mana Point (MP) max +15, lasts for combat
+            Acquisition: Self-crafted (Kitchen)
+          - Dish (Example): Lucky Pie
+            Main Ingredient: Honey
+            Buff Effect: Temporary Luck (LUK) +1, lasts 1 day
+            Acquisition: Self-crafted (Kitchen)
+  - heading: "3-4 Smithing — Metal / Wood → Equipment (Facility: Forge)"
+    text:
+      - >
+        Uses metal/wood material's `DmgBase` / `DRBase` / `StatBonus` / `DurBonus` / `Tags` to generate equipment (see Item Templates Weapon / Armor / Accessory). The complete material list is in `材料圖鑑.md` §1 Wood / §2 Ore & Metal / §5 Accessory Materials.
+    tables:
+      - columns:
+          - Material (Finished-grade, Example)
+          - Rarity
+          - ReqLv
+          - Key Fields
+        rows:
+          - Material (Finished-grade, Example): Fine Steel Ingot
+            Rarity: Fine
+            ReqLv: 5
+            Key Fields: DmgBase 1d10 / DRBase 20% (Chainmail) / Sunder
+          - Material (Finished-grade, Example): Mithril
+            Rarity: Rare
+            ReqLv: 10
+            Key Fields: DmgBase 1d12
+          - Material (Finished-grade, Example): Plate Steel
+            Rarity: Rare
+            ReqLv: 10
+            Key Fields: DRBase 30% / Heavy armor (Constitution ≥12)
+          - Material (Finished-grade, Example): Dragon Scale
+            Rarity: Epic
+            ReqLv: 20
+            Key Fields: DmgBase 2d6 (Weapon) / DRBase 35% + Fire resist + (Armor)
+          - Material (Finished-grade, Example): Strength Crystal / Mana Crystal / Guardian Feather
+            Rarity: Common~Rare
+            ReqLv: 1~10
+            Key Fields: StatBonus (see `材料圖鑑.md` §5)
+  - heading: "Item Templates and Material → Finished Product Conversion Formulas (Audit Gap Filled)"
+    text:
+      - >
+        Players freely combine "materials (8 unified fields) × item templates" to produce finished goods. This catalog does not exhaustively list finished products, only defining how each template maps material fields to finished-product values. There are six template types:
+      - >
+        General rule: unused fields are left blank with "—"; `ReqLv` determines the finished product's level requirement and base price (see top formula and Section IV quick reference), `Rarity` determines the rarity multiplier (Common ×1 / Fine ×3 / Rare ×8 / Epic ×20 / Legendary ×35). Finished white-board price = Base Price × (1 + 0.15 × (ReqLv − 1)) × Rarity Multiplier.
+    tables:
+      - columns:
+          - Item Template
+          - Material 8 Fields → Finished Product Value Mapping
+        rows:
+          - Item Template: Weapon (Weapon)
+            Material 8 Fields → Finished Product Value Mapping: "`DmgBase` accumulates into base weapon damage (damage die); `DRBase` converts to Damage Reduction (Sunder / Block); `StatBonus` converts to attribute bonus (STR/DEX/MAG or accuracy); `DurBonus` converts to Durability (Weapon 40 / Heavy 60); `Tags` convert to special effects (Elemental / Critical, etc.); `ReqLv/Rarity` determines level requirement and price multiplier."
+          - Item Template: Armor (Armor)
+            Material 8 Fields → Finished Product Value Mapping: "`DRBase` converts to Damage Reduction (Physical reduction %); `StatBonus` converts to attribute bonus (MAG+1, CON≥12, etc.); `DurBonus` converts to Durability (Armor 50 / Heavy Armor 80); `Tags` convert to resistances / special (Fire resist, reduced critical damage taken); `ReqLv/Rarity` determines requirement and multiplier."
+          - Item Template: Accessory (Accessory)
+            Material 8 Fields → Finished Product Value Mapping: "`StatBonus` converts to attribute bonus (STR/DEX/MAG/LUK/HP/MP/CritTh/EVA, etc.); `DurBonus` converts to Durability (60); `BuffType/BuffVal` converts to passive buff (Critical damage +%, drop rate +%); `Tags` convert to resistances; `ReqLv/Rarity` determines requirement and multiplier."
+          - Item Template: Potion (Potion)
+            Material 8 Fields → Finished Product Value Mapping: "`HealBase` → healing amount (restores HP/MP die); `DmgBase` → damage (offensive potion); `Tags` → added status (Burn / Purify); `BuffType/BuffVal` → temporary buff; `ReqLv/Rarity` determines level and base price."
+          - Item Template: Bomb (Bomb)
+            Material 8 Fields → Finished Product Value Mapping: "`DmgBase` → area damage die (AOE radius 1); `Tags` → element and added status (Fire / Frost + Chill); `ReqLv/Rarity` determines level and base price; `DurBonus` not applicable (consumables have no durability)."
+          - Item Template: Scroll (Scroll)
+            Material 8 Fields → Finished Product Value Mapping: "`DmgBase`/`Tags` determine area and status (AOE radius, EVA−%, Blind / Burn, etc.); `HealBase` converts to purify / cleanse effect; `ReqLv/Rarity` determines level and base price; `DurBonus` not applicable."
+  - heading: "3-5 Accessory Materials (for Smithing) — see `材料圖鑑.md` §5"
+    text:
+      - Accessory materials (Strength Crystal / Dexterity Charmstone / Lucky Coin Ore / Mana Crystal / Guardian Feather / Critical Eye / Dragon Eye Stone, etc.) full 8-field values and acquisition sources are already recorded in **`圖鑑/材料圖鑑.md` §5 Accessory Materials**, so this catalog does not list them again, avoiding dual maintenance. Smithing uses their `StatBonus` / `DurBonus` / `Tags` to generate accessories (see Item Template Accessory).
+      - >
+        ⚠ Marker note: Frost Dew (bomb/scroll fuse DmgBase 2d6, per 05 §3.1.1 separate bracket), Holy Light Wheat (Health (HP) max +10) / Egg (Mana Point (MP) max +15, max-type Buff, per 05 §3.5(B) separate bracket) — these three exceed the "Weapon DmgBase" and "bonus-type Buff" main-table brackets, but per the numeric framework (05) ruling by the GM, they fall into the corresponding separate brackets and are legal, not overpowered.
+      - ---
+    tables:
+      []
+  - heading: "IV. Price Quick Reference (Base Price Comparison)"
+    text:
+      - |-
+        *The catalog now uses material tables + templates + examples, not exhaustively listing finished products; the above table shows material tables and representative examples; actual craftable items are freely combined by players as 'Material × Item Template'.
+      - ---
+    tables:
+      - columns:
+          - Recommended Level (ReqLv)
+          - Base Price floor(20×Character Level (CL)^1.3)
+          - White-board Price (×1+0.15×(ReqLv−1))
+          - Fine ×3
+          - Rare ×8
+          - Epic ×20
+          - Legendary ×35
+        rows:
+          - Recommended Level (ReqLv): 1
+            Base Price floor(20×Character Level (CL)^1.3): 20
+            White-board Price (×1+0.15×(ReqLv−1)): 20
+            Fine ×3: 60
+            Rare ×8: 160
+            Epic ×20: 400
+            Legendary ×35: 700
+          - Recommended Level (ReqLv): 5
+            Base Price floor(20×Character Level (CL)^1.3): 162
+            White-board Price (×1+0.15×(ReqLv−1)): 259
+            Fine ×3: 777
+            Rare ×8: 2,072
+            Epic ×20: 5,180
+            Legendary ×35: 9,065
+          - Recommended Level (ReqLv): 10
+            Base Price floor(20×Character Level (CL)^1.3): 399
+            White-board Price (×1+0.15×(ReqLv−1)): 938
+            Fine ×3: 2,814
+            Rare ×8: 7,504
+            Epic ×20: 18,760
+            Legendary ×35: 32,830
+          - Recommended Level (ReqLv): 15
+            Base Price floor(20×Character Level (CL)^1.3): 676
+            White-board Price (×1+0.15×(ReqLv−1)): 2,096
+            Fine ×3: 6,288
+            Rare ×8: 16,768
+            Epic ×20: 41,920
+            Legendary ×35: 73,360
+          - Recommended Level (ReqLv): 20
+            Base Price floor(20×Character Level (CL)^1.3): 982
+            White-board Price (×1+0.15×(ReqLv−1)): 3,781
+            Fine ×3: 11,343
+            Rare ×8: 30,248
+            Epic ×20: 75,620
+            Legendary ×35: 132,335
+          - Recommended Level (ReqLv): 25
+            Base Price floor(20×Character Level (CL)^1.3): 1,313
+            White-board Price (×1+0.15×(ReqLv−1)): 6,039
+            Fine ×3: 18,117
+            Rare ×8: 48,312
+            Epic ×20: 120,780
+            Legendary ×35: 211,365
+          - Recommended Level (ReqLv): 30
+            Base Price floor(20×Character Level (CL)^1.3): 1,664
+            White-board Price (×1+0.15×(ReqLv−1)): 8,902
+            Fine ×3: 26,706
+            Rare ×8: 71,216
+            Epic ×20: 178,040
+            Legendary ×35: 311,570
+          - Recommended Level (ReqLv): 50
+            Base Price floor(20×Character Level (CL)^1.3): 3,230
+            White-board Price (×1+0.15×(ReqLv−1)): 26,971
+            Fine ×3: 80,913
+            Rare ×8: 215,768
+            Epic ×20: 539,420
+            Legendary ×35: 943,985
+  - heading: "V. Economy: Buying/Selling and Discount Rates (Player Sell / NPC Buyback)"
+    text:
+      - |
+        > Audit supplement: originally only dishes had an NPC buyback formula; now a general 'Player Sell Discount Rate' and 'NPC Buyback Discount Rate' are added, closing the cash-out and buyback loop for equipment / consumables / materials / dishes.
+        - **Player Sell Discount Rate (Player → Town Shop Resale)**: When a player sells equipment / white-board basic consumables / materials back to a town shop, recovery = current sale price × **50%** (rounded down with floor). Basic Shops buy back at this price to avoid infinite money farming and stay consistent with market recovery; **Alchemy products (potions / bombs / scrolls) are not purchased by shops**.
+        - **NPC Buyback Discount Rate (Player → NPC Buyer Sale)**:
+        - General-goods NPC buyback multiplier **0.6** (player receives 60% of base price);
+        - Specialty merchant (corresponding field, e.g., a dish shop owner buys dishes, a smith buys equipment/materials) buyback multiplier **0.8** (80% of base price); **Alchemy products (potions / bombs / scrolls) do not apply to this 0.8 buyback multiplier — they are for personal use or delivery of commissions/quests only, and may not be resold at high price (cutting the farm loop).**
+        - **Dish Special Case**: Self-crafted dishes traded between players or bought by NPCs have sale price = main ingredient base price × (1 + 0.4 × buff level) (buff level 1~3); this formula is a special case of the 'specialty merchant buyback price' and takes priority over the 0.8 multiplier (Audit Item 41).
+        - **Base Price Definition**: Equipment / Accessories = White-board Price (Base Price × (1+0.15×(ReqLv−1)) × Rarity Multiplier); Consumables = Crafting Cost Baseline; Materials = Material Base Price; Dishes = the main-ingredient formula above.
+        - **Player-to-Player Trade**: Both sides freely negotiate, not limited by discount rates; dishes traded to other players reference the NPC buyback formula as pricing baseline.
+        - **Repair and Resale are Mutually Exclusive**: Equipment at 0 Durability can only be refurbished (sale price ×2 refurbish cost, see Durability rules at top) and does not apply the sell discount.
+    tables:
+      []

@@ -1,0 +1,74 @@
+id: D1
+name: Goblin Lair
+recommended_rank: "F/E (CR 1-8)"
+theme: Wilderness Cave
+grid: { cols: 4, rows: 3 }
+rooms:
+  - id: R1
+    name: Entrance Cave
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: The only entry/exit point; retreating here means a safe escape.
+  - id: R2
+    name: Front Hall
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R4]
+    cr: 2
+    enemies: [Goblin Warrior x2]
+    combat_map: maps/D1_戰鬥_前廳.yaml
+    desc: Guarded by 2 Goblin Warriors.
+  - id: R3
+    name: Storage Den
+    type: treasure
+    gx: 2
+    gy: 0
+    links: [R2, R5]
+    treasure: Goblin Earring x2, Ragged Cloth x3, G 40~80
+    desc: Pile of food and broken weapons.
+  - id: R4
+    name: Trap Corridor
+    type: trap
+    gx: 1
+    gy: 1
+    links: [R2, R6]
+    trap: Weak (Spiked Stakes, DC12 / 1d6)
+    desc: A corridor with weak traps.
+  - id: R5
+    name: Inner Chamber
+    type: combat
+    gx: 2
+    gy: 1
+    links: [R3, R6]
+    cr: 3
+    enemies: [Goblin Archer x2]
+    combat_map: maps/D1_戰鬥_寢窟.yaml
+    desc: Resting place of 2 Goblin Archers.
+  - id: R6
+    name: Sacrificial Pit
+    type: trap
+    gx: 1
+    gy: 2
+    links: [R4, R5, R7]
+    trap: Strong (Falling Rocks, DC20 / 3d6 + Stun)
+    desc: A strong trap pit; falling rocks can block the passage.
+  - id: R7
+    name: Throne Crypt
+    type: elite
+    gx: 2
+    gy: 2
+    links: [R6, R8]
+    cr: 5
+    enemies: [Goblin King (Boss)]
+    combat_map: maps/D1_戰鬥_王座窟.yaml
+    desc: Mini-boss Goblin King (CR5).
+  - id: R8
+    name: Escape Passage
+    type: exit
+    gx: 3
+    gy: 2
+    links: [R7]
+    desc: Exit; a village child is held captive. Rescue to clear the dungeon.

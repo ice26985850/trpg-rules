@@ -1,0 +1,62 @@
+name: Iron Ribs' Blood
+difficulty: Introductory (CR 2-3)
+mode: Mortal · Multiplayer
+players: 2-4
+judge: Astaroth (Puritan)
+target_region: Tarr-Morag Hive City, Mid Hive (Levels 800-900), abandoned Cooling Tunnels
+recommended_attributes: 2-3
+opening_description: 'You are a new batch of Penitents, formed into a squad and sent to the abandoned Cooling Tunnels of Tarr-Morag Hive City. Inquisitor Astaroth''s gaze watches you from the shadows—this is a test of teamwork.
+
+  '
+surface_goal: Destroy a small Chaos cult outpost operating in the abandoned Cooling Tunnels, and bring back the relic used by the cult.
+hidden_goal: Astaroth wants to test whether this batch of new Penitents can maintain teamwork under pressure. The relic itself is of little value.
+known_threats:
+- Approximately 6-8 low-ranking cultist followers
+- Possibly led by 1 Acolyte
+hidden_threats:
+- A section of the abandoned tunnels is structurally unstable—an explosion during combat could trigger a collapse
+- The cult is actually awaiting "supplies" from the Underhive; they are merely an outpost
+resources:
+  notes: Standard ration. One extra Medikit (the Inquisitor is more lenient with newcomers).
+  extra_medical_pack: 1
+seduction_notes:
+- 2 players receive Note 4 ("Nothing")
+- 1 player receives Note 1 (Betrayal for reduced sentence)—but the Inquisitor does not truly expect betrayal, only a test
+key_npcs:
+- name: Veteran Galen
+  role: Neutral Guide
+  detail: A former Astra Militarum Sergeant serving his punishment here. Knows the tunnel routes. Both sympathetic and contemptuous toward the Penitents
+- name: Acolyte Valak
+  role: Enemy Leader
+  detail: A young, fanatical, unskilled Chaos Acolyte. You may choose to persuade him to surrender (Mind Test, Hard), but he will be executed before the Inquisitor
+key_checks:
+- scene: Searching for the outpost in the tunnels
+  check: Investigation (Standard)
+  tn: Mind×10+Investigation
+  success: Find a shortcut and avoid patrols
+  failure: Encounter extra patrol (+2 cultists)
+- scene: Discovering the relic is corrupted
+  check: Psyniscience (Standard)
+  tn: Faith×10+Psyniscience
+  success: Detect Warp residue
+  failure: (Corruption+1 for whoever touches the relic)
+- scene: Persuading Valak to surrender
+  check: Oratory (Hard)
+  tn: Faith×10+Oratory−20
+  success: Avoid the final battle
+  failure: Proceed to Boss fight
+encounters:
+- name: Tunnel Patrol
+  enemies: Chaos Cultist×3
+  cr: 0×3
+  tactic: Basic gunfight introduction
+- name: Outpost Entrance
+  enemies: Chaos Cultist×4 + 1 Trap
+  cr: 0×4
+  tactic: Cultists fire from behind cover
+- name: Boss (if not persuaded)
+  enemies: Acolyte Valak + Cultist×2
+  cr: 1+0×2
+  tactic: Acolyte commands from the rear
+evacuation_condition: Proceed to the designated evacuation point after mission completion. No time limit (Astaroth gives newcomers room).
+map_ref: "maps/map11_cooling_tunnels"

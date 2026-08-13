@@ -1,0 +1,26 @@
+title: The Abyssal Gate
+type: multiplayer
+quality: ★★–★★★ Standard-grade to Expert-grade
+players: 2–4 mages
+sessions: 2–3
+core_output: Void Shard (Rare) + Space Shard (Uncommon/Rare)
+main_threat: Scrutiny by the Watcher Council, Taboo-research residue, extraplanar creatures
+prerequisite: At least one player with Academic Reputation ≥10 or of the Taboo style
+summary: The Ashville Ruins—site of the great explosion in Year 1102 of the Era—have recently shown new magical fluctuations. The Watcher Council is secretly organizing an expedition under the nominal pretext of an "academic survey," but its real purpose is to investigate whether Taboo researchers are conducting illegal experiments within the ruins.
+acts:
+- name: Act One—Two Invitations
+  scenes: []
+- name: Act Two—Into the Ruins
+  scenes: []
+- name: Act Three—Consequences
+  scenes: []
+npcs:
+- name: Watcher Expedition
+  detail: '- **Captain Olivia Ironwall**: veteran Watcher, Will 8, zero tolerance for Taboo research - **Researcher Tiberius**: young Academy mage, Theory 7, excessive curiosity - **Mercenary Captain Garrett**: responsible for protecting the expedition, Craft 7 At the camp, the players are assigned the task of mapping the magical residue of the ruins using Perception and Theory checks. **Hidden Intelligence** (Perception DC 15 or Erudition DC 14): > While drawing the map you notice an anomaly: the magical residue pattern on the third level of the ruins does not match a standard explosion residue. The explosion radiated outward from the center—but the magical traces on the third level **converge from the outside inward**. This is not the mark of an explosion—it is the residue of some kind of **summoning ritual**. If the players report this discovery to Olivia, she becomes abnormally nervous and forbids anyone from approaching the third level. If the players keep it secret, it becomes valuable intelligence.'
+research_checks:
+- attribute: Craft
+  dc: 16
+- attribute: Craft
+  dc: 15
+- attribute: Craft
+  dc: 12

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" font-family="sans-serif">
+<rect x="0" y="0" width="560" height="480" fill="#0f1424"/>
+<rect x="0" y="0" width="560" height="44" fill="#1b2540"/>
+<text x="20" y="29" fill="#ffd86b" font-size="20" font-weight="bold">Chimera Ant Territory</text>
+<text x="540" y="29" fill="#7fa0d8" font-size="13" text-anchor="end">Ecosystem Nest · Surface World · Near NGL</text>
+<line x1="280" y1="92" x2="280" y2="178" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="222" x2="280" y2="308" stroke="#3a4a72" stroke-width="2"/>
+<line x1="280" y1="352" x2="280" y2="418" stroke="#3a4a72" stroke-width="2"/>
+<rect x="189" y="48" width="182" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="68" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Nest Core (Queen)</text>
+<text x="280" y="86" fill="#9fb3e0" font-size="11" text-anchor="middle">Heaviest Defense</text>
+<rect x="227" y="178" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="198" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Squadron Leader District</text>
+<text x="280" y="216" fill="#9fb3e0" font-size="11" text-anchor="middle">Elite Command</text>
+<rect x="227" y="308" width="106" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="328" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Soldier Perimeter</text>
+<text x="280" y="346" fill="#9fb3e0" font-size="11" text-anchor="middle">Patrol &amp; Hunt</text>
+<rect x="189" y="418" width="182" height="44" rx="10" fill="#16203c" stroke="#6f8fd6" stroke-width="2"/>
+<text x="280" y="438" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">Human Settlement (Prey)</text>
+<text x="280" y="456" fill="#9fb3e0" font-size="11" text-anchor="middle">Resistance Organization</text>
+<text x="20" y="468" fill="#5e6f9c" font-size="11">Hunter × Hunter TRPG · Map schematic (not to scale)</text>
+</svg>

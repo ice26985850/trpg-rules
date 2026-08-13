@@ -1,0 +1,100 @@
+# Last Stand TRPG — Scenario S5: The Ultimate Battlefield
+scenario:
+  id: S5
+  name: The Ultimate Battlefield
+  type: multiplayer_squad
+  tier: 5
+  difficulty: 5
+  estimated_duration: 6-8 hours
+  suggested_level: 9-10
+  description: >
+    "Ragnarök" — the ultimate experimental ground where four terrains converge. 52 contestants,
+    12 of the world's strongest squads. Resources are extremely scarce — 80% of gear can only be plundered from enemies.
+    Sandstorms and blizzards rage in turn. The final circle has no safe zone — whoever breaks first loses.
+
+map:
+  name: Ragnarök (Mixed Ultimate Map)
+  size: 8 km × 8 km
+  terrain:
+    - Urban (25%): abandoned skyscraper clusters
+    - Jungle (25%): dense tropical vegetation
+    - Desert (25%): open sandy ground
+    - Snowfield (25%): snow-covered area
+  landmarks:
+    - { id: L1, name: Central Bridge, type: tactical, loot_level: Military (Purple), description: A giant bridge connecting the four zones — the core of the final circle's waterway showdown }
+    - { id: L2, name: Skyscraper, type: urban, loot_level: Abundant (Blue), description: A 30-story abandoned commercial building — elevators stopped, can only take the stairs }
+    - { id: L3, name: Underground Bunker, type: military, loot_level: Military (Purple), description: An underground military command center — the only shelter on the map }
+    - { id: L4, name: Energy Center, type: industrial, loot_level: Abundant (Blue), description: An abandoned nuclear facility — full of radiation warning signs }
+
+enemy_configuration:
+  total_squads: 12
+  squads:
+    - { type: Assault Squad, difficulty: ★★★, count: 2 }
+    - { type: Ambush Squad, difficulty: ★★★, count: 2 }
+    - { type: Professional Squad, difficulty: ★★★★, count: 4 }
+    - { type: Champion-tier, difficulty: ★★★★★, count: 2 }
+    - { type: GM-Custom Boss-tier, difficulty: ★★★★★, count: 2, note: "Freely designed by the GM; suggested one is a legendary warrior of the \"Ghost\" resistance, one is Pandora's champion hunter" }
+
+circle:
+  type: Watery End
+  description: The final circle is in the waterway near the bridge — forcing a bridge-top showdown or a standoff in the water
+
+airdrop: { count: 2, content: Only produces special gear (thermal imaging scopes, self-revive syringes, etc.) }
+red_zone: { enabled: true, special: Coverage throughout — red zone warning shown 1 turn before bombing }
+vehicles: [Full Vehicle Pool]
+weather: Disaster Weather (Sandstorm/Blizzard alternating every 10 turns)
+time_of_day: All day (from noon to dawn)
+
+new_mechanics:
+  - Disaster Weather Alternation (Sandstorm ↔ Blizzard)
+  - Looting Economy (80% of loot comes from kills)
+  - Final Circle with No Safe Zone (6d4/turn — survival of the last one standing)
+  - GM-Custom Boss-tier Enemy
+  - Resource Scarcity (only 20% of areas have initial loot)
+
+special_rules:
+  loot: Only 20% of areas (Central Bridge, Underground Bunker) have initial loot; the rest must be plundered from killed enemies
+  weather_cycle: Every 10 turns, weather forcibly switches between Sandstorm and Blizzard (no transition)
+  final_circle: The final circle has no safe zone. All survivors simultaneously take 6d4/turn damage — healing and Calm checks become key
+
+phases:
+  - phase: Desperate Beginning
+    turns: 2
+    gm_notes: >
+      52 people drop at once. The sky is obscured by parachutes.
+      Players must decide strategy immediately: go to the 20% loot zones to grab (facing fierce competition),
+      or start from zero in no-man's-land (then plunder the first enemy they meet).
+
+  - phase: Weather War
+    turns: 6-8
+    gm_notes: >
+      Sandstorms and blizzards alternate — each weather switch is a signal to flee or hunt.
+      Those who adapt to the weather survive; those who don't are eliminated by it.
+      Use weather changes to create tactical opportunities.
+
+  - phase: Loot Plundering
+    turns: 4-6
+    gm_notes: >
+      Every enemy you kill is a walking supply crate.
+      But sometimes you open the crate — and find it empty too.
+      The pressure of scarce resources should show in every turn.
+
+  - phase: Bridge Endgame
+    turns: 3-5
+    gm_notes: >
+      The final circle — on the bridge. Out-of-Zone Damage mercilessly erodes everyone's HP.
+      Not a contest of marksmanship — but of whose will breaks first.
+      Med kits, adrenaline, Calm checks — in the death countdown of 6d4/turn,
+      who can hold out to the end?
+
+victory_condition: Be the last surviving squad (surviving is victory)
+xp_rewards:
+cr_rewards:
+  per_elimination: 30
+  squad_wipe: 50
+  survival_top10: 100
+  survival_top5: 150
+  chicken_dinner: 500
+  rescue_teammate: 20
+  chicken_dinner: 500
+  survival: 200

@@ -1,0 +1,144 @@
+id: D6
+name: Volcano
+recommended_rank: "C/B (CR 19-26)"
+theme: Magma Rift
+grid: { cols: 5, rows: 5 }
+rooms:
+  - id: R1
+    name: Crater Edge
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: Sole entry/exit; retreating here is a safe escape.
+  - id: R2
+    name: Salamander Shallows
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R7]
+    cr: 19
+    enemies: [Salamander x2]
+    desc: Salamanders x2 basking.
+  - id: R3
+    name: Magma Fissure
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R8]
+    trap: Weak (Magma Vent, DC12 / 1d6 Burn)
+    desc: Weak trap, fissure gas vent.
+  - id: R4
+    name: Flame Hound Cave
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 21
+    enemies: [Flame Hound x2]
+    desc: Flame Hounds x2 guard the cave.
+  - id: R5
+    name: Charred Mine
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R10]
+    treasure: Fire Crystal x2, Glint Shard, G 120~200
+    desc: Fire crystals left by miners.
+  - id: R6
+    name: Magma Beachhead
+    type: combat
+    gx: 0
+    gy: 1
+    links: [R1, R7, R11]
+    cr: 22
+    enemies: [Magma Elemental x2]
+    desc: Magma Elementals x2 forming.
+  - id: R7
+    name: Volcanic Ash Camp
+    type: rest
+    gx: 1
+    gy: 1
+    links: [R6, R8, R2, R12]
+    desc: Safe rest point (restore HP/status).
+  - id: R8
+    name: Rockfall Passage
+    type: trap
+    gx: 2
+    gy: 1
+    links: [R7, R9, R3, R13]
+    trap: Strong (Rockfall, DC18 / 3d6 Bludgeon)
+    desc: Strong trap, falling rocks in passage.
+  - id: R9
+    name: Sulfur Vault
+    type: treasure
+    gx: 3
+    gy: 1
+    links: [R8, R10, R4, R14]
+    treasure: Sulfur Ore x2, Fine Material, G 140~220
+    desc: Sulfur deposit vault.
+  - id: R10
+    name: Magma Giant Chamber
+    type: combat
+    gx: 4
+    gy: 1
+    links: [R9, R5, R15]
+    cr: 24
+    enemies: [Magma Giant x2]
+    desc: Magma Giants x2 stand guard.
+  - id: R11
+    name: Heat-sheltered Ledge
+    type: rest
+    gx: 0
+    gy: 2
+    links: [R6, R12]
+    desc: Heat-sheltered rest point.
+  - id: R12
+    name: Fire-vein Cache
+    type: treasure
+    gx: 1
+    gy: 2
+    links: [R11, R13, R7]
+    treasure: Fire-vein Stone, G 150~240
+    desc: Ancient ritual cache.
+  - id: R13
+    name: Fire-vein Battlefield
+    type: combat
+    gx: 2
+    gy: 2
+    links: [R12, R14, R8, R16]
+    cr: 25
+    enemies: [Fire Spider x2]
+    desc: Fire Spiders x2 weaving webs.
+  - id: R14
+    name: Geyser Trap Zone
+    type: trap
+    gx: 3
+    gy: 2
+    links: [R13, R15, R9]
+    trap: Strong (Magma Geyser, DC20 / 3d6 Burn)
+    desc: Strong trap, intermittent geyser.
+  - id: R15
+    name: Cold Spring Rest
+    type: rest
+    gx: 4
+    gy: 2
+    links: [R14, R10]
+    desc: Cold spring rest point.
+  - id: R16
+    name: Balrog Lord's Throne
+    type: elite
+    gx: 2
+    gy: 3
+    links: [R13, R17]
+    cr: 26
+    enemies: [Balrog Lord (Boss)]
+    combat_map: maps/D6_戰鬥_炎魔領主.yaml
+    desc: Mini-boss Balrog Lord (CR26).
+  - id: R17
+    name: Exit Rift
+    type: exit
+    gx: 2
+    gy: 4
+    links: [R16]
+    desc: Exit; collect reward and leave after clearing.

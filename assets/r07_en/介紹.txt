@@ -1,0 +1,35 @@
+# Earth Master TRPG
+
+You are no Touch-Gold Captain — you are an Earth Master: reading Feng Shui, discerning Yin-Yang, opening coffins and locating acupoints, and negotiating terms with the things in the tomb. Some tombs should never be opened — yet you opened them anyway.
+
+## What Kind of World Is This?
+The Early Republican Era: warlords clashing, ancient roads and deserted temples, and things buried underground for a thousand years. Feng Shui is no mysticism — it is the structure of the tomb and the flow of Sha (Malevolent Energy). Talismans are no magic — they are a borrowed sliver of life-preserving light from heaven and earth. True Qi lets you hold on for one more breath; glutinous rice and cinnabar make the Jiangshi (Hopping Corpse) retreat a step — for the rest, you rely on your wits and your nerve.
+
+## Who Do You Play? What Do You Play?
+You are an Earth Master, hired or forced into the tomb to seek what the predecessors left behind. The core loop is Divide-Gold Fix-Point, cracking mechanisms and traps, dealing with corpse mutations, then negotiating with the supernatural. Opening the coffin is not the end — what stirs inside is where it begins: an Opening Roll table decides whether you face burial treasures, a low-tier White Jiangshi, or a spirit tablet in an empty coffin bearing your name.
+
+## Three Most Distinctive Mechanics
+- 2d10 Bell-Curve Check: opposed as "2d10 + Attribute + Skill vs Difficulty Class (DC)". Extreme values occur only 1% of the time — a seasoned Earth Master is never betrayed by luck; every point of modifier counts.
+- Heritage × Sect dual-track: Heritage decides the source of your martial art (Orthodox Daoist Transmission / Folk Martial Master / Touch-Gold Clan / Maoshan Disciple); Sect decides your organization and resources (Dragon-Shaker / Xuan Kong / Talisman / Mountain-Mover) — sixteen combinations, each with its own way to survive.
+- Fear System: witnessing a Jiangshi's corpse mutation accumulates Fear Value; exceeding the Fear Threshold (FT) of your Courage sinks you into disadvantage, panic, even breakdown — nerve is the most real resource in the tomb.
+
+## Is It For You?
+Players who enjoy folk horror, tomb-puzzle solving, resource management, and supernatural negotiation will dive right in. Combat here is plain and lethal; low-martial True Qi will not let you fly or tunnel through the earth — you need not be a battle maniac. Beginners have character templates to get started fast; veterans can finely calculate Heritage pairings and every ounce of True Qi and talisman spent.
+
+## Play Style
+- Combat Weight: Significant
+- Strategic Depth: Moderate Strategy
+- Story-Driven: Story-Supporting
+- Resource Management: Moderate Management
+- Character Customization: High Customization
+- Character Creation Complexity: Medium
+- Rule Density: Medium Rules
+- GM Requirement: Optional GM (solo or multiplayer)
+
+## Estimated Play Time
+- Single Scenario: 3–5 hours (S1 First Cry to S7 Imperial Mausoleum)
+- Full Campaign: ~40–60 hours (seven scenarios spanning levels 1–15)
+
+## Basic Info
+- Player Count: 1 to several (solo mode by default is also fully playable)
+- Core Dice: 2d10 (two ten-sided dice)

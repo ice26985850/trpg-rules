@@ -1,0 +1,413 @@
+title: "The Hero's Proof — Spell Catalog"
+sections:
+  - heading: "The Hero's Proof — Spell Catalog"
+    text:
+      - >-
+        Data source: system final draft (Chapter 6 Class Skills + Chapter 7 Spellcasting (7.9)), Traditional Chinese, terms use the "Chinese full name (abbreviation)" format.
+      - >-
+        General rules:
+      - >-
+        - Casting = one "Active Skill" action, consuming **Action Point (AP) 1–3 + Mana Point (MP)**.
+      - >-
+        - Attack spell damage = `Base (B) × f(SkillLv) × (1 + Magic Modifier (M_MAG) / 6)`; healing / ward = `B × f(SkillLv) × (1 + M_MAG / 6)`.
+      - >-
+        - Skill Level (SkillLv) multiplier `f(n) = 1 + n(n−1)/8` → **Lv1–5 = 1.00 / 1.25 / 1.75 / 2.50 / 3.50**.
+      - >-
+        - Damage type Resistance / Weakness / Immunity: ×0.5 / ×1.5 / ×0 (applied after damage reduction). Physical (Pierce / Slash / Bludgeon) / Elemental (Fire / Frost / Lightning / Acid) / Mystic (Holy / Shadow / Psychic).
+      - >-
+        - Range: Melee 1 tile / Short 2–4 tiles / Medium 5–10 tiles / Long 11+ tiles. Area Effect (AOE) = center tile + radius R tiles.
+      - "---"
+    tables:
+      []
+  - heading: 0. Spell Acquisition Rules (Learning / Unlocking)
+    text:
+      - >-
+        Spells are not all mastered at birth; they must be learned through one of the following paths, and are constrained by "level unlocking" and "medium".
+      - >-
+        1. **Class Spell**: The "magic-type" Active Skills of the seven classes (such as Fireball, Frost Nova, Lightning Chain, Healing Light, etc.) are obtained together with the class at character creation, and correspond to the entries in Chapters 1–7 of the *Skill Catalog* as the **same spell** (see the "Overlap Note" below), and do not additionally occupy a Skill Point (SP).
+      - >-
+        2. **Spell Slot Unlocking**: Non-magic classes (Warrior / Monk / Thief / Hunter / Dancer) can each unlock 1 "General Spell Slot" when Class Level (ClassLv) reaches 5 / 10 / 15, to learn spells from "VII. General Spells" in the *Spell Catalog* (such as Magic Missile, Detect Magic).
+      - >-
+        3. **Scroll / Medium**: Spell scrolls obtained as loot or exchanged at temples are permanently learned after being transcribed at the cost of Influence Points (IP) or Gold (G) (usable across classes; costs and restrictions see Chapter 14, 14.4 of the GM Book); one-time scrolls are consumed for a single encounter.
+      - >-
+        4. **Level Unlock Threshold**: High-tier spells (Mana Point (MP) cost ≥10, or three-stage mastered same-name spell) require Class Level (ClassLv) ≥ corresponding stage (Stage 2 = 11 / Stage 3 = 21) to cast; those below the threshold cannot chant even if learned.
+      - >-
+        **Overlap Note with the *Skill Catalog***: Chapters 1–7 of the *Skill Catalog* list class skills by "class" (including the magic classes' attack / healing spells), and the school entries "I–VI" of this catalog have **completely identical values, being two perspectives of the same spell** — the former is for character creation and class balance reference, the latter for spell mechanics / school / cross-class learning reference; please cite one or the other, do not double-count. The "VII. General Spells" of this catalog is cross-class exclusive, not found in the class skill tables, and any class can learn it via paths 2 / 3 above.
+      - "---"
+    tables:
+      []
+  - heading: I. Fire School (Fire)
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - School
+          - Range
+          - Area of Effect (AOE)
+          - Mana Points (MP)
+          - Action Points (AP)
+          - Damage Type & Value
+          - Status Effect
+          - Skill Level (SkillLv) Growth
+        rows:
+          - Name: Fireball
+            School: Fire
+            Range: Medium(5 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 6
+            Action Points (AP): 2
+            Damage Type & Value: Fire, B=2.0
+            Status Effect: Burn (2 turns, 0.3×MAG Fire damage per turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier ×1.00~3.50
+          - Name: Blazing Storm
+            School: Fire
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Radius 2
+            Mana Points (MP): 8
+            Action Points (AP): 3
+            Damage Type & Value: Fire, B=1.5
+            Status Effect: Burn (2 turns)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Meteor
+            School: Fire
+            Range: Long(10 tiles)
+            Area of Effect (AOE): Radius 3
+            Mana Points (MP): 12
+            Action Points (AP): 3
+            Damage Type & Value: Fire, B=2.5
+            Status Effect: Burn (3 turns, 0.5×MAG Fire damage per turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Searing Shield
+            School: Fire
+            Range: Self
+            Area of Effect (AOE): —
+            Mana Points (MP): 5
+            Action Points (AP): 2
+            Damage Type & Value: Shield B=1.5 (Fire-tagged retaliate)
+            Status Effect: Shield (Absorb)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Flame Blink
+            School: Fire
+            Range: Short(3 tiles)
+            Area of Effect (AOE): —
+            Mana Points (MP): 4
+            Action Points (AP): 1
+            Damage Type & Value: Blink + Fire B=0.8
+            Status Effect: Burn (1 turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+  - heading: II. Ice School (Ice)
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - School
+          - Range
+          - Area of Effect (AOE)
+          - Mana Points (MP)
+          - Action Points (AP)
+          - Damage Type & Value
+          - Status Effect
+          - Skill Level (SkillLv) Growth
+        rows:
+          - Name: Frost Nova
+            School: Ice
+            Range: Self
+            Area of Effect (AOE): Radius 2
+            Mana Points (MP): 8
+            Action Points (AP): 3
+            Damage Type & Value: Frost, B=1.2
+            Status Effect: Chill (Dexterity −30%, 2 turns)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Ice Spike
+            School: Ice
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 5
+            Action Points (AP): 2
+            Damage Type & Value: Frost, B=1.6
+            Status Effect: Freeze (Hard Control 1 turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Absolute Zero
+            School: Ice
+            Range: Medium(8 tiles)
+            Area of Effect (AOE): Radius 3
+            Mana Points (MP): 12
+            Action Points (AP): 3
+            Damage Type & Value: Frost, B=1.5
+            Status Effect: Freeze (Hard Control 1 turn) + Chill
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Rime Field
+            School: Ice
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Radius 2
+            Mana Points (MP): 10
+            Action Points (AP): 3
+            Damage Type & Value: Frost DoT, B=0.6/turn
+            Status Effect: Chill (2 turns)
+            Skill Level (SkillLv) Growth: f(n) multiplier (per tick)
+  - heading: III. Lightning School (Lightning)
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - School
+          - Range
+          - Area of Effect (AOE)
+          - Mana Points (MP)
+          - Action Points (AP)
+          - Damage Type & Value
+          - Status Effect
+          - Skill Level (SkillLv) Growth
+        rows:
+          - Name: Lightning Chain
+            School: Lightning
+            Range: Long(8 tiles)
+            Area of Effect (AOE): Jump 3+floor((n−1)/3)
+            Mana Points (MP): 7
+            Action Points (AP): 2
+            Damage Type & Value: Lightning, B=0.9
+            Status Effect: Shock (1 turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Thunder Burst
+            School: Lightning
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 8
+            Action Points (AP): 2
+            Damage Type & Value: Lightning, B=2.0
+            Status Effect: Shock (1 turn, 50% cast failure)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Thunder God's Wrath
+            School: Lightning
+            Range: Whole map
+            Area of Effect (AOE): Chain
+            Mana Points (MP): 14
+            Action Points (AP): 3
+            Damage Type & Value: Lightning, B=1.5
+            Status Effect: Shock (whole field 1 turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Shock Net
+            School: Lightning
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Radius 2
+            Mana Points (MP): 6
+            Action Points (AP): 2
+            Damage Type & Value: Lightning, B=0.8
+            Status Effect: Bind (1 turn) + Shock
+            Skill Level (SkillLv) Growth: f(n) multiplier
+  - heading: IV. Holy School (Holy)
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - School
+          - Range
+          - Area of Effect (AOE)
+          - Mana Points (MP)
+          - Action Points (AP)
+          - Damage Type & Value
+          - Status Effect
+          - Skill Level (SkillLv) Growth
+        rows:
+          - Name: Healing Light
+            School: Holy
+            Range: Medium(5 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 6
+            Action Points (AP): 2
+            Damage Type & Value: Healing, B=2.0×(1+M_MAG/6)
+            Status Effect: Restore Health (HP)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Group Prayer
+            School: Holy
+            Range: Medium(5 tiles)
+            Area of Effect (AOE): Radius 2 (allies)
+            Mana Points (MP): 10
+            Action Points (AP): 3
+            Damage Type & Value: Healing, B=1.0×(1+M_MAG/6)
+            Status Effect: Restore Health (HP)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Warding Aegis
+            School: Holy
+            Range: Medium(5 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 5
+            Action Points (AP): 2
+            Damage Type & Value: Shield, B=1.5×(1+M_MAG/6)
+            Status Effect: Shield (Absorb, 3 turns)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Purify
+            School: Holy
+            Range: Medium(5 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 4
+            Action Points (AP): 1
+            Damage Type & Value: Dispel abnormal status
+            Status Effect: Dispel 1~2 abnormal statuses
+            Skill Level (SkillLv) Growth: Level affects number dispelled
+          - Name: Divine Punishment
+            School: Holy
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 8
+            Action Points (AP): 2
+            Damage Type & Value: Holy, B=2.2 (vs Undead ×1.5)
+            Status Effect: —
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Exorcism
+            School: Holy
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Radius 2
+            Mana Points (MP): 6
+            Action Points (AP): 2
+            Damage Type & Value: Dispel + Anti-magic Aura
+            Status Effect: Remove Undead buffs / Anti-magic
+            Skill Level (SkillLv) Growth: Level affects range
+          - Name: Holy Judgment
+            School: Holy
+            Range: Medium(8 tiles)
+            Area of Effect (AOE): Radius 2
+            Mana Points (MP): 15
+            Action Points (AP): 3
+            Damage Type & Value: Holy, B=3.0 (vs Undead ×1.5)
+            Status Effect: Holy Burn (Burning holy fire 2 turns)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+  - heading: V. Shadow School (Shadow)
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - School
+          - Range
+          - Area of Effect (AOE)
+          - Mana Points (MP)
+          - Action Points (AP)
+          - Damage Type & Value
+          - Status Effect
+          - Skill Level (SkillLv) Growth
+        rows:
+          - Name: Shadow Bolt
+            School: Shadow
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 5
+            Action Points (AP): 2
+            Damage Type & Value: Shadow, B=1.8
+            Status Effect: —
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Weakness Curse
+            School: Shadow
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 4
+            Action Points (AP): 1
+            Damage Type & Value: Curse
+            Status Effect: Weak (Output −25%, 2 turns)
+            Skill Level (SkillLv) Growth: Level affects duration
+          - Name: Shadow Tentacles
+            School: Shadow
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Radius 2
+            Mana Points (MP): 8
+            Action Points (AP): 3
+            Damage Type & Value: Shadow, B=1.5
+            Status Effect: Bind (1 turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Death Domain
+            School: Shadow
+            Range: Whole field
+            Area of Effect (AOE): Whole field
+            Mana Points (MP): 12
+            Action Points (AP): 3
+            Damage Type & Value: Shadow DoT, B=0.8/turn
+            Status Effect: Shadow damage per turn (Undead heal)
+            Skill Level (SkillLv) Growth: f(n) multiplier (per tick)
+  - heading: VI. Psychic School (Psychic)
+    text:
+      []
+    tables:
+      - columns:
+          - Name
+          - School
+          - Range
+          - Area of Effect (AOE)
+          - Mana Points (MP)
+          - Action Points (AP)
+          - Damage Type & Value
+          - Status Effect
+          - Skill Level (SkillLv) Growth
+        rows:
+          - Name: Mind Shock
+            School: Psychic
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 6
+            Action Points (AP): 2
+            Damage Type & Value: Psychic, B=1.6
+            Status Effect: Shock (1 turn)
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Whisper of Fear
+            School: Psychic
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 4
+            Action Points (AP): 1
+            Damage Type & Value: Mental Interference
+            Status Effect: Fear (Cannot take attack action, 2 turns)
+            Skill Level (SkillLv) Growth: Level affects duration
+          - Name: Illusion Charm
+            School: Psychic
+            Range: Medium(5 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 7
+            Action Points (AP): 2
+            Damage Type & Value: Illusion
+            Status Effect: Charm (by level 1–3 turns)
+            Skill Level (SkillLv) Growth: "Duration [1,1,2,2,3]"
+          - Name: Mind-split Echo
+            School: Psychic
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 10
+            Action Points (AP): 3
+            Damage Type & Value: Illusion
+            Status Effect: Copy ally appearance / partial skills
+            Skill Level (SkillLv) Growth: Level affects duration
+  - heading: VII. General Spells (General / Cross-class)
+    text: "---
+*Catalog total: Fire 5 + Ice 4 + Lightning 4 + Holy 7 + Shadow 4 + Psychic 4 + General 2 = 30 spells.*"
+    tables:
+      - columns:
+          - Name
+          - School
+          - Range
+          - Area of Effect (AOE)
+          - Mana Points (MP)
+          - Action Points (AP)
+          - Damage Type & Value
+          - Status Effect
+          - Skill Level (SkillLv) Growth
+        rows:
+          - Name: Magic Missile
+            School: General
+            Range: Medium(6 tiles)
+            Area of Effect (AOE): Single target
+            Mana Points (MP): 3
+            Action Points (AP): 1
+            Damage Type & Value: Arcane, B=1.0 (Guaranteed hit)
+            Status Effect: —
+            Skill Level (SkillLv) Growth: f(n) multiplier
+          - Name: Detect Magic
+            School: General
+            Range: Self
+            Area of Effect (AOE): —
+            Mana Points (MP): 2
+            Action Points (AP): 1
+            Damage Type & Value: Utility detection
+            Status Effect: Reveal invisibility / magic fluctuations
+            Skill Level (SkillLv) Growth: Fixed 1 level

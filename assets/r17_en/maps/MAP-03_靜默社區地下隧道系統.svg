@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="184" viewBox="0 0 1340 184" font-family="Microsoft JhengHei, PMingLiU, sans-serif">
+<rect x="0" y="0" width="1340" height="184" fill="#FBFCFE"/>
+<rect x="18" y="64" width="1304" height="102" rx="14" fill="#ECEFF1" fill-opacity="0.55" stroke="#ECEFF1" stroke-opacity="0.9"/>
+<text x="28" y="82" font-size="13" font-weight="bold" fill="#37474F">Tunnel System</text>
+<text x="40" y="34" font-size="19" font-weight="bold" fill="#1A237E">Silent Community Underground Tunnel System</text>
+<text x="40" y="56" font-size="13" fill="#546E7A">Region: Old Town　Danger: ★★★★☆　Suitable Level (Lv.): 4</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,3 L0,6 Z" fill="#607D8B"/></marker></defs>
+<line x1="138" y1="115" x2="404" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="254" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="271" y="118" font-size="12" fill="#455A64" text-anchor="middle">Corridor</text>
+<line x1="404" y1="115" x2="670" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="494" y="105" width="86" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="537" y="118" font-size="12" fill="#455A64" text-anchor="middle">Tunnel 30m</text>
+<line x1="670" y1="115" x2="936" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="786" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="803" y="118" font-size="12" fill="#455A64" text-anchor="middle">Corridor</text>
+<line x1="936" y1="115" x2="1202" y2="115" stroke="#607D8B" stroke-width="1.6" marker-end="url(#arrow)" opacity="0.8"/>
+<rect x="1052" y="105" width="34" height="18" rx="4" fill="#FFFFFF" stroke="#CFD8DC"/>
+<text x="1069" y="118" font-size="12" fill="#455A64" text-anchor="middle">Corridor</text>
+<rect x="40" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="138" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Sewer Exit</text>
+<title>Sewer Exit: Enter from north side of community; Order symbol; vent (Perception TN11 → hidden door)</title>
+<rect x="306" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="404" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Building B Hidden Door</text>
+<title>Building B Hidden Door: Hidden door (Awareness TN11 or Technician detects airflow); leads to ~30m tunnel</title>
+<rect x="572" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="670" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Main Tunnel — Reliquary</text>
+<title>Main Tunnel — Reliquary: Most spacious area; Order relics (Blue), diary fragments (Purple), Curtain Fragment (Gold); ritual altar</title>
+<rect x="838" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="936" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Tunnel Gate</text>
+<title>Tunnel Gate: Metal gate (DR3); closing it (Tech TN14) seals off the Guardian; control panel Electronics TN11</title>
+<rect x="1104" y="86" width="196" height="58" rx="10" fill="#FFFFFF" stroke="#37474F" stroke-width="1.8"/>
+<text x="1202" y="120" font-size="13.5" font-weight="bold" fill="#212121" text-anchor="middle">Community Center Rear Exit</text>
+<title>Community Center Rear Exit: Leads to surface; exit blocked by debris (Lockpicking / forced break, Perception TN14)</title>
+</svg>

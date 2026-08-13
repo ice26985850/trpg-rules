@@ -1,0 +1,98 @@
+Yonghe Martial Codex TRPG rules / maps/ Resource Index
+============================================================
+
+This ruleset adopts an "ambiguous geography" design (the source explicitly states there is no precise map), and the setting deliberately provides no navigable, precise geographic map. But for the convenience of the GM and players, this directory now supplements three kinds of map resources:
+
+  1) World Map (schematic)        -- Five Regions + Eight Great Powers + key landmarks, no precise coordinates
+  2) Exploration Map (schematic)  -- routes / key points / threats, no precise distances
+  3) Combat Map (precise distance data) -- grid + distance bands + positions + terrain + friendly/enemy placement
+
+Design basis: Player Rulebook Sec.4.7 Distance/Position/Terrain, and Sec. Jianghu World faction chart / geography and customs; built by reviewing scene-by-scene the exploration and combat sequences of the two scenarios (s01_OneDragonScenario, s02_SoloScenario).
+
+------------------------------------------------------------
+I. World Map (the whole setting, schematic)
+------------------------------------------------------------
+  WorldMap.svg
+    - Schematic positions of the Five Regions: Northern Frontier (top), Central Plains (center), Jiangnan (lower right), Bashu (lower left), Western Regions (left)
+    - Eight Great Powers HQ markers: Tianjian Alliance, Wanfo Temple, Taixu Palace, Yaowang Valley, Qianji Pavilion, Sihai Alliance, Blood Moon Cult, Wangchuan Tower
+    - Key landmarks (~20): Luoyang / Huashan / Wudang / Songshan, Yangzhou / Suzhou / West Lake, Emei Mountain / Jianmen Pass / Qingcheng Mountain,
+      Yumen Pass / Loulan / Kunlun Mountain / Blood Moon Fort, Sixteen Prefectures of Yanyun / Flying Eagle Fort / Changbai Mountain, Putuo Island, Wanxiang Grotto, Yanmen Pass
+    - Gray zones: No-Man's-Land Town (Central Plains / Jiangnan / Bashu borderland), Longmen Inn (black market at the transport hub)
+    - Faction relation lines: sworn enemy (Tianjian Alliance <-> Blood Moon Cult) / alliance (green) / secret trade (orange)
+    Note: positions follow an "ambiguous geography" style layout, not lat/long coordinates; for narrative navigation and understanding faction distribution only.
+
+------------------------------------------------------------
+II. Exploration Maps (schematic, for scenes with exploration sequences)
+------------------------------------------------------------
+  Explore_BlackWindStrongholdPath.svg      Ch.1 Black Wind Stronghold Mountain Path (Tracking / Stealth / Intimidate routes)
+  Explore_LuoyangCity.svg                  Ch.2 Luoyang City (open scene, six locations + investigation chain)
+  Explore_EmeiBackMountainAndWanxiang.svg Ch.3 Emei Back Mountain -> Wanxiang Grotto Periphery (Heart-Realm Stele / Fragment 1)
+  Explore_QianjiPavilionHQ.svg             Ch.3/4 Qianji Pavilion (underground maze / assembly platform / second-stage method)
+  Explore_WanxiangGrottoInterior.svg      Ch.4 Wanxiang Grotto Interior (four trials -> ancient martial vein)
+  Explore_NorthernFrontierFrontline.svg   Ch.6 Northern Frontier Frontline -> Yanmen Pass (infiltration / decisive-battle path)
+
+  Note: node graph (start / location / objective / threat) connected by routes, annotated with key Difficulty Classes (DC) and
+        clue chains; no ruler or precise distances, a "schematic navigation".
+        The solo scenario (s02) reuses the same locations, so the exploration maps are shared by both scenarios.
+
+------------------------------------------------------------
+III. Combat Maps (precise position / distance data, for scenes with combat sequences)
+------------------------------------------------------------
+  Combat_BlackWindStronghold.svg          Ch.1 Black Wind Stronghold (melee / periphery / Boss Han Bao)
+  Combat_CamelAlley.svg                    Ch.2 Camel Alley alley fight (Western Regions saber master / poison master)
+  Combat_EmeiBackMountainCave.svg         Ch.3 Emei Back Mountain stone cave (array-guardian beast - Stone Lion)
+  Combat_QianjiPavilionNangongHui.svg     Ch.3 Qianji Pavilion / Yaowang Valley (Boss Nangong Hui)
+  Combat_WanxiangGrottoMainHall.svg       Ch.4 Wanxiang Grotto Main Hall (hall-guarding Sword Spirit)
+  Combat_TianjianFrontCourtyard.svg       Ch.5 Tianjian Alliance front courtyard defense battle + central-courtyard guardians
+  Combat_TianjianRooftop.svg              Ch.5 Tianjian Alliance rooftop (Boss Ye Xiuluo)
+  Combat_BloodMoonMainAltar.svg           Ch.5 Variant D / Solo Ch.5 Blood Moon Cult Main Altar corridor battle
+  Combat_NorthernFrontierAltar.svg        Ch.6 Barbarian ancient altar (Great Shaman)
+  Combat_YanmenPass.svg                    Ch.6 Yanmen Pass decisive battle (Boss Jin Ridi)
+
+  Each combat map contains:
+    - Grid (A- column / 1- row coordinate axes), friendly/enemy positions marked by colored circles at precise cells
+    - Distance-band scale: adjacent=melee | 1 cell=one step | <=3 cells=three-step | >3 cells=far
+    - Terrain overlay: high ground (+2 hit) / narrow (long weapon -3) / water (half movement) / half cover (DC+2) /
+      full cover / destructible object / objective / threat zone
+    - Tactical hints (based on scenario encounter data: HP, weakness, recommended tactics, positioning advice)
+
+  Distance and movement reference (Sec.4.7):
+    Normal move   = change 1 distance band (1 cell)
+    Dash          = change 2 distance bands (2 cells)
+    Lightfoot lunge = change 2 distance bands (2 cells), +1 hit on target next round
+    Disengage     = change 1 distance band (1 cell) + lightfoot contest to avoid pursuit
+  Positioning: front (default) / flank (+2 hit, requires Agility contest) / rear (+4 hit, cannot block)
+  Ganging up: 2 attackers +1 / 3 attackers +2 (max 5 attackers)
+
+------------------------------------------------------------
+IV. Coverage Check (two scenarios vs maps)
+------------------------------------------------------------
+  s01_OneDragonScenario (6 chapters):
+    Exploration -> Explore_BlackWindStrongholdPath / LuoyangCity / EmeiBackMountainAndWanxiang /
+                   QianjiPavilionHQ / WanxiangGrottoInterior / NorthernFrontierFrontline
+    Combat      -> Combat_BlackWindStronghold / CamelAlley / EmeiBackMountainCave / QianjiPavilionNangongHui /
+                   WanxiangGrottoMainHall / TianjianFrontCourtyard / TianjianRooftop /
+                   BloodMoonMainAltar / NorthernFrontierAltar / YanmenPass
+  s02_SoloScenario (6 chapters):
+    Exploration -> shares the above 6 exploration maps with s01 (same locations)
+    Combat      -> besides reuse, solo-version adjustments are noted in Combat_BlackWindStronghold / BloodMoonMainAltar
+                   (e.g. solo version 2 Elites + 1 Minor Chief, Han Tieyi's ranged cover, etc.,
+                   with solo / original differences annotated in each map's notes)
+  Notes on scenes not separately mapped:
+    - Ch.3 "three-way melee", Ch.4 "Duan Tianya's challenge (non-lethal)", Ch.6 "barbarian cavalry"
+      etc. are folded into adjacent combat maps by tactical layout (QianjiPavilionNangongHui / TianjianRooftop /
+      NorthernFrontierFrontline path); the GM may apply the distance bands directly per the notes.
+    - Pure social / decision scenes (Tianjian Alliance choice, Plan B duel, etc.) need no map.
+
+------------------------------------------------------------
+V. File List
+------------------------------------------------------------
+  maps/
+    WorldMap.svg
+    Notes.txt (this file)
+    ExploreMaps/  (6 .svg)
+    CombatMaps/   (10 .svg)
+  Total 17 SVG files.
+
+  Generation tool: _map_tools/gen_maps.py (located outside the workspace, not inside this rules folder,
+  to keep the cloud-publish folder clean; run that script to regenerate if needed).

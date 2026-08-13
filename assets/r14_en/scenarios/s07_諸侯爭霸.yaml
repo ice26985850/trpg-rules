@@ -1,0 +1,141 @@
+name: "Lords' Struggle"
+description: "Several city-states rise in the same region, scheming openly and secretly over resources, faith, and dominance. Whoever can unite the lords and build a regional hegemony will be the next legendary monarch."
+difficulty: 2
+level_range:
+  era_start: "City-State Age"
+  era_end: "Kingdom Age"
+turns_estimated: 50
+years_in_game: 15
+player_count:
+  min: 2
+  max: 5
+map_ref: "maps/S2_三方鼎立_區域地圖"
+initial_map: "maps/S2_三方鼎立_區域地圖.yaml"
+multiplayer_rules:
+  mode: "Competitive (diplomacy + war equally weighed)"
+  victory: "At turn 50, tally the \"Hegemony Score\" = Population (POP)×1 ＋ City-States Controlled×15 ＋ Allied Nations×5 ＋ Wars Won×12; highest wins. The first to control 3 or more major city-states in the region immediately triggers the endgame and +25 points."
+  interaction: "Players may forge defense/offense alliances, declare war, launch sieges and economic blockades; capturing neutral city-states expands the sphere of influence."
+starting_conditions:
+  population: 300
+  attributes:
+    base: 18
+    free_points: 25
+phases:
+  - id: 1
+    name: "Tripartite Standoff"
+    turns: "1-12"
+    description: "Each city-state establishes its standing in the region, contesting strategic resources and the faith center"
+    events:
+      - turn: 2
+        name: "Holy City Pilgrimage"
+        type: "diplomacy"
+        description: "The Holy City at the region's center opens for pilgrimage; visitors may raise Morale"
+        effect: "Morale (MOR)+5, but requires spending Resources (RES)"
+      - turn: 5
+        name: "Salt-Iron Dispute"
+        type: "competition"
+        description: "A salt-iron mine attracts the covetous eyes of many"
+        skill_check: "Economy (ECO), DC 13"
+      - turn: 8
+        name: "Marriage Proposal"
+        type: "diplomacy"
+        description: "Another nation proposes a royal marriage to forge an alliance"
+        choices:
+          - option: "Accept Marriage"
+            effect: "Forge alliance, Hegemony Score +5"
+          - option: "Decline Politely"
+            effect: "Keep autonomy, but relations −10"
+      - turn: 11
+        name: "Border Outpost"
+        type: "construction"
+        description: "Build an outpost to expand the sphere of influence"
+        effect: "Control range +1, Military (MIL)+3"
+  - id: 2
+    name: "Vertical and Horizontal Alliances"
+    turns: "13-28"
+    description: "Diplomatic maneuvering reaches a fever pitch; factions constantly regroup"
+    events:
+      - turn: 15
+        name: "Regional Council"
+        type: "diplomacy"
+        description: "Multiple players may form a formal league, sharing defense"
+        effect: "Each league member gains +5 Hegemony Score"
+      - turn: 19
+        name: "Economic Blockade"
+        type: "economic_war"
+        description: "Impose a trade blockade on a rival city-state"
+        effect: "Target Economy (ECO)−5, own renown ± depending on legitimacy"
+      - turn: 23
+        name: "Seduce a Defector"
+        type: "espionage"
+        description: "Send spies to turn a rival's border commander"
+        skill_check: "Morale (MOR), DC 15"
+      - turn: 27
+        name: "Oracle Dispute"
+        type: "religious"
+        description: "Two great faiths contest control of the Holy City"
+        effect: "Winner Morale (MOR)+10, loser −5"
+  - id: 3
+    name: "Years of Flaring Beacons"
+    turns: "29-42"
+    description: "Diplomacy breaks down; war becomes the main theme"
+    events:
+      - turn: 31
+        name: "Declare War"
+        type: "military"
+        description: "Formally declare war on a rival city-state"
+        crisis_type: "combat"
+      - turn: 35
+        name: "Open-Field Decisive Battle"
+        type: "military"
+        description: "Two armies clash on open ground"
+        skill_check: "Military (MIL), DC 16"
+      - turn: 39
+        name: "Siege Falls"
+        type: "military"
+        description: "Breach a rival's capital and bring it under control"
+        effect: "City-States Controlled +1, Hegemony Score +15"
+  - id: 4
+    name: "The Final Chapter of Hegemony"
+    turns: "43-50"
+    description: "The final consolidation—unite the lords, or perish on the battlefield"
+    events:
+      - turn: 45
+        name: "Hegemony Declaration"
+        type: "milestone"
+        description: "Control 3 or more major city-states to proclaim hegemony"
+        effect: "Hegemony Score +25, triggers endgame"
+      - turn: 48
+        name: "Final Battle"
+        type: "military"
+        description: "Last standoff of remaining powers"
+        skill_check: "Military (MIL), DC 18"
+      - turn: 50
+        name: "Lord of the Lords"
+        type: "ending"
+        description: "Tally Hegemony Scores, highest becomes the regional hegemon"
+endings:
+  success:
+    condition: "Highest Hegemony Score and control 3 or more major city-states"
+    reward: "All attributes +8, unlock the \"Lord of the Lords\" Legendary Deed"
+  partial:
+    condition: "Survive to the endgame but fail to unify the region"
+    reward: "Keep your power, may enter Free Mode"
+  failure:
+    condition: "Capital falls and no inheritable power remains"
+    remedy: "Inheritance Mechanism—attach to the victor as a vassal, keeping 40% of attributes"
+key_npcs:
+  - name: "Saintess Lia"
+    role: "Guardian of the Holy City, core of faith"
+    personality: "Compassionate, resolute"
+    relationship: "Neutral, can be won over"
+  - name: "Old Chancellor Velen"
+    role: "A key strategist of a certain city-state"
+    personality: "Deep, scheming"
+    relationship: "Courted by all factions"
+gm_notes:
+  - "In the City-State Age the focus shifts from survival to power play; encourage diplomacy and war together"
+  - "The GM must track each nation's controlled city-states and alliance relationship map"
+  - "Economic blockades and espionage are soft power; don't let war be the only option"
+  - "The Oracle Dispute can affect global Morale; arrange with care"
+  - "Keep factions fluid; avoid solidifying strong/weak early on"

@@ -1,0 +1,211 @@
+# Urban Survivors Scenario One: "The First Day" — Early Siege: Chaos and Adaptation
+# Format: YAML
+# Suggested Level: Play immediately after character creation
+# Difficulty: ★★☆ (Low–Medium)
+# Suggested Players: 1 (expandable to multiplayer)
+# Siege Day: Day 3 to Day 14 (about 5–7 game sessions)
+
+scenario_id: "S1"
+scenario_name: "The First Day"
+difficulty: "★★☆"
+suggested_players: 1
+siege_days: "Day 3–14"
+estimated_sessions: "5–7 sessions"
+core_theme: "Chaos and Adaptation"
+
+# ── Scenario Overview ──
+summary: |
+  The siege has only just begun. The artillery thunder is still distant, but the power and water are already unstable, and the shops have been looted bare.
+  The city has fallen into organized chaos—the Federal Army broadcasts that "the situation is under control," yet the streets are full of fleeing crowds and abandoned vehicles.
+  The players must find their footing amid the ruins of order: establish a Shelter, search for the first supplies, and decide whom to trust.
+
+# ── Starting Scenarios (choose one, by player or GM) ──
+starting_scenarios:
+  - id: A
+    name: "Own Apartment"
+    location: "Residential apartment in Old Town"
+    starting_resources:
+      - "Household reserves: canned food ×3, bottled water ×2, first-aid kit ×1"
+      - "Personal belongings: chosen per character creation Step Eight"
+    starting_challenge: "A neighbor knocks asking for help—a family with a child requests shelter"
+    gm_note: "Make the player face the first moral choice immediately: open the door or refuse?"
+
+  - id: B
+    name: "Workplace"
+    location: "City Center office or University District classroom"
+    starting_resources:
+      - "Office emergency reserves: cookies ×2, bottled water ×1"
+      - "A colleague/classmate NPC at your side (GM chooses 1–2)"
+    starting_challenge: "The building was damaged in a recent shelling and must be evacuated before the aftershocks"
+    gm_note: "Good for guiding the player through their first stealth/evacuation action"
+
+  - id: C
+    name: "The Streets"
+    location: "Random district street (GM's choice)"
+    starting_resources:
+      - "Only what is on your person (starting equipment on the character sheet)"
+    starting_challenge: "Immediately encounter the first (light) shelling or a Patrol Soldier—must find cover within 3 turns"
+    gm_note: "The highest-difficulty start—for players who enjoy a challenge"
+
+# ── Special Events Table (triggered by day count) ──
+special_events:
+  - day: 3
+    name: "First Shelling"
+    description: "Shelling strikes somewhere in the city. The players hear the whistling of shells growing ever closer."
+    mechanics:
+      - "All characters make a Physique (PHY) check DC 10; on failure, a Minor Wound (grazed by shrapnel)"
+      - "If the players are outdoors: DC changes to 14"
+    narrative_prompt: "Describe the moment the shell lands: a deafening explosion, windows shattering, dust falling like rain."
+
+  - day: 4
+    name: "Water Crisis"
+    description: "Tap water stops. City broadcasts announce 'the water system is damaged and under repair'—but no one knows when it will be fixed."
+    mechanics:
+      - "From this moment, water becomes a scarce resource (trade value ×2)"
+      - "If the player has no stored water: the dehydration countdown begins"
+    narrative_prompt: "Let the players feel the shock of losing everyday convenience—turn on the tap, and only the hiss of air comes out."
+
+  - day: 5
+    name: "A Neighbor's Request"
+    description: "A neighbor knocks on the player's door. He/she knows the player (lived nearby before the siege)."
+    npc_involved: "GM chooses or rolls: 1–3 a family with children, 4–5 an injured elderly person, 6 a young person who looks very suspicious"
+    mechanics:
+      - "Take them in: the player gains that NPC as a Shelter member. Food and water consumption +1/day."
+      - "Refuse: make a Willpower (WIL) check DC 10; on failure, Mental State −1 (guilt)"
+    narrative_prompt: "A knock at the door is one of the most frightening sounds during a siege. It means a choice."
+
+  - day: 7
+    name: "Airdropped Leaflets"
+    description: "A plane flies low overhead—not to bomb, but to drop leaflets."
+    options:
+      - "The besiegers' surrender demand: 'Lay down your weapons, hand over the city, and civilians will be guaranteed safety.'"
+      - "Friendly forces' message: 'Hold on. Reinforcements are on the way.'"
+    mechanics:
+      - "Give the player a plot clue—and a hope (or a fear)"
+    narrative_prompt: "The leaflets drift down like snow. Some pick one up to read, some use them to start a fire, some fold them into paper planes for the children."
+
+  - day: 10
+    name: "First Black Market Contact"
+    description: "A man who calls himself Marco (NPC #15) contacts the players. He offers a 'deal'—food for information, or medicine for a 'favor.'"
+    npc: "Marco (Black Market broker, REL 0, SEC 4)"
+    mechanics:
+      - "The player may attempt a Bargaining (Social) check DC 12; success yields better trade terms"
+      - "Accept the deal: establish initial contact with the Black River Merchant Guild"
+      - "Refuse the deal: Marco remembers you—future trade starting attitude −1"
+    narrative_prompt: "Marco speaks fast, his eyes constantly scanning both ends of the street. 'I'm just a middleman,' he says, 'but I know people who can get things.'"
+
+  - day: 14
+    name: "Sniper Appears"
+    description: "First eyewitness report—someone is shot by a sniper on Republic Avenue. From then on, crossing open ground in Daylight becomes extremely dangerous."
+    mechanics:
+      - "From this moment, crossing Republic Avenue (the City Center main road) in Daylight triggers the Sniper threat (Threat Level 4)"
+      - "The first time the player hears a sniper shot: Willpower (WIL) check DC 10; on failure, Mental State −1"
+    narrative_prompt: "That gunshot is clearer than any shelling—because you know it is aimed at some specific person."
+
+# ── Scavenge Locations ──
+scavenge_locations:
+  - id: "S1_L1"
+    name: "Neighboring Ruined Home"
+    type: "Residence"
+    dc: 10
+    risk: "Low"
+    possible_loot:
+      - "Canned food (60%)"
+      - "Cloth / old clothing (40%)"
+      - "Candles (30%)"
+      - "Personal items—letters, photos (20%)"
+    danger_on_fail: "Part of the floor collapses—Minor Wound"
+
+  - id: "S1_L2"
+    name: "Corner Grocery Store"
+    type: "Shop"
+    dc: 12
+    risk: "Medium"
+    possible_loot:
+      - "Canned food (70%)"
+      - "Bottled water (50%)"
+      - "Batteries (30%)"
+      - "Cigarettes (20%)"
+    danger_on_fail: "Other Survivors are also scavenging—conflict may break out"
+
+  - id: "S1_L3"
+    name: "Abandoned Vehicles"
+    type: "Outdoor"
+    dc: 8
+    risk: "Medium (exposure)"
+    possible_loot:
+      - "Gasoline (40%)"
+      - "Map (30%)"
+      - "First-aid kit (20%)"
+    danger_on_fail: "Staying too long in the open—spotted by a Patrol Soldier"
+
+  - id: "S1_L4"
+    name: "Underground Parking Garage"
+    type: "Indoor"
+    dc: 10
+    risk: "Low"
+    possible_loot:
+      - "Gasoline (50%)"
+      - "Tools (30%)"
+      - "Tape / rope (40%)"
+    danger_on_fail: "Trip in the dark—Minor Wound + noise (Level 3)"
+
+  - id: "S1_L5"
+    name: "Abandoned Apartment"
+    type: "Residence"
+    dc: 10
+    risk: "Medium"
+    possible_loot:
+      - "Medicine (40%)"
+      - "Clothing (50%)"
+      - "Food (30%)"
+    danger_on_fail: "Body of the previous occupant—first time seeing a corpse triggers a Trauma event (TDC 8)"
+
+  - id: "S1_L6"
+    name: "Elementary School Classroom"
+    type: "Public Building"
+    dc: 8
+    risk: "Low"
+    possible_loot:
+      - "First-aid kit (50%)"
+      - "Paper and pen (60%)"
+      - "Toys (20%)"
+    danger_on_fail: "Almost no danger—but part of the ceiling has already collapsed"
+
+# ── Key NPCs (recommended for Scenario One) ──
+key_npcs:
+  - name: "Grandma Marta (NPC #7)"
+    role: "Provides Old Town intelligence and folk wisdom"
+    introduction: "As the player moves through Old Town, passing an old house, someone calls from a second-floor window: 'Hey! Youngster!'"
+
+  - name: "Marco (NPC #15)"
+    role: "Black Market trade introducer"
+    introduction: "Special event: Day 10 Black Market Contact"
+
+  - name: "Yana Novak (NPC #2)"
+    role: "CDC organizer"
+    introduction: "The player encounters a group of residents organizing patrols in the neighborhood"
+
+# ── Completion Conditions ──
+completion_conditions:
+  - condition: "Shelter Stable"
+    detail: "Structural Integrity + Sealing + Comfort ≥ 5"
+  - condition: "Build a Relationship"
+    detail: "Relationship value (REL) with at least 1 NPC ≥ 3"
+  - condition: "Survive"
+    detail: "Successfully survive 7 days (i.e., complete at least 7 game sessions)"
+
+# ── Clearing Rewards ──
+rewards:
+  experience_points: 2
+  fortune_point: 1
+  special: "Unlock Shelter Improvement option: Reinforce Structure (Structure +1, requires Materials)"
+
+# ── Transition to Scenario Two ──
+transition_to_S2: |
+  Time jump of 2–3 weeks. The GM describes the changes during this period:
+  - Power and water are still not restored
+  - There are fewer people on the streets—some evacuated, some died
+  - Black Market trade has become more frequent
+  - Winter is approaching (or has already arrived)
+  The player's Shelter is still running, but the supply reserves are dwindling.

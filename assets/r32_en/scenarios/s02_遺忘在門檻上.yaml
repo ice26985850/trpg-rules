@@ -1,0 +1,81 @@
+name: "Forgotten on the Threshold"
+type: "Lost-Item Commission"
+difficulty: "★"
+recommended_marks: "0-1"
+play_time: "1 session"
+core_attributes: ["AW", "RE"]
+
+opening: |
+  Mrs. Chen contacts you. Her father passed away last week in a nursing home.
+  While sorting his belongings, she found a photo in his wallet she had never seen:
+  a young woman holding an infant, with "Spring 1967, the station" written on the back.
+  In his final months the old man kept walking to the doorway, murmuring "The photo... has she come..."
+
+npcs:
+  - name: "Mrs. Chen"
+    type: "Client"
+    desc: "In her fifties, pragmatic but emotional. Wants to know the truth but also fears it"
+    companion_eligible: false
+  - name: "Head Nurse"
+    type: "Informant"
+    desc: "Cared for Mr. Chen in his final three months. The old man always walked to the doorway at dusk"
+    companion_eligible: false
+  - name: "Old Station Master"
+    type: "Tipster"
+    desc: "Over eighty, the only one who remembers the old station"
+    companion_eligible: false
+
+lost_items:
+  - name: "Photo Negative"
+    tier: "Memory Crystal"
+    solo_dc: 13
+    location: "Nursing home Gap Layer—door of Room 302"
+    effect: "See Mr. Chen's final moment with his fiancée and child"
+  - name: "Unsent Letter"
+    tier: "Common Lost Item"
+    solo_dc: 6
+    location: "Old station Gap Layer—under the platform bench"
+    effect: "Mr. Chen's apology to his fiancée: 'I couldn't come'"
+  - name: "Baby Shoe"
+    tier: "Benevolent Keepsake"
+    solo_dc: 10
+    location: "Old station Gap Layer—beside the vending machine"
+    effect: "Endurance Cost recovers 1d6+2 Gap Endurance (GE)"
+
+gap_creatures:
+  - name: "Mr. Chen's Residual"
+    type: "Threshold Lingerer"
+    negotiation_dc: 8
+    location: "Threshold of Room 302, nursing home"
+    liberation: "Give him the photo—he needs to see that photo"
+    reward: "Return Mark +1; from then on this Threshold is DC -2"
+
+scenes:
+  - name: "Investigate the Nursing Home"
+    surface: "A three-story old building. Room 302 is at the end of the second-floor corridor."
+    gap: "The corridor is twice as long as the Surface. The old man's Residual repeatedly walks toward the doorway."
+    checks:
+      - "Awareness DC 8: discover the golden Residual glow on the doorframe"
+      - "Passive Awareness: automatically reveals initial clues"
+  - name: "Interact with the Lingerer"
+    desc: |
+      The old man wants "that photo." Show the photo → he smiles and crosses the Threshold, vanishing.
+      Liberation reward: Return Mark +1.
+  - name: "Head to the Old Station"
+    desc: "Traverse DC 8 to move from the nursing home Gap to the station Gap. The 1967 platform is well preserved."
+  - name: "Reveal the Truth"
+    desc: |
+      Retrieval DC 10 to find the baby shoe, DC 6 to find the letter.
+      The letter reveals: Mr. Chen had a fiancée and child in his youth; in spring 1967 his fiancée came to the station with the child to find him—he never appeared.
+  - name: "Return"
+    desc: "Hand the items to Mrs. Chen. After a long silence she says, 'Thank you. I'd rather know the truth.' Return Mark +1."
+
+endings:
+  - "Mrs. Chen keeps the photo, placing the letter and baby shoe before her father's grave"
+  - "The player may choose to leave the items in the Gap → Endurance Cost in that area -1"
+  - "The Threshold of Room 302 in the nursing home is safe from then on (DC -2)"
+
+rewards:
+  - "Return Mark × 2"
+
+companion_recruitment: []

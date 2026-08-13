@@ -1,0 +1,85 @@
+name: "Echo"
+type: "Lost Traveler Rescue"
+difficulty: "★★★"
+recommended_marks: "3-5"
+play_time: "2 sessions"
+core_attributes: ["TR", "NG", "AN"]
+
+opening: |
+  A-Jie, a physics graduate student, has been half-missing for three weeks.
+  His roommate occasionally sees his shadow at the end of the hallway, food goes missing from the fridge, and footsteps are heard at 2 a.m.
+  His roommate says: "He's not missing. He's trapped on the other side."
+  A-Jie is in the Middle Stage of Gap Sickness — he no longer knows which layer he's on.
+
+npcs:
+  - name: "A-Jie"
+    type: "Lost Traveler (trapped in the Gap)"
+    desc: "23 years old, Middle Stage of Gap Sickness. Tries to derive the dimension he's in using physics theory"
+    companion_eligible: true
+    companion_template:
+      type: "Apprentice Walker"
+      stats: { RE: 5, AW: 3 }
+      special: "Theoretical Analysis — provides clues when encountering new Gap Phenomena"
+      loyalty: 2
+      available_from: "Scenario 5"
+  - name: "Xiao Mei"
+    type: "Roommate and friend"
+    desc: "The one most eager to save A-Jie. Can provide A-Jie's personal belongings as clues"
+    companion_eligible: false
+  - name: "Advisor Professor"
+    type: "Informant"
+    desc: "Knows A-Jie was researching spatial folding — a botched experiment sent him into the Gap"
+    companion_eligible: false
+
+lost_items:
+  - name: "A-Jie's Research Notes"
+    tier: "Common Lost Item"
+    solo_dc: 6
+    location: "Gap Layer of the university lab"
+    effect: "Related Negotiation +1"
+  - name: "Resonator"
+    tier: "Gap Construct"
+    solo_dc: 16
+    location: "Gap Layer of A-Jie's room"
+    effect: "Reveals an unknown Threshold location or opens a Sealed Space"
+  - name: "Mother's Necklace"
+    tier: "Memory Crystal"
+    solo_dc: 13
+    location: "On A-Jie (requires Negotiation or Retrieval to obtain)"
+    effect: "Triggers the moment he sees his mother giving him the necklace — a key Anchoring Item"
+
+scenes:
+  - name: "Surface Investigation"
+    desc: "Awareness DC 10 finds the anomaly in A-Jie's room — sticky note: 'Find the resonator'"
+    map_ref: "MAP-05 (A-Jie's apartment floor plan) — Eighth-floor room"
+  - name: "Enter the Apartment Gap"
+    desc: "Natural Threshold DC 6. The apartment in the Gap is almost identical to the Surface — the greatest fear: nothing changes."
+    map_ref: "MAP-05 — Natural Threshold (eighth floor → Gap version)"
+  - name: "Tracking A-Jie"
+    desc: "Awareness DC 8 finds signs of activity — the sticky note is replaced every 24h."
+    map_ref: "MAP-05 — Seventh-floor fridge area"
+  - name: "Finding A-Jie"
+    desc: |
+      He is in the Gap Layer of the apartment rooftop. Sitting on the edge, watching a false starry sky.
+      Negotiation DC 14 to persuade him to leave. You must present an Anchoring Item or the Mother's Necklace (Memory Crystal DC 13).
+    map_ref: "MAP-05 — Rooftop Gap version (A-Jie's location)"
+  - name: "Exit the Gap"
+    desc: "The two of you exit together (each makes a separate Traverse DC 8 roll)."
+    map_ref: "MAP-05 — Rooftop edge exit point"
+  - name: "Aftermath"
+    desc: "A-Jie returns to the Surface, in the Early Stage of Gap Sickness — needs 7 days of rest."
+    map_ref: "—"
+
+key_choice: |
+  After being rescued, A-Jie may become an apprentice Walker companion (physics expert).
+  If failed: A-Jie advances to the Late Stage of Gap Sickness and becomes a new Lost Item Collector.
+
+endings:
+  - "Successful rescue → Return Mark +1, A-Jie can become a companion"
+  - "Failure → A-Jie is transformed, the Resonator may appear in future scenarios"
+
+rewards:
+  - "Return Mark × 1"
+
+companion_recruitment:
+  - "A-Jie (if successfully rescued) → Apprentice Walker companion, starting Loyalty 3"

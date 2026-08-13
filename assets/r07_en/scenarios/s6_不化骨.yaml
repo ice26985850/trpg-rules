@@ -1,0 +1,49 @@
+# Earth Master TRPG Scenario S6: Unrotted Bone — "Smarter Than You"
+scenario_id: S6
+title: "Unrotted Bone — Smarter Than You"
+level_range: "9-12"
+difficulty: "Extreme"
+sessions: "3-4"
+region: "Cross-region (Guanzhong → Central Plains → Yan-Zhao)"
+
+synopsis: |
+  This is not a tomb — it is a manhunt. An Unrotted Bone disguised as a human is active in various places.
+  It blends into society with a human identity — antique dealer, scholar, even military officer.
+  This Unrotted Bone was a Tang Dynasty sorcerer — in life he researched how to reverse life and death. It spent a thousand years evolving its corpse into an Unrotted Bone.
+  Its goal is to complete the unfinished research of its life — open a tomb that is "impossible to open," take out what lies within, and achieve true resurrection.
+  This is a cat-and-mouse scenario — players must track it across three cities and be smarter than it to stop it.
+
+npcs:
+  - {id: npc_shen, name: "“Boss Shen” / Unrotted Bone", role: "Primary Antagonist", attitude: "Calm, intelligent, patient", secret: "He is not evil — he only wants to complete his life's research. His methods may harm the innocent, but he does not see that as a problem.", stats: {type: "Unrotted Bone", cr: 12, hp: 120, def: 24, special: "Fully human appearance, can disguise perfectly"}}
+  - {id: npc_officer_li, name: "Officer Li", role: "Potential Ally", attitude: "Suspects someone is tomb-raiding", info: "Has noticed “Boss Shen”'s abnormality but has no evidence."}
+  - {id: npc_abe, name: "Japanese Onmyoji “Abe”", role: "Competitor/Potential Ally", attitude: "Extremely interested in the Unrotted Bone", secret: "Wants to capture the Unrotted Bone for his own research."}
+  - {id: npc_assistant, name: "The Unrotted Bone's “Assistant”", role: "Leaping Jiangshi controlled by the Unrotted Bone", attitude: "Absolutely loyal to the Unrotted Bone", secret: "He was the Unrotted Bone's student — a thousand years ago."}
+
+locations:
+  - {id: loc_xian, name: "Xi'an Antique Street", description: "The Unrotted Bone's first identity: antique dealer “Boss Shen”."}
+  - {id: loc_luoyang, name: "Luoyang Library", description: "The scene where the Unrotted Bone stole ancient documents."}
+  - {id: loc_beijing, name: "Outskirts of Beiping", description: "Where the Unrotted Bone's target tomb is located."}
+  - {id: loc_lab, name: "The Tang Dynasty Sorcerer's Laboratory", description: "Hidden beneath the target tomb."}
+
+encounters:
+  - {id: enc_xian, name: "Xi'an Investigation", type: "Exploration/Social", dc: 14, description: "Track the Unrotted Bone's trade records in the antique street."}
+  - {id: enc_luoyang, name: "Luoyang Library", type: "Exploration/Social", dc: 14, description: "The Unrotted Bone has already been here — clues left at the scene (and a killed night watchman)."}
+  - {id: enc_train, name: "Train Tracking", type: "Exploration/Social", dc: 12, description: "The Unrotted Bone is heading to Beiping — players must find it on the train."}
+  - {id: enc_dialogue, name: "Dialogue with the Unrotted Bone", type: "Social", dc: 18, description: "The Unrotted Bone is willing to talk — wants to know why the players are stopping it. This is the scenario's key turning point."}
+  - {id: enc_lab, name: "Sorcerer's Laboratory", type: "Exploration/Combat", dc: 16, ttv: 25, description: "Unrotted Bone + assistant + various threats in the laboratory."}
+  - {id: enc_final_choice, name: "Final Choice", type: "Comprehensive", description: "Help the Unrotted Bone complete its research? Stop it? Or a third path?"}
+
+key_items:
+  - {id: item_notes, name: "The Unrotted Bone's Research Notes", description: "A thousand years of a Tang Dynasty sorcerer's research — the life-and-death reversal theory. Forbidden knowledge."}
+  - {id: item_sealing_tools, name: "Sealing Spirit Artifacts (a set)", description: "The complete set of spirit artifacts in the sorcerer's laboratory."}
+  - {id: item_core_shard, name: "The Unrotted Bone's Core Shard", description: "Obtained if the Unrotted Bone is destroyed. A thousand-year Yin-Sha core — extremely strong artifact material."}
+
+endings:
+  - {id: ending_understanding, name: "Understanding and Release", condition: "Persuade the Unrotted Bone to complete its research in a way that does not harm others", result: "The Unrotted Bone completes its resurrection (as a human) then dissipates on its own — grants its life's knowledge."}
+  - {id: ending_destroy, name: "Forced Destruction", condition: "Defeat the Unrotted Bone in combat", result: "Gain the core shard but lose the knowledge inheritance."}
+  - {id: ending_seal, name: "Sealing", condition: "Seal the Unrotted Bone", result: "Temporarily resolved — the seal weakens after a thousand years."}
+  - {id: ending_persuaded, name: "Persuaded", condition: "The Unrotted Bone persuades the players to help it instead", result: "Gain a powerful ally but offend the entire Earth Master community."}
+
+rewards: {xp: 1200, money: "1000-3000 Silver Dollars"}
+scale_adjustments:
+  solo: {playable: true, note: "The Unrotted Bone prefers dialogue over combat. The hunt is tense but requires no combat ability.", ttv_mult: 0.6}

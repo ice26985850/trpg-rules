@@ -1,0 +1,266 @@
+weapons:
+  melee_weapons:
+  - name: Fist/Feet
+    type: Blunt
+    damage: 1d2
+    traits: Carried at all times, cannot be confiscated
+    price_gold: "—"
+    rarity: Common
+  - name: Wooden Club
+    type: Blunt
+    damage: 1d4
+    traits: Precise hit → target Execution DC 12, on failure Stun for 1 TU
+    price_gold: '1'
+    rarity: Common
+  - name: Knife
+    type: Sharp
+    damage: 1d6
+    traits: Bleeding on Moderate Wound or above
+    price_gold: '5'
+    rarity: Common
+  - name: Short Sword
+    type: Sharp
+    damage: 1d6+1
+    traits: Lightweight, can be hidden under a coat
+    price_gold: '10'
+    rarity: Common
+  - name: Long Sword
+    type: Sharp
+    damage: 1d8+1
+    traits: Standard military weapon
+    price_gold: '25'
+    rarity: Common
+  - name: Hand Axe
+    type: Sharp
+    damage: 1d10
+    traits: Armor-Piercing 2 (reduce AV by 2 when calculating TOL); can break wooden obstacles
+    price_gold: '20'
+    rarity: Common
+  - name: War Hammer
+    type: Blunt
+    damage: 1d10
+    traits: Against medium armor, only +2
+    price_gold: '30'
+    rarity: Uncommon
+  - name: Spear
+    type: Piercing
+    damage: 1d8+1
+    traits: Can attack from 2 zones away
+    price_gold: '20'
+    rarity: Common
+  - name: Dagger
+    type: Piercing
+    damage: 1d4+1
+    traits: Extremely easy to hide, AV calculated at half
+    price_gold: '10'
+    rarity: Common
+  - name: Greatsword
+    type: Sharp
+    damage: 2d6
+    traits: Requires two hands, Strength requirement Execution 6+
+    price_gold: '50'
+    rarity: Uncommon
+  ranged_weapons:
+  - name: Slingshot
+    type: Blunt
+    damage: 1d2
+    range: 3 zones
+    traits: Ammo is available everywhere
+    price: "—"
+  - name: Thrown Knife
+    type: Piercing
+    damage: 1d4
+    range: 2 zones
+    traits: Recoverable
+    price: 3/each
+  - name: Short Bow
+    type: Piercing
+    damage: 1d6
+    range: 8 zones
+    traits: Requires two hands
+    price: '20'
+  - name: Long Bow
+    type: Piercing
+    damage: 1d8
+    range: 12 zones
+    traits: Requires two hands, Execution 6+
+    price: '40'
+  - name: Crossbow
+    type: Piercing
+    damage: 1d10
+    range: 6 zones
+    traits: Reloading takes 1 TU
+    price: '60'
+  - name: Hand Crossbow
+    type: Piercing
+    damage: 1d6
+    range: 4 zones
+    traits: One-handed, easy to hide
+    price: '35'
+armor:
+- name: No Armor (casual wear)
+  av: '0'
+  traits: "—"
+  drawback: "—"
+  price: "—"
+- name: Heavy Coat
+  av: '+1'
+  traits: No reduction against Piercing
+  drawback: None
+  price: '5'
+- name: Leather Armor
+  av: '+2'
+  traits: No reduction against Piercing
+  drawback: None
+  price: '20'
+- name: Chainmail
+  av: '+4'
+  traits: Only +2 against Blunt
+  drawback: +1 TU/zone movement cost, Stealth Disadvantage
+  price: '80'
+- name: Full Plate
+  av: '+6'
+  traits: +2 against Fire Damage
+  drawback: Movement cost doubled, Stealth impossible
+  price: '200'
+- name: Silken Armor
+  av: '+2'
+  traits: Lightweight, no drawbacks; +1 Social check, Stealth treated as no Disadvantage
+  drawback: Fine craftsmanship
+  price: '120'
+items_and_consumables:
+  medical:
+  - name: Bandage
+    effect: Stabilizes a level-1 Light Wound (stops bleeding)
+    use_time: 1 TU (minor)
+    price: '2'
+  - name: Medical Kit
+    effect: +2 First Aid check (requires First Aid skill), usable 3 times
+    use_time: 3 TU (major)
+    price: '15'
+  - name: Painkiller Herb
+    effect: Temporarily ignores Moderate Wound effects for 1 hour
+    use_time: 1 TU (minor)
+    price: '8'
+  - name: Antidote
+    effect: Immediately cures common poisoning
+    use_time: 1 TU (minor)
+    price: '20'
+  - name: Simple Antidote
+    effect: Cures common and familiar poisoning (Alchemy-made, 5G materials)
+    use_time: 1 TU (minor)
+    price: '10'
+  - name: Strong Antidote
+    effect: Fully cures all toxins (including Legendary)
+    use_time: 1 TU (minor)
+    price: '50'
+  - name: Healing Potion
+    effect: "Recovery = max(1d6+3, floor(max HP × 25%)), healing does not exceed 75% of max HP (carry limit: up to 5 potions)"
+    use_time: 1 TU (minor)
+    price: '100'
+  tools:
+  - name: Lockpicking Tools
+    effect: Mechanics (MEC) +2
+    price: '25'
+  - name: Rope (10 m)
+    effect: Climbing, binding, setting traps
+    price: '5'
+  - name: Oil Lamp
+    effect: Lights a 3-zone area, lasts 4 hours
+    price: '8'
+  - name: Mirror (small)
+    effect: Observe corners, reflect light
+    price: '3'
+  - name: Crowbar
+    effect: +2 Execution when forcing open doors/chests
+    price: '10'
+  - name: Disguise Kit
+    effect: Change appearance, +1 Social check (first meeting only)
+    price: '30'
+  - name: Notebook and Pen
+    effect: Record cross-loop information (GM allows Memory Recall advantage)
+    price: '2'
+  - name: Alchemy Kit
+    effect: Required tool for crafting potions / Fire Bombs / Simple Antidotes / scroll materials (without it, crafting DC +4)
+    price: '25'
+  - name: Fire Bomb
+    effect: "Thrown (1 zone): 2d4 Fire Damage + Burning (−1 final damage per turn, not reduced by TOL)"
+    price: '15'
+  special:
+  - name: Time Crystal Shard
+    effect: After use, Memory Fragment Capacity +1 at the start of the next round
+    price: '200'
+    rarity: Rare
+  - name: Memory Ink
+    effect: Written content persists after the loop (1 page)
+    price: '100'
+    rarity: Uncommon
+  - name: Holy Relic Charm
+    effect: On death, Rift Mark increase -1 (one-time)
+    price: '500'
+    rarity: Very Rare
+  - name: Serpent Scale Shard
+    effect: Halves Save Point establishment time
+    price: '300'
+    rarity: Rare
+  - name: Echo Stone
+    effect: Records a line of speech, still playable after the loop
+    price: '150'
+    rarity: Uncommon
+  - name: Flame Scroll
+    effect: "One-time magic: deals 2d6 Fire Damage"
+    price: '30'
+    rarity: Uncommon
+  - name: Healing Scroll
+    effect: "One-time magic: restores 1d6+3 HP"
+    price: '40'
+    rarity: Uncommon
+  - name: Warding Scroll
+    effect: "One-time magic: absorbs 1 instance of damage (or grants 1d6+3 temporary shield)"
+    price: '35'
+    rarity: Uncommon
+  - name: Purification Scroll
+    effect: "One-time magic: removes all negative status effects"
+    price: '25'
+    rarity: Uncommon
+  - name: Die of Fate
+    effect: Re-roll any one check (one-time use)
+    price: Cannot be purchased
+    rarity: Legendary
+  crafting_materials:
+  - material: Herb Pack
+    used_for: Healing Potion material (craft cap 3 per loop to prevent farming)
+    price: 40-60
+  - material: Sulfur and Oil
+    used_for: Fire Bomb material
+    price: '10'
+  - material: Antidote Herb
+    used_for: Simple Antidote material
+    price: '5'
+starting_equipment:
+- background: Scholar
+  starting_equipment: Notebook, fountain pen, basic research tools, 20 Gold
+- background: Soldier
+  starting_equipment: One weapon (Long Sword or Short Sword), military ID tag, mobility-friendly clothing, 25 Gold
+- background: Thief
+  starting_equipment: Lockpicking tools, dark cloak, Knife, 30 Gold (of unknown origin)
+- background: Doctor
+  starting_equipment: First Aid Kit (3 uses), medical record book, stethoscope, 25 Gold
+- background: Wanderer
+  starting_equipment: Backpack (flint, rope, water flask), worn-out map, Knife, 20 Gold
+- background: Merchant
+  starting_equipment: Decent clothes, account book, extra 2d6×5 Gold (10-60)
+- background: Performer
+  starting_equipment: Instrument or performance prop, eye-catching outfit, 20 Gold
+- background: Detective
+  starting_equipment: Investigation notes, magnifying glass, evidence-gathering tools, old case files, 25 Gold
+currency_and_economy: |
+  - Base currency: **Gold Coin (G)**
+
+    - 1 Gold ≈ one day's wage for an ordinary worker
+
+    - Returner starting funds: by background (**20-60 Gold**, see table above)
+
+    - After each Death Return, funds reset to the starting value (but **Save-Point-bound equipment** is not lost, see Player Rulebook 3.1)
+
+    - **In-loop income (to fix economic failure)**: completing a commission or stage bonus 10-30G; looting a defeated enemy yields 2-8G; at the Ash Alley Black Market, you can sell intelligence fragments to the Shadow Guild for 5-15G. This enables a healthy trade-off between "buy medicine vs. save up for gear."

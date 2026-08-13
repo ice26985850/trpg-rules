@@ -1,0 +1,178 @@
+id: D8
+name: Ancient Ruins
+recommended_rank: "A/S (CR 35-40)"
+theme: Lost Civilization Ruins
+grid: { cols: 6, rows: 5 }
+rooms:
+  - id: R1
+    name: Ruin Stone Gate
+    type: entrance
+    gx: 0
+    gy: 0
+    links: [R2]
+    desc: Sole entry/exit; retreating here means a safe escape.
+  - id: R2
+    name: Gargoyle Corridor
+    type: combat
+    gx: 1
+    gy: 0
+    links: [R1, R3, R8]
+    cr: 35
+    enemies: [Gargoyle x2]
+    desc: Gargoyle x2 guard the gate.
+  - id: R3
+    name: Collapsed Staircase
+    type: trap
+    gx: 2
+    gy: 0
+    links: [R2, R4, R9]
+    trap: Weak (Falling Rocks, DC12 / 1d6 Bludgeon)
+    desc: Weak trap; staircase collapses.
+  - id: R4
+    name: Tomb Guardian Passage
+    type: combat
+    gx: 3
+    gy: 0
+    links: [R3, R5, R10]
+    cr: 37
+    enemies: [Tomb Guardian x2]
+    desc: Tomb Guardian x2 patrol.
+  - id: R5
+    name: Priest's Burial Vault
+    type: treasure
+    gx: 4
+    gy: 0
+    links: [R4, R6, R11]
+    treasure: Ancient Coins x2, Glint Shard, G 300~480
+    desc: Priest's burial treasure vault.
+  - id: R6
+    name: Golem Antechamber
+    type: combat
+    gx: 5
+    gy: 0
+    links: [R5, R12]
+    cr: 38
+    enemies: [Golem x2]
+    desc: Golem x2 guard the antechamber.
+  - id: R7
+    name: Silent Oratory
+    type: rest
+    gx: 0
+    gy: 1
+    links: [R1, R8, R13]
+    desc: Safe rest point (restore HP/status).
+  - id: R8
+    name: Trap Courtyard
+    type: trap
+    gx: 1
+    gy: 1
+    links: [R7, R9, R2, R14]
+    trap: Strong (Repeating Crossbow Wall, DC18 / 3d6 Pierce)
+    desc: Strong trap, repeating crossbow wall.
+  - id: R9
+    name: Golden Reliquary
+    type: treasure
+    gx: 2
+    gy: 1
+    links: [R8, R10, R3, R15]
+    treasure: Gold Ornaments x2, Fine Materials, G 320~500
+    desc: Golden reliquary.
+  - id: R10
+    name: Ruin Guard Chamber
+    type: combat
+    gx: 3
+    gy: 1
+    links: [R9, R11, R4, R16]
+    cr: 39
+    enemies: [Ruin Guard x2]
+    desc: Ruin Guard x2 stand guard.
+  - id: R11
+    name: Stargazer's Rest
+    type: rest
+    gx: 4
+    gy: 1
+    links: [R10, R12, R5, R17]
+    desc: Safe rest point.
+  - id: R12
+    name: Royal Vault
+    type: treasure
+    gx: 5
+    gy: 1
+    links: [R11, R6, R18]
+    treasure: Royal Seal, G 340~520
+    desc: Royal vault.
+  - id: R13
+    name: Gargoyle Alley
+    type: combat
+    gx: 0
+    gy: 2
+    links: [R7, R14]
+    cr: 37
+    enemies: [Gargoyle x2]
+    desc: Gargoyle x2 pincer attack.
+  - id: R14
+    name: Rune Trap Hall
+    type: trap
+    gx: 1
+    gy: 2
+    links: [R13, R15, R8]
+    trap: Strong (Rune Burst, DC20 / 3d6 Arcane)
+    desc: Strong trap, rune burst.
+  - id: R15
+    name: Astral Treasury
+    type: treasure
+    gx: 2
+    gy: 2
+    links: [R14, R16, R9, R19]
+    treasure: Astrolabe, G 360~540
+    desc: Astral treasury.
+  - id: R16
+    name: Golem Battlefield
+    type: combat
+    gx: 3
+    gy: 2
+    links: [R15, R17, R10, R20]
+    cr: 39
+    enemies: [Golem x2]
+    desc: Golem x2 in formation.
+  - id: R17
+    name: Cloister Respite
+    type: rest
+    gx: 4
+    gy: 2
+    links: [R16, R18, R11, R21]
+    desc: Safe rest point.
+  - id: R18
+    name: Falling Rocks Rear Hall
+    type: trap
+    gx: 5
+    gy: 2
+    links: [R17, R12]
+    trap: Strong (Ceiling Stone, DC20 / 3d6 Bludgeon)
+    desc: Strong trap, ceiling stone.
+  - id: R19
+    name: Tomb Guardian Chamber
+    type: combat
+    gx: 2
+    gy: 3
+    links: [R15, R20]
+    cr: 39
+    enemies: [Tomb Guardian x2]
+    desc: Tomb Guardian x2 in the chamber.
+  - id: R20
+    name: Guardian Sanctum
+    type: elite
+    gx: 3
+    gy: 3
+    links: [R16, R19, R21]
+    cr: 40
+    enemies: [Ruin Guardian (Boss)]
+    combat_map: maps/D8_戰鬥_遺跡守護者.yaml
+    desc: Elite Ruin Guardian (CR40).
+  - id: R21
+    name: Exit Gateway
+    type: exit
+    gx: 4
+    gy: 3
+    links: [R20, R17]
+    desc: Exit; collect reward and leave after clearing.

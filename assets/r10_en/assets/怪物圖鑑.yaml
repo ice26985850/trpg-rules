@@ -1,0 +1,135 @@
+# Bestiary.yaml
+
+source_md: "怪物圖鑑.md"
+
+threat_level_system:
+  description: "Threat-level system for hostile units"
+  levels:
+    - tl: 1
+      attribute_pool: 10
+      weapons: "1 Light"
+      suitable_for: "Starting convoy can handle"
+    - tl: 2
+      attribute_pool: 14
+      weapons: "1 Medium + 1 Light"
+      suitable_for: "Can be defeated with partial damage"
+    - tl: 3
+      attribute_pool: 18
+      weapons: "1 Heavy + 1 Medium"
+      suitable_for: "Requires full coordination"
+    - tl: 4
+      attribute_pool: 22
+      weapons: "1 Heavy + 1 Medium + Special"
+      suitable_for: "Possible paralysis/crippling"
+    - tl: 5
+      attribute_pool: 26
+      weapons: "2 Heavy + Torpedo + Special"
+      suitable_for: "Retreat is reasonable"
+
+quick_generation:
+  steps:
+    - "Set TL → allocate attributes (Engine/Armor/Firepower/Sensors/Special)"
+    - "Calculate derived: HP=ARM×10+20 | AC=10+ENG-S | Energy=ENG-S×5+10 | DR=ARM×2"
+    - "Pick weapons → grant 1-2 special abilities → define tactical script"
+
+enemies:
+  pirates:
+    - name: "Light Raider"
+      tl: 1
+      attributes: {ENG-S: 3, ARM: 1, WPN: 2, SEN: 2}
+      derived: {HP: 25, AC: 13, energy: 15, DR: 2}
+      weapons:
+        - {name: "Light Laser Cannon", damage: "2d6", traits: "Precision +1"}
+        - {name: "Jamming Missile", damage: "2d4", traits: "-2 to target's next-turn attacks on hit"}
+      special: []
+      tactics: "High-speed approach, close-range dogfight; flee at HP<50% (ENG DC 12)"
+      loot: "1d4×100 Cr, 1d4-1 Ammunition, 1d3 Parts"
+
+    - name: "Medium Marauder"
+      tl: 2
+      attributes: {ENG-S: 2, ARM: 2, WPN: 3, SEN: 3}
+      derived: {HP: 40, AC: 12, energy: 20, DR: 4}
+      weapons:
+        - {name: "Medium Plasma Cannon #1", damage: "2d8", traits: "Balanced"}
+        - {name: "Medium Plasma Cannon #2", damage: "2d8", traits: "Balanced"}
+        - {name: "Boarding Torpedo", damage: "4d6", traits: "Triggers boarding action on hit", ammo: "1/encounter"}
+      special:
+        - "Electronic Jamming (3 energy): -4 to target's next-turn attacks within mid range"
+        - "Looting Frenzy: WPN+1, AC-2 at HP<25%"
+      tactics: "Mid-range barrage; may launch boarding torpedo; fights to the death when near death, does not flee"
+      loot: "2d6×100 Cr, 2d6 Ammunition, 2d4 Parts, 1d3 Fuel, 1d2 Medicine"
+
+    - name: "Heavy Pirate Flagship"
+      tl: 3
+      attributes: {ENG-S: 1, ARM: 4, WPN: 5, SEN: 3}
+      derived: {HP: 60, AC: 11, energy: 15, DR: 8}
+      weapons:
+        - {name: "Heavy Railgun", damage: "3d8", traits: "Piercing 2"}
+        - {name: "Torpedo", damage: "4d8", traits: "Piercing 4, long range only+", ammo: "2/encounter"}
+        - {name: "Point Defense System #1", damage: "1d8", traits: "Reactive intercept of missiles/torpedoes"}
+        - {name: "Point Defense System #2", damage: "1d8", traits: "Reactive intercept of missiles/torpedoes"}
+      special:
+        - "Shield Amplifier (Reaction, 5 energy): 12 temporary shield on self"
+        - "Flagship: +1 attack to nearby pirates, morale advantage"
+        - "Last Stand: reactor overload at HP<20%, self-destruct 6d10 in close range after 3 rounds"
+      tactics: "Long-range gunfire + torpedoes; escorted by small pirates; self-destruct when near death"
+      loot: "3d10×100 Cr, 3d10 Ammunition, 4d6 Parts, 3d6 Fuel, 2d4 Medicine, 1 rare mod"
+
+  creatures:
+    - name: "Interstellar Jellyfish Swarm"
+      tl: 1
+      hostility: "Non-hostile"
+      attributes: {ENG-S: 4, ARM: 0, WPN: 1, SEN: 5}
+      derived: {HP: 30, AC: 14, energy: 30, DR: 0}
+      weapons:
+        - {name: "Tentacle Lash", damage: "1d8", traits: "Close range, used in self-defense"}
+        - {name: "Bio-Electric Pulse", damage: "Special", traits: "Energy -1d6, shields halved", cost: "3 energy, mid range"}
+      special:
+        - "Passive Stealth: undetectable beyond long range if SEN<4"
+        - "Migration Instinct: non-hostile, auto-leaves after 3 rounds"
+        - "Symbiosis: convoy detour → +2 to next voyage event roll"
+      tactics: "Does not attack first; releases electric pulse then flees when attacked"
+      loot: "2d6 Biomass → 1d3 Fuel or Medicine"
+
+    - name: "Void Hunter"
+      tl: 2
+      hostility: "Hostile"
+      attributes: {ENG-S: 3, ARM: 3, WPN: 4, SEN: 4}
+      derived: {HP: 45, AC: 13, energy: 25, DR: 6}
+      weapons:
+        - {name: "Bio-Acid Spray", damage: "3d6", traits: "Piercing 3, -1 Armor on hit (stacks to -3)", range: "Mid"}
+        - {name: "Tentacle Grapple", damage: "2d8", traits: "Target cannot move on hit, 2d4 auto damage per round", range: "Close"}
+      special:
+        - "Tractor Gel (Reaction, 5 energy): attacker's weapons unusable next turn"
+        - "Predatory Frenzy: attacks twice per round at HP<50%"
+        - "Subspace Stealth (7 energy): teleport from long to close range (ambush)"
+      tactics: "Subspace stealth ambush → tentacle grapple lock → acid dissolve armor"
+      loot: "3d6 Biomass, 1 Void Carapace Fragment (+1 Armor add-on)"
+
+  anomalies:
+    - name: "Hyperspace Anomaly"
+      tl: 4
+      hostility: "Hostile"
+      attributes: {ENG-S: 5, ARM: 5, WPN: 4, SEN: 6}
+      derived: {HP: 80, AC: 15, energy: 40, DR: 10}
+      special_rules:
+        - "Non-Euclidean Entity: not bound by distance"
+        - "Phase Shift: d4 each round (1=Material/2=Energy/3=Void/4=Chaos)"
+      weapons:
+        - {name: "Reality Tear", damage: "3d10", traits: "Ignores armor, INT DC 15 on hit → hallucination, cannot act"}
+        - {name: "Time Corridor", damage: "Special", traits: "Target ship skips next round", cost: "8 energy"}
+      special:
+        - "Dimensional Rift: randomly changes all ships' distance bands each round end"
+        - "Info Erosion: highest-SEN ship DC 16 → sensors damaged"
+        - "Immortal Entity: collapses into stable dimensional rift at HP=0 (can be studied/used)"
+      tactics: "Unpredictable; behavior changes by phase each round; GM should create eerie atmosphere"
+      loot: "1 Dimensional Shard (consumable: next Jump auto-succeeds, no risk)"
+
+generic_abilities:
+  - {name: "Shield", effect: "Gain N×3 temporary HP"}
+  - {name: "Stealth", effect: "SEN DC 15 to lock on"}
+  - {name: "Regeneration", effect: "Recover 1d6 HP per round"}
+  - {name: "Summon Reinforcements", effect: "Summon 1d3 reinforcements of TL-2 at HP 50%"}
+  - {name: "EMP", effect: "Energy -2d4 in area"}
+  - {name: "Self-Destruct", effect: "Area damage when near death"}
+  - {name: "Speed Burst", effect: "Move 3 distance bands this round"}

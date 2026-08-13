@@ -1,0 +1,59 @@
+name: Silence of the Rust Crown
+difficulty: Low (CR 3-4)
+mode: Mortal · Multiplayer
+players: 2-4
+judge: Selena (Puritan)
+target_region: Tarr-Morag Hive City, Upper Hive (Levels 300-400), abandoned Ecclesiarchy chapel
+recommended_attributes: '3'
+opening_description: 'You are ordered to investigate an Ecclesiarchy chapel in the Upper Hive—no one has come out of it for nearly three months. Recover the relics inside, and find out exactly what happened.
+
+  '
+surface_goal: Investigate an Ecclesiarchy chapel in the Upper Hive—no one has come out of it for nearly three months. Recover the relics inside.
+hidden_goal: Selena suspects the chapel has been corrupted by Chaos. She wants to know the source of the corruption—and whether the Ecclesiarchy priest inside is still alive.
+known_threats:
+- Uncertain—the interior situation of the chapel is unknown
+- Possibly Mutants
+hidden_threats:
+- The priest died in his own ritual—he was backlashed while attempting to purify a Chaos item with forbidden arts
+- The Chaos item still remains at the chapel's underground altar, continuously releasing Warp energy—those who approach gain +1 Corruption per turn (minor contamination)
+- The priest's corpse has become a low-ranking Mutant
+resources:
+  notes: Standard ration. Selena specifically provides 2 extra Holy Waters.
+  extra_holy_water: 2
+seduction_notes:
+- 1 player receives Note 2 ("Observe and report who has been corrupted")
+- 3 players receive Note 4
+key_npcs:
+- name: Priest Illyon's Diary
+  role: Clue
+  detail: Diary pages scattered throughout the chapel. Records his process of discovering the Chaos item → attempting purification → gradually falling into despair
+- name: Chapel Guardian's Ghost
+  role: Warp Phenomenon
+  detail: Not a true ghost—a memory afterimage projected by Warp energy. Can be soothed by a Faith Test
+key_checks:
+- scene: Search the chapel for the diary
+  check: Investigation (Standard)
+  tn: Mind×10+Investigation
+  success: Find 3 diary pages
+  failure: Find only 1 page
+- scene: Soothe the guardian's afterimage
+  check: Faith (Hard)
+  tn: Faith×10−20
+  success: Afterimage dissipates, gain the guardian's final warning from life
+  failure: Afterimage attacks (mental damage)
+- scene: Face the underground altar
+  check: Faith (Standard)+Psyniscience
+  tn: Faith×10
+  success: Discover the Chaos item
+  failure: Influenced by the Chaos item
+encounters:
+- name: Chapel Nave
+  enemies: Mutated Priest Illyon
+  cr: '1'
+  tactic: Low-ranking Mutant template + 1 special psychic ability
+- name: Underground Altar
+  enemies: Warp Energy Release
+  cr: Environment
+  tactic: +1 Corruption per turn, requires destroying the Chaos item (Faith Test, Hard)
+evacuation_condition: Proceed to the designated evacuation point after mission completion.
+map_ref: "maps/map12_chapel"

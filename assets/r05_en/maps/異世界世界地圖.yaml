@@ -1,0 +1,98 @@
+scenario: Worldbuilding
+section: Otherworld Full Map (Spatial Reference for Scenarios 9–11)
+map_type: world
+title: Otherworld World Map
+# Coordinates are schematic (not exact distances), unit is SVG canvas pixels (viewBox 680 x 740)
+# Structure: World Rift (links to Altia) → Rift Frontline (Scenario 9) → Otherworld Core Domain / Apostle Territory (Scenario 10) → Shard Core → Path of Finality → Void Core (Scenario 11)
+
+nodes:
+  - id: R0
+    label: World Rift · Entrance
+    x: 340
+    y: 110
+    type: kingdom
+    explored: true
+  - id: R1
+    label: Rift Frontline
+    x: 340
+    y: 260
+    type: demon_general_territory
+    explored: true
+  - id: R2
+    label: Otherworld Core Domain · Shard Sea
+    x: 150
+    y: 370
+    type: demon_general_territory
+    explored: true
+  - id: R3
+    label: Void Apostle Territory
+    x: 530
+    y: 370
+    type: demon_general_territory
+    explored: true
+  - id: R4
+    label: Shard Core
+    x: 530
+    y: 510
+    type: demon_lord_base
+    explored: true
+  - id: R5
+    label: Path of Finality
+    x: 150
+    y: 510
+    type: city_state
+    explored: true
+  - id: R6
+    label: Void Core · Singularity
+    x: 340
+    y: 630
+    type: demon_lord_base
+    explored: true
+
+edges:
+  - from: R0
+    to: R1
+    type: passage
+    label: "Rift Passage"
+  - from: R1
+    to: R2
+    type: passage
+  - from: R1
+    to: R3
+    type: passage
+  - from: R2
+    to: R4
+    type: passage
+  - from: R3
+    to: R4
+    type: passage
+  - from: R2
+    to: R5
+    type: passage
+  - from: R5
+    to: R6
+    type: passage
+  - from: R4
+    to: R6
+    type: passage
+
+# Light region background
+regions:
+  - name: Rift Zone
+    color: "#E8A33D"
+    nodes: [R0, R1]
+  - name: Otherworld Core Domain
+    color: "#C0504D"
+    nodes: [R2, R3]
+  - name: Core Zone
+    color: "#7B4B9B"
+    nodes: [R4, R5, R6]
+
+# Faction ranges
+factions:
+  - name: Remnant Altia Link
+    color: "#3B6EA5"
+    nodes: [R0]
+  - name: Beyond the World · Otherworld Forces
+    color: "#9B3B8F"
+    nodes: [R1, R2, R3, R4, R5, R6]

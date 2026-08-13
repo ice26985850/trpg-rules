@@ -1,0 +1,72 @@
+scenario: Scenario 11
+section: "Scenario 11 Final · Beyond the World · Singularity (CR99)"
+map_type: battle
+grid_scale: "1 cell = 2m"
+title: Scenario11_Combat_Singularity
+# Front/back row spacing 2 cells (4m); enemy above, ally below
+# Endgame mechanic: each turn the rift synchronization gains 1 stack of Damage Reduction (DR) (cap 30%); must burst down the core
+
+battle:
+  cols: 10
+  rows: 10
+  lines:
+    - {row: 3, side: Enemy, role: Front Row, color: "#FF8A8A"}
+    - {row: 1, side: Enemy, role: Back Row, color: "#FFC8C8"}
+    - {row: 6, side: Ally, role: Front Row, color: "#8AAEFF"}
+    - {row: 8, side: Ally, role: Back Row, color: "#C8D8FF"}
+
+nodes:
+  - id: e_boss
+    label: Beyond the World · Singularity
+    x: 5
+    y: 2
+    type: boss
+    explored: true
+  - id: e_min1
+    label: Law Echo Alpha
+    x: 3
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_min2
+    label: Law Echo Beta
+    x: 7
+    y: 3
+    type: Enemy Melee
+    explored: true
+  - id: e_min3
+    label: Collapse Projection
+    x: 5
+    y: 1
+    type: Enemy Ranged
+    explored: true
+  - id: p_front_war
+    label: Ally Front-row Warrior
+    x: 4
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_front_monk
+    label: Ally Front-row Monk
+    x: 6
+    y: 6
+    type: Ally Front
+    explored: true
+  - id: p_back_mage
+    label: Ally Back-row Mage
+    x: 4
+    y: 8
+    type: Ally Back
+    explored: true
+  - id: p_back_cleric
+    label: Ally Back-row Cleric
+    x: 6
+    y: 8
+    type: Ally Back
+    explored: true
+
+edges:
+  - from: p_front_war
+    to: e_boss
+    type: Melee
+    style: dashed

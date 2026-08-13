@@ -1,0 +1,83 @@
+# Urban Survivors — You are not a hero; you are just someone trying to survive to tomorrow in a city under siege.
+
+> A tabletop role-playing game (TRPG) about ordinary people in wartime. No legendary weapons, no heroic bloodlines. Just you, your neighbors, and a city that is dying yet not yet dead.
+
+---
+
+## What kind of world is this?
+
+The story takes place in Ostwin, a fictional river-valley city in Eastern Europe. Before the siege, it was an ordinary city with a university, a market, and cafés. After the siege began, water and power were cut off, bridges were blown up, and snipers took the high-rise buildings. Shells fall at irregular intervals. Food grows scarcer by the day. Neighbors vanish one after another. Outside the city are the besieging armies; inside the city are hunger, disease, and an ever-accumulating despair.
+
+The cause of the siege is not fixed — your GM may choose civil war, foreign invasion, or a compound crisis of total collapse. But whatever the setting, your starting point is the same: trapped in a city that is slowly dying.
+
+## Who do you play?
+
+You are not a soldier. Not a spy. Not any trained "combatant."
+
+You play an ordinary person who, the day before the siege, was still living a normal life — perhaps a history teacher of twenty years, a baker who inherited the family shop, a young doctor who just finished residency, or a university student preparing for final exams. You have no gun (and wouldn't know how to use one if you did), no special abilities, no protagonist's halo. All you have is the will to survive, and something you still want to protect — perhaps a person, an object, or a promise left unspoken.
+
+## What is the core gameplay?
+
+This is not a combat game. **Hide, do not fight.**
+
+Each day is divided into three periods: Dawn, Daytime, and Night. Daytime is the snipers' time — you hide in your shelter, repairing things, tending the wounded, or trying to keep the children quiet. Night is your opportunity — under cover of darkness you slip into ruined supermarkets to scavenge cans, crawl through underground passages to reach other survivors, or risk a trip to the black market to trade.
+
+At the end of each day, food runs a little lower, water a little lower, the temperature drops a little more, and your mental state wears down a little further. The real challenge is not killing the enemy, but deciding whether to give that last can of medicine to a feverish child, or save it for yourself, who may be wounded tomorrow.
+
+## What is most unique about this ruleset?
+
+**"Costly Success" — you did it, but at a cost.**
+Most TRPGs have only "success" or "failure." In Urban Survivors, you will often roll a "Costly Success" — you crossed that corridor, but glass shards pierced the sole of your shoe; you found the cans, but the noise drew attention. This middle ground forces you into a continuous chain of choices, each one accumulating story.
+
+**Wounds replace Hit Points.**
+There is no "HP." Being hit is not a number subtracted; it is moving into a wound tier of "Minor Wound → Serious Wound → Fatal Wound." A small cut, left untreated, can kill you three days later. This is not about calculating your health pool, but about feeling the weight of every injury.
+
+**Trauma is growth.**
+You do not level up by killing monsters. Your character changes through experiencing hardship and making choices — sometimes growing tougher, sometimes more broken. After accumulating enough Trauma, you may gain an "Adaptive Talent" — a survival instinct learned in the dark, but each one comes with a cost.
+
+**Solo play supported.**
+Only one player and one GM are needed. The game provides a Fate Point system, 15 preset NPC companions, and a complete solo GM guide.
+
+## Who is this for?
+
+If you prefer narrative immersion over combat, enjoy making hard choices under resource scarcity, and don't mind your character bearing genuine psychological trauma in the story — then you will find a home here. No TRPG experience is required; the learning curve is gentle (the core begins with 3d6 dice). If you have seen *This War of Mine* or read documentary literature about siege warfare, you will immediately understand the texture of this world.
+
+---
+
+## Game Style Tags
+
+**Combat Weight:** Supportive (combat exists but is not the focus — frontal confrontation is extremely lethal; stealth and flight are always the better option)
+
+**Strategic Depth:** Moderate (requires considering resource allocation, action priority, and risk assessment, but not overwhelmed by complex tactics)
+
+**Story-Driven:** Story-Supportive (there is a clear siege-story framework, but every moral choice the player makes changes the story's direction and ending)
+
+**Resource Management:** Heavy (food, water, medicine, and fuel are all scarce; every day's consumption makes you feel the pressure)
+
+**Character Customization:** Moderate (12 pre-war professions, 20 skills, 53 items — clear options without needing endless build optimization)
+
+**Character-Creation Complexity:** Medium (a nine-step creation flow combining narrative Q&A and numerical allocation, completable in about 15–20 minutes)
+
+**Rule Density:** Mid-weight (core mechanics use the 3d6 bell curve; rules are clear and uncluttered; the GM rulebook contains everything needed)
+
+**GM Requirement:** GM required (a game host is necessary to play NPCs, adjudicate rules, and manage the operation of the siege world)
+
+---
+
+## Estimated Play Time
+
+- **Single Scenario:** About 10–15 hours (5–7 sessions) — from the first day of the siege to establishing a stable shelter
+- **Full Campaign:** About 50–80 hours (26–38 sessions) — three linked scenarios, from the early siege to the final choice
+
+---
+
+## Basic Info
+
+- **Players:** 1 player + 1 GM (optionally supports 2–4 players)
+- **Core Dice:** 3d6 (three six-sided dice, bell-curve system)
+- **Design Studio:** Tabletop Rule Studio
+- **Full Rulebook:** Player Rulebook + GM Rulebook (Traditional Chinese), with character sheets, scenarios, maps, and catalogs
+
+---
+
+> *"In this city, everyone who lives to see tomorrow is a miracle. And behind every miracle, there is a choice."*

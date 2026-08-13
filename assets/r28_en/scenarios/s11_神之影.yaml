@@ -1,0 +1,17 @@
+# Otherworld Invasion TRPG Scenario — Shadow of the God
+# id: S11
+
+id: S11
+title: Shadow of the God
+season: 3
+season_name: Expedition Chapter
+recommended_level:
+difficulty:
+core_conflict:
+main_locations:
+- name: A-Rank Rift (Wolf God's Domain)
+key_scenes:
+enemies:
+estimated_sessions:
+rewards:
+solo_adjustment:

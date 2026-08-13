@@ -1,0 +1,54 @@
+<svg viewBox="0 0 880 680" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC, Microsoft JhengHei, sans-serif">
+<rect width="880" height="680" fill="#f7f4ec"/>
+<rect x="52" y="364" width="451" height="264" rx="10" fill="rgba(245,230,200,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="60" y="382" font-size="11pt" fill="#7a6f55">Upper Hive Chapel Zone</text>
+<rect x="240" y="52" width="76" height="264" rx="10" fill="rgba(180,120,60,0.15)" stroke="#b0a890" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="248" y="70" font-size="11pt" fill="#7a6f55">Underground Altar Zone</text>
+<line x1="90" y1="528" x2="215" y2="590" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="215" y1="590" x2="465" y2="590" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="215" y1="590" x2="152" y2="402" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="215" y1="590" x2="402" y2="402" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="215" y1="590" x2="278" y2="278" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="278" y1="278" x2="278" y2="152" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<line x1="278" y1="152" x2="278" y2="90" stroke="#888" stroke-width="2" stroke-dasharray="none"/>
+<circle cx="90" cy="528" r="30" fill="#6fae6f" stroke="#333" stroke-width="2.2"/>
+<text x="90" y="526" text-anchor="middle" font-size="10.5pt" fill="#222">Chapel Main Gate</text>
+<circle cx="215" cy="590" r="30" fill="#cdbf9a" stroke="#333" stroke-width="2.2"/>
+<text x="215" y="588" text-anchor="middle" font-size="10.5pt" fill="#222">Nave</text>
+<circle cx="465" cy="590" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="465" y="588" text-anchor="middle" font-size="10.5pt" fill="#222">Altar</text>
+<text x="465" y="604" text-anchor="middle" font-size="8.5pt" fill="#a33">Guardian Echo</text>
+<text x="465" y="632" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="152" cy="402" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="152" y="400" text-anchor="middle" font-size="10.5pt" fill="#222">Side Room A</text>
+<text x="152" y="444" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="402" cy="402" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="402" y="400" text-anchor="middle" font-size="10.5pt" fill="#222">Side Room B</text>
+<text x="402" y="444" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="278" cy="278" r="30" fill="#cdbf9a" stroke="#a33" stroke-width="2.2"/>
+<text x="278" y="276" text-anchor="middle" font-size="10.5pt" fill="#222">Underground Altar Entrance</text>
+<text x="278" y="320" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="278" cy="152" r="30" fill="#c04040" stroke="#a33" stroke-width="2.2"/>
+<text x="278" y="150" text-anchor="middle" font-size="10.5pt" fill="#222">Underground Altar</text>
+<text x="278" y="166" text-anchor="middle" font-size="8.5pt" fill="#a33">Chaos Items | Corruption +1/turn</text>
+<text x="278" y="194" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<circle cx="278" cy="90" r="30" fill="#c04040" stroke="#a33" stroke-width="2.2"/>
+<text x="278" y="88" text-anchor="middle" font-size="10.5pt" fill="#222">Mutant Priest Illyon</text>
+<text x="278" y="104" text-anchor="middle" font-size="8.5pt" fill="#a33">Mutant</text>
+<text x="278" y="132" text-anchor="middle" font-size="8pt" fill="#a33">Unexplored</text>
+<rect x="705" y="550" width="160" height="120" rx="6" fill="#fff" stroke="#999" stroke-width="1"/>
+<text x="715" y="570" font-size="10pt" font-weight="bold" fill="#333">Legend</text>
+<circle cx="723" cy="586" r="8" fill="#6fae6f" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="590" font-size="9.5pt" fill="#333">Entrance</text>
+<circle cx="723" cy="601" r="8" fill="#5b9bd5" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="605" font-size="9.5pt" fill="#333">Extraction</text>
+<circle cx="723" cy="616" r="8" fill="#c04040" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="620" font-size="9.5pt" fill="#333">Boss</text>
+<circle cx="723" cy="631" r="8" fill="#e08a2b" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="635" font-size="9.5pt" fill="#333">Environmental Hazard</text>
+<circle cx="723" cy="646" r="8" fill="#9aa0a6" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="650" font-size="9.5pt" fill="#333">Staging Area</text>
+<circle cx="723" cy="661" r="8" fill="#cdbf9a" stroke="#333" stroke-width="1.5"/>
+<text x="739" y="665" font-size="9.5pt" fill="#333">Zone</text>
+<g transform="translate(825,55)"><circle r="26" fill="#f5f0e0" stroke="#333" stroke-width="2"/><text x="0" y="-12" text-anchor="middle" font-size="11pt" font-weight="bold" fill="#333">N</text><line x1="0" y1="-22" x2="0" y2="-8" stroke="#c00" stroke-width="2"/></g>
+</svg>

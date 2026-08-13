@@ -1,0 +1,377 @@
+Title: Earth Master TRPG — Item Compendium
+Sections:
+- Name: I. Rarity System
+  Subsections: []
+  Blocks:
+  - Type: table
+    Headers:
+    - Rarity
+    - Mark
+    - Acquisition Method
+    Rows:
+    - Rarity: Common
+      Mark: ◇ White
+      Acquisition Method: Shop Purchase
+    - Rarity: Refined
+      Mark: ◆ Green
+      Acquisition Method: Specific shops, larger towns
+    - Rarity: Rare
+      Mark: ◈ Blue
+      Acquisition Method: Antique dealers, found in tombs
+    - Rarity: Very Rare
+      Mark: ✦ Purple
+      Acquisition Method: Deep tombs, heirloom items
+    - Rarity: Legendary
+      Mark: ★ Gold
+      Acquisition Method: Unique, GM's discretion
+  - Type: paragraph
+    Content: '---'
+- Name: II. Armor
+  Subsections: []
+  Blocks:
+  - Type: table
+    Headers:
+    - Armor
+    - Rarity
+    - 'Price (Silver Dollar)'
+    - 'Weight (kg)'
+    - Defense Modifier
+    - Notes
+    Rows:
+    - Armor: No Armor
+      Rarity: —
+      'Price (Silver Dollar)': —
+      'Weight (kg)': —
+      Defense Modifier: '+0'
+      Notes: Pure evasion via Agility
+    - Armor: Thick Cloth
+      Rarity: ◇
+      'Price (Silver Dollar)': '1'
+      'Weight (kg)': '1'
+      Defense Modifier: '+1'
+      Notes: Basic protection, no effect on Agility checks
+    - Armor: Leather Armor
+      Rarity: ◇
+      'Price (Silver Dollar)': '8'
+      'Weight (kg)': '2'
+      Defense Modifier: '+2'
+      Notes: Light protection, Stealth −1
+    - Armor: Heart-Protector Mirror
+      Rarity: ◆
+      'Price (Silver Dollar)': '15'
+      'Weight (kg)': '3'
+      Defense Modifier: '+2'
+      Notes: Additional −1 physical damage (stacks with Iron Body)
+  - Type: paragraph
+    Content: '---'
+- Name: III. Weapons
+  Subsections: []
+  Blocks:
+  - Type: table
+    Headers:
+    - Weapon
+    - Rarity
+    - 'Price (Silver Dollar)'
+    - 'Weight (kg)'
+    - Damage
+    - Special Effect
+    Rows:
+    - Weapon: Unarmed
+      Rarity: —
+      'Price (Silver Dollar)': —
+      'Weight (kg)': —
+      Damage: 1d4 physical
+      Special Effect: —
+    - Weapon: Short Knife
+      Rarity: ◇
+      'Price (Silver Dollar)': '2'
+      'Weight (kg)': '1'
+      Damage: 1d6 physical
+      Special Effect: —
+    - Weapon: Longsword
+      Rarity: ◇
+      'Price (Silver Dollar)': '10'
+      'Weight (kg)': '3'
+      Damage: 1d8 physical
+      Special Effect: —
+    - Weapon: Peachwood Sword
+      Rarity: ◇
+      'Price (Silver Dollar)': '3'
+      'Weight (kg)': '2'
+      Damage: 1d6 vs spirits
+      Special Effect: 0 vs physical targets (as club 1d4−2)
+    - Weapon: Coin Sword
+      Rarity: ◆
+      'Price (Silver Dollar)': '10'
+      'Weight (kg)': '3'
+      Damage: 1d8 vs Jiangshi
+      Special Effect: +1d4 burn vs White Jiangshi; 1d4 vs spirits
+    - Weapon: Century Peachwood Sword
+      Rarity: ◈
+      'Price (Silver Dollar)': '50'
+      'Weight (kg)': '2'
+      Damage: 2d6 vs spirits
+      Special Effect: 1d8 vs Jiangshi. Emits faint glow 5 ft
+    - Weapon: Dragon-Slaying Sword
+      Rarity: ★
+      'Price (Silver Dollar)': Priceless
+      'Weight (kg)': '4'
+      Damage: 3d8 vs Jiangshi
+      Special Effect: Ignores Un-Rotting Bone damage immunity. +1d8 on next attack after a kill
+  - Type: paragraph
+    Content: '---'
+- Name: IV. Spirit Artifacts & Tools
+  Subsections:
+  - Name: Compass
+    Blocks:
+    - Type: table
+      Headers:
+      - Equipment
+      - Rarity
+      - 'Price (Silver Dollar)'
+      - 'Weight (kg)'
+      - Effect
+      Rows:
+      - Equipment: Feng Shui Compass (Entry)
+        Rarity: ◇
+        'Price (Silver Dollar)': '3'
+        'Weight (kg)': '1'
+        Effect: Geomancy check +1
+      - Equipment: Feng Shui Compass (Refined)
+        Rarity: ◆
+        'Price (Silver Dollar)': '20'
+        'Weight (kg)': '1'
+        Effect: Geomancy check +2
+      - Equipment: Mountain-Mover Shovel (Mountain-Mover Sect only)
+        Rarity: ◆
+        'Price (Silver Dollar)': —
+        'Weight (kg)': '4'
+        Effect: Improved Luoyang Shovel, Earth-Sensing +2
+  - Name: Spirit Artifacts
+    Blocks:
+    - Type: table
+      Headers:
+      - Equipment
+      - Rarity
+      - 'Price (Silver Dollar)'
+      - 'Weight (kg)'
+      - Effect
+      Rows:
+      - Equipment: Consecrated Eight-Trigram Mirror
+        Rarity: ◈
+        'Price (Silver Dollar)': '40'
+        'Weight (kg)': '0.5'
+        Effect: Yin-Yang Perception +2. Consumes 2 Qi to see through Ghost Wall
+      - Equipment: Soul-Calming Bell
+        Rarity: ◈
+        'Price (Silver Dollar)': '60'
+        'Weight (kg)': '1'
+        Effect: Low-tier spirits within 30 ft frozen for 1 turn. 3 times/day
+      - Equipment: Dragon-Seeker Ruler
+        Rarity: ◈
+        'Price (Silver Dollar)': '30'
+        'Weight (kg)': '0.5'
+        Effect: Geomancy can reroll once (take higher), 3 times per adventure
+      - Equipment: Celestial Master Seal
+        Rarity: ★
+        'Price (Silver Dollar)': Priceless
+        'Weight (kg)': '0.5'
+        Effect: Stamped on talisman, effect ×3. Once per day. Holder's all talisman Qi cost −1
+  - Name: Boundary Tools
+    Blocks:
+    - Type: table
+      Headers:
+      - Equipment
+      - Rarity
+      - 'Price (Silver Dollar)'
+      - 'Weight (kg)'
+      - Effect
+      Rows:
+      - Equipment: Ink-Line
+        Rarity: ◇
+        'Price (Silver Dollar)': '1'
+        'Weight (kg)': '1'
+        Effect: Ink-Line Boundary 10 ft. Low-tier spirits / White Jiangshi cannot pass. Lasts 1hr
+      - Equipment: Gold-Thread Ink-Line
+        Rarity: ◈
+        'Price (Silver Dollar)': '35'
+        'Weight (kg)': '1.5'
+        Effect: Boundary effective against Black Jiangshi and below. Lasts 3hr
+  - Name: One-Time Spirit Artifacts
+    Blocks:
+    - Type: table
+      Headers:
+      - Equipment
+      - Rarity
+      - 'Price (Silver Dollar)'
+      - Effect
+      Rows:
+      - Equipment: Celestial Master Talisman
+        Rarity: ✦
+        'Price (Silver Dollar)': 80 (available on market but priceless)
+        Effect: One-time. Effect ×2. Only found in tombs or given by Celestial Master
+    - Type: paragraph
+      Content: '---'
+  Blocks: []
+- Name: V. Consumables
+  Subsections:
+  - Name: Talisman Materials
+    Blocks:
+    - Type: table
+      Headers:
+      - Material
+      - 'Sale Price (Silver Dollar)'
+      - Consumption Rate
+      Rows:
+      - Material: Cinnabar (1 box)
+        'Sale Price (Silver Dollar)': '3'
+        Consumption Rate: Draws 20 talismans
+      - Material: Yellow Paper (1 stack, 20 sheets)
+        'Sale Price (Silver Dollar)': '1'
+        Consumption Rate: 1 sheet per talisman
+      - Material: Black Dog Blood (1 bottle)
+        'Sale Price (Silver Dollar)': '2'
+        Consumption Rate: 1 use (splash or enhance talisman)
+      - Material: Glutinous Rice Flour (1 bag)
+        'Sale Price (Silver Dollar)': '0.5'
+        Consumption Rate: 1 Defilement-Breaking Talisman
+      - Material: Incense (1 bundle, 10 sticks)
+        'Sale Price (Silver Dollar)': '0.5'
+        Consumption Rate: Summon gods 3 sticks / soothe 1 stick. Each burns 30 min
+      - Material: Spirit Money (1 stack, 50 sheets)
+        'Sale Price (Silver Dollar)': '0.2'
+        Consumption Rate: Scatter 10–20 sheets per use
+  - Name: Anti-Jiangshi Supplies
+    Blocks:
+    - Type: table
+      Headers:
+      - Item
+      - 'Sale Price (Silver Dollar)'
+      - 'Weight (kg)'
+      - Effect
+      Rows:
+      - Item: Glutinous Rice (1 bag, 5 jin)
+        'Sale Price (Silver Dollar)': '0.5'
+        'Weight (kg)': '3'
+        Effect: "Scatter on ground: Jiangshi takes 1d4 burn when stepped on. Draw out corpse poison: consumes 1 jin/time, lowers DC by 2"
+      - Item: Black Dog Blood (1 bottle)
+        'Sale Price (Silver Dollar)': '2'
+        'Weight (kg)': '2'
+        Effect: "Splash on Jiangshi: next turn attacks at Disadvantage + Evil-Dispelling Talisman effect +2. Enhance protective talisman: blocks twice"
+      - Item: Corpse-Repelling Incense
+        'Sale Price (Silver Dollar)': '25'
+        'Weight (kg)': '0.5'
+        Effect: White Jiangshi won't actively approach within 20 ft. Burns 1hr
+  - Name: Elixirs
+    Blocks:
+    - Type: table
+      Headers:
+      - Elixir
+      - Rarity
+      - 'Price (Silver Dollar)'
+      - Effect
+      Rows:
+      - Elixir: Vitality Pill
+        Rarity: ◇
+        'Price (Silver Dollar)': '5'
+        Effect: Qi recovery +5
+      - Elixir: Life-Extending Pill
+        Rarity: ◆
+        'Price (Silver Dollar)': '15'
+        Effect: Restore 2d6 HP
+      - Elixir: Detox Pill
+        Rarity: ◇
+        'Price (Silver Dollar)': '8'
+        Effect: Cure common poison and mild corpse poison (DC −4)
+      - Elixir: Calming Incense
+        Rarity: ◆
+        'Price (Silver Dollar)': '12'
+        Effect: Inhaled, halves Fear Value, effective for all within 30 ft
+      - Elixir: Turtle-Breath Pill
+        Rarity: ◈
+        'Price (Silver Dollar)': '30'
+        Effect: No breathing needed for 10 min. After effect ends, Fatigue 1 turn
+      - Elixir: Pure-Yang Pill
+        Rarity: ◈
+        'Price (Silver Dollar)': '25'
+        Effect: Immune to Yin attacks / spirit possession for 1hr. After effect ends, Courage DC 10
+    - Type: paragraph
+      Content: "Elixir limit: Max 2 per combat. Consecutive same-type use has diminishing effect."
+    - Type: paragraph
+      Content: '---'
+  Blocks: []
+- Name: VI. Exploration Equipment
+  Subsections: []
+  Blocks:
+  - Type: table
+    Headers:
+    - Equipment
+    - Rarity
+    - 'Price (Silver Dollar)'
+    - 'Weight (kg)'
+    - Effect
+    Rows:
+    - Equipment: Fire Starter
+      Rarity: ◇
+      'Price (Silver Dollar)': '1'
+      'Weight (kg)': '0.5'
+      Effect: Lights 20 ft, burns 2hr
+    - Equipment: Rope (50 ft)
+      Rarity: ◇
+      'Price (Silver Dollar)': '2'
+      'Weight (kg)': '5'
+      Effect: Climb DC −2, bind, mark route
+    - Equipment: Luoyang Shovel
+      Rarity: ◇
+      'Price (Silver Dollar)': '4'
+      'Weight (kg)': '4'
+      Effect: Earth-Sensing Geomancy +1
+    - Equipment: Waterskin (full)
+      Rarity: ◇
+      'Price (Silver Dollar)': '0.3'
+      'Weight (kg)': '3'
+      Effect: Drinking water
+    - Equipment: Dry Rations (3-day supply)
+      Rarity: ◇
+      'Price (Silver Dollar)': '0.5'
+      'Weight (kg)': '2'
+      Effect: Basic food
+    - Equipment: First Aid Kit
+      Rarity: ◇
+      'Price (Silver Dollar)': '3'
+      'Weight (kg)': '1'
+      Effect: Restore 1d6 HP (once per adventure)
+    - Equipment: Iron Crowbar
+      Rarity: ◇
+      'Price (Silver Dollar)': '1'
+      'Weight (kg)': '5'
+      Effect: Pry Strength +2. Temporary weapon 1d6
+    - Equipment: Backpack (empty)
+      Rarity: ◇
+      'Price (Silver Dollar)': '1'
+      'Weight (kg)': '2'
+      Effect: Capacity 30kg
+  - Type: paragraph
+    Content: '---'
+- Name: VII. Legendary Items (GM Only)
+  Subsections: []
+  Blocks:
+  - Type: table
+    Headers:
+    - Item
+    - Effect
+    - Acquisition Method
+    Rows:
+    - Item: '**Celestial Master Seal** ★'
+      Effect: Stamped on talisman, effect ×3. Once per day. All talisman Qi cost −1
+      Acquisition Method: Special plot reward at GM's discretion
+    - Item: '**Dragon-Slaying Sword** ★'
+      Effect: 3d8 vs Jiangshi. Ignores Un-Rotting Bone damage immunity. +1d8 on next attack after a kill
+      Acquisition Method: Only found in Un-Rotting Bone-tier tombs
+    - Item: '**Elixir of Immortality (Half-Finished)** ★'
+      Effect: "Immediately restore all HP and Qi. d6: 1–3 permanent curse (QP −5), 4–6 no side effects"
+      Acquisition Method: Deep in imperial mausoleum or ancient sorcerer's laboratory
+  - Type: paragraph
+    Content: '---'
+  - Type: paragraph
+    Content: '> **Earth Master TRPG Item Compendium v1.0** | Tabletop Rules Studio'

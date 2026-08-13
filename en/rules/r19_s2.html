@@ -1,0 +1,626 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galaxy Civilization TRPG / Galaxy Civilization TRPG — Multiplayer Campaign: Lone Vessel of the Galaxy (Coalition Edition) | TRPG Rules Share Site</title>
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="topbar"><span class="brand">TRPG Rules Share Site</span>
+<a href="../index.html">All Rules</a><span class="spacer"></span><a class="lang" href="../../rules/r19_s2.html" data-lang="zh" onclick="try{localStorage.setItem(&quot;siteLang&quot;,&quot;zh&quot;)}catch(e){}">中文</a></header>
+<main class="container"><p class="nav"><a href="r19.html">← Back to Rule Page</a> | <a href="../index.html">⟵ Back to Home</a></p><h1>Galaxy Civilization TRPG — Multiplayer Campaign: Lone Vessel of the Galaxy (Coalition Edition)</h1>
+<blockquote>
+<p><strong>For</strong>: 2-4 players + 1 GM, Level 1-20 (covering all Five Eras)
+<strong>Companion</strong>: <em>Galaxy Civilization Player Rulebook</em> and <em>GM Rulebook</em> (this campaign is designed on the core multiplayer rules and does not depend on the <em>Solo Rules Supplement</em>)
+<strong>Reference</strong>: All chapter citations in this campaign point to the <em>Galaxy Civilization Player Rulebook</em> and the <em>GM Rulebook</em></p>
+<p>You are a group of rising interstellar civilizations. The galaxy is vast and dangerous—you are both potential allies to one another, and possibly future competitors. In this century-spanning epic, you will form a coalition, face betrayal, withstand cataclysms, and make the final choice at the galaxy's end.</p>
+</blockquote>
+<hr />
+<h2>Multiplayer Run Guidelines (GM Must-Read)</h2>
+<p>This campaign is adapted from the solo edition <em>Lone Vessel of the Galaxy</em>. The following adjustments make it suitable for 2-4 players each controlling one civilization:</p>
+<ol>
+<li><strong>Action Points (AP) Formula</strong>: Use the core multiplayer formula <code>Action Points (AP) = 3 + ⌊Economy Power (ECO)/3⌋</code>, <strong>without</strong> the solo edition's +1.</li>
+<li><strong>Crisis Scale</strong>: Scale according to the actual number of player civilizations (see table below). The solo edition's logic of "1 player 50%, 3 NPC companions counted as 4 participants" no longer applies—now real players directly determine the scale.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Player Civilizations</th>
+<th style="text-align: center;">Crisis Fleet Scale</th>
+<th style="text-align: center;">Boss Hull Points (HP) Modifier</th>
+<th style="text-align: center;">Phase Progression Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">4 players (baseline)</td>
+<td style="text-align: center;">100%</td>
+<td style="text-align: center;">100%</td>
+<td style="text-align: center;">baseline</td>
+</tr>
+<tr>
+<td style="text-align: center;">3 players</td>
+<td style="text-align: center;">80%</td>
+<td style="text-align: center;">85%</td>
+<td style="text-align: center;">baseline</td>
+</tr>
+<tr>
+<td style="text-align: center;">2 players</td>
+<td style="text-align: center;">65%</td>
+<td style="text-align: center;">70%</td>
+<td style="text-align: center;">×0.8</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>NPC Civilization Attitude System</strong>: The solo edition's "NPC companion loyalty" becomes "NPC Civilization Attitude (1-10)"—this is the <strong>entire Coalition's</strong> rating in the eyes of that NPC civilization (the GM may fine-tune a single civilization's bonus/penalty based on an individual player civilization's behavior, but externally the Coalition Attitude is authoritative). The attitude tiers are the same as the solo edition's loyalty: 9-10 Oathbound / 7-8 Trust / 5-6 Friendly / 3-4 Cool / 1-2 Distant / 0 Broken.</li>
+<li><strong>Narrative Rotation</strong>: The solo edition's "hero thread / spotlight" focused on a single civilization; the multiplayer edition changes this to <strong>the GM rotating focus to a different player civilization each turn</strong>, or coordinating all decisions through a "Galactic Community Coalition Council" format.</li>
+<li><strong>The Term "You"</strong>: Throughout, "player" refers broadly to the participating set of civilizations (the Coalition); when specifying individually, use "a certain player civilization."</li>
+</ol>
+<hr />
+<h2>Campaign Overview</h2>
+<pre><code>┌──────────────────────────────────────────────────────────────┐
+│          Lone Vessel of the Galaxy (Coalition Edition) — Five-Act Epic      │
+├──────────┬─────────┬──────────┬──────────┬──────────────────┤
+│  Chapter │  Era    │ Player Level │ Turns   │ Core Theme       │
+├──────────┼─────────┼──────────┼──────────┼──────────────────┤
+│ Act I    │ Stellar Dawn │ Level (Lv.) 1-4   │ ~20 Stellar Turns (ST) │ Survival &amp; First Contact │
+│ Act II   │ Stellar Expansion │ Level (Lv.) 5-8  │ ~20 Stellar Turns (ST) │ Build Power &amp; Choose │
+│ Act III  │ Galactic Integration │ Level (Lv.) 9-12 │ ~20 Stellar Turns (ST) │ Politics &amp; Shadows  │
+│ Act IV   │ Galactic Hegemony │ Level (Lv.) 13-16 │ ~15 Stellar Turns (ST) │ Crisis Descends      │
+│ Act V    │ Endgame Era │ Level (Lv.) 17-20 │ ~15 Stellar Turns (ST) │ Final Choice        │
+└──────────┴─────────┴──────────┴──────────┴──────────────────┘
+</code></pre>
+<hr />
+<h2>Key NPC Civilizations (non-player civilizations the Coalition may befriend)</h2>
+<p>This campaign features three NPC civilizations whose fate is intertwined with the Coalition. The GM should ensure these civilizations' key figures interact with the players across all acts. They are <strong>not</strong> the players' vassals—they are neutral civilizations with independent goals, who may ally or turn hostile. The Coalition's attitude toward them (1-10) determines whether they lend a hand.</p>
+<h3>NPC Civilization A: Verdant Guardian</h3>
+<table>
+<thead>
+<tr>
+<th>Info</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First Appears</strong></td>
+<td>Act I, Turns 6-8</td>
+</tr>
+<tr>
+<td><strong>Personality Archetype</strong></td>
+<td>Loyal Guardian (toward benefactors)</td>
+</tr>
+<tr>
+<td><strong>Leader</strong></td>
+<td>Seran, a plant-type species, calm and idealistic</td>
+</tr>
+<tr>
+<td><strong>Goal</strong></td>
+<td>To prove in the galaxy that even a small civilization can exist with dignity</td>
+</tr>
+<tr>
+<td><strong>Bond with Coalition</strong></td>
+<td>The Coalition sent reinforcements when the Verdant Colony was attacked by raiders (key event of Act I)</td>
+</tr>
+</tbody>
+</table>
+<h3>NPC Civilization B: Steel-Skull Khanate</h3>
+<table>
+<thead>
+<tr>
+<th>Info</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First Appears</strong></td>
+<td>Act II, Turns 22-25</td>
+</tr>
+<tr>
+<td><strong>Personality Archetype</strong></td>
+<td>Avenger</td>
+</tr>
+<tr>
+<td><strong>Leader</strong></td>
+<td>Gorak the Great Khan, an insectoid, fierce but honor-bound</td>
+</tr>
+<tr>
+<td><strong>Goal</strong></td>
+<td>To avenge the Interstellar Empire that destroyed its hive</td>
+</tr>
+<tr>
+<td><strong>Bond with Coalition</strong></td>
+<td>The Coalition chose to intervene when the Steel-Skull Khanate was besieged by the Interstellar Empire (climax of Act II)</td>
+</tr>
+</tbody>
+</table>
+<h3>NPC Civilization C: Silent Observer</h3>
+<table>
+<thead>
+<tr>
+<th>Info</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>First Appears</strong></td>
+<td>Act III, Turns 42-45</td>
+</tr>
+<tr>
+<td><strong>Personality Archetype</strong></td>
+<td>Mentor Civilization</td>
+</tr>
+<tr>
+<td><strong>Leader</strong></td>
+<td>Omega, a machine intelligence, calm to the point of unsettling</td>
+</tr>
+<tr>
+<td><strong>Goal</strong></td>
+<td>To prevent the awakening of a threat older than the galaxy itself</td>
+</tr>
+<tr>
+<td><strong>Bond with Coalition</strong></td>
+<td>The Silent Observer hold the crucial information about the endgame crisis, but will only share it after the Coalition proves itself trustworthy</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>Act I: Stellar Dawn (Level (Lv.) 1-4, ~20 Stellar Turns (ST))</h1>
+<blockquote>
+<p><strong>Era I</strong>. Your civilizations have just stepped into the stars. The galaxy is dark, unknown, and full of possibility. Each of you has only a few ships, one homeworld, and a future full of problems.</p>
+</blockquote>
+<h2>Chapter 1: First Jump (Stellar Turn (ST) 1-5)</h2>
+<p><strong>Core Mechanics</strong>: Civilization creation, basic exploration, resource management</p>
+<h3>Stellar Turn (ST) 1: Departure</h3>
+<p>Each player completes civilization creation (using Chapter 2 of the core rules). The GM describes each player civilization's home system in turn—its stars, planets, history, and culture. Emphasize the fragility and hope of each civilization at this moment, and the still-undefined relationships between them.</p>
+<p><strong>Check</strong>: None (pure narrative)</p>
+<h3>Stellar Turn (ST) 2-3: Perimeter Survey</h3>
+<p>The science vessels of each player civilization begin surveying nearby systems. The GM may let players survey individually, or coordinate survey direction in a "Coalition Council" to cover a larger area.</p>
+<p><strong>Check</strong>: Science Power (SCI) Survey Check (see <em>Player Rulebook</em> 4.5.1 Survey Action Procedure)</p>
+<p><strong>GM Notes</strong>:
+- The first surveyed system is set as a "promising discovery"—containing a habitable planet (ocean world, Habitability 80%)
+- The second system is set as "potentially dangerous"—containing an anomaly (geological anomaly, Difficulty Class (DC) 6)
+- At the end of Stellar Turn (ST) 3, a certain player's science vessel receives a faint distress signal from a third, unsurveyed system</p>
+<h3>Stellar Turn (ST) 4-5: Distress Signal</h3>
+<p>The players dispatch a science vessel to track the signal.</p>
+<p><strong>Check</strong>: Science Power (SCI) Survey Check, Difficulty Class (DC)=7 (signal is faint, requires precise positioning)</p>
+<p><strong>Discovery</strong>: The signal comes from a small plant-type colony—Verdant Colony—currently under threat from <strong>Raider Mercenaries</strong> (use the NPC data template from <em>Player Rulebook</em> Chapter 3: small raider fleet, Military Power (MP) ~500).</p>
+<p><strong>Key Choice</strong> (Coalition Resolution): The players may—
+- A) Immediately dispatch a fleet to protect the colony (costs 2 Action Points (AP) military strike, Military Power (MIL) Check)
+- B) Attempt a diplomatic solution (costs 1 Action Point (AP) diplomatic proposal, Diplomacy Power (DIP) Check)
+- C) Stand by and watch (Verdant Colony will be destroyed at Stellar Turn (ST) 8, losing the chance to befriend the Verdant Guardian)</p>
+<p><strong>Result of Choosing A or B</strong>: The Verdant Guardian's attitude toward the Coalition rises to 8 (initially Friendly); Seran becomes the Coalition's first important NPC friend.</p>
+<p><strong>Civilization XP (CXP)</strong>: Complete First Contact +5 / Resolve Event +10 (awarded separately to each participating player civilization)</p>
+<h2>Chapter 2: Neighbors &amp; Borders (Stellar Turn (ST) 6-12)</h2>
+<h3>Stellar Turn (ST) 6-8: Expansion Impulse</h3>
+<p>The Verdant Guardian shares the star chart of nearby space with the Coalition. A certain player civilization discovers a <strong>resource-rich system</strong> (use <em>GM Rulebook</em> star map generation, ensuring it contains a planet with Habitability ≥60% and a mineral vein).</p>
+<p><strong>Check</strong>: Economy Power (ECO) Colonization Check (Player Rulebook 2.14 Colonization Procedure)</p>
+<p><strong>Civilization XP (CXP)</strong>: Colonize New Planet +15</p>
+<h3>Stellar Turn (ST) 9-12: A Competitor Appears</h3>
+<p>A human militarist civilization called the <strong>Kronos Syndicate</strong> expands near the Coalition's border. They claim sovereignty over the system a certain player civilization views as a colonization target.</p>
+<p><strong>GM Notes</strong>: Kronos Syndicate (use <em>GM Rulebook</em> NPC Civilization Generator: human/militarist/oligarchy/xenophobe+1)</p>
+<p><strong>Key Choice</strong> (Coalition Resolution):
+- A) Armed confrontation (Military Power (MIL) Check, small fleet battle, Military Power (MP) ratio roughly 1:1)
+- B) Diplomatic negotiation (Diplomacy Power (DIP) Contest Check; may propose border division or joint development)
+- C) Back down and retreat (lose the system; Kronos Syndicate's attitude becomes "contempt")</p>
+<p><strong>Civilization XP (CXP)</strong>: Win Fleet Battle +25 / Successful Diplomatic Agreement +10</p>
+<h2>Chapter 3: Secrets Beneath the Heavens (Stellar Turn (ST) 13-20)</h2>
+<h3>Stellar Turn (ST) 13-16: Anomalous Signal</h3>
+<p>Scientists of the Verdant Guardian discover an <strong>ancient structure</strong> (archaeological site Lv2) in an abandoned system. The Coalition may participate in the excavation.</p>
+<p><strong>Check</strong>: Science Power (SCI) Archaeological Excavation (see <em>Player Rulebook</em> 4.5.4 Archaeological Site Excavation)</p>
+<p><strong>GM Notes</strong>: This is the <strong>main story foreshadowing</strong> running throughout the campaign. Inscriptions found at the site point to an ancient entity called the "Void Lord," and some secret deep in the galactic core.</p>
+<p><strong>Civilization XP (CXP)</strong>: Complete Archaeological Site +20</p>
+<h3>Stellar Turn (ST) 17-20: Echoes from Afar</h3>
+<p>As excavation nears completion, a certain player's scientist receives a <strong>psychic echo</strong> from deep in the galaxy—an ancient and powerful entity seems to be "watching" them. At the same moment, on the other side of the galaxy, in the capital system of a Fallen Empire (use <em>GM Rulebook</em> Fallen Empire template), an ancient beacon begins to flicker.</p>
+<p><strong>Check</strong>: Unity (UNI) Check, Difficulty Class (DC)=7 (resist the influence of the psychic echo)</p>
+<p><strong>GM Notes</strong>: Whether the check succeeds or fails, give the players a sense that "something is awakening in the deep void"—this is a prelude to the Act IV crisis. On success, that civilization gains a vague prophecy; on failure, one of that civilization's scientists falls into short-term mental confusion.</p>
+<p><strong>Act I ends. Each player civilization should reach Level (Lv.) 3-4.</strong></p>
+<hr />
+<h1>Act II: Stellar Expansion (Level (Lv.) 5-8, ~20 Stellar Turns (ST))</h1>
+<blockquote>
+<p><strong>Era II</strong>. You are no longer a group of tiny newborn civilizations. You have made allies, built colonies, and seen a clear threat. Now is the time to build real power.</p>
+</blockquote>
+<h2>Chapter 4: Wrath of Steel Skull (Stellar Turn (ST) 21-30)</h2>
+<h3>Stellar Turn (ST) 21-25: Border War</h3>
+<p>An insectoid civilization called the <strong>Steel-Skull Khanate</strong> launches a raid on the Coalition's eastern border. At first hostile, but deeper investigation reveals: the Steel-Skull Khanate's hive was destroyed by a powerful <strong>Interstellar Empire</strong> (use <em>GM Rulebook</em> NPC template: militarist+authoritarian+xenophobe, Scale 3~4)—they are not attacking indiscriminately, they are fleeing.</p>
+<p><strong>Check</strong>: Intelligence Power (INT) Intelligence Gathering, Difficulty Class (DC)=7 (discover the truth)</p>
+<p><strong>Key Choice</strong> (Coalition Resolution):
+- A) Forcefully expel them (Military Power (MIL) Check, medium fleet battle, Military Power (MP) ratio roughly 1.5:1 player advantage)
+- B) Offer shelter and alliance (Diplomacy Power (DIP) Check, Difficulty Class (DC)=8; must overcome the insectoids' natural distrust of aliens)
+- C) Drive them toward the Interstellar Empire (ignore them, but lose the chance to befriend the Steel-Skull Khanate later)</p>
+<p><strong>Choosing B and Succeeding</strong>: The Steel-Skull Khanate's attitude toward the Coalition rises to 6 (Great Khan Gorak's trust in the Coalition was hard-won).</p>
+<p><strong>Civilization XP (CXP)</strong>: Discover Truth +10 / Form Alliance +15</p>
+<h3>Stellar Turn (ST) 26-30: Counterattack</h3>
+<p>The Coalition and the Steel-Skull Khanate join forces to launch a counterattack against the Interstellar Empire.</p>
+<p><strong>Check</strong>: Continuous Military Power (MIL) operations and Diplomacy Power (DIP) negotiations (see <em>Player Rulebook</em> Chapter 3 War Framework)</p>
+<p><strong>GM Notes</strong>: This is a medium-length war sequence (3-5 turns). Use the War Weariness system from <em>Player Rulebook</em> 3.1. The condition for victory is not to completely annihilate the Interstellar Empire, but to force them to sign a peace agreement and recognize the Coalition's sovereignty over the border.</p>
+<p><strong>Civilization XP (CXP)</strong>: Win the War +25</p>
+<h2>Chapter 5: Halls of Power (Stellar Turn (ST) 31-40)</h2>
+<h3>Stellar Turn (ST) 31-35: Galactic Community</h3>
+<p>The Coalition's influence has grown too large to ignore. The Galactic Community (<em>GM Rulebook</em> section 4.3) extends an invitation to the Coalition—but the invitation comes with conditions.</p>
+<p><strong>GM Notes</strong>: Design an initiation ceremony for the Galactic Community. The Coalition must deliver a speech in the council (Diplomacy Power (DIP) Check, Difficulty Class (DC)=7) to gain a permanent council seat. The representative of the Kronos Syndicate (the competitor from Act I) tries to obstruct. The GM may designate one player civilization as the main speaker, or let multiple players take turns stating their case.</p>
+<p><strong>Check</strong>: Diplomacy Power (DIP) Check (speech) + optional Intelligence Power (INT) Check (gather dirt on the Kronos Syndicate as a counterattack)</p>
+<p><strong>Civilization XP (CXP)</strong>: Successfully Join +10</p>
+<h3>Stellar Turn (ST) 36-40: Power Games</h3>
+<p>Divisions emerge within the Galactic Community. An anti-Coalition alliance is forming, led by the Kronos Syndicate and a religious civilization called the <strong>Void Cult</strong>. The Coalition must maneuver politically, building coalitions.</p>
+<p><strong>Check</strong>: Multiple rounds of Diplomacy Power (DIP) Contest Checks, each round representing one diplomatic lobbying effort or political deal</p>
+<p><strong>GM Notes</strong>: Introduce initial contact with the Silent Observer—they anonymously provide the Coalition a crucial piece of intelligence that helps dismantle the anti-Coalition alliance. But their identity remains mysterious until Act III.</p>
+<p><strong>Civilization XP (CXP)</strong>: Dismantle Anti-Coalition Alliance +15</p>
+<p><strong>Act II ends. Each player civilization should reach Level (Lv.) 7-8.</strong></p>
+<hr />
+<h1>Act III: Galactic Integration (Level (Lv.) 9-12, ~20 Stellar Turns (ST))</h1>
+<blockquote>
+<p><strong>Era III</strong>. You are already a major power in the galaxy. But the greater the power, the stronger the enemies. And deep in the galaxy, some ancient threat is awakening.</p>
+</blockquote>
+<h2>Chapter 6: Awakening Guardians (Stellar Turn (ST) 41-50)</h2>
+<h3>Stellar Turn (ST) 41-45: Silent Observer Appear</h3>
+<p>The Silent Observer (machine civilization, early mentor NPC) formally make contact with the Coalition. They reveal a startling truth:</p>
+<blockquote>
+<p>"We have observed your civilizations for over two hundred turns. You were not born at random—your species' genes carry the mark of an ancient civilization. That civilization foresaw the coming of a certain threat tens of thousands of years ago, and planted 'contingency plans' among multiple races across the galaxy. You are part of them."</p>
+</blockquote>
+<p><strong>Check</strong>: Unity (UNI) Check, Difficulty Class (DC)=8 (psychological shock of accepting this truth; may let one representative player civilization roll, or have all Coalition members roll and take the majority)</p>
+<p><strong>GM Notes</strong>: The Silent Observer' attitude toward the Coalition rises to 5—they do not yet fully trust the Coalition; the Coalition must prove it through actions. Omega shares an ancient star chart marking a location in the galactic core called the "Sealed Land."</p>
+<p><strong>Civilization XP (CXP)</strong>: Contact Silent Observer +15</p>
+<h3>Stellar Turn (ST) 46-50: Journey to the Core</h3>
+<p>To reach the Sealed Land, the Coalition must traverse a sector claimed as holy domain by a Fallen Empire—the <strong>Holy Sentinels</strong>.</p>
+<p><strong>Check</strong>:
+- Attempt stealth passage: Intelligence Power (INT) Check, Difficulty Class (DC)=9
+- Attempt diplomatic negotiation: Diplomacy Power (DIP) Check, Difficulty Class (DC)=10 (negotiating with a Fallen Empire is extremely difficult)</p>
+<p><strong>GM Notes</strong>: Whichever path is chosen, this is the most challenging part of Act III. Failed stealth triggers an encounter battle with the Fallen Empire's border fleet. Successful diplomacy may require paying a price (an advanced technology, a colony, or a promise to protect its holy land).</p>
+<p><strong>Civilization XP (CXP)</strong>: Successfully Cross +20</p>
+<h2>Chapter 7: Sealed Land (Stellar Turn (ST) 51-60)</h2>
+<h3>Stellar Turn (ST) 51-55: Into the Ruins</h3>
+<p>The Sealed Land is a massive ancient structure—a ring-shaped fragment of a world orbiting a dormant black hole. There are no living guardians here, but the ancient automated defense systems are still active.</p>
+<p><strong>Check</strong>: Science Power (SCI) Archaeological Excavation (cumulative excavation progress, Difficulty Class (DC)=9~11)</p>
+<p><strong>Ruins Discovery Table (d6)</strong>:
+1. Ancient Database—unlocks a random T3 technology
+2. Sealed Specimen—an organic lifeform sealed for tens of thousands of years (possibly friendly, possibly dangerous)
+3. Void Rift—an unstable dimensional rift through which one can see the domain of the "Void Lord"
+4. Star Chart Room—a complete galactic star map marking all Fallen Empires and crisis trigger points
+5. Armory—unlocks "Ancient Energy Weapon" technology (a special weapon upgrade)
+6. Last Words of the Precursors—a holographic recording revealing the nature of the Void Lord and the reason it was sealed</p>
+<p><strong>Civilization XP (CXP)</strong>: Each major discovery +10~15</p>
+<h3>Stellar Turn (ST) 56-60: The Trial Begins to Awaken</h3>
+<p>The player's activities at the Sealed Land stir the "Void Lord"—a high-dimensional entity sealed by an elder civilization. Signs of its awakening begin to appear across the galaxy: dimensional rifts, anomalous psionic fluctuations, missing ships.</p>
+<p>Silent Observer' Omega issues a warning: "Time is short. The Void Lord will fully awaken in about 30 turns. You must prepare—or find a way to permanently seal it."</p>
+<p><strong>Act III ends. Each player civilization should reach Level (Lv.) 11-12.</strong></p>
+<hr />
+<h1>Act IV: Galactic Hegemony (Level (Lv.) 13-16, ~15 Stellar Turns (ST))</h1>
+<blockquote>
+<p><strong>Era IV</strong>. The awakening of the Void Lord is no longer a secret. The entire galaxy can feel its influence. The Fallen Empires begin to act. The omens of cataclysm have arrived.</p>
+</blockquote>
+<h2>Chapter 8: Rifts (Stellar Turn (ST) 61-70)</h2>
+<h3>Stellar Turn (ST) 61-65: Full Mobilization</h3>
+<p>The Void Lord's vanguard force—the <strong>Void Devourers</strong>—begins pouring in from dimensional rifts at the galactic core.</p>
+<p><strong>GM Notes</strong>: Use the "High-Dimensional Invader" template from the crisis system in <em>GM Rulebook</em> section 4.6, scaled per the "Multiplayer Run Guidelines" crisis scale table at the start of this campaign (2 players 65% / 3 players 80% / 4 players 100%). If an NPC civilization's attitude reaches "Trust" or above, it may provide assistance in battle (see below).</p>
+<p><strong>Check</strong>:
+- Galactic Community emergency meeting: Diplomacy Power (DIP) Check, Difficulty Class (DC)=7 to initiate a joint defense proposal
+- Fleet battle: use the fleet battle rules from <em>Player Rulebook</em> Chapter 3</p>
+<p><strong>NPC Civilization Reactions</strong> (based on their attitude toward the Coalition):
+- Verdant Guardian (attitude 8): fights with full force, provides fleet support
+- Steel-Skull Khanate (attitude 6): fights, but demands the Coalition promise to help rebuild their hive after the war
+- Silent Observer (attitude 5): provides crucial intelligence and tech support, but their fleet is mainly used to protect ancient installations</p>
+<blockquote>
+<p>Note: NPC civilization assistance is "extra support" and does not count toward the crisis scale headcount. If an NPC civilization's attitude is below 5, it may refuse to fight or even backstab at the opportune moment.</p>
+</blockquote>
+<p><strong>Civilization XP (CXP)</strong>: Each Void fleet repelled +15 / Hold key system +20</p>
+<h3>Stellar Turn (ST) 66-70: Sacrifice</h3>
+<p>In a large-scale Void invasion, the Coalition faces a painful choice:</p>
+<p><strong>Key Choice</strong>: The Void Devourers attack two targets simultaneously—
+- A) A certain player civilization's home system (the GM may designate, or the Coalition may resolve which civilization to defend first)
+- B) The Verdant Guardian's homeworld (NPC civilization)</p>
+<p>The Coalition's fleet can only reach one in time to rescue it.</p>
+<blockquote>
+<p><strong>GM Option</strong>: To heighten intra-Coalition tension, make both targets <strong>player civilization homeworlds</strong>, forcing the players to decide "whom to save" themselves—this creates intensely dramatic conflict.</p>
+</blockquote>
+<p><strong>Choosing to Defend the Player Homeworld</strong>: The Verdant Guardian's homeworld is destroyed; Seran survives but attitude toward the Coalition drops to 2 ("You chose your own people"), and the Verdant Guardian can only provide limited support for the rest of the campaign.</p>
+<p><strong>Choosing to Defend the Verdant Guardian</strong>: That player's homeworld suffers heavy damage (population halved, capital buildings destroyed and needing reconstruction), but Seran's attitude toward the Coalition rises to 10, and the Verdant Guardian thereafter devotes all its resources to supporting the Coalition.</p>
+<blockquote>
+<p>This choice has no "correct answer"—it is the ultimate test of the Coalition's values, and will define the emotional tone of the story that follows.</p>
+</blockquote>
+<p><strong>Civilization XP (CXP)</strong>: Survive the Sacrifice Event +30</p>
+<h2>Chapter 9: Awakening Ancients (Stellar Turn (ST) 71-75)</h2>
+<h3>Stellar Turn (ST) 71-75: The Fallen Empire's Choice</h3>
+<p>The threat of the Void Lord has grown too large to ignore. The Fallen Empires slumbering in the galaxy begin to awaken—but not all who awaken will help you.</p>
+<p><strong>GM Notes</strong>:
+- <strong>Ancient Caretakers</strong>: choose to join the Coalition's side (their calling is to protect organic life)
+- <strong>Holy Sentinels</strong>: declare neutrality—but their holy land lies directly on the Void Lord's path of awakening
+- <strong>Military Isolationists</strong>: consider all this "the trouble of lesser civilizations" and refuse to participate</p>
+<p><strong>Check</strong>: Diplomacy Power (DIP) Check, Difficulty Class (DC)=9 (persuade the Holy Sentinels to at least allow the Coalition's fleet to pass through their territory)</p>
+<p><strong>Civilization XP (CXP)</strong>: Gain Ancient Caretakers' Support +25</p>
+<p><strong>Act IV ends. Each player civilization should reach Level (Lv.) 15-16.</strong></p>
+<hr />
+<h1>Act V: Endgame Era (Level (Lv.) 17-20, ~15 Stellar Turns (ST))</h1>
+<blockquote>
+<p><strong>Era V</strong>. The Void Lord is about to fully awaken. The fate of the galaxy depends on your Coalition. This is the final campaign.</p>
+</blockquote>
+<h2>Chapter 10: Final Seal (Stellar Turn (ST) 76-85)</h2>
+<h3>Stellar Turn (ST) 76-80: Ultimate Preparation</h3>
+<p>The Coalition must complete final preparations before the Void Lord fully awakens:</p>
+<ol>
+<li>Assemble the fleets of all allies (total Military Power (MP) should reach 20000+)</li>
+<li>Deploy a "Dimensional Suppressor" at the galactic core (requires completing an Economy Power (ECO) megastructure construction Check)</li>
+<li>Decide the final strategy: permanent seal / complete annihilation / attempt communication (directly affects the endgame Boss battle rules; the Coalition must reach consensus, and the GM may adjudicate disagreements based on each civilization's stance)</li>
+</ol>
+<p><strong>Check</strong>: Multiple parallel lines (Economy Power (ECO) Construction / Diplomacy Power (DIP) Rally / Science Power (SCI) Research Suppressor Technology)</p>
+<h3>Stellar Turn (ST) 81-85: Final Decisive Battle</h3>
+<p><strong>Final Boss: Void Lord</strong></p>
+<p>Use the High-Dimensional Invader Boss data template from the <em>GM Rulebook</em>, scaled by the number of participating player civilizations per the crisis scale table (2 players 65% / 3 players 80% / 4 players 100%). The table below is the <strong>4-player 100% baseline</strong>:</p>
+<pre><code>Void Lord — Endgame Boss (4-player baseline)
+Hull Points (HP): 25000 | Dimensional Barrier: 8000 | Speed: 1
+Attack: Reality Collapse 500-800 (50% double damage)
+Traits:
+  • Dimensional Devour: every 3 rounds releases a Void Pulse; all fleets in range lose Hull Points (HP) -20%
+  • Summon Vanguard: each round summons 3-5 Void Devourer units
+  • Endgame Countdown: from round 10, each round a random galaxy system is devoured by the Void
+Weaknesses:
+  • After Dimensional Suppressor activated: cannot summon reinforcements, barrier halved
+  • Psionic attack damage +100%
+  • More than 3 civilizations attacking simultaneously → for each extra one, Boss defense -10%
+</code></pre>
+<p><strong>GM Notes</strong>: This is the climax of the entire campaign. Use the full fleet battle rules from <em>Player Rulebook</em> Chapter 3 for specific tactical deployment. The GM should give each player civilization's fleet its own "hero moment" in battle, and NPC civilizations (those meeting the attitude threshold) should also have their moments.</p>
+<p><strong>Civilization XP (CXP)</strong>: Defeat the Void Lord +50</p>
+<h2>Epilogue: Afterglow (Stellar Turn (ST) 86-90)</h2>
+<p>The Void Lord has been defeated. The galaxy welcomes peace—at least for now.</p>
+<h3>Ending Paths</h3>
+<p>Depending on the Coalition's choices throughout the campaign, the following endings are possible:</p>
+<p><strong>A) Galactic Guardian</strong> (the Coalition maintains good relations with the NPC civilizations throughout, Verdant Guardian survives)
+→ The player civilizations, the Verdant Guardian, and the Steel-Skull Khanate jointly establish a new galactic order. Seran delivers a touching speech, reminiscing about the journey from first meeting to now.</p>
+<p><strong>B) Lonely Victor</strong> (the Coalition chose power over friendship, or sacrificed some companions/members)
+→ A certain player civilization becomes the galaxy's sole superpower, but the victory is bitter. Gorak's soul seems to whisper from the depths of the Void: "You got what you wanted—but lost what you needed."</p>
+<p><strong>C) Echoes of the Void</strong> (the Coalition chose to communicate/trade with the Void Lord)
+→ The Void Lord is re-sealed, but the Coalition undergoes some changes—part of the population begins to exhibit psionic power, and the rest of the galaxy watches you with suspicion. A brand-new story is brewing.</p>
+<h3>The Final Roll</h3>
+<p>Regardless of which ending, at the end the GM has each player civilization make a separate Unity (UNI) Check—not to determine success or failure, but to set that civilization's attitude tone toward the post-war galaxy. The result of this roll should be recorded on each civilization's character sheet as a permanent mark of this campaign.</p>
+<hr />
+<h2>GM Appendix: Quick Run Guide</h2>
+<h3>Per-Act Checklist</h3>
+<table>
+<thead>
+<tr>
+<th>Act</th>
+<th>Confirm Before Start</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Act I</td>
+<td>Each player civilization created; Verdant Guardian NPC data prepared; first-round survey systems ready</td>
+</tr>
+<tr>
+<td>Act II</td>
+<td>Kronos Syndicate NPC data prepared; Steel-Skull Khanate NPC data prepared; Interstellar Empire NPC data prepared</td>
+</tr>
+<tr>
+<td>Act III</td>
+<td>Galactic Community operation details prepared; Silent Observer join timing confirmed; Sealed Land archaeology content prepared</td>
+</tr>
+<tr>
+<td>Act IV</td>
+<td>Void vanguard fleet template prepared (already scaled by player count); both plot lines of the Sacrifice event prepared; Fallen Empire attitudes determined</td>
+</tr>
+<tr>
+<td>Act V</td>
+<td>Endgame Boss data card prepared (already scaled by player count); NPC civilization attitudes and fleet status updated; ending branches prepared</td>
+</tr>
+</tbody>
+</table>
+<h3>NPC Civilization Attitude Tracking</h3>
+<table>
+<thead>
+<tr>
+<th>Turn</th>
+<th style="text-align: center;">Verdant Guardian</th>
+<th style="text-align: center;">Steel-Skull Khanate</th>
+<th style="text-align: center;">Silent Observer</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stellar Turn (ST) 8</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td>First Meeting</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 25</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">—</td>
+<td>Steel Skull Joins</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 30</td>
+<td style="text-align: center;">9(+1)</td>
+<td style="text-align: center;">7(+1)</td>
+<td style="text-align: center;">—</td>
+<td>Jointly Defeat Interstellar Empire</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 45</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+<td>Silent Observer Join</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 50</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">6(+1)</td>
+<td>Cross Holy Domain of Fallen Empire</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 60</td>
+<td style="text-align: center;">8(-1)</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">7(+1)</td>
+<td>Sealed Land Discovery (Verdant worried)</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 65</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">8(+1)</td>
+<td style="text-align: center;">8(+1)</td>
+<td>Full Mobilization Begins</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 70</td>
+<td style="text-align: center;"><strong>2 or 10</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">8</td>
+<td>Sacrifice Event (ending turning point)</td>
+</tr>
+<tr>
+<td>Stellar Turn (ST) 85</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">?</td>
+<td>After Final Decisive Battle</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>The above table is a reference for the "ideal arc." The GM should adjust based on each player civilization's actual choices; an NPC civilization with attitude below 5 may refuse to fight.</p>
+</blockquote>
+<h3>Quick Check Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Act</th>
+<th>Chapter</th>
+<th>Main Check</th>
+<th style="text-align: center;">Difficulty Class (DC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>Distress Signal</td>
+<td>Science Power (SCI) Survey</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Raider Conflict</td>
+<td>Military Power (MIL) / Diplomacy Power (DIP)</td>
+<td style="text-align: center;">6-7</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Archaeological Excavation</td>
+<td>Science Power (SCI)</td>
+<td style="text-align: center;">7-9</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Psychic Echo</td>
+<td>Unity (UNI)</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Discover Truth</td>
+<td>Intelligence Power (INT)</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Ally with Insectoids</td>
+<td>Diplomacy Power (DIP)</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Speech</td>
+<td>Diplomacy Power (DIP)</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Bear the Truth</td>
+<td>Unity (UNI)</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Cross Holy Domain</td>
+<td>Intelligence Power (INT) or Diplomacy Power (DIP)</td>
+<td style="text-align: center;">9-10</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Ruins Excavation</td>
+<td>Science Power (SCI)</td>
+<td style="text-align: center;">9-11</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Joint Defense</td>
+<td>Diplomacy Power (DIP)</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Persuade Fallen Empire</td>
+<td>Diplomacy Power (DIP)</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Suppressor Construction</td>
+<td>Economy Power (ECO)</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Endgame Boss</td>
+<td>Full Fleet Battle</td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table>
+<h3>Per-Chapter Civilization XP (CXP) Award Suggestion</h3>
+<table>
+<thead>
+<tr>
+<th>Act</th>
+<th style="text-align: center;">Expected Cumulative Civilization XP (CXP)</th>
+<th style="text-align: center;">Expected Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Act I</td>
+<td style="text-align: center;">~130-180</td>
+<td style="text-align: center;">Level (Lv.) 3-4</td>
+</tr>
+<tr>
+<td>Act II</td>
+<td style="text-align: center;">~300-400 (incl. Act I)</td>
+<td style="text-align: center;">Level (Lv.) 7-8</td>
+</tr>
+<tr>
+<td>Act III</td>
+<td style="text-align: center;">~550-700</td>
+<td style="text-align: center;">Level (Lv.) 11-12</td>
+</tr>
+<tr>
+<td>Act IV</td>
+<td style="text-align: center;">~950-1100</td>
+<td style="text-align: center;">Level (Lv.) 15-16</td>
+</tr>
+<tr>
+<td>Act V</td>
+<td style="text-align: center;">~1550-1800</td>
+<td style="text-align: center;">Level (Lv.) 19-20</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><strong>Campaign Designer's Note</strong>: The core of this campaign is not "winning all the battles," but "finding balance between civilization management, coalition politics, and interpersonal relationships." Encourage the GM to leave space in every act for the players to interact with the key figures of the NPC civilizations—these moments are often more memorable than the fleet battles themselves. In multiplayer, the most brilliant drama is often born from <strong>the disagreements and compromise within the Coalition</strong>: when two player civilizations disagree on "whether to rescue the Verdant Guardian," that tabletop debate is itself part of the galactic epic.</p>
+</blockquote><p><a href="../../assets/r19_en/scenarios/s02_%E9%8A%80%E6%B2%B3%E5%AD%A4%E8%88%9F_%E5%A4%9A%E4%BA%BA%E7%89%88.yaml" download>Download YAML</a></p></main>
+<footer class="foot">This site collects various TRPG rulesets. Open any title to read its introduction, scenarios, character sheets and maps, and download PDF / Excel / the full zip.</footer>
+<script>try{var l=localStorage.getItem('siteLang');if(l){document.querySelectorAll('.lang').forEach(function(a){if(a.getAttribute('data-lang')===l)a.classList.add('cur')});}}catch(e){}</script></body></html>
